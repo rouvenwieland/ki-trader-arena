@@ -1,0 +1,84 @@
+{
+  "start_kapital_eur": 10000,
+  "fallback_usd_je_eur": 1.08,
+  "budget": {
+    "tagesdeckel_eur": 12.0,
+    "gesamtdeckel_eur": 190.0,
+    "claude_ende": "2026-11-14",
+    "preise_usd_je_mio": {
+      "claude-haiku-5-5": {"ein": 0.10, "aus": 0.50},
+      "claude-sonnet-5-5": {"ein": 2.00, "aus": 10.00},
+      "claude-opus-5-5": {"ein": 4.00, "aus": 20.00}
+    },
+    "websuche_usd_je_1000": 10.0,
+    "cache_lesen_faktor": 0.1,
+    "cache_schreiben_faktor": 1.25
+  },
+  "risiko": {
+    "vorsichtig": {"max_hebel": 1, "max_position_pct": 0.10, "max_perp_pct": 0.10, "max_optionen_pct": 0.03, "min_cash_pct": 0.30, "max_gesamt_exposure_pct": 0.70},
+    "mittel":     {"max_hebel": 3, "max_position_pct": 0.20, "max_perp_pct": 0.30, "max_optionen_pct": 0.08, "min_cash_pct": 0.10, "max_gesamt_exposure_pct": 0.90},
+    "aggressiv":  {"max_hebel": 10, "max_position_pct": 0.35, "max_perp_pct": 0.80, "max_optionen_pct": 0.20, "min_cash_pct": 0.02, "max_gesamt_exposure_pct": 0.98}
+  },
+  "boerse": {
+    "slippage_bps": {"spot": 2, "perp": 2, "option": 10, "pm": 0, "stock": 1},
+    "gebuehren": {
+      "coinbase_spot_taker": 0.006,
+      "deribit_perp_taker": 0.0005,
+      "deribit_option_taker_underlying": 0.0003,
+      "deribit_option_max_anteil": 0.125,
+      "kalshi_koeffizient": 0.07,
+      "predictit_gewinn_gebuehr": 0.10,
+      "predictit_max_position_usd": 850,
+      "polymarket_taker": 0.0,
+      "manifold": 0.0,
+      "stock_spread_bps": 2,
+      "stock_kommission": 0.0
+    },
+    "perp": {"wartungsmarge": 0.005, "liquidationsgebuehr": 0.005},
+    "predictit_tiefe_vertraege": 100
+  },
+  "ereignisse": {
+    "kurssprung_pct": 3.0,
+    "kurssprung_1h_pct": 5.0,
+    "wettmarkt_bewegung_pp": 8.0,
+    "markt_schliesst_stunden": 24,
+    "volatilitaet_faktor": 3.0,
+    "fehlbewertung_pp": 12.0,
+    "funding_extrem_8h": 0.0008,
+    "cooldown_min": 45,
+    "max_entscheider_pro_tag": 12
+  },
+  "universum": {
+    "pm_je_plattform": 40,
+    "krypto": ["BTC", "ETH", "SOL", "XRP", "DOGE", "ADA", "LINK", "AVAX"],
+    "perps": ["BTC_USDC-PERPETUAL", "ETH_USDC-PERPETUAL", "SOL_USDC-PERPETUAL"],
+    "aktien": ["SPY", "QQQ", "IWM", "TLT", "GLD", "AGG", "NVDA", "AAPL", "MSFT", "TSLA"]
+  },
+  "fonds_claude": [
+    {"id": "claude_vorsichtig", "name": "Claude Vorsichtig", "risiko": "vorsichtig",
+     "persoenlichkeit": "Kapitalerhalt zuerst. Du handelst selten, nur bei klar positivem Erwartungswert nach Kosten, und sagst im Zweifel Nein. Kein Hebel."},
+    {"id": "claude_mittel", "name": "Claude Mittel", "risiko": "mittel",
+     "persoenlichkeit": "Ausgewogen und nüchtern. Du suchst Chancen mit gutem Chance-Risiko-Verhältnis und streust über Märkte."},
+    {"id": "claude_aggressiv", "name": "Claude Aggressiv", "risiko": "aggressiv",
+     "persoenlichkeit": "Renditehungrig und mutig, aber nicht blind. Du darfst konzentrierte Wetten und Hebel nutzen, wenn deine These stark ist, und akzeptierst große Schwankungen."}
+  ],
+  "liga": [
+    {"id": "liga_gemini", "name": "Gemini Flash", "anbieter": "gemini", "modell": "gemini-flash-latest", "schluessel": "GEMINI_API_KEY"},
+    {"id": "liga_deepseek", "name": "DeepSeek", "anbieter": "deepseek", "modell": "deepseek-chat", "schluessel": "DEEPSEEK_API_KEY"},
+    {"id": "liga_kimi", "name": "Kimi (Moonshot)", "anbieter": "moonshot", "modell": "kimi-latest", "schluessel": "MOONSHOT_API_KEY"},
+    {"id": "liga_cerebras", "name": "Cerebras gpt-oss", "anbieter": "cerebras", "modell": "gpt-oss-120b", "schluessel": "CEREBRAS_API_KEY"},
+    {"id": "liga_mistral", "name": "Mistral", "anbieter": "mistral", "modell": "mistral-small-latest", "schluessel": "MISTRAL_API_KEY"},
+    {"id": "liga_openai", "name": "OpenAI", "anbieter": "openai", "modell": "gpt-5-mini", "schluessel": "OPENAI_API_KEY"}
+  ],
+  "openrouter_gratis_anzahl": 3,
+  "anbieter": {
+    "gemini": {"url": "https://generativelanguage.googleapis.com/v1beta/openai/chat/completions"},
+    "deepseek": {"url": "https://api.deepseek.com/chat/completions"},
+    "moonshot": {"url": "https://api.moonshot.ai/v1/chat/completions"},
+    "cerebras": {"url": "https://api.cerebras.ai/v1/chat/completions"},
+    "mistral": {"url": "https://api.mistral.ai/v1/chat/completions"},
+    "groq": {"url": "https://api.groq.com/openai/v1/chat/completions"},
+    "openai": {"url": "https://api.openai.com/v1/chat/completions"},
+    "openrouter": {"url": "https://openrouter.ai/api/v1/chat/completions"}
+  }
+}
