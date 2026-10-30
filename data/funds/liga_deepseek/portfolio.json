@@ -2,45 +2,12 @@
  "fonds_id": "liga_deepseek",
  "waehrung": "USD",
  "start_kapital": 11184.88579861696,
- "cash": 10585.12831861696,
- "positionen": [
-  {
-   "id": "p2af8e0b5",
-   "inst": {
-    "id": "pm:polymarket:5170740:JA",
-    "art": "pm",
-    "venue": "polymarket",
-    "ergebnis": "JA",
-    "frage": "Will Bitcoin dip to $75,000 in October?",
-    "schliesst": 1793505600.0,
-    "ref": {
-     "id": "5170740",
-     "token_ja": "65710340847928463620991566082994656002922673891777077235559888767925599088131",
-     "token_nein": "34913450717134692139134503608237195358004980714821621364139815843727767877427",
-     "tick": 0.001,
-     "gebuehr_rate": 0.07
-    },
-    "url": "https://polymarket.com/event/what-price-will-bitcoin-hit-in-october-2026"
-   },
-   "seite": "long",
-   "menge": 2497.0,
-   "einstand": 0.24019122146575891,
-   "hebel": 1.0,
-   "marge": 0.0,
-   "eroeffnet": 1793365804.0455625,
-   "gebuehren": 0.0,
-   "funding": 0.0,
-   "take_profit": 0.32,
-   "ausstiegsplan": "Binärer Kurzläufer, läuft 31.10 aus. Halten bis Auflösung. Falls JA-Anteil vorher auf >0,32 steigt (BTC bricht Richtung 75k), Take-Profit per Verkauf erwägen. Definiertes Max-Risiko = Einsatz (600 USD). Kein Stop-Loss bei Wettanteil nötig.",
-   "entscheidung_id": "d14f2eedc",
-   "kurs": 0.28,
-   "wert": 666.7
-  }
- ],
- "realisiert": 0.0,
+ "cash": 11384.168318616961,
+ "positionen": [],
+ "realisiert": 199.28251999999998,
  "gebuehren": 0.0,
  "funding": 0.0,
  "erstellt": 1793319819.7411644,
  "start_fx": 1.1184885798616961,
- "letzter_tick": 1793367470.9044812
+ "letzter_tick": 1793368371.1196504
 }
