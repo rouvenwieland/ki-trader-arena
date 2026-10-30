@@ -385,3 +385,27 @@ def test_wetter_brackets_und_beobachtung():
     assert wetter.p_bracket(m, None, 68.5, 1.5, beobachtet=71.0) == 0.0
     assert wetter.p_bracket(m, 68.5, 70.5, 1.5, beobachtet=71.0) == 0.0
     assert wetter.p_bracket(m, 70.5, 72.5, 1.5, beobachtet=71.0) > 0.9
+
+
+# ---------------------------------------------------------------- Börsen-Realismus
+def test_verbrauchte_tiefe_im_selben_lauf():
+    from arena.exchange import engine, portfolio, risk
+    from arena.exchange.book import Book
+    book = Book([(99.0, 10)], [(100.0, 1.0), (101.0, 1.0), (110.0, 100.0)])
+    inst = {"id": "spot:BTC-USD", "art": "spot", "venue": "coinbase"}
+    unbegrenzt = {"max_hebel": 1, "max_position_pct": 1.0, "max_perp_pct": 0, "max_optionen_pct": 0, "min_cash_pct": 0, "max_gesamt_exposure_pct": 1.0}
+    a = engine.eroeffne(portfolio.neu("a", 100000), unbegrenzt, inst, book, qty=1.5)
+    b = engine.eroeffne(portfolio.neu("b", 100000), unbegrenzt, inst, book, qty=1.5)
+    assert a["ok"] and b["ok"] and b["preis"] > a["preis"]  # zweiter Fonds bekommt das schlechtere Restbuch
+    assert book.asks[0][0] == 110.0 and book.asks[0][1] == pytest.approx(99.0)
+    assert risk  # Import genutzt
+
+
+def test_sqrt_impact_und_stop_buch(monkeypatch):
+    from arena import watcher
+    from arena.exchange import impact
+    assert impact.sqrt_impact(10, 100, 1e6, 0.02) == pytest.approx(0.7 * 0.02 * (1000 / 1e6) ** 0.5)
+    assert impact.sqrt_impact(10, 100, None, 0.02) == 0.0
+    monkeypatch.setattr(impact, "markt_kennzahlen", lambda inst: (1e6, 0.04))
+    b = watcher._stop_buch(100.0, "long", None, 100.0, {"art": "spot", "symbol": "X-USD"})
+    assert b.bids[0][0] == pytest.approx(100.0 * (1 - 0.7 * 0.04 * 0.1))  # 10.000 USD gegen 1 Mio. Tagesvolumen → 0,28 % Abschlag

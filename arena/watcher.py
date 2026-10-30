@@ -8,7 +8,7 @@ import time
 
 from arena import benchmarks, config, events, funds, store, verlauf
 from arena.data import crypto, news, pm, stocks
-from arena.exchange import engine, portfolio
+from arena.exchange import engine, impact, portfolio
 from arena.exchange.book import Book
 from arena.registry import Marktzugriff, preis_fuer_ereignisse
 
@@ -38,15 +38,17 @@ def sammle_preise(cfg: dict, pm_markte: list[dict]) -> tuple[dict, dict]:
     return preise, funding
 
 
-def _stop_buch(auslöser: float, seite: str, aktuell: Book | None) -> Book:
-    """Ein ausgelöster Stop füllt am Stop-Preis (abzüglich Slippage übernimmt die Börse), außer der Markt
-    liegt schon schlechter (Lücke) – dann gilt das aktuelle Buch."""
+def _stop_buch(auslöser: float, seite: str, aktuell: Book | None, menge: float = 0.0, inst: dict | None = None) -> Book:
+    """Ein ausgelöster Stop füllt am Stop-Preis, verschlechtert um den Marktimpact (Square-Root-Gesetz aus Tagesvolumen und -vola;
+    die normale Slippage übernimmt die Börse), außer der Markt liegt schon schlechter (Lücke) – dann gilt das aktuelle Buch."""
     if aktuell is not None:
         if seite == "long" and aktuell.bids and aktuell.bids[0][0] < auslöser:
             return aktuell
         if seite == "short" and aktuell.asks and aktuell.asks[0][0] > auslöser:
             return aktuell
-    return Book([(auslöser, 1e9)], [(auslöser, 1e9)], time.time())
+    imp = impact.sqrt_impact(menge, auslöser, *impact.markt_kennzahlen(inst)) if inst and menge else 0.0
+    px = auslöser * (1 - imp) if seite == "long" else auslöser * (1 + imp)
+    return Book([(px, 1e9)], [(px, 1e9)], time.time())
 
 
 _funding_cache: dict[tuple[str, int], float | None] = {}
@@ -91,7 +93,7 @@ def verarbeite_portfolio(pf: dict, mz: Marktzugriff, funding_raten: dict, jetzt:
     log += engine.pruefe_liquidation(pf, extreme, marks, jetzt)
     for pos, grund, preis in engine.stop_ziele(pf, extreme, marks):
         book, idx = mz.buch(pos["inst"])
-        r = engine.schliesse(pf, pos, _stop_buch(preis, pos["seite"], book), grund=grund, ts=jetzt, index_preis=idx)
+        r = engine.schliesse(pf, pos, _stop_buch(preis, pos["seite"], book, pos["menge"], pos["inst"]), grund=grund, ts=jetzt, index_preis=idx)
         r["ausloeser_preis"] = preis
         log.append(r)
     for pos in list(pf["positionen"]):

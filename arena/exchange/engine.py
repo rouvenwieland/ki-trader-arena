@@ -8,7 +8,7 @@ import math
 import time
 
 from arena import config, policy
-from arena.exchange import fees, portfolio, risk
+from arena.exchange import fees, impact, portfolio, risk
 from arena.exchange.book import Book, max_qty_fuer_budget, walk
 
 ARTEN = ("spot", "perp", "option", "pm", "stock")
@@ -116,6 +116,7 @@ def eroeffne(pf: dict, prof: dict, inst: dict, book: Book, *, seite: str = "long
         pos["liq_preis"] = pos["einstand"] * (((1 - 1 / hebel) / (1 - mm)) if seite == "long" else ((1 + 1 / hebel) / (1 + mm)))
     pf["cash"] -= braucht
     pf["gebuehren"] += fee
+    impact.verbrauche(book, kaufen, f.qty)  # weitere Orders im selben Lauf sehen das verbrauchte Buch
     return {"ok": True, "ts": ts, "aktion": "eroeffnet", "fonds_id": pf["fonds_id"], "position_id": pos["id"],
             "inst_id": inst["id"], "seite": seite, "menge": f.qty, "preis": f.vwap, "gebuehr": fee,
             "nominal": nominal, "hebel": hebel, "tiefe_stufen": f.stufen,
@@ -140,6 +141,7 @@ def schliesse(pf: dict, pos: dict, book: Book, *, qty: float | None = None, grun
     f = walk(levels, q, _slip(art), kaufen=not verkaufen)
     if f.qty <= 0:
         return _ablehnung("Keine Füllung beim Schließen", position_id=pos["id"])
+    impact.verbrauche(book, not verkaufen, f.qty)
     return _abwickeln(pf, pos, f.qty, f.vwap, grund, ts, index_preis, perp, f.stufen)
 
 

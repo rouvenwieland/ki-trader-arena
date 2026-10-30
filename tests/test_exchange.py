@@ -145,7 +145,7 @@ def test_pm_abrechnung_ja_nein():
     assert pf["cash"] == pytest.approx(cash + n) and a["netto_pnl"] > 0
     # NO-Token verliert, wenn JA gewinnt
     pf2 = portfolio.neu("t", 10000)
-    engine.eroeffne(pf2, MITTEL, pm(ergebnis="NEIN", id_="pm:y"), book, usd=1000)
+    engine.eroeffne(pf2, MITTEL, pm(ergebnis="NEIN", id_="pm:y"), Book(bids=[(0.39, 1000)], asks=[(0.40, 1000)]), usd=1000)  # frisches Buch: Tiefe wird verbraucht
     cash2 = pf2["cash"]
     engine.rechne_pm_ab(pf2, pf2["positionen"][0], 1.0)
     assert pf2["cash"] == pytest.approx(cash2)

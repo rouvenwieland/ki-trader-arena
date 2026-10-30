@@ -197,3 +197,8 @@ vor dem Deploy aus `data/`. `docs/status.json` (6 kB) bleibt im Git, weil die La
   Neuer **Regelfonds „Wetter-Ensemble“** (`ko_wetter`, ohne LLM): stündlich alle Brackets als Schätzung festhalten (Brier gegen Markt messbar) und bei
   Vorteil > Gebühr + 5 pp mit ¼-Kelly (≤ 3 % je Bracket, Profil „mittel“, ≤ 2 Käufe/Stunde, Vorlauf ≤ 2 Tage) kaufen. Misst direkt, ob Spezialdaten
   einen Vorteil gegenüber dem Markt bringen. Der Vorsichtig-Fonds hat das Werkzeug in seinem Recherchepfad.
+* **7 Börsen-Realismus:** (a) **Verbrauchte Tiefe:** Nach jeder Füllung wird das im Lauf zwischengespeicherte Buch um die genommene Menge verringert
+  (threadsicher) – mehrere Orders/Fonds im selben Tick bekommen das Restbuch; im nächsten Tick ist das Buch frisch. (b) **Square-Root-Impact**
+  (Y = 0,7 · σ_Tag · √(Q/V_Tag), gedeckelt bei 10 %) für ausgelöste Stops/Take-Profits (vorher Tiefe 1e9 zum Auslösepreis) und für das synthetische
+  Aktienbuch (Treppe bis 5 Mio. USD statt flacher 1e6 Stück); Volumen/Vola aus Coinbase, DVOL bzw. Yahoo-Tageskerzen. PredictIt behält seine bereits
+  konservative Treppe; Liquidationen tragen weiter die Liquidationsgebühr.
