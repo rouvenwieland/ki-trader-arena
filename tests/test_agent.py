@@ -57,7 +57,8 @@ def test_runde_mit_order_speichert_entscheidung_vor_ergebnis(monkeypatch):
     monkeypatch.setattr(Kontext, "aufloesen", lambda self, iid: {"id": iid, "art": "spot", "venue": "coinbase", "symbol": "BTC-USD"})
     order = {"instrument_id": "spot:BTC-USD", "aktion": "kaufen", "betrag_usd": 1000, "zuversicht": 0.6,
              "begruendung": "These: Momentum. Gegenargument: Funding hoch. Kosten 1,2 % Rundreise, Edge größer.",
-             "ausstiegsplan": "Stop 95, Ziel 110 oder in 7 Tagen raus"}
+             "ausstiegsplan": "Stop 95, Ziel 110 oder in 7 Tagen raus", "invalidierung": "Tagesschluss unter 95 USD",
+             "staerkstes_gegenargument": "Funding hoch, Long-Überhang", "risiko_usd": 50}
     fabrik = lambda sp, tools: FakeSitzung([A("", [{"id": "1", "name": "portfolio", "input": {}}], "tool_use"),
                                             A("", [{"id": "2", "name": "order", "input": order}], "tool_use"),
                                             A("Tagebuch: gekauft.")])
@@ -70,6 +71,7 @@ def test_runde_mit_order_speichert_entscheidung_vor_ergebnis(monkeypatch):
     o = next(d for d in dec if d["typ"] == "order")
     assert o["ts"] <= led[0]["ts"] and led[0]["entscheidung_id"] == o["id"] and led[0]["ok"]
     assert len(pf["positionen"]) == 1 and pf["positionen"][0]["ausstiegsplan"].startswith("Stop")
+    assert pf["positionen"][0]["invalidierung"].startswith("Tagesschluss") and o["risiko_usd"] == 50
 
 
 def test_order_ohne_begruendung_oder_ausstieg_abgelehnt():
@@ -95,7 +97,8 @@ def test_limit_wird_von_der_boerse_durchgesetzt(monkeypatch):
     funds.speichere_portfolio(pf)
     monkeypatch.setattr(Kontext, "aufloesen", lambda self, iid: {"id": iid, "art": "spot", "venue": "coinbase", "symbol": "BTC-USD"})
     ctx = Kontext(DEFN, pf, snap(), FakeMZ(), "t", [])
-    r = ctx.t_order("spot:BTC-USD", "kaufen", "x" * 60, 0.9, betrag_usd=5000, ausstiegsplan="Stop bei 90, Ziel 120")
+    r = ctx.t_order("spot:BTC-USD", "kaufen", "x" * 60, 0.9, betrag_usd=5000, ausstiegsplan="Stop bei 90, Ziel 120",
+                    invalidierung="Schluss unter 90 USD", staerkstes_gegenargument="Trend gebrochen, Volumen fällt", risiko_usd=500)
     assert '"ok": false' in r and "Einzelposition" in r and not pf["positionen"]
 
 

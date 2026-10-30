@@ -140,3 +140,125 @@ def test_modellliste_bevorzugt_bekannten_namen(monkeypatch):
             return {"data": [{"id": "kimi-k2.5"}, {"id": "kimi-k9-vision"}, {"id": "moonshot-v1-8k"}]}
     monkeypatch.setattr(llm.requests, "get", lambda *a, **k: R())
     assert s._modell_suchen() == "kimi-k2.5"
+
+
+# ---------------------------------------------------------------- Schnelle Gewinne 1/2: Denkschulen, Diät, Pflichtfelder
+def test_gemeinsamer_systemteil_fuer_cache_und_denkschulen():
+    from arena import funds
+    from arena.agent import prompts
+    c = funds.claude_fonds()
+    teile = [prompts.system_teile(d, {}) for d in c]
+    assert teile[0][0] == teile[1][0] == teile[2][0]  # identischer Präfix → Cache über Fonds geteilt
+    assert not any(d["name"] in teile[0][0] for d in c)
+    assert "Basisraten" in teile[0][1] and "Arbitrageur" in teile[1][1] and "Momentum" in teile[2][1]
+
+
+def test_ereignisse_je_fonds_anders_sortiert():
+    from arena import funds
+    from arena.agent import prompts
+    c = {d["id"]: d for d in funds.claude_fonds()}
+    ev = [{"typ": "kurssprung", "titel": "a", "ts": 1, "fonds": None}, {"typ": "fehlbewertung", "titel": "b", "ts": 1, "fonds": None},
+          {"typ": "markt_schliesst", "titel": "c", "ts": 1, "fonds": None}]
+    assert prompts.ereignisse_sortiert(c["claude_aggressiv"], ev)[0]["typ"] == "kurssprung"
+    assert prompts.ereignisse_sortiert(c["claude_mittel"], ev)[0]["typ"] == "fehlbewertung"
+    assert prompts.ereignisse_sortiert(c["claude_vorsichtig"], ev)[0]["typ"] == "markt_schliesst"
+    assert "RECHERCHEPLAN" in prompts.runde_prompt(c["claude_mittel"], "Ereignis", ev, "", JETZT, plan=["Regeln lesen"])
+
+
+def _ctx():
+    from arena import funds
+    from arena.agent.tools import Kontext
+    from arena.exchange import portfolio
+
+    class MZ:
+        def buch(self, inst):
+            from arena.exchange.book import Book
+            return Book([(0.39, 1000)], [(0.41, 1000)]), None
+
+        def marke(self, inst):
+            return {"bid": 0.39, "ask": 0.41, "mark": 0.4}
+    snap = {"ts": JETZT, "wetten": [], "pm_index": {"pm:polymarket:9": {"mid": "pm:polymarket:9", "venue": "polymarket", "frage": "Will it rain in NYC?",
+                                                                    "ja_bid": 0.39, "ja_ask": 0.41, "schliesst": JETZT + 86400, "ref": {}}}}
+    pf = portfolio.neu("claude_mittel", 10000)
+    return Kontext(funds.claude_fonds()[1], pf, snap, MZ(), "t", [], JETZT)
+
+
+def test_wahrscheinlichkeit_pflichtfelder_und_kohaerenz():
+    from arena import store
+    ctx = _ctx()
+    assert "Pflichtfelder fehlen" in ctx.t_wahrscheinlichkeit("pm:polymarket:9", p_ja=0.5)
+    voll = dict(markt_id="pm:polymarket:9", p_blind=0.5, basisrate="Regen an ~30 % der Tage", abrechnung="NWS CLI 1.11.",
+                status_quo="trocken", gegenargument="Front kommt früher", begruendung="Ensemble 45 %")
+    assert "Inkohärent" in ctx.t_wahrscheinlichkeit(p_ja=0.7, p_nein=0.6, **voll)
+    r = ctx.t_wahrscheinlichkeit(p_ja=0.45, p_nein=0.55, **voll)
+    assert "gespeichert" in r and "+5 pp" in r
+    e = store.lies_jsonl("funds/claude_mittel/prognosen.jsonl")[-1]
+    assert e["p_blind"] == 0.5 and e["markt_ja_mitte"] == pytest.approx(0.40) and e["schliesst"] == JETZT + 86400
+
+
+def test_order_kaufen_braucht_pflichtfelder_und_zuversicht():
+    ctx = _ctx()
+    basis = dict(instrument_id="pm:polymarket:9:JA", aktion="kaufen", begruendung="x" * 60, betrag_usd=100, ausstiegsplan="bis Abrechnung halten")
+    assert "Pflichtfelder beim Kaufen" in ctx.t_order(zuversicht=0.7, **basis)
+    voll = basis | dict(invalidierung="Ensemble fällt unter 30 %", staerkstes_gegenargument="Markt hat Lokalwissen", risiko_usd=100)
+    assert "kein Vorteil" in ctx.t_order(zuversicht=0.3, **voll)
+    assert "wahrscheinlichkeit_ja" in ctx.t_order(zuversicht=0.7, **voll)
+
+
+# ---------------------------------------------------------------- Policy-Gate, Risikoschicht
+def test_policy_gate_sperrt_nach_fuenf_verlusten_und_nur_review_lockert():
+    from arena import policy, store
+    for i in range(5):
+        store.anhaengen("funds/claude_mittel/ledger.jsonl", {"aktion": "geschlossen", "netto_pnl": -10.0, "kategorie": "wette:sport:JA"})
+    store.anhaengen("funds/claude_mittel/ledger.jsonl", {"aktion": "geschlossen", "netto_pnl": 30.0, "kategorie": "wette:wetter:JA"})
+    assert policy.aktualisiere("claude_mittel", JETZT) == ["wette:sport:JA"]
+    inst = {"id": "pm:polymarket:1:JA", "art": "pm", "ergebnis": "JA", "frage": "NBA: Lakers vs Celtics"}
+    assert policy.gesperrt("claude_mittel", inst) == "wette:sport:JA"
+    assert policy.aktualisiere("claude_mittel", JETZT) == []  # bleibt gesperrt, keine Doppelung
+    assert policy.freigeben("claude_mittel", "wette:sport:JA", "Regelauslegung korrigiert")
+    assert policy.gesperrt("claude_mittel", inst) is None and policy.aktualisiere("claude_mittel", JETZT) == []
+
+
+def test_kelly_einzeln_und_simultan():
+    from arena import risikoschicht as rs
+    assert rs.kelly_binaer(0.6, 0.5) == pytest.approx(0.2)
+    assert rs.kelly_binaer(0.4, 0.5) == 0.0
+    einzel = rs.kelly_binaer(0.6, 0.5)
+    sim = rs.kelly_simultan((0.6, 0.5), [(0.6, 0.5, 0.2), (0.6, 0.5, 0.2)])
+    assert 0 < sim < einzel  # mit offenen Wetten weniger als Einzel-Kelly
+
+
+def test_themen_und_krypto_cluster_limit():
+    from arena import themen
+    from arena.exchange import risk
+    assert themen.thema({"art": "pm", "frage": "Will the highest temperature in NYC be 60°F or higher?"}) == "wetter"
+    assert themen.thema({"art": "pm", "frage": "Will Bitcoin reach $100k?"}) == "krypto"
+    prof = dict(risk.profil("vorsichtig"))
+    pf = {"cash": 10000, "positionen": [{"inst": {"id": "spot:BTC-USD", "art": "spot"}, "einstand": 100.0, "menge": 20.0, "marge": 0}]}
+    grund = risk.pruefe_eroeffnung(pf, prof, {"id": "spot:ETH-USD", "art": "spot"}, 900, 1, 10000)
+    assert grund and "Krypto-Cluster" in grund
+
+
+# ---------------------------------------------------------------- Statistik und marktrelative Kennzahlen
+def test_statistik_grundfunktionen():
+    import random
+
+    from arena import statistik as st
+    rng = random.Random(7)
+    r = [rng.gauss(0.002, 0.01) for _ in range(400)]
+    assert st.psr(r) > 0.9 and st.min_trl(r) is not None
+    lo, hi = st.bootstrap_ki(r, st.mittel)
+    assert lo < st.mittel(r) < hi
+    assert st.p_wert_mehr(r) < 0.05 and st.p_wert_mehr([-x for x in r]) > 0.5
+    assert st.sr0_erwartet_max(0.01, 12) > 0
+
+
+def test_brier_skill_gegen_markt_und_filter_nach_ereignis():
+    from arena import metrics, store
+    store.schreibe("resolutions.json", {"pm:a": {"wert": 1.0, "ts": JETZT}, "pm:b": {"wert": 0.0, "ts": JETZT}, "pm:c": {"wert": 1.0, "ts": JETZT}})
+    for mid, p, m, ts in (("pm:a", 0.9, 0.7, JETZT - 100), ("pm:b", 0.2, 0.3, JETZT - 100), ("pm:c", 0.99, 0.5, JETZT + 10)):
+        store.anhaengen("funds/claude_mittel/prognosen.jsonl", {"ts": ts, "markt_id": mid, "p_ja": p, "markt_ja_mitte": m})
+    k = metrics.brier("claude_mittel")
+    assert k["n"] == 2  # pm:c nach der Auflösung abgegeben → zählt nicht
+    assert k["brier"] == pytest.approx((0.01 + 0.04) / 2) and k["brier_markt"] == pytest.approx((0.09 + 0.09) / 2)
+    assert k["brier_skill_markt"] > 0 and k["marktbereinigt"] < 0 and k["gewinn_je_kontrakt"] == pytest.approx(0.3)

@@ -142,3 +142,29 @@ vor dem Deploy aus `data/`. `docs/status.json` (6 kB) bleibt im Git, weil die La
   verworfen (vorher hing der Fonds auf `kimi-k2-turbo-preview` fest). Bei 404 wird jetzt zuerst die echte Modellliste gefragt und ein Name der
   Ausweichliste gewählt, den der Anbieter wirklich führt. Groq-Vorsichter: `openai/gpt-oss-20b`. Cerebras als „kein dauerhaftes Gratis-Kontingent“
   markiert; GitHub Models ist eingestellt (nicht eingeplant). OpenRouter-Gratismodelle: bevorzugte große Allzweck-Familien vor Kontextlänge.
+* **B5 Cache-Sharing:** Der System-Prompt besteht jetzt aus zwei Blöcken: einem für alle Fonds identischen Teil (Weitblick, Gerüst, Regeln)
+  mit eigenem Cache-Breakpoint und dem Fondsteil (Name, Limits, Denkschule, Schwerpunkt). Werkzeuge + gemeinsamer Teil werden so von den drei
+  parallel startenden Claude-Fonds geteilt statt dreimal neu in den Cache geschrieben. Liga-Modelle bekommen beides als ein Text.
+
+### Schnelle Gewinne
+* **1 Denkschulen + Informationsdiät:** je Claude-Fonds 5 Denkregeln (Vorsichtig = Basisraten-Prognostiker, Mittel = Arbitrageur/Regel-Leser,
+  Aggressiv = Makro/Momentum, konträr bei Überreaktion), eigene **Ereignis-Reihenfolge** (`ereignis_vorrang`, eigene Positionen immer zuerst) und ein
+  **Rechercheplan** des Haiku-Vorsichters (2–3 Schritte, nur Vorschlag) in Ereignisrunden. Liga unverändert gleich (fairer Modellvergleich).
+* **2 Pflichtfelder:** `wahrscheinlichkeit` verlangt Abrechnung, Status quo, Basisrate, `p_blind` (ohne Marktpreis), `p_ja` und **getrennt** `p_nein`
+  (|p_ja + p_nein − 1| > 0,15 → zurück zum Überdenken: Ja-Hang), Gegenargument; der Marktpreis wird automatisch mitgespeichert, ebenso der Schlusszeitpunkt
+  (Schätzungen nach Schluss/Auflösung zählen nicht). Kaufen verlangt `invalidierung`, `staerkstes_gegenargument`, `risiko_usd`; Wetten zusätzlich
+  `wahrscheinlichkeit_ja`; Zuversicht < 0,4 = laut Ankerskala kein Vorteil → abgelehnt. Gilt identisch für Claude und Liga. Die Invalidierung steht
+  in `portfolio()` je Position; Weitblick-Schritt 1 fragt danach. Dazu M13/M14 im Prompt (Nichtstun als Vergleich, Gegen-Schlagzeile suchen).
+* **3/4 Statistik:** neues Modul `arena/statistik.py` (reines Python, feste Startwerte → reproduzierbar): stationärer Block-Bootstrap (Blocklänge 24 h
+  auf Stundenrenditen), PSR, Deflated Sharpe (N = Anzahl Fonds mit Daten), MinTRL („messbar ab Tag X“), p-Wert gegen BTC Buy & Hold (Block-Bootstrap
+  der Stunden-Differenzen), Brier-Skill gegen den Marktpreis, marktbereinigter Brier mit Fragen-Bootstrap-KI, Log-Score, Murphy-Zerlegung,
+  Kalibrierungskurve, Platt (BIA/CON), Model Confidence Set. Stundenrenditen statt Tageswerten, weil die Arena erst wenige Tage läuft
+  (mehr Beobachtungen; Autokorrelation fängt der Block-Bootstrap auf). Kein `arch`-Paket (siehe B3).
+* **Policy-Gate (Hebel 6, M10):** Kategorie = Art + Thema (+ Seite JA/NEIN bzw. Perp-Richtung). ≥ 5 abgeschlossene Trades mit negativer Netto-Bilanz →
+  neue Käufe gesperrt, sichtbar in `portfolio()` und im Rundenprompt; nur verschärfen, lockern nur über das Opus-Review (`freigeben` im Regel-JSON).
+  Themen-Etiketten deterministisch per Stichwortliste (`arena/themen.py`) statt Haiku-Verschlagwortung – kostenlos und reproduzierbar.
+* **Risikoschicht (Hebel 4):** Werkzeug `positionsgroesse`: Kelly binär inkl. Gebühr, **simultan** über die offenen Wetten (gemeinsames log-Optimum,
+  Unabhängigkeit angenommen → Obergrenze), Bruchteil je Profil (0,15/0,25/0,4), halbiert bei marktbereinigt schlechterer Kalibrierung (n ≥ 10),
+  Platt-Rekalibrierung erst ab 50 Auflösungen (Umstiegspunkt der Empfehlung); Krypto/Aktien per GARCH-Volatilitätsziel (1-σ-Tagesverlust 0,5/1/2 %)
+  mit 2-σ-Stop-Vorschlag. Hart in der Börse neu: **Krypto-Cluster-Limit** (Brutto-Nominal Spot+Perp+Optionen: 25 %/100 %/400 %) und
+  **Themen-Cluster-Limit** für Wetten (15 %/25 %/40 % je Thema). Bestehende Positionen bleiben, nur neue Käufe werden begrenzt.

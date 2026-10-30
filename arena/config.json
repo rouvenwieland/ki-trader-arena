@@ -57,7 +57,9 @@
       "max_perp_pct": 0.1,
       "max_optionen_pct": 0.03,
       "min_cash_pct": 0.3,
-      "max_gesamt_exposure_pct": 0.7
+      "max_gesamt_exposure_pct": 0.7,
+      "max_krypto_cluster_pct": 0.25,
+      "max_thema_pct": 0.15
     },
     "mittel": {
       "max_hebel": 3,
@@ -65,7 +67,9 @@
       "max_perp_pct": 0.3,
       "max_optionen_pct": 0.08,
       "min_cash_pct": 0.1,
-      "max_gesamt_exposure_pct": 0.9
+      "max_gesamt_exposure_pct": 0.9,
+      "max_krypto_cluster_pct": 1.0,
+      "max_thema_pct": 0.25
     },
     "aggressiv": {
       "max_hebel": 10,
@@ -73,7 +77,9 @@
       "max_perp_pct": 0.8,
       "max_optionen_pct": 0.2,
       "min_cash_pct": 0.02,
-      "max_gesamt_exposure_pct": 0.98
+      "max_gesamt_exposure_pct": 0.98,
+      "max_krypto_cluster_pct": 4.0,
+      "max_thema_pct": 0.4
     }
   },
   "boerse": {
@@ -178,6 +184,24 @@
         "tariff",
         "economy",
         "bank"
+      ],
+      "denkschule": {
+        "titel": "Basisraten-Prognostiker",
+        "regeln": [
+          "Status quo und Basisrate zuerst; erst danach Nachrichten. Ohne belegbare Basisrate kein Handel.",
+          "Bevorzugt Wettmärkte mit klarer, überprüfbarer Abrechnungsquelle (Behördendaten, Messwerte, offizielle Termine).",
+          "Ein Vorteil zählt erst ab 8 Prozentpunkten nach allen Kosten (Rundreise, gebundenes Kapital).",
+          "Bei Hype-Themen eher die NEIN-Seite prüfen: Dinge passieren seltener und später als erwartet.",
+          "Offizielle Quellen (Fed, EZB, Statistikämter, Wetterdienste) schlagen Medienberichte."
+        ]
+      },
+      "ereignis_vorrang": [
+        "markt_schliesst",
+        "nachricht_position",
+        "fehlbewertung",
+        "wettmarkt_bewegung",
+        "kurssprung",
+        "volatilitaet"
       ]
     },
     {
@@ -216,6 +240,24 @@
         "spacex",
         "launch",
         "ipo"
+      ],
+      "denkschule": {
+        "titel": "Arbitrageur und Regel-Leser",
+        "regeln": [
+          "Sucht Preisabweichungen derselben Frage zwischen Plattformen und zwischen Markt und eigener Regelauslegung.",
+          "Liest Abrechnungsdetails wörtlich: Fristen, Datenquellen, Sonderfälle – dort entstehen Fehlbewertungen.",
+          "Meidet reine Richtungswetten auf Nachrichten; handelt Mikrostruktur (Spread, Tiefe, Gebühren, Orderfluss).",
+          "Achtet auf wer kauft (Orderfluss, große Halter) und wie sich der Preis entwickelt hat.",
+          "Kleine, viele unkorrelierte Positionen statt einer großen Überzeugung."
+        ]
+      },
+      "ereignis_vorrang": [
+        "fehlbewertung",
+        "wettmarkt_bewegung",
+        "markt_schliesst",
+        "nachricht_position",
+        "volatilitaet",
+        "kurssprung"
       ]
     },
     {
@@ -247,6 +289,24 @@
         "reach",
         "halving",
         "token"
+      ],
+      "denkschule": {
+        "titel": "Makro/Momentum, konträr bei Überreaktion",
+        "regeln": [
+          "Handelt Krypto, Perps und Optionen nach Trend, Funding, Basis und Volatilitätsregime (DVOL).",
+          "Wettmärkte nur, wenn sich der Preis in weniger als 24 h stark bewegt hat (Überreaktion) oder als Krypto-Kursschwelle.",
+          "Gegen den Strom, wenn Funding/Positionierung extrem ist; mit dem Strom, solange Momentum und Funding es tragen.",
+          "Größe nach Volatilität (GARCH-Band, ATR): bei hoher Vola kleiner, Stop außerhalb des normalen Rauschens.",
+          "Optionen nur, wenn die implizite Vola im Verhältnis zur erwarteten Bewegung günstig ist."
+        ]
+      },
+      "ereignis_vorrang": [
+        "kurssprung",
+        "volatilitaet",
+        "fehlbewertung",
+        "nachricht_position",
+        "markt_schliesst",
+        "wettmarkt_bewegung"
       ]
     }
   ],

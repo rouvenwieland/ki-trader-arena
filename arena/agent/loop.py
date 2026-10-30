@@ -36,14 +36,15 @@ def triage(defn: dict, ereignisse: list[dict], pf_info: str, bud: bmod.Budget, n
         a = s.schritt()
         bud.buche(defn["id"], modell, a.nutzung, "triage")
         j = json.loads(a.text[a.text.index("{"): a.text.rindex("}") + 1])
-        return bool(j.get("aufwecken")), str(j.get("grund", ""))
+        plan = j.get("plan") if isinstance(j.get("plan"), list) else []
+        return bool(j.get("aufwecken")), str(j.get("grund", "")) + (" | PLAN: " + " ; ".join(map(str, plan[:4])) if plan else "")
     except Exception as e:  # Triage-Fehler dürfen nichts blockieren
         return True, f"Triage fehlgeschlagen ({type(e).__name__}) – Runde zur Sicherheit"
 
 
 def laufe_runde(defn: dict, route: dict, pf: dict, snap: dict, mz, grund: str, ereignisse: list[dict],
                 bud: bmod.Budget | None, n_fonds: int, jetzt: float | None = None,
-                sitzung_fabrik=None, runden_budget_usd: float | None = None) -> dict:
+                sitzung_fabrik=None, runden_budget_usd: float | None = None, plan: list[str] | None = None) -> dict:
     """Eine komplette Agentenrunde. Liefert Ergebnis-Dict (auch bei Abbruch)."""
     jetzt = jetzt or time.time()
     from arena import snapshot as snapmod
@@ -56,11 +57,11 @@ def laufe_runde(defn: dict, route: dict, pf: dict, snap: dict, mz, grund: str, e
     if sitzung_fabrik:
         s = sitzung_fabrik(sys_prompt, tools)
     elif ist_claude:
-        s = llm.AnthropicSitzung(route["modell"], sys_prompt, tools, websuche=WEBSUCHEN[typ], effort="high", max_tokens=max_aus,
+        s = llm.AnthropicSitzung(route["modell"], prompts.system_teile(defn, ctx.prof), tools, websuche=WEBSUCHEN[typ], effort="high", max_tokens=max_aus,
                                  timeout=420 if typ == "tief" else 300)
     else:
         s = llm.openai_sitzung(route["anbieter"], route["modell"], sys_prompt, tools, route["key"], route.get("alternativen"))
-    s.nutzer(prompts.runde_prompt(defn, grund, ereignisse, snapmod.text(snap, defn=defn), jetzt))
+    s.nutzer(prompts.runde_prompt(defn, grund, ereignisse, snapmod.text(snap, defn=defn), jetzt, plan=plan))
     modell = route["modell"]
     kosten, schritte, text, abbruch = 0.0, 0, "", ""
     abschluss_ab = None  # Schritt, an dem der Abschluss-Hinweis kam

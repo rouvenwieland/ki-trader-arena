@@ -8,7 +8,7 @@ import json
 import time
 import uuid
 
-from arena import funds, notizbuch, store
+from arena import funds, notizbuch, policy, store, themen
 from arena.data import crypto, news, pm, stocks
 from arena.exchange import engine, portfolio, risk
 from arena.registry import Marktzugriff
@@ -72,11 +72,12 @@ class Kontext:
                         "seite": p["seite"], "menge": round(p["menge"], 6), "einstand": round(p["einstand"], 5),
                         "hebel": p.get("hebel", 1), "liquidationspreis": p.get("liq_preis"),
                         "wert_liquidation_usd": round(wert, 2), "stop_loss": p.get("stop_loss"), "take_profit": p.get("take_profit"),
-                        "ausstiegsplan": p.get("ausstiegsplan"), "schliesst": p["inst"].get("schliesst"),
+                        "ausstiegsplan": p.get("ausstiegsplan"), "invalidierung": p.get("invalidierung"), "schliesst": p["inst"].get("schliesst"),
                         "funding_gezahlt": round(p.get("funding", 0), 2)})
         return _kurz({"eigenkapital_usd": round(eq, 2), "cash_usd": round(self.pf["cash"], 2),
                       "start_usd": round(self.pf["start_kapital"], 2), "rendite_pct": round((eq / self.pf["start_kapital"] - 1) * 100, 2),
-                      "gebuehren_gesamt_usd": round(self.pf["gebuehren"], 2), "limits": self.prof, "positionen": pos})
+                      "gebuehren_gesamt_usd": round(self.pf["gebuehren"], 2), "limits": self.prof,
+                      "policy_sperren": policy.sperren(self.fid), "cluster": risk.cluster_stand(self.pf, self.prof, eq), "positionen": pos})
 
     def t_markt_suche(self, abfrage: str, plattform: str = "alle", **_) -> str:
         kw = news.stichworte(abfrage) or {abfrage.lower()}
@@ -149,27 +150,59 @@ class Kontext:
         from arena.data import makro
         return _kurz(makro.uebersicht())
 
+    def t_positionsgroesse(self, instrument_id: str, p_ja: float | None = None, **_) -> str:
+        """Größenempfehlung: Wetten per Kelly (inkl. Gebühr, simultan über offene Wetten, Profil-Bruchteil), sonst Volatilitätsziel (GARCH)."""
+        from arena import forecast, risikoschicht
+        inst = self.aufloesen(instrument_id)
+        if not inst:
+            return f"Unbekanntes Instrument {instrument_id}."
+        marks = {p["inst"]["id"]: self.mz.marke(p["inst"]) for p in self.pf["positionen"]}
+        eq = portfolio.equity(self.pf, marks)
+        if inst["art"] == "pm":
+            book, _ = self.mz.buch(inst)
+            return _kurz(risikoschicht.wette(self.defn, self.pf, inst, book, None if p_ja is None else float(p_ja), eq))
+        if inst["art"] == "option":
+            return "Optionen: Prämie ist der Maximalverlust – Größe über risiko_usd und das Optionslimit des Profils wählen."
+        basis = instrument_id if inst["art"] != "perp" else "spot:" + inst["symbol"].split("_")[0] + "-USD"
+        return _kurz(risikoschicht.vol_ziel(self.defn, inst, eq, forecast.historie(basis, self.snap)) | {"limits": self.prof})
+
     def t_notizbuch_schreiben(self, typ: str, text: str, **_) -> str:
         notizbuch.schreibe(self.fid, typ, text, ts=self.jetzt)
         return "Notiz gespeichert."
 
-    def t_wahrscheinlichkeit(self, markt_id: str, p_ja: float, begruendung: str, **_) -> str:
-        """Eigene Wahrscheinlichkeitsschätzung festhalten (Grundlage für den Brier-Score), auch ohne Handel."""
+    def t_wahrscheinlichkeit(self, markt_id: str = "", p_ja: float | None = None, p_nein: float | None = None, p_blind: float | None = None,
+                             basisrate: str = "", abrechnung: str = "", status_quo: str = "", gegenargument: str = "",
+                             begruendung: str = "", ueberraschung: str = "", **_) -> str:
+        """Eigene Wahrscheinlichkeitsschätzung mit Superforecaster-Gerüst festhalten (Grundlage für Brier-Score und Brier-Skill gegen den Markt)."""
         if self.prognosen >= 25:
             return "Limit erreicht (25 Schätzungen je Runde)."
-        if not 0.0 <= float(p_ja) <= 1.0:
-            return "p_ja muss zwischen 0 und 1 liegen."
+        fehlt = [n for n, v in (("markt_id", markt_id), ("p_ja", p_ja), ("p_nein", p_nein), ("p_blind", p_blind), ("basisrate", basisrate),
+                                ("abrechnung", abrechnung), ("status_quo", status_quo), ("gegenargument", gegenargument),
+                                ("begruendung", begruendung)) if v in (None, "")]
+        if fehlt:
+            return "Pflichtfelder fehlen: " + ", ".join(fehlt) + ". Nutze das Gerüst: Abrechnung, Status quo, Basisrate, p_blind (ohne Marktpreis), dann p_ja und getrennt p_nein."
+        try:
+            pj, pn, pb = float(p_ja), float(p_nein), float(p_blind)
+        except (TypeError, ValueError):
+            return "p_ja, p_nein und p_blind müssen Zahlen zwischen 0 und 1 sein."
+        if not all(0.0 <= x <= 1.0 for x in (pj, pn, pb)):
+            return "p_ja, p_nein und p_blind müssen zwischen 0 und 1 liegen."
+        if abs(pj + pn - 1) > 0.15:
+            return (f"Inkohärent: p_ja {pj:.2f} + p_nein {pn:.2f} = {pj + pn:.2f}. Überdenke beide Seiten getrennt (Ja-Hang?) und gib sie neu an.")
         m = self.snap["pm_index"].get(markt_id)
         self.prognosen += 1
         store.anhaengen(f"funds/{self.fid}/prognosen.jsonl", {
-            "ts": self.jetzt, "markt_id": markt_id, "p_ja": float(p_ja), "markt_ja_mitte": ((m["ja_bid"] + m["ja_ask"]) / 2) if m else None,
-            "begruendung": begruendung[:600]})
-        return "Schätzung gespeichert."
+            "ts": self.jetzt, "markt_id": markt_id, "p_ja": pj, "p_nein": pn, "p_blind": pb,
+            "markt_ja_mitte": ((m["ja_bid"] + m["ja_ask"]) / 2) if m else None, "schliesst": m.get("schliesst") if m else None,
+            "basisrate": str(basisrate)[:300], "abrechnung": str(abrechnung)[:300], "status_quo": str(status_quo)[:300],
+            "gegenargument": str(gegenargument)[:300], "ueberraschung": str(ueberraschung)[:300], "begruendung": str(begruendung)[:600]})
+        mitte = ((m["ja_bid"] + m["ja_ask"]) / 2) if m else None
+        return "Schätzung gespeichert." + (f" Marktpreis JA ≈ {mitte:.2f}; deine Abweichung {100 * (pj - mitte):+.0f} pp." if mitte is not None else "")
 
     def t_order(self, instrument_id: str, aktion: str, begruendung: str, zuversicht: float, betrag_usd: float | None = None,
                 menge: float | None = None, seite: str = "long", hebel: float = 1, stop_loss: float | None = None,
                 take_profit: float | None = None, ausstiegsplan: str = "", wahrscheinlichkeit_ja: float | None = None,
-                **_) -> str:
+                invalidierung: str = "", staerkstes_gegenargument: str = "", risiko_usd: float | None = None, **_) -> str:
         if self.orders >= 8:
             return "Limit erreicht: höchstens 8 Orders je Runde."
         import math
@@ -182,18 +215,32 @@ class Kontext:
             return "Begründung zu kurz (mind. 40 Zeichen) – nenne These, Gegenargument und Kosten."
         if not 0 <= float(zuversicht) <= 1:
             return "zuversicht muss zwischen 0 und 1 liegen."
-        if aktion == "kaufen" and (len(ausstiegsplan.strip()) < 10):
-            return "Zum Kaufen ist ein Ausstiegsplan Pflicht (wann/warum raus, Stop-Loss/Take-Profit)."
+        if aktion == "kaufen":
+            if len(ausstiegsplan.strip()) < 10:
+                return "Zum Kaufen ist ein Ausstiegsplan Pflicht (wann/warum raus, Stop-Loss/Take-Profit)."
+            fehlt = [n for n, v in (("invalidierung", invalidierung), ("staerkstes_gegenargument", staerkstes_gegenargument)) if len(str(v).strip()) < 10]
+            if fehlt or risiko_usd is None or not isinstance(risiko_usd, (int, float)) or risiko_usd <= 0:
+                return ("Pflichtfelder beim Kaufen: invalidierung (konkretes, beobachtbares Signal), staerkstes_gegenargument (ein Satz) und "
+                        "risiko_usd (Verlust bis Stop bzw. bei Wetten bis 0, > 0). Fehlt/ungültig: " + ", ".join(fehlt + (["risiko_usd"] if not (isinstance(risiko_usd, (int, float)) and risiko_usd > 0) else [])))
+            if float(zuversicht) < 0.4:
+                return "Zuversicht unter 0,4 heißt laut Skala: kein Vorteil → nicht kaufen."
         inst = self.aufloesen(instrument_id)
         if not inst:
             return f"Unbekanntes Instrument {instrument_id}."
+        if aktion == "kaufen" and inst["art"] == "pm" and (wahrscheinlichkeit_ja is None or not 0 <= float(wahrscheinlichkeit_ja) <= 1):
+            return "Bei Wettmärkten ist wahrscheinlichkeit_ja (deine P(JA), 0..1) beim Kaufen Pflicht."
+        if aktion == "kaufen":
+            sperre = policy.gesperrt(self.fid, inst, seite)
+            if sperre:
+                return f"Policy-Sperre: Kategorie {sperre} ist nach deiner eigenen Bilanz für neue Käufe gesperrt (nur das Wochen-Review kann lockern)."
         did = "d" + uuid.uuid4().hex[:8]
         # 1) Entscheidung mit Zeitstempel VOR dem Ergebnis festhalten
         entscheidung = {"typ": "order", "id": did, "ts": time.time(), "fonds_id": self.fid, "instrument": instrument_id,
                         "aktion": aktion, "seite": seite, "betrag_usd": betrag_usd, "menge": menge, "hebel": hebel,
                         "stop_loss": stop_loss, "take_profit": take_profit, "begruendung": begruendung,
                         "zuversicht": zuversicht, "ausstiegsplan": ausstiegsplan, "wahrscheinlichkeit_ja": wahrscheinlichkeit_ja,
-                        "grund_der_runde": self.grund}
+                        "invalidierung": invalidierung, "staerkstes_gegenargument": staerkstes_gegenargument, "risiko_usd": risiko_usd,
+                        "thema": themen.thema(inst), "grund_der_runde": self.grund}
         store.anhaengen(f"funds/{self.fid}/decisions.jsonl", entscheidung)
         self.orders += 1
         book, idx = self.mz.buch(inst)
@@ -209,11 +256,16 @@ class Kontext:
             r = engine.eroeffne(self.pf, self.prof, inst, book, seite=seite, qty=menge, usd=betrag_usd, hebel=float(hebel), equity=eq,
                                 stop_loss=stop_loss, take_profit=take_profit, ausstiegsplan=ausstiegsplan, entscheidung_id=did,
                                 ts=time.time(), index_preis=idx)
+            if r.get("ok") and invalidierung:
+                pos = next((p for p in self.pf["positionen"] if p["id"] == r["position_id"]), None)
+                if pos is not None:
+                    pos["invalidierung"] = invalidierung[:300]
             if r.get("ok") and wahrscheinlichkeit_ja is not None and inst["art"] == "pm":
                 m = self.snap["pm_index"].get(inst["id"].rsplit(":", 1)[0])
                 store.anhaengen(f"funds/{self.fid}/prognosen.jsonl", {
                     "ts": time.time(), "markt_id": inst["id"].rsplit(":", 1)[0], "p_ja": float(wahrscheinlichkeit_ja),
-                    "markt_ja_mitte": ((m["ja_bid"] + m["ja_ask"]) / 2) if m else None, "begruendung": "mit Order " + did})
+                    "markt_ja_mitte": ((m["ja_bid"] + m["ja_ask"]) / 2) if m else None, "schliesst": inst.get("schliesst"),
+                    "begruendung": "mit Order " + did})
         else:
             pos = next((p for p in self.pf["positionen"] if p["inst"]["id"] == inst["id"]), None)
             if not pos:
@@ -253,18 +305,32 @@ class Kontext:
              "schema": s({}, []), "fn": self.t_makro},
             {"name": "prognose", "beschreibung": "Zeitreihen-Prognose mit Unsicherheitsband für ein Krypto-/Aktien-Instrument (TimesFM/Kronos wenn verfügbar, sonst statistisches Verfahren). Nur ein Hinweis, kein Orakel.",
              "schema": s({"instrument_id": str_, "horizont_stunden": num_}, ["instrument_id"]), "fn": self.t_prognose},
-            {"name": "wahrscheinlichkeit", "beschreibung": "Halte deine Wahrscheinlichkeit für JA eines Wettmarkts fest (auch ohne Handel). Wird später per Brier-Score gegen den Ausgang bewertet.",
-             "schema": s({"markt_id": str_, "p_ja": num_, "begruendung": str_}, ["markt_id", "p_ja", "begruendung"]), "fn": self.t_wahrscheinlichkeit},
+            {"name": "wahrscheinlichkeit", "beschreibung": "Halte deine Wahrscheinlichkeit für einen Wettmarkt fest (auch ohne Handel), mit Superforecaster-Gerüst. Wird später per Brier-Score gegen den Ausgang UND gegen den damaligen Marktpreis bewertet.",
+             "schema": s({"markt_id": str_, "abrechnung": {"type": "string", "description": "Abrechnungsquelle und -datum laut Regeln"},
+                          "status_quo": {"type": "string", "description": "Ausgang, wenn sich nichts ändert"},
+                          "basisrate": {"type": "string", "description": "Wie oft tritt so etwas grundsätzlich ein? Mit Herkunft"},
+                          "ueberraschung": {"type": "string", "description": "Szenario, das dich widerlegen würde"},
+                          "p_blind": {"type": "number", "description": "Deine P(JA) OHNE den Marktpreis zu berücksichtigen, 0..1"},
+                          "p_ja": {"type": "number", "description": "Deine endgültige P(JA), 0..1"},
+                          "p_nein": {"type": "number", "description": "Getrennt überlegt: P(NEIN), 0..1 (nicht einfach 1 − p_ja rechnen)"},
+                          "gegenargument": {"type": "string", "description": "Stärkstes Argument gegen deine Schätzung"},
+                          "begruendung": str_},
+                         ["markt_id", "abrechnung", "status_quo", "basisrate", "p_blind", "p_ja", "p_nein", "gegenargument", "begruendung"]), "fn": self.t_wahrscheinlichkeit},
+            {"name": "positionsgroesse", "beschreibung": "Größenempfehlung vor einer Order: Wettmärkte per Kelly inkl. Gebühr, gemeinsam mit deinen offenen Wetten optimiert, mal Bruchteil deines Profils (halbiert, wenn du bisher schlechter als der Markt geschätzt hast); Krypto/Perps/Aktien per Volatilitätsziel (GARCH) mit Stop-Vorschlag.",
+             "schema": s({"instrument_id": str_, "p_ja": {"type": "number", "description": "Wettmärkte: deine P(JA); sonst deine letzte festgehaltene Schätzung"}}, ["instrument_id"]), "fn": self.t_positionsgroesse},
             {"name": "notizbuch_schreiben", "beschreibung": "Schreibe in dein Notizbuch (bleibt dir für künftige Runden erhalten): typ = these | lektion | beobachtung | regel.",
              "schema": s({"typ": {"type": "string", "enum": ["these", "lektion", "beobachtung", "regel"]}, "text": str_}, ["typ", "text"]), "fn": self.t_notizbuch_schreiben},
             {"name": "order", "beschreibung": "Order gegen das echte Orderbuch (Papierhandel). kaufen = Position eröffnen/aufstocken (bei Perps seite long|short, hebel), verkaufen = bestehende Position (ganz oder teilweise per menge) schließen. Gebühren, Spread, Tiefe und Slippage werden real abgezogen. Wettmärkte: kaufe JA- oder NEIN-Anteile (…:JA / …:NEIN).",
              "schema": s({"instrument_id": str_, "aktion": {"type": "string", "enum": ["kaufen", "verkaufen"]},
                           "begruendung": {"type": "string", "description": "These, stärkstes Gegenargument, Kostenrechnung"},
-                          "zuversicht": {"type": "number", "description": "0..1"},
+                          "zuversicht": {"type": "number", "description": "0..1 – Skala: 0,9+ unverkennbar, 0,7–0,89 solide, 0,4–0,69 gemischt, < 0,4 kein Vorteil (dann nicht kaufen)"},
                           "betrag_usd": {"type": "number", "description": "Einsatz in USD (bei Perps: Nominal)"}, "menge": num_,
                           "seite": {"type": "string", "enum": ["long", "short"]}, "hebel": num_,
                           "stop_loss": {"type": "number", "description": "Preis des Instruments"}, "take_profit": num_,
-                          "ausstiegsplan": str_, "wahrscheinlichkeit_ja": {"type": "number", "description": "Nur Wettmärkte: deine P(JA)"}},
+                          "ausstiegsplan": str_, "wahrscheinlichkeit_ja": {"type": "number", "description": "Wettmärkte (beim Kaufen Pflicht): deine P(JA)"},
+                          "invalidierung": {"type": "string", "description": "Kaufen: konkretes, beobachtbares Signal, bei dem die These falsch ist"},
+                          "staerkstes_gegenargument": {"type": "string", "description": "Kaufen: ein Satz"},
+                          "risiko_usd": {"type": "number", "description": "Kaufen: Verlust bis Stop-Loss bzw. bei Wetten bis 0"}},
                          ["instrument_id", "aktion", "begruendung", "zuversicht"]), "fn": self.t_order},
         ]
 

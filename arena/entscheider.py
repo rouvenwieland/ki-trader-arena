@@ -107,6 +107,7 @@ def lauf(grund: str = "ereignis", jetzt: float | None = None) -> dict:
                 ergebnisse[fid] = r["status"]
                 return
             ev = relevante(alle_ev, fid)
+            warum = ""
             if not fest and not ev:
                 return
             if not fest and d["typ"] == "liga":
@@ -125,6 +126,7 @@ def lauf(grund: str = "ereignis", jetzt: float | None = None) -> dict:
                 if not wecken:
                     ergebnisse[fid] = f"Vorsichter: nicht wecken ({warum})"
                     return
+            plan = warum.split(" | PLAN: ", 1)[1].split(" ; ") if " | PLAN: " in warum else None  # Rechercheplan des Vorsichters
             rb = None
             if r["art"] == "anthropic":
                 rb = bud.runden_budget_usd(fid, r["modell"], art, stunde)
@@ -132,7 +134,7 @@ def lauf(grund: str = "ereignis", jetzt: float | None = None) -> dict:
                     status_schreiben(fid, "Tagesanteil aufgebraucht – nächste Runde morgen", jetzt)
                     ergebnisse[fid] = f"übersprungen (Rundenbudget {rb:.3f} USD)"
                     return
-            res = loop.laufe_runde(d, r, pf, snap, mz, anlass, ev, bud, 3, jetzt, runden_budget_usd=rb)
+            res = loop.laufe_runde(d, r, pf, snap, mz, anlass, ev, bud, 3, jetzt, runden_budget_usd=rb, plan=plan)
             ergebnisse[fid] = f"Runde ({r['modell']}): {res['orders']} Orders, {res['schritte']} Schritte, {res['kosten_usd']} USD {res['abbruch']}"
             extra = {"modell_aktuell": res["modell"], "letzte_runde": jetzt, "letzte_runde_abbruch": res["abbruch"]}
             if d["typ"] == "liga" and res["modell"] != d["modell"]:

@@ -60,10 +60,13 @@ def _tool_schema_openai(tools: list[dict]) -> list[dict]:
 
 
 class AnthropicSitzung:
-    def __init__(self, modell: str, system: str, tools: list[dict], websuche: int = 0, effort: str | None = "medium",
+    def __init__(self, modell: str, system: str | list[str], tools: list[dict], websuche: int = 0, effort: str | None = "medium",
                  max_tokens: int = 6000, key: str | None = None, timeout: float = 300):
         import anthropic
         self.client = anthropic.Anthropic(api_key=key or os.environ["ARENA_ANTHROPIC_KEY"], max_retries=4, timeout=timeout)
+        if isinstance(system, list):  # [gemeinsamer Teil, Fondsteil]: Breakpoint nach dem gemeinsamen Teil → Cache über Fonds geteilt
+            system = [{"type": "text", "text": t, **({"cache_control": {"type": "ephemeral"}} if i == 0 and len(system) > 1 else {})}
+                      for i, t in enumerate(system) if t]
         self.modell, self.system, self.max_tokens, self.effort = modell, system, max_tokens, effort
         self.tools = _tool_schema_anthropic(tools)
         if websuche:

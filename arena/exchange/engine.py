@@ -7,7 +7,7 @@ from __future__ import annotations
 import math
 import time
 
-from arena import config
+from arena import config, policy
 from arena.exchange import fees, portfolio, risk
 from arena.exchange.book import Book, max_qty_fuer_budget, walk
 
@@ -175,7 +175,8 @@ def _abwickeln(pf: dict, pos: dict, q: float, preis: float, grund: str, ts: floa
     return {"ok": True, "ts": ts, "aktion": "geschlossen" if not offen else "teilweise_geschlossen",
             "fonds_id": pf["fonds_id"], "position_id": pos["id"], "inst_id": inst["id"], "seite": pos["seite"],
             "menge": q, "preis": preis, "einstand": pos["einstand"], "gebuehr": fee + abschluss,
-            "brutto_pnl": pnl, "netto_pnl": netto, "grund": grund, "tiefe_stufen": stufen}
+            "brutto_pnl": pnl, "netto_pnl": netto, "grund": grund, "tiefe_stufen": stufen,
+            "kategorie": policy.kategorie_inst(inst, pos["seite"]), "eroeffnet": pos.get("eroeffnet")}
 
 
 def funding_buchen(pf: dict, raten_8h: dict[str, float], stunden: float, ts: float | None = None) -> list[dict]:
@@ -230,7 +231,8 @@ def pruefe_liquidation(pf: dict, extreme: dict[str, tuple[float, float]], marks:
                         "position_id": pos["id"], "inst_id": pos["inst"]["id"], "seite": pos["seite"],
                         "menge": pos["menge"], "preis": schlimmster, "einstand": pos["einstand"],
                         "rest_zurueck": rest, "netto_pnl": rest - verlust_marge, "gebuehr": liqfee,
-                        "grund": "Liquidation (Marge unter Wartungsmarge)"})
+                        "grund": "Liquidation (Marge unter Wartungsmarge)", "kategorie": policy.kategorie_inst(pos["inst"], pos["seite"]),
+                        "eroeffnet": pos.get("eroeffnet")})
     return out
 
 
