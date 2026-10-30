@@ -72,7 +72,22 @@ DEINE LETZTEN ENTSCHEIDUNGEN:
 DEINE LETZTEN TAGEBUCHEINTRÄGE:
 {tb}
 
+{AUFTRAG.get(grund, "")}
 Beginne mit dem Werkzeug „portfolio“. Arbeite nach Weitblick. Handle nur, wenn es sich nach Kosten lohnt."""
+
+
+AUFTRAG = {
+    "feste Runde": """AUFTRAG DIESER FESTEN RUNDE: Suche aktiv NEUE Gelegenheiten in deinem Schwerpunkt – prüfe mindestens fünf Kandidaten, die du
+noch nicht hältst (eigene Suchbegriffe über markt_suche/nachrichten, nicht nur die Startliste), recherchiere mindestens vier Mal
+(Websuche/Nachrichten/Daten) und halte zu jedem geprüften Wettmarkt deine Wahrscheinlichkeit fest. Prüfe danach jede offene Position
+gegen ihre These. Ob du handelst, entscheidest du allein nach Erwartungswert.
+""",
+    "tägliche Tiefenrunde": """AUFTRAG DER TÄGLICHEN TIEFENRUNDE (stärkeres Modell, größeres Budget): 1) Prüfe jede offene Position gründlich, suche gezielt
+die Gegenthese. 2) Entwickle eine Wochenthese für deinen Schwerpunkt (was preist der Markt falsch ein, und warum gerade jetzt?).
+3) Prüfe mindestens acht Kandidaten mit eigener Recherche und halte Wahrscheinlichkeiten fest. 4) Räume dein Notizbuch auf:
+Lektionen und Regeln aus den letzten Runden als neue Einträge zusammenfassen.
+""",
+}
 
 
 TRIAGE = """Du bist der Vorsichter einer Handelsagentur. Entscheide knapp, ob für diesen Fonds jetzt eine teure Entscheidungsrunde nötig ist.

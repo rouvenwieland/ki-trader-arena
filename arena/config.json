@@ -9,14 +9,7 @@
       "claude_aggressiv": 3.5
     },
     "reserve_tag_eur": 0.8,
-    "takt_stunden_utc": [
-      1,
-      5,
-      9,
-      13,
-      17,
-      21
-    ],
+    "takt_stunden_utc": [0, 3, 6, 9, 13, 15, 18, 21],
     "tiefenrunde_stunde_utc": 13,
     "tiefenrunde_modell": "claude-opus-5-5",
     "runden_modell": "claude-sonnet-5-5",
@@ -340,8 +333,5 @@
       "url": "https://openrouter.ai/api/v1/chat/completions"
     }
   },
-  "liga_takt_stunden_utc": [
-    5,
-    21
-  ]
+  "liga_takt_stunden_utc": [6, 21]
 }

@@ -75,7 +75,7 @@ still verschwinden können), alle Zeitpläne im Code (`arena/takt.py`), unbegren
 Die alten Workflows bleiben für Handstarts/Rückfall und tun nichts, solange ein Dauerlauf aktiv ist.
 
 ### Budget ausreizen (Ziel ≈ 10 €/Tag, Deckel 12 € bleibt)
-Eine Tagesrunde kostete nur ≈ 0,73 €. Gewählt: **feste Runden alle 4 h** (1, 5, 9, 17, 21 UTC, Sonnet 5.5, ohne Vorsichter) und
+Eine Tagesrunde kostete nur ≈ 0,73 €. Gewählt: **feste Runden alle ~3 h** (0, 3, 6, 9, 15, 18, 21 UTC, Sonnet 5.5, ohne Vorsichter; erster Live-Lauf mit 4-h-Takt hätte nur ≈ 4–5 €/Tag verbraucht, weil die Agenten nach 6–7 Schritten von selbst aufhörten → engerer Takt plus Rundenauftrag: je feste Runde mindestens fünf neue Kandidaten im Schwerpunkt und vier Recherchen, Handeln bleibt freiwillig) und
 **13 UTC Tiefenrunde mit Opus 5.5** für *jeden* Claude-Fonds (statt eines gemeinsamen „Chefanalysten“ – ein gemeinsamer Analyst
 würde allen drei Fonds dieselbe Sicht geben und das Klumpenrisiko verschärfen). Dazu Ereignisrunden mit Haiku-Vorsichter.
 Tiefer: 20 Schritte/8 Websuchen (Sonnet), 26 Schritte/12 Websuchen/12k Ausgabe (Opus), Effort „high“ (bei Opus 5.5 explizit, da Standard „medium“).
@@ -105,7 +105,7 @@ kleineren Fonds in denselben Wetten (Spot und Perp desselben Coins long = gleich
 * OpenRouter: einmal gewählte `:free`-Modelle bleiben stabil (ein Fonds = ein Modell), tägliche Prüfung, ob sie noch gratis sind; vor der
   Auswahl ein **Probeaufruf** – live gefunden: manche gelisteten Gratis-Modelle sind gesperrt („only available on agentic harnesses“).
   Liga-Pfad live gegen ein OpenRouter-Gratismodell geprüft (5 Schritte, 1 Order, Tagebuch).
-* Liga-Fonds laufen in festen Runden nur um 5 und 21 UTC (+ Tiefenrunde, + Ereignisse mit Groq-Vorsichter), damit DeepSeek/Kimi auf
+* Liga-Fonds laufen in festen Runden nur um 6 und 21 UTC (+ Tiefenrunde, + Ereignisse mit Groq-Vorsichter), damit DeepSeek/Kimi auf
   Rouvens eigenem Guthaben nicht 6× täglich Geld kosten.
 
 ### Daten

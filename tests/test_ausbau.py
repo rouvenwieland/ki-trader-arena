@@ -215,3 +215,11 @@ def test_status_json_hat_kosten_und_ueberlappung():
     st = json.loads((site.DOCS / "status.json").read_text())
     r = st["rangliste"][0]
     assert r["kosten_gesamt_eur"] > 0 and "ueberlappung_claude_pct" in st and st["budget"]["ziel_tag_eur"] > 8
+
+
+def test_rundenauftrag_im_prompt():
+    from arena.agent import prompts
+    d = funds.claude_fonds()[0]
+    assert "NEUE Gelegenheiten" in prompts.runde_prompt(d, "feste Runde", [], "", T)
+    assert "Wochenthese" in prompts.runde_prompt(d, "tägliche Tiefenrunde", [], "", T)
+    assert "AUFTRAG" not in prompts.runde_prompt(d, "Ereignis", [], "", T)
