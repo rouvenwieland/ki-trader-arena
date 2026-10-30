@@ -166,8 +166,12 @@ class Kontext:
         basis = instrument_id if inst["art"] != "perp" else "spot:" + inst["symbol"].split("_")[0] + "-USD"
         return _kurz(risikoschicht.vol_ziel(self.defn, inst, eq, forecast.historie(basis, self.snap)) | {"limits": self.prof})
 
-    def t_notizbuch_schreiben(self, typ: str, text: str, **_) -> str:
-        notizbuch.schreibe(self.fid, typ, text, ts=self.jetzt)
+    def t_notizbuch_schreiben(self, typ: str, text: str, wichtigkeit: float | None = None, gueltig_tage: float | None = None, **_) -> str:
+        try:
+            notizbuch.schreibe(self.fid, typ, text, ts=self.jetzt, wichtigkeit=None if wichtigkeit is None else float(wichtigkeit),
+                               gueltig_tage=None if not gueltig_tage else float(gueltig_tage))
+        except (TypeError, ValueError):
+            return "wichtigkeit (1–10) und gueltig_tage müssen Zahlen sein."
         return "Notiz gespeichert."
 
     def t_wahrscheinlichkeit(self, markt_id: str = "", p_ja: float | None = None, p_nein: float | None = None, p_blind: float | None = None,
@@ -319,7 +323,10 @@ class Kontext:
             {"name": "positionsgroesse", "beschreibung": "Größenempfehlung vor einer Order: Wettmärkte per Kelly inkl. Gebühr, gemeinsam mit deinen offenen Wetten optimiert, mal Bruchteil deines Profils (halbiert, wenn du bisher schlechter als der Markt geschätzt hast); Krypto/Perps/Aktien per Volatilitätsziel (GARCH) mit Stop-Vorschlag.",
              "schema": s({"instrument_id": str_, "p_ja": {"type": "number", "description": "Wettmärkte: deine P(JA); sonst deine letzte festgehaltene Schätzung"}}, ["instrument_id"]), "fn": self.t_positionsgroesse},
             {"name": "notizbuch_schreiben", "beschreibung": "Schreibe in dein Notizbuch (bleibt dir für künftige Runden erhalten): typ = these | lektion | beobachtung | regel.",
-             "schema": s({"typ": {"type": "string", "enum": ["these", "lektion", "beobachtung", "regel"]}, "text": str_}, ["typ", "text"]), "fn": self.t_notizbuch_schreiben},
+             "schema": s({"typ": {"type": "string", "enum": ["these", "lektion", "beobachtung", "regel"]}, "text": str_,
+                          "wichtigkeit": {"type": "number", "description": "1–10 (Standard: Beobachtung 3, These 5, Lektion 7, Regel 8); bestimmt, wie lange die Notiz vorgelegt wird"},
+                          "gueltig_tage": {"type": "number", "description": "optional: nach so vielen Tagen nicht mehr vorlegen (z. B. These bis zur Abrechnung)"}},
+                         ["typ", "text"]), "fn": self.t_notizbuch_schreiben},
             {"name": "order", "beschreibung": "Order gegen das echte Orderbuch (Papierhandel). kaufen = Position eröffnen/aufstocken (bei Perps seite long|short, hebel), verkaufen = bestehende Position (ganz oder teilweise per menge) schließen. Gebühren, Spread, Tiefe und Slippage werden real abgezogen. Wettmärkte: kaufe JA- oder NEIN-Anteile (…:JA / …:NEIN).",
              "schema": s({"instrument_id": str_, "aktion": {"type": "string", "enum": ["kaufen", "verkaufen"]},
                           "begruendung": {"type": "string", "description": "These, stärkstes Gegenargument, Kostenrechnung"},

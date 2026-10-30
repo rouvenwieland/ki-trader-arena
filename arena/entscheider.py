@@ -91,6 +91,11 @@ def lauf(grund: str = "ereignis", jetzt: float | None = None) -> dict:
     if not kandidaten:
         print("Keine Fonds mit Portfolio.")
         return {"gelaufen": 0}
+    try:  # Lernschleife: Reflexion zu frisch abgeschlossenen Positionen + Policy-Gate, bevor die Fonds entscheiden
+        from arena import reflexion
+        print("Reflexionen:", reflexion.lauf(bud, jetzt))
+    except Exception as e:
+        print("WARNUNG Reflexion:", e)
     snap = snapshot.baue(jetzt)
     mz = Marktzugriff()
     ergebnisse = {}

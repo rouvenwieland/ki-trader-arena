@@ -96,8 +96,8 @@ EREIGNISSE seit deiner letzten Runde:
 MARKTLAGE (Schnappschuss):
 {schnappschuss_text}
 
-DEIN NOTIZBUCH:
-{notizbuch.als_text(defn['id'])}
+DEIN NOTIZBUCH (ausgewählt nach Wichtigkeit, Alter und Bezug zur aktuellen Lage):
+{notizbuch.als_text(defn['id'], kontext_text=_kontext(defn['id'], ev))}
 
 DEINE LETZTEN ENTSCHEIDUNGEN:
 {hist}
@@ -107,6 +107,12 @@ DEINE LETZTEN TAGEBUCHEINTRÄGE:
 {rueckmeldung(defn['id'])}{_plan(plan)}
 {AUFTRAG.get(grund, "")}
 Beginne mit dem Werkzeug „portfolio“. Arbeite nach Weitblick. Handle nur, wenn es sich nach Kosten lohnt."""
+
+
+def _kontext(fid: str, ev_text: str) -> str:
+    """Stichworte der aktuellen Lage (Ereignisse + eigene Positionen) für die Auswahl der Notizbuch-Einträge."""
+    pos = (store.lies(f"funds/{fid}/portfolio.json") or {}).get("positionen", [])
+    return ev_text + " " + " ".join(p["inst"].get("frage") or p["inst"]["id"] for p in pos)
 
 
 def _plan(plan: list[str] | None) -> str:

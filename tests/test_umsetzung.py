@@ -327,3 +327,31 @@ def test_kontrollen_markt_kopierer_und_immer_nein():
     pf2 = portfolio.neu("ko_nein", 10000)
     log = schwarm.schritt_kontrolle(ko_nein, pf2, BuchMZ(), JETZT, {m["mid"]: m})
     assert log[0]["ok"] and log[0]["inst_id"].endswith(":NEIN")
+
+
+# ---------------------------------------------------------------- Reflexion und geschichtetes Notizbuch
+def test_notizbuch_waehlt_nach_wichtigkeit_und_zerfall():
+    from arena import notizbuch
+    alt = JETZT - 30 * 86400
+    notizbuch.schreibe("claude_mittel", "beobachtung", "Alte Beobachtung zu Tennis", ts=alt)
+    notizbuch.schreibe("claude_mittel", "lektion", "Lektion: Abrechnungsregeln wörtlich lesen", ts=alt)
+    notizbuch.schreibe("claude_mittel", "these", "Abgelaufene These", ts=JETZT - 3600, gueltig_tage=0.01)
+    for i in range(5):
+        notizbuch.schreibe("claude_mittel", "beobachtung", f"Frische Beobachtung {i}", ts=JETZT - 60)
+    gew = [e["text"] for e in notizbuch.auswahl("claude_mittel", 3, jetzt=JETZT)]
+    assert "Lektion: Abrechnungsregeln wörtlich lesen" in gew and "Abgelaufene These" not in gew and "Alte Beobachtung zu Tennis" not in gew
+    mit_bezug = [e["text"] for e in notizbuch.auswahl("claude_mittel", 2, kontext_text="Tennis Beobachtung Basel", jetzt=JETZT)]
+    assert "Alte Beobachtung zu Tennis" in mit_bezug
+
+
+def test_reflexion_schreibt_lektion_und_aktualisiert_policy(monkeypatch):
+    from arena import notizbuch, reflexion, store
+    reflexion.lauf(None, JETZT)  # erster Lauf: Stand merken
+    for i in range(5):
+        store.anhaengen("funds/claude_mittel/ledger.jsonl", {"aktion": "geschlossen", "ts": JETZT + i, "position_id": f"p{i}", "inst_id": "pm:kalshi:X:JA",
+                                                            "netto_pnl": -5.0, "kategorie": "wette:sport:JA", "grund": "Abrechnung", "eroeffnet": JETZT - 3600})
+    assert reflexion.lauf(None, JETZT + 10) == 5
+    lekt = [e for e in notizbuch.lies("claude_mittel") if e.get("quelle") == "reflexion"]
+    assert len(lekt) == 5 and lekt[0]["wichtigkeit"] == 7 and "Verlust" in lekt[0]["text"]
+    assert store.lies("funds/claude_mittel/policy.json")["gesperrt"]["wette:sport:JA"]
+    assert reflexion.lauf(None, JETZT + 20) == 0
