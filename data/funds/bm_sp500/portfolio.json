@@ -2,12 +2,33 @@
  "fonds_id": "bm_sp500",
  "waehrung": "USD",
  "start_kapital": 11184.88579861696,
- "cash": 11184.88579861696,
- "positionen": [],
+ "cash": 55.9244289935159,
+ "positionen": [
+  {
+   "id": "pa3e4cddc",
+   "inst": {
+    "id": "stock:SPY",
+    "art": "stock",
+    "venue": "yahoo",
+    "symbol": "SPY"
+   },
+   "seite": "long",
+   "menge": 14.636782792688471,
+   "einstand": 760.3420456019,
+   "hebel": 1.0,
+   "marge": 0.0,
+   "eroeffnet": 1793367470.9044812,
+   "gebuehren": 0.0,
+   "funding": 0.0,
+   "kurs": 760.19,
+   "wert": 11125.62
+  }
+ ],
  "realisiert": 0.0,
  "gebuehren": 0.0,
  "funding": 0.0,
  "erstellt": 1793319819.7411644,
  "start_fx": 1.1184885798616961,
- "letzter_tick": 1793366570.9403007
+ "letzter_tick": 1793367470.9044812,
+ "gestartet": 1793367470.9044812
 }

@@ -2,12 +2,52 @@
  "fonds_id": "bm_6040",
  "waehrung": "USD",
  "start_kapital": 11184.88579861696,
- "cash": 11184.88579861696,
- "positionen": [],
+ "cash": 55.92442899337948,
+ "positionen": [
+  {
+   "id": "p4361f482",
+   "inst": {
+    "id": "stock:SPY",
+    "art": "stock",
+    "venue": "yahoo",
+    "symbol": "SPY"
+   },
+   "seite": "long",
+   "menge": 8.782069675613084,
+   "einstand": 760.3420456019,
+   "hebel": 1.0,
+   "marge": 0.0,
+   "eroeffnet": 1793367470.9044812,
+   "gebuehren": 0.0,
+   "funding": 0.0,
+   "kurs": 760.19,
+   "wert": 6675.37
+  },
+  {
+   "id": "p5693b59d",
+   "inst": {
+    "id": "stock:AGG",
+    "art": "stock",
+    "venue": "yahoo",
+    "symbol": "AGG"
+   },
+   "seite": "long",
+   "menge": 46.176213772575366,
+   "einstand": 96.40427796384999,
+   "hebel": 1.0,
+   "marge": 0.0,
+   "eroeffnet": 1793367470.9044812,
+   "gebuehren": 0.0,
+   "funding": 0.0,
+   "kurs": 96.385,
+   "wert": 4450.25
+  }
+ ],
  "realisiert": 0.0,
  "gebuehren": 0.0,
  "funding": 0.0,
  "erstellt": 1793319819.7411644,
  "start_fx": 1.1184885798616961,
- "letzter_tick": 1793366570.9403007
+ "letzter_tick": 1793367470.9044812,
+ "gestartet": 1793367470.9044812
 }
