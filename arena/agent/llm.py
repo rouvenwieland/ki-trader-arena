@@ -18,6 +18,30 @@ class LLMFehler(Exception):
     pass
 
 
+class KeinGuthaben(LLMFehler):
+    """Anbieter meldet leeres Konto/Kontingent – Wiederholen ist zwecklos; der Fonds pausiert."""
+
+
+# Bewusst eng: Geminis Minuten-Ratenlimit sagt auch „quota … billing“, ist aber nur vorübergehend.
+_GUTHABEN_MUSTER = ("insufficient_quota", "no credits", "insufficient balance", "insufficient_balance", "credit balance",
+                    "exceeded_current_quota", "account is suspended", "account_suspended")
+
+
+def ist_kein_guthaben(status: int, text: str) -> bool:
+    t = text.lower()
+    return status == 402 or (status in (400, 403, 429) and any(m in t for m in _GUTHABEN_MUSTER))
+
+
+def _warte(versuch: int, retry_after: str | None, basis: float = 5.0, maximal: float = 60.0) -> float:
+    """Exponentielles Warten (5, 10, 20, 40 s …), Retry-After des Servers wird beachtet (gedeckelt)."""
+    try:
+        if retry_after:
+            return min(float(retry_after), maximal)
+    except ValueError:
+        pass
+    return min(basis * 2 ** versuch, maximal)
+
+
 @dataclass
 class Antwort:
     text: str = ""
@@ -37,9 +61,9 @@ def _tool_schema_openai(tools: list[dict]) -> list[dict]:
 
 class AnthropicSitzung:
     def __init__(self, modell: str, system: str, tools: list[dict], websuche: int = 0, effort: str | None = "medium",
-                 max_tokens: int = 6000, key: str | None = None):
+                 max_tokens: int = 6000, key: str | None = None, timeout: float = 300):
         import anthropic
-        self.client = anthropic.Anthropic(api_key=key or os.environ["ARENA_ANTHROPIC_KEY"], max_retries=2, timeout=240)
+        self.client = anthropic.Anthropic(api_key=key or os.environ["ARENA_ANTHROPIC_KEY"], max_retries=4, timeout=timeout)
         self.modell, self.system, self.max_tokens, self.effort = modell, system, max_tokens, effort
         self.tools = _tool_schema_anthropic(tools)
         if websuche:
@@ -53,6 +77,14 @@ class AnthropicSitzung:
         self.nachrichten.append({"role": "user", "content": [
             {"type": "tool_result", "tool_use_id": i, "content": t, **({"is_error": True} if err else {})}
             for i, t, err in ergebnisse]})
+
+    def hinweis(self, text: str) -> None:
+        """Hinweis der Arena an die laufende Runde: an die letzte Nutzer-Nachricht anhängen (Verlauf bleibt append-only)."""
+        letzte = self.nachrichten[-1] if self.nachrichten else None
+        if letzte and letzte["role"] == "user" and isinstance(letzte["content"], list):
+            letzte["content"].append({"type": "text", "text": text})
+        else:
+            self.nachrichten.append({"role": "user", "content": text})
 
     def schritt(self) -> Antwort:
         kw = dict(model=self.modell, max_tokens=self.max_tokens, system=self.system, messages=self.nachrichten,
@@ -83,8 +115,13 @@ class AnthropicSitzung:
 
 
 class OpenAISitzung:
-    def __init__(self, url: str, key: str, modell: str, system: str, tools: list[dict], max_tokens: int = 4000):
+    VERSUCHE = 5
+    SCHLAF = staticmethod(time.sleep)  # in Tests ersetzbar
+
+    def __init__(self, url: str, key: str, modell: str, system: str, tools: list[dict], max_tokens: int = 4000,
+                 alternativen: list[str] | None = None):
         self.url, self.key, self.modell, self.max_tokens = url, key, modell, max_tokens
+        self.alternativen = [a for a in (alternativen or []) if a != modell]  # Ausweichmodelle bei Dauer-503/404
         self.tools = _tool_schema_openai(tools)
         self.nachrichten: list[dict] = [{"role": "system", "content": system}]
 
@@ -95,33 +132,51 @@ class OpenAISitzung:
         for i, t, _ in ergebnisse:
             self.nachrichten.append({"role": "tool", "tool_call_id": i, "content": t})
 
+    def hinweis(self, text: str) -> None:
+        self.nachrichten.append({"role": "user", "content": text})
+
     def schritt(self) -> Antwort:
         body = {"model": self.modell, "messages": self.nachrichten, "max_tokens": self.max_tokens}
         if self.tools:
             body["tools"] = self.tools
         d, letzter = None, ""
         aufgeloest = False
-        for versuch in range(3):
+        fehl_5xx = 0
+        versuch = 0
+        while versuch < self.VERSUCHE:
             body["model"] = self.modell
             try:
                 r = requests.post(self.url, headers={"Authorization": f"Bearer {self.key}"}, json=body, timeout=150)
             except requests.RequestException as e:
-                time.sleep(3 * (versuch + 1))
                 letzter = f"Netzwerk: {type(e).__name__}"
+                self.SCHLAF(_warte(versuch, None, 3))
+                versuch += 1
                 continue
-            if r.status_code in (429, 500, 502, 503, 504):
-                time.sleep(6 * (versuch + 1))
+            if ist_kein_guthaben(r.status_code, r.text):
+                raise KeinGuthaben(f"{self.modell}: HTTP {r.status_code} kein Guthaben/Kontingent ({r.text[:120]})")
+            if r.status_code in (429, 500, 502, 503, 504, 529):
                 letzter = f"HTTP {r.status_code} {r.text[:160]}"
+                fehl_5xx += r.status_code != 429
+                if fehl_5xx >= 2 and self.alternativen:  # Modell überlastet → auf Ausweichmodell desselben Anbieters
+                    self.modell = self.alternativen.pop(0)
+                    fehl_5xx = 0
+                self.SCHLAF(_warte(versuch, r.headers.get("retry-after")))
+                versuch += 1
                 continue
             if r.status_code == 404 and not aufgeloest and "model" in r.text.lower():
-                aufgeloest = True  # Modellname veraltet → aus der Modellliste des Anbieters den nächstpassenden wählen
-                neu = self._modell_suchen()
+                aufgeloest = True  # Modellname veraltet → Ausweichliste, sonst Modellliste des Anbieters
+                neu = self.alternativen.pop(0) if self.alternativen else self._modell_suchen()
                 if neu and neu != self.modell:
                     self.modell = neu
                     continue
             if r.status_code >= 400:
                 raise LLMFehler(f"{self.modell}: HTTP {r.status_code} {r.text[:200]}")
-            d = r.json()
+            try:
+                d = r.json()
+            except ValueError:
+                letzter = "keine JSON-Antwort"
+                versuch += 1
+                continue
             break
         if not d or "choices" not in d:
             raise LLMFehler(f"{self.modell}: keine Antwort ({letzter or d})")
@@ -165,9 +220,25 @@ def _modell_suchen_impl(self) -> str | None:
 OpenAISitzung._modell_suchen = _modell_suchen_impl
 
 
-def openai_sitzung(anbieter: str, modell: str, system: str, tools: list[dict], key: str) -> OpenAISitzung:
+def openai_sitzung(anbieter: str, modell: str, system: str, tools: list[dict], key: str,
+                   alternativen: list[str] | None = None) -> OpenAISitzung:
     url = config.load()["anbieter"][anbieter]["url"]
-    return OpenAISitzung(url, key, modell, system, tools)
+    return OpenAISitzung(url, key, modell, system, tools, alternativen=alternativen)
+
+
+def modell_probe(anbieter: str, modell: str, key: str) -> bool:
+    """Kurzer Probeaufruf mit Werkzeug: Manche Gratis-Modelle sind gelistet, aber gesperrt (403 „only available on …“)."""
+    tool = [{"name": "ping", "beschreibung": "Antwortet mit pong.", "schema": {"type": "object", "properties": {}, "required": []}}]
+    s = openai_sitzung(anbieter, modell, "Antworte knapp.", tool, key)
+    s.VERSUCHE = 2
+    s.SCHLAF = lambda x: time.sleep(min(x, 3))
+    s.max_tokens = 50
+    s.nutzer("Sag ok.")
+    try:
+        s.schritt()
+        return True
+    except LLMFehler:
+        return False
 
 
 def openrouter_gratis(n: int) -> list[str]:

@@ -1,5 +1,6 @@
 name: Webseite
 on:
+  # Der Dauerlauf stößt die Seite per workflow_dispatch nach jedem Tick an; workflow_run bleibt für die Rückfall-Workflows.
   workflow_run:
     workflows: ['Wächter', 'Entscheider', 'Wochen-Review']
     types: [completed]

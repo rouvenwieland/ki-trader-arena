@@ -4,6 +4,7 @@ Alle Beträge intern in USD; Deckel in Euro (config) werden mit dem aktuellen Ku
 Sicherheitsaufschlag auf alle Kosten, damit Rundungen/Preisstufen das Budget nicht überraschen."""
 from __future__ import annotations
 
+import threading
 import time
 from datetime import datetime, timezone
 
@@ -36,6 +37,8 @@ class Budget:
         self.jetzt = jetzt or time.time()
         self.tag = datetime.fromtimestamp(self.jetzt, timezone.utc).strftime("%Y-%m-%d")
         self.z = store.lies("budget.json", {"gesamt_usd": 0.0, "tage": {}, "fonds_tage": {}})
+        self._lock = threading.RLock()  # Claude-Fonds laufen parallel in Threads
+        self._reserviert: dict[int, float] = {}  # laufende Aufrufe (Worst-Case), damit parallele Fonds den Deckel nicht reißen
 
     # ---- Grenzen
     @property
@@ -52,8 +55,37 @@ class Budget:
     def fonds_heute_usd(self, fid: str) -> float:
         return self.z["fonds_tage"].get(self.tag, {}).get(fid, 0.0)
 
-    def fonds_anteil_usd(self, n_fonds: int) -> float:
+    def tempo_faktor(self) -> float:
+        """Streckt das Restbudget bis zum Claude-Stichtag: Wenn Rest/Tage < Summe der Tagesanteile, werden alle Anteile gekürzt."""
+        b = self.cfg["budget"]
+        summe = sum(b.get("fonds_tagesanteil_eur", {}).values()) + b.get("reserve_tag_eur", 0.0)
+        if not summe:
+            return 1.0
+        ende = datetime.fromisoformat(b["claude_ende"]).replace(tzinfo=timezone.utc).timestamp()
+        tage = max(1.0, (ende - self.jetzt) / 86400)
+        rest_eur = max(0.0, (self.gesamtdeckel_usd - self.z["gesamt_usd"] + self.heute_usd()) / self.fx)
+        return max(0.0, min(1.0, rest_eur / tage / summe))
+
+    def fonds_anteil_usd(self, n_fonds: int, fid: str | None = None) -> float:
+        anteile = self.cfg["budget"].get("fonds_tagesanteil_eur", {})
+        if fid in anteile:
+            return anteile[fid] * self.fx * self.tempo_faktor()
         return self.tagesdeckel_usd / max(n_fonds, 1)
+
+    def runden_budget_usd(self, fid: str, modell: str, art: str, stunde_utc: int) -> float:
+        """Weiches Budget einer Runde: Rest des Tagesanteils, verteilt auf die noch kommenden festen Runden
+        (Tiefenrunde zählt doppelt, Ereignisrunden halb), gedeckelt je Modell. Die harten Deckel prüft darf()."""
+        b = self.cfg["budget"]
+        rest = max(0.0, self.fonds_anteil_usd(3, fid) - self.fonds_heute_usd(fid))
+        takt = b.get("takt_stunden_utc", [])
+        tief = b.get("tiefenrunde_stunde_utc")
+        kommend = sum(2.0 if h == tief else 1.0 for h in takt if h >= stunde_utc)
+        gewicht = {"tief": 2.0, "takt": 1.0}.get(art, 0.5)
+        if art in ("tief", "takt"):  # die laufende Runde ist in „kommend“ schon enthalten
+            anteil = rest * gewicht / max(kommend + 0.5, gewicht)
+        else:
+            anteil = rest * gewicht / (kommend + gewicht)
+        return min(anteil, b.get("runden_deckel_usd", {}).get(modell, anteil))
 
     def gesamt_erschoepft(self) -> bool:
         return self.z["gesamt_usd"] >= self.gesamtdeckel_usd
@@ -64,26 +96,44 @@ class Budget:
 
     def darf(self, fid: str, n_fonds: int, geschaetzt_usd: float = 0.0, global_nur: bool = False) -> tuple[bool, str]:
         """Prüft Tages-, Fonds- und Gesamtdeckel inkl. geschätzter Kosten des nächsten Aufrufs."""
-        if self.gesamt_erschoepft() or self.z["gesamt_usd"] + geschaetzt_usd > self.gesamtdeckel_usd:
-            return False, "Gesamtbudget erschöpft"
-        if self.heute_usd() + geschaetzt_usd > self.tagesdeckel_usd:
-            return False, "Tagesbudget erschöpft"
-        if not global_nur and self.fonds_heute_usd(fid) + geschaetzt_usd > self.fonds_anteil_usd(n_fonds):
-            return False, "Tagesanteil dieses Fonds erschöpft"
-        return True, ""
+        with self._lock:
+            unterwegs = sum(self._reserviert.values())
+            if self.gesamt_erschoepft() or self.z["gesamt_usd"] + unterwegs + geschaetzt_usd > self.gesamtdeckel_usd:
+                return False, "Gesamtbudget erschöpft"
+            if self.heute_usd() + unterwegs + geschaetzt_usd > self.tagesdeckel_usd:
+                return False, "Tagesbudget erschöpft"
+            if not global_nur and self.fonds_heute_usd(fid) + geschaetzt_usd > self.fonds_anteil_usd(n_fonds, fid):
+                return False, "Tagesanteil dieses Fonds erschöpft"
+            return True, ""
+
+    def reserviere(self, fid: str, n_fonds: int, geschaetzt_usd: float) -> tuple[bool, str]:
+        """Wie darf(), hält den Worst-Case aber bis zur Buchung fest (atomar über parallele Fonds-Threads)."""
+        with self._lock:
+            ok, grund = self.darf(fid, n_fonds, geschaetzt_usd)
+            if ok:
+                self._reserviert[threading.get_ident()] = geschaetzt_usd
+            return ok, grund
+
+    def freigeben(self) -> None:
+        with self._lock:
+            self._reserviert.pop(threading.get_ident(), None)
 
     # ---- Buchung
     def buche(self, fid: str, modell: str, nutzung: dict, zweck: str = "") -> float:
         usd = kosten_usd(modell, nutzung, self.cfg)
-        self.z["gesamt_usd"] += usd
-        self.z["tage"][self.tag] = self.heute_usd() + usd
-        ft = self.z["fonds_tage"].setdefault(self.tag, {})
-        ft[fid] = ft.get(fid, 0.0) + usd
-        store.schreibe("budget.json", self.z)
-        store.anhaengen("budget_log.jsonl", {"ts": time.time(), "fonds": fid, "modell": modell, "zweck": zweck,
-                                              "nutzung": nutzung, "usd": round(usd, 6)})
+        with self._lock:
+            self._reserviert.pop(threading.get_ident(), None)
+            self.z["gesamt_usd"] += usd
+            self.z["tage"][self.tag] = self.heute_usd() + usd
+            ft = self.z["fonds_tage"].setdefault(self.tag, {})
+            ft[fid] = ft.get(fid, 0.0) + usd
+            store.schreibe("budget.json", self.z)
+            store.anhaengen("budget_log.jsonl", {"ts": time.time(), "fonds": fid, "modell": modell, "zweck": zweck,
+                                                  "nutzung": nutzung, "usd": round(usd, 6)})
         return usd
 
     def bericht(self) -> dict:
         return {"heute_eur": round(self.heute_usd() / self.fx, 3), "gesamt_eur": round(self.z["gesamt_usd"] / self.fx, 3),
-                "tagesdeckel_eur": self.cfg["budget"]["tagesdeckel_eur"], "gesamtdeckel_eur": self.cfg["budget"]["gesamtdeckel_eur"]}
+                "tagesdeckel_eur": self.cfg["budget"]["tagesdeckel_eur"], "gesamtdeckel_eur": self.cfg["budget"]["gesamtdeckel_eur"],
+                "tempo_faktor": round(self.tempo_faktor(), 3),
+                "fonds_heute_eur": {k: round(v / self.fx, 3) for k, v in self.z["fonds_tage"].get(self.tag, {}).items()}}

@@ -5,6 +5,7 @@ on:
   workflow_dispatch:
 permissions:
   contents: write
+  actions: read
 concurrency:
   group: arena-zustand
   cancel-in-progress: false
@@ -14,13 +15,22 @@ jobs:
     timeout-minutes: 20
     steps:
       - uses: actions/checkout@v4
+      - name: Dauerlauf aktiv? (dann übernimmt er – nichts tun)
+        id: dl
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: bash scripts/dauerlauf_aktiv.sh
       - uses: astral-sh/setup-uv@v5
+        if: steps.dl.outputs.aktiv != 'true'
         with:
           enable-cache: true
       - run: uv sync --frozen --no-dev
+        if: steps.dl.outputs.aktiv != 'true'
       - name: Opus-Strategie-Review
+        if: steps.dl.outputs.aktiv != 'true'
         env:
           ARENA_ANTHROPIC_KEY: ${{ secrets.ARENA_ANTHROPIC_KEY }}
         run: uv run python -m arena.review
       - name: Speichern
+        if: steps.dl.outputs.aktiv != 'true'
         run: 'bash scripts/speichern.sh "Wochen-Review $(date -u +%Y-%m-%d)"'

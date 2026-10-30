@@ -3,38 +3,98 @@
   "fallback_usd_je_eur": 1.08,
   "budget": {
     "tagesdeckel_eur": 12.0,
+    "fonds_tagesanteil_eur": {
+      "claude_vorsichtig": 3.3,
+      "claude_mittel": 3.4,
+      "claude_aggressiv": 3.5
+    },
+    "reserve_tag_eur": 0.8,
+    "takt_stunden_utc": [
+      1,
+      5,
+      9,
+      13,
+      17,
+      21
+    ],
+    "tiefenrunde_stunde_utc": 13,
+    "tiefenrunde_modell": "claude-opus-5-5",
+    "runden_modell": "claude-sonnet-5-5",
+    "runden_deckel_usd": {
+      "claude-sonnet-5-5": 1.3,
+      "claude-opus-5-5": 3.0
+    },
     "gesamtdeckel_eur": 190.0,
     "claude_ende": "2026-11-14",
     "preise_usd_je_mio": {
-      "claude-haiku-5-5": {"ein": 0.10, "aus": 0.50},
-      "claude-sonnet-5-5": {"ein": 2.00, "aus": 10.00},
-      "claude-opus-5-5": {"ein": 4.00, "aus": 20.00}
+      "claude-haiku-5-5": {
+        "ein": 0.1,
+        "aus": 0.5
+      },
+      "claude-sonnet-5-5": {
+        "ein": 2.0,
+        "aus": 10.0
+      },
+      "claude-opus-5-5": {
+        "ein": 4.0,
+        "aus": 20.0
+      }
     },
     "websuche_usd_je_1000": 10.0,
     "cache_lesen_faktor": 0.1,
     "cache_schreiben_faktor": 1.25
   },
   "risiko": {
-    "vorsichtig": {"max_hebel": 1, "max_position_pct": 0.10, "max_perp_pct": 0.10, "max_optionen_pct": 0.03, "min_cash_pct": 0.30, "max_gesamt_exposure_pct": 0.70},
-    "mittel":     {"max_hebel": 3, "max_position_pct": 0.20, "max_perp_pct": 0.30, "max_optionen_pct": 0.08, "min_cash_pct": 0.10, "max_gesamt_exposure_pct": 0.90},
-    "aggressiv":  {"max_hebel": 10, "max_position_pct": 0.35, "max_perp_pct": 0.80, "max_optionen_pct": 0.20, "min_cash_pct": 0.02, "max_gesamt_exposure_pct": 0.98}
+    "vorsichtig": {
+      "max_hebel": 1,
+      "max_position_pct": 0.1,
+      "max_perp_pct": 0.1,
+      "max_optionen_pct": 0.03,
+      "min_cash_pct": 0.3,
+      "max_gesamt_exposure_pct": 0.7
+    },
+    "mittel": {
+      "max_hebel": 3,
+      "max_position_pct": 0.2,
+      "max_perp_pct": 0.3,
+      "max_optionen_pct": 0.08,
+      "min_cash_pct": 0.1,
+      "max_gesamt_exposure_pct": 0.9
+    },
+    "aggressiv": {
+      "max_hebel": 10,
+      "max_position_pct": 0.35,
+      "max_perp_pct": 0.8,
+      "max_optionen_pct": 0.2,
+      "min_cash_pct": 0.02,
+      "max_gesamt_exposure_pct": 0.98
+    }
   },
   "boerse": {
-    "slippage_bps": {"spot": 2, "perp": 2, "option": 10, "pm": 0, "stock": 1},
+    "slippage_bps": {
+      "spot": 2,
+      "perp": 2,
+      "option": 10,
+      "pm": 0,
+      "stock": 1
+    },
     "gebuehren": {
       "coinbase_spot_taker": 0.006,
       "deribit_perp_taker": 0.0005,
       "deribit_option_taker_underlying": 0.0003,
       "deribit_option_max_anteil": 0.125,
       "kalshi_koeffizient": 0.07,
-      "predictit_gewinn_gebuehr": 0.10,
+      "predictit_gewinn_gebuehr": 0.1,
       "predictit_max_position_usd": 850,
       "polymarket_taker": 0.0,
       "manifold": 0.0,
       "stock_spread_bps": 2,
       "stock_kommission": 0.0
     },
-    "perp": {"wartungsmarge": 0.005, "liquidationsgebuehr": 0.005},
+    "perp": {
+      "wartungsmarge": 0.005,
+      "liquidationsgebuehr": 0.005
+    },
     "predictit_tiefe_vertraege": 100
   },
   "ereignisse": {
@@ -50,35 +110,238 @@
   },
   "universum": {
     "pm_je_plattform": 40,
-    "krypto": ["BTC", "ETH", "SOL", "XRP", "DOGE", "ADA", "LINK", "AVAX"],
-    "perps": ["BTC_USDC-PERPETUAL", "ETH_USDC-PERPETUAL", "SOL_USDC-PERPETUAL"],
-    "aktien": ["SPY", "QQQ", "IWM", "TLT", "GLD", "AGG", "NVDA", "AAPL", "MSFT", "TSLA"]
+    "krypto": [
+      "BTC",
+      "ETH",
+      "SOL",
+      "XRP",
+      "DOGE",
+      "ADA",
+      "LINK",
+      "AVAX"
+    ],
+    "perps": [
+      "BTC_USDC-PERPETUAL",
+      "ETH_USDC-PERPETUAL",
+      "SOL_USDC-PERPETUAL"
+    ],
+    "aktien": [
+      "SPY",
+      "QQQ",
+      "IWM",
+      "TLT",
+      "GLD",
+      "AGG",
+      "NVDA",
+      "AAPL",
+      "MSFT",
+      "TSLA"
+    ]
   },
   "fonds_claude": [
-    {"id": "claude_vorsichtig", "name": "Claude Vorsichtig", "risiko": "vorsichtig",
-     "persoenlichkeit": "Kapitalerhalt zuerst. Du handelst selten, nur bei klar positivem Erwartungswert nach Kosten, und sagst im Zweifel Nein. Kein Hebel."},
-    {"id": "claude_mittel", "name": "Claude Mittel", "risiko": "mittel",
-     "persoenlichkeit": "Ausgewogen und nüchtern. Du suchst Chancen mit gutem Chance-Risiko-Verhältnis und streust über Märkte."},
-    {"id": "claude_aggressiv", "name": "Claude Aggressiv", "risiko": "aggressiv",
-     "persoenlichkeit": "Renditehungrig und mutig, aber nicht blind. Du darfst konzentrierte Wetten und Hebel nutzen, wenn deine These stark ist, und akzeptierst große Schwankungen."}
+    {
+      "id": "claude_vorsichtig",
+      "name": "Claude Vorsichtig",
+      "risiko": "vorsichtig",
+      "persoenlichkeit": "Kapitalerhalt zuerst. Du handelst selten, nur bei klar positivem Erwartungswert nach Kosten, und sagst im Zweifel Nein. Kein Hebel.",
+      "schwerpunkt": "Makro und Zinsen (Fed/EZB, Inflation, Arbeitsmarkt), Wirtschaftsdaten-Märkte, Wetter/Klima-Märkte, Anleihen-/Gold-ETFs (TLT, AGG, GLD). Bevorzugt Wettmärkte mit überprüfbarer Datenbasis und naher Abrechnung.",
+      "recherchepfad": "Beginne mit „makro“ und dem Wirtschaftskalender (Websuche: anstehende Datenveröffentlichungen, Zentralbank-Termine), dann „markt_suche“ zu Zins-, Inflations- und Wetterfragen; Kursdaten nur für ETFs.",
+      "stichworte": [
+        "fed",
+        "rate",
+        "rates",
+        "interest",
+        "inflation",
+        "cpi",
+        "pce",
+        "gdp",
+        "unemployment",
+        "jobs",
+        "payrolls",
+        "recession",
+        "ecb",
+        "treasury",
+        "yield",
+        "temperature",
+        "weather",
+        "hurricane",
+        "rain",
+        "snow",
+        "gold",
+        "oil",
+        "tariff",
+        "economy",
+        "bank"
+      ]
+    },
+    {
+      "id": "claude_mittel",
+      "name": "Claude Mittel",
+      "risiko": "mittel",
+      "persoenlichkeit": "Ausgewogen und nüchtern. Du suchst Chancen mit gutem Chance-Risiko-Verhältnis und streust über Märkte.",
+      "schwerpunkt": "Unternehmen und Technologie (Ergebnisse, Produktstarts, KI-Branche), Sport und Kultur, Wahlen und Politik außerhalb der US-Bundespolitik; Einzelaktien (NVDA, AAPL, MSFT, TSLA) und Index-ETFs.",
+      "recherchepfad": "Beginne mit „markt_suche“ zu Unternehmen, Sport und internationalen Wahlen und mit „nachrichten“ zu Quartalszahlen; prüfe Aktienkurse/Prognosen der genannten Werte.",
+      "stichworte": [
+        "nvidia",
+        "apple",
+        "microsoft",
+        "tesla",
+        "openai",
+        "google",
+        "meta",
+        "amazon",
+        "earnings",
+        "ai",
+        "nba",
+        "nfl",
+        "mlb",
+        "nhl",
+        "soccer",
+        "premier",
+        "champions",
+        "league",
+        "cup",
+        "election",
+        "prime",
+        "minister",
+        "oscar",
+        "box",
+        "album",
+        "spacex",
+        "launch",
+        "ipo"
+      ]
+    },
+    {
+      "id": "claude_aggressiv",
+      "name": "Claude Aggressiv",
+      "risiko": "aggressiv",
+      "persoenlichkeit": "Renditehungrig und mutig, aber nicht blind. Du darfst konzentrierte Wetten und Hebel nutzen, wenn deine These stark ist, und akzeptierst große Schwankungen.",
+      "schwerpunkt": "Krypto und Derivate: Perpetuals (long/short mit Hebel), Optionen, Volatilität, Funding-Extreme, Krypto-Kursschwellen-Märkte und Krypto-Regulierung.",
+      "recherchepfad": "Beginne mit Perps/Funding aus der Marktlage, „optionen“, „prognose“ und „kurs_verlauf“ für BTC/ETH/SOL, dann „markt_suche“ zu Krypto-Kursschwellen; Websuche zu On-Chain-/ETF-Flüssen und Regulierung.",
+      "stichworte": [
+        "bitcoin",
+        "btc",
+        "ethereum",
+        "eth",
+        "solana",
+        "sol",
+        "crypto",
+        "xrp",
+        "doge",
+        "etf",
+        "sec",
+        "stablecoin",
+        "coinbase",
+        "binance",
+        "microstrategy",
+        "price",
+        "above",
+        "below",
+        "reach",
+        "halving",
+        "token"
+      ]
+    }
   ],
   "liga": [
-    {"id": "liga_gemini", "name": "Gemini Flash", "anbieter": "gemini", "modell": "gemini-flash-latest", "schluessel": "GEMINI_API_KEY"},
-    {"id": "liga_deepseek", "name": "DeepSeek", "anbieter": "deepseek", "modell": "deepseek-chat", "schluessel": "DEEPSEEK_API_KEY"},
-    {"id": "liga_kimi", "name": "Kimi (Moonshot)", "anbieter": "moonshot", "modell": "kimi-latest", "schluessel": "MOONSHOT_API_KEY"},
-    {"id": "liga_cerebras", "name": "Cerebras gpt-oss", "anbieter": "cerebras", "modell": "gpt-oss-120b", "schluessel": "CEREBRAS_API_KEY"},
-    {"id": "liga_mistral", "name": "Mistral", "anbieter": "mistral", "modell": "mistral-small-latest", "schluessel": "MISTRAL_API_KEY"},
-    {"id": "liga_openai", "name": "OpenAI", "anbieter": "openai", "modell": "gpt-5-mini", "schluessel": "OPENAI_API_KEY"}
+    {
+      "id": "liga_gemini",
+      "name": "Gemini Flash",
+      "anbieter": "gemini",
+      "modell": "gemini-flash-latest",
+      "schluessel": "GEMINI_API_KEY",
+      "alternativen": [
+        "gemini-2.5-flash",
+        "gemini-flash-lite-latest",
+        "gemini-2.5-flash-lite"
+      ]
+    },
+    {
+      "id": "liga_deepseek",
+      "name": "DeepSeek",
+      "anbieter": "deepseek",
+      "modell": "deepseek-chat",
+      "schluessel": "DEEPSEEK_API_KEY",
+      "alternativen": [
+        "deepseek-reasoner"
+      ]
+    },
+    {
+      "id": "liga_kimi",
+      "name": "Kimi (Moonshot)",
+      "anbieter": "moonshot",
+      "modell": "kimi-latest",
+      "schluessel": "MOONSHOT_API_KEY",
+      "alternativen": [
+        "kimi-k2-turbo-preview",
+        "kimi-k2-0905-preview",
+        "moonshot-v1-128k"
+      ]
+    },
+    {
+      "id": "liga_cerebras",
+      "name": "Cerebras gpt-oss",
+      "anbieter": "cerebras",
+      "modell": "gpt-oss-120b",
+      "schluessel": "CEREBRAS_API_KEY",
+      "alternativen": [
+        "qwen-3-235b-a22b-instruct-2507",
+        "llama-3.3-70b"
+      ]
+    },
+    {
+      "id": "liga_mistral",
+      "name": "Mistral",
+      "anbieter": "mistral",
+      "modell": "mistral-small-latest",
+      "schluessel": "MISTRAL_API_KEY",
+      "alternativen": [
+        "mistral-medium-latest",
+        "open-mistral-nemo"
+      ]
+    },
+    {
+      "id": "liga_openai",
+      "name": "OpenAI",
+      "anbieter": "openai",
+      "modell": "gpt-5-mini",
+      "schluessel": "OPENAI_API_KEY",
+      "alternativen": [
+        "gpt-5-nano",
+        "gpt-4.1-mini"
+      ]
+    }
   ],
   "openrouter_gratis_anzahl": 3,
   "anbieter": {
-    "gemini": {"url": "https://generativelanguage.googleapis.com/v1beta/openai/chat/completions"},
-    "deepseek": {"url": "https://api.deepseek.com/chat/completions"},
-    "moonshot": {"url": "https://api.moonshot.ai/v1/chat/completions"},
-    "cerebras": {"url": "https://api.cerebras.ai/v1/chat/completions"},
-    "mistral": {"url": "https://api.mistral.ai/v1/chat/completions"},
-    "groq": {"url": "https://api.groq.com/openai/v1/chat/completions"},
-    "openai": {"url": "https://api.openai.com/v1/chat/completions"},
-    "openrouter": {"url": "https://openrouter.ai/api/v1/chat/completions"}
-  }
+    "gemini": {
+      "url": "https://generativelanguage.googleapis.com/v1beta/openai/chat/completions"
+    },
+    "deepseek": {
+      "url": "https://api.deepseek.com/chat/completions"
+    },
+    "moonshot": {
+      "url": "https://api.moonshot.ai/v1/chat/completions"
+    },
+    "cerebras": {
+      "url": "https://api.cerebras.ai/v1/chat/completions"
+    },
+    "mistral": {
+      "url": "https://api.mistral.ai/v1/chat/completions"
+    },
+    "groq": {
+      "url": "https://api.groq.com/openai/v1/chat/completions"
+    },
+    "openai": {
+      "url": "https://api.openai.com/v1/chat/completions"
+    },
+    "openrouter": {
+      "url": "https://openrouter.ai/api/v1/chat/completions"
+    }
+  },
+  "liga_takt_stunden_utc": [
+    5,
+    21
+  ]
 }

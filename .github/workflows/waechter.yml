@@ -15,11 +15,19 @@ jobs:
     timeout-minutes: 12
     steps:
       - uses: actions/checkout@v4
+      - name: Dauerlauf aktiv? (dann übernimmt er – nichts tun)
+        id: dl
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: bash scripts/dauerlauf_aktiv.sh
       - uses: astral-sh/setup-uv@v5
+        if: steps.dl.outputs.aktiv != 'true'
         with:
           enable-cache: true
       - run: uv sync --frozen --no-dev
+        if: steps.dl.outputs.aktiv != 'true'
       - name: Wächter-Lauf (Daten, Bewertung, Stops, Ereignisse)
+        if: steps.dl.outputs.aktiv != 'true'
         id: lauf
         env:
           ARENA_ANTHROPIC_KEY: ${{ secrets.ARENA_ANTHROPIC_KEY }}
@@ -34,8 +42,10 @@ jobs:
           NASA_FIRMS_KEY: ${{ secrets.NASA_FIRMS_KEY }}
         run: uv run python -m arena.watcher
       - name: Webseite und status.json bauen
+        if: steps.dl.outputs.aktiv != 'true'
         run: uv run python -m arena.site || echo "Seitenbau fehlgeschlagen (nicht kritisch)"
       - name: Zustand speichern
+        if: steps.dl.outputs.aktiv != 'true'
         run: 'bash scripts/speichern.sh "Wächter $(date -u +%Y-%m-%dT%H:%MZ)"'
       - name: Entscheider auslösen (bei weckendem Ereignis)
         if: steps.lauf.outputs.ausloesen == 'true'

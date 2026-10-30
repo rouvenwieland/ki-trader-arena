@@ -10,8 +10,13 @@ from arena.agent import budget as bmod
 from arena.agent import llm, prompts
 from arena.agent.tools import Kontext
 
-MAX_SCHRITTE = {"claude": 14, "liga": 8}
-MAX_SEKUNDEN = {"claude": 480, "liga": 420}  # Wanduhr-Limit je Runde (freie Modelle antworten teils minutenlang)
+# Limits je Rundenart: „tief“ = tägliche Tiefenrunde (Opus), „claude“ = feste/ereignisgesteuerte Sonnet-Runde, „liga“ = Liga-Modelle
+MAX_SCHRITTE = {"tief": 26, "claude": 20, "liga": 12}
+MAX_SEKUNDEN = {"tief": 900, "claude": 600, "liga": 480}  # Wanduhr-Limit je Runde (freie Modelle antworten teils minutenlang)
+WEBSUCHEN = {"tief": 12, "claude": 8}
+SCHLUSS_SCHRITTE = 3  # so viele Schritte bleiben nach dem Abschluss-Hinweis, um Orders/Tagebuch zu schreiben
+ABSCHLUSS = ("HINWEIS DER ARENA: {grund}. Keine weitere Recherche mehr – triff jetzt deine Entscheidungen (Orders, Wahrscheinlichkeiten, "
+             "Notizbuch) mit dem, was du weißt, und schließe mit dem Tagebucheintrag ab.")
 
 
 def _verlauf_zeichen(s) -> int:
@@ -38,42 +43,64 @@ def triage(defn: dict, ereignisse: list[dict], pf_info: str, bud: bmod.Budget, n
 
 def laufe_runde(defn: dict, route: dict, pf: dict, snap: dict, mz, grund: str, ereignisse: list[dict],
                 bud: bmod.Budget | None, n_fonds: int, jetzt: float | None = None,
-                sitzung_fabrik=None) -> dict:
+                sitzung_fabrik=None, runden_budget_usd: float | None = None) -> dict:
     """Eine komplette Agentenrunde. Liefert Ergebnis-Dict (auch bei Abbruch)."""
     jetzt = jetzt or time.time()
     from arena import snapshot as snapmod
     ctx = Kontext(defn, pf, snap, mz, grund, ereignisse, jetzt)
     tools = ctx.definitionen()
     sys_prompt = prompts.system_prompt(defn, ctx.prof)
+    ist_claude = route["art"] == "anthropic"
+    typ = ("tief" if route.get("tief") else "claude") if ist_claude else "liga"
+    max_aus = 12000 if typ == "tief" else 8000
     if sitzung_fabrik:
         s = sitzung_fabrik(sys_prompt, tools)
-    elif route["art"] == "anthropic":
-        s = llm.AnthropicSitzung(route["modell"], sys_prompt, tools, websuche=6, effort="high", max_tokens=8000)
+    elif ist_claude:
+        s = llm.AnthropicSitzung(route["modell"], sys_prompt, tools, websuche=WEBSUCHEN[typ], effort="high", max_tokens=max_aus,
+                                 timeout=420 if typ == "tief" else 300)
     else:
-        s = llm.openai_sitzung(route["anbieter"], route["modell"], sys_prompt, tools, route["key"])
-    s.nutzer(prompts.runde_prompt(defn, grund, ereignisse, snapmod.text(snap), jetzt))
+        s = llm.openai_sitzung(route["anbieter"], route["modell"], sys_prompt, tools, route["key"], route.get("alternativen"))
+    s.nutzer(prompts.runde_prompt(defn, grund, ereignisse, snapmod.text(snap, defn=defn), jetzt))
     modell = route["modell"]
-    ist_claude = route["art"] == "anthropic"
     kosten, schritte, text, abbruch = 0.0, 0, "", ""
+    abschluss_ab = None  # Schritt, an dem der Abschluss-Hinweis kam
     gesamt_nutzung = {"ein": 0, "aus": 0, "cache_lesen": 0, "cache_schreiben": 0, "websuchen": 0}
     try:
-        typ = defn["typ"] if defn["typ"] in MAX_SCHRITTE else "liga"
         start = time.time()
-        while schritte < MAX_SCHRITTE[typ]:
+        while True:
+            if schritte >= MAX_SCHRITTE[typ]:
+                abbruch = "Schrittlimit erreicht"
+                break
             if time.time() - start > MAX_SEKUNDEN[typ]:
                 abbruch = "Zeitlimit der Runde erreicht"
                 break
+            schaetzung = bmod.schaetze_naechsten_aufruf(modell, _verlauf_zeichen(s), max_aus) if ist_claude and bud else 0.0
+            if abschluss_ab is None and schritte:
+                warum = ("Schrittlimit naht" if schritte >= MAX_SCHRITTE[typ] - SCHLUSS_SCHRITTE else
+                         "Zeit der Runde fast um" if time.time() - start > 0.75 * MAX_SEKUNDEN[typ] else
+                         "Rundenbudget fast aufgebraucht" if runden_budget_usd is not None and kosten + kosten / schritte > runden_budget_usd else "")
+                if warum:
+                    abschluss_ab = schritte
+                    if hasattr(s, "hinweis"):
+                        s.hinweis(ABSCHLUSS.format(grund=warum))
+            elif abschluss_ab is not None and schritte - abschluss_ab >= SCHLUSS_SCHRITTE:
+                abbruch = "Abschluss nach Hinweis (Limit der Runde)"
+                break
             if ist_claude and bud:
-                ok, warum = bud.darf(defn["id"], n_fonds, bmod.schaetze_naechsten_aufruf(modell, _verlauf_zeichen(s), 8000))
+                ok, warum = bud.reserviere(defn["id"], n_fonds, schaetzung)
                 if not ok:
                     abbruch = f"Budget-Stopp: {warum}"
                     break
-            a = s.schritt()
+            try:
+                a = s.schritt()
+            finally:
+                if ist_claude and bud:
+                    bud.freigeben()
             schritte += 1
             for k in gesamt_nutzung:
                 gesamt_nutzung[k] += a.nutzung.get(k, 0)
             if ist_claude and bud:
-                kosten += bud.buche(defn["id"], modell, a.nutzung, "runde")
+                kosten += bud.buche(defn["id"], modell, a.nutzung, "tiefenrunde" if typ == "tief" else "runde")
             if a.text:
                 text = a.text
             if a.aufrufe:
@@ -86,8 +113,8 @@ def laufe_runde(defn: dict, route: dict, pf: dict, snap: dict, mz, grund: str, e
             if a.ende == "pause_turn":
                 continue
             break
-        else:
-            abbruch = "Schrittlimit erreicht"
+    except llm.KeinGuthaben as e:
+        abbruch = f"Kein Guthaben: {e}"
     except llm.LLMFehler as e:
         abbruch = f"Modellfehler: {e}"
         if "401" in str(e) or "403" in str(e):
@@ -95,6 +122,7 @@ def laufe_runde(defn: dict, route: dict, pf: dict, snap: dict, mz, grund: str, e
             abbruch += f" [Schlüssel abgelehnt – {arena.schluessel_info('ARENA_ANTHROPIC_KEY') if route['art'] == 'anthropic' else 'Fremdanbieter'}]"
     except Exception as e:
         abbruch = f"Fehler: {type(e).__name__}: {e}"
+    modell = getattr(s, "modell", modell)  # evtl. automatisch aufgelöster/ausgewichener Name
     ergebnis = {"typ": "runde", "ts": jetzt, "fonds_id": defn["id"], "grund": grund, "modell": modell, "schritte": schritte,
                 "orders": ctx.orders, "text": text[:4000], "abbruch": abbruch, "kosten_usd": round(kosten, 4), "nutzung": gesamt_nutzung}
     store.anhaengen(f"funds/{defn['id']}/decisions.jsonl", ergebnis)

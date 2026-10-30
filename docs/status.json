@@ -1,14 +1,18 @@
 {
  "version": 1,
- "stand": 1793340678.8729944,
+ "stand": 1793354827.371451,
  "hinweis": "Papierhandel-Simulation, keine Anlageberatung",
+ "seite": "https://rouvenwieland.github.io/ki-trader-arena/",
  "budget": {
   "heute_eur": 0.99,
   "gesamt_eur": 0.99,
   "tagesdeckel_eur": 12.0,
   "gesamtdeckel_eur": 190.0,
-  "claude_ende": "2026-11-14"
+  "claude_ende": "2026-11-14",
+  "ziel_tag_eur": 10.2,
+  "tempo_faktor": null
  },
+ "ueberlappung_claude_pct": 100.0,
  "rangliste": [
   {
    "rang": 1,
@@ -18,7 +22,10 @@
    "rendite_pct": 3.23,
    "equity_eur": 10321.51,
    "max_drawdown_pct": 0.0,
-   "status": "aktiv"
+   "status": "aktiv",
+   "modell": "claude-sonnet-5-5",
+   "kosten_heute_eur": 0.321,
+   "kosten_gesamt_eur": 0.321
   },
   {
    "rang": 2,
@@ -28,7 +35,10 @@
    "rendite_pct": 1.55,
    "equity_eur": 10153.47,
    "max_drawdown_pct": 0.0,
-   "status": "läuft"
+   "status": "läuft",
+   "modell": null,
+   "kosten_heute_eur": 0.0,
+   "kosten_gesamt_eur": 0.0
   },
   {
    "rang": 3,
@@ -38,7 +48,10 @@
    "rendite_pct": 1.38,
    "equity_eur": 10136.38,
    "max_drawdown_pct": 0.0,
-   "status": "läuft"
+   "status": "läuft",
+   "modell": null,
+   "kosten_heute_eur": 0.0,
+   "kosten_gesamt_eur": 0.0
   },
   {
    "rang": 4,
@@ -48,7 +61,10 @@
    "rendite_pct": 1.35,
    "equity_eur": 10133.03,
    "max_drawdown_pct": 0.0,
-   "status": "aktiv"
+   "status": "aktiv",
+   "modell": "claude-sonnet-5-5",
+   "kosten_heute_eur": 0.267,
+   "kosten_gesamt_eur": 0.267
   },
   {
    "rang": 5,
@@ -58,7 +74,10 @@
    "rendite_pct": 0.94,
    "equity_eur": 10092.7,
    "max_drawdown_pct": 0.0,
-   "status": "aktiv"
+   "status": "aktiv",
+   "modell": "claude-sonnet-5-5",
+   "kosten_heute_eur": 0.2,
+   "kosten_gesamt_eur": 0.2
   },
   {
    "rang": 6,
@@ -68,7 +87,10 @@
    "rendite_pct": 0.0,
    "equity_eur": 9998.52,
    "max_drawdown_pct": 0.0,
-   "status": "aktiv"
+   "status": "aktiv",
+   "modell": "gemini-flash-latest",
+   "kosten_heute_eur": 0.0,
+   "kosten_gesamt_eur": 0.0
   },
   {
    "rang": 7,
@@ -78,7 +100,10 @@
    "rendite_pct": 0.0,
    "equity_eur": 9998.52,
    "max_drawdown_pct": 0.0,
-   "status": "aktiv"
+   "status": "aktiv",
+   "modell": "deepseek-chat",
+   "kosten_heute_eur": 0.0,
+   "kosten_gesamt_eur": 0.0
   },
   {
    "rang": 8,
@@ -88,7 +113,10 @@
    "rendite_pct": 0.0,
    "equity_eur": 9998.52,
    "max_drawdown_pct": 0.0,
-   "status": "aktiv"
+   "status": "aktiv",
+   "modell": "kimi-latest",
+   "kosten_heute_eur": 0.0,
+   "kosten_gesamt_eur": 0.0
   },
   {
    "rang": 9,
@@ -98,7 +126,10 @@
    "rendite_pct": 0.0,
    "equity_eur": 9998.52,
    "max_drawdown_pct": 0.0,
-   "status": "Fehler: Modellfehler: gpt-5-mini: keine Antwort (HTTP 429 {\n    \"error\": {\n        \"message\": \"You have no credits remaining. Add credits to continu"
+   "status": "Fehler: Modellfehler: gpt-5-mini: keine Antwort (HTTP 429 {\n    \"error\": {\n        \"message\": \"You have no credits remaining. Add credits to continu",
+   "modell": "gpt-5-mini",
+   "kosten_heute_eur": 0.0,
+   "kosten_gesamt_eur": 0.0
   },
   {
    "rang": 10,
@@ -108,7 +139,10 @@
    "rendite_pct": 0.0,
    "equity_eur": 9998.52,
    "max_drawdown_pct": 0.0,
-   "status": "läuft"
+   "status": "läuft",
+   "modell": null,
+   "kosten_heute_eur": 0.0,
+   "kosten_gesamt_eur": 0.0
   },
   {
    "rang": 11,
@@ -118,7 +152,10 @@
    "rendite_pct": 0.0,
    "equity_eur": 9998.52,
    "max_drawdown_pct": 0.0,
-   "status": "läuft"
+   "status": "läuft",
+   "modell": null,
+   "kosten_heute_eur": 0.0,
+   "kosten_gesamt_eur": 0.0
   }
  ],
  "wartend": [

@@ -1,14 +1,15 @@
 name: Entscheider
 on:
   schedule:
-    - cron: '17 13 * * *'
+    - cron: '17 13 * * *'          # Rückfall; im Normalbetrieb plant der Dauerlauf (arena/takt.py)
   workflow_dispatch:
     inputs:
       grund:
-        description: 'ereignis oder taeglich'
+        description: 'ereignis, takt oder taeglich'
         default: 'taeglich'
 permissions:
   contents: write
+  actions: read
 concurrency:
   group: arena-zustand
   cancel-in-progress: false
@@ -18,11 +19,19 @@ jobs:
     timeout-minutes: 45
     steps:
       - uses: actions/checkout@v4
+      - name: Dauerlauf aktiv? (dann übernimmt er – nichts tun)
+        id: dl
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: bash scripts/dauerlauf_aktiv.sh
       - uses: astral-sh/setup-uv@v5
+        if: steps.dl.outputs.aktiv != 'true'
         with:
           enable-cache: true
       - run: uv sync --frozen --no-dev
+        if: steps.dl.outputs.aktiv != 'true'
       - name: Agentenrunden (alle Fonds, fehlerisoliert)
+        if: steps.dl.outputs.aktiv != 'true'
         env:
           ARENA_ANTHROPIC_KEY: ${{ secrets.ARENA_ANTHROPIC_KEY }}
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
@@ -36,6 +45,8 @@ jobs:
           NASA_FIRMS_KEY: ${{ secrets.NASA_FIRMS_KEY }}
         run: uv run python -m arena.entscheider "${{ inputs.grund || 'taeglich' }}"
       - name: Webseite und status.json bauen
+        if: steps.dl.outputs.aktiv != 'true'
         run: uv run python -m arena.site || echo "Seitenbau fehlgeschlagen (nicht kritisch)"
       - name: Zustand speichern
+        if: steps.dl.outputs.aktiv != 'true'
         run: 'bash scripts/speichern.sh "Entscheider $(date -u +%Y-%m-%dT%H:%MZ)"'

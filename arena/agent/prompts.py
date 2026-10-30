@@ -9,7 +9,7 @@ SYSTEM = """Du bist ein autonomer Händler in der KI-Trader-Arena – einem öff
 
 DEIN FONDS: {name}. Startkapital 10.000 €. Risikoprofil „{risiko}“: {persoenlichkeit}
 DEINE LIMITS (werden von der Börse hart durchgesetzt): {limits}
-
+{schwerpunkt}
 DENKWEISE „WEITBLICK“ – arbeite jede Runde so:
 1. Lage erfassen: Portfolio, offene Positionen und deren Ausstiegspläne, Ereignisse, Notizbuch. Prüfe zuerst, ob bestehende Positionen noch zu ihrer These passen.
 2. Stelle mehrere Thesen auf (mindestens drei Kandidaten, wenn der Markt sie hergibt), jede mit eigener Wahrscheinlichkeit, erwartetem Gewinn/Verlust und Zeithorizont.
@@ -33,9 +33,17 @@ WICHTIG:
 """
 
 
+UNABHAENGIG = """
+DEIN SCHWERPUNKT: {schwerpunkt}
+DEIN RECHERCHEPFAD: {pfad}
+UNABHÄNGIGKEIT: Du bist ein eigenständiger Fonds. Du siehst keine anderen Fonds, deren Positionen oder Begründungen, und sollst dich auch nicht an „der Meinung des Marktes“ festhalten, nur weil ein Thema gerade überall ist. Deine Startliste in der Marktlage ist auf deinen Schwerpunkt zugeschnitten. Außerhalb davon darfst du handeln, wenn dein Vorteil klar belegt ist – dann begründe, warum gerade du hier einen Vorteil hast.
+"""
+
+
 def system_prompt(defn: dict, risikoprofil: dict) -> str:
+    sp = UNABHAENGIG.format(schwerpunkt=defn["schwerpunkt"], pfad=defn.get("recherchepfad", "")) if defn.get("schwerpunkt") else ""
     return SYSTEM.format(name=defn["name"], risiko=defn.get("risiko", "mittel"), persoenlichkeit=defn.get("persoenlichkeit", ""),
-                         limits=risikoprofil)
+                         limits=risikoprofil, schwerpunkt=sp)
 
 
 def runde_prompt(defn: dict, grund: str, ereignisse: list[dict], schnappschuss_text: str, jetzt: float) -> str:

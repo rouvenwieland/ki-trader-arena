@@ -30,14 +30,44 @@ def liga_fonds() -> list[dict]:
     """Liga-Fonds aus der Konfiguration + dynamische OpenRouter-Gratismodelle (falls Schlüssel)."""
     out = [{**f, "typ": "liga", "risiko": "mittel",
             "persoenlichkeit": "Sachlich, mittleres Risiko, gleiche Regeln wie alle anderen."} for f in config.load()["liga"]]
-    if hat_schluessel("OPENROUTER_API_KEY"):
-        from arena.agent import llm
-        for m in llm.openrouter_gratis(config.load()["openrouter_gratis_anzahl"]):
-            slug = "".join(c if c.isalnum() else "_" for c in m.split(":")[0])
-            out.append({"id": f"liga_or_{slug}", "name": f"OpenRouter {m}", "anbieter": "openrouter", "modell": m,
-                        "schluessel": "OPENROUTER_API_KEY", "typ": "liga", "risiko": "mittel",
+    gespeichert = store.lies("openrouter_modelle.json", {}).get("modelle", [])
+    if hat_schluessel("OPENROUTER_API_KEY") or gespeichert:  # ohne Schlüssel: bekannte Fonds weiter anzeigen („wartet auf Schlüssel“)
+        for m in (openrouter_modelle() if hat_schluessel("OPENROUTER_API_KEY") else gespeichert):
+            slug = "".join(c if c.isalnum() else "_" for c in m["id"].split(":")[0])
+            out.append({"id": f"liga_or_{slug}", "name": f"OpenRouter {m['id'].removesuffix(':free')}", "anbieter": "openrouter",
+                        "modell": m["id"], "schluessel": "OPENROUTER_API_KEY", "typ": "liga", "risiko": "mittel",
+                        "entfallen": bool(m.get("entfallen")),
                         "persoenlichkeit": "Sachlich, mittleres Risiko, gleiche Regeln wie alle anderen."})
     return out
+
+
+def openrouter_modelle(jetzt: float | None = None) -> list[dict]:
+    """Einmal gewählte OpenRouter-:free-Modelle bleiben stabil (ein Fonds = ein Modell über die ganze Laufzeit).
+    Höchstens täglich wird geprüft, ob sie noch gratis angeboten werden; entfallene werden markiert und durch neue ergänzt."""
+    from arena.agent import llm
+    jetzt = jetzt or time.time()
+    z = store.lies("openrouter_modelle.json", {"modelle": [], "geprueft": 0})
+    if z["modelle"] and jetzt - z.get("geprueft", 0) < 86400:
+        return z["modelle"]
+    n = config.load()["openrouter_gratis_anzahl"]
+    aktuell = llm.openrouter_gratis(n * 4)
+    if not aktuell:  # Liste nicht erreichbar → beim Bekannten bleiben
+        return z["modelle"]
+    for m in z["modelle"]:
+        m["entfallen"] = m["id"] not in aktuell
+    aktiv = [m for m in z["modelle"] if not m["entfallen"]]
+    bekannt = {m["id"] for m in z["modelle"]}
+    key = os.environ.get("OPENROUTER_API_KEY", "").strip()
+    for mid in aktuell:
+        if len(aktiv) >= n:
+            break
+        if mid not in bekannt and llm.modell_probe("openrouter", mid, key):  # gelistet heißt nicht nutzbar
+            neu = {"id": mid, "seit": jetzt, "entfallen": False}
+            z["modelle"].append(neu)
+            aktiv.append(neu)
+    z["geprueft"] = jetzt
+    store.schreibe("openrouter_modelle.json", z)
+    return z["modelle"]
 
 
 def alle_definitionen() -> list[dict]:

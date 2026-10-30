@@ -1,0 +1,42 @@
+name: Dauerlauf
+# Herzstück des Betriebs: Wächter alle 15 min + Entscheider + Review in einem Job (siehe scripts/dauerlauf.sh).
+# GitHub-Cron ist für 15-Minuten-Takte unzuverlässig; der Lauf reiht seinen Nachfolger selbst ein.
+# Der stündliche Cron ist nur Rückfallebene, falls die Kette einmal reißt (ein wartender Lauf ersetzt den anderen – harmlos).
+on:
+  schedule:
+    - cron: '43 * * * *'
+  workflow_dispatch:
+permissions:
+  contents: write
+  actions: write
+concurrency:
+  group: arena-dauerlauf
+  cancel-in-progress: false
+jobs:
+  dauerlauf:
+    runs-on: ubuntu-latest
+    timeout-minutes: 355
+    steps:
+      - uses: actions/checkout@v4
+      - uses: astral-sh/setup-uv@v5
+        with:
+          enable-cache: true
+      - run: uv sync --frozen --no-dev
+      - name: Nachfolger einreihen (startet, sobald dieser Lauf endet)
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh workflow run dauerlauf.yml || echo "Nachfolger nicht einreihbar – Cron springt ein"
+      - name: Ticks, Entscheidungen, Review
+        env:
+          GH_TOKEN: ${{ github.token }}
+          ARENA_ANTHROPIC_KEY: ${{ secrets.ARENA_ANTHROPIC_KEY }}
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}
+          DEEPSEEK_API_KEY: ${{ secrets.DEEPSEEK_API_KEY }}
+          MOONSHOT_API_KEY: ${{ secrets.MOONSHOT_API_KEY }}
+          GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          CEREBRAS_API_KEY: ${{ secrets.CEREBRAS_API_KEY }}
+          MISTRAL_API_KEY: ${{ secrets.MISTRAL_API_KEY }}
+          NASA_FIRMS_KEY: ${{ secrets.NASA_FIRMS_KEY }}
+        run: bash scripts/dauerlauf.sh
