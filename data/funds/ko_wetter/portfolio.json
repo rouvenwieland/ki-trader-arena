@@ -2,7 +2,7 @@
  "fonds_id": "ko_wetter",
  "waehrung": "USD",
  "start_kapital": 11156.327353966788,
- "cash": 9428.04121199247,
+ "cash": 8764.514011992469,
  "positionen": [
   {
    "id": "pa52a56cd",
@@ -159,13 +159,65 @@
    "ausstiegsplan": "Halten bis zur Abrechnung (Wetter-Regel)",
    "kurs": 0.05,
    "wert": 62.08
+  },
+  {
+   "id": "p02a45b16",
+   "inst": {
+    "id": "pm:kalshi:KXHIGHCHI-26OCT31-B60.5:NEIN",
+    "art": "pm",
+    "venue": "kalshi",
+    "ergebnis": "NEIN",
+    "frage": "Will the maximum temperature be 60-61° on Oct 31, 2026? [60° to 61°]",
+    "schliesst": 1793512800.0,
+    "ref": {
+     "ticker": "KXHIGHCHI-26OCT31-B60.5"
+    },
+    "url": "https://kalshi.com/markets/KXHIGHCHI-26OCT31"
+   },
+   "seite": "long",
+   "menge": 483.0,
+   "einstand": 0.6714699792960662,
+   "hebel": 1.0,
+   "marge": 0.0,
+   "eroeffnet": 1793392823.9350142,
+   "gebuehren": 7.46,
+   "funding": 0.0,
+   "ausstiegsplan": "Halten bis zur Abrechnung (Wetter-Regel)",
+   "kurs": 0.6699999999999999,
+   "wert": 289.8
+  },
+  {
+   "id": "p97ac0abc",
+   "inst": {
+    "id": "pm:kalshi:KXHIGHCHI-26OCT31-B62.5:NEIN",
+    "art": "pm",
+    "venue": "kalshi",
+    "ergebnis": "NEIN",
+    "frage": "Will the maximum temperature be 62-63° on Oct 31, 2026? [62° to 63°]",
+    "schliesst": 1793512800.0,
+    "ref": {
+     "ticker": "KXHIGHCHI-26OCT31-B62.5"
+    },
+    "url": "https://kalshi.com/markets/KXHIGHCHI-26OCT31"
+   },
+   "seite": "long",
+   "menge": 500.0,
+   "einstand": 0.6475144,
+   "hebel": 1.0,
+   "marge": 0.0,
+   "eroeffnet": 1793392823.9350142,
+   "gebuehren": 7.99,
+   "funding": 0.0,
+   "ausstiegsplan": "Halten bis zur Abrechnung (Wetter-Regel)",
+   "kurs": 0.65,
+   "wert": 275.0
   }
  ],
  "realisiert": 0.0,
- "gebuehren": 60.32000000000001,
+ "gebuehren": 75.77,
  "funding": 0.0,
  "erstellt": 1793380123.8861866,
  "start_fx": 1.1156327353966788,
- "letzter_tick": 1793391924.0906296,
- "wetter_letzter": 1793389123.5938396
+ "letzter_tick": 1793392823.9350142,
+ "wetter_letzter": 1793392823.9350142
 }
