@@ -90,6 +90,9 @@ def laufe_runde(defn: dict, route: dict, pf: dict, snap: dict, mz, grund: str, e
             abbruch = "Schrittlimit erreicht"
     except llm.LLMFehler as e:
         abbruch = f"Modellfehler: {e}"
+        if "401" in str(e) or "403" in str(e):
+            import arena
+            abbruch += f" [Schlüssel abgelehnt – {arena.schluessel_info('ARENA_ANTHROPIC_KEY') if route['art'] == 'anthropic' else 'Fremdanbieter'}]"
     except Exception as e:
         abbruch = f"Fehler: {type(e).__name__}: {e}"
     ergebnis = {"typ": "runde", "ts": jetzt, "fonds_id": defn["id"], "grund": grund, "modell": modell, "schritte": schritte,

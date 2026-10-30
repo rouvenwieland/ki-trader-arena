@@ -2,11 +2,12 @@
 # Anthropic-Schlüssel wird verdeckt abgefragt; die übrigen kommen aus OpenCodes auth.json.
 # Kein Schlüssel wird angezeigt, gespeichert oder geloggt. Start: Doppelklick auf secrets-setzen.cmd
 $ErrorActionPreference = 'Stop'
+$OutputEncoding = [System.Text.UTF8Encoding]::new($false)   # kein BOM in der Pipe zu gh (sonst landet U+FEFF im Secret)
 $repo = 'rouvenwieland/ki-trader-arena'
 
 function Setze($name, $wert) {
   if (-not $wert) { return }
-  $wert | gh secret set $name -R $repo | Out-Null
+  $wert.Trim() | gh secret set $name -R $repo | Out-Null
   Write-Host "  gesetzt: $name"
 }
 

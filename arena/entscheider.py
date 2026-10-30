@@ -99,7 +99,9 @@ def lauf(grund: str = "ereignis", jetzt: float | None = None) -> dict:
                     ergebnisse[fid] = f"Vorsichter: nicht wecken ({warum})"
                     return
             res = loop.laufe_runde(d, r, pf, snap, mz, "tägliche Runde" if taeglich else "Ereignis", ev, bud, 3, jetzt)
-            status_schreiben(fid, "aktiv" + (f" (Modell: {r['umgeschaltet_auf']})" if r.get("umgeschaltet_auf") else ""), jetzt,
+            fehler = res["abbruch"].startswith(("Modellfehler", "Fehler"))
+            status_schreiben(fid, ("Fehler: " + res["abbruch"][:140]) if fehler else
+                             "aktiv" + (f" (Modell: {r['umgeschaltet_auf']})" if r.get("umgeschaltet_auf") else ""), jetzt,
                              {"modell_aktuell": r["modell"], "letzte_runde": jetzt, "letzte_runde_abbruch": res["abbruch"]})
             ergebnisse[fid] = f"Runde: {res['orders']} Orders, {res['schritte']} Schritte, {res['kosten_usd']} USD {res['abbruch']}"
         except Exception as e:  # ein Fonds darf nie die anderen blockieren

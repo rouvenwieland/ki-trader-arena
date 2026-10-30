@@ -129,3 +129,18 @@ def test_seitenbau_und_status_json(monkeypatch):
     assert status["rangliste"][0]["id"] == "claude_mittel" and status["rangliste"][0]["rendite_pct"] == pytest.approx(0.36, abs=0.01)
     assert status["version"] == 1 and "wartend" in status and (site.DOCS / "data.json").exists()
     assert any(f["id"] == "liga_deepseek" and f["status"] == "wartet auf Schlüssel" for f in g["fonds"])
+
+
+def test_schluessel_werden_von_bom_und_umbruch_bereinigt(monkeypatch):
+    import importlib
+
+    import arena
+    monkeypatch.setenv("GEMINI_API_KEY", "﻿abc123\r\n")
+    importlib.reload(arena)
+    import os
+    assert os.environ["GEMINI_API_KEY"] == "abc123"
+    assert "abc123" not in arena.schluessel_info("GEMINI_API_KEY")
+    monkeypatch.setenv("ARENA_ANTHROPIC_KEY", "﻿sk-ant-api03-GEHEIMGEHEIMGEHEIM\n")
+    importlib.reload(arena)
+    info = arena.schluessel_info("ARENA_ANTHROPIC_KEY")
+    assert "sk-ant-api03" in info and "GEHEIM" not in info
