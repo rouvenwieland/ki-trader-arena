@@ -31,7 +31,7 @@ def triage(defn: dict, ereignisse: list[dict], pf_info: str, bud: bmod.Budget, n
         return False, grund
     ev = "\n".join(f"- [{e['typ']}] {e['titel']}" for e in ereignisse[:25])
     try:
-        s = llm.AnthropicSitzung(modell, prompts.TRIAGE, [], websuche=0, effort="low", max_tokens=300)
+        s = llm.AnthropicSitzung(modell, prompts.TRIAGE, [], websuche=0, effort="low", max_tokens=1500)  # Haiku 5.5 denkt mit; 300 schnitt die JSON-Antwort teils ab
         s.nutzer(f"Fonds: {defn['name']} ({defn.get('risiko')})\n{pf_info}\nEreignisse:\n{ev}")
         a = s.schritt()
         bud.buche(defn["id"], modell, a.nutzung, "triage")
@@ -52,7 +52,7 @@ def laufe_runde(defn: dict, route: dict, pf: dict, snap: dict, mz, grund: str, e
     sys_prompt = prompts.system_prompt(defn, ctx.prof)
     ist_claude = route["art"] == "anthropic"
     typ = ("tief" if route.get("tief") else "claude") if ist_claude else "liga"
-    max_aus = 12000 if typ == "tief" else 8000
+    max_aus = 20000 if typ == "tief" else 12000  # inkl. Denk-Tokens; gestreamt, daher ohne HTTP-Zeitlimit
     if sitzung_fabrik:
         s = sitzung_fabrik(sys_prompt, tools)
     elif ist_claude:
@@ -64,6 +64,7 @@ def laufe_runde(defn: dict, route: dict, pf: dict, snap: dict, mz, grund: str, e
     modell = route["modell"]
     kosten, schritte, text, abbruch = 0.0, 0, "", ""
     abschluss_ab = None  # Schritt, an dem der Abschluss-Hinweis kam
+    abgeschnitten = 0
     gesamt_nutzung = {"ein": 0, "aus": 0, "cache_lesen": 0, "cache_schreiben": 0, "websuchen": 0}
     try:
         start = time.time()
@@ -103,6 +104,14 @@ def laufe_runde(defn: dict, route: dict, pf: dict, snap: dict, mz, grund: str, e
                 kosten += bud.buche(defn["id"], modell, a.nutzung, "tiefenrunde" if typ == "tief" else "runde")
             if a.text:
                 text = a.text
+            if a.ende == "max_tokens" and abgeschnitten < 2:  # abgeschnitten: nicht stillschweigend als Rundenende werten
+                abgeschnitten += 1
+                if a.aufrufe:  # angefangene Aufrufe sind evtl. unvollständig → nicht ausführen, aber beantworten (API verlangt tool_result)
+                    s.tool_ergebnisse([(c["id"], "Nicht ausgeführt: Antwort wurde abgeschnitten.", True) for c in a.aufrufe])
+                if hasattr(s, "hinweis"):
+                    s.hinweis("HINWEIS DER ARENA: Deine letzte Antwort wurde abgeschnitten (Ausgabelimit). Angefangene Werkzeugaufrufe "
+                              "wurden nicht ausgeführt. Arbeite in kleineren Schritten weiter und fasse dich kürzer.")
+                continue
             if a.aufrufe:
                 erg = []
                 for c in a.aufrufe:

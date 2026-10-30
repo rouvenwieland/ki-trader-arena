@@ -57,7 +57,8 @@ def _norm_poly(m: dict) -> dict | None:
                 "beschreibung": (m.get("description") or "")[:1500],
                 "url": f"https://polymarket.com/event/{(m.get('events') or [{}])[0].get('slug', m.get('slug'))}",
                 "ref": {"id": m["id"], "token_ja": toks[0], "token_nein": toks[1], "tick": m.get("orderPriceMinTickSize", 0.01),
-                        "gebuehr_rate": _f((m.get("feeSchedule") or {}).get("rate"), 0)}}
+                        "gebuehr_rate": _f((m.get("feeSchedule") or {}).get("rate"), 0) if m.get("feesEnabled", True) else 0.0,
+                        "gebuehr_exp": _f((m.get("feeSchedule") or {}).get("exponent"), 1)}}
     except (KeyError, ValueError):
         return None
 

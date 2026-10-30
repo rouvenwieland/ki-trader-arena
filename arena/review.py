@@ -13,6 +13,7 @@ from arena.agent import budget as bmod
 from arena.agent import llm
 
 MODELL = "claude-opus-5-5"
+MAX_TOKENS = 32000  # Opus 5.5 denkt immer; Denk-Tokens zählen mit (8000 schnitt das Review W44 ab)
 SYSTEM = """Du bist der Strategie-Prüfer der KI-Trader-Arena (reiner Papierhandel). Du bekommst Kennzahlen, Entscheidungen, Tagebücher und Notizbücher der Fonds der letzten Woche.
 Schreibe auf Deutsch ein ehrliches wöchentliches Review in Markdown:
 1. Gesamtbild (Rangliste, Vergleich zu Buy & Hold BTC/S&P; Rauschen vs. Signal bei so kleiner Stichprobe klar benennen)
@@ -51,17 +52,22 @@ def lauf(jetzt: float | None = None) -> str | None:
         print("Review übersprungen: Claude-Phase beendet/Budget erschöpft")
         return None
     daten = sammle(jetzt)
-    ok, warum = bud.darf("review", 1, bmod.schaetze_naechsten_aufruf(MODELL, len(daten), 8000), global_nur=True)
+    ok, warum = bud.darf("review", 1, bmod.schaetze_naechsten_aufruf(MODELL, len(daten), MAX_TOKENS), global_nur=True)
     if not ok:
         print("Review übersprungen:", warum)
         return None
-    s = llm.AnthropicSitzung(MODELL, SYSTEM, [], websuche=0, effort="high", max_tokens=8000)
+    s = llm.AnthropicSitzung(MODELL, SYSTEM, [], websuche=0, effort="high", max_tokens=MAX_TOKENS, timeout=900)
     s.nutzer(daten)
     a = s.schritt()
     bud.buche("review", MODELL, a.nutzung, "wochenreview")
     iso = datetime.fromtimestamp(jetzt, timezone.utc).isocalendar()
     pfad = config.ROOT / "reports" / f"{iso[0]}-W{iso[1]:02d}.md"
     pfad.parent.mkdir(exist_ok=True)
+    if a.ende == "max_tokens":  # abgeschnitten: nicht als gültiges Review speichern, keine Regeln übernehmen
+        kaputt = pfad.with_name(pfad.stem + "-abgeschnitten.md")
+        kaputt.write_text(f"# Abgeschnittenes Review {iso[0]}-W{iso[1]:02d}\n\n_max_tokens erreicht – wird nicht verwendet._\n\n{a.text}\n", encoding="utf-8")
+        print("FEHLER: Review abgeschnitten (max_tokens) →", kaputt)
+        return None
     pfad.write_text(f"# Strategie-Review {iso[0]}-W{iso[1]:02d}\n\n_Erstellt {datetime.fromtimestamp(jetzt, timezone.utc):%Y-%m-%d %H:%M} UTC von {MODELL}. Nur Papierhandel, keine Anlageberatung._\n\n{a.text}\n", encoding="utf-8")
     m = re.search(r"```json\s*(\{.*?\})\s*```", a.text, re.S)
     if m:

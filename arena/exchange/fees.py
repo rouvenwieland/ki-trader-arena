@@ -28,7 +28,13 @@ def gebuehr(inst: dict, preis: float, qty: float, index_preis: float | None = No
             # Kalshi: aufgerundet auf volle Cent: 0,07 * C * P * (1-P)
             return math.ceil(g["kalshi_koeffizient"] * qty * preis * (1 - preis) * 100 - 1e-9) / 100
         if venue == "polymarket":
-            return notional * g["polymarket_taker"]
+            # Laut Doku (docs.polymarket.com/trading/fees): C · rate · (p·(1−p))^exponent, gerundet auf 5 Stellen.
+            # Rate/Exponent je Markt aus feeSchedule (pm.py → ref); Geopolitik u. a. haben Rate 0.
+            ref = inst.get("ref") or {}
+            rate = ref.get("gebuehr_rate")
+            if rate is None:
+                rate = g["polymarket_taker"]
+            return round(qty * rate * (preis * (1 - preis)) ** ref.get("gebuehr_exp", 1), 5)
         return notional * g["manifold"] if venue == "manifold" else 0.0
     if art == "stock":
         return notional * 0.0 + g["stock_kommission"]

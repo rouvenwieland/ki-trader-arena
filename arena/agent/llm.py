@@ -94,7 +94,9 @@ class AnthropicSitzung:
         if self.effort:
             kw["output_config"] = {"effort": self.effort}
         try:
-            r = self.client.messages.create(**kw)
+            # Immer gestreamt: große max_tokens (Opus denkt immer mit) laufen sonst in HTTP-Zeitlimits.
+            with self.client.messages.stream(**kw) as strom:
+                r = strom.get_final_message()
         except Exception as e:
             raise LLMFehler(f"Anthropic: {e}") from e
         self.nachrichten.append({"role": "assistant", "content": r.content})  # unverändert zurückgeben
@@ -185,7 +187,7 @@ class OpenAISitzung:
         u = d.get("usage", {})
         a = Antwort(text=msg.get("content") or "", nutzung={"ein": u.get("prompt_tokens", 0), "aus": u.get("completion_tokens", 0),
                                                              "cache_lesen": 0, "cache_schreiben": 0, "websuchen": 0},
-                    ende=d["choices"][0].get("finish_reason", ""))
+                    ende={"length": "max_tokens"}.get(d["choices"][0].get("finish_reason") or "", d["choices"][0].get("finish_reason") or ""))
         for tc in msg.get("tool_calls") or []:
             try:
                 args = json.loads(tc["function"]["arguments"] or "{}")

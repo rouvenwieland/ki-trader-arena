@@ -33,7 +33,9 @@ def aufgaben(jetzt: float | None = None, ereignis: bool = False) -> list[str]:
         out.append("ereignis")
     iso = d.isocalendar()
     woche = f"{iso[0]}-W{iso[1]:02d}"
-    if d.weekday() == 6 and d.hour >= 18 and z.get("review") != woche and not (config.ROOT / "reports" / f"{woche}.md").exists():
+    berichte = config.ROOT / "reports"
+    nachholen = (berichte / f"{woche}-abgeschnitten.md").exists()  # abgeschnittenes Review dieser Woche einmal neu erzeugen
+    if (d.weekday() == 6 and d.hour >= 18 or nachholen) and z.get("review") != woche and not (berichte / f"{woche}.md").exists():
         z["review"] = woche
         out.append("review")
     prog = store.lies("prognosen.json", {}) or {}

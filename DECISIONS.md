@@ -22,7 +22,7 @@ Das Hauptbuch läuft in **USD** (alle Plattformen rechnen in USD). Startkapital 
 * **Dochte:** Stop-Loss/Take-Profit/Liquidation werden gegen das Tief/Hoch der 1-Minuten-Kerzen seit dem letzten Tick geprüft
   (Coinbase bzw. Deribit), nicht nur gegen den 15-Minuten-Kurs. Ein ausgelöster Stop füllt zum Stop-Preis (mit Slippage), bei Kurslücke zum aktuellen Buch.
 * **Optionen:** nur gekauft (Long), zu Deribit-Orderbuchpreisen in USD umgerechnet, Abrechnung zum Deribit-Lieferpreis (Innenwert). Verkauf/Short wegen unbegrenzten Risikos nicht erlaubt.
-* **Wettmärkte:** Polymarket (CLOB-Buch je Token, Gebühr 0 – nur wenn `feeSchedule` anderes sagt, siehe ref), Kalshi (Gebühr 0,07·C·P·(1−P), Buch aus Orderbuch-Endpunkt),
+* **Wettmärkte:** Polymarket (CLOB-Buch je Token, Taker-Gebühr `C·rate·(p·(1−p))^exponent` aus dem `feeSchedule` des Marktes, gerundet auf 5 Stellen – *korrigiert 31.10., vorher wurde sie trotz dieser Zeile nie gebucht*), Kalshi (Gebühr 0,07·C·P·(1−P), Buch aus Orderbuch-Endpunkt),
   PredictIt (nur Spitze des Buchs bekannt → **konservative synthetische Tiefe**: 100 Kontrakte je Preisstufe, je 1 ct schlechter; 10 % Gewinngebühr, 850-$-Limit;
   die 5 % Auszahlungsgebühr bleibt unberücksichtigt), Manifold (Spielgeld-CPMM, Preiswirkung exakt aus dem Pool berechnet, wird wie USD behandelt – nur als Signalquelle ernst nehmen).
   Abrechnung über die Plattform-APIs (Ja/Nein/Teilwert/Storno). PredictIt-Ergebnisse sind per API schwer ablesbar → Position bleibt dann offen.
@@ -111,3 +111,18 @@ kleineren Fonds in denselben Wetten (Spot und Perp desselben Coins long = gleich
 ### Daten
 `docs/data.json` wird nicht mehr versioniert (wuchs als ~50–100-kB-Datei bei jedem Tick um ~2 MB/Tag im Git); der Seiten-Workflow baut sie
 vor dem Deploy aus `data/`. `docs/status.json` (6 kB) bleibt im Git, weil die Laptop-Kachel sie als Rückfall roh aus dem Repo liest.
+
+## Umsetzung der Recherche-Empfehlung (31.10., Cloud-Session, Rouven nicht erreichbar)
+
+### Abschnitt 0 – Fehler
+* **B1 Polymarket-Gebühr:** Formel und Rundung wörtlich aus der Doku; Rate/Exponent je Markt aus `feeSchedule` (bei `feesEnabled: false` → 0).
+  Altpositionen ohne Rate bekommen den konfigurierten Standard (0). Regressionstest mit dem Doku-Beispiel (100 × 0,50 bei 0,07 → 1,75 $).
+* **B2 Review/Opus:** Alle Anthropic-Aufrufe laufen jetzt **gestreamt** (`messages.stream` + `get_final_message`), damit große `max_tokens`
+  keine HTTP-Zeitlimits reißen. Review mit 32k Ausgabe (Opus 5.5 denkt immer, Denk-Tokens zählen mit). `stop_reason == "max_tokens"` gilt als
+  Fehler: das Review wird als `…-abgeschnitten.md` abgelegt, **keine** Regeln übernommen, und der Taktgeber holt das Review derselben Woche einmal nach.
+  Das abgeschnittene W44 wurde deshalb nach `reports/2026-W44-abgeschnitten.md` verschoben → der nächste Takt erzeugt W44 neu.
+  In Agentenrunden wird eine abgeschnittene Antwort nicht mehr als Rundenende gewertet: angefangene Werkzeugaufrufe werden als Fehler
+  beantwortet (die API verlangt zu jedem `tool_use` ein `tool_result`), dazu ein Hinweis, kürzer weiterzuarbeiten (höchstens zweimal).
+  Ausgabelimits: Sonnet 12k, Opus-Tiefenrunde 20k, Haiku-Vorsichter 1,5k (300 schnitt laut Log die JSON-Antwort ab → „Triage fehlgeschlagen“).
+  Die serverseitigen `fallbacks` (Ausweichmodell bei Ablehnung) bleiben bewusst **aus**: Ein anderes Modell würde den Modellvergleich verfälschen,
+  und eine abgelehnte Runde kostet im Papierhandel nichts.
