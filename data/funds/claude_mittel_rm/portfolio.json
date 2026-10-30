@@ -2,8 +2,41 @@
  "fonds_id": "claude_mittel_rm",
  "waehrung": "USD",
  "start_kapital": 11156.327353966788,
- "cash": 11156.327353966788,
- "positionen": [],
+ "cash": 10876.827353966788,
+ "positionen": [
+  {
+   "id": "pe8186cc2",
+   "inst": {
+    "id": "pm:polymarket:676739:NEIN",
+    "art": "pm",
+    "venue": "polymarket",
+    "ergebnis": "NEIN",
+    "frage": "Will NVIDIA be the largest company in the world by market cap on December 31?",
+    "schliesst": 1798779540.0,
+    "ref": {
+     "id": "676739",
+     "token_ja": "11876606915924142133615854761923277060697657209957870741155164849437788272266",
+     "token_nein": "114033095271617070714983865791504478906266507670567428753203001241312040895286",
+     "tick": 0.01,
+     "condition": "0x684e5b72d4e407695397a79ed75ef37273c2655ca2548791a4153233d3744696",
+     "gebuehr_rate": 0.0,
+     "gebuehr_exp": 1.0
+    },
+    "url": "https://polymarket.com/event/largest-company-end-of-december-2026"
+   },
+   "seite": "long",
+   "menge": 559.0,
+   "einstand": 0.5,
+   "hebel": 1.0,
+   "marge": 0.0,
+   "eroeffnet": 1793383950.942459,
+   "gebuehren": 0.0,
+   "funding": 0.0,
+   "ausstiegsplan": "Halten bis Abrechnung 31.12.; vorzeitig verkaufen, wenn NEIN-Preis auf ≥0.62 steigt (Gewinn mitnehmen) oder unter 0.38 fällt.",
+   "entscheidung_id": "dbf84bba3",
+   "invalidierung": "NVDA schließt wieder dauerhaft über Apple-Marktkap (NVDA >~210 bei AAPL ~343) oder starke NVDA-Zahlen mit Rally >8%; dann neu bewerten/verkaufen."
+  }
+ ],
  "realisiert": 0.0,
  "gebuehren": 0.0,
  "funding": 0.0,

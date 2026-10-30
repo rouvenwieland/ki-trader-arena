@@ -2,7 +2,7 @@
  "fonds_id": "claude_mittel",
  "waehrung": "USD",
  "start_kapital": 11184.88579861696,
- "cash": 10966.71876861696,
+ "cash": 10767.13876861696,
  "positionen": [
   {
    "id": "pcc1e4100",
@@ -34,10 +34,36 @@
    "entscheidung_id": "d290f8f22",
    "kurs": 0.28500000000000003,
    "wert": 362.88
+  },
+  {
+   "id": "p4b35a277",
+   "inst": {
+    "id": "pm:kalshi:KXHIGHCHI-26OCT31-B62.5:NEIN",
+    "art": "pm",
+    "venue": "kalshi",
+    "ergebnis": "NEIN",
+    "frage": "Will the maximum temperature be 62-63° on Oct 31, 2026? [62° to 63°]",
+    "schliesst": 1793512800.0,
+    "ref": {
+     "ticker": "KXHIGHCHI-26OCT31-B62.5"
+    },
+    "url": "https://kalshi.com/markets/KXHIGHCHI-26OCT31"
+   },
+   "seite": "long",
+   "menge": 314.0,
+   "einstand": 0.6190764331210191,
+   "hebel": 1.0,
+   "marge": 0.0,
+   "eroeffnet": 1793383940.9742303,
+   "gebuehren": 5.19,
+   "funding": 0.0,
+   "ausstiegsplan": "Bis zur Abrechnung (NWS CLI 31.10.) halten. Kein Stop, da Binärwette; Größe begrenzt das Risiko.",
+   "entscheidung_id": "d6179fa1b",
+   "invalidierung": "Aktuelle NWS-Prognose oder gemessene Temperatur am 31.10. mit einem Höchstwert von 62–63°F, z. B. Mittagswert ≥62 bei bewölktem Himmel und Regen am Vormittag."
   }
  ],
  "realisiert": 131.75296999999978,
- "gebuehren": 0.0,
+ "gebuehren": 5.19,
  "funding": 0.0,
  "erstellt": 1793319819.7411644,
  "start_fx": 1.1184885798616961,

@@ -2,7 +2,7 @@
  "fonds_id": "claude_aggressiv",
  "waehrung": "USD",
  "start_kapital": 11184.88579861696,
- "cash": 7458.18759861696,
+ "cash": 7763.66737861696,
  "positionen": [
   {
    "id": "pa523d4f2",
@@ -23,7 +23,7 @@
     "url": "https://polymarket.com/event/us-iran-ceasefire-continues-throughptptpt"
    },
    "seite": "long",
-   "menge": 3011.0,
+   "menge": 2411.0,
    "einstand": 0.797,
    "hebel": 1.0,
    "marge": 0.0,
@@ -96,10 +96,42 @@
    "entscheidung_id": "d463915b7",
    "kurs": 0.1535,
    "wert": 118.73
+  },
+  {
+   "id": "pe8531dcb",
+   "inst": {
+    "id": "pm:polymarket:6205323:NEIN",
+    "art": "pm",
+    "venue": "polymarket",
+    "ergebnis": "NEIN",
+    "frage": "Will the price of Bitcoin be above $76,000 on November 1?",
+    "schliesst": 1793552400.0,
+    "ref": {
+     "id": "6205323",
+     "token_ja": "2139498022168974917530740550622140518197621727619574541068933262226786893216",
+     "token_nein": "38003026346404395850739036030512851311752514967203258699896224102880463564563",
+     "tick": 0.001,
+     "condition": "0x3b3b3df7e2cf92521060749dcbb65fb70ffc83630c52454cabd0423cdf2997f4",
+     "gebuehr_rate": 0.07,
+     "gebuehr_exp": 1.0
+    },
+    "url": "https://polymarket.com/event/bitcoin-above-76k-on-november-1-2026"
+   },
+   "seite": "long",
+   "menge": 1073.0,
+   "einstand": 0.22091780055917987,
+   "hebel": 1.0,
+   "marge": 0.0,
+   "eroeffnet": 1793383953.9785085,
+   "gebuehren": 12.92742,
+   "funding": 0.0,
+   "ausstiegsplan": "Halten bis Abrechnung 1.11. 16:00 UTC; vorzeitig verkaufen, wenn NEIN-Preis unter 0.10 fällt und kein Edge mehr besteht.",
+   "entscheidung_id": "d06487ae5",
+   "invalidierung": "Binance BTC/USDT über 79.000 und stabil, oder positives Binance-Post-Mortem mit starkem Risk-on-Ausbruch"
   }
  ],
- "realisiert": 352.6723999999999,
- "gebuehren": 0.0,
+ "realisiert": 429.9243999999999,
+ "gebuehren": 12.92742,
  "funding": 0.0,
  "erstellt": 1793319819.7411644,
  "start_fx": 1.1184885798616961,
