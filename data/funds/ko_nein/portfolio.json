@@ -2,7 +2,7 @@
  "fonds_id": "ko_nein",
  "waehrung": "USD",
  "start_kapital": 11157.431109273288,
- "cash": 8149.166199273285,
+ "cash": 7647.8005492732855,
  "positionen": [
   {
    "id": "pe6781775",
@@ -33,7 +33,7 @@
    "gebuehren": 0.0,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.07,
+   "kurs": 0.0675,
    "wert": 143.38
   },
   {
@@ -65,8 +65,8 @@
    "gebuehren": 0.0,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.28500000000000003,
-   "wert": 167.16
+   "kurs": 0.3,
+   "wert": 173.13
   },
   {
    "id": "pa5e8a32f",
@@ -225,8 +225,8 @@
    "gebuehren": 0.0,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.745,
-   "wert": 162.8
+   "kurs": 0.735,
+   "wert": 160.6
   },
   {
    "id": "p4f30b305",
@@ -257,8 +257,8 @@
    "gebuehren": 1.59066,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.8465,
-   "wert": 162.43
+   "kurs": 0.8314999999999999,
+   "wert": 158.78
   },
   {
    "id": "p28450e21",
@@ -283,8 +283,8 @@
    "gebuehren": 8.66,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.11499999999999999,
-   "wert": 78.98
+   "kurs": 0.10500000000000001,
+   "wert": 71.8
   },
   {
    "id": "pa262ac37",
@@ -309,8 +309,8 @@
    "gebuehren": 6.77,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.28500000000000003,
-   "wert": 109.08
+   "kurs": 0.265,
+   "wert": 105.04
   },
   {
    "id": "pfa54617a",
@@ -533,8 +533,8 @@
    "gebuehren": 0.33007,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.965,
-   "wert": 163.82
+   "kurs": 0.969,
+   "wert": 164.16
   },
   {
    "id": "p48fc5d59",
@@ -565,15 +565,111 @@
    "gebuehren": 0.0,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.026500000000000003,
+   "kurs": 0.0245,
    "wert": 147.91
+  },
+  {
+   "id": "pcad11f9d",
+   "inst": {
+    "id": "pm:polymarket:3399459:NEIN",
+    "art": "pm",
+    "venue": "polymarket",
+    "ergebnis": "NEIN",
+    "frage": "Israel x Iran ceasefire continues through October 31?",
+    "schliesst": 1793478540.0,
+    "ref": {
+     "id": "3399459",
+     "token_ja": "36595575197199846398267481972385180643951985822505187477756829088194676076340",
+     "token_nein": "34386684966925037477701889915132575610574649191623462027976379158560146275115",
+     "tick": 0.001,
+     "condition": "0xc3d5708780de5528998aeb53ca90e7ade64804f9f2386392a681435d5c42b44d",
+     "gebuehr_rate": 0.0,
+     "gebuehr_exp": 1
+    },
+    "url": "https://polymarket.com/event/israel-x-iran-ceasefire-continues-through-october-31"
+   },
+   "seite": "long",
+   "menge": 2754.0,
+   "einstand": 0.060753910675381245,
+   "hebel": 1.0,
+   "marge": 0.0,
+   "eroeffnet": 1793384623.8557248,
+   "gebuehren": 0.0,
+   "funding": 0.0,
+   "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
+   "kurs": 0.0535,
+   "wert": 88.13
+  },
+  {
+   "id": "pa5d926a7",
+   "inst": {
+    "id": "pm:polymarket:5170741:NEIN",
+    "art": "pm",
+    "venue": "polymarket",
+    "ergebnis": "NEIN",
+    "frage": "Will Bitcoin dip to $72,500 in October?",
+    "schliesst": 1793505600.0,
+    "ref": {
+     "id": "5170741",
+     "token_ja": "112081340862783094288531507232939550290094225969740006580351083084588352390635",
+     "token_nein": "72624341280159472994524480084115312651813992006632059407465419165722353069536",
+     "tick": 0.001,
+     "condition": "0xbf0602707edd80eada90c28ee03e74b9330432105f71b41da38f3997a55c1bde",
+     "gebuehr_rate": 0.07,
+     "gebuehr_exp": 1.0
+    },
+    "url": "https://polymarket.com/event/what-price-will-bitcoin-hit-in-october-2026"
+   },
+   "seite": "long",
+   "menge": 172.0,
+   "einstand": 0.9696802325581395,
+   "hebel": 1.0,
+   "marge": 0.0,
+   "eroeffnet": 1793384623.8557248,
+   "gebuehren": 0.35398,
+   "funding": 0.0,
+   "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
+   "kurs": 0.9684999999999999,
+   "wert": 166.32
+  },
+  {
+   "id": "p53c7f93b",
+   "inst": {
+    "id": "pm:polymarket:6051332:NEIN",
+    "art": "pm",
+    "venue": "polymarket",
+    "ergebnis": "NEIN",
+    "frage": "Will Bitcoin reach $82,500 in October?",
+    "schliesst": 1793505600.0,
+    "ref": {
+     "id": "6051332",
+     "token_ja": "55365128657792734295324826731078267473673366995035001459997650756090916622448",
+     "token_nein": "97948818299805593349169876683763026467576272125947257525378877248778151229783",
+     "tick": 0.001,
+     "condition": "0x5ce14dd9eb04b5a41104cef63b33194b64b70ae4bb8587957632b99288782822",
+     "gebuehr_rate": 0.07,
+     "gebuehr_exp": 1.0
+    },
+    "url": "https://polymarket.com/event/what-price-will-bitcoin-hit-in-october-2026"
+   },
+   "seite": "long",
+   "menge": 168.0,
+   "einstand": 0.993029761904762,
+   "hebel": 1.0,
+   "marge": 0.0,
+   "eroeffnet": 1793384623.8557248,
+   "gebuehren": 0.0814,
+   "funding": 0.0,
+   "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
+   "kurs": 0.9915,
+   "wert": 166.15
   }
  ],
  "realisiert": 0.0,
- "gebuehren": 17.35073,
+ "gebuehren": 17.786109999999997,
  "funding": 0.0,
  "erstellt": 1793379225.5430336,
  "start_fx": 1.1157431109273288,
- "letzter_tick": 1793383723.5804365,
+ "letzter_tick": 1793384623.8557248,
  "kontrolle_bis": 1793365700.224454
 }
