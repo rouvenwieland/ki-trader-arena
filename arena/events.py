@@ -132,7 +132,8 @@ def _kreuz_abweichung(markte: list[dict], preise: dict, schwelle_pp: float):
             if a["venue"] == b["venue"] or not ka or not kb:
                 continue
             j = len(ka & kb) / len(ka | kb)
-            if j < 0.8:
+            krit = lambda t: {w for w in t if len(w) <= 2 or w.isdigit()}  # noqa: E731
+            if j < 0.8 or krit(ka) != krit(kb):
                 continue
             diff = abs(_mitte(a) - _mitte(b))
             if diff * 100 >= schwelle_pp and a["ja_ask"] - a["ja_bid"] < 0.08 and b["ja_ask"] - b["ja_bid"] < 0.08:
