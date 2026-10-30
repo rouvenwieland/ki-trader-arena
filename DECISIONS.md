@@ -168,3 +168,13 @@ vor dem Deploy aus `data/`. `docs/status.json` (6 kB) bleibt im Git, weil die La
   Platt-Rekalibrierung erst ab 50 Auflösungen (Umstiegspunkt der Empfehlung); Krypto/Aktien per GARCH-Volatilitätsziel (1-σ-Tagesverlust 0,5/1/2 %)
   mit 2-σ-Stop-Vorschlag. Hart in der Börse neu: **Krypto-Cluster-Limit** (Brutto-Nominal Spot+Perp+Optionen: 25 %/100 %/400 %) und
   **Themen-Cluster-Limit** für Wetten (15 %/25 %/40 % je Thema). Bestehende Positionen bleiben, nur neue Käufe werden begrenzt.
+* **10 Kontrollfonds:** `ko_markt` („Markt-Kopierer“) übernimmt zu jeder ersten KI-Schätzung eines Marktes den damaligen Marktpreis als eigene Schätzung
+  (gleicher Zeitstempel, handelt nicht) → Null-Linie des marktbereinigten Brier. `ko_nein` („Immer NEIN“) kauft auf jeden von KI-Fonds geschätzten
+  Echtgeld-Markt (Polymarket/Kalshi) 1,5 % des Startkapitals NEIN und hält bis zur Abrechnung → misst den Ja-Hang. Beide laufen im Wächter, ohne LLM.
+
+### Große Hebel
+* **1 Schwarm-Meta-Fonds** (`arena/schwarm.py`, 0 Tokens): drei Varianten (alle KI, nur Claude, nur Liga) mit Profil „mittel“. Je Markt ≥ 3 Schätzungen
+  verschiedener Fonds aus 48 h → Rekalibrierung je Fonds (erst ab 50 Auflösungen) → getrimmter Mittelwert (ab 5 Stimmen ohne Extreme), Gewicht 1/Brier
+  ab 10 Auflösungen → Log-Odds-Mischung mit dem Marktpreis (KI-Gewicht 0,3) → Kauf nur bei Vorteil > Gebühr + 2 pp Puffer, ¼-Kelly, höchstens 5 % je
+  Markt, nur Echtgeld-Plattformen, höchstens 3 Käufe je Tick, Halten bis zur Abrechnung. Die erste Schwarm-Schätzung je Markt wird festgehalten → Brier-Skill
+  des Schwarms gegen den Markt ist direkt messbar (Kernfrage des Projekts). Wächter-Laufzeit mit allen neuen Fonds im Test: ~106 s (Grenze 600 s).

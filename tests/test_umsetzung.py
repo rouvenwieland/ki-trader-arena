@@ -262,3 +262,68 @@ def test_brier_skill_gegen_markt_und_filter_nach_ereignis():
     assert k["n"] == 2  # pm:c nach der Auflösung abgegeben → zählt nicht
     assert k["brier"] == pytest.approx((0.01 + 0.04) / 2) and k["brier_markt"] == pytest.approx((0.09 + 0.09) / 2)
     assert k["brier_skill_markt"] > 0 and k["marktbereinigt"] < 0 and k["gewinn_je_kontrakt"] == pytest.approx(0.3)
+
+
+# ---------------------------------------------------------------- Schwarm und Kontrollfonds
+class BuchMZ:
+    def __init__(self, ja_ask=0.40, nein_ask=0.62):
+        self.ja_ask, self.nein_ask = ja_ask, nein_ask
+
+    def buch(self, inst):
+        from arena.exchange.book import Book
+        a = self.ja_ask if inst["ergebnis"] == "JA" else self.nein_ask
+        return Book([(a - 0.02, 5000)], [(a, 5000)]), None
+
+    def marke(self, inst):
+        return {"bid": 0.38, "ask": 0.40, "mark": 0.39}
+
+
+def _stimmen(werte, mid="pm:kalshi:WETTER-1", ts=JETZT - 600):
+    from arena import store
+    for fid, p in zip(["claude_vorsichtig", "claude_mittel", "claude_aggressiv", "liga_gemini"], werte):
+        store.anhaengen(f"funds/{fid}/prognosen.jsonl", {"ts": ts, "markt_id": mid, "p_ja": p, "markt_ja_mitte": 0.39})
+
+
+def test_schwarm_mischung_und_kauf():
+    from arena import funds, schwarm, store
+    from arena.exchange import portfolio
+    assert schwarm.mische(0.8, 0.5) == pytest.approx(schwarm.sigmoid(0.3 * schwarm.logit(0.8)))
+    assert schwarm.getrimmt([(0.1, 1), (0.5, 1), (0.6, 1), (0.7, 1), (0.99, 1)]) == pytest.approx(0.6)
+    _stimmen([0.9, 0.85, 0.95, 0.9])
+    m = {"mid": "pm:kalshi:WETTER-1", "venue": "kalshi", "frage": "NYC high above 60°F?", "ja_bid": 0.38, "ja_ask": 0.40,
+         "schliesst": JETZT + 86400, "ref": {"ticker": "WETTER-1"}}
+    d = funds.SCHWARM[1]
+    pf = portfolio.neu(d["id"], 10000)
+    log = schwarm.schritt_schwarm(d, pf, BuchMZ(), JETZT, {m["mid"]: m})
+    p = store.lies_jsonl(f"funds/{d['id']}/prognosen.jsonl")[0]
+    assert 0.39 < p["p_ja"] < p["p_llm"] and p["stimmen"] == 3  # nur Claude-Stimmen, zum Markt hin gemischt
+    assert log and log[0]["ok"] and log[0]["inst_id"].endswith(":JA") and log[0]["nominal"] <= 0.05 * 10000 + 1
+    assert not schwarm.schritt_schwarm(d, pf, BuchMZ(), JETZT + 900, {m["mid"]: m})  # schon gehalten → kein zweiter Kauf
+
+
+def test_schwarm_handelt_nicht_ohne_vorteil_nach_kosten():
+    from arena import funds, schwarm
+    from arena.exchange import portfolio
+    _stimmen([0.45, 0.42, 0.44])
+    m = {"mid": "pm:kalshi:WETTER-1", "venue": "kalshi", "frage": "x", "ja_bid": 0.38, "ja_ask": 0.40, "schliesst": JETZT + 86400, "ref": {}}
+    pf = portfolio.neu("schwarm_alle", 10000)
+    assert not schwarm.schritt_schwarm(funds.SCHWARM[0], pf, BuchMZ(), JETZT, {m["mid"]: m})
+
+
+def test_kontrollen_markt_kopierer_und_immer_nein():
+    from arena import funds, metrics, schwarm, store
+    from arena.exchange import portfolio
+    _stimmen([0.9, 0.8, 0.7])
+    m = {"mid": "pm:kalshi:WETTER-1", "venue": "kalshi", "frage": "x", "ja_bid": 0.38, "ja_ask": 0.40, "schliesst": JETZT + 86400, "ref": {}}
+    ko_markt, ko_nein = funds.KONTROLLEN
+    pf = portfolio.neu("ko_markt", 10000)
+    assert schwarm.schritt_kontrolle(ko_markt, pf, BuchMZ(), JETZT, {m["mid"]: m}) == []
+    e = store.lies_jsonl("funds/ko_markt/prognosen.jsonl")
+    assert len(e) == 1 and e[0]["p_ja"] == 0.39 and e[0]["ts"] == JETZT - 600
+    schwarm.schritt_kontrolle(ko_markt, pf, BuchMZ(), JETZT + 900, {m["mid"]: m})
+    assert len(store.lies_jsonl("funds/ko_markt/prognosen.jsonl")) == 1  # nicht doppelt
+    store.schreibe("resolutions.json", {m["mid"]: {"wert": 1.0, "ts": JETZT + 1000}})
+    assert metrics.brier("ko_markt")["marktbereinigt"] == 0.0
+    pf2 = portfolio.neu("ko_nein", 10000)
+    log = schwarm.schritt_kontrolle(ko_nein, pf2, BuchMZ(), JETZT, {m["mid"]: m})
+    assert log[0]["ok"] and log[0]["inst_id"].endswith(":NEIN")

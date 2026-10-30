@@ -104,7 +104,7 @@ def prognose(iid: str, horizont: int, snap: dict | None = None) -> dict:
         modelle = {}
         for n, m in e["modelle"].items():
             x = {"modell": m["modell"], "letzter": m["letzter"], "median": m["median"][h], "horizont_h": h + 1}
-            if m.get("p10") and not m.get("nur_richtung"):
+            if m.get("p10") and not m.get("nur_richtung") and n != "kronos":  # Kronos-Band ist unbrauchbar eng (B3), auch in Altdaten
                 x |= {"p10": m["p10"][h], "p90": m["p90"][h]}
             else:
                 x["hinweis"] = "nur Richtungshinweis – kein verlässliches Unsicherheitsband"

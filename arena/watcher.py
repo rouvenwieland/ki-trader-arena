@@ -144,9 +144,16 @@ def lauf(jetzt: float | None = None) -> dict:
                                     "schliesst": p["inst"]["verfall"]})
 
     ledger_gesamt = 0
+    pm_index = {m["mid"]: m for m in pm_markte}
     for fid, (d, pf) in pfs.items():
         log = verarbeite_portfolio(pf, mz, funding, jetzt)
-        if d["typ"] == "benchmark":
+        if d["typ"] == "schwarm" or d.get("kontrolle"):
+            from arena import schwarm
+            try:
+                log += (schwarm.schritt_schwarm if d["typ"] == "schwarm" else schwarm.schritt_kontrolle)(d, pf, mz, jetzt, pm_index)
+            except Exception as e:  # Meta-/Kontrollfonds dürfen den Tick nie abbrechen
+                print("WARNUNG", fid, e)
+        elif d["typ"] == "benchmark":
             marks_b = {p["inst"]["id"]: mz.marke(p["inst"]) for p in pf["positionen"]}
             log += benchmarks.schritt(d, pf, mz, marks_b, jetzt)
         for r in log:

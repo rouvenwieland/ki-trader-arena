@@ -16,6 +16,16 @@ BENCHMARKS = [
     {"id": "bm_6040", "name": "60/40 (SPY/AGG)", "typ": "benchmark", "art": "6040"},
     {"id": "bm_affe", "name": "Zufallsaffe", "typ": "benchmark", "art": "affe"},
 ]
+# Kontrollfonds für Wettmärkte und Meta-Fonds ohne LLM (Logik in arena/schwarm.py)
+KONTROLLEN = [
+    {"id": "ko_markt", "name": "Kontrolle: Markt-Kopierer", "typ": "benchmark", "art": "markt", "kontrolle": True},
+    {"id": "ko_nein", "name": "Kontrolle: Immer NEIN", "typ": "benchmark", "art": "nein", "kontrolle": True},
+]
+SCHWARM = [
+    {"id": "schwarm_alle", "name": "Schwarm (alle KI)", "typ": "schwarm", "risiko": "mittel", "gruppe": "alle"},
+    {"id": "schwarm_claude", "name": "Schwarm (nur Claude)", "typ": "schwarm", "risiko": "mittel", "gruppe": "claude"},
+    {"id": "schwarm_liga", "name": "Schwarm (nur Liga)", "typ": "schwarm", "risiko": "mittel", "gruppe": "liga"},
+]
 
 
 def hat_schluessel(env: str) -> bool:
@@ -71,7 +81,7 @@ def openrouter_modelle(jetzt: float | None = None) -> list[dict]:
 
 
 def alle_definitionen() -> list[dict]:
-    return claude_fonds() + liga_fonds() + BENCHMARKS
+    return claude_fonds() + liga_fonds() + SCHWARM + BENCHMARKS + KONTROLLEN
 
 
 def liga_hat_schluessel(f: dict) -> bool:

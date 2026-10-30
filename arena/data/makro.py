@@ -96,5 +96,8 @@ def release_termine(tage: int = 14) -> list[dict]:
 def termine(tage: int = 21) -> list[dict]:
     """Kommende Termine (FOMC + FRED-Releases, falls Schlüssel) im Fenster der nächsten `tage` Tage."""
     jetzt = time.time()
-    alle = [x for x in fomc_termine() + release_termine(tage) if jetzt - 86400 < x["ts"] < jetzt + tage * 86400]
+    fomc = [x for x in fomc_termine() if x["ts"] > jetzt - 86400]
+    alle = [x for x in fomc + release_termine(tage) if x["ts"] < jetzt + tage * 86400]
+    if fomc and fomc[0] not in alle:  # die nächste Fed-Entscheidung immer zeigen
+        alle.append(fomc[0])
     return sorted(alle, key=lambda x: x["ts"])
