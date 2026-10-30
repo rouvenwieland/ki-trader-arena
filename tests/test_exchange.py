@@ -94,12 +94,12 @@ def test_nicht_genug_tiefe_teilfuellung():
 def test_perp_long_gewinn_und_funding():
     pf = portfolio.neu("t", 10000)
     book = Book(bids=[(100, 1e6)], asks=[(100, 1e6)])
-    r = engine.eroeffne(pf, AGGR, perp(), book, usd=3000, hebel=3, stop_loss=None)
+    r = engine.eroeffne(pf, AGGR, perp(), book, usd=3000, hebel=3, stop_loss=None, ts=1000)
     assert r["ok"]
     pos = pf["positionen"][0]
     assert pos["marge"] == pytest.approx(1000, rel=1e-3)
-    assert pos["liq_preis"] == pytest.approx(100 * (1 - 1 / 3 + 0.005), rel=1e-3)
-    f = engine.funding_buchen(pf, {"perp:BTC": 0.001}, 8)
+    assert pos["liq_preis"] == pytest.approx(100 * (1 - 1 / 3) / (1 - 0.005), rel=1e-3)
+    f = engine.funding_buchen(pf, {"perp:BTC": 0.001}, 8, ts=1000 + 8 * 3600)
     assert f[0]["betrag"] == pytest.approx(-3.0, rel=1e-2)  # Long zahlt bei positiver Rate
     book2 = Book(bids=[(110, 1e6)], asks=[(110, 1e6)])
     s = engine.schliesse(pf, pos, book2, ts=5)
@@ -110,8 +110,8 @@ def test_perp_long_gewinn_und_funding():
 def test_perp_short_funding_erhaelt():
     pf = portfolio.neu("t", 10000)
     book = Book(bids=[(100, 1e6)], asks=[(100, 1e6)])
-    engine.eroeffne(pf, AGGR, perp(), book, usd=2000, hebel=2, seite="short")
-    f = engine.funding_buchen(pf, {"perp:BTC": 0.001}, 8)
+    engine.eroeffne(pf, AGGR, perp(), book, usd=2000, hebel=2, seite="short", ts=1000)
+    f = engine.funding_buchen(pf, {"perp:BTC": 0.001}, 8, ts=1000 + 8 * 3600)
     assert f[0]["betrag"] > 0
 
 
@@ -204,3 +204,44 @@ def test_equity_bewertet_zum_geldkurs():
     engine.eroeffne(pf, MITTEL, spot(), book, usd=1000)
     eq = portfolio.equity(pf, {"spot:BTC-USD": {"bid": 99.0}})
     assert eq < 10000 - 10  # Spread + Gebühr sofort sichtbar
+
+
+def test_nan_und_ungueltige_eingaben_werden_abgelehnt():
+    nan = float("nan")
+    pf = portfolio.neu("t", 10000)
+    book = Book(bids=[(100, 1e6)], asks=[(100, 1e6)])
+    assert not engine.eroeffne(pf, MITTEL, spot(), book, qty=nan)["ok"]
+    assert not engine.eroeffne(pf, AGGR, perp(), book, usd=1000, hebel=nan)["ok"]
+    assert not engine.eroeffne(pf, MITTEL, spot(), book, usd=500, stop_loss=nan)["ok"]
+    assert pf["cash"] == 10000 and not pf["positionen"]
+    engine.eroeffne(pf, MITTEL, spot(), book, usd=500)
+    assert not engine.schliesse(pf, pf["positionen"][0], book, qty=nan)["ok"]
+    assert pf["cash"] == pf["cash"] and pf["positionen"][0]["menge"] == pf["positionen"][0]["menge"]
+
+
+def test_ungueltige_buchstufen_werden_ignoriert():
+    assert walk([(0.0, 1e6), (-5, 10), (100, 2)], 5, 0, True).qty == 2
+
+
+def test_stop_auf_falscher_seite_abgelehnt():
+    pf = portfolio.neu("t", 10000)
+    book = Book(bids=[(100, 1e6)], asks=[(100, 1e6)])
+    assert "falschen Seite" in engine.eroeffne(pf, MITTEL, spot(), book, usd=500, stop_loss=105)["grund"]
+    assert "falschen Seite" in engine.eroeffne(pf, MITTEL, spot(), book, usd=500, take_profit=95)["grund"]
+
+
+def test_perp_einzellimit_nicht_durch_mehrfachorders_umgehbar():
+    pf = portfolio.neu("t", 10000)
+    book = Book(bids=[(100, 1e9)], asks=[(100, 1e9)])
+    ok = 0
+    for _ in range(30):
+        ok += engine.eroeffne(pf, AGGR, perp(), book, usd=3000, hebel=10, ts=1)["ok"]
+    assert sum(p["marge"] for p in pf["positionen"]) <= 0.35 * 10000 * 1.02
+
+
+def test_funding_nur_fuer_haltedauer():
+    pf = portfolio.neu("t", 10000)
+    book = Book(bids=[(100, 1e6)], asks=[(100, 1e6)])
+    engine.eroeffne(pf, AGGR, perp(), book, usd=1000, hebel=2, ts=1000)
+    f = engine.funding_buchen(pf, {"perp:BTC": 0.001}, 6.0, ts=1000 + 360)  # Position existiert nur 0,1 h
+    assert f[0]["betrag"] == pytest.approx(-0.001 * (0.1 / 8) * 1000, rel=0.02)

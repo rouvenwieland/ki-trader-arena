@@ -53,3 +53,11 @@ GitHub Pages: per API von hier nicht aktivierbar (Proxy sperrt den Pages-Pfad) �
 
 ## Prognose-Werkzeuge
 Siehe STATUS.md (TimesFM/Kronos).
+
+## Abnahme durch unabhängigen Prüfer-Agenten (30.10.)
+Ein getrennter Agent prüfte die Börse nur lesend mit eigenen Reproduktionsskripten. Bestätigt und **behoben** (mit Regressionstests): NaN/ungültige Eingaben (Cash-Zerstörung),
+Perp-Einzellimit per Mehrfach-Orders, Dochte vor Eröffnung lösten Stops/Liquidation aus, Funding für Zeit vor der Eröffnung, ungenauer Liquidationspreis, Funding-Doppelzählung in `realisiert`,
+ungültige Orderbuch-Stufen (Preis ≤ 0), Stop/Take-Profit auf falscher Seite, Standard-Equity bei Perps.
+Bekannte, bewusst belassene Annahmen: Equity bewertet zum Geldkurs **ohne** künftige Ausstiegsgebühr (leicht optimistisch); `realisiert` enthält Einstiegsgebühren nicht (stehen in `gebuehren`/`netto_pnl`);
+Storno erstattet nur den Einsatz; PredictIt-10-%-Gebühr je Teilschließung ohne Verlustverrechnung und ohne 5 % Auszahlungsgebühr; Take-Profit verhält sich wie Stop (füllt zum schlechteren Buch);
+Funding mit Einstandsnominal und höchstens 6 h je Tick; Mindest-Cash ignoriert Gebühren; JA/NEIN desselben Marktes und Spot/Perp werden getrennt gezählt (Hedges nicht verrechnet).

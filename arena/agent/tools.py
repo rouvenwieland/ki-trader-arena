@@ -172,6 +172,10 @@ class Kontext:
                 **_) -> str:
         if self.orders >= 8:
             return "Limit erreicht: höchstens 8 Orders je Runde."
+        import math
+        for n_, w_ in (("zuversicht", zuversicht), ("betrag_usd", betrag_usd), ("menge", menge), ("hebel", hebel), ("stop_loss", stop_loss), ("take_profit", take_profit)):
+            if w_ is not None and (not isinstance(w_, (int, float)) or not math.isfinite(w_)):
+                return f"{n_} muss eine endliche Zahl sein."
         if aktion not in ("kaufen", "verkaufen"):
             return "aktion muss 'kaufen' oder 'verkaufen' sein."
         if len(begruendung.strip()) < 40:

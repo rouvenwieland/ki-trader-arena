@@ -62,7 +62,7 @@ def verarbeite_portfolio(pf: dict, mz: Marktzugriff, funding_raten: dict, jetzt:
         m = mz.marke(pos["inst"])
         marks[iid] = m.get("mark") if m.get("mark") is not None else m.get("bid")
         if pos["inst"]["art"] in ("spot", "perp"):
-            ex = mz.extreme(pos["inst"], min(seit, jetzt))
+            ex = mz.extreme(pos["inst"], max(min(seit, jetzt), pos.get("eroeffnet", 0)))  # Dochte vor der Eröffnung zählen nicht
             if ex:
                 extreme[iid] = ex
     marks = {k: v for k, v in marks.items() if v is not None}

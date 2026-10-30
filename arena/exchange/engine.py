@@ -4,6 +4,7 @@ Alle Beträge in USD. Funktionen verändern das Portfolio-Dict in place und lief
 ein Handelsprotokoll (dict) zurück, das der Aufrufer append-only speichert."""
 from __future__ import annotations
 
+import math
 import time
 
 from arena import config
@@ -37,6 +38,11 @@ def eroeffne(pf: dict, prof: dict, inst: dict, book: Book, *, seite: str = "long
         return _ablehnung("Leerverkäufe gibt es nur bei Perpetuals")
     if (qty is None) == (usd is None):
         return _ablehnung("Genau eines von qty oder usd angeben")
+    for name, wert in (("qty", qty), ("usd", usd), ("hebel", hebel), ("stop_loss", stop_loss), ("take_profit", take_profit)):
+        if wert is not None and (not isinstance(wert, (int, float)) or not math.isfinite(wert) or (name in ("qty", "usd", "hebel") and wert <= 0)):
+            return _ablehnung(f"Ungültiger Wert für {name}: {wert}")
+    if stop_loss is not None and take_profit is not None and ((seite == "long") != (stop_loss < take_profit)):
+        return _ablehnung("Stop-Loss/Take-Profit liegen auf der falschen Seite")
     kaufen = seite == "long"
     levels = book.asks if kaufen else book.bids
     if not levels:
@@ -66,7 +72,10 @@ def eroeffne(pf: dict, prof: dict, inst: dict, book: Book, *, seite: str = "long
         return _ablehnung(f"Preis {f.vwap:.4f} außerhalb (0,1)")
     nominal = f.kosten
     fee = gebuehr_fn(f.vwap, f.qty)
-    eq = equity if equity is not None else pf["cash"] + sum(p["einstand"] * p["menge"] for p in pf["positionen"])
+    eq = equity if equity is not None else pf["cash"] + sum(p["marge"] if p["inst"]["art"] == "perp" else p["einstand"] * p["menge"] for p in pf["positionen"])
+    for lvl, name in ((stop_loss, "Stop-Loss"), (take_profit, "Take-Profit")):
+        if lvl is not None and ((name == "Stop-Loss") == (seite == "long")) == (lvl >= f.vwap):
+            return _ablehnung(f"{name} {lvl} liegt auf der falschen Seite des Einstiegs {f.vwap:.4f}")
     grund = risk.pruefe_eroeffnung(pf, prof, inst, nominal, hebel, eq)
     if grund:
         return _ablehnung(grund)
@@ -104,7 +113,7 @@ def eroeffne(pf: dict, prof: dict, inst: dict, book: Book, *, seite: str = "long
     if entscheidung_id:
         pos["entscheidung_id"] = entscheidung_id
     if perp:
-        pos["liq_preis"] = pos["einstand"] * ((1 - 1 / hebel + mm) if seite == "long" else (1 + 1 / hebel - mm))
+        pos["liq_preis"] = pos["einstand"] * (((1 - 1 / hebel) / (1 - mm)) if seite == "long" else ((1 + 1 / hebel) / (1 + mm)))
     pf["cash"] -= braucht
     pf["gebuehren"] += fee
     return {"ok": True, "ts": ts, "aktion": "eroeffnet", "fonds_id": pf["fonds_id"], "position_id": pos["id"],
@@ -125,6 +134,8 @@ def schliesse(pf: dict, pos: dict, book: Book, *, qty: float | None = None, grun
     levels = book.bids if verkaufen else book.asks
     if not levels:
         return _ablehnung("Kein Orderbuch zum Schließen", position_id=pos["id"])
+    if qty is not None and (not math.isfinite(qty) or qty <= 0):
+        return _ablehnung("Ungültige Menge", position_id=pos["id"])
     q = pos["menge"] if qty is None else min(qty, pos["menge"])
     f = walk(levels, q, _slip(art), kaufen=not verkaufen)
     if f.qty <= 0:
@@ -177,7 +188,8 @@ def funding_buchen(pf: dict, raten_8h: dict[str, float], stunden: float, ts: flo
         if rate is None:
             continue
         vz = 1 if pos["seite"] == "long" else -1
-        betrag = -vz * rate * (stunden / 8.0) * pos["einstand"] * pos["menge"]  # <0: zahlt
+        h = min(stunden, max(0.0, ((ts or time.time()) - pos["eroeffnet"]) / 3600))  # nur für die Haltedauer
+        betrag = -vz * rate * (h / 8.0) * pos["einstand"] * pos["menge"]  # <0: zahlt
         pos["marge"] += betrag
         pos["funding"] = pos.get("funding", 0.0) + betrag
         pf["funding"] += betrag
@@ -211,7 +223,7 @@ def pruefe_liquidation(pf: dict, extreme: dict[str, tuple[float, float]], marks:
             rest = max(0.0, eq - liqfee)
             verlust_marge = pos["marge"]
             pf["cash"] += rest
-            pf["realisiert"] += rest - verlust_marge
+            pf["realisiert"] += rest - verlust_marge - pos.get("funding", 0.0)  # Funding steht schon in pf["funding"]
             pf["gebuehren"] += min(liqfee, max(eq, 0.0))
             pf["positionen"] = [p for p in pf["positionen"] if p["id"] != pos["id"]]
             out.append({"ok": True, "ts": ts, "aktion": "liquidiert", "fonds_id": pf["fonds_id"],

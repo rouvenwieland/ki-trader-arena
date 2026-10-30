@@ -24,7 +24,7 @@ def pruefe_eroeffnung(pf: dict, prof: dict, inst: dict, nominal: float, hebel: f
         perp = sum(p["einstand"] * p["menge"] for p in pf["positionen"] if p["inst"]["art"] == "perp")
         if (perp + nominal) / eq > prof["max_perp_pct"] * prof["max_hebel"] + 1e-9:
             return "Perp-Nominal über dem Limit des Risikoprofils"
-        marge = nominal / hebel
+        marge = nominal / hebel + sum(p["marge"] for p in pf["positionen"] if p["inst"]["id"] == inst["id"])
         if marge / eq > prof["max_position_pct"] + 1e-9:
             return "Marge der Perp-Position über dem Einzelpositions-Limit"
     if inst["art"] == "option":

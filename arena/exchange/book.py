@@ -1,6 +1,7 @@
 """Orderbuch: Füllung gegen echte Tiefe (VWAP, Teilfüllung, Slippage)."""
 from __future__ import annotations
 
+import math
 from dataclasses import dataclass, field
 
 
@@ -44,8 +45,12 @@ def walk(levels: list[tuple[float, float]], qty: float, slippage_bps: float = 0.
 
     Slippage (Verzögerung zwischen Schnappschuss und Ausführung) verschlechtert den Preis
     zusätzlich um slippage_bps gegen den Händler."""
+    if not math.isfinite(qty) or qty <= 0:
+        return Fill(0.0, 0.0, 0.0, 0, False)
     rest, kosten, got, n = qty, 0.0, 0.0, 0
     for preis, groesse in levels:
+        if not (math.isfinite(preis) and math.isfinite(groesse)) or preis <= 0 or groesse <= 0:
+            continue  # ungültige Buchstufen ignorieren
         if rest <= 1e-12:
             break
         nimm = min(rest, groesse)
