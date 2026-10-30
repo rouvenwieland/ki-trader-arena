@@ -474,3 +474,25 @@ def test_risikomanager_verkleinert_und_lehnt_ab(monkeypatch):
     klein = ORDER | {"instrument_id": "pm:kalshi:R-3:JA"}
     monkeypatch.setattr(rm, "pruefe", lambda *a, **k: pytest.fail("kleine Order braucht keinen Pass"))
     assert '"ok": true' in ctx.t_order(betrag_usd=100, **klein)
+
+
+# ---------------------------------------------------------------- Seite
+def test_seite_enthaelt_neue_kennzahlen(monkeypatch):
+    import json
+
+    from arena import site, store
+    from arena.exchange import portfolio
+    funds_ = __import__("arena.funds", fromlist=["x"])
+    for fid in ("claude_mittel", "bm_btc", "schwarm_alle", "ko_markt"):
+        funds_.speichere_portfolio(portfolio.neu(fid, 10000))
+        for h in range(40):
+            store.anhaengen(f"funds/{fid}/equity.jsonl", {"t": JETZT - (40 - h) * 3600, "usd": 10000 + h * (3 if fid == "claude_mittel" else 1)})
+    store.anhaengen("funds/claude_mittel/prognosen.jsonl", {"ts": JETZT - 100, "markt_id": "pm:a", "p_ja": 0.8, "markt_ja_mitte": 0.6})
+    store.schreibe("resolutions.json", {"pm:a": {"wert": 1.0, "ts": JETZT}})
+    g = site.bauen(JETZT)
+    assert g["statistik"]["fonds"]["claude_mittel"]["rendite_ki_pct"] is not None
+    z = {x["id"]: x for x in g["prognosen"]["zeilen"]}
+    assert z["claude_mittel"]["n"] == 1 and z["claude_mittel"]["brier_skill_markt"] > 0
+    assert "vorschau" in g["modellwahl"] and any(f["id"] == "ko_wetter" and f["kontrolle"] for f in g["fonds"])
+    st = json.loads((site.DOCS / "status.json").read_text())
+    assert "prognosen" in st and "nachfolger_vorschau" in st

@@ -214,3 +214,14 @@ vor dem Deploy aus `data/`. `docs/status.json` (6 kB) bleibt im Git, weil die La
   nicht im Schwarm (doppelte Stimme). **Budget:** Tagesanteile jetzt 4 × 2,75 € + 0,8 € Reserve = 11,8 € (Deckel 12 € bleibt hart). Grundlage:
   heutiger Verbrauch ≈ 5,4 € bis 16 UTC, Hochrechnung ≈ 7,5 €/Tag mit drei Fonds – der vierte Fonds bringt die Ausgaben ins Ziel 8–11 €; die tatsächlichen
   Ausgaben liegen unter den Anteilen, die Anteile sind Obergrenzen.
+
+### Seite (31.10.)
+* Neue Abschnitte **„Prognosegüte – besser als der Marktpreis?“** (Kacheln, Tabelle je Prognostiker mit Brier, Markt-Brier, Skill gg. Markt samt
+  95-%-Balken des marktbereinigten Brier, Log-Score, Gewinn/Kontrakt; Kalibrierungsdiagramm je Gruppe Claude/Liga/Schwarm/Marktpreis; Trefferbilanz der
+  Zeitreihenmodelle) und **„Schwarm & Kontrollen“** (Karten). Rangliste mit 95-%-Spanne der Rendite, Deflated Sharpe („Können?“), MinTRL („Messbar ab“)
+  und p-Wert gegen BTC; Gebühren-Spalte wanderte in die Fonds-Akte (sonst zu breit). Kosten mit „Gewinn je API-€“, A/B-Kasten und Modellwahl-Vorschau.
+  Unabhängigkeit mit **Gleichlauf** (Korrelation der Stundenrenditen); der A/B-Zwilling zählt nicht in der mittleren Überlappung.
+* Farben: die bestehenden Markenfarben (Bernstein/Cyan/Violett/Grau) bestehen den Farbsehschwäche- und Kontrasttest des Validators, liegen aber außerhalb
+  von dessen Helligkeitsband → beibehalten (Einheitlichkeit der Seite), dafür **zusätzliche Kodierung** über Linienart (Markt gestrichelt), Markerform
+  (●■◆○) und Legende. Geprüft headless (Chromium, 1440 px und 390 px): keine Konsolenfehler, kein horizontales Scrollen; auf dem Handy zeigt die
+  Prognosetabelle Name + Skill, die Modelltabelle Name + Abdeckung.

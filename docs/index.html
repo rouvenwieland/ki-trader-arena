@@ -118,14 +118,34 @@ footer b{color:var(--dim)}
 .gauge s{position:absolute;top:-5px;bottom:-5px;width:2px;background:var(--text);opacity:.6}
 .gauge u{position:absolute;top:-5px;bottom:-5px;width:2px;background:var(--red);text-decoration:none}
 .legend2{display:flex;flex-wrap:wrap;gap:6px 18px;font:11px var(--mono);color:var(--faint)}
+.b-schwarm{background:rgba(169,139,255,.16);color:var(--violet)}.b-kontrolle{background:rgba(255,255,255,.05);color:var(--dim);border:1px dashed rgba(255,255,255,.18)}
+.ci{position:relative;display:inline-block;width:150px;height:16px;vertical-align:middle;margin-left:10px}
+.ci::before{content:"";position:absolute;left:50%;top:-2px;bottom:-2px;width:1px;background:rgba(255,255,255,.35)}
+.ci .rg{position:absolute;top:6px;height:4px;border-radius:2px;background:rgba(255,255,255,.18)}
+.ci .pt{position:absolute;top:3px;width:10px;height:10px;margin-left:-5px;border-radius:50%;border:2px solid var(--bg2)}
+.split{display:grid;grid-template-columns:1fr;gap:18px;align-items:start}
+.split2{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,1fr);gap:22px;align-items:center;margin-top:18px}
+@media (max-width:900px){.split2{grid-template-columns:1fr}}
+#tabelle td.nm{white-space:normal;min-width:220px;max-width:330px}
+#kal{width:100%;height:340px;display:block}
+.note{font:12px var(--mono);color:var(--faint);margin-top:12px;line-height:1.6}
+.note b{color:var(--dim)}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:14px}
+.cards .panel{padding:18px 20px}.cards h3{font:400 21px var(--serif);margin-bottom:2px}
+.cards .zahl{font:400 34px/1.1 var(--serif);margin:10px 0 4px}
+.cards p{color:var(--dim);font-size:13px;margin-top:8px}
+.mini{display:grid;grid-template-columns:1fr auto;gap:4px 12px;font:12px var(--mono);color:var(--dim);margin-top:10px}
+.mini b{color:var(--text);font-weight:500;text-align:right}
+.mw{display:flex;flex-wrap:wrap;gap:8px;margin-top:10px}.mw span{padding:5px 10px;border-radius:8px;border:1px solid var(--line);font:12px var(--mono);color:var(--dim)}
+.mw span.win{border-color:var(--amber);color:var(--amber)}
 .tape{position:absolute;left:0;right:0;bottom:56px;z-index:2;overflow:hidden;border-top:1px solid var(--line);border-bottom:1px solid var(--line);background:rgba(6,7,10,.45);backdrop-filter:blur(6px);
   -webkit-mask-image:linear-gradient(90deg,transparent,#000 8%,#000 92%,transparent);mask-image:linear-gradient(90deg,transparent,#000 8%,#000 92%,transparent)}
 .tape div{display:inline-flex;gap:46px;padding:10px 0;white-space:nowrap;font:12px var(--mono);color:var(--dim);animation:tape 70s linear infinite}
 .tape b{color:var(--amber);font-weight:600;margin-right:8px}
 @keyframes tape{to{transform:translateX(-50%)}}
 .reveal{opacity:0;transform:translateY(18px);transition:opacity .9s ease,transform .9s ease}.reveal.in{opacity:1;transform:none}
-@media (max-width:640px){.panel{backdrop-filter:none;background:rgba(18,21,29,.92)}#tabelle th:nth-child(n+4),#tabelle td:nth-child(n+4):not([colspan]),#kostentab th:nth-child(n+4),#kostentab td:nth-child(n+4){display:none}
-  #tabelle td.nm,#kostentab td.nm{white-space:normal}#tabelle td{padding:12px 8px}.nm small.stt{max-width:200px}
+@media (max-width:640px){.panel{backdrop-filter:none;background:rgba(18,21,29,.92)}#tabelle th:nth-child(n+4),#tabelle td:nth-child(n+4):not([colspan]),#kostentab th:nth-child(n+4),#kostentab td:nth-child(n+4),#progtab :is(th,td):is(:nth-child(2),:nth-child(3),:nth-child(4),:nth-child(6),:nth-child(7)),#modtab :is(th,td):is(:nth-child(2),:nth-child(4),:nth-child(5)){display:none}
+  #tabelle td.nm,#kostentab td.nm,#progtab td.nm{white-space:normal}.ci{width:96px}#kal{height:280px}#tabelle td{padding:12px 8px}.nm small.stt{max-width:200px}
   .pair{grid-template-columns:1fr 64px}.pair .track{grid-column:1/-1;grid-row:2}.tape{bottom:48px}}
 @media (max-width:640px){#chart{height:320px}section{padding:56px 0}.ev{flex-direction:column;gap:2px}.ev .t{min-width:0}}
 @media (prefers-reduced-motion:reduce){.hero .glow,.pulse,.tape div{animation:none}.reveal{opacity:1;transform:none;transition:none}}
@@ -137,7 +157,7 @@ footer b{color:var(--dim)}
   <div class="wrap">
     <div class="kicker">Live-Experiment · Nur Papiergeld</div>
     <h1>KI-Trader<br><em>Arena</em></h1>
-    <p class="lede">Können KI-Agenten mit allen Daten und Werkzeugen im spekulativen Handel einen echten Vorteil erzielen? Drei Claude-Fonds, eine Liga weiterer Modelle und vier stumpfe Vergleichsfonds – auf streng realistisch simulierter Börse. Jede Entscheidung trägt einen Zeitstempel, bevor das Ergebnis feststeht.</p>
+    <p class="lede">Können KI-Agenten mit allen Daten und Werkzeugen im spekulativen Handel einen echten Vorteil erzielen? Vier Claude-Fonds (einer davon als A/B-Test), eine Liga weiterer Modelle, ein „Schwarm“ ohne eigenes Denken, Kontrollfonds und stumpfe Vergleichsfonds – auf streng realistisch simulierter Börse, gemessen mit Konfidenzintervallen und gegen den Marktpreis. Jede Entscheidung trägt einen Zeitstempel, bevor das Ergebnis feststeht.</p>
     <div class="live" id="live"><span><span class="pulse"></span>lade Daten …</span></div>
   </div>
   <div class="tape" id="tape" hidden></div>
@@ -152,48 +172,74 @@ footer b{color:var(--dim)}
 
 <section class="reveal" id="rangliste"><div class="wrap">
   <h2><small>02 · Rangliste</small>Wer schlägt den Markt?</h2>
-  <p class="sub">Erwartung: Die meisten KI-Trader schlagen Buy &amp; Hold nicht. Aussagekräftig wird das erst nach mehreren Wochen. Der Brier-Score misst Wettmarkt-Prognosen (0 = perfekt, 0,25 = Münzwurf); „Markt“ ist der Brier-Score des Marktpreises zum Zeitpunkt der Schätzung.</p>
+  <p class="sub">Erwartung: Die meisten KI-Trader schlagen Buy &amp; Hold nicht. Der Rangplatz allein ist in den ersten Wochen Rauschen – deshalb steht unter jeder Rendite ihre <b>95-%-Spanne</b> (Block-Bootstrap der Stundenrenditen): Überlappen sich die Spannen zweier Fonds, ist der Unterschied nicht belegt.</p>
   <div class="panel tablewrap"><table id="tabelle"></table></div>
+  <p class="note"><b>Können?</b> Deflated Sharpe: Wahrscheinlichkeit, dass der Fonds echtes Können zeigt – bereinigt darum, dass bei vielen Fonds einer zufällig vorne liegt (ab 50 % beachtenswert, ab 95 % belegt). <b>Messbar ab</b>: so viele Tage müsste die bisherige Güte anhalten, bis sie statistisch belegt wäre. <b>p gg. BTC</b>: Wahrscheinlichkeit, einen solchen Vorsprung vor Buy &amp; Hold BTC auch ohne Können zu sehen (klein = gut). Ein „–“ heißt: noch zu wenige Stunden.</p>
+</div></section>
+
+<section class="reveal" id="prognosen"><div class="wrap">
+  <h2><small>03 · Prognosegüte</small>Besser als der Marktpreis?</h2>
+  <p class="sub">Jede Wahrscheinlichkeit, die ein Fonds für einen Wettmarkt festhält, wird nach der Abrechnung bewertet – nicht nur gegen das Ergebnis, sondern gegen den <b>Marktpreis im selben Moment</b>. Den Markt einfach abzuschreiben ist leicht; ihn zu schlagen ist die eigentliche Frage. Der Kontrollfonds „Markt-Kopierer“ ist genau diese Null-Linie.</p>
+  <div class="big" id="progzahlen"></div>
+  <div class="panel tablewrap"><table id="progtab"></table></div>
+  <div class="split2">
+    <div class="panel chartbox"><canvas id="kal"></canvas><div class="legend2" id="kallegende" style="padding:4px 4px 8px"></div></div>
+    <p class="note" style="margin:0"><b>Brier</b>: mittlerer quadrierter Fehler (0 = perfekt, 0,25 = Münzwurf). <b>Skill gg. Markt</b>: 1 − Brier/Brier des Marktpreises; rechts der Mitte = besser als der Markt. Der Balken zeigt die 95-%-Spanne des marktbereinigten Brier (Fragen-Bootstrap). <b>Gewinn/Kontrakt</b>: hätte der Fonds zum Marktpreis in Richtung seiner Meinung gehandelt (ohne Gebühren). Im Diagramm: Kalibrierung – trat ein Ereignis, dem 70 % gegeben wurden, auch in etwa 70 % der Fälle ein? Punkte auf der Diagonalen sind perfekt kalibriert; Schätzungen, die erst nach Schluss abgegeben wurden, zählen nicht.</p>
+  </div>
+  <h2 style="font-size:26px;margin:42px 0 6px">Kursprognosen der Zeitreihenmodelle</h2>
+  <p class="sub" style="margin-bottom:16px">Die Werkzeuge der Agenten werden selbst gemessen: Wie oft lag der echte Kurs 24 h später im angegebenen 10–90-%-Band (Soll ≈ 80 %)? GARCH ist die ehrliche Basislinie; Kronos liefert nur noch eine Richtung, weil sein Band viel zu eng war.</p>
+  <div class="panel tablewrap"><table id="modtab"></table></div>
+</div></section>
+
+<section class="reveal" id="schwarm"><div class="wrap">
+  <h2><small>04 · Schwarm &amp; Kontrollen</small>Weiß die Menge mehr als der Einzelne?</h2>
+  <p class="sub">Der Schwarm denkt nicht selbst: Er sammelt die frischen Schätzungen aller Fonds, bildet einen getrimmten Mittelwert, mischt ihn vorsichtig mit dem Marktpreis (KI-Anteil 30 %) und handelt nur, wenn der Abstand die Kosten klar übersteigt. Drei Varianten zeigen, ob Modellvielfalt hilft. Die Kontrollfonds sind Messlatten ohne jede Intelligenz.</p>
+  <div class="cards" id="schwarmkarten"></div>
 </div></section>
 
 <section class="reveal" id="klumpen"><div class="wrap">
-  <h2><small>03 · Unabhängigkeit</small>Setzen alle auf dieselbe Karte?</h2>
+  <h2><small>05 · Unabhängigkeit</small>Setzen alle auf dieselbe Karte?</h2>
   <p class="sub">Drei Claude-Fonds sind nur dann drei Messungen, wenn sie unabhängig denken. Jeder hat einen eigenen Schwerpunkt, eine eigene Startliste und sieht die anderen nicht. Die Überlappung zeigt, welcher Anteil des investierten Kapitals (des kleineren Fonds eines Paars) in denselben Wetten steckt – 0 % heißt völlig verschiedene Wetten.</p>
   <div class="big" id="klumpenzahlen"></div>
   <div class="panel" style="padding:8px 22px" id="paare"></div>
+  <p class="note" id="gleichlauf"></p>
 </div></section>
 
 <section class="reveal" id="kosten"><div class="wrap">
-  <h2><small>04 · Rechenzeit</small>Was kostet das Denken?</h2>
+  <h2><small>06 · Rechenzeit</small>Was kostet das Denken?</h2>
   <p class="sub">Die Claude-Fonds zahlen echte API-Kosten aus einem festen Budget: feste Runden etwa alle drei Stunden (Sonnet), täglich um 14 Uhr eine Tiefenrunde (Opus), dazu Ereignisrunden nach Vorsichtung. Harter Deckel im Code; Liga-Modelle laufen auf Gratis- oder eigenen Kontingenten.</p>
   <div class="panel" style="padding:22px 24px 18px;margin-bottom:18px" id="budgetbox"></div>
   <div class="panel tablewrap"><table id="kostentab"></table></div>
+  <div class="cols" style="margin-top:18px">
+    <div class="panel card" id="abbox"></div>
+    <div class="panel card" id="mwbox"></div>
+  </div>
 </div></section>
 
 <section class="reveal" id="akten"><div class="wrap">
-  <h2><small>05 · Fonds-Akten</small>Positionen, Entscheidungen, Notizbuch</h2>
+  <h2><small>07 · Fonds-Akten</small>Positionen, Entscheidungen, Notizbuch</h2>
   <p class="sub">Jede Entscheidung mit Begründung, Zuversicht und Ausstiegsplan – so festgehalten, bevor der Markt antwortet.</p>
   <div class="tabs" id="fondstabs"></div>
   <div class="panel dossier" id="dossier"></div>
 </div></section>
 
 <section class="reveal" id="ereignisse"><div class="wrap">
-  <h2><small>06 · Wächter</small>Ereignisse</h2>
+  <h2><small>08 · Wächter</small>Ereignisse</h2>
   <p class="sub">Der Wächter läuft alle 15 Minuten ohne KI und weckt die Agenten nur bei Kurssprüngen, Nachrichten zu Positionen, bald ablaufenden Märkten, großen Wettmarkt-Bewegungen, Volatilitätsausbrüchen und Fehlbewertungen.</p>
   <div class="panel" style="padding:8px 22px" id="events"></div>
 </div></section>
 
 <section class="reveal" id="regeln"><div class="wrap">
-  <h2><small>07 · Spielregeln &amp; Ehrlichkeit</small>Wie realistisch ist das?</h2>
+  <h2><small>09 · Spielregeln &amp; Ehrlichkeit</small>Wie realistisch ist das?</h2>
   <div class="cols">
     <div class="panel card"><h3>Börse</h3><p>Füllung gegen echte Orderbuchtiefe, Spread, Slippage, Gebühren je Plattform (Coinbase, Deribit, Kalshi, PredictIt …), Funding bei Perpetuals, Liquidation bei Hebel, Abrechnungsregeln der Wettmärkte. Bewertung zum Geldkurs – also dem, was man real bekäme.</p></div>
     <div class="panel card"><h3>Vorwärtstest</h3><p>Entscheidungen werden mit Zeitstempel gespeichert, bevor ein Ergebnis existiert; die Git-Historie macht das nachprüfbar. Rücktests mit Sprachmodellen wären durch deren Trainingswissen verfälscht.</p></div>
-    <div class="panel card"><h3>Grenzen</h3><p>Papierhandel kennt keine Marktwirkung eigener Orders über das Buch hinaus und keine Ausfälle der Plattformen. Kleine Stichprobe, kurze Laufzeit: Rangplätze in den ersten Wochen sind Rauschen. Keine Anlageberatung.</p></div>
+    <div class="panel card"><h3>Grenzen</h3><p>Eigene Orders verbrauchen die Buchtiefe im selben Lauf; Stops und Aktien tragen einen Marktimpact nach dem Square-Root-Gesetz. Ausfälle der Plattformen kennt die Simulation nicht. Kleine Stichprobe, kurze Laufzeit: Deshalb Konfidenzintervalle statt nackter Rangplätze. Keine Anlageberatung.</p></div>
   </div>
 </div></section>
 
 <footer><div class="wrap">
-  <p><b>Nur Simulation.</b> Kein echtes Geld, keine Anlageberatung. Quellen: Polymarket, Kalshi, PredictIt, Manifold (lesend), Coinbase, Deribit, Yahoo, RSS/Reddit/GDELT, USGS/GDACS/NOAA.</p>
+  <p><b>Nur Simulation.</b> Kein echtes Geld, keine Anlageberatung. Quellen: Polymarket, Kalshi, PredictIt, Manifold (lesend), Coinbase, Deribit (inkl. DVOL), Yahoo, RSS/Reddit/GDELT, Fed/EZB/SEC, USGS/GDACS/NOAA/NWS. Wetterdaten: <a href="https://open-meteo.com/">Open-Meteo</a> (CC BY 4.0, Modelle GFS/NOAA und ECMWF IFS).</p>
   <p style="margin-top:8px">Code &amp; Rohdaten: <a href="https://github.com/rouvenwieland/ki-trader-arena">github.com/rouvenwieland/ki-trader-arena</a> · maschinenlesbar: <a href="status.json">status.json</a></p>
 </div></footer>
 
@@ -208,19 +254,23 @@ const dt=t=>new Date(t*1000).toLocaleString("de-DE",{day:"2-digit",month:"2-digi
 const esc=s=>String(s??"").replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
 const stc=t=>{t=String(t||"");return /^(aktiv|läuft)/.test(t)?"ok":/fehler/i.test(t)?"err":/pausiert|gestört|aufgebraucht|budget/i.test(t)?"warn":"";};
 const NAME=id=>((D.fonds.find(f=>f.id===id)||{}).name||id);
-const PAL={claude:["#ffb454","#ff8a3d","#ffd28a"],liga:["#58d6ea","#a98bff","#58e08a","#ff79b8","#7ab8ff","#d6e858","#5ee0c4","#c79bff"],benchmark:["#e9e6df","#b9b6ae","#8d8a83","#6b6862"]};
+const PAL={claude:["#ffb454","#ff8a3d","#ffd28a","#ffc97a"],liga:["#58d6ea","#58e08a","#ff79b8","#7ab8ff","#d6e858","#5ee0c4","#c79bff","#9fd8ff","#e0a8ff"],schwarm:["#a98bff","#c7b4ff","#8a6bff"],benchmark:["#e9e6df","#b9b6ae","#8d8a83","#6b6862"],kontrolle:["#7c7f8a","#5f626c","#9a8f7a"]};
+const GRUPPE=f=>f.kontrolle?"kontrolle":f.typ;
+const BADGE=f=>{const g=GRUPPE(f);return `<span class="badge b-${g==="kontrolle"?"kontrolle":g}">${{claude:f.ab_von?"CLAUDE A/B":"CLAUDE",liga:"LIGA",schwarm:"SCHWARM",kontrolle:"KONTROLLE",benchmark:"VERGLEICH"}[g]||g}</span>`;};
+const GESTRICHELT=f=>f.typ==="benchmark";
 let D=null, off=new Set(), sel=null, tab="pos";
 
 async function init(){
   try{ D=await (await fetch("data.json?"+Date.now())).json(); }catch(e){ $("#live").innerHTML="<span>Noch keine Daten – der erste Wächter-Lauf steht aus.</span>"; return; }
-  const idx={claude:0,liga:0,benchmark:0};
-  D.fonds.forEach(f=>{ const p=PAL[f.typ]; f.farbe=p[idx[f.typ]++%p.length]; });
+  const idx={claude:0,liga:0,benchmark:0,schwarm:0,kontrolle:0};
+  D.fonds.forEach(f=>{ const g=GRUPPE(f),p=PAL[g]||PAL.benchmark; f.farbe=p[idx[g]++%p.length]; });
+  D.fonds.filter(f=>f.kontrolle&&f.id==="ko_markt").forEach(f=>off.add(f.id)); // handelt nicht → flache Linie, standardmäßig aus
   const alter=Math.max(0,Math.round((Date.now()/1000-D.ts)/60));
   const b=D.budget;
   $("#live").innerHTML=`<span><span class="pulse"></span>Stand <b>${alter<2?"gerade eben":"vor "+alter+" min"}</b></span><span>Fonds <b>${D.fonds.length}</b></span><span>API-Budget heute <b>${fmt(b.heute_eur)} / ${fmt(b.tagesdeckel_eur,0)} €</b></span><span>gesamt <b>${fmt(b.gesamt_eur)} / ${fmt(b.gesamtdeckel_eur,0)} €</b></span><span>Claude-Phase bis <b>${b.claude_ende.split("-").reverse().join(".")}</b></span>`;
   sel=D.rangliste[0]||(D.fonds[0]||{}).id;
-  legend(); chart(); table(); klumpen(); kosten(); tabsUI(); dossier(); events(); hero(); tape();
-  addEventListener("resize",()=>{chart();hero()});
+  legend(); chart(); table(); prognosen(); schwarmUI(); klumpen(); kosten(); tabsUI(); dossier(); events(); hero(); tape();
+  addEventListener("resize",()=>{chart();hero();kalibrierung()});
 }
 /* ---------- Hero-Hintergrund: leuchtende Kurslinien */
 function hero(){
@@ -253,8 +303,8 @@ function chart(){
   for(let i=0;i<=nT;i++){const t=t0+(t1-t0)*i/nT;x.fillStyle="#62646e";x.textAlign=i===0?"left":i===nT?"right":"center";
     x.fillText(new Date(t*1000).toLocaleString("de-DE",kurz?{hour:"2-digit",minute:"2-digit",timeZone:"Europe/Berlin"}:{day:"2-digit",month:"2-digit",hour:"2-digit",timeZone:"Europe/Berlin"})+(kurz?" Uhr":""),X(t),H-10);}
   L.forEach(({f,s})=>{x.beginPath();s.forEach(([t,v],i)=>i?x.lineTo(X(t),Y(v)):x.moveTo(X(t),Y(v)));
-    x.strokeStyle=f.farbe;x.lineWidth=f.typ==="benchmark"?1.4:2.2;x.setLineDash(f.typ==="benchmark"?[5,4]:[]);
-    x.shadowColor=f.farbe;x.shadowBlur=f.typ==="benchmark"?0:10;x.stroke();x.shadowBlur=0;x.setLineDash([]);
+    x.strokeStyle=f.farbe;x.lineWidth=GESTRICHELT(f)?1.4:2;x.setLineDash(GESTRICHELT(f)?(f.kontrolle?[2,4]:[5,4]):[]);
+    x.shadowColor=f.farbe;x.shadowBlur=GESTRICHELT(f)?0:10;x.stroke();x.shadowBlur=0;x.setLineDash([]);
     const e=s[s.length-1];x.beginPath();x.arc(X(e[0]),Y(e[1]),3.4,0,7);x.fillStyle=f.farbe;x.fill();});
   geo={L,X,Y,t0,t1,m,W,H};
 }
@@ -269,16 +319,67 @@ function niceStep(r){const p=Math.pow(10,Math.floor(Math.log10(r||1)));const n=r
   c.addEventListener("mouseleave",()=>{tip.style.display="none";chart();});})();
 /* ---------- Rangliste */
 function table(){
-  const by=Object.fromEntries(D.fonds.map(f=>[f.id,f]));
+  const by=Object.fromEntries(D.fonds.map(f=>[f.id,f])), ST=(D.statistik||{}).fonds||{};
   const aktiv=D.rangliste.map(i=>by[i]), wartend=D.fonds.filter(f=>!f.kennzahlen||!f.kennzahlen.equity_usd);
   const mx=Math.max(1,...aktiv.map(f=>Math.abs(f.kennzahlen.rendite_pct)));
-  const row=(f,i)=>{const k=f.kennzahlen,b=k.brier||{};return `<tr class="row" data-id="${f.id}"><td class="rk">${i+1}</td><td class="nm">${esc(f.name)}<span class="badge b-${f.typ}">${f.typ==="claude"?"CLAUDE":f.typ==="liga"?"LIGA":"VERGLEICH"}</span><small class="stt" title="${esc(f.status)}"><span class="st ${stc(f.status)}"></span>${esc(f.status)}${f.modell&&f.typ!=="benchmark"?" · "+esc(f.modell):""}</small></td>
-    <td><span class="bar" style="width:${Math.abs(k.rendite_pct)/mx*60}px;background:${k.rendite_pct>=0?"var(--green)":"var(--red)"}"></span><span class="${cls(k.rendite_pct)}">${pct(k.rendite_pct)}</span></td>
-    <td>${fmt(k.equity_usd/D.fx,0)} €</td><td class="${cls(k.max_drawdown_pct)}">${fmt(k.max_drawdown_pct)} %</td><td>${k.sharpe==null?"–":fmt(k.sharpe)}</td>
-    <td>${k.trefferquote==null?"–":fmt(k.trefferquote*100,0)+" %"} <span class="mut">(${k.trades})</span></td><td>${fmt(k.gebuehren_usd/D.fx,0)} €</td><td>${f.typ==="benchmark"?"–":fmt(k.api_kosten_eur)+" €"}</td>
-    <td>${b.brier==null?"–":fmt(b.brier,3)} <span class="mut">${b.brier_markt==null?"":"/ Markt "+fmt(b.brier_markt,3)}</span></td></tr>`;};
-  $("#tabelle").innerHTML=`<thead><tr><th>#</th><th>Fonds</th><th>Rendite</th><th>Wert</th><th>Max. Rückgang</th><th>Sharpe</th><th>Trefferquote</th><th>Gebühren</th><th>API-Kosten</th><th>Brier</th></tr></thead><tbody>${aktiv.map(row).join("")}${wartend.map(f=>`<tr class="row" data-id="${f.id}"><td class="rk">–</td><td class="nm">${esc(f.name)}<span class="badge b-${f.typ}">${f.typ==="claude"?"CLAUDE":"LIGA"}</span><small class="stt" title="${esc(f.status)}"><span class="st ${stc(f.status)}"></span>${esc(f.status)}</small></td><td colspan="8" class="mut" style="text-align:left">noch nicht gestartet</td></tr>`).join("")}</tbody>`;
-  document.querySelectorAll("tr.row").forEach(r=>r.onclick=()=>{sel=r.dataset.id;tabsUI();dossier();$("#akten").scrollIntoView();});
+  const pw=v=>v==null?"–":(v<0.001?"<0,001":fmt(v,3));
+  const row=(f,i)=>{const k=f.kennzahlen,s=ST[f.id]||{},ki=s.rendite_ki_pct;return `<tr class="row" data-id="${f.id}"><td class="rk">${i+1}</td><td class="nm">${esc(f.name)}${BADGE(f)}<small class="stt" title="${esc(f.status)}"><span class="st ${stc(f.status)}"></span>${esc(f.status)}${f.modell&&f.typ!=="benchmark"&&f.typ!=="schwarm"?" · "+esc(f.modell):""}</small></td>
+    <td><span class="bar" style="width:${Math.abs(k.rendite_pct)/mx*60}px;background:${k.rendite_pct>=0?"var(--green)":"var(--red)"}"></span><span class="${cls(k.rendite_pct)}">${pct(k.rendite_pct)}</span>${ki?`<small class="mut" style="display:block;font-size:11px">95 %: ${pct(ki[0])} … ${pct(ki[1])}</small>`:""}</td>
+    <td>${fmt(k.equity_usd/D.fx,0)} €</td><td class="${cls(k.max_drawdown_pct)}">${fmt(k.max_drawdown_pct)} %</td>
+    <td>${s.dsr==null?"–":`<span class="${s.dsr>=.95?"pos":s.dsr<.5?"mut":""}">${fmt(s.dsr*100,0)} %</span>`}</td>
+    <td>${s.messbar_ab_tagen==null?"–":(s.messbar_ab_tagen>365?"> 1 Jahr":fmt(s.messbar_ab_tagen,0)+" Tage")}</td>
+    <td>${f.id==="bm_btc"?"–":pw(s.p_gegen_btc)}</td>
+    <td>${k.trefferquote==null?"–":fmt(k.trefferquote*100,0)+" %"} <span class="mut">(${k.trades})</span></td><td>${f.typ==="claude"||f.typ==="liga"?fmt(k.api_kosten_eur)+" €":"–"}</td></tr>`;};
+  $("#tabelle").innerHTML=`<thead><tr><th>#</th><th>Fonds</th><th>Rendite</th><th>Wert</th><th>Rückgang</th><th>Können?</th><th>Messbar ab</th><th>p gg. BTC</th><th>Treffer</th><th>API</th></tr></thead><tbody>${aktiv.map(row).join("")}${wartend.map(f=>`<tr class="row" data-id="${f.id}"><td class="rk">–</td><td class="nm">${esc(f.name)}${BADGE(f)}<small class="stt" title="${esc(f.status)}"><span class="st ${stc(f.status)}"></span>${esc(f.status)}${f.hinweis?" · "+esc(f.hinweis):""}</small></td><td colspan="8" class="mut" style="text-align:left">noch nicht gestartet</td></tr>`).join("")}</tbody>`;
+  document.querySelectorAll("#tabelle tr.row").forEach(r=>r.onclick=()=>{sel=r.dataset.id;tabsUI();dossier();$("#akten").scrollIntoView();});
+}
+/* ---------- Prognosegüte */
+function prognosen(){
+  const P=D.prognosen||{zeilen:[]},Z=P.zeilen||[];
+  const bew=Z.filter(z=>z.n>0), offen=Z.reduce((a,z)=>a+(z.offen||0),0);
+  const ki=bew.filter(z=>z.typ==="claude"||z.typ==="liga").filter(z=>z.n_markt>=5).sort((a,b)=>b.brier_skill_markt-a.brier_skill_markt);
+  const sw=Z.find(z=>z.id==="schwarm_alle")||{}, we=Z.find(z=>z.id==="ko_wetter")||{};
+  const sk=v=>v==null?"–":(v>0?"+":"")+fmt(v*100,0)+" %";
+  $("#progzahlen").innerHTML=`<div><span>Bewertete Schätzungen</span><b>${bew.reduce((a,z)=>a+z.n,0)}</b><em>${offen} warten noch auf die Abrechnung</em></div>
+    <div><span>Bester KI-Fonds gg. Markt</span><b class="${ki[0]?cls(ki[0].brier_skill_markt):""}">${ki[0]?sk(ki[0].brier_skill_markt):"–"}</b><em>${ki[0]?esc(ki[0].name)+" · n = "+ki[0].n_markt:"ab 5 bewerteten Schätzungen"}</em></div>
+    <div><span>Schwarm gg. Markt</span><b class="${cls(sw.brier_skill_markt||0)}">${sk(sw.brier_skill_markt)}</b><em>${sw.n?"n = "+sw.n:"noch keine Abrechnung"} · Wetter-Regelfonds ${sk(we.brier_skill_markt)}</em></div>`;
+  const ci=z=>{const m=z.marktbereinigt,k=z.marktbereinigt_ki;if(m==null)return '<span class="mut">–</span>';const S=0.08,X=v=>Math.max(0,Math.min(100,50-v/S*50));
+    const lo=k?X(k[1]):X(m),hi=k?X(k[0]):X(m);return `<span class="ci" title="marktbereinigter Brier ${fmt(m,4)}${k?" (95 %: "+fmt(k[0],4)+" … "+fmt(k[1],4)+")":""}"><span class="rg" style="left:${lo}%;width:${Math.max(1,hi-lo)}%"></span><span class="pt" style="left:${X(m)}%;background:${m<0?"var(--green)":"var(--red)"}"></span></span>`;};
+  const rows=Z.map(z=>{const f=D.fonds.find(x=>x.id===z.id)||z;return `<tr><td class="nm">${esc(z.name)}${BADGE(f)}</td><td>${z.n||0}<span class="mut"> / ${z.offen||0}</span></td><td>${z.brier==null?"–":fmt(z.brier,3)}</td><td class="mut">${z.brier_markt==null?"–":fmt(z.brier_markt,3)}</td><td><span class="${z.brier_skill_markt==null?"mut":cls(z.brier_skill_markt)}" style="display:inline-block;min-width:52px">${sk(z.brier_skill_markt)}</span>${ci(z)}</td><td>${z.log_score==null?"–":fmt(z.log_score,3)}</td><td class="${z.gewinn_je_kontrakt==null?"mut":cls(z.gewinn_je_kontrakt)}">${z.gewinn_je_kontrakt==null?"–":(z.gewinn_je_kontrakt>0?"+":"")+fmt(z.gewinn_je_kontrakt*100,1)+" ct"}</td></tr>`;}).join("");
+  $("#progtab").innerHTML=`<thead><tr><th>Prognostiker</th><th>bewertet / offen</th><th>Brier</th><th>Markt</th><th>Skill gg. Markt</th><th>Log-Score</th><th>Gewinn/Kontrakt</th></tr></thead><tbody>${rows||'<tr><td colspan="7" class="empty" style="text-align:left;padding-left:12px">Noch keine Schätzungen.</td></tr>'}</tbody>`;
+  kalibrierung();
+  const M=D.prognosemodelle||{}, MN={garch:"GARCH(1,1)-Band (Basislinie)",timesfm:"TimesFM 2.5",kronos:"Kronos (nur Richtung)"};
+  const mr=Object.entries(M).map(([k,v])=>`<tr><td class="nm">${esc(MN[k]||k)}</td><td>${v.n}</td><td class="${v.abdeckung_pct==null?"mut":Math.abs(v.abdeckung_pct-80)<=10?"pos":"neg"}">${v.abdeckung_pct==null?"kein Band":fmt(v.abdeckung_pct,0)+" %"}</td><td>${fmt(v.pinball_pct,3)} %</td><td>${fmt(v.median_fehler_pct,2)} %</td></tr>`).join("");
+  $("#modtab").innerHTML=`<thead><tr><th>Modell</th><th>fällige Prognosen</th><th>Abdeckung 10–90 % (Soll 80 %)</th><th>Pinball-Verlust</th><th>Medianfehler</th></tr></thead><tbody>${mr||'<tr><td colspan="5" class="empty" style="text-align:left;padding-left:12px">Die ersten 24-h-Prognosen werden gerade fällig – Bilanz folgt.</td></tr>'}</tbody>`;
+}
+function kalibrierung(){
+  const K=(D.prognosen||{}).kurven||{},c=$("#kal");if(!c)return;const r=c.getBoundingClientRect(),dpr=devicePixelRatio||1;c.width=r.width*dpr;c.height=r.height*dpr;const x=c.getContext("2d");x.scale(dpr,dpr);
+  const W=r.width,H=r.height,m={l:44,r:12,t:12,b:34},X=v=>m.l+v*(W-m.l-m.r),Y=v=>m.t+(1-v)*(H-m.t-m.b);
+  const FARBE={Claude:"#ffb454",Liga:"#58d6ea",Schwarm:"#a98bff",Marktpreis:"#b9b6ae"},FORM={Claude:"kreis",Liga:"quadrat",Schwarm:"raute",Marktpreis:"ring"};
+  x.font="11px ui-monospace,monospace";x.textBaseline="middle";
+  for(let v=0;v<=1.001;v+=.25){x.strokeStyle="rgba(255,255,255,.06)";x.beginPath();x.moveTo(X(0),Y(v));x.lineTo(X(1),Y(v));x.stroke();x.beginPath();x.moveTo(X(v),Y(0));x.lineTo(X(v),Y(1));x.stroke();
+    x.fillStyle="#62646e";x.textAlign="right";x.fillText(fmt(v*100,0)+"%",m.l-6,Y(v));x.textAlign="center";x.fillText(fmt(v*100,0)+"%",X(v),H-m.b+14);}
+  x.fillStyle="#62646e";x.textAlign="center";x.fillText("geschätzte Wahrscheinlichkeit →",X(.5),H-6);
+  x.strokeStyle="rgba(255,255,255,.3)";x.setLineDash([4,4]);x.beginPath();x.moveTo(X(0),Y(0));x.lineTo(X(1),Y(1));x.stroke();x.setLineDash([]);
+  const gr=Object.keys(K);
+  if(!gr.length){x.fillStyle="#62646e";x.textAlign="left";x.fillText("Kalibrierung erscheint ab 5 abgerechneten Schätzungen.",m.l+8,Y(.9));}
+  gr.forEach(g=>{const P=K[g];x.strokeStyle=FARBE[g];x.lineWidth=2;x.setLineDash(g==="Marktpreis"?[5,4]:[]);x.beginPath();P.forEach((p,i)=>i?x.lineTo(X(p.p),Y(p.anteil_ja)):x.moveTo(X(p.p),Y(p.anteil_ja)));x.stroke();x.setLineDash([]);
+    P.forEach(p=>{const cx=X(p.p),cy=Y(p.anteil_ja),rr=3+Math.min(5,Math.sqrt(p.n));x.fillStyle=FARBE[g];x.strokeStyle="#12151d";x.lineWidth=2;x.beginPath();
+      if(FORM[g]==="quadrat")x.rect(cx-rr,cy-rr,2*rr,2*rr);else if(FORM[g]==="raute"){x.moveTo(cx,cy-rr-1);x.lineTo(cx+rr+1,cy);x.lineTo(cx,cy+rr+1);x.lineTo(cx-rr-1,cy);x.closePath();}else x.arc(cx,cy,rr,0,7);
+      x.stroke();if(FORM[g]==="ring"){x.strokeStyle=FARBE[g];x.lineWidth=2;x.stroke();}else x.fill();});});
+  $("#kallegende").innerHTML=(gr.length?gr:["Claude","Liga","Schwarm","Marktpreis"]).map(g=>`<span><span style="color:${FARBE[g]}">${{kreis:"●",quadrat:"■",raute:"◆",ring:"○"}[FORM[g]]}</span> ${g}</span>`).join("")+'<span>– – perfekt kalibriert · Punktgröße = Anzahl</span>';
+}
+/* ---------- Schwarm & Kontrollen */
+function schwarmUI(){
+  const Z=Object.fromEntries(((D.prognosen||{}).zeilen||[]).map(z=>[z.id,z]));
+  const T={schwarm_alle:"Mischt die Schätzungen aller KI-Fonds.",schwarm_claude:"Nur die Claude-Fonds (ohne A/B-Zwilling).",schwarm_liga:"Nur die freien Liga-Modelle – hilft Modellvielfalt?",
+    ko_markt:"Schätzt immer den Marktpreis, handelt nie: die Null-Linie. Wer hier nicht besser ist, hat keinen Prognosevorteil.",ko_nein:"Kauft auf jeden geschätzten Markt ein wenig NEIN: misst den Ja-Hang der Sprachmodelle.",
+    ko_wetter:"Regelfonds ohne Sprachmodell: 82 Wetter-Ensemble-Mitglieder gegen Kalshi-Temperaturmärkte."};
+  const L=D.fonds.filter(f=>f.typ==="schwarm"||f.kontrolle);
+  $("#schwarmkarten").innerHTML=L.map(f=>{const k=f.kennzahlen||{},z=Z[f.id]||{};return `<div class="panel"><h3>${esc(f.name.replace("Kontrolle: ","").replace("Regelfonds: ",""))}</h3>${BADGE(f)}
+    <div class="zahl ${k.rendite_pct==null?"mut":cls(k.rendite_pct)}">${k.rendite_pct==null?"–":pct(k.rendite_pct)}</div>
+    <div class="mini"><span>Positionen</span><b>${k.positionen??"–"}</b><span>Schätzungen bew./offen</span><b>${z.n||0} / ${z.offen||0}</b><span>Skill gg. Markt</span><b class="${z.brier_skill_markt==null?"mut":cls(z.brier_skill_markt)}">${z.brier_skill_markt==null?"–":(z.brier_skill_markt>0?"+":"")+fmt(z.brier_skill_markt*100,0)+" %"}</b></div>
+    <p>${esc(T[f.id]||"")}</p></div>`;}).join("")||'<div class="empty">Startet mit dem nächsten Wächter-Lauf.</div>';
 }
 /* ---------- Unabhängigkeit */
 function klumpen(){
@@ -290,6 +391,8 @@ function klumpen(){
     <div><span>Überlappung aller KI-Fonds</span><b class="${farbe(k.mittel_pct)}">${k.mittel_pct==null?"–":fmt(k.mittel_pct,0)+" %"}</b><em>${(k.paare||[]).length} Paare mit Positionen</em></div>
     <div><span>Offene Claude-Positionen</span><b>${inv}</b><em>in ${claude.length} Fonds</em></div>`;
   const P=(c.paare||[]).concat((k.paare||[]).filter(p=>!(c.paare||[]).some(q=>q.a===p.a&&q.b===p.b)).sort((a,b)=>b.pct-a.pct).slice(0,6));
+  const G=(U.gleichlauf||[]).sort((a,b)=>b.korrelation-a.korrelation);
+  $("#gleichlauf").innerHTML=G.length?"<b>Gleichlauf</b> (Korrelation der Stundenrenditen, 1 = laufen völlig gleich): "+G.map(g=>`${esc(NAME(g.a))} ↔ ${esc(NAME(g.b))} <b>${fmt(g.korrelation,2)}</b>`).join(" · ")+". Hoher Gleichlauf trotz verschiedener Wetten ist ein verstecktes Klumpenrisiko. Der A/B-Zwilling ist aus dem Mittelwert der Überlappung herausgenommen.":"<b>Gleichlauf</b> der Claude-Fonds erscheint ab 24 gemeinsamen Stunden.";
   $("#paare").innerHTML=P.length?P.map(p=>`<div class="pair"><span>${esc(NAME(p.a))} ↔ ${esc(NAME(p.b))}</span><span class="track"><i style="width:${Math.max(1,p.pct)}%"></i></span><b class="${farbe(p.pct)}" style="text-align:right">${fmt(p.pct,0)} %</b>${p.gemeinsam.length?`<small>gemeinsam: ${p.gemeinsam.map(esc).join(" · ")}</small>`:""}</div>`).join(""):'<div class="empty">Noch zu wenige Positionen für einen Vergleich.</div>';
 }
 /* ---------- Kosten */
@@ -299,8 +402,17 @@ function kosten(){
    <div class="gauge"><i style="width:${w(b.heute_eur)}%"></i><s style="left:${w(ziel)}%"></s><u style="left:calc(100% - 2px)"></u></div><div class="legend2"><span>▮ verbraucht heute</span><span>│ Tagesziel</span><span style="color:var(--red)">│ harter Deckel</span></div>`;
   const L=D.fonds.filter(f=>f.typ!=="benchmark");
   const sonst=Object.entries(D.kosten_sonstige||{});
-  const zeile=(n,typ,k,st)=>`<tr><td class="nm">${esc(n)}${typ?`<span class="badge b-${typ}">${typ==="claude"?"CLAUDE":"LIGA"}</span>`:""}</td><td>${k?fmt(k.heute_eur)+" €":"–"}</td><td>${k?fmt(k.gesamt_eur)+" €":"–"}</td><td style="white-space:normal">${k?Object.entries(k.modelle).map(([m,v])=>esc(m.replace("claude-",""))+" "+fmt(v)+" €").join(" · "):`<span class="mut">${typ==="liga"?"Gratis-/eigenes Kontingent":"–"}</span>`}</td><td class="mut">${k?k.aufrufe:"–"}</td></tr>`;
-  $("#kostentab").innerHTML=`<thead><tr><th>Fonds</th><th>Heute</th><th>Gesamt</th><th>Modelle</th><th>Aufrufe</th></tr></thead><tbody>${L.map(f=>zeile(f.name,f.typ,f.kosten)).join("")}${sonst.map(([n,k])=>zeile(n==="review"?"Wochen-Review (Opus)":n,"",k)).join("")}</tbody>`;
+  const gje=f=>{const g=(f.kennzahlen||{}).gewinn_je_api_eur;return g==null?'<span class="mut">–</span>':`<span class="${cls(g)}">${(g>0?"+":"")+fmt(g,1)} €</span>`;};
+  const zeile=(n,f,k)=>`<tr><td class="nm">${esc(n)}${f?BADGE(f):""}</td><td>${k?fmt(k.heute_eur)+" €":"–"}</td><td>${k?fmt(k.gesamt_eur)+" €":"–"}</td><td>${f?gje(f):"–"}</td><td style="white-space:normal">${k?Object.entries(k.modelle).map(([m,v])=>esc(m.replace("claude-",""))+" "+fmt(v)+" €").join(" · "):`<span class="mut">${f&&f.typ==="liga"?"Gratis-/eigenes Kontingent":"–"}</span>`}</td><td class="mut">${k?k.aufrufe:"–"}</td></tr>`;
+  const L2=L.filter(f=>f.typ==="claude"||f.typ==="liga");
+  $("#kostentab").innerHTML=`<thead><tr><th>Fonds</th><th>Heute</th><th>Gesamt</th><th>Gewinn je API-€</th><th>Modelle</th><th>Aufrufe</th></tr></thead><tbody>${L2.map(f=>zeile(f.name,f,f.kosten)).join("")}${sonst.map(([n,k])=>zeile(n==="review"?"Wochen-Review (Opus)":n==="?"?"Sonstiges":n,null,k)).join("")}</tbody>`;
+  const ab=D.fonds.find(f=>f.ab_von),orig=ab&&D.fonds.find(f=>f.id===ab.ab_von),rm=(ab&&ab.risikomanager)||{};
+  const r=f=>f&&f.kennzahlen&&f.kennzahlen.rendite_pct!=null?`<b class="${cls(f.kennzahlen.rendite_pct)}">${pct(f.kennzahlen.rendite_pct)}</b>`:'<b class="mut">noch kein Lauf</b>';
+  $("#abbox").innerHTML=ab?`<h3>A/B-Test: hilft ein Risikomanager?</h3><p>„${esc(ab.name)}“ ist ein Zwilling von „${esc(orig?orig.name:ab.ab_von)}“ – gleiche Anweisung, gleiche Startliste. Einziger Unterschied: Vor großen Orders prüft ein günstiges Modell (Haiku) die Order und darf sie verkleinern oder ablehnen.</p>
+    <div class="mini"><span>${esc(orig?orig.name:"Original")}</span>${r(orig)}<span>${esc(ab.name)}</span>${r(ab)}<span>Risikomanager: frei / kleiner / nein / übergangen</span><b>${rm.freigeben||0} / ${rm.verkleinern||0} / ${rm.ablehnen||0} / ${rm["übergangen"]||0}</b></div><p class="note" style="margin-top:10px">Belastbar erst nach Wochen – bis dahin nur Beobachtung.</p>`:"";
+  const MW=D.modellwahl||{},v=MW.vorschau||{},e=MW.entscheidung;
+  $("#mwbox").innerHTML=`<h3>Wer übernimmt nach dem ${b.claude_ende.split("-").reverse().join(".")}?</h3><p>Wenn das Claude-Budget endet, übernimmt ein Liga-Modell die Claude-Fonds – nicht einfach der Erste der Rangliste, sondern das <b>günstigste</b> unter den Modellen, die sich statistisch nicht vom besten unterscheiden lassen (Model Confidence Set).</p>
+    ${e?`<p>Entschieden am ${dt(e.ts)}: <b style="color:var(--amber)">${esc(e.name)}</b></p>`:""}<div class="mw">${(v.menge||[]).map(id=>`<span class="${id===v.gewaehlt?"win":""}">${esc(NAME(id))}${v.p_werte&&v.p_werte[id]!=null?" · p "+fmt(v.p_werte[id],2):""}</span>`).join("")||'<span>noch keine Kandidaten</span>'}</div><p class="note">${esc(v.verfahren||v.grund||"")}${v.gewaehlt&&!e?" · Stand heute (Vorschau)":""}</p>`;
 }
 /* ---------- Laufband */
 function tape(){
@@ -320,11 +432,12 @@ function dossier(){
   const k=f.kennzahlen||{};
   const kv=k.equity_usd?`<div class="kv"><div><span>Wert</span><b>${fmt(k.equity_usd/D.fx,0)} €</b></div><div><span>Rendite</span><b class="${cls(k.rendite_pct)}">${pct(k.rendite_pct)}</b></div><div><span>Cash</span><b>${fmt(k.cash_usd/D.fx,0)} €</b></div><div><span>Positionen</span><b>${k.positionen}</b></div><div><span>Gebühren</span><b>${fmt(k.gebuehren_usd/D.fx)} €</b></div><div><span>Funding</span><b>${fmt(k.funding_usd/D.fx)} €</b></div></div>`:"";
   const pos=f.positionen.length?`<div class="tablewrap"><table><thead><tr><th>Position</th><th>Seite</th><th>Menge</th><th>Einstand</th><th>Kurs</th><th>Wert (Geldkurs)</th><th>Stop</th><th>Ziel</th><th>Schließt</th></tr></thead><tbody>${f.positionen.map(p=>`<tr><td class="nm" style="white-space:normal;min-width:220px">${esc(p.name)}<small>${esc(p.inst)}${p.hebel>1?" · "+p.hebel+"× Hebel":""}</small>${p.plan?`<small>Plan: ${esc(p.plan)}</small>`:""}</td><td>${p.seite}</td><td>${fmt(p.menge,p.menge<10?4:0)}</td><td>${fmt(p.einstand,p.einstand<10?4:2)}</td><td>${p.kurs==null?"–":fmt(p.kurs,p.kurs<10?4:2)}</td><td>${fmt((p.wert||0)/D.fx,0)} €</td><td>${p.stop??"–"}</td><td>${p.ziel??"–"}</td><td>${p.schliesst?dt(p.schliesst):"–"}</td></tr>`).join("")}</tbody></table></div>`:'<div class="empty">Keine offenen Positionen.</div>';
-  const ent=(f.entscheidungen||[]).slice().reverse().map(o=>{const r=o.ergebnis,ok=r&&r.ok;return `<div class="entry ${o.aktion==="verkaufen"?"verk":""} ${r&&!ok?"fail":""}"><h4>${o.aktion==="kaufen"?"Kauf":"Verkauf"} · ${esc(o.instrument)}${o.hebel>1?" · "+o.hebel+"× "+o.seite:""} <span class="conf"><i style="width:${(o.zuversicht||0)*100}%"></i></span><span class="mut">Zuversicht ${fmt((o.zuversicht||0)*100,0)} %</span></h4><time>${dt(o.ts)} · Anlass: ${esc(o.grund_der_runde)} · festgehalten vor dem Ergebnis</time><p>${esc(o.begruendung)}</p>${o.ausstiegsplan?`<p class="mut">Ausstieg: ${esc(o.ausstiegsplan)}</p>`:""}<div class="res">${!r?"Ergebnis offen":ok?`gefüllt: ${fmt(r.menge,4)} @ ${fmt(r.preis,4)} · Gebühr ${fmt(r.gebuehr)} $`+(r.netto_pnl!=null?` · Ergebnis ${fmt(r.netto_pnl)} $`:""):`abgelehnt: ${esc(r.grund)}`}</div></div>`}).join("")||'<div class="empty">Noch keine Entscheidungen.</div>';
+  const ent=(f.entscheidungen||[]).slice().reverse().map(o=>{const r=o.ergebnis,ok=r&&r.ok;return `<div class="entry ${o.aktion==="verkaufen"?"verk":""} ${r&&!ok?"fail":""}"><h4>${o.aktion==="kaufen"?"Kauf":"Verkauf"} · ${esc(o.instrument)}${o.hebel>1?" · "+o.hebel+"× "+o.seite:""} <span class="conf"><i style="width:${(o.zuversicht||0)*100}%"></i></span><span class="mut">Zuversicht ${fmt((o.zuversicht||0)*100,0)} %</span></h4><time>${dt(o.ts)} · Anlass: ${esc(o.grund_der_runde)} · festgehalten vor dem Ergebnis</time><p>${esc(o.begruendung)}</p>${o.ausstiegsplan?`<p class="mut">Ausstieg: ${esc(o.ausstiegsplan)}</p>`:""}${o.invalidierung?`<p class="mut">Invalidierung: ${esc(o.invalidierung)}${o.staerkstes_gegenargument?" · Gegenargument: "+esc(o.staerkstes_gegenargument):""}${o.risiko_usd?" · Risiko "+fmt(o.risiko_usd,0)+" $":""}</p>`:""}<div class="res">${!r?"Ergebnis offen":ok?`gefüllt: ${fmt(r.menge,4)} @ ${fmt(r.preis,4)} · Gebühr ${fmt(r.gebuehr)} $`+(r.netto_pnl!=null?` · Ergebnis ${fmt(r.netto_pnl)} $`:""):`abgelehnt: ${esc(r.grund)}`}</div></div>`}).join("")||'<div class="empty">Noch keine Entscheidungen.</div>';
   const run=(f.runden||[]).slice().reverse().map(o=>`<div class="entry"><h4>Tagebuch · ${esc(o.grund)}</h4><time>${dt(o.ts)} · ${esc(o.modell)} · ${o.orders} Orders · ${fmt(o.kosten_usd/D.fx,3)} €${o.abbruch?" · "+esc(o.abbruch):""}</time><p>${esc(o.text)}</p></div>`).join("")||'<div class="empty">Noch keine Runden.</div>';
-  const nb=(f.notizbuch||[]).slice().reverse().map(n=>`<div class="entry"><h4>${esc(n.typ)}</h4><time>${dt(n.ts)}</time><p>${esc(n.text)}</p></div>`).join("")||'<div class="empty">Notizbuch leer.</div>';
+  const nb=(f.notizbuch||[]).slice().reverse().map(n=>`<div class="entry"><h4>${esc(n.typ)}${n.wichtigkeit?` <span class="mut">· Wichtigkeit ${fmt(n.wichtigkeit,0)}</span>`:""}</h4><time>${dt(n.ts)}</time><p>${esc(n.text)}</p></div>`).join("")||'<div class="empty">Notizbuch leer.</div>';
   const body={pos,ent,run,nb}[tab];
-  $("#dossier").innerHTML=`<h3>${esc(f.name)}</h3><div class="meta">${esc(f.typ)} · Risikoprofil ${esc(f.risiko||"–")} · ${esc(f.modell||"")} · Status: ${esc(f.status)}</div>${kv}<div class="tabs"><button class="tab ${tab==="pos"?"on":""}" data-t="pos">Positionen</button><button class="tab ${tab==="ent"?"on":""}" data-t="ent">Entscheidungen</button><button class="tab ${tab==="run"?"on":""}" data-t="run">Tagebuch</button><button class="tab ${tab==="nb"?"on":""}" data-t="nb">Notizbuch</button></div>${body}`;
+  const pol=(f.policy||[]).length?`<p class="note" style="margin:-10px 0 18px"><b>Policy-Sperren</b> (aus der eigenen Bilanz): ${(f.policy||[]).map(p=>esc(p.kategorie)+" – "+esc(p.grund)).join(" · ")}</p>`:"";
+  $("#dossier").innerHTML=`<h3>${esc(f.name)} ${BADGE(f)}</h3><div class="meta">${esc(f.typ)} · Risikoprofil ${esc(f.risiko||"–")} · ${esc(f.modell||"")} · Status: ${esc(f.status)}</div>${kv}${pol}<div class="tabs"><button class="tab ${tab==="pos"?"on":""}" data-t="pos">Positionen</button><button class="tab ${tab==="ent"?"on":""}" data-t="ent">Entscheidungen</button><button class="tab ${tab==="run"?"on":""}" data-t="run">Tagebuch</button><button class="tab ${tab==="nb"?"on":""}" data-t="nb">Notizbuch</button></div>${body}`;
   document.querySelectorAll("#dossier [data-t]").forEach(b=>b.onclick=()=>{tab=b.dataset.t;dossier();});
 }
 function events(){

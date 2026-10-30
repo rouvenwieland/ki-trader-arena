@@ -41,6 +41,10 @@ def modellwahl(jetzt: float | None = None) -> dict:
     if not kand:
         return {"ts": jetzt, "gewaehlt": None, "grund": "kein Liga-Modell verfügbar"}
     reihen = {d["id"]: dict(metrics.stundenrenditen(store.lies_jsonl(f"funds/{d['id']}/equity.jsonl"))) for d in kand}
+    mit_daten = [d for d in kand if len(reihen[d["id"]]) >= 12 and funds.meta(d["id"]).get("letzte_runde")]
+    if mit_daten:  # nur Modelle, die wirklich gehandelt/gerechnet haben (sonst gewänne ein nie gelaufener Fonds mit 0 %)
+        kand = mit_daten
+        reihen = {d["id"]: reihen[d["id"]] for d in kand}
     gemeinsam = set.intersection(*(set(r) for r in reihen.values())) if reihen else set()
     stunden = sorted(gemeinsam)
     renditen = {d["id"]: rendite(d["id"]) for d in kand}
