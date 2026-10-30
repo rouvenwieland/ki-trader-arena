@@ -1,6 +1,6 @@
 {
  "version": 1,
- "stand": 1793361191.2466214,
+ "stand": 1793362097.142962,
  "hinweis": "Papierhandel-Simulation, keine Anlageberatung",
  "seite": "https://rouvenwieland.github.io/ki-trader-arena/",
  "budget": {
@@ -19,8 +19,8 @@
    "id": "claude_aggressiv",
    "name": "Claude Aggressiv",
    "typ": "claude",
-   "rendite_pct": 2.66,
-   "equity_eur": 10256.2,
+   "rendite_pct": 2.91,
+   "equity_eur": 10282.42,
    "max_drawdown_pct": -0.98,
    "status": "aktiv",
    "modell": "claude-sonnet-5-5",
@@ -37,7 +37,8 @@
     3.49,
     3.68,
     3.38,
-    2.66
+    2.66,
+    2.91
    ]
   },
   {
@@ -45,8 +46,8 @@
    "id": "bm_affe",
    "name": "Zufallsaffe",
    "typ": "benchmark",
-   "rendite_pct": 1.26,
-   "equity_eur": 10116.18,
+   "rendite_pct": 1.28,
+   "equity_eur": 10119.85,
    "max_drawdown_pct": -0.42,
    "status": "läuft",
    "modell": null,
@@ -63,7 +64,8 @@
     1.37,
     1.36,
     1.42,
-    1.26
+    1.26,
+    1.28
    ]
   },
   {
@@ -72,7 +74,7 @@
    "name": "Claude Mittel",
    "typ": "claude",
    "rendite_pct": 1.18,
-   "equity_eur": 10107.85,
+   "equity_eur": 10109.16,
    "max_drawdown_pct": -0.17,
    "status": "aktiv",
    "modell": "claude-sonnet-5-5",
@@ -89,6 +91,7 @@
     1.18,
     1.18,
     1.18,
+    1.18,
     1.18
    ]
   },
@@ -98,12 +101,12 @@
    "name": "Claude Vorsichtig",
    "typ": "claude",
    "rendite_pct": 0.97,
-   "equity_eur": 10087.42,
+   "equity_eur": 10088.72,
    "max_drawdown_pct": -0.07,
    "status": "aktiv",
    "modell": "claude-sonnet-5-5",
-   "kosten_heute_eur": 0.43,
-   "kosten_gesamt_eur": 0.43,
+   "kosten_heute_eur": 0.431,
+   "kosten_gesamt_eur": 0.431,
    "verlauf_pct": [
     0.0,
     0.4,
@@ -115,6 +118,7 @@
     0.92,
     0.97,
     0.97,
+    0.97,
     0.97
    ]
   },
@@ -124,13 +128,14 @@
    "name": "Gemini Flash",
    "typ": "liga",
    "rendite_pct": 0.0,
-   "equity_eur": 9990.17,
+   "equity_eur": 9991.46,
    "max_drawdown_pct": 0.0,
    "status": "aktiv",
    "modell": "gemini-flash-latest",
    "kosten_heute_eur": 0.0,
    "kosten_gesamt_eur": 0.0,
    "verlauf_pct": [
+    0.0,
     0.0,
     0.0,
     0.0,
@@ -150,13 +155,14 @@
    "name": "DeepSeek",
    "typ": "liga",
    "rendite_pct": 0.0,
-   "equity_eur": 9990.17,
+   "equity_eur": 9991.46,
    "max_drawdown_pct": 0.0,
    "status": "aktiv",
    "modell": "deepseek-chat",
    "kosten_heute_eur": 0.0,
    "kosten_gesamt_eur": 0.0,
    "verlauf_pct": [
+    0.0,
     0.0,
     0.0,
     0.0,
@@ -176,13 +182,14 @@
    "name": "Kimi (Moonshot)",
    "typ": "liga",
    "rendite_pct": 0.0,
-   "equity_eur": 9990.17,
+   "equity_eur": 9991.46,
    "max_drawdown_pct": 0.0,
    "status": "aktiv",
    "modell": "kimi-latest",
    "kosten_heute_eur": 0.0,
    "kosten_gesamt_eur": 0.0,
    "verlauf_pct": [
+    0.0,
     0.0,
     0.0,
     0.0,
@@ -202,13 +209,14 @@
    "name": "OpenAI",
    "typ": "liga",
    "rendite_pct": 0.0,
-   "equity_eur": 9990.17,
+   "equity_eur": 9991.46,
    "max_drawdown_pct": 0.0,
    "status": "Fehler: Modellfehler: gpt-5-mini: keine Antwort (HTTP 429 {\n    \"error\": {\n        \"message\": \"You have no credits remaining. Add credits to continu",
    "modell": "gpt-5-mini",
    "kosten_heute_eur": 0.0,
    "kosten_gesamt_eur": 0.0,
    "verlauf_pct": [
+    0.0,
     0.0,
     0.0,
     0.0,
@@ -228,13 +236,14 @@
    "name": "S&P-500-ETF (SPY)",
    "typ": "benchmark",
    "rendite_pct": 0.0,
-   "equity_eur": 9990.17,
+   "equity_eur": 9991.46,
    "max_drawdown_pct": 0.0,
    "status": "läuft",
    "modell": null,
    "kosten_heute_eur": 0.0,
    "kosten_gesamt_eur": 0.0,
    "verlauf_pct": [
+    0.0,
     0.0,
     0.0,
     0.0,
@@ -254,13 +263,14 @@
    "name": "60/40 (SPY/AGG)",
    "typ": "benchmark",
    "rendite_pct": 0.0,
-   "equity_eur": 9990.17,
+   "equity_eur": 9991.46,
    "max_drawdown_pct": 0.0,
    "status": "läuft",
    "modell": null,
    "kosten_heute_eur": 0.0,
    "kosten_gesamt_eur": 0.0,
    "verlauf_pct": [
+    0.0,
     0.0,
     0.0,
     0.0,
@@ -279,8 +289,8 @@
    "id": "bm_btc",
    "name": "Buy & Hold BTC",
    "typ": "benchmark",
-   "rendite_pct": -0.19,
-   "equity_eur": 9971.35,
+   "rendite_pct": -0.08,
+   "equity_eur": 9983.7,
    "max_drawdown_pct": -1.55,
    "status": "läuft",
    "modell": null,
@@ -297,7 +307,8 @@
     0.25,
     0.19,
     0.03,
-    -0.19
+    -0.19,
+    -0.08
    ]
   }
  ],
