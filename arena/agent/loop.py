@@ -10,7 +10,8 @@ from arena.agent import budget as bmod
 from arena.agent import llm, prompts
 from arena.agent.tools import Kontext
 
-MAX_SCHRITTE = {"claude": 14, "liga": 10}
+MAX_SCHRITTE = {"claude": 14, "liga": 8}
+MAX_SEKUNDEN = {"claude": 600, "liga": 420}  # Wanduhr-Limit je Runde (freie Modelle antworten teils minutenlang)
 
 
 def _verlauf_zeichen(s) -> int:
@@ -56,7 +57,12 @@ def laufe_runde(defn: dict, route: dict, pf: dict, snap: dict, mz, grund: str, e
     kosten, schritte, text, abbruch = 0.0, 0, "", ""
     gesamt_nutzung = {"ein": 0, "aus": 0, "cache_lesen": 0, "cache_schreiben": 0, "websuchen": 0}
     try:
-        while schritte < MAX_SCHRITTE[defn["typ"] if defn["typ"] in MAX_SCHRITTE else "liga"]:
+        typ = defn["typ"] if defn["typ"] in MAX_SCHRITTE else "liga"
+        start = time.time()
+        while schritte < MAX_SCHRITTE[typ]:
+            if time.time() - start > MAX_SEKUNDEN[typ]:
+                abbruch = "Zeitlimit der Runde erreicht"
+                break
             if ist_claude and bud:
                 ok, warum = bud.darf(defn["id"], n_fonds, bmod.schaetze_naechsten_aufruf(modell, _verlauf_zeichen(s), 6000))
                 if not ok:

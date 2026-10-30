@@ -100,9 +100,9 @@ class OpenAISitzung:
         if self.tools:
             body["tools"] = self.tools
         d = None
-        for versuch in range(3):
+        for versuch in range(2):
             try:
-                r = requests.post(self.url, headers={"Authorization": f"Bearer {self.key}"}, json=body, timeout=180)
+                r = requests.post(self.url, headers={"Authorization": f"Bearer {self.key}"}, json=body, timeout=150)
             except requests.RequestException as e:
                 time.sleep(3 * (versuch + 1))
                 d = {"fehler": str(e)}

@@ -77,17 +77,18 @@ def lauf(grund: str = "ereignis", jetzt: float | None = None) -> dict:
     snap = snapshot.baue(jetzt)
     mz = Marktzugriff()
     ergebnisse = {}
-    for d, pf in kandidaten:
+
+    def bearbeite(d: dict, pf: dict) -> None:
         fid = d["id"]
         try:
             r = route(d, bud, jetzt)
             if "status" in r:
                 status_schreiben(fid, r["status"], jetzt)
                 ergebnisse[fid] = r["status"]
-                continue
+                return
             ev = relevante(alle_ev, fid)
             if not taeglich and not ev:
-                continue
+                return
             if not taeglich and r.get("triage"):
                 marks = {p["inst"]["id"]: mz.marke(p["inst"]) for p in pf["positionen"]}
                 info = f"Eigenkapital {portfolio.equity(pf, marks):.0f} USD, {len(pf['positionen'])} Positionen: " + \
@@ -96,7 +97,7 @@ def lauf(grund: str = "ereignis", jetzt: float | None = None) -> dict:
                 store.anhaengen(f"funds/{fid}/decisions.jsonl", {"typ": "triage", "ts": jetzt, "aufwecken": wecken, "grund": warum})
                 if not wecken:
                     ergebnisse[fid] = f"Vorsichter: nicht wecken ({warum})"
-                    continue
+                    return
             res = loop.laufe_runde(d, r, pf, snap, mz, "tägliche Runde" if taeglich else "Ereignis", ev, bud, 3, jetzt)
             status_schreiben(fid, "aktiv" + (f" (Modell: {r['umgeschaltet_auf']})" if r.get("umgeschaltet_auf") else ""), jetzt,
                              {"modell_aktuell": r["modell"], "letzte_runde": jetzt, "letzte_runde_abbruch": res["abbruch"]})
@@ -106,6 +107,15 @@ def lauf(grund: str = "ereignis", jetzt: float | None = None) -> dict:
             traceback.print_exc()
             status_schreiben(fid, f"Fehler: {type(e).__name__}", jetzt)
             ergebnisse[fid] = f"FEHLER {e}"
+
+    # Claude-Fonds nacheinander (gemeinsames Budget), Liga-Fonds parallel (kostenlos/eigene Limits, langsame Antworten)
+    for d, pf in [k for k in kandidaten if k[0]["typ"] == "claude"]:
+        bearbeite(d, pf)
+    liga = [k for k in kandidaten if k[0]["typ"] != "claude"]
+    if liga:
+        from concurrent.futures import ThreadPoolExecutor
+        with ThreadPoolExecutor(max_workers=5) as ex:
+            list(ex.map(lambda k: bearbeite(*k), liga))
     z["letztes_ereignis_ts"] = max([e["ts"] for e in alle_ev] + [z["letztes_ereignis_ts"]])
     z["laeufe"][tag] = z["laeufe"].get(tag, 0) + 1
     if taeglich:
