@@ -20,7 +20,8 @@ def kosten_usd(modell: str, nutzung: dict, cfg: dict | None = None) -> float:
         raise KeyError(f"Kein Preis für Modell {modell} in config.json – Aufruf verweigert")
     ein, aus = nutzung.get("ein", 0), nutzung.get("aus", 0)
     c_l, c_s = nutzung.get("cache_lesen", 0), nutzung.get("cache_schreiben", 0)
-    usd = (ein * p["ein"] + aus * p["aus"] + c_l * p["ein"] * b["cache_lesen_faktor"] + c_s * p["ein"] * b["cache_schreiben_faktor"]) / 1e6
+    c_l_faktor = p.get("cache_lesen", b["cache_lesen_faktor"])  # je Modell (Opus 5.5: 0,05×), sonst pauschal
+    usd = (ein * p["ein"] + aus * p["aus"] + c_l * p["ein"] * c_l_faktor + c_s * p["ein"] * b["cache_schreiben_faktor"]) / 1e6
     usd += nutzung.get("websuchen", 0) * b["websuche_usd_je_1000"] / 1000
     return usd * SICHERHEIT
 

@@ -166,8 +166,8 @@ class OpenAISitzung:
                 versuch += 1
                 continue
             if r.status_code == 404 and not aufgeloest and "model" in r.text.lower():
-                aufgeloest = True  # Modellname veraltet → Ausweichliste, sonst Modellliste des Anbieters
-                neu = self.alternativen.pop(0) if self.alternativen else self._modell_suchen()
+                aufgeloest = True  # Modellname veraltet → Modellliste des Anbieters (bevorzugt ein Name der Ausweichliste)
+                neu = self._modell_suchen() or (self.alternativen.pop(0) if self.alternativen else None)
                 if neu and neu != self.modell:
                     self.modell = neu
                     continue
@@ -207,6 +207,9 @@ def _modell_suchen_impl(self) -> str | None:
         return None
     if not ids:
         return None
+    for kandidat in [self.modell] + self.alternativen:  # ein bekannter Name, den der Anbieter wirklich führt
+        if kandidat in ids and kandidat != self.modell:
+            return kandidat
 
     def gemeinsam(a: str, b: str) -> int:
         n = 0
@@ -250,7 +253,10 @@ def openrouter_gratis(n: int) -> list[str]:
     except (requests.RequestException, KeyError, ValueError):
         return []
     kand = [m for m in d if m["id"].endswith(":free") and "tools" in (m.get("supported_parameters") or [])]
-    kand.sort(key=lambda m: -(m.get("context_length") or 0))
+    # Qualität vor Kontextlänge: bevorzugte Familien (große Allzweck-Modelle mit gutem Tool-Use laut BFCL) zuerst, dann nach Kontext
+    bevorzugt = config.load().get("openrouter_bevorzugt", [])
+    rang = lambda m: next((i for i, b in enumerate(bevorzugt) if m["id"].startswith(b)), len(bevorzugt))  # noqa: E731
+    kand.sort(key=lambda m: (rang(m), -(m.get("context_length") or 0)))
     gesehen, out = set(), []
     for m in kand:  # je Hersteller höchstens eins
         hersteller = m["id"].split("/")[0]

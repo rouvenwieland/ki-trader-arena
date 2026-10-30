@@ -122,3 +122,21 @@ def test_zeitstempel_atom_und_gdelt():
     assert news._iso("2026-10-30T15:30:00+00:00") == pytest.approx(1793374200.0)
     assert news._iso("kaputt") == 0.0 and news._iso(None) == 0.0
     assert "Fed Presse" in news.RSS and "SEC Presse" in news.RSS
+
+
+# ---------------------------------------------------------------- B5/B6 Preise und Modellnamen
+def test_cache_lesen_je_modell():
+    from arena.agent import budget as bmod
+    opus = bmod.kosten_usd("claude-opus-5-5", {"cache_lesen": 1_000_000})
+    sonnet = bmod.kosten_usd("claude-sonnet-5-5", {"cache_lesen": 1_000_000})
+    assert opus == pytest.approx(0.20 * bmod.SICHERHEIT) and sonnet == pytest.approx(0.20 * bmod.SICHERHEIT)
+
+
+def test_modellliste_bevorzugt_bekannten_namen(monkeypatch):
+    s = llm.OpenAISitzung("https://x/v1/chat/completions", "k", "kimi-k3", "sys", [], alternativen=["kimi-latest", "kimi-k2.5"])
+
+    class R:
+        def json(self):
+            return {"data": [{"id": "kimi-k2.5"}, {"id": "kimi-k9-vision"}, {"id": "moonshot-v1-8k"}]}
+    monkeypatch.setattr(llm.requests, "get", lambda *a, **k: R())
+    assert s._modell_suchen() == "kimi-k2.5"

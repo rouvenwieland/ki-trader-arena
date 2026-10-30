@@ -143,6 +143,8 @@ def lauf(grund: str = "ereignis", jetzt: float | None = None) -> dict:
             fehler = res["abbruch"].startswith(("Modellfehler", "Fehler"))
             text = ("Fehler: " + res["abbruch"][:140]) if fehler else \
                 "aktiv" + (f" (Modell: {r['umgeschaltet_auf']})" if r.get("umgeschaltet_auf") else "")
+            if fehler and "HTTP 404" in res["abbruch"] and d["typ"] == "liga":  # gemerkter Modellname taugt nicht mehr → beim nächsten Mal neu auflösen
+                extra |= {"modell_aufgeloest": None}
             if fehler and any(c in res["abbruch"] for c in ("HTTP 503", "HTTP 502", "HTTP 529", "HTTP 500", "overloaded")):
                 text = "vorübergehend gestört (Anbieter überlastet) – nächster Versuch beim nächsten Lauf"
             status_schreiben(fid, text, jetzt, extra | {"pausiert_bis": 0})

@@ -9,7 +9,16 @@
       "claude_aggressiv": 3.5
     },
     "reserve_tag_eur": 0.8,
-    "takt_stunden_utc": [0, 3, 6, 9, 13, 15, 18, 21],
+    "takt_stunden_utc": [
+      0,
+      3,
+      6,
+      9,
+      13,
+      15,
+      18,
+      21
+    ],
     "tiefenrunde_stunde_utc": 13,
     "tiefenrunde_modell": "claude-opus-5-5",
     "runden_modell": "claude-sonnet-5-5",
@@ -22,20 +31,24 @@
     "preise_usd_je_mio": {
       "claude-haiku-5-5": {
         "ein": 0.1,
-        "aus": 0.5
+        "aus": 0.5,
+        "cache_lesen": 0.1
       },
       "claude-sonnet-5-5": {
         "ein": 2.0,
-        "aus": 10.0
+        "aus": 10.0,
+        "cache_lesen": 0.1
       },
       "claude-opus-5-5": {
         "ein": 4.0,
-        "aus": 20.0
+        "aus": 20.0,
+        "cache_lesen": 0.05
       }
     },
     "websuche_usd_je_1000": 10.0,
     "cache_lesen_faktor": 0.1,
-    "cache_schreiben_faktor": 1.25
+    "cache_schreiben_faktor": 1.25,
+    "preise_stand": "2026-10-31: Opus 5.5 Cache-Lesen 0,20 $/MTok (0,05×), Sonnet 5.5 0,20 $/MTok (0,1×), Haiku 5.5 konservativ 0,1×; Schreiben 1,25× (5-min-TTL)"
   },
   "risiko": {
     "vorsichtig": {
@@ -257,17 +270,20 @@
       "modell": "deepseek-chat",
       "schluessel": "DEEPSEEK_API_KEY",
       "alternativen": [
-        "deepseek-reasoner"
+        "deepseek-flash",
+        "deepseek-v4-flash",
+        "deepseek-v4-pro"
       ]
     },
     {
       "id": "liga_kimi",
       "name": "Kimi (Moonshot)",
       "anbieter": "moonshot",
-      "modell": "kimi-latest",
+      "modell": "kimi-k3",
       "schluessel": "MOONSHOT_API_KEY",
       "alternativen": [
-        "kimi-k2-turbo-preview",
+        "kimi-latest",
+        "kimi-k2.5",
         "kimi-k2-0905-preview",
         "moonshot-v1-128k"
       ]
@@ -281,7 +297,8 @@
       "alternativen": [
         "qwen-3-235b-a22b-instruct-2507",
         "llama-3.3-70b"
-      ]
+      ],
+      "hinweis": "kein dauerhaftes Gratis-Kontingent (nur 30-Tage-Test mit 5 $)"
     },
     {
       "id": "liga_mistral",
@@ -333,5 +350,16 @@
       "url": "https://openrouter.ai/api/v1/chat/completions"
     }
   },
-  "liga_takt_stunden_utc": [6, 21]
+  "liga_takt_stunden_utc": [
+    6,
+    21
+  ],
+  "triage_groq_modell": "openai/gpt-oss-20b",
+  "openrouter_bevorzugt": [
+    "nvidia/nemotron-3-ultra",
+    "google/gemma-4-31b",
+    "thinkingmachines/inkling",
+    "nvidia/nemotron-3.5-super",
+    "google/gemma-4-26b"
+  ]
 }

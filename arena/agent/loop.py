@@ -147,7 +147,8 @@ def triage_groq(defn: dict, ereignisse: list[dict], pf_info: str) -> tuple[bool,
     if not key:
         return True, "kein Groq-Schlüssel – Runde ohne Vorsichter"
     try:
-        s = llm.openai_sitzung("groq", "llama-3.3-70b-versatile", prompts.TRIAGE, [], key)
+        from arena import config
+        s = llm.openai_sitzung("groq", config.load().get("triage_groq_modell", "openai/gpt-oss-20b"), prompts.TRIAGE, [], key)
         ev = "\n".join(f"- [{e['typ']}] {e['titel'][:140]}" for e in ereignisse[:12])
         s.nutzer(f"Fonds: {defn['name']}\n{pf_info}\nEreignisse:\n{ev}")
         a = s.schritt()

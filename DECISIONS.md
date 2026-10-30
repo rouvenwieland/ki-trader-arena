@@ -135,3 +135,10 @@ vor dem Deploy aus `data/`. `docs/status.json` (6 kB) bleibt im Git, weil die La
 * **B4 Nachrichten:** Reddit nur noch per Atom-Feed (`.json` = 403, keine Umgehung), echte Zeiten aus `<published>/<updated>`, GDELT aus
   `seendate`. Neu: Fed-, EZB- und SEC-Presse-RSS (BLS sperrt mit 403 → nicht genutzt). Termine: FOMC-Kalender aus der öffentlichen Fed-Seite,
   FRED-Veröffentlichungstermine nur, wenn das (optionale) Secret `FRED_API_KEY` existiert.
+* **B5 Preise:** Cache-Lesen je Modell statt pauschal: Opus 5.5 0,05× (0,20 $/MTok), **Sonnet 5.5 0,1×** (0,20 $/MTok – die Recherche nannte 0,05×,
+  die aktuelle Modelltabelle der API-Doku nennt 0,20 $; im Zweifel der höhere Wert, das Budget bleibt so sicher), Haiku 0,1×. 15 % Aufschlag bleibt.
+* **B6 Liga:** DeepSeek bleibt auf `deepseek-chat`, weil der Fonds damit nachweislich „aktiv“ läuft; `deepseek-flash` & Co. stehen als Ausweichnamen
+  bereit (404 → Modellliste des Anbieters → bekannter Name). Kimi: `kimi-k3` mit Ausweichliste; ein gemerkter Ausweichname wird bei erneutem 404
+  verworfen (vorher hing der Fonds auf `kimi-k2-turbo-preview` fest). Bei 404 wird jetzt zuerst die echte Modellliste gefragt und ein Name der
+  Ausweichliste gewählt, den der Anbieter wirklich führt. Groq-Vorsichter: `openai/gpt-oss-20b`. Cerebras als „kein dauerhaftes Gratis-Kontingent“
+  markiert; GitHub Models ist eingestellt (nicht eingeplant). OpenRouter-Gratismodelle: bevorzugte große Allzweck-Familien vor Kontextlänge.
