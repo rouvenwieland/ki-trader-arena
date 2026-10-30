@@ -187,3 +187,6 @@ vor dem Deploy aus `data/`. `docs/status.json` (6 kB) bleibt im Git, weil die La
   Review-Regeln laufen nach 21 Tagen ab; das Review sieht die Policy-Sperren und darf sie begründet lockern.
 * **7 Deribit:** DVOL (BTC/ETH) als Volatilitätsregime in der Marktlage; Funding wird jetzt **exakt** je Zeitraum gebucht (`get_funding_rate_value`,
   in eine 8-h-Rate umgerechnet, Rückfall: 8-h-Mittel); Werkzeug `derivate_lage` mit DVOL, Funding je Stunde, annualisierter Basis-Kurve, OI.
+* **8 Orderfluss:** Werkzeug `orderfluss`: Polymarket `prices-history` (1 Woche), Data-API `/trades` (Volumen je Seite, Orders ≥ 1000 $), `/holders`, `/oi`;
+  Kalshi `/markets/trades` (Taker-Kontrakte JA/NEIN, Preisweg). Kalshi-Kerzen bräuchten den Serien-Ticker – der Preisweg aus den Trades reicht.
+  Mindestabstand für Kalshi auf 1 s erhöht (Recherche: sonst 429). Die `conditionId` wird jetzt im Markt mitgespeichert (Altmärkte: Nachschlagen).

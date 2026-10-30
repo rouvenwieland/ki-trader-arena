@@ -10,7 +10,7 @@ from urllib.parse import urlparse
 import requests
 
 UA = "ki-trader-arena/0.1 (Papierhandel-Forschung; +https://github.com/rouvenwieland/ki-trader-arena)"
-MIN_ABSTAND = {"default": 0.15, "gamma-api.polymarket.com": 0.25, "api.elections.kalshi.com": 0.25,
+MIN_ABSTAND = {"default": 0.15, "gamma-api.polymarket.com": 0.25, "api.elections.kalshi.com": 1.0,
                "api.gdeltproject.org": 5.5, "www.reddit.com": 2.0, "query1.finance.yahoo.com": 1.0}
 _letzter: dict[str, float] = {}
 _cache: dict[str, tuple[float, object]] = {}

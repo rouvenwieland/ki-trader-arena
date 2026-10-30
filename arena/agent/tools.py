@@ -108,6 +108,23 @@ class Kontext:
         return _kurz({k: m.get(k) for k in ("mid", "venue", "frage", "ja_bid", "ja_ask", "volumen_24h", "liquiditaet", "url", "beschreibung")}
                      | {"schliesst": m.get("schliesst")})
 
+    def t_orderfluss(self, markt_id: str, **_) -> str:
+        """Wer kauft was? Polymarket: Preisverlauf 1 Woche, letzte Trades nach Seite, große Orders, größte Halter, Open Interest.
+        Kalshi: Taker-Volumen JA/NEIN und Preisweg. Sonst: gespeicherter Verlauf der Arena."""
+        mid = markt_id.rsplit(":", 1)[0] if markt_id.endswith((":JA", ":NEIN")) else markt_id
+        try:
+            _, venue, ident = mid.split(":", 2)
+        except ValueError:
+            return "markt_id im Format pm:plattform:id angeben."
+        m = self.snap["pm_index"].get(mid) or pm.einzelmarkt(venue, ident)
+        if not m:
+            return "Markt nicht gefunden."
+        out = pm.polymarket_orderfluss(m["ref"]) if venue == "polymarket" else pm.kalshi_orderfluss(m["ref"]) if venue == "kalshi" else {}
+        serie = self.snap.get("verlauf", {}).get(f"{mid}:JA")
+        if serie:
+            out["arena_verlauf_ja"] = [(int(t), p) for t, p in serie[:: max(1, len(serie) // 16)]]
+        return _kurz(out or "Kein Orderfluss verfügbar.")
+
     def t_orderbuch(self, instrument_id: str, **_) -> str:
         inst = self.aufloesen(instrument_id)
         if not inst:
@@ -314,6 +331,8 @@ class Kontext:
              "schema": s({"markt_id": str_}, ["markt_id"]), "fn": self.t_markt_details},
             {"name": "orderbuch", "beschreibung": "Echte Orderbuchtiefe (10 Stufen). Instrument-IDs: spot:BTC-USD, perp:BTC_USDC-PERPETUAL, opt:BTC-27NOV26-73000-P, stock:SPY, pm:polymarket:123:JA (oder :NEIN).",
              "schema": s({"instrument_id": str_}, ["instrument_id"]), "fn": self.t_orderbuch},
+            {"name": "orderfluss", "beschreibung": "Orderfluss eines Wettmarkts: Preisverlauf, wer zuletzt JA/NEIN gekauft hat (Volumen, große Orders), größte Halter, Open Interest (Polymarket, Kalshi).",
+             "schema": s({"markt_id": str_}, ["markt_id"]), "fn": self.t_orderfluss},
             {"name": "kurs_verlauf", "beschreibung": "Gespeicherter Kursverlauf der letzten ~26 h (bzw. Stundenkerzen bei Spot).",
              "schema": s({"instrument_id": str_}, ["instrument_id"]), "fn": self.t_kurs_verlauf},
             {"name": "optionen", "beschreibung": "Liquide Deribit-Optionen (BTC/ETH) nahe am Geld. Nur Kaufen (Long) möglich.",

@@ -57,6 +57,7 @@ def _norm_poly(m: dict) -> dict | None:
                 "beschreibung": (m.get("description") or "")[:1500],
                 "url": f"https://polymarket.com/event/{(m.get('events') or [{}])[0].get('slug', m.get('slug'))}",
                 "ref": {"id": m["id"], "token_ja": toks[0], "token_nein": toks[1], "tick": m.get("orderPriceMinTickSize", 0.01),
+                        "condition": m.get("conditionId"),
                         "gebuehr_rate": _f((m.get("feeSchedule") or {}).get("rate"), 0) if m.get("feesEnabled", True) else 0.0,
                         "gebuehr_exp": _f((m.get("feeSchedule") or {}).get("exponent"), 1)}}
     except (KeyError, ValueError):
@@ -323,3 +324,67 @@ def universum(n: int | None = None) -> list[dict]:
         except (HttpFehler, KeyError, ValueError) as e:  # eine Quelle darf ausfallen
             print(f"WARNUNG {fn.__name__}: {e}")
     return out
+
+
+# ---------------------------------------------------------------- Orderfluss (nur lesend, ohne Schlüssel)
+def _verdichte(punkte: list[tuple[float, float]], n: int = 28) -> list[tuple[int, float]]:
+    if len(punkte) > n:
+        schritt = (len(punkte) - 1) / (n - 1)
+        punkte = [punkte[round(i * schritt)] for i in range(n)]
+    return [(int(t), round(p, 4)) for t, p in punkte]
+
+
+def polymarket_orderfluss(ref: dict) -> dict:
+    """Preisverlauf (1 Woche), letzte Trades (wer kauft JA/NEIN, große Orders), größte Halter je Seite, Open Interest."""
+    if not ref.get("condition"):
+        m = get("https://gamma-api.polymarket.com/markets/" + str(ref["id"]), ttl=600)
+        ref = {**ref, "condition": m.get("conditionId")}
+    out: dict = {}
+    try:
+        h = get("https://clob.polymarket.com/prices-history", {"market": ref["token_ja"], "interval": "1w", "fidelity": 180}, ttl=600)["history"]
+        out["preisverlauf_ja_1w"] = _verdichte([(x["t"], x["p"]) for x in h])
+    except (HttpFehler, KeyError, TypeError):
+        pass
+    try:
+        tr = get("https://data-api.polymarket.com/trades", {"market": ref["condition"], "limit": 200}, ttl=300)
+        ja = {"kauf": 0.0, "verkauf": 0.0}
+        nein = {"kauf": 0.0, "verkauf": 0.0}
+        gross = []
+        for t in tr:
+            usd = float(t["size"]) * float(t["price"])
+            seite = ja if t.get("asset") == ref["token_ja"] else nein
+            seite["kauf" if t.get("side") == "BUY" else "verkauf"] += usd
+            if usd >= 1000:
+                gross.append({"zeit": t.get("timestamp"), "seite": ("JA" if seite is ja else "NEIN") + " " + t.get("side", ""),
+                              "usd": round(usd), "preis": t["price"]})
+        out["letzte_trades"] = {"anzahl": len(tr), "von": min((t.get("timestamp", 0) for t in tr), default=None),
+                                "ja_usd": {k: round(v) for k, v in ja.items()}, "nein_usd": {k: round(v) for k, v in nein.items()},
+                                "grosse_orders": sorted(gross, key=lambda g: -g["usd"])[:6]}
+    except (HttpFehler, KeyError, TypeError, ValueError):
+        pass
+    try:
+        ho = get("https://data-api.polymarket.com/holders", {"market": ref["condition"], "limit": 5}, ttl=900)
+        out["groesste_halter"] = {("JA" if g["token"] == ref["token_ja"] else "NEIN"): [round(x.get("amount", 0)) for x in g.get("holders", [])[:5]]
+                                  for g in ho}
+        oi = get("https://data-api.polymarket.com/oi", {"market": ref["condition"]}, ttl=900)
+        out["open_interest_usd"] = round(oi[0]["value"]) if oi else None
+    except (HttpFehler, KeyError, TypeError, IndexError):
+        pass
+    return out
+
+
+def kalshi_orderfluss(ref: dict) -> dict:
+    """Letzte Trades: Taker-Volumen JA vs. NEIN, Preisweg, große Blöcke."""
+    try:
+        tr = get(f"{KALSHI}/markets/trades", {"ticker": ref["ticker"], "limit": 200}, ttl=300).get("trades", [])
+    except (HttpFehler, KeyError):
+        return {}
+    vol = {"ja": 0.0, "nein": 0.0}
+    weg = []
+    for t in tr:
+        n = _f(t.get("count_fp"), 0) or 0
+        vol["ja" if t.get("taker_side") == "yes" else "nein"] += n
+        p = _f(t.get("yes_price_dollars"))
+        if p is not None:
+            weg.append((_ts(t.get("created_time")) or 0, p))
+    return {"letzte_trades": len(tr), "taker_kontrakte": {k: round(v) for k, v in vol.items()}, "preisweg_ja": _verdichte(sorted(weg))}
