@@ -409,3 +409,27 @@ def test_sqrt_impact_und_stop_buch(monkeypatch):
     monkeypatch.setattr(impact, "markt_kennzahlen", lambda inst: (1e6, 0.04))
     b = watcher._stop_buch(100.0, "long", None, 100.0, {"art": "spot", "symbol": "X-USD"})
     assert b.bids[0][0] == pytest.approx(100.0 * (1 - 0.7 * 0.04 * 0.1))  # 10.000 USD gegen 1 Mio. Tagesvolumen → 0,28 % Abschlag
+
+
+# ---------------------------------------------------------------- Modellwahl nach dem 14.11.
+def test_modellwahl_mcs_waehlt_guenstigstes_unter_den_besten(monkeypatch):
+    import random
+
+    from arena import funds, store
+    from arena.agent import route
+    from arena.exchange import portfolio
+    for k in ("DEEPSEEK_API_KEY", "GEMINI_API_KEY", "OPENAI_API_KEY"):
+        monkeypatch.setenv(k, "x")
+    rng = random.Random(3)
+    t0 = JETZT - 100 * 3600
+    for fid, drift in (("liga_deepseek", 0.0003), ("liga_gemini", 0.0002), ("liga_openai", -0.004)):
+        funds.speichere_portfolio(portfolio.neu(fid, 10000))
+        w = 10000.0
+        for h in range(100):
+            w *= 1 + drift + rng.gauss(0, 0.002)
+            store.anhaengen(f"funds/{fid}/equity.jsonl", {"t": t0 + h * 3600, "usd": w})
+    z = route.modellwahl(JETZT)
+    assert "Model Confidence Set" in z["verfahren"] and "liga_openai" not in z["menge"]
+    assert z["gewaehlt"] == "liga_gemini"  # gratis und nicht unterscheidbar vom Besten
+    assert route.bestes_liga_modell(JETZT)["id"] == "liga_gemini"
+    assert store.lies("modellwahl.json")["gewaehlt"] == "liga_gemini"

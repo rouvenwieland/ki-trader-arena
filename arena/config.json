@@ -421,5 +421,20 @@
     "thinkingmachines/inkling",
     "nvidia/nemotron-3.5-super",
     "google/gemma-4-26b"
-  ]
+  ],
+  "liga_kosten_je_runde_usd": {
+    "gemini": 0.0,
+    "openrouter": 0.0,
+    "mistral": 0.0,
+    "cerebras": 0.0,
+    "groq": 0.0,
+    "deepseek": 0.01,
+    "openai": 0.03,
+    "moonshot": 0.05
+  },
+  "modellwahl": {
+    "alpha": 0.1,
+    "min_stunden": 48,
+    "stabil_tage": 7
+  }
 }
