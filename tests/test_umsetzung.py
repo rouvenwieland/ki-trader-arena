@@ -118,7 +118,7 @@ def test_trefferbilanz_aus_log(monkeypatch):
 # ---------------------------------------------------------------- B4 Zeitstempel
 def test_zeitstempel_atom_und_gdelt():
     from arena.data import news
-    assert news._iso("20261030T153000Z") == pytest.approx(1793377800.0)
-    assert news._iso("2026-10-30T15:30:00+00:00") == pytest.approx(1793377800.0)
+    assert news._iso("20261030T153000Z") == pytest.approx(1793374200.0)
+    assert news._iso("2026-10-30T15:30:00+00:00") == pytest.approx(1793374200.0)
     assert news._iso("kaputt") == 0.0 and news._iso(None) == 0.0
     assert "Fed Presse" in news.RSS and "SEC Presse" in news.RSS
