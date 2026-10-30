@@ -32,8 +32,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Bis zur Abrechnung (Ergebnis 1./2.11.) halten. Steigt NEIN vor der Wahl auf ≥0,33 (meine P(NEIN) überschritten), Gewinn mitnehmen. Kein Stop-Loss vor der Wahl, die Größe begrenzt das Risiko auf maximal 350 USD.",
    "entscheidung_id": "d290f8f22",
-   "kurs": 0.375,
-   "wert": 479.52
+   "kurs": 0.415,
+   "wert": 531.36
   },
   {
    "id": "p4b35a277",
@@ -60,8 +60,8 @@
    "ausstiegsplan": "Bis zur Abrechnung (NWS CLI 31.10.) halten. Kein Stop, da Binärwette; Größe begrenzt das Risiko.",
    "entscheidung_id": "d6179fa1b",
    "invalidierung": "Aktuelle NWS-Prognose oder gemessene Temperatur am 31.10. mit einem Höchstwert von 62–63°F, z. B. Mittagswert ≥62 bei bewölktem Himmel und Regen am Vormittag.",
-   "kurs": 0.575,
-   "wert": 175.84
+   "kurs": 0.5700000000000001,
+   "wert": 172.7
   }
  ],
  "realisiert": 131.75296999999978,
@@ -69,5 +69,5 @@
  "funding": 0.0,
  "erstellt": 1793319819.7411644,
  "start_fx": 1.1184885798616961,
- "letzter_tick": 1793391024.1093402
+ "letzter_tick": 1793391924.0906296
 }
