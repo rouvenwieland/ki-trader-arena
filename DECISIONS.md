@@ -225,3 +225,9 @@ vor dem Deploy aus `data/`. `docs/status.json` (6 kB) bleibt im Git, weil die La
   von dessen Helligkeitsband → beibehalten (Einheitlichkeit der Seite), dafür **zusätzliche Kodierung** über Linienart (Markt gestrichelt), Markerform
   (●■◆○) und Legende. Geprüft headless (Chromium, 1440 px und 390 px): keine Konsolenfehler, kein horizontales Scrollen; auf dem Handy zeigt die
   Prognosetabelle Name + Skill, die Modelltabelle Name + Abdeckung.
+* **Nachtrag Liga-404 (live gefunden 18 UTC):** Kimi wählte aus der Modellliste immer wieder einen gelisteten, aber für den Schlüssel gesperrten Namen
+  (`kimi-k2-turbo-preview`, „Permission denied“). Jetzt probiert eine Sitzung bei 404 bis zu vier Kandidaten nacheinander und wählt nie einen schon
+  gescheiterten Namen erneut.
+* **Live-Prüfung:** Die feste Runde um 18 UTC lief mit dem neuen Code für alle vier Claude-Fonds fehlerfrei (gestreamt, hohe Cache-Treffer,
+  0,03–0,16 $ je Schritt); `p_blind`, Invalidierung und `risiko_usd` stehen in den echten Entscheidungen; Wetter-Regelfonds, Schwarm und Kontrollen
+  handeln im Wächter; das Opus-Review W44 wurde vollständig neu erzeugt.

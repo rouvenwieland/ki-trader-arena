@@ -127,6 +127,7 @@ class OpenAISitzung:
                  alternativen: list[str] | None = None):
         self.url, self.key, self.modell, self.max_tokens = url, key, modell, max_tokens
         self.alternativen = [a for a in (alternativen or []) if a != modell]  # Ausweichmodelle bei Dauer-503/404
+        self.versucht: set[str] = set()  # bei 404 schon probierte Namen (nicht erneut wählen)
         self.tools = _tool_schema_openai(tools)
         self.nachrichten: list[dict] = [{"role": "system", "content": system}]
 
@@ -145,7 +146,7 @@ class OpenAISitzung:
         if self.tools:
             body["tools"] = self.tools
         d, letzter = None, ""
-        aufgeloest = False
+        aufloesungen = 0
         fehl_5xx = 0
         versuch = 0
         while versuch < self.VERSUCHE:
@@ -168,10 +169,13 @@ class OpenAISitzung:
                 self.SCHLAF(_warte(versuch, r.headers.get("retry-after")))
                 versuch += 1
                 continue
-            if r.status_code == 404 and not aufgeloest and "model" in r.text.lower():
-                aufgeloest = True  # Modellname veraltet → Modellliste des Anbieters (bevorzugt ein Name der Ausweichliste)
-                neu = self._modell_suchen() or (self.alternativen.pop(0) if self.alternativen else None)
-                if neu and neu != self.modell:
+            if r.status_code == 404 and aufloesungen < 4 and "model" in r.text.lower():
+                aufloesungen += 1  # Modellname veraltet/gesperrt → Modellliste des Anbieters (bevorzugt Ausweichliste), bis zu 4 Kandidaten
+                self.versucht.add(self.modell)
+                neu = self._modell_suchen()
+                if not neu:
+                    neu = next((a for a in self.alternativen if a not in self.versucht), None)
+                if neu and neu not in self.versucht:
                     self.modell = neu
                     continue
             if r.status_code >= 400:
@@ -210,9 +214,13 @@ def _modell_suchen_impl(self) -> str | None:
         return None
     if not ids:
         return None
-    for kandidat in [self.modell] + self.alternativen:  # ein bekannter Name, den der Anbieter wirklich führt
-        if kandidat in ids and kandidat != self.modell:
+    versucht = getattr(self, "versucht", set()) | {self.modell}
+    for kandidat in self.alternativen:  # ein bekannter Name, den der Anbieter wirklich führt
+        if kandidat in ids and kandidat not in versucht:
             return kandidat
+    ids = [i for i in ids if i not in versucht]
+    if not ids:
+        return None
 
     def gemeinsam(a: str, b: str) -> int:
         n = 0

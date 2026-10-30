@@ -6,7 +6,7 @@ Kurzfassung der Umsetzung in [research/UMSETZUNG.md](research/UMSETZUNG.md)
 ## Erledigt (diese Session)
 
 Umgesetzt wurde [research/EMPFEHLUNG.md](research/EMPFEHLUNG.md): Abschnitt 0, alle zehn schnellen Gewinne und die großen Hebel 1, 3, 4, 6, 7, 8 und 9.
-Alles liegt in kleinen, getesteten Commits direkt auf `main`; 104 Tests sind grün (vorher 73), und der Test-Workflow auf GitHub war bei jedem Push grün.
+Alles liegt in kleinen, getesteten Commits direkt auf `main`; 105 Tests sind grün (vorher 73), und der Test-Workflow auf GitHub war bei jedem Push grün.
 Neue Python-Pakete gibt es nicht.
 
 **Fehler (Abschnitt 0)**
@@ -40,6 +40,8 @@ Neue Python-Pakete gibt es nicht.
 **Seite:** neue Abschnitte „Prognosegüte – besser als der Marktpreis?“ (mit Kalibrierungsdiagramm) und „Schwarm & Kontrollen“, die Rangliste mit
 Konfidenzspannen, Gleichlauf, Gewinn je API-€, ein A/B-Kasten und eine Vorschau der Nachfolge. Headless geprüft (1440 px und 390 px): keine Konsolenfehler, kein horizontales Scrollen.
 
+**Live geprüft:** Die feste Runde um 18 UTC lief mit dem neuen Code für alle vier Claude-Fonds fehlerfrei. Die Pflichtfelder stehen in den echten Entscheidungen, und Wetter-Regelfonds, Schwarm und Kontrollen handeln bereits.
+
 **Budget:** Heute bis 16 UTC ≈ 5,4 €; hochgerechnet wären das mit drei Fonds ≈ 7,5 €/Tag. Der vierte (A/B-)Fonds bringt die Ausgaben ins Ziel von 8–11 €. Die Tagesanteile
 betragen 4 × 2,75 € plus 0,8 € Reserve, der harte Deckel von 12 €/Tag bleibt.
 
@@ -60,7 +62,7 @@ betragen 4 × 2,75 € plus 0,8 € Reserve, der harte Deckel von 12 €/Tag ble
 - **Tageskosten** mit vier Claude-Fonds am 31.10. prüfen (Ziel 8–11 €). Liegen sie zu hoch, `fonds_tagesanteil_eur` senken; der Deckel greift ohnehin.
 - **Prognose-Kennzahlen füllen sich erst mit Abrechnungen:** 175 Schätzungen warten derzeit. Ab etwa 5 bewerteten Schätzungen erscheinen Kalibrierung und Skill gegen den Markt, die Rangliste-KIs ab 24 h Verlauf.
 - **Wetter-Regelfonds:** Der Modellfehler σ = 1,5 + 0,4·Vorlauf °F ist eine konservative Annahme. Nach etwa 50 abgerechneten Brackets aus der Trefferbilanz nachkalibrieren.
-- **Kimi** lieferte 404 mit dem gemerkten Namen. Der Name wird jetzt verworfen und beim nächsten Liga-Lauf über die Modellliste neu aufgelöst – Status prüfen.
+- **Kimi** wählte einen gelisteten, aber gesperrten Modellnamen. Jetzt werden bei 404 bis zu vier Kandidaten probiert – Status nach dem nächsten Liga-Lauf (21 UTC) prüfen. Bleibt es rot, hat der Schlüssel vermutlich keinen Zugriff auf Chat-Modelle (Moonshot-Konto prüfen).
 - **Risikomanager-Schwelle** (5 % des Kapitals) beobachten: Zu viele Ablehnungen verfälschen den A/B-Vergleich nicht, machen ihn aber teurer.
 - **Wächter-Laufzeit** liegt mit den neuen Fonds bei ≈ 110–130 s (Wetter stündlich +≈ 20 s), die Grenze ist 600 s.
 - **Polymarket-Temperaturmärkte** sind bewusst nicht im Wetter-Werkzeug (andere Station, freie Formulierungen).

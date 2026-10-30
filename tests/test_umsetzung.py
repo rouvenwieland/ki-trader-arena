@@ -496,3 +496,28 @@ def test_seite_enthaelt_neue_kennzahlen(monkeypatch):
     assert "vorschau" in g["modellwahl"] and any(f["id"] == "ko_wetter" and f["kontrolle"] for f in g["fonds"])
     st = json.loads((site.DOCS / "status.json").read_text())
     assert "prognosen" in st and "nachfolger_vorschau" in st
+
+
+def test_404_probiert_mehrere_modellnamen(monkeypatch):
+    s = llm.OpenAISitzung("https://x/v1/chat/completions", "k", "kimi-k3", "sys", [], alternativen=["kimi-latest"])
+    s.SCHLAF = lambda x: None
+
+    class G:
+        def json(self):
+            return {"data": [{"id": "kimi-k2-turbo-preview"}, {"id": "kimi-k2-0905"}]}
+
+    class R:
+        def __init__(self, code, text):
+            self.status_code, self.text, self.headers = code, text, {}
+
+        def json(self):
+            return {"choices": [{"message": {"role": "assistant", "content": "ok"}, "finish_reason": "stop"}], "usage": {}}
+    gesehen = []
+
+    def post(url, headers, json, timeout):
+        gesehen.append(json["model"])
+        return R(200, "") if json["model"] == "kimi-k2-0905" else R(404, '{"error":{"message":"Not found the model or Permission denied"}}')
+    monkeypatch.setattr(llm.requests, "get", lambda *a, **k: G())
+    monkeypatch.setattr(llm.requests, "post", post)
+    s.nutzer("hi")
+    assert s.schritt().text == "ok" and s.modell == "kimi-k2-0905" and len(gesehen) >= 3

@@ -1,7 +1,7 @@
 # Umsetzung der Empfehlung (30./31.10.2026, Cloud-Session)
 
 Grundlage: [EMPFEHLUNG.md](EMPFEHLUNG.md). Begründungen jeder Entscheidung: [DECISIONS.md](../DECISIONS.md), Abschnitt „Umsetzung der Recherche-Empfehlung“.
-Alles nur Papierhandel. 104 Tests grün (vorher 73). Keine neuen Python-Abhängigkeiten (Statistik, GARCH, MCS rein in Python).
+Alles nur Papierhandel. 105 Tests grün (vorher 73). Keine neuen Python-Abhängigkeiten (Statistik, GARCH, MCS rein in Python).
 
 ## 0. Fehler (alle behoben)
 | # | Ergebnis |
