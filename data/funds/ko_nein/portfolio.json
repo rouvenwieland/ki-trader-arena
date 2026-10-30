@@ -2,7 +2,7 @@
  "fonds_id": "ko_nein",
  "waehrung": "USD",
  "start_kapital": 11157.431109273288,
- "cash": 7647.8005492732855,
+ "cash": 7146.522739273285,
  "positionen": [
   {
    "id": "pe6781775",
@@ -33,8 +33,8 @@
    "gebuehren": 0.0,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.0675,
-   "wert": 143.38
+   "kurs": 0.0655,
+   "wert": 134.82
   },
   {
    "id": "p9e535f2b",
@@ -65,8 +65,8 @@
    "gebuehren": 0.0,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.3,
-   "wert": 173.13
+   "kurs": 0.325,
+   "wert": 191.04
   },
   {
    "id": "pa5e8a32f",
@@ -97,8 +97,8 @@
    "gebuehren": 0.0,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.255,
-   "wert": 167.25
+   "kurs": 0.245,
+   "wert": 160.56
   },
   {
    "id": "p22f7ef7b",
@@ -225,8 +225,8 @@
    "gebuehren": 0.0,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.735,
-   "wert": 160.6
+   "kurs": 0.705,
+   "wert": 154.0
   },
   {
    "id": "p4f30b305",
@@ -257,8 +257,8 @@
    "gebuehren": 1.59066,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.8314999999999999,
-   "wert": 158.78
+   "kurs": 0.7635000000000001,
+   "wert": 145.73
   },
   {
    "id": "p28450e21",
@@ -373,7 +373,7 @@
    "gebuehren": 0.0,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.28500000000000003,
+   "kurs": 0.29000000000000004,
    "wert": 160.16
   },
   {
@@ -437,8 +437,8 @@
    "gebuehren": 0.0,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.663,
-   "wert": 164.5
+   "kurs": 0.668,
+   "wert": 165.25
   },
   {
    "id": "pe65b0b73",
@@ -533,8 +533,8 @@
    "gebuehren": 0.33007,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.969,
-   "wert": 164.16
+   "kurs": 0.9615,
+   "wert": 164.33
   },
   {
    "id": "p48fc5d59",
@@ -565,8 +565,8 @@
    "gebuehren": 0.0,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.0245,
-   "wert": 147.91
+   "kurs": 0.025500000000000002,
+   "wert": 154.08
   },
   {
    "id": "pcad11f9d",
@@ -597,7 +597,7 @@
    "gebuehren": 0.0,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.0535,
+   "kurs": 0.038,
    "wert": 88.13
   },
   {
@@ -629,8 +629,8 @@
    "gebuehren": 0.35398,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.9684999999999999,
-   "wert": 166.32
+   "kurs": 0.9604999999999999,
+   "wert": 165.12
   },
   {
    "id": "p53c7f93b",
@@ -661,15 +661,111 @@
    "gebuehren": 0.0814,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.9915,
-   "wert": 166.15
+   "kurs": 0.989,
+   "wert": 165.98
+  },
+  {
+   "id": "pcd4d06c5",
+   "inst": {
+    "id": "pm:polymarket:701501:NEIN",
+    "art": "pm",
+    "venue": "polymarket",
+    "ergebnis": "NEIN",
+    "frage": "Will Bitcoin dip to $55,000 by December 31, 2026?",
+    "schliesst": 1798779600.0,
+    "ref": {
+     "id": "701501",
+     "token_ja": "115462087336983275104521488923966022755348986822352694745153736621832003960847",
+     "token_nein": "48849252416222520684793262794712201381742900852794310345084361317209768152557",
+     "tick": 0.01,
+     "condition": "0x752fa61c93f16c4b15e85b0bd438d9c684176b0ea7b319a84c8aca34616e8a8c",
+     "gebuehr_rate": 0.07,
+     "gebuehr_exp": 1.0
+    },
+    "url": "https://polymarket.com/event/will-bitcoin-dip-to-55000-by-december-31-2026-527-627-868-745-188-361-314-673-612-946-821-624-855-557-684-381-884-939-182-939-516"
+   },
+   "seite": "long",
+   "menge": 182.0,
+   "einstand": 0.91,
+   "hebel": 1.0,
+   "marge": 0.0,
+   "eroeffnet": 1793385523.577596,
+   "gebuehren": 1.04341,
+   "funding": 0.0,
+   "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
+   "kurs": 0.905,
+   "wert": 163.8
+  },
+  {
+   "id": "p8692c3e7",
+   "inst": {
+    "id": "pm:polymarket:6369333:NEIN",
+    "art": "pm",
+    "venue": "polymarket",
+    "ergebnis": "NEIN",
+    "frage": "US x Iran ceasefire continues through November 2?",
+    "schliesst": 1793681940.0,
+    "ref": {
+     "id": "6369333",
+     "token_ja": "3149184221354072778711612185076748475145234784664533895827707643347517632045",
+     "token_nein": "12073674699853720739034158731600464996820811632276194872625682171738638687396",
+     "tick": 0.001,
+     "condition": "0x5470b8ebb3de0afd56dcf537c62575f80cc86bda01ff57a332e8f3ae44c71b65",
+     "gebuehr_rate": 0.0,
+     "gebuehr_exp": 1
+    },
+    "url": "https://polymarket.com/event/us-iran-ceasefire-continues-throughptptpt"
+   },
+   "seite": "long",
+   "menge": 1510.0,
+   "einstand": 0.11078437086092716,
+   "hebel": 1.0,
+   "marge": 0.0,
+   "eroeffnet": 1793385523.577596,
+   "gebuehren": 0.0,
+   "funding": 0.0,
+   "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
+   "kurs": 0.10400000000000001,
+   "wert": 141.94
+  },
+  {
+   "id": "pc8cf836f",
+   "inst": {
+    "id": "pm:polymarket:630963:NEIN",
+    "art": "pm",
+    "venue": "polymarket",
+    "ergebnis": "NEIN",
+    "frage": "Will the Democrats win the Texas Senate race in 2026?",
+    "schliesst": 1793768340.0,
+    "ref": {
+     "id": "630963",
+     "token_ja": "15290572385458522370285732869432740297199321382471116558439914335588167718663",
+     "token_nein": "25172545206000541692667496253531562288536270988826888609620735617040533835056",
+     "tick": 0.01,
+     "condition": "0x34918035a590555ba1fb1d6a019d766ab6e557d63e7f3140b63b4550eee7f417",
+     "gebuehr_rate": 0.0,
+     "gebuehr_exp": 1.0
+    },
+    "url": "https://polymarket.com/event/texas-senate-election-winner"
+   },
+   "seite": "long",
+   "menge": 577.0,
+   "einstand": 0.29,
+   "hebel": 1.0,
+   "marge": 0.0,
+   "eroeffnet": 1793385523.577596,
+   "gebuehren": 0.0,
+   "funding": 0.0,
+   "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
+   "kurs": 0.28500000000000003,
+   "wert": 161.56
   }
  ],
  "realisiert": 0.0,
- "gebuehren": 17.786109999999997,
+ "gebuehren": 18.82952,
  "funding": 0.0,
  "erstellt": 1793379225.5430336,
  "start_fx": 1.1157431109273288,
- "letzter_tick": 1793384623.8557248,
+ "letzter_tick": 1793385523.577596,
  "kontrolle_bis": 1793365700.224454
 }
