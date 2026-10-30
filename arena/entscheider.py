@@ -117,14 +117,19 @@ def lauf(grund: str = "ereignis", jetzt: float | None = None) -> dict:
             status_schreiben(fid, f"Fehler: {type(e).__name__}", jetzt)
             ergebnisse[fid] = f"FEHLER {e}"
 
-    # Claude-Fonds nacheinander (gemeinsames Budget), Liga-Fonds parallel (kostenlos/eigene Limits, langsame Antworten)
-    for d, pf in [k for k in kandidaten if k[0]["typ"] == "claude"]:
-        bearbeite(d, pf)
+    # Claude-Fonds nacheinander (gemeinsames Budget), Liga-Fonds parallel dazu (eigene Zustände, langsame Antworten)
+    from concurrent.futures import ThreadPoolExecutor
+    claude = [k for k in kandidaten if k[0]["typ"] == "claude"]
     liga = [k for k in kandidaten if k[0]["typ"] != "claude"]
-    if liga:
-        from concurrent.futures import ThreadPoolExecutor
-        with ThreadPoolExecutor(max_workers=5) as ex:
-            list(ex.map(lambda k: bearbeite(*k), liga))
+
+    def claude_serie() -> None:
+        for d, pf in claude:
+            bearbeite(d, pf)
+
+    with ThreadPoolExecutor(max_workers=6) as ex:
+        futs = [ex.submit(claude_serie)] + [ex.submit(bearbeite, d, pf) for d, pf in liga]
+        for f in futs:
+            f.result()
     z["letztes_ereignis_ts"] = max([e["ts"] for e in alle_ev] + [z["letztes_ereignis_ts"]])
     z["laeufe"][tag] = z["laeufe"].get(tag, 0) + 1
     if taeglich:

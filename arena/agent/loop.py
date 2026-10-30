@@ -11,7 +11,7 @@ from arena.agent import llm, prompts
 from arena.agent.tools import Kontext
 
 MAX_SCHRITTE = {"claude": 14, "liga": 8}
-MAX_SEKUNDEN = {"claude": 600, "liga": 420}  # Wanduhr-Limit je Runde (freie Modelle antworten teils minutenlang)
+MAX_SEKUNDEN = {"claude": 480, "liga": 420}  # Wanduhr-Limit je Runde (freie Modelle antworten teils minutenlang)
 
 
 def _verlauf_zeichen(s) -> int:
