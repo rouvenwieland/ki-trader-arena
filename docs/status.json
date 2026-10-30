@@ -1,6 +1,6 @@
 {
  "version": 1,
- "stand": 1793321675.860453,
+ "stand": 1793340645.2871988,
  "hinweis": "Papierhandel-Simulation, keine Anlageberatung",
  "budget": {
   "heute_eur": 0.99,
@@ -15,108 +15,108 @@
    "id": "claude_aggressiv",
    "name": "Claude Aggressiv",
    "typ": "claude",
-   "rendite_pct": 1.0,
-   "equity_eur": 10094.77,
+   "rendite_pct": 3.23,
+   "equity_eur": 10321.51,
    "max_drawdown_pct": 0.0,
    "status": "aktiv"
   },
   {
    "rang": 2,
-   "id": "claude_mittel",
-   "name": "Claude Mittel",
-   "typ": "claude",
-   "rendite_pct": 0.57,
-   "equity_eur": 10051.93,
-   "max_drawdown_pct": 0.0,
-   "status": "aktiv"
-  },
-  {
-   "rang": 3,
-   "id": "claude_vorsichtig",
-   "name": "Claude Vorsichtig",
-   "typ": "claude",
-   "rendite_pct": 0.4,
-   "equity_eur": 10034.79,
-   "max_drawdown_pct": 0.0,
-   "status": "aktiv"
-  },
-  {
-   "rang": 4,
    "id": "bm_affe",
    "name": "Zufallsaffe",
    "typ": "benchmark",
-   "rendite_pct": 0.04,
-   "equity_eur": 9999.25,
+   "rendite_pct": 1.55,
+   "equity_eur": 10153.47,
    "max_drawdown_pct": 0.0,
    "status": "läuft"
   },
   {
+   "rang": 3,
+   "id": "bm_btc",
+   "name": "Buy & Hold BTC",
+   "typ": "benchmark",
+   "rendite_pct": 1.38,
+   "equity_eur": 10136.38,
+   "max_drawdown_pct": 0.0,
+   "status": "läuft"
+  },
+  {
+   "rang": 4,
+   "id": "claude_mittel",
+   "name": "Claude Mittel",
+   "typ": "claude",
+   "rendite_pct": 1.35,
+   "equity_eur": 10133.03,
+   "max_drawdown_pct": 0.0,
+   "status": "aktiv"
+  },
+  {
    "rang": 5,
-   "id": "liga_gemini",
-   "name": "Gemini Flash",
-   "typ": "liga",
-   "rendite_pct": 0.0,
-   "equity_eur": 9994.78,
+   "id": "claude_vorsichtig",
+   "name": "Claude Vorsichtig",
+   "typ": "claude",
+   "rendite_pct": 0.94,
+   "equity_eur": 10092.7,
    "max_drawdown_pct": 0.0,
    "status": "aktiv"
   },
   {
    "rang": 6,
-   "id": "liga_deepseek",
-   "name": "DeepSeek",
+   "id": "liga_gemini",
+   "name": "Gemini Flash",
    "typ": "liga",
    "rendite_pct": 0.0,
-   "equity_eur": 9994.78,
+   "equity_eur": 9998.52,
    "max_drawdown_pct": 0.0,
    "status": "aktiv"
   },
   {
    "rang": 7,
-   "id": "liga_kimi",
-   "name": "Kimi (Moonshot)",
+   "id": "liga_deepseek",
+   "name": "DeepSeek",
    "typ": "liga",
    "rendite_pct": 0.0,
-   "equity_eur": 9994.78,
+   "equity_eur": 9998.52,
    "max_drawdown_pct": 0.0,
    "status": "aktiv"
   },
   {
    "rang": 8,
+   "id": "liga_kimi",
+   "name": "Kimi (Moonshot)",
+   "typ": "liga",
+   "rendite_pct": 0.0,
+   "equity_eur": 9998.52,
+   "max_drawdown_pct": 0.0,
+   "status": "aktiv"
+  },
+  {
+   "rang": 9,
    "id": "liga_openai",
    "name": "OpenAI",
    "typ": "liga",
    "rendite_pct": 0.0,
-   "equity_eur": 9994.78,
+   "equity_eur": 9998.52,
    "max_drawdown_pct": 0.0,
    "status": "Fehler: Modellfehler: gpt-5-mini: keine Antwort (HTTP 429 {\n    \"error\": {\n        \"message\": \"You have no credits remaining. Add credits to continu"
   },
   {
-   "rang": 9,
+   "rang": 10,
    "id": "bm_sp500",
    "name": "S&P-500-ETF (SPY)",
    "typ": "benchmark",
    "rendite_pct": 0.0,
-   "equity_eur": 9994.78,
-   "max_drawdown_pct": 0.0,
-   "status": "läuft"
-  },
-  {
-   "rang": 10,
-   "id": "bm_6040",
-   "name": "60/40 (SPY/AGG)",
-   "typ": "benchmark",
-   "rendite_pct": 0.0,
-   "equity_eur": 9994.78,
+   "equity_eur": 9998.52,
    "max_drawdown_pct": 0.0,
    "status": "läuft"
   },
   {
    "rang": 11,
-   "id": "bm_btc",
-   "name": "Buy & Hold BTC",
+   "id": "bm_6040",
+   "name": "60/40 (SPY/AGG)",
    "typ": "benchmark",
-   "rendite_pct": -0.49,
-   "equity_eur": 9945.65,
+   "rendite_pct": 0.0,
+   "equity_eur": 9998.52,
    "max_drawdown_pct": 0.0,
    "status": "läuft"
   }
@@ -165,29 +165,44 @@
  ],
  "ereignisse": [
   {
+   "ts": 1793340622.7515354,
+   "typ": "nachricht_position",
+   "titel": "Nachricht zu spot:BTC-USD: Bitcoin to $250K? Tom Lee Sees ‘One of the Biggest Rallies of Our Lifetime’ (r/Bitcoin)"
+  },
+  {
+   "ts": 1793340622.7515354,
+   "typ": "nachricht_position",
+   "titel": "Nachricht zu spot:BTC-USD: Whoever keeps dumping Bitcoin, we need to talk. (r/Bitcoin)"
+  },
+  {
+   "ts": 1793340622.7515354,
+   "typ": "kurssprung",
+   "titel": "perp:SOL_USDC-PERPETUAL +3.3 % seit letzter Messung"
+  },
+  {
+   "ts": 1793340622.7515354,
+   "typ": "kurssprung",
+   "titel": "spot:AVAX-USD +4.4 % seit letzter Messung"
+  },
+  {
+   "ts": 1793340622.7515354,
+   "typ": "kurssprung",
+   "titel": "spot:LINK-USD +5.4 % seit letzter Messung"
+  },
+  {
+   "ts": 1793340622.7515354,
+   "typ": "kurssprung",
+   "titel": "spot:ADA-USD +3.4 % seit letzter Messung"
+  },
+  {
+   "ts": 1793340622.7515354,
+   "typ": "kurssprung",
+   "titel": "spot:SOL-USD +3.3 % seit letzter Messung"
+  },
+  {
    "ts": 1793321580.8768516,
    "typ": "nachricht_position",
    "titel": "Nachricht zu spot:LINK-USD: Chainlink adds weekend pricing for tokenized assets, with Aave as launch partner (CoinDesk)"
-  },
-  {
-   "ts": 1793321580.8768516,
-   "typ": "nachricht_position",
-   "titel": "Nachricht zu spot:BTC-USD: Any OGs here from 2013 remember /r/bitcoin back in the day? (r/Bitcoin)"
-  },
-  {
-   "ts": 1793321580.8768516,
-   "typ": "nachricht_position",
-   "titel": "Nachricht zu spot:BTC-USD: TRIP REPORT: going on a bitcoin spending spree in Austin, TX: tacos, haircuts, coffee, jiu-jitsu, fresh pecans, and so m (r/Bitcoin)"
-  },
-  {
-   "ts": 1793321580.8768516,
-   "typ": "nachricht_position",
-   "titel": "Nachricht zu pm:polymarket:3215008:JA: Fed holds interest rates steady in last decision before midterms (Guardian Wirtschaft)"
-  },
-  {
-   "ts": 1793321580.8768516,
-   "typ": "nachricht_position",
-   "titel": "Nachricht zu pm:polymarket:3215008:JA: US interest rates held steady and economy grows - what it means for you (BBC Wirtschaft)"
   }
  ]
 }
