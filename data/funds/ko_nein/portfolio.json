@@ -2,7 +2,7 @@
  "fonds_id": "ko_nein",
  "waehrung": "USD",
  "start_kapital": 11157.431109273288,
- "cash": 9151.167779273286,
+ "cash": 8650.361449273287,
  "positionen": [
   {
    "id": "pe6781775",
@@ -33,8 +33,8 @@
    "gebuehren": 0.0,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.07050000000000001,
-   "wert": 143.38
+   "kurs": 0.075,
+   "wert": 154.08
   },
   {
    "id": "p9e535f2b",
@@ -65,8 +65,8 @@
    "gebuehren": 0.0,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.265,
-   "wert": 155.22
+   "kurs": 0.275,
+   "wert": 161.19
   },
   {
    "id": "pa5e8a32f",
@@ -97,7 +97,7 @@
    "gebuehren": 0.0,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.245,
+   "kurs": 0.25,
    "wert": 160.56
   },
   {
@@ -257,8 +257,8 @@
    "gebuehren": 1.59066,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.861,
-   "wert": 165.12
+   "kurs": 0.8425,
+   "wert": 161.28
   },
   {
    "id": "p28450e21",
@@ -309,8 +309,8 @@
    "gebuehren": 6.77,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.39,
-   "wert": 137.36
+   "kurs": 0.325,
+   "wert": 129.28
   },
   {
    "id": "pfa54617a",
@@ -373,8 +373,104 @@
    "gebuehren": 0.0,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.29000000000000004,
+   "kurs": 0.28500000000000003,
    "wert": 160.16
+  },
+  {
+   "id": "p722ad016",
+   "inst": {
+    "id": "pm:polymarket:682705:NEIN",
+    "art": "pm",
+    "venue": "polymarket",
+    "ergebnis": "NEIN",
+    "frage": "Will Benjamin Netanyahu be the next Prime Minister of Israel?",
+    "schliesst": 1793159940.0,
+    "ref": {
+     "id": "682705",
+     "token_ja": "20006732765674855733524007935991362439352594042415161039767275461950712817548",
+     "token_nein": "54533569528927082430133047556849600511985191158927477533124630301934489498530",
+     "tick": 0.01,
+     "condition": "0x7586a96520578acaaaa4ea84a2582f197f84255da1f3392a7aa300386c187b37",
+     "gebuehr_rate": 0.0,
+     "gebuehr_exp": 1
+    },
+    "url": "https://polymarket.com/event/who-will-be-the-next-prime-minister-of-israel-after-the-next-election"
+   },
+   "seite": "long",
+   "menge": 278.0,
+   "einstand": 0.6,
+   "hebel": 1.0,
+   "marge": 0.0,
+   "eroeffnet": 1793382823.7048643,
+   "gebuehren": 0.0,
+   "funding": 0.0,
+   "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
+   "kurs": 0.59,
+   "wert": 161.24
+  },
+  {
+   "id": "pdcfb5d53",
+   "inst": {
+    "id": "pm:polymarket:682708:NEIN",
+    "art": "pm",
+    "venue": "polymarket",
+    "ergebnis": "NEIN",
+    "frage": "Will Gadi Eizenkot be the next Prime Minister of Israel?",
+    "schliesst": 1793159940.0,
+    "ref": {
+     "id": "682708",
+     "token_ja": "52487256270918227930942830546248720603566203568229607048093730748840489555808",
+     "token_nein": "1507744758511144558263623459899956467548763419522526462308518027912401299177",
+     "tick": 0.001,
+     "condition": "0xdbe93b5a701f36076a560fa4b9ba59e365a6e8e2ea6a83764640010657277ca4",
+     "gebuehr_rate": 0.0,
+     "gebuehr_exp": 1
+    },
+    "url": "https://polymarket.com/event/who-will-be-the-next-prime-minister-of-israel-after-the-next-election"
+   },
+   "seite": "long",
+   "menge": 250.0,
+   "einstand": 0.6692653199999999,
+   "hebel": 1.0,
+   "marge": 0.0,
+   "eroeffnet": 1793382823.7048643,
+   "gebuehren": 0.0,
+   "funding": 0.0,
+   "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
+   "kurs": 0.6635,
+   "wert": 164.25
+  },
+  {
+   "id": "pe65b0b73",
+   "inst": {
+    "id": "pm:polymarket:648383:NEIN",
+    "art": "pm",
+    "venue": "polymarket",
+    "ergebnis": "NEIN",
+    "frage": "Billionaire one-time wealth tax passes in California election 2026?",
+    "schliesst": 1793768340.0,
+    "ref": {
+     "id": "648383",
+     "token_ja": "38487155026041533062980821872238023790862908049855818921747904019478875496931",
+     "token_nein": "7330556727383706468662351173040823924339817877848787483691015397124505109410",
+     "tick": 0.01,
+     "condition": "0x9345d5142a67f5541264c96515496affee02580f1c572680759eac9fd2a1588a",
+     "gebuehr_rate": 0.0,
+     "gebuehr_exp": 1.0
+    },
+    "url": "https://polymarket.com/event/billionaire-one-time-wealth-tax-passes-in-california-election-2026"
+   },
+   "seite": "long",
+   "menge": 211.0,
+   "einstand": 0.79,
+   "hebel": 1.0,
+   "marge": 0.0,
+   "eroeffnet": 1793382823.7048643,
+   "gebuehren": 0.0,
+   "funding": 0.0,
+   "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
+   "kurs": 0.785,
+   "wert": 164.58
   }
  ],
  "realisiert": 0.0,
@@ -382,6 +478,6 @@
  "funding": 0.0,
  "erstellt": 1793379225.5430336,
  "start_fx": 1.1157431109273288,
- "letzter_tick": 1793381923.768329,
+ "letzter_tick": 1793382823.7048643,
  "kontrolle_bis": 1793365700.224454
 }
