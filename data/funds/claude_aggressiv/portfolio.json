@@ -31,7 +31,9 @@
    "gebuehren": 0.0,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis Abrechnung 31.10. 23:59; bei Meldung über US-Luftschläge auf Iran Position verloren geben/verkaufen falls Preis noch >0.2.",
-   "entscheidung_id": "dc8d00e1b"
+   "entscheidung_id": "dc8d00e1b",
+   "kurs": 0.8485,
+   "wert": 2553.33
   },
   {
    "id": "p8d020f51",
@@ -60,7 +62,9 @@
    "gebuehren": 0.0,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis FOMC 9.12.; verkaufen wenn Preis <0.55 (These gebrochen, z.B. Friedensdeal + schwache Daten) oder >0.92.",
-   "entscheidung_id": "dd6eba046"
+   "entscheidung_id": "dd6eba046",
+   "kurs": 0.705,
+   "wert": 1458.1
   }
  ],
  "realisiert": 0.0,
@@ -68,5 +72,5 @@
  "funding": 0.0,
  "erstellt": 1793319819.7411644,
  "start_fx": 1.1184885798616961,
- "letzter_tick": 1793319819.7411644
+ "letzter_tick": 1793321580.8768516
 }
