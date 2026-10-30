@@ -31,6 +31,8 @@ class Kontext:
         self.fid = defn["id"]
         self.orders = 0
         self.prognosen = 0
+        self.rm_abgelehnt: set[str] = set()
+        self.bud = None  # Budget (für den Risikomanager-Pass), setzt die Agentenschleife
 
     # ---------------------------------------------------------------- Auflösung
     def aufloesen(self, iid: str) -> dict | None:
@@ -252,7 +254,8 @@ class Kontext:
     def t_order(self, instrument_id: str, aktion: str, begruendung: str, zuversicht: float, betrag_usd: float | None = None,
                 menge: float | None = None, seite: str = "long", hebel: float = 1, stop_loss: float | None = None,
                 take_profit: float | None = None, ausstiegsplan: str = "", wahrscheinlichkeit_ja: float | None = None,
-                invalidierung: str = "", staerkstes_gegenargument: str = "", risiko_usd: float | None = None, **_) -> str:
+                invalidierung: str = "", staerkstes_gegenargument: str = "", risiko_usd: float | None = None,
+                gegenbegruendung: str = "", **_) -> str:
         if self.orders >= 8:
             return "Limit erreicht: höchstens 8 Orders je Runde."
         import math
@@ -303,6 +306,10 @@ class Kontext:
             eq = portfolio.equity(self.pf, marks)
             if (betrag_usd is None) == (menge is None):
                 return self._ergebnis(did, {"ok": False, "grund": "Genau eines von betrag_usd oder menge angeben"})
+            if self.defn.get("risikomanager"):
+                betrag_usd, menge, abgelehnt = self._risikomanager(inst, book, eq, betrag_usd, menge, float(hebel), entscheidung, gegenbegruendung)
+                if abgelehnt:
+                    return self._ergebnis(did, {"ok": False, "grund": abgelehnt})
             r = engine.eroeffne(self.pf, self.prof, inst, book, seite=seite, qty=menge, usd=betrag_usd, hebel=float(hebel), equity=eq,
                                 stop_loss=stop_loss, take_profit=take_profit, ausstiegsplan=ausstiegsplan, entscheidung_id=did,
                                 ts=time.time(), index_preis=idx)
@@ -322,6 +329,31 @@ class Kontext:
                 return self._ergebnis(did, {"ok": False, "grund": "Keine offene Position in diesem Instrument"})
             r = engine.schliesse(self.pf, pos, book, qty=menge, grund=f"Agent: {begruendung[:80]}", ts=time.time(), index_preis=idx)
         return self._ergebnis(did, r)
+
+    def _risikomanager(self, inst, book, eq, betrag_usd, menge, hebel, entscheidung, gegenbegruendung):
+        """A/B-Fonds: Haiku-Gegenprüfung großer Orders. Liefert (betrag, menge, Ablehnungsgrund oder None)."""
+        from arena import risikomanager as rm
+        preis = (book.asks[0][0] if book.asks else book.mark) or 0
+        einsatz = (betrag_usd if betrag_usd is not None else (menge or 0) * preis) / (hebel if inst["art"] == "perp" else 1)
+        if not rm.ist_gross(einsatz, eq, hebel, rm.thema_anteil_danach(self.pf, inst, einsatz, eq, self.prof)):
+            return betrag_usd, menge, None
+        if inst["id"] in self.rm_abgelehnt:
+            if len(gegenbegruendung.strip()) >= 40:
+                store.anhaengen(f"funds/{self.fid}/decisions.jsonl", {"typ": "risikomanager", "ts": time.time(), "instrument": inst["id"],
+                                                                      "urteil": "übergangen", "grund": gegenbegruendung[:400]})
+                return betrag_usd, menge, None
+            return betrag_usd, menge, "Vom Risikomanager abgelehnt; erneut nur einmal mit gegenbegruendung (≥ 40 Zeichen) möglich."
+        kontext = f"Eigenkapital {eq:.0f} USD, Cash {self.pf['cash']:.0f} USD, Positionen: " + ", ".join(
+            f"{p['inst']['id']} {p['einstand'] * p['menge']:.0f} USD" for p in self.pf["positionen"]) + f"; Cluster: {risk.cluster_stand(self.pf, self.prof, eq)}"
+        u = rm.pruefe(self.defn, {k: entscheidung.get(k) for k in ("instrument", "aktion", "seite", "betrag_usd", "menge", "hebel", "zuversicht",
+                                                                   "wahrscheinlichkeit_ja", "begruendung", "invalidierung", "staerkstes_gegenargument", "risiko_usd")} |
+                      {"einsatz_usd": round(einsatz, 2), "preis": preis}, kontext, getattr(self, "bud", None))
+        if u["urteil"] == "ablehnen":
+            self.rm_abgelehnt.add(inst["id"])
+            return betrag_usd, menge, f"Risikomanager: abgelehnt – {u['grund']}"
+        if u["urteil"] == "verkleinern":
+            return (None if betrag_usd is None else betrag_usd * u["faktor"]), (None if menge is None else menge * u["faktor"]), None
+        return betrag_usd, menge, None
 
     def _ergebnis(self, did: str, r: dict) -> str:
         r = {**r, "entscheidung_id": did}
@@ -389,7 +421,8 @@ class Kontext:
                           "ausstiegsplan": str_, "wahrscheinlichkeit_ja": {"type": "number", "description": "Wettmärkte (beim Kaufen Pflicht): deine P(JA)"},
                           "invalidierung": {"type": "string", "description": "Kaufen: konkretes, beobachtbares Signal, bei dem die These falsch ist"},
                           "staerkstes_gegenargument": {"type": "string", "description": "Kaufen: ein Satz"},
-                          "risiko_usd": {"type": "number", "description": "Kaufen: Verlust bis Stop-Loss bzw. bei Wetten bis 0"}},
+                          "risiko_usd": {"type": "number", "description": "Kaufen: Verlust bis Stop-Loss bzw. bei Wetten bis 0"},
+                          "gegenbegruendung": {"type": "string", "description": "Nur nach Ablehnung durch den Risikomanager: warum die Order trotzdem richtig ist"}},
                          ["instrument_id", "aktion", "begruendung", "zuversicht"]), "fn": self.t_order},
         ]
 

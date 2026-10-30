@@ -33,7 +33,7 @@ MAX_KAEUFE_JE_TICK = 3
 def ki_fonds(gruppe: str = "alle") -> list[str]:
     ids = []
     if gruppe in ("alle", "claude"):
-        ids += [f["id"] for f in funds.claude_fonds()]
+        ids += [f["id"] for f in funds.claude_fonds() if not f.get("ab_von")]  # A/B-Zwilling wäre eine doppelte Stimme
     if gruppe in ("alle", "liga"):
         ids += [f["id"] for f in funds.liga_fonds()]
     return ids

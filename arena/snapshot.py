@@ -63,7 +63,7 @@ def startliste(s: dict, defn: dict | None, max_wetten: int = 30) -> list[str]:
     tag = time.strftime("%Y-%m-%d", time.gmtime(s["ts"]))
 
     def los(m: dict) -> str:
-        return hashlib.sha256(f"{defn['id']}|{tag}|{m['mid']}".encode()).hexdigest()
+        return hashlib.sha256(f"{defn.get('ab_von') or defn['id']}|{tag}|{m['mid']}".encode()).hexdigest()  # A/B-Zwilling: gleiche Liste
     rest = sorted([m for m in top[:150] if m not in passend], key=los)
     gezeigt = []
     for m in passend[: max_wetten * 2 // 3] + [m for m in bald if m in passend][:6] + rest:

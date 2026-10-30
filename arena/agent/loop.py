@@ -49,6 +49,7 @@ def laufe_runde(defn: dict, route: dict, pf: dict, snap: dict, mz, grund: str, e
     jetzt = jetzt or time.time()
     from arena import snapshot as snapmod
     ctx = Kontext(defn, pf, snap, mz, grund, ereignisse, jetzt)
+    ctx.bud = bud
     tools = ctx.definitionen()
     sys_prompt = prompts.system_prompt(defn, ctx.prof)
     ist_claude = route["art"] == "anthropic"

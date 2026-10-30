@@ -202,3 +202,15 @@ vor dem Deploy aus `data/`. `docs/status.json` (6 kB) bleibt im Git, weil die La
   (Y = 0,7 · σ_Tag · √(Q/V_Tag), gedeckelt bei 10 %) für ausgelöste Stops/Take-Profits (vorher Tiefe 1e9 zum Auslösepreis) und für das synthetische
   Aktienbuch (Treppe bis 5 Mio. USD statt flacher 1e6 Stück); Volumen/Vola aus Coinbase, DVOL bzw. Yahoo-Tageskerzen. PredictIt behält seine bereits
   konservative Treppe; Liquidationen tragen weiter die Liquidationsgebühr.
+* **8 Modellwahl nach dem 14.11.:** `route.modellwahl()` – Model Confidence Set (α = 0,1, T_max, stationärer Block-Bootstrap) über die Stunden-Verluste
+  der verfügbaren Liga-Fonds (≥ 48 gemeinsame Stunden, sonst ausgewiesener Rückfall auf die beste Rendite); unter den nicht unterscheidbaren Besten
+  gewinnt das **günstigste** Modell (`liga_kosten_je_runde_usd`: Gratis-Modelle 0, DeepSeek ≈ 0,01 $, OpenAI ≈ 0,03 $, Kimi ≈ 0,05 $), bei Gleichstand
+  die höhere Rendite. Die Wahl steht in `data/modellwahl.json` und bleibt **7 Tage** stabil (vorher konnte jede Runde ein anderes „bestes“ Modell
+  übernehmen). „Gewinn je API-€“ steht in den Kennzahlen. OpenRouter-Aufladung (10 $ → 1000 statt 50 Anfragen/Tag) bleibt Rouvens Entscheidung.
+* **9 A/B-Fonds + Risikomanager:** neuer Claude-Fonds **„Claude Mittel+RM (A/B)“** – Zwilling von „Claude Mittel“ (gleiche Persönlichkeit, Denkschule,
+  Schwerpunkt, **gleiche Startliste**), einziger Unterschied: ein **Haiku-Risikomanager-Pass** vor großen Orders (Einsatz ≥ 5 % des Kapitals statt der
+  vorgeschlagenen 10 % – Mittel-Orders liegen meist darunter, so entstehen mehr Messpunkte; Hebel > 2; Thema danach > 60 % seines Limits). Urteil
+  freigeben/verkleinern/ablehnen; nach Ablehnung genau ein neuer Versuch mit `gegenbegruendung`. Alles in `decisions.jsonl`. Der Zwilling zählt
+  nicht im Schwarm (doppelte Stimme). **Budget:** Tagesanteile jetzt 4 × 2,75 € + 0,8 € Reserve = 11,8 € (Deckel 12 € bleibt hart). Grundlage:
+  heutiger Verbrauch ≈ 5,4 € bis 16 UTC, Hochrechnung ≈ 7,5 €/Tag mit drei Fonds – der vierte Fonds bringt die Ausgaben ins Ziel 8–11 €; die tatsächlichen
+  Ausgaben liegen unter den Anteilen, die Anteile sind Obergrenzen.

@@ -433,3 +433,44 @@ def test_modellwahl_mcs_waehlt_guenstigstes_unter_den_besten(monkeypatch):
     assert z["gewaehlt"] == "liga_gemini"  # gratis und nicht unterscheidbar vom Besten
     assert route.bestes_liga_modell(JETZT)["id"] == "liga_gemini"
     assert store.lies("modellwahl.json")["gewaehlt"] == "liga_gemini"
+
+
+# ---------------------------------------------------------------- A/B-Fonds mit Risikomanager
+def _rm_ctx():
+    from arena import funds
+    from arena.agent.tools import Kontext
+    from arena.exchange import portfolio
+    d = next(f for f in funds.claude_fonds() if f["id"] == "claude_mittel_rm")
+    pf = portfolio.neu(d["id"], 10000)
+    funds.speichere_portfolio(pf)
+    ctx = Kontext(d, pf, {"ts": JETZT, "wetten": [], "pm_index": {}}, BuchMZ(ja_ask=0.40), "t", [], JETZT)
+    ctx.aufloesen = lambda iid: {"id": iid, "art": "pm", "venue": "kalshi", "ergebnis": "JA", "frage": "Will it rain?", "ref": {}}
+    return d, pf, ctx
+
+
+ORDER = dict(instrument_id="pm:kalshi:R-1:JA", aktion="kaufen", begruendung="x" * 60, zuversicht=0.7, ausstiegsplan="bis Abrechnung halten",
+             invalidierung="Ensemble fällt unter 30 %", staerkstes_gegenargument="Markt hat Lokalwissen", risiko_usd=800, wahrscheinlichkeit_ja=0.6)
+
+
+def test_ab_fonds_ist_zwilling_von_mittel():
+    from arena import funds
+    c = {f["id"]: f for f in funds.claude_fonds()}
+    assert c["claude_mittel_rm"]["schwerpunkt"] == c["claude_mittel"]["schwerpunkt"] and c["claude_mittel_rm"]["risikomanager"]
+    from arena import schwarm
+    assert "claude_mittel_rm" not in schwarm.ki_fonds("claude")
+
+
+def test_risikomanager_verkleinert_und_lehnt_ab(monkeypatch):
+    from arena import risikomanager as rm
+    d, pf, ctx = _rm_ctx()
+    monkeypatch.setattr(rm, "pruefe", lambda *a, **k: {"urteil": "verkleinern", "faktor": 0.5, "grund": "zu groß"})
+    r = ctx.t_order(betrag_usd=800, **ORDER)
+    assert '"ok": true' in r and pf["positionen"][0]["einstand"] * pf["positionen"][0]["menge"] <= 400 + 1
+    monkeypatch.setattr(rm, "pruefe", lambda *a, **k: {"urteil": "ablehnen", "faktor": 0.0, "grund": "Konzentration"})
+    o2 = ORDER | {"instrument_id": "pm:kalshi:R-2:JA"}
+    assert "abgelehnt" in ctx.t_order(betrag_usd=800, **o2)
+    assert "nur einmal mit gegenbegruendung" in ctx.t_order(betrag_usd=800, **o2)
+    assert '"ok": true' in ctx.t_order(betrag_usd=800, gegenbegruendung="Ensemble-Vorteil 20 pp, Konzentration bewusst begrenzt auf ein Thema", **o2)
+    klein = ORDER | {"instrument_id": "pm:kalshi:R-3:JA"}
+    monkeypatch.setattr(rm, "pruefe", lambda *a, **k: pytest.fail("kleine Order braucht keinen Pass"))
+    assert '"ok": true' in ctx.t_order(betrag_usd=100, **klein)
