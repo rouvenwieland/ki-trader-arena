@@ -32,7 +32,9 @@
    "funding": 0.0,
    "take_profit": 0.32,
    "ausstiegsplan": "Binärer Kurzläufer, läuft 31.10 aus. Halten bis Auflösung. Falls JA-Anteil vorher auf >0,32 steigt (BTC bricht Richtung 75k), Take-Profit per Verkauf erwägen. Definiertes Max-Risiko = Einsatz (600 USD). Kein Stop-Loss bei Wettanteil nötig.",
-   "entscheidung_id": "d14f2eedc"
+   "entscheidung_id": "d14f2eedc",
+   "kurs": 0.2095,
+   "wert": 511.88
   }
  ],
  "realisiert": 0.0,
@@ -40,5 +42,5 @@
  "funding": 0.0,
  "erstellt": 1793319819.7411644,
  "start_fx": 1.1184885798616961,
- "letzter_tick": 1793365671.0617375
+ "letzter_tick": 1793366570.9403007
 }

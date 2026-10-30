@@ -31,7 +31,9 @@
    "gebuehren": 0.0,
    "funding": 0.0,
    "ausstiegsplan": "Bis zur Abrechnung (Ergebnis 1./2.11.) halten. Steigt NEIN vor der Wahl auf ≥0,33 (meine P(NEIN) überschritten), Gewinn mitnehmen. Kein Stop-Loss vor der Wahl, die Größe begrenzt das Risiko auf maximal 350 USD.",
-   "entscheidung_id": "d290f8f22"
+   "entscheidung_id": "d290f8f22",
+   "kurs": 0.28,
+   "wert": 349.92
   }
  ],
  "realisiert": 131.75296999999978,
@@ -39,5 +41,5 @@
  "funding": 0.0,
  "erstellt": 1793319819.7411644,
  "start_fx": 1.1184885798616961,
- "letzter_tick": 1793365671.0617375
+ "letzter_tick": 1793366570.9403007
 }
