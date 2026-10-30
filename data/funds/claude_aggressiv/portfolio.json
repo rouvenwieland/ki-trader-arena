@@ -2,7 +2,7 @@
  "fonds_id": "claude_aggressiv",
  "waehrung": "USD",
  "start_kapital": 11184.88579861696,
- "cash": 5786.1069986169605,
+ "cash": 4786.47099861696,
  "positionen": [
   {
    "id": "pa523d4f2",
@@ -85,15 +85,15 @@
     "url": "https://polymarket.com/event/bitcoin-above-on-october-30-2026"
    },
    "seite": "long",
-   "menge": 1697.0,
-   "einstand": 0.8834718915733648,
+   "menge": 2787.0,
+   "einstand": 0.8966228202368137,
    "hebel": 1.0,
    "marge": 0.0,
    "eroeffnet": 1793354962.039637,
    "gebuehren": 0.0,
    "funding": 0.0,
-   "ausstiegsplan": "Halten bis Abrechnung 30.10 12:00 ET; bei BTC <76.3k vor Abrechnung neu bewerten/verkaufen.",
-   "entscheidung_id": "db1f31ec7",
+   "ausstiegsplan": "Halten bis Abrechnung; bei BTC <76.5k neu bewerten/verkaufen.",
+   "entscheidung_id": "d5856c15b",
    "kurs": 0.9115,
    "wert": 1537.48
   }
