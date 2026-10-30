@@ -14,7 +14,9 @@
 - [x] Entscheider-Workflow (Ereignis per `workflow_dispatch` + täglich 13:17 UTC), Haiku-Triage → Sonnet-Runde mit Tool-Use und Websuche, Weitblick-Prompt, Mindestaufwand, Orders mit Begründung/Zuversicht/Ausstiegsplan.
 - [x] Budget-Stopp im Code (Tages-/Fonds-/Gesamtdeckel, Worst-Case-Vorausschau), Umschaltung auf bestes Liga-Modell ab 14.11. oder bei erschöpftem Budget (inkl. Markierung).
 - [x] Hermes Agent geprüft → eigene Schleife (Begründung in DECISIONS.md).
-- [x] **Live-Test auf Actions bestanden:** Claude-Fonds liefen real (Sonnet 5.5, Caching, ~0,04 $/Runde in der ersten Fassung).
+- [x] **Live-Test auf Actions bestanden:** Claude-Fonds liefen real (Sonnet 5.5, Websuche, Caching): Recherche, Wahrscheinlichkeitsschätzungen, Orders mit Begründung/Ausstiegsplan, Notizbuch. Eine Tagesrunde aller drei kostete ≈ 0,73 € (Deckel 12 €/Tag). Auffällig: alle drei setzten auf dieselbe Wette (Iran-Waffenruhe) – Klumpenrisiko der Rangliste.
+- [x] Wochen-Review (Opus) einmal manuell getestet → `reports/2026-W44.md`.
+- [x] Unabhängige Abnahme der Börse durch einen Prüfer-Agenten; alle bestätigten Fehler behoben (siehe DECISIONS.md).
 
 **Phase 3 – Liga**
 - [x] Liga-Fonds je Modell mit Schlüssel (Gemini, DeepSeek, Moonshot/Kimi, Cerebras, Mistral, OpenAI, OpenRouter-`:free` dynamisch); Groq bewusst nicht als Fonds (Tokenlimit), Vergleichsfonds: BTC Buy&Hold, S&P-ETF, 60/40, Zufallsaffe; Rangliste in Seite und `status.json`.
@@ -45,10 +47,11 @@
 - **Repo-Wachstum:** `data/` wächst um grob 100–200 kB/Tag (Kursverlauf + Equity). Später komprimieren/auslagern.
 - Kein Punkt/Modell-roh-Fonds aus dem Wahrscheinlichkeits-Scanner (nicht in diesem Repo vorhanden).
 - NASA FIRMS und OpenSanctions brauchen Schlüssel/Lizenz und sind nur optional (FIRMS) bzw. nicht eingebunden.
-- Die „unabhängige Abnahme durch einen Prüfer-Agenten“ aus dem Plan steht noch aus.
+- Equity wird nur vom Wächter (alle 15 min) geschrieben; direkt nach einer Order zeigt die Kurve bis zum nächsten Tick noch den Einstandswert.
+- Liga-Fonds mit Fehlern (z. B. OpenAI: „no credits“) zeigen das im Status; Gemini lieferte beim ersten Versuch 503 (vorübergehend).
 
 ## Nächste Schritte
 1. Pages aktivieren, Secrets ergänzen.
 2. Nach 1–2 Tagen: Fonds-Status auf der Seite prüfen (Fehler je Liga-Modell), Modellnamen anpassen.
-3. Prüfer-Agent über Börse/Abrechnung laufen lassen (Abnahme).
+3. Diversifikation der Agenten prüfen (gleiche Wette in allen Fonds).
 4. Alpaca-Daten (Aktien), Oracle-Server für kürzere Takte.
