@@ -1,0 +1,111 @@
+{
+ "fonds_id": "ko_nein",
+ "waehrung": "USD",
+ "start_kapital": 11157.431109273288,
+ "cash": 10655.720519273287,
+ "positionen": [
+  {
+   "id": "pe6781775",
+   "inst": {
+    "id": "pm:polymarket:4641065:NEIN",
+    "art": "pm",
+    "venue": "polymarket",
+    "ergebnis": "NEIN",
+    "frage": "US x Iran ceasefire continues through October 31?",
+    "schliesst": 1793491140.0,
+    "ref": {
+     "id": "4641065",
+     "token_ja": "67102598924726349989742049657609063097299442010642912942032681022413402597017",
+     "token_nein": "114475889232765203212032217024645308497828327658421967586050553616813506019119",
+     "tick": 0.001,
+     "condition": "0x3738ad9665480991affe3ba286cd035516e17d1f8b7703e05088ec19c70c21a4",
+     "gebuehr_rate": 0.0,
+     "gebuehr_exp": 1
+    },
+    "url": "https://polymarket.com/event/us-iran-ceasefire-continues-throughptptpt"
+   },
+   "seite": "long",
+   "menge": 2140.0,
+   "einstand": 0.0781778457943925,
+   "hebel": 1.0,
+   "marge": 0.0,
+   "eroeffnet": 1793379225.5430336,
+   "gebuehren": 0.0,
+   "funding": 0.0,
+   "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
+   "kurs": 0.066,
+   "wert": 130.54
+  },
+  {
+   "id": "p9e535f2b",
+   "inst": {
+    "id": "pm:polymarket:3215008:NEIN",
+    "art": "pm",
+    "venue": "polymarket",
+    "ergebnis": "NEIN",
+    "frage": "Will the Fed increase interest rates by 25 bps after the December 2026 meeting?",
+    "schliesst": 1796860740.0,
+    "ref": {
+     "id": "3215008",
+     "token_ja": "111662129652828266889360374468657435151479595863413519836161861837506140152890",
+     "token_nein": "94483965432909797688470702512207472940215538148754820061518518664128018848687",
+     "tick": 0.01,
+     "condition": "0x8a4196617dcb703e49d9bb36d3847bf6a75fd364dbd19f8d408ac944bf1a03d8",
+     "gebuehr_rate": 0.0,
+     "gebuehr_exp": 1.0
+    },
+    "url": "https://polymarket.com/event/fed-decision-in-december-20260729232808632"
+   },
+   "seite": "long",
+   "menge": 597.0,
+   "einstand": 0.28,
+   "hebel": 1.0,
+   "marge": 0.0,
+   "eroeffnet": 1793379225.5430336,
+   "gebuehren": 0.0,
+   "funding": 0.0,
+   "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
+   "kurs": 0.275,
+   "wert": 161.19
+  },
+  {
+   "id": "pa5e8a32f",
+   "inst": {
+    "id": "pm:polymarket:5686980:NEIN",
+    "art": "pm",
+    "venue": "polymarket",
+    "ergebnis": "NEIN",
+    "frage": "US x Iran ceasefire continues through November 8?",
+    "schliesst": 1794200340.0,
+    "ref": {
+     "id": "5686980",
+     "token_ja": "11308864288973006753199540704778798414330563151778440954216228592301141985802",
+     "token_nein": "24327720582868312582235197042228614782170987367893695419646480789385935199671",
+     "tick": 0.01,
+     "condition": "0xdbcc19248725b32aa85acbdd91f1877cb124a68cf6d7bc2d036e0e91ffa0f9c6",
+     "gebuehr_rate": 0.0,
+     "gebuehr_exp": 1
+    },
+    "url": "https://polymarket.com/event/us-iran-ceasefire-continues-throughptptpt"
+   },
+   "seite": "long",
+   "menge": 669.0,
+   "einstand": 0.25,
+   "hebel": 1.0,
+   "marge": 0.0,
+   "eroeffnet": 1793379225.5430336,
+   "gebuehren": 0.0,
+   "funding": 0.0,
+   "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
+   "kurs": 0.245,
+   "wert": 160.56
+  }
+ ],
+ "realisiert": 0.0,
+ "gebuehren": 0.0,
+ "funding": 0.0,
+ "erstellt": 1793379225.5430336,
+ "start_fx": 1.1157431109273288,
+ "letzter_tick": 1793379225.5430336,
+ "kontrolle_bis": 1793320740.991442
+}

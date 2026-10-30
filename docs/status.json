@@ -1,31 +1,31 @@
 {
  "version": 1,
- "stand": 1793378367.9908671,
+ "stand": 1793379271.5889027,
  "hinweis": "Papierhandel-Simulation, keine Anlageberatung",
  "seite": "https://rouvenwieland.github.io/ki-trader-arena/",
  "budget": {
-  "heute_eur": 5.38,
-  "gesamt_eur": 5.38,
+  "heute_eur": 5.74,
+  "gesamt_eur": 5.74,
   "tagesdeckel_eur": 12.0,
   "gesamtdeckel_eur": 190.0,
   "claude_ende": "2026-11-14",
   "ziel_tag_eur": 10.2,
   "tempo_faktor": 1.0
  },
- "ueberlappung_claude_pct": 18.8,
+ "ueberlappung_claude_pct": 18.9,
  "rangliste": [
   {
    "rang": 1,
    "id": "claude_aggressiv",
    "name": "Claude Aggressiv",
    "typ": "claude",
-   "rendite_pct": 6.06,
-   "equity_eur": 10628.31,
+   "rendite_pct": 5.95,
+   "equity_eur": 10621.27,
    "max_drawdown_pct": -2.65,
    "status": "aktiv",
    "modell": "claude-sonnet-5-5",
-   "kosten_heute_eur": 1.727,
-   "kosten_gesamt_eur": 1.727,
+   "kosten_heute_eur": 1.728,
+   "kosten_gesamt_eur": 1.728,
    "verlauf_pct": [
     0.0,
     1.0,
@@ -57,7 +57,8 @@
     5.74,
     5.91,
     5.69,
-    6.06
+    6.06,
+    5.95
    ]
   },
   {
@@ -66,7 +67,7 @@
    "name": "DeepSeek",
    "typ": "liga",
    "rendite_pct": 1.78,
-   "equity_eur": 10199.85,
+   "equity_eur": 10203.22,
    "max_drawdown_pct": -0.79,
    "status": "aktiv",
    "modell": "deepseek-chat",
@@ -103,6 +104,7 @@
     1.78,
     1.78,
     1.78,
+    1.78,
     1.78
    ]
   },
@@ -111,8 +113,8 @@
    "id": "bm_affe",
    "name": "Zufallsaffe",
    "typ": "benchmark",
-   "rendite_pct": 1.5,
-   "equity_eur": 10171.16,
+   "rendite_pct": 1.41,
+   "equity_eur": 10165.53,
    "max_drawdown_pct": -0.75,
    "status": "läuft",
    "modell": null,
@@ -149,7 +151,8 @@
     1.25,
     1.39,
     1.46,
-    1.5
+    1.5,
+    1.41
    ]
   },
   {
@@ -158,12 +161,12 @@
    "name": "Claude Mittel",
    "typ": "claude",
    "rendite_pct": 1.29,
-   "equity_eur": 10150.96,
+   "equity_eur": 10154.31,
    "max_drawdown_pct": -0.17,
    "status": "aktiv",
    "modell": "claude-sonnet-5-5",
-   "kosten_heute_eur": 1.982,
-   "kosten_gesamt_eur": 1.982,
+   "kosten_heute_eur": 1.983,
+   "kosten_gesamt_eur": 1.983,
    "verlauf_pct": [
     0.0,
     0.57,
@@ -195,6 +198,7 @@
     1.29,
     1.29,
     1.29,
+    1.29,
     1.29
    ]
   },
@@ -203,13 +207,13 @@
    "id": "claude_vorsichtig",
    "name": "Claude Vorsichtig",
    "typ": "claude",
-   "rendite_pct": 0.79,
-   "equity_eur": 10100.84,
+   "rendite_pct": 0.83,
+   "equity_eur": 10107.33,
    "max_drawdown_pct": -0.52,
    "status": "aktiv",
    "modell": "claude-opus-5-5",
-   "kosten_heute_eur": 1.471,
-   "kosten_gesamt_eur": 1.471,
+   "kosten_heute_eur": 1.472,
+   "kosten_gesamt_eur": 1.472,
    "verlauf_pct": [
     0.0,
     0.4,
@@ -241,7 +245,8 @@
     0.75,
     0.82,
     0.77,
-    0.79
+    0.79,
+    0.83
    ]
   },
   {
@@ -250,13 +255,14 @@
    "name": "Gemini Flash",
    "typ": "liga",
    "rendite_pct": 0.0,
-   "equity_eur": 10021.3,
+   "equity_eur": 10024.61,
    "max_drawdown_pct": 0.0,
    "status": "aktiv",
    "modell": "gemini-flash-lite-latest",
    "kosten_heute_eur": 0.0,
    "kosten_gesamt_eur": 0.0,
    "verlauf_pct": [
+    0.0,
     0.0,
     0.0,
     0.0,
@@ -296,13 +302,14 @@
    "name": "Kimi (Moonshot)",
    "typ": "liga",
    "rendite_pct": 0.0,
-   "equity_eur": 10021.3,
+   "equity_eur": 10024.61,
    "max_drawdown_pct": 0.0,
    "status": "Fehler: Modellfehler: kimi-k2-turbo-preview: HTTP 404 {\"error\":{\"message\":\"Not found the model kimi-k2-turbo-preview or Permission denied\",\"type\":\"r",
    "modell": "kimi-k2-turbo-preview",
    "kosten_heute_eur": 0.0,
    "kosten_gesamt_eur": 0.0,
    "verlauf_pct": [
+    0.0,
     0.0,
     0.0,
     0.0,
@@ -342,7 +349,7 @@
    "name": "OpenAI",
    "typ": "liga",
    "rendite_pct": 0.0,
-   "equity_eur": 10021.3,
+   "equity_eur": 10024.61,
    "max_drawdown_pct": 0.0,
    "status": "pausiert (kein Guthaben)",
    "modell": "gpt-5-mini",
@@ -379,16 +386,81 @@
     0.0,
     0.0,
     0.0,
+    0.0,
     0.0
    ]
   },
   {
    "rang": 9,
+   "id": "schwarm_liga",
+   "name": "Schwarm (nur Liga)",
+   "typ": "schwarm",
+   "rendite_pct": -0.0,
+   "equity_eur": 10000.0,
+   "max_drawdown_pct": 0.0,
+   "status": "wartet auf ersten Lauf",
+   "modell": null,
+   "kosten_heute_eur": 0.0,
+   "kosten_gesamt_eur": 0.0,
+   "verlauf_pct": [
+    -0.0
+   ]
+  },
+  {
+   "rang": 10,
+   "id": "ko_markt",
+   "name": "Kontrolle: Markt-Kopierer",
+   "typ": "benchmark",
+   "rendite_pct": -0.0,
+   "equity_eur": 10000.0,
+   "max_drawdown_pct": 0.0,
+   "status": "läuft",
+   "modell": null,
+   "kosten_heute_eur": 0.0,
+   "kosten_gesamt_eur": 0.0,
+   "verlauf_pct": [
+    -0.0
+   ]
+  },
+  {
+   "rang": 11,
+   "id": "schwarm_alle",
+   "name": "Schwarm (alle KI)",
+   "typ": "schwarm",
+   "rendite_pct": -0.03,
+   "equity_eur": 9997.25,
+   "max_drawdown_pct": 0.0,
+   "status": "wartet auf ersten Lauf",
+   "modell": null,
+   "kosten_heute_eur": 0.0,
+   "kosten_gesamt_eur": 0.0,
+   "verlauf_pct": [
+    -0.03
+   ]
+  },
+  {
+   "rang": 12,
+   "id": "schwarm_claude",
+   "name": "Schwarm (nur Claude)",
+   "typ": "schwarm",
+   "rendite_pct": -0.04,
+   "equity_eur": 9996.32,
+   "max_drawdown_pct": 0.0,
+   "status": "wartet auf ersten Lauf",
+   "modell": null,
+   "kosten_heute_eur": 0.0,
+   "kosten_gesamt_eur": 0.0,
+   "verlauf_pct": [
+    -0.04
+   ]
+  },
+  {
+   "rang": 13,
    "id": "bm_btc",
    "name": "Buy & Hold BTC",
    "typ": "benchmark",
-   "rendite_pct": -0.11,
-   "equity_eur": 10010.72,
+   "rendite_pct": -0.29,
+   "equity_eur": 9995.73,
    "max_drawdown_pct": -2.48,
    "status": "läuft",
    "modell": null,
@@ -425,17 +497,18 @@
     0.02,
     -0.02,
     -0.12,
-    -0.11
+    -0.11,
+    -0.29
    ]
   },
   {
-   "rang": 10,
+   "rang": 14,
    "id": "bm_6040",
    "name": "60/40 (SPY/AGG)",
    "typ": "benchmark",
-   "rendite_pct": -0.32,
-   "equity_eur": 9989.35,
-   "max_drawdown_pct": -0.32,
+   "rendite_pct": -0.4,
+   "equity_eur": 9984.54,
+   "max_drawdown_pct": -0.4,
    "status": "läuft",
    "modell": null,
    "kosten_heute_eur": 0.0,
@@ -471,17 +544,34 @@
     -0.28,
     -0.32,
     -0.31,
-    -0.32
+    -0.32,
+    -0.4
    ]
   },
   {
-   "rang": 11,
+   "rang": 15,
+   "id": "ko_nein",
+   "name": "Kontrolle: Immer NEIN",
+   "typ": "benchmark",
+   "rendite_pct": -0.44,
+   "equity_eur": 9955.71,
+   "max_drawdown_pct": 0.0,
+   "status": "läuft",
+   "modell": null,
+   "kosten_heute_eur": 0.0,
+   "kosten_gesamt_eur": 0.0,
+   "verlauf_pct": [
+    -0.44
+   ]
+  },
+  {
+   "rang": 16,
    "id": "bm_sp500",
    "name": "S&P-500-ETF (SPY)",
    "typ": "benchmark",
-   "rendite_pct": -0.42,
-   "equity_eur": 9979.36,
-   "max_drawdown_pct": -0.44,
+   "rendite_pct": -0.59,
+   "equity_eur": 9965.34,
+   "max_drawdown_pct": -0.59,
    "status": "läuft",
    "modell": null,
    "kosten_heute_eur": 0.0,
@@ -517,7 +607,8 @@
     -0.36,
     -0.44,
     -0.43,
-    -0.42
+    -0.42,
+    -0.59
    ]
   }
  ],

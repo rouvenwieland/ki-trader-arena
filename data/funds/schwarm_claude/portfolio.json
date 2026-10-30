@@ -1,0 +1,46 @@
+{
+ "fonds_id": "schwarm_claude",
+ "waehrung": "USD",
+ "start_kapital": 11157.431109273288,
+ "cash": 11054.681109273288,
+ "positionen": [
+  {
+   "id": "p6e4e571a",
+   "inst": {
+    "id": "pm:polymarket:5686980:NEIN",
+    "art": "pm",
+    "venue": "polymarket",
+    "ergebnis": "NEIN",
+    "frage": "US x Iran ceasefire continues through November 8?",
+    "schliesst": 1794200340.0,
+    "ref": {
+     "id": "5686980",
+     "token_ja": "11308864288973006753199540704778798414330563151778440954216228592301141985802",
+     "token_nein": "24327720582868312582235197042228614782170987367893695419646480789385935199671",
+     "tick": 0.01,
+     "condition": "0xdbcc19248725b32aa85acbdd91f1877cb124a68cf6d7bc2d036e0e91ffa0f9c6",
+     "gebuehr_rate": 0.0,
+     "gebuehr_exp": 1
+    },
+    "url": "https://polymarket.com/event/us-iran-ceasefire-continues-throughptptpt"
+   },
+   "seite": "long",
+   "menge": 411.0,
+   "einstand": 0.25,
+   "hebel": 1.0,
+   "marge": 0.0,
+   "eroeffnet": 1793379225.5430336,
+   "gebuehren": 0.0,
+   "funding": 0.0,
+   "ausstiegsplan": "Halten bis zur Abrechnung (Schwarm-Regel)",
+   "kurs": 0.245,
+   "wert": 98.64
+  }
+ ],
+ "realisiert": 0.0,
+ "gebuehren": 0.0,
+ "funding": 0.0,
+ "erstellt": 1793379225.5430336,
+ "start_fx": 1.1157431109273288,
+ "letzter_tick": 1793379225.5430336
+}
