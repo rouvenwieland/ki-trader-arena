@@ -2,7 +2,7 @@
  "fonds_id": "claude_aggressiv",
  "waehrung": "USD",
  "start_kapital": 11184.88579861696,
- "cash": 7763.66737861696,
+ "cash": 7413.8425338735815,
  "positionen": [
   {
    "id": "pa523d4f2",
@@ -130,6 +130,32 @@
    "invalidierung": "Binance BTC/USDT über 79.000 und stabil, oder positives Binance-Post-Mortem mit starkem Risk-on-Ausbruch",
    "kurs": 0.3055,
    "wert": 313.32
+  },
+  {
+   "id": "p442b828a",
+   "inst": {
+    "id": "pm:manifold:9LOZtlsAyQ:NEIN",
+    "art": "pm",
+    "venue": "manifold",
+    "ergebnis": "NEIN",
+    "frage": "Will bitcoin reach 81000 by 10/31/2026 11:59pm",
+    "schliesst": 1793491080.0,
+    "ref": {
+     "id": "9LOZtlsAyQ"
+    },
+    "url": "https://manifold.markets/JoshMiller/will-bitcoin-reach-81000-by-1031202"
+   },
+   "seite": "long",
+   "menge": 392.0,
+   "einstand": 0.8924103182229047,
+   "hebel": 1.0,
+   "marge": 0.0,
+   "eroeffnet": 1793394825.9689782,
+   "gebuehren": 0.0,
+   "funding": 0.0,
+   "ausstiegsplan": "Halten bis Abrechnung 31.10. 23:59; verkaufen, falls BTC Binance >79.500 (NEIN-Preis dann stark gefallen).",
+   "entscheidung_id": "d6c69dd0f",
+   "invalidierung": "Binance BTC/USDT über 79.500 vor 31.10. 20:00 UTC"
   }
  ],
  "realisiert": 429.9243999999999,

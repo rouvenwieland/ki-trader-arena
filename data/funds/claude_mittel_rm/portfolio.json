@@ -2,7 +2,7 @@
  "fonds_id": "claude_mittel_rm",
  "waehrung": "USD",
  "start_kapital": 11156.327353966788,
- "cash": 10876.827353966788,
+ "cash": 10577.527353966789,
  "positionen": [
   {
    "id": "pe8186cc2",
@@ -37,6 +37,38 @@
    "invalidierung": "NVDA schließt wieder dauerhaft über Apple-Marktkap (NVDA >~210 bei AAPL ~343) oder starke NVDA-Zahlen mit Rally >8%; dann neu bewerten/verkaufen.",
    "kurs": 0.46499999999999997,
    "wert": 257.14
+  },
+  {
+   "id": "p91a23e4a",
+   "inst": {
+    "id": "pm:polymarket:3215007:NEIN",
+    "art": "pm",
+    "venue": "polymarket",
+    "ergebnis": "NEIN",
+    "frage": "Will there be no change in Fed interest rates after the December 2026 meeting?",
+    "schliesst": 1796860740.0,
+    "ref": {
+     "id": "3215007",
+     "token_ja": "42865728742506860386768556888821101266630139112044622335353850919229585308601",
+     "token_nein": "8077351031134730167836761678618167504307708651130165095377248922919635337796",
+     "tick": 0.01,
+     "condition": "0x723822eb2b143cee54c0bd7c1efba322b21f0051984c266df8879c394f1011c0",
+     "gebuehr_rate": 0.0,
+     "gebuehr_exp": 1.0
+    },
+    "url": "https://polymarket.com/event/fed-decision-in-december-20260729232808632"
+   },
+   "seite": "long",
+   "menge": 410.0,
+   "einstand": 0.73,
+   "hebel": 1.0,
+   "marge": 0.0,
+   "eroeffnet": 1793394839.7178667,
+   "gebuehren": 0.0,
+   "funding": 0.0,
+   "ausstiegsplan": "Halten bis FOMC 9.12.; Verkauf, wenn NEIN-Preis ≥0.88 (Gewinn) oder CME-Hike-Odds unter 55% fallen.",
+   "entscheidung_id": "d7e76abb3",
+   "invalidierung": "CME FedWatch Dezember-Hike-Wahrscheinlichkeit fällt unter 55% oder Warsh/Fed-Mehrheit signalisiert Pause nach weicher CPI/Jobs-Zahl."
   }
  ],
  "realisiert": 0.0,
