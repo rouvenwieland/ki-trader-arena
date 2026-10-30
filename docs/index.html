@@ -124,7 +124,7 @@ footer b{color:var(--dim)}
 .tape b{color:var(--amber);font-weight:600;margin-right:8px}
 @keyframes tape{to{transform:translateX(-50%)}}
 .reveal{opacity:0;transform:translateY(18px);transition:opacity .9s ease,transform .9s ease}.reveal.in{opacity:1;transform:none}
-@media (max-width:640px){#tabelle th:nth-child(n+4),#tabelle td:nth-child(n+4):not([colspan]),#kostentab th:nth-child(n+4),#kostentab td:nth-child(n+4){display:none}
+@media (max-width:640px){.panel{backdrop-filter:none;background:rgba(18,21,29,.92)}#tabelle th:nth-child(n+4),#tabelle td:nth-child(n+4):not([colspan]),#kostentab th:nth-child(n+4),#kostentab td:nth-child(n+4){display:none}
   #tabelle td.nm,#kostentab td.nm{white-space:normal}#tabelle td{padding:12px 8px}.nm small.stt{max-width:200px}
   .pair{grid-template-columns:1fr 64px}.pair .track{grid-column:1/-1;grid-row:2}.tape{bottom:48px}}
 @media (max-width:640px){#chart{height:320px}section{padding:56px 0}.ev{flex-direction:column;gap:2px}.ev .t{min-width:0}}
@@ -165,7 +165,7 @@ footer b{color:var(--dim)}
 
 <section class="reveal" id="kosten"><div class="wrap">
   <h2><small>04 · Rechenzeit</small>Was kostet das Denken?</h2>
-  <p class="sub">Die Claude-Fonds zahlen echte API-Kosten aus einem festen Budget: feste Runden alle vier Stunden (Sonnet), täglich eine Tiefenrunde (Opus), dazu Ereignisrunden nach Vorsichtung. Harter Deckel im Code; Liga-Modelle laufen auf Gratis- oder eigenen Kontingenten.</p>
+  <p class="sub">Die Claude-Fonds zahlen echte API-Kosten aus einem festen Budget: feste Runden etwa alle drei Stunden (Sonnet), täglich um 14 Uhr eine Tiefenrunde (Opus), dazu Ereignisrunden nach Vorsichtung. Harter Deckel im Code; Liga-Modelle laufen auf Gratis- oder eigenen Kontingenten.</p>
   <div class="panel" style="padding:22px 24px 18px;margin-bottom:18px" id="budgetbox"></div>
   <div class="panel tablewrap"><table id="kostentab"></table></div>
 </div></section>
