@@ -32,8 +32,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Halten bis Abrechnung 31.10. 23:59; bei Meldung über US-Luftschläge auf Iran Position verloren geben/verkaufen falls Preis noch >0.2.",
    "entscheidung_id": "dc8d00e1b",
-   "kurs": 0.9115,
-   "wert": 2743.02
+   "kurs": 0.914,
+   "wert": 2746.03
   },
   {
    "id": "p8d020f51",
@@ -63,8 +63,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Halten bis FOMC 9.12.; verkaufen wenn Preis <0.55 (These gebrochen, z.B. Friedensdeal + schwache Daten) oder >0.92.",
    "entscheidung_id": "dd6eba046",
-   "kurs": 0.735,
-   "wert": 1520.59
+   "kurs": 0.725,
+   "wert": 1499.76
   },
   {
    "id": "pe2d68e66",
@@ -94,8 +94,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Halten bis Abrechnung 30.10 12:00 ET; bei BTC <76.3k vor Abrechnung neu bewerten/verkaufen.",
    "entscheidung_id": "db1f31ec7",
-   "kurs": 0.9,
-   "wert": 1518.82
+   "kurs": 0.9005000000000001,
+   "wert": 1523.91
   }
  ],
  "realisiert": 0.0,
@@ -103,5 +103,5 @@
  "funding": 0.0,
  "erstellt": 1793319819.7411644,
  "start_fx": 1.1184885798616961,
- "letzter_tick": 1793356670.7286956
+ "letzter_tick": 1793357570.8831995
 }
