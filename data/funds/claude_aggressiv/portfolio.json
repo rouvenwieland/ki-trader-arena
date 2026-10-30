@@ -94,8 +94,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Halten bis Abrechnung 16:00 UTC; nur bei BTC (Binance) < 76.3k vor 15:30 UTC Teilverkauf prüfen.",
    "entscheidung_id": "d1720dbc7",
-   "kurs": 0.885,
-   "wert": 3012.72
+   "kurs": 0.8925000000000001,
+   "wert": 3071.39
   },
   {
    "id": "pff0241a7",
@@ -125,8 +125,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Halten bis Abrechnung 31.10. Falls BTC bis Samstag Mittag >79k und Preis <0.08: Rest abschreiben/halten (geringer Restwert).",
    "entscheidung_id": "d463915b7",
-   "kurs": 0.2905,
-   "wert": 221.16
+   "kurs": 0.32,
+   "wert": 243.66
   }
  ],
  "realisiert": 0.0,
@@ -134,5 +134,5 @@
  "funding": 0.0,
  "erstellt": 1793319819.7411644,
  "start_fx": 1.1184885798616961,
- "letzter_tick": 1793370171.1455915
+ "letzter_tick": 1793371070.5496824
 }
