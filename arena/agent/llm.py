@@ -99,24 +99,32 @@ class OpenAISitzung:
         body = {"model": self.modell, "messages": self.nachrichten, "max_tokens": self.max_tokens}
         if self.tools:
             body["tools"] = self.tools
-        d = None
-        for versuch in range(2):
+        d, letzter = None, ""
+        aufgeloest = False
+        for versuch in range(3):
+            body["model"] = self.modell
             try:
                 r = requests.post(self.url, headers={"Authorization": f"Bearer {self.key}"}, json=body, timeout=150)
             except requests.RequestException as e:
                 time.sleep(3 * (versuch + 1))
-                d = {"fehler": str(e)}
+                letzter = f"Netzwerk: {type(e).__name__}"
                 continue
-            if r.status_code in (429, 500, 502, 503):
-                time.sleep(5 * (versuch + 1))
-                d = {"fehler": f"{r.status_code}"}
+            if r.status_code in (429, 500, 502, 503, 504):
+                time.sleep(6 * (versuch + 1))
+                letzter = f"HTTP {r.status_code} {r.text[:160]}"
                 continue
+            if r.status_code == 404 and not aufgeloest and "model" in r.text.lower():
+                aufgeloest = True  # Modellname veraltet → aus der Modellliste des Anbieters den nächstpassenden wählen
+                neu = self._modell_suchen()
+                if neu and neu != self.modell:
+                    self.modell = neu
+                    continue
             if r.status_code >= 400:
                 raise LLMFehler(f"{self.modell}: HTTP {r.status_code} {r.text[:200]}")
             d = r.json()
             break
         if not d or "choices" not in d:
-            raise LLMFehler(f"{self.modell}: keine Antwort ({d})")
+            raise LLMFehler(f"{self.modell}: keine Antwort ({letzter or d})")
         msg = d["choices"][0]["message"]
         self.nachrichten.append({k: v for k, v in msg.items() if k in ("role", "content", "tool_calls")} | {"role": "assistant"})
         u = d.get("usage", {})
@@ -130,6 +138,31 @@ class OpenAISitzung:
                 args = {}
             a.aufrufe.append({"id": tc["id"], "name": tc["function"]["name"], "input": args})
         return a
+
+
+def _modell_suchen_impl(self) -> str | None:
+    """Fragt die Modellliste des Anbieters (OpenAI-kompatibel) und wählt das Modell mit dem längsten gemeinsamen Präfix
+    zum konfigurierten Namen, neuestes (alphabetisch größtes) zuerst; Bild-/Audio-/Embedding-Modelle ausgeschlossen."""
+    try:
+        d = requests.get(self.url.replace("/chat/completions", "/models"), headers={"Authorization": f"Bearer {self.key}"}, timeout=30).json()
+        ids = [m["id"] for m in d.get("data", []) if not any(x in m["id"].lower() for x in ("embed", "vision", "audio", "image", "tts", "whisper", "moderation"))]
+    except (requests.RequestException, ValueError, KeyError, AttributeError):
+        return None
+    if not ids:
+        return None
+
+    def gemeinsam(a: str, b: str) -> int:
+        n = 0
+        for x, y in zip(a.lower(), b.lower()):
+            if x != y:
+                break
+            n += 1
+        return n
+    ids.sort(reverse=True)
+    return max(ids, key=lambda i: gemeinsam(i, self.modell))
+
+
+OpenAISitzung._modell_suchen = _modell_suchen_impl
 
 
 def openai_sitzung(anbieter: str, modell: str, system: str, tools: list[dict], key: str) -> OpenAISitzung:

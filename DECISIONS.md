@@ -36,7 +36,7 @@ Vor jedem Aufruf wird der Worst-Case (gesamter Verlauf als frische Eingabe + vol
 Der Tagesdeckel (12 €) wird in drei gleiche Tagesanteile je Claude-Fonds geteilt, damit der aggressive Fonds nicht alles verbrennt; das Wochen-Review (Opus) nutzt nur den globalen Deckel.
 Tagesdeckel erreicht → der Fonds pausiert bis morgen. **Gesamtdeckel (190 €) erschöpft oder ab 2026-11-14** → die Claude-Fonds wechseln auf das bis dahin renditebeste Liga-Modell
 (`model_switches.jsonl`, sichtbar in der Webseite). Websuche: das Server-Werkzeug `web_search_20250305` (günstig, vorhersehbare Kosten) statt der neueren dynamischen Variante mit Code-Ausführung.
-Sonnet 5.5 mit `effort: medium` (Standard wäre high) und Prompt-Caching, damit die Runden bezahlbar bleiben; Haiku 5.5 sichtet vor (Triage), bevor Sonnet geweckt wird.
+Sonnet 5.5 mit `effort: high` und Prompt-Caching (ein erster Live-Lauf mit „medium“ kostete nur ~0,04 $ je Runde, die Agenten recherchierten aber kaum → Mindestaufwand im Prompt + höherer Effort); Haiku 5.5 sichtet vor (Triage), bevor Sonnet geweckt wird.
 
 ## Takt
 Wächter alle 15 Minuten (Cron ~:07/:22/:37/:52, GitHub verzögert Cron gern). Entscheider bei weckendem Ereignis (Abstand ≥ 45 Min, max. 12/Tag) plus fest täglich 13:17 UTC.

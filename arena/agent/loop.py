@@ -48,7 +48,7 @@ def laufe_runde(defn: dict, route: dict, pf: dict, snap: dict, mz, grund: str, e
     if sitzung_fabrik:
         s = sitzung_fabrik(sys_prompt, tools)
     elif route["art"] == "anthropic":
-        s = llm.AnthropicSitzung(route["modell"], sys_prompt, tools, websuche=4, effort="medium", max_tokens=6000)
+        s = llm.AnthropicSitzung(route["modell"], sys_prompt, tools, websuche=6, effort="high", max_tokens=8000)
     else:
         s = llm.openai_sitzung(route["anbieter"], route["modell"], sys_prompt, tools, route["key"])
     s.nutzer(prompts.runde_prompt(defn, grund, ereignisse, snapmod.text(snap), jetzt))
@@ -64,7 +64,7 @@ def laufe_runde(defn: dict, route: dict, pf: dict, snap: dict, mz, grund: str, e
                 abbruch = "Zeitlimit der Runde erreicht"
                 break
             if ist_claude and bud:
-                ok, warum = bud.darf(defn["id"], n_fonds, bmod.schaetze_naechsten_aufruf(modell, _verlauf_zeichen(s), 6000))
+                ok, warum = bud.darf(defn["id"], n_fonds, bmod.schaetze_naechsten_aufruf(modell, _verlauf_zeichen(s), 8000))
                 if not ok:
                     abbruch = f"Budget-Stopp: {warum}"
                     break
