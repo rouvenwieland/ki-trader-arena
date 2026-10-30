@@ -23,6 +23,11 @@ jobs:
       - uses: actions/checkout@v4
         with:
           ref: main
+      - uses: astral-sh/setup-uv@v5
+        with:
+          enable-cache: true
+      - name: data.json/status.json frisch aus data/ bauen (data.json liegt nicht im Git – spart ~2 MB Repo-Wachstum pro Tag)
+        run: uv sync --frozen --no-dev && uv run python -m arena.site
       - uses: actions/configure-pages@v5
         with:
           enablement: true

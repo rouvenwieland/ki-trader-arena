@@ -5,3 +5,6 @@ __pycache__/
 *.egg-info/
 .pytest_cache/
 Kronos/
+
+# wird im Seiten-Workflow gebaut (nicht versionieren: wächst sonst ~2 MB/Tag)
+docs/data.json

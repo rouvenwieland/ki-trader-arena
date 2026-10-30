@@ -17,6 +17,13 @@ def _runter(punkte: list[dict], n: int = 400) -> list[list]:
     return [[p["t"], p["usd"]] for p in punkte]
 
 
+def _runter_punkte(punkte: list, n: int) -> list:
+    if len(punkte) <= n:
+        return punkte
+    schritt = (len(punkte) - 1) / (n - 1)
+    return [punkte[round(i * schritt)] for i in range(n)]
+
+
 def fonds_datensatz(d: dict, fx: float) -> dict | None:
     pf = funds.lade_portfolio(d["id"])
     meta = funds.meta(d["id"])
@@ -131,7 +138,9 @@ def bauen(jetzt: float | None = None) -> dict:
                              "equity_eur": round(f["kennzahlen"]["equity_usd"] / fx, 2), "max_drawdown_pct": round(f["kennzahlen"]["max_drawdown_pct"], 2),
                              "status": f["status"], "modell": f.get("modell"),
                              "kosten_heute_eur": (f.get("kosten") or {}).get("heute_eur", 0.0),
-                             "kosten_gesamt_eur": (f.get("kosten") or {}).get("gesamt_eur", 0.0)} for i, f in enumerate(rang)],
+                             "kosten_gesamt_eur": (f.get("kosten") or {}).get("gesamt_eur", 0.0),
+                             "verlauf_pct": [round((p[1] / f["kennzahlen"]["start_usd"] - 1) * 100, 2) for p in _runter_punkte(f["verlauf"], 40)]}
+                            for i, f in enumerate(rang)],
               "wartend": [{"id": f["id"], "name": f["name"], "status": f["status"]} for f in daten if not f["kennzahlen"]],
               "letzte_entscheidungen": sorted([{"ts": o["ts"], "fonds": f["name"], "instrument": o["instrument"], "aktion": o["aktion"],
                                                 "zuversicht": o["zuversicht"]} for f in daten for o in f["entscheidungen"]], key=lambda x: -x["ts"])[:8],
