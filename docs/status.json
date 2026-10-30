@@ -1,6 +1,6 @@
 {
  "version": 1,
- "stand": 1793354827.371451,
+ "stand": 1793354894.3036642,
  "hinweis": "Papierhandel-Simulation, keine Anlageberatung",
  "seite": "https://rouvenwieland.github.io/ki-trader-arena/",
  "budget": {
@@ -19,9 +19,9 @@
    "id": "claude_aggressiv",
    "name": "Claude Aggressiv",
    "typ": "claude",
-   "rendite_pct": 3.23,
-   "equity_eur": 10321.51,
-   "max_drawdown_pct": 0.0,
+   "rendite_pct": 3.17,
+   "equity_eur": 10301.69,
+   "max_drawdown_pct": -0.05,
    "status": "aktiv",
    "modell": "claude-sonnet-5-5",
    "kosten_heute_eur": 0.321,
@@ -29,25 +29,25 @@
   },
   {
    "rang": 2,
-   "id": "bm_affe",
-   "name": "Zufallsaffe",
-   "typ": "benchmark",
-   "rendite_pct": 1.55,
-   "equity_eur": 10153.47,
-   "max_drawdown_pct": 0.0,
-   "status": "läuft",
-   "modell": null,
-   "kosten_heute_eur": 0.0,
-   "kosten_gesamt_eur": 0.0
+   "id": "claude_mittel",
+   "name": "Claude Mittel",
+   "typ": "claude",
+   "rendite_pct": 1.24,
+   "equity_eur": 10108.99,
+   "max_drawdown_pct": -0.1,
+   "status": "aktiv",
+   "modell": "claude-sonnet-5-5",
+   "kosten_heute_eur": 0.266,
+   "kosten_gesamt_eur": 0.266
   },
   {
    "rang": 3,
-   "id": "bm_btc",
-   "name": "Buy & Hold BTC",
+   "id": "bm_affe",
+   "name": "Zufallsaffe",
    "typ": "benchmark",
-   "rendite_pct": 1.38,
-   "equity_eur": 10136.38,
-   "max_drawdown_pct": 0.0,
+   "rendite_pct": 1.13,
+   "equity_eur": 10098.04,
+   "max_drawdown_pct": -0.41,
    "status": "läuft",
    "modell": null,
    "kosten_heute_eur": 0.0,
@@ -55,37 +55,24 @@
   },
   {
    "rang": 4,
-   "id": "claude_mittel",
-   "name": "Claude Mittel",
-   "typ": "claude",
-   "rendite_pct": 1.35,
-   "equity_eur": 10133.03,
-   "max_drawdown_pct": 0.0,
-   "status": "aktiv",
-   "modell": "claude-sonnet-5-5",
-   "kosten_heute_eur": 0.267,
-   "kosten_gesamt_eur": 0.267
-  },
-  {
-   "rang": 5,
    "id": "claude_vorsichtig",
    "name": "Claude Vorsichtig",
    "typ": "claude",
-   "rendite_pct": 0.94,
-   "equity_eur": 10092.7,
-   "max_drawdown_pct": 0.0,
+   "rendite_pct": 0.87,
+   "equity_eur": 10071.73,
+   "max_drawdown_pct": -0.07,
    "status": "aktiv",
    "modell": "claude-sonnet-5-5",
    "kosten_heute_eur": 0.2,
    "kosten_gesamt_eur": 0.2
   },
   {
-   "rang": 6,
+   "rang": 5,
    "id": "liga_gemini",
    "name": "Gemini Flash",
    "typ": "liga",
    "rendite_pct": 0.0,
-   "equity_eur": 9998.52,
+   "equity_eur": 9984.74,
    "max_drawdown_pct": 0.0,
    "status": "aktiv",
    "modell": "gemini-flash-latest",
@@ -93,12 +80,12 @@
    "kosten_gesamt_eur": 0.0
   },
   {
-   "rang": 7,
+   "rang": 6,
    "id": "liga_deepseek",
    "name": "DeepSeek",
    "typ": "liga",
    "rendite_pct": 0.0,
-   "equity_eur": 9998.52,
+   "equity_eur": 9984.74,
    "max_drawdown_pct": 0.0,
    "status": "aktiv",
    "modell": "deepseek-chat",
@@ -106,12 +93,12 @@
    "kosten_gesamt_eur": 0.0
   },
   {
-   "rang": 8,
+   "rang": 7,
    "id": "liga_kimi",
    "name": "Kimi (Moonshot)",
    "typ": "liga",
    "rendite_pct": 0.0,
-   "equity_eur": 9998.52,
+   "equity_eur": 9984.74,
    "max_drawdown_pct": 0.0,
    "status": "aktiv",
    "modell": "kimi-latest",
@@ -119,12 +106,12 @@
    "kosten_gesamt_eur": 0.0
   },
   {
-   "rang": 9,
+   "rang": 8,
    "id": "liga_openai",
    "name": "OpenAI",
    "typ": "liga",
    "rendite_pct": 0.0,
-   "equity_eur": 9998.52,
+   "equity_eur": 9984.74,
    "max_drawdown_pct": 0.0,
    "status": "Fehler: Modellfehler: gpt-5-mini: keine Antwort (HTTP 429 {\n    \"error\": {\n        \"message\": \"You have no credits remaining. Add credits to continu",
    "modell": "gpt-5-mini",
@@ -132,12 +119,25 @@
    "kosten_gesamt_eur": 0.0
   },
   {
-   "rang": 10,
+   "rang": 9,
    "id": "bm_sp500",
    "name": "S&P-500-ETF (SPY)",
    "typ": "benchmark",
    "rendite_pct": 0.0,
-   "equity_eur": 9998.52,
+   "equity_eur": 9984.74,
+   "max_drawdown_pct": 0.0,
+   "status": "läuft",
+   "modell": null,
+   "kosten_heute_eur": 0.0,
+   "kosten_gesamt_eur": 0.0
+  },
+  {
+   "rang": 10,
+   "id": "bm_6040",
+   "name": "60/40 (SPY/AGG)",
+   "typ": "benchmark",
+   "rendite_pct": 0.0,
+   "equity_eur": 9984.74,
    "max_drawdown_pct": 0.0,
    "status": "läuft",
    "modell": null,
@@ -146,12 +146,12 @@
   },
   {
    "rang": 11,
-   "id": "bm_6040",
-   "name": "60/40 (SPY/AGG)",
+   "id": "bm_btc",
+   "name": "Buy & Hold BTC",
    "typ": "benchmark",
-   "rendite_pct": 0.0,
-   "equity_eur": 9998.52,
-   "max_drawdown_pct": 0.0,
+   "rendite_pct": -0.11,
+   "equity_eur": 9973.77,
+   "max_drawdown_pct": -1.47,
    "status": "läuft",
    "modell": null,
    "kosten_heute_eur": 0.0,
@@ -202,6 +202,11 @@
  ],
  "ereignisse": [
   {
+   "ts": 1793354871.3057938,
+   "typ": "nachricht_position",
+   "titel": "Nachricht zu pm:polymarket:4641065:JA: Spain continues to investigate causes of deadly Toledo train crash – Europe live (Guardian Welt)"
+  },
+  {
    "ts": 1793340622.7515354,
    "typ": "nachricht_position",
    "titel": "Nachricht zu spot:BTC-USD: Bitcoin to $250K? Tom Lee Sees ‘One of the Biggest Rallies of Our Lifetime’ (r/Bitcoin)"
@@ -235,11 +240,6 @@
    "ts": 1793340622.7515354,
    "typ": "kurssprung",
    "titel": "spot:SOL-USD +3.3 % seit letzter Messung"
-  },
-  {
-   "ts": 1793321580.8768516,
-   "typ": "nachricht_position",
-   "titel": "Nachricht zu spot:LINK-USD: Chainlink adds weekend pricing for tokenized assets, with Aave as launch partner (CoinDesk)"
   }
  ]
 }
