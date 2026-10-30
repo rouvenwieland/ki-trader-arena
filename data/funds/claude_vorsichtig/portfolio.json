@@ -2,8 +2,38 @@
  "fonds_id": "claude_vorsichtig",
  "waehrung": "USD",
  "start_kapital": 11184.88579861696,
- "cash": 11184.88579861696,
- "positionen": [],
+ "cash": 10485.11979861696,
+ "positionen": [
+  {
+   "id": "pcfad5a2b",
+   "inst": {
+    "id": "pm:polymarket:4641065:JA",
+    "art": "pm",
+    "venue": "polymarket",
+    "ergebnis": "JA",
+    "frage": "US x Iran ceasefire continues through October 31?",
+    "schliesst": 1793491140.0,
+    "ref": {
+     "id": "4641065",
+     "token_ja": "67102598924726349989742049657609063097299442010642912942032681022413402597017",
+     "token_nein": "114475889232765203212032217024645308497828327658421967586050553616813506019119",
+     "tick": 0.001,
+     "gebuehr_rate": 0
+    },
+    "url": "https://polymarket.com/event/us-iran-ceasefire-continues-throughptptpt"
+   },
+   "seite": "long",
+   "menge": 878.0,
+   "einstand": 0.797,
+   "hebel": 1.0,
+   "marge": 0.0,
+   "eroeffnet": 1793320798.7954538,
+   "gebuehren": 0.0,
+   "funding": 0.0,
+   "ausstiegsplan": "Halten bis Abrechnung 31.10. 23:59 Iran-Zeit. Bei bestätigtem US-Angriff Totalverlust akzeptiert; bei Preis >0.97 vorzeitig verkaufen möglich.",
+   "entscheidung_id": "d7274e87b"
+  }
+ ],
  "realisiert": 0.0,
  "gebuehren": 0.0,
  "funding": 0.0,

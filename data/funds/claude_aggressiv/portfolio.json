@@ -2,8 +2,67 @@
  "fonds_id": "claude_aggressiv",
  "waehrung": "USD",
  "start_kapital": 11184.88579861696,
- "cash": 11184.88579861696,
- "positionen": [],
+ "cash": 7285.3587986169605,
+ "positionen": [
+  {
+   "id": "pa523d4f2",
+   "inst": {
+    "id": "pm:polymarket:4641065:JA",
+    "art": "pm",
+    "venue": "polymarket",
+    "ergebnis": "JA",
+    "frage": "US x Iran ceasefire continues through October 31?",
+    "schliesst": 1793491140.0,
+    "ref": {
+     "id": "4641065",
+     "token_ja": "67102598924726349989742049657609063097299442010642912942032681022413402597017",
+     "token_nein": "114475889232765203212032217024645308497828327658421967586050553616813506019119",
+     "tick": 0.001,
+     "gebuehr_rate": 0
+    },
+    "url": "https://polymarket.com/event/us-iran-ceasefire-continues-throughptptpt"
+   },
+   "seite": "long",
+   "menge": 3011.0,
+   "einstand": 0.797,
+   "hebel": 1.0,
+   "marge": 0.0,
+   "eroeffnet": 1793320899.7219625,
+   "gebuehren": 0.0,
+   "funding": 0.0,
+   "ausstiegsplan": "Halten bis Abrechnung 31.10. 23:59; bei Meldung über US-Luftschläge auf Iran Position verloren geben/verkaufen falls Preis noch >0.2.",
+   "entscheidung_id": "dc8d00e1b"
+  },
+  {
+   "id": "p8d020f51",
+   "inst": {
+    "id": "pm:polymarket:3215008:JA",
+    "art": "pm",
+    "venue": "polymarket",
+    "ergebnis": "JA",
+    "frage": "Will the Fed increase interest rates by 25 bps after the December 2026 meeting?",
+    "schliesst": 1796860740.0,
+    "ref": {
+     "id": "3215008",
+     "token_ja": "111662129652828266889360374468657435151479595863413519836161861837506140152890",
+     "token_nein": "94483965432909797688470702512207472940215538148754820061518518664128018848687",
+     "tick": 0.01,
+     "gebuehr_rate": 0.0
+    },
+    "url": "https://polymarket.com/event/fed-decision-in-december-20260729232808632"
+   },
+   "seite": "long",
+   "menge": 2083.0,
+   "einstand": 0.72,
+   "hebel": 1.0,
+   "marge": 0.0,
+   "eroeffnet": 1793320899.7228632,
+   "gebuehren": 0.0,
+   "funding": 0.0,
+   "ausstiegsplan": "Halten bis FOMC 9.12.; verkaufen wenn Preis <0.55 (These gebrochen, z.B. Friedensdeal + schwache Daten) oder >0.92.",
+   "entscheidung_id": "dd6eba046"
+  }
+ ],
  "realisiert": 0.0,
  "gebuehren": 0.0,
  "funding": 0.0,
