@@ -2,7 +2,7 @@
  "fonds_id": "claude_vorsichtig",
  "waehrung": "USD",
  "start_kapital": 11184.88579861696,
- "cash": 10485.11979861696,
+ "cash": 9836.13909861696,
  "positionen": [
   {
    "id": "pcfad5a2b",
@@ -34,6 +34,64 @@
    "entscheidung_id": "d7274e87b",
    "kurs": 0.935,
    "wert": 818.3
+  },
+  {
+   "id": "pca43f487",
+   "inst": {
+    "id": "pm:polymarket:5211628:NEIN",
+    "art": "pm",
+    "venue": "polymarket",
+    "ergebnis": "NEIN",
+    "frage": "Will the US add between 50k and 75k jobs in October?",
+    "schliesst": 1794027540.0,
+    "ref": {
+     "id": "5211628",
+     "token_ja": "17165722166763751634327708802510517908301751801740904424515509100822516747701",
+     "token_nein": "15433459311266154600630205271405901520192476375381098735252337426225142076516",
+     "tick": 0.01,
+     "gebuehr_rate": 0.0
+    },
+    "url": "https://polymarket.com/event/will-the-us-add-between-50k-and-75k-jobs-in-october-2026"
+   },
+   "seite": "long",
+   "menge": 453.0,
+   "einstand": 0.7722075055187638,
+   "hebel": 1.0,
+   "marge": 0.0,
+   "eroeffnet": 1793365841.617447,
+   "gebuehren": 0.0,
+   "funding": 0.0,
+   "ausstiegsplan": "Halten bis Abrechnung 6.11. (NFP 8:30 ET). Vorzeitiger Verkauf, falls NEIN-Bid >0,90 (z. B. nach ADP am 4.11.), oder falls neue Konsensdaten eine sehr enge Verteilung um 50–75k nahelegen.",
+   "entscheidung_id": "d7a8a9cbe"
+  },
+  {
+   "id": "pbb7d9e16",
+   "inst": {
+    "id": "pm:polymarket:1087309:NEIN",
+    "art": "pm",
+    "venue": "polymarket",
+    "ergebnis": "NEIN",
+    "frage": "Will US unemployment reach at least 5.0% in 2026?",
+    "schliesst": 1801457940.0,
+    "ref": {
+     "id": "1087309",
+     "token_ja": "108683340244272797423903928139400863604636305580987691842877673995933500284505",
+     "token_nein": "31610604163245612527039147654126910320994564874113102346338822825545391109073",
+     "tick": 0.001,
+     "gebuehr_rate": 0.0
+    },
+    "url": "https://polymarket.com/event/will-us-unemployment-reach-at-least-5pt0-in-2026"
+   },
+   "seite": "long",
+   "menge": 319.0,
+   "einstand": 0.9378391849529781,
+   "hebel": 1.0,
+   "marge": 0.0,
+   "eroeffnet": 1793365850.5460856,
+   "gebuehren": 0.0,
+   "funding": 0.0,
+   "ausstiegsplan": "Halten bis Abrechnung (Dez-Bericht Jan. 2027). Neu bewerten, falls die Okt-Quote am 6.11. bei ≥4,5 % liegt. Verkaufen, falls die Nov-Quote ≥4,7 % ist.",
+   "entscheidung_id": "d9893ed5d"
   }
  ],
  "realisiert": 0.0,

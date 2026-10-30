@@ -2,7 +2,7 @@
  "fonds_id": "claude_aggressiv",
  "waehrung": "USD",
  "start_kapital": 11184.88579861696,
- "cash": 4786.47099861696,
+ "cash": 4007.18759861696,
  "positionen": [
   {
    "id": "pa523d4f2",
@@ -85,17 +85,46 @@
     "url": "https://polymarket.com/event/bitcoin-above-on-october-30-2026"
    },
    "seite": "long",
-   "menge": 2787.0,
-   "einstand": 0.8966228202368137,
+   "menge": 3451.0,
+   "einstand": 0.8978057374674008,
    "hebel": 1.0,
    "marge": 0.0,
    "eroeffnet": 1793354962.039637,
    "gebuehren": 0.0,
    "funding": 0.0,
-   "ausstiegsplan": "Halten bis Abrechnung; bei BTC <76.5k neu bewerten/verkaufen.",
-   "entscheidung_id": "d5856c15b",
+   "ausstiegsplan": "Halten bis Abrechnung 16:00 UTC; nur bei BTC (Binance) < 76.3k vor 15:30 UTC Teilverkauf prüfen.",
+   "entscheidung_id": "d1720dbc7",
    "kurs": 0.8925000000000001,
    "wert": 2474.86
+  },
+  {
+   "id": "pff0241a7",
+   "inst": {
+    "id": "pm:polymarket:5170740:JA",
+    "art": "pm",
+    "venue": "polymarket",
+    "ergebnis": "JA",
+    "frage": "Will Bitcoin dip to $75,000 in October?",
+    "schliesst": 1793505600.0,
+    "ref": {
+     "id": "5170740",
+     "token_ja": "65710340847928463620991566082994656002922673891777077235559888767925599088131",
+     "token_nein": "34913450717134692139134503608237195358004980714821621364139815843727767877427",
+     "tick": 0.001,
+     "gebuehr_rate": 0.07
+    },
+    "url": "https://polymarket.com/event/what-price-will-bitcoin-hit-in-october-2026"
+   },
+   "seite": "long",
+   "menge": 776.0,
+   "einstand": 0.23175721649484535,
+   "hebel": 1.0,
+   "marge": 0.0,
+   "eroeffnet": 1793365844.988767,
+   "gebuehren": 0.0,
+   "funding": 0.0,
+   "ausstiegsplan": "Halten bis Abrechnung 31.10. Falls BTC bis Samstag Mittag >79k und Preis <0.08: Rest abschreiben/halten (geringer Restwert).",
+   "entscheidung_id": "d463915b7"
   }
  ],
  "realisiert": 0.0,

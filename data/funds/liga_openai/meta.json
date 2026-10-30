@@ -8,9 +8,10 @@
  "risiko": "mittel",
  "persoenlichkeit": "Sachlich, mittleres Risiko, gleiche Regeln wie alle anderen.",
  "start": 1793319819.7411644,
- "status": "Fehler: Modellfehler: gpt-5-mini: keine Antwort (HTTP 429 {\n    \"error\": {\n        \"message\": \"You have no credits remaining. Add credits to continu",
- "status_ts": 1793320740.992442,
+ "status": "pausiert (kein Guthaben)",
+ "status_ts": 1793365700.2254539,
  "modell_aktuell": "gpt-5-mini",
- "letzte_runde": 1793320740.992442,
- "letzte_runde_abbruch": "Modellfehler: gpt-5-mini: keine Antwort (HTTP 429 {\n    \"error\": {\n        \"message\": \"You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/b)"
+ "letzte_runde": 1793365700.2254539,
+ "letzte_runde_abbruch": "Kein Guthaben: gpt-5-mini: HTTP 429 kein Guthaben/Kontingent ({\n    \"error\": {\n        \"message\": \"You have no credits remaining. Add credits to continue using the API at https://pla)",
+ "pausiert_bis": 1793437700.2254539
 }
