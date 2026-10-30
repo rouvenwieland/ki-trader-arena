@@ -32,8 +32,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Halten bis Abrechnung 31.10. 23:59; bei Meldung über US-Luftschläge auf Iran Position verloren geben/verkaufen falls Preis noch >0.2.",
    "entscheidung_id": "dc8d00e1b",
-   "kurs": 0.9495,
-   "wert": 2288.04
+   "kurs": 0.953,
+   "wert": 2290.45
   },
   {
    "id": "p8d020f51",
@@ -94,8 +94,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Halten bis Abrechnung 31.10. Falls BTC bis Samstag Mittag >79k und Preis <0.08: Rest abschreiben/halten (geringer Restwert).",
    "entscheidung_id": "d463915b7",
-   "kurs": 0.1385,
-   "wert": 107.09
+   "kurs": 0.1065,
+   "wert": 81.48
   },
   {
    "id": "pe8531dcb",
@@ -128,8 +128,8 @@
    "ausstiegsplan": "Halten bis Abrechnung 1.11. 16:00 UTC; vorzeitig verkaufen, wenn NEIN-Preis unter 0.10 fällt und kein Edge mehr besteht.",
    "entscheidung_id": "d06487ae5",
    "invalidierung": "Binance BTC/USDT über 79.000 und stabil, oder positives Binance-Post-Mortem mit starkem Risk-on-Ausbruch",
-   "kurs": 0.2335,
-   "wert": 250.01
+   "kurs": 0.202,
+   "wert": 212.45
   },
   {
    "id": "p442b828a",
@@ -165,5 +165,5 @@
  "funding": 0.0,
  "erstellt": 1793319819.7411644,
  "start_fx": 1.1184885798616961,
- "letzter_tick": 1793400923.8164172
+ "letzter_tick": 1793401823.6541653
 }
