@@ -1,6 +1,6 @@
 {
  "version": 1,
- "stand": 1793362097.142962,
+ "stand": 1793362991.3666017,
  "hinweis": "Papierhandel-Simulation, keine Anlageberatung",
  "seite": "https://rouvenwieland.github.io/ki-trader-arena/",
  "budget": {
@@ -19,8 +19,8 @@
    "id": "claude_aggressiv",
    "name": "Claude Aggressiv",
    "typ": "claude",
-   "rendite_pct": 2.91,
-   "equity_eur": 10282.42,
+   "rendite_pct": 3.21,
+   "equity_eur": 10312.8,
    "max_drawdown_pct": -0.98,
    "status": "aktiv",
    "modell": "claude-sonnet-5-5",
@@ -38,7 +38,8 @@
     3.68,
     3.38,
     2.66,
-    2.91
+    2.91,
+    3.21
    ]
   },
   {
@@ -46,8 +47,8 @@
    "id": "bm_affe",
    "name": "Zufallsaffe",
    "typ": "benchmark",
-   "rendite_pct": 1.28,
-   "equity_eur": 10119.85,
+   "rendite_pct": 1.3,
+   "equity_eur": 10122.33,
    "max_drawdown_pct": -0.42,
    "status": "läuft",
    "modell": null,
@@ -65,7 +66,8 @@
     1.36,
     1.42,
     1.26,
-    1.28
+    1.28,
+    1.3
    ]
   },
   {
@@ -74,7 +76,7 @@
    "name": "Claude Mittel",
    "typ": "claude",
    "rendite_pct": 1.18,
-   "equity_eur": 10109.16,
+   "equity_eur": 10109.84,
    "max_drawdown_pct": -0.17,
    "status": "aktiv",
    "modell": "claude-sonnet-5-5",
@@ -92,6 +94,7 @@
     1.18,
     1.18,
     1.18,
+    1.18,
     1.18
    ]
   },
@@ -101,7 +104,7 @@
    "name": "Claude Vorsichtig",
    "typ": "claude",
    "rendite_pct": 0.97,
-   "equity_eur": 10088.72,
+   "equity_eur": 10088.62,
    "max_drawdown_pct": -0.07,
    "status": "aktiv",
    "modell": "claude-sonnet-5-5",
@@ -119,6 +122,7 @@
     0.97,
     0.97,
     0.97,
+    0.97,
     0.97
    ]
   },
@@ -128,13 +132,14 @@
    "name": "Gemini Flash",
    "typ": "liga",
    "rendite_pct": 0.0,
-   "equity_eur": 9991.46,
+   "equity_eur": 9992.14,
    "max_drawdown_pct": 0.0,
    "status": "aktiv",
    "modell": "gemini-flash-latest",
    "kosten_heute_eur": 0.0,
    "kosten_gesamt_eur": 0.0,
    "verlauf_pct": [
+    0.0,
     0.0,
     0.0,
     0.0,
@@ -155,13 +160,14 @@
    "name": "DeepSeek",
    "typ": "liga",
    "rendite_pct": 0.0,
-   "equity_eur": 9991.46,
+   "equity_eur": 9992.14,
    "max_drawdown_pct": 0.0,
    "status": "aktiv",
    "modell": "deepseek-chat",
    "kosten_heute_eur": 0.0,
    "kosten_gesamt_eur": 0.0,
    "verlauf_pct": [
+    0.0,
     0.0,
     0.0,
     0.0,
@@ -182,13 +188,14 @@
    "name": "Kimi (Moonshot)",
    "typ": "liga",
    "rendite_pct": 0.0,
-   "equity_eur": 9991.46,
+   "equity_eur": 9992.14,
    "max_drawdown_pct": 0.0,
    "status": "aktiv",
    "modell": "kimi-latest",
    "kosten_heute_eur": 0.0,
    "kosten_gesamt_eur": 0.0,
    "verlauf_pct": [
+    0.0,
     0.0,
     0.0,
     0.0,
@@ -209,13 +216,14 @@
    "name": "OpenAI",
    "typ": "liga",
    "rendite_pct": 0.0,
-   "equity_eur": 9991.46,
+   "equity_eur": 9992.14,
    "max_drawdown_pct": 0.0,
    "status": "Fehler: Modellfehler: gpt-5-mini: keine Antwort (HTTP 429 {\n    \"error\": {\n        \"message\": \"You have no credits remaining. Add credits to continu",
    "modell": "gpt-5-mini",
    "kosten_heute_eur": 0.0,
    "kosten_gesamt_eur": 0.0,
    "verlauf_pct": [
+    0.0,
     0.0,
     0.0,
     0.0,
@@ -236,13 +244,14 @@
    "name": "S&P-500-ETF (SPY)",
    "typ": "benchmark",
    "rendite_pct": 0.0,
-   "equity_eur": 9991.46,
+   "equity_eur": 9992.14,
    "max_drawdown_pct": 0.0,
    "status": "läuft",
    "modell": null,
    "kosten_heute_eur": 0.0,
    "kosten_gesamt_eur": 0.0,
    "verlauf_pct": [
+    0.0,
     0.0,
     0.0,
     0.0,
@@ -263,13 +272,14 @@
    "name": "60/40 (SPY/AGG)",
    "typ": "benchmark",
    "rendite_pct": 0.0,
-   "equity_eur": 9991.46,
+   "equity_eur": 9992.14,
    "max_drawdown_pct": 0.0,
    "status": "läuft",
    "modell": null,
    "kosten_heute_eur": 0.0,
    "kosten_gesamt_eur": 0.0,
    "verlauf_pct": [
+    0.0,
     0.0,
     0.0,
     0.0,
@@ -289,8 +299,8 @@
    "id": "bm_btc",
    "name": "Buy & Hold BTC",
    "typ": "benchmark",
-   "rendite_pct": -0.08,
-   "equity_eur": 9983.7,
+   "rendite_pct": -0.03,
+   "equity_eur": 9989.46,
    "max_drawdown_pct": -1.55,
    "status": "läuft",
    "modell": null,
@@ -308,7 +318,8 @@
     0.19,
     0.03,
     -0.19,
-    -0.08
+    -0.08,
+    -0.03
    ]
   }
  ],
@@ -377,6 +388,11 @@
  ],
  "ereignisse": [
   {
+   "ts": 1793362971.318654,
+   "typ": "nachricht_position",
+   "titel": "Nachricht zu spot:BTC-USD: Bitcoin Core security has been deep reviewed by the top frontier AI models, and only two minor items surfaced. (r/Bitcoin)"
+  },
+  {
    "ts": 1793361170.518473,
    "typ": "nachricht_position",
    "titel": "Nachricht zu pm:polymarket:6084518:JA: Bitcoin price metrics hint at rebound as $1.6B liquidations follow Binance hack (Cointelegraph)"
@@ -410,11 +426,6 @@
    "ts": 1793355770.8312254,
    "typ": "nachricht_position",
    "titel": "Nachricht zu pm:polymarket:6084518:JA: UK house prices grow at slowest pace in two years as mortgage rates rise (Guardian Welt)"
-  },
-  {
-   "ts": 1793355770.8312254,
-   "typ": "markt_schliesst",
-   "titel": "pm:polymarket:6084518:JA läuft in 5.6 h ab (claude_aggressiv)"
   }
  ]
 }
