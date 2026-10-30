@@ -1,6 +1,6 @@
 {
  "version": 1,
- "stand": 1793377445.596036,
+ "stand": 1793378367.9908671,
  "hinweis": "Papierhandel-Simulation, keine Anlageberatung",
  "seite": "https://rouvenwieland.github.io/ki-trader-arena/",
  "budget": {
@@ -19,13 +19,13 @@
    "id": "claude_aggressiv",
    "name": "Claude Aggressiv",
    "typ": "claude",
-   "rendite_pct": 5.69,
-   "equity_eur": 10586.2,
+   "rendite_pct": 6.06,
+   "equity_eur": 10628.31,
    "max_drawdown_pct": -2.65,
    "status": "aktiv",
    "modell": "claude-sonnet-5-5",
-   "kosten_heute_eur": 1.726,
-   "kosten_gesamt_eur": 1.726,
+   "kosten_heute_eur": 1.727,
+   "kosten_gesamt_eur": 1.727,
    "verlauf_pct": [
     0.0,
     1.0,
@@ -56,7 +56,8 @@
     5.88,
     5.74,
     5.91,
-    5.69
+    5.69,
+    6.06
    ]
   },
   {
@@ -65,7 +66,7 @@
    "name": "DeepSeek",
    "typ": "liga",
    "rendite_pct": 1.78,
-   "equity_eur": 10194.41,
+   "equity_eur": 10199.85,
    "max_drawdown_pct": -0.79,
    "status": "aktiv",
    "modell": "deepseek-chat",
@@ -101,6 +102,7 @@
     1.78,
     1.78,
     1.78,
+    1.78,
     1.78
    ]
   },
@@ -109,8 +111,8 @@
    "id": "bm_affe",
    "name": "Zufallsaffe",
    "typ": "benchmark",
-   "rendite_pct": 1.46,
-   "equity_eur": 10162.01,
+   "rendite_pct": 1.5,
+   "equity_eur": 10171.16,
    "max_drawdown_pct": -0.75,
    "status": "läuft",
    "modell": null,
@@ -146,7 +148,8 @@
     1.26,
     1.25,
     1.39,
-    1.46
+    1.46,
+    1.5
    ]
   },
   {
@@ -155,12 +158,12 @@
    "name": "Claude Mittel",
    "typ": "claude",
    "rendite_pct": 1.29,
-   "equity_eur": 10145.55,
+   "equity_eur": 10150.96,
    "max_drawdown_pct": -0.17,
    "status": "aktiv",
    "modell": "claude-sonnet-5-5",
-   "kosten_heute_eur": 1.981,
-   "kosten_gesamt_eur": 1.981,
+   "kosten_heute_eur": 1.982,
+   "kosten_gesamt_eur": 1.982,
    "verlauf_pct": [
     0.0,
     0.57,
@@ -191,6 +194,7 @@
     1.41,
     1.29,
     1.29,
+    1.29,
     1.29
    ]
   },
@@ -199,13 +203,13 @@
    "id": "claude_vorsichtig",
    "name": "Claude Vorsichtig",
    "typ": "claude",
-   "rendite_pct": 0.77,
-   "equity_eur": 10093.32,
+   "rendite_pct": 0.79,
+   "equity_eur": 10100.84,
    "max_drawdown_pct": -0.52,
    "status": "aktiv",
    "modell": "claude-opus-5-5",
-   "kosten_heute_eur": 1.47,
-   "kosten_gesamt_eur": 1.47,
+   "kosten_heute_eur": 1.471,
+   "kosten_gesamt_eur": 1.471,
    "verlauf_pct": [
     0.0,
     0.4,
@@ -236,7 +240,8 @@
     1.21,
     0.75,
     0.82,
-    0.77
+    0.77,
+    0.79
    ]
   },
   {
@@ -245,13 +250,14 @@
    "name": "Gemini Flash",
    "typ": "liga",
    "rendite_pct": 0.0,
-   "equity_eur": 10015.96,
+   "equity_eur": 10021.3,
    "max_drawdown_pct": 0.0,
    "status": "aktiv",
    "modell": "gemini-flash-lite-latest",
    "kosten_heute_eur": 0.0,
    "kosten_gesamt_eur": 0.0,
    "verlauf_pct": [
+    0.0,
     0.0,
     0.0,
     0.0,
@@ -290,13 +296,14 @@
    "name": "Kimi (Moonshot)",
    "typ": "liga",
    "rendite_pct": 0.0,
-   "equity_eur": 10015.96,
+   "equity_eur": 10021.3,
    "max_drawdown_pct": 0.0,
    "status": "Fehler: Modellfehler: kimi-k2-turbo-preview: HTTP 404 {\"error\":{\"message\":\"Not found the model kimi-k2-turbo-preview or Permission denied\",\"type\":\"r",
    "modell": "kimi-k2-turbo-preview",
    "kosten_heute_eur": 0.0,
    "kosten_gesamt_eur": 0.0,
    "verlauf_pct": [
+    0.0,
     0.0,
     0.0,
     0.0,
@@ -335,13 +342,14 @@
    "name": "OpenAI",
    "typ": "liga",
    "rendite_pct": 0.0,
-   "equity_eur": 10015.96,
+   "equity_eur": 10021.3,
    "max_drawdown_pct": 0.0,
    "status": "pausiert (kein Guthaben)",
    "modell": "gpt-5-mini",
    "kosten_heute_eur": 0.0,
    "kosten_gesamt_eur": 0.0,
    "verlauf_pct": [
+    0.0,
     0.0,
     0.0,
     0.0,
@@ -379,8 +387,8 @@
    "id": "bm_btc",
    "name": "Buy & Hold BTC",
    "typ": "benchmark",
-   "rendite_pct": -0.12,
-   "equity_eur": 10003.68,
+   "rendite_pct": -0.11,
+   "equity_eur": 10010.72,
    "max_drawdown_pct": -2.48,
    "status": "läuft",
    "modell": null,
@@ -416,7 +424,8 @@
     -0.07,
     0.02,
     -0.02,
-    -0.12
+    -0.12,
+    -0.11
    ]
   },
   {
@@ -424,8 +433,8 @@
    "id": "bm_6040",
    "name": "60/40 (SPY/AGG)",
    "typ": "benchmark",
-   "rendite_pct": -0.31,
-   "equity_eur": 9985.18,
+   "rendite_pct": -0.32,
+   "equity_eur": 9989.35,
    "max_drawdown_pct": -0.32,
    "status": "läuft",
    "modell": null,
@@ -461,7 +470,8 @@
     -0.23,
     -0.28,
     -0.32,
-    -0.31
+    -0.31,
+    -0.32
    ]
   },
   {
@@ -469,8 +479,8 @@
    "id": "bm_sp500",
    "name": "S&P-500-ETF (SPY)",
    "typ": "benchmark",
-   "rendite_pct": -0.43,
-   "equity_eur": 9972.86,
+   "rendite_pct": -0.42,
+   "equity_eur": 9979.36,
    "max_drawdown_pct": -0.44,
    "status": "läuft",
    "modell": null,
@@ -506,7 +516,8 @@
     -0.29,
     -0.36,
     -0.44,
-    -0.43
+    -0.43,
+    -0.42
    ]
   }
  ],
@@ -582,6 +593,36 @@
  ],
  "ereignisse": [
   {
+   "ts": 1793378324.012641,
+   "typ": "nachricht_position",
+   "titel": "Nachricht zu spot:BTC-USD: Bitcoin Turns 18 | A Coming-of-Age Story (r/Bitcoin)"
+  },
+  {
+   "ts": 1793378324.012641,
+   "typ": "nachricht_position",
+   "titel": "Nachricht zu spot:BTC-USD: Bitcoin risks worst October in 12 years as tech sell-off spreads to gold (Cointelegraph)"
+  },
+  {
+   "ts": 1793378324.012641,
+   "typ": "nachricht_position",
+   "titel": "Nachricht zu pm:polymarket:5170740:JA: Bitcoin Turns 18 | A Coming-of-Age Story (r/Bitcoin)"
+  },
+  {
+   "ts": 1793378324.012641,
+   "typ": "nachricht_position",
+   "titel": "Nachricht zu pm:polymarket:5170740:JA: Bitcoin risks worst October in 12 years as tech sell-off spreads to gold (Cointelegraph)"
+  },
+  {
+   "ts": 1793378324.012641,
+   "typ": "nachricht_position",
+   "titel": "Nachricht zu pm:polymarket:3215008:JA: Decisions taken by the Governing Council of the ECB (in addition to decisions setting interest rates) (EZB Presse)"
+  },
+  {
+   "ts": 1793378324.012641,
+   "typ": "wettmarkt_bewegung",
+   "titel": "Wette „Will commitments to the 1W public sale exceed $60M?“ +95 Prozentpunkte in 1 h (0.05→1.00)"
+  },
+  {
    "ts": 1793376524.1418092,
    "typ": "nachricht_position",
    "titel": "Nachricht zu pm:polymarket:6084518:JA: Bitcoin risks worst October in 12 years as tech sell-off spreads to gold (Cointelegraph)"
@@ -590,36 +631,6 @@
    "ts": 1793373823.5937917,
    "typ": "volatilitaet",
    "titel": "Volatilitätsausbruch spot:LINK-USD: +2.7 % in 1 h (normal ≈ 0.84 %)"
-  },
-  {
-   "ts": 1793373823.5937917,
-   "typ": "volatilitaet",
-   "titel": "Volatilitätsausbruch spot:XRP-USD: +2.3 % in 1 h (normal ≈ 0.72 %)"
-  },
-  {
-   "ts": 1793373823.5937917,
-   "typ": "volatilitaet",
-   "titel": "Volatilitätsausbruch spot:BTC-USD: +1.5 % in 1 h (normal ≈ 0.44 %)"
-  },
-  {
-   "ts": 1793372871.2602901,
-   "typ": "wettmarkt_bewegung",
-   "titel": "Wette „Will the price of Bitcoin be above $76,000 on October 30?“ +9 Prozentpunkte in 1 h (0.90→0.99)"
-  },
-  {
-   "ts": 1793372871.2602901,
-   "typ": "wettmarkt_bewegung",
-   "titel": "Wette „Will Bitcoin dip to $75,000 in October?“ -18 Prozentpunkte in 1 h (0.29→0.11)"
-  },
-  {
-   "ts": 1793371070.5496824,
-   "typ": "volatilitaet",
-   "titel": "Volatilitätsausbruch stock:TSLA: +2.0 % in 1 h (normal ≈ 0.59 %)"
-  },
-  {
-   "ts": 1793370171.1455915,
-   "typ": "volatilitaet",
-   "titel": "Volatilitätsausbruch stock:MSFT: -1.9 % in 1 h (normal ≈ 0.52 %)"
   }
  ]
 }
