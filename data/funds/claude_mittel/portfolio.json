@@ -2,41 +2,9 @@
  "fonds_id": "claude_mittel",
  "waehrung": "USD",
  "start_kapital": 11184.88579861696,
- "cash": 10185.44779861696,
- "positionen": [
-  {
-   "id": "pcc42b3ae",
-   "inst": {
-    "id": "pm:polymarket:4641065:JA",
-    "art": "pm",
-    "venue": "polymarket",
-    "ergebnis": "JA",
-    "frage": "US x Iran ceasefire continues through October 31?",
-    "schliesst": 1793491140.0,
-    "ref": {
-     "id": "4641065",
-     "token_ja": "67102598924726349989742049657609063097299442010642912942032681022413402597017",
-     "token_nein": "114475889232765203212032217024645308497828327658421967586050553616813506019119",
-     "tick": 0.001,
-     "gebuehr_rate": 0
-    },
-    "url": "https://polymarket.com/event/us-iran-ceasefire-continues-throughptptpt"
-   },
-   "seite": "long",
-   "menge": 1254.0,
-   "einstand": 0.797,
-   "hebel": 1.0,
-   "marge": 0.0,
-   "eroeffnet": 1793320849.0134997,
-   "gebuehren": 0.0,
-   "funding": 0.0,
-   "ausstiegsplan": "Halten bis Abrechnung 31.10. Bei bestätigtem US-Luftschlag auf Iran ist der Einsatz verloren; vorzeitiger Verkauf nur bei Preis >0.95 oder deutlicher Eskalationsmeldung.",
-   "entscheidung_id": "de9436e27",
-   "kurs": 0.9095,
-   "wert": 1138.63
-  }
- ],
- "realisiert": 0.0,
+ "cash": 11316.63876861696,
+ "positionen": [],
+ "realisiert": 131.75296999999978,
  "gebuehren": 0.0,
  "funding": 0.0,
  "erstellt": 1793319819.7411644,

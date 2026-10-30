@@ -2,7 +2,7 @@
  "fonds_id": "claude_aggressiv",
  "waehrung": "USD",
  "start_kapital": 11184.88579861696,
- "cash": 7285.3587986169605,
+ "cash": 5786.1069986169605,
  "positionen": [
   {
    "id": "pa523d4f2",
@@ -65,6 +65,35 @@
    "entscheidung_id": "dd6eba046",
    "kurs": 0.735,
    "wert": 1520.59
+  },
+  {
+   "id": "pe2d68e66",
+   "inst": {
+    "id": "pm:polymarket:6084518:JA",
+    "art": "pm",
+    "venue": "polymarket",
+    "ergebnis": "JA",
+    "frage": "Will the price of Bitcoin be above $76,000 on October 30?",
+    "schliesst": 1793376000.0,
+    "ref": {
+     "id": "6084518",
+     "token_ja": "87752081117112901224433342314760730311739279097049121829038005746854206290852",
+     "token_nein": "77922586661248647201317035102619115703779240841574829410343179679928827342695",
+     "tick": 0.001,
+     "gebuehr_rate": 0.07
+    },
+    "url": "https://polymarket.com/event/bitcoin-above-on-october-30-2026"
+   },
+   "seite": "long",
+   "menge": 1697.0,
+   "einstand": 0.8834718915733648,
+   "hebel": 1.0,
+   "marge": 0.0,
+   "eroeffnet": 1793354962.039637,
+   "gebuehren": 0.0,
+   "funding": 0.0,
+   "ausstiegsplan": "Halten bis Abrechnung 30.10 12:00 ET; bei BTC <76.3k vor Abrechnung neu bewerten/verkaufen.",
+   "entscheidung_id": "db1f31ec7"
   }
  ],
  "realisiert": 0.0,
