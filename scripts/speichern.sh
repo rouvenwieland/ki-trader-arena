@@ -4,7 +4,7 @@ set -u
 nachricht="${1:-Zustand aktualisiert}"
 git config user.name "arena-bot"
 git config user.email "arena-bot@users.noreply.github.com"
-git add data docs reports 2>/dev/null || true
+for p in data docs reports; do [ -e "$p" ] && git add "$p"; done
 if git diff --cached --quiet; then
   echo "Nichts zu speichern."
   exit 0

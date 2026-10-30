@@ -1,0 +1,35 @@
+name: Prognosen
+on:
+  schedule:
+    - cron: '41 */6 * * *'
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: arena-zustand
+  cancel-in-progress: false
+jobs:
+  prognosen:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    continue-on-error: true
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          cache: pip
+      - uses: actions/cache@v4
+        with:
+          path: ~/.cache/huggingface
+          key: hf-modelle-v1
+      - name: Abhängigkeiten (CPU-Torch, TimesFM 2.5, Kronos)
+        run: |
+          pip install --index-url https://download.pytorch.org/whl/cpu torch
+          pip install "timesfm[torch]" huggingface_hub pandas numpy einops safetensors tqdm requests
+          git clone --depth 1 https://github.com/shiyu-coder/Kronos.git Kronos
+          pip install -r Kronos/requirements.txt || true
+      - name: Prognosen rechnen
+        run: python scripts/prognosen.py
+      - name: Speichern
+        run: 'bash scripts/speichern.sh "Prognosen $(date -u +%Y-%m-%dT%H:%MZ)"'

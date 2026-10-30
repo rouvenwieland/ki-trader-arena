@@ -35,13 +35,18 @@ def statistisch(preise: list[float], horizont: int, n: int = 400) -> dict:
 
 
 def prognose(iid: str, horizont: int, snap: dict | None = None) -> dict:
-    gespeichert = store.lies("prognosen.json", {})
-    e = gespeichert.get(iid)
-    if e and time.time() - e["ts"] < 8 * 3600 and e.get("horizont_h") == horizont:
-        return {**e, "hinweis": "Modellprognose – nur ein Hinweis, Unsicherheitsband beachten"}
+    """Modellprognosen (TimesFM/Kronos) falls frisch vorhanden, immer zusätzlich die statistische Basislinie."""
+    out: dict = {}
+    e = store.lies("prognosen.json", {}).get(iid)
+    if e and time.time() - e["ts"] < 8 * 3600:
+        h = max(1, min(int(horizont), e["horizont_h"])) - 1
+        out["modelle"] = {n: {"modell": m["modell"], "letzter": m["letzter"], "median": m["median"][h], "p10": m["p10"][h], "p90": m["p90"][h],
+                              "horizont_h": h + 1} for n, m in e["modelle"].items()}
     p = historie(iid, snap)
-    if not p:
+    if p:
+        hh = max(1, horizont // 24) if iid.startswith("stock:") else horizont
+        out["statistik"] = statistisch(p, hh)
+    if not out:
         return {"fehler": f"keine Historie für {iid}"}
-    if iid.startswith("stock:"):
-        horizont = max(1, horizont // 24)  # Tagesdaten
-    return statistisch(p, horizont) | {"horizont": horizont, "hinweis": "Statistischer Hinweis – kein Orakel; TimesFM/Kronos-Ergebnis liegt nicht vor"}
+    out["hinweis"] = "Hinweise mit Unsicherheitsband, kein Orakel. Foundation-Modelle auf Kursen haben im Vorwärtstest oft keinen Vorteil nach Kosten."
+    return out
