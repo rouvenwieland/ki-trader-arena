@@ -101,3 +101,20 @@ def laufe_runde(defn: dict, route: dict, pf: dict, snap: dict, mz, grund: str, e
     store.anhaengen(f"funds/{defn['id']}/nutzung.jsonl", {"ts": jetzt, "modell": modell, **gesamt_nutzung, "usd": round(kosten, 4)})
     funds.speichere_portfolio(pf)
     return ergebnis
+
+
+def triage_groq(defn: dict, ereignisse: list[dict], pf_info: str) -> tuple[bool, str]:
+    """Groq (schnell, kleines Tokenlimit) sichtet nur vor – für Liga-Fonds, damit freie Modelle nicht bei jedem Ereignis laufen."""
+    import os
+    key = os.environ.get("GROQ_API_KEY", "").strip()
+    if not key:
+        return True, "kein Groq-Schlüssel – Runde ohne Vorsichter"
+    try:
+        s = llm.openai_sitzung("groq", "llama-3.3-70b-versatile", prompts.TRIAGE, [], key)
+        ev = "\n".join(f"- [{e['typ']}] {e['titel'][:140]}" for e in ereignisse[:12])
+        s.nutzer(f"Fonds: {defn['name']}\n{pf_info}\nEreignisse:\n{ev}")
+        a = s.schritt()
+        j = json.loads(a.text[a.text.index("{"): a.text.rindex("}") + 1])
+        return bool(j.get("aufwecken")), str(j.get("grund", ""))
+    except Exception as e:
+        return True, f"Groq-Triage fehlgeschlagen ({type(e).__name__})"

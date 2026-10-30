@@ -89,6 +89,13 @@ def lauf(grund: str = "ereignis", jetzt: float | None = None) -> dict:
             ev = relevante(alle_ev, fid)
             if not taeglich and not ev:
                 return
+            if not taeglich and d["typ"] == "liga":
+                info = f"{len(pf['positionen'])} Positionen: " + ", ".join(p["inst"]["id"] for p in pf["positionen"])
+                wecken, warum = loop.triage_groq(d, ev, info)
+                store.anhaengen(f"funds/{fid}/decisions.jsonl", {"typ": "triage", "ts": jetzt, "aufwecken": wecken, "grund": warum, "vorsichter": "groq"})
+                if not wecken:
+                    ergebnisse[fid] = f"Vorsichter (Groq): nicht wecken ({warum})"
+                    return
             if not taeglich and r.get("triage"):
                 marks = {p["inst"]["id"]: mz.marke(p["inst"]) for p in pf["positionen"]}
                 info = f"Eigenkapital {portfolio.equity(pf, marks):.0f} USD, {len(pf['positionen'])} Positionen: " + \

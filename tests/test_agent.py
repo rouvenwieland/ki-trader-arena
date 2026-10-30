@@ -117,3 +117,9 @@ def test_modellfehler_wird_aufgefangen():
     res = loop.laufe_runde(DEFN, {"art": "openai", "modell": "x"}, pf, snap(), FakeMZ(), "Test", [], None, 3,
                            jetzt=1_800_000_000, sitzung_fabrik=lambda s, t: Kaputt([]))
     assert "Modellfehler" in res["abbruch"]
+
+
+def test_groq_vorsichter_ohne_schluessel_laesst_runde_zu(monkeypatch):
+    monkeypatch.delenv("GROQ_API_KEY", raising=False)
+    ok, grund = loop.triage_groq(DEFN, [{"typ": "kurssprung", "titel": "x"}], "")
+    assert ok and "Groq" in grund

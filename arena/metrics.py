@@ -60,7 +60,7 @@ def kennzahlen(fid: str) -> dict:
     start = pf["start_kapital"]
     tag = tageswerte(eq)
     geschl = [x for x in led if x.get("aktion") in ("geschlossen", "teilweise_geschlossen", "liquidiert") and "netto_pnl" in x]
-    kosten_api = sum(x.get("usd", 0) for x in store.lies_jsonl(f"funds/{fid}/nutzung.jsonl"))
+    kosten_api = sum(x.get("usd", 0) for x in store.lies_jsonl("budget_log.jsonl") if x.get("fonds") == fid)  # inkl. Vorsichter
     fx = (store.lies("fx.json") or {}).get("usd_je_eur", 1.08)
     return {"equity_usd": eq[-1]["usd"], "start_usd": start, "rendite_pct": (eq[-1]["usd"] / start - 1) * 100,
             "max_drawdown_pct": max_drawdown([p["usd"] for p in eq]), "sharpe": sharpe([v for _, v in tag]),
