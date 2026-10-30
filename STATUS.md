@@ -1,68 +1,76 @@
-# STATUS (Stand 30.10.2026, Tagschicht)
+# STATUS (Stand 30.10.2026 abends – Umsetzung der Recherche-Empfehlung)
 
-Live: **https://rouvenwieland.github.io/ki-trader-arena/** · `status.json` für die Laptop-Kachel · Entscheidungen mit Begründung in [DECISIONS.md](DECISIONS.md)
+Live: **https://rouvenwieland.github.io/ki-trader-arena/** · `status.json` für die Laptop-Kachel · Entscheidungen mit Begründung in [DECISIONS.md](DECISIONS.md) ·
+Kurzfassung der Umsetzung in [research/UMSETZUNG.md](research/UMSETZUNG.md)
 
-## Heute erledigt
+## Erledigt (diese Session)
 
-**Betrieb (wichtigster Fund):** GitHub-Cron hat den 15-Minuten-Wächter zwischen 00:53 und 10:00 UTC nur **einmal** gestartet; die Arena stand also praktisch still. Neu ist der **Dauerlauf** (`dauerlauf.yml` + `scripts/dauerlauf.sh` + `arena/takt.py`). Ein Job läuft 5¼ h. In dieser Zeit macht er alle 15 min einen Wächter-Tick, erledigt danach im selben Job die fälligen Entscheider-Runden, das Wochen-Review und den Seiten-Deploy und stößt alle 6 h die Prognosen an. Seinen Nachfolger reiht er gleich zu Beginn ein; als Rückfallebene gibt es einen stündlichen Cron. Die alten Workflows bleiben für Handstarts und tun nichts, solange der Dauerlauf läuft. Live geprüft: Tick 10:08, feste Runde 10:09, Prognosen 10:12 und Seiten-Deploy liefen, der Nachfolger steht in der Warteschlange.
+Umgesetzt wurde [research/EMPFEHLUNG.md](research/EMPFEHLUNG.md): Abschnitt 0, alle zehn schnellen Gewinne und die großen Hebel 1, 3, 4, 6, 7, 8 und 9.
+Alles liegt in kleinen, getesteten Commits direkt auf `main`; 104 Tests sind grün (vorher 73), und der Test-Workflow auf GitHub war bei jedem Push grün.
+Neue Python-Pakete gibt es nicht.
 
-**1. Budget ausreizen.** Feste Sonnet-Runden um 0, 3, 6, 9, 15, 18 und 21 UTC, dazu um 13 UTC (14 Uhr) eine **Opus-5.5-Tiefenrunde** für jeden Claude-Fonds sowie Ereignisrunden nach einer Vorsichtung durch Haiku. Die Runden sind tiefer: 20 bzw. 26 Schritte, 8 bzw. 12 Websuchen und ein Rundenauftrag (mindestens fünf neue Kandidaten im eigenen Schwerpunkt und vier Recherchen; ob gehandelt wird, entscheidet der Fonds weiterhin selbst).
-- Tagesanteile 3,3/3,4/3,5 € plus 0,8 € Reserve ergeben ein Ziel von ≈ 10 €/Tag; der **harte Deckel von 12 €/Tag** bleibt.
-- Das Rundenbudget verteilt den Rest des Tagesanteils. Wird es knapp, bekommt der Agent einen Hinweis, jetzt zu entscheiden, statt hart abgebrochen zu werden.
-- Ein Tempo-Faktor sorgt dafür, dass die 190 € sicher bis zum 14.11. reichen.
-- Kosten je Fonds und je Modell stehen auf der Seite, in `status.json` und in `budget_status.json`.
-- Erster Live-Lauf (Sonnet, 4-h-Takt): 0,14–0,26 $ je Fonds und Runde. Deshalb gilt jetzt der 3-h-Takt mit Rundenauftrag.
+**Fehler (Abschnitt 0)**
+- **Polymarket-Gebühr:** wird jetzt aus dem `feeSchedule` jedes Marktes gebucht (vorher immer 0).
+- **Opus-Review:** gestreamt, 32k Ausgabe, Abschneiden gilt als Fehler. Das abgeschnittene **W44 wurde live vollständig neu erzeugt**, und die Regeln stehen jetzt in den Notizbüchern.
+- **Kronos:** liefert nur noch eine Richtung. Neue Basislinie ist ein **GARCH-Band**, die Trefferbilanz aller Prognosemodelle wird laufend gemessen.
+- **Nachrichten:** Reddit kommt per Atom-Feed mit echten Zeitstempeln, GDELT ebenso.
+- **Kosten:** Cache-Preise je Modell; der Prompt-Cache wird zwischen den Fonds geteilt.
+- **Liga:** Modellnamen werden über die echte Modellliste des Anbieters aufgelöst; Groq-Vorsichter ist jetzt `gpt-oss-20b`.
 
-**2. Klumpenrisiko.** Jeder Claude-Fonds hat jetzt einen eigenen **Schwerpunkt** mit eigenem **Recherchepfad** und eine eigene **Startliste** der Wettmärkte; die Fonds sehen einander nicht (per Test abgesichert):
-- Vorsichtig: Makro, Zinsen, Wetter, Anleihen
-- Mittel: Unternehmen, Tech, Sport, Wahlen, Einzelaktien
-- Aggressiv: Krypto, Perps, Optionen
+**Neue Agenten-Fähigkeiten (für Claude und Liga gleich)**
+- **Denkschulen:** Vorsichtig = Basisraten, Mittel = Arbitrage und Regeln, Aggressiv = Momentum. Jeder Fonds sieht die Ereignisse in eigener Reihenfolge und bekommt einen Rechercheplan vom Vorsichter.
+- **Pflichtfelder:** Superforecaster-Gerüst mit `p_blind` und getrennt geschätzten `p_ja`/`p_nein`. Orders brauchen Invalidierung, Gegenargument und `risiko_usd`; unter 0,4 Zuversicht wird nicht gekauft.
+- **Neue Werkzeuge:** `positionsgroesse` (Kelly simultan inkl. Gebühr, Volatilitätsziel), `wetter` (82 Ensemble-Mitglieder gegen Kalshi-Temperaturmärkte), `derivate_lage` (DVOL, Funding exakt, Basis), `orderfluss`; dazu Fed-, EZB- und SEC-Presse und FOMC-Termine.
+- **Lernschleife:** Haiku schreibt bei jeder Abrechnung eine Lektion. Das Notizbuch wählt Einträge nach Wichtigkeit und Alter aus. Das **Policy-Gate** sperrt Kategorien mit mindestens 5 Verlust-Trades; nur das Review darf sie wieder lockern. Ab 15 Auflösungen gibt es eine Kalibrier-Rückmeldung.
+- **Risiko:** Krypto- und Themen-Cluster-Limits werden hart in der Börse geprüft.
 
-Neue Kennzahl **Überlappung** (auf der Seite und in `status.json`); Startwert 100 %. Schon in der ersten Runde danach hat *Mittel* die gemeinsame Iran-Wette verkauft und *Aggressiv* eine BTC-Schwellenwette gekauft.
+**Neue Fonds (ohne LLM, außer dem A/B-Fonds)**
+- **Schwarm:** alle KI-Fonds, nur Claude oder nur Liga. Mischt die Schätzungen mit dem Marktpreis und kauft mit ¼-Kelly.
+- **Kontrollen:** „Markt-Kopierer“ (Null-Linie) und „Immer NEIN“ (misst den Ja-Hang).
+- **Regelfonds Wetter-Ensemble.** Im Test hat er sofort zwei Käufe mit klarem Ensemble-Vorteil gemacht.
+- **A/B-Fonds „Claude Mittel+RM“:** Zwilling von Mittel, aber mit Haiku-Risikomanager vor großen Orders.
 
-**3. Liga-Fehler.**
-- OpenAI: „no credits“ wird erkannt; der Fonds steht dann auf **„pausiert (kein Guthaben)“** und wird täglich neu probiert.
-- Gemini 503: Wiederholung mit Backoff, danach Ausweichmodell `gemini-2.5-flash`.
-- Modellnamen: Ausweichlisten je Anbieter; ein automatisch aufgelöster Name wird gemerkt.
-- OpenRouter: die gewählten Gratismodelle bleiben stabil, und vor der Auswahl gibt es einen Probeaufruf. Live gefunden: Manche gelisteten `:free`-Modelle sind gesperrt.
-- Der Liga-Pfad wurde live gegen ein OpenRouter-Gratismodell getestet: Runde mit Order und Tagebuch.
-- Cerebras, Mistral und OpenRouter starten automatisch, sobald ihr Secret existiert.
+**Börse und Statistik**
+- **Buchtiefe:** Wer im selben Lauf später ordert, bekommt nur noch das, was frühere Orders im Buch übrig gelassen haben.
+- **Marktimpact:** Ausgelöste Stops und das synthetische Aktienbuch tragen einen Aufschlag nach dem Square-Root-Gesetz.
+- **Rangliste:** Bootstrap-Konfidenzintervalle, Deflated Sharpe, „messbar ab Tag X“, p-Wert gegen BTC.
+- **Prognosen:** Brier-Skill gegen den Marktpreis.
+- **Nachfolge am 14.11.:** Model Confidence Set statt Rangplatz; gewählt wird das günstigste Modell unter den nicht unterscheidbaren Besten, und die Wahl bleibt 7 Tage stabil.
 
-Hinweis: Die angezeigten Liga-Status (OpenAI-Fehlertext, Gemini „Zeitlimit“) stammen noch von 06:11. Die Liga läuft im neuen Takt erst wieder um 13, 21 und 6 UTC und bei Ereignissen; ab dann gelten die neuen Status.
+**Seite:** neue Abschnitte „Prognosegüte – besser als der Marktpreis?“ (mit Kalibrierungsdiagramm) und „Schwarm & Kontrollen“, die Rangliste mit
+Konfidenzspannen, Gleichlauf, Gewinn je API-€, ein A/B-Kasten und eine Vorschau der Nachfolge. Headless geprüft (1440 px und 390 px): keine Konsolenfehler, kein horizontales Scrollen.
 
-**4. Laptop-Kachel.** PR https://github.com/rouvenwieland/windows-dashboard/pull/1 (Branch `claude/arena-kachel`, nicht gemergt). Die Kachel zeigt Rangliste, Werte, Mini-Verläufe, API-Kosten, Budgetbalken, Überlappung und Stand. Getestet gegen die echte `status.json`; die Darstellung im Board ist nicht getestet (dafür braucht es Windows).
-
-**5. Seite.** Headless geprüft (Desktop 1440 px, Mobil 390 px): keine Konsolenfehler, kein horizontales Scrollen, Ladezeit ≈ 0,6 s.
-- Behoben: Die Fonds-Akte zeigte immer „Kein Fonds“ (JS-Fehler); ein langer Fehlerstatus sprengte die Tabelle; Achsenbeschriftungen überlappten auf dem Handy; die Rangliste war auf dem Handy nicht lesbar; die Daten waren 4 h alt (siehe Betrieb).
-- Neu: Laufband mit Rangliste, Orders und Ereignissen im Kopf, Abschnitt „Unabhängigkeit“ (Überlappung je Paar mit gemeinsamen Wetten), Abschnitt „Was kostet das Denken?“ (Budgetbalken mit Ziel und Deckel, Kosten je Fonds und Modell), Status-Punkte und Einblenden beim Scrollen.
-
-**6. Feinschliff.**
-- `docs/data.json` liegt nicht mehr im Git (sie hätte ≈ 2 MB/Tag Wachstum bedeutet); die Seite baut sie beim Deploy.
-- Zeitlimits je Schritt und Runde im Dauerlauf.
-- Agentenschleife: Abschluss bei Schritt-, Zeit- und Budgetgrenze.
-- 15 neue Tests (73 insgesamt); README und DECISIONS aktualisiert.
+**Budget:** Heute bis 16 UTC ≈ 5,4 €; hochgerechnet wären das mit drei Fonds ≈ 7,5 €/Tag. Der vierte (A/B-)Fonds bringt die Ausgaben ins Ziel von 8–11 €. Die Tagesanteile
+betragen 4 × 2,75 € plus 0,8 € Reserve, der harte Deckel von 12 €/Tag bleibt.
 
 ## Was Rouven tun muss / kann
 
-1. **Kachel-PR ansehen und mergen** (windows-dashboard #1). Danach `pwsh werkzeuge\installieren.ps1`, weil `widgets.json` eine neue Widget-Definition bekommt, und im Board „KI-Trader-Arena“ anheften.
-2. **OpenAI:** Guthaben aufladen *oder* nichts tun. Der Fonds bleibt dann pausiert und wird täglich neu probiert.
-3. **Fehlende Secrets** (die Fonds starten danach von selbst): `CEREBRAS_API_KEY`, `MISTRAL_API_KEY`, `OPENROUTER_API_KEY`. In der Cloud-Umgebung dieser Session ist ein OpenRouter-Schlüssel gesetzt; als GitHub-Secret fehlt er noch. Setzen per `secrets-setzen.cmd` oder unter *Settings → Secrets → Actions*.
-4. Falls die Dauerlauf-Kette einmal reißt (auf der Seite ist „Stand vor …“ > 1 h): *Actions → Dauerlauf → Run workflow*. Der stündliche Cron sollte das aber selbst auffangen.
-5. Optional: Alpaca-Gratis-Konto für bessere Aktien-Daten.
+1. **Nichts Pflichtiges.** Der Dauerlauf zieht den neuen Code bei jedem Tick (`git pull`). Der A/B-Fonds und die Regelfonds legen sich beim nächsten Wächter-Lauf selbst an.
+2. **Weiterhin offen von gestern:** Kachel-PR im Repo windows-dashboard mergen, OpenAI-Guthaben (optional) und die Secrets `CEREBRAS_API_KEY`, `MISTRAL_API_KEY`, `OPENROUTER_API_KEY`.
+3. **Optional, neu:** das Secret `FRED_API_KEY` (gratis); dann erscheinen die US-Veröffentlichungstermine (CPI, Arbeitsmarkt …) im Werkzeug `makro`. Die Workflow-Zeile ist schon da.
+4. **Entscheidungen, die Konten oder eine ToS-Prüfung brauchen** (vorbereitet in [research/VORBEREITUNG-HEBEL-2-5-10.md](research/VORBEREITUNG-HEBEL-2-5-10.md)):
+   - Metaculus-Bot-Konto (Hebel 2)
+   - Hyperliquid-Nutzungsbedingungen im Browser prüfen (Hebel 5)
+   - Alpaca/Finnhub (gratis) und für SEC EDGAR eine öffentliche Kontaktadresse (Hebel 10)
+   - OpenRouter einmalig 10 $ aufladen (1000 statt 50 Gratis-Anfragen/Tag)
+5. Falls „Stand vor …“ auf der Seite älter als 1 h ist: *Actions → Dauerlauf → Run workflow*.
 
 ## Offen / zu beobachten
 
-- **Tatsächliche Tageskosten** nach dem ersten vollen Tag prüfen (Ziel 8–11 €). Liegen sie darunter, `takt_stunden_utc` verdichten oder die `runden_deckel_usd` in `arena/config.json` anheben; liegen sie darüber, greift der Deckel automatisch.
-- **Überlappung** in den nächsten Tagen beobachten: Sinkt sie unter ~30 %, wirken die Schwerpunkte.
-- Kimi: `kimi-latest` lieferte einmal 404; die Ausweichliste (`kimi-k2-turbo-preview`, …) ist nicht live geprüft (kein Schlüssel hier).
-- Eine zweite Claude-Session arbeitet parallel im Repo (`research/IDEEN-TRESOR.md`); bisher keine Überschneidung.
-- `scripts/dauerlauf.sh` möglichst nicht ändern, während ein Lauf aktiv ist (Bash liest Skripte während der Ausführung nach). Neuer Code in `arena/` greift ab dem nächsten Tick, weil jeder Tick `git pull` macht.
+- **Tageskosten** mit vier Claude-Fonds am 31.10. prüfen (Ziel 8–11 €). Liegen sie zu hoch, `fonds_tagesanteil_eur` senken; der Deckel greift ohnehin.
+- **Prognose-Kennzahlen füllen sich erst mit Abrechnungen:** 175 Schätzungen warten derzeit. Ab etwa 5 bewerteten Schätzungen erscheinen Kalibrierung und Skill gegen den Markt, die Rangliste-KIs ab 24 h Verlauf.
+- **Wetter-Regelfonds:** Der Modellfehler σ = 1,5 + 0,4·Vorlauf °F ist eine konservative Annahme. Nach etwa 50 abgerechneten Brackets aus der Trefferbilanz nachkalibrieren.
+- **Kimi** lieferte 404 mit dem gemerkten Namen. Der Name wird jetzt verworfen und beim nächsten Liga-Lauf über die Modellliste neu aufgelöst – Status prüfen.
+- **Risikomanager-Schwelle** (5 % des Kapitals) beobachten: Zu viele Ablehnungen verfälschen den A/B-Vergleich nicht, machen ihn aber teurer.
+- **Wächter-Laufzeit** liegt mit den neuen Fonds bei ≈ 110–130 s (Wetter stündlich +≈ 20 s), die Grenze ist 600 s.
+- **Polymarket-Temperaturmärkte** sind bewusst nicht im Wetter-Werkzeug (andere Station, freie Formulierungen).
+- `scripts/dauerlauf.sh` wurde nicht geändert (ein Lauf ist aktiv).
 
-## Bekannte Grenzen (ehrlich, unverändert)
+## Bekannte Grenzen (ehrlich)
 
-- **Aktien:** Yahoo drosselt Cloud-IPs teilweise; Stooq ist nicht nutzbar (Anti-Bot). SPY- und 60/40-Vergleichsfonds starten erst, wenn ein Kurs kommt.
-- **PredictIt** nur mit Top-of-Book (synthetische Tiefe); **Manifold** ist Spielgeld (nur Signal).
-- **Perps** linear mit isolierter Marge; **Optionen** nur gekauft.
-- **Stichprobe:** In den ersten Wochen ist die Rangliste Rauschen.
-- **Equity-Kurve:** Neue Orders tauchen bis zum nächsten Tick mit dem Einstandswert auf.
-- **Repo-Wachstum:** Kursverlauf und Equity wachsen um grob 100–200 kB/Tag (komprimiert deutlich weniger); `data.json` liegt nicht mehr im Git.
+- **Aktien:** Yahoo drosselt Cloud-IPs teilweise; Stooq ist nicht nutzbar. Das Aktienbuch ist synthetisch (jetzt mit Impact-Treppe).
+- **PredictIt** nur Top-of-Book (synthetische Tiefe); **Manifold** ist Spielgeld.
+- **Perps:** linear mit isolierter Marge; **Optionen** nur gekauft.
+- **Kelly simultan** nimmt unabhängige Ausgänge an, ist also eine Obergrenze. Die Themen-Etiketten stammen aus einer Stichwortliste.
+- **Stichprobe:** Die Konfidenzintervalle zeigen ehrlich, dass Rangplätze in den ersten Wochen Rauschen sind.
+- **Repo-Wachstum:** Kursverlauf und Equity wachsen um ≈ 100–200 kB/Tag; dazu kommen die neuen Prognose- und Wetter-Protokolle (klein).

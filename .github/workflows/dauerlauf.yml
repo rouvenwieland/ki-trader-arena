@@ -39,4 +39,5 @@ jobs:
           CEREBRAS_API_KEY: ${{ secrets.CEREBRAS_API_KEY }}
           MISTRAL_API_KEY: ${{ secrets.MISTRAL_API_KEY }}
           NASA_FIRMS_KEY: ${{ secrets.NASA_FIRMS_KEY }}
+          FRED_API_KEY: ${{ secrets.FRED_API_KEY }}
         run: bash scripts/dauerlauf.sh

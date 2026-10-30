@@ -1,6 +1,6 @@
 # KI-Trader-Arena
 
-Papierhandel-Experiment: KI-Agenten (drei Claude-Fonds + eine Modell-Liga) handeln **simuliert** auf Wettmärkten, Krypto, Aktien/ETFs und Derivaten – auf einer streng realistischen Papier-Börse, gemessen gegen Vergleichsfonds ohne KI. **Nur Simulation, keine Anlageberatung, kein echtes Geld.**
+Papierhandel-Experiment: KI-Agenten (vier Claude-Fonds inkl. A/B-Test + eine Modell-Liga, dazu ein Schwarm-Meta-Fonds und Kontrollfonds) handeln **simuliert** auf Wettmärkten, Krypto, Aktien/ETFs und Derivaten – auf einer streng realistischen Papier-Börse, gemessen gegen Vergleichsfonds ohne KI. **Nur Simulation, keine Anlageberatung, kein echtes Geld.**
 
 Live-Seite: **https://rouvenwieland.github.io/ki-trader-arena/** · Maschinenlesbar: [`docs/status.json`](docs/status.json)
 
@@ -14,10 +14,10 @@ Plan und Entscheidungen: [PLAN.md](PLAN.md) · [DECISIONS.md](DECISIONS.md) · S
 | **Wächter** (`arena/watcher.py`, Rückfall `waechter.yml`) | Daten holen, alle Portfolios zum Marktwert bewerten, Funding buchen, Stop-Loss/Take-Profit/Liquidation/Abrechnung ausführen, **Ereignisse** erzeugen (Kurssprung, Nachricht zu Position, Markt schließt < 24 h, große Wettmarkt-Bewegung, Volatilitätsausbruch, Fehlbewertung). Kein KI-Einsatz, kostenlos. | alle 15 min |
 | **Entscheider** (`arena/entscheider.py`, Rückfall `entscheider.yml`) | Jeder Fonds-Agent bekommt Marktdaten + Werkzeuge und handelt mit Begründung, Zuversicht, Ausstiegsplan. Claude-Fonds mit eigenem Schwerpunkt und eigener Startliste (unabhängig). Feste Runden mit Sonnet, Tiefenrunde mit Opus, Ereignisrunden nach Haiku-Vorsichtung. | fest 0/3/6/9/15/18/21 UTC, Tiefenrunde 13 UTC, dazu bei weckendem Ereignis (≥ 45 min Abstand) |
 | **Wochen-Review** (`arena/review.py`, `review.yml`) | Opus prüft die Strategien, schreibt `reports/JJJJ-Www.md` und gibt den Claude-Fonds Regeln ins Notizbuch. | sonntags |
-| **Prognosen** (`scripts/prognosen.py`, `prognosen.yml`) | TimesFM 2.5 (Apache-2.0) und Kronos (MIT) auf CPU, Unsicherheitsband, als Werkzeug für die Agenten. | alle 6 h |
-| **Webseite** (`docs/`, `arena/site.py`, `seite.yml`) | Dunkle Live-Seite: Verläufe, Rangliste, Unabhängigkeit (Überlappung), Kosten je Fonds, Positionen, jede Entscheidung mit Begründung, Kennzahlen. `data.json` wird beim Deploy gebaut. | nach jedem Tick |
+| **Prognosen** (`scripts/prognosen.py`, `prognosen.yml`) | GARCH-Basislinie, TimesFM 2.5 (Apache-2.0) und Kronos (MIT, nur Richtung) auf CPU; jede Prognose wird protokolliert und gegen den echten Kurs bewertet (Trefferbilanz). | alle 6 h |
+| **Webseite** (`docs/`, `arena/site.py`, `seite.yml`) | Dunkle Live-Seite: Verläufe, Rangliste mit Konfidenzintervallen, Prognosegüte gegen den Marktpreis (Kalibrierung), Schwarm & Kontrollen, Unabhängigkeit (Überlappung, Gleichlauf), Kosten je Fonds, Positionen, jede Entscheidung mit Begründung, Kennzahlen. `data.json` wird beim Deploy gebaut. | nach jedem Tick |
 
-**Fonds:** `claude_vorsichtig`, `claude_mittel`, `claude_aggressiv` (je 10.000 €, eigene Persönlichkeit, eigenes Notizbuch) · **Liga** (je ein Fonds, mittleres Risiko, gleiche Regeln/Daten) für jedes Modell mit vorhandenem Schlüssel: Gemini Flash, DeepSeek, Kimi/Moonshot, Cerebras, Mistral, OpenAI, plus automatisch gewählte OpenRouter-`:free`-Modelle · **Vergleich ohne KI:** Buy & Hold BTC, S&P-500-ETF, 60/40, Zufallsaffe.
+**Fonds:** `claude_vorsichtig`, `claude_mittel`, `claude_aggressiv` (je 10.000 €, eigene Denkschule, eigenes Notizbuch) und `claude_mittel_rm` (A/B-Zwilling von Mittel mit Risikomanager-Pass) · **Liga** (je ein Fonds, mittleres Risiko, gleiche Regeln/Daten) für jedes Modell mit vorhandenem Schlüssel: Gemini Flash, DeepSeek, Kimi/Moonshot, Cerebras, Mistral, OpenAI, plus automatisch gewählte OpenRouter-`:free`-Modelle · **Ohne LLM:** Schwarm (alle KI / nur Claude / nur Liga), Kontrollen „Markt-Kopierer“ und „Immer NEIN“, Regelfonds „Wetter-Ensemble“ · **Vergleich ohne KI:** Buy & Hold BTC, S&P-500-ETF, 60/40, Zufallsaffe.
 
 **Börse (`arena/exchange/`):** Füllung gegen echte Orderbuchtiefe (Teilfüllung), Spread, Slippage, Gebühren je Plattform, Funding, Liquidation (Dochte zählen), Abrechnung der Wettmärkte, Positionsgrenzen je Risikoprofil. Alles Details in [DECISIONS.md](DECISIONS.md).
 
@@ -47,7 +47,7 @@ Konfiguration (Deckel, Limits, Gebühren, Fonds, Schwellen): [`arena/config.json
 
 ## Budget
 
-Anthropic: Ziel ≈ 10 €/Tag über Tagesanteile je Claude-Fonds (3,3/3,4/3,5 €), harter Tagesdeckel 12 €, Gesamtdeckel 190 €, Stopp im Code anhand gezählter Tokens × Preis (+15 % Sicherheit, Worst-Case-Reservierung vor jedem Aufruf). Rundenbudget mit Abschluss-Hinweis; Tempo-Faktor streckt das Restbudget bis zum Stichtag. Opus für die tägliche Tiefenrunde und das Wochen-Review. Kosten je Fonds stehen auf der Seite und in `status.json`. Ab **14.11.2026** oder bei erschöpftem Gesamtbudget wechseln die Claude-Fonds automatisch auf das bis dahin renditebeste Liga-Modell (Wechsel erscheint in der Seite und in `data/model_switches.jsonl`).
+Anthropic: Ziel 8–11 €/Tag über Tagesanteile je Claude-Fonds (4 × 2,75 € + 0,8 € Reserve), harter Tagesdeckel 12 €, Gesamtdeckel 190 €, Stopp im Code anhand gezählter Tokens × Preis (+15 % Sicherheit, Worst-Case-Reservierung vor jedem Aufruf). Rundenbudget mit Abschluss-Hinweis; Tempo-Faktor streckt das Restbudget bis zum Stichtag. Opus für die tägliche Tiefenrunde und das Wochen-Review. Kosten je Fonds stehen auf der Seite und in `status.json`. Ab **14.11.2026** oder bei erschöpftem Gesamtbudget wechseln die Claude-Fonds automatisch auf ein Liga-Modell – gewählt per Model Confidence Set (das günstigste unter den statistisch nicht unterscheidbaren Besten, 7 Tage stabil, `data/modellwahl.json`) (Wechsel erscheint in der Seite und in `data/model_switches.jsonl`).
 
 ## Laptop-Widget
 
