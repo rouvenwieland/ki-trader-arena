@@ -1,6 +1,6 @@
 {
  "version": 1,
- "stand": 1793382878.3437572,
+ "stand": 1793383791.0971165,
  "hinweis": "Papierhandel-Simulation, keine Anlageberatung",
  "seite": "https://rouvenwieland.github.io/ki-trader-arena/",
  "budget": {
@@ -37,8 +37,8 @@
    "id": "claude_aggressiv",
    "name": "Claude Aggressiv",
    "typ": "claude",
-   "rendite_pct": 5.99,
-   "equity_eur": 10629.73,
+   "rendite_pct": 5.92,
+   "equity_eur": 10619.14,
    "max_drawdown_pct": -2.65,
    "status": "aktiv",
    "modell": "claude-sonnet-5-5",
@@ -81,7 +81,8 @@
     5.89,
     6.16,
     6.16,
-    5.99
+    5.99,
+    5.92
    ]
   },
   {
@@ -90,7 +91,7 @@
    "name": "DeepSeek",
    "typ": "liga",
    "rendite_pct": 1.78,
-   "equity_eur": 10208.1,
+   "equity_eur": 10204.25,
    "max_drawdown_pct": -0.79,
    "status": "aktiv",
    "modell": "deepseek-chat",
@@ -133,6 +134,7 @@
     1.78,
     1.78,
     1.78,
+    1.78,
     1.78
    ]
   },
@@ -141,8 +143,8 @@
    "id": "bm_affe",
    "name": "Zufallsaffe",
    "typ": "benchmark",
-   "rendite_pct": 1.35,
-   "equity_eur": 10165.24,
+   "rendite_pct": 1.42,
+   "equity_eur": 10167.87,
    "max_drawdown_pct": -0.75,
    "status": "läuft",
    "modell": null,
@@ -185,7 +187,8 @@
     1.42,
     1.5,
     1.45,
-    1.35
+    1.35,
+    1.42
    ]
   },
   {
@@ -194,12 +197,12 @@
    "name": "Claude Mittel",
    "typ": "claude",
    "rendite_pct": 1.29,
-   "equity_eur": 10159.17,
+   "equity_eur": 10155.33,
    "max_drawdown_pct": -0.17,
    "status": "aktiv",
    "modell": "claude-sonnet-5-5",
-   "kosten_heute_eur": 1.984,
-   "kosten_gesamt_eur": 1.984,
+   "kosten_heute_eur": 1.983,
+   "kosten_gesamt_eur": 1.983,
    "rendite_ki_pct": null,
    "verlauf_pct": [
     0.0,
@@ -237,6 +240,7 @@
     1.29,
     1.29,
     1.29,
+    1.29,
     1.29
    ]
   },
@@ -245,8 +249,8 @@
    "id": "ko_wetter",
    "name": "Regelfonds: Wetter-Ensemble",
    "typ": "benchmark",
-   "rendite_pct": 0.96,
-   "equity_eur": 10100.04,
+   "rendite_pct": 1.11,
+   "equity_eur": 10111.02,
    "max_drawdown_pct": 0.0,
    "status": "läuft",
    "modell": null,
@@ -257,7 +261,8 @@
     -0.33,
     0.0,
     0.78,
-    0.96
+    0.96,
+    1.11
    ]
   },
   {
@@ -265,8 +270,8 @@
    "id": "claude_vorsichtig",
    "name": "Claude Vorsichtig",
    "typ": "claude",
-   "rendite_pct": 0.86,
-   "equity_eur": 10115.36,
+   "rendite_pct": 0.9,
+   "equity_eur": 10115.47,
    "max_drawdown_pct": -0.52,
    "status": "aktiv",
    "modell": "claude-opus-5-5",
@@ -309,7 +314,8 @@
     0.8,
     0.79,
     0.88,
-    0.86
+    0.86,
+    0.9
    ]
   },
   {
@@ -318,7 +324,7 @@
    "name": "Gemini Flash",
    "typ": "liga",
    "rendite_pct": 0.0,
-   "equity_eur": 10029.41,
+   "equity_eur": 10025.62,
    "max_drawdown_pct": 0.0,
    "status": "aktiv",
    "modell": "gemini-flash-lite-latest",
@@ -326,6 +332,7 @@
    "kosten_gesamt_eur": 0.0,
    "rendite_ki_pct": null,
    "verlauf_pct": [
+    0.0,
     0.0,
     0.0,
     0.0,
@@ -370,7 +377,7 @@
    "name": "Kimi (Moonshot)",
    "typ": "liga",
    "rendite_pct": 0.0,
-   "equity_eur": 10029.41,
+   "equity_eur": 10025.62,
    "max_drawdown_pct": 0.0,
    "status": "Fehler: Modellfehler: kimi-k2-turbo-preview: HTTP 404 {\"error\":{\"message\":\"Not found the model kimi-k2-turbo-preview or Permission denied\",\"type\":\"r",
    "modell": "kimi-k2-turbo-preview",
@@ -378,6 +385,7 @@
    "kosten_gesamt_eur": 0.0,
    "rendite_ki_pct": null,
    "verlauf_pct": [
+    0.0,
     0.0,
     0.0,
     0.0,
@@ -422,7 +430,7 @@
    "name": "OpenAI",
    "typ": "liga",
    "rendite_pct": 0.0,
-   "equity_eur": 10029.41,
+   "equity_eur": 10025.62,
    "max_drawdown_pct": 0.0,
    "status": "pausiert (kein Guthaben)",
    "modell": "gpt-5-mini",
@@ -430,6 +438,7 @@
    "kosten_gesamt_eur": 0.0,
    "rendite_ki_pct": null,
    "verlauf_pct": [
+    0.0,
     0.0,
     0.0,
     0.0,
@@ -474,7 +483,7 @@
    "name": "Claude Mittel+RM (A/B)",
    "typ": "claude",
    "rendite_pct": 0.0,
-   "equity_eur": 10003.8,
+   "equity_eur": 10000.02,
    "max_drawdown_pct": 0.0,
    "status": "wartet auf ersten Lauf",
    "modell": null,
@@ -482,6 +491,7 @@
    "kosten_gesamt_eur": 0.0,
    "rendite_ki_pct": null,
    "verlauf_pct": [
+    0.0,
     0.0,
     0.0,
     0.0,
@@ -490,11 +500,55 @@
   },
   {
    "rang": 11,
+   "id": "schwarm_alle",
+   "name": "Schwarm (alle KI)",
+   "typ": "schwarm",
+   "rendite_pct": -0.0,
+   "equity_eur": 10001.01,
+   "max_drawdown_pct": 0.0,
+   "status": "wartet auf ersten Lauf",
+   "modell": null,
+   "kosten_heute_eur": 0.0,
+   "kosten_gesamt_eur": 0.0,
+   "rendite_ki_pct": null,
+   "verlauf_pct": [
+    -0.03,
+    -0.03,
+    -0.03,
+    -0.03,
+    -0.03,
+    -0.0
+   ]
+  },
+  {
+   "rang": 12,
+   "id": "schwarm_claude",
+   "name": "Schwarm (nur Claude)",
+   "typ": "schwarm",
+   "rendite_pct": -0.0,
+   "equity_eur": 10001.01,
+   "max_drawdown_pct": 0.0,
+   "status": "wartet auf ersten Lauf",
+   "modell": null,
+   "kosten_heute_eur": 0.0,
+   "kosten_gesamt_eur": 0.0,
+   "rendite_ki_pct": null,
+   "verlauf_pct": [
+    -0.04,
+    -0.04,
+    -0.04,
+    -0.04,
+    -0.04,
+    -0.0
+   ]
+  },
+  {
+   "rang": 13,
    "id": "schwarm_liga",
    "name": "Schwarm (nur Liga)",
    "typ": "schwarm",
    "rendite_pct": -0.0,
-   "equity_eur": 10004.79,
+   "equity_eur": 10001.01,
    "max_drawdown_pct": 0.0,
    "status": "wartet auf ersten Lauf",
    "modell": null,
@@ -506,16 +560,17 @@
     -0.0,
     -0.0,
     -0.0,
+    -0.0,
     -0.0
    ]
   },
   {
-   "rang": 12,
+   "rang": 14,
    "id": "ko_markt",
    "name": "Kontrolle: Markt-Kopierer",
    "typ": "benchmark",
    "rendite_pct": -0.0,
-   "equity_eur": 10004.79,
+   "equity_eur": 10001.01,
    "max_drawdown_pct": 0.0,
    "status": "läuft",
    "modell": null,
@@ -527,49 +582,8 @@
     -0.0,
     -0.0,
     -0.0,
+    -0.0,
     -0.0
-   ]
-  },
-  {
-   "rang": 13,
-   "id": "schwarm_alle",
-   "name": "Schwarm (alle KI)",
-   "typ": "schwarm",
-   "rendite_pct": -0.03,
-   "equity_eur": 10002.03,
-   "max_drawdown_pct": 0.0,
-   "status": "wartet auf ersten Lauf",
-   "modell": null,
-   "kosten_heute_eur": 0.0,
-   "kosten_gesamt_eur": 0.0,
-   "rendite_ki_pct": null,
-   "verlauf_pct": [
-    -0.03,
-    -0.03,
-    -0.03,
-    -0.03,
-    -0.03
-   ]
-  },
-  {
-   "rang": 14,
-   "id": "schwarm_claude",
-   "name": "Schwarm (nur Claude)",
-   "typ": "schwarm",
-   "rendite_pct": -0.04,
-   "equity_eur": 10001.1,
-   "max_drawdown_pct": 0.0,
-   "status": "wartet auf ersten Lauf",
-   "modell": null,
-   "kosten_heute_eur": 0.0,
-   "kosten_gesamt_eur": 0.0,
-   "rendite_ki_pct": null,
-   "verlauf_pct": [
-    -0.04,
-    -0.04,
-    -0.04,
-    -0.04,
-    -0.04
    ]
   },
   {
@@ -577,8 +591,8 @@
    "id": "bm_btc",
    "name": "Buy & Hold BTC",
    "typ": "benchmark",
-   "rendite_pct": -0.54,
-   "equity_eur": 9975.19,
+   "rendite_pct": -0.52,
+   "equity_eur": 9973.75,
    "max_drawdown_pct": -2.48,
    "status": "läuft",
    "modell": null,
@@ -621,7 +635,8 @@
     -0.41,
     -0.42,
     -0.4,
-    -0.54
+    -0.54,
+    -0.52
    ]
   },
   {
@@ -629,9 +644,9 @@
    "id": "bm_6040",
    "name": "60/40 (SPY/AGG)",
    "typ": "benchmark",
-   "rendite_pct": -0.55,
-   "equity_eur": 9974.02,
-   "max_drawdown_pct": -0.55,
+   "rendite_pct": -0.56,
+   "equity_eur": 9969.43,
+   "max_drawdown_pct": -0.56,
    "status": "läuft",
    "modell": null,
    "kosten_heute_eur": 0.0,
@@ -673,7 +688,8 @@
     -0.45,
     -0.43,
     -0.48,
-    -0.55
+    -0.55,
+    -0.56
    ]
   },
   {
@@ -681,9 +697,9 @@
    "id": "bm_sp500",
    "name": "S&P-500-ETF (SPY)",
    "typ": "benchmark",
-   "rendite_pct": -0.86,
-   "equity_eur": 9943.29,
-   "max_drawdown_pct": -0.86,
+   "rendite_pct": -0.89,
+   "equity_eur": 9936.78,
+   "max_drawdown_pct": -0.89,
    "status": "läuft",
    "modell": null,
    "kosten_heute_eur": 0.0,
@@ -725,7 +741,8 @@
     -0.66,
     -0.64,
     -0.7,
-    -0.86
+    -0.86,
+    -0.89
    ]
   },
   {
@@ -733,9 +750,9 @@
    "id": "ko_nein",
    "name": "Kontrolle: Immer NEIN",
    "typ": "benchmark",
-   "rendite_pct": -1.92,
-   "equity_eur": 9812.5,
-   "max_drawdown_pct": -1.49,
+   "rendite_pct": -2.36,
+   "equity_eur": 9765.4,
+   "max_drawdown_pct": -1.92,
    "status": "läuft",
    "modell": null,
    "kosten_heute_eur": 0.0,
@@ -746,7 +763,8 @@
     -0.65,
     -1.49,
     -1.87,
-    -1.92
+    -1.92,
+    -2.36
    ]
   }
  ],
@@ -822,6 +840,26 @@
  ],
  "ereignisse": [
   {
+   "ts": 1793383723.5804365,
+   "typ": "nachricht_position",
+   "titel": "Nachricht zu pm:polymarket:682708:NEIN: Netanyahu accused of smearing Arab voters to hold on to power (Guardian Welt)"
+  },
+  {
+   "ts": 1793383723.5804365,
+   "typ": "nachricht_position",
+   "titel": "Nachricht zu pm:polymarket:682708:NEIN: Local devolution decisions rest solely with Scotland and Wales, first ministers tell Burnham (Guardian Welt)"
+  },
+  {
+   "ts": 1793383723.5804365,
+   "typ": "nachricht_position",
+   "titel": "Nachricht zu pm:polymarket:682705:NEIN: Friday briefing: Israel has a dilemma - can its opposition govern with Palestinian parties? (Guardian Welt)"
+  },
+  {
+   "ts": 1793383723.5804365,
+   "typ": "nachricht_position",
+   "titel": "Nachricht zu pm:polymarket:682705:NEIN: Local devolution decisions rest solely with Scotland and Wales, first ministers tell Burnham (Guardian Welt)"
+  },
+  {
    "ts": 1793381923.768329,
    "typ": "nachricht_position",
    "titel": "Nachricht zu pm:polymarket:5170740:NEIN: I’m Mining Bitcoin With a DIY $30 Solar Panels and Free Forklift Batteries (r/Bitcoin)"
@@ -840,26 +878,6 @@
    "ts": 1793381923.768329,
    "typ": "nachricht_position",
    "titel": "Nachricht zu pm:polymarket:3215007:NEIN: Decisions taken by the Governing Council of the ECB (in addition to decisions setting interest rates) (EZB Presse)"
-  },
-  {
-   "ts": 1793381024.3823931,
-   "typ": "nachricht_position",
-   "titel": "Nachricht zu pm:polymarket:630964:NEIN: Alaska's Senate race faces claims of spoiler candidate. And, Hegseth ousts Army general (NPR Politik)"
-  },
-  {
-   "ts": 1793381024.3823931,
-   "typ": "nachricht_position",
-   "titel": "Nachricht zu pm:polymarket:630964:NEIN: Alaska Senate candidate denies knowing about alleged plot to put two Dan Sullivans on ballot (BBC Welt)"
-  },
-  {
-   "ts": 1793381024.3823931,
-   "typ": "nachricht_position",
-   "titel": "Nachricht zu pm:polymarket:562793:NEIN: Pope Leo XIV becomes first pontiff to vote in a US election (BBC Welt)"
-  },
-  {
-   "ts": 1793381024.3823931,
-   "typ": "nachricht_position",
-   "titel": "Nachricht zu pm:polymarket:562793:NEIN: Pope Leo votes in US midterms in first known political ballot for any pontiff (Guardian Welt)"
   }
  ]
 }
