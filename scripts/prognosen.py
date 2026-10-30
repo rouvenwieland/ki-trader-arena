@@ -13,7 +13,7 @@ from pathlib import Path
 import numpy as np
 
 sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
-from arena import store  # noqa: E402
+from arena import forecast, store  # noqa: E402
 from arena.data import crypto  # noqa: E402
 
 ZIELE = {"spot:BTC-USD": "BTC-USD", "spot:ETH-USD": "ETH-USD", "spot:SOL-USD": "SOL-USD"}
@@ -59,9 +59,27 @@ def kronos_lauf(daten: dict) -> dict:
                              T=1.0, top_p=0.9, sample_count=1, verbose=False)
             pfade.append(p["close"].to_numpy())
         a = np.array(pfade)
-        out[iid] = {"modell": "Kronos-small (24.7M, CPU)", "letzter": float(df["close"].iloc[-1]), "median": [float(x) for x in np.median(a, 0)],
-                    "p10": [float(x) for x in np.quantile(a, .1, 0)], "p90": [float(x) for x in np.quantile(a, .9, 0)]}
+        # Nur Richtung: das Band aus 8 Pfaden war viel zu eng (Abdeckung 0/6 statt ~80 %, Recherche B3) → kein p10/p90 mehr.
+        out[iid] = {"modell": "Kronos-small (24.7M, CPU) – nur Richtung", "letzter": float(df["close"].iloc[-1]),
+                    "median": [float(x) for x in np.median(a, 0)], "nur_richtung": True}
     return out
+
+
+def basislinien(daten: dict) -> dict:
+    """GARCH(1,1)-Band und Bootstrap je Stunde 1..H – feste Vergleichsbasis für die Trefferbilanz."""
+    out = {}
+    for iid, k in daten.items():
+        preise = [c[4] for c in k]
+        g = [forecast.garch_band(preise, h) for h in range(1, H + 1)]
+        out[iid] = {"modell": "GARCH(1,1)-Band (Basislinie)", "letzter": preise[-1], "median": [x["median"] for x in g],
+                    "p10": [x["p10"] for x in g], "p90": [x["p90"] for x in g]}
+    return out
+
+
+def protokolliere(iid: str, name: str, e: dict, jetzt: float) -> None:
+    """24-h-Punkt jeder Prognose festhalten, damit sie später gegen den echten Kurs bewertet werden kann."""
+    store.anhaengen(forecast.LOG, {"ts": int(jetzt), "iid": iid, "modell": name, "h": H, "letzter": e["letzter"],
+                                   "median": e["median"][-1], "p10": (e.get("p10") or [None])[-1], "p90": (e.get("p90") or [None])[-1]})
 
 
 def main() -> int:
@@ -72,12 +90,13 @@ def main() -> int:
         return 0
     ergebnis = store.lies("prognosen.json", {})
     jetzt = time.time()
-    for name, fn in (("timesfm", timesfm_lauf), ("kronos", kronos_lauf)):
+    for name, fn in (("garch", basislinien), ("timesfm", timesfm_lauf), ("kronos", kronos_lauf)):
         try:
             for iid, e in fn(daten).items():
                 eintrag = ergebnis.setdefault(iid, {})
                 eintrag.setdefault("modelle", {})[name] = e
                 eintrag["ts"], eintrag["horizont_h"] = jetzt, H
+                protokolliere(iid, name, e, jetzt)
             print(name, "ok")
         except Exception:
             print(name, "FEHLER:")

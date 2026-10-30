@@ -126,3 +126,12 @@ vor dem Deploy aus `data/`. `docs/status.json` (6 kB) bleibt im Git, weil die La
   Ausgabelimits: Sonnet 12k, Opus-Tiefenrunde 20k, Haiku-Vorsichter 1,5k (300 schnitt laut Log die JSON-Antwort ab → „Triage fehlgeschlagen“).
   Die serverseitigen `fallbacks` (Ausweichmodell bei Ablehnung) bleiben bewusst **aus**: Ein anderes Modell würde den Modellvergleich verfälschen,
   und eine abgelehnte Runde kostet im Papierhandel nichts.
+* **B3 Kronos/GARCH:** Kronos liefert nur noch eine **Richtung** (Median), kein Band mehr (8 Pfade → Band ~1 % statt ~4,5 %, Abdeckung 0/6).
+  Feste Basislinie im Prognose-Werkzeug ist ein **GARCH(1,1)-Band um den Random Walk**, rein in Python (Varianz-Targeting, Gittersuche;
+  ~0,1 s) statt Paket `arch` – keine neuen Abhängigkeiten im Dauerlauf (uv.lock unverändert, Installation bleibt schnell). Rückblick auf
+  300 BTC-Stunden: Abdeckung des 10–90-Bands 17/21 ≈ 81 %. Jede Prognose (GARCH, TimesFM, Kronos) wird mit ihrem 24-h-Punkt in
+  `data/prognosen_log.jsonl` protokolliert; die **Trefferbilanz** (Abdeckung, Pinball, Medianfehler) wird gegen die echten Kurse gerechnet und
+  im Werkzeug und auf der Seite gezeigt (Umstiegspunkt der Empfehlung: Abdeckung < 70 % oder Pinball schlechter als GARCH → Modell raus).
+* **B4 Nachrichten:** Reddit nur noch per Atom-Feed (`.json` = 403, keine Umgehung), echte Zeiten aus `<published>/<updated>`, GDELT aus
+  `seendate`. Neu: Fed-, EZB- und SEC-Presse-RSS (BLS sperrt mit 403 → nicht genutzt). Termine: FOMC-Kalender aus der öffentlichen Fed-Seite,
+  FRED-Veröffentlichungstermine nur, wenn das (optionale) Secret `FRED_API_KEY` existiert.

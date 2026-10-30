@@ -4,6 +4,7 @@ from __future__ import annotations
 import re
 import time
 import xml.etree.ElementTree as ET
+from datetime import datetime, timezone
 from email.utils import parsedate_to_datetime
 from urllib.parse import quote
 
@@ -18,6 +19,10 @@ RSS = {
     "Cointelegraph": "https://cointelegraph.com/rss",
     "NPR Politik": "https://feeds.npr.org/1014/rss.xml",
     "Tagesschau": "https://www.tagesschau.de/index~rss2.xml",
+    # Behörden/Zentralbanken (gemeinfrei, live geprüft 30.10.): direkt relevant für Zins-, Fed- und Regulierungsmärkte.
+    "Fed Presse": "https://www.federalreserve.gov/feeds/press_all.xml",
+    "EZB Presse": "https://www.ecb.europa.eu/rss/press.html",
+    "SEC Presse": "https://www.sec.gov/news/pressreleases.rss",
 }
 REDDIT = ["Bitcoin", "CryptoCurrency", "wallstreetbets", "politics", "worldnews", "Polymarket"]
 STOP = set("the a an of to in on for and or is are will be by with at as from that this who what when how "
@@ -44,29 +49,41 @@ def rss(name: str, url: str) -> list[dict]:
     return out
 
 
-def reddit(sub: str, n: int = 15) -> list[dict]:
+def _iso(s: str | None) -> float:
+    """ISO-8601 (Atom <updated>) bzw. GDELT-seendate (20261030T153000Z) → Unix-Zeit; 0 = unbekannt."""
+    if not s:
+        return 0.0
+    s = s.strip()
     try:
-        d = get(f"https://www.reddit.com/r/{sub}/hot.json", {"limit": n}, ttl=300)
-        return [{"quelle": f"r/{sub}", "titel": c["data"]["title"], "url": "https://reddit.com" + c["data"]["permalink"],
-                 "zeit": c["data"]["created_utc"], "text": (c["data"].get("selftext") or "")[:200],
-                 "punkte": c["data"]["score"]} for c in d["data"]["children"]]
-    except (HttpFehler, KeyError, TypeError):
-        pass
-    try:  # RSS-Variante, wird seltener geblockt
+        if len(s) == 16 and s[8] == "T" and s.endswith("Z"):
+            return datetime.strptime(s, "%Y%m%dT%H%M%SZ").replace(tzinfo=timezone.utc).timestamp()
+        d = datetime.fromisoformat(s.replace("Z", "+00:00"))
+        return (d if d.tzinfo else d.replace(tzinfo=timezone.utc)).timestamp()
+    except ValueError:
+        return 0.0
+
+
+def reddit(sub: str, n: int = 15) -> list[dict]:
+    """Nur der öffentliche Atom-Feed: `.json` liefert Cloud-IPs 403 (keine Umgehung). Zeit aus <updated> bzw. <published>."""
+    try:
         txt = get(f"https://www.reddit.com/r/{sub}/.rss", text=True, ttl=300)
         w = ET.fromstring(txt)
-        ns = {"a": "http://www.w3.org/2005/Atom"}
-        return [{"quelle": f"r/{sub}", "titel": e.findtext("a:title", "", ns), "url": e.find("a:link", ns).get("href", ""),
-                 "zeit": time.time(), "text": ""} for e in w.findall("a:entry", ns)[:n]]
-    except (HttpFehler, ET.ParseError, AttributeError):
+    except (HttpFehler, ET.ParseError):
         return []
+    ns = {"a": "http://www.w3.org/2005/Atom"}
+    out = []
+    for e in w.findall("a:entry", ns)[:n]:
+        link = e.find("a:link", ns)
+        out.append({"quelle": f"r/{sub}", "titel": e.findtext("a:title", "", ns), "url": link.get("href", "") if link is not None else "",
+                    "zeit": _iso(e.findtext("a:published", None, ns) or e.findtext("a:updated", None, ns)), "text": ""})
+    return out
 
 
 def gdelt(suche: str, n: int = 10) -> list[dict]:
     try:
         d = get("https://api.gdeltproject.org/api/v2/doc/doc",
                 {"query": suche, "mode": "artlist", "format": "json", "maxrecords": n, "sort": "datedesc"}, ttl=600, versuche=1)
-        return [{"quelle": "GDELT:" + a.get("domain", ""), "titel": a["title"], "url": a["url"], "zeit": time.time(), "text": ""}
+        return [{"quelle": "GDELT:" + a.get("domain", ""), "titel": a["title"], "url": a["url"], "zeit": _iso(a.get("seendate")), "text": ""}
                 for a in d.get("articles", [])]
     except (HttpFehler, KeyError, ValueError):
         return []

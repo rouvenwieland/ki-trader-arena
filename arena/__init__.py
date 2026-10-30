@@ -4,7 +4,7 @@ import os
 # Schlüssel aus GitHub-Secrets können ein BOM (U+FEFF) und Zeilenumbrüche enthalten, wenn sie unter Windows/PowerShell
 # gesetzt wurden. Beim Import einmal bereinigen – so sehen alle Module saubere Werte.
 _SCHLUESSEL = ["ARENA_ANTHROPIC_KEY", "GEMINI_API_KEY", "OPENROUTER_API_KEY", "DEEPSEEK_API_KEY", "MOONSHOT_API_KEY",
-               "GROQ_API_KEY", "OPENAI_API_KEY", "CEREBRAS_API_KEY", "MISTRAL_API_KEY", "NASA_FIRMS_KEY"]
+               "GROQ_API_KEY", "OPENAI_API_KEY", "CEREBRAS_API_KEY", "MISTRAL_API_KEY", "NASA_FIRMS_KEY", "FRED_API_KEY"]
 for _k in _SCHLUESSEL:
     _v = os.environ.get(_k)
     if _v:

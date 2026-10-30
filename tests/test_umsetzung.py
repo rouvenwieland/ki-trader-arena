@@ -81,3 +81,44 @@ def test_review_vollstaendig_schreibt_regeln(monkeypatch):
         FakeSitzung.ende, FakeSitzung.text = "max_tokens", "Halber Satz (0"
     from arena import notizbuch
     assert any("5 %" in e["text"] for e in notizbuch.lies("claude_mittel"))
+
+
+# ---------------------------------------------------------------- B3 / GARCH-Basislinie und Trefferbilanz
+def test_garch_band_kalibriert_auf_simulation():
+    import math
+    import random
+
+    from arena import forecast
+    rng = random.Random(1)
+    p, treffer, n = [100.0], 0, 0
+    for _ in range(1200):
+        p.append(p[-1] * math.exp(rng.gauss(0, 0.01)))
+    for i in range(300, 1150, 10):
+        b = forecast.garch_band(p[:i], 24)
+        n += 1
+        treffer += b["p10"] <= p[i + 23] <= b["p90"]
+        assert b["median"] == p[i - 1]
+    assert 0.65 <= treffer / n <= 0.95  # Soll ≈ 80 %
+
+
+def test_trefferbilanz_aus_log(monkeypatch):
+    from arena import forecast, store
+    t0 = JETZT - 30 * 3600
+    store.anhaengen(forecast.LOG, {"ts": t0, "iid": "spot:BTC-USD", "modell": "garch", "h": 24, "letzter": 100.0,
+                                   "median": 100.0, "p10": 95.0, "p90": 105.0})
+    store.anhaengen(forecast.LOG, {"ts": t0, "iid": "spot:BTC-USD", "modell": "kronos", "h": 24, "letzter": 100.0,
+                                   "median": 101.0, "p10": None, "p90": None})
+    from arena import verlauf
+    verlauf.tick_anhaengen(t0 + 24 * 3600 + 60, {"spot:BTC-USD": 103.0})
+    b = forecast.bilanz(JETZT)
+    assert b["garch"]["n"] == 1 and b["garch"]["abdeckung_pct"] == 100.0
+    assert b["kronos"]["abdeckung_pct"] is None and b["kronos"]["median_fehler_pct"] == pytest.approx(2.0)
+
+
+# ---------------------------------------------------------------- B4 Zeitstempel
+def test_zeitstempel_atom_und_gdelt():
+    from arena.data import news
+    assert news._iso("20261030T153000Z") == pytest.approx(1793377800.0)
+    assert news._iso("2026-10-30T15:30:00+00:00") == pytest.approx(1793377800.0)
+    assert news._iso("kaputt") == 0.0 and news._iso(None) == 0.0
+    assert "Fed Presse" in news.RSS and "SEC Presse" in news.RSS
