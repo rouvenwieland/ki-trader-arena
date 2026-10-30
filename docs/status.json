@@ -1,6 +1,6 @@
 {
  "version": 1,
- "stand": 1793387401.8867133,
+ "stand": 1793388291.1971874,
  "hinweis": "Papierhandel-Simulation, keine Anlageberatung",
  "seite": "https://rouvenwieland.github.io/ki-trader-arena/",
  "budget": {
@@ -37,13 +37,13 @@
    "id": "claude_aggressiv",
    "name": "Claude Aggressiv",
    "typ": "claude",
-   "rendite_pct": 7.61,
-   "equity_eur": 10777.78,
+   "rendite_pct": 8.04,
+   "equity_eur": 10819.12,
    "max_drawdown_pct": -2.65,
    "status": "aktiv",
    "modell": "claude-sonnet-5-5",
-   "kosten_heute_eur": 2.205,
-   "kosten_gesamt_eur": 2.205,
+   "kosten_heute_eur": 2.204,
+   "kosten_gesamt_eur": 2.204,
    "rendite_ki_pct": null,
    "verlauf_pct": [
     0.0,
@@ -56,7 +56,6 @@
     3.49,
     3.68,
     3.38,
-    2.66,
     2.91,
     3.21,
     3.37,
@@ -66,6 +65,7 @@
     3.09,
     0.93,
     3.75,
+    3.27,
     4.0,
     5.66,
     5.61,
@@ -76,7 +76,6 @@
     5.91,
     5.69,
     6.06,
-    5.95,
     5.89,
     6.16,
     6.16,
@@ -85,7 +84,8 @@
     5.55,
     6.22,
     8.03,
-    7.61
+    7.61,
+    8.04
    ]
   },
   {
@@ -94,7 +94,7 @@
    "name": "DeepSeek",
    "typ": "liga",
    "rendite_pct": 1.78,
-   "equity_eur": 10193.62,
+   "equity_eur": 10192.42,
    "max_drawdown_pct": -0.79,
    "status": "aktiv",
    "modell": "deepseek-chat",
@@ -102,7 +102,6 @@
    "kosten_gesamt_eur": 0.0,
    "rendite_ki_pct": null,
    "verlauf_pct": [
-    0.0,
     0.0,
     0.0,
     0.0,
@@ -141,6 +140,7 @@
     1.78,
     1.78,
     1.78,
+    1.78,
     1.78
    ]
   },
@@ -150,7 +150,7 @@
    "name": "Claude Mittel",
    "typ": "claude",
    "rendite_pct": 1.25,
-   "equity_eur": 10140.73,
+   "equity_eur": 10139.54,
    "max_drawdown_pct": -0.35,
    "status": "aktiv",
    "modell": "claude-sonnet-5-5",
@@ -193,10 +193,10 @@
     1.29,
     1.29,
     1.29,
-    1.29,
     1.05,
     1.05,
     1.17,
+    1.25,
     1.25
    ]
   },
@@ -205,8 +205,8 @@
    "id": "bm_affe",
    "name": "Zufallsaffe",
    "typ": "benchmark",
-   "rendite_pct": 1.2,
-   "equity_eur": 10135.79,
+   "rendite_pct": 1.11,
+   "equity_eur": 10124.84,
    "max_drawdown_pct": -0.75,
    "status": "läuft",
    "modell": null,
@@ -224,7 +224,6 @@
     1.37,
     1.36,
     1.42,
-    1.26,
     1.28,
     1.3,
     1.3,
@@ -234,6 +233,7 @@
     1.11,
     0.79,
     0.93,
+    0.84,
     0.8,
     1.25,
     1.5,
@@ -244,7 +244,6 @@
     1.39,
     1.46,
     1.5,
-    1.41,
     1.42,
     1.5,
     1.45,
@@ -253,7 +252,8 @@
     1.33,
     1.22,
     1.07,
-    1.2
+    1.2,
+    1.11
    ]
   },
   {
@@ -261,8 +261,8 @@
    "id": "claude_vorsichtig",
    "name": "Claude Vorsichtig",
    "typ": "claude",
-   "rendite_pct": 0.95,
-   "equity_eur": 10110.44,
+   "rendite_pct": 0.99,
+   "equity_eur": 10113.18,
    "max_drawdown_pct": -0.52,
    "status": "aktiv",
    "modell": "claude-sonnet-5-5",
@@ -282,13 +282,13 @@
     0.97,
     0.97,
     0.97,
-    0.97,
     1.01,
     1.02,
     1.06,
     0.98,
     1.02,
     1.03,
+    1.09,
     1.09,
     1.09,
     1.06,
@@ -300,7 +300,6 @@
     0.82,
     0.77,
     0.79,
-    0.83,
     0.8,
     0.79,
     0.88,
@@ -309,7 +308,8 @@
     0.94,
     0.94,
     0.97,
-    0.95
+    0.95,
+    0.99
    ]
   },
   {
@@ -318,7 +318,7 @@
    "name": "Gemini Flash",
    "typ": "liga",
    "rendite_pct": 0.0,
-   "equity_eur": 10015.19,
+   "equity_eur": 10014.0,
    "max_drawdown_pct": 0.0,
    "status": "aktiv",
    "modell": "gemini-flash-lite-latest",
@@ -374,7 +374,7 @@
    "name": "Kimi (Moonshot)",
    "typ": "liga",
    "rendite_pct": 0.0,
-   "equity_eur": 10015.19,
+   "equity_eur": 10014.0,
    "max_drawdown_pct": 0.0,
    "status": "Fehler: Modellfehler: kimi-k2-turbo-preview: HTTP 404 {\"error\":{\"message\":\"Not found the model kimi-k2-turbo-preview or Permission denied\",\"type\":\"r",
    "modell": "kimi-k2-turbo-preview",
@@ -430,7 +430,7 @@
    "name": "OpenAI",
    "typ": "liga",
    "rendite_pct": 0.0,
-   "equity_eur": 10015.19,
+   "equity_eur": 10014.0,
    "max_drawdown_pct": 0.0,
    "status": "pausiert (kein Guthaben)",
    "modell": "gpt-5-mini",
@@ -486,7 +486,7 @@
    "name": "Schwarm (nur Claude)",
    "typ": "schwarm",
    "rendite_pct": -0.0,
-   "equity_eur": 9990.6,
+   "equity_eur": 9989.42,
    "max_drawdown_pct": -0.04,
    "status": "wartet auf ersten Lauf",
    "modell": null,
@@ -503,6 +503,7 @@
     -0.0,
     -0.04,
     -0.0,
+    -0.0,
     -0.0
    ]
   },
@@ -512,7 +513,7 @@
    "name": "Schwarm (nur Liga)",
    "typ": "schwarm",
    "rendite_pct": -0.0,
-   "equity_eur": 9990.6,
+   "equity_eur": 9989.42,
    "max_drawdown_pct": 0.0,
    "status": "wartet auf ersten Lauf",
    "modell": null,
@@ -520,6 +521,7 @@
    "kosten_gesamt_eur": 0.0,
    "rendite_ki_pct": null,
    "verlauf_pct": [
+    -0.0,
     -0.0,
     -0.0,
     -0.0,
@@ -538,7 +540,7 @@
    "name": "Kontrolle: Markt-Kopierer",
    "typ": "benchmark",
    "rendite_pct": -0.0,
-   "equity_eur": 9990.6,
+   "equity_eur": 9989.42,
    "max_drawdown_pct": 0.0,
    "status": "läuft",
    "modell": null,
@@ -555,16 +557,43 @@
     -0.0,
     -0.0,
     -0.0,
+    -0.0,
     -0.0
    ]
   },
   {
    "rang": 12,
+   "id": "claude_mittel_rm",
+   "name": "Claude Mittel+RM (A/B)",
+   "typ": "claude",
+   "rendite_pct": -0.2,
+   "equity_eur": 9968.41,
+   "max_drawdown_pct": -0.2,
+   "status": "aktiv",
+   "modell": "claude-sonnet-5-5",
+   "kosten_heute_eur": 0.578,
+   "kosten_gesamt_eur": 0.578,
+   "rendite_ki_pct": null,
+   "verlauf_pct": [
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    -0.05,
+    -0.1,
+    -0.1,
+    -0.2,
+    -0.2
+   ]
+  },
+  {
+   "rang": 13,
    "id": "schwarm_alle",
    "name": "Schwarm (alle KI)",
    "typ": "schwarm",
-   "rendite_pct": -0.15,
-   "equity_eur": 9975.94,
+   "rendite_pct": -0.24,
+   "equity_eur": 9965.6,
    "max_drawdown_pct": -0.46,
    "status": "wartet auf ersten Lauf",
    "modell": null,
@@ -581,32 +610,8 @@
     -0.0,
     -0.03,
     -0.46,
-    -0.15
-   ]
-  },
-  {
-   "rang": 13,
-   "id": "claude_mittel_rm",
-   "name": "Claude Mittel+RM (A/B)",
-   "typ": "claude",
-   "rendite_pct": -0.2,
-   "equity_eur": 9969.59,
-   "max_drawdown_pct": -0.2,
-   "status": "aktiv",
-   "modell": "claude-sonnet-5-5",
-   "kosten_heute_eur": 0.578,
-   "kosten_gesamt_eur": 0.578,
-   "rendite_ki_pct": null,
-   "verlauf_pct": [
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    -0.05,
-    -0.1,
-    -0.1,
-    -0.2
+    -0.15,
+    -0.24
    ]
   },
   {
@@ -615,7 +620,7 @@
    "name": "60/40 (SPY/AGG)",
    "typ": "benchmark",
    "rendite_pct": -0.61,
-   "equity_eur": 9953.72,
+   "equity_eur": 9952.93,
    "max_drawdown_pct": -0.79,
    "status": "läuft",
    "modell": null,
@@ -639,10 +644,10 @@
     0.0,
     0.0,
     0.0,
-    0.0,
     -0.03,
     -0.05,
     -0.06,
+    -0.22,
     -0.18,
     -0.12,
     -0.18,
@@ -653,7 +658,6 @@
     -0.32,
     -0.31,
     -0.32,
-    -0.4,
     -0.45,
     -0.43,
     -0.48,
@@ -662,6 +666,7 @@
     -0.66,
     -0.73,
     -0.79,
+    -0.61,
     -0.61
    ]
   },
@@ -670,8 +675,8 @@
    "id": "bm_sp500",
    "name": "S&P-500-ETF (SPY)",
    "typ": "benchmark",
-   "rendite_pct": -0.97,
-   "equity_eur": 9918.25,
+   "rendite_pct": -0.98,
+   "equity_eur": 9915.71,
    "max_drawdown_pct": -1.3,
    "status": "läuft",
    "modell": null,
@@ -695,10 +700,10 @@
     0.0,
     0.0,
     0.0,
-    0.0,
     -0.03,
     -0.02,
     -0.03,
+    -0.34,
     -0.23,
     -0.11,
     -0.21,
@@ -709,7 +714,6 @@
     -0.44,
     -0.43,
     -0.42,
-    -0.59,
     -0.66,
     -0.64,
     -0.7,
@@ -718,7 +722,8 @@
     -1.06,
     -1.2,
     -1.3,
-    -0.97
+    -0.97,
+    -0.98
    ]
   },
   {
@@ -726,8 +731,8 @@
    "id": "bm_btc",
    "name": "Buy & Hold BTC",
    "typ": "benchmark",
-   "rendite_pct": -1.27,
-   "equity_eur": 9888.25,
+   "rendite_pct": -1.32,
+   "equity_eur": 9882.24,
    "max_drawdown_pct": -2.72,
    "status": "läuft",
    "modell": null,
@@ -745,7 +750,6 @@
     0.25,
     0.19,
     0.03,
-    -0.19,
     -0.08,
     -0.03,
     -0.08,
@@ -755,6 +759,7 @@
     -0.54,
     -1.14,
     -0.77,
+    -0.88,
     -1.05,
     -0.46,
     -0.07,
@@ -765,7 +770,6 @@
     -0.02,
     -0.12,
     -0.11,
-    -0.29,
     -0.41,
     -0.42,
     -0.4,
@@ -774,7 +778,8 @@
     -0.65,
     -0.99,
     -1.38,
-    -1.27
+    -1.27,
+    -1.32
    ]
   },
   {
@@ -782,8 +787,8 @@
    "id": "ko_wetter",
    "name": "Regelfonds: Wetter-Ensemble",
    "typ": "benchmark",
-   "rendite_pct": -3.86,
-   "equity_eur": 9604.02,
+   "rendite_pct": -4.0,
+   "equity_eur": 9588.91,
    "max_drawdown_pct": -5.06,
    "status": "läuft",
    "modell": null,
@@ -799,7 +804,8 @@
     -3.19,
     -3.48,
     -4.01,
-    -3.86
+    -3.86,
+    -4.0
    ]
   },
   {
@@ -807,9 +813,9 @@
    "id": "ko_nein",
    "name": "Kontrolle: Immer NEIN",
    "typ": "benchmark",
-   "rendite_pct": -4.51,
-   "equity_eur": 9539.53,
-   "max_drawdown_pct": -4.09,
+   "rendite_pct": -5.23,
+   "equity_eur": 9467.33,
+   "max_drawdown_pct": -4.8,
    "status": "läuft",
    "modell": null,
    "kosten_heute_eur": 0.0,
@@ -825,7 +831,8 @@
     -3.18,
     -3.58,
     -4.16,
-    -4.51
+    -4.51,
+    -5.23
    ]
   }
  ],
