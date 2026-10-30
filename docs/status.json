@@ -1,6 +1,6 @@
 {
  "version": 1,
- "stand": 1793360291.6698945,
+ "stand": 1793361191.2466214,
  "hinweis": "Papierhandel-Simulation, keine Anlageberatung",
  "seite": "https://rouvenwieland.github.io/ki-trader-arena/",
  "budget": {
@@ -19,9 +19,9 @@
    "id": "claude_aggressiv",
    "name": "Claude Aggressiv",
    "typ": "claude",
-   "rendite_pct": 3.38,
-   "equity_eur": 10330.24,
-   "max_drawdown_pct": -0.38,
+   "rendite_pct": 2.66,
+   "equity_eur": 10256.2,
+   "max_drawdown_pct": -0.98,
    "status": "aktiv",
    "modell": "claude-sonnet-5-5",
    "kosten_heute_eur": 0.519,
@@ -36,7 +36,8 @@
     3.32,
     3.49,
     3.68,
-    3.38
+    3.38,
+    2.66
    ]
   },
   {
@@ -44,8 +45,8 @@
    "id": "bm_affe",
    "name": "Zufallsaffe",
    "typ": "benchmark",
-   "rendite_pct": 1.42,
-   "equity_eur": 10133.68,
+   "rendite_pct": 1.26,
+   "equity_eur": 10116.18,
    "max_drawdown_pct": -0.42,
    "status": "läuft",
    "modell": null,
@@ -61,7 +62,8 @@
     1.36,
     1.37,
     1.36,
-    1.42
+    1.42,
+    1.26
    ]
   },
   {
@@ -70,7 +72,7 @@
    "name": "Claude Mittel",
    "typ": "claude",
    "rendite_pct": 1.18,
-   "equity_eur": 10109.85,
+   "equity_eur": 10107.85,
    "max_drawdown_pct": -0.17,
    "status": "aktiv",
    "modell": "claude-sonnet-5-5",
@@ -86,6 +88,7 @@
     1.18,
     1.18,
     1.18,
+    1.18,
     1.18
    ]
   },
@@ -95,12 +98,12 @@
    "name": "Claude Vorsichtig",
    "typ": "claude",
    "rendite_pct": 0.97,
-   "equity_eur": 10088.63,
+   "equity_eur": 10087.42,
    "max_drawdown_pct": -0.07,
    "status": "aktiv",
    "modell": "claude-sonnet-5-5",
-   "kosten_heute_eur": 0.431,
-   "kosten_gesamt_eur": 0.431,
+   "kosten_heute_eur": 0.43,
+   "kosten_gesamt_eur": 0.43,
    "verlauf_pct": [
     0.0,
     0.4,
@@ -111,41 +114,17 @@
     0.9,
     0.92,
     0.97,
+    0.97,
     0.97
    ]
   },
   {
    "rang": 5,
-   "id": "bm_btc",
-   "name": "Buy & Hold BTC",
-   "typ": "benchmark",
-   "rendite_pct": 0.03,
-   "equity_eur": 9995.34,
-   "max_drawdown_pct": -1.49,
-   "status": "läuft",
-   "modell": null,
-   "kosten_heute_eur": 0.0,
-   "kosten_gesamt_eur": 0.0,
-   "verlauf_pct": [
-    -0.65,
-    -0.49,
-    1.38,
-    -0.11,
-    -0.13,
-    0.2,
-    0.18,
-    0.25,
-    0.19,
-    0.03
-   ]
-  },
-  {
-   "rang": 6,
    "id": "liga_gemini",
    "name": "Gemini Flash",
    "typ": "liga",
    "rendite_pct": 0.0,
-   "equity_eur": 9992.15,
+   "equity_eur": 9990.17,
    "max_drawdown_pct": 0.0,
    "status": "aktiv",
    "modell": "gemini-flash-latest",
@@ -161,16 +140,17 @@
     0.0,
     0.0,
     0.0,
+    0.0,
     0.0
    ]
   },
   {
-   "rang": 7,
+   "rang": 6,
    "id": "liga_deepseek",
    "name": "DeepSeek",
    "typ": "liga",
    "rendite_pct": 0.0,
-   "equity_eur": 9992.15,
+   "equity_eur": 9990.17,
    "max_drawdown_pct": 0.0,
    "status": "aktiv",
    "modell": "deepseek-chat",
@@ -186,16 +166,17 @@
     0.0,
     0.0,
     0.0,
+    0.0,
     0.0
    ]
   },
   {
-   "rang": 8,
+   "rang": 7,
    "id": "liga_kimi",
    "name": "Kimi (Moonshot)",
    "typ": "liga",
    "rendite_pct": 0.0,
-   "equity_eur": 9992.15,
+   "equity_eur": 9990.17,
    "max_drawdown_pct": 0.0,
    "status": "aktiv",
    "modell": "kimi-latest",
@@ -211,16 +192,17 @@
     0.0,
     0.0,
     0.0,
+    0.0,
     0.0
    ]
   },
   {
-   "rang": 9,
+   "rang": 8,
    "id": "liga_openai",
    "name": "OpenAI",
    "typ": "liga",
    "rendite_pct": 0.0,
-   "equity_eur": 9992.15,
+   "equity_eur": 9990.17,
    "max_drawdown_pct": 0.0,
    "status": "Fehler: Modellfehler: gpt-5-mini: keine Antwort (HTTP 429 {\n    \"error\": {\n        \"message\": \"You have no credits remaining. Add credits to continu",
    "modell": "gpt-5-mini",
@@ -236,22 +218,50 @@
     0.0,
     0.0,
     0.0,
+    0.0,
     0.0
    ]
   },
   {
-   "rang": 10,
+   "rang": 9,
    "id": "bm_sp500",
    "name": "S&P-500-ETF (SPY)",
    "typ": "benchmark",
    "rendite_pct": 0.0,
-   "equity_eur": 9992.15,
+   "equity_eur": 9990.17,
    "max_drawdown_pct": 0.0,
    "status": "läuft",
    "modell": null,
    "kosten_heute_eur": 0.0,
    "kosten_gesamt_eur": 0.0,
    "verlauf_pct": [
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  {
+   "rang": 10,
+   "id": "bm_6040",
+   "name": "60/40 (SPY/AGG)",
+   "typ": "benchmark",
+   "rendite_pct": 0.0,
+   "equity_eur": 9990.17,
+   "max_drawdown_pct": 0.0,
+   "status": "läuft",
+   "modell": null,
+   "kosten_heute_eur": 0.0,
+   "kosten_gesamt_eur": 0.0,
+   "verlauf_pct": [
+    0.0,
     0.0,
     0.0,
     0.0,
@@ -266,27 +276,28 @@
   },
   {
    "rang": 11,
-   "id": "bm_6040",
-   "name": "60/40 (SPY/AGG)",
+   "id": "bm_btc",
+   "name": "Buy & Hold BTC",
    "typ": "benchmark",
-   "rendite_pct": 0.0,
-   "equity_eur": 9992.15,
-   "max_drawdown_pct": 0.0,
+   "rendite_pct": -0.19,
+   "equity_eur": 9971.35,
+   "max_drawdown_pct": -1.55,
    "status": "läuft",
    "modell": null,
    "kosten_heute_eur": 0.0,
    "kosten_gesamt_eur": 0.0,
    "verlauf_pct": [
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0
+    -0.65,
+    -0.49,
+    1.38,
+    -0.11,
+    -0.13,
+    0.2,
+    0.18,
+    0.25,
+    0.19,
+    0.03,
+    -0.19
    ]
   }
  ],
@@ -355,6 +366,11 @@
  ],
  "ereignisse": [
   {
+   "ts": 1793361170.518473,
+   "typ": "nachricht_position",
+   "titel": "Nachricht zu pm:polymarket:6084518:JA: Bitcoin price metrics hint at rebound as $1.6B liquidations follow Binance hack (Cointelegraph)"
+  },
+  {
    "ts": 1793360271.440757,
    "typ": "wettmarkt_bewegung",
    "titel": "Wette „Will Predict.fun launch a token by October 31, 2026?“ -9 Prozentpunkte in 1 h (0.15→0.07)"
@@ -388,11 +404,6 @@
    "ts": 1793355770.8312254,
    "typ": "markt_schliesst",
    "titel": "pm:polymarket:6084518:JA läuft in 5.6 h ab (claude_aggressiv)"
-  },
-  {
-   "ts": 1793354871.3057938,
-   "typ": "nachricht_position",
-   "titel": "Nachricht zu pm:polymarket:4641065:JA: Spain continues to investigate causes of deadly Toledo train crash – Europe live (Guardian Welt)"
   }
  ]
 }
