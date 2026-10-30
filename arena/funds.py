@@ -1,0 +1,87 @@
+"""Fonds: Definitionen, Zustandsdateien, Statuslogik (Schlüssel vorhanden? Modell? Budget?)."""
+from __future__ import annotations
+
+import os
+import time
+
+from arena import config, store
+from arena.exchange import portfolio
+
+UNBEGRENZT = {"max_hebel": 1, "max_position_pct": 1.0, "max_perp_pct": 0.0, "max_optionen_pct": 0.0,
+              "min_cash_pct": 0.0, "max_gesamt_exposure_pct": 1.0}
+
+BENCHMARKS = [
+    {"id": "bm_btc", "name": "Buy & Hold BTC", "typ": "benchmark", "art": "btc"},
+    {"id": "bm_sp500", "name": "S&P-500-ETF (SPY)", "typ": "benchmark", "art": "sp500"},
+    {"id": "bm_6040", "name": "60/40 (SPY/AGG)", "typ": "benchmark", "art": "6040"},
+    {"id": "bm_affe", "name": "Zufallsaffe", "typ": "benchmark", "art": "affe"},
+]
+
+
+def hat_schluessel(env: str) -> bool:
+    return bool(os.environ.get(env, "").strip())
+
+
+def claude_fonds() -> list[dict]:
+    return [{**f, "typ": "claude"} for f in config.load()["fonds_claude"]]
+
+
+def liga_fonds() -> list[dict]:
+    """Liga-Fonds aus der Konfiguration + dynamische OpenRouter-Gratismodelle (falls Schlüssel)."""
+    out = [{**f, "typ": "liga", "risiko": "mittel",
+            "persoenlichkeit": "Sachlich, mittleres Risiko, gleiche Regeln wie alle anderen."} for f in config.load()["liga"]]
+    if hat_schluessel("OPENROUTER_API_KEY"):
+        from arena.agent import llm
+        for m in llm.openrouter_gratis(config.load()["openrouter_gratis_anzahl"]):
+            slug = "".join(c if c.isalnum() else "_" for c in m.split(":")[0])
+            out.append({"id": f"liga_or_{slug}", "name": f"OpenRouter {m}", "anbieter": "openrouter", "modell": m,
+                        "schluessel": "OPENROUTER_API_KEY", "typ": "liga", "risiko": "mittel",
+                        "persoenlichkeit": "Sachlich, mittleres Risiko, gleiche Regeln wie alle anderen."})
+    return out
+
+
+def alle_definitionen() -> list[dict]:
+    return claude_fonds() + liga_fonds() + BENCHMARKS
+
+
+def liga_hat_schluessel(f: dict) -> bool:
+    return f["typ"] != "liga" or hat_schluessel(f["schluessel"])
+
+
+# ---- Zustand
+def lade_portfolio(fid: str) -> dict | None:
+    return store.lies(f"funds/{fid}/portfolio.json")
+
+
+def speichere_portfolio(pf: dict) -> None:
+    store.schreibe(f"funds/{pf['fonds_id']}/portfolio.json", pf)
+
+
+def meta(fid: str) -> dict:
+    return store.lies(f"funds/{fid}/meta.json", {})
+
+
+def speichere_meta(fid: str, m: dict) -> None:
+    store.schreibe(f"funds/{fid}/meta.json", m)
+
+
+def erzeuge_falls_noetig(defn: dict, fx_usd_je_eur: float, jetzt: float | None = None) -> dict | None:
+    """Legt Portfolio+Meta beim ersten Mal an (Startkapital 10.000 € in USD zum aktuellen Kurs)."""
+    pf = lade_portfolio(defn["id"])
+    if pf:
+        return pf
+    if not liga_hat_schluessel(defn):
+        return None
+    jetzt = jetzt or time.time()
+    start_usd = config.load()["start_kapital_eur"] * fx_usd_je_eur
+    pf = portfolio.neu(defn["id"], start_usd, jetzt)
+    pf["start_fx"] = fx_usd_je_eur
+    speichere_portfolio(pf)
+    speichere_meta(defn["id"], {k: v for k, v in defn.items()} | {"start": jetzt})
+    return pf
+
+
+def risikoprofil(defn: dict) -> dict:
+    if defn["typ"] == "benchmark":
+        return UNBEGRENZT
+    return config.load()["risiko"][defn["risiko"]]
