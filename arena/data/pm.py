@@ -42,28 +42,43 @@ def inst_aus_id(inst_id: str, ref: dict | None = None) -> dict:
 
 
 # ---------------------------------------------------------------- Polymarket
+def _norm_poly(m: dict) -> dict | None:
+    try:
+        toks = json.loads(m.get("clobTokenIds") or "[]")
+        outs = json.loads(m.get("outcomes") or "[]")
+        if len(toks) != 2 or [o.lower() for o in outs] != ["yes", "no"] or not m.get("enableOrderBook"):
+            return None
+        bid, ask = _f(m.get("bestBid")), _f(m.get("bestAsk"))
+        if bid is None or ask is None:
+            return None
+        return {"mid": f"pm:polymarket:{m['id']}", "venue": "polymarket", "frage": m["question"],
+                "schliesst": _ts(m.get("endDate")), "ja_bid": bid, "ja_ask": ask,
+                "volumen_24h": _f(m.get("volume24hr"), 0), "liquiditaet": _f(m.get("liquidityNum"), 0),
+                "beschreibung": (m.get("description") or "")[:1500],
+                "url": f"https://polymarket.com/event/{(m.get('events') or [{}])[0].get('slug', m.get('slug'))}",
+                "ref": {"id": m["id"], "token_ja": toks[0], "token_nein": toks[1], "tick": m.get("orderPriceMinTickSize", 0.01),
+                        "gebuehr_rate": _f((m.get("feeSchedule") or {}).get("rate"), 0)}}
+    except (KeyError, ValueError):
+        return None
+
+
 def polymarket(n: int) -> list[dict]:
     daten = get("https://gamma-api.polymarket.com/markets",
                 {"limit": n * 2, "active": "true", "closed": "false", "order": "volume24hr", "ascending": "false"}, ttl=60)
+    return [x for x in (_norm_poly(m) for m in daten) if x]
+
+
+def polymarket_suche(q: str, n: int = 8) -> list[dict]:
+    d = get("https://gamma-api.polymarket.com/public-search", {"q": q, "limit_per_type": n, "events_status": "active"}, ttl=120)
     out = []
-    for m in daten:
-        try:
-            toks = json.loads(m.get("clobTokenIds") or "[]")
-            outs = json.loads(m.get("outcomes") or "[]")
-            if len(toks) != 2 or [o.lower() for o in outs] != ["yes", "no"] or not m.get("enableOrderBook"):
+    for ev in d.get("events", []):
+        for m in ev.get("markets", []):
+            if m.get("closed") or not m.get("enableOrderBook"):
                 continue
-            bid, ask = _f(m.get("bestBid")), _f(m.get("bestAsk"))
-            if bid is None or ask is None:
-                continue
-            out.append({"mid": f"pm:polymarket:{m['id']}", "venue": "polymarket", "frage": m["question"],
-                        "schliesst": _ts(m.get("endDate")), "ja_bid": bid, "ja_ask": ask,
-                        "volumen_24h": _f(m.get("volume24hr"), 0), "liquiditaet": _f(m.get("liquidityNum"), 0),
-                        "url": f"https://polymarket.com/event/{(m.get('events') or [{}])[0].get('slug', m.get('slug'))}",
-                        "ref": {"id": m["id"], "token_ja": toks[0], "token_nein": toks[1], "tick": m.get("orderPriceMinTickSize", 0.01),
-                                "gebuehr_rate": _f((m.get("feeSchedule") or {}).get("rate"), 0)}})
-        except (KeyError, ValueError):
-            continue
-    return out
+            x = _norm_poly(m)
+            if x:
+                out.append(x)
+    return out[:n]
 
 
 def polymarket_buch(ref: dict, ergebnis: str) -> Book:
@@ -89,23 +104,28 @@ def polymarket_aufloesung(ref: dict) -> float | None:
 KALSHI = "https://api.elections.kalshi.com/trade-api/v2"
 
 
+def _norm_kalshi(m: dict) -> dict | None:
+    bid, ask = _f(m.get("yes_bid_dollars")), _f(m.get("yes_ask_dollars"))
+    if m.get("market_type") != "binary" or not bid or not ask:
+        return None
+    return {"mid": f"pm:kalshi:{m['ticker']}", "venue": "kalshi",
+            "frage": f"{m.get('title', '')} [{m.get('yes_sub_title', '')}]".strip(),
+            "schliesst": _ts(m.get("close_time")), "ja_bid": bid, "ja_ask": ask,
+            "volumen_24h": _f(m.get("volume_24h_fp"), 0), "liquiditaet": _f(m.get("open_interest_fp"), 0),
+            "beschreibung": (m.get("rules_primary") or "")[:1500],
+            "url": f"https://kalshi.com/markets/{m['event_ticker']}", "ref": {"ticker": m["ticker"]}}
+
+
 def kalshi(n: int) -> list[dict]:
     d = get(KALSHI + "/markets", {"limit": 1000, "status": "open", "mve_filter": "exclude"}, ttl=60)
     ms = d.get("markets", [])
     ms.sort(key=lambda m: -(_f(m.get("volume_24h_fp"), 0)))
-    out = []
-    for m in ms:
-        bid, ask = _f(m.get("yes_bid_dollars")), _f(m.get("yes_ask_dollars"))
-        if m.get("market_type") != "binary" or not bid or not ask:
-            continue
-        out.append({"mid": f"pm:kalshi:{m['ticker']}", "venue": "kalshi",
-                    "frage": f"{m.get('title', '')} [{m.get('yes_sub_title', '')}]".strip(),
-                    "schliesst": _ts(m.get("close_time")), "ja_bid": bid, "ja_ask": ask,
-                    "volumen_24h": _f(m.get("volume_24h_fp"), 0), "liquiditaet": _f(m.get("open_interest_fp"), 0),
-                    "url": f"https://kalshi.com/markets/{m['event_ticker']}", "ref": {"ticker": m["ticker"]}})
-        if len(out) >= n:
-            break
-    return out
+    out = [x for x in (_norm_kalshi(m) for m in ms) if x]
+    return out[:n]
+
+
+def kalshi_einzel(ticker: str) -> dict | None:
+    return _norm_kalshi(get(f"{KALSHI}/markets/{ticker}")["market"])
 
 
 def kalshi_buch(ref: dict, ergebnis: str) -> Book:
@@ -176,21 +196,32 @@ def predictit_aufloesung(ref: dict) -> float | None:
 
 
 # ---------------------------------------------------------------- Manifold (CPMM)
+def _norm_mani(m: dict) -> dict | None:
+    if m.get("mechanism") != "cpmm-1" or m.get("outcomeType") != "BINARY" or m.get("isResolved"):
+        return None
+    p = _f(m.get("probability"))
+    if p is None:
+        return None
+    return {"mid": f"pm:manifold:{m['id']}", "venue": "manifold", "frage": m["question"],
+            "schliesst": (m.get("closeTime") or 0) / 1000 or None, "ja_bid": p, "ja_ask": p,
+            "volumen_24h": _f(m.get("volume24Hours"), 0), "liquiditaet": _f(m.get("totalLiquidity"), 0),
+            "beschreibung": str(m.get("textDescription") or "")[:1500], "url": m.get("url"), "ref": {"id": m["id"]}}
+
+
 def manifold(n: int) -> list[dict]:
     d = get("https://api.manifold.markets/v0/search-markets",
             {"term": "", "sort": "24-hour-vol", "filter": "open", "contractType": "BINARY", "limit": n}, ttl=60)
-    out = []
-    for m in d:
-        if m.get("mechanism") != "cpmm-1" or m.get("outcomeType") != "BINARY":
-            continue
-        p = _f(m.get("probability"))
-        if p is None:
-            continue
-        out.append({"mid": f"pm:manifold:{m['id']}", "venue": "manifold", "frage": m["question"],
-                    "schliesst": (m.get("closeTime") or 0) / 1000 or None, "ja_bid": p, "ja_ask": p,
-                    "volumen_24h": _f(m.get("volume24Hours"), 0), "liquiditaet": _f(m.get("totalLiquidity"), 0),
-                    "url": m.get("url"), "ref": {"id": m["id"]}})
-    return out
+    return [x for x in (_norm_mani(m) for m in d) if x]
+
+
+def manifold_suche(q: str, n: int = 8) -> list[dict]:
+    d = get("https://api.manifold.markets/v0/search-markets",
+            {"term": q, "sort": "score", "filter": "open", "contractType": "BINARY", "limit": n}, ttl=120)
+    return [x for x in (_norm_mani(m) for m in d) if x]
+
+
+def manifold_einzel(mid: str) -> dict | None:
+    return _norm_mani(get(f"https://api.manifold.markets/v0/market/{mid}"))
 
 
 def _cpmm_k(y: float, n: float, p: float) -> float:
@@ -250,6 +281,22 @@ def manifold_aufloesung(ref: dict) -> float | str | None:
     if r == "MKT":
         return float(m.get("resolutionProbability", 0.5))
     return "STORNO"
+
+
+def einzelmarkt(venue: str, ident: str) -> dict | None:
+    """Einen Markt per ID nachladen (auch wenn er nicht im Standard-Universum ist)."""
+    try:
+        if venue == "polymarket":
+            return _norm_poly(get(f"https://gamma-api.polymarket.com/markets/{ident}"))
+        if venue == "kalshi":
+            return kalshi_einzel(ident)
+        if venue == "manifold":
+            return manifold_einzel(ident)
+        if venue == "predictit":
+            return next((m for m in predictit(100000) if m["mid"] == f"pm:predictit:{ident}"), None)
+    except (HttpFehler, KeyError, ValueError):
+        return None
+    return None
 
 
 # ---------------------------------------------------------------- Dispatcher

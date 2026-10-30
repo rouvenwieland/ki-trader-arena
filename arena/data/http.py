@@ -30,7 +30,7 @@ def get(url: str, params: dict | None = None, *, ttl: float = 0, timeout: float 
     if ttl and key in _cache and time.time() - _cache[key][0] < ttl:
         return _cache[key][1]
     host = urlparse(url).netloc
-    if _fehlzaehler.get(host, 0) >= 4:  # Schutzschalter: Host in diesem Lauf wiederholt gescheitert → nicht weiter belasten
+    if _fehlzaehler.get(host, 0) >= 3:  # Schutzschalter: Host in diesem Lauf wiederholt gescheitert → nicht weiter belasten
         raise HttpFehler(f"{host}: übersprungen (wiederholte Fehler in diesem Lauf)")
     abstand = MIN_ABSTAND.get(host, MIN_ABSTAND["default"])
     fehler = None

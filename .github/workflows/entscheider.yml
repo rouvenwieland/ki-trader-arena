@@ -1,0 +1,41 @@
+name: Entscheider
+on:
+  schedule:
+    - cron: '17 13 * * *'
+  workflow_dispatch:
+    inputs:
+      grund:
+        description: 'ereignis oder taeglich'
+        default: 'taeglich'
+permissions:
+  contents: write
+concurrency:
+  group: arena-zustand
+  cancel-in-progress: false
+jobs:
+  entscheider:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@v4
+      - uses: astral-sh/setup-uv@v5
+        with:
+          enable-cache: true
+      - run: uv sync --frozen --no-dev
+      - name: Agentenrunden (alle Fonds, fehlerisoliert)
+        env:
+          ARENA_ANTHROPIC_KEY: ${{ secrets.ARENA_ANTHROPIC_KEY }}
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}
+          DEEPSEEK_API_KEY: ${{ secrets.DEEPSEEK_API_KEY }}
+          MOONSHOT_API_KEY: ${{ secrets.MOONSHOT_API_KEY }}
+          GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          CEREBRAS_API_KEY: ${{ secrets.CEREBRAS_API_KEY }}
+          MISTRAL_API_KEY: ${{ secrets.MISTRAL_API_KEY }}
+          NASA_FIRMS_KEY: ${{ secrets.NASA_FIRMS_KEY }}
+        run: uv run python -m arena.entscheider "${{ inputs.grund || 'taeglich' }}"
+      - name: Webseite und status.json bauen
+        run: uv run python -m arena.site || echo "Seitenbau fehlgeschlagen (nicht kritisch)"
+      - name: Zustand speichern
+        run: 'bash scripts/speichern.sh "Entscheider $(date -u +%Y-%m-%dT%H:%MZ)"'

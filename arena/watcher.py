@@ -88,6 +88,31 @@ def verarbeite_portfolio(pf: dict, mz: Marktzugriff, funding_raten: dict, jetzt:
     return log
 
 
+def loese_prognosen_auf(fonds_ids: list[str], jetzt: float, limit: int = 20) -> int:
+    """Hält Ausgänge der Wettmärkte fest, zu denen Agenten Wahrscheinlichkeiten abgegeben haben (für den Brier-Score)."""
+    res = store.lies("resolutions.json", {})
+    offen = []
+    for fid in fonds_ids:
+        for p in store.lies_jsonl(f"funds/{fid}/prognosen.jsonl"):
+            if p["markt_id"] not in res and p["markt_id"] not in offen:
+                offen.append(p["markt_id"])
+    neu = 0
+    for mid in offen[:limit]:
+        try:
+            _, venue, ident = mid.split(":", 2)
+            m = pm.einzelmarkt(venue, ident) or {"ref": {"id": ident, "ticker": ident, "vertrag": int(ident) if ident.isdigit() else 0}}
+            i = {"venue": venue, "ref": m["ref"]}
+            w = pm.aufloesung(i)
+        except Exception:
+            continue
+        if w is not None:
+            res[mid] = {"wert": None if w == "STORNO" else float(w), "ts": jetzt}
+            neu += 1
+    if neu:
+        store.schreibe("resolutions.json", res)
+    return neu
+
+
 def lauf(jetzt: float | None = None) -> dict:
     jetzt = jetzt or time.time()
     cfg = config.load()
@@ -129,9 +154,19 @@ def lauf(jetzt: float | None = None) -> dict:
         ledger_gesamt += len(log)
         marks = {p["inst"]["id"]: mz.marke(p["inst"]) for p in pf["positionen"]}
         eq = portfolio.equity(pf, marks)
+        for p in pf["positionen"]:  # letzte Bewertung festhalten (für Webseite/Status)
+            m = marks.get(p["inst"]["id"], {})
+            p["kurs"] = m.get("mark") if m.get("mark") is not None else m.get("bid")
+            p["wert"] = round(portfolio.pos_wert(p, m.get("bid"), m.get("mark")), 2)
         store.anhaengen(f"funds/{fid}/equity.jsonl", {"t": int(jetzt), "usd": round(eq, 2), "cash": round(pf["cash"], 2),
                                                       "n": len(pf["positionen"]), "gebuehren": round(pf["gebuehren"], 2)})
         funds.speichere_portfolio(pf)
+
+    if int(jetzt // 900) % 4 == 0:  # etwa stündlich
+        try:
+            loese_prognosen_auf(list(pfs), jetzt)
+        except Exception as e:
+            print("WARNUNG Auflösung:", e)
 
     # Ereignisse
     bekannt = {e["schluessel"] for e in store.lies_jsonl("events.jsonl", 3000)}
@@ -147,8 +182,10 @@ def lauf(jetzt: float | None = None) -> dict:
 
     for f in mz.fehler[:10]:
         print("WARNUNG", f)
+    from arena import entscheider
+    ausloesen = entscheider.soll_ausloesen(neue, jetzt)
     zusammenfassung = {"ts": jetzt, "fonds": len(pfs), "ledger": ledger_gesamt, "ereignisse": len(neue),
-                       "weckend": sum(1 for e in neue if e["weckt"]), "preise": len(preise)}
+                       "weckend": sum(1 for e in neue if e["weckt"]), "preise": len(preise), "ausloesen": ausloesen}
     print(zusammenfassung)
     return zusammenfassung
 
@@ -171,7 +208,7 @@ def main() -> int:
     out = os.environ.get("GITHUB_OUTPUT")
     if out:
         with open(out, "a") as f:
-            f.write(f"weckend={z.get('weckend', 0)}\n")
+            f.write(f"weckend={z.get('weckend', 0)}\nausloesen={str(z.get('ausloesen', False)).lower()}\n")
     return 0
 
 

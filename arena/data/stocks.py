@@ -18,7 +18,7 @@ def inst(sym: str) -> dict:
 
 def kurs(sym: str) -> dict | None:
     try:
-        d = get(YAHOO + sym, {"range": "1d", "interval": "5m"}, ttl=120)["chart"]["result"][0]
+        d = get(YAHOO + sym, {"range": "1d", "interval": "5m"}, ttl=120, versuche=1)["chart"]["result"][0]
     except (HttpFehler, KeyError, IndexError, TypeError):
         return None
     meta = d["meta"]
@@ -42,7 +42,7 @@ def buch(sym: str) -> Book | None:
 
 def tagesschluesse(sym: str, bereich: str = "1y") -> list[tuple[float, float]]:
     try:
-        d = get(YAHOO + sym, {"range": bereich, "interval": "1d"}, ttl=3600)["chart"]["result"][0]
+        d = get(YAHOO + sym, {"range": bereich, "interval": "1d"}, ttl=3600, versuche=1)["chart"]["result"][0]
         return [(t, c) for t, c in zip(d["timestamp"], d["indicators"]["quote"][0]["close"]) if c is not None]
     except (HttpFehler, KeyError, IndexError, TypeError):
         return []
