@@ -1,31 +1,31 @@
 {
  "version": 1,
- "stand": 1793372959.1897602,
+ "stand": 1793373845.1227813,
  "hinweis": "Papierhandel-Simulation, keine Anlageberatung",
  "seite": "https://rouvenwieland.github.io/ki-trader-arena/",
  "budget": {
-  "heute_eur": 5.31,
-  "gesamt_eur": 5.31,
+  "heute_eur": 5.3,
+  "gesamt_eur": 5.3,
   "tagesdeckel_eur": 12.0,
   "gesamtdeckel_eur": 190.0,
   "claude_ende": "2026-11-14",
   "ziel_tag_eur": 10.2,
   "tempo_faktor": 1.0
  },
- "ueberlappung_claude_pct": 18.8,
+ "ueberlappung_claude_pct": 18.5,
  "rangliste": [
   {
    "rang": 1,
    "id": "claude_aggressiv",
    "name": "Claude Aggressiv",
    "typ": "claude",
-   "rendite_pct": 5.36,
-   "equity_eur": 10574.62,
+   "rendite_pct": 5.97,
+   "equity_eur": 10630.92,
    "max_drawdown_pct": -2.65,
    "status": "aktiv",
    "modell": "claude-sonnet-5-5",
-   "kosten_heute_eur": 1.645,
-   "kosten_gesamt_eur": 1.645,
+   "kosten_heute_eur": 1.644,
+   "kosten_gesamt_eur": 1.644,
    "verlauf_pct": [
     0.0,
     1.0,
@@ -51,7 +51,8 @@
     4.0,
     5.66,
     5.61,
-    5.36
+    5.36,
+    5.97
    ]
   },
   {
@@ -60,7 +61,7 @@
    "name": "DeepSeek",
    "typ": "liga",
    "rendite_pct": 1.78,
-   "equity_eur": 10215.27,
+   "equity_eur": 10210.58,
    "max_drawdown_pct": -0.79,
    "status": "aktiv",
    "modell": "deepseek-chat",
@@ -91,6 +92,7 @@
     1.78,
     1.78,
     1.78,
+    1.78,
     1.78
    ]
   },
@@ -99,8 +101,8 @@
    "id": "bm_affe",
    "name": "Zufallsaffe",
    "typ": "benchmark",
-   "rendite_pct": 1.62,
-   "equity_eur": 10199.24,
+   "rendite_pct": 1.67,
+   "equity_eur": 10199.4,
    "max_drawdown_pct": -0.75,
    "status": "läuft",
    "modell": null,
@@ -131,7 +133,8 @@
     0.8,
     1.25,
     1.5,
-    1.62
+    1.62,
+    1.67
    ]
   },
   {
@@ -140,7 +143,7 @@
    "name": "Claude Mittel",
    "typ": "claude",
    "rendite_pct": 1.41,
-   "equity_eur": 10177.94,
+   "equity_eur": 10173.26,
    "max_drawdown_pct": -0.17,
    "status": "aktiv",
    "modell": "claude-sonnet-5-5",
@@ -171,6 +174,7 @@
     1.29,
     1.29,
     1.41,
+    1.41,
     1.41
    ]
   },
@@ -179,8 +183,8 @@
    "id": "claude_vorsichtig",
    "name": "Claude Vorsichtig",
    "typ": "claude",
-   "rendite_pct": 1.07,
-   "equity_eur": 10143.92,
+   "rendite_pct": 1.28,
+   "equity_eur": 10160.36,
    "max_drawdown_pct": -0.08,
    "status": "aktiv",
    "modell": "claude-opus-5-5",
@@ -211,7 +215,8 @@
     1.09,
     1.06,
     1.07,
-    1.07
+    1.07,
+    1.28
    ]
   },
   {
@@ -219,8 +224,8 @@
    "id": "bm_btc",
    "name": "Buy & Hold BTC",
    "typ": "benchmark",
-   "rendite_pct": 0.09,
-   "equity_eur": 10045.65,
+   "rendite_pct": 0.5,
+   "equity_eur": 10082.24,
    "max_drawdown_pct": -2.48,
    "status": "läuft",
    "modell": null,
@@ -251,7 +256,8 @@
     -1.05,
     -0.46,
     -0.07,
-    0.09
+    0.09,
+    0.5
    ]
   },
   {
@@ -260,13 +266,14 @@
    "name": "Gemini Flash",
    "typ": "liga",
    "rendite_pct": 0.0,
-   "equity_eur": 10036.46,
+   "equity_eur": 10031.85,
    "max_drawdown_pct": 0.0,
    "status": "aktiv",
    "modell": "gemini-flash-lite-latest",
    "kosten_heute_eur": 0.0,
    "kosten_gesamt_eur": 0.0,
    "verlauf_pct": [
+    0.0,
     0.0,
     0.0,
     0.0,
@@ -300,13 +307,14 @@
    "name": "Kimi (Moonshot)",
    "typ": "liga",
    "rendite_pct": 0.0,
-   "equity_eur": 10036.46,
+   "equity_eur": 10031.85,
    "max_drawdown_pct": 0.0,
    "status": "Fehler: Modellfehler: kimi-k2-turbo-preview: HTTP 404 {\"error\":{\"message\":\"Not found the model kimi-k2-turbo-preview or Permission denied\",\"type\":\"r",
    "modell": "kimi-k2-turbo-preview",
    "kosten_heute_eur": 0.0,
    "kosten_gesamt_eur": 0.0,
    "verlauf_pct": [
+    0.0,
     0.0,
     0.0,
     0.0,
@@ -340,7 +348,7 @@
    "name": "OpenAI",
    "typ": "liga",
    "rendite_pct": 0.0,
-   "equity_eur": 10036.46,
+   "equity_eur": 10031.85,
    "max_drawdown_pct": 0.0,
    "status": "pausiert (kein Guthaben)",
    "modell": "gpt-5-mini",
@@ -371,56 +379,17 @@
     0.0,
     0.0,
     0.0,
+    0.0,
     0.0
    ]
   },
   {
    "rang": 10,
-   "id": "bm_6040",
-   "name": "60/40 (SPY/AGG)",
-   "typ": "benchmark",
-   "rendite_pct": -0.16,
-   "equity_eur": 10020.66,
-   "max_drawdown_pct": -0.22,
-   "status": "läuft",
-   "modell": null,
-   "kosten_heute_eur": 0.0,
-   "kosten_gesamt_eur": 0.0,
-   "verlauf_pct": [
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    -0.03,
-    -0.05,
-    -0.06,
-    -0.22,
-    -0.18,
-    -0.12,
-    -0.18,
-    -0.16
-   ]
-  },
-  {
-   "rang": 11,
    "id": "bm_sp500",
    "name": "S&P-500-ETF (SPY)",
    "typ": "benchmark",
-   "rendite_pct": -0.17,
-   "equity_eur": 10019.8,
+   "rendite_pct": -0.16,
+   "equity_eur": 10015.68,
    "max_drawdown_pct": -0.34,
    "status": "läuft",
    "modell": null,
@@ -451,7 +420,49 @@
     -0.23,
     -0.11,
     -0.21,
-    -0.17
+    -0.17,
+    -0.16
+   ]
+  },
+  {
+   "rang": 11,
+   "id": "bm_6040",
+   "name": "60/40 (SPY/AGG)",
+   "typ": "benchmark",
+   "rendite_pct": -0.16,
+   "equity_eur": 10015.36,
+   "max_drawdown_pct": -0.22,
+   "status": "läuft",
+   "modell": null,
+   "kosten_heute_eur": 0.0,
+   "kosten_gesamt_eur": 0.0,
+   "verlauf_pct": [
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    -0.03,
+    -0.05,
+    -0.06,
+    -0.22,
+    -0.18,
+    -0.12,
+    -0.18,
+    -0.16,
+    -0.16
    ]
   }
  ],
@@ -527,6 +538,21 @@
  ],
  "ereignisse": [
   {
+   "ts": 1793373823.5937917,
+   "typ": "volatilitaet",
+   "titel": "Volatilitätsausbruch spot:LINK-USD: +2.7 % in 1 h (normal ≈ 0.84 %)"
+  },
+  {
+   "ts": 1793373823.5937917,
+   "typ": "volatilitaet",
+   "titel": "Volatilitätsausbruch spot:XRP-USD: +2.3 % in 1 h (normal ≈ 0.72 %)"
+  },
+  {
+   "ts": 1793373823.5937917,
+   "typ": "volatilitaet",
+   "titel": "Volatilitätsausbruch spot:BTC-USD: +1.5 % in 1 h (normal ≈ 0.44 %)"
+  },
+  {
    "ts": 1793372871.2602901,
    "typ": "wettmarkt_bewegung",
    "titel": "Wette „Will the price of Bitcoin be above $76,000 on October 30?“ +9 Prozentpunkte in 1 h (0.90→0.99)"
@@ -550,21 +576,6 @@
    "ts": 1793369271.1700823,
    "typ": "nachricht_position",
    "titel": "Nachricht zu spot:BTC-USD: Bitcoin Newcomers FAQ - Please read! (r/Bitcoin)"
-  },
-  {
-   "ts": 1793369271.1700823,
-   "typ": "nachricht_position",
-   "titel": "Nachricht zu pm:polymarket:5170740:JA: Daily Discussion, October 30, 2026 (r/Bitcoin)"
-  },
-  {
-   "ts": 1793369271.1700823,
-   "typ": "volatilitaet",
-   "titel": "Volatilitätsausbruch stock:NVDA: -2.7 % in 1 h (normal ≈ 0.42 %)"
-  },
-  {
-   "ts": 1793369271.1700823,
-   "typ": "volatilitaet",
-   "titel": "Volatilitätsausbruch stock:GLD: -2.8 % in 1 h (normal ≈ 0.32 %)"
   }
  ]
 }
