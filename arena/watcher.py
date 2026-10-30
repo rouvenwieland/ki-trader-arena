@@ -172,7 +172,10 @@ def lauf(jetzt: float | None = None) -> dict:
         if d["typ"] == "schwarm" or d.get("kontrolle"):
             from arena import schwarm
             try:
-                log += (schwarm.schritt_schwarm if d["typ"] == "schwarm" else schwarm.schritt_kontrolle)(d, pf, mz, jetzt, pm_index)
+                if d.get("art") == "wetter":
+                    log += schwarm.schritt_wetter(d, pf, mz, jetzt)
+                else:
+                    log += (schwarm.schritt_schwarm if d["typ"] == "schwarm" else schwarm.schritt_kontrolle)(d, pf, mz, jetzt, pm_index)
             except Exception as e:  # Meta-/Kontrollfonds dürfen den Tick nie abbrechen
                 print("WARNUNG", fid, e)
         elif d["typ"] == "benchmark":

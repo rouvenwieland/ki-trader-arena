@@ -190,3 +190,10 @@ vor dem Deploy aus `data/`. `docs/status.json` (6 kB) bleibt im Git, weil die La
 * **8 Orderfluss:** Werkzeug `orderfluss`: Polymarket `prices-history` (1 Woche), Data-API `/trades` (Volumen je Seite, Orders ≥ 1000 $), `/holders`, `/oi`;
   Kalshi `/markets/trades` (Taker-Kontrakte JA/NEIN, Preisweg). Kalshi-Kerzen bräuchten den Serien-Ticker – der Preisweg aus den Trades reicht.
   Mindestabstand für Kalshi auf 1 s erhöht (Recherche: sonst 429). Die `conditionId` wird jetzt im Markt mitgespeichert (Altmärkte: Nachschlagen).
+* **3 Wetter-Werkzeug:** `arena/data/wetter.py` + Werkzeug `wetter`: Kalshi-Temperatur-Events (12 Städte mit Koordinaten der CLI-Station),
+  Open-Meteo-Ensemble GFS + ECMWF IFS (82 Mitglieder, °F, Ortszeit), P(Bracket) mit Rundung auf ganze Grad und Modellfehler σ = 1,5 + 0,4·Vorlauf °F;
+  am laufenden Tag zählt das bisher gemessene Maximum der NWS-Station als Untergrenze. Zwischenspeicher 1 h (`data/wetter_cache.json`).
+  Polymarket-Temperaturmärkte bewusst nicht: andere Abrechnungsstation (Wunderground/Flughafen) und freie Formulierungen → Parsing zu fehleranfällig.
+  Neuer **Regelfonds „Wetter-Ensemble“** (`ko_wetter`, ohne LLM): stündlich alle Brackets als Schätzung festhalten (Brier gegen Markt messbar) und bei
+  Vorteil > Gebühr + 5 pp mit ¼-Kelly (≤ 3 % je Bracket, Profil „mittel“, ≤ 2 Käufe/Stunde, Vorlauf ≤ 2 Tage) kaufen. Misst direkt, ob Spezialdaten
+  einen Vorteil gegenüber dem Markt bringen. Der Vorsichtig-Fonds hat das Werkzeug in seinem Recherchepfad.

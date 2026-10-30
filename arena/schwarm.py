@@ -11,6 +11,7 @@ from __future__ import annotations
 
 import math
 import statistics
+import time
 
 from arena import funds, metrics, store
 from arena import statistik as st
@@ -141,6 +142,62 @@ def schritt_schwarm(defn: dict, pf: dict, mz, jetzt: float, pm_index: dict) -> l
             if r.get("ok"):
                 kaeufe += 1
             break
+    return log
+
+
+WETTER_PUFFER = 0.05
+WETTER_MAX_ANTEIL = 0.03
+WETTER_TAKT_S = 3600
+
+
+def schritt_wetter(defn: dict, pf: dict, mz, jetzt: float) -> list[dict]:
+    """Regelfonds ohne LLM: stündlich die offenen Kalshi-Temperatur-Events (≤ 2 Tage Vorlauf) analysieren, jede Bracket-Wahrscheinlichkeit
+    als Schätzung festhalten (Brier gegen Markt messbar) und bei Vorteil > Gebühr + 5 pp mit ¼-Kelly (≤ 3 % je Bracket) kaufen."""
+    from arena import risikoschicht
+    from arena.data import wetter
+    if jetzt - pf.get("wetter_letzter", 0) < WETTER_TAKT_S:
+        return []
+    pf["wetter_letzter"] = jetzt
+    bekannt = {p["markt_id"] for p in store.lies_jsonl(f"funds/{defn['id']}/prognosen.jsonl")}
+    gehalten = {p["inst"]["id"].rsplit(":", 1)[0] for p in pf["positionen"]}
+    eq = portfolio.equity(pf, {p["inst"]["id"]: mz.marke(p["inst"]) for p in pf["positionen"]})
+    prof = funds.risikoprofil({"typ": "regel", "risiko": "mittel"})
+    log, kaeufe = [], 0
+    for ev in wetter.offene_events():
+        a = wetter.analyse_event(ev)
+        if "fehler" in a:
+            continue
+        vorlauf = (time.mktime(time.strptime(a["datum"], "%Y-%m-%d")) - jetzt) / 86400
+        for b in a["brackets"]:
+            mid, p = b["markt_id"], b["p_modell"]
+            if p != p:  # NaN
+                continue
+            mitte = (b["ja_bid"] + b["ja_ask"]) / 2 if b["ja_ask"] else None
+            if mid not in bekannt:
+                store.anhaengen(f"funds/{defn['id']}/prognosen.jsonl", {"ts": jetzt, "markt_id": mid, "p_ja": p, "markt_ja_mitte": mitte,
+                                                                       "schliesst": None, "quelle": "Open-Meteo-Ensemble"})
+                bekannt.add(mid)
+            if mid in gehalten or kaeufe >= 2 or vorlauf > 2:
+                continue
+            m = _markt(mid, {})
+            if not m:
+                continue
+            for seite, ps in (("JA", p), ("NEIN", 1 - p)):
+                inst = pm.inst(m, seite)
+                book, _ = mz.buch(inst)
+                if not book or not book.asks:
+                    continue
+                k = book.asks[0][0] + fees.gebuehr(inst, book.asks[0][0], 100) / 100
+                if ps - k <= WETTER_PUFFER:
+                    continue
+                anteil = min(KELLY * risikoschicht.kelly_binaer(ps, k), WETTER_MAX_ANTEIL)
+                if anteil * eq < 20:
+                    break
+                r = engine.eroeffne(pf, prof, inst, book, usd=anteil * eq, equity=eq, ts=jetzt, ausstiegsplan="Halten bis zur Abrechnung (Wetter-Regel)")
+                r["wetter"] = {"p_modell": p, "kosten": round(k, 4), "event": ev}
+                log.append(r)
+                kaeufe += bool(r.get("ok"))
+                break
     return log
 
 

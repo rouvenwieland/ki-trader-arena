@@ -315,7 +315,7 @@ def test_kontrollen_markt_kopierer_und_immer_nein():
     from arena.exchange import portfolio
     _stimmen([0.9, 0.8, 0.7])
     m = {"mid": "pm:kalshi:WETTER-1", "venue": "kalshi", "frage": "x", "ja_bid": 0.38, "ja_ask": 0.40, "schliesst": JETZT + 86400, "ref": {}}
-    ko_markt, ko_nein = funds.KONTROLLEN
+    ko_markt, ko_nein = funds.KONTROLLEN[:2]
     pf = portfolio.neu("ko_markt", 10000)
     assert schwarm.schritt_kontrolle(ko_markt, pf, BuchMZ(), JETZT, {m["mid"]: m}) == []
     e = store.lies_jsonl("funds/ko_markt/prognosen.jsonl")
@@ -370,3 +370,18 @@ def test_exaktes_funding_ersetzt_8h_mittel(monkeypatch):
     raten = watcher.exakte_funding_raten(pf, {"perp:BTC_USDC-PERPETUAL": 0.01}, JETZT - 3600, JETZT)
     engine.funding_buchen(pf, raten, 1.0, JETZT)
     assert pos["funding"] == pytest.approx(-2.0)  # 0,02 % von 10.000 USD, Long zahlt
+
+
+# ---------------------------------------------------------------- Wetter
+def test_wetter_brackets_und_beobachtung():
+    from arena.data import wetter
+    assert wetter.grenzen("between", 69, 70) == (68.5, 70.5)
+    assert wetter.grenzen("less", None, 69) == (None, 68.5)
+    assert wetter.grenzen("greater", 76, None) == (76.5, None)
+    m = [69.0] * 10
+    p = [wetter.p_bracket(m, *wetter.grenzen(t, f, c), 1.5) for t, f, c in (("less", None, 69), ("between", 69, 70), ("greater", 70, None))]
+    assert sum(p) == pytest.approx(1.0) and p[1] > p[0]
+    # bisher schon 71 °F gemessen → „68 oder weniger“ und „69–70“ unmöglich
+    assert wetter.p_bracket(m, None, 68.5, 1.5, beobachtet=71.0) == 0.0
+    assert wetter.p_bracket(m, 68.5, 70.5, 1.5, beobachtet=71.0) == 0.0
+    assert wetter.p_bracket(m, 70.5, 72.5, 1.5, beobachtet=71.0) > 0.9

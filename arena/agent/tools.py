@@ -150,6 +150,18 @@ class Kontext:
         return _kurz([{"id": x["inst"]["id"], "strike": x["inst"]["strike"], "typ": x["inst"]["typ"], "tage": x["tage"],
                        "bid_usd": round(x["bid"], 1), "ask_usd": round(x["ask"], 1), "iv": x["iv"], "oi": x["oi"], "index": x["index"]} for x in o])
 
+    def t_wetter(self, markt_id: str = "", **_) -> str:
+        """Temperatur-Wettmärkte (Kalshi): Ensemble-Wahrscheinlichkeit je Bracket gegen den Marktpreis. Ohne markt_id: offene Events auflisten."""
+        from arena.data import wetter
+        if not markt_id:
+            return _kurz({"offene_events": wetter.offene_events(), "stationen": {k: v[0] for k, v in wetter.STATIONEN.items()},
+                          "hinweis": "Mit markt_id (z. B. pm:kalshi:KXHIGHNY-26OCT31-B59.5 oder Event KXHIGHNY-26OCT31) die Analyse abrufen."})
+        ticker = markt_id.split(":")[-1] if markt_id.startswith("pm:") else markt_id
+        if ticker.endswith(("JA", "NEIN")) and markt_id.count(":") > 2:
+            ticker = markt_id.split(":")[2]
+        event = "-".join(ticker.split("-")[:2])
+        return _kurz(wetter.analyse_event(event), 5000)
+
     def t_derivate_lage(self, basis: str = "BTC", **_) -> str:
         """Volatilitätsregime (DVOL), Funding (8-h-Mittel und letzte Stunden exakt), Basis-Kurve der Terminkontrakte, Open Interest."""
         b = basis.upper() if basis.upper() in ("BTC", "ETH", "SOL") else "BTC"
@@ -337,6 +349,8 @@ class Kontext:
              "schema": s({"instrument_id": str_}, ["instrument_id"]), "fn": self.t_kurs_verlauf},
             {"name": "optionen", "beschreibung": "Liquide Deribit-Optionen (BTC/ETH) nahe am Geld. Nur Kaufen (Long) möglich.",
              "schema": s({"basis": {"type": "string", "enum": ["BTC", "ETH"]}}, []), "fn": self.t_optionen},
+            {"name": "wetter", "beschreibung": "Temperatur-Wettmärkte (Kalshi „Highest temperature in …“): Wahrscheinlichkeit je Bracket aus 82 Wetter-Ensemble-Mitgliedern (GFS+ECMWF, Open-Meteo) inkl. Modellfehler und bisher gemessenem Tagesmaximum, gegen den Marktpreis. Ohne markt_id: offene Events.",
+             "schema": s({"markt_id": {"type": "string", "description": "Markt oder Event, z. B. pm:kalshi:KXHIGHNY-26OCT31-B59.5 oder KXHIGHNY-26OCT31"}}, []), "fn": self.t_wetter},
             {"name": "derivate_lage", "beschreibung": "Krypto-Derivate-Lage: Deribit-Volatilitätsindex DVOL (Regime), Funding (8-h-Mittel und exakt je Stunde), annualisierte Basis der Terminkontrakte, Open Interest.",
              "schema": s({"basis": {"type": "string", "enum": ["BTC", "ETH", "SOL"]}}, []), "fn": self.t_derivate_lage},
             {"name": "nachrichten", "beschreibung": "Sucht aktuelle Nachrichten/Reddit (RSS, GDELT) zu einem Thema.",
