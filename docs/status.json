@@ -1,6 +1,6 @@
 {
  "version": 1,
- "stand": 1793386488.8037283,
+ "stand": 1793387401.8867133,
  "hinweis": "Papierhandel-Simulation, keine Anlageberatung",
  "seite": "https://rouvenwieland.github.io/ki-trader-arena/",
  "budget": {
@@ -37,8 +37,8 @@
    "id": "claude_aggressiv",
    "name": "Claude Aggressiv",
    "typ": "claude",
-   "rendite_pct": 8.03,
-   "equity_eur": 10820.25,
+   "rendite_pct": 7.61,
+   "equity_eur": 10777.78,
    "max_drawdown_pct": -2.65,
    "status": "aktiv",
    "modell": "claude-sonnet-5-5",
@@ -66,7 +66,6 @@
     3.09,
     0.93,
     3.75,
-    3.27,
     4.0,
     5.66,
     5.61,
@@ -85,7 +84,8 @@
     5.92,
     5.55,
     6.22,
-    8.03
+    8.03,
+    7.61
    ]
   },
   {
@@ -94,7 +94,7 @@
    "name": "DeepSeek",
    "typ": "liga",
    "rendite_pct": 1.78,
-   "equity_eur": 10194.71,
+   "equity_eur": 10193.62,
    "max_drawdown_pct": -0.79,
    "status": "aktiv",
    "modell": "deepseek-chat",
@@ -149,8 +149,8 @@
    "id": "claude_mittel",
    "name": "Claude Mittel",
    "typ": "claude",
-   "rendite_pct": 1.17,
-   "equity_eur": 10133.37,
+   "rendite_pct": 1.25,
+   "equity_eur": 10140.73,
    "max_drawdown_pct": -0.35,
    "status": "aktiv",
    "modell": "claude-sonnet-5-5",
@@ -178,7 +178,6 @@
     1.18,
     1.18,
     1.18,
-    1.18,
     1.29,
     1.29,
     1.41,
@@ -197,7 +196,8 @@
     1.29,
     1.05,
     1.05,
-    1.17
+    1.17,
+    1.25
    ]
   },
   {
@@ -205,8 +205,8 @@
    "id": "bm_affe",
    "name": "Zufallsaffe",
    "typ": "benchmark",
-   "rendite_pct": 1.07,
-   "equity_eur": 10123.44,
+   "rendite_pct": 1.2,
+   "equity_eur": 10135.79,
    "max_drawdown_pct": -0.75,
    "status": "läuft",
    "modell": null,
@@ -234,7 +234,6 @@
     1.11,
     0.79,
     0.93,
-    0.84,
     0.8,
     1.25,
     1.5,
@@ -253,7 +252,8 @@
     1.42,
     1.33,
     1.22,
-    1.07
+    1.07,
+    1.2
    ]
   },
   {
@@ -261,13 +261,13 @@
    "id": "claude_vorsichtig",
    "name": "Claude Vorsichtig",
    "typ": "claude",
-   "rendite_pct": 0.97,
-   "equity_eur": 10113.09,
+   "rendite_pct": 0.95,
+   "equity_eur": 10110.44,
    "max_drawdown_pct": -0.52,
    "status": "aktiv",
    "modell": "claude-sonnet-5-5",
-   "kosten_heute_eur": 1.98,
-   "kosten_gesamt_eur": 1.98,
+   "kosten_heute_eur": 1.979,
+   "kosten_gesamt_eur": 1.979,
    "rendite_ki_pct": null,
    "verlauf_pct": [
     0.0,
@@ -291,7 +291,6 @@
     1.03,
     1.09,
     1.09,
-    1.09,
     1.06,
     1.07,
     1.07,
@@ -309,7 +308,8 @@
     0.9,
     0.94,
     0.94,
-    0.97
+    0.97,
+    0.95
    ]
   },
   {
@@ -318,7 +318,7 @@
    "name": "Gemini Flash",
    "typ": "liga",
    "rendite_pct": 0.0,
-   "equity_eur": 10016.25,
+   "equity_eur": 10015.19,
    "max_drawdown_pct": 0.0,
    "status": "aktiv",
    "modell": "gemini-flash-lite-latest",
@@ -374,7 +374,7 @@
    "name": "Kimi (Moonshot)",
    "typ": "liga",
    "rendite_pct": 0.0,
-   "equity_eur": 10016.25,
+   "equity_eur": 10015.19,
    "max_drawdown_pct": 0.0,
    "status": "Fehler: Modellfehler: kimi-k2-turbo-preview: HTTP 404 {\"error\":{\"message\":\"Not found the model kimi-k2-turbo-preview or Permission denied\",\"type\":\"r",
    "modell": "kimi-k2-turbo-preview",
@@ -430,7 +430,7 @@
    "name": "OpenAI",
    "typ": "liga",
    "rendite_pct": 0.0,
-   "equity_eur": 10016.25,
+   "equity_eur": 10015.19,
    "max_drawdown_pct": 0.0,
    "status": "pausiert (kein Guthaben)",
    "modell": "gpt-5-mini",
@@ -486,7 +486,7 @@
    "name": "Schwarm (nur Claude)",
    "typ": "schwarm",
    "rendite_pct": -0.0,
-   "equity_eur": 9991.66,
+   "equity_eur": 9990.6,
    "max_drawdown_pct": -0.04,
    "status": "wartet auf ersten Lauf",
    "modell": null,
@@ -502,6 +502,7 @@
     -0.0,
     -0.0,
     -0.04,
+    -0.0,
     -0.0
    ]
   },
@@ -511,7 +512,7 @@
    "name": "Schwarm (nur Liga)",
    "typ": "schwarm",
    "rendite_pct": -0.0,
-   "equity_eur": 9991.66,
+   "equity_eur": 9990.6,
    "max_drawdown_pct": 0.0,
    "status": "wartet auf ersten Lauf",
    "modell": null,
@@ -519,6 +520,7 @@
    "kosten_gesamt_eur": 0.0,
    "rendite_ki_pct": null,
    "verlauf_pct": [
+    -0.0,
     -0.0,
     -0.0,
     -0.0,
@@ -536,7 +538,7 @@
    "name": "Kontrolle: Markt-Kopierer",
    "typ": "benchmark",
    "rendite_pct": -0.0,
-   "equity_eur": 9991.66,
+   "equity_eur": 9990.6,
    "max_drawdown_pct": 0.0,
    "status": "läuft",
    "modell": null,
@@ -552,40 +554,17 @@
     -0.0,
     -0.0,
     -0.0,
+    -0.0,
     -0.0
    ]
   },
   {
    "rang": 12,
-   "id": "claude_mittel_rm",
-   "name": "Claude Mittel+RM (A/B)",
-   "typ": "claude",
-   "rendite_pct": -0.1,
-   "equity_eur": 9980.66,
-   "max_drawdown_pct": -0.1,
-   "status": "aktiv",
-   "modell": "claude-sonnet-5-5",
-   "kosten_heute_eur": 0.578,
-   "kosten_gesamt_eur": 0.578,
-   "rendite_ki_pct": null,
-   "verlauf_pct": [
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    -0.05,
-    -0.1,
-    -0.1
-   ]
-  },
-  {
-   "rang": 13,
    "id": "schwarm_alle",
    "name": "Schwarm (alle KI)",
    "typ": "schwarm",
-   "rendite_pct": -0.46,
-   "equity_eur": 9945.99,
+   "rendite_pct": -0.15,
+   "equity_eur": 9975.94,
    "max_drawdown_pct": -0.46,
    "status": "wartet auf ersten Lauf",
    "modell": null,
@@ -601,7 +580,33 @@
     -0.0,
     -0.0,
     -0.03,
-    -0.46
+    -0.46,
+    -0.15
+   ]
+  },
+  {
+   "rang": 13,
+   "id": "claude_mittel_rm",
+   "name": "Claude Mittel+RM (A/B)",
+   "typ": "claude",
+   "rendite_pct": -0.2,
+   "equity_eur": 9969.59,
+   "max_drawdown_pct": -0.2,
+   "status": "aktiv",
+   "modell": "claude-sonnet-5-5",
+   "kosten_heute_eur": 0.578,
+   "kosten_gesamt_eur": 0.578,
+   "rendite_ki_pct": null,
+   "verlauf_pct": [
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    -0.05,
+    -0.1,
+    -0.1,
+    -0.2
    ]
   },
   {
@@ -609,8 +614,8 @@
    "id": "bm_6040",
    "name": "60/40 (SPY/AGG)",
    "typ": "benchmark",
-   "rendite_pct": -0.79,
-   "equity_eur": 9936.87,
+   "rendite_pct": -0.61,
+   "equity_eur": 9953.72,
    "max_drawdown_pct": -0.79,
    "status": "läuft",
    "modell": null,
@@ -638,7 +643,6 @@
     -0.03,
     -0.05,
     -0.06,
-    -0.22,
     -0.18,
     -0.12,
     -0.18,
@@ -657,7 +661,8 @@
     -0.56,
     -0.66,
     -0.73,
-    -0.79
+    -0.79,
+    -0.61
    ]
   },
   {
@@ -665,8 +670,8 @@
    "id": "bm_sp500",
    "name": "S&P-500-ETF (SPY)",
    "typ": "benchmark",
-   "rendite_pct": -1.3,
-   "equity_eur": 9886.08,
+   "rendite_pct": -0.97,
+   "equity_eur": 9918.25,
    "max_drawdown_pct": -1.3,
    "status": "läuft",
    "modell": null,
@@ -694,7 +699,6 @@
     -0.03,
     -0.02,
     -0.03,
-    -0.34,
     -0.23,
     -0.11,
     -0.21,
@@ -713,7 +717,8 @@
     -0.89,
     -1.06,
     -1.2,
-    -1.3
+    -1.3,
+    -0.97
    ]
   },
   {
@@ -721,8 +726,8 @@
    "id": "bm_btc",
    "name": "Buy & Hold BTC",
    "typ": "benchmark",
-   "rendite_pct": -1.38,
-   "equity_eur": 9877.94,
+   "rendite_pct": -1.27,
+   "equity_eur": 9888.25,
    "max_drawdown_pct": -2.72,
    "status": "läuft",
    "modell": null,
@@ -750,7 +755,6 @@
     -0.54,
     -1.14,
     -0.77,
-    -0.88,
     -1.05,
     -0.46,
     -0.07,
@@ -769,7 +773,8 @@
     -0.52,
     -0.65,
     -0.99,
-    -1.38
+    -1.38,
+    -1.27
    ]
   },
   {
@@ -777,8 +782,8 @@
    "id": "ko_wetter",
    "name": "Regelfonds: Wetter-Ensemble",
    "typ": "benchmark",
-   "rendite_pct": -4.01,
-   "equity_eur": 9590.26,
+   "rendite_pct": -3.86,
+   "equity_eur": 9604.02,
    "max_drawdown_pct": -5.06,
    "status": "läuft",
    "modell": null,
@@ -793,7 +798,8 @@
     1.11,
     -3.19,
     -3.48,
-    -4.01
+    -4.01,
+    -3.86
    ]
   },
   {
@@ -801,9 +807,9 @@
    "id": "ko_nein",
    "name": "Kontrolle: Immer NEIN",
    "typ": "benchmark",
-   "rendite_pct": -4.16,
-   "equity_eur": 9576.29,
-   "max_drawdown_pct": -3.73,
+   "rendite_pct": -4.51,
+   "equity_eur": 9539.53,
+   "max_drawdown_pct": -4.09,
    "status": "läuft",
    "modell": null,
    "kosten_heute_eur": 0.0,
@@ -818,7 +824,8 @@
     -2.36,
     -3.18,
     -3.58,
-    -4.16
+    -4.16,
+    -4.51
    ]
   }
  ],
@@ -894,44 +901,44 @@
  ],
  "ereignisse": [
   {
-   "ts": 1793386423.7439072,
+   "ts": 1793387324.1827762,
    "typ": "nachricht_position",
-   "titel": "Nachricht zu pm:polymarket:630963:NEIN: Alaska's Senate race faces claims of spoiler candidate. And, Hegseth ousts Army general (NPR Politik)"
+   "titel": "Nachricht zu pm:polymarket:562794:NEIN: Pope Leo XIV becomes first pontiff to vote in a US election (BBC Welt)"
   },
   {
-   "ts": 1793386423.7439072,
+   "ts": 1793387324.1827762,
    "typ": "nachricht_position",
-   "titel": "Nachricht zu pm:polymarket:630963:NEIN: Alaska Senate candidate denies knowing about alleged plot to put two Dan Sullivans on ballot (BBC Welt)"
+   "titel": "Nachricht zu pm:polymarket:562794:NEIN: Alaska Senate candidate denies knowing about alleged plot to put two Dan Sullivans on ballot (BBC Welt)"
   },
   {
-   "ts": 1793385523.577596,
+   "ts": 1793387324.1827762,
    "typ": "nachricht_position",
-   "titel": "Nachricht zu pm:polymarket:6051332:NEIN: Bitcoin risks worst October in 12 years as tech sell-off spreads to gold (Cointelegraph)"
+   "titel": "Nachricht zu pm:polymarket:5170741:NEIN: Tether’s excess reserves nearly double to $8B as Q3 profit hits $1.5B (Cointelegraph)"
   },
   {
-   "ts": 1793385523.577596,
+   "ts": 1793387324.1827762,
    "typ": "nachricht_position",
-   "titel": "Nachricht zu pm:polymarket:5170741:NEIN: Crypto Biz: Bitcoin’s quantum threat is becoming an economic problem (Cointelegraph)"
+   "titel": "Nachricht zu pm:polymarket:5407574:NEIN: Daily Discussion Thread for October 30, 2026 (r/wallstreetbets)"
   },
   {
-   "ts": 1793385523.577596,
+   "ts": 1793387324.1827762,
    "typ": "nachricht_position",
-   "titel": "Nachricht zu pm:polymarket:5170741:NEIN: ICE agent charged after ramming unmarked SUV into man in Texas (Guardian Welt)"
+   "titel": "Nachricht zu spot:BTC-USD: Tether’s excess reserves nearly double to $8B as Q3 profit hits $1.5B (Cointelegraph)"
   },
   {
-   "ts": 1793385523.577596,
+   "ts": 1793387324.1827762,
    "typ": "nachricht_position",
-   "titel": "Nachricht zu pm:polymarket:5170740:NEIN: ICE agent charged after ramming unmarked SUV into man in Texas (Guardian Welt)"
+   "titel": "Nachricht zu pm:polymarket:5170740:NEIN: Tether’s excess reserves nearly double to $8B as Q3 profit hits $1.5B (Cointelegraph)"
   },
   {
-   "ts": 1793385523.577596,
+   "ts": 1793387324.1827762,
    "typ": "nachricht_position",
-   "titel": "Nachricht zu pm:polymarket:562793:NEIN: Why is the Cheesecake Factory at the center of the latest culture war? (NPR Politik)"
+   "titel": "Nachricht zu pm:polymarket:5170740:JA: Tether’s excess reserves nearly double to $8B as Q3 profit hits $1.5B (Cointelegraph)"
   },
   {
-   "ts": 1793385523.577596,
-   "typ": "nachricht_position",
-   "titel": "Nachricht zu pm:polymarket:562802:NEIN: Why is the Cheesecake Factory at the center of the latest culture war? (NPR Politik)"
+   "ts": 1793387324.1827762,
+   "typ": "wettmarkt_bewegung",
+   "titel": "Wette „Will Le Havre AC win on 2026-10-30?“ -18 Prozentpunkte in 1 h (0.20→0.02)"
   }
  ]
 }

@@ -2,7 +2,7 @@
  "fonds_id": "ko_nein",
  "waehrung": "USD",
  "start_kapital": 11157.431109273288,
- "cash": 6646.060279273285,
+ "cash": 6144.833479273286,
  "positionen": [
   {
    "id": "pe6781775",
@@ -33,8 +33,8 @@
    "gebuehren": 0.0,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.061,
-   "wert": 124.12
+   "kurs": 0.0625,
+   "wert": 126.26
   },
   {
    "id": "p9e535f2b",
@@ -65,8 +65,8 @@
    "gebuehren": 0.0,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.315,
-   "wert": 185.07
+   "kurs": 0.305,
+   "wert": 179.1
   },
   {
    "id": "pa5e8a32f",
@@ -225,8 +225,8 @@
    "gebuehren": 0.0,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.705,
-   "wert": 154.0
+   "kurs": 0.715,
+   "wert": 156.2
   },
   {
    "id": "p4f30b305",
@@ -257,8 +257,8 @@
    "gebuehren": 1.59066,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.6735,
-   "wert": 123.65
+   "kurs": 0.6904999999999999,
+   "wert": 132.1
   },
   {
    "id": "p28450e21",
@@ -309,8 +309,8 @@
    "gebuehren": 6.77,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.255,
-   "wert": 101.0
+   "kurs": 0.27,
+   "wert": 105.04
   },
   {
    "id": "pfa54617a",
@@ -437,8 +437,8 @@
    "gebuehren": 0.0,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.67,
-   "wert": 165.75
+   "kurs": 0.6715,
+   "wert": 166.5
   },
   {
    "id": "pe65b0b73",
@@ -533,7 +533,7 @@
    "gebuehren": 0.33007,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.9615,
+   "kurs": 0.9684999999999999,
    "wert": 164.33
   },
   {
@@ -565,7 +565,7 @@
    "gebuehren": 0.0,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.026000000000000002,
+   "kurs": 0.025500000000000002,
    "wert": 154.08
   },
   {
@@ -629,8 +629,8 @@
    "gebuehren": 0.35398,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.944,
-   "wert": 162.2
+   "kurs": 0.946,
+   "wert": 162.54
   },
   {
    "id": "p53c7f93b",
@@ -693,8 +693,8 @@
    "gebuehren": 1.04341,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.905,
-   "wert": 163.8
+   "kurs": 0.895,
+   "wert": 161.98
   },
   {
    "id": "p8692c3e7",
@@ -725,8 +725,8 @@
    "gebuehren": 0.0,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.091,
-   "wert": 131.37
+   "kurs": 0.092,
+   "wert": 132.88
   },
   {
    "id": "pc8cf836f",
@@ -821,7 +821,7 @@
    "gebuehren": 0.0,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.8200000000000001,
+   "kurs": 0.81,
    "wert": 137.64
   },
   {
@@ -853,15 +853,99 @@
    "gebuehren": 0.0,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.953,
+   "kurs": 0.9495,
    "wert": 162.62
+  },
+  {
+   "id": "pe3197d92",
+   "inst": {
+    "id": "pm:kalshi:KXHIGHMIA-26OCT31-B85.5:NEIN",
+    "art": "pm",
+    "venue": "kalshi",
+    "ergebnis": "NEIN",
+    "frage": "Will the maximum temperature be 85-86° on Oct 31, 2026? [85° to 86°]",
+    "schliesst": 1793509200.0,
+    "ref": {
+     "ticker": "KXHIGHMIA-26OCT31-B85.5"
+    },
+    "url": "https://kalshi.com/markets/KXHIGHMIA-26OCT31"
+   },
+   "seite": "long",
+   "menge": 386.0,
+   "einstand": 0.4161704663212435,
+   "hebel": 1.0,
+   "marge": 0.0,
+   "eroeffnet": 1793387324.1827762,
+   "gebuehren": 6.57,
+   "funding": 0.0,
+   "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
+   "kurs": 0.41000000000000003,
+   "wert": 146.68
+  },
+  {
+   "id": "p8943c633",
+   "inst": {
+    "id": "pm:kalshi:KXHIGHCHI-26OCT31-B62.5:NEIN",
+    "art": "pm",
+    "venue": "kalshi",
+    "ergebnis": "NEIN",
+    "frage": "Will the maximum temperature be 62-63° on Oct 31, 2026? [62° to 63°]",
+    "schliesst": 1793512800.0,
+    "ref": {
+     "ticker": "KXHIGHCHI-26OCT31-B62.5"
+    },
+    "url": "https://kalshi.com/markets/KXHIGHCHI-26OCT31"
+   },
+   "seite": "long",
+   "menge": 258.0,
+   "einstand": 0.6299031007751937,
+   "hebel": 1.0,
+   "marge": 0.0,
+   "eroeffnet": 1793387324.1827762,
+   "gebuehren": 4.22,
+   "funding": 0.0,
+   "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
+   "kurs": 0.61,
+   "wert": 149.64
+  },
+  {
+   "id": "p6ac54bba",
+   "inst": {
+    "id": "pm:polymarket:5447182:NEIN",
+    "art": "pm",
+    "venue": "polymarket",
+    "ergebnis": "NEIN",
+    "frage": "US-Iran ceasefire continues through the midterms?",
+    "schliesst": 1793768340.0,
+    "ref": {
+     "id": "5447182",
+     "token_ja": "59838288288458809448405089801806485870309105325255232123458269975283939712397",
+     "token_nein": "26083146751610036454524904850508210754946650859133877372205070732610792631731",
+     "tick": 0.01,
+     "condition": "0x613613192c69d90cee89758c260a019368fc1f4a596b4d300c39b6235d2b643f",
+     "gebuehr_rate": 0.0,
+     "gebuehr_exp": 1
+    },
+    "url": "https://polymarket.com/event/us-iran-ceasefire-continues-through-the-midterms"
+   },
+   "seite": "long",
+   "menge": 1394.0,
+   "einstand": 0.12,
+   "hebel": 1.0,
+   "marge": 0.0,
+   "eroeffnet": 1793387324.1827762,
+   "gebuehren": 0.0,
+   "funding": 0.0,
+   "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
+   "kurs": 0.11499999999999999,
+   "wert": 153.34
   }
  ],
  "realisiert": 0.0,
- "gebuehren": 18.82952,
+ "gebuehren": 29.619519999999998,
  "funding": 0.0,
  "erstellt": 1793379225.5430336,
  "start_fx": 1.1157431109273288,
- "letzter_tick": 1793386423.7439072,
+ "letzter_tick": 1793387324.1827762,
  "kontrolle_bis": 1793383795.6034186
 }
