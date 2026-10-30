@@ -3,6 +3,7 @@
 Binance/Bybit sperren US-IPs (GitHub-Runner) → nicht verwendet."""
 from __future__ import annotations
 
+import math
 import re
 import time
 from datetime import datetime, timezone
@@ -171,3 +172,50 @@ def usd_je_eur() -> float:
         return float(get("https://api.coinbase.com/v2/exchange-rates", {"currency": "EUR"}, ttl=600)["data"]["rates"]["USD"])
     except (HttpFehler, KeyError, ValueError):
         return config.load()["fallback_usd_je_eur"]
+
+
+# ------------------------------------------------------------------ Deribit: Volatilitätsregime, exaktes Funding, Basis
+def funding_wert(name: str, seit: float, bis: float) -> float | None:
+    """Tatsächlich angefallenes Funding (Anteil des Nominals) zwischen seit und bis – exakt statt 8-h-Mittel × Zeit."""
+    try:
+        return float(get(f"{DERIBIT}/get_funding_rate_value", {"instrument_name": name, "start_timestamp": int(seit * 1000),
+                                                               "end_timestamp": int(bis * 1000)})["result"])
+    except (HttpFehler, KeyError, TypeError, ValueError):
+        return None
+
+
+def dvol(basis: str = "BTC") -> dict | None:
+    """Deribit-Volatilitätsindex (implizite 30-Tage-Vola in %): aktuell, vor 24 h, Spanne der letzten 7 Tage."""
+    ende = int(time.time() * 1000)
+    try:
+        d = get(f"{DERIBIT}/get_volatility_index_data", {"currency": basis, "resolution": 3600, "start_timestamp": ende - 7 * 86400 * 1000,
+                                                          "end_timestamp": ende}, ttl=600)["result"]["data"]
+    except (HttpFehler, KeyError, TypeError):
+        return None
+    if not d:
+        return None
+    schluss = [x[4] for x in d]
+    vor24 = schluss[-25] if len(schluss) >= 25 else schluss[0]
+    return {"dvol": schluss[-1], "vor_24h": vor24, "min_7t": min(x[3] for x in d), "max_7t": max(x[2] for x in d),
+            "tagesbewegung_1sigma_pct": round(schluss[-1] / math.sqrt(365), 2)}
+
+
+def basis_kurve(basis: str = "BTC") -> list[dict]:
+    """Annualisierte Basis der Deribit-Terminkontrakte gegen den Index (Contango/Backwardation = Hebelnachfrage)."""
+    try:
+        r = get(f"{DERIBIT}/get_book_summary_by_currency", {"currency": basis, "kind": "future"}, ttl=300)["result"]
+    except (HttpFehler, KeyError):
+        return []
+    out = []
+    for x in r:
+        m = re.fullmatch(r"[A-Z]+-(\d{1,2})([A-Z]{3})(\d{2})", x.get("instrument_name", ""))
+        if not m or not x.get("mark_price") or not x.get("estimated_delivery_price"):
+            continue
+        verfall = datetime(2000 + int(m.group(3)), _MON[m.group(2)], int(m.group(1)), 8, tzinfo=timezone.utc).timestamp()
+        tage = (verfall - time.time()) / 86400
+        if tage < 3:
+            continue
+        b = x["mark_price"] / x["estimated_delivery_price"] - 1
+        out.append({"kontrakt": x["instrument_name"], "tage": round(tage), "basis_pct": round(100 * b, 3),
+                    "annualisiert_pct": round(100 * b * 365 / tage, 2), "oi_usd": x.get("open_interest")})
+    return sorted(out, key=lambda y: y["tage"])

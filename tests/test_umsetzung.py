@@ -355,3 +355,18 @@ def test_reflexion_schreibt_lektion_und_aktualisiert_policy(monkeypatch):
     assert len(lekt) == 5 and lekt[0]["wichtigkeit"] == 7 and "Verlust" in lekt[0]["text"]
     assert store.lies("funds/claude_mittel/policy.json")["gesperrt"]["wette:sport:JA"]
     assert reflexion.lauf(None, JETZT + 20) == 0
+
+
+# ---------------------------------------------------------------- Deribit: exaktes Funding
+def test_exaktes_funding_ersetzt_8h_mittel(monkeypatch):
+    from arena import watcher
+    from arena.data import crypto
+    from arena.exchange import engine
+    monkeypatch.setattr(crypto, "funding_wert", lambda name, seit, bis: 0.0002)  # 0,02 % im Zeitraum
+    watcher._funding_cache.clear()
+    pos = {"id": "p1", "inst": {"id": "perp:BTC_USDC-PERPETUAL", "art": "perp", "symbol": "BTC_USDC-PERPETUAL"}, "seite": "long",
+           "menge": 1.0, "einstand": 10000.0, "marge": 1000.0, "eroeffnet": JETZT - 7200, "funding": 0.0}
+    pf = {"fonds_id": "x", "positionen": [pos], "funding": 0.0}
+    raten = watcher.exakte_funding_raten(pf, {"perp:BTC_USDC-PERPETUAL": 0.01}, JETZT - 3600, JETZT)
+    engine.funding_buchen(pf, raten, 1.0, JETZT)
+    assert pos["funding"] == pytest.approx(-2.0)  # 0,02 % von 10.000 USD, Long zahlt

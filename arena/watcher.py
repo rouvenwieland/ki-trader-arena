@@ -49,13 +49,35 @@ def _stop_buch(auslöser: float, seite: str, aktuell: Book | None) -> Book:
     return Book([(auslöser, 1e9)], [(auslöser, 1e9)], time.time())
 
 
+_funding_cache: dict[tuple[str, int], float | None] = {}
+
+
+def exakte_funding_raten(pf: dict, raten_8h: dict, seit: float, jetzt: float) -> dict:
+    """Tatsächliches Deribit-Funding des Zeitraums (get_funding_rate_value), umgerechnet in eine 8-h-Rate, damit funding_buchen
+    für den ganzen Zeitraum genau diesen Betrag bucht. Rückfall: aktuelles 8-h-Mittel des Tickers."""
+    out = dict(raten_8h)
+    stunden = (jetzt - seit) / 3600
+    if stunden <= 0:
+        return out
+    for pos in pf["positionen"]:
+        if pos["inst"]["art"] != "perp":
+            continue
+        key = (pos["inst"]["symbol"], int(seit // 60))
+        if key not in _funding_cache:
+            _funding_cache[key] = crypto.funding_wert(pos["inst"]["symbol"], seit, jetzt)
+        w = _funding_cache[key]
+        if w is not None:
+            out[pos["inst"]["id"]] = w * 8 / stunden
+    return out
+
+
 def verarbeite_portfolio(pf: dict, mz: Marktzugriff, funding_raten: dict, jetzt: float) -> list[dict]:
     """Funding → Liquidation → Stop-Loss/Take-Profit → Abrechnung. Liefert Ledger-Einträge."""
     log: list[dict] = []
     seit = pf.get("letzter_tick") or jetzt
     stunden = max(0.0, min((jetzt - seit) / 3600, 6.0))
     if stunden > 0:
-        log += engine.funding_buchen(pf, funding_raten, stunden, jetzt)
+        log += engine.funding_buchen(pf, exakte_funding_raten(pf, funding_raten, jetzt - stunden * 3600, jetzt), stunden, jetzt)
     extreme, marks = {}, {}
     for pos in pf["positionen"]:
         iid = pos["inst"]["id"]

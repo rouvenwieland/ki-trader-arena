@@ -178,3 +178,12 @@ vor dem Deploy aus `data/`. `docs/status.json` (6 kB) bleibt im Git, weil die La
   ab 10 Auflösungen → Log-Odds-Mischung mit dem Marktpreis (KI-Gewicht 0,3) → Kauf nur bei Vorteil > Gebühr + 2 pp Puffer, ¼-Kelly, höchstens 5 % je
   Markt, nur Echtgeld-Plattformen, höchstens 3 Käufe je Tick, Halten bis zur Abrechnung. Die erste Schwarm-Schätzung je Markt wird festgehalten → Brier-Skill
   des Schwarms gegen den Markt ist direkt messbar (Kernfrage des Projekts). Wächter-Laufzeit mit allen neuen Fonds im Test: ~106 s (Grenze 600 s).
+* **5 Reflexion + Kalibrier-Rückmeldung:** Vor jeder Entscheider-Runde schreibt Haiku zu jeder seit dem letzten Lauf geschlossenen/abgerechneten Position
+  eines KI-Fonds 2–4 Sätze mit genau einer Lektion (Wichtigkeit 7) ins Notizbuch – mit Begründung, Zuversicht, Invalidierung, Haltedauer und BTC-Vergleich.
+  Nicht im Wächter (der bleibt ohne KI). Ohne Schlüssel/Budget (nach dem 14.11.) eine nüchterne Zahlen-Notiz. Altbestand wird nicht nachgeholt.
+  Kosten für Liga-Fonds laufen nur gegen den globalen Deckel. Der Rundenprompt meldet ab 15 Auflösungen JA-Überschätzung und Über-/Unterkonfidenz (Platt).
+* **6 Geschichtetes Notizbuch (Hebel 6, M8):** Wichtigkeit 1–10 und optionales Ablaufdatum je Eintrag; vorgelegt werden die 40 Einträge mit dem höchsten
+  Wert aus Wichtigkeit × exp(−Alter/τ) (τ: Beobachtung 3 d, These 14 d, Lektion 90 d, Regel 365 d) + Bonus bei Stichwort-Bezug zu Ereignissen/Positionen.
+  Review-Regeln laufen nach 21 Tagen ab; das Review sieht die Policy-Sperren und darf sie begründet lockern.
+* **7 Deribit:** DVOL (BTC/ETH) als Volatilitätsregime in der Marktlage; Funding wird jetzt **exakt** je Zeitraum gebucht (`get_funding_rate_value`,
+  in eine 8-h-Rate umgerechnet, Rückfall: 8-h-Mittel); Werkzeug `derivate_lage` mit DVOL, Funding je Stunde, annualisierter Basis-Kurve, OI.

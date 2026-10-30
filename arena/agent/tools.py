@@ -133,6 +133,23 @@ class Kontext:
         return _kurz([{"id": x["inst"]["id"], "strike": x["inst"]["strike"], "typ": x["inst"]["typ"], "tage": x["tage"],
                        "bid_usd": round(x["bid"], 1), "ask_usd": round(x["ask"], 1), "iv": x["iv"], "oi": x["oi"], "index": x["index"]} for x in o])
 
+    def t_derivate_lage(self, basis: str = "BTC", **_) -> str:
+        """Volatilitätsregime (DVOL), Funding (8-h-Mittel und letzte Stunden exakt), Basis-Kurve der Terminkontrakte, Open Interest."""
+        b = basis.upper() if basis.upper() in ("BTC", "ETH", "SOL") else "BTC"
+        perp = f"{b}_USDC-PERPETUAL"
+        t = crypto.perp_ticker(perp) or {}
+        jetzt = time.time()
+        stunden = []
+        for h in range(1, 7):
+            w = crypto.funding_wert(perp, jetzt - h * 3600, jetzt - (h - 1) * 3600)
+            if w is not None:
+                stunden.append(round(w * 100, 5))
+        return _kurz({"basis": b, "dvol": crypto.dvol(b) if b in ("BTC", "ETH") else "nur BTC/ETH",
+                      "perp": {"mark": t.get("mark"), "index": t.get("index"), "funding_8h_pct": round(100 * t.get("funding_8h", 0), 5),
+                               "funding_letzte_6h_pct_je_stunde": stunden, "open_interest": t.get("oi")},
+                      "basis_kurve": crypto.basis_kurve(b) if b in ("BTC", "ETH") else [],
+                      "hinweis": "Positive Basis/Funding = Long-Nachfrage (Hebel). Extreme sind Warnsignale für Gegenbewegungen, keine Garantie."})
+
     def t_nachrichten(self, abfrage: str, **_) -> str:
         res = news.suche(abfrage, self.snap.get("nachrichten", []), 8)
         extra = news.gdelt(abfrage, 6)
@@ -301,6 +318,8 @@ class Kontext:
              "schema": s({"instrument_id": str_}, ["instrument_id"]), "fn": self.t_kurs_verlauf},
             {"name": "optionen", "beschreibung": "Liquide Deribit-Optionen (BTC/ETH) nahe am Geld. Nur Kaufen (Long) möglich.",
              "schema": s({"basis": {"type": "string", "enum": ["BTC", "ETH"]}}, []), "fn": self.t_optionen},
+            {"name": "derivate_lage", "beschreibung": "Krypto-Derivate-Lage: Deribit-Volatilitätsindex DVOL (Regime), Funding (8-h-Mittel und exakt je Stunde), annualisierte Basis der Terminkontrakte, Open Interest.",
+             "schema": s({"basis": {"type": "string", "enum": ["BTC", "ETH", "SOL"]}}, []), "fn": self.t_derivate_lage},
             {"name": "nachrichten", "beschreibung": "Sucht aktuelle Nachrichten/Reddit (RSS, GDELT) zu einem Thema.",
              "schema": s({"abfrage": str_}, ["abfrage"]), "fn": self.t_nachrichten},
             {"name": "lagebild", "beschreibung": "Lagedaten: Erdbeben (USGS), Katastrophenalarme (GDACS), Wetterwarnungen (NOAA).",

@@ -27,6 +27,7 @@ def baue(jetzt: float | None = None, mit_nachrichten: bool = True) -> dict:
     s["pm_index"] = {m["mid"]: m for m in s["wetten"]}
     for basis in ("BTC", "ETH"):
         s["optionen"] += crypto.optionen_universum(basis, 8)
+    s["dvol"] = {b: v for b in ("BTC", "ETH") if (v := crypto.dvol(b))}
     s["nachrichten"] = news.alle_nachrichten() if mit_nachrichten else []
     s["verlauf"] = verlauf.lade(26, jetzt)
     return s
@@ -83,6 +84,10 @@ def text(s: dict, max_wetten: int = 30, defn: dict | None = None) -> str:
         for k, v in s["krypto"].items()))
     z.append("PERPS (Deribit, linear USDC; Funding je 8h): " + "; ".join(
         f"{k} mark {v['mark']:.6g} funding {v['funding_8h'] * 100:.4f}%" for k, v in s["perps"].items()))
+    if s.get("dvol"):
+        z.append("VOLA-REGIME (Deribit DVOL, implizite 30-Tage-Vola p. a.): " + "; ".join(
+            f"{b} {v['dvol']:.1f} (24h zuvor {v['vor_24h']:.1f}, 7-Tage-Spanne {v['min_7t']:.0f}–{v['max_7t']:.0f}, ≈ ±{v['tagesbewegung_1sigma_pct']:.1f} % je Tag)"
+            for b, v in s["dvol"].items()) + ". Mehr im Werkzeug „derivate_lage“.")
     if s["aktien"]:
         z.append("AKTIEN/ETF (Yahoo): " + "; ".join(f"{k} {v['preis']:.2f}{'' if v['offen'] else ' (Börse zu)'}" for k, v in s["aktien"].items()))
     else:
