@@ -2,7 +2,7 @@
  "fonds_id": "ko_nein",
  "waehrung": "USD",
  "start_kapital": 11157.431109273288,
- "cash": 10655.720519273287,
+ "cash": 10154.220519273287,
  "positionen": [
   {
    "id": "pe6781775",
@@ -33,8 +33,8 @@
    "gebuehren": 0.0,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.066,
-   "wert": 130.54
+   "kurs": 0.0695,
+   "wert": 139.1
   },
   {
    "id": "p9e535f2b",
@@ -99,6 +99,102 @@
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
    "kurs": 0.245,
    "wert": 160.56
+  },
+  {
+   "id": "p22f7ef7b",
+   "inst": {
+    "id": "pm:polymarket:562802:NEIN",
+    "art": "pm",
+    "venue": "polymarket",
+    "ergebnis": "NEIN",
+    "frage": "Will the Democratic Party control the House after the 2026 Midterm elections?",
+    "schliesst": 1793768340.0,
+    "ref": {
+     "id": "562802",
+     "token_ja": "83247781037352156539108067944461291821683755894607244160607042790356561625563",
+     "token_nein": "33156410999665902694791064431724433042010245771106314074312009703157423879038",
+     "tick": 0.01,
+     "condition": "0xd5d9fc47718bd553592d126b1fa5e87183d27f3936975b0c04cc0f2dec1f1bb4",
+     "gebuehr_rate": 0.0,
+     "gebuehr_exp": 1.0
+    },
+    "url": "https://polymarket.com/event/which-party-will-win-the-house-in-2026"
+   },
+   "seite": "long",
+   "menge": 2390.0,
+   "einstand": 0.07,
+   "hebel": 1.0,
+   "marge": 0.0,
+   "eroeffnet": 1793380123.8861866,
+   "gebuehren": 0.0,
+   "funding": 0.0,
+   "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
+   "kurs": 0.065,
+   "wert": 143.4
+  },
+  {
+   "id": "p1b8b62ed",
+   "inst": {
+    "id": "pm:polymarket:562793:NEIN",
+    "art": "pm",
+    "venue": "polymarket",
+    "ergebnis": "NEIN",
+    "frage": "Will the Democratic Party control the Senate after the 2026 Midterm elections?",
+    "schliesst": 1793768340.0,
+    "ref": {
+     "id": "562793",
+     "token_ja": "113287701564209339913693347405685749986285999146352375265161592243948562084773",
+     "token_nein": "107118433685650702332040991454078902188473746599223732907923581436160160612542",
+     "tick": 0.01,
+     "condition": "0x307a1ed89d60b61002dd5bbf00e1408c5ed2ab3fcdb056191ca7ef9bc34d38f3",
+     "gebuehr_rate": 0.0,
+     "gebuehr_exp": 1.0
+    },
+    "url": "https://polymarket.com/event/which-party-will-win-the-senate-in-2026"
+   },
+   "seite": "long",
+   "menge": 597.0,
+   "einstand": 0.28,
+   "hebel": 1.0,
+   "marge": 0.0,
+   "eroeffnet": 1793380123.8861866,
+   "gebuehren": 0.0,
+   "funding": 0.0,
+   "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
+   "kurs": 0.275,
+   "wert": 161.19
+  },
+  {
+   "id": "p891e3c87",
+   "inst": {
+    "id": "pm:polymarket:630964:NEIN",
+    "art": "pm",
+    "venue": "polymarket",
+    "ergebnis": "NEIN",
+    "frage": "Will the Republicans win the Texas Senate race in 2026?",
+    "schliesst": 1793768340.0,
+    "ref": {
+     "id": "630964",
+     "token_ja": "21265207456609426291246075480390336499088453711419597084147957999650569091884",
+     "token_nein": "9846414914422486942750462555692240718767368950832862364324602361738794436048",
+     "tick": 0.01,
+     "condition": "0x94521176f57d2ce81dde01e0b7699ca4279423042d37ed53908f0c8bfefe7e14",
+     "gebuehr_rate": 0.0,
+     "gebuehr_exp": 1.0
+    },
+    "url": "https://polymarket.com/event/texas-senate-election-winner"
+   },
+   "seite": "long",
+   "menge": 232.0,
+   "einstand": 0.72,
+   "hebel": 1.0,
+   "marge": 0.0,
+   "eroeffnet": 1793380123.8861866,
+   "gebuehren": 0.0,
+   "funding": 0.0,
+   "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
+   "kurs": 0.715,
+   "wert": 164.72
   }
  ],
  "realisiert": 0.0,
@@ -106,6 +202,6 @@
  "funding": 0.0,
  "erstellt": 1793379225.5430336,
  "start_fx": 1.1157431109273288,
- "letzter_tick": 1793379225.5430336,
- "kontrolle_bis": 1793320740.991442
+ "letzter_tick": 1793380123.8861866,
+ "kontrolle_bis": 1793354897.7969308
 }

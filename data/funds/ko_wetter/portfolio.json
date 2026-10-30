@@ -1,0 +1,67 @@
+{
+ "fonds_id": "ko_wetter",
+ "waehrung": "USD",
+ "start_kapital": 11156.327353966788,
+ "cash": 10488.15615396679,
+ "positionen": [
+  {
+   "id": "pa52a56cd",
+   "inst": {
+    "id": "pm:kalshi:KXHIGHNY-26OCT30-B69.5:JA",
+    "art": "pm",
+    "venue": "kalshi",
+    "ergebnis": "JA",
+    "frage": "Will the maximum temperature be 69-70° on Oct 30, 2026? [69° to 70°]",
+    "schliesst": 1793422800.0,
+    "ref": {
+     "ticker": "KXHIGHNY-26OCT30-B69.5"
+    },
+    "url": "https://kalshi.com/markets/KXHIGHNY-26OCT30"
+   },
+   "seite": "long",
+   "menge": 408.0,
+   "einstand": 0.8083769607843136,
+   "hebel": 1.0,
+   "marge": 0.0,
+   "eroeffnet": 1793380123.8861866,
+   "gebuehren": 4.43,
+   "funding": 0.0,
+   "ausstiegsplan": "Halten bis zur Abrechnung (Wetter-Regel)",
+   "kurs": 0.7949999999999999,
+   "wert": 314.16
+  },
+  {
+   "id": "p5c3075b5",
+   "inst": {
+    "id": "pm:kalshi:KXHIGHNY-26OCT30-B71.5:NEIN",
+    "art": "pm",
+    "venue": "kalshi",
+    "ergebnis": "NEIN",
+    "frage": "Will the maximum temperature be 71-72° on Oct 30, 2026? [71° to 72°]",
+    "schliesst": 1793422800.0,
+    "ref": {
+     "ticker": "KXHIGHNY-26OCT30-B71.5"
+    },
+    "url": "https://kalshi.com/markets/KXHIGHNY-26OCT30"
+   },
+   "seite": "long",
+   "menge": 417.0,
+   "einstand": 0.7891208633093526,
+   "hebel": 1.0,
+   "marge": 0.0,
+   "eroeffnet": 1793380123.8861866,
+   "gebuehren": 4.86,
+   "funding": 0.0,
+   "ausstiegsplan": "Halten bis zur Abrechnung (Wetter-Regel)",
+   "kurs": 0.775,
+   "wert": 316.92
+  }
+ ],
+ "realisiert": 0.0,
+ "gebuehren": 9.29,
+ "funding": 0.0,
+ "erstellt": 1793380123.8861866,
+ "start_fx": 1.1156327353966788,
+ "letzter_tick": 1793380123.8861866,
+ "wetter_letzter": 1793380123.8861866
+}
