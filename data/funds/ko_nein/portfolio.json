@@ -2,7 +2,7 @@
  "fonds_id": "ko_nein",
  "waehrung": "USD",
  "start_kapital": 11157.431109273288,
- "cash": 9652.436079273286,
+ "cash": 9151.167779273286,
  "positionen": [
   {
    "id": "pe6781775",
@@ -33,8 +33,8 @@
    "gebuehren": 0.0,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.07150000000000001,
-   "wert": 145.52
+   "kurs": 0.07050000000000001,
+   "wert": 143.38
   },
   {
    "id": "p9e535f2b",
@@ -257,8 +257,8 @@
    "gebuehren": 1.59066,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.859,
-   "wert": 163.97
+   "kurs": 0.861,
+   "wert": 165.12
   },
   {
    "id": "p28450e21",
@@ -283,15 +283,105 @@
    "gebuehren": 8.66,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.18,
+   "kurs": 0.11499999999999999,
    "wert": 78.98
+  },
+  {
+   "id": "pa262ac37",
+   "inst": {
+    "id": "pm:kalshi:KXRAIN-26OCT31-DAL:NEIN",
+    "art": "pm",
+    "venue": "kalshi",
+    "ergebnis": "NEIN",
+    "frage": "Will it rain in Dallas on Oct 31, 2026? [Dallas]",
+    "schliesst": 1793512800.0,
+    "ref": {
+     "ticker": "KXRAIN-26OCT31-DAL"
+    },
+    "url": "https://kalshi.com/markets/KXRAIN-26OCT31"
+   },
+   "seite": "long",
+   "menge": 404.0,
+   "einstand": 0.39651410891089106,
+   "hebel": 1.0,
+   "marge": 0.0,
+   "eroeffnet": 1793381923.768329,
+   "gebuehren": 6.77,
+   "funding": 0.0,
+   "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
+   "kurs": 0.39,
+   "wert": 137.36
+  },
+  {
+   "id": "pfa54617a",
+   "inst": {
+    "id": "pm:polymarket:5211630:NEIN",
+    "art": "pm",
+    "venue": "polymarket",
+    "ergebnis": "NEIN",
+    "frage": "Will the US add at least 100k jobs in October?",
+    "schliesst": 1794027540.0,
+    "ref": {
+     "id": "5211630",
+     "token_ja": "30970751221156289545917767044786871592299627925057784021252894839510493562848",
+     "token_nein": "70826510418150115111353292496614848790727759050038378224242910996119140629314",
+     "tick": 0.01,
+     "condition": "0x314cc7078ca031e596700f6cca6f24c736f95a2ac17e07496c8cf8a3eeb4c573",
+     "gebuehr_rate": 0.0,
+     "gebuehr_exp": 1.0
+    },
+    "url": "https://polymarket.com/event/will-the-us-add-at-least-100k-jobs-in-october-2026"
+   },
+   "seite": "long",
+   "menge": 226.0,
+   "einstand": 0.74,
+   "hebel": 1.0,
+   "marge": 0.0,
+   "eroeffnet": 1793381923.768329,
+   "gebuehren": 0.0,
+   "funding": 0.0,
+   "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
+   "kurs": 0.73,
+   "wert": 162.72
+  },
+  {
+   "id": "p30de0421",
+   "inst": {
+    "id": "pm:polymarket:1194643:NEIN",
+    "art": "pm",
+    "venue": "polymarket",
+    "ergebnis": "NEIN",
+    "frage": "Will Iliana Iotova win the next Bulgarian presidential election?",
+    "schliesst": 1793595540.0,
+    "ref": {
+     "id": "1194643",
+     "token_ja": "50441114645457108268892324313719484550984676393068151334263975251311332365159",
+     "token_nein": "99622103131434202105388039057766053299905201074786569487569345621536678411876",
+     "tick": 0.01,
+     "condition": "0x5512bfa9294bf914063ed120969908dee5cdf6e14293f28ca405d3ce4edcf485",
+     "gebuehr_rate": 0.0,
+     "gebuehr_exp": 1.0
+    },
+    "url": "https://polymarket.com/event/bulgaria-presidential-election"
+   },
+   "seite": "long",
+   "menge": 572.0,
+   "einstand": 0.2920744755244755,
+   "hebel": 1.0,
+   "marge": 0.0,
+   "eroeffnet": 1793381923.768329,
+   "gebuehren": 0.0,
+   "funding": 0.0,
+   "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
+   "kurs": 0.29000000000000004,
+   "wert": 160.16
   }
  ],
  "realisiert": 0.0,
- "gebuehren": 10.25066,
+ "gebuehren": 17.02066,
  "funding": 0.0,
  "erstellt": 1793379225.5430336,
  "start_fx": 1.1157431109273288,
- "letzter_tick": 1793381024.3823931,
- "kontrolle_bis": 1793354897.7969308
+ "letzter_tick": 1793381923.768329,
+ "kontrolle_bis": 1793365700.224454
 }

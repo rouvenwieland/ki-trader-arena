@@ -1,6 +1,6 @@
 {
  "version": 1,
- "stand": 1793381077.4960785,
+ "stand": 1793381979.12563,
  "hinweis": "Papierhandel-Simulation, keine Anlageberatung",
  "seite": "https://rouvenwieland.github.io/ki-trader-arena/",
  "budget": {
@@ -12,7 +12,7 @@
   "ziel_tag_eur": 11.0,
   "tempo_faktor": 1.0
  },
- "ueberlappung_claude_pct": 18.8,
+ "ueberlappung_claude_pct": 18.7,
  "prognosen": [
   {
    "id": "claude_vorsichtig",
@@ -23,6 +23,11 @@
    "id": "ko_markt",
    "n": 1,
    "brier_skill_markt": 0.0
+  },
+  {
+   "id": "ko_nein",
+   "n": 1,
+   "brier_skill_markt": -1.7275
   }
  ],
  "nachfolger_vorschau": "DeepSeek",
@@ -33,7 +38,7 @@
    "name": "Claude Aggressiv",
    "typ": "claude",
    "rendite_pct": 6.16,
-   "equity_eur": 10643.49,
+   "equity_eur": 10646.62,
    "max_drawdown_pct": -2.65,
    "status": "aktiv",
    "modell": "claude-sonnet-5-5",
@@ -74,6 +79,7 @@
     6.06,
     5.95,
     5.89,
+    6.16,
     6.16
    ]
   },
@@ -83,7 +89,7 @@
    "name": "DeepSeek",
    "typ": "liga",
    "rendite_pct": 1.78,
-   "equity_eur": 10204.3,
+   "equity_eur": 10207.38,
    "max_drawdown_pct": -0.79,
    "status": "aktiv",
    "modell": "deepseek-chat",
@@ -124,6 +130,7 @@
     1.78,
     1.78,
     1.78,
+    1.78,
     1.78
    ]
   },
@@ -132,8 +139,8 @@
    "id": "bm_affe",
    "name": "Zufallsaffe",
    "typ": "benchmark",
-   "rendite_pct": 1.5,
-   "equity_eur": 10175.89,
+   "rendite_pct": 1.45,
+   "equity_eur": 10174.1,
    "max_drawdown_pct": -0.75,
    "status": "läuft",
    "modell": null,
@@ -174,7 +181,8 @@
     1.5,
     1.41,
     1.42,
-    1.5
+    1.5,
+    1.45
    ]
   },
   {
@@ -183,12 +191,12 @@
    "name": "Claude Mittel",
    "typ": "claude",
    "rendite_pct": 1.29,
-   "equity_eur": 10155.39,
+   "equity_eur": 10158.45,
    "max_drawdown_pct": -0.17,
    "status": "aktiv",
    "modell": "claude-sonnet-5-5",
-   "kosten_heute_eur": 1.983,
-   "kosten_gesamt_eur": 1.983,
+   "kosten_heute_eur": 1.984,
+   "kosten_gesamt_eur": 1.984,
    "rendite_ki_pct": null,
    "verlauf_pct": [
     0.0,
@@ -224,6 +232,7 @@
     1.29,
     1.29,
     1.29,
+    1.29,
     1.29
    ]
   },
@@ -232,8 +241,8 @@
    "id": "claude_vorsichtig",
    "name": "Claude Vorsichtig",
    "typ": "claude",
-   "rendite_pct": 0.79,
-   "equity_eur": 10105.25,
+   "rendite_pct": 0.88,
+   "equity_eur": 10117.21,
    "max_drawdown_pct": -0.52,
    "status": "aktiv",
    "modell": "claude-opus-5-5",
@@ -274,7 +283,8 @@
     0.79,
     0.83,
     0.8,
-    0.79
+    0.79,
+    0.88
    ]
   },
   {
@@ -282,8 +292,8 @@
    "id": "ko_wetter",
    "name": "Regelfonds: Wetter-Ensemble",
    "typ": "benchmark",
-   "rendite_pct": 0.0,
-   "equity_eur": 10000.14,
+   "rendite_pct": 0.78,
+   "equity_eur": 10080.79,
    "max_drawdown_pct": 0.0,
    "status": "läuft",
    "modell": null,
@@ -292,7 +302,8 @@
    "rendite_ki_pct": null,
    "verlauf_pct": [
     -0.33,
-    0.0
+    0.0,
+    0.78
    ]
   },
   {
@@ -301,7 +312,7 @@
    "name": "Gemini Flash",
    "typ": "liga",
    "rendite_pct": 0.0,
-   "equity_eur": 10025.67,
+   "equity_eur": 10028.7,
    "max_drawdown_pct": 0.0,
    "status": "aktiv",
    "modell": "gemini-flash-lite-latest",
@@ -309,6 +320,7 @@
    "kosten_gesamt_eur": 0.0,
    "rendite_ki_pct": null,
    "verlauf_pct": [
+    0.0,
     0.0,
     0.0,
     0.0,
@@ -351,7 +363,7 @@
    "name": "Kimi (Moonshot)",
    "typ": "liga",
    "rendite_pct": 0.0,
-   "equity_eur": 10025.67,
+   "equity_eur": 10028.7,
    "max_drawdown_pct": 0.0,
    "status": "Fehler: Modellfehler: kimi-k2-turbo-preview: HTTP 404 {\"error\":{\"message\":\"Not found the model kimi-k2-turbo-preview or Permission denied\",\"type\":\"r",
    "modell": "kimi-k2-turbo-preview",
@@ -359,6 +371,7 @@
    "kosten_gesamt_eur": 0.0,
    "rendite_ki_pct": null,
    "verlauf_pct": [
+    0.0,
     0.0,
     0.0,
     0.0,
@@ -401,7 +414,7 @@
    "name": "OpenAI",
    "typ": "liga",
    "rendite_pct": 0.0,
-   "equity_eur": 10025.67,
+   "equity_eur": 10028.7,
    "max_drawdown_pct": 0.0,
    "status": "pausiert (kein Guthaben)",
    "modell": "gpt-5-mini",
@@ -409,6 +422,7 @@
    "kosten_gesamt_eur": 0.0,
    "rendite_ki_pct": null,
    "verlauf_pct": [
+    0.0,
     0.0,
     0.0,
     0.0,
@@ -451,7 +465,7 @@
    "name": "Claude Mittel+RM (A/B)",
    "typ": "claude",
    "rendite_pct": 0.0,
-   "equity_eur": 10000.07,
+   "equity_eur": 10003.09,
    "max_drawdown_pct": 0.0,
    "status": "wartet auf ersten Lauf",
    "modell": null,
@@ -459,6 +473,7 @@
    "kosten_gesamt_eur": 0.0,
    "rendite_ki_pct": null,
    "verlauf_pct": [
+    0.0,
     0.0,
     0.0
    ]
@@ -469,7 +484,7 @@
    "name": "Schwarm (nur Liga)",
    "typ": "schwarm",
    "rendite_pct": -0.0,
-   "equity_eur": 10001.06,
+   "equity_eur": 10004.08,
    "max_drawdown_pct": 0.0,
    "status": "wartet auf ersten Lauf",
    "modell": null,
@@ -477,6 +492,7 @@
    "kosten_gesamt_eur": 0.0,
    "rendite_ki_pct": null,
    "verlauf_pct": [
+    -0.0,
     -0.0,
     -0.0,
     -0.0
@@ -488,7 +504,7 @@
    "name": "Kontrolle: Markt-Kopierer",
    "typ": "benchmark",
    "rendite_pct": -0.0,
-   "equity_eur": 10001.06,
+   "equity_eur": 10004.08,
    "max_drawdown_pct": 0.0,
    "status": "läuft",
    "modell": null,
@@ -496,6 +512,7 @@
    "kosten_gesamt_eur": 0.0,
    "rendite_ki_pct": null,
    "verlauf_pct": [
+    -0.0,
     -0.0,
     -0.0,
     -0.0
@@ -507,7 +524,7 @@
    "name": "Schwarm (alle KI)",
    "typ": "schwarm",
    "rendite_pct": -0.03,
-   "equity_eur": 9998.31,
+   "equity_eur": 10001.32,
    "max_drawdown_pct": 0.0,
    "status": "wartet auf ersten Lauf",
    "modell": null,
@@ -515,6 +532,7 @@
    "kosten_gesamt_eur": 0.0,
    "rendite_ki_pct": null,
    "verlauf_pct": [
+    -0.03,
     -0.03,
     -0.03,
     -0.03
@@ -526,7 +544,7 @@
    "name": "Schwarm (nur Claude)",
    "typ": "schwarm",
    "rendite_pct": -0.04,
-   "equity_eur": 9997.37,
+   "equity_eur": 10000.39,
    "max_drawdown_pct": 0.0,
    "status": "wartet auf ersten Lauf",
    "modell": null,
@@ -534,6 +552,7 @@
    "kosten_gesamt_eur": 0.0,
    "rendite_ki_pct": null,
    "verlauf_pct": [
+    -0.04,
     -0.04,
     -0.04,
     -0.04
@@ -544,8 +563,8 @@
    "id": "bm_btc",
    "name": "Buy & Hold BTC",
    "typ": "benchmark",
-   "rendite_pct": -0.42,
-   "equity_eur": 9983.81,
+   "rendite_pct": -0.4,
+   "equity_eur": 9988.65,
    "max_drawdown_pct": -2.48,
    "status": "läuft",
    "modell": null,
@@ -586,7 +605,8 @@
     -0.11,
     -0.29,
     -0.41,
-    -0.42
+    -0.42,
+    -0.4
    ]
   },
   {
@@ -594,9 +614,9 @@
    "id": "bm_6040",
    "name": "60/40 (SPY/AGG)",
    "typ": "benchmark",
-   "rendite_pct": -0.43,
-   "equity_eur": 9982.18,
-   "max_drawdown_pct": -0.45,
+   "rendite_pct": -0.48,
+   "equity_eur": 9981.02,
+   "max_drawdown_pct": -0.48,
    "status": "läuft",
    "modell": null,
    "kosten_heute_eur": 0.0,
@@ -636,7 +656,8 @@
     -0.32,
     -0.4,
     -0.45,
-    -0.43
+    -0.43,
+    -0.48
    ]
   },
   {
@@ -644,9 +665,9 @@
    "id": "bm_sp500",
    "name": "S&P-500-ETF (SPY)",
    "typ": "benchmark",
-   "rendite_pct": -0.64,
-   "equity_eur": 9961.52,
-   "max_drawdown_pct": -0.67,
+   "rendite_pct": -0.7,
+   "equity_eur": 9958.54,
+   "max_drawdown_pct": -0.7,
    "status": "läuft",
    "modell": null,
    "kosten_heute_eur": 0.0,
@@ -686,7 +707,8 @@
     -0.42,
     -0.59,
     -0.66,
-    -0.64
+    -0.64,
+    -0.7
    ]
   },
   {
@@ -694,9 +716,9 @@
    "id": "ko_nein",
    "name": "Kontrolle: Immer NEIN",
    "typ": "benchmark",
-   "rendite_pct": -1.49,
-   "equity_eur": 9851.87,
-   "max_drawdown_pct": -1.05,
+   "rendite_pct": -1.87,
+   "equity_eur": 9817.17,
+   "max_drawdown_pct": -1.43,
    "status": "läuft",
    "modell": null,
    "kosten_heute_eur": 0.0,
@@ -705,7 +727,8 @@
    "verlauf_pct": [
     -0.44,
     -0.65,
-    -1.49
+    -1.49,
+    -1.87
    ]
   }
  ],
@@ -781,6 +804,26 @@
  ],
  "ereignisse": [
   {
+   "ts": 1793381923.768329,
+   "typ": "nachricht_position",
+   "titel": "Nachricht zu pm:polymarket:5170740:NEIN: I’m Mining Bitcoin With a DIY $30 Solar Panels and Free Forklift Batteries (r/Bitcoin)"
+  },
+  {
+   "ts": 1793381923.768329,
+   "typ": "nachricht_position",
+   "titel": "Nachricht zu pm:polymarket:5170740:NEIN: Crypto Biz: Bitcoin’s quantum threat is becoming an economic problem (Cointelegraph)"
+  },
+  {
+   "ts": 1793381923.768329,
+   "typ": "nachricht_position",
+   "titel": "Nachricht zu pm:polymarket:3215007:NEIN: US interest rates held steady and economy grows - what it means for you (BBC Wirtschaft)"
+  },
+  {
+   "ts": 1793381923.768329,
+   "typ": "nachricht_position",
+   "titel": "Nachricht zu pm:polymarket:3215007:NEIN: Decisions taken by the Governing Council of the ECB (in addition to decisions setting interest rates) (EZB Presse)"
+  },
+  {
    "ts": 1793381024.3823931,
    "typ": "nachricht_position",
    "titel": "Nachricht zu pm:polymarket:630964:NEIN: Alaska's Senate race faces claims of spoiler candidate. And, Hegseth ousts Army general (NPR Politik)"
@@ -799,26 +842,6 @@
    "ts": 1793381024.3823931,
    "typ": "nachricht_position",
    "titel": "Nachricht zu pm:polymarket:562793:NEIN: Pope Leo votes in US midterms in first known political ballot for any pontiff (Guardian Welt)"
-  },
-  {
-   "ts": 1793381024.3823931,
-   "typ": "nachricht_position",
-   "titel": "Nachricht zu pm:polymarket:562802:NEIN: Pope Leo XIV becomes first pontiff to vote in a US election (BBC Welt)"
-  },
-  {
-   "ts": 1793381024.3823931,
-   "typ": "nachricht_position",
-   "titel": "Nachricht zu pm:polymarket:562802:NEIN: Pope Leo votes in US midterms in first known political ballot for any pontiff (Guardian Welt)"
-  },
-  {
-   "ts": 1793381024.3823931,
-   "typ": "nachricht_position",
-   "titel": "Nachricht zu spot:BTC-USD: Crypto Biz: Bitcoin’s quantum threat is becoming an economic problem (Cointelegraph)"
-  },
-  {
-   "ts": 1793381024.3823931,
-   "typ": "nachricht_position",
-   "titel": "Nachricht zu pm:polymarket:5170740:JA: Crypto Biz: Bitcoin’s quantum threat is becoming an economic problem (Cointelegraph)"
   }
  ]
 }
