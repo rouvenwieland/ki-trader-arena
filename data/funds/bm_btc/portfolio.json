@@ -1,0 +1,34 @@
+{
+ "fonds_id": "bm_btc",
+ "waehrung": "USD",
+ "start_kapital": 11184.88579861696,
+ "cash": 55.92442899327034,
+ "positionen": [
+  {
+   "id": "p0696fdb3",
+   "inst": {
+    "id": "spot:BTC-USD",
+    "art": "spot",
+    "venue": "coinbase",
+    "symbol": "BTC-USD"
+   },
+   "seite": "long",
+   "menge": 0.14378228161841625,
+   "einstand": 76939.84077854393,
+   "hebel": 1.0,
+   "marge": 0.0,
+   "eroeffnet": 1793319819.7411644,
+   "gebuehren": 66.37551512698026,
+   "funding": 0.0,
+   "kurs": 76901.33,
+   "wert": 11056.39
+  }
+ ],
+ "realisiert": 0.0,
+ "gebuehren": 66.37551512698026,
+ "funding": 0.0,
+ "erstellt": 1793319819.7411644,
+ "start_fx": 1.1184885798616961,
+ "letzter_tick": 1793319819.7411644,
+ "gestartet": 1793319819.7411644
+}

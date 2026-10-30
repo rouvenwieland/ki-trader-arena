@@ -1,0 +1,53 @@
+{
+ "fonds_id": "bm_affe",
+ "waehrung": "USD",
+ "start_kapital": 11184.88579861696,
+ "cash": 6678.9705799130425,
+ "positionen": [
+  {
+   "id": "pd308af3b",
+   "inst": {
+    "id": "spot:BTC-USD",
+    "art": "spot",
+    "venue": "coinbase",
+    "symbol": "BTC-USD"
+   },
+   "seite": "long",
+   "menge": 0.028113848191246252,
+   "einstand": 76936.21471745384,
+   "hebel": 1.0,
+   "marge": 0.0,
+   "eroeffnet": 1793319819.7411644,
+   "gebuehren": 12.977838365853739,
+   "funding": 0.0,
+   "kurs": 76901.33,
+   "wert": 2161.86
+  },
+  {
+   "id": "p4e9db0e3",
+   "inst": {
+    "id": "spot:LINK-USD",
+    "art": "spot",
+    "venue": "coinbase",
+    "symbol": "LINK-USD"
+   },
+   "seite": "long",
+   "menge": 223.56279545684444,
+   "einstand": 10.35980923014616,
+   "hebel": 1.0,
+   "marge": 0.0,
+   "eroeffnet": 1793319819.7411644,
+   "gebuehren": 13.896407471346572,
+   "funding": 0.0,
+   "kurs": 10.350999999999999,
+   "wert": 2313.2
+  }
+ ],
+ "realisiert": 0.0,
+ "gebuehren": 26.874245837200313,
+ "funding": 0.0,
+ "erstellt": 1793319819.7411644,
+ "start_fx": 1.1184885798616961,
+ "letzter_tick": 1793319819.7411644,
+ "letzter_tag": "2026-10-30"
+}
