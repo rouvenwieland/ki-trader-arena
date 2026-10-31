@@ -35,8 +35,8 @@
    "ausstiegsplan": "Halten bis Auflösung heute 23:59 ET (31.10. 03:59 UTC). Bei NEIN-Ausgang volle Auszahlung 1,00; kein vorzeitiger Verkauf nötig, da Restzeit <7h.",
    "entscheidung_id": "dfab9a0ea",
    "invalidierung": "Binance BTC/USDT fällt unter 75.000 oder es erscheint eine Meldung, dass 75k bereits berührt wurde → These sofort falsch.",
-   "kurs": 0.929,
-   "wert": 1621.22
+   "kurs": 0.928,
+   "wert": 1619.47
   },
   {
    "id": "p34466a85",
@@ -62,7 +62,9 @@
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (NWS CLI 31.10., wenige Stunden). Kein vorzeitiger Verkauf bei <2h Restzeit wegen Spread.",
    "entscheidung_id": "dbb7681e6",
-   "invalidierung": "Beobachtete Temperatur in LAX tagsüber bereits über 69°F oder NWS-Prognose hebt Max klar über 70°F → Bracket 67-68 unwahrscheinlich."
+   "invalidierung": "Beobachtete Temperatur in LAX tagsüber bereits über 69°F oder NWS-Prognose hebt Max klar über 70°F → Bracket 67-68 unwahrscheinlich.",
+   "kurs": 0.045,
+   "wert": 112.0
   },
   {
    "id": "p5a2d4185",
@@ -88,7 +90,9 @@
    "funding": 0.0,
    "ausstiegsplan": "Halten bis Abrechnung (NWS CLI 31.10.). Kein vorzeitiger Verkauf.",
    "entscheidung_id": "d92d0dbe3",
-   "invalidierung": "Beobachtete Temperatur Midway tagsüber bereits über 59°F vor Mittag oder NWS-Prognose hebt Max klar auf 63°F+."
+   "invalidierung": "Beobachtete Temperatur Midway tagsüber bereits über 59°F vor Mittag oder NWS-Prognose hebt Max klar auf 63°F+.",
+   "kurs": 0.125,
+   "wert": 176.04
   }
  ],
  "realisiert": 199.28251999999998,
@@ -96,5 +100,5 @@
  "funding": 0.0,
  "erstellt": 1793319819.7411644,
  "start_fx": 1.1184885798616961,
- "letzter_tick": 1793423535.2102432
+ "letzter_tick": 1793424434.3596478
 }
