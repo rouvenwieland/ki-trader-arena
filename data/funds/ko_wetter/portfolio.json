@@ -2,7 +2,7 @@
  "fonds_id": "ko_wetter",
  "waehrung": "USD",
  "start_kapital": 11156.327353966788,
- "cash": 8526.69401199247,
+ "cash": 8361.974092913231,
  "positionen": [
   {
    "id": "pa52a56cd",
@@ -237,13 +237,39 @@
    "ausstiegsplan": "Halten bis zur Abrechnung (Wetter-Regel)",
    "kurs": 0.055,
    "wert": 80.9
+  },
+  {
+   "id": "p8853300e",
+   "inst": {
+    "id": "pm:kalshi:KXHIGHDEN-26OCT31-T65:JA",
+    "art": "pm",
+    "venue": "kalshi",
+    "ergebnis": "JA",
+    "frage": "Will the maximum temperature be >65° on Oct 31, 2026? [66° or above]",
+    "schliesst": 1793516400.0,
+    "ref": {
+     "ticker": "KXHIGHDEN-26OCT31-T65"
+    },
+    "url": "https://kalshi.com/markets/KXHIGHDEN-26OCT31"
+   },
+   "seite": "long",
+   "menge": 2258.0,
+   "einstand": 0.06848092076139888,
+   "hebel": 1.0,
+   "marge": 0.0,
+   "eroeffnet": 1793409135.268308,
+   "gebuehren": 10.09,
+   "funding": 0.0,
+   "ausstiegsplan": "Halten bis zur Abrechnung (Wetter-Regel)",
+   "kurs": 0.11,
+   "wert": 22.58
   }
  ],
  "realisiert": 0.0,
- "gebuehren": 89.3,
+ "gebuehren": 99.39,
  "funding": 0.0,
  "erstellt": 1793380123.8861866,
  "start_fx": 1.1156327353966788,
- "letzter_tick": 1793409023.5639071,
- "wetter_letzter": 1793405424.2104914
+ "letzter_tick": 1793409135.268308,
+ "wetter_letzter": 1793409135.268308
 }
