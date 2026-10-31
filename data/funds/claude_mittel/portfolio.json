@@ -29,8 +29,8 @@
    "ausstiegsplan": "Bis zur Abrechnung (NWS CLI 31.10.) halten. Kein Stop, da Binärwette; Größe begrenzt das Risiko.",
    "entscheidung_id": "d6179fa1b",
    "invalidierung": "Aktuelle NWS-Prognose oder gemessene Temperatur am 31.10. mit einem Höchstwert von 62–63°F, z. B. Mittagswert ≥62 bei bewölktem Himmel und Regen am Vormittag.",
-   "kurs": 0.645,
-   "wert": 200.96
+   "kurs": 0.655,
+   "wert": 204.1
   },
   {
    "id": "p51e71031",
@@ -63,8 +63,8 @@
    "ausstiegsplan": "Halten; Gewinn mitnehmen, wenn NEIN ≥0.90 (JA ≤0.10) oder der Preis meine P erreicht. Neu bewerten, wenn Lisnard in Umfragen über 12 % steigt oder Philippe/Retailleau zurückziehen.",
    "entscheidung_id": "df10ef502",
    "invalidierung": "Lisnard in mehreren Umfragen ≥12 % im 1. Wahlgang oder Rückzug von Philippe/Retailleau zu seinen Gunsten.",
-   "kurs": 0.8385,
-   "wert": 257.27
+   "kurs": 0.838,
+   "wert": 256.96
   },
   {
    "id": "p842aa632",
@@ -91,8 +91,8 @@
    "ausstiegsplan": "Bis zur Abrechnung halten, Größe begrenzt das Risiko.",
    "entscheidung_id": "d85521827",
    "invalidierung": "Meldung über Entlassung von Carrick oder eines anderen PL-Trainers am 31.10.",
-   "kurs": 0.5990334699905648,
-   "wert": 22.46
+   "kurs": 0.6873160774200021,
+   "wert": 25.87
   }
  ],
  "realisiert": 208.24286999999975,
@@ -100,5 +100,5 @@
  "funding": 0.0,
  "erstellt": 1793319819.7411644,
  "start_fx": 1.1184885798616961,
- "letzter_tick": 1793462508.0355647
+ "letzter_tick": 1793463407.5836966
 }
