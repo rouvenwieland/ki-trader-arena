@@ -91,8 +91,8 @@
    "ausstiegsplan": "Halten bis Abrechnung (NWS CLI 31.10.). Kein Verkauf im dünnen Buch.",
    "entscheidung_id": "d7e617f15",
    "invalidierung": "Beobachtetes Max in Midway erreicht 61°F vor 18:00 Ortszeit oder NWS hebt die Tagesprognose auf 63°F+ → Bracket ≤59 praktisch tot.",
-   "kurs": 0.05,
-   "wert": 74.76
+   "kurs": null,
+   "wert": 363.96
   },
   {
    "id": "p3f11e9a0",
@@ -128,5 +128,5 @@
  "funding": 0.0,
  "erstellt": 1793319819.7411644,
  "start_fx": 1.1184885798616961,
- "letzter_tick": 1793467116.8094604
+ "letzter_tick": 1793468016.6769283
 }
