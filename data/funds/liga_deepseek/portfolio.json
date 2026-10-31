@@ -63,8 +63,8 @@
    "ausstiegsplan": "Halten bis zur Abrechnung (NWS CLI 31.10., wenige Stunden). Kein vorzeitiger Verkauf bei <2h Restzeit wegen Spread.",
    "entscheidung_id": "dbb7681e6",
    "invalidierung": "Beobachtete Temperatur in LAX tagsüber bereits über 69°F oder NWS-Prognose hebt Max klar über 70°F → Bracket 67-68 unwahrscheinlich.",
-   "kurs": 0.015,
-   "wert": 28.0
+   "kurs": null,
+   "wert": 329.61
   },
   {
    "id": "p5a2d4185",
@@ -91,8 +91,8 @@
    "ausstiegsplan": "Halten bis Abrechnung (NWS CLI 31.10.). Kein Verkauf im dünnen Buch.",
    "entscheidung_id": "d7e617f15",
    "invalidierung": "Beobachtetes Max in Midway erreicht 61°F vor 18:00 Ortszeit oder NWS hebt die Tagesprognose auf 63°F+ → Bracket ≤59 praktisch tot.",
-   "kurs": 0.035,
-   "wert": 56.07
+   "kurs": 0.05,
+   "wert": 74.76
   },
   {
    "id": "p3f11e9a0",
@@ -119,8 +119,8 @@
    "ausstiegsplan": "Halten bis Abrechnung (NWS CLI 31.10.). Kein Verkauf im dünnen Buch bei <2h Restzeit, da Spread die Edge frisst.",
    "entscheidung_id": "dde75bf13",
    "invalidierung": "Beobachtetes Max Denver erreicht 62°F vor 15:00 Ortszeit nicht mehr oder NWS senkt Tagesprognose klar unter 62°F → Bracket 64-65 praktisch tot.",
-   "kurs": 0.045,
-   "wert": 46.04
+   "kurs": 0.035,
+   "wert": 34.53
   }
  ],
  "realisiert": 199.28251999999998,
@@ -128,5 +128,5 @@
  "funding": 0.0,
  "erstellt": 1793319819.7411644,
  "start_fx": 1.1184885798616961,
- "letzter_tick": 1793466217.147968
+ "letzter_tick": 1793467116.8094604
 }
