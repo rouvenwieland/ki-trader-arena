@@ -2,7 +2,7 @@
  "fonds_id": "liga_deepseek",
  "waehrung": "USD",
  "start_kapital": 11184.88579861696,
- "cash": 9335.289554052928,
+ "cash": 9250.462954052928,
  "positionen": [
   {
    "id": "p7f67c5d4",
@@ -81,22 +81,22 @@
     "url": "https://kalshi.com/markets/KXHIGHCHI-26OCT31"
    },
    "seite": "long",
-   "menge": 1467.0,
-   "einstand": 0.19334543596730247,
+   "menge": 1869.0,
+   "einstand": 0.19473748237775962,
    "hebel": 1.0,
    "marge": 0.0,
    "eroeffnet": 1793423739.278077,
-   "gebuehren": 16.02,
+   "gebuehren": 20.52,
    "funding": 0.0,
-   "ausstiegsplan": "Halten bis Abrechnung (NWS CLI 31.10.). Kein vorzeitiger Verkauf.",
-   "entscheidung_id": "d92d0dbe3",
-   "invalidierung": "Beobachtete Temperatur Midway tagsüber bereits über 59°F vor Mittag oder NWS-Prognose hebt Max klar auf 63°F+.",
+   "ausstiegsplan": "Halten bis Abrechnung (NWS CLI 31.10.). Kein Verkauf im dünnen Buch.",
+   "entscheidung_id": "d7e617f15",
+   "invalidierung": "Beobachtetes Max in Midway erreicht 61°F vor 18:00 Ortszeit oder NWS hebt die Tagesprognose auf 63°F+ → Bracket ≤59 praktisch tot.",
    "kurs": 0.165,
    "wert": 234.72
   }
  ],
  "realisiert": 199.28251999999998,
- "gebuehren": 56.71737,
+ "gebuehren": 61.21737,
  "funding": 0.0,
  "erstellt": 1793319819.7411644,
  "start_fx": 1.1184885798616961,

@@ -1,6 +1,6 @@
 {
  "version": 1,
- "stand": 1793449983.8928108,
+ "stand": 1793450120.9798143,
  "hinweis": "Papierhandel-Simulation, keine Anlageberatung",
  "seite": "https://rouvenwieland.github.io/ki-trader-arena/",
  "budget": {
@@ -1088,6 +1088,13 @@
  ],
  "letzte_entscheidungen": [
   {
+   "ts": 1793450120.7526894,
+   "fonds": "DeepSeek",
+   "instrument": "pm:kalshi:KXHIGHCHI-26OCT31-T60:JA",
+   "aktion": "kaufen",
+   "zuversicht": 0.55
+  },
+  {
    "ts": 1793437467.9333992,
    "fonds": "Claude Mittel",
    "instrument": "pm:manifold:0uttZUAcls:NEIN",
@@ -1135,13 +1142,6 @@
    "instrument": "pm:kalshi:KXHIGHMIA-26OCT31-B83.5:JA",
    "aktion": "kaufen",
    "zuversicht": 0.6
-  },
-  {
-   "ts": 1793416569.8313282,
-   "fonds": "Claude Vorsichtig",
-   "instrument": "pm:kalshi:KXHIGHMIA-26OCT31-B85.5:NEIN",
-   "aktion": "kaufen",
-   "zuversicht": 0.65
   }
  ],
  "ereignisse": [
