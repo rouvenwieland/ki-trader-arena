@@ -119,8 +119,8 @@
    "ausstiegsplan": "Halten bis Abrechnung (NWS CLI 31.10.). Kein Verkauf im dünnen Buch bei <2h Restzeit, da Spread die Edge frisst.",
    "entscheidung_id": "dde75bf13",
    "invalidierung": "Beobachtetes Max Denver erreicht 62°F vor 15:00 Ortszeit nicht mehr oder NWS senkt Tagesprognose klar unter 62°F → Bracket 64-65 praktisch tot.",
-   "kurs": 0.035,
-   "wert": 34.53
+   "kurs": 0.02,
+   "wert": 11.51
   }
  ],
  "realisiert": 199.28251999999998,
@@ -128,5 +128,5 @@
  "funding": 0.0,
  "erstellt": 1793319819.7411644,
  "start_fx": 1.1184885798616961,
- "letzter_tick": 1793468016.6769283
+ "letzter_tick": 1793468917.29199
 }
