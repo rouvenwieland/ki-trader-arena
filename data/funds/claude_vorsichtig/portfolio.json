@@ -122,8 +122,8 @@
    "ausstiegsplan": "Halten bis Abrechnung 31.10./1.11.; Verlust max. Einsatz.",
    "entscheidung_id": "dd8064fbf",
    "invalidierung": "Gemessenes KMIA-Max ≥85°F vor 15 Uhr Ortszeit oder NWS-Update auf High 86.",
-   "kurs": 0.305,
-   "wert": 135.9
+   "kurs": 0.315,
+   "wert": 140.43
   },
   {
    "id": "p58d295aa",
@@ -150,7 +150,7 @@
    "ausstiegsplan": "Halten bis Abrechnung; Verlust max. Einsatz.",
    "entscheidung_id": "d5060f83e",
    "invalidierung": "Gemessenes KMIA-Max ≥85°F oder NWS-Update auf High ≥86.",
-   "kurs": 0.1,
+   "kurs": 0.095,
    "wert": 41.85
   }
  ],
@@ -159,5 +159,5 @@
  "funding": 0.0,
  "erstellt": 1793319819.7411644,
  "start_fx": 1.1184885798616961,
- "letzter_tick": 1793448108.0021877
+ "letzter_tick": 1793449007.7375362
 }
