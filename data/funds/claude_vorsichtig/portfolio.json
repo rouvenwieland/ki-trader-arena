@@ -32,8 +32,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Halten bis Abrechnung 6.11. (NFP 8:30 ET). Vorzeitiger Verkauf, falls NEIN-Bid >0,90 (z. B. nach ADP am 4.11.), oder falls neue Konsensdaten eine sehr enge Verteilung um 50–75k nahelegen.",
    "entscheidung_id": "d7a8a9cbe",
-   "kurs": 0.835,
-   "wert": 357.87
+   "kurs": 0.79,
+   "wert": 344.28
   },
   {
    "id": "pbb7d9e16",
@@ -63,8 +63,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Halten bis Abrechnung (Dez-Bericht Jan. 2027). Neu bewerten, falls die Okt-Quote am 6.11. bei ≥4,5 % liegt. Verkaufen, falls die Nov-Quote ≥4,7 % ist.",
    "entscheidung_id": "d9893ed5d",
-   "kurs": 0.966,
-   "wert": 307.2
+   "kurs": 0.9664999999999999,
+   "wert": 307.52
   },
   {
    "id": "pbf41057e",
@@ -128,5 +128,5 @@
  "funding": 0.0,
  "erstellt": 1793319819.7411644,
  "start_fx": 1.1184885798616961,
- "letzter_tick": 1793488075.2209163
+ "letzter_tick": 1793488974.4572167
 }
