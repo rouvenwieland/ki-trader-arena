@@ -94,8 +94,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Halten bis Abrechnung 31.10. Falls BTC bis Samstag Mittag >79k und Preis <0.08: Rest abschreiben/halten (geringer Restwert).",
    "entscheidung_id": "d463915b7",
-   "kurs": 0.013000000000000001,
-   "wert": 9.31
+   "kurs": 0.013999999999999999,
+   "wert": 10.09
   },
   {
    "id": "pe8531dcb",
@@ -128,8 +128,8 @@
    "ausstiegsplan": "Halten bis Abrechnung 1.11. 16:00 UTC; Verkauf, wenn Binance >79k stabil.",
    "entscheidung_id": "d4e9753b2",
    "invalidierung": "Binance BTC/USDT >79.000 und stabil, oder Relief-Rally nach Withdrawal-Restart.",
-   "kurs": 0.0615,
-   "wert": 316.48
+   "kurs": 0.0605,
+   "wert": 305.75
   },
   {
    "id": "p442b828a",
@@ -156,8 +156,8 @@
    "ausstiegsplan": "Halten bis Abrechnung 31.10. 23:59; verkaufen, falls BTC Binance >79.500 (NEIN-Preis dann stark gefallen).",
    "entscheidung_id": "d6c69dd0f",
    "invalidierung": "Binance BTC/USDT über 79.500 vor 31.10. 20:00 UTC",
-   "kurs": 0.9185233410633376,
-   "wert": 360.02
+   "kurs": 0.9728988113748678,
+   "wert": 381.37
   }
  ],
  "realisiert": 429.9243999999999,
@@ -165,5 +165,5 @@
  "funding": 0.0,
  "erstellt": 1793319819.7411644,
  "start_fx": 1.1184885798616961,
- "letzter_tick": 1793451707.832468
+ "letzter_tick": 1793452608.0704753
 }

@@ -102,7 +102,9 @@
    "funding": 0.0,
    "ausstiegsplan": "Bis zur Abrechnung halten. Neu bewerten nach Le Pens Kassationsurteil (bis Jan. 2027) und nach dem Ablauf der 500-Unterschriften-Frist (März 2027). Verkaufen, wenn die Invalidierung eintritt. Teilgewinne mitnehmen, wenn NEIN ≥0,95.",
    "entscheidung_id": "dcfc7153a",
-   "invalidierung": "Lisnard liegt in mehreren seriösen Umfragen (Ifop, Elabe, Harris) stabil bei ≥14 % und damit unter den Top 3 im ersten Wahlgang, oder Retailleau/LR ziehen zu seinen Gunsten zurück."
+   "invalidierung": "Lisnard liegt in mehreren seriösen Umfragen (Ifop, Elabe, Harris) stabil bei ≥14 % und damit unter den Top 3 im ersten Wahlgang, oder Retailleau/LR ziehen zu seinen Gunsten zurück.",
+   "kurs": 0.8174999999999999,
+   "wert": 499.19
   },
   {
    "id": "pbb4d5e0c",
@@ -134,7 +136,9 @@
    "funding": 0.0,
    "ausstiegsplan": "Bis 31.12. halten. Nach den NVDA-Earnings neu bewerten. Gewinn mitnehmen bei ≥0,65.",
    "entscheidung_id": "d028b604e",
-   "invalidierung": "NVDA übertrifft Apples Marktkapitalisierung nach den Earnings um mehr als 5 %, oder der Apple-JA-Preis fällt unter 0,25."
+   "invalidierung": "NVDA übertrifft Apples Marktkapitalisierung nach den Earnings um mehr als 5 %, oder der Apple-JA-Preis fällt unter 0,25.",
+   "kurs": 0.4115,
+   "wert": 165.15
   }
  ],
  "realisiert": 0.0,
@@ -142,5 +146,5 @@
  "funding": 0.0,
  "erstellt": 1793380123.8861866,
  "start_fx": 1.1156327353966788,
- "letzter_tick": 1793451707.832468
+ "letzter_tick": 1793452608.0704753
 }

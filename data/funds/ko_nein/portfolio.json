@@ -2,7 +2,7 @@
  "fonds_id": "ko_nein",
  "waehrung": "USD",
  "start_kapital": 11157.431109273288,
- "cash": 3638.123609273285,
+ "cash": 3136.6282092732854,
  "positionen": [
   {
    "id": "pe6781775",
@@ -257,8 +257,8 @@
    "gebuehren": 1.59066,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.987,
-   "wert": 189.31
+   "kurs": 0.986,
+   "wert": 189.12
   },
   {
    "id": "p28450e21",
@@ -309,8 +309,8 @@
    "gebuehren": 6.77,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.925,
-   "wert": 371.68
+   "kurs": 0.91,
+   "wert": 363.6
   },
   {
    "id": "pfa54617a",
@@ -373,8 +373,8 @@
    "gebuehren": 0.0,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.365,
-   "wert": 205.92
+   "kurs": 0.33999999999999997,
+   "wert": 188.76
   },
   {
    "id": "p722ad016",
@@ -533,8 +533,8 @@
    "gebuehren": 0.33007,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.9944999999999999,
-   "wert": 169.63
+   "kurs": 0.9964999999999999,
+   "wert": 170.32
   },
   {
    "id": "p48fc5d59",
@@ -565,7 +565,7 @@
    "gebuehren": 0.0,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.02,
+   "kurs": 0.0195,
    "wert": 117.1
   },
   {
@@ -725,8 +725,8 @@
    "gebuehren": 0.0,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.07350000000000001,
-   "wert": 105.7
+   "kurs": 0.07150000000000001,
+   "wert": 99.66
   },
   {
    "id": "pc8cf836f",
@@ -879,8 +879,8 @@
    "gebuehren": 6.57,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.33999999999999997,
-   "wert": 123.52
+   "kurs": 0.3,
+   "wert": 111.94
   },
   {
    "id": "p8943c633",
@@ -905,8 +905,8 @@
    "gebuehren": 4.22,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.73,
-   "wert": 185.76
+   "kurs": 0.745,
+   "wert": 190.92
   },
   {
    "id": "p6ac54bba",
@@ -1001,8 +1001,8 @@
    "gebuehren": 7.15674,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.0615,
-   "wert": 26.14
+   "kurs": 0.0605,
+   "wert": 25.25
   },
   {
    "id": "pdcf6fcc3",
@@ -1065,8 +1065,8 @@
    "gebuehren": 0.31446,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.9855,
-   "wert": 168.44
+   "kurs": 0.9864999999999999,
+   "wert": 168.61
   },
   {
    "id": "p7102c243",
@@ -1123,8 +1123,8 @@
    "gebuehren": 1.87,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.885,
-   "wert": 173.36
+   "kurs": 0.875,
+   "wert": 169.42
   },
   {
    "id": "p1f028824",
@@ -1181,8 +1181,8 @@
    "gebuehren": 0.43,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.965,
-   "wert": 166.08
+   "kurs": 0.975,
+   "wert": 167.81
   },
   {
    "id": "p6621f6a6",
@@ -1207,8 +1207,8 @@
    "gebuehren": 1.26,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.84,
-   "wert": 154.38
+   "kurs": 0.835,
+   "wert": 152.52
   },
   {
    "id": "pa8d52a27",
@@ -1335,8 +1335,8 @@
    "gebuehren": 3.27455,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.7055,
-   "wert": 158.7
+   "kurs": 0.7144999999999999,
+   "wert": 162.13
   },
   {
    "id": "pf1081db1",
@@ -1369,13 +1369,109 @@
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
    "kurs": 0.0245,
    "wert": 36.78
+  },
+  {
+   "id": "pbb0a8271",
+   "inst": {
+    "id": "pm:polymarket:6205330:NEIN",
+    "art": "pm",
+    "venue": "polymarket",
+    "ergebnis": "NEIN",
+    "frage": "Will the price of Ethereum be between $2,200 and $2,300 on November 1?",
+    "schliesst": 1793552400.0,
+    "ref": {
+     "id": "6205330",
+     "token_ja": "60979439568524938854244470160893897374470089980043033083283792111131551949073",
+     "token_nein": "54176546712157856918610360665638582998620531163622613075056577836571348495833",
+     "tick": 0.01,
+     "condition": "0x5edce499ce0bc4dba865ff7abd0695b4159a267836a2b9eb61e7aea8fcf3659a",
+     "gebuehr_rate": 0.07,
+     "gebuehr_exp": 1.0
+    },
+    "url": "https://polymarket.com/event/will-the-price-of-ethereum-be-between-2200-2300-on-november-1-2026"
+   },
+   "seite": "long",
+   "menge": 934.0,
+   "einstand": 0.16927194860813705,
+   "hebel": 1.0,
+   "marge": 0.0,
+   "eroeffnet": 1793452608.0704753,
+   "gebuehren": 9.19367,
+   "funding": 0.0,
+   "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
+   "kurs": 0.14500000000000002,
+   "wert": 112.08
+  },
+  {
+   "id": "pc2572f19",
+   "inst": {
+    "id": "pm:polymarket:3013350:NEIN",
+    "art": "pm",
+    "venue": "polymarket",
+    "ergebnis": "NEIN",
+    "frage": "Will Bitcoin dip to $60,000 by December 31, 2026?",
+    "schliesst": 1798779600.0,
+    "ref": {
+     "id": "3013350",
+     "token_ja": "104279604547231872129402198190232956636095665469278761891693384128061158683041",
+     "token_nein": "71378443524585182161509165206687359935571329472000076556085474136388673584216",
+     "tick": 0.01,
+     "condition": "0x6c8bc8cd9b2d64358ad995ccee8e998cf0f81a89c4be0b8e51eadf09c6be60ba",
+     "gebuehr_rate": 0.07,
+     "gebuehr_exp": 1.0
+    },
+    "url": "https://polymarket.com/event/will-bitcoin-dip-to-60k-by-december-31-2026-from-july-21"
+   },
+   "seite": "long",
+   "menge": 199.0,
+   "einstand": 0.83,
+   "hebel": 1.0,
+   "marge": 0.0,
+   "eroeffnet": 1793452608.0704753,
+   "gebuehren": 1.96552,
+   "funding": 0.0,
+   "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
+   "kurs": 0.825,
+   "wert": 163.18
+  },
+  {
+   "id": "p4cd35a1d",
+   "inst": {
+    "id": "pm:polymarket:3865960:NEIN",
+    "art": "pm",
+    "venue": "polymarket",
+    "ergebnis": "NEIN",
+    "frage": "Will Bitcoin dip to $70,000 by December 31, 2026?",
+    "schliesst": 1798779600.0,
+    "ref": {
+     "id": "3865960",
+     "token_ja": "26181023444847865740144968881453381639052456965503182671034643115973725837732",
+     "token_nein": "43873895024879972348799332304583852450961083930689783649843650004302588743583",
+     "tick": 0.01,
+     "condition": "0x6d7203b2161a636a6ad554a986400e29411aecfdb51f91416a0ef9f7b6685e3b",
+     "gebuehr_rate": 0.07,
+     "gebuehr_exp": 1.0
+    },
+    "url": "https://polymarket.com/event/will-bitcoin-dip-to-70000-by-december-31-2026-from-august-24"
+   },
+   "seite": "long",
+   "menge": 310.0,
+   "einstand": 0.5214554838709679,
+   "hebel": 1.0,
+   "marge": 0.0,
+   "eroeffnet": 1793452608.0704753,
+   "gebuehren": 5.41501,
+   "funding": 0.0,
+   "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
+   "kurs": 0.52,
+   "wert": 158.1
   }
  ],
  "realisiert": -160.84999999999997,
- "gebuehren": 70.90875999999999,
+ "gebuehren": 87.48295999999998,
  "funding": 0.0,
  "erstellt": 1793379225.5430336,
  "start_fx": 1.1157431109273288,
- "letzter_tick": 1793451707.832468,
- "kontrolle_bis": 1793437325.005999
+ "letzter_tick": 1793452608.0704753,
+ "kontrolle_bis": 1793451822.9734745
 }
