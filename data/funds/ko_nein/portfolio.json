@@ -257,7 +257,7 @@
    "gebuehren": 1.59066,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.985,
+   "kurs": 0.9844999999999999,
    "wert": 188.93
   },
   {
@@ -309,8 +309,8 @@
    "gebuehren": 6.77,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.925,
-   "wert": 367.64
+   "kurs": 0.9299999999999999,
+   "wert": 371.68
   },
   {
    "id": "pfa54617a",
@@ -853,8 +853,8 @@
    "gebuehren": 0.0,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.9604999999999999,
-   "wert": 164.7
+   "kurs": 0.961,
+   "wert": 164.87
   },
   {
    "id": "pe3197d92",
@@ -905,8 +905,8 @@
    "gebuehren": 4.22,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.04,
-   "wert": 7.74
+   "kurs": 0.025,
+   "wert": 5.16
   },
   {
    "id": "p6ac54bba",
@@ -1001,8 +1001,8 @@
    "gebuehren": 7.15674,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.0455,
-   "wert": 19.49
+   "kurs": 0.042499999999999996,
+   "wert": 18.16
   },
   {
    "id": "pdcf6fcc3",
@@ -1335,8 +1335,8 @@
    "gebuehren": 3.27455,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.7315,
-   "wert": 167.4
+   "kurs": 0.7275,
+   "wert": 166.48
   },
   {
    "id": "pbb0a8271",
@@ -1367,8 +1367,8 @@
    "gebuehren": 9.19367,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.105,
-   "wert": 84.06
+   "kurs": 0.1,
+   "wert": 74.72
   },
   {
    "id": "pc2572f19",
@@ -1495,8 +1495,8 @@
    "gebuehren": 0.0,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.195,
-   "wert": 151.24
+   "kurs": 0.20500000000000002,
+   "wert": 159.2
   },
   {
    "id": "pf78e0ef9",
@@ -1585,8 +1585,8 @@
    "gebuehren": 0.0,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.595,
-   "wert": 151.62
+   "kurs": 0.6,
+   "wert": 154.28
   },
   {
    "id": "p5e6e3e9b",
@@ -1690,6 +1690,6 @@
  "funding": 0.0,
  "erstellt": 1793379225.5430336,
  "start_fx": 1.1157431109273288,
- "letzter_tick": 1793481517.4171872,
+ "letzter_tick": 1793481774.987381,
  "kontrolle_bis": 1793469934.3473444
 }
