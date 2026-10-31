@@ -35,8 +35,8 @@
    "ausstiegsplan": "Halten bis Auflösung heute 23:59 ET (31.10. 03:59 UTC). Bei NEIN-Ausgang volle Auszahlung 1,00; kein vorzeitiger Verkauf nötig, da Restzeit <7h.",
    "entscheidung_id": "dfab9a0ea",
    "invalidierung": "Binance BTC/USDT fällt unter 75.000 oder es erscheint eine Meldung, dass 75k bereits berührt wurde → These sofort falsch.",
-   "kurs": 0.9824999999999999,
-   "wert": 1715.55
+   "kurs": 0.985,
+   "wert": 1719.05
   },
   {
    "id": "p34466a85",
@@ -63,8 +63,8 @@
    "ausstiegsplan": "Halten bis zur Abrechnung (NWS CLI 31.10., wenige Stunden). Kein vorzeitiger Verkauf bei <2h Restzeit wegen Spread.",
    "entscheidung_id": "dbb7681e6",
    "invalidierung": "Beobachtete Temperatur in LAX tagsüber bereits über 69°F oder NWS-Prognose hebt Max klar über 70°F → Bracket 67-68 unwahrscheinlich.",
-   "kurs": 0.035,
-   "wert": 84.0
+   "kurs": 0.025,
+   "wert": 56.0
   },
   {
    "id": "p5a2d4185",
@@ -128,5 +128,5 @@
  "funding": 0.0,
  "erstellt": 1793319819.7411644,
  "start_fx": 1.1184885798616961,
- "letzter_tick": 1793459808.0862007
+ "letzter_tick": 1793460707.6197574
 }
