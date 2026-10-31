@@ -32,8 +32,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Halten bis Abrechnung 31.10. 23:59 Iran-Zeit. Bei bestätigtem US-Angriff Totalverlust akzeptiert; bei Preis >0.97 vorzeitig verkaufen möglich.",
    "entscheidung_id": "d7274e87b",
-   "kurs": 0.975,
-   "wert": 851.66
+   "kurs": 0.9775,
+   "wert": 855.17
   },
   {
    "id": "pca43f487",
@@ -63,8 +63,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Halten bis Abrechnung 6.11. (NFP 8:30 ET). Vorzeitiger Verkauf, falls NEIN-Bid >0,90 (z. B. nach ADP am 4.11.), oder falls neue Konsensdaten eine sehr enge Verteilung um 50–75k nahelegen.",
    "entscheidung_id": "d7a8a9cbe",
-   "kurs": 0.79,
-   "wert": 344.28
+   "kurs": 0.815,
+   "wert": 366.93
   },
   {
    "id": "pbb7d9e16",
@@ -122,8 +122,8 @@
    "ausstiegsplan": "Halten bis Abrechnung 31.10./1.11.; Verlust max. Einsatz.",
    "entscheidung_id": "dd8064fbf",
    "invalidierung": "Gemessenes KMIA-Max ≥85°F vor 15 Uhr Ortszeit oder NWS-Update auf High 86.",
-   "kurs": 0.26,
-   "wert": 108.72
+   "kurs": 0.275,
+   "wert": 117.78
   },
   {
    "id": "p58d295aa",
@@ -150,8 +150,8 @@
    "ausstiegsplan": "Halten bis Abrechnung; Verlust max. Einsatz.",
    "entscheidung_id": "d5060f83e",
    "invalidierung": "Gemessenes KMIA-Max ≥85°F oder NWS-Update auf High ≥86.",
-   "kurs": 0.060000000000000005,
-   "wert": 23.25
+   "kurs": 0.14,
+   "wert": 55.8
   }
  ],
  "realisiert": 0.0,
@@ -159,5 +159,5 @@
  "funding": 0.0,
  "erstellt": 1793319819.7411644,
  "start_fx": 1.1184885798616961,
- "letzter_tick": 1793460707.6197574
+ "letzter_tick": 1793461607.8295584
 }
