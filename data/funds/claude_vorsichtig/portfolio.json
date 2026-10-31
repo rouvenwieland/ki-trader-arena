@@ -2,7 +2,7 @@
  "fonds_id": "claude_vorsichtig",
  "waehrung": "USD",
  "start_kapital": 11184.88579861696,
- "cash": 9836.13909861696,
+ "cash": 9536.323998616961,
  "positionen": [
   {
    "id": "pcfad5a2b",
@@ -96,10 +96,62 @@
    "entscheidung_id": "d9893ed5d",
    "kurs": 0.9504999999999999,
    "wert": 300.5
+  },
+  {
+   "id": "pbf41057e",
+   "inst": {
+    "id": "pm:kalshi:KXHIGHMIA-26OCT31-B85.5:NEIN",
+    "art": "pm",
+    "venue": "kalshi",
+    "ergebnis": "NEIN",
+    "frage": "Will the maximum temperature be 85-86° on Oct 31, 2026? [85° to 86°]",
+    "schliesst": 1793509200.0,
+    "ref": {
+     "ticker": "KXHIGHMIA-26OCT31-B85.5"
+    },
+    "url": "https://kalshi.com/markets/KXHIGHMIA-26OCT31"
+   },
+   "seite": "long",
+   "menge": 453.0,
+   "einstand": 0.4240766004415011,
+   "hebel": 1.0,
+   "marge": 0.0,
+   "eroeffnet": 1793416569.8314736,
+   "gebuehren": 7.75,
+   "funding": 0.0,
+   "ausstiegsplan": "Halten bis Abrechnung 31.10./1.11.; Verlust max. Einsatz.",
+   "entscheidung_id": "dd8064fbf",
+   "invalidierung": "Gemessenes KMIA-Max ≥85°F vor 15 Uhr Ortszeit oder NWS-Update auf High 86."
+  },
+  {
+   "id": "p58d295aa",
+   "inst": {
+    "id": "pm:kalshi:KXHIGHMIA-26OCT31-B83.5:JA",
+    "art": "pm",
+    "venue": "kalshi",
+    "ergebnis": "JA",
+    "frage": "Will the maximum temperature be 83-84° on Oct 31, 2026? [83° to 84°]",
+    "schliesst": 1793509200.0,
+    "ref": {
+     "ticker": "KXHIGHMIA-26OCT31-B83.5"
+    },
+    "url": "https://kalshi.com/markets/KXHIGHMIA-26OCT31"
+   },
+   "seite": "long",
+   "menge": 465.0,
+   "einstand": 0.20360946236559138,
+   "hebel": 1.0,
+   "marge": 0.0,
+   "eroeffnet": 1793416569.8326142,
+   "gebuehren": 5.28,
+   "funding": 0.0,
+   "ausstiegsplan": "Halten bis Abrechnung; Verlust max. Einsatz.",
+   "entscheidung_id": "d5060f83e",
+   "invalidierung": "Gemessenes KMIA-Max ≥85°F oder NWS-Update auf High ≥86."
   }
  ],
  "realisiert": 0.0,
- "gebuehren": 0.0,
+ "gebuehren": 13.030000000000001,
  "funding": 0.0,
  "erstellt": 1793319819.7411644,
  "start_fx": 1.1184885798616961,

@@ -2,7 +2,7 @@
  "fonds_id": "claude_aggressiv",
  "waehrung": "USD",
  "start_kapital": 11184.88579861696,
- "cash": 7413.8425338735815,
+ "cash": 7013.862343873581,
  "positionen": [
   {
    "id": "pa523d4f2",
@@ -118,16 +118,16 @@
     "url": "https://polymarket.com/event/bitcoin-above-76k-on-november-1-2026"
    },
    "seite": "long",
-   "menge": 1073.0,
-   "einstand": 0.22091780055917987,
+   "menge": 3425.0,
+   "einstand": 0.17951176642335767,
    "hebel": 1.0,
    "marge": 0.0,
    "eroeffnet": 1793383953.9785085,
-   "gebuehren": 12.92742,
+   "gebuehren": 35.12461,
    "funding": 0.0,
-   "ausstiegsplan": "Halten bis Abrechnung 1.11. 16:00 UTC; vorzeitig verkaufen, wenn NEIN-Preis unter 0.10 fällt und kein Edge mehr besteht.",
-   "entscheidung_id": "d06487ae5",
-   "invalidierung": "Binance BTC/USDT über 79.000 und stabil, oder positives Binance-Post-Mortem mit starkem Risk-on-Ausbruch",
+   "ausstiegsplan": "Halten bis Abrechnung 1.11. 16:00 UTC; verkaufen wenn NEIN-Preis <0.08 oder Binance >79k stabil.",
+   "entscheidung_id": "d2c269aeb",
+   "invalidierung": "Binance BTC/USDT >79.000 und stabil oder Relief-Rally nach Withdrawal-Restart",
    "kurs": 0.1465,
    "wert": 154.51
   },
@@ -161,7 +161,7 @@
   }
  ],
  "realisiert": 429.9243999999999,
- "gebuehren": 12.92742,
+ "gebuehren": 35.12461,
  "funding": 0.0,
  "erstellt": 1793319819.7411644,
  "start_fx": 1.1184885798616961,
