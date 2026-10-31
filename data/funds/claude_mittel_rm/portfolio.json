@@ -2,7 +2,7 @@
  "fonds_id": "claude_mittel_rm",
  "waehrung": "USD",
  "start_kapital": 11156.327353966788,
- "cash": 10577.527353966789,
+ "cash": 9897.79971396679,
  "positionen": [
   {
    "id": "pe8186cc2",
@@ -71,6 +71,70 @@
    "invalidierung": "CME FedWatch Dezember-Hike-Wahrscheinlichkeit fällt unter 55% oder Warsh/Fed-Mehrheit signalisiert Pause nach weicher CPI/Jobs-Zahl.",
    "kurs": 0.725,
    "wert": 295.2
+  },
+  {
+   "id": "p8c871cfa",
+   "inst": {
+    "id": "pm:polymarket:679022:NEIN",
+    "art": "pm",
+    "venue": "polymarket",
+    "ergebnis": "NEIN",
+    "frage": "Will David Lisnard win the 2027 French presidential election?",
+    "schliesst": 1808107140.0,
+    "ref": {
+     "id": "679022",
+     "token_ja": "55404192439775628931124671719520886657525387168536821457706619003199189099864",
+     "token_nein": "79358475953126059185096320578578995575874288599466094920037110232928386404141",
+     "tick": 0.001,
+     "condition": "0xce610556ec78cfd7894f4169d91fe70e31c2fb49f927fffd7fe7d06530f88d56",
+     "gebuehr_rate": 0.0,
+     "gebuehr_exp": 1.0
+    },
+    "url": "https://polymarket.com/event/next-french-presidential-election"
+   },
+   "seite": "long",
+   "menge": 611.0,
+   "einstand": 0.8180876268412438,
+   "hebel": 1.0,
+   "marge": 0.0,
+   "eroeffnet": 1793451981.8056335,
+   "gebuehren": 0.0,
+   "funding": 0.0,
+   "ausstiegsplan": "Bis zur Abrechnung halten. Neu bewerten nach Le Pens Kassationsurteil (bis Jan. 2027) und nach dem Ablauf der 500-Unterschriften-Frist (März 2027). Verkaufen, wenn die Invalidierung eintritt. Teilgewinne mitnehmen, wenn NEIN ≥0,95.",
+   "entscheidung_id": "dcfc7153a",
+   "invalidierung": "Lisnard liegt in mehreren seriösen Umfragen (Ifop, Elabe, Harris) stabil bei ≥14 % und damit unter den Top 3 im ersten Wahlgang, oder Retailleau/LR ziehen zu seinen Gunsten zurück."
+  },
+  {
+   "id": "pbb4d5e0c",
+   "inst": {
+    "id": "pm:polymarket:676741:JA",
+    "art": "pm",
+    "venue": "polymarket",
+    "ergebnis": "JA",
+    "frage": "Will Apple be the largest company in the world by market cap on December 31?",
+    "schliesst": 1798779540.0,
+    "ref": {
+     "id": "676741",
+     "token_ja": "9875273331604434310973374077817381730908757452538191940842519381772366848",
+     "token_nein": "102723918081644490126383882876216056971015484595406893020273651317068912986031",
+     "tick": 0.001,
+     "condition": "0x55a5a4b50b7947482e95af8f638fa0b8d9a46740c5cd04c6799443e83565176a",
+     "gebuehr_rate": 0.0,
+     "gebuehr_exp": 1.0
+    },
+    "url": "https://polymarket.com/event/will-apple-be-the-largest-company-in-the-world-by-market-cap-on-december-31-291"
+   },
+   "seite": "long",
+   "menge": 416.0,
+   "einstand": 0.4323944711538461,
+   "hebel": 1.0,
+   "marge": 0.0,
+   "eroeffnet": 1793451981.8068187,
+   "gebuehren": 0.0,
+   "funding": 0.0,
+   "ausstiegsplan": "Bis 31.12. halten. Nach den NVDA-Earnings neu bewerten. Gewinn mitnehmen bei ≥0,65.",
+   "entscheidung_id": "d028b604e",
+   "invalidierung": "NVDA übertrifft Apples Marktkapitalisierung nach den Earnings um mehr als 5 %, oder der Apple-JA-Preis fällt unter 0,25."
   }
  ],
  "realisiert": 0.0,

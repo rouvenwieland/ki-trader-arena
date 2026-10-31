@@ -2,7 +2,7 @@
  "fonds_id": "liga_deepseek",
  "waehrung": "USD",
  "start_kapital": 11184.88579861696,
- "cash": 9250.462954052928,
+ "cash": 9100.726954052927,
  "positionen": [
   {
    "id": "p7f67c5d4",
@@ -93,10 +93,36 @@
    "invalidierung": "Beobachtetes Max in Midway erreicht 61°F vor 18:00 Ortszeit oder NWS hebt die Tagesprognose auf 63°F+ → Bracket ≤59 praktisch tot.",
    "kurs": 0.16,
    "wert": 280.35
+  },
+  {
+   "id": "p3f11e9a0",
+   "inst": {
+    "id": "pm:kalshi:KXHIGHDEN-26OCT31-B64.5:JA",
+    "art": "pm",
+    "venue": "kalshi",
+    "ergebnis": "JA",
+    "frage": "Will the maximum temperature be 64-65° on Oct 31, 2026? [64° to 65°]",
+    "schliesst": 1793516400.0,
+    "ref": {
+     "ticker": "KXHIGHDEN-26OCT31-B64.5"
+    },
+    "url": "https://kalshi.com/markets/KXHIGHDEN-26OCT31"
+   },
+   "seite": "long",
+   "menge": 1151.0,
+   "einstand": 0.12255951346655088,
+   "hebel": 1.0,
+   "marge": 0.0,
+   "eroeffnet": 1793451937.4041495,
+   "gebuehren": 8.67,
+   "funding": 0.0,
+   "ausstiegsplan": "Halten bis Abrechnung (NWS CLI 31.10.). Kein Verkauf im dünnen Buch bei <2h Restzeit, da Spread die Edge frisst.",
+   "entscheidung_id": "dde75bf13",
+   "invalidierung": "Beobachtetes Max Denver erreicht 62°F vor 15:00 Ortszeit nicht mehr oder NWS senkt Tagesprognose klar unter 62°F → Bracket 64-65 praktisch tot."
   }
  ],
  "realisiert": 199.28251999999998,
- "gebuehren": 61.21737,
+ "gebuehren": 69.88737,
  "funding": 0.0,
  "erstellt": 1793319819.7411644,
  "start_fx": 1.1184885798616961,

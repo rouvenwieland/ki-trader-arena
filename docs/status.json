@@ -1,11 +1,11 @@
 {
  "version": 1,
- "stand": 1793451819.4343853,
+ "stand": 1793452132.3674755,
  "hinweis": "Papierhandel-Simulation, keine Anlageberatung",
  "seite": "https://rouvenwieland.github.io/ki-trader-arena/",
  "budget": {
-  "heute_eur": 4.72,
-  "gesamt_eur": 13.86,
+  "heute_eur": 7.41,
+  "gesamt_eur": 16.56,
   "tagesdeckel_eur": 12.0,
   "gesamtdeckel_eur": 190.0,
   "claude_ende": "2026-11-14",
@@ -40,10 +40,10 @@
    "rendite_pct": 2.1,
    "equity_eur": 10214.92,
    "max_drawdown_pct": -0.77,
-   "status": "aktiv",
-   "modell": "claude-sonnet-5-5",
-   "kosten_heute_eur": 1.282,
-   "kosten_gesamt_eur": 3.849,
+   "status": "Fehler: Modellfehler: Anthropic: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'messages.1: `web_search`",
+   "modell": "claude-opus-5-5",
+   "kosten_heute_eur": 1.739,
+   "kosten_gesamt_eur": 4.306,
    "rendite_ki_pct": [
     -0.35,
     2.22
@@ -215,9 +215,9 @@
    "equity_eur": 10126.69,
    "max_drawdown_pct": -7.05,
    "status": "aktiv",
-   "modell": "claude-sonnet-5-5",
-   "kosten_heute_eur": 1.211,
-   "kosten_gesamt_eur": 3.755,
+   "modell": "claude-opus-5-5",
+   "kosten_heute_eur": 2.084,
+   "kosten_gesamt_eur": 4.628,
    "rendite_ki_pct": [
     -8.55,
     5.75
@@ -273,10 +273,10 @@
    "rendite_pct": 0.63,
    "equity_eur": 10068.78,
    "max_drawdown_pct": -1.27,
-   "status": "aktiv",
-   "modell": "claude-sonnet-5-5",
-   "kosten_heute_eur": 1.212,
-   "kosten_gesamt_eur": 3.651,
+   "status": "Fehler: Modellfehler: Anthropic: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'messages.1: `web_search`",
+   "modell": "claude-opus-5-5",
+   "kosten_heute_eur": 1.747,
+   "kosten_gesamt_eur": 4.185,
    "rendite_ki_pct": [
     -1.41,
     0.87
@@ -506,7 +506,7 @@
    "rendite_pct": 0.0,
    "equity_eur": 10005.31,
    "max_drawdown_pct": 0.0,
-   "status": "Fehler: Modellfehler: kimi-k3: keine Antwort (HTTP 429 {\"error\":{\"message\":\"Your account org-2249288c21c547a2b05f751b19b3dd2e\\u003cak-fcx7uxzbfmy111",
+   "status": "Fehler: Modellfehler: kimi-k3: HTTP 400 {\"error\":{\"message\":\"Invalid request: the message at position 33 with role 'assistant' must not be empty\",\"t",
    "modell": "kimi-k3",
    "kosten_heute_eur": 0.0,
    "kosten_gesamt_eur": 0.0,
@@ -855,9 +855,9 @@
    "equity_eur": 9941.09,
    "max_drawdown_pct": -0.42,
    "status": "aktiv",
-   "modell": "claude-sonnet-5-5",
-   "kosten_heute_eur": 1.012,
-   "kosten_gesamt_eur": 2.051,
+   "modell": "claude-opus-5-5",
+   "kosten_heute_eur": 1.845,
+   "kosten_gesamt_eur": 2.884,
    "rendite_ki_pct": null,
    "verlauf_pct": [
     0.0,
@@ -1088,6 +1088,27 @@
  ],
  "letzte_entscheidungen": [
   {
+   "ts": 1793451981.8066268,
+   "fonds": "Claude Mittel+RM (A/B)",
+   "instrument": "pm:polymarket:676741:JA",
+   "aktion": "kaufen",
+   "zuversicht": 0.55
+  },
+  {
+   "ts": 1793451981.8043294,
+   "fonds": "Claude Mittel+RM (A/B)",
+   "instrument": "pm:polymarket:679022:NEIN",
+   "aktion": "kaufen",
+   "zuversicht": 0.72
+  },
+  {
+   "ts": 1793451937.4039297,
+   "fonds": "DeepSeek",
+   "instrument": "pm:kalshi:KXHIGHDEN-26OCT31-B64.5:JA",
+   "aktion": "kaufen",
+   "zuversicht": 0.5
+  },
+  {
    "ts": 1793450120.7526894,
    "fonds": "DeepSeek",
    "instrument": "pm:kalshi:KXHIGHCHI-26OCT31-T60:JA",
@@ -1120,27 +1141,6 @@
    "fonds": "Claude Mittel",
    "instrument": "pm:polymarket:1194643:NEIN",
    "aktion": "verkaufen",
-   "zuversicht": 0.6
-  },
-  {
-   "ts": 1793423739.2779648,
-   "fonds": "DeepSeek",
-   "instrument": "pm:kalshi:KXHIGHCHI-26OCT31-T60:JA",
-   "aktion": "kaufen",
-   "zuversicht": 0.55
-  },
-  {
-   "ts": 1793423739.2764378,
-   "fonds": "DeepSeek",
-   "instrument": "pm:kalshi:KXHIGHLAX-26OCT31-B67.5:JA",
-   "aktion": "kaufen",
-   "zuversicht": 0.6
-  },
-  {
-   "ts": 1793416569.8325047,
-   "fonds": "Claude Vorsichtig",
-   "instrument": "pm:kalshi:KXHIGHMIA-26OCT31-B83.5:JA",
-   "aktion": "kaufen",
    "zuversicht": 0.6
   }
  ],
