@@ -1,11 +1,11 @@
 {
  "version": 1,
- "stand": 1793459016.6630304,
+ "stand": 1793459171.6598785,
  "hinweis": "Papierhandel-Simulation, keine Anlageberatung",
  "seite": "https://rouvenwieland.github.io/ki-trader-arena/",
  "budget": {
-  "heute_eur": 7.41,
-  "gesamt_eur": 16.56,
+  "heute_eur": 8.77,
+  "gesamt_eur": 17.91,
   "tagesdeckel_eur": 12.0,
   "gesamtdeckel_eur": 190.0,
   "claude_ende": "2026-11-14",
@@ -40,10 +40,10 @@
    "rendite_pct": 2.05,
    "equity_eur": 10210.43,
    "max_drawdown_pct": -0.77,
-   "status": "Fehler: Modellfehler: Anthropic: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'messages.1: `web_search`",
-   "modell": "claude-opus-5-5",
-   "kosten_heute_eur": 1.739,
-   "kosten_gesamt_eur": 4.306,
+   "status": "aktiv",
+   "modell": "claude-sonnet-5-5",
+   "kosten_heute_eur": 2.209,
+   "kosten_gesamt_eur": 4.776,
    "rendite_ki_pct": [
     -0.29,
     2.11
@@ -155,10 +155,10 @@
    "rendite_pct": 1.33,
    "equity_eur": 10138.78,
    "max_drawdown_pct": -7.05,
-   "status": "aktiv",
-   "modell": "claude-opus-5-5",
-   "kosten_heute_eur": 2.084,
-   "kosten_gesamt_eur": 4.628,
+   "status": "Fehler: Modellfehler: Anthropic: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'messages.1: `web_search`",
+   "modell": "claude-sonnet-5-5",
+   "kosten_heute_eur": 2.271,
+   "kosten_gesamt_eur": 4.816,
    "rendite_ki_pct": [
     -9.21,
     5.86
@@ -273,10 +273,10 @@
    "rendite_pct": 0.54,
    "equity_eur": 10059.66,
    "max_drawdown_pct": -1.27,
-   "status": "Fehler: Modellfehler: Anthropic: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'messages.1: `web_search`",
-   "modell": "claude-opus-5-5",
-   "kosten_heute_eur": 1.747,
-   "kosten_gesamt_eur": 4.185,
+   "status": "aktiv",
+   "modell": "claude-sonnet-5-5",
+   "kosten_heute_eur": 2.108,
+   "kosten_gesamt_eur": 4.547,
    "rendite_ki_pct": [
     -1.68,
     0.87
@@ -796,9 +796,9 @@
    "equity_eur": 9931.77,
    "max_drawdown_pct": -0.53,
    "status": "aktiv",
-   "modell": "claude-opus-5-5",
-   "kosten_heute_eur": 1.845,
-   "kosten_gesamt_eur": 2.884,
+   "modell": "claude-sonnet-5-5",
+   "kosten_heute_eur": 2.179,
+   "kosten_gesamt_eur": 3.219,
    "rendite_ki_pct": null,
    "verlauf_pct": [
     0.0,

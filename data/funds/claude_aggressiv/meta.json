@@ -5,10 +5,10 @@
  "persoenlichkeit": "Renditehungrig und mutig, aber nicht blind. Du darfst konzentrierte Wetten und Hebel nutzen, wenn deine These stark ist, und akzeptierst große Schwankungen.",
  "typ": "claude",
  "start": 1793319819.7411644,
- "status": "aktiv",
- "status_ts": 1793451822.9744744,
- "modell_aktuell": "claude-opus-5-5",
- "letzte_runde": 1793451822.9744744,
- "letzte_runde_abbruch": "",
+ "status": "Fehler: Modellfehler: Anthropic: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'messages.1: `web_search`",
+ "status_ts": 1793459020.1892354,
+ "modell_aktuell": "claude-sonnet-5-5",
+ "letzte_runde": 1793459020.1892354,
+ "letzte_runde_abbruch": "Modellfehler: Anthropic: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'messages.1: `web_search` tool use with id `srvtoolu_01Ms6okN1MSLAqzmrV3RamsY` was found without a corresponding `web_search_tool_result` block'}, 'request_id': 'req_011CgaXB5QA6WTuNBGu7k6dJ'}",
  "pausiert_bis": 0
 }
