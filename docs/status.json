@@ -1,11 +1,11 @@
 {
  "version": 1,
- "stand": 1793438162.1170948,
+ "stand": 1793438247.822402,
  "hinweis": "Papierhandel-Simulation, keine Anlageberatung",
  "seite": "https://rouvenwieland.github.io/ki-trader-arena/",
  "budget": {
-  "heute_eur": 4.51,
-  "gesamt_eur": 13.65,
+  "heute_eur": 4.72,
+  "gesamt_eur": 13.86,
   "tagesdeckel_eur": 12.0,
   "gesamtdeckel_eur": 190.0,
   "claude_ende": "2026-11-14",
@@ -154,8 +154,8 @@
    "max_drawdown_pct": -0.77,
    "status": "aktiv",
    "modell": "claude-sonnet-5-5",
-   "kosten_heute_eur": 1.072,
-   "kosten_gesamt_eur": 3.638,
+   "kosten_heute_eur": 1.282,
+   "kosten_gesamt_eur": 3.849,
    "rendite_ki_pct": null,
    "verlauf_pct": [
     0.0,
