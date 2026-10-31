@@ -2,7 +2,7 @@
  "fonds_id": "claude_mittel",
  "waehrung": "USD",
  "start_kapital": 11184.88579861696,
- "cash": 11193.54866861696,
+ "cash": 10919.856811612965,
  "positionen": [
   {
    "id": "p4b35a277",
@@ -31,6 +31,64 @@
    "invalidierung": "Aktuelle NWS-Prognose oder gemessene Temperatur am 31.10. mit einem Höchstwert von 62–63°F, z. B. Mittagswert ≥62 bei bewölktem Himmel und Regen am Vormittag.",
    "kurs": 0.69,
    "wert": 213.52
+  },
+  {
+   "id": "p51e71031",
+   "inst": {
+    "id": "pm:polymarket:679022:NEIN",
+    "art": "pm",
+    "venue": "polymarket",
+    "ergebnis": "NEIN",
+    "frage": "Will David Lisnard win the 2027 French presidential election?",
+    "schliesst": 1808107140.0,
+    "ref": {
+     "id": "679022",
+     "token_ja": "55404192439775628931124671719520886657525387168536821457706619003199189099864",
+     "token_nein": "79358475953126059185096320578578995575874288599466094920037110232928386404141",
+     "tick": 0.001,
+     "condition": "0xce610556ec78cfd7894f4169d91fe70e31c2fb49f927fffd7fe7d06530f88d56",
+     "gebuehr_rate": 0.0,
+     "gebuehr_exp": 1.0
+    },
+    "url": "https://polymarket.com/event/next-french-presidential-election"
+   },
+   "seite": "long",
+   "menge": 307.0,
+   "einstand": 0.812,
+   "hebel": 1.0,
+   "marge": 0.0,
+   "eroeffnet": 1793437467.9324644,
+   "gebuehren": 0.0,
+   "funding": 0.0,
+   "ausstiegsplan": "Halten; Gewinn mitnehmen, wenn NEIN ≥0.90 (JA ≤0.10) oder der Preis meine P erreicht. Neu bewerten, wenn Lisnard in Umfragen über 12 % steigt oder Philippe/Retailleau zurückziehen.",
+   "entscheidung_id": "df10ef502",
+   "invalidierung": "Lisnard in mehreren Umfragen ≥12 % im 1. Wahlgang oder Rückzug von Philippe/Retailleau zu seinen Gunsten."
+  },
+  {
+   "id": "p842aa632",
+   "inst": {
+    "id": "pm:manifold:0uttZUAcls:NEIN",
+    "art": "pm",
+    "venue": "manifold",
+    "ergebnis": "NEIN",
+    "frage": "Will any English Premier League manager be fired before November 1, 2026?",
+    "schliesst": 1793491140.0,
+    "ref": {
+     "id": "0uttZUAcls"
+    },
+    "url": "https://manifold.markets/isthisasigntogamble/will-any-english-premier-league-man"
+   },
+   "seite": "long",
+   "menge": 38.0,
+   "einstand": 0.642312026420948,
+   "hebel": 1.0,
+   "marge": 0.0,
+   "eroeffnet": 1793437467.93354,
+   "gebuehren": 0.0,
+   "funding": 0.0,
+   "ausstiegsplan": "Bis zur Abrechnung halten, Größe begrenzt das Risiko.",
+   "entscheidung_id": "d85521827",
+   "invalidierung": "Meldung über Entlassung von Carrick oder eines anderen PL-Trainers am 31.10."
   }
  ],
  "realisiert": 208.24286999999975,
