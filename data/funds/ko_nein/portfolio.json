@@ -2,7 +2,7 @@
  "fonds_id": "ko_nein",
  "waehrung": "USD",
  "start_kapital": 11157.431109273288,
- "cash": 3805.442699273285,
+ "cash": 3638.123609273285,
  "positionen": [
   {
    "id": "pe6781775",
@@ -33,7 +33,7 @@
    "gebuehren": 0.0,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.0295,
+   "kurs": 0.028999999999999998,
    "wert": 59.92
   },
   {
@@ -257,8 +257,8 @@
    "gebuehren": 1.59066,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.9704999999999999,
-   "wert": 186.24
+   "kurs": 0.9744999999999999,
+   "wert": 187.01
   },
   {
    "id": "p28450e21",
@@ -309,8 +309,8 @@
    "gebuehren": 6.77,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.845,
-   "wert": 339.36
+   "kurs": 0.81,
+   "wert": 323.2
   },
   {
    "id": "pfa54617a",
@@ -533,8 +533,8 @@
    "gebuehren": 0.33007,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.988,
-   "wert": 168.09
+   "kurs": 0.9895,
+   "wert": 168.61
   },
   {
    "id": "p48fc5d59",
@@ -597,8 +597,8 @@
    "gebuehren": 0.0,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.0115,
-   "wert": 24.79
+   "kurs": 0.011,
+   "wert": 22.03
   },
   {
    "id": "pa5d926a7",
@@ -661,8 +661,8 @@
    "gebuehren": 0.0814,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.9964999999999999,
-   "wert": 167.33
+   "kurs": 0.9975,
+   "wert": 167.5
   },
   {
    "id": "pcd4d06c5",
@@ -725,8 +725,8 @@
    "gebuehren": 0.0,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.083,
-   "wert": 123.82
+   "kurs": 0.081,
+   "wert": 117.78
   },
   {
    "id": "pc8cf836f",
@@ -879,8 +879,8 @@
    "gebuehren": 6.57,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.335,
-   "wert": 127.38
+   "kurs": 0.32,
+   "wert": 115.8
   },
   {
    "id": "p8943c633",
@@ -905,8 +905,8 @@
    "gebuehren": 4.22,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.69,
-   "wert": 175.44
+   "kurs": 0.695,
+   "wert": 178.02
   },
   {
    "id": "p6ac54bba",
@@ -1001,8 +1001,8 @@
    "gebuehren": 7.15674,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.094,
-   "wert": 41.2
+   "kurs": 0.082,
+   "wert": 35.44
   },
   {
    "id": "pdcf6fcc3",
@@ -1123,7 +1123,7 @@
    "gebuehren": 1.87,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.835,
+   "kurs": 0.84,
    "wert": 163.51
   },
   {
@@ -1181,8 +1181,8 @@
    "gebuehren": 0.43,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.965,
-   "wert": 166.08
+   "kurs": 0.975,
+   "wert": 167.81
   },
   {
    "id": "p6621f6a6",
@@ -1271,7 +1271,7 @@
    "gebuehren": 0.0,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.76,
+   "kurs": 0.73,
    "wert": 117.73
   },
   {
@@ -1337,13 +1337,45 @@
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
    "kurs": 0.709,
    "wert": 161.22
+  },
+  {
+   "id": "pf1081db1",
+   "inst": {
+    "id": "pm:polymarket:6137762:NEIN",
+    "art": "pm",
+    "venue": "polymarket",
+    "ergebnis": "NEIN",
+    "frage": "Will the price of Ethereum be between $2,200 and $2,300 on October 31?",
+    "schliesst": 1793462400.0,
+    "ref": {
+     "id": "6137762",
+     "token_ja": "1195601462602514535505911942959573469568431278507015859607015208708813721854",
+     "token_nein": "71591657538853787259692021186443843769999823157917777437845897128317165126568",
+     "tick": 0.001,
+     "condition": "0x1e4c413ad7a06e8a51c0d24735de5a723b341624c687024beaa982ea1854135a",
+     "gebuehr_rate": 0.07,
+     "gebuehr_exp": 1.0
+    },
+    "url": "https://polymarket.com/event/will-the-price-of-ethereum-be-between-2200-2300-on-october-31-2026"
+   },
+   "seite": "long",
+   "menge": 3065.0,
+   "einstand": 0.051190349102773244,
+   "hebel": 1.0,
+   "marge": 0.0,
+   "eroeffnet": 1793438955.5455055,
+   "gebuehren": 10.42067,
+   "funding": 0.0,
+   "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
+   "kurs": 0.041499999999999995,
+   "wert": 73.56
   }
  ],
  "realisiert": -160.84999999999997,
- "gebuehren": 60.48808999999999,
+ "gebuehren": 70.90875999999999,
  "funding": 0.0,
  "erstellt": 1793379225.5430336,
  "start_fx": 1.1157431109273288,
- "letzter_tick": 1793438055.9785779,
- "kontrolle_bis": 1793437325.0049992
+ "letzter_tick": 1793438955.5455055,
+ "kontrolle_bis": 1793437325.005999
 }
