@@ -63,8 +63,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Halten bis Abrechnung (Dez-Bericht Jan. 2027). Neu bewerten, falls die Okt-Quote am 6.11. bei ≥4,5 % liegt. Verkaufen, falls die Nov-Quote ≥4,7 % ist.",
    "entscheidung_id": "d9893ed5d",
-   "kurs": 0.964,
-   "wert": 306.88
+   "kurs": 0.962,
+   "wert": 305.6
   },
   {
    "id": "pbf41057e",
@@ -91,8 +91,8 @@
    "ausstiegsplan": "Halten bis Abrechnung 31.10./1.11.; Verlust max. Einsatz.",
    "entscheidung_id": "dd8064fbf",
    "invalidierung": "Gemessenes KMIA-Max ≥85°F vor 15 Uhr Ortszeit oder NWS-Update auf High 86.",
-   "kurs": 0.02,
-   "wert": 4.53
+   "kurs": null,
+   "wert": 192.11
   },
   {
    "id": "p58d295aa",
@@ -128,5 +128,5 @@
  "funding": 0.0,
  "erstellt": 1793319819.7411644,
  "start_fx": 1.1184885798616961,
- "letzter_tick": 1793473417.3494215
+ "letzter_tick": 1793474317.2032602
 }
