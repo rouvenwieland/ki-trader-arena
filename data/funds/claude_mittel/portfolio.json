@@ -2,39 +2,8 @@
  "fonds_id": "claude_mittel",
  "waehrung": "USD",
  "start_kapital": 11184.88579861696,
- "cash": 10767.13876861696,
+ "cash": 11193.54866861696,
  "positionen": [
-  {
-   "id": "pcc1e4100",
-   "inst": {
-    "id": "pm:polymarket:1194643:NEIN",
-    "art": "pm",
-    "venue": "polymarket",
-    "ergebnis": "NEIN",
-    "frage": "Will Iliana Iotova win the next Bulgarian presidential election?",
-    "schliesst": 1792987140.0,
-    "ref": {
-     "id": "1194643",
-     "token_ja": "50441114645457108268892324313719484550984676393068151334263975251311332365159",
-     "token_nein": "99622103131434202105388039057766053299905201074786569487569345621536678411876",
-     "tick": 0.01,
-     "gebuehr_rate": 0.0
-    },
-    "url": "https://polymarket.com/event/bulgaria-presidential-election"
-   },
-   "seite": "long",
-   "menge": 1296.0,
-   "einstand": 0.27,
-   "hebel": 1.0,
-   "marge": 0.0,
-   "eroeffnet": 1793365861.7073393,
-   "gebuehren": 0.0,
-   "funding": 0.0,
-   "ausstiegsplan": "Bis zur Abrechnung (Ergebnis 1./2.11.) halten. Steigt NEIN vor der Wahl auf ≥0,33 (meine P(NEIN) überschritten), Gewinn mitnehmen. Kein Stop-Loss vor der Wahl, die Größe begrenzt das Risiko auf maximal 350 USD.",
-   "entscheidung_id": "d290f8f22",
-   "kurs": 0.335,
-   "wert": 427.68
-  },
   {
    "id": "p4b35a277",
    "inst": {
@@ -64,7 +33,7 @@
    "wert": 207.24
   }
  ],
- "realisiert": 131.75296999999978,
+ "realisiert": 208.24286999999975,
  "gebuehren": 5.19,
  "funding": 0.0,
  "erstellt": 1793319819.7411644,
