@@ -2,7 +2,7 @@
  "fonds_id": "liga_deepseek",
  "waehrung": "USD",
  "start_kapital": 11184.88579861696,
- "cash": 9984.92070861696,
+ "cash": 9335.289554052928,
  "positionen": [
   {
    "id": "p7f67c5d4",
@@ -37,10 +37,62 @@
    "invalidierung": "Binance BTC/USDT fällt unter 75.000 oder es erscheint eine Meldung, dass 75k bereits berührt wurde → These sofort falsch.",
    "kurs": 0.929,
    "wert": 1621.22
+  },
+  {
+   "id": "p34466a85",
+   "inst": {
+    "id": "pm:kalshi:KXHIGHLAX-26OCT31-B67.5:JA",
+    "art": "pm",
+    "venue": "kalshi",
+    "ergebnis": "JA",
+    "frage": "Will the maximum temperature be 67-68° on Oct 31, 2026? [67° to 68°]",
+    "schliesst": 1793520000.0,
+    "ref": {
+     "ticker": "KXHIGHLAX-26OCT31-B67.5"
+    },
+    "url": "https://kalshi.com/markets/KXHIGHLAX-26OCT31"
+   },
+   "seite": "long",
+   "menge": 2800.0,
+   "einstand": 0.1177190714285714,
+   "hebel": 1.0,
+   "marge": 0.0,
+   "eroeffnet": 1793423739.2765858,
+   "gebuehren": 20.36,
+   "funding": 0.0,
+   "ausstiegsplan": "Halten bis zur Abrechnung (NWS CLI 31.10., wenige Stunden). Kein vorzeitiger Verkauf bei <2h Restzeit wegen Spread.",
+   "entscheidung_id": "dbb7681e6",
+   "invalidierung": "Beobachtete Temperatur in LAX tagsüber bereits über 69°F oder NWS-Prognose hebt Max klar über 70°F → Bracket 67-68 unwahrscheinlich."
+  },
+  {
+   "id": "p5a2d4185",
+   "inst": {
+    "id": "pm:kalshi:KXHIGHCHI-26OCT31-T60:JA",
+    "art": "pm",
+    "venue": "kalshi",
+    "ergebnis": "JA",
+    "frage": "Will the maximum temperature be <60° on Oct 31, 2026? [59° or below]",
+    "schliesst": 1793512800.0,
+    "ref": {
+     "ticker": "KXHIGHCHI-26OCT31-T60"
+    },
+    "url": "https://kalshi.com/markets/KXHIGHCHI-26OCT31"
+   },
+   "seite": "long",
+   "menge": 1467.0,
+   "einstand": 0.19334543596730247,
+   "hebel": 1.0,
+   "marge": 0.0,
+   "eroeffnet": 1793423739.278077,
+   "gebuehren": 16.02,
+   "funding": 0.0,
+   "ausstiegsplan": "Halten bis Abrechnung (NWS CLI 31.10.). Kein vorzeitiger Verkauf.",
+   "entscheidung_id": "d92d0dbe3",
+   "invalidierung": "Beobachtete Temperatur Midway tagsüber bereits über 59°F vor Mittag oder NWS-Prognose hebt Max klar auf 63°F+."
   }
  ],
  "realisiert": 199.28251999999998,
- "gebuehren": 20.33737,
+ "gebuehren": 56.71737,
  "funding": 0.0,
  "erstellt": 1793319819.7411644,
  "start_fx": 1.1184885798616961,
