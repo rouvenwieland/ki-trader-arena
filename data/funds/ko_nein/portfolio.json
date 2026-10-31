@@ -33,8 +33,8 @@
    "gebuehren": 0.0,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.0215,
-   "wert": 36.38
+   "kurs": 0.020999999999999998,
+   "wert": 34.24
   },
   {
    "id": "p9e535f2b",
@@ -257,8 +257,8 @@
    "gebuehren": 1.59066,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.9864999999999999,
-   "wert": 189.31
+   "kurs": 0.9884999999999999,
+   "wert": 189.7
   },
   {
    "id": "p28450e21",
@@ -341,8 +341,8 @@
    "gebuehren": 0.0,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.75,
-   "wert": 162.72
+   "kurs": 0.79,
+   "wert": 160.46
   },
   {
    "id": "p30de0421",
@@ -437,8 +437,8 @@
    "gebuehren": 0.0,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.6725000000000001,
-   "wert": 167.75
+   "kurs": 0.6745000000000001,
+   "wert": 168.5
   },
   {
    "id": "pe65b0b73",
@@ -533,8 +533,8 @@
    "gebuehren": 0.33007,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.9944999999999999,
-   "wert": 169.46
+   "kurs": 0.997,
+   "wert": 170.32
   },
   {
    "id": "p48fc5d59",
@@ -879,7 +879,7 @@
    "gebuehren": 6.57,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.385,
+   "kurs": 0.395,
    "wert": 146.68
   },
   {
@@ -1033,8 +1033,8 @@
    "gebuehren": 10.06282,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.0045000000000000005,
-   "wert": 5.5
+   "kurs": 0.005,
+   "wert": 7.33
   },
   {
    "id": "pf73842ce",
@@ -1065,8 +1065,8 @@
    "gebuehren": 0.31446,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.9824999999999999,
-   "wert": 167.58
+   "kurs": 0.9835,
+   "wert": 167.92
   },
   {
    "id": "p7102c243",
@@ -1207,8 +1207,8 @@
    "gebuehren": 1.26,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.945,
-   "wert": 174.84
+   "kurs": 0.955,
+   "wert": 176.7
   },
   {
    "id": "pa8d52a27",
@@ -1303,8 +1303,8 @@
    "gebuehren": 0.0,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.838,
-   "wert": 172.42
+   "kurs": 0.8385,
+   "wert": 172.63
   },
   {
    "id": "p256927d5",
@@ -1335,40 +1335,8 @@
    "gebuehren": 3.27455,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.6705000000000001,
-   "wert": 150.22
-  },
-  {
-   "id": "pf1081db1",
-   "inst": {
-    "id": "pm:polymarket:6137762:NEIN",
-    "art": "pm",
-    "venue": "polymarket",
-    "ergebnis": "NEIN",
-    "frage": "Will the price of Ethereum be between $2,200 and $2,300 on October 31?",
-    "schliesst": 1793462400.0,
-    "ref": {
-     "id": "6137762",
-     "token_ja": "1195601462602514535505911942959573469568431278507015859607015208708813721854",
-     "token_nein": "71591657538853787259692021186443843769999823157917777437845897128317165126568",
-     "tick": 0.001,
-     "condition": "0x1e4c413ad7a06e8a51c0d24735de5a723b341624c687024beaa982ea1854135a",
-     "gebuehr_rate": 0.07,
-     "gebuehr_exp": 1.0
-    },
-    "url": "https://polymarket.com/event/will-the-price-of-ethereum-be-between-2200-2300-on-october-31-2026"
-   },
-   "seite": "long",
-   "menge": 3065.0,
-   "einstand": 0.051190349102773244,
-   "hebel": 1.0,
-   "marge": 0.0,
-   "eroeffnet": 1793438955.5455055,
-   "gebuehren": 10.42067,
-   "funding": 0.0,
-   "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": null,
-   "wert": 156.9
+   "kurs": 0.6645000000000001,
+   "wert": 148.39
   },
   {
    "id": "pbb0a8271",
@@ -1399,8 +1367,8 @@
    "gebuehren": 9.19367,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.135,
-   "wert": 112.08
+   "kurs": 0.13,
+   "wert": 102.74
   },
   {
    "id": "pc2572f19",
@@ -1685,11 +1653,11 @@
    "wert": 164.82
   }
  ],
- "realisiert": -160.84999999999997,
+ "realisiert": -317.74841999999995,
  "gebuehren": 89.74633999999998,
  "funding": 0.0,
  "erstellt": 1793379225.5430336,
  "start_fx": 1.1157431109273288,
- "letzter_tick": 1793463407.5836966,
+ "letzter_tick": 1793463517.545508,
  "kontrolle_bis": 1793459020.1892354
 }

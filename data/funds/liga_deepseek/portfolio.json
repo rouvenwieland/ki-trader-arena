@@ -35,8 +35,8 @@
    "ausstiegsplan": "Halten bis Auflösung heute 23:59 ET (31.10. 03:59 UTC). Bei NEIN-Ausgang volle Auszahlung 1,00; kein vorzeitiger Verkauf nötig, da Restzeit <7h.",
    "entscheidung_id": "dfab9a0ea",
    "invalidierung": "Binance BTC/USDT fällt unter 75.000 oder es erscheint eine Meldung, dass 75k bereits berührt wurde → These sofort falsch.",
-   "kurs": 0.9864999999999999,
-   "wert": 1722.54
+   "kurs": 0.9884999999999999,
+   "wert": 1726.04
   },
   {
    "id": "p34466a85",
@@ -91,8 +91,8 @@
    "ausstiegsplan": "Halten bis Abrechnung (NWS CLI 31.10.). Kein Verkauf im dünnen Buch.",
    "entscheidung_id": "d7e617f15",
    "invalidierung": "Beobachtetes Max in Midway erreicht 61°F vor 18:00 Ortszeit oder NWS hebt die Tagesprognose auf 63°F+ → Bracket ≤59 praktisch tot.",
-   "kurs": 0.055,
-   "wert": 93.45
+   "kurs": 0.045,
+   "wert": 74.76
   },
   {
    "id": "p3f11e9a0",
@@ -128,5 +128,5 @@
  "funding": 0.0,
  "erstellt": 1793319819.7411644,
  "start_fx": 1.1184885798616961,
- "letzter_tick": 1793463407.5836966
+ "letzter_tick": 1793463517.545508
 }
