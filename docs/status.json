@@ -1,11 +1,11 @@
 {
  "version": 1,
- "stand": 1793506432.6364076,
+ "stand": 1793506557.4033282,
  "hinweis": "Papierhandel-Simulation, keine Anlageberatung",
  "seite": "https://rouvenwieland.github.io/ki-trader-arena/",
  "budget": {
-  "heute_eur": 2.72,
-  "gesamt_eur": 21.77,
+  "heute_eur": 2.81,
+  "gesamt_eur": 21.87,
   "tagesdeckel_eur": 12.0,
   "gesamtdeckel_eur": 190.0,
   "claude_ende": "2026-11-14",
@@ -160,8 +160,8 @@
    "max_drawdown_pct": -2.34,
    "status": "aktiv",
    "modell": "claude-sonnet-5-5",
-   "kosten_heute_eur": 0.962,
-   "kosten_gesamt_eur": 6.005,
+   "kosten_heute_eur": 1.053,
+   "kosten_gesamt_eur": 6.096,
    "rendite_ki_pct": [
     -1.6,
     2.9
@@ -219,8 +219,8 @@
    "max_drawdown_pct": -2.29,
    "status": "aktiv",
    "modell": "claude-sonnet-5-5",
-   "kosten_heute_eur": 0.641,
-   "kosten_gesamt_eur": 5.554,
+   "kosten_heute_eur": 0.642,
+   "kosten_gesamt_eur": 5.555,
    "rendite_ki_pct": [
     -1.51,
     3.2
@@ -278,8 +278,8 @@
    "max_drawdown_pct": -8.17,
    "status": "aktiv",
    "modell": "claude-sonnet-5-5",
-   "kosten_heute_eur": 0.496,
-   "kosten_gesamt_eur": 5.552,
+   "kosten_heute_eur": 0.497,
+   "kosten_gesamt_eur": 5.553,
    "rendite_ki_pct": [
     -9.94,
     7.04
@@ -1109,6 +1109,13 @@
  ],
  "letzte_entscheidungen": [
   {
+   "ts": 1793506547.3312683,
+   "fonds": "DeepSeek",
+   "instrument": "pm:kalshi:KXHIGHCHI-26NOV01-B68.5:JA",
+   "aktion": "kaufen",
+   "zuversicht": 0.55
+  },
+  {
    "ts": 1793502952.6550567,
    "fonds": "Claude Mittel",
    "instrument": "pm:polymarket:5730331:JA",
@@ -1156,13 +1163,6 @@
    "instrument": "pm:kalshi:KXHIGHDEN-26OCT31-B64.5:JA",
    "aktion": "kaufen",
    "zuversicht": 0.5
-  },
-  {
-   "ts": 1793450120.7526894,
-   "fonds": "DeepSeek",
-   "instrument": "pm:kalshi:KXHIGHCHI-26OCT31-T60:JA",
-   "aktion": "kaufen",
-   "zuversicht": 0.55
   }
  ],
  "ereignisse": [
