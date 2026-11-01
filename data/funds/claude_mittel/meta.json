@@ -5,10 +5,10 @@
  "persoenlichkeit": "Ausgewogen und nüchtern. Du suchst Chancen mit gutem Chance-Risiko-Verhältnis und streust über Märkte.",
  "typ": "claude",
  "start": 1793319819.7411644,
- "status": "Fehler: Modellfehler: Anthropic: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'messages.1: `web_search`",
- "status_ts": 1793552406.3274732,
+ "status": "aktiv",
+ "status_ts": 1793559884.5461352,
  "modell_aktuell": "claude-sonnet-5-5",
- "letzte_runde": 1793552406.3274732,
- "letzte_runde_abbruch": "Modellfehler: Anthropic: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'messages.1: `web_search` tool use with id `srvtoolu_01JfJh27MK6RvR2T5t7eV3dN` was found without a corresponding `web_search_tool_result` block'}, 'request_id': 'req_011CgcZtgCZ5R97nYBLgNCgY'}",
+ "letzte_runde": 1793559884.5461352,
+ "letzte_runde_abbruch": "",
  "pausiert_bis": 0
 }

@@ -2,7 +2,7 @@
  "fonds_id": "claude_mittel",
  "waehrung": "USD",
  "start_kapital": 11184.88579861696,
- "cash": 10767.838851650691,
+ "cash": 10667.98131165069,
  "positionen": [
   {
    "id": "p51e71031",
@@ -127,12 +127,45 @@
    "invalidierung": "Meldung/Analystenkonsens zur Q3-Marge ≥75,0 % oder <73 %; Pre-Announcement zu Speicherkosten.",
    "kurs": 0.765,
    "wert": 30.0
+  },
+  {
+   "id": "p8b4a7cc3",
+   "inst": {
+    "id": "pm:polymarket:676741:JA",
+    "art": "pm",
+    "venue": "polymarket",
+    "ergebnis": "JA",
+    "frage": "Will Apple be the largest company in the world by market cap on December 31?",
+    "schliesst": 1798779540.0,
+    "ref": {
+     "id": "676741",
+     "token_ja": "9875273331604434310973374077817381730908757452538191940842519381772366848",
+     "token_nein": "102723918081644490126383882876216056971015484595406893020273651317068912986031",
+     "tick": 0.001,
+     "condition": "0x55a5a4b50b7947482e95af8f638fa0b8d9a46740c5cd04c6799443e83565176a",
+     "gebuehr_rate": 0.04,
+     "gebuehr_exp": 1.0
+    },
+    "url": "https://polymarket.com/event/will-apple-be-the-largest-company-in-the-world-by-market-cap-on-december-31-291"
+   },
+   "seite": "long",
+   "menge": 219.0,
+   "einstand": 0.44608675799086756,
+   "hebel": 1.0,
+   "marge": 0.0,
+   "eroeffnet": 1793560019.8486197,
+   "gebuehren": 2.16454,
+   "funding": 0.0,
+   "ausstiegsplan": "Halten bis Abrechnung; Gewinn mitnehmen bei JA-Bid ≥0,52; Neubewertung nach NVDA-Zahlen.",
+   "entscheidung_id": "dd384368f",
+   "invalidierung": "NVDA schließt mehrere Tage ≥3 % über Apple-Marktkapitalisierung oder NVDA-Zahlen mit starker Guidance und Kurssprung."
   }
  ],
  "realisiert": 13.85286999999974,
- "gebuehren": 5.19,
+ "gebuehren": 7.35454,
  "funding": 0.0,
  "erstellt": 1793319819.7411644,
  "start_fx": 1.1184885798616961,
- "letzter_tick": 1793559775.766602
+ "letzter_tick": 1793559775.766602,
+ "auftraege": []
 }
