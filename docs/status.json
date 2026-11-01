@@ -1,11 +1,11 @@
 {
  "version": 1,
- "stand": 1793502835.07601,
+ "stand": 1793502956.8825746,
  "hinweis": "Papierhandel-Simulation, keine Anlageberatung",
  "seite": "https://rouvenwieland.github.io/ki-trader-arena/",
  "budget": {
-  "heute_eur": 1.49,
-  "gesamt_eur": 20.55,
+  "heute_eur": 2.72,
+  "gesamt_eur": 21.77,
   "tagesdeckel_eur": 12.0,
   "gesamtdeckel_eur": 190.0,
   "claude_ende": "2026-11-14",
@@ -160,8 +160,8 @@
    "max_drawdown_pct": -2.34,
    "status": "aktiv",
    "modell": "claude-sonnet-5-5",
-   "kosten_heute_eur": 0.605,
-   "kosten_gesamt_eur": 5.648,
+   "kosten_heute_eur": 0.962,
+   "kosten_gesamt_eur": 6.005,
    "rendite_ki_pct": [
     -1.53,
     3.4
@@ -217,10 +217,10 @@
    "rendite_pct": 1.82,
    "equity_eur": 10187.69,
    "max_drawdown_pct": -2.29,
-   "status": "Fehler: Modellfehler: Anthropic: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'messages.1: `web_search`",
+   "status": "aktiv",
    "modell": "claude-sonnet-5-5",
-   "kosten_heute_eur": 0.292,
-   "kosten_gesamt_eur": 5.205,
+   "kosten_heute_eur": 0.641,
+   "kosten_gesamt_eur": 5.554,
    "rendite_ki_pct": [
     -1.72,
     3.51
@@ -278,8 +278,8 @@
    "max_drawdown_pct": -8.17,
    "status": "aktiv",
    "modell": "claude-sonnet-5-5",
-   "kosten_heute_eur": 0.21,
-   "kosten_gesamt_eur": 5.266,
+   "kosten_heute_eur": 0.496,
+   "kosten_gesamt_eur": 5.552,
    "rendite_ki_pct": [
     -10.2,
     6.54
@@ -748,10 +748,10 @@
    "rendite_pct": -0.38,
    "equity_eur": 9941.85,
    "max_drawdown_pct": -0.53,
-   "status": "aktiv",
+   "status": "Fehler: Modellfehler: Anthropic: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'messages.1: `web_search`",
    "modell": "claude-sonnet-5-5",
-   "kosten_heute_eur": 0.382,
-   "kosten_gesamt_eur": 3.87,
+   "kosten_heute_eur": 0.617,
+   "kosten_gesamt_eur": 4.105,
    "rendite_ki_pct": [
     -0.75,
     -0.02
@@ -1109,6 +1109,13 @@
  ],
  "letzte_entscheidungen": [
   {
+   "ts": 1793502952.6550567,
+   "fonds": "Claude Mittel",
+   "instrument": "pm:polymarket:5730331:JA",
+   "aktion": "kaufen",
+   "zuversicht": 0.6
+  },
+  {
    "ts": 1793500089.7101352,
    "fonds": "DeepSeek",
    "instrument": "pm:kalshi:KXHIGHNY-26NOV01-B62.5:JA",
@@ -1156,13 +1163,6 @@
    "instrument": "pm:kalshi:KXHIGHCHI-26OCT31-T60:JA",
    "aktion": "kaufen",
    "zuversicht": 0.55
-  },
-  {
-   "ts": 1793437467.9333992,
-   "fonds": "Claude Mittel",
-   "instrument": "pm:manifold:0uttZUAcls:NEIN",
-   "aktion": "kaufen",
-   "zuversicht": 0.5
   }
  ],
  "ereignisse": [

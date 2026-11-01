@@ -2,7 +2,7 @@
  "fonds_id": "claude_mittel",
  "waehrung": "USD",
  "start_kapital": 11184.88579861696,
- "cash": 10800.63885165069,
+ "cash": 10767.838851650691,
  "positionen": [
   {
    "id": "p4b35a277",
@@ -121,6 +121,38 @@
    "invalidierung": "PSL oder Polska 2050 kündigen Koalition auf bzw. sagen Unterstützung für das konstruktive Misstrauensvotum zu; oder Tusk kündigt Rücktritt an.",
    "kurs": 0.7955416369392183,
    "wert": 117.69
+  },
+  {
+   "id": "pa2cf5bd2",
+   "inst": {
+    "id": "pm:polymarket:5730331:JA",
+    "art": "pm",
+    "venue": "polymarket",
+    "ergebnis": "JA",
+    "frage": "NVIDIA (NVDA) Q3 adjusted gross margin 73% to 75%?",
+    "schliesst": 1795042800.0,
+    "ref": {
+     "id": "5730331",
+     "token_ja": "12184345390140772513332883679626608175715846723917987793045546957490562215909",
+     "token_nein": "59532283402481232517464624308522375103071481394285137704213470523262501022197",
+     "tick": 0.01,
+     "condition": "0x467ef775ebe832ade5a37b54bfa571a2d2a4eae879cf8e91afebc3b3417d63b2",
+     "gebuehr_rate": 0.0,
+     "gebuehr_exp": 1.0
+    },
+    "url": "https://polymarket.com/event/nvidia-nvda-q3-adjusted-gross-margin-non-gaap-20261008120136000-73-to-75"
+   },
+   "seite": "long",
+   "menge": 40.0,
+   "einstand": 0.82,
+   "hebel": 1.0,
+   "marge": 0.0,
+   "eroeffnet": 1793502952.6551862,
+   "gebuehren": 0.0,
+   "funding": 0.0,
+   "ausstiegsplan": "Bis zur Abrechnung (Earnings ca. 17.–25.11.) halten; vorzeitig verkaufen, wenn Bid ≥0.92 oder bei Nachricht zu Margendruck.",
+   "entscheidung_id": "df5b61ded",
+   "invalidierung": "Meldung/Analystenkonsens zur Q3-Marge ≥75,0 % oder <73 %; Pre-Announcement zu Speicherkosten."
   }
  ],
  "realisiert": 208.24286999999975,
