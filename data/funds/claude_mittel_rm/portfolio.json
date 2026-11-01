@@ -2,7 +2,7 @@
  "fonds_id": "claude_mittel_rm",
  "waehrung": "USD",
  "start_kapital": 11156.327353966788,
- "cash": 9048.352866545645,
+ "cash": 8798.797758257293,
  "positionen": [
   {
    "id": "pe8186cc2",
@@ -155,16 +155,16 @@
     "url": "https://manifold.markets/a_l_e_x/will-donald-tusk-be-the-prime-minis"
    },
    "seite": "long",
-   "menge": 545.0,
-   "einstand": 0.8255533040095537,
+   "menge": 879.0,
+   "einstand": 0.7957698054306706,
    "hebel": 1.0,
    "marge": 0.0,
    "eroeffnet": 1793513593.0883765,
    "gebuehren": 0.0,
    "funding": 0.0,
-   "ausstiegsplan": "Halten bis Ende November; verkaufen wenn PSL oder Polska 2050 offiziell Koalition verlassen/Misstrauensvotum mit Nachfolger Mehrheit signalisiert (JA-Preis <0.55) oder bei ≥0.97.",
-   "entscheidung_id": "d4ba7f844",
-   "invalidierung": "PSL oder Polska 2050 kündigen Koalition auf bzw. unterstützen konstruktives Misstrauensvotum; Tusk kündigt Rücktritt an.",
+   "ausstiegsplan": "Halten bis Ende November. Verkauf bei Kurs <0.55 oder Koalitionsbruch/Rücktrittsankündigung; Gewinn mitnehmen ≥0.95.",
+   "entscheidung_id": "d34bf6b87",
+   "invalidierung": "PSL oder Polen 2050 verlassen die Koalition bzw. unterstützen ein Misstrauensvotum; Tusk kündigt Rücktritt/Vertrauensfrage an.",
    "kurs": 0.720084145468013,
    "wert": 392.16
   },
