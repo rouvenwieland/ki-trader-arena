@@ -63,7 +63,7 @@
    "ausstiegsplan": "Halten; Gewinn mitnehmen, wenn NEIN ≥0.90 (JA ≤0.10) oder der Preis meine P erreicht. Neu bewerten, wenn Lisnard in Umfragen über 12 % steigt oder Philippe/Retailleau zurückziehen.",
    "entscheidung_id": "df10ef502",
    "invalidierung": "Lisnard in mehreren Umfragen ≥12 % im 1. Wahlgang oder Rückzug von Philippe/Retailleau zu seinen Gunsten.",
-   "kurs": 0.8135,
+   "kurs": 0.813,
    "wert": 249.28
   },
   {
@@ -119,8 +119,8 @@
    "ausstiegsplan": "Halten bis Abrechnung 30.11.; Gewinn mitnehmen, wenn JA-Bid ≥0.92. Neu bewerten bei Austritt von PSL oder PL2050 aus der Koalition.",
    "entscheidung_id": "d6e2136ea",
    "invalidierung": "PSL oder Polska 2050 kündigen Koalition auf bzw. sagen Unterstützung für das konstruktive Misstrauensvotum zu; oder Tusk kündigt Rücktritt an.",
-   "kurs": 0.769316309689565,
-   "wert": 113.8
+   "kurs": 0.7844790461337521,
+   "wert": 116.05
   },
   {
    "id": "pa2cf5bd2",
@@ -162,5 +162,5 @@
  "funding": 0.0,
  "erstellt": 1793319819.7411644,
  "start_fx": 1.1184885798616961,
- "letzter_tick": 1793518003.4133868
+ "letzter_tick": 1793518902.4703765
 }
