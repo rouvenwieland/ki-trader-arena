@@ -2,7 +2,7 @@
  "fonds_id": "ko_nein",
  "waehrung": "USD",
  "start_kapital": 11157.431109273288,
- "cash": 1334.1655292732853,
+ "cash": 1538.1655292732853,
  "positionen": [
   {
    "id": "pe6781775",
@@ -405,8 +405,8 @@
    "gebuehren": 0.0,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.648,
-   "wert": 161.75
+   "kurs": 0.6485000000000001,
+   "wert": 162.0
   },
   {
    "id": "pe65b0b73",
@@ -597,8 +597,8 @@
    "gebuehren": 0.0,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.052000000000000005,
-   "wert": 73.99
+   "kurs": 0.0485,
+   "wert": 70.97
   },
   {
    "id": "pc8cf836f",
@@ -873,8 +873,8 @@
    "gebuehren": 7.15674,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.0125,
-   "wert": 4.87
+   "kurs": 0.013000000000000001,
+   "wert": 5.32
   },
   {
    "id": "pdcf6fcc3",
@@ -905,8 +905,8 @@
    "gebuehren": 10.06282,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.007,
-   "wert": 10.99
+   "kurs": 0.008,
+   "wert": 12.82
   },
   {
    "id": "pf73842ce",
@@ -937,8 +937,8 @@
    "gebuehren": 0.31446,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.9904999999999999,
-   "wert": 169.29
+   "kurs": 0.993,
+   "wert": 169.63
   },
   {
    "id": "p7102c243",
@@ -1175,8 +1175,8 @@
    "gebuehren": 0.0,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.8305,
-   "wert": 170.98
+   "kurs": 0.8135,
+   "wert": 167.27
   },
   {
    "id": "p256927d5",
@@ -1207,8 +1207,8 @@
    "gebuehren": 3.27455,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.5,
-   "wert": 112.21
+   "kurs": 0.5585,
+   "wert": 125.49
   },
   {
    "id": "pbb0a8271",
@@ -1239,7 +1239,7 @@
    "gebuehren": 9.19367,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.05500000000000001,
+   "kurs": 0.05,
    "wert": 37.36
   },
   {
@@ -1579,8 +1579,8 @@
    "gebuehren": 0.59,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.945,
-   "wert": 164.5
+   "kurs": 0.94,
+   "wert": 162.75
   },
   {
    "id": "pbb214a3d",
@@ -1611,8 +1611,8 @@
    "gebuehren": 0.0,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.25,
-   "wert": 88.08
+   "kurs": 0.235,
+   "wert": 84.41
   },
   {
    "id": "p5037ef0e",
@@ -1679,38 +1679,6 @@
    "wert": 165.44
   },
   {
-   "id": "p38490647",
-   "inst": {
-    "id": "pm:polymarket:5891194:NEIN",
-    "art": "pm",
-    "venue": "polymarket",
-    "ergebnis": "NEIN",
-    "frage": "Will CF América win on 2026-10-31?",
-    "schliesst": 1793502600.0,
-    "ref": {
-     "id": "5891194",
-     "token_ja": "101516403459529386538663881930031923462889324442117111924082069725859817597652",
-     "token_nein": "61518115548431633990357079350459397768016106253917216227952056342160269318796",
-     "tick": 0.01,
-     "condition": "0xb4efdc55590d44e2802b7b05990269fbaa01d7778570826f7bcd29872884e397",
-     "gebuehr_rate": 0.05,
-     "gebuehr_exp": 1.0
-    },
-    "url": "https://polymarket.com/event/mex-ame-tol-2026-10-31"
-   },
-   "seite": "long",
-   "menge": 204.0,
-   "einstand": 0.81,
-   "hebel": 1.0,
-   "marge": 0.0,
-   "eroeffnet": 1793507084.3484185,
-   "gebuehren": 1.56978,
-   "funding": 0.0,
-   "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.999,
-   "wert": 203.8
-  },
-  {
    "id": "pb69a0df9",
    "inst": {
     "id": "pm:kalshi:KXHIGHCHI-26NOV01-B68.5:NEIN",
@@ -1763,11 +1731,11 @@
    "wert": 152.81
   }
  ],
- "realisiert": -280.17319999999995,
+ "realisiert": -241.41319999999996,
  "gebuehren": 106.81588999999997,
  "funding": 0.0,
  "erstellt": 1793379225.5430336,
  "start_fx": 1.1157431109273288,
- "letzter_tick": 1793516984.476384,
+ "letzter_tick": 1793517884.61457,
  "kontrolle_bis": 1793513506.9660566
 }
