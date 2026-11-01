@@ -231,3 +231,22 @@ vor dem Deploy aus `data/`. `docs/status.json` (6 kB) bleibt im Git, weil die La
 * **Live-Prüfung:** Die feste Runde um 18 UTC lief mit dem neuen Code für alle vier Claude-Fonds fehlerfrei (gestreamt, hohe Cache-Treffer,
   0,03–0,16 $ je Schritt); `p_blind`, Invalidierung und `risiko_usd` stehen in den echten Entscheidungen; Wetter-Regelfonds, Schwarm und Kontrollen
   handeln im Wächter; das Opus-Review W44 wurde vollständig neu erzeugt.
+
+## Nachtrag 01.11.: Aktien wirklich einbeziehen, Kostenanzeige der Liga
+
+**Befund:** Kein Fonds hatte je eine Aktien-, Krypto- oder Perp-Order *versucht* (nichts abgelehnt – nie gestellt). Ursachen laut Tagebüchern:
+(1) von 8 festen Runden lagen nur 15 und 18 UTC in der US-Handelszeit, die Opus-Tiefenrunde (13 UTC) davor; (2) bei geschlossener Börse war gar
+keine Order möglich; (3) Rundenauftrag und Marktlage drehten sich fast nur um Wettmärkte (nackte Kurse ohne Tagesveränderung, 10 Werte).
+**Änderungen (ohne Handelszwang – „nichts tun“ bleibt gültig):**
+* Takt `[1, 5, 9, 12, 15, 17, 19, 22]` UTC, Opus-Tiefenrunde **15 UTC**; 15/17/19 liegen sommers wie winters (Umstellung 01.11.) in der NYSE-Zeit
+  (14:30–21:00 UTC). Liga-Runden 8 und 19 UTC (+ Tiefenrunde). Anzahl der Runden unverändert → Budget unverändert.
+* **Auftrag zur Eröffnung:** Aktien-/ETF-Orders bei geschlossener Börse werden vorgemerkt (höchstens 5, Werkzeug `auftrag_loeschen`) und vom Wächter
+  beim ersten Tick mit offenem Buch zum dann gültigen Kurs ausgeführt – Limits, Cash und Impact zum Ausführungszeitpunkt; verfallen mit Handelsschluss.
+  Die Entscheidung trägt ihren Zeitstempel vor der Ausführung (Vorwärtstest bleibt sauber).
+* NYSE-Kalender (Wochenende, Feiertage 2026/27) in `stocks.boerse_offen/naechste_oeffnung`; Marktlage zeigt „Börse OFFEN/ZU, nächste Eröffnung“ und
+  die Veränderung zum Vortag. Universum 18 Werte (+ AMZN, GOOGL, META, AMD, COIN, MSTR, XLE, SMH); jeder US-Ticker per `stock:SYMBOL` handelbar.
+* Rundenauftrag: je feste Runde mindestens **eine direkte Aktien-/ETF-These** prüfen, in der Tiefenrunde mindestens zwei Aktien-/Krypto-Thesen.
+  Schwerpunkte: Mittel (+ A/B) handelt Einzelaktien/Sektor-ETFs direkt, Vorsichtig Anleihen-/Gold-ETFs, Aggressiv zusätzlich COIN/MSTR und Tech-Momentum.
+* **Kostenanzeige:** Unter „DeepSeek“ stand „haiku-5-5“ – das war eine Haiku-Reflexion (Lektion nach einer abgerechneten DeepSeek-Position), die unter dem
+  Fonds gebucht wurde, nicht das Handelsmodell. Haiku-Hilfsaufrufe für Liga-Fonds laufen jetzt auf dem eigenen Konto `lernhilfe_liga`
+  (Altbuchungen werden in der Anzeige umgeschlüsselt) und zählen nicht als API-Kosten des Liga-Fonds; die Kostentabelle zeigt „handelt mit <Modell>“.

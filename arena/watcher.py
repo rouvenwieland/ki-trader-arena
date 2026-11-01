@@ -73,6 +73,37 @@ def exakte_funding_raten(pf: dict, raten_8h: dict, seit: float, jetzt: float) ->
     return out
 
 
+def fuehre_auftraege_aus(pf: dict, prof: dict, mz: Marktzugriff, jetzt: float) -> list[dict]:
+    """Bei geschlossener Börse vorgemerkte Aktien-/ETF-Aufträge: beim ersten Tick mit offenem Buch gegen das dann gültige Buch ausführen
+    (Limits, Cash und Impact zum Ausführungszeitpunkt); nach Handelsschluss des Ziel-Tages verfallen sie."""
+    log, rest = [], []
+    for a in pf.get("auftraege", []):
+        if jetzt > a["gueltig_bis"]:
+            log.append({"ok": False, "ts": jetzt, "aktion": "auftrag_verfallen", "fonds_id": pf["fonds_id"], "inst_id": a["inst"]["id"],
+                        "entscheidung_id": a["entscheidung_id"], "grund": "Auftrag zur Eröffnung verfallen"})
+            continue
+        book, _ = mz.buch(a["inst"])
+        if book is None or (not book.asks and not book.bids):
+            rest.append(a)
+            continue
+        marks = {p["inst"]["id"]: mz.marke(p["inst"]) for p in pf["positionen"]}
+        eq = portfolio.equity(pf, marks)
+        if a["aktion"] == "kaufen":
+            r = engine.eroeffne(pf, prof, a["inst"], book, qty=a.get("menge"), usd=a.get("betrag_usd"), equity=eq, stop_loss=a.get("stop_loss"),
+                                take_profit=a.get("take_profit"), ausstiegsplan=a.get("ausstiegsplan", ""), entscheidung_id=a["entscheidung_id"], ts=jetzt)
+            if r.get("ok") and a.get("invalidierung"):
+                pos = next((p for p in pf["positionen"] if p["id"] == r["position_id"]), None)
+                if pos is not None:
+                    pos["invalidierung"] = a["invalidierung"]
+        else:
+            pos = next((p for p in pf["positionen"] if p["inst"]["id"] == a["inst"]["id"]), None)
+            r = engine.schliesse(pf, pos, book, qty=a.get("menge"), grund="Auftrag zur Eröffnung", ts=jetzt) if pos else \
+                {"ok": False, "grund": "Position nicht mehr vorhanden"}
+        log.append({**r, "ts": jetzt, "fonds_id": pf["fonds_id"], "entscheidung_id": a["entscheidung_id"], "auftrag": a["id"]})
+    pf["auftraege"] = rest
+    return log
+
+
 def verarbeite_portfolio(pf: dict, mz: Marktzugriff, funding_raten: dict, jetzt: float) -> list[dict]:
     """Funding → Liquidation → Stop-Loss/Take-Profit → Abrechnung. Liefert Ledger-Einträge."""
     log: list[dict] = []
@@ -171,6 +202,8 @@ def lauf(jetzt: float | None = None) -> dict:
     pm_index = {m["mid"]: m for m in pm_markte}
     for fid, (d, pf) in pfs.items():
         log = verarbeite_portfolio(pf, mz, funding, jetzt)
+        if pf.get("auftraege"):
+            log += fuehre_auftraege_aus(pf, funds.risikoprofil(d), mz, jetzt)
         if d["typ"] == "schwarm" or d.get("kontrolle"):
             from arena import schwarm
             try:

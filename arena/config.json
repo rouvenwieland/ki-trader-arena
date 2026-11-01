@@ -11,16 +11,16 @@
     },
     "reserve_tag_eur": 0.8,
     "takt_stunden_utc": [
-      0,
-      3,
-      6,
+      1,
+      5,
       9,
-      13,
+      12,
       15,
-      18,
-      21
+      17,
+      19,
+      22
     ],
-    "tiefenrunde_stunde_utc": 13,
+    "tiefenrunde_stunde_utc": 15,
     "tiefenrunde_modell": "claude-opus-5-5",
     "runden_modell": "claude-sonnet-5-5",
     "runden_deckel_usd": {
@@ -148,7 +148,15 @@
       "NVDA",
       "AAPL",
       "MSFT",
-      "TSLA"
+      "TSLA",
+      "AMZN",
+      "GOOGL",
+      "META",
+      "AMD",
+      "COIN",
+      "MSTR",
+      "XLE",
+      "SMH"
     ]
   },
   "fonds_claude": [
@@ -158,7 +166,7 @@
       "risiko": "vorsichtig",
       "persoenlichkeit": "Kapitalerhalt zuerst. Du handelst selten, nur bei klar positivem Erwartungswert nach Kosten, und sagst im Zweifel Nein. Kein Hebel.",
       "schwerpunkt": "Makro und Zinsen (Fed/EZB, Inflation, Arbeitsmarkt), Wirtschaftsdaten-Märkte, Wetter/Klima-Märkte, Anleihen-/Gold-ETFs (TLT, AGG, GLD). Bevorzugt Wettmärkte mit überprüfbarer Datenbasis und naher Abrechnung.",
-      "recherchepfad": "Beginne mit „makro“ und dem Wirtschaftskalender (Websuche: anstehende Datenveröffentlichungen, Zentralbank-Termine), dann „markt_suche“ zu Zins- und Inflationsfragen und das Werkzeug „wetter“ für Temperaturmärkte (Ensemble-Wahrscheinlichkeit je Bracket); Kursdaten nur für ETFs.",
+      "recherchepfad": "Beginne mit „makro“ und dem Wirtschaftskalender (Websuche: anstehende Datenveröffentlichungen, Zentralbank-Termine), dann „markt_suche“ zu Zins- und Inflationsfragen und das Werkzeug „wetter“ für Temperaturmärkte (Ensemble-Wahrscheinlichkeit je Bracket); Kursdaten nur für ETFs. Anleihen-/Gold-ETFs (TLT, AGG, GLD) direkt handeln, wenn Zins- oder Makrodaten eine klare Richtung belegen.",
       "stichworte": [
         "fed",
         "rate",
@@ -210,8 +218,8 @@
       "name": "Claude Mittel",
       "risiko": "mittel",
       "persoenlichkeit": "Ausgewogen und nüchtern. Du suchst Chancen mit gutem Chance-Risiko-Verhältnis und streust über Märkte.",
-      "schwerpunkt": "Unternehmen und Technologie (Ergebnisse, Produktstarts, KI-Branche), Sport und Kultur, Wahlen und Politik außerhalb der US-Bundespolitik; Einzelaktien (NVDA, AAPL, MSFT, TSLA) und Index-ETFs.",
-      "recherchepfad": "Beginne mit „markt_suche“ zu Unternehmen, Sport und internationalen Wahlen und mit „nachrichten“ zu Quartalszahlen; prüfe Aktienkurse/Prognosen der genannten Werte.",
+      "schwerpunkt": "Unternehmen und Technologie (Ergebnisse, Produktstarts, KI-Branche), Sport und Kultur, Wahlen und Politik außerhalb der US-Bundespolitik; Einzelaktien (NVDA, AAPL, MSFT, TSLA, AMZN, GOOGL, META, AMD) und Index-/Sektor-ETFs (SPY, QQQ, IWM, SMH, XLE) – direkt gehandelt, nicht nur über Wettmärkte.",
+      "recherchepfad": "Beginne mit „markt_suche“ zu Unternehmen, Sport und internationalen Wahlen und mit „nachrichten“ zu Quartalszahlen; prüfe Aktienkurse/Prognosen der genannten Werte. Prüfe in jeder festen Runde auch mindestens eine direkte Aktien-/ETF-These (Kurs, kurs_verlauf, prognose, positionsgroesse, Nachrichten).",
       "stichworte": [
         "nvidia",
         "apple",
@@ -266,7 +274,7 @@
       "name": "Claude Aggressiv",
       "risiko": "aggressiv",
       "persoenlichkeit": "Renditehungrig und mutig, aber nicht blind. Du darfst konzentrierte Wetten und Hebel nutzen, wenn deine These stark ist, und akzeptierst große Schwankungen.",
-      "schwerpunkt": "Krypto und Derivate: Perpetuals (long/short mit Hebel), Optionen, Volatilität, Funding-Extreme, Krypto-Kursschwellen-Märkte und Krypto-Regulierung.",
+      "schwerpunkt": "Krypto und Derivate: Perpetuals (long/short mit Hebel), Optionen, Volatilität, Funding-Extreme, Krypto-Kursschwellen-Märkte, Krypto-Regulierung und krypto-nahe Aktien (COIN, MSTR) sowie Hebel-Momentum in Tech (TSLA, NVDA, AMD).",
       "recherchepfad": "Beginne mit Perps/Funding aus der Marktlage, „optionen“, „prognose“ und „kurs_verlauf“ für BTC/ETH/SOL, dann „markt_suche“ zu Krypto-Kursschwellen; Websuche zu On-Chain-/ETF-Flüssen und Regulierung.",
       "stichworte": [
         "bitcoin",
@@ -315,8 +323,8 @@
       "name": "Claude Mittel+RM (A/B)",
       "risiko": "mittel",
       "persoenlichkeit": "Ausgewogen und nüchtern. Du suchst Chancen mit gutem Chance-Risiko-Verhältnis und streust über Märkte.",
-      "schwerpunkt": "Unternehmen und Technologie (Ergebnisse, Produktstarts, KI-Branche), Sport und Kultur, Wahlen und Politik außerhalb der US-Bundespolitik; Einzelaktien (NVDA, AAPL, MSFT, TSLA) und Index-ETFs.",
-      "recherchepfad": "Beginne mit „markt_suche“ zu Unternehmen, Sport und internationalen Wahlen und mit „nachrichten“ zu Quartalszahlen; prüfe Aktienkurse/Prognosen der genannten Werte.",
+      "schwerpunkt": "Unternehmen und Technologie (Ergebnisse, Produktstarts, KI-Branche), Sport und Kultur, Wahlen und Politik außerhalb der US-Bundespolitik; Einzelaktien (NVDA, AAPL, MSFT, TSLA, AMZN, GOOGL, META, AMD) und Index-/Sektor-ETFs (SPY, QQQ, IWM, SMH, XLE) – direkt gehandelt, nicht nur über Wettmärkte.",
+      "recherchepfad": "Beginne mit „markt_suche“ zu Unternehmen, Sport und internationalen Wahlen und mit „nachrichten“ zu Quartalszahlen; prüfe Aktienkurse/Prognosen der genannten Werte. Prüfe in jeder festen Runde auch mindestens eine direkte Aktien-/ETF-These (Kurs, kurs_verlauf, prognose, positionsgroesse, Nachrichten).",
       "stichworte": [
         "nvidia",
         "apple",
@@ -470,8 +478,8 @@
     }
   },
   "liga_takt_stunden_utc": [
-    6,
-    21
+    8,
+    19
   ],
   "triage_groq_modell": "openai/gpt-oss-20b",
   "openrouter_bevorzugt": [

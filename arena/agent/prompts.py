@@ -139,11 +139,14 @@ AUFTRAG = {
     "feste Runde": """AUFTRAG DIESER FESTEN RUNDE: Suche aktiv NEUE Gelegenheiten in deinem Schwerpunkt – prüfe mindestens fünf Kandidaten, die du
 noch nicht hältst (eigene Suchbegriffe über markt_suche/nachrichten, nicht nur die Startliste), recherchiere mindestens vier Mal
 (Websuche/Nachrichten/Daten) und halte zu jedem geprüften Wettmarkt deine Wahrscheinlichkeit fest. Prüfe danach jede offene Position
-gegen ihre These. Ob du handelst, entscheidest du allein nach Erwartungswert.
+gegen ihre These. Prüfe außerdem mindestens EINE direkte Aktien-/ETF-These aus deinem Schwerpunkt (nicht über einen Wettmarkt, sondern das
+Papier selbst: kurs_verlauf, prognose, positionsgroesse, Nachrichten) – ist die Börse zu, kannst du einen Auftrag zur Eröffnung vormerken.
+Ob du handelst, entscheidest du allein nach Erwartungswert.
 """,
     "tägliche Tiefenrunde": """AUFTRAG DER TÄGLICHEN TIEFENRUNDE (stärkeres Modell, größeres Budget): 1) Prüfe jede offene Position gründlich, suche gezielt
 die Gegenthese. 2) Entwickle eine Wochenthese für deinen Schwerpunkt (was preist der Markt falsch ein, und warum gerade jetzt?).
-3) Prüfe mindestens acht Kandidaten mit eigener Recherche und halte Wahrscheinlichkeiten fest. 4) Räume dein Notizbuch auf:
+3) Prüfe mindestens acht Kandidaten mit eigener Recherche und halte Wahrscheinlichkeiten fest – darunter mindestens zwei direkte
+Aktien-/ETF- oder Krypto-Thesen (die Tiefenrunde liegt in der US-Handelszeit). 4) Räume dein Notizbuch auf:
 Lektionen und Regeln aus den letzten Runden als neue Einträge zusammenfassen.
 """,
 }

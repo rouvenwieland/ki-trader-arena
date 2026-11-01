@@ -89,7 +89,13 @@ def text(s: dict, max_wetten: int = 30, defn: dict | None = None) -> str:
             f"{b} {v['dvol']:.1f} (24h zuvor {v['vor_24h']:.1f}, 7-Tage-Spanne {v['min_7t']:.0f}–{v['max_7t']:.0f}, ≈ ±{v['tagesbewegung_1sigma_pct']:.1f} % je Tag)"
             for b, v in s["dvol"].items()) + ". Mehr im Werkzeug „derivate_lage“.")
     if s["aktien"]:
-        z.append("AKTIEN/ETF (Yahoo): " + "; ".join(f"{k} {v['preis']:.2f}{'' if v['offen'] else ' (Börse zu)'}" for k, v in s["aktien"].items()))
+        from datetime import datetime, timezone
+        offen = any(v["offen"] for v in s["aktien"].values())
+        oeff = datetime.fromtimestamp(stocks.naechste_oeffnung(s["ts"]), timezone.utc).strftime("%a %d.%m. %H:%M UTC")
+        z.append(("AKTIEN/ETF (Yahoo; Börse OFFEN – handelbar): " if offen else
+                  f"AKTIEN/ETF (Yahoo; Börse ZU, nächste Eröffnung {oeff} – Kauf/Verkauf wird als Auftrag zur Eröffnung vorgemerkt): ") + "; ".join(
+            f"{k} {v['preis']:.2f}" + (f" ({v['aenderung_pct']:+.1f}% zum Vortag)" if v.get("aenderung_pct") is not None else "")
+            for k, v in s["aktien"].items()) + ". Weitere US-Ticker per stock:SYMBOL.")
     else:
         z.append("AKTIEN/ETF: derzeit keine Kursquelle erreichbar.")
     if s["optionen"]:

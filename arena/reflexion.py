@@ -55,15 +55,17 @@ def beschreibe(fid: str, e: dict) -> str:
 
 def reflektiere(fid: str, e: dict, bud: bmod.Budget | None) -> str:
     text = beschreibe(fid, e)
+    # Liga-Fonds handeln mit ihrem eigenen Modell; die Haiku-Lektion ist eine Arena-Hilfsleistung und wird separat gebucht
+    konto = fid if fid.startswith("claude_") else "lernhilfe_liga"
     if bud and os.environ.get("ARENA_ANTHROPIC_KEY", "").strip() and not (bud.claude_zeit_vorbei() or bud.gesamt_erschoepft()):
-        ok, _ = bud.darf(fid, 3, bmod.schaetze_naechsten_aufruf(MODELL, len(text) + len(SYSTEM), 1200), global_nur=not fid.startswith("claude_"))
+        ok, _ = bud.darf(konto, 3, bmod.schaetze_naechsten_aufruf(MODELL, len(text) + len(SYSTEM), 1200), global_nur=not fid.startswith("claude_"))
         if ok:
             try:
                 from arena.agent import llm
                 s = llm.AnthropicSitzung(MODELL, SYSTEM, [], websuche=0, effort="low", max_tokens=1200, timeout=120)
                 s.nutzer(text)
                 a = s.schritt()
-                bud.buche(fid, MODELL, a.nutzung, "reflexion")
+                bud.buche(konto, MODELL, a.nutzung, "reflexion")
                 if a.text.strip() and a.ende != "max_tokens":
                     return a.text.strip()[:900]
             except Exception as ex:  # Reflexion darf nie eine Runde blockieren

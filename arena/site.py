@@ -136,7 +136,10 @@ def kosten_je_fonds(fx: float, jetzt: float) -> dict:
     tag = time.strftime("%Y-%m-%d", time.gmtime(jetzt))
     out: dict[str, dict] = {}
     for x in store.lies_jsonl("budget_log.jsonl"):
-        f = out.setdefault(x.get("fonds", "?"), {"heute_eur": 0.0, "gesamt_eur": 0.0, "modelle": {}, "aufrufe": 0})
+        fid = x.get("fonds", "?")
+        if fid.startswith("liga_") and str(x.get("modell", "")).startswith("claude-"):
+            fid = "lernhilfe_liga"  # Haiku-Reflexion für Liga-Fonds: Arena-Hilfsleistung, nicht das Handelsmodell des Fonds
+        f = out.setdefault(fid, {"heute_eur": 0.0, "gesamt_eur": 0.0, "modelle": {}, "aufrufe": 0})
         eur = x.get("usd", 0) / fx
         f["gesamt_eur"] += eur
         f["aufrufe"] += 1

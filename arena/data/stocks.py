@@ -17,6 +17,45 @@ def inst(sym: str) -> dict:
     return {"id": f"stock:{sym}", "art": "stock", "venue": "yahoo", "symbol": sym}
 
 
+# NYSE: Mo–Fr 9:30–16:00 New York; Feiertage 2026/27 (vollständige Schließtage; verkürzte Tage werden wie normale behandelt)
+NY = "America/New_York"
+FEIERTAGE = {"2026-11-26", "2026-12-25", "2027-01-01", "2027-01-18", "2027-02-15", "2027-03-26", "2027-05-31", "2027-06-18",
+             "2027-07-05", "2027-09-06", "2027-11-25", "2027-12-24"}
+
+
+def boerse_offen(ts: float | None = None) -> bool:
+    from datetime import datetime
+    from zoneinfo import ZoneInfo
+    d = datetime.fromtimestamp(ts or time.time(), ZoneInfo(NY))
+    if d.weekday() >= 5 or d.strftime("%Y-%m-%d") in FEIERTAGE:
+        return False
+    m = d.hour * 60 + d.minute
+    return 9 * 60 + 30 <= m < 16 * 60
+
+
+def naechste_oeffnung(ts: float | None = None) -> float:
+    """Unix-Zeit der nächsten regulären Eröffnung (bzw. jetzt, wenn offen)."""
+    from datetime import datetime, timedelta
+    from zoneinfo import ZoneInfo
+    ts = ts or time.time()
+    if boerse_offen(ts):
+        return ts
+    d = datetime.fromtimestamp(ts, ZoneInfo(NY))
+    for i in range(10):
+        tag = (d + timedelta(days=i)).replace(hour=9, minute=30, second=0, microsecond=0)
+        if tag.timestamp() > ts and tag.weekday() < 5 and tag.strftime("%Y-%m-%d") not in FEIERTAGE:
+            return tag.timestamp()
+    return ts + 86400
+
+
+def naechster_schluss(ts: float | None = None) -> float:
+    from datetime import datetime
+    from zoneinfo import ZoneInfo
+    start = naechste_oeffnung(ts)
+    d = datetime.fromtimestamp(start, ZoneInfo(NY))
+    return d.replace(hour=16, minute=0, second=0, microsecond=0).timestamp()
+
+
 def kurs(sym: str) -> dict | None:
     try:
         d = get(YAHOO + sym, {"range": "1d", "interval": "5m"}, ttl=120, versuche=1)["chart"]["result"][0]
@@ -26,8 +65,9 @@ def kurs(sym: str) -> dict | None:
     px, t = meta.get("regularMarketPrice"), meta.get("regularMarketTime")
     if px is None:
         return None
-    return {"preis": float(px), "zeit": t, "offen": bool(t) and time.time() - t < 20 * 60,
-            "vortag": meta.get("chartPreviousClose")}
+    vortag = meta.get("chartPreviousClose") or meta.get("previousClose")
+    return {"preis": float(px), "zeit": t, "offen": boerse_offen() and bool(t) and time.time() - t < 20 * 60,
+            "vortag": vortag, "aenderung_pct": round((float(px) / vortag - 1) * 100, 2) if vortag else None}
 
 
 def tagesvolumen_sigma(sym: str) -> tuple[float | None, float | None]:

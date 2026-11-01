@@ -188,13 +188,13 @@ def test_ueberlappung():
 
 # ---------------------------------------------------------------- Taktgeber
 def test_takt_slots_tiefenrunde_review_und_prognosen():
-    t13 = 1_793_318_400 + 13 * 3600 + 600  # 2026-10-30 13:10 UTC (Freitag)
+    t13 = 1_793_318_400 + 15 * 3600 + 600  # 2026-10-30 15:10 UTC (Freitag): Tiefenrunde in der US-Handelszeit
     a = takt.aufgaben(t13)
     assert "taeglich" in a and "prognosen" in a
     assert takt.aufgaben(t13 + 900) == []  # gleicher Slot, Prognosen erst in 6 h
     assert takt.aufgaben(t13 + 900, ereignis=True) == ["ereignis"]
-    assert takt.aufgaben(t13 + 4 * 3600) == ["takt"]  # 17 UTC
-    sonntag = t13 + 2 * 86400 + 6 * 3600  # So 19:10
+    assert takt.aufgaben(t13 + 2 * 3600) == ["takt"]  # 17 UTC
+    sonntag = t13 + 2 * 86400 + 4 * 3600  # So 19:10
     assert "review" in takt.aufgaben(sonntag)
 
 

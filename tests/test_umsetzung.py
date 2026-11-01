@@ -521,3 +521,51 @@ def test_404_probiert_mehrere_modellnamen(monkeypatch):
     monkeypatch.setattr(llm.requests, "post", post)
     s.nutzer("hi")
     assert s.schritt().text == "ok" and s.modell == "kimi-k2-0905" and len(gesehen) >= 3
+
+
+# ---------------------------------------------------------------- Aktien: Börsenkalender und Aufträge zur Eröffnung
+def test_boersenkalender():
+    from arena.data import stocks
+    so = 1_793_527_200  # So 01.11.2026 10:00 UTC
+    assert not stocks.boerse_offen(so)
+    assert stocks.naechste_oeffnung(so) == 1_793_629_800  # Mo 02.11. 14:30 UTC (9:30 New York, Winterzeit)
+    assert stocks.boerse_offen(1_793_629_800 + 60) and not stocks.boerse_offen(1_793_629_800 + 7 * 3600)
+    assert stocks.naechster_schluss(so) == 1_793_653_200  # Mo 21:00 UTC
+
+
+def test_auftrag_zur_eroeffnung_wird_im_waechter_ausgefuehrt(monkeypatch):
+    from arena import funds, watcher
+    from arena.agent.tools import Kontext
+    from arena.exchange import portfolio
+    from arena.exchange.book import Book
+    so = 1_793_527_200
+    d = funds.claude_fonds()[1]
+    pf = portfolio.neu(d["id"], 10000)
+
+    class MZ:
+        offen = False
+
+        def buch(self, inst):
+            return (Book([(99.9, 1e5)], [(100.1, 1e5)], mark=100.0) if self.offen else Book([], [], mark=100.0)), None
+
+        def marke(self, inst):
+            return {"bid": 99.9, "ask": 100.1, "mark": 100.0}
+    mz = MZ()
+    ctx = Kontext(d, pf, {"ts": so, "wetten": [], "pm_index": {}}, mz, "t", [], so)
+    ctx.aufloesen = lambda iid: {"id": iid, "art": "stock", "venue": "yahoo", "symbol": "NVDA"}
+    r = ctx.t_order("stock:NVDA", "kaufen", "x" * 60, 0.7, betrag_usd=500, ausstiegsplan="Stop 90, Ziel 120",
+                    invalidierung="Schluss unter 90 USD", staerkstes_gegenargument="Bewertung hoch, Earnings-Risiko", risiko_usd=50)
+    assert "vorgemerkt" in r and len(pf["auftraege"]) == 1 and not pf["positionen"]
+    assert watcher.fuehre_auftraege_aus(pf, funds.risikoprofil(d), mz, so + 3600) == [] and pf["auftraege"]  # noch zu
+    mz.offen = True
+    log = watcher.fuehre_auftraege_aus(pf, funds.risikoprofil(d), mz, 1_793_629_800 + 600)
+    assert log[0]["ok"] and pf["positionen"][0]["inst"]["id"] == "stock:NVDA" and not pf["auftraege"]
+    assert pf["positionen"][0]["invalidierung"].startswith("Schluss")
+
+
+def test_liga_kosten_zeigen_kein_claude_modell():
+    from arena import site, store
+    store.anhaengen("budget_log.jsonl", {"ts": JETZT, "fonds": "liga_deepseek", "modell": "claude-haiku-5-5", "zweck": "reflexion", "usd": 0.0002})
+    store.anhaengen("budget_log.jsonl", {"ts": JETZT, "fonds": "claude_mittel", "modell": "claude-sonnet-5-5", "zweck": "runde", "usd": 0.1})
+    k = site.kosten_je_fonds(1.0, JETZT)
+    assert "liga_deepseek" not in k and k["lernhilfe_liga"]["aufrufe"] == 1 and "claude-sonnet-5-5" in k["claude_mittel"]["modelle"]

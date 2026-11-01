@@ -79,7 +79,10 @@ class Kontext:
         return _kurz({"eigenkapital_usd": round(eq, 2), "cash_usd": round(self.pf["cash"], 2),
                       "start_usd": round(self.pf["start_kapital"], 2), "rendite_pct": round((eq / self.pf["start_kapital"] - 1) * 100, 2),
                       "gebuehren_gesamt_usd": round(self.pf["gebuehren"], 2), "limits": self.prof,
-                      "policy_sperren": policy.sperren(self.fid), "cluster": risk.cluster_stand(self.pf, self.prof, eq), "positionen": pos})
+                      "policy_sperren": policy.sperren(self.fid), "cluster": risk.cluster_stand(self.pf, self.prof, eq), "positionen": pos,
+                      "vorgemerkte_auftraege": [{"auftrag_id": a["id"], "instrument": a["inst"]["id"], "aktion": a["aktion"], "betrag_usd": a.get("betrag_usd"),
+                                                 "menge": a.get("menge"), "gueltig_bis": a["gueltig_bis"]} for a in self.pf.get("auftraege", [])],
+                      "us_boerse": "offen" if stocks.boerse_offen(self.jetzt) else "geschlossen"})
 
     def t_markt_suche(self, abfrage: str, plattform: str = "alle", **_) -> str:
         kw = news.stichworte(abfrage) or {abfrage.lower()}
@@ -300,7 +303,7 @@ class Kontext:
         if book is None:
             return self._ergebnis(did, {"ok": False, "grund": "Kein Orderbuch/Kurs verfügbar"})
         if inst["art"] == "stock" and not book.asks and not book.bids:
-            return self._ergebnis(did, {"ok": False, "grund": "Börse geschlossen"})
+            return self._vormerken(did, inst, aktion, betrag_usd, menge, stop_loss, take_profit, ausstiegsplan, invalidierung)
         if aktion == "kaufen":
             marks = {p["inst"]["id"]: self.mz.marke(p["inst"]) for p in self.pf["positionen"]}
             eq = portfolio.equity(self.pf, marks)
@@ -355,6 +358,32 @@ class Kontext:
             return (None if betrag_usd is None else betrag_usd * u["faktor"]), (None if menge is None else menge * u["faktor"]), None
         return betrag_usd, menge, None
 
+    def _vormerken(self, did, inst, aktion, betrag_usd, menge, stop_loss, take_profit, ausstiegsplan, invalidierung) -> str:
+        """Börse geschlossen: Auftrag zur Eröffnung vormerken. Der Wächter führt ihn beim ersten Tick nach Handelsbeginn gegen das dann gültige
+        Buch aus (Kurs, Spread, Impact, Limits zum Ausführungszeitpunkt); verfällt mit dem Handelsschluss dieses Tages."""
+        from datetime import datetime, timezone
+        auftraege = self.pf.setdefault("auftraege", [])
+        if len(auftraege) >= 5:
+            return self._ergebnis(did, {"ok": False, "grund": "Höchstens 5 vorgemerkte Aufträge – erst einen mit auftrag_loeschen entfernen"})
+        if aktion == "kaufen" and (betrag_usd is None) == (menge is None):
+            return self._ergebnis(did, {"ok": False, "grund": "Genau eines von betrag_usd oder menge angeben"})
+        if aktion == "verkaufen" and not any(p["inst"]["id"] == inst["id"] for p in self.pf["positionen"]):
+            return self._ergebnis(did, {"ok": False, "grund": "Keine offene Position in diesem Instrument"})
+        oeff = stocks.naechste_oeffnung(self.jetzt)
+        a = {"id": "a" + uuid.uuid4().hex[:6], "entscheidung_id": did, "inst": inst, "aktion": aktion, "betrag_usd": betrag_usd, "menge": menge,
+             "stop_loss": stop_loss, "take_profit": take_profit, "ausstiegsplan": ausstiegsplan, "invalidierung": invalidierung[:300] if invalidierung else "",
+             "erstellt": time.time(), "gueltig_bis": stocks.naechster_schluss(self.jetzt)}
+        auftraege.append(a)
+        r = {"ok": True, "aktion": "vorgemerkt", "auftrag_id": a["id"], "inst_id": inst["id"], "grund": "Börse geschlossen – Auftrag zur Eröffnung "
+             + datetime.fromtimestamp(oeff, timezone.utc).strftime("%a %d.%m. %H:%M UTC") + " vorgemerkt (Ausführung zum dann gültigen Kurs, Limits gelten dann)"}
+        return self._ergebnis(did, r)
+
+    def t_auftrag_loeschen(self, auftrag_id: str, **_) -> str:
+        vorher = len(self.pf.get("auftraege", []))
+        self.pf["auftraege"] = [a for a in self.pf.get("auftraege", []) if a["id"] != auftrag_id]
+        funds.speichere_portfolio(self.pf)
+        return "Auftrag gelöscht." if len(self.pf["auftraege"]) < vorher else "Kein solcher Auftrag."
+
     def _ergebnis(self, did: str, r: dict) -> str:
         r = {**r, "entscheidung_id": did}
         store.anhaengen(f"funds/{self.fid}/ledger.jsonl", r)
@@ -406,12 +435,14 @@ class Kontext:
                          ["markt_id", "abrechnung", "status_quo", "basisrate", "p_blind", "p_ja", "p_nein", "gegenargument", "begruendung"]), "fn": self.t_wahrscheinlichkeit},
             {"name": "positionsgroesse", "beschreibung": "Größenempfehlung vor einer Order: Wettmärkte per Kelly inkl. Gebühr, gemeinsam mit deinen offenen Wetten optimiert, mal Bruchteil deines Profils (halbiert, wenn du bisher schlechter als der Markt geschätzt hast); Krypto/Perps/Aktien per Volatilitätsziel (GARCH) mit Stop-Vorschlag.",
              "schema": s({"instrument_id": str_, "p_ja": {"type": "number", "description": "Wettmärkte: deine P(JA); sonst deine letzte festgehaltene Schätzung"}}, ["instrument_id"]), "fn": self.t_positionsgroesse},
+            {"name": "auftrag_loeschen", "beschreibung": "Löscht einen bei geschlossener Börse vorgemerkten Aktien-/ETF-Auftrag (IDs in „portfolio“).",
+             "schema": s({"auftrag_id": str_}, ["auftrag_id"]), "fn": self.t_auftrag_loeschen},
             {"name": "notizbuch_schreiben", "beschreibung": "Schreibe in dein Notizbuch (bleibt dir für künftige Runden erhalten): typ = these | lektion | beobachtung | regel.",
              "schema": s({"typ": {"type": "string", "enum": ["these", "lektion", "beobachtung", "regel"]}, "text": str_,
                           "wichtigkeit": {"type": "number", "description": "1–10 (Standard: Beobachtung 3, These 5, Lektion 7, Regel 8); bestimmt, wie lange die Notiz vorgelegt wird"},
                           "gueltig_tage": {"type": "number", "description": "optional: nach so vielen Tagen nicht mehr vorlegen (z. B. These bis zur Abrechnung)"}},
                          ["typ", "text"]), "fn": self.t_notizbuch_schreiben},
-            {"name": "order", "beschreibung": "Order gegen das echte Orderbuch (Papierhandel). kaufen = Position eröffnen/aufstocken (bei Perps seite long|short, hebel), verkaufen = bestehende Position (ganz oder teilweise per menge) schließen. Gebühren, Spread, Tiefe und Slippage werden real abgezogen. Wettmärkte: kaufe JA- oder NEIN-Anteile (…:JA / …:NEIN).",
+            {"name": "order", "beschreibung": "Order gegen das echte Orderbuch (Papierhandel). kaufen = Position eröffnen/aufstocken (bei Perps seite long|short, hebel), verkaufen = bestehende Position (ganz oder teilweise per menge) schließen. Gebühren, Spread, Tiefe und Slippage werden real abgezogen. Wettmärkte: kaufe JA- oder NEIN-Anteile (…:JA / …:NEIN). Aktien/ETFs (stock:SYMBOL, jeder US-Ticker): bei geschlossener Börse wird die Order als Auftrag zur Eröffnung vorgemerkt.",
              "schema": s({"instrument_id": str_, "aktion": {"type": "string", "enum": ["kaufen", "verkaufen"]},
                           "begruendung": {"type": "string", "description": "These, stärkstes Gegenargument, Kostenrechnung"},
                           "zuversicht": {"type": "number", "description": "0..1 – Skala: 0,9+ unverkennbar, 0,7–0,89 solide, 0,4–0,69 gemischt, < 0,4 kein Vorteil (dann nicht kaufen)"},

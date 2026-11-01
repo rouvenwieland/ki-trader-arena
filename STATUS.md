@@ -57,6 +57,12 @@ betragen 4 × 2,75 € plus 0,8 € Reserve, der harte Deckel von 12 €/Tag ble
    - OpenRouter einmalig 10 $ aufladen (1000 statt 50 Gratis-Anfragen/Tag)
 5. Falls „Stand vor …“ auf der Seite älter als 1 h ist: *Actions → Dauerlauf → Run workflow*.
 
+## Nachtrag 01.11.
+
+- **Aktien werden jetzt einbezogen:** Drei feste Runden liegen jetzt in der US-Handelszeit (15, 17, 19 UTC), die Opus-Tiefenrunde um 15 UTC. Bei geschlossener Börse werden Orders als **Auftrag zur Eröffnung** vorgemerkt. Es gibt 18 Werte samt Tagesveränderung, und jede feste Runde prüft mindestens eine direkte Aktien-/ETF-These. Gehandelt wird weiterhin nur bei Vorteil.
+- **Kostenanzeige:** „Haiku“ unter DeepSeek war eine Reflexion; sie wird jetzt separat gebucht (`lernhilfe_liga`). Die Tabelle zeigt, mit welchem Modell ein Fonds handelt.
+- **Erste Gelegenheit für Aktienorders:** Montag, 02.11., 14:30 UTC. Vorgemerkte Aufträge aus den Wochenend-Runden werden dann ausgeführt.
+
 ## Offen / zu beobachten
 
 - **Tageskosten** mit vier Claude-Fonds am 31.10. prüfen (Ziel 8–11 €). Liegen sie zu hoch, `fonds_tagesanteil_eur` senken; der Deckel greift ohnehin.
