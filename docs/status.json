@@ -1,11 +1,11 @@
 {
  "version": 1,
- "stand": 1793499975.9320977,
+ "stand": 1793500107.3113637,
  "hinweis": "Papierhandel-Simulation, keine Anlageberatung",
  "seite": "https://rouvenwieland.github.io/ki-trader-arena/",
  "budget": {
-  "heute_eur": 1.26,
-  "gesamt_eur": 20.32,
+  "heute_eur": 1.49,
+  "gesamt_eur": 20.55,
   "tagesdeckel_eur": 12.0,
   "gesamtdeckel_eur": 190.0,
   "claude_ende": "2026-11-14",
@@ -160,8 +160,8 @@
    "max_drawdown_pct": -2.34,
    "status": "aktiv",
    "modell": "claude-sonnet-5-5",
-   "kosten_heute_eur": 0.378,
-   "kosten_gesamt_eur": 5.421,
+   "kosten_heute_eur": 0.605,
+   "kosten_gesamt_eur": 5.648,
    "rendite_ki_pct": [
     -1.59,
     2.99
@@ -868,7 +868,7 @@
    "max_drawdown_pct": -8.17,
    "status": "aktiv",
    "modell": "claude-sonnet-5-5",
-   "kosten_heute_eur": 0.209,
+   "kosten_heute_eur": 0.21,
    "kosten_gesamt_eur": 5.266,
    "rendite_ki_pct": [
     -10.83,
@@ -1109,6 +1109,13 @@
  ],
  "letzte_entscheidungen": [
   {
+   "ts": 1793500089.7101352,
+   "fonds": "DeepSeek",
+   "instrument": "pm:kalshi:KXHIGHNY-26NOV01-B62.5:JA",
+   "aktion": "kaufen",
+   "zuversicht": 0.5
+  },
+  {
    "ts": 1793491917.6878412,
    "fonds": "Claude Mittel",
    "instrument": "pm:manifold:N5O2RlE0N0:JA",
@@ -1156,13 +1163,6 @@
    "instrument": "pm:manifold:0uttZUAcls:NEIN",
    "aktion": "kaufen",
    "zuversicht": 0.5
-  },
-  {
-   "ts": 1793437467.9323175,
-   "fonds": "Claude Mittel",
-   "instrument": "pm:polymarket:679022:NEIN",
-   "aktion": "kaufen",
-   "zuversicht": 0.55
   }
  ],
  "ereignisse": [
