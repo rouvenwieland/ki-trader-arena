@@ -1,6 +1,6 @@
 {
  "version": 1,
- "stand": 1793509898.4483385,
+ "stand": 1793509953.498125,
  "hinweis": "Papierhandel-Simulation, keine Anlageberatung",
  "seite": "https://rouvenwieland.github.io/ki-trader-arena/",
  "budget": {
@@ -62,8 +62,8 @@
    "max_drawdown_pct": -5.89,
    "status": "aktiv",
    "modell": "deepseek-chat",
-   "kosten_heute_eur": 0.0,
-   "kosten_gesamt_eur": 0.0,
+   "kosten_heute_eur": 0.001,
+   "kosten_gesamt_eur": 0.001,
    "rendite_ki_pct": [
     -3.34,
     10.9

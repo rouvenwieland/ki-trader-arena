@@ -500,3 +500,5 @@
 {"ts": 1793506485.5970016, "fonds": "claude_mittel", "modell": "claude-sonnet-5-5", "zweck": "runde", "nutzung": {"ein": 2, "aus": 237, "cache_lesen": 20658, "cache_schreiben": 3367, "websuchen": 0}, "usd": 0.017162}
 {"ts": 1793506512.0548558, "fonds": "claude_mittel", "modell": "claude-sonnet-5-5", "zweck": "runde", "nutzung": {"ein": 2, "aus": 365, "cache_lesen": 24025, "cache_schreiben": 404, "websuchen": 0}, "usd": 0.010889}
 {"ts": 1793506515.8929625, "fonds": "claude_mittel", "modell": "claude-sonnet-5-5", "zweck": "runde", "nutzung": {"ein": 2, "aus": 526, "cache_lesen": 24429, "cache_schreiben": 380, "websuchen": 0}, "usd": 0.012765}
+{"ts": 1793509908.6835444, "fonds": "claude_aggressiv", "modell": "claude-haiku-5-5", "zweck": "reflexion", "nutzung": {"ein": 4, "aus": 1068, "cache_lesen": 0, "cache_schreiben": 813, "websuchen": 0}, "usd": 0.000731}
+{"ts": 1793509913.755936, "fonds": "liga_deepseek", "modell": "claude-haiku-5-5", "zweck": "reflexion", "nutzung": {"ein": 4, "aus": 981, "cache_lesen": 0, "cache_schreiben": 860, "websuchen": 0}, "usd": 0.000688}
