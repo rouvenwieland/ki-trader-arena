@@ -2,7 +2,7 @@
  "fonds_id": "ko_nein",
  "waehrung": "USD",
  "start_kapital": 11157.431109273288,
- "cash": 2001.7380592732854,
+ "cash": 1667.4075192732853,
  "positionen": [
   {
    "id": "pe6781775",
@@ -289,8 +289,8 @@
    "gebuehren": 0.0,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.215,
-   "wert": 120.12
+   "kurs": 0.245,
+   "wert": 137.28
   },
   {
    "id": "p722ad016",
@@ -353,7 +353,7 @@
    "gebuehren": 0.0,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.631,
+   "kurs": 0.6305000000000001,
    "wert": 157.5
   },
   {
@@ -513,8 +513,8 @@
    "gebuehren": 0.0,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.0225,
-   "wert": 33.22
+   "kurs": 0.0245,
+   "wert": 36.24
   },
   {
    "id": "pc8cf836f",
@@ -609,7 +609,7 @@
    "gebuehren": 0.0,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.85,
+   "kurs": 0.845,
    "wert": 152.52
   },
   {
@@ -993,8 +993,8 @@
    "gebuehren": 3.27455,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.3385,
-   "wert": 74.88
+   "kurs": 0.3305,
+   "wert": 75.57
   },
   {
    "id": "pbb0a8271",
@@ -1025,7 +1025,7 @@
    "gebuehren": 9.19367,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.0195,
+   "kurs": 0.014499999999999999,
    "wert": 9.34
   },
   {
@@ -1218,7 +1218,7 @@
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
    "kurs": 0.5549999999999999,
-   "wert": 140.98
+   "wert": 143.64
   },
   {
    "id": "p5e6e3e9b",
@@ -1249,8 +1249,8 @@
    "gebuehren": 0.0,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.042499999999999996,
-   "wert": 25.6
+   "kurs": 0.033,
+   "wert": 14.93
   },
   {
    "id": "pc0b8a31d",
@@ -1339,7 +1339,7 @@
    "gebuehren": 0.59,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.955,
+   "kurs": 0.96,
    "wert": 166.25
   },
   {
@@ -1403,8 +1403,8 @@
    "gebuehren": 0.0,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.185,
-   "wert": 29.6
+   "kurs": 0.19,
+   "wert": 32.56
   },
   {
    "id": "pd54b5964",
@@ -1461,8 +1461,8 @@
    "gebuehren": 0.32,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.98,
-   "wert": 165.87
+   "kurs": 0.985,
+   "wert": 167.58
   },
   {
    "id": "pdc74c4fa",
@@ -1487,8 +1487,8 @@
    "gebuehren": 4.24,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.575,
-   "wert": 147.63
+   "kurs": 0.585,
+   "wert": 150.22
   },
   {
    "id": "p32e5b9f1",
@@ -1519,8 +1519,8 @@
    "gebuehren": 1.59053,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.755,
-   "wert": 163.5
+   "kurs": 0.745,
+   "wert": 161.32
   },
   {
    "id": "p39a90c40",
@@ -1551,7 +1551,7 @@
    "gebuehren": 1.12388,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.605,
+   "kurs": 0.495,
    "wert": 46.08
   },
   {
@@ -1617,13 +1617,77 @@
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
    "kurs": 0.745,
    "wert": 162.06
+  },
+  {
+   "id": "p59c4bdc3",
+   "inst": {
+    "id": "pm:polymarket:6255205:NEIN",
+    "art": "pm",
+    "venue": "polymarket",
+    "ergebnis": "NEIN",
+    "frage": "Will the price of Bitcoin be between $76,000 and $78,000 on November 2?",
+    "schliesst": 1793638800.0,
+    "ref": {
+     "id": "6255205",
+     "token_ja": "57544226328692557395094882656187865060369399083986231803545423838734019504362",
+     "token_nein": "65836022988849079702749084850903946000952814820226750150897669282761354296450",
+     "tick": 0.001,
+     "condition": "0x2db2ec13c0911be6fc4799593543ca6be7deaded27ac73d524d1b1ea4802d001",
+     "gebuehr_rate": 0.07,
+     "gebuehr_exp": 1.0
+    },
+    "url": "https://polymarket.com/event/will-the-price-of-bitcoin-be-between-76000-78000-on-november-2-2026"
+   },
+   "seite": "long",
+   "menge": 261.0,
+   "einstand": 0.6241800766283525,
+   "hebel": 1.0,
+   "marge": 0.0,
+   "eroeffnet": 1793546911.3904955,
+   "gebuehren": 4.28576,
+   "funding": 0.0,
+   "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
+   "kurs": 0.6154999999999999,
+   "wert": 152.69
+  },
+  {
+   "id": "p7508ed46",
+   "inst": {
+    "id": "pm:polymarket:5909510:NEIN",
+    "art": "pm",
+    "venue": "polymarket",
+    "ergebnis": "NEIN",
+    "frage": "Will SS Lazio win on 2026-11-01?",
+    "schliesst": 1793541600.0,
+    "ref": {
+     "id": "5909510",
+     "token_ja": "66223043539157872442132614673138385124662196551962139599830125088117540522708",
+     "token_nein": "32254722960291477784633774279229636957638219220953700924519699664311066696436",
+     "tick": 0.01,
+     "condition": "0xbea417c075afe4a2257a2bc0c7409826066e5f45c29b6fa499575dfec15c7544",
+     "gebuehr_rate": 0.05,
+     "gebuehr_exp": 1.0
+    },
+    "url": "https://polymarket.com/event/sea-laz-cag-2026-11-01"
+   },
+   "seite": "long",
+   "menge": 249.0,
+   "einstand": 0.66,
+   "hebel": 1.0,
+   "marge": 0.0,
+   "eroeffnet": 1793546911.3904955,
+   "gebuehren": 2.79378,
+   "funding": 0.0,
+   "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
+   "kurs": 0.655,
+   "wert": 161.85
   }
  ],
  "realisiert": -582.6979699999998,
- "gebuehren": 117.06125999999998,
+ "gebuehren": 124.14079999999997,
  "funding": 0.0,
  "erstellt": 1793379225.5430336,
  "start_fx": 1.1157431109273288,
- "letzter_tick": 1793546012.2292285,
- "kontrolle_bis": 1793545207.6860187
+ "letzter_tick": 1793546911.3904955,
+ "kontrolle_bis": 1793545207.6870186
 }
