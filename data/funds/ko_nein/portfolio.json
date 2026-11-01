@@ -289,8 +289,8 @@
    "gebuehren": 0.0,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.155,
-   "wert": 85.8
+   "kurs": 0.12,
+   "wert": 62.92
   },
   {
    "id": "p722ad016",
@@ -353,8 +353,8 @@
    "gebuehren": 0.0,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.6214999999999999,
-   "wert": 154.75
+   "kurs": 0.562,
+   "wert": 139.25
   },
   {
    "id": "pe65b0b73",
@@ -385,8 +385,8 @@
    "gebuehren": 0.0,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.76,
-   "wert": 158.25
+   "kurs": 0.765,
+   "wert": 160.36
   },
   {
    "id": "pf0e983be",
@@ -513,8 +513,8 @@
    "gebuehren": 0.0,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.028999999999999998,
-   "wert": 40.77
+   "kurs": 0.0305,
+   "wert": 42.28
   },
   {
    "id": "pc8cf836f",
@@ -609,8 +609,8 @@
    "gebuehren": 0.0,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.81,
-   "wert": 137.64
+   "kurs": 0.79,
+   "wert": 130.2
   },
   {
    "id": "p7e5c2e70",
@@ -705,7 +705,7 @@
    "gebuehren": 0.0,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.45,
+   "kurs": 0.45499999999999996,
    "wert": 153.12
   },
   {
@@ -741,38 +741,6 @@
    "wert": 160.1
   },
   {
-   "id": "pdcf6fcc3",
-   "inst": {
-    "id": "pm:polymarket:6205321:NEIN",
-    "art": "pm",
-    "venue": "polymarket",
-    "ergebnis": "NEIN",
-    "frage": "Will the price of Bitcoin be above $74,000 on November 1?",
-    "schliesst": 1793552400.0,
-    "ref": {
-     "id": "6205321",
-     "token_ja": "1239223445307782914702464274807268904863827527199140460192655689185473705330",
-     "token_nein": "30285254734869680289195173675064799306388910715639335007126893919281166784272",
-     "tick": 0.001,
-     "condition": "0x43c73a08281c4db24da63a9d6441fcf22e04a9316213fa05b08a9ff36d528b19",
-     "gebuehr_rate": 0.07,
-     "gebuehr_exp": 1.0
-    },
-    "url": "https://polymarket.com/event/bitcoin-above-74k-on-november-1-2026"
-   },
-   "seite": "long",
-   "menge": 1832.0,
-   "einstand": 0.08583652838427948,
-   "hebel": 1.0,
-   "marge": 0.0,
-   "eroeffnet": 1793388223.4797468,
-   "gebuehren": 10.06282,
-   "funding": 0.0,
-   "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": null,
-   "wert": 157.25
-  },
-  {
    "id": "pf73842ce",
    "inst": {
     "id": "pm:polymarket:6205327:NEIN",
@@ -801,8 +769,8 @@
    "gebuehren": 0.31446,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.999,
-   "wert": 170.83
+   "kurs": null,
+   "wert": 166.38
   },
   {
    "id": "p7102c243",
@@ -993,8 +961,8 @@
    "gebuehren": 3.27455,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.005,
-   "wert": 0.92
+   "kurs": null,
+   "wert": 163.47
   },
   {
    "id": "pbb0a8271",
@@ -1153,8 +1121,8 @@
    "gebuehren": 0.0,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.255,
-   "wert": 199.0
+   "kurs": 0.245,
+   "wert": 191.04
   },
   {
    "id": "p7f18532d",
@@ -1249,7 +1217,7 @@
    "gebuehren": 0.0,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.03,
+   "kurs": 0.0295,
    "wert": 11.38
   },
   {
@@ -1339,8 +1307,8 @@
    "gebuehren": 0.59,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.975,
-   "wert": 169.75
+   "kurs": 0.97,
+   "wert": 168.0
   },
   {
    "id": "pbb214a3d",
@@ -1371,7 +1339,7 @@
    "gebuehren": 0.0,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.15000000000000002,
+   "kurs": 0.14500000000000002,
    "wert": 51.38
   },
   {
@@ -1487,8 +1455,8 @@
    "gebuehren": 4.24,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.405,
-   "wert": 103.6
+   "kurs": 0.295,
+   "wert": 75.11
   },
   {
    "id": "p32e5b9f1",
@@ -1551,7 +1519,7 @@
    "gebuehren": 1.12388,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.52,
+   "kurs": 0.495,
    "wert": 46.08
   },
   {
@@ -1647,15 +1615,15 @@
    "gebuehren": 4.28576,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.607,
-   "wert": 154.25
+   "kurs": 0.613,
+   "wert": 157.12
   }
  ],
- "realisiert": -747.0379699999999,
+ "realisiert": -904.2904899999999,
  "gebuehren": 124.14079999999997,
  "funding": 0.0,
  "erstellt": 1793379225.5430336,
  "start_fx": 1.1157431109273288,
- "letzter_tick": 1793552312.270289,
- "kontrolle_bis": 1793545207.6870186
+ "letzter_tick": 1793553212.3490157,
+ "kontrolle_bis": 1793552406.3274732
 }
