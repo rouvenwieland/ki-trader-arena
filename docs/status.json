@@ -1,11 +1,11 @@
 {
  "version": 1,
- "stand": 1793552402.213842,
+ "stand": 1793552577.06026,
  "hinweis": "Papierhandel-Simulation, keine Anlageberatung",
  "seite": "https://rouvenwieland.github.io/ki-trader-arena/",
  "budget": {
-  "heute_eur": 8.2,
-  "gesamt_eur": 27.26,
+  "heute_eur": 9.09,
+  "gesamt_eur": 28.15,
   "tagesdeckel_eur": 12.0,
   "gesamtdeckel_eur": 190.0,
   "claude_ende": "2026-11-14",
@@ -188,10 +188,10 @@
    "rendite_pct": 0.21,
    "equity_eur": 10026.51,
    "max_drawdown_pct": -2.34,
-   "status": "aktiv",
-   "modell": "claude-opus-5-5",
-   "kosten_heute_eur": 2.149,
-   "kosten_gesamt_eur": 7.192,
+   "status": "Fehler: Modellfehler: Anthropic: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'messages.1: `web_search`",
+   "modell": "claude-sonnet-5-5",
+   "kosten_heute_eur": 2.279,
+   "kosten_gesamt_eur": 7.322,
    "rendite_ki_pct": [
     -3.79,
     2.03
@@ -248,9 +248,9 @@
    "equity_eur": 9984.62,
    "max_drawdown_pct": -0.91,
    "status": "aktiv",
-   "modell": "claude-opus-5-5",
-   "kosten_heute_eur": 1.949,
-   "kosten_gesamt_eur": 5.437,
+   "modell": "claude-sonnet-5-5",
+   "kosten_heute_eur": 2.202,
+   "kosten_gesamt_eur": 5.69,
    "rendite_ki_pct": [
     -0.86,
     1.04
@@ -883,9 +883,9 @@
    "equity_eur": 9877.04,
    "max_drawdown_pct": -3.41,
    "status": "aktiv",
-   "modell": "claude-opus-5-5",
-   "kosten_heute_eur": 2.137,
-   "kosten_gesamt_eur": 7.05,
+   "modell": "claude-sonnet-5-5",
+   "kosten_heute_eur": 2.426,
+   "kosten_gesamt_eur": 7.339,
    "rendite_ki_pct": [
     -6.51,
     2.21
@@ -1001,9 +1001,9 @@
    "equity_eur": 9479.42,
    "max_drawdown_pct": -12.31,
    "status": "aktiv",
-   "modell": "claude-opus-5-5",
-   "kosten_heute_eur": 1.966,
-   "kosten_gesamt_eur": 7.022,
+   "modell": "claude-sonnet-5-5",
+   "kosten_heute_eur": 2.183,
+   "kosten_gesamt_eur": 7.24,
    "rendite_ki_pct": [
     -16.19,
     0.14
