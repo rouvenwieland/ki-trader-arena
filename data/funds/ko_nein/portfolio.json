@@ -2,7 +2,7 @@
  "fonds_id": "ko_nein",
  "waehrung": "USD",
  "start_kapital": 11157.431109273288,
- "cash": 1667.4075192732853,
+ "cash": 1838.4075192732853,
  "positionen": [
   {
    "id": "pe6781775",
@@ -33,8 +33,8 @@
    "gebuehren": 0.0,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.0085,
-   "wert": 17.12
+   "kurs": 0.0075,
+   "wert": 14.98
   },
   {
    "id": "p9e535f2b",
@@ -289,8 +289,8 @@
    "gebuehren": 0.0,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.12,
-   "wert": 62.92
+   "kurs": 0.05,
+   "wert": 22.88
   },
   {
    "id": "p722ad016",
@@ -353,8 +353,8 @@
    "gebuehren": 0.0,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.562,
-   "wert": 139.25
+   "kurs": 0.5814999999999999,
+   "wert": 143.25
   },
   {
    "id": "pe65b0b73",
@@ -513,8 +513,8 @@
    "gebuehren": 0.0,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.0305,
-   "wert": 42.28
+   "kurs": 0.0275,
+   "wert": 39.26
   },
   {
    "id": "pc8cf836f",
@@ -609,8 +609,8 @@
    "gebuehren": 0.0,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.79,
-   "wert": 130.2
+   "kurs": 0.74,
+   "wert": 111.6
   },
   {
    "id": "p7e5c2e70",
@@ -673,7 +673,7 @@
    "gebuehren": 0.0,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.07,
+   "kurs": 0.065,
    "wert": 83.64
   },
   {
@@ -705,72 +705,8 @@
    "gebuehren": 0.0,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.45499999999999996,
+   "kurs": 0.45,
    "wert": 153.12
-  },
-  {
-   "id": "pcc7a3899",
-   "inst": {
-    "id": "pm:polymarket:6205323:NEIN",
-    "art": "pm",
-    "venue": "polymarket",
-    "ergebnis": "NEIN",
-    "frage": "Will the price of Bitcoin be above $76,000 on November 1?",
-    "schliesst": 1793552400.0,
-    "ref": {
-     "id": "6205323",
-     "token_ja": "2139498022168974917530740550622140518197621727619574541068933262226786893216",
-     "token_nein": "38003026346404395850739036030512851311752514967203258699896224102880463564563",
-     "tick": 0.001,
-     "condition": "0x3b3b3df7e2cf92521060749dcbb65fb70ffc83630c52454cabd0423cdf2997f4",
-     "gebuehr_rate": 0.07,
-     "gebuehr_exp": 1.0
-    },
-    "url": "https://polymarket.com/event/bitcoin-above-76k-on-november-1-2026"
-   },
-   "seite": "long",
-   "menge": 443.0,
-   "einstand": 0.361392776523702,
-   "hebel": 1.0,
-   "marge": 0.0,
-   "eroeffnet": 1793388223.4797468,
-   "gebuehren": 7.15674,
-   "funding": 0.0,
-   "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": null,
-   "wert": 160.1
-  },
-  {
-   "id": "pf73842ce",
-   "inst": {
-    "id": "pm:polymarket:6205327:NEIN",
-    "art": "pm",
-    "venue": "polymarket",
-    "ergebnis": "NEIN",
-    "frage": "Will the price of Bitcoin be above $80,000 on November 1?",
-    "schliesst": 1793552400.0,
-    "ref": {
-     "id": "6205327",
-     "token_ja": "107980138074000429350291966796986337550946685315774659344059886525364223842301",
-     "token_nein": "72051743077502807998790958501905227171720638449914281543298987817701447212766",
-     "tick": 0.001,
-     "condition": "0xb0af78b5a1db14b55770289133d2e38def5d447e95ada5d56dec5f54ba8965cf",
-     "gebuehr_rate": 0.07,
-     "gebuehr_exp": 1.0
-    },
-    "url": "https://polymarket.com/event/bitcoin-above-80k-on-november-1-2026"
-   },
-   "seite": "long",
-   "menge": 171.0,
-   "einstand": 0.9730000000000001,
-   "hebel": 1.0,
-   "marge": 0.0,
-   "eroeffnet": 1793395524.297642,
-   "gebuehren": 0.31446,
-   "funding": 0.0,
-   "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": null,
-   "wert": 166.38
   },
   {
    "id": "p7102c243",
@@ -931,70 +867,6 @@
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
    "kurs": 0.8125,
    "wert": 167.27
-  },
-  {
-   "id": "p256927d5",
-   "inst": {
-    "id": "pm:polymarket:6205325:NEIN",
-    "art": "pm",
-    "venue": "polymarket",
-    "ergebnis": "NEIN",
-    "frage": "Will the price of Bitcoin be above $78,000 on November 1?",
-    "schliesst": 1793552400.0,
-    "ref": {
-     "id": "6205325",
-     "token_ja": "111078070322894124244687880759519658918952834091376994797053768459128755355892",
-     "token_nein": "111616040955704538270018286107522758645710267817174748914099095116555674780101",
-     "tick": 0.001,
-     "condition": "0x953eff97fa20d6686730c25c44c1fabe7de99722f6cf9c78752ae0c87be35021",
-     "gebuehr_rate": 0.07,
-     "gebuehr_exp": 1.0
-    },
-    "url": "https://polymarket.com/event/bitcoin-above-78k-on-november-1-2026"
-   },
-   "seite": "long",
-   "menge": 229.0,
-   "einstand": 0.7138313973799126,
-   "hebel": 1.0,
-   "marge": 0.0,
-   "eroeffnet": 1793438055.9785779,
-   "gebuehren": 3.27455,
-   "funding": 0.0,
-   "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": null,
-   "wert": 163.47
-  },
-  {
-   "id": "pbb0a8271",
-   "inst": {
-    "id": "pm:polymarket:6205330:NEIN",
-    "art": "pm",
-    "venue": "polymarket",
-    "ergebnis": "NEIN",
-    "frage": "Will the price of Ethereum be between $2,200 and $2,300 on November 1?",
-    "schliesst": 1793552400.0,
-    "ref": {
-     "id": "6205330",
-     "token_ja": "60979439568524938854244470160893897374470089980043033083283792111131551949073",
-     "token_nein": "54176546712157856918610360665638582998620531163622613075056577836571348495833",
-     "tick": 0.01,
-     "condition": "0x5edce499ce0bc4dba865ff7abd0695b4159a267836a2b9eb61e7aea8fcf3659a",
-     "gebuehr_rate": 0.07,
-     "gebuehr_exp": 1.0
-    },
-    "url": "https://polymarket.com/event/will-the-price-of-ethereum-be-between-2200-2300-on-november-1-2026"
-   },
-   "seite": "long",
-   "menge": 934.0,
-   "einstand": 0.16927194860813705,
-   "hebel": 1.0,
-   "marge": 0.0,
-   "eroeffnet": 1793452608.0704753,
-   "gebuehren": 9.19367,
-   "funding": 0.0,
-   "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": null,
-   "wert": 158.1
   },
   {
    "id": "pc2572f19",
@@ -1217,7 +1089,7 @@
    "gebuehren": 0.0,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.0295,
+   "kurs": 0.0265,
    "wert": 11.38
   },
   {
@@ -1307,8 +1179,8 @@
    "gebuehren": 0.59,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.97,
-   "wert": 168.0
+   "kurs": 0.98,
+   "wert": 169.75
   },
   {
    "id": "pbb214a3d",
@@ -1455,8 +1327,8 @@
    "gebuehren": 4.24,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.295,
-   "wert": 75.11
+   "kurs": 0.20500000000000002,
+   "wert": 51.8
   },
   {
    "id": "p32e5b9f1",
@@ -1615,15 +1487,15 @@
    "gebuehren": 4.28576,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.613,
-   "wert": 157.12
+   "kurs": 0.6174999999999999,
+   "wert": 159.99
   }
  ],
- "realisiert": -904.2904899999999,
+ "realisiert": -1381.3378799999998,
  "gebuehren": 124.14079999999997,
  "funding": 0.0,
  "erstellt": 1793379225.5430336,
  "start_fx": 1.1157431109273288,
- "letzter_tick": 1793553212.3490157,
+ "letzter_tick": 1793554112.2866309,
  "kontrolle_bis": 1793552406.3274732
 }
