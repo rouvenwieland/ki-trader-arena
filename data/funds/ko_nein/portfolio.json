@@ -2,7 +2,7 @@
  "fonds_id": "ko_nein",
  "waehrung": "USD",
  "start_kapital": 11157.431109273288,
- "cash": 1330.2003292732852,
+ "cash": 1501.2003292732852,
  "positionen": [
   {
    "id": "pe6781775",
@@ -33,8 +33,8 @@
    "gebuehren": 0.0,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.0115,
-   "wert": 19.26
+   "kurs": 0.013000000000000001,
+   "wert": 21.4
   },
   {
    "id": "p9e535f2b",
@@ -277,8 +277,8 @@
    "gebuehren": 6.77,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.99,
-   "wert": 399.96
+   "kurs": null,
+   "wert": 160.19
   },
   {
    "id": "pfa54617a",
@@ -405,7 +405,7 @@
    "gebuehren": 0.0,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.654,
+   "kurs": 0.6545000000000001,
    "wert": 163.0
   },
   {
@@ -471,38 +471,6 @@
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
    "kurs": 0.155,
    "wert": 156.9
-  },
-  {
-   "id": "p70762729",
-   "inst": {
-    "id": "pm:polymarket:5407574:NEIN",
-    "art": "pm",
-    "venue": "polymarket",
-    "ergebnis": "NEIN",
-    "frage": "Will Predict.fun launch a token by October 31, 2026?",
-    "schliesst": 1793505540.0,
-    "ref": {
-     "id": "5407574",
-     "token_ja": "15157029115387244043256047029488107531823073693665318875819142204664128056868",
-     "token_nein": "30970515844614965790067669405166855380885656221548366100181550530853656583007",
-     "tick": 0.001,
-     "condition": "0xd68a2258f31c860e6ce8bd748cd83c264327eaae37c75f4f2c11c58842ce0329",
-     "gebuehr_rate": 0.07,
-     "gebuehr_exp": 1.0
-    },
-    "url": "https://polymarket.com/event/will-predictfun-launch-a-token-by"
-   },
-   "seite": "long",
-   "menge": 171.0,
-   "einstand": 0.9716198830409356,
-   "hebel": 1.0,
-   "marge": 0.0,
-   "eroeffnet": 1793383723.5804365,
-   "gebuehren": 0.33007,
-   "funding": 0.0,
-   "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.999,
-   "wert": 170.83
   },
   {
    "id": "p48fc5d59",
@@ -629,8 +597,8 @@
    "gebuehren": 0.0,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.055,
-   "wert": 80.03
+   "kurs": 0.054,
+   "wert": 77.01
   },
   {
    "id": "pc8cf836f",
@@ -937,7 +905,7 @@
    "gebuehren": 10.06282,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.0015,
+   "kurs": 0.0045000000000000005,
    "wert": 1.83
   },
   {
@@ -969,8 +937,8 @@
    "gebuehren": 0.31446,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.9915,
-   "wert": 169.46
+   "kurs": 0.978,
+   "wert": 166.04
   },
   {
    "id": "p7102c243",
@@ -1111,8 +1079,8 @@
    "gebuehren": 1.26,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.99,
-   "wert": 184.14
+   "kurs": null,
+   "wert": 165.98
   },
   {
    "id": "pa8d52a27",
@@ -1239,8 +1207,8 @@
    "gebuehren": 3.27455,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.539,
-   "wert": 121.14
+   "kurs": 0.488,
+   "wert": 109.46
   },
   {
    "id": "pbb0a8271",
@@ -1271,8 +1239,8 @@
    "gebuehren": 9.19367,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.065,
-   "wert": 46.7
+   "kurs": 0.26,
+   "wert": 112.08
   },
   {
    "id": "pc2572f19",
@@ -1611,8 +1579,8 @@
    "gebuehren": 0.59,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.9299999999999999,
-   "wert": 161.0
+   "kurs": 0.935,
+   "wert": 162.75
   },
   {
    "id": "pbb214a3d",
@@ -1769,11 +1737,11 @@
    "wert": 164.16
   }
  ],
- "realisiert": -285.02619999999996,
+ "realisiert": -280.17319999999995,
  "gebuehren": 102.57588999999997,
  "funding": 0.0,
  "erstellt": 1793379225.5430336,
  "start_fx": 1.1157431109273288,
- "letzter_tick": 1793512484.62073,
+ "letzter_tick": 1793513385.1266503,
  "kontrolle_bis": 1793506436.3164704
 }
