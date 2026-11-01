@@ -29,8 +29,8 @@
    "ausstiegsplan": "Halten bis Abrechnung nach Tagesmaximum 1.11. Kein Verkauf (Spread frisst alles).",
    "entscheidung_id": "d3bd39c01",
    "invalidierung": "Beobachtetes Tagesmax NYC überschreitet 63°F oder NWS-Prognose fällt unter 61°F — dann ist das Bracket tot; Modell p dann 0.",
-   "kurs": 0.04,
-   "wert": 25.83
+   "kurs": 0.015,
+   "wert": 8.61
   },
   {
    "id": "p4923accd",
@@ -66,5 +66,5 @@
  "funding": 0.0,
  "erstellt": 1793319819.7411644,
  "start_fx": 1.1184885798616961,
- "letzter_tick": 1793555275.8040912
+ "letzter_tick": 1793556176.2303061
 }
