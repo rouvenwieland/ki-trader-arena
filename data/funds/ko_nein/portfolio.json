@@ -97,8 +97,8 @@
    "gebuehren": 0.0,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.27,
-   "wert": 173.94
+   "kurs": 0.275,
+   "wert": 180.63
   },
   {
    "id": "p22f7ef7b",
@@ -289,8 +289,8 @@
    "gebuehren": 0.0,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.003,
-   "wert": 1.14
+   "kurs": 0.0025,
+   "wert": 0.57
   },
   {
    "id": "p722ad016",
@@ -353,8 +353,8 @@
    "gebuehren": 0.0,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.5720000000000001,
-   "wert": 140.5
+   "kurs": 0.569,
+   "wert": 139.5
   },
   {
    "id": "pe65b0b73",
@@ -513,8 +513,8 @@
    "gebuehren": 0.0,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.034,
-   "wert": 49.83
+   "kurs": 0.0335,
+   "wert": 48.32
   },
   {
    "id": "pc8cf836f",
@@ -865,8 +865,8 @@
    "gebuehren": 0.0,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.8494999999999999,
-   "wert": 174.89
+   "kurs": 0.848,
+   "wert": 174.48
   },
   {
    "id": "pc2572f19",
@@ -929,8 +929,8 @@
    "gebuehren": 5.41501,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.56,
-   "wert": 170.5
+   "kurs": 0.55,
+   "wert": 167.4
   },
   {
    "id": "p21e9c816",
@@ -1057,8 +1057,8 @@
    "gebuehren": 0.0,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.575,
-   "wert": 148.96
+   "kurs": 0.58,
+   "wert": 151.62
   },
   {
    "id": "p5e6e3e9b",
@@ -1487,8 +1487,8 @@
    "gebuehren": 4.28576,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.5595,
-   "wert": 143.55
+   "kurs": 0.5435000000000001,
+   "wert": 140.68
   },
   {
    "id": "p54f0e36a",
@@ -1551,8 +1551,8 @@
    "gebuehren": 1.02246,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.9675,
-   "wert": 175.81
+   "kurs": 0.9475,
+   "wert": 172.35
   }
  ],
  "realisiert": -1381.3378799999998,
@@ -1560,6 +1560,6 @@
  "funding": 0.0,
  "erstellt": 1793379225.5430336,
  "start_fx": 1.1157431109273288,
- "letzter_tick": 1793570576.0144272,
+ "letzter_tick": 1793571475.4812412,
  "kontrolle_bis": 1793559884.5461352
 }
