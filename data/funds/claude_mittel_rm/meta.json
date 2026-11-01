@@ -57,10 +57,10 @@
  "ab_von": "claude_mittel",
  "typ": "claude",
  "start": 1793380123.8861866,
- "status": "aktiv",
- "status_ts": 1793522696.4609933,
+ "status": "Fehler: Modellfehler: Anthropic: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'messages.1: `web_search`",
+ "status_ts": 1793524425.8819175,
  "modell_aktuell": "claude-sonnet-5-5",
- "letzte_runde": 1793522696.4609933,
- "letzte_runde_abbruch": "",
+ "letzte_runde": 1793524425.8819175,
+ "letzte_runde_abbruch": "Modellfehler: Anthropic: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'messages.1: `web_search` tool use with id `srvtoolu_01QJFjAQxgPan4CQp5VSeJvk` was found without a corresponding `web_search_tool_result` block'}, 'request_id': 'req_011CgbxHuJJPxnNgruBAAY8z'}",
  "pausiert_bis": 0
 }
