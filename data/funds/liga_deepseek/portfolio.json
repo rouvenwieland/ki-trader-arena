@@ -2,42 +2,8 @@
  "fonds_id": "liga_deepseek",
  "waehrung": "USD",
  "start_kapital": 11184.88579861696,
- "cash": 8895.758454052928,
+ "cash": 10642.758454052928,
  "positionen": [
-  {
-   "id": "p7f67c5d4",
-   "inst": {
-    "id": "pm:polymarket:5170740:NEIN",
-    "art": "pm",
-    "venue": "polymarket",
-    "ergebnis": "NEIN",
-    "frage": "Will Bitcoin dip to $75,000 in October?",
-    "schliesst": 1793505600.0,
-    "ref": {
-     "id": "5170740",
-     "token_ja": "65710340847928463620991566082994656002922673891777077235559888767925599088131",
-     "token_nein": "34913450717134692139134503608237195358004980714821621364139815843727767877427",
-     "tick": 0.001,
-     "condition": "0x5280e91e95ab540de0879f26813f060f51f9d77d8c2e41dd81f1aec41c8bb714",
-     "gebuehr_rate": 0.07,
-     "gebuehr_exp": 1.0
-    },
-    "url": "https://polymarket.com/event/what-price-will-bitcoin-hit-in-october-2026"
-   },
-   "seite": "long",
-   "menge": 1747.0,
-   "einstand": 0.7893017973669147,
-   "hebel": 1.0,
-   "marge": 0.0,
-   "eroeffnet": 1793394803.7182217,
-   "gebuehren": 20.33737,
-   "funding": 0.0,
-   "ausstiegsplan": "Halten bis Auflösung heute 23:59 ET (31.10. 03:59 UTC). Bei NEIN-Ausgang volle Auszahlung 1,00; kein vorzeitiger Verkauf nötig, da Restzeit <7h.",
-   "entscheidung_id": "dfab9a0ea",
-   "invalidierung": "Binance BTC/USDT fällt unter 75.000 oder es erscheint eine Meldung, dass 75k bereits berührt wurde → These sofort falsch.",
-   "kurs": 0.999,
-   "wert": 1745.25
-  },
   {
    "id": "p34466a85",
    "inst": {
@@ -174,13 +140,15 @@
    "funding": 0.0,
    "ausstiegsplan": "Halten bis NWS-CLI-Abrechnung 1./2.11. Kein Verkauf vorher — im 3-4c-Buch würde der Spread die Edge komplett fressen.",
    "entscheidung_id": "dd5333d41",
-   "invalidierung": "Beobachtetes Tagesmax Chicago vor 14:00 Ortszeit bereits ≥65°F, oder NWS-Prognose für 1.11. unter 62°F (dann ist das Bracket 68-69 tot). Halten bis Abrechnung; kein Nachkauf auf dieselbe These."
+   "invalidierung": "Beobachtetes Tagesmax Chicago vor 14:00 Ortszeit bereits ≥65°F, oder NWS-Prognose für 1.11. unter 62°F (dann ist das Bracket 68-69 tot). Halten bis Abrechnung; kein Nachkauf auf dieselbe These.",
+   "kurs": 0.035,
+   "wert": 45.18
   }
  ],
- "realisiert": 199.28251999999998,
+ "realisiert": 567.3722799999998,
  "gebuehren": 82.27737,
  "funding": 0.0,
  "erstellt": 1793319819.7411644,
  "start_fx": 1.1184885798616961,
- "letzter_tick": 1793506184.8320758
+ "letzter_tick": 1793507084.3484185
 }

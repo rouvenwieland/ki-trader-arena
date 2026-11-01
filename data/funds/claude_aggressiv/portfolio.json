@@ -32,8 +32,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Halten bis Abrechnung 31.10. 23:59; bei Meldung über US-Luftschläge auf Iran Position verloren geben/verkaufen falls Preis noch >0.2.",
    "entscheidung_id": "dc8d00e1b",
-   "kurs": 0.991,
-   "wert": 2386.89
+   "kurs": 0.9924999999999999,
+   "wert": 2391.71
   },
   {
    "id": "p8d020f51",
@@ -67,37 +67,6 @@
    "wert": 1437.27
   },
   {
-   "id": "pff0241a7",
-   "inst": {
-    "id": "pm:polymarket:5170740:JA",
-    "art": "pm",
-    "venue": "polymarket",
-    "ergebnis": "JA",
-    "frage": "Will Bitcoin dip to $75,000 in October?",
-    "schliesst": 1793505600.0,
-    "ref": {
-     "id": "5170740",
-     "token_ja": "65710340847928463620991566082994656002922673891777077235559888767925599088131",
-     "token_nein": "34913450717134692139134503608237195358004980714821621364139815843727767877427",
-     "tick": 0.001,
-     "gebuehr_rate": 0.07
-    },
-    "url": "https://polymarket.com/event/what-price-will-bitcoin-hit-in-october-2026"
-   },
-   "seite": "long",
-   "menge": 776.0,
-   "einstand": 0.23175721649484535,
-   "hebel": 1.0,
-   "marge": 0.0,
-   "eroeffnet": 1793365844.988767,
-   "gebuehren": 0.0,
-   "funding": 0.0,
-   "ausstiegsplan": "Halten bis Abrechnung 31.10. Falls BTC bis Samstag Mittag >79k und Preis <0.08: Rest abschreiben/halten (geringer Restwert).",
-   "entscheidung_id": "d463915b7",
-   "kurs": null,
-   "wert": 179.84
-  },
-  {
    "id": "pe8531dcb",
    "inst": {
     "id": "pm:polymarket:6205323:NEIN",
@@ -128,8 +97,8 @@
    "ausstiegsplan": "Halten bis Abrechnung 1.11. 16:00 UTC; Verkauf, wenn Binance >79k stabil.",
    "entscheidung_id": "d4e9753b2",
    "invalidierung": "Binance BTC/USDT >79.000 und stabil, oder Relief-Rally nach Withdrawal-Restart.",
-   "kurs": 0.0275,
-   "wert": 144.83
+   "kurs": 0.0195,
+   "wert": 101.92
   },
   {
    "id": "p442b828a",
@@ -160,10 +129,10 @@
    "wert": 388.08
   }
  ],
- "realisiert": 429.9243999999999,
+ "realisiert": 250.0807999999999,
  "gebuehren": 47.01334,
  "funding": 0.0,
  "erstellt": 1793319819.7411644,
  "start_fx": 1.1184885798616961,
- "letzter_tick": 1793506184.8320758
+ "letzter_tick": 1793507084.3484185
 }

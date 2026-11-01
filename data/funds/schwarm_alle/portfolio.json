@@ -2,7 +2,7 @@
  "fonds_id": "schwarm_alle",
  "waehrung": "USD",
  "start_kapital": 11157.431109273288,
- "cash": 10522.854949273287,
+ "cash": 11309.854949273287,
  "positionen": [
   {
    "id": "p950d55a1",
@@ -35,44 +35,12 @@
    "ausstiegsplan": "Halten bis zur Abrechnung (Schwarm-Regel)",
    "kurs": 0.275,
    "wert": 82.89
-  },
-  {
-   "id": "p57b7eee4",
-   "inst": {
-    "id": "pm:polymarket:5170740:NEIN",
-    "art": "pm",
-    "venue": "polymarket",
-    "ergebnis": "NEIN",
-    "frage": "Will Bitcoin dip to $75,000 in October?",
-    "schliesst": 1793505600.0,
-    "ref": {
-     "id": "5170740",
-     "token_ja": "65710340847928463620991566082994656002922673891777077235559888767925599088131",
-     "token_nein": "34913450717134692139134503608237195358004980714821621364139815843727767877427",
-     "tick": 0.001,
-     "condition": "0x5280e91e95ab540de0879f26813f060f51f9d77d8c2e41dd81f1aec41c8bb714",
-     "gebuehr_rate": 0.07,
-     "gebuehr_exp": 1.0
-    },
-    "url": "https://polymarket.com/event/what-price-will-bitcoin-hit-in-october-2026"
-   },
-   "seite": "long",
-   "menge": 787.0,
-   "einstand": 0.6939334180432021,
-   "hebel": 1.0,
-   "marge": 0.0,
-   "eroeffnet": 1793386423.7439072,
-   "gebuehren": 11.70056,
-   "funding": 0.0,
-   "ausstiegsplan": "Halten bis zur Abrechnung (Schwarm-Regel)",
-   "kurs": 0.999,
-   "wert": 786.21
   }
  ],
- "realisiert": 0.0,
+ "realisiert": 240.87439999999992,
  "gebuehren": 11.70056,
  "funding": 0.0,
  "erstellt": 1793379225.5430336,
  "start_fx": 1.1157431109273288,
- "letzter_tick": 1793506184.8320758
+ "letzter_tick": 1793507084.3484185
 }

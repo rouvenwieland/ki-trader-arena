@@ -2,7 +2,7 @@
  "fonds_id": "ko_nein",
  "waehrung": "USD",
  "start_kapital": 11157.431109273288,
- "cash": 1131.6795092732852,
+ "cash": 1330.2003292732852,
  "positionen": [
   {
    "id": "pe6781775",
@@ -33,8 +33,8 @@
    "gebuehren": 0.0,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.009000000000000001,
-   "wert": 17.12
+   "kurs": 0.0075,
+   "wert": 14.98
   },
   {
    "id": "p9e535f2b",
@@ -229,38 +229,6 @@
    "wert": 158.4
   },
   {
-   "id": "p4f30b305",
-   "inst": {
-    "id": "pm:polymarket:5170740:NEIN",
-    "art": "pm",
-    "venue": "polymarket",
-    "ergebnis": "NEIN",
-    "frage": "Will Bitcoin dip to $75,000 in October?",
-    "schliesst": 1793505600.0,
-    "ref": {
-     "id": "5170740",
-     "token_ja": "65710340847928463620991566082994656002922673891777077235559888767925599088131",
-     "token_nein": "34913450717134692139134503608237195358004980714821621364139815843727767877427",
-     "tick": 0.001,
-     "condition": "0x5280e91e95ab540de0879f26813f060f51f9d77d8c2e41dd81f1aec41c8bb714",
-     "gebuehr_rate": 0.07,
-     "gebuehr_exp": 1.0
-    },
-    "url": "https://polymarket.com/event/what-price-will-bitcoin-hit-in-october-2026"
-   },
-   "seite": "long",
-   "menge": 192.0,
-   "einstand": 0.8628321874999999,
-   "hebel": 1.0,
-   "marge": 0.0,
-   "eroeffnet": 1793381024.3823931,
-   "gebuehren": 1.59066,
-   "funding": 0.0,
-   "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.999,
-   "wert": 191.81
-  },
-  {
    "id": "p28450e21",
    "inst": {
     "id": "pm:kalshi:KXRAIN-26OCT31-LAX:NEIN",
@@ -437,8 +405,8 @@
    "gebuehren": 0.0,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.6545000000000001,
-   "wert": 163.5
+   "kurs": 0.653,
+   "wert": 163.0
   },
   {
    "id": "pe65b0b73",
@@ -597,72 +565,8 @@
    "gebuehren": 0.0,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.006999999999999999,
-   "wert": 13.77
-  },
-  {
-   "id": "pa5d926a7",
-   "inst": {
-    "id": "pm:polymarket:5170741:NEIN",
-    "art": "pm",
-    "venue": "polymarket",
-    "ergebnis": "NEIN",
-    "frage": "Will Bitcoin dip to $72,500 in October?",
-    "schliesst": 1793505600.0,
-    "ref": {
-     "id": "5170741",
-     "token_ja": "112081340862783094288531507232939550290094225969740006580351083084588352390635",
-     "token_nein": "72624341280159472994524480084115312651813992006632059407465419165722353069536",
-     "tick": 0.001,
-     "condition": "0xbf0602707edd80eada90c28ee03e74b9330432105f71b41da38f3997a55c1bde",
-     "gebuehr_rate": 0.07,
-     "gebuehr_exp": 1.0
-    },
-    "url": "https://polymarket.com/event/what-price-will-bitcoin-hit-in-october-2026"
-   },
-   "seite": "long",
-   "menge": 172.0,
-   "einstand": 0.9696802325581395,
-   "hebel": 1.0,
-   "marge": 0.0,
-   "eroeffnet": 1793384623.8557248,
-   "gebuehren": 0.35398,
-   "funding": 0.0,
-   "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.999,
-   "wert": 171.83
-  },
-  {
-   "id": "p53c7f93b",
-   "inst": {
-    "id": "pm:polymarket:6051332:NEIN",
-    "art": "pm",
-    "venue": "polymarket",
-    "ergebnis": "NEIN",
-    "frage": "Will Bitcoin reach $82,500 in October?",
-    "schliesst": 1793505600.0,
-    "ref": {
-     "id": "6051332",
-     "token_ja": "55365128657792734295324826731078267473673366995035001459997650756090916622448",
-     "token_nein": "97948818299805593349169876683763026467576272125947257525378877248778151229783",
-     "tick": 0.001,
-     "condition": "0x5ce14dd9eb04b5a41104cef63b33194b64b70ae4bb8587957632b99288782822",
-     "gebuehr_rate": 0.07,
-     "gebuehr_exp": 1.0
-    },
-    "url": "https://polymarket.com/event/what-price-will-bitcoin-hit-in-october-2026"
-   },
-   "seite": "long",
-   "menge": 168.0,
-   "einstand": 0.993029761904762,
-   "hebel": 1.0,
-   "marge": 0.0,
-   "eroeffnet": 1793384623.8557248,
-   "gebuehren": 0.0814,
-   "funding": 0.0,
-   "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.999,
-   "wert": 167.83
+   "kurs": 0.006,
+   "wert": 11.02
   },
   {
    "id": "pcd4d06c5",
@@ -853,8 +757,8 @@
    "gebuehren": 0.0,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.9664999999999999,
-   "wert": 166.77
+   "kurs": 0.964,
+   "wert": 165.91
   },
   {
    "id": "pe3197d92",
@@ -1001,8 +905,8 @@
    "gebuehren": 7.15674,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.0275,
-   "wert": 11.96
+   "kurs": 0.0195,
+   "wert": 8.42
   },
   {
    "id": "pdcf6fcc3",
@@ -1271,8 +1175,8 @@
    "gebuehren": 0.0,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.73,
-   "wert": 117.73
+   "kurs": 0.855,
+   "wert": 164.05
   },
   {
    "id": "p9f764afd",
@@ -1335,8 +1239,8 @@
    "gebuehren": 3.27455,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.6245,
-   "wert": 141.98
+   "kurs": 0.6,
+   "wert": 135.11
   },
   {
    "id": "pbb0a8271",
@@ -1431,8 +1335,8 @@
    "gebuehren": 5.41501,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.525,
-   "wert": 161.2
+   "kurs": 0.535,
+   "wert": 164.3
   },
   {
    "id": "p21e9c816",
@@ -1739,8 +1643,8 @@
    "gebuehren": 0.0,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.25,
-   "wert": 66.06
+   "kurs": 0.285,
+   "wert": 77.07
   },
   {
    "id": "p5037ef0e",
@@ -1805,13 +1709,71 @@
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
    "kurs": 0.885,
    "wert": 165.44
+  },
+  {
+   "id": "p38490647",
+   "inst": {
+    "id": "pm:polymarket:5891194:NEIN",
+    "art": "pm",
+    "venue": "polymarket",
+    "ergebnis": "NEIN",
+    "frage": "Will CF América win on 2026-10-31?",
+    "schliesst": 1793502600.0,
+    "ref": {
+     "id": "5891194",
+     "token_ja": "101516403459529386538663881930031923462889324442117111924082069725859817597652",
+     "token_nein": "61518115548431633990357079350459397768016106253917216227952056342160269318796",
+     "tick": 0.01,
+     "condition": "0xb4efdc55590d44e2802b7b05990269fbaa01d7778570826f7bcd29872884e397",
+     "gebuehr_rate": 0.05,
+     "gebuehr_exp": 1.0
+    },
+    "url": "https://polymarket.com/event/mex-ame-tol-2026-10-31"
+   },
+   "seite": "long",
+   "menge": 204.0,
+   "einstand": 0.81,
+   "hebel": 1.0,
+   "marge": 0.0,
+   "eroeffnet": 1793507084.3484185,
+   "gebuehren": 1.56978,
+   "funding": 0.0,
+   "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
+   "kurs": 0.805,
+   "wert": 163.2
+  },
+  {
+   "id": "pb69a0df9",
+   "inst": {
+    "id": "pm:kalshi:KXHIGHCHI-26NOV01-B68.5:NEIN",
+    "art": "pm",
+    "venue": "kalshi",
+    "ergebnis": "NEIN",
+    "frage": "Will the maximum temperature be 68-69° on Nov 1, 2026? [68° to 69°]",
+    "schliesst": 1793602800.0,
+    "ref": {
+     "ticker": "KXHIGHCHI-26NOV01-B68.5"
+    },
+    "url": "https://kalshi.com/markets/KXHIGHCHI-26NOV01"
+   },
+   "seite": "long",
+   "menge": 171.0,
+   "einstand": 0.9728035087719299,
+   "hebel": 1.0,
+   "marge": 0.0,
+   "eroeffnet": 1793507084.3484185,
+   "gebuehren": 0.32,
+   "funding": 0.0,
+   "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
+   "kurs": 0.97,
+   "wert": 164.16
   }
  ],
- "realisiert": -317.74841999999995,
- "gebuehren": 100.68610999999999,
+ "realisiert": -285.02619999999996,
+ "gebuehren": 102.57588999999997,
  "funding": 0.0,
  "erstellt": 1793379225.5430336,
  "start_fx": 1.1157431109273288,
- "letzter_tick": 1793506184.8320758,
- "kontrolle_bis": 1793502838.7736301
+ "letzter_tick": 1793507084.3484185,
+ "kontrolle_bis": 1793506436.3164704
 }
