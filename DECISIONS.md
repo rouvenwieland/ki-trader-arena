@@ -263,3 +263,26 @@ keine Order möglich; (3) Rundenauftrag und Marktlage drehten sich fast nur um W
   Limit-Füllung, wenn die Gegenseite das Limit kreuzt oder der Kurs mindestens 5 bp *durch* das Limit gehandelt hat (bloßes Berühren reicht nicht –
   Warteschlange), dann genau zum Limit; Stop zum Stop-Preis plus Impact bzw. bei Kurslücke zum schlechteren Buch. Prüfung alle 15 min gegen Buch und
   Intraday-Hoch/Tief seit der letzten Prüfung (Aktien 5-min-, Krypto 1-min-Kerzen). Kein Kapital reserviert; Limits und Cash gelten bei Ausführung.
+
+## Nachtrag 01.11. (3): komplexe Strategien ermöglichen, nichts mangels Wissen ungenutzt
+* **Strategie-Baukasten** im gemeinsamen (gecachten, also fast kostenlosen) System-Prompt: alle Instrumente und Ordertypen plus Strategiefamilien mit
+  Umsetzungsweg – Volatility Harvesting/Rebalancing (Shannons Dämon, Parrondo; Anlass: Rouvens Video-Hinweis), Short-/Long-Vola, Optionsstrukturen
+  (Spreads, Kalender, Straddle/Strangle, Collar, Covered Call, Cash-Secured Put), Delta-Hedge, Basis-/Funding-Carry, plattformübergreifende Arbitrage,
+  Pair-Trading/marktneutral, Trend/Mean-Reversion, Ereignisse; ausdrücklich: unbekannte Methoden erst recherchieren. Kein Zwang – Erwartungswert entscheidet.
+* **Optionen voll:** Werkzeug `optionskette` (alle Laufzeiten/Strikes, Geld/Brief/Mark in USD, IV, Delta/Vega/Theta per Black-Scholes aus der Deribit-IV);
+  **Schreiben** von Optionen mit Deribit-artiger Marge (Anfang: Mark + max(15 % · S − OTM, 10 % · S), Put höchstens voll gedeckt; Wartung 7,5 % · S),
+  Abrechnung zum Lieferpreis, Margin Call. Mehrbeinige Strukturen entstehen aus Einzelorders (ohne Margen-Verrechnung zwischen den Beinen – konservativ).
+  Marge geschriebener Optionen zählt gegen das Derivate-Limit des Profils.
+* **Aktienoptionen:** nicht verfügbar – die freie Yahoo-Optionskette verlangt seit 2025 ein Anti-Bot-Token („crumb“); das wird nicht umgangen. Eine legale
+  Quelle (Cboe verzögert, Tradier/Alpaca mit Konto) braucht Rouvens Prüfung bzw. Konto → VORBEREITUNG-HEBEL-2-5-10.md.
+* **Technische Analyse** (`technische_analyse`, `arena/technik.py`, reines Python): SMA/EMA, RSI, MACD, Bollinger, ATR, realisierte Vola + Vola-Regime,
+  Drawdown, Z-Score, Hurst-Exponent, Autokorrelation, Beta/Korrelation zu BTC bzw. SPY – für Krypto, Perps, Aktien weltweit und Wettmärkte. Ersetzt die
+  in der Recherche gefundenen Bibliotheken (TA-Lib, pandas-ta, Hurst) ohne neue Abhängigkeiten im Dauerlauf.
+* **Stehende Rebalancing-Regel** (`rebalancing_regel`): Zielanteile für Krypto-Spot und Aktien/ETFs, Schwelle in Prozentpunkten; der Wächter handelt die
+  Abweichung alle 15 min zu echten Kosten. Kontrollfonds **„Shannons Dämon“** (BTC/Cash 50/50, Schwelle 5 pp) misst, ob Volatility Harvesting nach
+  Gebühren (Coinbase-Taker 0,6 %) überhaupt etwas bringt.
+* **Welche Recherche-Funde den Agenten zur Verfügung stehen:** als Werkzeug bzw. in der Börse eingebaut – GARCH/Prognose-Trefferbilanz, DVOL/Funding/Basis,
+  Polymarket-/Kalshi-Orderfluss, Wetter-Ensembles, Behörden-RSS/FOMC, Kelly/Vol-Ziel/Cluster-Limits, Statistik (Bootstrap, PSR/DSR, MCS), Square-Root-Impact,
+  technische Indikatoren/Hurst, Optionsgriechen; Websuche (Anthropic) für alles Übrige. **Nicht** eingebaut (Konto/Server/ToS oder bewusst verworfen, siehe
+  ANHANG-verworfen.md): Hyperliquid, Metaculus, Alpaca/Finnhub/EDGAR, Bluesky/Wikimedia-Signale, Sentiment-Modelle, fremde Agenten-Frameworks, MCP-Server,
+  große Zeitreihenmodelle.

@@ -206,3 +206,14 @@ def tagesschluesse(sym: str, bereich: str = "1y") -> list[tuple[float, float]]:
         return [(t, c * fx) for t, c in zip(d["timestamp"], d["indicators"]["quote"][0]["close"]) if c is not None]
     except (HttpFehler, KeyError, IndexError, TypeError):
         return []
+
+
+def kerzen(sym: str, bereich: str = "1y", intervall: str = "1d") -> list[tuple[float, float, float, float]]:
+    """[(hoch, tief, schluss, zeit)] in USD, aufsteigend – für die technische Analyse."""
+    try:
+        d = get(YAHOO + sym, {"range": bereich, "interval": intervall}, ttl=1800, versuche=2)["chart"]["result"][0]
+        q = d["indicators"]["quote"][0]
+        fx = fx_usd(d["meta"].get("currency")) or 1.0
+        return [(h * fx, lo * fx, c * fx, t) for t, h, lo, c in zip(d["timestamp"], q["high"], q["low"], q["close"]) if h and lo and c]
+    except (HttpFehler, KeyError, IndexError, TypeError):
+        return []

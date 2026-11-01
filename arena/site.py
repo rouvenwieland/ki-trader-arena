@@ -53,7 +53,11 @@ def fonds_datensatz(d: dict, fx: float) -> dict | None:
                             "menge": p["menge"], "einstand": p["einstand"], "kurs": p.get("kurs"), "wert": p.get("wert"), "hebel": p.get("hebel", 1),
                             "stop": p.get("stop_loss"), "ziel": p.get("take_profit"), "plan": p.get("ausstiegsplan"),
                             "schliesst": p["inst"].get("schliesst"), "liq": p.get("liq_preis")} for p in pf["positionen"]],
-            "entscheidungen": orders, "runden": runden, "notizbuch": notizbuch.lies(d["id"], 12)}
+            "entscheidungen": orders, "runden": runden, "notizbuch": notizbuch.lies(d["id"], 12),
+            "auftraege": [{"id": a["id"], "inst": a["inst"]["id"], "typ": a.get("typ", "eroeffnung"), "aktion": a["aktion"], "seite": a.get("seite"),
+                           "limit": a.get("limit_preis"), "stop": a.get("stop_preis"), "betrag_usd": a.get("betrag_usd"), "menge": a.get("menge"),
+                           "gueltig_bis": a.get("gueltig_bis")} for a in pf.get("auftraege", [])],
+            "rebalancing": {k: v["anteil"] for k, v in (pf.get("rebalancing") or {}).get("ziele", {}).items()} or None}
 
 
 def _wette(inst_id: str) -> str:

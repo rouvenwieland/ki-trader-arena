@@ -115,6 +115,11 @@
       "wartung_short": 0.3,
       "kreditzins_pa": 0.065,
       "leihgebuehr_pa": 0.005
+    },
+    "optionen_marge": {
+      "anfang": 0.15,
+      "anfang_min": 0.1,
+      "wartung": 0.075
     }
   },
   "ereignisse": {

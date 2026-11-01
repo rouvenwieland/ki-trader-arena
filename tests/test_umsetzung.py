@@ -678,3 +678,42 @@ def test_auftrag_verfaellt_und_loeschen(monkeypatch):
     log = watcher.fuehre_auftraege_aus(pf, funds.risikoprofil(d), mz, time_jetzt := __import__("time").time() + 2 * 86400)
     assert any(x["aktion"] == "auftrag_verfallen" for x in log) and len(pf["auftraege"]) == 1
     assert ctx.t_auftrag_loeschen(pf["auftraege"][0]["id"]) == "Auftrag gelöscht." and not pf["auftraege"] and time_jetzt
+
+
+# ---------------------------------------------------------------- Rebalancing (Volatility Harvesting)
+def test_rebalancing_regel_handelt_abweichung(monkeypatch):
+    from arena import funds, rebalancing
+    d, pf, mz, ctx = _order_ctx(monkeypatch)
+    t = ctx.t_rebalancing_regel([{"instrument_id": "spot:BTC-USD", "anteil": 0.5}], 5, "Shannons Dämon testen")
+    assert "gesetzt" in t and pf["rebalancing"]["ziele"]["spot:BTC-USD"]["anteil"] == 0.5
+    log = rebalancing.pruefe(pf, funds.risikoprofil({"typ": "benchmark"}), mz, JETZT)
+    assert log[0]["ok"] and 4800 < log[0]["nominal"] < 5100  # kauft auf ≈ 50 %
+    assert rebalancing.pruefe(pf, funds.risikoprofil({"typ": "benchmark"}), mz, JETZT + 900) == []  # im Band
+    mz.ask, mz.bid = 140.0, 139.9  # BTC +40 % → Gewicht ≈ 58 % → teilweise verkaufen
+    log = rebalancing.pruefe(pf, funds.risikoprofil({"typ": "benchmark"}), mz, JETZT + 1800)
+    assert log and log[0]["aktion"] == "teilweise_geschlossen"
+    assert "entfernt" in ctx.t_rebalancing_regel([], 5, "Ende") and "rebalancing" not in pf
+    assert "nur für Krypto-Spot und Aktien" in rebalancing.setze(pf, [{"instrument_id": "pm:x:1:JA", "anteil": 0.1}], 5, None, JETZT,
+                                                                  lambda i: {"id": i, "art": "pm"})
+
+
+# ---------------------------------------------------------------- Optionen schreiben
+def test_option_schreiben_marge_bewertung_abrechnung():
+    from arena.exchange import engine, portfolio, risk
+    from arena.exchange.book import Book
+    inst = {"id": "opt:BTC-27NOV26-90000-C", "art": "option", "venue": "deribit", "symbol": "BTC-27NOV26-90000-C", "basis": "BTC",
+            "verfall": JETZT + 20 * 86400, "strike": 90000.0, "typ": "C", "schliesst": JETZT + 20 * 86400}
+    pf = portfolio.neu("x", 100000)
+    bk = Book([(1000.0, 10)], [(1050.0, 10)], mark=1025.0)
+    assert "menge" in engine.eroeffne(pf, risk.profil("aggressiv"), inst, bk, seite="short", usd=1000, equity=100000, index_preis=80000)["grund"]
+    r = engine.eroeffne(pf, risk.profil("aggressiv"), inst, bk, seite="short", qty=1, equity=100000, index_preis=80000)
+    pos = pf["positionen"][0]
+    im = 1025 + max(0.15 * 80000 - 10000, 0.10 * 80000)  # Mark + max(15 % S − OTM, 10 % S)
+    assert r["ok"] and pos["marge"] == pytest.approx(im) and pos["marginal"]
+    assert portfolio.pos_wert(pos, None, 600.0) == pytest.approx(im + (r["preis"] - 600.0))  # Prämie verfällt → Gewinn
+    a = engine.rechne_option_ab(pf, pos, 85000.0, JETZT + 21 * 86400)  # aus dem Geld verfallen: volle Prämie behalten
+    assert a["netto_pnl"] == pytest.approx(r["preis"] - r["gebuehr"], rel=1e-6) and not pf["positionen"]
+    # Margin Call bei starkem Anstieg
+    engine.eroeffne(pf, risk.profil("aggressiv"), inst, bk, seite="short", qty=1, equity=100000, index_preis=80000)
+    log = engine.pruefe_liquidation(pf, {}, {inst["id"]: 20000.0}, JETZT, {inst["id"]: 110000.0})
+    assert log and log[0]["aktion"] == "liquidiert"

@@ -63,6 +63,13 @@ betragen 4 × 2,75 € plus 0,8 € Reserve, der harte Deckel von 12 €/Tag ble
 - **Kostenanzeige:** „Haiku“ unter DeepSeek war eine Reflexion; sie wird jetzt separat gebucht (`lernhilfe_liga`). Die Tabelle zeigt, mit welchem Modell ein Fonds handelt.
 - **Erste Gelegenheit für Aktienorders:** Montag, 02.11., 14:30 UTC. Vorgemerkte Aufträge aus den Wochenend-Runden werden dann ausgeführt.
 
+## Nachtrag 01.11. (2/3) – keine Einschränkungen, echte Ordertypen, komplexe Strategien
+
+- **Aktien:** Jeder Ticker weltweit ist handelbar, z. B. `stock:RHM.DE`, `stock:7203.T`, OTC. Kurse werden in USD umgerechnet, es gelten die Handelszeiten der jeweiligen Börse. Dazu gibt es eine Suche (`aktien_suche`), eine Detailansicht (`aktie`), Leerverkauf und Wertpapierkredit bis 2× (Zinsen/Leihgebühr, Margin Call). Die Kosten richten sich nach der Liquidität; ein Verbot gibt es nicht.
+- **Ordertypen für alle Märkte:** markt, limit und stop, gültig für einen Tag, bis auf Widerruf (GTC) oder bis zu einem Datum. Der Wächter führt sie über den Tag aus, sobald der Preis erreicht bzw. durchgehandelt ist. Aufträge stehen in der Fonds-Akte.
+- **Optionen:** komplette Kette mit Griechen, Kaufen *und* Schreiben (Deribit-Marge), also auch Spreads, Straddles und Covered Calls. **Aktienoptionen** gibt es keine, weil die freie Quelle ein Anti-Bot-Token verlangt (keine Umgehung).
+- **Strategie-Baukasten** im Prompt, **technische Analyse** (RSI, MACD, Bollinger, ATR, Vola-Regime, Hurst, Beta), **Rebalancing-Regeln** für Volatility Harvesting und der Kontrollfonds **„Shannons Dämon“**.
+
 ## Offen / zu beobachten
 
 - **Tageskosten** mit vier Claude-Fonds am 31.10. prüfen (Ziel 8–11 €). Liegen sie zu hoch, `fonds_tagesanteil_eur` senken; der Deckel greift ohnehin.

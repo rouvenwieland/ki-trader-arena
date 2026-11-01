@@ -34,8 +34,10 @@ def eroeffne(pf: dict, prof: dict, inst: dict, book: Book, *, seite: str = "long
         return _ablehnung(f"Unbekannte Instrumentenart {art}")
     if seite not in ("long", "short"):
         return _ablehnung("seite muss long oder short sein")
-    if seite == "short" and art not in ("perp", "stock"):
-        return _ablehnung("Leerverkäufe gibt es bei Perpetuals und Aktien/ETFs")
+    if seite == "short" and art not in ("perp", "stock", "option"):
+        return _ablehnung("Leerverkäufe gibt es bei Perpetuals, Aktien/ETFs und Optionen (Schreiben)")
+    if seite == "short" and art == "option" and qty is None:
+        return _ablehnung("Optionen schreiben: menge (Kontrakte) angeben")
     if (qty is None) == (usd is None):
         return _ablehnung("Genau eines von qty oder usd angeben")
     for name, wert in (("qty", qty), ("usd", usd), ("hebel", hebel), ("stop_loss", stop_loss), ("take_profit", take_profit)):
@@ -76,7 +78,17 @@ def eroeffne(pf: dict, prof: dict, inst: dict, book: Book, *, seite: str = "long
     for lvl, name in ((stop_loss, "Stop-Loss"), (take_profit, "Take-Profit")):
         if lvl is not None and ((name == "Stop-Loss") == (seite == "long")) == (lvl >= f.vwap):
             return _ablehnung(f"{name} {lvl} liegt auf der falschen Seite des Einstiegs {f.vwap:.4f}")
-    grund = risk.pruefe_eroeffnung(pf, prof, inst, nominal, hebel, eq, seite)
+    opt_short = art == "option" and seite == "short"
+    if opt_short:  # Deribit-artige Anfangsmarge je Kontrakt: Mark + max(15 % · S − OTM, 10 % · S)
+        S = index_preis or book.mark or f.vwap
+        om = config.load()["boerse"]["optionen_marge"]
+        otm = max(0.0, inst["strike"] - S) if inst["typ"] == "C" else max(0.0, S - inst["strike"])
+        im = (book.mark or f.vwap) + max(om["anfang"] * S - otm, om["anfang_min"] * S)
+        if inst["typ"] == "P":
+            im = min(im, inst["strike"] + (book.mark or f.vwap))  # nie mehr als ein voll gedeckter Put
+        grund = risk.pruefe_eroeffnung(pf, prof, inst, im * f.qty, 1.0, eq, seite)
+    else:
+        grund = risk.pruefe_eroeffnung(pf, prof, inst, nominal, hebel, eq, seite)
     if grund:
         return _ablehnung(grund)
     if inst.get("venue") == "predictit":
@@ -84,8 +96,8 @@ def eroeffne(pf: dict, prof: dict, inst: dict, book: Book, *, seite: str = "long
         bestand = sum(p["einstand"] * p["menge"] for p in pf["positionen"] if p["inst"]["id"] == inst["id"])
         if bestand + nominal > cap:
             return _ablehnung(f"PredictIt-Positionslimit {cap} USD je Vertrag")
-    perp = portfolio.marginal(art, seite, hebel)  # Perps und Aktien auf Marge (Leerverkauf/Kredit) werden gleich verbucht
-    marge = nominal / hebel if perp else 0.0
+    perp = portfolio.marginal(art, seite, hebel) or opt_short  # Perps, Aktien auf Marge und geschriebene Optionen werden gleich verbucht
+    marge = (im * f.qty if opt_short else nominal / hebel) if perp else 0.0
     braucht = (marge if perp else nominal) + fee
     if braucht > pf["cash"] + 1e-9:
         return _ablehnung(f"Nicht genug Cash: nötig {braucht:.2f}, vorhanden {pf['cash']:.2f}")
@@ -114,7 +126,9 @@ def eroeffne(pf: dict, prof: dict, inst: dict, book: Book, *, seite: str = "long
         pos["ausstiegsplan"] = ausstiegsplan
     if entscheidung_id:
         pos["entscheidung_id"] = entscheidung_id
-    if perp:
+    if perp and opt_short:
+        pos["index_eroeffnung"] = index_preis
+    elif perp:
         if art == "stock":
             am = config.load()["boerse"]["aktien_marge"]
             mm = am["wartung_long"] if seite == "long" else am["wartung_short"]
@@ -228,7 +242,7 @@ def finanzierung_buchen(pf: dict, stunden: float, ts: float | None = None) -> li
 
 
 def pruefe_liquidation(pf: dict, extreme: dict[str, tuple[float, float]], marks: dict[str, float],
-                       ts: float | None = None) -> list[dict]:
+                       ts: float | None = None, indizes: dict[str, float] | None = None) -> list[dict]:
     """extreme: inst_id -> (Tief, Hoch) seit der letzten Prüfung (Dochte). Liquidiert, wenn
     Eigenkapital der Position unter die Wartungsmarge fällt (Funding gebucht in marge)."""
     ts = ts or time.time()
@@ -247,12 +261,17 @@ def pruefe_liquidation(pf: dict, extreme: dict[str, tuple[float, float]], marks:
             continue
         vz = 1 if pos["seite"] == "long" else -1
         eq = pos["marge"] + vz * (schlimmster - pos["einstand"]) * pos["menge"]
+        option = pos["inst"]["art"] == "option"
         if aktie:  # Margin Call bei Aktien: Wartungsmarge (Reg-T/FINRA-artig), Zwangsglattstellung ohne Extra-Gebühr
             am = config.load()["boerse"]["aktien_marge"]
             mm = am["wartung_long"] if pos["seite"] == "long" else am["wartung_short"]
         else:
             mm = cfg["wartungsmarge"]
         wartung = mm * schlimmster * pos["menge"]
+        if option:  # geschriebene Option: Wartung 7,5 % des Basiswerts je Kontrakt (Verlust steckt schon im Mark)
+            S = (indizes or {}).get(pos["inst"]["id"]) or pos.get("index_eroeffnung") or 0.0
+            wartung = config.load()["boerse"]["optionen_marge"]["wartung"] * S * pos["menge"]
+            aktie = True  # keine zusätzliche Liquidationsgebühr
         if eq <= wartung:
             liqfee = 0.0 if aktie else cfg["liquidationsgebuehr"] * schlimmster * pos["menge"]
             rest = max(0.0, eq - liqfee)
@@ -310,4 +329,4 @@ def rechne_option_ab(pf: dict, pos: dict, abrechnungspreis: float, ts: float | N
     k = inst["strike"]
     innen = max(abrechnungspreis - k, 0.0) if inst["typ"] == "C" else max(k - abrechnungspreis, 0.0)
     fee = min(0.00015 * abrechnungspreis * pos["menge"], 0.125 * innen * pos["menge"]) if innen > 0 else 0.0
-    return _abwickeln(pf, pos, pos["menge"], innen, "Verfall/Abrechnung", ts or time.time(), None, False, fee=fee)
+    return _abwickeln(pf, pos, pos["menge"], innen, "Verfall/Abrechnung", ts or time.time(), None, portfolio.ist_marginal(pos), fee=fee)

@@ -18,8 +18,8 @@ def neue_id() -> str:
 
 
 def marginal(art: str, seite: str = "long", hebel: float = 1.0) -> bool:
-    """Positionen auf Marge: Perps immer, Aktien bei Leerverkauf oder Wertpapierkredit (Hebel > 1, Reg-T)."""
-    return art == "perp" or (art == "stock" and (seite == "short" or hebel > 1 + 1e-9))
+    """Positionen auf Marge: Perps immer, Aktien bei Leerverkauf oder Wertpapierkredit (Hebel > 1, Reg-T), geschriebene Optionen."""
+    return art == "perp" or (art == "stock" and (seite == "short" or hebel > 1 + 1e-9)) or (art == "option" and seite == "short")
 
 
 def ist_marginal(pos: dict) -> bool:

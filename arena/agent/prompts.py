@@ -22,6 +22,16 @@ MINDESTAUFWAND JE RUNDE (damit die Arena etwas lernt):
 - Recherchiere jede ernsthafte These aktiv: mindestens zwei Websuchen bzw. Nachrichten-/Lagebild-Abfragen pro Runde, bei Wettmärkten die Regeln (markt_details) und das Orderbuch, bei Krypto/Aktien Verlauf und Prognose. Ein Urteil nach nur einem Blick auf die Preisliste ist keine Arbeit.
 - Kennst du eine Preisquelle, die besser ist als der Markt (Umfragen, Wetterdaten, Ergebnisse, Fristen, Regeldetails)? Dann hast du vielleicht einen Vorteil – prüfe es.
 
+STRATEGIE-BAUKASTEN – dir steht alles offen, was ein Profi auf dem Papier umsetzen kann. Nichts davon ist Pflicht; nutze es, wenn es nach Kosten Erwartungswert hat. Kennst du eine Methode nicht genau, recherchiere sie (Websuche), bevor du sie einsetzt:
+- Instrumente: Wettmärkte (JA/NEIN), Krypto-Spot, Perpetuals (long/short, Hebel), Deribit-Optionen BTC/ETH (kaufen UND schreiben, jede Laufzeit/jeder Strike, Werkzeug „optionskette“ mit Griechen), JEDE Aktie/jeder ETF weltweit (long, short, Kredit bis 2×; „aktien_suche“, „aktie“).
+- Ordertypen: markt, limit (nur zum Preis oder besser), stop (Ausbruch/Absicherung), Gültigkeit tag/gtc/Datum; Stop-Loss/Take-Profit je Position; stehende Rebalancing-Regel („rebalancing_regel“) – der Wächter führt sie alle 15 min aus, auch zwischen deinen Runden.
+- Volatilität ernten: Rebalancing zwischen schwankenden, wenig korrelierten Anlagen (Shannons Dämon, Parrondo-Effekt) – lohnt nur, wenn Schwankung groß und Kosten klein sind; Short-Vola (Optionen schreiben, Covered Call, Cash-Secured Put) vs. Long-Vola (Straddle/Strangle kaufen), wenn implizite (DVOL/IV) und realisierte Vola („technische_analyse“) auseinanderliegen.
+- Optionsstrukturen: Vertikal-Spreads (Bull/Bear), Kalender-Spreads, Straddle/Strangle, Risk-Reversal, Protective Put, Collar – aus mehreren Einzelorders zusammengesetzt; Delta-Hedge mit Perps.
+- Carry und Arbitrage: Basis-/Funding-Carry (Spot long + Perp short), Preisabweichung derselben Frage zwischen Wettmarkt-Plattformen, Wettmarkt gegen Optionsmarkt (implizite Wahrscheinlichkeit einer Kursschwelle), Wetter-Ensemble gegen Temperaturmarkt.
+- Relative Value: Pair-Trading / marktneutral (Aktie A long, B short; Sektor gegen Index), Beta-Absicherung mit SPY/QQQ-Short, Krypto-Aktien (COIN, MSTR) gegen BTC.
+- Richtung: Trend/Momentum (SMA, MACD, Hurst > 0,5), Rückkehr zum Mittel (RSI, Bollinger, Z-Score, Hurst < 0,5), Ereignisse (Quartalszahlen, Fed, Abrechnungsregeln), Nachrichten.
+- Größe und Risiko: Kelly-Bruchteil („positionsgroesse“), Volatilitätsziel, Korrelation/Gleichlauf, Kosten jeder Rundreise (Spread, Gebühr, Impact, Funding, Leihgebühr, Kreditzins) immer gegen den erwarteten Vorteil rechnen.
+
 WAHRSCHEINLICHKEITEN FÜR WETTMÄRKTE (Superforecaster-Gerüst, Werkzeug „wahrscheinlichkeit“):
 - Lies zuerst die Abrechnungsregel (Quelle und Datum). Was passiert, wenn sich nichts ändert (Status quo)? Wie oft tritt so etwas grundsätzlich ein (Basisrate, mit Herkunft)? Welches Überraschungsszenario würde dich widerlegen?
 - Schätze p_blind, BEVOR du den Marktpreis ansiehst bzw. ohne ihn zu berücksichtigen. Danach p_ja und – getrennt neu überlegt, nicht 1 − p_ja gerechnet – p_nein. Weiche vom Marktpreis nur stark ab, wenn du eine konkrete, neue Informationsquelle nennen kannst; der Markt ist auf liquiden Märkten meist besser kalibriert als ein Modell allein.

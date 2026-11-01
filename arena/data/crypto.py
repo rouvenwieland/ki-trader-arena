@@ -219,3 +219,56 @@ def basis_kurve(basis: str = "BTC") -> list[dict]:
         out.append({"kontrakt": x["instrument_name"], "tage": round(tage), "basis_pct": round(100 * b, 3),
                     "annualisiert_pct": round(100 * b * 365 / tage, 2), "oi_usd": x.get("open_interest")})
     return sorted(out, key=lambda y: y["tage"])
+
+
+# ------------------------------------------------------------------ Optionskette mit Griechen
+def _bs(S: float, K: float, T: float, iv: float, typ: str) -> dict:
+    """Black-Scholes (r = 0) für Delta, Gamma, Vega (USD je 1 Vola-Punkt), Theta (USD je Tag)."""
+    from statistics import NormalDist
+    N = NormalDist()
+    if T <= 0 or iv <= 0 or S <= 0 or K <= 0:
+        return {}
+    s = iv * math.sqrt(T)
+    d1 = (math.log(S / K) + 0.5 * s * s) / s
+    pdf = math.exp(-0.5 * d1 * d1) / math.sqrt(2 * math.pi)
+    delta = N.cdf(d1) if typ == "C" else N.cdf(d1) - 1
+    return {"delta": round(delta, 3), "gamma": S * pdf / (S * s) / S, "vega_usd": round(S * pdf * math.sqrt(T) / 100, 2),
+            "theta_usd_tag": round(-S * pdf * iv / (2 * math.sqrt(T)) / 365, 2)}
+
+
+def optionskette(basis: str = "BTC", verfall: str | None = None, spanne: float = 0.3) -> dict:
+    """Alle Deribit-Optionen eines Basiswerts: ohne `verfall` die Liste der Laufzeiten, mit `verfall` (z. B. 27NOV26) alle Strikes
+    innerhalb ±spanne um den Kurs mit Geld/Brief/Mark in USD, IV, Griechen und Open Interest."""
+    try:
+        r = get(f"{DERIBIT}/get_book_summary_by_currency", {"currency": basis, "kind": "option"}, ttl=120)["result"]
+    except (HttpFehler, KeyError):
+        return {"fehler": "Deribit nicht erreichbar"}
+    jetzt = time.time()
+    laufzeiten: dict[str, int] = {}
+    zeilen = []
+    for o in r:
+        p = parse_option(o["instrument_name"])
+        if not p or not o.get("underlying_price"):
+            continue
+        tag = o["instrument_name"].split("-")[1]
+        laufzeiten[tag] = laufzeiten.get(tag, 0) + 1
+        if verfall and tag != verfall.upper():
+            continue
+        S = o["underlying_price"]
+        if not verfall or abs(p["strike"] / S - 1) > spanne:
+            continue
+        T = (p["verfall"] - jetzt) / (365 * 86400)
+        iv = (o.get("mark_iv") or 0) / 100
+        z = {"id": f"opt:{o['instrument_name']}", "typ": p["typ"], "strike": p["strike"], "tage": round(T * 365, 1),
+             "bid_usd": round(o["bid_price"] * S, 2) if o.get("bid_price") else None, "ask_usd": round(o["ask_price"] * S, 2) if o.get("ask_price") else None,
+             "mark_usd": round(o["mark_price"] * S, 2) if o.get("mark_price") is not None else None, "iv_pct": o.get("mark_iv"),
+             "oi": o.get("open_interest"), "basis_usd": round(S, 2)}
+        zeilen.append(z | _bs(S, p["strike"], T, iv, p["typ"]))
+    if not verfall:
+        return {"basis": basis, "laufzeiten": dict(sorted(laufzeiten.items(), key=lambda kv: parse_option(f"{basis}-{kv[0]}-1-C")["verfall"])),
+                "hinweis": "Mit verfall=… (z. B. 27NOV26) die Strikes mit Griechen abrufen."}
+    zeilen.sort(key=lambda z: (z["strike"], z["typ"]))
+    for z in zeilen:
+        z.pop("gamma", None)
+    return {"basis": basis, "verfall": verfall.upper(), "optionen": zeilen,
+            "marge_verkauf": "Schreiben: Anfangsmarge je Kontrakt ≈ Mark + max(15 % · Basis − Aus-dem-Geld-Betrag, 10 % · Basis); Wartung 7,5 % · Basis."}

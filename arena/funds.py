@@ -21,6 +21,7 @@ KONTROLLEN = [
     {"id": "ko_markt", "name": "Kontrolle: Markt-Kopierer", "typ": "benchmark", "art": "markt", "kontrolle": True},
     {"id": "ko_nein", "name": "Kontrolle: Immer NEIN", "typ": "benchmark", "art": "nein", "kontrolle": True},
     {"id": "ko_wetter", "name": "Regelfonds: Wetter-Ensemble", "typ": "benchmark", "art": "wetter", "kontrolle": True},
+    {"id": "ko_shannon", "name": "Kontrolle: Shannons Dämon (BTC/Cash 50/50)", "typ": "benchmark", "art": "shannon", "kontrolle": True},
 ]
 SCHWARM = [
     {"id": "schwarm_alle", "name": "Schwarm (alle KI)", "typ": "schwarm", "risiko": "mittel", "gruppe": "alle"},

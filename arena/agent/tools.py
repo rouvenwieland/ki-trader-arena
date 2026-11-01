@@ -84,6 +84,7 @@ class Kontext:
                       "offene_auftraege": [{"auftrag_id": a["id"], "instrument": a["inst"]["id"], "typ": a.get("typ", "eroeffnung"), "aktion": a["aktion"],
                                             "seite": a.get("seite"), "limit": a.get("limit_preis"), "stop": a.get("stop_preis"), "betrag_usd": a.get("betrag_usd"),
                                             "menge": a.get("menge"), "gueltig_bis": a["gueltig_bis"]} for a in self.pf.get("auftraege", [])],
+                      "rebalancing_regel": {k: v["anteil"] for k, v in (self.pf.get("rebalancing") or {}).get("ziele", {}).items()} or None,
                       "us_boerse": "offen" if stocks.boerse_offen(self.jetzt) else "geschlossen"})
 
     def t_markt_suche(self, abfrage: str, plattform: str = "alle", **_) -> str:
@@ -400,6 +401,49 @@ class Kontext:
         return self._ergebnis(did, {"ok": True, "aktion": "vorgemerkt", "auftrag_id": a["id"], "inst_id": inst["id"], "auftragstyp": typ,
                                     "grund": f"{text}, gültig bis {bis}; Ausführung im 15-min-Takt zum dann gültigen Kurs (Limits gelten dann)"})
 
+    def t_technische_analyse(self, instrument_id: str, intervall: str = "tag", **_) -> str:
+        """Indikatoren und Regime für Krypto, Perps (über den Spot-Basiswert), Aktien/ETFs weltweit und Wettmärkte (gespeicherter Verlauf)."""
+        from arena import technik
+        stunde = intervall == "stunde"
+        if instrument_id.startswith(("spot:", "perp:", "opt:")):
+            basis = instrument_id.split(":", 1)[1].split("-")[0].split("_")[0]
+            k = crypto.spot_kerzen(f"{basis}-USD", 3600 if stunde else 86400, 300)
+            kerzen = [(c[2], c[1], c[4], c[0]) for c in k]
+            vgl = [c[4] for c in crypto.spot_kerzen("BTC-USD", 3600 if stunde else 86400, 300)] if basis != "BTC" else None
+            pj = 8760 if stunde else 365
+        elif instrument_id.startswith("stock:"):
+            sym = instrument_id.split(":", 1)[1]
+            kerzen = stocks.kerzen(sym, "1mo" if stunde else "2y", "60m" if stunde else "1d")
+            vgl = [x[2] for x in stocks.kerzen("SPY", "1mo" if stunde else "2y", "60m" if stunde else "1d")] if sym.upper() != "SPY" else None
+            pj = 252 * 6.5 if stunde else 252
+        else:
+            serie = self.snap.get("verlauf", {}).get(instrument_id) or []
+            kerzen = [(p, p, p, t) for t, p in serie]
+            vgl, pj = None, 4 * 24 * 365
+        if vgl:
+            vgl = vgl[-len(kerzen):]
+        return _kurz(technik.analyse(kerzen, pj, vgl) | {"intervall": "Stunde" if stunde else "Tag",
+                                                         "vergleich": "BTC" if instrument_id.startswith(("spot:", "perp:", "opt:")) else "SPY",
+                                                         "hinweis": "Beschreibt die Vergangenheit; als Signal nur zusammen mit Kosten und Gegenargument nutzen."})
+
+    def t_rebalancing_regel(self, ziele: list | None = None, schwelle_pp: float = 5.0, begruendung: str = "", **_) -> str:
+        """Stehende Rebalancing-Regel setzen/ändern (leere Liste = entfernen); der Wächter handelt alle 15 min die Abweichung."""
+        from arena import rebalancing
+        did = "d" + uuid.uuid4().hex[:8]
+        store.anhaengen(f"funds/{self.fid}/decisions.jsonl", {"typ": "rebalancing", "id": did, "ts": time.time(), "fonds_id": self.fid,
+                                                             "ziele": ziele, "schwelle_pp": schwelle_pp, "begruendung": begruendung[:600]})
+        try:
+            t = rebalancing.setze(self.pf, list(ziele or []), schwelle_pp, did, self.jetzt, self.aufloesen)
+        except (TypeError, ValueError, AttributeError) as e:
+            return f"Ungültige Regel: {e}"
+        funds.speichere_portfolio(self.pf)
+        return t
+
+    def t_optionskette(self, basis: str = "BTC", verfall: str = "", spanne_pct: float = 30, **_) -> str:
+        """Komplette Deribit-Optionskette: ohne verfall die Laufzeiten, mit verfall alle Strikes mit Geld/Brief/Mark (USD), IV und Griechen."""
+        return _kurz(crypto.optionskette(basis.upper() if basis.upper() in ("BTC", "ETH") else "BTC", verfall or None,
+                                         max(0.02, min(1.0, float(spanne_pct) / 100))), 6000)
+
     def t_aktien_suche(self, abfrage: str, **_) -> str:
         """Ticker-Suche weltweit (Aktien, ETFs) – Ergebnis direkt als instrument_id nutzbar."""
         return _kurz(stocks.suche(abfrage, 10) or "Keine Treffer.")
@@ -451,7 +495,7 @@ class Kontext:
              "schema": s({"markt_id": str_}, ["markt_id"]), "fn": self.t_orderfluss},
             {"name": "kurs_verlauf", "beschreibung": "Gespeicherter Kursverlauf der letzten ~26 h (bzw. Stundenkerzen bei Spot).",
              "schema": s({"instrument_id": str_}, ["instrument_id"]), "fn": self.t_kurs_verlauf},
-            {"name": "optionen", "beschreibung": "Liquide Deribit-Optionen (BTC/ETH) nahe am Geld. Nur Kaufen (Long) möglich.",
+            {"name": "optionen", "beschreibung": "Schnellüberblick: liquideste Deribit-Optionen (BTC/ETH) nahe am Geld. Volle Kette mit Griechen: „optionskette“. Kaufen (long) und Schreiben (order mit seite short und menge) möglich.",
              "schema": s({"basis": {"type": "string", "enum": ["BTC", "ETH"]}}, []), "fn": self.t_optionen},
             {"name": "wetter", "beschreibung": "Temperatur-Wettmärkte (Kalshi „Highest temperature in …“): Wahrscheinlichkeit je Bracket aus 82 Wetter-Ensemble-Mitgliedern (GFS+ECMWF, Open-Meteo) inkl. Modellfehler und bisher gemessenem Tagesmaximum, gegen den Marktpreis. Ohne markt_id: offene Events.",
              "schema": s({"markt_id": {"type": "string", "description": "Markt oder Event, z. B. pm:kalshi:KXHIGHNY-26OCT31-B59.5 oder KXHIGHNY-26OCT31"}}, []), "fn": self.t_wetter},
@@ -478,6 +522,16 @@ class Kontext:
                          ["markt_id", "abrechnung", "status_quo", "basisrate", "p_blind", "p_ja", "p_nein", "gegenargument", "begruendung"]), "fn": self.t_wahrscheinlichkeit},
             {"name": "positionsgroesse", "beschreibung": "Größenempfehlung vor einer Order: Wettmärkte per Kelly inkl. Gebühr, gemeinsam mit deinen offenen Wetten optimiert, mal Bruchteil deines Profils (halbiert, wenn du bisher schlechter als der Markt geschätzt hast); Krypto/Perps/Aktien per Volatilitätsziel (GARCH) mit Stop-Vorschlag.",
              "schema": s({"instrument_id": str_, "p_ja": {"type": "number", "description": "Wettmärkte: deine P(JA); sonst deine letzte festgehaltene Schätzung"}}, ["instrument_id"]), "fn": self.t_positionsgroesse},
+            {"name": "technische_analyse", "beschreibung": "Technische Analyse und Regime für jedes Instrument: SMA/EMA, RSI, MACD, Bollinger, ATR, realisierte Vola und Vola-Regime, Drawdown, Z-Score, Hurst-Exponent (Trend vs. Rückkehr zum Mittel), Autokorrelation, Beta/Korrelation zu BTC bzw. SPY.",
+             "schema": s({"instrument_id": str_, "intervall": {"type": "string", "enum": ["tag", "stunde"]}}, ["instrument_id"]), "fn": self.t_technische_analyse},
+            {"name": "rebalancing_regel", "beschreibung": "Stehende Rebalancing-Regel (z. B. Volatility Harvesting): Zielanteile am Vermögen für Krypto-Spot und Aktien/ETFs, Rest Cash. Der Wächter handelt alle 15 min die Abweichung, sobald sie die Schwelle übersteigt (echte Kosten). Leere Liste entfernt die Regel.",
+             "schema": s({"ziele": {"type": "array", "items": {"type": "object", "properties": {"instrument_id": str_, "anteil": {"type": "number", "description": "0..1 des Vermögens"}},
+                                                            "required": ["instrument_id", "anteil"]}},
+                          "schwelle_pp": {"type": "number", "description": "Abweichung in Prozentpunkten, ab der gehandelt wird (min. 1, Standard 5)"},
+                          "begruendung": str_}, ["ziele", "begruendung"]), "fn": self.t_rebalancing_regel},
+            {"name": "optionskette", "beschreibung": "Komplette Deribit-Optionskette (BTC/ETH): ohne verfall alle Laufzeiten, mit verfall (z. B. 27NOV26) alle Strikes mit Geld/Brief/Mark in USD, IV, Delta, Vega, Theta, Open Interest – Grundlage für Spreads, Straddles, Covered Calls, Delta-Hedges.",
+             "schema": s({"basis": {"type": "string", "enum": ["BTC", "ETH"]}, "verfall": str_, "spanne_pct": {"type": "number", "description": "Strikes ± so viel Prozent um den Kurs (Standard 30)"}}, []),
+             "fn": self.t_optionskette},
             {"name": "aktien_suche", "beschreibung": "Sucht Aktien/ETFs weltweit nach Name oder Stichwort (Yahoo) und liefert handelbare IDs wie stock:RHM.DE.",
              "schema": s({"abfrage": str_}, ["abfrage"]), "fn": self.t_aktien_suche},
             {"name": "aktie", "beschreibung": "Details zu einem beliebigen Aktien-/ETF-Ticker: Kurs in USD und Originalwährung, Börse/Handelszeit, Tagesveränderung, 1-Jahres-Spanne, Volumen, Vola, Spread.",

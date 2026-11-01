@@ -97,7 +97,8 @@ def verarbeite_portfolio(pf: dict, mz: Marktzugriff, funding_raten: dict, jetzt:
             if ex:
                 extreme[iid] = ex
     marks = {k: v for k, v in marks.items() if v is not None}
-    log += engine.pruefe_liquidation(pf, extreme, marks, jetzt)
+    indizes = {p["inst"]["id"]: mz.buch(p["inst"])[1] for p in pf["positionen"] if p["inst"]["art"] == "option" and p["seite"] == "short"}
+    log += engine.pruefe_liquidation(pf, extreme, marks, jetzt, {k: v for k, v in indizes.items() if v})
     for pos, grund, preis in engine.stop_ziele(pf, extreme, marks):
         book, idx = mz.buch(pos["inst"])
         r = engine.schliesse(pf, pos, _stop_buch(preis, pos["seite"], book, pos["menge"], pos["inst"]), grund=grund, ts=jetzt, index_preis=idx)
@@ -180,7 +181,13 @@ def lauf(jetzt: float | None = None) -> dict:
         log = verarbeite_portfolio(pf, mz, funding, jetzt)
         if pf.get("auftraege"):
             log += fuehre_auftraege_aus(pf, funds.risikoprofil(d), mz, jetzt)
-        if d["typ"] == "schwarm" or d.get("kontrolle"):
+        if d.get("art") == "shannon" and not pf.get("rebalancing"):  # Kontrolle Volatility Harvesting: BTC/Cash 50/50, Schwelle 5 pp
+            from arena.data import crypto as _c
+            pf["rebalancing"] = {"ziele": {"spot:BTC-USD": {"inst": _c.spot_inst("BTC"), "anteil": 0.5}}, "schwelle_pp": 5.0, "seit": jetzt}
+        if pf.get("rebalancing"):
+            from arena import rebalancing
+            log += rebalancing.pruefe(pf, funds.risikoprofil(d), mz, jetzt)
+        if d["typ"] == "schwarm" or (d.get("kontrolle") and d.get("art") != "shannon"):
             from arena import schwarm
             try:
                 if d.get("art") == "wetter":

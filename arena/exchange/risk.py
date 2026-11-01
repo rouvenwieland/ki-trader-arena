@@ -47,8 +47,12 @@ def pruefe_eroeffnung(pf: dict, prof: dict, inst: dict, nominal: float, hebel: f
         marge = nominal / hebel + sum(p["marge"] for p in pf["positionen"] if p["inst"]["id"] == inst["id"])
         if marge / eq > prof["max_position_pct"] + 1e-9:
             return "Marge der Perp-Position über dem Einzelpositions-Limit"
-    if inst["art"] == "option":
-        opt = sum(p["einstand"] * p["menge"] for p in pf["positionen"] if p["inst"]["art"] == "option")
+    if inst["art"] == "option" and seite == "short":  # geschriebene Optionen: Marge zählt wie eine Derivate-Position
+        marge_opt = nominal + sum(p["marge"] for p in pf["positionen"] if p["inst"]["art"] == "option" and p["seite"] == "short")
+        if marge_opt / eq > prof["max_perp_pct"] * max(1, prof["max_hebel"]) / 2 + 1e-9:
+            return "Marge geschriebener Optionen über dem Derivate-Limit des Risikoprofils"
+    elif inst["art"] == "option":
+        opt = sum(p["einstand"] * p["menge"] for p in pf["positionen"] if p["inst"]["art"] == "option" and p["seite"] == "long")
         if (opt + nominal) / eq > prof["max_optionen_pct"] + 1e-9:
             return f"Optionsprämien würden {100 * prof['max_optionen_pct']:.0f} % des Vermögens übersteigen"
     if inst["art"] in ("spot", "perp", "option") and "max_krypto_cluster_pct" in prof:
