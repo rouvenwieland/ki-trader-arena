@@ -2,7 +2,7 @@
  "fonds_id": "ko_nein",
  "waehrung": "USD",
  "start_kapital": 11157.431109273288,
- "cash": 1632.9047092732853,
+ "cash": 1131.6795092732852,
  "positionen": [
   {
    "id": "pe6781775",
@@ -437,8 +437,8 @@
    "gebuehren": 0.0,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.6565000000000001,
-   "wert": 163.5
+   "kurs": 0.657,
+   "wert": 163.75
   },
   {
    "id": "pe65b0b73",
@@ -533,7 +533,7 @@
    "gebuehren": 0.33007,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.993,
+   "kurs": 0.996,
    "wert": 169.8
   },
   {
@@ -853,8 +853,8 @@
    "gebuehren": 0.0,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.9664999999999999,
-   "wert": 166.77
+   "kurs": 0.964,
+   "wert": 165.91
   },
   {
    "id": "pe3197d92",
@@ -1001,8 +1001,8 @@
    "gebuehren": 7.15674,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.024,
-   "wert": 9.75
+   "kurs": 0.027999999999999997,
+   "wert": 11.52
   },
   {
    "id": "pdcf6fcc3",
@@ -1033,8 +1033,8 @@
    "gebuehren": 10.06282,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.0075,
-   "wert": 12.82
+   "kurs": 0.0045000000000000005,
+   "wert": 7.33
   },
   {
    "id": "pf73842ce",
@@ -1065,7 +1065,7 @@
    "gebuehren": 0.31446,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.9844999999999999,
+   "kurs": 0.985,
    "wert": 168.26
   },
   {
@@ -1335,8 +1335,8 @@
    "gebuehren": 3.27455,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.6,
-   "wert": 136.25
+   "kurs": 0.618,
+   "wert": 139.69
   },
   {
    "id": "pbb0a8271",
@@ -1709,6 +1709,102 @@
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
    "kurs": 0.935,
    "wert": 162.75
+  },
+  {
+   "id": "pbb214a3d",
+   "inst": {
+    "id": "pm:polymarket:5699280:NEIN",
+    "art": "pm",
+    "venue": "polymarket",
+    "ergebnis": "NEIN",
+    "frage": "Will Core CPI YoY be 2.6% in October?",
+    "schliesst": 1794373140.0,
+    "ref": {
+     "id": "5699280",
+     "token_ja": "9873910259704424307458162939844325223161200217249020796015555258386412710572",
+     "token_nein": "89727095687649385667046388471288254734444655377197465615517683133911414929186",
+     "tick": 0.01,
+     "condition": "0xcea0374b1560a26e2e37833e234793f456845c1368891047bf9db07e44b13852",
+     "gebuehr_rate": 0.0,
+     "gebuehr_exp": 1.0
+    },
+    "url": "https://polymarket.com/event/will-core-cpi-yoy-be-2pt6-in-october-2026"
+   },
+   "seite": "long",
+   "menge": 367.0,
+   "einstand": 0.4558692098092642,
+   "hebel": 1.0,
+   "marge": 0.0,
+   "eroeffnet": 1793503484.642243,
+   "gebuehren": 0.0,
+   "funding": 0.0,
+   "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
+   "kurs": 0.35,
+   "wert": 77.07
+  },
+  {
+   "id": "p5037ef0e",
+   "inst": {
+    "id": "pm:polymarket:5730331:NEIN",
+    "art": "pm",
+    "venue": "polymarket",
+    "ergebnis": "NEIN",
+    "frage": "NVIDIA (NVDA) Q3 adjusted gross margin 73% to 75%?",
+    "schliesst": 1795042800.0,
+    "ref": {
+     "id": "5730331",
+     "token_ja": "12184345390140772513332883679626608175715846723917987793045546957490562215909",
+     "token_nein": "59532283402481232517464624308522375103071481394285137704213470523262501022197",
+     "tick": 0.01,
+     "condition": "0x467ef775ebe832ade5a37b54bfa571a2d2a4eae879cf8e91afebc3b3417d63b2",
+     "gebuehr_rate": 0.0,
+     "gebuehr_exp": 1.0
+    },
+    "url": "https://polymarket.com/event/nvidia-nvda-q3-adjusted-gross-margin-non-gaap-20261008120136000-73-to-75"
+   },
+   "seite": "long",
+   "menge": 296.0,
+   "einstand": 0.5628418918918919,
+   "hebel": 1.0,
+   "marge": 0.0,
+   "eroeffnet": 1793503484.642243,
+   "gebuehren": 0.0,
+   "funding": 0.0,
+   "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
+   "kurs": 0.585,
+   "wert": 53.28
+  },
+  {
+   "id": "pd54b5964",
+   "inst": {
+    "id": "pm:polymarket:679030:NEIN",
+    "art": "pm",
+    "venue": "polymarket",
+    "ergebnis": "NEIN",
+    "frage": "Will Jean-Luc Mélenchon win the 2027 French presidential election?",
+    "schliesst": 1808107140.0,
+    "ref": {
+     "id": "679030",
+     "token_ja": "88550326946437280548248031502775629664259630024343210447063397951616199975032",
+     "token_nein": "78935030613038194779147226463048913187247425461933527083007539809178403199936",
+     "tick": 0.01,
+     "condition": "0x174ea87d011bfd0b230efc45e0b4d0756d38af91f0ffbab70013a582603c2be8",
+     "gebuehr_rate": 0.0,
+     "gebuehr_exp": 1.0
+    },
+    "url": "https://polymarket.com/event/next-french-presidential-election"
+   },
+   "seite": "long",
+   "menge": 188.0,
+   "einstand": 0.89,
+   "hebel": 1.0,
+   "marge": 0.0,
+   "eroeffnet": 1793503484.642243,
+   "gebuehren": 0.0,
+   "funding": 0.0,
+   "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
+   "kurs": 0.885,
+   "wert": 165.44
   }
  ],
  "realisiert": -317.74841999999995,
@@ -1716,6 +1812,6 @@
  "funding": 0.0,
  "erstellt": 1793379225.5430336,
  "start_fx": 1.1157431109273288,
- "letzter_tick": 1793502584.797352,
- "kontrolle_bis": 1793499979.6434526
+ "letzter_tick": 1793503484.642243,
+ "kontrolle_bis": 1793502838.7726302
 }
