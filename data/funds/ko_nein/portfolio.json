@@ -2,7 +2,7 @@
  "fonds_id": "ko_nein",
  "waehrung": "USD",
  "start_kapital": 11157.431109273288,
- "cash": 1838.4075192732853,
+ "cash": 1504.1681292732853,
  "positionen": [
   {
    "id": "pe6781775",
@@ -193,8 +193,8 @@
    "gebuehren": 0.0,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.705,
-   "wert": 162.4
+   "kurs": 0.715,
+   "wert": 164.72
   },
   {
    "id": "pf49ce1c2",
@@ -290,7 +290,7 @@
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
    "kurs": 0.005,
-   "wert": 1.72
+   "wert": 2.29
   },
   {
    "id": "p722ad016",
@@ -321,8 +321,8 @@
    "gebuehren": 0.0,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.665,
-   "wert": 183.48
+   "kurs": 0.675,
+   "wert": 186.26
   },
   {
    "id": "pdcfb5d53",
@@ -353,8 +353,8 @@
    "gebuehren": 0.0,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.505,
-   "wert": 125.25
+   "kurs": 0.4975,
+   "wert": 123.25
   },
   {
    "id": "pe65b0b73",
@@ -609,8 +609,8 @@
    "gebuehren": 0.0,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.81,
-   "wert": 137.64
+   "kurs": 0.735,
+   "wert": 109.74
   },
   {
    "id": "p7e5c2e70",
@@ -769,8 +769,8 @@
    "gebuehren": 0.0,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.875,
-   "wert": 163.56
+   "kurs": 0.885,
+   "wert": 165.44
   },
   {
    "id": "pa8d52a27",
@@ -1089,8 +1089,8 @@
    "gebuehren": 0.0,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.004,
-   "wert": 2.13
+   "kurs": 0.0045000000000000005,
+   "wert": 0.71
   },
   {
    "id": "pc0b8a31d",
@@ -1327,8 +1327,8 @@
    "gebuehren": 4.24,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.20500000000000002,
-   "wert": 51.8
+   "kurs": 0.225,
+   "wert": 56.98
   },
   {
    "id": "p32e5b9f1",
@@ -1423,8 +1423,8 @@
    "gebuehren": 4.65658,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.605,
-   "wert": 165.0
+   "kurs": 0.625,
+   "wert": 170.5
   },
   {
    "id": "pd183209f",
@@ -1455,8 +1455,8 @@
    "gebuehren": 2.87438,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.745,
-   "wert": 162.06
+   "kurs": 0.755,
+   "wert": 164.25
   },
   {
    "id": "p59c4bdc3",
@@ -1487,15 +1487,79 @@
    "gebuehren": 4.28576,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.5665,
-   "wert": 146.68
+   "kurs": 0.5445,
+   "wert": 138.59
+  },
+  {
+   "id": "p54f0e36a",
+   "inst": {
+    "id": "pm:polymarket:1439555:NEIN",
+    "art": "pm",
+    "venue": "polymarket",
+    "ergebnis": "NEIN",
+    "frage": "Fed rate cut by December 2026 meeting?",
+    "schliesst": 1801198740.0,
+    "ref": {
+     "id": "1439555",
+     "token_ja": "85002355202646770038788297383084634166875614093071220064343011133051368772502",
+     "token_nein": "55388042878106612984650771012856953294835512286392194574801105901687237873381",
+     "tick": 0.001,
+     "condition": "0xc60022fe066abd6f96c375adb09f38d92c4931f09c10b805354581b4e5465e93",
+     "gebuehr_rate": 0.05,
+     "gebuehr_exp": 1.0
+    },
+    "url": "https://polymarket.com/event/fed-rate-cut-by-december-2026-meeting"
+   },
+   "seite": "long",
+   "menge": 169.0,
+   "einstand": 0.989,
+   "hebel": 1.0,
+   "marge": 0.0,
+   "eroeffnet": 1793560676.2203774,
+   "gebuehren": 0.09193,
+   "funding": 0.0,
+   "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
+   "kurs": 0.986,
+   "wert": 166.13
+  },
+  {
+   "id": "pb0e561da",
+   "inst": {
+    "id": "pm:polymarket:6236217:NEIN",
+    "art": "pm",
+    "venue": "polymarket",
+    "ergebnis": "NEIN",
+    "frage": "Will Bitcoin dip to $76,000 October 26-November 1?",
+    "schliesst": 1793595600.0,
+    "ref": {
+     "id": "6236217",
+     "token_ja": "64421491572857077356896259433932074729525051914601291841808100178309860746824",
+     "token_nein": "54091715284225830585160454435544762071632845176469192218878048828114266043260",
+     "tick": 0.001,
+     "condition": "0xa70b55ba77e150a968cd476e4731ccfc8078480d199c92acc3a6447fdb7cef0b",
+     "gebuehr_rate": 0.07,
+     "gebuehr_exp": 1.0
+    },
+    "url": "https://polymarket.com/event/what-price-will-bitcoin-hit-october-26-november-1-2026"
+   },
+   "seite": "long",
+   "menge": 182.0,
+   "einstand": 0.912,
+   "hebel": 1.0,
+   "marge": 0.0,
+   "eroeffnet": 1793560676.2203774,
+   "gebuehren": 1.02246,
+   "funding": 0.0,
+   "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
+   "kurs": 0.9115,
+   "wert": 165.8
   }
  ],
  "realisiert": -1381.3378799999998,
- "gebuehren": 124.14079999999997,
+ "gebuehren": 125.25518999999997,
  "funding": 0.0,
  "erstellt": 1793379225.5430336,
  "start_fx": 1.1157431109273288,
- "letzter_tick": 1793559775.766602,
- "kontrolle_bis": 1793552406.3274732
+ "letzter_tick": 1793560676.2203774,
+ "kontrolle_bis": 1793559884.5461352
 }
