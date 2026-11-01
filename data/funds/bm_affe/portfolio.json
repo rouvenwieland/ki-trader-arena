@@ -2,29 +2,29 @@
  "fonds_id": "bm_affe",
  "waehrung": "USD",
  "start_kapital": 11184.88579861696,
- "cash": 3296.2312804969247,
+ "cash": 6340.996882463696,
  "positionen": [
   {
-   "id": "pdaf58c49",
+   "id": "p848d909d",
    "inst": {
-    "id": "spot:ADA-USD",
+    "id": "spot:SOL-USD",
     "art": "spot",
     "venue": "coinbase",
-    "symbol": "ADA-USD"
+    "symbol": "SOL-USD"
    },
    "seite": "long",
-   "menge": 12536.312076738897,
-   "einstand": 0.195055838549445,
+   "menge": 29.562645967717685,
+   "einstand": 95.34906600000001,
    "hebel": 1.0,
    "marge": 0.0,
-   "eroeffnet": 1793405424.2104914,
-   "gebuehren": 14.67168518667504,
+   "eroeffnet": 1793491674.4324398,
+   "gebuehren": 16.912624089063286,
    "funding": 0.0,
-   "kurs": 0.19262,
-   "wert": 2414.49
+   "kurs": 95.32499999999999,
+   "wert": 2817.91
   },
   {
-   "id": "p3332d75a",
+   "id": "p40989887",
    "inst": {
     "id": "spot:DOGE-USD",
     "art": "spot",
@@ -32,41 +32,22 @@
     "symbol": "DOGE-USD"
    },
    "seite": "long",
-   "menge": 34320.423492209986,
-   "einstand": 0.07592518200000001,
+   "menge": 27069.277696013458,
+   "einstand": 0.075585114,
    "hebel": 1.0,
    "marge": 0.0,
-   "eroeffnet": 1793405424.2104914,
-   "gebuehren": 15.634706399778715,
+   "eroeffnet": 1793491674.4324398,
+   "gebuehren": 12.276206643305008,
    "funding": 0.0,
-   "kurs": 0.07554,
-   "wert": 2592.22
-  },
-  {
-   "id": "p3d5f24ec",
-   "inst": {
-    "id": "spot:AVAX-USD",
-    "art": "spot",
-    "venue": "coinbase",
-    "symbol": "AVAX-USD"
-   },
-   "seite": "long",
-   "menge": 348.4401866879284,
-   "einstand": 8.572060178560582,
-   "hebel": 1.0,
-   "marge": 0.0,
-   "eroeffnet": 1793405424.2104914,
-   "gebuehren": 17.92110149350684,
-   "funding": 0.0,
-   "kurs": 8.541,
-   "wert": 2975.68
+   "kurs": 0.07555,
+   "wert": 2044.54
   }
  ],
- "realisiert": 224.36273412389104,
- "gebuehren": 103.49250576016256,
+ "realisiert": 125.20677555764486,
+ "gebuehren": 180.60141428786596,
  "funding": 0.0,
  "erstellt": 1793319819.7411644,
  "start_fx": 1.1184885798616961,
- "letzter_tick": 1793490774.9406116,
- "letzter_tag": "2026-10-31"
+ "letzter_tick": 1793491674.4324398,
+ "letzter_tag": "2026-11-01"
 }
