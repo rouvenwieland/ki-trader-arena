@@ -5,34 +5,6 @@
  "cash": 10642.758454052928,
  "positionen": [
   {
-   "id": "p34466a85",
-   "inst": {
-    "id": "pm:kalshi:KXHIGHLAX-26OCT31-B67.5:JA",
-    "art": "pm",
-    "venue": "kalshi",
-    "ergebnis": "JA",
-    "frage": "Will the maximum temperature be 67-68° on Oct 31, 2026? [67° to 68°]",
-    "schliesst": 1793520000.0,
-    "ref": {
-     "ticker": "KXHIGHLAX-26OCT31-B67.5"
-    },
-    "url": "https://kalshi.com/markets/KXHIGHLAX-26OCT31"
-   },
-   "seite": "long",
-   "menge": 2800.0,
-   "einstand": 0.1177190714285714,
-   "hebel": 1.0,
-   "marge": 0.0,
-   "eroeffnet": 1793423739.2765858,
-   "gebuehren": 20.36,
-   "funding": 0.0,
-   "ausstiegsplan": "Halten bis zur Abrechnung (NWS CLI 31.10., wenige Stunden). Kein vorzeitiger Verkauf bei <2h Restzeit wegen Spread.",
-   "entscheidung_id": "dbb7681e6",
-   "invalidierung": "Beobachtete Temperatur in LAX tagsüber bereits über 69°F oder NWS-Prognose hebt Max klar über 70°F → Bracket 67-68 unwahrscheinlich.",
-   "kurs": null,
-   "wert": 329.61
-  },
-  {
    "id": "p0816e743",
    "inst": {
     "id": "pm:kalshi:KXHIGHNY-26NOV01-B62.5:JA",
@@ -57,8 +29,8 @@
    "ausstiegsplan": "Halten bis Abrechnung nach Tagesmaximum 1.11. Kein Verkauf (Spread frisst alles).",
    "entscheidung_id": "d3bd39c01",
    "invalidierung": "Beobachtetes Tagesmax NYC überschreitet 63°F oder NWS-Prognose fällt unter 61°F — dann ist das Bracket tot; Modell p dann 0.",
-   "kurs": 0.055,
-   "wert": 43.05
+   "kurs": 0.045,
+   "wert": 34.44
   },
   {
    "id": "p4923accd",
@@ -89,10 +61,10 @@
    "wert": 15.06
   }
  ],
- "realisiert": 62.341925435967056,
+ "realisiert": -267.2714745640328,
  "gebuehren": 82.27737,
  "funding": 0.0,
  "erstellt": 1793319819.7411644,
  "start_fx": 1.1184885798616961,
- "letzter_tick": 1793545111.5036325
+ "letzter_tick": 1793546012.2292285
 }

@@ -2,7 +2,7 @@
  "fonds_id": "ko_nein",
  "waehrung": "USD",
  "start_kapital": 11157.431109273288,
- "cash": 2329.894999273285,
+ "cash": 2001.7380592732854,
  "positionen": [
   {
    "id": "pe6781775",
@@ -229,32 +229,6 @@
    "wert": 158.4
   },
   {
-   "id": "p28450e21",
-   "inst": {
-    "id": "pm:kalshi:KXRAIN-26OCT31-LAX:NEIN",
-    "art": "pm",
-    "venue": "kalshi",
-    "ergebnis": "NEIN",
-    "frage": "Will it rain in Los Angeles on Oct 31, 2026? [Los Angeles]",
-    "schliesst": 1793520000.0,
-    "ref": {
-     "ticker": "KXRAIN-26OCT31-LAX"
-    },
-    "url": "https://kalshi.com/markets/KXRAIN-26OCT31"
-   },
-   "seite": "long",
-   "menge": 718.0,
-   "einstand": 0.2209888579387187,
-   "hebel": 1.0,
-   "marge": 0.0,
-   "eroeffnet": 1793381024.3823931,
-   "gebuehren": 8.66,
-   "funding": 0.0,
-   "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": null,
-   "wert": 158.67
-  },
-  {
    "id": "pfa54617a",
    "inst": {
     "id": "pm:polymarket:5211630:NEIN",
@@ -283,7 +257,7 @@
    "gebuehren": 0.0,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.675,
+   "kurs": 0.6799999999999999,
    "wert": 151.42
   },
   {
@@ -315,8 +289,8 @@
    "gebuehren": 0.0,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.21000000000000002,
-   "wert": 114.4
+   "kurs": 0.215,
+   "wert": 120.12
   },
   {
    "id": "p722ad016",
@@ -347,8 +321,8 @@
    "gebuehren": 0.0,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.645,
-   "wert": 177.92
+   "kurs": 0.655,
+   "wert": 180.7
   },
   {
    "id": "pdcfb5d53",
@@ -635,8 +609,8 @@
    "gebuehren": 0.0,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.875,
-   "wert": 161.82
+   "kurs": 0.85,
+   "wert": 152.52
   },
   {
    "id": "p7e5c2e70",
@@ -763,8 +737,8 @@
    "gebuehren": 7.15674,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.002,
-   "wert": 0.44
+   "kurs": null,
+   "wert": 160.1
   },
   {
    "id": "pdcf6fcc3",
@@ -795,8 +769,8 @@
    "gebuehren": 10.06282,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.003,
-   "wert": 3.66
+   "kurs": 0.0015,
+   "wert": 1.83
   },
   {
    "id": "pf73842ce",
@@ -827,8 +801,8 @@
    "gebuehren": 0.31446,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.9984999999999999,
-   "wert": 170.66
+   "kurs": 0.999,
+   "wert": 170.83
   },
   {
    "id": "p7102c243",
@@ -893,32 +867,6 @@
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
    "kurs": 0.885,
    "wert": 165.44
-  },
-  {
-   "id": "p15f1dca4",
-   "inst": {
-    "id": "pm:kalshi:KXHIGHLAX-26OCT31-B67.5:NEIN",
-    "art": "pm",
-    "venue": "kalshi",
-    "ergebnis": "NEIN",
-    "frage": "Will the maximum temperature be 67-68° on Oct 31, 2026? [67° to 68°]",
-    "schliesst": 1793520000.0,
-    "ref": {
-     "ticker": "KXHIGHLAX-26OCT31-B67.5"
-    },
-    "url": "https://kalshi.com/markets/KXHIGHLAX-26OCT31"
-   },
-   "seite": "long",
-   "menge": 173.0,
-   "einstand": 0.9631791907514451,
-   "hebel": 1.0,
-   "marge": 0.0,
-   "eroeffnet": 1793424434.3596478,
-   "gebuehren": 0.43,
-   "funding": 0.0,
-   "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": null,
-   "wert": 166.63
   },
   {
    "id": "pa8d52a27",
@@ -1045,8 +993,8 @@
    "gebuehren": 3.27455,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.402,
-   "wert": 88.17
+   "kurs": 0.3385,
+   "wert": 74.88
   },
   {
    "id": "pbb0a8271",
@@ -1269,8 +1217,8 @@
    "gebuehren": 0.0,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.585,
-   "wert": 151.62
+   "kurs": 0.5549999999999999,
+   "wert": 140.98
   },
   {
    "id": "p5e6e3e9b",
@@ -1301,8 +1249,8 @@
    "gebuehren": 0.0,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.038,
-   "wert": 21.33
+   "kurs": 0.042499999999999996,
+   "wert": 25.6
   },
   {
    "id": "pc0b8a31d",
@@ -1391,8 +1339,8 @@
    "gebuehren": 0.59,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.945,
-   "wert": 164.5
+   "kurs": 0.955,
+   "wert": 166.25
   },
   {
    "id": "pbb214a3d",
@@ -1573,13 +1521,109 @@
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
    "kurs": 0.755,
    "wert": 163.5
+  },
+  {
+   "id": "p39a90c40",
+   "inst": {
+    "id": "pm:polymarket:6280962:NEIN",
+    "art": "pm",
+    "venue": "polymarket",
+    "ergebnis": "NEIN",
+    "frage": "Will AMD (AMD) beat quarterly earnings?",
+    "schliesst": 1793743200.0,
+    "ref": {
+     "id": "6280962",
+     "token_ja": "28667309983486477841324218452222753547821383406894328184813649270383876607522",
+     "token_nein": "47543658061758683416152257986632074263058710348696327080499307718005597398586",
+     "tick": 0.01,
+     "condition": "0x44300056a50dcc00277b296ec93ff4a59657139a1964ac03b9e85b2488c2f619",
+     "gebuehr_rate": 0.05,
+     "gebuehr_exp": 1.0
+    },
+    "url": "https://polymarket.com/event/amd-quarterly-earnings-nongaap-eps-11-03-2026-1pt97"
+   },
+   "seite": "long",
+   "menge": 192.0,
+   "einstand": 0.8645942708333333,
+   "hebel": 1.0,
+   "marge": 0.0,
+   "eroeffnet": 1793546012.2292285,
+   "gebuehren": 1.12388,
+   "funding": 0.0,
+   "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
+   "kurs": 0.605,
+   "wert": 46.08
+  },
+  {
+   "id": "p091ba70e",
+   "inst": {
+    "id": "pm:polymarket:6507376:NEIN",
+    "art": "pm",
+    "venue": "polymarket",
+    "ergebnis": "NEIN",
+    "frage": "Will Bitcoin reach $85,000 in November?",
+    "schliesst": 1796101200.0,
+    "ref": {
+     "id": "6507376",
+     "token_ja": "47703148933091487941205251718650491553731562620578393932107026071939796007866",
+     "token_nein": "108999714778105563124935932721005147105838914473660452346280890329379884806071",
+     "tick": 0.01,
+     "condition": "0xc11c78e0e94e85b2cfd9996f7945a2da20a1e0a90b45bcdaa912b0b8da09b18e",
+     "gebuehr_rate": 0.07,
+     "gebuehr_exp": 1.0
+    },
+    "url": "https://polymarket.com/event/will-bitcoin-reach-85k-in-november-2026"
+   },
+   "seite": "long",
+   "menge": 275.0,
+   "einstand": 0.59,
+   "hebel": 1.0,
+   "marge": 0.0,
+   "eroeffnet": 1793546012.2292285,
+   "gebuehren": 4.65658,
+   "funding": 0.0,
+   "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
+   "kurs": 0.585,
+   "wert": 159.5
+  },
+  {
+   "id": "pd183209f",
+   "inst": {
+    "id": "pm:polymarket:6507375:NEIN",
+    "art": "pm",
+    "venue": "polymarket",
+    "ergebnis": "NEIN",
+    "frage": "Will Bitcoin reach $87,500 in November?",
+    "schliesst": 1796101200.0,
+    "ref": {
+     "id": "6507375",
+     "token_ja": "55011948401872951768555591751377678100478065061324407534950104437608732197849",
+     "token_nein": "27767239044215839228912817736925286536016004811932880027803458877260614785837",
+     "tick": 0.01,
+     "condition": "0xd1a5e6ad7a4153830f30d952909433c94b4767dca47112f5088630d7fd6523be",
+     "gebuehr_rate": 0.07,
+     "gebuehr_exp": 1.0
+    },
+    "url": "https://polymarket.com/event/will-bitcoin-reach-87pt5k-in-november-2026"
+   },
+   "seite": "long",
+   "menge": 219.0,
+   "einstand": 0.75,
+   "hebel": 1.0,
+   "marge": 0.0,
+   "eroeffnet": 1793546012.2292285,
+   "gebuehren": 2.87438,
+   "funding": 0.0,
+   "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
+   "kurs": 0.745,
+   "wert": 162.06
   }
  ],
- "realisiert": -430.3979699999998,
- "gebuehren": 108.40641999999997,
+ "realisiert": -582.6979699999998,
+ "gebuehren": 117.06125999999998,
  "funding": 0.0,
  "erstellt": 1793379225.5430336,
  "start_fx": 1.1157431109273288,
- "letzter_tick": 1793545111.5036325,
- "kontrolle_bis": 1793524425.8819175
+ "letzter_tick": 1793546012.2292285,
+ "kontrolle_bis": 1793545207.6860187
 }
