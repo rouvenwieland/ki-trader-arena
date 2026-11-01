@@ -905,8 +905,8 @@
    "gebuehren": 10.06282,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.008,
-   "wert": 12.82
+   "kurs": 0.0045000000000000005,
+   "wert": 7.33
   },
   {
    "id": "pf73842ce",
@@ -1207,8 +1207,8 @@
    "gebuehren": 3.27455,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.5585,
-   "wert": 125.49
+   "kurs": 0.5589999999999999,
+   "wert": 125.95
   },
   {
    "id": "pbb0a8271",
@@ -1736,6 +1736,6 @@
  "funding": 0.0,
  "erstellt": 1793379225.5430336,
  "start_fx": 1.1157431109273288,
- "letzter_tick": 1793517884.61457,
+ "letzter_tick": 1793518003.4133868,
  "kontrolle_bis": 1793513506.9660566
 }
