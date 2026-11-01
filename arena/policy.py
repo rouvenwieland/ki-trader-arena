@@ -27,7 +27,7 @@ def kategorie_aus_eintrag(e: dict) -> str:
 
 def kategorie_inst(inst: dict, seite: str = "long") -> str:
     k = themen.wette_kategorie(inst)
-    return k + (f":{seite}" if inst.get("art") == "perp" else "")
+    return k + (f":{seite}" if inst.get("art") == "perp" or (inst.get("art") == "stock" and seite == "short") else "")
 
 
 def bilanz(fid: str) -> dict[str, dict]:

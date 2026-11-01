@@ -26,14 +26,16 @@ def cluster_stand(pf: dict, prof: dict, equity: float) -> dict:
             "wetten_je_thema_pct": {t: round(100 * v / eq, 1) for t, v in je_thema.items()}, "thema_limit_pct": 100 * prof.get("max_thema_pct", 1)}
 
 
-def pruefe_eroeffnung(pf: dict, prof: dict, inst: dict, nominal: float, hebel: float, equity: float) -> str | None:
+def pruefe_eroeffnung(pf: dict, prof: dict, inst: dict, nominal: float, hebel: float, equity: float, seite: str = "long") -> str | None:
     """Gibt None zurück, wenn erlaubt, sonst den Ablehnungsgrund (deutsch)."""
     if hebel > prof["max_hebel"] + 1e-9:
         return f"Hebel {hebel} über dem Limit {prof['max_hebel']} dieses Risikoprofils"
     if hebel < 1:
         return "Hebel muss mindestens 1 sein"
-    if inst["art"] != "perp" and hebel != 1:
-        return "Hebel gibt es nur bei Perpetuals"
+    if inst["art"] == "stock" and hebel > config.load()["boerse"]["aktien_marge"]["max_hebel"] + 1e-9:
+        return f"Aktien: Wertpapierkredit höchstens {config.load()['boerse']['aktien_marge']['max_hebel']}× (Reg-T)"
+    if inst["art"] not in ("perp", "stock") and hebel != 1:
+        return "Hebel gibt es nur bei Perpetuals und Aktien (Wertpapierkredit)"
     eq = max(equity, 1e-9)
     gleiche = sum(p["einstand"] * p["menge"] for p in pf["positionen"] if p["inst"]["id"] == inst["id"])
     if (gleiche + nominal) / eq > prof["max_position_pct"] + 1e-9 and inst["art"] != "perp":
@@ -60,12 +62,9 @@ def pruefe_eroeffnung(pf: dict, prof: dict, inst: dict, nominal: float, hebel: f
         im_thema = sum(p["einstand"] * p["menge"] for p in pf["positionen"] if p["inst"]["art"] == "pm" and themen.thema(p["inst"]) == t)
         if (im_thema + nominal) / eq > prof["max_thema_pct"] + 1e-9:
             return f"Themen-Cluster „{t}“ würde {100 * (im_thema + nominal) / eq:.0f} % des Vermögens übersteigen (Limit {100 * prof['max_thema_pct']:.0f} %)"
+    from arena.exchange import portfolio
     einsatz = nominal / hebel
-    if inst["art"] == "perp":
-        gebunden = sum(p["marge"] for p in pf["positionen"] if p["inst"]["art"] == "perp") + sum(
-            p["einstand"] * p["menge"] for p in pf["positionen"] if p["inst"]["art"] != "perp")
-    else:
-        gebunden = sum(p["einstand"] * p["menge"] if p["inst"]["art"] != "perp" else p["marge"] for p in pf["positionen"])
+    gebunden = sum(portfolio.gebunden(p) for p in pf["positionen"])
     if (gebunden + einsatz) / eq > prof["max_gesamt_exposure_pct"] + 1e-9:
         return f"Gesamt-Exposure würde {100 * prof['max_gesamt_exposure_pct']:.0f} % des Vermögens übersteigen"
     if (pf["cash"] - einsatz) / eq < prof["min_cash_pct"] - 1e-9:

@@ -47,7 +47,8 @@ class Kontext:
                 name = iid.split(":", 1)[1]
                 return crypto.option_inst(name) if crypto.parse_option(name) else None
             if iid.startswith("stock:"):
-                return stocks.inst(iid.split(":", 1)[1])
+                sym = iid.split(":", 1)[1]
+                return stocks.inst(sym) if stocks.kurs(sym) else None  # jeder Ticker, den die Kursquelle kennt
             if iid.startswith("pm:"):
                 _, venue, rest = iid.split(":", 2)
                 ident, erg = rest.rsplit(":", 1)
@@ -80,8 +81,9 @@ class Kontext:
                       "start_usd": round(self.pf["start_kapital"], 2), "rendite_pct": round((eq / self.pf["start_kapital"] - 1) * 100, 2),
                       "gebuehren_gesamt_usd": round(self.pf["gebuehren"], 2), "limits": self.prof,
                       "policy_sperren": policy.sperren(self.fid), "cluster": risk.cluster_stand(self.pf, self.prof, eq), "positionen": pos,
-                      "vorgemerkte_auftraege": [{"auftrag_id": a["id"], "instrument": a["inst"]["id"], "aktion": a["aktion"], "betrag_usd": a.get("betrag_usd"),
-                                                 "menge": a.get("menge"), "gueltig_bis": a["gueltig_bis"]} for a in self.pf.get("auftraege", [])],
+                      "offene_auftraege": [{"auftrag_id": a["id"], "instrument": a["inst"]["id"], "typ": a.get("typ", "eroeffnung"), "aktion": a["aktion"],
+                                            "seite": a.get("seite"), "limit": a.get("limit_preis"), "stop": a.get("stop_preis"), "betrag_usd": a.get("betrag_usd"),
+                                            "menge": a.get("menge"), "gueltig_bis": a["gueltig_bis"]} for a in self.pf.get("auftraege", [])],
                       "us_boerse": "offen" if stocks.boerse_offen(self.jetzt) else "geschlossen"})
 
     def t_markt_suche(self, abfrage: str, plattform: str = "alle", **_) -> str:
@@ -148,6 +150,9 @@ class Kontext:
         if instrument_id.startswith("spot:"):
             k = crypto.spot_kerzen(instrument_id.split(":", 1)[1], 3600, 72)
             return _kurz([(int(c[0]), c[4]) for c in k[::3]])
+        if instrument_id.startswith("stock:"):
+            t = stocks.tagesschluesse(instrument_id.split(":", 1)[1], "6mo")
+            return _kurz({"tagesschluesse_usd": [(int(a), round(b, 4)) for a, b in t[-60:]]}) if t else "Kein Verlauf für diesen Ticker."
         return "Kein gespeicherter Verlauf."
 
     def t_optionen(self, basis: str = "BTC", **_) -> str:
@@ -258,7 +263,8 @@ class Kontext:
                 menge: float | None = None, seite: str = "long", hebel: float = 1, stop_loss: float | None = None,
                 take_profit: float | None = None, ausstiegsplan: str = "", wahrscheinlichkeit_ja: float | None = None,
                 invalidierung: str = "", staerkstes_gegenargument: str = "", risiko_usd: float | None = None,
-                gegenbegruendung: str = "", **_) -> str:
+                gegenbegruendung: str = "", auftragsart: str = "markt", limit_preis: float | None = None, stop_preis: float | None = None,
+                gueltigkeit: str = "tag", **_) -> str:
         if self.orders >= 8:
             return "Limit erreicht: höchstens 8 Orders je Runde."
         import math
@@ -301,9 +307,7 @@ class Kontext:
         self.orders += 1
         book, idx = self.mz.buch(inst)
         if book is None:
-            return self._ergebnis(did, {"ok": False, "grund": "Kein Orderbuch/Kurs verfügbar"})
-        if inst["art"] == "stock" and not book.asks and not book.bids:
-            return self._vormerken(did, inst, aktion, betrag_usd, menge, stop_loss, take_profit, ausstiegsplan, invalidierung)
+            return self._ergebnis(did, {"ok": False, "grund": "Kein Orderbuch/Kurs verfügbar (Ticker prüfen – Suche mit aktien_suche)"})
         if aktion == "kaufen":
             marks = {p["inst"]["id"]: self.mz.marke(p["inst"]) for p in self.pf["positionen"]}
             eq = portfolio.equity(self.pf, marks)
@@ -313,6 +317,15 @@ class Kontext:
                 betrag_usd, menge, abgelehnt = self._risikomanager(inst, book, eq, betrag_usd, menge, float(hebel), entscheidung, gegenbegruendung)
                 if abgelehnt:
                     return self._ergebnis(did, {"ok": False, "grund": abgelehnt})
+        art_auftrag = (auftragsart or "markt").lower()
+        geschlossen = not book.asks and not book.bids
+        if art_auftrag in ("limit", "stop") or (art_auftrag == "markt" and geschlossen and inst["art"] == "stock"):
+            return self._bedingt(did, inst, aktion, "eroeffnung" if art_auftrag == "markt" else art_auftrag, book, seite=seite, betrag_usd=betrag_usd,
+                                 menge=menge, hebel=float(hebel), limit_preis=limit_preis, stop_preis=stop_preis, gueltigkeit=gueltigkeit,
+                                 stop_loss=stop_loss, take_profit=take_profit, ausstiegsplan=ausstiegsplan, invalidierung=invalidierung)
+        if art_auftrag != "markt":
+            return self._ergebnis(did, {"ok": False, "grund": "auftragsart muss markt, limit oder stop sein"})
+        if aktion == "kaufen":
             r = engine.eroeffne(self.pf, self.prof, inst, book, seite=seite, qty=menge, usd=betrag_usd, hebel=float(hebel), equity=eq,
                                 stop_loss=stop_loss, take_profit=take_profit, ausstiegsplan=ausstiegsplan, entscheidung_id=did,
                                 ts=time.time(), index_preis=idx)
@@ -358,25 +371,55 @@ class Kontext:
             return (None if betrag_usd is None else betrag_usd * u["faktor"]), (None if menge is None else menge * u["faktor"]), None
         return betrag_usd, menge, None
 
-    def _vormerken(self, did, inst, aktion, betrag_usd, menge, stop_loss, take_profit, ausstiegsplan, invalidierung) -> str:
-        """Börse geschlossen: Auftrag zur Eröffnung vormerken. Der Wächter führt ihn beim ersten Tick nach Handelsbeginn gegen das dann gültige
-        Buch aus (Kurs, Spread, Impact, Limits zum Ausführungszeitpunkt); verfällt mit dem Handelsschluss dieses Tages."""
-        from datetime import datetime, timezone
-        auftraege = self.pf.setdefault("auftraege", [])
-        if len(auftraege) >= 5:
-            return self._ergebnis(did, {"ok": False, "grund": "Höchstens 5 vorgemerkte Aufträge – erst einen mit auftrag_loeschen entfernen"})
-        if aktion == "kaufen" and (betrag_usd is None) == (menge is None):
-            return self._ergebnis(did, {"ok": False, "grund": "Genau eines von betrag_usd oder menge angeben"})
+    def _bedingt(self, did, inst, aktion, typ, book, **kw) -> str:
+        """Limit-/Stop-Auftrag bzw. Markt-Auftrag zur Eröffnung (Börse zu) anlegen; ein sofort kreuzendes Limit wird gleich ausgeführt."""
+        from arena import auftraege
+        if typ == "limit" and not auftraege.gueltiger_preis(kw.get("limit_preis")):
+            return self._ergebnis(did, {"ok": False, "grund": "Limit-Auftrag braucht limit_preis > 0 (Preis des Instruments in USD; Wetten 0..1)"})
+        if typ == "stop" and not auftraege.gueltiger_preis(kw.get("stop_preis")):
+            return self._ergebnis(did, {"ok": False, "grund": "Stop-Auftrag braucht stop_preis > 0"})
         if aktion == "verkaufen" and not any(p["inst"]["id"] == inst["id"] for p in self.pf["positionen"]):
             return self._ergebnis(did, {"ok": False, "grund": "Keine offene Position in diesem Instrument"})
-        oeff = stocks.naechste_oeffnung(self.jetzt)
-        a = {"id": "a" + uuid.uuid4().hex[:6], "entscheidung_id": did, "inst": inst, "aktion": aktion, "betrag_usd": betrag_usd, "menge": menge,
-             "stop_loss": stop_loss, "take_profit": take_profit, "ausstiegsplan": ausstiegsplan, "invalidierung": invalidierung[:300] if invalidierung else "",
-             "erstellt": time.time(), "gueltig_bis": stocks.naechster_schluss(self.jetzt)}
-        auftraege.append(a)
-        r = {"ok": True, "aktion": "vorgemerkt", "auftrag_id": a["id"], "inst_id": inst["id"], "grund": "Börse geschlossen – Auftrag zur Eröffnung "
-             + datetime.fromtimestamp(oeff, timezone.utc).strftime("%a %d.%m. %H:%M UTC") + " vorgemerkt (Ausführung zum dann gültigen Kurs, Limits gelten dann)"}
-        return self._ergebnis(did, r)
+        if len(self.pf.get("auftraege", [])) >= auftraege.MAX_OFFEN:
+            return self._ergebnis(did, {"ok": False, "grund": f"Höchstens {auftraege.MAX_OFFEN} offene Aufträge – erst einen mit auftrag_loeschen entfernen"})
+        vorlaeufig = {"typ": typ, "aktion": aktion, "seite": kw.get("seite", "long"), "inst": inst, "limit_preis": kw.get("limit_preis"),
+                      "stop_preis": kw.get("stop_preis"), "menge": kw.get("menge")}
+        kauf = auftraege.kaufseite(vorlaeufig, self.pf)
+        if typ == "stop" and auftraege.sofort_ausfuehrbar(vorlaeufig, kauf, book):
+            return self._ergebnis(did, {"ok": False, "grund": "Stop-Preis ist schon erreicht – nutze eine Marktorder"})
+        a = auftraege.neu(self.pf, did, inst, aktion, typ, jetzt=time.time(), **kw)
+        if typ == "limit" and auftraege.sofort_ausfuehrbar(a, kauf, book):
+            fb, slip = auftraege.fuellbuch(a, kauf, book, None)
+            self.pf["auftraege"] = [x for x in self.pf["auftraege"] if x["id"] != a["id"]]
+            return self._ergebnis(did, {k: v for k, v in auftraege.ausfuehren(self.pf, self.prof, a, fb, slip, self.mz, time.time()).items()
+                                        if k != "entscheidung_id"})
+        from datetime import datetime, timezone
+        bis = datetime.fromtimestamp(a["gueltig_bis"], timezone.utc).strftime("%d.%m. %H:%M UTC")
+        text = {"eroeffnung": "Börse geschlossen – Auftrag zur Eröffnung vorgemerkt", "limit": f"Limit-Auftrag @ {a['limit_preis']} aktiv",
+                "stop": f"Stop-Auftrag @ {a['stop_preis']} aktiv"}[typ]
+        return self._ergebnis(did, {"ok": True, "aktion": "vorgemerkt", "auftrag_id": a["id"], "inst_id": inst["id"], "auftragstyp": typ,
+                                    "grund": f"{text}, gültig bis {bis}; Ausführung im 15-min-Takt zum dann gültigen Kurs (Limits gelten dann)"})
+
+    def t_aktien_suche(self, abfrage: str, **_) -> str:
+        """Ticker-Suche weltweit (Aktien, ETFs) – Ergebnis direkt als instrument_id nutzbar."""
+        return _kurz(stocks.suche(abfrage, 10) or "Keine Treffer.")
+
+    def t_aktie(self, instrument_id: str, **_) -> str:
+        """Kurs (USD und Originalwährung), Börse, Handelszeit, Tagesveränderung, 1-Jahres-Spanne, Liquidität (Spread) eines Aktien-/ETF-Tickers."""
+        sym = instrument_id.split(":", 1)[1] if instrument_id.startswith("stock:") else instrument_id
+        k = stocks.kurs(sym)
+        if not k:
+            return f"Kein Kurs für {sym} (Ticker prüfen, z. B. mit aktien_suche)."
+        tage = stocks.tagesschluesse(sym, "1y")
+        vol, sigma = stocks.tagesvolumen_sigma(sym)
+        z = [c for _, c in tage]
+        return _kurz({"instrument_id": f"stock:{sym.upper()}", "kurs_usd": round(k["preis"], 4), "waehrung": k["waehrung"], "kurs_lokal": k["preis_lokal"],
+                      "boerse": k["boerse"], "offen": k["offen"], "aenderung_pct": k["aenderung_pct"],
+                      "spanne_1j_usd": [round(min(z), 2), round(max(z), 2)] if z else None,
+                      "rendite_1j_pct": round((z[-1] / z[0] - 1) * 100, 1) if len(z) > 1 else None,
+                      "tagesvolumen_usd": round(vol) if vol else None, "vola_tag_pct": round(100 * sigma, 2) if sigma else None,
+                      "halber_spread_bp": round(stocks.halb_spread(vol) * 1e4, 1),
+                      "naechste_eroeffnung": stocks.naechste_oeffnung_symbol(sym) if not k["offen"] else None})
 
     def t_auftrag_loeschen(self, auftrag_id: str, **_) -> str:
         vorher = len(self.pf.get("auftraege", []))
@@ -435,25 +478,34 @@ class Kontext:
                          ["markt_id", "abrechnung", "status_quo", "basisrate", "p_blind", "p_ja", "p_nein", "gegenargument", "begruendung"]), "fn": self.t_wahrscheinlichkeit},
             {"name": "positionsgroesse", "beschreibung": "Größenempfehlung vor einer Order: Wettmärkte per Kelly inkl. Gebühr, gemeinsam mit deinen offenen Wetten optimiert, mal Bruchteil deines Profils (halbiert, wenn du bisher schlechter als der Markt geschätzt hast); Krypto/Perps/Aktien per Volatilitätsziel (GARCH) mit Stop-Vorschlag.",
              "schema": s({"instrument_id": str_, "p_ja": {"type": "number", "description": "Wettmärkte: deine P(JA); sonst deine letzte festgehaltene Schätzung"}}, ["instrument_id"]), "fn": self.t_positionsgroesse},
-            {"name": "auftrag_loeschen", "beschreibung": "Löscht einen bei geschlossener Börse vorgemerkten Aktien-/ETF-Auftrag (IDs in „portfolio“).",
+            {"name": "aktien_suche", "beschreibung": "Sucht Aktien/ETFs weltweit nach Name oder Stichwort (Yahoo) und liefert handelbare IDs wie stock:RHM.DE.",
+             "schema": s({"abfrage": str_}, ["abfrage"]), "fn": self.t_aktien_suche},
+            {"name": "aktie", "beschreibung": "Details zu einem beliebigen Aktien-/ETF-Ticker: Kurs in USD und Originalwährung, Börse/Handelszeit, Tagesveränderung, 1-Jahres-Spanne, Volumen, Vola, Spread.",
+             "schema": s({"instrument_id": str_}, ["instrument_id"]), "fn": self.t_aktie},
+            {"name": "auftrag_loeschen", "beschreibung": "Löscht einen offenen Auftrag (Limit, Stop oder Eröffnung; IDs in „portfolio“).",
              "schema": s({"auftrag_id": str_}, ["auftrag_id"]), "fn": self.t_auftrag_loeschen},
             {"name": "notizbuch_schreiben", "beschreibung": "Schreibe in dein Notizbuch (bleibt dir für künftige Runden erhalten): typ = these | lektion | beobachtung | regel.",
              "schema": s({"typ": {"type": "string", "enum": ["these", "lektion", "beobachtung", "regel"]}, "text": str_,
                           "wichtigkeit": {"type": "number", "description": "1–10 (Standard: Beobachtung 3, These 5, Lektion 7, Regel 8); bestimmt, wie lange die Notiz vorgelegt wird"},
                           "gueltig_tage": {"type": "number", "description": "optional: nach so vielen Tagen nicht mehr vorlegen (z. B. These bis zur Abrechnung)"}},
                          ["typ", "text"]), "fn": self.t_notizbuch_schreiben},
-            {"name": "order", "beschreibung": "Order gegen das echte Orderbuch (Papierhandel). kaufen = Position eröffnen/aufstocken (bei Perps seite long|short, hebel), verkaufen = bestehende Position (ganz oder teilweise per menge) schließen. Gebühren, Spread, Tiefe und Slippage werden real abgezogen. Wettmärkte: kaufe JA- oder NEIN-Anteile (…:JA / …:NEIN). Aktien/ETFs (stock:SYMBOL, jeder US-Ticker): bei geschlossener Börse wird die Order als Auftrag zur Eröffnung vorgemerkt.",
+            {"name": "order", "beschreibung": "Order gegen das echte Orderbuch (Papierhandel). kaufen = Position eröffnen/aufstocken (bei Perps seite long|short, hebel), verkaufen = bestehende Position (ganz oder teilweise per menge) schließen. Gebühren, Spread, Tiefe und Slippage werden real abgezogen. Wettmärkte: kaufe JA- oder NEIN-Anteile (…:JA / …:NEIN). Aktien/ETFs: stock:SYMBOL für JEDEN Yahoo-Ticker weltweit (z. B. stock:PLTR, stock:RHM.DE, stock:7203.T; Kurse in USD umgerechnet), long oder short (Leerverkauf), Wertpapierkredit bis hebel 2. Ordertypen: markt, limit, stop mit gueltigkeit tag/gtc/Datum; offene Aufträge stehen in portfolio und werden alle 15 min geprüft.",
              "schema": s({"instrument_id": str_, "aktion": {"type": "string", "enum": ["kaufen", "verkaufen"]},
                           "begruendung": {"type": "string", "description": "These, stärkstes Gegenargument, Kostenrechnung"},
                           "zuversicht": {"type": "number", "description": "0..1 – Skala: 0,9+ unverkennbar, 0,7–0,89 solide, 0,4–0,69 gemischt, < 0,4 kein Vorteil (dann nicht kaufen)"},
                           "betrag_usd": {"type": "number", "description": "Einsatz in USD (bei Perps: Nominal)"}, "menge": num_,
-                          "seite": {"type": "string", "enum": ["long", "short"]}, "hebel": num_,
+                          "seite": {"type": "string", "enum": ["long", "short"], "description": "short = Leerverkauf (Perps und Aktien/ETFs)"},
+                          "hebel": {"type": "number", "description": "Perps bis Profil-Limit; Aktien bis 2 (Wertpapierkredit, Zinsen); sonst 1"},
                           "stop_loss": {"type": "number", "description": "Preis des Instruments"}, "take_profit": num_,
                           "ausstiegsplan": str_, "wahrscheinlichkeit_ja": {"type": "number", "description": "Wettmärkte (beim Kaufen Pflicht): deine P(JA)"},
                           "invalidierung": {"type": "string", "description": "Kaufen: konkretes, beobachtbares Signal, bei dem die These falsch ist"},
                           "staerkstes_gegenargument": {"type": "string", "description": "Kaufen: ein Satz"},
                           "risiko_usd": {"type": "number", "description": "Kaufen: Verlust bis Stop-Loss bzw. bei Wetten bis 0"},
-                          "gegenbegruendung": {"type": "string", "description": "Nur nach Ablehnung durch den Risikomanager: warum die Order trotzdem richtig ist"}},
+                          "gegenbegruendung": {"type": "string", "description": "Nur nach Ablehnung durch den Risikomanager: warum die Order trotzdem richtig ist"},
+                          "auftragsart": {"type": "string", "enum": ["markt", "limit", "stop"], "description": "markt = sofort (Aktie bei geschlossener Börse: zur Eröffnung); limit = nur zum limit_preis oder besser; stop = sobald stop_preis erreicht (Ausbruch/Absicherung)"},
+                          "limit_preis": {"type": "number", "description": "Bei auftragsart limit: Kauf höchstens / Verkauf mindestens zu diesem Preis"},
+                          "stop_preis": {"type": "number", "description": "Bei auftragsart stop: Auslösepreis (Kauf-Stop über, Verkauf-Stop unter dem Kurs)"},
+                          "gueltigkeit": {"type": "string", "description": "tag (Standard: bis Handelsschluss bzw. 24 h), gtc (bis auf Widerruf, max. 30 Tage) oder Datum/Zeit ISO-8601"}},
                          ["instrument_id", "aktion", "begruendung", "zuversicht"]), "fn": self.t_order},
         ]
 

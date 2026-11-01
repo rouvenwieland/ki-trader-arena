@@ -17,11 +17,25 @@ def neue_id() -> str:
     return "p" + uuid.uuid4().hex[:8]
 
 
+def marginal(art: str, seite: str = "long", hebel: float = 1.0) -> bool:
+    """Positionen auf Marge: Perps immer, Aktien bei Leerverkauf oder Wertpapierkredit (Hebel > 1, Reg-T)."""
+    return art == "perp" or (art == "stock" and (seite == "short" or hebel > 1 + 1e-9))
+
+
+def ist_marginal(pos: dict) -> bool:
+    return pos["inst"]["art"] == "perp" or bool(pos.get("marginal"))
+
+
+def gebunden(pos: dict) -> float:
+    """Gebundenes Kapital: Marge bei Margin-Positionen, sonst Einstand × Menge."""
+    return pos["marge"] if ist_marginal(pos) else pos["einstand"] * pos["menge"]
+
+
 def pos_wert(pos: dict, bid: float | None, mark: float | None = None) -> float:
     """Liquidationswert einer Position: Long-Bestände zum Geldkurs (was man real bekäme);
     Perps: Marge + unrealisierter Gewinn zum Markpreis."""
     inst = pos["inst"]
-    if inst["art"] == "perp":
+    if ist_marginal(pos):
         px = mark if mark is not None else bid
         if px is None:
             return pos["marge"]

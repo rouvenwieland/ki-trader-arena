@@ -250,3 +250,16 @@ keine Order möglich; (3) Rundenauftrag und Marktlage drehten sich fast nur um W
 * **Kostenanzeige:** Unter „DeepSeek“ stand „haiku-5-5“ – das war eine Haiku-Reflexion (Lektion nach einer abgerechneten DeepSeek-Position), die unter dem
   Fonds gebucht wurde, nicht das Handelsmodell. Haiku-Hilfsaufrufe für Liga-Fonds laufen jetzt auf dem eigenen Konto `lernhilfe_liga`
   (Altbuchungen werden in der Anzeige umgeschlüsselt) und zählen nicht als API-Kosten des Liga-Fonds; die Kostentabelle zeigt „handelt mit <Modell>“.
+
+## Nachtrag 01.11. (2): keine Einschränkung bei Aktien, echte Ordertypen
+* **Jeder Ticker weltweit:** `stock:SYMBOL` für jeden Yahoo-Ticker (USA, Europa, Asien, OTC, ETFs). Kurse werden zum aktuellen Devisenkurs in USD
+  umgerechnet (Pence/Cent beachtet); offen ist ein Wert in der regulären Handelszeit *seiner* Börse. Werkzeuge `aktien_suche` (Name → Ticker) und
+  `aktie` (Kurs, Börse, Spanne, Volumen, Spread). Die 18 Werte in der Marktlage sind nur noch eine Beobachtungsliste, keine Grenze.
+* **Realistische Kosten statt Verbot:** Halb-Spread nach Liquidität (Mega-Caps ≈ 1 bp, Nebenwerte/OTC bis 2,5 %) plus Square-Root-Impact.
+* **Leerverkauf und Wertpapierkredit** bei Aktien wie bei einem Broker: Short mit voller Sicherheit (Leihgebühr 0,5 % p. a.), Long auf Kredit bis 2×
+  (Reg-T, Zins 6,5 % p. a. auf den geliehenen Teil), Margin Call bei Wartungsmarge 25 % (long) / 30 % (short). Risikoprofile gelten weiter für alle
+  Anlageklassen gleich (z. B. „Vorsichtig“ ohne Hebel) – das ist das Profil des Fonds, keine Aktienregel.
+* **Ordertypen für alle Märkte:** `auftragsart` markt | limit | stop, `gueltigkeit` tag | gtc (≤ 30 Tage) | Datum; höchstens 10 offene Aufträge je Fonds.
+  Limit-Füllung, wenn die Gegenseite das Limit kreuzt oder der Kurs mindestens 5 bp *durch* das Limit gehandelt hat (bloßes Berühren reicht nicht –
+  Warteschlange), dann genau zum Limit; Stop zum Stop-Preis plus Impact bzw. bei Kurslücke zum schlechteren Buch. Prüfung alle 15 min gegen Buch und
+  Intraday-Hoch/Tief seit der letzten Prüfung (Aktien 5-min-, Krypto 1-min-Kerzen). Kein Kapital reserviert; Limits und Cash gelten bei Ausführung.

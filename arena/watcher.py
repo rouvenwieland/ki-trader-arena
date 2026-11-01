@@ -74,34 +74,9 @@ def exakte_funding_raten(pf: dict, raten_8h: dict, seit: float, jetzt: float) ->
 
 
 def fuehre_auftraege_aus(pf: dict, prof: dict, mz: Marktzugriff, jetzt: float) -> list[dict]:
-    """Bei geschlossener Börse vorgemerkte Aktien-/ETF-Aufträge: beim ersten Tick mit offenem Buch gegen das dann gültige Buch ausführen
-    (Limits, Cash und Impact zum Ausführungszeitpunkt); nach Handelsschluss des Ziel-Tages verfallen sie."""
-    log, rest = [], []
-    for a in pf.get("auftraege", []):
-        if jetzt > a["gueltig_bis"]:
-            log.append({"ok": False, "ts": jetzt, "aktion": "auftrag_verfallen", "fonds_id": pf["fonds_id"], "inst_id": a["inst"]["id"],
-                        "entscheidung_id": a["entscheidung_id"], "grund": "Auftrag zur Eröffnung verfallen"})
-            continue
-        book, _ = mz.buch(a["inst"])
-        if book is None or (not book.asks and not book.bids):
-            rest.append(a)
-            continue
-        marks = {p["inst"]["id"]: mz.marke(p["inst"]) for p in pf["positionen"]}
-        eq = portfolio.equity(pf, marks)
-        if a["aktion"] == "kaufen":
-            r = engine.eroeffne(pf, prof, a["inst"], book, qty=a.get("menge"), usd=a.get("betrag_usd"), equity=eq, stop_loss=a.get("stop_loss"),
-                                take_profit=a.get("take_profit"), ausstiegsplan=a.get("ausstiegsplan", ""), entscheidung_id=a["entscheidung_id"], ts=jetzt)
-            if r.get("ok") and a.get("invalidierung"):
-                pos = next((p for p in pf["positionen"] if p["id"] == r["position_id"]), None)
-                if pos is not None:
-                    pos["invalidierung"] = a["invalidierung"]
-        else:
-            pos = next((p for p in pf["positionen"] if p["inst"]["id"] == a["inst"]["id"]), None)
-            r = engine.schliesse(pf, pos, book, qty=a.get("menge"), grund="Auftrag zur Eröffnung", ts=jetzt) if pos else \
-                {"ok": False, "grund": "Position nicht mehr vorhanden"}
-        log.append({**r, "ts": jetzt, "fonds_id": pf["fonds_id"], "entscheidung_id": a["entscheidung_id"], "auftrag": a["id"]})
-    pf["auftraege"] = rest
-    return log
+    """Offene Aufträge (Eröffnung, Limit, Stop) prüfen und ausführen – Logik in arena/auftraege.py."""
+    from arena import auftraege
+    return auftraege.pruefe(pf, prof, mz, jetzt)
 
 
 def verarbeite_portfolio(pf: dict, mz: Marktzugriff, funding_raten: dict, jetzt: float) -> list[dict]:
@@ -111,12 +86,13 @@ def verarbeite_portfolio(pf: dict, mz: Marktzugriff, funding_raten: dict, jetzt:
     stunden = max(0.0, min((jetzt - seit) / 3600, 6.0))
     if stunden > 0:
         log += engine.funding_buchen(pf, exakte_funding_raten(pf, funding_raten, jetzt - stunden * 3600, jetzt), stunden, jetzt)
+        log += engine.finanzierung_buchen(pf, stunden, jetzt)
     extreme, marks = {}, {}
     for pos in pf["positionen"]:
         iid = pos["inst"]["id"]
         m = mz.marke(pos["inst"])
         marks[iid] = m.get("mark") if m.get("mark") is not None else m.get("bid")
-        if pos["inst"]["art"] in ("spot", "perp"):
+        if pos["inst"]["art"] in ("spot", "perp", "stock"):
             ex = mz.extreme(pos["inst"], max(min(seit, jetzt), pos.get("eroeffnet", 0)))  # Dochte vor der Eröffnung zählen nicht
             if ex:
                 extreme[iid] = ex

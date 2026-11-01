@@ -569,3 +569,112 @@ def test_liga_kosten_zeigen_kein_claude_modell():
     store.anhaengen("budget_log.jsonl", {"ts": JETZT, "fonds": "claude_mittel", "modell": "claude-sonnet-5-5", "zweck": "runde", "usd": 0.1})
     k = site.kosten_je_fonds(1.0, JETZT)
     assert "liga_deepseek" not in k and k["lernhilfe_liga"]["aufrufe"] == 1 and "claude-sonnet-5-5" in k["claude_mittel"]["modelle"]
+
+
+# ---------------------------------------------------------------- Aktien: Leerverkauf, Wertpapierkredit
+def _aktie(sym="PLTR"):
+    return {"id": f"stock:{sym}", "art": "stock", "venue": "yahoo", "symbol": sym}
+
+
+def test_aktien_leerverkauf_und_kredit():
+    from arena.exchange import engine, portfolio, risk
+    from arena.exchange.book import Book
+    prof = risk.profil("aggressiv")
+    pf = portfolio.neu("x", 10000)
+    b = lambda px: Book([(px - 0.05, 1e6)], [(px + 0.05, 1e6)], mark=px)  # noqa: E731
+    r = engine.eroeffne(pf, prof, _aktie(), b(100), seite="short", usd=2000, hebel=1, equity=10000)
+    pos = pf["positionen"][0]
+    assert r["ok"] and pos["marginal"] and pos["marge"] == pytest.approx(r["nominal"]) and pos["liq_preis"] > 150
+    assert portfolio.pos_wert(pos, 89.95, 90.0) == pytest.approx(pos["marge"] + (pos["einstand"] - 90) * pos["menge"])  # Kurs fällt → Gewinn
+    engine.finanzierung_buchen(pf, 24 * 365, pos["eroeffnet"] + 1e9)
+    assert pos["funding"] == pytest.approx(-r["nominal"] * 0.005, rel=1e-3)  # Leihgebühr 0,5 % p. a.
+    c = engine.schliesse(pf, pos, b(90))
+    assert c["ok"] and c["brutto_pnl"] > 0 and not pf["positionen"]
+    # Wertpapierkredit: höchstens 2×, Kreditzins nur auf den geliehenen Teil
+    assert "höchstens 2" in engine.eroeffne(pf, prof, _aktie(), b(100), usd=3000, hebel=3, equity=10000)["grund"]
+    r2 = engine.eroeffne(pf, prof, _aktie("NVDA"), b(100), usd=3000, hebel=2, equity=10000)
+    p2 = pf["positionen"][0]
+    assert r2["ok"] and p2["marge"] == pytest.approx(r2["nominal"] / 2)
+    # Margin Call: Kurs halbiert → Zwangsglattstellung
+    log = engine.pruefe_liquidation(pf, {"stock:NVDA": (50.0, 100.0)}, {"stock:NVDA": 50.0})
+    assert log and log[0]["aktion"] == "liquidiert" and not pf["positionen"]
+
+
+def test_kein_hebel_fuer_vorsichtig_aber_leerverkauf_gilt_fuer_alle_aktien():
+    from arena.exchange import engine, portfolio, risk
+    from arena.exchange.book import Book
+    pf = portfolio.neu("x", 10000)
+    bk = Book([(9.9, 1e6)], [(10.1, 1e6)], mark=10.0)
+    assert "Hebel" in engine.eroeffne(pf, risk.profil("vorsichtig"), _aktie("RHM.DE"), bk, usd=500, hebel=2, equity=10000)["grund"]
+    assert engine.eroeffne(pf, risk.profil("vorsichtig"), _aktie("RHM.DE"), bk, seite="short", usd=500, equity=10000)["ok"]
+
+
+# ---------------------------------------------------------------- Limit- und Stop-Aufträge
+class TickMZ:
+    def __init__(self):
+        self.ask, self.bid, self.ex = 100.0, 99.9, None
+
+    def buch(self, inst):
+        from arena.exchange.book import Book
+        return Book([(self.bid, 1e4)], [(self.ask, 1e4)], mark=(self.ask + self.bid) / 2), None
+
+    def marke(self, inst):
+        return {"bid": self.bid, "ask": self.ask, "mark": (self.ask + self.bid) / 2}
+
+    def extreme(self, inst, seit):
+        return self.ex
+
+
+def _order_ctx(monkeypatch):
+    from arena import funds
+    from arena.agent.tools import Kontext
+    from arena.exchange import impact, portfolio
+    monkeypatch.setattr(impact, "markt_kennzahlen", lambda inst: (None, None))
+    d = funds.claude_fonds()[2]
+    pf = portfolio.neu(d["id"], 10000)
+    mz = TickMZ()
+    ctx = Kontext(d, pf, {"ts": JETZT, "wetten": [], "pm_index": {}}, mz, "t", [], JETZT)
+    ctx.aufloesen = lambda iid: {"id": iid, "art": "spot", "venue": "coinbase", "symbol": "BTC-USD"}
+    return d, pf, mz, ctx
+
+
+PF = dict(begruendung="x" * 60, zuversicht=0.7, ausstiegsplan="Stop 80, Ziel 130", invalidierung="Tagesschluss unter 80",
+          staerkstes_gegenargument="Momentum dreht, Funding hoch", risiko_usd=100)
+
+
+def test_limit_kauf_wird_bei_durchhandel_genau_zum_limit_gefuellt(monkeypatch):
+    from arena import funds, watcher
+    d, pf, mz, ctx = _order_ctx(monkeypatch)
+    r = ctx.t_order("spot:BTC-USD", "kaufen", betrag_usd=950, auftragsart="limit", limit_preis=95.0, gueltigkeit="gtc", **PF)
+    assert "Limit-Auftrag @ 95.0 aktiv" in r and len(pf["auftraege"]) == 1
+    mz.ex = (95.0, 101.0)  # nur berührt → keine Füllung (Warteschlange)
+    assert watcher.fuehre_auftraege_aus(pf, funds.risikoprofil(d), mz, JETZT + 900) == []
+    mz.ask, mz.bid, mz.ex = 97.0, 96.9, (94.5, 99.0)  # durchgehandelt
+    log = watcher.fuehre_auftraege_aus(pf, funds.risikoprofil(d), mz, JETZT + 1800)
+    assert log[0]["ok"] and log[0]["preis"] == pytest.approx(95.0) and not pf["auftraege"]
+    assert pf["positionen"][0]["invalidierung"].startswith("Tagesschluss")
+
+
+def test_limit_sofort_kreuzend_und_stop_regeln(monkeypatch):
+    from arena import funds, watcher
+    d, pf, mz, ctx = _order_ctx(monkeypatch)
+    r = ctx.t_order("spot:BTC-USD", "kaufen", betrag_usd=500, auftragsart="limit", limit_preis=101.0, **PF)
+    assert '"ok": true' in r and pf["positionen"] and not pf.get("auftraege")  # sofort gegen das Buch, nicht über 101
+    assert pf["positionen"][0]["einstand"] <= 101.0
+    assert "schon erreicht" in ctx.t_order("spot:BTC-USD", "verkaufen", auftragsart="stop", stop_preis=100.5, **PF)
+    r = ctx.t_order("spot:BTC-USD", "verkaufen", auftragsart="stop", stop_preis=90.0, **PF)
+    assert "Stop-Auftrag @ 90.0 aktiv" in r
+    mz.ask, mz.bid, mz.ex = 92.0, 91.9, (89.0, 95.0)
+    log = watcher.fuehre_auftraege_aus(pf, funds.risikoprofil(d), mz, JETZT + 900)
+    assert log[0]["ok"] and log[0]["preis"] < 90.0 and not pf["positionen"]  # Stop füllt zum Stop-Preis abzüglich Slippage
+
+
+def test_auftrag_verfaellt_und_loeschen(monkeypatch):
+    from arena import funds, watcher
+    d, pf, mz, ctx = _order_ctx(monkeypatch)
+    ctx.t_order("spot:BTC-USD", "kaufen", betrag_usd=500, auftragsart="limit", limit_preis=50.0, gueltigkeit="tag", **PF)
+    ctx.t_order("spot:BTC-USD", "kaufen", betrag_usd=500, auftragsart="stop", stop_preis=120.0, gueltigkeit="gtc", **PF)
+    assert len(pf["auftraege"]) == 2
+    log = watcher.fuehre_auftraege_aus(pf, funds.risikoprofil(d), mz, time_jetzt := __import__("time").time() + 2 * 86400)
+    assert any(x["aktion"] == "auftrag_verfallen" for x in log) and len(pf["auftraege"]) == 1
+    assert ctx.t_auftrag_loeschen(pf["auftraege"][0]["id"]) == "Auftrag gelöscht." and not pf["auftraege"] and time_jetzt

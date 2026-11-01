@@ -108,7 +108,14 @@
       "wartungsmarge": 0.005,
       "liquidationsgebuehr": 0.005
     },
-    "predictit_tiefe_vertraege": 100
+    "predictit_tiefe_vertraege": 100,
+    "aktien_marge": {
+      "max_hebel": 2,
+      "wartung_long": 0.25,
+      "wartung_short": 0.3,
+      "kreditzins_pa": 0.065,
+      "leihgebuehr_pa": 0.005
+    }
   },
   "ereignisse": {
     "kurssprung_pct": 3.0,

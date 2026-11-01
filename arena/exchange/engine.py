@@ -26,16 +26,16 @@ def eroeffne(pf: dict, prof: dict, inst: dict, book: Book, *, seite: str = "long
              usd: float | None = None, hebel: float = 1.0, equity: float | None = None,
              stop_loss: float | None = None, take_profit: float | None = None,
              ausstiegsplan: str = "", entscheidung_id: str | None = None, ts: float | None = None,
-             index_preis: float | None = None) -> dict:
-    """Kauft (bzw. eröffnet Perp long/short) gegen das Orderbuch."""
+             index_preis: float | None = None, slippage_bps: float | None = None) -> dict:
+    """Kauft (bzw. eröffnet long/short) gegen das Orderbuch. slippage_bps überschreibt die Standard-Slippage (Limit-Füllung exakt am Limit)."""
     ts = ts or time.time()
     art = inst["art"]
     if art not in ARTEN:
         return _ablehnung(f"Unbekannte Instrumentenart {art}")
     if seite not in ("long", "short"):
         return _ablehnung("seite muss long oder short sein")
-    if seite == "short" and art != "perp":
-        return _ablehnung("Leerverkäufe gibt es nur bei Perpetuals")
+    if seite == "short" and art not in ("perp", "stock"):
+        return _ablehnung("Leerverkäufe gibt es bei Perpetuals und Aktien/ETFs")
     if (qty is None) == (usd is None):
         return _ablehnung("Genau eines von qty oder usd angeben")
     for name, wert in (("qty", qty), ("usd", usd), ("hebel", hebel), ("stop_loss", stop_loss), ("take_profit", take_profit)):
@@ -47,7 +47,7 @@ def eroeffne(pf: dict, prof: dict, inst: dict, book: Book, *, seite: str = "long
     levels = book.asks if kaufen else book.bids
     if not levels:
         return _ablehnung("Kein Orderbuch auf dieser Seite (kein Handel möglich)")
-    slip = _slip(art)
+    slip = _slip(art) if slippage_bps is None else slippage_bps
     gebuehr_fn = lambda p, q: fees.gebuehr(inst, p, q, index_preis)  # noqa: E731
     if usd is not None:
         if art == "perp":
@@ -72,11 +72,11 @@ def eroeffne(pf: dict, prof: dict, inst: dict, book: Book, *, seite: str = "long
         return _ablehnung(f"Preis {f.vwap:.4f} außerhalb (0,1)")
     nominal = f.kosten
     fee = gebuehr_fn(f.vwap, f.qty)
-    eq = equity if equity is not None else pf["cash"] + sum(p["marge"] if p["inst"]["art"] == "perp" else p["einstand"] * p["menge"] for p in pf["positionen"])
+    eq = equity if equity is not None else pf["cash"] + sum(portfolio.gebunden(p) for p in pf["positionen"])
     for lvl, name in ((stop_loss, "Stop-Loss"), (take_profit, "Take-Profit")):
         if lvl is not None and ((name == "Stop-Loss") == (seite == "long")) == (lvl >= f.vwap):
             return _ablehnung(f"{name} {lvl} liegt auf der falschen Seite des Einstiegs {f.vwap:.4f}")
-    grund = risk.pruefe_eroeffnung(pf, prof, inst, nominal, hebel, eq)
+    grund = risk.pruefe_eroeffnung(pf, prof, inst, nominal, hebel, eq, seite)
     if grund:
         return _ablehnung(grund)
     if inst.get("venue") == "predictit":
@@ -84,7 +84,7 @@ def eroeffne(pf: dict, prof: dict, inst: dict, book: Book, *, seite: str = "long
         bestand = sum(p["einstand"] * p["menge"] for p in pf["positionen"] if p["inst"]["id"] == inst["id"])
         if bestand + nominal > cap:
             return _ablehnung(f"PredictIt-Positionslimit {cap} USD je Vertrag")
-    perp = art == "perp"
+    perp = portfolio.marginal(art, seite, hebel)  # Perps und Aktien auf Marge (Leerverkauf/Kredit) werden gleich verbucht
     marge = nominal / hebel if perp else 0.0
     braucht = (marge if perp else nominal) + fee
     if braucht > pf["cash"] + 1e-9:
@@ -103,6 +103,8 @@ def eroeffne(pf: dict, prof: dict, inst: dict, book: Book, *, seite: str = "long
     else:
         pos = {"id": portfolio.neue_id(), "inst": inst, "seite": seite, "menge": f.qty, "einstand": f.vwap,
                "hebel": hebel, "marge": marge, "eroeffnet": ts, "gebuehren": fee, "funding": 0.0}
+        if perp and art != "perp":
+            pos["marginal"] = True
         pf["positionen"].append(pos)
     if stop_loss is not None:
         pos["stop_loss"] = stop_loss
@@ -113,6 +115,9 @@ def eroeffne(pf: dict, prof: dict, inst: dict, book: Book, *, seite: str = "long
     if entscheidung_id:
         pos["entscheidung_id"] = entscheidung_id
     if perp:
+        if art == "stock":
+            am = config.load()["boerse"]["aktien_marge"]
+            mm = am["wartung_long"] if seite == "long" else am["wartung_short"]
         pos["liq_preis"] = pos["einstand"] * (((1 - 1 / hebel) / (1 - mm)) if seite == "long" else ((1 + 1 / hebel) / (1 + mm)))
     pf["cash"] -= braucht
     pf["gebuehren"] += fee
@@ -125,12 +130,12 @@ def eroeffne(pf: dict, prof: dict, inst: dict, book: Book, *, seite: str = "long
 
 
 def schliesse(pf: dict, pos: dict, book: Book, *, qty: float | None = None, grund: str = "manuell",
-              ts: float | None = None, index_preis: float | None = None) -> dict:
+              ts: float | None = None, index_preis: float | None = None, slippage_bps: float | None = None) -> dict:
     """Schließt (teilweise) gegen das Orderbuch. Bei dünner Tiefe bleibt ein Rest offen."""
     ts = ts or time.time()
     inst = pos["inst"]
     art = inst["art"]
-    perp = art == "perp"
+    perp = portfolio.ist_marginal(pos)
     verkaufen = pos["seite"] == "long"
     levels = book.bids if verkaufen else book.asks
     if not levels:
@@ -138,7 +143,7 @@ def schliesse(pf: dict, pos: dict, book: Book, *, qty: float | None = None, grun
     if qty is not None and (not math.isfinite(qty) or qty <= 0):
         return _ablehnung("Ungültige Menge", position_id=pos["id"])
     q = pos["menge"] if qty is None else min(qty, pos["menge"])
-    f = walk(levels, q, _slip(art), kaufen=not verkaufen)
+    f = walk(levels, q, _slip(art) if slippage_bps is None else slippage_bps, kaufen=not verkaufen)
     if f.qty <= 0:
         return _ablehnung("Keine Füllung beim Schließen", position_id=pos["id"])
     impact.verbrauche(book, not verkaufen, f.qty)
@@ -201,6 +206,27 @@ def funding_buchen(pf: dict, raten_8h: dict[str, float], stunden: float, ts: flo
     return out
 
 
+def finanzierung_buchen(pf: dict, stunden: float, ts: float | None = None) -> list[dict]:
+    """Aktien auf Marge: Kreditzins auf den geliehenen Teil (Long mit Hebel) bzw. Leihgebühr auf das Nominal (Leerverkauf)."""
+    am = config.load()["boerse"]["aktien_marge"]
+    out = []
+    for pos in pf["positionen"]:
+        if pos["inst"]["art"] != "stock" or not pos.get("marginal"):
+            continue
+        h = min(stunden, max(0.0, ((ts or time.time()) - pos["eroeffnet"]) / 3600))
+        nominal = pos["einstand"] * pos["menge"]
+        basis, satz = (nominal, am["leihgebuehr_pa"]) if pos["seite"] == "short" else (max(0.0, nominal - pos["marge"]), am["kreditzins_pa"])
+        betrag = -basis * satz * h / 8760
+        if betrag == 0:
+            continue
+        pos["marge"] += betrag
+        pos["funding"] = pos.get("funding", 0.0) + betrag
+        pf["funding"] += betrag
+        out.append({"ts": ts or time.time(), "aktion": "finanzierung", "fonds_id": pf["fonds_id"], "position_id": pos["id"],
+                    "inst_id": pos["inst"]["id"], "betrag": betrag, "satz_pa": satz})
+    return out
+
+
 def pruefe_liquidation(pf: dict, extreme: dict[str, tuple[float, float]], marks: dict[str, float],
                        ts: float | None = None) -> list[dict]:
     """extreme: inst_id -> (Tief, Hoch) seit der letzten Prüfung (Dochte). Liquidiert, wenn
@@ -209,8 +235,9 @@ def pruefe_liquidation(pf: dict, extreme: dict[str, tuple[float, float]], marks:
     cfg = config.load()["boerse"]["perp"]
     out = []
     for pos in list(pf["positionen"]):
-        if pos["inst"]["art"] != "perp":
+        if not portfolio.ist_marginal(pos):
             continue
+        aktie = pos["inst"]["art"] == "stock"
         tief, hoch = extreme.get(pos["inst"]["id"], (None, None))
         mk = marks.get(pos["inst"]["id"])
         schlimmster = (tief if pos["seite"] == "long" else hoch)
@@ -220,9 +247,14 @@ def pruefe_liquidation(pf: dict, extreme: dict[str, tuple[float, float]], marks:
             continue
         vz = 1 if pos["seite"] == "long" else -1
         eq = pos["marge"] + vz * (schlimmster - pos["einstand"]) * pos["menge"]
-        wartung = cfg["wartungsmarge"] * schlimmster * pos["menge"]
+        if aktie:  # Margin Call bei Aktien: Wartungsmarge (Reg-T/FINRA-artig), Zwangsglattstellung ohne Extra-Gebühr
+            am = config.load()["boerse"]["aktien_marge"]
+            mm = am["wartung_long"] if pos["seite"] == "long" else am["wartung_short"]
+        else:
+            mm = cfg["wartungsmarge"]
+        wartung = mm * schlimmster * pos["menge"]
         if eq <= wartung:
-            liqfee = cfg["liquidationsgebuehr"] * schlimmster * pos["menge"]
+            liqfee = 0.0 if aktie else cfg["liquidationsgebuehr"] * schlimmster * pos["menge"]
             rest = max(0.0, eq - liqfee)
             verlust_marge = pos["marge"]
             pf["cash"] += rest

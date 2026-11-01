@@ -52,6 +52,8 @@ class Marktzugriff:
                 return crypto.spot_extreme(inst["symbol"], seit)
             if inst["art"] == "perp":
                 return crypto.perp_extreme(inst["symbol"], seit)
+            if inst["art"] == "stock":
+                return stocks.extreme(inst["symbol"], seit)
         except Exception as e:
             self.fehler.append(f"extreme {inst['id']}: {e}")
         return None
