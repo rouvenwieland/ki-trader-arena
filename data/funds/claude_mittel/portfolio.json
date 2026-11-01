@@ -2,7 +2,7 @@
  "fonds_id": "claude_mittel",
  "waehrung": "USD",
  "start_kapital": 11184.88579861696,
- "cash": 10919.856811612965,
+ "cash": 10800.63885165069,
  "positionen": [
   {
    "id": "p4b35a277",
@@ -93,6 +93,32 @@
    "invalidierung": "Meldung über Entlassung von Carrick oder eines anderen PL-Trainers am 31.10.",
    "kurs": 0.921810444597064,
    "wert": 34.98
+  },
+  {
+   "id": "p98f17fcc",
+   "inst": {
+    "id": "pm:manifold:N5O2RlE0N0:JA",
+    "art": "pm",
+    "venue": "manifold",
+    "ergebnis": "JA",
+    "frage": "Will Donald Tusk be the Prime Minister of Poland at the end of November 2026?",
+    "schliesst": 1796079540.0,
+    "ref": {
+     "id": "N5O2RlE0N0"
+    },
+    "url": "https://manifold.markets/a_l_e_x/will-donald-tusk-be-the-prime-minis"
+   },
+   "seite": "long",
+   "menge": 148.0,
+   "einstand": 0.8055267565018471,
+   "hebel": 1.0,
+   "marge": 0.0,
+   "eroeffnet": 1793491917.6879554,
+   "gebuehren": 0.0,
+   "funding": 0.0,
+   "ausstiegsplan": "Halten bis Abrechnung 30.11.; Gewinn mitnehmen, wenn JA-Bid ≥0.92. Neu bewerten bei Austritt von PSL oder PL2050 aus der Koalition.",
+   "entscheidung_id": "d6e2136ea",
+   "invalidierung": "PSL oder Polska 2050 kündigen Koalition auf bzw. sagen Unterstützung für das konstruktive Misstrauensvotum zu; oder Tusk kündigt Rücktritt an."
   }
  ],
  "realisiert": 208.24286999999975,
