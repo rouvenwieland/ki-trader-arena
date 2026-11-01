@@ -2,7 +2,7 @@
  "fonds_id": "ko_nein",
  "waehrung": "USD",
  "start_kapital": 11157.431109273288,
- "cash": 1538.1655292732853,
+ "cash": 1370.8949992732853,
  "positionen": [
   {
    "id": "pe6781775",
@@ -341,8 +341,8 @@
    "gebuehren": 0.0,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.295,
-   "wert": 165.88
+   "kurs": 0.305,
+   "wert": 171.6
   },
   {
    "id": "p722ad016",
@@ -373,8 +373,8 @@
    "gebuehren": 0.0,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.625,
-   "wert": 172.36
+   "kurs": 0.62,
+   "wert": 169.58
   },
   {
    "id": "pdcfb5d53",
@@ -405,8 +405,8 @@
    "gebuehren": 0.0,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.648,
-   "wert": 161.75
+   "kurs": 0.6445000000000001,
+   "wert": 160.5
   },
   {
    "id": "pe65b0b73",
@@ -533,7 +533,7 @@
    "gebuehren": 0.0,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.0025,
+   "kurs": 0.003,
    "wert": 5.51
   },
   {
@@ -873,8 +873,8 @@
    "gebuehren": 7.15674,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.0085,
-   "wert": 3.54
+   "kurs": 0.011,
+   "wert": 4.43
   },
   {
    "id": "pdcf6fcc3",
@@ -937,8 +937,8 @@
    "gebuehren": 0.31446,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.9875,
-   "wert": 168.78
+   "kurs": 0.9864999999999999,
+   "wert": 168.61
   },
   {
    "id": "p7102c243",
@@ -1207,8 +1207,8 @@
    "gebuehren": 3.27455,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.3385,
-   "wert": 74.65
+   "kurs": 0.313,
+   "wert": 68.7
   },
   {
    "id": "pbb0a8271",
@@ -1239,7 +1239,7 @@
    "gebuehren": 9.19367,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.065,
+   "kurs": 0.07,
    "wert": 56.04
   },
   {
@@ -1457,8 +1457,8 @@
    "gebuehren": 0.0,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.6,
-   "wert": 154.28
+   "kurs": 0.59,
+   "wert": 151.62
   },
   {
    "id": "p5e6e3e9b",
@@ -1727,15 +1727,47 @@
    "gebuehren": 4.24,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.565,
-   "wert": 142.45
+   "kurs": 0.575,
+   "wert": 147.63
+  },
+  {
+   "id": "p32e5b9f1",
+   "inst": {
+    "id": "pm:polymarket:6274257:NEIN",
+    "art": "pm",
+    "venue": "polymarket",
+    "ergebnis": "NEIN",
+    "frage": "Will Republicans lose the Alaska, Iowa, Kansas, Maine, Michigan, Ohio, and Texas Senate seats?",
+    "schliesst": 1793750340.0,
+    "ref": {
+     "id": "6274257",
+     "token_ja": "13535941900723044344907002451427688051727855016747811259193368015899108383450",
+     "token_nein": "80727480162707694817992062873857913056698208056368499870278974630056151503113",
+     "tick": 0.01,
+     "condition": "0xa32317ba83c3c83dc43ef260c3744c22ed8000db53d30bc09372c45cff5fb07a",
+     "gebuehr_rate": 0.04,
+     "gebuehr_exp": 1.0
+    },
+    "url": "https://polymarket.com/event/which-tossup-senate-states-will-republicans-win-ak-ia-ks-me-mi-oh-tx"
+   },
+   "seite": "long",
+   "menge": 218.0,
+   "einstand": 0.76,
+   "hebel": 1.0,
+   "marge": 0.0,
+   "eroeffnet": 1793523402.8114862,
+   "gebuehren": 1.59053,
+   "funding": 0.0,
+   "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
+   "kurs": 0.755,
+   "wert": 163.5
   }
  ],
  "realisiert": -241.41319999999996,
- "gebuehren": 106.81588999999997,
+ "gebuehren": 108.40641999999997,
  "funding": 0.0,
  "erstellt": 1793379225.5430336,
  "start_fx": 1.1157431109273288,
- "letzter_tick": 1793522502.3566248,
- "kontrolle_bis": 1793513506.9660566
+ "letzter_tick": 1793523402.8114862,
+ "kontrolle_bis": 1793522696.4609933
 }

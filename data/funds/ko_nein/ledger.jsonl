@@ -76,3 +76,4 @@
 {"ok": false, "grund": "Gesamt-Exposure würde 100 % des Vermögens übersteigen"}
 {"ok": false, "grund": "Gesamt-Exposure würde 100 % des Vermögens übersteigen"}
 {"ok": true, "ts": 1793517884.61457, "aktion": "geschlossen", "fonds_id": "ko_nein", "position_id": "p38490647", "inst_id": "pm:polymarket:5891194:NEIN", "seite": "long", "menge": 204.0, "preis": 1.0, "einstand": 0.81, "gebuehr": 0.0, "brutto_pnl": 38.75999999999999, "netto_pnl": 37.19021999999999, "grund": "Abrechnung des Marktes", "tiefe_stufen": 0, "kategorie": "wette:sonstige:NEIN", "eroeffnet": 1793507084.3484185}
+{"ok": true, "ts": 1793523402.8114862, "aktion": "eroeffnet", "fonds_id": "ko_nein", "position_id": "p32e5b9f1", "inst_id": "pm:polymarket:6274257:NEIN", "seite": "long", "menge": 218.0, "preis": 0.76, "gebuehr": 1.59053, "nominal": 165.68, "hebel": 1.0, "tiefe_stufen": 1, "teilfuellung": false, "liq_preis": null, "entscheidung_id": null}
