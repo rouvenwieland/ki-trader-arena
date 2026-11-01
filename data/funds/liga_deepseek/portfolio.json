@@ -33,34 +33,6 @@
    "wert": 329.61
   },
   {
-   "id": "p3f11e9a0",
-   "inst": {
-    "id": "pm:kalshi:KXHIGHDEN-26OCT31-B64.5:JA",
-    "art": "pm",
-    "venue": "kalshi",
-    "ergebnis": "JA",
-    "frage": "Will the maximum temperature be 64-65° on Oct 31, 2026? [64° to 65°]",
-    "schliesst": 1793516400.0,
-    "ref": {
-     "ticker": "KXHIGHDEN-26OCT31-B64.5"
-    },
-    "url": "https://kalshi.com/markets/KXHIGHDEN-26OCT31"
-   },
-   "seite": "long",
-   "menge": 1151.0,
-   "einstand": 0.12255951346655088,
-   "hebel": 1.0,
-   "marge": 0.0,
-   "eroeffnet": 1793451937.4041495,
-   "gebuehren": 8.67,
-   "funding": 0.0,
-   "ausstiegsplan": "Halten bis Abrechnung (NWS CLI 31.10.). Kein Verkauf im dünnen Buch bei <2h Restzeit, da Spread die Edge frisst.",
-   "entscheidung_id": "dde75bf13",
-   "invalidierung": "Beobachtetes Max Denver erreicht 62°F vor 15:00 Ortszeit nicht mehr oder NWS senkt Tagesprognose klar unter 62°F → Bracket 64-65 praktisch tot.",
-   "kurs": null,
-   "wert": 141.07
-  },
-  {
    "id": "p0816e743",
    "inst": {
     "id": "pm:kalshi:KXHIGHNY-26NOV01-B62.5:JA",
@@ -85,8 +57,8 @@
    "ausstiegsplan": "Halten bis Abrechnung nach Tagesmaximum 1.11. Kein Verkauf (Spread frisst alles).",
    "entscheidung_id": "d3bd39c01",
    "invalidierung": "Beobachtetes Tagesmax NYC überschreitet 63°F oder NWS-Prognose fällt unter 61°F — dann ist das Bracket tot; Modell p dann 0.",
-   "kurs": 0.03,
-   "wert": 17.22
+   "kurs": 0.065,
+   "wert": 51.66
   },
   {
    "id": "p4923accd",
@@ -113,14 +85,14 @@
    "ausstiegsplan": "Halten bis NWS-CLI-Abrechnung 1./2.11. Kein Verkauf vorher — im 3-4c-Buch würde der Spread die Edge komplett fressen.",
    "entscheidung_id": "dd5333d41",
    "invalidierung": "Beobachtetes Tagesmax Chicago vor 14:00 Ortszeit bereits ≥65°F, oder NWS-Prognose für 1.11. unter 62°F (dann ist das Bracket 68-69 tot). Halten bis Abrechnung; kein Nachkauf auf dieselbe These.",
-   "kurs": 0.025,
-   "wert": 30.12
+   "kurs": 0.015,
+   "wert": 15.06
   }
  ],
- "realisiert": 203.40792543596712,
+ "realisiert": 62.341925435967056,
  "gebuehren": 82.27737,
  "funding": 0.0,
  "erstellt": 1793319819.7411644,
  "start_fx": 1.1184885798616961,
- "letzter_tick": 1793541512.1474447
+ "letzter_tick": 1793542412.1441321
 }

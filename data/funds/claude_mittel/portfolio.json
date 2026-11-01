@@ -35,8 +35,8 @@
    "ausstiegsplan": "Halten; Gewinn mitnehmen, wenn NEIN ≥0.90 (JA ≤0.10) oder der Preis meine P erreicht. Neu bewerten, wenn Lisnard in Umfragen über 12 % steigt oder Philippe/Retailleau zurückziehen.",
    "entscheidung_id": "df10ef502",
    "invalidierung": "Lisnard in mehreren Umfragen ≥12 % im 1. Wahlgang oder Rückzug von Philippe/Retailleau zu seinen Gunsten.",
-   "kurs": 0.809,
-   "wert": 247.75
+   "kurs": 0.8105,
+   "wert": 248.67
   },
   {
    "id": "p842aa632",
@@ -125,8 +125,8 @@
    "ausstiegsplan": "Bis zur Abrechnung (Earnings ca. 17.–25.11.) halten; vorzeitig verkaufen, wenn Bid ≥0.92 oder bei Nachricht zu Margendruck.",
    "entscheidung_id": "df5b61ded",
    "invalidierung": "Meldung/Analystenkonsens zur Q3-Marge ≥75,0 % oder <73 %; Pre-Announcement zu Speicherkosten.",
-   "kurs": 0.8,
-   "wert": 31.2
+   "kurs": 0.7949999999999999,
+   "wert": 30.8
   }
  ],
  "realisiert": 13.85286999999974,
@@ -134,5 +134,5 @@
  "funding": 0.0,
  "erstellt": 1793319819.7411644,
  "start_fx": 1.1184885798616961,
- "letzter_tick": 1793541512.1474447
+ "letzter_tick": 1793542412.1441321
 }

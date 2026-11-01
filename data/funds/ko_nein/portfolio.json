@@ -2,7 +2,7 @@
  "fonds_id": "ko_nein",
  "waehrung": "USD",
  "start_kapital": 11157.431109273288,
- "cash": 2157.894999273285,
+ "cash": 2329.894999273285,
  "positionen": [
   {
    "id": "pe6781775",
@@ -379,8 +379,8 @@
    "gebuehren": 0.0,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.635,
-   "wert": 157.5
+   "kurs": 0.6365000000000001,
+   "wert": 158.0
   },
   {
    "id": "pe65b0b73",
@@ -475,40 +475,8 @@
    "gebuehren": 0.0,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.0155,
+   "kurs": 0.015,
    "wert": 86.28
-  },
-  {
-   "id": "pcad11f9d",
-   "inst": {
-    "id": "pm:polymarket:3399459:NEIN",
-    "art": "pm",
-    "venue": "polymarket",
-    "ergebnis": "NEIN",
-    "frage": "Israel x Iran ceasefire continues through October 31?",
-    "schliesst": 1793478540.0,
-    "ref": {
-     "id": "3399459",
-     "token_ja": "36595575197199846398267481972385180643951985822505187477756829088194676076340",
-     "token_nein": "34386684966925037477701889915132575610574649191623462027976379158560146275115",
-     "tick": 0.001,
-     "condition": "0xc3d5708780de5528998aeb53ca90e7ade64804f9f2386392a681435d5c42b44d",
-     "gebuehr_rate": 0.0,
-     "gebuehr_exp": 1
-    },
-    "url": "https://polymarket.com/event/israel-x-iran-ceasefire-continues-through-october-31"
-   },
-   "seite": "long",
-   "menge": 2754.0,
-   "einstand": 0.060753910675381245,
-   "hebel": 1.0,
-   "marge": 0.0,
-   "eroeffnet": 1793384623.8557248,
-   "gebuehren": 0.0,
-   "funding": 0.0,
-   "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": null,
-   "wert": 167.32
   },
   {
    "id": "pcd4d06c5",
@@ -571,8 +539,8 @@
    "gebuehren": 0.0,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.028,
-   "wert": 40.77
+   "kurs": 0.027000000000000003,
+   "wert": 37.75
   },
   {
    "id": "pc8cf836f",
@@ -859,8 +827,8 @@
    "gebuehren": 0.31446,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.9955,
-   "wert": 170.15
+   "kurs": 0.997,
+   "wert": 170.32
   },
   {
    "id": "p7102c243",
@@ -1045,8 +1013,8 @@
    "gebuehren": 0.0,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.809,
-   "wert": 166.24
+   "kurs": 0.8105,
+   "wert": 166.86
   },
   {
    "id": "p256927d5",
@@ -1077,8 +1045,8 @@
    "gebuehren": 3.27455,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.5195000000000001,
-   "wert": 114.96
+   "kurs": 0.47750000000000004,
+   "wert": 106.26
   },
   {
    "id": "pbb0a8271",
@@ -1109,7 +1077,7 @@
    "gebuehren": 9.19367,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.0325,
+   "kurs": 0.0275,
    "wert": 24.28
   },
   {
@@ -1173,8 +1141,8 @@
    "gebuehren": 5.41501,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.545,
-   "wert": 167.4
+   "kurs": 0.555,
+   "wert": 170.5
   },
   {
    "id": "p21e9c816",
@@ -1241,32 +1209,6 @@
    "wert": 143.28
   },
   {
-   "id": "pf78e0ef9",
-   "inst": {
-    "id": "pm:kalshi:KXHIGHDEN-26OCT31-B64.5:NEIN",
-    "art": "pm",
-    "venue": "kalshi",
-    "ergebnis": "NEIN",
-    "frage": "Will the maximum temperature be 64-65° on Oct 31, 2026? [64° to 65°]",
-    "schliesst": 1793516400.0,
-    "ref": {
-     "ticker": "KXHIGHDEN-26OCT31-B64.5"
-    },
-    "url": "https://kalshi.com/markets/KXHIGHDEN-26OCT31"
-   },
-   "seite": "long",
-   "menge": 172.0,
-   "einstand": 0.9655232558139535,
-   "hebel": 1.0,
-   "marge": 0.0,
-   "eroeffnet": 1793453507.5204759,
-   "gebuehren": 0.41,
-   "funding": 0.0,
-   "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": null,
-   "wert": 166.07
-  },
-  {
    "id": "p7f18532d",
    "inst": {
     "id": "pm:polymarket:5691088:NEIN",
@@ -1327,7 +1269,7 @@
    "gebuehren": 0.0,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.5900000000000001,
+   "kurs": 0.575,
    "wert": 148.96
   },
   {
@@ -1449,8 +1391,8 @@
    "gebuehren": 0.59,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.97,
-   "wert": 168.0
+   "kurs": 0.935,
+   "wert": 162.75
   },
   {
    "id": "pbb214a3d",
@@ -1513,7 +1455,7 @@
    "gebuehren": 0.0,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.2,
+   "kurs": 0.225,
    "wert": 53.28
   },
   {
@@ -1571,8 +1513,8 @@
    "gebuehren": 0.32,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.975,
-   "wert": 165.87
+   "kurs": 0.985,
+   "wert": 167.58
   },
   {
    "id": "pdc74c4fa",
@@ -1597,8 +1539,8 @@
    "gebuehren": 4.24,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.47,
-   "wert": 119.14
+   "kurs": 0.575,
+   "wert": 147.63
   },
   {
    "id": "p32e5b9f1",
@@ -1633,11 +1575,11 @@
    "wert": 163.5
   }
  ],
- "realisiert": -269.0116999999999,
+ "realisiert": -430.3979699999998,
  "gebuehren": 108.40641999999997,
  "funding": 0.0,
  "erstellt": 1793379225.5430336,
  "start_fx": 1.1157431109273288,
- "letzter_tick": 1793541512.1474447,
+ "letzter_tick": 1793542412.1441321,
  "kontrolle_bis": 1793524425.8819175
 }
