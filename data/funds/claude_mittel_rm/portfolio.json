@@ -2,7 +2,7 @@
  "fonds_id": "claude_mittel_rm",
  "waehrung": "USD",
  "start_kapital": 11156.327353966788,
- "cash": 9897.79971396679,
+ "cash": 9048.352866545645,
  "positionen": [
   {
    "id": "pe8186cc2",
@@ -139,6 +139,58 @@
    "invalidierung": "NVDA übertrifft Apples Marktkapitalisierung nach den Earnings um mehr als 5 %, oder der Apple-JA-Preis fällt unter 0,25.",
    "kurs": 0.4355,
    "wert": 175.14
+  },
+  {
+   "id": "pa832233e",
+   "inst": {
+    "id": "pm:manifold:N5O2RlE0N0:JA",
+    "art": "pm",
+    "venue": "manifold",
+    "ergebnis": "JA",
+    "frage": "Will Donald Tusk be the Prime Minister of Poland at the end of November 2026?",
+    "schliesst": 1796079540.0,
+    "ref": {
+     "id": "N5O2RlE0N0"
+    },
+    "url": "https://manifold.markets/a_l_e_x/will-donald-tusk-be-the-prime-minis"
+   },
+   "seite": "long",
+   "menge": 545.0,
+   "einstand": 0.8255533040095537,
+   "hebel": 1.0,
+   "marge": 0.0,
+   "eroeffnet": 1793513593.0883765,
+   "gebuehren": 0.0,
+   "funding": 0.0,
+   "ausstiegsplan": "Halten bis Ende November; verkaufen wenn PSL oder Polska 2050 offiziell Koalition verlassen/Misstrauensvotum mit Nachfolger Mehrheit signalisiert (JA-Preis <0.55) oder bei ≥0.97.",
+   "entscheidung_id": "d4ba7f844",
+   "invalidierung": "PSL oder Polska 2050 kündigen Koalition auf bzw. unterstützen konstruktives Misstrauensvotum; Tusk kündigt Rücktritt an."
+  },
+  {
+   "id": "pf61b68d4",
+   "inst": {
+    "id": "pm:manifold:EUhytOdNRu:JA",
+    "art": "pm",
+    "venue": "manifold",
+    "ergebnis": "JA",
+    "frage": "Will Christopher Luxon still be Prime Minister of New Zealand when the 2026 general election is held?",
+    "schliesst": 1794049140.0,
+    "ref": {
+     "id": "EUhytOdNRu"
+    },
+    "url": "https://manifold.markets/Tuatara/will-christopher-luxon-still-be-pri"
+   },
+   "seite": "long",
+   "menge": 409.0,
+   "einstand": 0.97682224140816,
+   "hebel": 1.0,
+   "marge": 0.0,
+   "eroeffnet": 1793513609.9763575,
+   "gebuehren": 0.0,
+   "funding": 0.0,
+   "ausstiegsplan": "Halten bis Auflösung nach 7.11.",
+   "entscheidung_id": "dfb7d728f",
+   "invalidierung": "Luxon tritt zurück oder wird als Parteichef ersetzt vor dem 7.11."
   }
  ],
  "realisiert": 0.0,

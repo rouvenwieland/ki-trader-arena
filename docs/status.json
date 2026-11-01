@@ -1,11 +1,11 @@
 {
  "version": 1,
- "stand": 1793513502.9953177,
+ "stand": 1793513637.393981,
  "hinweis": "Papierhandel-Simulation, keine Anlageberatung",
  "seite": "https://rouvenwieland.github.io/ki-trader-arena/",
  "budget": {
-  "heute_eur": 2.81,
-  "gesamt_eur": 21.87,
+  "heute_eur": 4.18,
+  "gesamt_eur": 23.23,
   "tagesdeckel_eur": 12.0,
   "gesamtdeckel_eur": 190.0,
   "claude_ende": "2026-11-14",
@@ -180,8 +180,8 @@
    "max_drawdown_pct": -2.34,
    "status": "aktiv",
    "modell": "claude-sonnet-5-5",
-   "kosten_heute_eur": 1.053,
-   "kosten_gesamt_eur": 6.096,
+   "kosten_heute_eur": 1.351,
+   "kosten_gesamt_eur": 6.394,
    "rendite_ki_pct": [
     -1.5,
     3.19
@@ -239,8 +239,8 @@
    "max_drawdown_pct": -2.29,
    "status": "aktiv",
    "modell": "claude-sonnet-5-5",
-   "kosten_heute_eur": 0.642,
-   "kosten_gesamt_eur": 5.555,
+   "kosten_heute_eur": 1.008,
+   "kosten_gesamt_eur": 5.921,
    "rendite_ki_pct": [
     -1.51,
     3.45
@@ -532,7 +532,7 @@
    "rendite_pct": 0.0,
    "equity_eur": 10005.34,
    "max_drawdown_pct": 0.0,
-   "status": "Fehler: Modellfehler: kimi-k3: HTTP 400 {\"error\":{\"message\":\"Invalid request: the message at position 33 with role 'assistant' must not be empty\",\"t",
+   "status": "Fehler: Modellfehler: kimi-k3: keine Antwort (HTTP 429 {\"error\":{\"message\":\"Your account org-2249288c21c547a2b05f751b19b3dd2e\\u003cak-fcx7uxzbfmy111",
    "modell": "kimi-k3",
    "kosten_heute_eur": 0.0,
    "kosten_gesamt_eur": 0.0,
@@ -709,10 +709,10 @@
    "rendite_pct": -0.21,
    "equity_eur": 9958.39,
    "max_drawdown_pct": -0.53,
-   "status": "Fehler: Modellfehler: Anthropic: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'messages.1: `web_search`",
+   "status": "aktiv",
    "modell": "claude-sonnet-5-5",
-   "kosten_heute_eur": 0.617,
-   "kosten_gesamt_eur": 4.105,
+   "kosten_heute_eur": 0.99,
+   "kosten_gesamt_eur": 4.478,
    "rendite_ki_pct": [
     -0.58,
     0.14
@@ -947,8 +947,8 @@
    "max_drawdown_pct": -8.21,
    "status": "aktiv",
    "modell": "claude-sonnet-5-5",
-   "kosten_heute_eur": 0.497,
-   "kosten_gesamt_eur": 5.553,
+   "kosten_heute_eur": 0.828,
+   "kosten_gesamt_eur": 5.884,
    "rendite_ki_pct": [
     -10.79,
     3.98
@@ -1129,6 +1129,20 @@
  ],
  "letzte_entscheidungen": [
   {
+   "ts": 1793513609.9512303,
+   "fonds": "Claude Mittel+RM (A/B)",
+   "instrument": "pm:manifold:EUhytOdNRu:JA",
+   "aktion": "kaufen",
+   "zuversicht": 0.75
+  },
+  {
+   "ts": 1793513593.0870361,
+   "fonds": "Claude Mittel+RM (A/B)",
+   "instrument": "pm:manifold:N5O2RlE0N0:JA",
+   "aktion": "kaufen",
+   "zuversicht": 0.65
+  },
+  {
    "ts": 1793506547.3312683,
    "fonds": "DeepSeek",
    "instrument": "pm:kalshi:KXHIGHCHI-26NOV01-B68.5:JA",
@@ -1169,20 +1183,6 @@
    "instrument": "pm:polymarket:676741:JA",
    "aktion": "kaufen",
    "zuversicht": 0.55
-  },
-  {
-   "ts": 1793451981.8043294,
-   "fonds": "Claude Mittel+RM (A/B)",
-   "instrument": "pm:polymarket:679022:NEIN",
-   "aktion": "kaufen",
-   "zuversicht": 0.72
-  },
-  {
-   "ts": 1793451937.4039297,
-   "fonds": "DeepSeek",
-   "instrument": "pm:kalshi:KXHIGHDEN-26OCT31-B64.5:JA",
-   "aktion": "kaufen",
-   "zuversicht": 0.5
   }
  ],
  "ereignisse": [
