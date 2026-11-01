@@ -2,7 +2,7 @@
  "fonds_id": "ko_nein",
  "waehrung": "USD",
  "start_kapital": 11157.431109273288,
- "cash": 1567.8949992732853,
+ "cash": 2157.894999273285,
  "positionen": [
   {
    "id": "pe6781775",
@@ -255,32 +255,6 @@
    "wert": 158.67
   },
   {
-   "id": "pa262ac37",
-   "inst": {
-    "id": "pm:kalshi:KXRAIN-26OCT31-DAL:NEIN",
-    "art": "pm",
-    "venue": "kalshi",
-    "ergebnis": "NEIN",
-    "frage": "Will it rain in Dallas on Oct 31, 2026? [Dallas]",
-    "schliesst": 1793512800.0,
-    "ref": {
-     "ticker": "KXRAIN-26OCT31-DAL"
-    },
-    "url": "https://kalshi.com/markets/KXRAIN-26OCT31"
-   },
-   "seite": "long",
-   "menge": 404.0,
-   "einstand": 0.39651410891089106,
-   "hebel": 1.0,
-   "marge": 0.0,
-   "eroeffnet": 1793381923.768329,
-   "gebuehren": 6.77,
-   "funding": 0.0,
-   "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": null,
-   "wert": 160.19
-  },
-  {
    "id": "pfa54617a",
    "inst": {
     "id": "pm:polymarket:5211630:NEIN",
@@ -341,8 +315,8 @@
    "gebuehren": 0.0,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.235,
-   "wert": 125.84
+   "kurs": 0.255,
+   "wert": 143.0
   },
   {
    "id": "p722ad016",
@@ -405,8 +379,8 @@
    "gebuehren": 0.0,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.6355,
-   "wert": 157.75
+   "kurs": 0.634,
+   "wert": 157.5
   },
   {
    "id": "pe65b0b73",
@@ -501,8 +475,8 @@
    "gebuehren": 0.0,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.0155,
-   "wert": 86.28
+   "kurs": 0.015,
+   "wert": 80.12
   },
   {
    "id": "pcad11f9d",
@@ -729,32 +703,6 @@
    "wert": 165.91
   },
   {
-   "id": "p8943c633",
-   "inst": {
-    "id": "pm:kalshi:KXHIGHCHI-26OCT31-B62.5:NEIN",
-    "art": "pm",
-    "venue": "kalshi",
-    "ergebnis": "NEIN",
-    "frage": "Will the maximum temperature be 62-63° on Oct 31, 2026? [62° to 63°]",
-    "schliesst": 1793512800.0,
-    "ref": {
-     "ticker": "KXHIGHCHI-26OCT31-B62.5"
-    },
-    "url": "https://kalshi.com/markets/KXHIGHCHI-26OCT31"
-   },
-   "seite": "long",
-   "menge": 258.0,
-   "einstand": 0.6299031007751937,
-   "hebel": 1.0,
-   "marge": 0.0,
-   "eroeffnet": 1793387324.1827762,
-   "gebuehren": 4.22,
-   "funding": 0.0,
-   "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": null,
-   "wert": 162.51
-  },
-  {
    "id": "p6ac54bba",
    "inst": {
     "id": "pm:polymarket:5447182:NEIN",
@@ -847,8 +795,8 @@
    "gebuehren": 7.15674,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.006,
-   "wert": 2.21
+   "kurs": 0.0045000000000000005,
+   "wert": 1.77
   },
   {
    "id": "pdcf6fcc3",
@@ -879,8 +827,8 @@
    "gebuehren": 10.06282,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.002,
-   "wert": 1.83
+   "kurs": null,
+   "wert": 157.25
   },
   {
    "id": "pf73842ce",
@@ -911,8 +859,8 @@
    "gebuehren": 0.31446,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.9944999999999999,
-   "wert": 169.97
+   "kurs": 0.9915,
+   "wert": 169.46
   },
   {
    "id": "p7102c243",
@@ -1003,32 +951,6 @@
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
    "kurs": null,
    "wert": 166.63
-  },
-  {
-   "id": "p6621f6a6",
-   "inst": {
-    "id": "pm:kalshi:KXHIGHCHI-26OCT31-T60:NEIN",
-    "art": "pm",
-    "venue": "kalshi",
-    "ergebnis": "NEIN",
-    "frage": "Will the maximum temperature be <60° on Oct 31, 2026? [59° or below]",
-    "schliesst": 1793512800.0,
-    "ref": {
-     "ticker": "KXHIGHCHI-26OCT31-T60"
-    },
-    "url": "https://kalshi.com/markets/KXHIGHCHI-26OCT31"
-   },
-   "seite": "long",
-   "menge": 186.0,
-   "einstand": 0.8923655913978495,
-   "hebel": 1.0,
-   "marge": 0.0,
-   "eroeffnet": 1793424434.3596478,
-   "gebuehren": 1.26,
-   "funding": 0.0,
-   "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": null,
-   "wert": 165.98
   },
   {
    "id": "pa8d52a27",
@@ -1155,8 +1077,8 @@
    "gebuehren": 3.27455,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.6185,
-   "wert": 139.69
+   "kurs": 0.479,
+   "wert": 106.71
   },
   {
    "id": "pbb0a8271",
@@ -1187,8 +1109,8 @@
    "gebuehren": 9.19367,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.033,
-   "wert": 25.22
+   "kurs": 0.0315,
+   "wert": 24.28
   },
   {
    "id": "pc2572f19",
@@ -1405,8 +1327,8 @@
    "gebuehren": 0.0,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.54,
-   "wert": 122.36
+   "kurs": 0.55,
+   "wert": 127.68
   },
   {
    "id": "p5e6e3e9b",
@@ -1437,8 +1359,8 @@
    "gebuehren": 0.0,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.060000000000000005,
-   "wert": 35.55
+   "kurs": 0.08,
+   "wert": 42.66
   },
   {
    "id": "pc0b8a31d",
@@ -1675,8 +1597,8 @@
    "gebuehren": 4.24,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.445,
-   "wert": 113.96
+   "kurs": 0.435,
+   "wert": 111.37
   },
   {
    "id": "p32e5b9f1",
@@ -1711,11 +1633,11 @@
    "wert": 163.5
   }
  ],
- "realisiert": -370.32499999999993,
+ "realisiert": -269.0116999999999,
  "gebuehren": 108.40641999999997,
  "funding": 0.0,
  "erstellt": 1793379225.5430336,
  "start_fx": 1.1157431109273288,
- "letzter_tick": 1793537912.2311249,
+ "letzter_tick": 1793538811.6233113,
  "kontrolle_bis": 1793524425.8819175
 }

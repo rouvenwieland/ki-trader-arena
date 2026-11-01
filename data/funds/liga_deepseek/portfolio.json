@@ -33,34 +33,6 @@
    "wert": 329.61
   },
   {
-   "id": "p5a2d4185",
-   "inst": {
-    "id": "pm:kalshi:KXHIGHCHI-26OCT31-T60:JA",
-    "art": "pm",
-    "venue": "kalshi",
-    "ergebnis": "JA",
-    "frage": "Will the maximum temperature be <60° on Oct 31, 2026? [59° or below]",
-    "schliesst": 1793512800.0,
-    "ref": {
-     "ticker": "KXHIGHCHI-26OCT31-T60"
-    },
-    "url": "https://kalshi.com/markets/KXHIGHCHI-26OCT31"
-   },
-   "seite": "long",
-   "menge": 1869.0,
-   "einstand": 0.19473748237775962,
-   "hebel": 1.0,
-   "marge": 0.0,
-   "eroeffnet": 1793423739.278077,
-   "gebuehren": 20.52,
-   "funding": 0.0,
-   "ausstiegsplan": "Halten bis Abrechnung (NWS CLI 31.10.). Kein Verkauf im dünnen Buch.",
-   "entscheidung_id": "d7e617f15",
-   "invalidierung": "Beobachtetes Max in Midway erreicht 61°F vor 18:00 Ortszeit oder NWS hebt die Tagesprognose auf 63°F+ → Bracket ≤59 praktisch tot.",
-   "kurs": null,
-   "wert": 363.96
-  },
-  {
    "id": "p3f11e9a0",
    "inst": {
     "id": "pm:kalshi:KXHIGHDEN-26OCT31-B64.5:JA",
@@ -145,10 +117,10 @@
    "wert": 30.12
   }
  ],
- "realisiert": 567.3722799999998,
+ "realisiert": 203.40792543596712,
  "gebuehren": 82.27737,
  "funding": 0.0,
  "erstellt": 1793319819.7411644,
  "start_fx": 1.1184885798616961,
- "letzter_tick": 1793537912.2311249
+ "letzter_tick": 1793538811.6233113
 }
