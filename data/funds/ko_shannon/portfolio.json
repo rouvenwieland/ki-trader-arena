@@ -1,0 +1,49 @@
+{
+ "fonds_id": "ko_shannon",
+ "waehrung": "USD",
+ "start_kapital": 11178.924086231085,
+ "cash": 5589.4620431155545,
+ "positionen": [
+  {
+   "id": "peb117b3d",
+   "inst": {
+    "id": "spot:BTC-USD",
+    "art": "spot",
+    "venue": "coinbase",
+    "symbol": "BTC-USD"
+   },
+   "seite": "long",
+   "menge": 0.07121000774694661,
+   "einstand": 78024.5005886208,
+   "hebel": 1.0,
+   "marge": 0.0,
+   "eroeffnet": 1793527902.881928,
+   "gebuehren": 33.336751748203966,
+   "funding": 0.0,
+   "ausstiegsplan": "Rebalancing-Regel",
+   "kurs": 78008.78,
+   "wert": 5554.99
+  }
+ ],
+ "realisiert": 0.0,
+ "gebuehren": 33.336751748203966,
+ "funding": 0.0,
+ "erstellt": 1793527902.881928,
+ "start_fx": 1.1178924086231086,
+ "letzter_tick": 1793527902.881928,
+ "rebalancing": {
+  "ziele": {
+   "spot:BTC-USD": {
+    "inst": {
+     "id": "spot:BTC-USD",
+     "art": "spot",
+     "venue": "coinbase",
+     "symbol": "BTC-USD"
+    },
+    "anteil": 0.5
+   }
+  },
+  "schwelle_pp": 5.0,
+  "seit": 1793527902.881928
+ }
+}
