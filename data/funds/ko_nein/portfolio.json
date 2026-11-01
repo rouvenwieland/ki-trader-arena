@@ -2,7 +2,7 @@
  "fonds_id": "ko_nein",
  "waehrung": "USD",
  "start_kapital": 11157.431109273288,
- "cash": 1799.7447092732853,
+ "cash": 1632.9047092732853,
  "positionen": [
   {
    "id": "pe6781775",
@@ -257,8 +257,8 @@
    "gebuehren": 1.59066,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.9964999999999999,
-   "wert": 191.23
+   "kurs": 0.999,
+   "wert": 191.81
   },
   {
    "id": "p28450e21",
@@ -437,7 +437,7 @@
    "gebuehren": 0.0,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.6565000000000001,
+   "kurs": 0.658,
    "wert": 163.5
   },
   {
@@ -597,7 +597,7 @@
    "gebuehren": 0.0,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.006,
+   "kurs": 0.006999999999999999,
    "wert": 13.77
   },
   {
@@ -661,8 +661,8 @@
    "gebuehren": 0.0814,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.9984999999999999,
-   "wert": 167.66
+   "kurs": 0.999,
+   "wert": 167.83
   },
   {
    "id": "pcd4d06c5",
@@ -1002,7 +1002,7 @@
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
    "kurs": 0.0225,
-   "wert": 8.42
+   "wert": 7.97
   },
   {
    "id": "pdcf6fcc3",
@@ -1033,8 +1033,8 @@
    "gebuehren": 10.06282,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.0055,
-   "wert": 7.33
+   "kurs": 0.006,
+   "wert": 9.16
   },
   {
    "id": "pf73842ce",
@@ -1065,8 +1065,8 @@
    "gebuehren": 0.31446,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.9844999999999999,
-   "wert": 168.26
+   "kurs": 0.9855,
+   "wert": 168.44
   },
   {
    "id": "p7102c243",
@@ -1335,8 +1335,8 @@
    "gebuehren": 3.27455,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.6275,
-   "wert": 141.75
+   "kurs": 0.6465000000000001,
+   "wert": 145.19
   },
   {
    "id": "pbb0a8271",
@@ -1617,8 +1617,8 @@
    "gebuehren": 0.0,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.22499999999999998,
-   "wert": 149.31
+   "kurs": 0.24,
+   "wert": 163.53
   },
   {
    "id": "pc0b8a31d",
@@ -1683,13 +1683,39 @@
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
    "kurs": null,
    "wert": 156.96
+  },
+  {
+   "id": "p0de34439",
+   "inst": {
+    "id": "pm:kalshi:KXHIGHNY-26NOV01-B62.5:NEIN",
+    "art": "pm",
+    "venue": "kalshi",
+    "ergebnis": "NEIN",
+    "frage": "Will the maximum temperature be 62-63° on Nov 1, 2026? [62° to 63°]",
+    "schliesst": 1793599200.0,
+    "ref": {
+     "ticker": "KXHIGHNY-26NOV01-B62.5"
+    },
+    "url": "https://kalshi.com/markets/KXHIGHNY-26NOV01"
+   },
+   "seite": "long",
+   "menge": 175.0,
+   "einstand": 0.95,
+   "hebel": 1.0,
+   "marge": 0.0,
+   "eroeffnet": 1793500784.5046105,
+   "gebuehren": 0.59,
+   "funding": 0.0,
+   "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
+   "kurs": 0.945,
+   "wert": 164.5
   }
  ],
  "realisiert": -317.74841999999995,
- "gebuehren": 100.09610999999998,
+ "gebuehren": 100.68610999999999,
  "funding": 0.0,
  "erstellt": 1793379225.5430336,
  "start_fx": 1.1157431109273288,
- "letzter_tick": 1793499885.6703281,
- "kontrolle_bis": 1793491793.6950383
+ "letzter_tick": 1793500784.5046105,
+ "kontrolle_bis": 1793499979.6434526
 }
