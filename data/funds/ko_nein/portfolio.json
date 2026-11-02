@@ -289,7 +289,7 @@
    "gebuehren": 0.0,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.675,
+   "kurs": 0.6799999999999999,
    "wert": 186.26
   },
   {
@@ -321,8 +321,8 @@
    "gebuehren": 0.0,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.556,
-   "wert": 136.5
+   "kurs": 0.5569999999999999,
+   "wert": 137.0
   },
   {
    "id": "pe65b0b73",
@@ -481,8 +481,8 @@
    "gebuehren": 0.0,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.0445,
-   "wert": 61.91
+   "kurs": 0.042,
+   "wert": 51.34
   },
   {
    "id": "pc8cf836f",
@@ -577,8 +577,8 @@
    "gebuehren": 0.0,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.78,
-   "wert": 143.22
+   "kurs": 0.785,
+   "wert": 145.08
   },
   {
    "id": "p7e5c2e70",
@@ -641,8 +641,8 @@
    "gebuehren": 0.0,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.124,
-   "wert": 139.4
+   "kurs": 0.1365,
+   "wert": 171.46
   },
   {
    "id": "p881190c3",
@@ -705,8 +705,8 @@
    "gebuehren": 0.0,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.825,
-   "wert": 177.94
+   "kurs": 0.815,
+   "wert": 175.77
   },
   {
    "id": "p1f028824",
@@ -1185,8 +1185,8 @@
    "gebuehren": 0.0,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.16999999999999998,
-   "wert": 38.48
+   "kurs": 0.155,
+   "wert": 35.52
   },
   {
    "id": "pd54b5964",
@@ -1441,8 +1441,8 @@
    "gebuehren": 5.35174,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.135,
-   "wert": 56.04
+   "kurs": 0.145,
+   "wert": 74.72
   },
   {
    "id": "pe88b93d8",
@@ -1482,6 +1482,6 @@
  "funding": 0.0,
  "erstellt": 1793379225.5430336,
  "start_fx": 1.1157431109273288,
- "letzter_tick": 1793657655.6602204,
+ "letzter_tick": 1793658555.259325,
  "kontrolle_bis": 1793646058.4154346
 }
