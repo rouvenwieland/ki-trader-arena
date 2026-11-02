@@ -2,7 +2,7 @@
  "fonds_id": "ko_nein",
  "waehrung": "USD",
  "start_kapital": 11157.431109273288,
- "cash": 1504.1681292732853,
+ "cash": 1336.8812292732853,
  "positionen": [
   {
    "id": "pe6781775",
@@ -193,8 +193,8 @@
    "gebuehren": 0.0,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.705,
-   "wert": 162.4
+   "kurs": 0.715,
+   "wert": 164.72
   },
   {
    "id": "pf49ce1c2",
@@ -321,7 +321,7 @@
    "gebuehren": 0.0,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.65,
+   "kurs": 0.645,
    "wert": 177.92
   },
   {
@@ -353,8 +353,8 @@
    "gebuehren": 0.0,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.5565,
-   "wert": 137.75
+   "kurs": 0.5745,
+   "wert": 140.75
   },
   {
    "id": "pe65b0b73",
@@ -513,8 +513,8 @@
    "gebuehren": 0.0,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.0315,
-   "wert": 46.81
+   "kurs": 0.031,
+   "wert": 45.3
   },
   {
    "id": "pc8cf836f",
@@ -929,7 +929,7 @@
    "gebuehren": 5.41501,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.585,
+   "kurs": 0.59,
    "wert": 179.8
   },
   {
@@ -993,8 +993,8 @@
    "gebuehren": 0.0,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.255,
-   "wert": 199.0
+   "kurs": 0.235,
+   "wert": 183.08
   },
   {
    "id": "p7f18532d",
@@ -1089,7 +1089,7 @@
    "gebuehren": 0.0,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.004,
+   "kurs": 0.0025,
    "wert": 0.71
   },
   {
@@ -1391,8 +1391,8 @@
    "gebuehren": 1.12388,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.47,
-   "wert": 38.4
+   "kurs": 0.42,
+   "wert": 46.08
   },
   {
    "id": "p091ba70e",
@@ -1423,8 +1423,8 @@
    "gebuehren": 4.65658,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.575,
-   "wert": 156.75
+   "kurs": 0.565,
+   "wert": 154.0
   },
   {
    "id": "pd183209f",
@@ -1455,8 +1455,8 @@
    "gebuehren": 2.87438,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.725,
-   "wert": 157.68
+   "kurs": 0.715,
+   "wert": 155.49
   },
   {
    "id": "p59c4bdc3",
@@ -1487,8 +1487,8 @@
    "gebuehren": 4.28576,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.647,
-   "wert": 167.04
+   "kurs": 0.698,
+   "wert": 180.35
   },
   {
    "id": "p54f0e36a",
@@ -1551,15 +1551,47 @@
    "gebuehren": 1.02246,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.9904999999999999,
-   "wert": 180.0
+   "kurs": 0.9924999999999999,
+   "wert": 180.54
+  },
+  {
+   "id": "pc63d1166",
+   "inst": {
+    "id": "pm:polymarket:6507379:NEIN",
+    "art": "pm",
+    "venue": "polymarket",
+    "ergebnis": "NEIN",
+    "frage": "Will Bitcoin dip to $77,500 in November?",
+    "schliesst": 1796101200.0,
+    "ref": {
+     "id": "6507379",
+     "token_ja": "92892397076920014167779127202476204258512888660520265273854352731446212062400",
+     "token_nein": "103197107482110057863746507124746797759994133934968880257086580058156662730074",
+     "tick": 0.001,
+     "condition": "0xf3c655fd740d79cd7437ce9091723b90c11f3fc34a91034034429f0d18b1652e",
+     "gebuehr_rate": 0.07,
+     "gebuehr_exp": 1.0
+    },
+    "url": "https://polymarket.com/event/what-price-will-bitcoin-hit-in-november-2026"
+   },
+   "seite": "long",
+   "menge": 1321.0,
+   "einstand": 0.11928275548826646,
+   "hebel": 1.0,
+   "marge": 0.0,
+   "eroeffnet": 1793582406.0134752,
+   "gebuehren": 9.71438,
+   "funding": 0.0,
+   "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
+   "kurs": 0.11699999999999999,
+   "wert": 146.63
   }
  ],
  "realisiert": -1381.3378799999998,
- "gebuehren": 125.25518999999997,
+ "gebuehren": 134.96956999999998,
  "funding": 0.0,
  "erstellt": 1793379225.5430336,
  "start_fx": 1.1157431109273288,
- "letzter_tick": 1793581505.4786534,
- "kontrolle_bis": 1793559884.5461352
+ "letzter_tick": 1793582406.0134752,
+ "kontrolle_bis": 1793581615.1384869
 }
