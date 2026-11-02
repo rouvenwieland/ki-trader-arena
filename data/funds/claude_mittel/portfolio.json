@@ -126,7 +126,7 @@
    "entscheidung_id": "df5b61ded",
    "invalidierung": "Meldung/Analystenkonsens zur Q3-Marge ≥75,0 % oder <73 %; Pre-Announcement zu Speicherkosten.",
    "kurs": 0.81,
-   "wert": 29.2
+   "wert": 31.2
   },
   {
    "id": "p8b4a7cc3",
@@ -187,8 +187,8 @@
    "ausstiegsplan": "Bis Abrechnung halten (Hedge mit Polymarket-NEIN); bei Regelabweichung beide Beine schließen.",
    "entscheidung_id": "de2f4bea2",
    "invalidierung": "Manifold-Kommentare/Regel zeigen abweichende Auflösung (z. B. Stand an anderem Datum).",
-   "kurs": 0.2353804694581509,
-   "wert": 35.77
+   "kurs": 0.2351045602239169,
+   "wert": 35.73
   },
   {
    "id": "pf9fa8a67",
@@ -221,8 +221,8 @@
    "ausstiegsplan": "Bis Abrechnung halten (Hedge).",
    "entscheidung_id": "d20c537d1",
    "invalidierung": "Regelabweichung Manifold; dann beide Beine schließen.",
-   "kurs": 0.715,
-   "wert": 106.5
+   "kurs": 0.725,
+   "wert": 108.0
   }
  ],
  "realisiert": 13.85286999999974,
@@ -230,7 +230,7 @@
  "funding": 0.0,
  "erstellt": 1793319819.7411644,
  "start_fx": 1.1184885798616961,
- "letzter_tick": 1793597819.8858325,
+ "letzter_tick": 1793598719.5998318,
  "auftraege": [
   {
    "id": "a2bbb8e",
@@ -266,7 +266,7 @@
    "ausstiegsplan": "Halten bis zur Abrechnung am 3./4.11. oder Verkauf bei Bid ≥0,68. Das Limit verfällt am 3.11. um 20:00 UTC.",
    "invalidierung": "Pre-Announcement oder Konsenssenkung unter 1,90 vor dem Release; dann Limit löschen bzw. Position schließen.",
    "erstellt": 1793581747.362041,
-   "geprueft_bis": 1793597819.8858325,
+   "geprueft_bis": 1793598719.5998318,
    "gueltig_bis": 1793736000.0
   }
  ]
