@@ -137,7 +137,7 @@
    "ausstiegsplan": "Halten bis 31.12.; nach NVDA-Earnings 17.11. neu bewerten; Gewinnmitnahme ≥0,65.",
    "entscheidung_id": "d62d5f0db",
    "invalidierung": "NVDA übertrifft Apple-Marktkap nach Earnings um >5 % oder Apple-JA <0,25.",
-   "kurs": 0.35950000000000004,
+   "kurs": 0.357,
    "wert": 253.7
   },
   {
@@ -221,8 +221,8 @@
    "ausstiegsplan": "Bis Abrechnung halten, gehedgt mit Polymarket R-NEIN.",
    "entscheidung_id": "db10bcf3e",
    "invalidierung": "Manifold-Auflösungsregel weicht erkennbar von Polymarket ab (z. B. Mehrheit ohne VP)",
-   "kurs": 0.2056307551206369,
-   "wert": 49.55
+   "kurs": 0.20632194394425318,
+   "wert": 49.72
   },
   {
    "id": "p1ea4c756",
@@ -289,8 +289,8 @@
    "ausstiegsplan": "Halten bis Abrechnung 3.11. 12:00 ET; vorher verkaufen, wenn ETH >2330.",
    "entscheidung_id": "d61fefae7",
    "invalidierung": "ETH Binance >2330 vor 3.11. Mittag ET",
-   "kurs": 0.974,
-   "wert": 396.98
+   "kurs": 0.983,
+   "wert": 400.25
   },
   {
    "id": "p77177258",
@@ -323,8 +323,8 @@
    "ausstiegsplan": "Halten bis 30.11.; verkaufen, wenn BTC unter 64.000 fällt oder NEIN-Preis <0.88.",
    "entscheidung_id": "d7dbfc08f",
    "invalidierung": "BTC Binance unter 64.000 oder DVOL >60",
-   "kurs": 0.9515,
-   "wert": 297.66
+   "kurs": 0.9524999999999999,
+   "wert": 297.98
   }
  ],
  "realisiert": 0.0,
@@ -332,6 +332,6 @@
  "funding": 0.0,
  "erstellt": 1793380123.8861866,
  "start_fx": 1.1156327353966788,
- "letzter_tick": 1793656755.412032,
+ "letzter_tick": 1793657655.6602204,
  "auftraege": []
 }
