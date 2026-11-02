@@ -187,8 +187,8 @@
    "ausstiegsplan": "Bis Abrechnung halten (Hedge mit Polymarket-NEIN); bei Regelabweichung beide Beine schließen.",
    "entscheidung_id": "de2f4bea2",
    "invalidierung": "Manifold-Kommentare/Regel zeigen abweichende Auflösung (z. B. Stand an anderem Datum).",
-   "kurs": 0.2202268262888821,
-   "wert": 33.47
+   "kurs": 0.21995293734572213,
+   "wert": 33.43
   },
   {
    "id": "pf9fa8a67",
@@ -221,8 +221,8 @@
    "ausstiegsplan": "Bis Abrechnung halten (Hedge).",
    "entscheidung_id": "d20c537d1",
    "invalidierung": "Regelabweichung Manifold; dann beide Beine schließen.",
-   "kurs": 0.775,
-   "wert": 115.5
+   "kurs": 0.785,
+   "wert": 117.0
   }
  ],
  "realisiert": -11.447130000000257,
@@ -230,7 +230,7 @@
  "funding": 0.0,
  "erstellt": 1793319819.7411644,
  "start_fx": 1.1184885798616961,
- "letzter_tick": 1793653155.126197,
+ "letzter_tick": 1793654055.0929873,
  "auftraege": [
   {
    "id": "a2bbb8e",
@@ -266,7 +266,7 @@
    "ausstiegsplan": "Halten bis zur Abrechnung am 3./4.11. oder Verkauf bei Bid ≥0,68. Das Limit verfällt am 3.11. um 20:00 UTC.",
    "invalidierung": "Pre-Announcement oder Konsenssenkung unter 1,90 vor dem Release; dann Limit löschen bzw. Position schließen.",
    "erstellt": 1793581747.362041,
-   "geprueft_bis": 1793653155.126197,
+   "geprueft_bis": 1793654055.0929873,
    "gueltig_bis": 1793736000.0
   }
  ]
