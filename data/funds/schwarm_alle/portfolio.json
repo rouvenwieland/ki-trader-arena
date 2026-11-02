@@ -2,7 +2,7 @@
  "fonds_id": "schwarm_alle",
  "waehrung": "USD",
  "start_kapital": 11157.431109273288,
- "cash": 11178.693699273288,
+ "cash": 11098.837569273288,
  "positionen": [
   {
    "id": "p950d55a1",
@@ -33,8 +33,8 @@
    "gebuehren": 0.0,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Schwarm-Regel)",
-   "kurs": 0.22,
-   "wert": 64.47
+   "kurs": 0.225,
+   "wert": 67.54
   },
   {
    "id": "pbfbc15e4",
@@ -67,12 +67,44 @@
    "ausstiegsplan": "Halten bis zur Abrechnung (Schwarm-Regel)",
    "kurs": 0.245,
    "wert": 113.28
+  },
+  {
+   "id": "pd500b714",
+   "inst": {
+    "id": "pm:polymarket:562794:JA",
+    "art": "pm",
+    "venue": "polymarket",
+    "ergebnis": "JA",
+    "frage": "Will the Republican Party control the Senate after the 2026 Midterm elections?",
+    "schliesst": 1793768340.0,
+    "ref": {
+     "id": "562794",
+     "token_ja": "51939490109676186832507970701169130490548061087912630009168726706475001411420",
+     "token_nein": "108587038225191871355030577171066853142535232042155117887981453750193713427381",
+     "tick": 0.01,
+     "condition": "0x86bfb53af7250a40928975c551d12c185b762fa4ce0b40c6a64a50c946d72587",
+     "gebuehr_rate": 0.04,
+     "gebuehr_exp": 1.0
+    },
+    "url": "https://polymarket.com/event/which-party-will-win-the-senate-in-2026"
+   },
+   "seite": "long",
+   "menge": 352.0,
+   "einstand": 0.22,
+   "hebel": 1.0,
+   "marge": 0.0,
+   "eroeffnet": 1793650454.8894787,
+   "gebuehren": 2.41613,
+   "funding": 0.0,
+   "ausstiegsplan": "Halten bis zur Abrechnung (Schwarm-Regel)",
+   "kurs": 0.215,
+   "wert": 73.92
   }
  ],
  "realisiert": 240.87439999999992,
- "gebuehren": 15.421809999999999,
+ "gebuehren": 17.83794,
  "funding": 0.0,
  "erstellt": 1793379225.5430336,
  "start_fx": 1.1157431109273288,
- "letzter_tick": 1793649554.544804
+ "letzter_tick": 1793650454.8894787
 }
