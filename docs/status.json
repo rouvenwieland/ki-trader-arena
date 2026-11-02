@@ -1,11 +1,11 @@
 {
  "version": 1,
- "stand": 1793581611.3487198,
+ "stand": 1793581753.7228024,
  "hinweis": "Papierhandel-Simulation, keine Anlageberatung",
  "seite": "https://rouvenwieland.github.io/ki-trader-arena/",
  "budget": {
-  "heute_eur": 0.13,
-  "gesamt_eur": 29.67,
+  "heute_eur": 1.55,
+  "gesamt_eur": 31.09,
   "tagesdeckel_eur": 12.0,
   "gesamtdeckel_eur": 190.0,
   "claude_ende": "2026-11-14",
@@ -190,8 +190,8 @@
    "max_drawdown_pct": -0.91,
    "status": "aktiv",
    "modell": "claude-sonnet-5-5",
-   "kosten_heute_eur": 0.0,
-   "kosten_gesamt_eur": 6.113,
+   "kosten_heute_eur": 0.364,
+   "kosten_gesamt_eur": 6.477,
    "rendite_ki_pct": [
     -0.78,
     1.5
@@ -249,8 +249,8 @@
    "max_drawdown_pct": -2.34,
    "status": "aktiv",
    "modell": "claude-sonnet-5-5",
-   "kosten_heute_eur": 0.0,
-   "kosten_gesamt_eur": 7.654,
+   "kosten_heute_eur": 0.367,
+   "kosten_gesamt_eur": 8.021,
    "rendite_ki_pct": [
     -4.24,
     2.27
@@ -895,8 +895,8 @@
    "max_drawdown_pct": -3.81,
    "status": "aktiv",
    "modell": "claude-sonnet-5-5",
-   "kosten_heute_eur": 0.0,
-   "kosten_gesamt_eur": 7.565,
+   "kosten_heute_eur": 0.277,
+   "kosten_gesamt_eur": 7.842,
    "rendite_ki_pct": [
     -6.41,
     2.69
@@ -1013,8 +1013,8 @@
    "max_drawdown_pct": -12.6,
    "status": "aktiv",
    "modell": "claude-sonnet-5-5",
-   "kosten_heute_eur": 0.131,
-   "kosten_gesamt_eur": 7.779,
+   "kosten_heute_eur": 0.54,
+   "kosten_gesamt_eur": 8.189,
    "rendite_ki_pct": [
     -16.37,
     0.83
@@ -1195,6 +1195,13 @@
  ],
  "letzte_entscheidungen": [
   {
+   "ts": 1793581747.3598342,
+   "fonds": "Claude Mittel",
+   "instrument": "pm:polymarket:6280962:JA",
+   "aktion": "kaufen",
+   "zuversicht": 0.5
+  },
+  {
    "ts": 1793560019.8464816,
    "fonds": "Claude Mittel",
    "instrument": "pm:polymarket:676741:JA",
@@ -1242,13 +1249,6 @@
    "instrument": "pm:manifold:N5O2RlE0N0:JA",
    "aktion": "kaufen",
    "zuversicht": 0.65
-  },
-  {
-   "ts": 1793513609.9512303,
-   "fonds": "Claude Mittel+RM (A/B)",
-   "instrument": "pm:manifold:EUhytOdNRu:JA",
-   "aktion": "kaufen",
-   "zuversicht": 0.75
   }
  ],
  "ereignisse": [
