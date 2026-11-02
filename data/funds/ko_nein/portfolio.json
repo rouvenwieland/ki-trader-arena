@@ -261,38 +261,6 @@
    "wert": 158.2
   },
   {
-   "id": "p30de0421",
-   "inst": {
-    "id": "pm:polymarket:1194643:NEIN",
-    "art": "pm",
-    "venue": "polymarket",
-    "ergebnis": "NEIN",
-    "frage": "Will Iliana Iotova win the next Bulgarian presidential election?",
-    "schliesst": 1793595540.0,
-    "ref": {
-     "id": "1194643",
-     "token_ja": "50441114645457108268892324313719484550984676393068151334263975251311332365159",
-     "token_nein": "99622103131434202105388039057766053299905201074786569487569345621536678411876",
-     "tick": 0.01,
-     "condition": "0x5512bfa9294bf914063ed120969908dee5cdf6e14293f28ca405d3ce4edcf485",
-     "gebuehr_rate": 0.0,
-     "gebuehr_exp": 1.0
-    },
-    "url": "https://polymarket.com/event/bulgaria-presidential-election"
-   },
-   "seite": "long",
-   "menge": 572.0,
-   "einstand": 0.2920744755244755,
-   "hebel": 1.0,
-   "marge": 0.0,
-   "eroeffnet": 1793381923.768329,
-   "gebuehren": 0.0,
-   "funding": 0.0,
-   "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": null,
-   "wert": 167.07
-  },
-  {
    "id": "p722ad016",
    "inst": {
     "id": "pm:polymarket:682705:NEIN",
@@ -353,8 +321,8 @@
    "gebuehren": 0.0,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.5640000000000001,
-   "wert": 140.0
+   "kurs": 0.5615,
+   "wert": 138.75
   },
   {
    "id": "pe65b0b73",
@@ -513,8 +481,8 @@
    "gebuehren": 0.0,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.0235,
-   "wert": 33.22
+   "kurs": 0.027000000000000003,
+   "wert": 37.75
   },
   {
    "id": "pc8cf836f",
@@ -577,8 +545,8 @@
    "gebuehren": 0.0,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.705,
-   "wert": 162.4
+   "kurs": 0.715,
+   "wert": 164.72
   },
   {
    "id": "p4c2af182",
@@ -833,7 +801,7 @@
    "gebuehren": 0.0,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.745,
+   "kurs": 0.74,
    "wert": 123.52
   },
   {
@@ -961,8 +929,8 @@
    "gebuehren": 1.85338,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.815,
-   "wert": 159.57
+   "kurs": 0.825,
+   "wert": 161.54
   },
   {
    "id": "pa41d35a5",
@@ -1243,8 +1211,8 @@
    "gebuehren": 0.0,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.18,
-   "wert": 26.64
+   "kurs": 0.19,
+   "wert": 32.56
   },
   {
    "id": "pd54b5964",
@@ -1423,7 +1391,7 @@
    "gebuehren": 4.65658,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.5700000000000001,
+   "kurs": 0.565,
    "wert": 154.0
   },
   {
@@ -1487,8 +1455,8 @@
    "gebuehren": 4.28576,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.6555,
-   "wert": 169.39
+   "kurs": 0.69,
+   "wert": 176.96
   },
   {
    "id": "p54f0e36a",
@@ -1551,8 +1519,8 @@
    "gebuehren": 9.71438,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.065,
-   "wert": 77.94
+   "kurs": 0.0685,
+   "wert": 84.54
   },
   {
    "id": "p3428571e",
@@ -1583,15 +1551,15 @@
    "gebuehren": 2.8603,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.65,
+   "kurs": 0.645,
    "wert": 161.28
   }
  ],
- "realisiert": -1365.3218799999997,
+ "realisiert": -1532.3884799999996,
  "gebuehren": 137.82986999999997,
  "funding": 0.0,
  "erstellt": 1793379225.5430336,
  "start_fx": 1.1157431109273288,
- "letzter_tick": 1793596920.3504398,
+ "letzter_tick": 1793597819.8858325,
  "kontrolle_bis": 1793596129.4194868
 }
