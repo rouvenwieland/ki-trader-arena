@@ -91,8 +91,8 @@
    "ausstiegsplan": "Halten bis Abrechnung 30.11.; Gewinn mitnehmen, wenn JA-Bid ≥0.92. Neu bewerten bei Austritt von PSL oder PL2050 aus der Koalition.",
    "entscheidung_id": "d6e2136ea",
    "invalidierung": "PSL oder Polska 2050 kündigen Koalition auf bzw. sagen Unterstützung für das konstruktive Misstrauensvotum zu; oder Tusk kündigt Rücktritt an.",
-   "kurs": 0.8682344039927126,
-   "wert": 128.47
+   "kurs": 0.9000014377074308,
+   "wert": 133.18
   },
   {
    "id": "pa2cf5bd2",
@@ -125,8 +125,8 @@
    "ausstiegsplan": "Bis zur Abrechnung (Earnings ca. 17.–25.11.) halten; vorzeitig verkaufen, wenn Bid ≥0.92 oder bei Nachricht zu Margendruck.",
    "entscheidung_id": "df5b61ded",
    "invalidierung": "Meldung/Analystenkonsens zur Q3-Marge ≥75,0 % oder <73 %; Pre-Announcement zu Speicherkosten.",
-   "kurs": 0.8,
-   "wert": 31.6
+   "kurs": 0.8049999999999999,
+   "wert": 29.6
   },
   {
    "id": "p8b4a7cc3",
@@ -159,8 +159,8 @@
    "ausstiegsplan": "Halten bis Abrechnung; Gewinn mitnehmen bei JA-Bid ≥0,52; Neubewertung nach NVDA-Zahlen.",
    "entscheidung_id": "dd384368f",
    "invalidierung": "NVDA schließt mehrere Tage ≥3 % über Apple-Marktkapitalisierung oder NVDA-Zahlen mit starker Guidance und Kurssprung.",
-   "kurs": 0.40700000000000003,
-   "wert": 85.85
+   "kurs": 0.40349999999999997,
+   "wert": 85.63
   },
   {
    "id": "pb31aed47",
@@ -187,8 +187,8 @@
    "ausstiegsplan": "Bis Abrechnung halten (Hedge mit Polymarket-NEIN); bei Regelabweichung beide Beine schließen.",
    "entscheidung_id": "de2f4bea2",
    "invalidierung": "Manifold-Kommentare/Regel zeigen abweichende Auflösung (z. B. Stand an anderem Datum).",
-   "kurs": 0.23417402975222412,
-   "wert": 35.59
+   "kurs": 0.23686566478954268,
+   "wert": 36.0
   },
   {
    "id": "pf9fa8a67",
@@ -230,7 +230,7 @@
  "funding": 0.0,
  "erstellt": 1793319819.7411644,
  "start_fx": 1.1184885798616961,
- "letzter_tick": 1793602320.487042,
+ "letzter_tick": 1793603219.3946183,
  "auftraege": [
   {
    "id": "a2bbb8e",
@@ -266,7 +266,7 @@
    "ausstiegsplan": "Halten bis zur Abrechnung am 3./4.11. oder Verkauf bei Bid ≥0,68. Das Limit verfällt am 3.11. um 20:00 UTC.",
    "invalidierung": "Pre-Announcement oder Konsenssenkung unter 1,90 vor dem Release; dann Limit löschen bzw. Position schließen.",
    "erstellt": 1793581747.362041,
-   "geprueft_bis": 1793602320.487042,
+   "geprueft_bis": 1793603219.3946183,
    "gueltig_bis": 1793736000.0
   }
  ]
