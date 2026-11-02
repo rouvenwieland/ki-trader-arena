@@ -2,7 +2,7 @@
  "fonds_id": "ko_nein",
  "waehrung": "USD",
  "start_kapital": 11157.431109273288,
- "cash": 1526.8098292732852,
+ "cash": 1697.8098292732852,
  "positionen": [
   {
    "id": "pe6781775",
@@ -257,8 +257,8 @@
    "gebuehren": 0.0,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.705,
-   "wert": 158.2
+   "kurs": 0.72,
+   "wert": 160.46
   },
   {
    "id": "p722ad016",
@@ -321,8 +321,8 @@
    "gebuehren": 0.0,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.6034999999999999,
-   "wert": 150.75
+   "kurs": 0.599,
+   "wert": 149.25
   },
   {
    "id": "pe65b0b73",
@@ -481,7 +481,7 @@
    "gebuehren": 0.0,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.023,
+   "kurs": 0.0235,
    "wert": 33.22
   },
   {
@@ -577,8 +577,8 @@
    "gebuehren": 0.0,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.7050000000000001,
-   "wert": 113.46
+   "kurs": 0.71,
+   "wert": 115.32
   },
   {
    "id": "p7e5c2e70",
@@ -1057,8 +1057,8 @@
    "gebuehren": 0.0,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.007,
-   "wert": 4.27
+   "kurs": 0.005,
+   "wert": 1.42
   },
   {
    "id": "pc0b8a31d",
@@ -1153,7 +1153,7 @@
    "gebuehren": 0.0,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.1,
+   "kurs": 0.095,
    "wert": 33.03
   },
   {
@@ -1219,32 +1219,6 @@
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
    "kurs": 0.885,
    "wert": 165.44
-  },
-  {
-   "id": "pb69a0df9",
-   "inst": {
-    "id": "pm:kalshi:KXHIGHCHI-26NOV01-B68.5:NEIN",
-    "art": "pm",
-    "venue": "kalshi",
-    "ergebnis": "NEIN",
-    "frage": "Will the maximum temperature be 68-69° on Nov 1, 2026? [68° to 69°]",
-    "schliesst": 1793602800.0,
-    "ref": {
-     "ticker": "KXHIGHCHI-26NOV01-B68.5"
-    },
-    "url": "https://kalshi.com/markets/KXHIGHCHI-26NOV01"
-   },
-   "seite": "long",
-   "menge": 171.0,
-   "einstand": 0.9728035087719299,
-   "hebel": 1.0,
-   "marge": 0.0,
-   "eroeffnet": 1793507084.3484185,
-   "gebuehren": 0.32,
-   "funding": 0.0,
-   "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": null,
-   "wert": 166.35
   },
   {
    "id": "p32e5b9f1",
@@ -1403,8 +1377,8 @@
    "gebuehren": 4.28576,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.4055,
-   "wert": 105.71
+   "kurs": 0.383,
+   "wert": 95.53
   },
   {
    "id": "p54f0e36a",
@@ -1467,8 +1441,8 @@
    "gebuehren": 9.71438,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.0265,
-   "wert": 34.35
+   "kurs": 0.020999999999999998,
+   "wert": 26.42
   },
   {
    "id": "p3428571e",
@@ -1499,15 +1473,15 @@
    "gebuehren": 2.8603,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.755,
+   "kurs": 0.75,
    "wert": 186.48
   }
  ],
- "realisiert": -1686.4332799999997,
+ "realisiert": -1681.7826799999998,
  "gebuehren": 137.82986999999997,
  "funding": 0.0,
  "erstellt": 1793379225.5430336,
  "start_fx": 1.1157431109273288,
- "letzter_tick": 1793624130.7731192,
+ "letzter_tick": 1793625031.1571364,
  "kontrolle_bis": 1793610729.2328317
 }
