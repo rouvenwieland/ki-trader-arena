@@ -321,8 +321,8 @@
    "gebuehren": 0.0,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.6094999999999999,
-   "wert": 151.25
+   "kurs": 0.6145,
+   "wert": 153.5
   },
   {
    "id": "pe65b0b73",
@@ -417,8 +417,8 @@
    "gebuehren": 0.0,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.0165,
-   "wert": 98.61
+   "kurs": 0.0155,
+   "wert": 92.44
   },
   {
    "id": "pcd4d06c5",
@@ -578,7 +578,7 @@
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
    "kurs": 0.79,
-   "wert": 141.36
+   "wert": 145.08
   },
   {
    "id": "p7e5c2e70",
@@ -929,8 +929,8 @@
    "gebuehren": 1.85338,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.845,
-   "wert": 165.48
+   "kurs": 0.835,
+   "wert": 163.51
   },
   {
    "id": "pa41d35a5",
@@ -1057,7 +1057,7 @@
    "gebuehren": 0.0,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.006500000000000001,
+   "kurs": 0.0115,
    "wert": 4.27
   },
   {
@@ -1455,8 +1455,8 @@
    "gebuehren": 4.28576,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.533,
-   "wert": 136.24
+   "kurs": 0.624,
+   "wert": 159.99
   },
   {
    "id": "p54f0e36a",
@@ -1519,8 +1519,8 @@
    "gebuehren": 9.71438,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.0445,
-   "wert": 58.12
+   "kurs": 0.0655,
+   "wert": 84.54
   },
   {
    "id": "p3428571e",
@@ -1551,7 +1551,7 @@
    "gebuehren": 2.8603,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.71,
+   "kurs": 0.69,
    "wert": 161.28
   }
  ],
@@ -1560,6 +1560,6 @@
  "funding": 0.0,
  "erstellt": 1793379225.5430336,
  "start_fx": 1.1157431109273288,
- "letzter_tick": 1793605919.879443,
+ "letzter_tick": 1793606819.9781125,
  "kontrolle_bis": 1793596129.4194868
 }
