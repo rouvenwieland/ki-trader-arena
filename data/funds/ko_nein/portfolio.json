@@ -2,7 +2,7 @@
  "fonds_id": "ko_nein",
  "waehrung": "USD",
  "start_kapital": 11157.431109273288,
- "cash": 1697.8098292732852,
+ "cash": 1363.2973892732853,
  "positionen": [
   {
    "id": "pe6781775",
@@ -193,8 +193,8 @@
    "gebuehren": 0.0,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.755,
-   "wert": 174.0
+   "kurs": 0.745,
+   "wert": 171.68
   },
   {
    "id": "pf49ce1c2",
@@ -321,8 +321,8 @@
    "gebuehren": 0.0,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.5765,
-   "wert": 143.75
+   "kurs": 0.576,
+   "wert": 143.0
   },
   {
    "id": "pe65b0b73",
@@ -417,8 +417,8 @@
    "gebuehren": 0.0,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.014,
-   "wert": 73.96
+   "kurs": 0.013999999999999999,
+   "wert": 80.12
   },
   {
    "id": "pcd4d06c5",
@@ -481,8 +481,8 @@
    "gebuehren": 0.0,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.0245,
-   "wert": 34.73
+   "kurs": 0.025,
+   "wert": 36.24
   },
   {
    "id": "pc8cf836f",
@@ -577,8 +577,8 @@
    "gebuehren": 0.0,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.74,
-   "wert": 126.48
+   "kurs": 0.745,
+   "wert": 128.34
   },
   {
    "id": "p7e5c2e70",
@@ -673,8 +673,8 @@
    "gebuehren": 0.0,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.405,
-   "wert": 139.2
+   "kurs": 0.43,
+   "wert": 146.16
   },
   {
    "id": "p7102c243",
@@ -801,8 +801,8 @@
    "gebuehren": 0.0,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.6599999999999999,
-   "wert": 121.59
+   "kurs": 0.685,
+   "wert": 125.45
   },
   {
    "id": "p9f764afd",
@@ -833,8 +833,8 @@
    "gebuehren": 0.0,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.842,
-   "wert": 173.25
+   "kurs": 0.8425,
+   "wert": 173.45
   },
   {
    "id": "pc2572f19",
@@ -1089,8 +1089,8 @@
    "gebuehren": 0.0,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.835,
-   "wert": 166.83
+   "kurs": 0.85,
+   "wert": 168.84
   },
   {
    "id": "p1b597777",
@@ -1313,8 +1313,8 @@
    "gebuehren": 4.65658,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.625,
-   "wert": 170.5
+   "kurs": 0.635,
+   "wert": 173.25
   },
   {
    "id": "pd183209f",
@@ -1347,38 +1347,6 @@
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
    "kurs": 0.765,
    "wert": 166.44
-  },
-  {
-   "id": "p59c4bdc3",
-   "inst": {
-    "id": "pm:polymarket:6255205:NEIN",
-    "art": "pm",
-    "venue": "polymarket",
-    "ergebnis": "NEIN",
-    "frage": "Will the price of Bitcoin be between $76,000 and $78,000 on November 2?",
-    "schliesst": 1793638800.0,
-    "ref": {
-     "id": "6255205",
-     "token_ja": "57544226328692557395094882656187865060369399083986231803545423838734019504362",
-     "token_nein": "65836022988849079702749084850903946000952814820226750150897669282761354296450",
-     "tick": 0.001,
-     "condition": "0x2db2ec13c0911be6fc4799593543ca6be7deaded27ac73d524d1b1ea4802d001",
-     "gebuehr_rate": 0.07,
-     "gebuehr_exp": 1.0
-    },
-    "url": "https://polymarket.com/event/will-the-price-of-bitcoin-be-between-76000-78000-on-november-2-2026"
-   },
-   "seite": "long",
-   "menge": 261.0,
-   "einstand": 0.6241800766283525,
-   "hebel": 1.0,
-   "marge": 0.0,
-   "eroeffnet": 1793546911.3904955,
-   "gebuehren": 4.28576,
-   "funding": 0.0,
-   "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": null,
-   "wert": 162.91
   },
   {
    "id": "p54f0e36a",
@@ -1443,13 +1411,77 @@
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
    "kurs": 0.8049999999999999,
    "wert": 199.08
+  },
+  {
+   "id": "pe7c95a9c",
+   "inst": {
+    "id": "pm:polymarket:6172681:NEIN",
+    "art": "pm",
+    "venue": "polymarket",
+    "ergebnis": "NEIN",
+    "frage": "Will Gold (XAUUSD) hit (HIGH) $4,000 in November?",
+    "schliesst": 1796101199.999,
+    "ref": {
+     "id": "6172681",
+     "token_ja": "115719020933381072166530201969146950641679697201410669334100223670791774499645",
+     "token_nein": "108467368739217877589981666579973788217490163029571317452066146263920270950421",
+     "tick": 0.01,
+     "condition": "0x6b6db92c8c646670e3064741313089c19e0c247223d555622b6a9b9387ffa570",
+     "gebuehr_rate": 0.04,
+     "gebuehr_exp": 1.0
+    },
+    "url": "https://polymarket.com/event/will-xauusd-reach-4000-in-november-2026"
+   },
+   "seite": "long",
+   "menge": 934.0,
+   "einstand": 0.17327066381156317,
+   "hebel": 1.0,
+   "marge": 0.0,
+   "eroeffnet": 1793640440.6130333,
+   "gebuehren": 5.35174,
+   "funding": 0.0,
+   "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
+   "kurs": 0.135,
+   "wert": 84.06
+  },
+  {
+   "id": "pe88b93d8",
+   "inst": {
+    "id": "pm:polymarket:5691229:NEIN",
+    "art": "pm",
+    "venue": "polymarket",
+    "ergebnis": "NEIN",
+    "frage": "Will monthly inflation increase by 0.3% in October?",
+    "schliesst": 1794373140.0,
+    "ref": {
+     "id": "5691229",
+     "token_ja": "105740773335001335762844649510666932212071130919882213952650535306816170892027",
+     "token_nein": "1215185012665762334321626546491455470534569930713988074565531858996286858398",
+     "tick": 0.01,
+     "condition": "0x1477a29da5bdf455b9dc9a592462fc50be5d36ea303d8eb68934e54e82866c92",
+     "gebuehr_rate": 0.05,
+     "gebuehr_exp": 1.0
+    },
+    "url": "https://polymarket.com/event/will-monthly-inflation-increase-by-0pt3-in-october-2026"
+   },
+   "seite": "long",
+   "menge": 291.0,
+   "einstand": 0.5626996563573883,
+   "hebel": 1.0,
+   "marge": 0.0,
+   "eroeffnet": 1793640440.6130333,
+   "gebuehren": 3.5803,
+   "funding": 0.0,
+   "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
+   "kurs": 0.5449999999999999,
+   "wert": 151.32
   }
  ],
- "realisiert": -1839.3551999999997,
- "gebuehren": 137.82986999999997,
+ "realisiert": -2002.2661999999998,
+ "gebuehren": 146.76190999999997,
  "funding": 0.0,
  "erstellt": 1793379225.5430336,
  "start_fx": 1.1157431109273288,
- "letzter_tick": 1793639541.4443552,
- "kontrolle_bis": 1793610729.2328317
+ "letzter_tick": 1793640440.6130333,
+ "kontrolle_bis": 1793639794.806453
 }
