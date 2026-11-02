@@ -120,8 +120,8 @@
    "entscheidung_id": "dfb065841",
    "index_eroeffnung": 77924.8,
    "invalidierung": "BTC-Index außerhalb 74.500–81.500 oder DVOL >48 (Regimewechsel)",
-   "kurs": 2626.829838,
-   "wert": 2655.1
+   "kurs": 2590.6608770000003,
+   "wert": 2662.34
   },
   {
    "id": "p50344976",
@@ -149,8 +149,8 @@
    "entscheidung_id": "d0a6a4df7",
    "index_eroeffnung": 77924.8,
    "invalidierung": "BTC-Index über 81.500 oder unter 74.500, DVOL >48",
-   "kurs": 1566.8809560000002,
-   "wert": 2875.42
+   "kurs": 1591.296147,
+   "wert": 2870.54
   },
   {
    "id": "pd68bc7a7",
@@ -184,7 +184,7 @@
    "entscheidung_id": "d764bc30d",
    "invalidierung": "ETH Binance über 2370 vor 3.11. 08:00 UTC",
    "kurs": 0.971,
-   "wert": 505.74
+   "wert": 506.26
   }
  ],
  "realisiert": -956.86946,
@@ -192,6 +192,6 @@
  "funding": 0.0,
  "erstellt": 1793319819.7411644,
  "start_fx": 1.1184885798616961,
- "letzter_tick": 1793645056.5241919,
+ "letzter_tick": 1793645954.4728115,
  "auftraege": []
 }

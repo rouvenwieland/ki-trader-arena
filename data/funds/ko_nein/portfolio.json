@@ -321,8 +321,8 @@
    "gebuehren": 0.0,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.566,
-   "wert": 141.0
+   "kurs": 0.5605,
+   "wert": 138.25
   },
   {
    "id": "pe65b0b73",
@@ -481,8 +481,8 @@
    "gebuehren": 0.0,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.017,
-   "wert": 24.16
+   "kurs": 0.0195,
+   "wert": 27.18
   },
   {
    "id": "pc8cf836f",
@@ -641,7 +641,7 @@
    "gebuehren": 0.0,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.036000000000000004,
+   "kurs": 0.035500000000000004,
    "wert": 46.0
   },
   {
@@ -737,8 +737,8 @@
    "gebuehren": 0.0,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.875,
-   "wert": 163.56
+   "kurs": 0.885,
+   "wert": 165.44
   },
   {
    "id": "pa8d52a27",
@@ -801,8 +801,8 @@
    "gebuehren": 0.0,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.675,
-   "wert": 123.52
+   "kurs": 0.72,
+   "wert": 135.1
   },
   {
    "id": "p9f764afd",
@@ -833,8 +833,8 @@
    "gebuehren": 0.0,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.8445,
-   "wert": 173.86
+   "kurs": 0.8454999999999999,
+   "wert": 174.07
   },
   {
    "id": "pc2572f19",
@@ -1057,8 +1057,8 @@
    "gebuehren": 0.0,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.005,
-   "wert": 2.13
+   "kurs": 0.021,
+   "wert": 4.98
   },
   {
    "id": "pc0b8a31d",
@@ -1185,8 +1185,8 @@
    "gebuehren": 0.0,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.21,
-   "wert": 53.28
+   "kurs": 0.195,
+   "wert": 35.52
   },
   {
    "id": "pd54b5964",
@@ -1345,8 +1345,8 @@
    "gebuehren": 2.87438,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.775,
-   "wert": 168.63
+   "kurs": 0.785,
+   "wert": 170.82
   },
   {
    "id": "p54f0e36a",
@@ -1482,6 +1482,6 @@
  "funding": 0.0,
  "erstellt": 1793379225.5430336,
  "start_fx": 1.1157431109273288,
- "letzter_tick": 1793645056.5241919,
+ "letzter_tick": 1793645954.4728115,
  "kontrolle_bis": 1793639794.806453
 }
