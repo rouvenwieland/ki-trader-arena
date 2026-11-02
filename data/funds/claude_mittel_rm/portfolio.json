@@ -137,8 +137,8 @@
    "ausstiegsplan": "Halten bis 31.12.; nach NVDA-Earnings 17.11. neu bewerten; Gewinnmitnahme ≥0,65.",
    "entscheidung_id": "d62d5f0db",
    "invalidierung": "NVDA übertrifft Apple-Marktkap nach Earnings um >5 % oder Apple-JA <0,25.",
-   "kurs": 0.35950000000000004,
-   "wert": 253.7
+   "kurs": 0.362,
+   "wert": 258.17
   },
   {
    "id": "pa832233e",
@@ -221,8 +221,8 @@
    "ausstiegsplan": "Bis Abrechnung halten, gehedgt mit Polymarket R-NEIN.",
    "entscheidung_id": "db10bcf3e",
    "invalidierung": "Manifold-Auflösungsregel weicht erkennbar von Polymarket ab (z. B. Mehrheit ohne VP)",
-   "kurs": 0.2724014899447168,
-   "wert": 65.64
+   "kurs": 0.2649487969799629,
+   "wert": 63.85
   },
   {
    "id": "p1ea4c756",
@@ -264,6 +264,6 @@
  "funding": 0.0,
  "erstellt": 1793380123.8861866,
  "start_fx": 1.1156327353966788,
- "letzter_tick": 1793635941.1852398,
+ "letzter_tick": 1793636840.4802957,
  "auftraege": []
 }
