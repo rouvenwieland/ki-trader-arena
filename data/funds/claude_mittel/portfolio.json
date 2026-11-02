@@ -159,8 +159,8 @@
    "ausstiegsplan": "Halten bis Abrechnung; Gewinn mitnehmen bei JA-Bid ≥0,52; Neubewertung nach NVDA-Zahlen.",
    "entscheidung_id": "dd384368f",
    "invalidierung": "NVDA schließt mehrere Tage ≥3 % über Apple-Marktkapitalisierung oder NVDA-Zahlen mit starker Guidance und Kurssprung.",
-   "kurs": 0.4365,
-   "wert": 93.51
+   "kurs": 0.437,
+   "wert": 93.73
   }
  ],
  "realisiert": 13.85286999999974,
@@ -168,7 +168,7 @@
  "funding": 0.0,
  "erstellt": 1793319819.7411644,
  "start_fx": 1.1184885798616961,
- "letzter_tick": 1793586905.9403286,
+ "letzter_tick": 1793587806.1580863,
  "auftraege": [
   {
    "id": "a2bbb8e",
@@ -204,7 +204,7 @@
    "ausstiegsplan": "Halten bis zur Abrechnung am 3./4.11. oder Verkauf bei Bid ≥0,68. Das Limit verfällt am 3.11. um 20:00 UTC.",
    "invalidierung": "Pre-Announcement oder Konsenssenkung unter 1,90 vor dem Release; dann Limit löschen bzw. Position schließen.",
    "erstellt": 1793581747.362041,
-   "geprueft_bis": 1793586905.9403286,
+   "geprueft_bis": 1793587806.1580863,
    "gueltig_bis": 1793736000.0
   }
  ]

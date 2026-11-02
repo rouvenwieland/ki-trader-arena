@@ -353,8 +353,8 @@
    "gebuehren": 0.0,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.5609999999999999,
-   "wert": 137.75
+   "kurs": 0.5615,
+   "wert": 138.25
   },
   {
    "id": "pe65b0b73",
@@ -450,7 +450,7 @@
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
    "kurs": 0.0175,
-   "wert": 98.61
+   "wert": 104.77
   },
   {
    "id": "pcd4d06c5",
@@ -833,8 +833,8 @@
    "gebuehren": 0.0,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.845,
-   "wert": 162.12
+   "kurs": 0.835,
+   "wert": 158.26
   },
   {
    "id": "p9f764afd",
@@ -993,7 +993,7 @@
    "gebuehren": 0.0,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.20500000000000002,
+   "kurs": 0.21000000000000002,
    "wert": 159.2
   },
   {
@@ -1089,7 +1089,7 @@
    "gebuehren": 0.0,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.002,
+   "kurs": 0.0015,
    "wert": 0.71
   },
   {
@@ -1359,8 +1359,8 @@
    "gebuehren": 1.59053,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.665,
-   "wert": 143.88
+   "kurs": 0.645,
+   "wert": 139.52
   },
   {
    "id": "p39a90c40",
@@ -1391,7 +1391,7 @@
    "gebuehren": 1.12388,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.4,
+   "kurs": 0.39,
    "wert": 38.4
   },
   {
@@ -1487,8 +1487,8 @@
    "gebuehren": 4.28576,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.7044999999999999,
-   "wert": 182.18
+   "kurs": 0.734,
+   "wert": 190.01
   },
   {
    "id": "p54f0e36a",
@@ -1551,8 +1551,8 @@
    "gebuehren": 1.02246,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.989,
-   "wert": 179.27
+   "kurs": 0.9924999999999999,
+   "wert": 180.36
   },
   {
    "id": "pc63d1166",
@@ -1583,8 +1583,8 @@
    "gebuehren": 9.71438,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.107,
-   "wert": 138.7
+   "kurs": 0.118,
+   "wert": 150.59
   }
  ],
  "realisiert": -1381.3378799999998,
@@ -1592,6 +1592,6 @@
  "funding": 0.0,
  "erstellt": 1793379225.5430336,
  "start_fx": 1.1157431109273288,
- "letzter_tick": 1793586905.9403286,
+ "letzter_tick": 1793587806.1580863,
  "kontrolle_bis": 1793581615.1384869
 }
