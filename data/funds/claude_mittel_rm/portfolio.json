@@ -69,8 +69,8 @@
    "ausstiegsplan": "Halten bis FOMC 9.12.; Verkauf, wenn NEIN-Preis ≥0.88 (Gewinn) oder CME-Hike-Odds unter 55% fallen.",
    "entscheidung_id": "d7e76abb3",
    "invalidierung": "CME FedWatch Dezember-Hike-Wahrscheinlichkeit fällt unter 55% oder Warsh/Fed-Mehrheit signalisiert Pause nach weicher CPI/Jobs-Zahl.",
-   "kurs": 0.725,
-   "wert": 295.2
+   "kurs": 0.735,
+   "wert": 299.3
   },
   {
    "id": "p8c871cfa",
@@ -221,8 +221,8 @@
    "ausstiegsplan": "Bis Abrechnung halten, gehedgt mit Polymarket R-NEIN.",
    "entscheidung_id": "db10bcf3e",
    "invalidierung": "Manifold-Auflösungsregel weicht erkennbar von Polymarket ab (z. B. Mehrheit ohne VP)",
-   "kurs": 0.22598352373036218,
-   "wert": 54.46
+   "kurs": 0.22624125005008094,
+   "wert": 54.52
   },
   {
    "id": "p1ea4c756",
@@ -264,6 +264,6 @@
  "funding": 0.0,
  "erstellt": 1793380123.8861866,
  "start_fx": 1.1156327353966788,
- "letzter_tick": 1793626941.6779096,
+ "letzter_tick": 1793627841.2912786,
  "auftraege": []
 }
