@@ -811,3 +811,7 @@
 {"ts": 1793610875.889406, "fonds": "claude_mittel", "modell": "claude-sonnet-5-5", "zweck": "runde", "nutzung": {"ein": 2, "aus": 804, "cache_lesen": 72795, "cache_schreiben": 4096, "websuchen": 0}, "usd": 0.037769}
 {"ts": 1793610876.0774534, "fonds": "claude_vorsichtig", "modell": "claude-sonnet-5-5", "zweck": "runde", "nutzung": {"ein": 2, "aus": 1364, "cache_lesen": 79317, "cache_schreiben": 3227, "websuchen": 0}, "usd": 0.043211}
 {"ts": 1793610883.8223417, "fonds": "claude_vorsichtig", "modell": "claude-sonnet-5-5", "zweck": "runde", "nutzung": {"ein": 2, "aus": 1041, "cache_lesen": 82544, "cache_schreiben": 1659, "websuchen": 0}, "usd": 0.035731}
+{"ts": 1793611688.4664042, "fonds": "claude_mittel", "modell": "claude-haiku-5-5", "zweck": "triage", "nutzung": {"ein": 4, "aus": 273, "cache_lesen": 0, "cache_schreiben": 527, "websuchen": 0}, "usd": 0.000233}
+{"ts": 1793611691.2685158, "fonds": "claude_mittel", "modell": "claude-sonnet-5-5", "zweck": "runde", "nutzung": {"ein": 4, "aus": 178, "cache_lesen": 0, "cache_schreiben": 28953, "websuchen": 0}, "usd": 0.085296}
+{"ts": 1793611703.6231172, "fonds": "claude_mittel", "modell": "claude-sonnet-5-5", "zweck": "runde", "nutzung": {"ein": 4, "aus": 1526, "cache_lesen": 28953, "cache_schreiben": 2749, "websuchen": 0}, "usd": 0.032121}
+{"ts": 1793611707.9931095, "fonds": "claude_mittel", "modell": "claude-sonnet-5-5", "zweck": "runde", "nutzung": {"ein": 2, "aus": 528, "cache_lesen": 31702, "cache_schreiben": 1650, "websuchen": 0}, "usd": 0.018112}
