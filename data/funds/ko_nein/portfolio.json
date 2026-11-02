@@ -33,7 +33,7 @@
    "gebuehren": 0.0,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.008,
+   "kurs": 0.0075,
    "wert": 12.84
   },
   {
@@ -481,8 +481,8 @@
    "gebuehren": 0.0,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.0175,
-   "wert": 24.16
+   "kurs": 0.017,
+   "wert": 22.65
   },
   {
    "id": "pc8cf836f",
@@ -545,8 +545,8 @@
    "gebuehren": 0.0,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.745,
-   "wert": 171.68
+   "kurs": 0.755,
+   "wert": 174.0
   },
   {
    "id": "p4c2af182",
@@ -705,8 +705,8 @@
    "gebuehren": 0.0,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.785,
-   "wert": 169.26
+   "kurs": 0.805,
+   "wert": 173.6
   },
   {
    "id": "p1f028824",
@@ -801,8 +801,8 @@
    "gebuehren": 0.0,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.72,
-   "wert": 135.1
+   "kurs": 0.71,
+   "wert": 133.17
   },
   {
    "id": "p9f764afd",
@@ -1057,8 +1057,8 @@
    "gebuehren": 0.0,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.0165,
-   "wert": 3.56
+   "kurs": 0.0135,
+   "wert": 2.13
   },
   {
    "id": "pc0b8a31d",
@@ -1281,7 +1281,7 @@
    "gebuehren": 1.12388,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.14,
+   "kurs": 0.28,
    "wert": 21.12
   },
   {
@@ -1313,8 +1313,8 @@
    "gebuehren": 4.65658,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.645,
-   "wert": 176.0
+   "kurs": 0.655,
+   "wert": 178.75
   },
   {
    "id": "pd183209f",
@@ -1441,8 +1441,8 @@
    "gebuehren": 5.35174,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.125,
-   "wert": 102.74
+   "kurs": 0.16499999999999998,
+   "wert": 112.08
   },
   {
    "id": "pe88b93d8",
@@ -1482,6 +1482,6 @@
  "funding": 0.0,
  "erstellt": 1793379225.5430336,
  "start_fx": 1.1157431109273288,
- "letzter_tick": 1793646855.414971,
+ "letzter_tick": 1793647754.8407016,
  "kontrolle_bis": 1793646058.4154346
 }
