@@ -2,7 +2,7 @@
  "fonds_id": "claude_mittel_rm",
  "waehrung": "USD",
  "start_kapital": 11156.327353966788,
- "cash": 8495.966229930236,
+ "cash": 7797.469799930236,
  "positionen": [
   {
    "id": "pe8186cc2",
@@ -257,10 +257,74 @@
    "invalidierung": "Manifold-Regel weicht ab",
    "kurs": 0.735,
    "wert": 100.74
+  },
+  {
+   "id": "pbf2c92c0",
+   "inst": {
+    "id": "pm:polymarket:6301286:NEIN",
+    "art": "pm",
+    "venue": "polymarket",
+    "ergebnis": "NEIN",
+    "frage": "Will the price of Ethereum be above $2,400 on November 3?",
+    "schliesst": 1793725200.0,
+    "ref": {
+     "id": "6301286",
+     "token_ja": "47235021958262949034970414637313432606050524901118767577769415369407301405700",
+     "token_nein": "82580034879816961393843008313124847949431511392482915900535053999061406169114",
+     "tick": 0.001,
+     "condition": "0x02e64dd5b7040b3f2a02130dbad23db9eb5d5fb64a30dddbf61bba1a95bc2f1b",
+     "gebuehr_rate": 0.07,
+     "gebuehr_exp": 1.0
+    },
+    "url": "https://polymarket.com/event/ethereum-above-on-november-3-2026"
+   },
+   "seite": "long",
+   "menge": 408.0,
+   "einstand": 0.9769167156862744,
+   "hebel": 1.0,
+   "marge": 0.0,
+   "eroeffnet": 1793646174.3642519,
+   "gebuehren": 0.64404,
+   "funding": 0.0,
+   "ausstiegsplan": "Halten bis Abrechnung 3.11. 12:00 ET; vorher verkaufen, wenn ETH >2330.",
+   "entscheidung_id": "d61fefae7",
+   "invalidierung": "ETH Binance >2330 vor 3.11. Mittag ET"
+  },
+  {
+   "id": "p77177258",
+   "inst": {
+    "id": "pm:polymarket:6507390:NEIN",
+    "art": "pm",
+    "venue": "polymarket",
+    "ergebnis": "NEIN",
+    "frage": "Will Bitcoin dip to $57,500 in November?",
+    "schliesst": 1796101200.0,
+    "ref": {
+     "id": "6507390",
+     "token_ja": "62104054092941340976580469137816666615613969504677668715742709707923994448385",
+     "token_nein": "12268523315545143833722445765332176278110447356369636927370449912563920315387",
+     "tick": 0.001,
+     "condition": "0xea8456818e462ddd25a436cf4e47ddff428e28b64ae3624957ae968012bf9787",
+     "gebuehr_rate": 0.07,
+     "gebuehr_exp": 1.0
+    },
+    "url": "https://polymarket.com/event/what-price-will-bitcoin-hit-in-november-2026"
+   },
+   "seite": "long",
+   "menge": 313.0,
+   "einstand": 0.953,
+   "hebel": 1.0,
+   "marge": 0.0,
+   "eroeffnet": 1793646182.4236948,
+   "gebuehren": 0.98137,
+   "funding": 0.0,
+   "ausstiegsplan": "Halten bis 30.11.; verkaufen, wenn BTC unter 64.000 fällt oder NEIN-Preis <0.88.",
+   "entscheidung_id": "d7dbfc08f",
+   "invalidierung": "BTC Binance unter 64.000 oder DVOL >60"
   }
  ],
  "realisiert": 0.0,
- "gebuehren": 4.35598,
+ "gebuehren": 5.981389999999999,
  "funding": 0.0,
  "erstellt": 1793380123.8861866,
  "start_fx": 1.1156327353966788,
