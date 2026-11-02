@@ -2,7 +2,7 @@
  "fonds_id": "claude_vorsichtig",
  "waehrung": "USD",
  "start_kapital": 11184.88579861696,
- "cash": 10180.96891861696,
+ "cash": 9981.09115861696,
  "positionen": [
   {
    "id": "pca43f487",
@@ -99,12 +99,45 @@
    "invalidierung": "Veröffentlichung ≥7,4M bzw. frühere Daten (z. B. Indeed-Postings) zeigen deutlichen Anstieg der Openings im September.",
    "kurs": 0.69,
    "wert": 211.2
+  },
+  {
+   "id": "pc5fe767d",
+   "inst": {
+    "id": "pm:polymarket:3215054:NEIN",
+    "art": "pm",
+    "venue": "polymarket",
+    "ergebnis": "NEIN",
+    "frage": "Will no one dissent the December Fed decision?",
+    "schliesst": 1796878740.0,
+    "ref": {
+     "id": "3215054",
+     "token_ja": "13134579510499246276339499133610682986894436673109113893814960984717743140594",
+     "token_nein": "22315982299077697156105776706554246661838117294236577543396990667140881813833",
+     "tick": 0.01,
+     "condition": "0x6a57f797374375cc63db50ef8bba44c8581c6b5b9ae93110d84bdebadcabac85",
+     "gebuehr_rate": 0.05,
+     "gebuehr_exp": 1.0
+    },
+    "url": "https://polymarket.com/event/will-no-one-dissent-the-december-fed-decision-20260730000304474"
+   },
+   "seite": "long",
+   "menge": 538.0,
+   "einstand": 0.36,
+   "hebel": 1.0,
+   "marge": 0.0,
+   "eroeffnet": 1793610876.0777717,
+   "gebuehren": 6.19776,
+   "funding": 0.0,
+   "ausstiegsplan": "Halten bis 9.12.; Verkauf, wenn NEIN-Bid >0,55 oder bei Invalidierung.",
+   "entscheidung_id": "d25f2be12",
+   "invalidierung": "Fed-Signale (Warsh/Williams/Jefferson) für klaren Hike mit breitem Konsens, oder CME-Hike >90 % ohne Tauben-Widerspruch."
   }
  ],
  "realisiert": -122.54410000000011,
- "gebuehren": 16.76668,
+ "gebuehren": 22.96444,
  "funding": 0.0,
  "erstellt": 1793319819.7411644,
  "start_fx": 1.1184885798616961,
- "letzter_tick": 1793610631.3134668
+ "letzter_tick": 1793610631.3134668,
+ "auftraege": []
 }

@@ -2,7 +2,7 @@
  "fonds_id": "claude_mittel",
  "waehrung": "USD",
  "start_kapital": 11184.88579861696,
- "cash": 10524.421267977932,
+ "cash": 10498.041267977933,
  "positionen": [
   {
    "id": "p51e71031",
@@ -223,10 +223,36 @@
    "invalidierung": "Regelabweichung Manifold; dann beide Beine schließen.",
    "kurs": 0.715,
    "wert": 106.5
+  },
+  {
+   "id": "p4f3aebe3",
+   "inst": {
+    "id": "pm:kalshi:KXWTIH-26NOV0205-T99.89:JA",
+    "art": "pm",
+    "venue": "kalshi",
+    "ergebnis": "JA",
+    "frage": "Will the WTI Oil close price be above 99.89 USD/barrel on November 02, 2026 at 5:00 AM ET? [Above $99.89]",
+    "schliesst": 1793613600.0,
+    "ref": {
+     "ticker": "KXWTIH-26NOV0205-T99.89"
+    },
+    "url": "https://kalshi.com/markets/KXWTIH-26NOV0205"
+   },
+   "seite": "long",
+   "menge": 64.0,
+   "einstand": 0.39531249999999996,
+   "hebel": 1.0,
+   "marge": 0.0,
+   "eroeffnet": 1793610870.3694522,
+   "gebuehren": 1.08,
+   "funding": 0.0,
+   "ausstiegsplan": "Halten bis zur Abrechnung um 10:00 UTC (rund 50 Minuten).",
+   "entscheidung_id": "d2828756c",
+   "invalidierung": "WTI fällt unter 99.89 und bleibt dort bis 10:00 UTC; Kalshi-Quelle zeigt dauerhaft einen tieferen Preis als die gemeldeten 100.5."
   }
  ],
  "realisiert": 13.85286999999974,
- "gebuehren": 8.58994,
+ "gebuehren": 9.66994,
  "funding": 0.0,
  "erstellt": 1793319819.7411644,
  "start_fx": 1.1184885798616961,

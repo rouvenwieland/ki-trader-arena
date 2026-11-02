@@ -2,7 +2,7 @@
  "fonds_id": "claude_mittel_rm",
  "waehrung": "USD",
  "start_kapital": 11156.327353966788,
- "cash": 8648.938608257293,
+ "cash": 8495.966229930236,
  "positionen": [
   {
    "id": "pe8186cc2",
@@ -195,10 +195,68 @@
    "invalidierung": "Luxon tritt zurück oder wird als Parteichef ersetzt vor dem 7.11.",
    "kurs": 0.9756954829182896,
    "wert": 399.05
+  },
+  {
+   "id": "pdc61c4da",
+   "inst": {
+    "id": "pm:manifold:BpoEJNtlQoDBpfjBmK0y:JA",
+    "art": "pm",
+    "venue": "manifold",
+    "ergebnis": "JA",
+    "frage": "Will Republicans win the Senate in the 2026 elections?",
+    "schliesst": 1796101140.0,
+    "ref": {
+     "id": "BpoEJNtlQoDBpfjBmK0y"
+    },
+    "url": "https://manifold.markets/AndrewG/will-republicans-win-the-senate-in-738388924521"
+   },
+   "seite": "long",
+   "menge": 241.0,
+   "einstand": 0.21784044948985476,
+   "hebel": 1.0,
+   "marge": 0.0,
+   "eroeffnet": 1793610842.0292144,
+   "gebuehren": 0.0,
+   "funding": 0.0,
+   "ausstiegsplan": "Bis Abrechnung halten, gehedgt mit Polymarket R-NEIN.",
+   "entscheidung_id": "db10bcf3e",
+   "invalidierung": "Manifold-Auflösungsregel weicht erkennbar von Polymarket ab (z. B. Mehrheit ohne VP)"
+  },
+  {
+   "id": "p1ea4c756",
+   "inst": {
+    "id": "pm:polymarket:562794:NEIN",
+    "art": "pm",
+    "venue": "polymarket",
+    "ergebnis": "NEIN",
+    "frage": "Will the Republican Party control the Senate after the 2026 Midterm elections?",
+    "schliesst": 1793768340.0,
+    "ref": {
+     "id": "562794",
+     "token_ja": "51939490109676186832507970701169130490548061087912630009168726706475001411420",
+     "token_nein": "108587038225191871355030577171066853142535232042155117887981453750193713427381",
+     "tick": 0.01,
+     "condition": "0x86bfb53af7250a40928975c551d12c185b762fa4ce0b40c6a64a50c946d72587",
+     "gebuehr_rate": 0.04,
+     "gebuehr_exp": 1.0
+    },
+    "url": "https://polymarket.com/event/which-party-will-win-the-senate-in-2026"
+   },
+   "seite": "long",
+   "menge": 138.0,
+   "einstand": 0.7199999999999999,
+   "hebel": 1.0,
+   "marge": 0.0,
+   "eroeffnet": 1793610852.1636004,
+   "gebuehren": 1.11283,
+   "funding": 0.0,
+   "ausstiegsplan": "Bis Abrechnung halten.",
+   "entscheidung_id": "db641e871",
+   "invalidierung": "Manifold-Regel weicht ab"
   }
  ],
  "realisiert": 0.0,
- "gebuehren": 3.24315,
+ "gebuehren": 4.35598,
  "funding": 0.0,
  "erstellt": 1793380123.8861866,
  "start_fx": 1.1156327353966788,
