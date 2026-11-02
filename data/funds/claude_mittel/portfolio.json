@@ -2,7 +2,7 @@
  "fonds_id": "claude_mittel",
  "waehrung": "USD",
  "start_kapital": 11184.88579861696,
- "cash": 10667.98131165069,
+ "cash": 10524.421267977932,
  "positionen": [
   {
    "id": "p51e71031",
@@ -161,10 +161,68 @@
    "invalidierung": "NVDA schließt mehrere Tage ≥3 % über Apple-Marktkapitalisierung oder NVDA-Zahlen mit starker Guidance und Kurssprung.",
    "kurs": 0.428,
    "wert": 93.51
+  },
+  {
+   "id": "pb31aed47",
+   "inst": {
+    "id": "pm:manifold:BpoEJNtlQoDBpfjBmK0y:JA",
+    "art": "pm",
+    "venue": "manifold",
+    "ergebnis": "JA",
+    "frage": "Will Republicans win the Senate in the 2026 elections?",
+    "schliesst": 1796101140.0,
+    "ref": {
+     "id": "BpoEJNtlQoDBpfjBmK0y"
+    },
+    "url": "https://manifold.markets/AndrewG/will-republicans-win-the-senate-in-738388924521"
+   },
+   "seite": "long",
+   "menge": 152.0,
+   "einstand": 0.2356884452155141,
+   "hebel": 1.0,
+   "marge": 0.0,
+   "eroeffnet": 1793596225.86043,
+   "gebuehren": 0.0,
+   "funding": 0.0,
+   "ausstiegsplan": "Bis Abrechnung halten (Hedge mit Polymarket-NEIN); bei Regelabweichung beide Beine schließen.",
+   "entscheidung_id": "de2f4bea2",
+   "invalidierung": "Manifold-Kommentare/Regel zeigen abweichende Auflösung (z. B. Stand an anderem Datum)."
+  },
+  {
+   "id": "pf9fa8a67",
+   "inst": {
+    "id": "pm:polymarket:562794:NEIN",
+    "art": "pm",
+    "venue": "polymarket",
+    "ergebnis": "NEIN",
+    "frage": "Will the Republican Party control the Senate after the 2026 Midterm elections?",
+    "schliesst": 1793768340.0,
+    "ref": {
+     "id": "562794",
+     "token_ja": "51939490109676186832507970701169130490548061087912630009168726706475001411420",
+     "token_nein": "108587038225191871355030577171066853142535232042155117887981453750193713427381",
+     "tick": 0.01,
+     "condition": "0x86bfb53af7250a40928975c551d12c185b762fa4ce0b40c6a64a50c946d72587",
+     "gebuehr_rate": 0.04,
+     "gebuehr_exp": 1.0
+    },
+    "url": "https://polymarket.com/event/which-party-will-win-the-senate-in-2026"
+   },
+   "seite": "long",
+   "menge": 150.0,
+   "einstand": 0.71,
+   "hebel": 1.0,
+   "marge": 0.0,
+   "eroeffnet": 1793596231.1000912,
+   "gebuehren": 1.2354,
+   "funding": 0.0,
+   "ausstiegsplan": "Bis Abrechnung halten (Hedge).",
+   "entscheidung_id": "d20c537d1",
+   "invalidierung": "Regelabweichung Manifold; dann beide Beine schließen."
   }
  ],
  "realisiert": 13.85286999999974,
- "gebuehren": 7.35454,
+ "gebuehren": 8.58994,
  "funding": 0.0,
  "erstellt": 1793319819.7411644,
  "start_fx": 1.1184885798616961,

@@ -2,7 +2,7 @@
  "fonds_id": "claude_aggressiv",
  "waehrung": "USD",
  "start_kapital": 11184.88579861696,
- "cash": 859.3858158735802,
+ "cash": 410.1680358735802,
  "positionen": [
   {
    "id": "pa523d4f2",
@@ -151,12 +151,45 @@
    "invalidierung": "BTC-Index über 81.500 oder unter 74.500, DVOL >48",
    "kurs": 2302.479816,
    "wert": 2728.3
+  },
+  {
+   "id": "pd68bc7a7",
+   "inst": {
+    "id": "pm:polymarket:6301286:NEIN",
+    "art": "pm",
+    "venue": "polymarket",
+    "ergebnis": "NEIN",
+    "frage": "Will the price of Ethereum be above $2,400 on November 3?",
+    "schliesst": 1793725200.0,
+    "ref": {
+     "id": "6301286",
+     "token_ja": "47235021958262949034970414637313432606050524901118767577769415369407301405700",
+     "token_nein": "82580034879816961393843008313124847949431511392482915900535053999061406169114",
+     "tick": 0.01,
+     "condition": "0x02e64dd5b7040b3f2a02130dbad23db9eb5d5fb64a30dddbf61bba1a95bc2f1b",
+     "gebuehr_rate": 0.07,
+     "gebuehr_exp": 1.0
+    },
+    "url": "https://polymarket.com/event/ethereum-above-on-november-3-2026"
+   },
+   "seite": "long",
+   "menge": 523.0,
+   "einstand": 0.85,
+   "hebel": 1.0,
+   "marge": 0.0,
+   "eroeffnet": 1793596220.0986767,
+   "gebuehren": 4.66778,
+   "funding": 0.0,
+   "ausstiegsplan": "Halten bis Abrechnung 3.11. 17:00 UTC; verkaufen, wenn ETH Binance >2370 stabil vor 3.11. 08:00 UTC.",
+   "entscheidung_id": "d764bc30d",
+   "invalidierung": "ETH Binance über 2370 vor 3.11. 08:00 UTC"
   }
  ],
  "realisiert": -956.86946,
- "gebuehren": 78.64282600000001,
+ "gebuehren": 83.310606,
  "funding": 0.0,
  "erstellt": 1793319819.7411644,
  "start_fx": 1.1184885798616961,
- "letzter_tick": 1793596019.7637146
+ "letzter_tick": 1793596019.7637146,
+ "auftraege": []
 }
