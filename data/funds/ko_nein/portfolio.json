@@ -2,7 +2,7 @@
  "fonds_id": "ko_nein",
  "waehrung": "USD",
  "start_kapital": 11157.431109273288,
- "cash": 1336.8812292732853,
+ "cash": 1351.8098292732852,
  "positionen": [
   {
    "id": "pe6781775",
@@ -33,7 +33,7 @@
    "gebuehren": 0.0,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.009000000000000001,
+   "kurs": 0.0085,
    "wert": 17.12
   },
   {
@@ -193,8 +193,8 @@
    "gebuehren": 0.0,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.735,
-   "wert": 169.36
+   "kurs": 0.725,
+   "wert": 167.04
   },
   {
    "id": "pf49ce1c2",
@@ -353,8 +353,8 @@
    "gebuehren": 0.0,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.5635,
-   "wert": 139.75
+   "kurs": 0.5640000000000001,
+   "wert": 140.0
   },
   {
    "id": "pe65b0b73",
@@ -385,8 +385,8 @@
    "gebuehren": 0.0,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.715,
-   "wert": 149.81
+   "kurs": 0.725,
+   "wert": 151.92
   },
   {
    "id": "pf0e983be",
@@ -929,7 +929,7 @@
    "gebuehren": 5.41501,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.5700000000000001,
+   "kurs": 0.565,
    "wert": 173.6
   },
   {
@@ -1089,7 +1089,7 @@
    "gebuehren": 0.0,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.0075,
+   "kurs": 0.006999999999999999,
    "wert": 0.71
   },
   {
@@ -1423,7 +1423,7 @@
    "gebuehren": 4.65658,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.565,
+   "kurs": 0.5700000000000001,
    "wert": 154.0
   },
   {
@@ -1455,8 +1455,8 @@
    "gebuehren": 2.87438,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.715,
-   "wert": 155.49
+   "kurs": 0.725,
+   "wert": 157.68
   },
   {
    "id": "p59c4bdc3",
@@ -1487,8 +1487,8 @@
    "gebuehren": 4.28576,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.6799999999999999,
-   "wert": 175.39
+   "kurs": 0.6555,
+   "wert": 169.39
   },
   {
    "id": "p54f0e36a",
@@ -1523,38 +1523,6 @@
    "wert": 166.3
   },
   {
-   "id": "pb0e561da",
-   "inst": {
-    "id": "pm:polymarket:6236217:NEIN",
-    "art": "pm",
-    "venue": "polymarket",
-    "ergebnis": "NEIN",
-    "frage": "Will Bitcoin dip to $76,000 October 26-November 1?",
-    "schliesst": 1793595600.0,
-    "ref": {
-     "id": "6236217",
-     "token_ja": "64421491572857077356896259433932074729525051914601291841808100178309860746824",
-     "token_nein": "54091715284225830585160454435544762071632845176469192218878048828114266043260",
-     "tick": 0.001,
-     "condition": "0xa70b55ba77e150a968cd476e4731ccfc8078480d199c92acc3a6447fdb7cef0b",
-     "gebuehr_rate": 0.07,
-     "gebuehr_exp": 1.0
-    },
-    "url": "https://polymarket.com/event/what-price-will-bitcoin-hit-october-26-november-1-2026"
-   },
-   "seite": "long",
-   "menge": 182.0,
-   "einstand": 0.912,
-   "hebel": 1.0,
-   "marge": 0.0,
-   "eroeffnet": 1793560676.2203774,
-   "gebuehren": 1.02246,
-   "funding": 0.0,
-   "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.999,
-   "wert": 181.82
-  },
-  {
    "id": "pc63d1166",
    "inst": {
     "id": "pm:polymarket:6507379:NEIN",
@@ -1583,15 +1551,47 @@
    "gebuehren": 9.71438,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.07,
-   "wert": 81.9
+   "kurs": 0.065,
+   "wert": 77.94
+  },
+  {
+   "id": "p3428571e",
+   "inst": {
+    "id": "pm:polymarket:5130196:NEIN",
+    "art": "pm",
+    "venue": "polymarket",
+    "ergebnis": "NEIN",
+    "frage": "Will JOLTS Job Openings be at least 7.4M in September?",
+    "schliesst": 1793718000.0,
+    "ref": {
+     "id": "5130196",
+     "token_ja": "108659559526164879663510625479140371375363778742023103888005824860576800275818",
+     "token_nein": "62148992605638685162785181811580107559809251862691717142556944528109122001453",
+     "tick": 0.01,
+     "condition": "0xd6b7f86a5f6265cfc0e3da18bdba214139039f74c1189a6a308e4dcff1e9b77e",
+     "gebuehr_rate": 0.05,
+     "gebuehr_exp": 1.0
+    },
+    "url": "https://polymarket.com/event/will-jolts-job-openings-be-at-least-7pt4m-in-september"
+   },
+   "seite": "long",
+   "menge": 252.0,
+   "einstand": 0.6516313492063491,
+   "hebel": 1.0,
+   "marge": 0.0,
+   "eroeffnet": 1793596920.3504398,
+   "gebuehren": 2.8603,
+   "funding": 0.0,
+   "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
+   "kurs": 0.65,
+   "wert": 161.28
   }
  ],
- "realisiert": -1381.3378799999998,
- "gebuehren": 134.96956999999998,
+ "realisiert": -1365.3218799999997,
+ "gebuehren": 137.82986999999997,
  "funding": 0.0,
  "erstellt": 1793379225.5430336,
  "start_fx": 1.1157431109273288,
- "letzter_tick": 1793596019.7637146,
- "kontrolle_bis": 1793581615.1384869
+ "letzter_tick": 1793596920.3504398,
+ "kontrolle_bis": 1793596129.4194868
 }
