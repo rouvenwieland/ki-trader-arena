@@ -289,8 +289,8 @@
    "gebuehren": 0.0,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.002,
-   "wert": 0.57
+   "kurs": null,
+   "wert": 167.07
   },
   {
    "id": "p722ad016",
@@ -353,7 +353,7 @@
    "gebuehren": 0.0,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.5660000000000001,
+   "kurs": 0.563,
    "wert": 138.0
   },
   {
@@ -449,7 +449,7 @@
    "gebuehren": 0.0,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.016,
+   "kurs": 0.0155,
    "wert": 86.28
   },
   {
@@ -513,8 +513,8 @@
    "gebuehren": 0.0,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.0305,
-   "wert": 45.3
+   "kurs": 0.0285,
+   "wert": 42.28
   },
   {
    "id": "pc8cf836f",
@@ -833,7 +833,7 @@
    "gebuehren": 0.0,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.85,
+   "kurs": 0.845,
    "wert": 162.12
   },
   {
@@ -897,8 +897,8 @@
    "gebuehren": 1.96552,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.845,
-   "wert": 167.16
+   "kurs": 0.84,
+   "wert": 165.17
   },
   {
    "id": "p4cd35a1d",
@@ -1487,8 +1487,8 @@
    "gebuehren": 4.28576,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.699,
-   "wert": 179.57
+   "kurs": 0.7215,
+   "wert": 185.83
   },
   {
    "id": "p54f0e36a",
@@ -1583,8 +1583,8 @@
    "gebuehren": 9.71438,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.125,
-   "wert": 159.84
+   "kurs": 0.14400000000000002,
+   "wert": 173.05
   }
  ],
  "realisiert": -1381.3378799999998,
@@ -1592,6 +1592,6 @@
  "funding": 0.0,
  "erstellt": 1793379225.5430336,
  "start_fx": 1.1157431109273288,
- "letzter_tick": 1793585105.4986808,
+ "letzter_tick": 1793586005.7056687,
  "kontrolle_bis": 1793581615.1384869
 }
