@@ -32,8 +32,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Halten bis Abrechnung 6.11. (NFP 8:30 ET). Vorzeitiger Verkauf, falls NEIN-Bid >0,90 (z. B. nach ADP am 4.11.), oder falls neue Konsensdaten eine sehr enge Verteilung um 50–75k nahelegen.",
    "entscheidung_id": "d7a8a9cbe",
-   "kurs": 0.73,
-   "wert": 298.98
+   "kurs": 0.75,
+   "wert": 317.1
   },
   {
    "id": "pbb7d9e16",
@@ -97,8 +97,8 @@
    "ausstiegsplan": "Halten bis Abrechnung 3.11.; kein vorzeitiger Verkauf wegen dünnem Buch.",
    "entscheidung_id": "d8307ac80",
    "invalidierung": "Veröffentlichung ≥7,4M bzw. frühere Daten (z. B. Indeed-Postings) zeigen deutlichen Anstieg der Openings im September.",
-   "kurs": 0.8,
-   "wert": 257.4
+   "kurs": 0.81,
+   "wert": 264.0
   },
   {
    "id": "pc5fe767d",
@@ -140,6 +140,6 @@
  "funding": 0.0,
  "erstellt": 1793319819.7411644,
  "start_fx": 1.1184885798616961,
- "letzter_tick": 1793634140.7867892,
+ "letzter_tick": 1793635041.0297806,
  "auftraege": []
 }
