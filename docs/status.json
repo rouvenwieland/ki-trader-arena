@@ -1,11 +1,11 @@
 {
  "version": 1,
- "stand": 1793707708.0190096,
+ "stand": 1793707829.0736232,
  "hinweis": "Papierhandel-Simulation, keine Anlageberatung",
  "seite": "https://rouvenwieland.github.io/ki-trader-arena/",
  "budget": {
-  "heute_eur": 5.72,
-  "gesamt_eur": 45.68,
+  "heute_eur": 6.59,
+  "gesamt_eur": 46.55,
   "tagesdeckel_eur": 12.0,
   "gesamtdeckel_eur": 190.0,
   "claude_ende": "2026-11-14",
@@ -498,10 +498,10 @@
    "rendite_pct": -0.07,
    "equity_eur": 9995.31,
    "max_drawdown_pct": -2.71,
-   "status": "aktiv",
+   "status": "Fehler: Modellfehler: Anthropic: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'messages.1: `web_search`",
    "modell": "claude-sonnet-5-5",
-   "kosten_heute_eur": 1.501,
-   "kosten_gesamt_eur": 11.752,
+   "kosten_heute_eur": 1.669,
+   "kosten_gesamt_eur": 11.919,
    "rendite_ki_pct": [
     -4.77,
     2.04
@@ -559,8 +559,8 @@
    "max_drawdown_pct": -1.06,
    "status": "aktiv",
    "modell": "claude-sonnet-5-5",
-   "kosten_heute_eur": 1.633,
-   "kosten_gesamt_eur": 10.34,
+   "kosten_heute_eur": 1.863,
+   "kosten_gesamt_eur": 10.57,
    "rendite_ki_pct": [
     -1.95,
     1.46
@@ -736,8 +736,8 @@
    "max_drawdown_pct": -3.81,
    "status": "aktiv",
    "modell": "claude-sonnet-5-5",
-   "kosten_heute_eur": 1.05,
-   "kosten_gesamt_eur": 11.242,
+   "kosten_heute_eur": 1.356,
+   "kosten_gesamt_eur": 11.547,
    "rendite_ki_pct": [
     -6.7,
     2.41
@@ -1031,8 +1031,8 @@
    "max_drawdown_pct": -24.83,
    "status": "aktiv",
    "modell": "claude-sonnet-5-5",
-   "kosten_heute_eur": 1.54,
-   "kosten_gesamt_eur": 11.791,
+   "kosten_heute_eur": 1.706,
+   "kosten_gesamt_eur": 11.957,
    "rendite_ki_pct": [
     -25.41,
     5.73
