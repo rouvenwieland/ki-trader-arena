@@ -2,7 +2,7 @@
  "fonds_id": "claude_mittel",
  "waehrung": "USD",
  "start_kapital": 11184.88579861696,
- "cash": 10498.041267977933,
+ "cash": 10453.079757977934,
  "positionen": [
   {
    "id": "p51e71031",
@@ -223,10 +223,42 @@
    "invalidierung": "Regelabweichung Manifold; dann beide Beine schließen.",
    "kurs": 0.755,
    "wert": 112.5
+  },
+  {
+   "id": "p9ab590bd",
+   "inst": {
+    "id": "pm:polymarket:6547065:JA",
+    "art": "pm",
+    "venue": "polymarket",
+    "ergebnis": "JA",
+    "frage": "Will AMD say \"China\" during earnings call?",
+    "schliesst": 1793768340.0,
+    "ref": {
+     "id": "6547065",
+     "token_ja": "4220529512432985481349972788312559525019417213200102554270894993692848090952",
+     "token_nein": "86935387314917663789635352045838781069035213734090878535281923952236106913421",
+     "tick": 0.01,
+     "condition": "0x193d724c3683d93277c0a6f26aa9dae9e64b3297630b5a4f72df839cc346b1a7",
+     "gebuehr_rate": 0.04,
+     "gebuehr_exp": 1.0
+    },
+    "url": "https://polymarket.com/event/will-amd-say-china-during-earnings-call-november-3"
+   },
+   "seite": "long",
+   "menge": 66.0,
+   "einstand": 0.6724242424242425,
+   "hebel": 1.0,
+   "marge": 0.0,
+   "eroeffnet": 1793667921.849051,
+   "gebuehren": 0.58151,
+   "funding": 0.0,
+   "ausstiegsplan": "Bis zur Abrechnung nach dem Call halten; kleiner Einsatz begrenzt das Risiko.",
+   "entscheidung_id": "d8aa5c5c6",
+   "invalidierung": "Call endet ohne das Wort „China\" (Transkript/Audio)."
   }
  ],
  "realisiert": -11.447130000000257,
- "gebuehren": 9.66994,
+ "gebuehren": 10.25145,
  "funding": 0.0,
  "erstellt": 1793319819.7411644,
  "start_fx": 1.1184885798616961,
