@@ -2,10 +2,89 @@
  "fonds_id": "liga_kimi",
  "waehrung": "USD",
  "start_kapital": 11184.88579861696,
- "cash": 11184.88579861696,
- "positionen": [],
+ "cash": 10969.996798616961,
+ "positionen": [
+  {
+   "id": "pd58770c8",
+   "inst": {
+    "id": "pm:kalshi:KXHIGHNY-26NOV03-T66:JA",
+    "art": "pm",
+    "venue": "kalshi",
+    "ergebnis": "JA",
+    "frage": "Will the maximum temperature be <66° on Nov 3, 2026? [65° or below]",
+    "schliesst": 1793772000.0,
+    "ref": {
+     "ticker": "KXHIGHNY-26NOV03-T66"
+    },
+    "url": "https://kalshi.com/markets/KXHIGHNY-26NOV03"
+   },
+   "seite": "long",
+   "menge": 690.0,
+   "einstand": 0.047534782608695654,
+   "hebel": 1.0,
+   "marge": 0.0,
+   "eroeffnet": 1793718988.3592544,
+   "gebuehren": 2.19,
+   "funding": 0.0,
+   "ausstiegsplan": "Abrechnung heute nach NWS-CLI; kein Ausstieg nötig, Halten bis zum Ende",
+   "entscheidung_id": "df07736a2",
+   "invalidierung": "NWS-Meldung Central Park ≥66 °F vor Tagesende"
+  },
+  {
+   "id": "p6b031920",
+   "inst": {
+    "id": "pm:kalshi:KXHIGHDEN-26NOV03-T55:JA",
+    "art": "pm",
+    "venue": "kalshi",
+    "ergebnis": "JA",
+    "frage": "Will the maximum temperature be <55° on Nov 3, 2026? [54° or below]",
+    "schliesst": 1793779200.0,
+    "ref": {
+     "ticker": "KXHIGHDEN-26NOV03-T55"
+    },
+    "url": "https://kalshi.com/markets/KXHIGHDEN-26NOV03"
+   },
+   "seite": "long",
+   "menge": 336.0,
+   "einstand": 0.3411904761904762,
+   "hebel": 1.0,
+   "marge": 0.0,
+   "eroeffnet": 1793718988.3605304,
+   "gebuehren": 5.29,
+   "funding": 0.0,
+   "ausstiegsplan": "Abrechnung heute nach NWS-CLI Denver; Halten bis Ende",
+   "entscheidung_id": "da117b2a1",
+   "invalidierung": "Denver-Beobachtung ≥55 °F am Nachmittag"
+  },
+  {
+   "id": "p2487cf86",
+   "inst": {
+    "id": "pm:kalshi:KXHIGHCHI-26NOV03-T71:JA",
+    "art": "pm",
+    "venue": "kalshi",
+    "ergebnis": "JA",
+    "frage": "Will the maximum temperature be <71° on Nov 3, 2026? [70° or below]",
+    "schliesst": 1793775600.0,
+    "ref": {
+     "ticker": "KXHIGHCHI-26NOV03-T71"
+    },
+    "url": "https://kalshi.com/markets/KXHIGHCHI-26NOV03"
+   },
+   "seite": "long",
+   "menge": 1225.0,
+   "einstand": 0.04588571428571428,
+   "hebel": 1.0,
+   "marge": 0.0,
+   "eroeffnet": 1793718988.3616292,
+   "gebuehren": 3.76,
+   "funding": 0.0,
+   "ausstiegsplan": "Abrechnung heute nach NWS-CLI Chicago Midway; Halten bis Ende",
+   "entscheidung_id": "dee2f0a03",
+   "invalidierung": "Midway-Beobachtung ≥71 °F am Nachmittag"
+  }
+ ],
  "realisiert": 0.0,
- "gebuehren": 0.0,
+ "gebuehren": 11.24,
  "funding": 0.0,
  "erstellt": 1793319819.7411644,
  "start_fx": 1.1184885798616961,

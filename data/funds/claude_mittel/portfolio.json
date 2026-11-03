@@ -2,7 +2,7 @@
  "fonds_id": "claude_mittel",
  "waehrung": "USD",
  "start_kapital": 11184.88579861696,
- "cash": 10453.079757977934,
+ "cash": 10363.649907977933,
  "positionen": [
   {
    "id": "p51e71031",
@@ -245,22 +245,22 @@
     "url": "https://polymarket.com/event/will-amd-say-china-during-earnings-call-november-3"
    },
    "seite": "long",
-   "menge": 66.0,
-   "einstand": 0.6724242424242425,
+   "menge": 198.0,
+   "einstand": 0.66989898989899,
    "hebel": 1.0,
    "marge": 0.0,
    "eroeffnet": 1793667921.849051,
-   "gebuehren": 0.58151,
+   "gebuehren": 1.75136,
    "funding": 0.0,
-   "ausstiegsplan": "Bis zur Abrechnung nach dem Call halten; kleiner Einsatz begrenzt das Risiko.",
-   "entscheidung_id": "d8aa5c5c6",
-   "invalidierung": "Call endet ohne das Wort „China\" (Transkript/Audio).",
+   "ausstiegsplan": "Bis zur Abrechnung halten. Wenn das Wort früh fällt, steigt der Preis auf ~0,99. Nach der Abrechnung auswerten.",
+   "entscheidung_id": "da7dcf413",
+   "invalidierung": "Call endet ohne das Wort „China“ (Transkript/Audio)",
    "kurs": 0.65,
    "wert": 42.24
   }
  ],
  "realisiert": -11.447130000000257,
- "gebuehren": 10.25145,
+ "gebuehren": 11.4213,
  "funding": 0.0,
  "erstellt": 1793319819.7411644,
  "start_fx": 1.1184885798616961,

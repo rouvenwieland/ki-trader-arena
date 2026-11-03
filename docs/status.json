@@ -1,11 +1,11 @@
 {
  "version": 1,
- "stand": 1793718545.360446,
+ "stand": 1793719039.3979647,
  "hinweis": "Papierhandel-Simulation, keine Anlageberatung",
  "seite": "https://rouvenwieland.github.io/ki-trader-arena/",
  "budget": {
-  "heute_eur": 6.59,
-  "gesamt_eur": 46.51,
+  "heute_eur": 8.39,
+  "gesamt_eur": 48.31,
   "tagesdeckel_eur": 12.0,
   "gesamtdeckel_eur": 190.0,
   "claude_ende": "2026-11-14",
@@ -321,7 +321,7 @@
    "rendite_pct": 0.0,
    "equity_eur": 9993.09,
    "max_drawdown_pct": 0.0,
-   "status": "Fehler: Modellfehler: kimi-k3: keine Antwort (HTTP 429 {\"error\":{\"message\":\"Your account org-2249288c21c547a2b05f751b19b3dd2e\\u003cak-fcx7uxzbfmy111",
+   "status": "aktiv",
    "modell": "kimi-k3",
    "kosten_heute_eur": 0.0,
    "kosten_gesamt_eur": 0.0,
@@ -498,10 +498,10 @@
    "rendite_pct": -0.04,
    "equity_eur": 9989.02,
    "max_drawdown_pct": -2.71,
-   "status": "Fehler: Modellfehler: Anthropic: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'messages.1: `web_search`",
-   "modell": "claude-sonnet-5-5",
-   "kosten_heute_eur": 1.667,
-   "kosten_gesamt_eur": 11.908,
+   "status": "aktiv",
+   "modell": "claude-opus-5-5",
+   "kosten_heute_eur": 2.185,
+   "kosten_gesamt_eur": 12.425,
    "rendite_ki_pct": [
     -4.69,
     1.98
@@ -558,9 +558,9 @@
    "equity_eur": 9959.79,
    "max_drawdown_pct": -1.06,
    "status": "aktiv",
-   "modell": "claude-sonnet-5-5",
-   "kosten_heute_eur": 1.861,
-   "kosten_gesamt_eur": 10.56,
+   "modell": "claude-opus-5-5",
+   "kosten_heute_eur": 2.125,
+   "kosten_gesamt_eur": 10.825,
    "rendite_ki_pct": [
     -1.57,
     1.47
@@ -912,9 +912,9 @@
    "equity_eur": 9857.28,
    "max_drawdown_pct": -3.81,
    "status": "aktiv",
-   "modell": "claude-sonnet-5-5",
-   "kosten_heute_eur": 1.354,
-   "kosten_gesamt_eur": 11.536,
+   "modell": "claude-opus-5-5",
+   "kosten_heute_eur": 2.082,
+   "kosten_gesamt_eur": 12.265,
    "rendite_ki_pct": [
     -7.4,
     2.25
@@ -1030,9 +1030,9 @@
    "equity_eur": 9416.68,
    "max_drawdown_pct": -24.83,
    "status": "aktiv",
-   "modell": "claude-sonnet-5-5",
-   "kosten_heute_eur": 1.704,
-   "kosten_gesamt_eur": 11.946,
+   "modell": "claude-opus-5-5",
+   "kosten_heute_eur": 1.993,
+   "kosten_gesamt_eur": 12.235,
    "rendite_ki_pct": [
     -24.6,
     7.6
@@ -1213,6 +1213,34 @@
  ],
  "letzte_entscheidungen": [
   {
+   "ts": 1793718988.361515,
+   "fonds": "Kimi (Moonshot)",
+   "instrument": "pm:kalshi:KXHIGHCHI-26NOV03-T71:JA",
+   "aktion": "kaufen",
+   "zuversicht": 0.6
+  },
+  {
+   "ts": 1793718988.3604057,
+   "fonds": "Kimi (Moonshot)",
+   "instrument": "pm:kalshi:KXHIGHDEN-26NOV03-T55:JA",
+   "aktion": "kaufen",
+   "zuversicht": 0.62
+  },
+  {
+   "ts": 1793718988.359084,
+   "fonds": "Kimi (Moonshot)",
+   "instrument": "pm:kalshi:KXHIGHNY-26NOV03-T66:JA",
+   "aktion": "kaufen",
+   "zuversicht": 0.6
+  },
+  {
+   "ts": 1793718665.2063358,
+   "fonds": "Claude Mittel",
+   "instrument": "pm:polymarket:6547065:JA",
+   "aktion": "kaufen",
+   "zuversicht": 0.65
+  },
+  {
    "ts": 1793682438.9107637,
    "fonds": "Claude Aggressiv",
    "instrument": "pm:polymarket:6301341:NEIN",
@@ -1239,34 +1267,6 @@
    "instrument": "pm:polymarket:6507390:NEIN",
    "aktion": "kaufen",
    "zuversicht": 0.6
-  },
-  {
-   "ts": 1793646174.362806,
-   "fonds": "Claude Mittel+RM (A/B)",
-   "instrument": "pm:polymarket:6301286:NEIN",
-   "aktion": "kaufen",
-   "zuversicht": 0.75
-  },
-  {
-   "ts": 1793610876.0776553,
-   "fonds": "Claude Vorsichtig",
-   "instrument": "pm:polymarket:3215054:NEIN",
-   "aktion": "kaufen",
-   "zuversicht": 0.55
-  },
-  {
-   "ts": 1793610870.369069,
-   "fonds": "Claude Mittel",
-   "instrument": "pm:kalshi:KXWTIH-26NOV0205-T99.89:JA",
-   "aktion": "kaufen",
-   "zuversicht": 0.55
-  },
-  {
-   "ts": 1793610855.512306,
-   "fonds": "Claude Mittel+RM (A/B)",
-   "instrument": "pm:polymarket:562794:NEIN",
-   "aktion": "kaufen",
-   "zuversicht": 0.7
   }
  ],
  "ereignisse": [
