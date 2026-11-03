@@ -125,8 +125,8 @@
    "ausstiegsplan": "Bis zur Abrechnung (Earnings ca. 17.–25.11.) halten; vorzeitig verkaufen, wenn Bid ≥0.92 oder bei Nachricht zu Margendruck.",
    "entscheidung_id": "df5b61ded",
    "invalidierung": "Meldung/Analystenkonsens zur Q3-Marge ≥75,0 % oder <73 %; Pre-Announcement zu Speicherkosten.",
-   "kurs": 0.835,
-   "wert": 31.2
+   "kurs": 0.8400000000000001,
+   "wert": 31.6
   },
   {
    "id": "p8b4a7cc3",
@@ -187,8 +187,8 @@
    "ausstiegsplan": "Bis Abrechnung halten (Hedge mit Polymarket-NEIN); bei Regelabweichung beide Beine schließen.",
    "entscheidung_id": "de2f4bea2",
    "invalidierung": "Manifold-Kommentare/Regel zeigen abweichende Auflösung (z. B. Stand an anderem Datum).",
-   "kurs": 0.2240974045717607,
-   "wert": 34.06
+   "kurs": 0.2050913495863723,
+   "wert": 31.17
   },
   {
    "id": "pf9fa8a67",
@@ -264,6 +264,6 @@
  "funding": 0.0,
  "erstellt": 1793319819.7411644,
  "start_fx": 1.1184885798616961,
- "letzter_tick": 1793737472.1469924,
+ "letzter_tick": 1793738379.939499,
  "auftraege": []
 }
