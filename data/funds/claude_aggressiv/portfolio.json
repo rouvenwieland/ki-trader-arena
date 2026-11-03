@@ -32,8 +32,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Halten bis Abrechnung 31.10. 23:59; bei Meldung über US-Luftschläge auf Iran Position verloren geben/verkaufen falls Preis noch >0.2.",
    "entscheidung_id": "dc8d00e1b",
-   "kurs": 0.8374999999999999,
-   "wert": 2015.6
+   "kurs": 0.861,
+   "wert": 2054.17
   },
   {
    "id": "p8d020f51",
@@ -120,8 +120,8 @@
    "entscheidung_id": "dfb065841",
    "index_eroeffnung": 77924.8,
    "invalidierung": "BTC-Index außerhalb 74.500–81.500 oder DVOL >48 (Regimewechsel)",
-   "kurs": 2218.34641,
-   "wert": 2736.8
+   "kurs": 2093.2168500000002,
+   "wert": 2761.83
   },
   {
    "id": "p50344976",
@@ -149,8 +149,8 @@
    "entscheidung_id": "d0a6a4df7",
    "index_eroeffnung": 77924.8,
    "invalidierung": "BTC-Index über 81.500 oder unter 74.500, DVOL >48",
-   "kurs": 1661.82745,
-   "wert": 2856.43
+   "kurs": 1752.10003,
+   "wert": 2838.38
   },
   {
    "id": "pd68bc7a7",
@@ -217,8 +217,8 @@
    "ausstiegsplan": "Halten bis Abrechnung 17:00 UTC; Verkauf bei Binance >77.800.",
    "entscheidung_id": "dd06450bb",
    "invalidierung": "BTC Binance über 77.800 vor 15:00 UTC -> verkaufen.",
-   "kurs": 0.955,
-   "wert": 216.6
+   "kurs": 0.954,
+   "wert": 217.06
   }
  ],
  "realisiert": -956.86946,
@@ -226,6 +226,6 @@
  "funding": 0.0,
  "erstellt": 1793319819.7411644,
  "start_fx": 1.1184885798616961,
- "letzter_tick": 1793722948.3491406,
+ "letzter_tick": 1793723847.8680556,
  "auftraege": []
 }
