@@ -2,7 +2,7 @@
  "fonds_id": "schwarm_alle",
  "waehrung": "USD",
  "start_kapital": 11157.431109273288,
- "cash": 11098.837569273288,
+ "cash": 10524.503639273287,
  "positionen": [
   {
    "id": "p950d55a1",
@@ -33,8 +33,8 @@
    "gebuehren": 0.0,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Schwarm-Regel)",
-   "kurs": 0.28500000000000003,
-   "wert": 85.96
+   "kurs": 0.6499999999999999,
+   "wert": 178.06
   },
   {
    "id": "pbfbc15e4",
@@ -99,6 +99,38 @@
    "ausstiegsplan": "Halten bis zur Abrechnung (Schwarm-Regel)",
    "kurs": 0.245,
    "wert": 84.48
+  },
+  {
+   "id": "pafbfcf8d",
+   "inst": {
+    "id": "pm:polymarket:6369333:JA",
+    "art": "pm",
+    "venue": "polymarket",
+    "ergebnis": "JA",
+    "frage": "US x Iran ceasefire continues through November 2?",
+    "schliesst": 1793681940.0,
+    "ref": {
+     "id": "6369333",
+     "token_ja": "3149184221354072778711612185076748475145234784664533895827707643347517632045",
+     "token_nein": "12073674699853720739034158731600464996820811632276194872625682171738638687396",
+     "tick": 0.001,
+     "condition": "0x5470b8ebb3de0afd56dcf537c62575f80cc86bda01ff57a332e8f3ae44c71b65",
+     "gebuehr_rate": 0.0,
+     "gebuehr_exp": 1
+    },
+    "url": "https://polymarket.com/event/us-iran-ceasefire-continues-throughptptpt"
+   },
+   "seite": "long",
+   "menge": 1186.0,
+   "einstand": 0.48426132377740305,
+   "hebel": 1.0,
+   "marge": 0.0,
+   "eroeffnet": 1793666774.2954612,
+   "gebuehren": 0.0,
+   "funding": 0.0,
+   "ausstiegsplan": "Halten bis zur Abrechnung (Schwarm-Regel)",
+   "kurs": 0.4495,
+   "wert": 476.77
   }
  ],
  "realisiert": 240.87439999999992,
@@ -106,5 +138,5 @@
  "funding": 0.0,
  "erstellt": 1793379225.5430336,
  "start_fx": 1.1157431109273288,
- "letzter_tick": 1793665873.7958438
+ "letzter_tick": 1793666774.2954612
 }

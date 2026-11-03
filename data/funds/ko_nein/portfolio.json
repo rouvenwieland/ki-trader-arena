@@ -33,8 +33,8 @@
    "gebuehren": 0.0,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.0125,
-   "wert": 23.54
+   "kurs": 0.081,
+   "wert": 132.68
   },
   {
    "id": "p9e535f2b",
@@ -97,8 +97,8 @@
    "gebuehren": 0.0,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.28500000000000003,
-   "wert": 187.32
+   "kurs": 0.6499999999999999,
+   "wert": 388.02
   },
   {
    "id": "p22f7ef7b",
@@ -161,8 +161,8 @@
    "gebuehren": 0.0,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.245,
-   "wert": 143.28
+   "kurs": 0.235,
+   "wert": 137.31
   },
   {
    "id": "p891e3c87",
@@ -193,8 +193,8 @@
    "gebuehren": 0.0,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.735,
-   "wert": 169.36
+   "kurs": 0.725,
+   "wert": 167.04
   },
   {
    "id": "pf49ce1c2",
@@ -417,8 +417,8 @@
    "gebuehren": 0.0,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.0175,
-   "wert": 98.61
+   "kurs": 0.016,
+   "wert": 80.12
   },
   {
    "id": "pcd4d06c5",
@@ -481,8 +481,8 @@
    "gebuehren": 0.0,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.0335,
-   "wert": 45.3
+   "kurs": 0.5595,
+   "wert": 786.71
   },
   {
    "id": "pc8cf836f",
@@ -641,8 +641,8 @@
    "gebuehren": 0.0,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.0875,
-   "wert": 107.34
+   "kurs": 0.8009999999999999,
+   "wert": 996.71
   },
   {
    "id": "p881190c3",
@@ -801,8 +801,8 @@
    "gebuehren": 0.0,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.655,
-   "wert": 125.45
+   "kurs": 0.69,
+   "wert": 129.31
   },
   {
    "id": "p9f764afd",
@@ -865,8 +865,8 @@
    "gebuehren": 1.96552,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.835,
-   "wert": 165.17
+   "kurs": 0.825,
+   "wert": 163.18
   },
   {
    "id": "p4cd35a1d",
@@ -1025,8 +1025,8 @@
    "gebuehren": 0.0,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.575,
-   "wert": 151.62
+   "kurs": 0.5700000000000001,
+   "wert": 148.96
   },
   {
    "id": "p5e6e3e9b",
@@ -1091,38 +1091,6 @@
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
    "kurs": 0.91,
    "wert": 180.9
-  },
-  {
-   "id": "p1b597777",
-   "inst": {
-    "id": "pm:polymarket:5987188:NEIN",
-    "art": "pm",
-    "venue": "polymarket",
-    "ergebnis": "NEIN",
-    "frage": "Will 1win launch a token by October 31, 2026?",
-    "schliesst": 1793505540.0,
-    "ref": {
-     "id": "5987188",
-     "token_ja": "110603367150522970358057845798720100466393836827739464087140978215862498682879",
-     "token_nein": "20496603978586727812737935797172239704594787842519688990924168171798478959529",
-     "tick": 0.001,
-     "condition": "0x8b8a3795365dec42e1e0377d3f912e682bfc657c2533e8b5870ec441e967b4dc",
-     "gebuehr_rate": 0.07,
-     "gebuehr_exp": 1.0
-    },
-    "url": "https://polymarket.com/event/will-1win-launch-a-token-by"
-   },
-   "seite": "long",
-   "menge": 2705.0,
-   "einstand": 0.05802652495378928,
-   "hebel": 1.0,
-   "marge": 0.0,
-   "eroeffnet": 1793470716.94653,
-   "gebuehren": 10.34977,
-   "funding": 0.0,
-   "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": null,
-   "wert": 156.96
   },
   {
    "id": "pbb214a3d",
@@ -1281,8 +1249,8 @@
    "gebuehren": 1.12388,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.24,
-   "wert": 21.12
+   "kurs": 0.255,
+   "wert": 26.88
   },
   {
    "id": "p091ba70e",
@@ -1441,7 +1409,7 @@
    "gebuehren": 5.35174,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.135,
+   "kurs": 0.145,
    "wert": 74.72
   },
   {
@@ -1477,11 +1445,11 @@
    "wert": 154.23
   }
  ],
- "realisiert": -2002.2661999999998,
+ "realisiert": -2159.22795,
  "gebuehren": 146.76190999999997,
  "funding": 0.0,
  "erstellt": 1793379225.5430336,
  "start_fx": 1.1157431109273288,
- "letzter_tick": 1793665873.7958438,
+ "letzter_tick": 1793666774.2954612,
  "kontrolle_bis": 1793646058.4154346
 }

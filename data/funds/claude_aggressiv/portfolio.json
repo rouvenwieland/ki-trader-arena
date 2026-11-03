@@ -32,8 +32,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Halten bis Abrechnung 31.10. 23:59; bei Meldung über US-Luftschläge auf Iran Position verloren geben/verkaufen falls Preis noch >0.2.",
    "entscheidung_id": "dc8d00e1b",
-   "kurs": 0.9875,
-   "wert": 2377.25
+   "kurs": 0.919,
+   "wert": 2169.9
   },
   {
    "id": "p8d020f51",
@@ -120,8 +120,8 @@
    "entscheidung_id": "dfb065841",
    "index_eroeffnung": 77924.8,
    "invalidierung": "BTC-Index außerhalb 74.500–81.500 oder DVOL >48 (Regimewechsel)",
-   "kurs": 2441.6982059999996,
-   "wert": 2692.13
+   "kurs": 2455.944634,
+   "wert": 2689.28
   },
   {
    "id": "p50344976",
@@ -149,8 +149,8 @@
    "entscheidung_id": "d0a6a4df7",
    "index_eroeffnung": 77924.8,
    "invalidierung": "BTC-Index über 81.500 oder unter 74.500, DVOL >48",
-   "kurs": 1594.421226,
-   "wert": 2869.91
+   "kurs": 1562.873858,
+   "wert": 2876.22
   },
   {
    "id": "pd68bc7a7",
@@ -183,8 +183,8 @@
    "ausstiegsplan": "Halten bis Abrechnung 3.11. 17:00 UTC; verkaufen, wenn ETH Binance >2370 stabil vor 3.11. 08:00 UTC.",
    "entscheidung_id": "d764bc30d",
    "invalidierung": "ETH Binance über 2370 vor 3.11. 08:00 UTC",
-   "kurs": 0.991,
-   "wert": 517.25
+   "kurs": 0.9935,
+   "wert": 519.34
   }
  ],
  "realisiert": -956.86946,
@@ -192,6 +192,6 @@
  "funding": 0.0,
  "erstellt": 1793319819.7411644,
  "start_fx": 1.1184885798616961,
- "letzter_tick": 1793665873.7958438,
+ "letzter_tick": 1793666774.2954612,
  "auftraege": []
 }
