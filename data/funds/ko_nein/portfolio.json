@@ -33,7 +33,7 @@
    "gebuehren": 0.0,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.013,
+   "kurs": 0.0125,
    "wert": 23.54
   },
   {
@@ -97,8 +97,8 @@
    "gebuehren": 0.0,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.26,
-   "wert": 167.25
+   "kurs": 0.28500000000000003,
+   "wert": 187.32
   },
   {
    "id": "p22f7ef7b",
@@ -417,7 +417,7 @@
    "gebuehren": 0.0,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.017,
+   "kurs": 0.0175,
    "wert": 98.61
   },
   {
@@ -481,8 +481,8 @@
    "gebuehren": 0.0,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.041499999999999995,
-   "wert": 55.87
+   "kurs": 0.035500000000000004,
+   "wert": 45.3
   },
   {
    "id": "pc8cf836f",
@@ -641,8 +641,8 @@
    "gebuehren": 0.0,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.092,
-   "wert": 118.49
+   "kurs": 0.088,
+   "wert": 105.94
   },
   {
    "id": "p881190c3",
@@ -673,7 +673,7 @@
    "gebuehren": 0.0,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.365,
+   "kurs": 0.36,
    "wert": 121.8
   },
   {
@@ -705,8 +705,8 @@
    "gebuehren": 0.0,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.815,
-   "wert": 175.77
+   "kurs": 0.805,
+   "wert": 173.6
   },
   {
    "id": "p1f028824",
@@ -801,8 +801,8 @@
    "gebuehren": 0.0,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.705,
-   "wert": 133.17
+   "kurs": 0.6950000000000001,
+   "wert": 131.24
   },
   {
    "id": "p9f764afd",
@@ -1249,8 +1249,8 @@
    "gebuehren": 1.59053,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.635,
-   "wert": 137.34
+   "kurs": 0.625,
+   "wert": 135.16
   },
   {
    "id": "p39a90c40",
@@ -1482,6 +1482,6 @@
  "funding": 0.0,
  "erstellt": 1793379225.5430336,
  "start_fx": 1.1157431109273288,
- "letzter_tick": 1793664073.5438468,
+ "letzter_tick": 1793664973.7494252,
  "kontrolle_bis": 1793646058.4154346
 }
