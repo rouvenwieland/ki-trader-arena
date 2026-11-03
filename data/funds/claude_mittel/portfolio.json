@@ -159,8 +159,8 @@
    "ausstiegsplan": "Halten bis Abrechnung; Gewinn mitnehmen bei JA-Bid ≥0,52; Neubewertung nach NVDA-Zahlen.",
    "entscheidung_id": "dd384368f",
    "invalidierung": "NVDA schließt mehrere Tage ≥3 % über Apple-Marktkapitalisierung oder NVDA-Zahlen mit starker Guidance und Kurssprung.",
-   "kurs": 0.3555,
-   "wert": 75.55
+   "kurs": 0.356,
+   "wert": 75.77
   },
   {
    "id": "pb31aed47",
@@ -187,8 +187,8 @@
    "ausstiegsplan": "Bis Abrechnung halten (Hedge mit Polymarket-NEIN); bei Regelabweichung beide Beine schließen.",
    "entscheidung_id": "de2f4bea2",
    "invalidierung": "Manifold-Kommentare/Regel zeigen abweichende Auflösung (z. B. Stand an anderem Datum).",
-   "kurs": 0.20936205205904052,
-   "wert": 31.82
+   "kurs": 0.18360910914265066,
+   "wert": 27.91
   },
   {
    "id": "pf9fa8a67",
@@ -230,7 +230,7 @@
  "funding": 0.0,
  "erstellt": 1793319819.7411644,
  "start_fx": 1.1184885798616961,
- "letzter_tick": 1793666774.2954612,
+ "letzter_tick": 1793667673.5090177,
  "auftraege": [
   {
    "id": "a2bbb8e",
@@ -266,7 +266,7 @@
    "ausstiegsplan": "Halten bis zur Abrechnung am 3./4.11. oder Verkauf bei Bid ≥0,68. Das Limit verfällt am 3.11. um 20:00 UTC.",
    "invalidierung": "Pre-Announcement oder Konsenssenkung unter 1,90 vor dem Release; dann Limit löschen bzw. Position schließen.",
    "erstellt": 1793581747.362041,
-   "geprueft_bis": 1793666774.2954612,
+   "geprueft_bis": 1793667673.5090177,
    "gueltig_bis": 1793736000.0
   }
  ]
