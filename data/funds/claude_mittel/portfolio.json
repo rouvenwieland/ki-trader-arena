@@ -35,8 +35,8 @@
    "ausstiegsplan": "Halten; Gewinn mitnehmen, wenn NEIN ≥0.90 (JA ≤0.10) oder der Preis meine P erreicht. Neu bewerten, wenn Lisnard in Umfragen über 12 % steigt oder Philippe/Retailleau zurückziehen.",
    "entscheidung_id": "df10ef502",
    "invalidierung": "Lisnard in mehreren Umfragen ≥12 % im 1. Wahlgang oder Rückzug von Philippe/Retailleau zu seinen Gunsten.",
-   "kurs": 0.8505,
-   "wert": 260.95
+   "kurs": 0.8554999999999999,
+   "wert": 262.49
   },
   {
    "id": "p842aa632",
@@ -126,7 +126,7 @@
    "entscheidung_id": "df5b61ded",
    "invalidierung": "Meldung/Analystenkonsens zur Q3-Marge ≥75,0 % oder <73 %; Pre-Announcement zu Speicherkosten.",
    "kurs": 0.8300000000000001,
-   "wert": 30.8
+   "wert": 31.2
   },
   {
    "id": "p8b4a7cc3",
@@ -255,7 +255,7 @@
    "ausstiegsplan": "Bis zur Abrechnung halten. Wenn das Wort früh fällt, steigt der Preis auf ~0,99. Nach der Abrechnung auswerten.",
    "entscheidung_id": "da7dcf413",
    "invalidierung": "Call endet ohne das Wort „China“ (Transkript/Audio)",
-   "kurs": 0.51,
+   "kurs": 0.45499999999999996,
    "wert": 15.84
   }
  ],
@@ -264,6 +264,6 @@
  "funding": 0.0,
  "erstellt": 1793319819.7411644,
  "start_fx": 1.1184885798616961,
- "letzter_tick": 1793742873.1947482,
+ "letzter_tick": 1793743773.172582,
  "auftraege": []
 }
