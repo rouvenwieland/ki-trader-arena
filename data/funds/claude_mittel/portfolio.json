@@ -125,7 +125,7 @@
    "ausstiegsplan": "Bis zur Abrechnung (Earnings ca. 17.–25.11.) halten; vorzeitig verkaufen, wenn Bid ≥0.92 oder bei Nachricht zu Margendruck.",
    "entscheidung_id": "df5b61ded",
    "invalidierung": "Meldung/Analystenkonsens zur Q3-Marge ≥75,0 % oder <73 %; Pre-Announcement zu Speicherkosten.",
-   "kurs": 0.8200000000000001,
+   "kurs": 0.8300000000000001,
    "wert": 30.8
   },
   {
@@ -187,8 +187,8 @@
    "ausstiegsplan": "Bis Abrechnung halten (Hedge mit Polymarket-NEIN); bei Regelabweichung beide Beine schließen.",
    "entscheidung_id": "de2f4bea2",
    "invalidierung": "Manifold-Kommentare/Regel zeigen abweichende Auflösung (z. B. Stand an anderem Datum).",
-   "kurs": 0.20521093658822723,
-   "wert": 31.19
+   "kurs": 0.20160645453011194,
+   "wert": 30.64
   },
   {
    "id": "pf9fa8a67",
@@ -255,8 +255,8 @@
    "ausstiegsplan": "Bis zur Abrechnung halten. Wenn das Wort früh fällt, steigt der Preis auf ~0,99. Nach der Abrechnung auswerten.",
    "entscheidung_id": "da7dcf413",
    "invalidierung": "Call endet ohne das Wort „China“ (Transkript/Audio)",
-   "kurs": 0.525,
-   "wert": 45.54
+   "kurs": 0.51,
+   "wert": 15.84
   }
  ],
  "realisiert": -11.447130000000257,
@@ -264,6 +264,6 @@
  "funding": 0.0,
  "erstellt": 1793319819.7411644,
  "start_fx": 1.1184885798616961,
- "letzter_tick": 1793741971.7524486,
+ "letzter_tick": 1793742873.1947482,
  "auftraege": []
 }
