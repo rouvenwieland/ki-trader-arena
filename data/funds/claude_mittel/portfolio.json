@@ -159,8 +159,8 @@
    "ausstiegsplan": "Halten bis Abrechnung; Gewinn mitnehmen bei JA-Bid ≥0,52; Neubewertung nach NVDA-Zahlen.",
    "entscheidung_id": "dd384368f",
    "invalidierung": "NVDA schließt mehrere Tage ≥3 % über Apple-Marktkapitalisierung oder NVDA-Zahlen mit starker Guidance und Kurssprung.",
-   "kurs": 0.3505,
-   "wert": 75.55
+   "kurs": 0.351,
+   "wert": 75.77
   },
   {
    "id": "pb31aed47",
@@ -187,8 +187,8 @@
    "ausstiegsplan": "Bis Abrechnung halten (Hedge mit Polymarket-NEIN); bei Regelabweichung beide Beine schließen.",
    "entscheidung_id": "de2f4bea2",
    "invalidierung": "Manifold-Kommentare/Regel zeigen abweichende Auflösung (z. B. Stand an anderem Datum).",
-   "kurs": 0.20900345324922978,
-   "wert": 31.77
+   "kurs": 0.20924001277294224,
+   "wert": 31.8
   },
   {
    "id": "pf9fa8a67",
@@ -221,8 +221,8 @@
    "ausstiegsplan": "Bis Abrechnung halten (Hedge).",
    "entscheidung_id": "d20c537d1",
    "invalidierung": "Regelabweichung Manifold; dann beide Beine schließen.",
-   "kurs": 0.775,
-   "wert": 115.5
+   "kurs": 0.765,
+   "wert": 114.0
   },
   {
    "id": "p9ab590bd",
@@ -255,8 +255,8 @@
    "ausstiegsplan": "Bis zur Abrechnung nach dem Call halten; kleiner Einsatz begrenzt das Risiko.",
    "entscheidung_id": "d8aa5c5c6",
    "invalidierung": "Call endet ohne das Wort „China\" (Transkript/Audio).",
-   "kurs": 0.65,
-   "wert": 41.58
+   "kurs": 0.62,
+   "wert": 25.74
   }
  ],
  "realisiert": -11.447130000000257,
@@ -264,7 +264,7 @@
  "funding": 0.0,
  "erstellt": 1793319819.7411644,
  "start_fx": 1.1184885798616961,
- "letzter_tick": 1793689397.710489,
+ "letzter_tick": 1793690297.8562098,
  "auftraege": [
   {
    "id": "a2bbb8e",
@@ -300,7 +300,7 @@
    "ausstiegsplan": "Halten bis zur Abrechnung am 3./4.11. oder Verkauf bei Bid ≥0,68. Das Limit verfällt am 3.11. um 20:00 UTC.",
    "invalidierung": "Pre-Announcement oder Konsenssenkung unter 1,90 vor dem Release; dann Limit löschen bzw. Position schließen.",
    "erstellt": 1793581747.362041,
-   "geprueft_bis": 1793689397.710489,
+   "geprueft_bis": 1793690297.8562098,
    "gueltig_bis": 1793736000.0
   }
  ]
