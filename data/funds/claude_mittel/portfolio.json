@@ -125,7 +125,7 @@
    "ausstiegsplan": "Bis zur Abrechnung (Earnings ca. 17.–25.11.) halten; vorzeitig verkaufen, wenn Bid ≥0.92 oder bei Nachricht zu Margendruck.",
    "entscheidung_id": "df5b61ded",
    "invalidierung": "Meldung/Analystenkonsens zur Q3-Marge ≥75,0 % oder <73 %; Pre-Announcement zu Speicherkosten.",
-   "kurs": 0.81,
+   "kurs": 0.815,
    "wert": 30.4
   },
   {
@@ -255,8 +255,8 @@
    "ausstiegsplan": "Bis zur Abrechnung halten. Wenn das Wort früh fällt, steigt der Preis auf ~0,99. Nach der Abrechnung auswerten.",
    "entscheidung_id": "da7dcf413",
    "invalidierung": "Call endet ohne das Wort „China“ (Transkript/Audio)",
-   "kurs": 0.76,
-   "wert": 138.6
+   "kurs": 0.46499999999999997,
+   "wert": 21.78
   }
  ],
  "realisiert": -11.447130000000257,
@@ -264,6 +264,6 @@
  "funding": 0.0,
  "erstellt": 1793319819.7411644,
  "start_fx": 1.1184885798616961,
- "letzter_tick": 1793740171.7147098,
+ "letzter_tick": 1793741072.2121658,
  "auftraege": []
 }

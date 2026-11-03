@@ -2,7 +2,7 @@
  "fonds_id": "ko_wetter",
  "waehrung": "USD",
  "start_kapital": 11156.327353966788,
- "cash": 4795.776622257095,
+ "cash": 4702.045222257096,
  "positionen": [
   {
    "id": "p4b9072cf",
@@ -209,8 +209,8 @@
    "gebuehren": 5.61,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Wetter-Regel)",
-   "kurs": 0.015,
-   "wert": 3.21
+   "kurs": null,
+   "wert": 167.37
   },
   {
    "id": "pde6fa4d9",
@@ -261,15 +261,41 @@
    "gebuehren": 5.13,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Wetter-Regel)",
-   "kurs": 0.015,
-   "wert": 10.6
+   "kurs": null,
+   "wert": 79.05
+  },
+  {
+   "id": "p738b73f0",
+   "inst": {
+    "id": "pm:kalshi:KXHIGHCHI-26NOV04-T70:JA",
+    "art": "pm",
+    "venue": "kalshi",
+    "ergebnis": "JA",
+    "frage": "Will the maximum temperature be >70° on Nov 4, 2026? [71° or above]",
+    "schliesst": 1793862000.0,
+    "ref": {
+     "ticker": "KXHIGHCHI-26NOV04-T70"
+    },
+    "url": "https://kalshi.com/markets/KXHIGHCHI-26NOV04"
+   },
+   "seite": "long",
+   "menge": 1510.0,
+   "einstand": 0.058232715231788086,
+   "hebel": 1.0,
+   "marge": 0.0,
+   "eroeffnet": 1793741072.2121658,
+   "gebuehren": 5.8,
+   "funding": 0.0,
+   "ausstiegsplan": "Halten bis zur Abrechnung (Wetter-Regel)",
+   "kurs": 0.06,
+   "wert": 15.1
   }
  ],
  "realisiert": -4525.827454103059,
- "gebuehren": 355.29,
+ "gebuehren": 361.09000000000003,
  "funding": 0.0,
  "erstellt": 1793380123.8861866,
  "start_fx": 1.1156327353966788,
- "letzter_tick": 1793740171.7147098,
- "wetter_letzter": 1793736581.6825411
+ "letzter_tick": 1793741072.2121658,
+ "wetter_letzter": 1793741072.2121658
 }
