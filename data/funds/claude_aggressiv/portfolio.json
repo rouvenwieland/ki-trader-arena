@@ -2,7 +2,7 @@
  "fonds_id": "claude_aggressiv",
  "waehrung": "USD",
  "start_kapital": 11184.88579861696,
- "cash": 225.21443587358021,
+ "cash": 976.2144358735802,
  "positionen": [
   {
    "id": "pa523d4f2",
@@ -32,8 +32,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Halten bis Abrechnung 31.10. 23:59; bei Meldung über US-Luftschläge auf Iran Position verloren geben/verkaufen falls Preis noch >0.2.",
    "entscheidung_id": "dc8d00e1b",
-   "kurs": 0.841,
-   "wert": 2005.95
+   "kurs": 0.8345,
+   "wert": 1998.72
   },
   {
    "id": "p8d020f51",
@@ -120,8 +120,8 @@
    "entscheidung_id": "dfb065841",
    "index_eroeffnung": 77924.8,
    "invalidierung": "BTC-Index außerhalb 74.500–81.500 oder DVOL >48 (Regimewechsel)",
-   "kurs": 2027.5542270000003,
-   "wert": 2774.96
+   "kurs": 2079.8944,
+   "wert": 2764.49
   },
   {
    "id": "p50344976",
@@ -149,83 +149,15 @@
    "entscheidung_id": "d0a6a4df7",
    "index_eroeffnung": 77924.8,
    "invalidierung": "BTC-Index über 81.500 oder unter 74.500, DVOL >48",
-   "kurs": 1848.8808660000002,
-   "wert": 2819.02
-  },
-  {
-   "id": "pd68bc7a7",
-   "inst": {
-    "id": "pm:polymarket:6301286:NEIN",
-    "art": "pm",
-    "venue": "polymarket",
-    "ergebnis": "NEIN",
-    "frage": "Will the price of Ethereum be above $2,400 on November 3?",
-    "schliesst": 1793725200.0,
-    "ref": {
-     "id": "6301286",
-     "token_ja": "47235021958262949034970414637313432606050524901118767577769415369407301405700",
-     "token_nein": "82580034879816961393843008313124847949431511392482915900535053999061406169114",
-     "tick": 0.01,
-     "condition": "0x02e64dd5b7040b3f2a02130dbad23db9eb5d5fb64a30dddbf61bba1a95bc2f1b",
-     "gebuehr_rate": 0.07,
-     "gebuehr_exp": 1.0
-    },
-    "url": "https://polymarket.com/event/ethereum-above-on-november-3-2026"
-   },
-   "seite": "long",
-   "menge": 523.0,
-   "einstand": 0.85,
-   "hebel": 1.0,
-   "marge": 0.0,
-   "eroeffnet": 1793596220.0986767,
-   "gebuehren": 4.66778,
-   "funding": 0.0,
-   "ausstiegsplan": "Halten bis Abrechnung 3.11. 17:00 UTC; verkaufen, wenn ETH Binance >2370 stabil vor 3.11. 08:00 UTC.",
-   "entscheidung_id": "d764bc30d",
-   "invalidierung": "ETH Binance über 2370 vor 3.11. 08:00 UTC",
-   "kurs": 0.999,
-   "wert": 522.48
-  },
-  {
-   "id": "p0b5f8272",
-   "inst": {
-    "id": "pm:polymarket:6301341:NEIN",
-    "art": "pm",
-    "venue": "polymarket",
-    "ergebnis": "NEIN",
-    "frage": "Will the price of Bitcoin be above $78,000 on November 3?",
-    "schliesst": 1793725200.0,
-    "ref": {
-     "id": "6301341",
-     "token_ja": "11833802676007056472028988310370785189754944625856082969917000398731827063070",
-     "token_nein": "77941272772054408867396668654892542080451884846446216088342372700842123733753",
-     "tick": 0.01,
-     "condition": "0xc4f5294c43e9b7e008d5fe124d47c2681ce1e8406c90d147191af0ba3fd872b9",
-     "gebuehr_rate": 0.07,
-     "gebuehr_exp": 1.0
-    },
-    "url": "https://polymarket.com/event/bitcoin-above-78k-on-november-3-2026"
-   },
-   "seite": "long",
-   "menge": 228.0,
-   "einstand": 0.8,
-   "hebel": 1.0,
-   "marge": 0.0,
-   "eroeffnet": 1793682438.9111974,
-   "gebuehren": 2.5536,
-   "funding": 0.0,
-   "ausstiegsplan": "Halten bis Abrechnung 17:00 UTC; Verkauf bei Binance >77.800.",
-   "entscheidung_id": "dd06450bb",
-   "invalidierung": "BTC Binance über 77.800 vor 15:00 UTC -> verkaufen.",
-   "kurs": 0.999,
-   "wert": 227.77
+   "kurs": 1816.0272,
+   "wert": 2825.59
   }
  ],
- "realisiert": -956.86946,
+ "realisiert": -832.81946,
  "gebuehren": 85.86420600000001,
  "funding": 0.0,
  "erstellt": 1793319819.7411644,
  "start_fx": 1.1184885798616961,
- "letzter_tick": 1793725647.4941804,
+ "letzter_tick": 1793726549.3139398,
  "auftraege": []
 }

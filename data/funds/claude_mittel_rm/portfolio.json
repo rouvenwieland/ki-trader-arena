@@ -2,7 +2,7 @@
  "fonds_id": "claude_mittel_rm",
  "waehrung": "USD",
  "start_kapital": 11156.327353966788,
- "cash": 7498.2174099302365,
+ "cash": 7906.2174099302365,
  "positionen": [
   {
    "id": "pe8186cc2",
@@ -137,7 +137,7 @@
    "ausstiegsplan": "Halten bis 31.12.; nach NVDA-Earnings 17.11. neu bewerten; Gewinnmitnahme ≥0,65.",
    "entscheidung_id": "d62d5f0db",
    "invalidierung": "NVDA übertrifft Apple-Marktkap nach Earnings um >5 % oder Apple-JA <0,25.",
-   "kurs": 0.3535,
+   "kurs": 0.354,
    "wert": 262.63
   },
   {
@@ -221,8 +221,8 @@
    "ausstiegsplan": "Bis Abrechnung halten, gehedgt mit Polymarket R-NEIN.",
    "entscheidung_id": "db10bcf3e",
    "invalidierung": "Manifold-Auflösungsregel weicht erkennbar von Polymarket ab (z. B. Mehrheit ohne VP)",
-   "kurs": 0.21639418667032065,
-   "wert": 52.15
+   "kurs": 0.2172743462759647,
+   "wert": 52.36
   },
   {
    "id": "p1ea4c756",
@@ -257,40 +257,6 @@
    "invalidierung": "Manifold-Regel weicht ab",
    "kurs": 0.745,
    "wert": 102.12
-  },
-  {
-   "id": "pbf2c92c0",
-   "inst": {
-    "id": "pm:polymarket:6301286:NEIN",
-    "art": "pm",
-    "venue": "polymarket",
-    "ergebnis": "NEIN",
-    "frage": "Will the price of Ethereum be above $2,400 on November 3?",
-    "schliesst": 1793725200.0,
-    "ref": {
-     "id": "6301286",
-     "token_ja": "47235021958262949034970414637313432606050524901118767577769415369407301405700",
-     "token_nein": "82580034879816961393843008313124847949431511392482915900535053999061406169114",
-     "tick": 0.001,
-     "condition": "0x02e64dd5b7040b3f2a02130dbad23db9eb5d5fb64a30dddbf61bba1a95bc2f1b",
-     "gebuehr_rate": 0.07,
-     "gebuehr_exp": 1.0
-    },
-    "url": "https://polymarket.com/event/ethereum-above-on-november-3-2026"
-   },
-   "seite": "long",
-   "menge": 408.0,
-   "einstand": 0.9769167156862744,
-   "hebel": 1.0,
-   "marge": 0.0,
-   "eroeffnet": 1793646174.3642519,
-   "gebuehren": 0.64404,
-   "funding": 0.0,
-   "ausstiegsplan": "Halten bis Abrechnung 3.11. 12:00 ET; vorher verkaufen, wenn ETH >2330.",
-   "entscheidung_id": "d61fefae7",
-   "invalidierung": "ETH Binance >2330 vor 3.11. Mittag ET",
-   "kurs": 0.999,
-   "wert": 407.59
   },
   {
    "id": "p77177258",
@@ -357,15 +323,15 @@
    "ausstiegsplan": "Halten bis Abrechnung (Auszahlung ~1 Euro je Anteil). Bei UMA-Vorschlag NEIN neu bewerten.",
    "entscheidung_id": "d742765eb",
    "invalidierung": "Verlässliche Quelle belegt einen US-Schlag vor 20:29 UTC am 2.11. oder UMA-Vorschlag auf NEIN.",
-   "kurs": 0.8634999999999999,
-   "wert": 310.1
+   "kurs": 0.8465,
+   "wert": 301.07
   }
  ],
- "realisiert": 0.0,
+ "realisiert": 9.417980000000057,
  "gebuehren": 5.981389999999999,
  "funding": 0.0,
  "erstellt": 1793380123.8861866,
  "start_fx": 1.1156327353966788,
- "letzter_tick": 1793725647.4941804,
+ "letzter_tick": 1793726549.3139398,
  "auftraege": []
 }
