@@ -2,7 +2,7 @@
  "fonds_id": "ko_nein",
  "waehrung": "USD",
  "start_kapital": 11157.431109273288,
- "cash": 2591.6165792732854,
+ "cash": 2091.4752292732855,
  "positionen": [
   {
    "id": "pe6781775",
@@ -33,8 +33,8 @@
    "gebuehren": 0.0,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.159,
-   "wert": 331.7
+   "kurs": 0.186,
+   "wert": 370.22
   },
   {
    "id": "p9e535f2b",
@@ -449,8 +449,8 @@
    "gebuehren": 0.0,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.219,
-   "wert": 317.1
+   "kurs": 0.2015,
+   "wert": 286.9
   },
   {
    "id": "pc8cf836f",
@@ -513,8 +513,8 @@
    "gebuehren": 0.0,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.765,
-   "wert": 176.32
+   "kurs": 0.775,
+   "wert": 178.64
   },
   {
    "id": "p4c2af182",
@@ -1185,8 +1185,8 @@
    "gebuehren": 1.12388,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.235,
-   "wert": 34.56
+   "kurs": 0.22000000000000003,
+   "wert": 30.72
   },
   {
    "id": "p091ba70e",
@@ -1249,8 +1249,8 @@
    "gebuehren": 2.87438,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.795,
-   "wert": 173.01
+   "kurs": 0.805,
+   "wert": 175.2
   },
   {
    "id": "p54f0e36a",
@@ -1345,8 +1345,8 @@
    "gebuehren": 5.35174,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.23,
-   "wert": 177.46
+   "kurs": 0.255,
+   "wert": 214.82
   },
   {
    "id": "pe88b93d8",
@@ -1473,8 +1473,8 @@
    "gebuehren": 2.75755,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.5549999999999999,
-   "wert": 149.99
+   "kurs": 0.5700000000000001,
+   "wert": 152.82
   },
   {
    "id": "p9869a857",
@@ -1505,7 +1505,7 @@
    "gebuehren": 3.5937,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.41500000000000004,
+   "kurs": 0.405,
    "wert": 137.94
   },
   {
@@ -1537,15 +1537,111 @@
    "gebuehren": 5.66986,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.27,
+   "kurs": 0.245,
    "wert": 119.24
+  },
+  {
+   "id": "pa4f1d884",
+   "inst": {
+    "id": "pm:polymarket:6547066:NEIN",
+    "art": "pm",
+    "venue": "polymarket",
+    "ergebnis": "NEIN",
+    "frage": "Will AMD say \"Intel\" during earnings call?",
+    "schliesst": 1793768340.0,
+    "ref": {
+     "id": "6547066",
+     "token_ja": "110696970361266556355595900927243163642761553584086591481442869691548404849172",
+     "token_nein": "72090204591402913053411121755650729981033505352480933746947246297408361207651",
+     "tick": 0.01,
+     "condition": "0xb4b0addd0a3da1862256d00affaa5dfbd6d55c22cc6861d97ccdae02aedb1362",
+     "gebuehr_rate": 0.04,
+     "gebuehr_exp": 1.0
+    },
+    "url": "https://polymarket.com/event/will-amd-say-intel-during-earnings-call-november-3"
+   },
+   "seite": "long",
+   "menge": 194.0,
+   "einstand": 0.8536082474226805,
+   "hebel": 1.0,
+   "marge": 0.0,
+   "eroeffnet": 1793683997.6488411,
+   "gebuehren": 0.9697,
+   "funding": 0.0,
+   "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
+   "kurs": 0.7949999999999999,
+   "wert": 133.86
+  },
+  {
+   "id": "p92ee12c0",
+   "inst": {
+    "id": "pm:polymarket:6547063:NEIN",
+    "art": "pm",
+    "venue": "polymarket",
+    "ergebnis": "NEIN",
+    "frage": "Will AMD say \"Microsoft / Azure\" during earnings call?",
+    "schliesst": 1793768340.0,
+    "ref": {
+     "id": "6547063",
+     "token_ja": "24571914205549192986369833136097853312461477107300018092190259928419246019154",
+     "token_nein": "74129104014877162222564048067926569158775556168464352444926409681839378154039",
+     "tick": 0.01,
+     "condition": "0xb557410d18c2e9269a677b47d2a0ae1ce43c270690463d1db3ac12f548b4453d",
+     "gebuehr_rate": 0.04,
+     "gebuehr_exp": 1.0
+    },
+    "url": "https://polymarket.com/event/will-amd-say-microsoft-azure-during-earnings-call-november-3"
+   },
+   "seite": "long",
+   "menge": 481.0,
+   "einstand": 0.33811725571725576,
+   "hebel": 1.0,
+   "marge": 0.0,
+   "eroeffnet": 1793683997.6488411,
+   "gebuehren": 4.3058,
+   "funding": 0.0,
+   "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
+   "kurs": 0.53,
+   "wert": 38.48
+  },
+  {
+   "id": "pb967981c",
+   "inst": {
+    "id": "pm:polymarket:6301341:NEIN",
+    "art": "pm",
+    "venue": "polymarket",
+    "ergebnis": "NEIN",
+    "frage": "Will the price of Bitcoin be above $78,000 on November 3?",
+    "schliesst": 1793725200.0,
+    "ref": {
+     "id": "6301341",
+     "token_ja": "11833802676007056472028988310370785189754944625856082969917000398731827063070",
+     "token_nein": "77941272772054408867396668654892542080451884846446216088342372700842123733753",
+     "tick": 0.01,
+     "condition": "0xc4f5294c43e9b7e008d5fe124d47c2681ce1e8406c90d147191af0ba3fd872b9",
+     "gebuehr_rate": 0.07,
+     "gebuehr_exp": 1.0
+    },
+    "url": "https://polymarket.com/event/bitcoin-above-78k-on-november-3-2026"
+   },
+   "seite": "long",
+   "menge": 194.0,
+   "einstand": 0.85,
+   "hebel": 1.0,
+   "marge": 0.0,
+   "eroeffnet": 1793683997.6488411,
+   "gebuehren": 1.73145,
+   "funding": 0.0,
+   "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
+   "kurs": 0.845,
+   "wert": 162.96
   }
  ],
  "realisiert": -430.75794999999994,
- "gebuehren": 162.15782,
+ "gebuehren": 169.16476999999998,
  "funding": 0.0,
  "erstellt": 1793379225.5430336,
  "start_fx": 1.1157431109273288,
- "letzter_tick": 1793683098.0528867,
+ "letzter_tick": 1793683997.6488411,
  "kontrolle_bis": 1793682304.8121955
 }
