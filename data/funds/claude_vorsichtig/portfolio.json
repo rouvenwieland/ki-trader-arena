@@ -32,8 +32,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Halten bis Abrechnung 6.11. (NFP 8:30 ET). Vorzeitiger Verkauf, falls NEIN-Bid >0,90 (z. B. nach ADP am 4.11.), oder falls neue Konsensdaten eine sehr enge Verteilung um 50–75k nahelegen.",
    "entscheidung_id": "d7a8a9cbe",
-   "kurs": 0.7150000000000001,
-   "wert": 285.39
+   "kurs": 0.6950000000000001,
+   "wert": 267.27
   },
   {
    "id": "pbb7d9e16",
@@ -65,40 +65,6 @@
    "entscheidung_id": "d9893ed5d",
    "kurs": 0.9644999999999999,
    "wert": 305.6
-  },
-  {
-   "id": "p5c5fe5b8",
-   "inst": {
-    "id": "pm:polymarket:5130196:NEIN",
-    "art": "pm",
-    "venue": "polymarket",
-    "ergebnis": "NEIN",
-    "frage": "Will JOLTS Job Openings be at least 7.4M in September?",
-    "schliesst": 1793718000.0,
-    "ref": {
-     "id": "5130196",
-     "token_ja": "108659559526164879663510625479140371375363778742023103888005824860576800275818",
-     "token_nein": "62148992605638685162785181811580107559809251862691717142556944528109122001453",
-     "tick": 0.01,
-     "condition": "0xd6b7f86a5f6265cfc0e3da18bdba214139039f74c1189a6a308e4dcff1e9b77e",
-     "gebuehr_rate": 0.05,
-     "gebuehr_exp": 1.0
-    },
-    "url": "https://polymarket.com/event/will-jolts-job-openings-be-at-least-7pt4m-in-september"
-   },
-   "seite": "long",
-   "menge": 330.0,
-   "einstand": 0.6534103030303031,
-   "hebel": 1.0,
-   "marge": 0.0,
-   "eroeffnet": 1793596248.4186382,
-   "gebuehren": 3.73668,
-   "funding": 0.0,
-   "ausstiegsplan": "Halten bis Abrechnung 3.11.; kein vorzeitiger Verkauf wegen dünnem Buch.",
-   "entscheidung_id": "d8307ac80",
-   "invalidierung": "Veröffentlichung ≥7,4M bzw. frühere Daten (z. B. Indeed-Postings) zeigen deutlichen Anstieg der Openings im September.",
-   "kurs": null,
-   "wert": 215.63
   },
   {
    "id": "pc5fe767d",
@@ -135,11 +101,11 @@
    "wert": 177.54
   }
  ],
- "realisiert": -122.54410000000011,
+ "realisiert": -338.16950000000014,
  "gebuehren": 22.96444,
  "funding": 0.0,
  "erstellt": 1793319819.7411644,
  "start_fx": 1.1184885798616961,
- "letzter_tick": 1793724748.0440047,
+ "letzter_tick": 1793725647.4941804,
  "auftraege": []
 }
