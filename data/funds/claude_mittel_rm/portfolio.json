@@ -221,8 +221,8 @@
    "ausstiegsplan": "Bis Abrechnung halten, gehedgt mit Polymarket R-NEIN.",
    "entscheidung_id": "db10bcf3e",
    "invalidierung": "Manifold-Auflösungsregel weicht erkennbar von Polymarket ab (z. B. Mehrheit ohne VP)",
-   "kurs": 0.1952170762366967,
-   "wert": 47.04
+   "kurs": 0.20583078421056444,
+   "wert": 49.6
   },
   {
    "id": "p1ea4c756",
@@ -289,8 +289,8 @@
    "ausstiegsplan": "Halten bis Abrechnung 3.11. 12:00 ET; vorher verkaufen, wenn ETH >2330.",
    "entscheidung_id": "d61fefae7",
    "invalidierung": "ETH Binance >2330 vor 3.11. Mittag ET",
-   "kurs": 0.994,
-   "wert": 405.14
+   "kurs": 0.9964999999999999,
+   "wert": 406.37
   },
   {
    "id": "p77177258",
@@ -323,8 +323,8 @@
    "ausstiegsplan": "Halten bis 30.11.; verkaufen, wenn BTC unter 64.000 fällt oder NEIN-Preis <0.88.",
    "entscheidung_id": "d7dbfc08f",
    "invalidierung": "BTC Binance unter 64.000 oder DVOL >60",
-   "kurs": 0.9544999999999999,
-   "wert": 298.6
+   "kurs": 0.9535,
+   "wert": 298.29
   },
   {
    "id": "pf805692b",
@@ -357,8 +357,8 @@
    "ausstiegsplan": "Halten bis Abrechnung (Auszahlung ~1 Euro je Anteil). Bei UMA-Vorschlag NEIN neu bewerten.",
    "entscheidung_id": "d742765eb",
    "invalidierung": "Verlässliche Quelle belegt einen US-Schlag vor 20:29 UTC am 2.11. oder UMA-Vorschlag auf NEIN.",
-   "kurs": 0.838,
-   "wert": 299.99
+   "kurs": 0.87,
+   "wert": 312.26
   }
  ],
  "realisiert": 0.0,
@@ -366,6 +366,6 @@
  "funding": 0.0,
  "erstellt": 1793380123.8861866,
  "start_fx": 1.1156327353966788,
- "letzter_tick": 1793713812.5650656,
+ "letzter_tick": 1793714712.7324066,
  "auftraege": []
 }
