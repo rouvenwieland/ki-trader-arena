@@ -103,8 +103,8 @@
    "ausstiegsplan": "Bis zur Abrechnung halten. Neu bewerten nach Le Pens Kassationsurteil (bis Jan. 2027) und nach dem Ablauf der 500-Unterschriften-Frist (März 2027). Verkaufen, wenn die Invalidierung eintritt. Teilgewinne mitnehmen, wenn NEIN ≥0,95.",
    "entscheidung_id": "dcfc7153a",
    "invalidierung": "Lisnard liegt in mehreren seriösen Umfragen (Ifop, Elabe, Harris) stabil bei ≥14 % und damit unter den Top 3 im ersten Wahlgang, oder Retailleau/LR ziehen zu seinen Gunsten zurück.",
-   "kurs": 0.8494999999999999,
-   "wert": 518.74
+   "kurs": 0.8505,
+   "wert": 519.35
   },
   {
    "id": "pbb4d5e0c",
@@ -221,8 +221,8 @@
    "ausstiegsplan": "Bis Abrechnung halten, gehedgt mit Polymarket R-NEIN.",
    "entscheidung_id": "db10bcf3e",
    "invalidierung": "Manifold-Auflösungsregel weicht erkennbar von Polymarket ab (z. B. Mehrheit ohne VP)",
-   "kurs": 0.23778467653041774,
-   "wert": 57.3
+   "kurs": 0.23619733518191086,
+   "wert": 56.92
   },
   {
    "id": "p1ea4c756",
@@ -323,7 +323,7 @@
    "ausstiegsplan": "Halten bis Abrechnung (Auszahlung ~1 Euro je Anteil). Bei UMA-Vorschlag NEIN neu bewerten.",
    "entscheidung_id": "d742765eb",
    "invalidierung": "Verlässliche Quelle belegt einen US-Schlag vor 20:29 UTC am 2.11. oder UMA-Vorschlag auf NEIN.",
-   "kurs": 0.895,
+   "kurs": 0.8945000000000001,
    "wert": 317.32
   }
  ],
@@ -332,6 +332,6 @@
  "funding": 0.0,
  "erstellt": 1793380123.8861866,
  "start_fx": 1.1156327353966788,
- "letzter_tick": 1793733748.018461,
+ "letzter_tick": 1793734647.968844,
  "auftraege": []
 }
