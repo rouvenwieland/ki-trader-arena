@@ -69,8 +69,8 @@
    "ausstiegsplan": "Halten bis FOMC 9.12.; Verkauf, wenn NEIN-Preis ≥0.88 (Gewinn) oder CME-Hike-Odds unter 55% fallen.",
    "entscheidung_id": "d7e76abb3",
    "invalidierung": "CME FedWatch Dezember-Hike-Wahrscheinlichkeit fällt unter 55% oder Warsh/Fed-Mehrheit signalisiert Pause nach weicher CPI/Jobs-Zahl.",
-   "kurs": 0.745,
-   "wert": 303.4
+   "kurs": 0.755,
+   "wert": 307.5
   },
   {
    "id": "p8c871cfa",
@@ -221,8 +221,8 @@
    "ausstiegsplan": "Bis Abrechnung halten, gehedgt mit Polymarket R-NEIN.",
    "entscheidung_id": "db10bcf3e",
    "invalidierung": "Manifold-Auflösungsregel weicht erkennbar von Polymarket ab (z. B. Mehrheit ohne VP)",
-   "kurs": 0.2047701893926224,
-   "wert": 49.35
+   "kurs": 0.21617511701762243,
+   "wert": 52.09
   },
   {
    "id": "p1ea4c756",
@@ -255,8 +255,8 @@
    "ausstiegsplan": "Bis Abrechnung halten.",
    "entscheidung_id": "db641e871",
    "invalidierung": "Manifold-Regel weicht ab",
-   "kurs": 0.775,
-   "wert": 106.26
+   "kurs": 0.765,
+   "wert": 104.88
   },
   {
    "id": "pbf2c92c0",
@@ -289,8 +289,8 @@
    "ausstiegsplan": "Halten bis Abrechnung 3.11. 12:00 ET; vorher verkaufen, wenn ETH >2330.",
    "entscheidung_id": "d61fefae7",
    "invalidierung": "ETH Binance >2330 vor 3.11. Mittag ET",
-   "kurs": 0.9964999999999999,
-   "wert": 406.37
+   "kurs": 0.9975,
+   "wert": 406.78
   },
   {
    "id": "p77177258",
@@ -357,8 +357,8 @@
    "ausstiegsplan": "Halten bis Abrechnung (Auszahlung ~1 Euro je Anteil). Bei UMA-Vorschlag NEIN neu bewerten.",
    "entscheidung_id": "d742765eb",
    "invalidierung": "Verlässliche Quelle belegt einen US-Schlag vor 20:29 UTC am 2.11. oder UMA-Vorschlag auf NEIN.",
-   "kurs": 0.868,
-   "wert": 311.9
+   "kurs": 0.8685,
+   "wert": 311.54
   }
  ],
  "realisiert": 0.0,
@@ -366,6 +366,6 @@
  "funding": 0.0,
  "erstellt": 1793380123.8861866,
  "start_fx": 1.1156327353966788,
- "letzter_tick": 1793718448.0181572,
+ "letzter_tick": 1793719348.2710292,
  "auftraege": []
 }

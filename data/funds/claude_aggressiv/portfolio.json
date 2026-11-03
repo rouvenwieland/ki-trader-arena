@@ -32,7 +32,7 @@
    "funding": 0.0,
    "ausstiegsplan": "Halten bis Abrechnung 31.10. 23:59; bei Meldung über US-Luftschläge auf Iran Position verloren geben/verkaufen falls Preis noch >0.2.",
    "entscheidung_id": "dc8d00e1b",
-   "kurs": 0.8945000000000001,
+   "kurs": 0.891,
    "wert": 2145.79
   },
   {
@@ -63,8 +63,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Halten bis FOMC 9.12.; verkaufen wenn Preis <0.55 (These gebrochen, z.B. Friedensdeal + schwache Daten) oder >0.92.",
    "entscheidung_id": "dd6eba046",
-   "kurs": 0.725,
-   "wert": 1499.76
+   "kurs": 0.735,
+   "wert": 1520.59
   },
   {
    "id": "p442b828a",
@@ -120,8 +120,8 @@
    "entscheidung_id": "dfb065841",
    "index_eroeffnung": 77924.8,
    "invalidierung": "BTC-Index außerhalb 74.500–81.500 oder DVOL >48 (Regimewechsel)",
-   "kurs": 2301.554128,
-   "wert": 2720.16
+   "kurs": 2323.9291949999997,
+   "wert": 2715.68
   },
   {
    "id": "p50344976",
@@ -149,8 +149,8 @@
    "entscheidung_id": "d0a6a4df7",
    "index_eroeffnung": 77924.8,
    "invalidierung": "BTC-Index über 81.500 oder unter 74.500, DVOL >48",
-   "kurs": 1668.2405760000001,
-   "wert": 2855.15
+   "kurs": 1659.9494249999998,
+   "wert": 2856.81
   },
   {
    "id": "pd68bc7a7",
@@ -183,8 +183,8 @@
    "ausstiegsplan": "Halten bis Abrechnung 3.11. 17:00 UTC; verkaufen, wenn ETH Binance >2370 stabil vor 3.11. 08:00 UTC.",
    "entscheidung_id": "d764bc30d",
    "invalidierung": "ETH Binance über 2370 vor 3.11. 08:00 UTC",
-   "kurs": 0.9964999999999999,
-   "wert": 520.91
+   "kurs": 0.9975,
+   "wert": 521.43
   },
   {
    "id": "p0b5f8272",
@@ -217,8 +217,8 @@
    "ausstiegsplan": "Halten bis Abrechnung 17:00 UTC; Verkauf bei Binance >77.800.",
    "entscheidung_id": "dd06450bb",
    "invalidierung": "BTC Binance über 77.800 vor 15:00 UTC -> verkaufen.",
-   "kurs": 0.815,
-   "wert": 184.68
+   "kurs": 0.845,
+   "wert": 191.52
   }
  ],
  "realisiert": -956.86946,
@@ -226,6 +226,6 @@
  "funding": 0.0,
  "erstellt": 1793319819.7411644,
  "start_fx": 1.1184885798616961,
- "letzter_tick": 1793718448.0181572,
+ "letzter_tick": 1793719348.2710292,
  "auftraege": []
 }
