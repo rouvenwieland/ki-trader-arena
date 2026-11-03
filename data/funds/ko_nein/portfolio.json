@@ -2,7 +2,7 @@
  "fonds_id": "ko_nein",
  "waehrung": "USD",
  "start_kapital": 11157.431109273288,
- "cash": 1363.2973892732853,
+ "cash": 1029.6756892732853,
  "positionen": [
   {
    "id": "pe6781775",
@@ -33,8 +33,8 @@
    "gebuehren": 0.0,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.28049999999999997,
-   "wert": 545.7
+   "kurs": 0.388,
+   "wert": 804.64
   },
   {
    "id": "p9e535f2b",
@@ -97,8 +97,8 @@
    "gebuehren": 0.0,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.92,
-   "wert": 608.79
+   "kurs": 0.955,
+   "wert": 635.55
   },
   {
    "id": "p22f7ef7b",
@@ -321,8 +321,8 @@
    "gebuehren": 0.0,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.5545,
-   "wert": 136.25
+   "kurs": 0.5625,
+   "wert": 139.25
   },
   {
    "id": "pe65b0b73",
@@ -417,8 +417,8 @@
    "gebuehren": 0.0,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.017,
-   "wert": 92.44
+   "kurs": 0.018000000000000002,
+   "wert": 104.77
   },
   {
    "id": "pcd4d06c5",
@@ -481,8 +481,8 @@
    "gebuehren": 0.0,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.5195000000000001,
-   "wert": 761.04
+   "kurs": 0.5555,
+   "wert": 821.44
   },
   {
    "id": "pc8cf836f",
@@ -641,8 +641,8 @@
    "gebuehren": 0.0,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.8915,
-   "wert": 1194.66
+   "kurs": 0.917,
+   "wert": 1276.9
   },
   {
    "id": "p881190c3",
@@ -802,7 +802,7 @@
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
    "kurs": 0.685,
-   "wert": 129.31
+   "wert": 127.38
   },
   {
    "id": "p9f764afd",
@@ -1025,7 +1025,7 @@
    "gebuehren": 0.0,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.5700000000000001,
+   "kurs": 0.575,
    "wert": 148.96
   },
   {
@@ -1153,8 +1153,8 @@
    "gebuehren": 0.0,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.14500000000000002,
-   "wert": 35.52
+   "kurs": 0.15000000000000002,
+   "wert": 38.48
   },
   {
    "id": "pd54b5964",
@@ -1249,8 +1249,8 @@
    "gebuehren": 1.12388,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.255,
-   "wert": 26.88
+   "kurs": 0.265,
+   "wert": 30.72
   },
   {
    "id": "p091ba70e",
@@ -1409,8 +1409,8 @@
    "gebuehren": 5.35174,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.145,
-   "wert": 74.72
+   "kurs": 0.15000000000000002,
+   "wert": 93.4
   },
   {
    "id": "pe88b93d8",
@@ -1443,13 +1443,77 @@
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
    "kurs": 0.545,
    "wert": 154.23
+  },
+  {
+   "id": "p70f5ec3a",
+   "inst": {
+    "id": "pm:polymarket:5130188:NEIN",
+    "art": "pm",
+    "venue": "polymarket",
+    "ergebnis": "NEIN",
+    "frage": "Will JOLTS Job Openings be between 7.1M and 7.2M in September?",
+    "schliesst": 1793718000.0,
+    "ref": {
+     "id": "5130188",
+     "token_ja": "17671072633776717105508333101073811921027594126241282056154457599385669696578",
+     "token_nein": "49741651903606877862667208894873058594892357733301504030936998786038657317025",
+     "tick": 0.001,
+     "condition": "0xaa8cff448d43f4aa01cd3643d884d0cdd5aa31b28fca364ba198f17f1eadd571",
+     "gebuehr_rate": 0.05,
+     "gebuehr_exp": 1.0
+    },
+    "url": "https://polymarket.com/event/will-jolts-job-openings-be-between-7pt1m-and-7pt2m-in-september"
+   },
+   "seite": "long",
+   "menge": 193.0,
+   "einstand": 0.8572259067357514,
+   "hebel": 1.0,
+   "marge": 0.0,
+   "eroeffnet": 1793668574.3199716,
+   "gebuehren": 1.18106,
+   "funding": 0.0,
+   "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
+   "kurs": 0.779,
+   "wert": 130.85
+  },
+  {
+   "id": "pe2c2647c",
+   "inst": {
+    "id": "pm:polymarket:6547065:NEIN",
+    "art": "pm",
+    "venue": "polymarket",
+    "ergebnis": "NEIN",
+    "frage": "Will AMD say \"China\" during earnings call?",
+    "schliesst": 1793768340.0,
+    "ref": {
+     "id": "6547065",
+     "token_ja": "4220529512432985481349972788312559525019417213200102554270894993692848090952",
+     "token_nein": "86935387314917663789635352045838781069035213734090878535281923952236106913421",
+     "tick": 0.01,
+     "condition": "0x193d724c3683d93277c0a6f26aa9dae9e64b3297630b5a4f72df839cc346b1a7",
+     "gebuehr_rate": 0.04,
+     "gebuehr_exp": 1.0
+    },
+    "url": "https://polymarket.com/event/will-amd-say-china-during-earnings-call-november-3"
+   },
+   "seite": "long",
+   "menge": 247.0,
+   "einstand": 0.6672157894736842,
+   "hebel": 1.0,
+   "marge": 0.0,
+   "eroeffnet": 1793668574.3199716,
+   "gebuehren": 2.19374,
+   "funding": 0.0,
+   "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
+   "kurs": 0.545,
+   "wert": 81.51
   }
  ],
  "realisiert": -2159.22795,
- "gebuehren": 146.76190999999997,
+ "gebuehren": 150.13670999999997,
  "funding": 0.0,
  "erstellt": 1793379225.5430336,
  "start_fx": 1.1157431109273288,
- "letzter_tick": 1793667673.5090177,
- "kontrolle_bis": 1793646058.4154346
+ "letzter_tick": 1793668574.3199716,
+ "kontrolle_bis": 1793667781.8152008
 }

@@ -125,7 +125,7 @@
    "ausstiegsplan": "Bis zur Abrechnung (Earnings ca. 17.–25.11.) halten; vorzeitig verkaufen, wenn Bid ≥0.92 oder bei Nachricht zu Margendruck.",
    "entscheidung_id": "df5b61ded",
    "invalidierung": "Meldung/Analystenkonsens zur Q3-Marge ≥75,0 % oder <73 %; Pre-Announcement zu Speicherkosten.",
-   "kurs": 0.855,
+   "kurs": 0.85,
    "wert": 33.2
   },
   {
@@ -254,7 +254,9 @@
    "funding": 0.0,
    "ausstiegsplan": "Bis zur Abrechnung nach dem Call halten; kleiner Einsatz begrenzt das Risiko.",
    "entscheidung_id": "d8aa5c5c6",
-   "invalidierung": "Call endet ohne das Wort „China\" (Transkript/Audio)."
+   "invalidierung": "Call endet ohne das Wort „China\" (Transkript/Audio).",
+   "kurs": 0.65,
+   "wert": 41.58
   }
  ],
  "realisiert": -11.447130000000257,
@@ -262,7 +264,7 @@
  "funding": 0.0,
  "erstellt": 1793319819.7411644,
  "start_fx": 1.1184885798616961,
- "letzter_tick": 1793667673.5090177,
+ "letzter_tick": 1793668574.3199716,
  "auftraege": [
   {
    "id": "a2bbb8e",
@@ -298,7 +300,7 @@
    "ausstiegsplan": "Halten bis zur Abrechnung am 3./4.11. oder Verkauf bei Bid ≥0,68. Das Limit verfällt am 3.11. um 20:00 UTC.",
    "invalidierung": "Pre-Announcement oder Konsenssenkung unter 1,90 vor dem Release; dann Limit löschen bzw. Position schließen.",
    "erstellt": 1793581747.362041,
-   "geprueft_bis": 1793667673.5090177,
+   "geprueft_bis": 1793668574.3199716,
    "gueltig_bis": 1793736000.0
   }
  ]
