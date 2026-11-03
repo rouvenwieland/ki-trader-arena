@@ -35,8 +35,8 @@
    "ausstiegsplan": "Halten; Gewinn mitnehmen, wenn NEIN ≥0.90 (JA ≤0.10) oder der Preis meine P erreicht. Neu bewerten, wenn Lisnard in Umfragen über 12 % steigt oder Philippe/Retailleau zurückziehen.",
    "entscheidung_id": "df10ef502",
    "invalidierung": "Lisnard in mehreren Umfragen ≥12 % im 1. Wahlgang oder Rückzug von Philippe/Retailleau zu seinen Gunsten.",
-   "kurs": 0.8554999999999999,
-   "wert": 262.49
+   "kurs": 0.8565,
+   "wert": 262.79
   },
   {
    "id": "p842aa632",
@@ -187,8 +187,8 @@
    "ausstiegsplan": "Bis Abrechnung halten (Hedge mit Polymarket-NEIN); bei Regelabweichung beide Beine schließen.",
    "entscheidung_id": "de2f4bea2",
    "invalidierung": "Manifold-Kommentare/Regel zeigen abweichende Auflösung (z. B. Stand an anderem Datum).",
-   "kurs": 0.20160645453011194,
-   "wert": 30.64
+   "kurs": 0.20223080544464261,
+   "wert": 30.74
   },
   {
    "id": "pf9fa8a67",
@@ -255,8 +255,8 @@
    "ausstiegsplan": "Bis zur Abrechnung halten. Wenn das Wort früh fällt, steigt der Preis auf ~0,99. Nach der Abrechnung auswerten.",
    "entscheidung_id": "da7dcf413",
    "invalidierung": "Call endet ohne das Wort „China“ (Transkript/Audio)",
-   "kurs": 0.45499999999999996,
-   "wert": 15.84
+   "kurs": 0.53,
+   "wert": 17.82
   }
  ],
  "realisiert": -11.447130000000257,
@@ -264,6 +264,6 @@
  "funding": 0.0,
  "erstellt": 1793319819.7411644,
  "start_fx": 1.1184885798616961,
- "letzter_tick": 1793743773.172582,
+ "letzter_tick": 1793744672.0979817,
  "auftraege": []
 }
