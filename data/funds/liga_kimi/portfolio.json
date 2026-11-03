@@ -29,8 +29,8 @@
    "ausstiegsplan": "Abrechnung heute nach NWS-CLI; kein Ausstieg nötig, Halten bis zum Ende",
    "entscheidung_id": "df07736a2",
    "invalidierung": "NWS-Meldung Central Park ≥66 °F vor Tagesende",
-   "kurs": 0.03,
-   "wert": 13.8
+   "kurs": null,
+   "wert": 32.8
   },
   {
    "id": "p6b031920",
@@ -57,8 +57,8 @@
    "ausstiegsplan": "Abrechnung heute nach NWS-CLI Denver; Halten bis Ende",
    "entscheidung_id": "da117b2a1",
    "invalidierung": "Denver-Beobachtung ≥55 °F am Nachmittag",
-   "kurs": 0.255,
-   "wert": 84.0
+   "kurs": 0.22999999999999998,
+   "wert": 73.92
   },
   {
    "id": "p2487cf86",
@@ -85,8 +85,8 @@
    "ausstiegsplan": "Abrechnung heute nach NWS-CLI Chicago Midway; Halten bis Ende",
    "entscheidung_id": "dee2f0a03",
    "invalidierung": "Midway-Beobachtung ≥71 °F am Nachmittag",
-   "kurs": 0.015,
-   "wert": 12.25
+   "kurs": null,
+   "wert": 56.21
   }
  ],
  "realisiert": 0.0,
@@ -94,5 +94,5 @@
  "funding": 0.0,
  "erstellt": 1793319819.7411644,
  "start_fx": 1.1184885798616961,
- "letzter_tick": 1793722047.509476
+ "letzter_tick": 1793722948.3491406
 }

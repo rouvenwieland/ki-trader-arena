@@ -27,8 +27,8 @@
    "gebuehren": 10.91,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Wetter-Regel)",
-   "kurs": 0.03,
-   "wert": 16.86
+   "kurs": null,
+   "wert": 206.22
   },
   {
    "id": "p11dc9a93",
@@ -53,8 +53,8 @@
    "gebuehren": 6.04,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Wetter-Regel)",
-   "kurs": 0.635,
-   "wert": 224.91
+   "kurs": 0.53,
+   "wert": 185.64
   },
   {
    "id": "p9f19f0c5",
@@ -79,8 +79,8 @@
    "gebuehren": 6.14,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Wetter-Regel)",
-   "kurs": 0.15000000000000002,
-   "wert": 75.6
+   "kurs": 0.135,
+   "wert": 64.8
   },
   {
    "id": "pfce9e240",
@@ -131,8 +131,8 @@
    "gebuehren": 10.55,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Wetter-Regel)",
-   "kurs": 0.015,
-   "wert": 15.28
+   "kurs": null,
+   "wert": 169.34
   },
   {
    "id": "pd37e46ba",
@@ -157,8 +157,8 @@
    "gebuehren": 8.58,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Wetter-Regel)",
-   "kurs": 0.08,
-   "wert": 42.14
+   "kurs": 0.10500000000000001,
+   "wert": 60.2
   },
   {
    "id": "p14c3769b",
@@ -183,8 +183,8 @@
    "gebuehren": 5.7,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Wetter-Regel)",
-   "kurs": 0.045,
-   "wert": 37.52
+   "kurs": 0.035,
+   "wert": 28.14
   },
   {
    "id": "pd7a33f3b",
@@ -209,8 +209,8 @@
    "gebuehren": 5.61,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Wetter-Regel)",
-   "kurs": 0.425,
-   "wert": 134.82
+   "kurs": 0.46499999999999997,
+   "wert": 147.66
   },
   {
    "id": "pde6fa4d9",
@@ -235,8 +235,8 @@
    "gebuehren": 4.57,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Wetter-Regel)",
-   "kurs": 0.405,
-   "wert": 110.4
+   "kurs": 0.495,
+   "wert": 135.24
   }
  ],
  "realisiert": -4525.827454103059,
@@ -244,6 +244,6 @@
  "funding": 0.0,
  "erstellt": 1793380123.8861866,
  "start_fx": 1.1156327353966788,
- "letzter_tick": 1793722047.509476,
+ "letzter_tick": 1793722948.3491406,
  "wetter_letzter": 1793720248.1075292
 }
