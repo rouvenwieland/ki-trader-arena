@@ -125,8 +125,8 @@
    "ausstiegsplan": "Bis zur Abrechnung (Earnings ca. 17.–25.11.) halten; vorzeitig verkaufen, wenn Bid ≥0.92 oder bei Nachricht zu Margendruck.",
    "entscheidung_id": "df5b61ded",
    "invalidierung": "Meldung/Analystenkonsens zur Q3-Marge ≥75,0 % oder <73 %; Pre-Announcement zu Speicherkosten.",
-   "kurs": 0.815,
-   "wert": 30.0
+   "kurs": 0.835,
+   "wert": 31.6
   },
   {
    "id": "p8b4a7cc3",
@@ -187,8 +187,8 @@
    "ausstiegsplan": "Bis Abrechnung halten (Hedge mit Polymarket-NEIN); bei Regelabweichung beide Beine schließen.",
    "entscheidung_id": "de2f4bea2",
    "invalidierung": "Manifold-Kommentare/Regel zeigen abweichende Auflösung (z. B. Stand an anderem Datum).",
-   "kurs": 0.2240953048827505,
-   "wert": 34.06
+   "kurs": 0.22401232190542558,
+   "wert": 34.05
   },
   {
    "id": "pf9fa8a67",
@@ -221,8 +221,8 @@
    "ausstiegsplan": "Bis Abrechnung halten (Hedge).",
    "entscheidung_id": "d20c537d1",
    "invalidierung": "Regelabweichung Manifold; dann beide Beine schließen.",
-   "kurs": 0.755,
-   "wert": 112.5
+   "kurs": 0.745,
+   "wert": 111.0
   },
   {
    "id": "p9ab590bd",
@@ -264,44 +264,6 @@
  "funding": 0.0,
  "erstellt": 1793319819.7411644,
  "start_fx": 1.1184885798616961,
- "letzter_tick": 1793735672.7018626,
- "auftraege": [
-  {
-   "id": "a2bbb8e",
-   "entscheidung_id": "d70e0ba5d",
-   "inst": {
-    "id": "pm:polymarket:6280962:JA",
-    "art": "pm",
-    "venue": "polymarket",
-    "ergebnis": "JA",
-    "frage": "Will AMD (AMD) beat quarterly earnings?",
-    "schliesst": 1793743200.0,
-    "ref": {
-     "id": "6280962",
-     "token_ja": "28667309983486477841324218452222753547821383406894328184813649270383876607522",
-     "token_nein": "47543658061758683416152257986632074263058710348696327080499307718005597398586",
-     "tick": 0.01,
-     "condition": "0x44300056a50dcc00277b296ec93ff4a59657139a1964ac03b9e85b2488c2f619",
-     "gebuehr_rate": 0.05,
-     "gebuehr_exp": 1.0
-    },
-    "url": "https://polymarket.com/event/amd-quarterly-earnings-nongaap-eps-11-03-2026-1pt97"
-   },
-   "aktion": "kaufen",
-   "typ": "limit",
-   "seite": "long",
-   "betrag_usd": 50,
-   "menge": null,
-   "hebel": 1.0,
-   "limit_preis": 0.58,
-   "stop_preis": null,
-   "stop_loss": null,
-   "take_profit": null,
-   "ausstiegsplan": "Halten bis zur Abrechnung am 3./4.11. oder Verkauf bei Bid ≥0,68. Das Limit verfällt am 3.11. um 20:00 UTC.",
-   "invalidierung": "Pre-Announcement oder Konsenssenkung unter 1,90 vor dem Release; dann Limit löschen bzw. Position schließen.",
-   "erstellt": 1793581747.362041,
-   "geprueft_bis": 1793735672.7018626,
-   "gueltig_bis": 1793736000.0
-  }
- ]
+ "letzter_tick": 1793736581.6825411,
+ "auftraege": []
 }
