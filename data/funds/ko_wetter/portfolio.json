@@ -5,32 +5,6 @@
  "cash": 5683.574222257095,
  "positionen": [
   {
-   "id": "pef020a94",
-   "inst": {
-    "id": "pm:kalshi:KXHIGHNY-26NOV02-B65.5:NEIN",
-    "art": "pm",
-    "venue": "kalshi",
-    "ergebnis": "NEIN",
-    "frage": "Will the maximum temperature be 65-66° on Nov 2, 2026? [65° to 66°]",
-    "schliesst": 1793685600.0,
-    "ref": {
-     "ticker": "KXHIGHNY-26NOV02-B65.5"
-    },
-    "url": "https://kalshi.com/markets/KXHIGHNY-26NOV02"
-   },
-   "seite": "long",
-   "menge": 328.0,
-   "einstand": 0.7162124999999999,
-   "hebel": 1.0,
-   "marge": 0.0,
-   "eroeffnet": 1793546012.2292285,
-   "gebuehren": 4.67,
-   "funding": 0.0,
-   "ausstiegsplan": "Halten bis zur Abrechnung (Wetter-Regel)",
-   "kurs": null,
-   "wert": 234.92
-  },
-  {
    "id": "p668f93f3",
    "inst": {
     "id": "pm:kalshi:KXHIGHCHI-26NOV02-B68.5:JA",
@@ -55,58 +29,6 @@
    "ausstiegsplan": "Halten bis zur Abrechnung (Wetter-Regel)",
    "kurs": null,
    "wert": 136.76
-  },
-  {
-   "id": "p4ca242b4",
-   "inst": {
-    "id": "pm:kalshi:KXHIGHNY-26NOV02-T65:JA",
-    "art": "pm",
-    "venue": "kalshi",
-    "ergebnis": "JA",
-    "frage": "Will the maximum temperature be <65° on Nov 2, 2026? [64° or below]",
-    "schliesst": 1793685600.0,
-    "ref": {
-     "ticker": "KXHIGHNY-26NOV02-T65"
-    },
-    "url": "https://kalshi.com/markets/KXHIGHNY-26NOV02"
-   },
-   "seite": "long",
-   "menge": 874.0,
-   "einstand": 0.24065217391304342,
-   "hebel": 1.0,
-   "marge": 0.0,
-   "eroeffnet": 1793625031.1571364,
-   "gebuehren": 11.18,
-   "funding": 0.0,
-   "ausstiegsplan": "Halten bis zur Abrechnung (Wetter-Regel)",
-   "kurs": null,
-   "wert": 210.33
-  },
-  {
-   "id": "p536b3f34",
-   "inst": {
-    "id": "pm:kalshi:KXHIGHNY-26NOV02-B67.5:JA",
-    "art": "pm",
-    "venue": "kalshi",
-    "ergebnis": "JA",
-    "frage": "Will the maximum temperature be 67-68° on Nov 2, 2026? [67° to 68°]",
-    "schliesst": 1793685600.0,
-    "ref": {
-     "ticker": "KXHIGHNY-26NOV02-B67.5"
-    },
-    "url": "https://kalshi.com/markets/KXHIGHNY-26NOV02"
-   },
-   "seite": "long",
-   "menge": 1608.0,
-   "einstand": 0.12973685518955874,
-   "hebel": 1.0,
-   "marge": 0.0,
-   "eroeffnet": 1793625031.1571364,
-   "gebuehren": 12.71,
-   "funding": 0.0,
-   "ausstiegsplan": "Halten bis zur Abrechnung (Wetter-Regel)",
-   "kurs": null,
-   "wert": 208.62
   },
   {
    "id": "p1821009d",
@@ -209,8 +131,8 @@
    "gebuehren": 6.04,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Wetter-Regel)",
-   "kurs": 0.405,
-   "wert": 142.8
+   "kurs": 0.435,
+   "wert": 153.51
   },
   {
    "id": "p9f19f0c5",
@@ -235,8 +157,8 @@
    "gebuehren": 6.14,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Wetter-Regel)",
-   "kurs": 0.135,
-   "wert": 70.2
+   "kurs": 0.125,
+   "wert": 64.8
   },
   {
    "id": "pfce9e240",
@@ -261,15 +183,15 @@
    "gebuehren": 6.16,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Wetter-Regel)",
-   "kurs": 0.15000000000000002,
-   "wert": 86.19
+   "kurs": 0.155,
+   "wert": 99.45
   }
  ],
- "realisiert": -3376.3947589538193,
+ "realisiert": -4030.2593220986296,
  "gebuehren": 315.15000000000003,
  "funding": 0.0,
  "erstellt": 1793380123.8861866,
  "start_fx": 1.1156327353966788,
- "letzter_tick": 1793707513.2272713,
+ "letzter_tick": 1793708412.5590672,
  "wetter_letzter": 1793707513.2272713
 }
