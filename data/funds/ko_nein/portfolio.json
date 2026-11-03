@@ -2,7 +2,7 @@
  "fonds_id": "ko_nein",
  "waehrung": "USD",
  "start_kapital": 11157.431109273288,
- "cash": 3092.6756892732856,
+ "cash": 2591.6165792732854,
  "positionen": [
   {
    "id": "pe6781775",
@@ -33,8 +33,8 @@
    "gebuehren": 0.0,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.184,
-   "wert": 374.5
+   "kurs": 0.159,
+   "wert": 331.7
   },
   {
    "id": "p9e535f2b",
@@ -449,8 +449,8 @@
    "gebuehren": 0.0,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.223,
-   "wert": 335.22
+   "kurs": 0.219,
+   "wert": 317.1
   },
   {
    "id": "pc8cf836f",
@@ -801,8 +801,8 @@
    "gebuehren": 1.96552,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.835,
-   "wert": 165.17
+   "kurs": 0.825,
+   "wert": 163.18
   },
   {
    "id": "p4cd35a1d",
@@ -1217,8 +1217,8 @@
    "gebuehren": 4.65658,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.675,
-   "wert": 184.25
+   "kurs": 0.685,
+   "wert": 187.0
   },
   {
    "id": "pd183209f",
@@ -1345,8 +1345,8 @@
    "gebuehren": 5.35174,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.245,
-   "wert": 196.14
+   "kurs": 0.23,
+   "wert": 177.46
   },
   {
    "id": "pe88b93d8",
@@ -1377,8 +1377,8 @@
    "gebuehren": 3.5803,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.535,
-   "wert": 148.41
+   "kurs": 0.54,
+   "wert": 151.32
   },
   {
    "id": "p70f5ec3a",
@@ -1443,13 +1443,109 @@
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
    "kurs": 0.35,
    "wert": 81.51
+  },
+  {
+   "id": "p59f0f91b",
+   "inst": {
+    "id": "pm:polymarket:6172680:NEIN",
+    "art": "pm",
+    "venue": "polymarket",
+    "ergebnis": "NEIN",
+    "frage": "Will Gold (XAUUSD) hit (HIGH) $4,100 in November?",
+    "schliesst": 1796101199.999,
+    "ref": {
+     "id": "6172680",
+     "token_ja": "87194740732133168017179001737986231915842576312391051924620967868219853534285",
+     "token_nein": "107723755833202630200780333997378782075498479220582397390187411777061951640598",
+     "tick": 0.01,
+     "condition": "0x5b905f67fc5a80f65dd7c382b498e0f4bc89cda5bda804d7ebc96f99fb5d57c0",
+     "gebuehr_rate": 0.04,
+     "gebuehr_exp": 1.0
+    },
+    "url": "https://polymarket.com/event/will-xauusd-reach-4100-in-november-2026"
+   },
+   "seite": "long",
+   "menge": 283.0,
+   "einstand": 0.58,
+   "hebel": 1.0,
+   "marge": 0.0,
+   "eroeffnet": 1793683098.0528867,
+   "gebuehren": 2.75755,
+   "funding": 0.0,
+   "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
+   "kurs": 0.5549999999999999,
+   "wert": 149.99
+  },
+  {
+   "id": "p9869a857",
+   "inst": {
+    "id": "pm:polymarket:6172686:NEIN",
+    "art": "pm",
+    "venue": "polymarket",
+    "ergebnis": "NEIN",
+    "frage": "Will Gold (XAUUSD) hit (LOW) $3,800 in November?",
+    "schliesst": 1796101199.999,
+    "ref": {
+     "id": "6172686",
+     "token_ja": "12061185619363955006223004058869877064737042032084119031105400723936146682489",
+     "token_nein": "49372101761680527651234860901714333457246929814465004669376954062127877501239",
+     "tick": 0.01,
+     "condition": "0xa4a0ab794c16951c06dd6222d5f3b441f6a1c3a7387480cf3ad68593a7a9d673",
+     "gebuehr_rate": 0.04,
+     "gebuehr_exp": 1.0
+    },
+    "url": "https://polymarket.com/event/will-xauusd-dip-to-3800-in-november-2026"
+   },
+   "seite": "long",
+   "menge": 363.0,
+   "einstand": 0.45,
+   "hebel": 1.0,
+   "marge": 0.0,
+   "eroeffnet": 1793683098.0528867,
+   "gebuehren": 3.5937,
+   "funding": 0.0,
+   "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
+   "kurs": 0.41500000000000004,
+   "wert": 137.94
+  },
+  {
+   "id": "pa1fe7c67",
+   "inst": {
+    "id": "pm:polymarket:6404228:NEIN",
+    "art": "pm",
+    "venue": "polymarket",
+    "ergebnis": "NEIN",
+    "frage": "Will the ECB make no change to the deposit facility rate at the February meeting?",
+    "schliesst": 1801785540.0,
+    "ref": {
+     "id": "6404228",
+     "token_ja": "60557839756661177344379806160599652650085450172190490534859742074942169581315",
+     "token_nein": "73875526032345015563380637797103306946553029457343439005743866663387555949567",
+     "tick": 0.01,
+     "condition": "0x14552c507ea73c7dc4f9518505eb027c244165f3ce72747e9910bfc1dbb58a72",
+     "gebuehr_rate": 0.05,
+     "gebuehr_exp": 1.0
+    },
+    "url": "https://polymarket.com/event/will-the-ecb-make-no-change-to-the-deposit-facility-rate-at-the-february-2027-meeting"
+   },
+   "seite": "long",
+   "menge": 542.0,
+   "einstand": 0.2980590405904059,
+   "hebel": 1.0,
+   "marge": 0.0,
+   "eroeffnet": 1793683098.0528867,
+   "gebuehren": 5.66986,
+   "funding": 0.0,
+   "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
+   "kurs": 0.27,
+   "wert": 119.24
   }
  ],
  "realisiert": -430.75794999999994,
- "gebuehren": 150.13670999999997,
+ "gebuehren": 162.15782,
  "funding": 0.0,
  "erstellt": 1793379225.5430336,
  "start_fx": 1.1157431109273288,
- "letzter_tick": 1793682197.931941,
- "kontrolle_bis": 1793667781.8152008
+ "letzter_tick": 1793683098.0528867,
+ "kontrolle_bis": 1793682304.8121955
 }
