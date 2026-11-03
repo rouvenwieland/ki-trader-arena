@@ -221,8 +221,8 @@
    "ausstiegsplan": "Bis Abrechnung halten, gehedgt mit Polymarket R-NEIN.",
    "entscheidung_id": "db10bcf3e",
    "invalidierung": "Manifold-Auflösungsregel weicht erkennbar von Polymarket ab (z. B. Mehrheit ohne VP)",
-   "kurs": 0.20462720996998135,
-   "wert": 49.31
+   "kurs": 0.20456271202834425,
+   "wert": 49.3
   },
   {
    "id": "p1ea4c756",
@@ -357,8 +357,8 @@
    "ausstiegsplan": "Halten bis Abrechnung (Auszahlung ~1 Euro je Anteil). Bei UMA-Vorschlag NEIN neu bewerten.",
    "entscheidung_id": "d742765eb",
    "invalidierung": "Verlässliche Quelle belegt einen US-Schlag vor 20:29 UTC am 2.11. oder UMA-Vorschlag auf NEIN.",
-   "kurs": 0.7315,
-   "wert": 254.87
+   "kurs": 0.7765,
+   "wert": 277.61
   }
  ],
  "realisiert": 0.0,
@@ -366,6 +366,6 @@
  "funding": 0.0,
  "erstellt": 1793380123.8861866,
  "start_fx": 1.1156327353966788,
- "letzter_tick": 1793692097.4802122,
+ "letzter_tick": 1793692997.367885,
  "auftraege": []
 }
