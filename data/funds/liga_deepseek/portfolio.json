@@ -2,7 +2,7 @@
  "fonds_id": "liga_deepseek",
  "waehrung": "USD",
  "start_kapital": 11184.88579861696,
- "cash": 6917.919021427662,
+ "cash": 3514.8048820254085,
  "positionen": [
   {
    "id": "p00666bfa",
@@ -22,8 +22,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "d8e5f296a",
-   "kurs": 81.7,
-   "wert": 2127.86
+   "kurs": 81.681,
+   "wert": 2127.36
   },
   {
    "id": "p78a3c466",
@@ -43,8 +43,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "d8e5f296a",
-   "kurs": 372.18,
-   "wert": 851.06
+   "kurs": 371.71,
+   "wert": 849.98
   },
   {
    "id": "p3d319c8e",
@@ -64,8 +64,29 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "d8e5f296a",
-   "kurs": 80237.435,
-   "wert": 740.3
+   "kurs": 80145.67499999999,
+   "wert": 739.47
+  },
+  {
+   "id": "p9a8fa083",
+   "inst": {
+    "id": "stock:SPY",
+    "art": "stock",
+    "venue": "yahoo",
+    "symbol": "SPY"
+   },
+   "seite": "long",
+   "menge": 4.433173706803806,
+   "einstand": 767.6473705912607,
+   "hebel": 1.0,
+   "marge": 0.0,
+   "eroeffnet": 1793820796.9785986,
+   "gebuehren": 0.0,
+   "funding": 0.0,
+   "ausstiegsplan": "Rebalancing-Regel",
+   "entscheidung_id": "d8e5f296a",
+   "kurs": 767.49,
+   "wert": 3402.06
   }
  ],
  "realisiert": -459.8499745640328,
@@ -73,7 +94,7 @@
  "funding": 0.0,
  "erstellt": 1793319819.7411644,
  "start_fx": 1.1184885798616961,
- "letzter_tick": 1793819896.6280587,
+ "letzter_tick": 1793820796.9785986,
  "rebalancing": {
   "ziele": {
    "stock:SPY": {

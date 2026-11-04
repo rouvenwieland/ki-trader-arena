@@ -2,7 +2,7 @@
  "fonds_id": "liga_kimi",
  "waehrung": "USD",
  "start_kapital": 11184.88579861696,
- "cash": 9324.51716676246,
+ "cash": 3851.7342092860276,
  "positionen": [
   {
    "id": "p0b5ac550",
@@ -22,8 +22,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "d3af64508",
-   "kurs": 372.18,
-   "wert": 1096.6
+   "kurs": 371.71,
+   "wert": 1095.22
   },
   {
    "id": "p5af391c8",
@@ -43,16 +43,58 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "d3af64508",
-   "kurs": 81.7,
-   "wert": 548.3
+   "kurs": 81.681,
+   "wert": 548.17
+  },
+  {
+   "id": "p3e4bc435",
+   "inst": {
+    "id": "stock:SPY",
+    "art": "stock",
+    "venue": "yahoo",
+    "symbol": "SPY"
+   },
+   "seite": "long",
+   "menge": 4.2863070231069695,
+   "einstand": 767.6473705912607,
+   "hebel": 1.0,
+   "marge": 0.0,
+   "eroeffnet": 1793820796.9785986,
+   "gebuehren": 0.0,
+   "funding": 0.0,
+   "ausstiegsplan": "Rebalancing-Regel",
+   "entscheidung_id": "d3af64508",
+   "kurs": 767.49,
+   "wert": 3289.35
+  },
+  {
+   "id": "pb315f18b",
+   "inst": {
+    "id": "spot:BTC-USD",
+    "art": "spot",
+    "venue": "coinbase",
+    "symbol": "BTC-USD"
+   },
+   "seite": "long",
+   "menge": 0.02706272482670085,
+   "einstand": 80161.70913599999,
+   "hebel": 1.0,
+   "marge": 0.0,
+   "eroeffnet": 1793820796.9785986,
+   "gebuehren": 13.016365655913598,
+   "funding": 0.0,
+   "ausstiegsplan": "Rebalancing-Regel",
+   "entscheidung_id": "d3af64508",
+   "kurs": 80145.67499999999,
+   "wert": 2168.96
   }
  ],
  "realisiert": -203.649,
- "gebuehren": 11.24,
+ "gebuehren": 24.256365655913598,
  "funding": 0.0,
  "erstellt": 1793319819.7411644,
  "start_fx": 1.1184885798616961,
- "letzter_tick": 1793819896.6280587,
+ "letzter_tick": 1793820796.9785986,
  "rebalancing": {
   "ziele": {
    "stock:SPY": {
