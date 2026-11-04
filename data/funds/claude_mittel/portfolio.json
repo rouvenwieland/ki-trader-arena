@@ -159,8 +159,8 @@
    "ausstiegsplan": "Halten bis Abrechnung; Gewinn mitnehmen bei JA-Bid ≥0,52; Neubewertung nach NVDA-Zahlen.",
    "entscheidung_id": "dd384368f",
    "invalidierung": "NVDA schließt mehrere Tage ≥3 % über Apple-Marktkapitalisierung oder NVDA-Zahlen mit starker Guidance und Kurssprung.",
-   "kurs": 0.616,
-   "wert": 132.06
+   "kurs": 0.6234999999999999,
+   "wert": 135.12
   },
   {
    "id": "pf61ac065",
@@ -298,8 +298,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "d6e1a7002",
-   "kurs": 80754.045,
-   "wert": 1328.96
+   "kurs": 80458.905,
+   "wert": 1324.1
   },
   {
    "id": "pe3015b77",
@@ -319,8 +319,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "d6e1a7002",
-   "kurs": 2438.16,
-   "wert": 553.34
+   "kurs": 2429.9,
+   "wert": 551.46
   }
  ],
  "realisiert": -136.41177367275844,
@@ -328,7 +328,7 @@
  "funding": 0.0,
  "erstellt": 1793319819.7411644,
  "start_fx": 1.1184885798616961,
- "letzter_tick": 1793832621.5510614,
+ "letzter_tick": 1793833522.1584506,
  "auftraege": [],
  "rebalancing": {
   "ziele": {
