@@ -5,38 +5,6 @@
  "cash": 10681.338249273287,
  "positionen": [
   {
-   "id": "pbfbc15e4",
-   "inst": {
-    "id": "pm:polymarket:630963:NEIN",
-    "art": "pm",
-    "venue": "polymarket",
-    "ergebnis": "NEIN",
-    "frage": "Will the Democrats win the Texas Senate race in 2026?",
-    "schliesst": 1793768340.0,
-    "ref": {
-     "id": "630963",
-     "token_ja": "15290572385458522370285732869432740297199321382471116558439914335588167718663",
-     "token_nein": "25172545206000541692667496253531562288536270988826888609620735617040533835056",
-     "tick": 0.01,
-     "condition": "0x34918035a590555ba1fb1d6a019d766ab6e557d63e7f3140b63b4550eee7f417",
-     "gebuehr_rate": 0.04,
-     "gebuehr_exp": 1.0
-    },
-    "url": "https://polymarket.com/event/texas-senate-election-winner"
-   },
-   "seite": "long",
-   "menge": 472.0,
-   "einstand": 0.27,
-   "hebel": 1.0,
-   "marge": 0.0,
-   "eroeffnet": 1793596920.3504398,
-   "gebuehren": 3.72125,
-   "funding": 0.0,
-   "ausstiegsplan": "Halten bis zur Abrechnung (Schwarm-Regel)",
-   "kurs": null,
-   "wert": 127.44
-  },
-  {
    "id": "pd500b714",
    "inst": {
     "id": "pm:polymarket:562794:JA",
@@ -97,8 +65,8 @@
    "gebuehren": 0.0,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Schwarm-Regel)",
-   "kurs": 0.9975,
-   "wert": 1182.44
+   "kurs": 0.9984999999999999,
+   "wert": 1183.63
   },
   {
    "id": "p7d686a2f",
@@ -161,14 +129,14 @@
    "gebuehren": 4.62361,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Schwarm-Regel)",
-   "kurs": 0.21000000000000002,
-   "wert": 78.6
+   "kurs": 0.185,
+   "wert": 70.74
   }
  ],
- "realisiert": 471.1243999999999,
+ "realisiert": 343.6843999999999,
  "gebuehren": 24.82133,
  "funding": 0.0,
  "erstellt": 1793379225.5430336,
  "start_fx": 1.1157431109273288,
- "letzter_tick": 1793776401.8903537
+ "letzter_tick": 1793777301.422252
 }

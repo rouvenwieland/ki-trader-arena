@@ -2,7 +2,7 @@
  "fonds_id": "ko_nein",
  "waehrung": "USD",
  "start_kapital": 11157.431109273288,
- "cash": 1153.6203792732856,
+ "cash": 1385.6203792732856,
  "positionen": [
   {
    "id": "pe6781775",
@@ -33,7 +33,7 @@
    "gebuehren": 0.0,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.003,
+   "kurs": 0.0025,
    "wert": 4.28
   },
   {
@@ -133,38 +133,6 @@
    "wert": 167.16
   },
   {
-   "id": "p891e3c87",
-   "inst": {
-    "id": "pm:polymarket:630964:NEIN",
-    "art": "pm",
-    "venue": "polymarket",
-    "ergebnis": "NEIN",
-    "frage": "Will the Republicans win the Texas Senate race in 2026?",
-    "schliesst": 1793768340.0,
-    "ref": {
-     "id": "630964",
-     "token_ja": "21265207456609426291246075480390336499088453711419597084147957999650569091884",
-     "token_nein": "9846414914422486942750462555692240718767368950832862364324602361738794436048",
-     "tick": 0.01,
-     "condition": "0x94521176f57d2ce81dde01e0b7699ca4279423042d37ed53908f0c8bfefe7e14",
-     "gebuehr_rate": 0.0,
-     "gebuehr_exp": 1.0
-    },
-    "url": "https://polymarket.com/event/texas-senate-election-winner"
-   },
-   "seite": "long",
-   "menge": 232.0,
-   "einstand": 0.72,
-   "hebel": 1.0,
-   "marge": 0.0,
-   "eroeffnet": 1793380123.8861866,
-   "gebuehren": 0.0,
-   "funding": 0.0,
-   "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": null,
-   "wert": 167.04
-  },
-  {
    "id": "pf49ce1c2",
    "inst": {
     "id": "pm:polymarket:3215007:NEIN",
@@ -226,7 +194,7 @@
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
    "kurs": 0.75,
-   "wert": 164.98
+   "wert": 167.24
   },
   {
    "id": "p722ad016",
@@ -257,8 +225,8 @@
    "gebuehren": 0.0,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.7195,
-   "wert": 199.88
+   "kurs": 0.7215,
+   "wert": 200.44
   },
   {
    "id": "pdcfb5d53",
@@ -289,8 +257,8 @@
    "gebuehren": 0.0,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.489,
-   "wert": 121.5
+   "kurs": 0.484,
+   "wert": 120.25
   },
   {
    "id": "pe65b0b73",
@@ -321,8 +289,8 @@
    "gebuehren": 0.0,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.958,
-   "wert": 201.08
+   "kurs": 0.9575,
+   "wert": 201.29
   },
   {
    "id": "pf0e983be",
@@ -417,40 +385,8 @@
    "gebuehren": 0.0,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.0025,
-   "wert": 3.02
-  },
-  {
-   "id": "pc8cf836f",
-   "inst": {
-    "id": "pm:polymarket:630963:NEIN",
-    "art": "pm",
-    "venue": "polymarket",
-    "ergebnis": "NEIN",
-    "frage": "Will the Democrats win the Texas Senate race in 2026?",
-    "schliesst": 1793768340.0,
-    "ref": {
-     "id": "630963",
-     "token_ja": "15290572385458522370285732869432740297199321382471116558439914335588167718663",
-     "token_nein": "25172545206000541692667496253531562288536270988826888609620735617040533835056",
-     "tick": 0.01,
-     "condition": "0x34918035a590555ba1fb1d6a019d766ab6e557d63e7f3140b63b4550eee7f417",
-     "gebuehr_rate": 0.0,
-     "gebuehr_exp": 1.0
-    },
-    "url": "https://polymarket.com/event/texas-senate-election-winner"
-   },
-   "seite": "long",
-   "menge": 577.0,
-   "einstand": 0.29,
-   "hebel": 1.0,
-   "marge": 0.0,
-   "eroeffnet": 1793385523.577596,
-   "gebuehren": 0.0,
-   "funding": 0.0,
-   "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": null,
-   "wert": 167.33
+   "kurs": 0.0015,
+   "wert": 1.51
   },
   {
    "id": "p6ded72eb",
@@ -513,8 +449,8 @@
    "gebuehren": 0.0,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.6950000000000001,
-   "wert": 113.46
+   "kurs": 0.7,
+   "wert": 115.32
   },
   {
    "id": "p7e5c2e70",
@@ -705,8 +641,8 @@
    "gebuehren": 0.0,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.5800000000000001,
-   "wert": 106.15
+   "kurs": 0.5700000000000001,
+   "wert": 102.29
   },
   {
    "id": "p9f764afd",
@@ -801,8 +737,8 @@
    "gebuehren": 5.41501,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.535,
-   "wert": 164.3
+   "kurs": 0.555,
+   "wert": 170.5
   },
   {
    "id": "p21e9c816",
@@ -993,8 +929,8 @@
    "gebuehren": 0.0,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.105,
-   "wert": 33.03
+   "kurs": 0.1,
+   "wert": 29.36
   },
   {
    "id": "p5037ef0e",
@@ -1089,7 +1025,7 @@
    "gebuehren": 1.59053,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.28600000000000003,
+   "kurs": 0.29400000000000004,
    "wert": 59.3
   },
   {
@@ -1121,8 +1057,8 @@
    "gebuehren": 4.65658,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.625,
-   "wert": 170.5
+   "kurs": 0.615,
+   "wert": 167.75
   },
   {
    "id": "pd183209f",
@@ -1153,8 +1089,8 @@
    "gebuehren": 2.87438,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.775,
-   "wert": 168.63
+   "kurs": 0.765,
+   "wert": 166.44
   },
   {
    "id": "p54f0e36a",
@@ -1281,7 +1217,7 @@
    "gebuehren": 2.75755,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.26,
+   "kurs": 0.255,
    "wert": 62.26
   },
   {
@@ -1314,7 +1250,7 @@
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
    "kurs": 0.6499999999999999,
-   "wert": 217.8
+   "wert": 221.43
   },
   {
    "id": "pa1fe7c67",
@@ -1409,8 +1345,8 @@
    "gebuehren": 7.60077,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.055,
-   "wert": 24.95
+   "kurs": 0.035,
+   "wert": 15.97
   },
   {
    "id": "p6428113d",
@@ -1441,8 +1377,8 @@
    "gebuehren": 2.9899,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.455,
-   "wert": 99.9
+   "kurs": 0.4,
+   "wert": 86.58
   },
   {
    "id": "p058c18d5",
@@ -1473,8 +1409,8 @@
    "gebuehren": 4.23675,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.44,
-   "wert": 111.37
+   "kurs": 0.41000000000000003,
+   "wert": 103.6
   },
   {
    "id": "p303840ab",
@@ -1569,8 +1505,8 @@
    "gebuehren": 0.95322,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.765,
-   "wert": 141.62
+   "kurs": 0.755,
+   "wert": 139.68
   },
   {
    "id": "pe85e8fb3",
@@ -1601,8 +1537,8 @@
    "gebuehren": 5.82112,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.7725,
-   "wert": 1259.81
+   "kurs": 0.7675000000000001,
+   "wert": 1245.11
   },
   {
    "id": "pca00edbf",
@@ -1633,8 +1569,8 @@
    "gebuehren": 4.05345,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.195,
-   "wert": 68.96
+   "kurs": 0.25,
+   "wert": 99.13
   },
   {
    "id": "pbdd6cd9d",
@@ -1665,15 +1601,15 @@
    "gebuehren": 4.89529,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.237,
-   "wert": 148.93
+   "kurs": 0.2545,
+   "wert": 165.41
   }
  ],
- "realisiert": -1250.07605,
+ "realisiert": -1352.4460499999998,
  "gebuehren": 208.66906999999998,
  "funding": 0.0,
  "erstellt": 1793379225.5430336,
  "start_fx": 1.1157431109273288,
- "letzter_tick": 1793776401.8903537,
+ "letzter_tick": 1793777301.422252,
  "kontrolle_bis": 1793772908.0891886
 }
