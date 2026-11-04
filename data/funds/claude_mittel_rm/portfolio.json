@@ -35,7 +35,7 @@
    "ausstiegsplan": "Halten bis Abrechnung 31.12.; vorzeitig verkaufen, wenn NEIN-Preis auf ≥0.62 steigt (Gewinn mitnehmen) oder unter 0.38 fällt.",
    "entscheidung_id": "dbf84bba3",
    "invalidierung": "NVDA schließt wieder dauerhaft über Apple-Marktkap (NVDA >~210 bei AAPL ~343) oder starke NVDA-Zahlen mit Rally >8%; dann neu bewerten/verkaufen.",
-   "kurs": 0.365,
+   "kurs": 0.37,
    "wert": 201.24
   },
   {
@@ -221,8 +221,8 @@
    "ausstiegsplan": "Bis Abrechnung halten, gehedgt mit Polymarket R-NEIN.",
    "entscheidung_id": "db10bcf3e",
    "invalidierung": "Manifold-Auflösungsregel weicht erkennbar von Polymarket ab (z. B. Mehrheit ohne VP)",
-   "kurs": 0.010102319008249889,
-   "wert": 2.43
+   "kurs": 0.009450572682156256,
+   "wert": 2.28
   },
   {
    "id": "p1ea4c756",
@@ -255,8 +255,8 @@
    "ausstiegsplan": "Bis Abrechnung halten.",
    "entscheidung_id": "db641e871",
    "invalidierung": "Manifold-Regel weicht ab",
-   "kurs": 0.9984999999999999,
-   "wert": 137.72
+   "kurs": 0.999,
+   "wert": 137.86
   },
   {
    "id": "p77177258",
@@ -323,8 +323,8 @@
    "ausstiegsplan": "Halten bis Abrechnung (Auszahlung ~1 Euro je Anteil). Bei UMA-Vorschlag NEIN neu bewerten.",
    "entscheidung_id": "d742765eb",
    "invalidierung": "Verlässliche Quelle belegt einen US-Schlag vor 20:29 UTC am 2.11. oder UMA-Vorschlag auf NEIN.",
-   "kurs": 0.9964999999999999,
-   "wert": 359.56
+   "kurs": 0.995,
+   "wert": 358.47
   }
  ],
  "realisiert": 9.417980000000057,
@@ -332,6 +332,6 @@
  "funding": 0.0,
  "erstellt": 1793380123.8861866,
  "start_fx": 1.1156327353966788,
- "letzter_tick": 1793766395.6428056,
+ "letzter_tick": 1793767295.4087632,
  "auftraege": []
 }
