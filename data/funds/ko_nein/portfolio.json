@@ -97,8 +97,8 @@
    "gebuehren": 0.0,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": null,
-   "wert": 167.3
+   "kurs": 0.0015,
+   "wert": 2.39
   },
   {
    "id": "p1b8b62ed",
@@ -257,8 +257,8 @@
    "gebuehren": 0.0,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.7224999999999999,
-   "wert": 199.33
+   "kurs": 0.7195,
+   "wert": 199.88
   },
   {
    "id": "pdcfb5d53",
@@ -289,8 +289,8 @@
    "gebuehren": 0.0,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.488,
-   "wert": 120.75
+   "kurs": 0.4815,
+   "wert": 120.25
   },
   {
    "id": "pe65b0b73",
@@ -321,8 +321,8 @@
    "gebuehren": 0.0,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.965,
-   "wert": 202.14
+   "kurs": 0.9635,
+   "wert": 202.56
   },
   {
    "id": "pf0e983be",
@@ -737,7 +737,7 @@
    "gebuehren": 0.0,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.575,
+   "kurs": 0.565,
    "wert": 104.22
   },
   {
@@ -1025,8 +1025,8 @@
    "gebuehren": 0.0,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.105,
-   "wert": 33.03
+   "kurs": 0.1,
+   "wert": 29.36
   },
   {
    "id": "p5037ef0e",
@@ -1121,8 +1121,8 @@
    "gebuehren": 1.59053,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.0365,
-   "wert": 6.32
+   "kurs": 0.1455,
+   "wert": 30.74
   },
   {
    "id": "p091ba70e",
@@ -1153,8 +1153,8 @@
    "gebuehren": 4.65658,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.645,
-   "wert": 176.0
+   "kurs": 0.635,
+   "wert": 173.25
   },
   {
    "id": "pd183209f",
@@ -1185,8 +1185,8 @@
    "gebuehren": 2.87438,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.785,
-   "wert": 170.82
+   "kurs": 0.775,
+   "wert": 168.63
   },
   {
    "id": "p54f0e36a",
@@ -1313,8 +1313,8 @@
    "gebuehren": 2.75755,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.28,
-   "wert": 67.92
+   "kurs": 0.245,
+   "wert": 59.43
   },
   {
    "id": "p9869a857",
@@ -1441,8 +1441,8 @@
    "gebuehren": 7.60077,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.07500000000000001,
-   "wert": 34.93
+   "kurs": 0.065,
+   "wert": 29.94
   },
   {
    "id": "p6428113d",
@@ -1473,8 +1473,8 @@
    "gebuehren": 2.9899,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.525,
-   "wert": 115.44
+   "kurs": 0.485,
+   "wert": 106.56
   },
   {
    "id": "p058c18d5",
@@ -1505,8 +1505,8 @@
    "gebuehren": 4.23675,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.475,
-   "wert": 121.73
+   "kurs": 0.455,
+   "wert": 116.55
   },
   {
    "id": "p303840ab",
@@ -1633,8 +1633,8 @@
    "gebuehren": 5.82112,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.779,
-   "wert": 1264.72
+   "kurs": 0.808,
+   "wert": 1308.83
   },
   {
    "id": "pca00edbf",
@@ -1665,8 +1665,8 @@
    "gebuehren": 4.05345,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.22499999999999998,
-   "wert": 68.96
+   "kurs": 0.21500000000000002,
+   "wert": 64.65
   },
   {
    "id": "pbdd6cd9d",
@@ -1697,8 +1697,8 @@
    "gebuehren": 4.89529,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.211,
-   "wert": 135.09
+   "kurs": 0.1835,
+   "wert": 114.67
   }
  ],
  "realisiert": -1082.71787,
@@ -1706,6 +1706,6 @@
  "funding": 0.0,
  "erstellt": 1793379225.5430336,
  "start_fx": 1.1157431109273288,
- "letzter_tick": 1793774601.5791655,
+ "letzter_tick": 1793775501.4551852,
  "kontrolle_bis": 1793772908.0891886
 }
