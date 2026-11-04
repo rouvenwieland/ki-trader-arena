@@ -2,7 +2,7 @@
  "fonds_id": "ko_nein",
  "waehrung": "USD",
  "start_kapital": 11157.431109273288,
- "cash": 1072.3749892732856,
+ "cash": 1289.3749892732856,
  "positionen": [
   {
    "id": "pe6781775",
@@ -161,8 +161,8 @@
    "gebuehren": 0.0,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.7135,
-   "wert": 198.21
+   "kurs": 0.7124999999999999,
+   "wert": 197.66
   },
   {
    "id": "pdcfb5d53",
@@ -193,8 +193,8 @@
    "gebuehren": 0.0,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.40800000000000003,
-   "wert": 101.5
+   "kurs": 0.429,
+   "wert": 106.75
   },
   {
    "id": "pe65b0b73",
@@ -225,8 +225,8 @@
    "gebuehren": 0.0,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.967,
-   "wert": 203.83
+   "kurs": 0.9764999999999999,
+   "wert": 205.51
   },
   {
    "id": "pf0e983be",
@@ -353,7 +353,7 @@
    "gebuehren": 0.0,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.76,
+   "kurs": 0.755,
    "wert": 137.64
   },
   {
@@ -421,38 +421,6 @@
    "wert": 201.84
   },
   {
-   "id": "p7102c243",
-   "inst": {
-    "id": "pm:polymarket:562830:NEIN",
-    "art": "pm",
-    "venue": "polymarket",
-    "ergebnis": "NEIN",
-    "frage": "2026 Balance of Power: R Senate, D House",
-    "schliesst": 1793768340.0,
-    "ref": {
-     "id": "562830",
-     "token_ja": "6302359956133594764084277082169634158291609371270652093164054687145970756151",
-     "token_nein": "558600218792430158020964384658762756367786275998757133304987611939841005404",
-     "tick": 0.01,
-     "condition": "0x998bc71817b2d76921d1999ce0f3431cfd5945583667a371280ca2b430b0c06e",
-     "gebuehr_rate": 0.0,
-     "gebuehr_exp": 1.0
-    },
-    "url": "https://polymarket.com/event/balance-of-power-2026-midterms"
-   },
-   "seite": "long",
-   "menge": 217.0,
-   "einstand": 0.77,
-   "hebel": 1.0,
-   "marge": 0.0,
-   "eroeffnet": 1793395524.297642,
-   "gebuehren": 0.0,
-   "funding": 0.0,
-   "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.999,
-   "wert": 216.78
-  },
-  {
    "id": "p1f028824",
    "inst": {
     "id": "pm:polymarket:2176270:NEIN",
@@ -481,8 +449,8 @@
    "gebuehren": 0.0,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.875,
-   "wert": 163.56
+   "kurs": 0.89,
+   "wert": 165.44
   },
   {
    "id": "p1fca8eac",
@@ -513,8 +481,8 @@
    "gebuehren": 0.0,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.44499999999999995,
-   "wert": 79.13
+   "kurs": 0.435,
+   "wert": 77.2
   },
   {
    "id": "p9f764afd",
@@ -865,8 +833,8 @@
    "gebuehren": 1.59053,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.0935,
-   "wert": 20.27
+   "kurs": 0.0895,
+   "wert": 19.4
   },
   {
    "id": "p091ba70e",
@@ -897,8 +865,8 @@
    "gebuehren": 4.65658,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.45,
-   "wert": 121.0
+   "kurs": 0.455,
+   "wert": 123.75
   },
   {
    "id": "pd183209f",
@@ -929,8 +897,8 @@
    "gebuehren": 2.87438,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.645,
-   "wert": 140.16
+   "kurs": 0.655,
+   "wert": 142.35
   },
   {
    "id": "p54f0e36a",
@@ -1025,8 +993,8 @@
    "gebuehren": 2.75755,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.11,
-   "wert": 25.47
+   "kurs": 0.10500000000000001,
+   "wert": 22.64
   },
   {
    "id": "p9869a857",
@@ -1057,8 +1025,8 @@
    "gebuehren": 3.5937,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.74,
-   "wert": 254.1
+   "kurs": 0.75,
+   "wert": 257.73
   },
   {
    "id": "pa1fe7c67",
@@ -1121,8 +1089,8 @@
    "gebuehren": 0.17475,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.9915,
-   "wert": 168.47
+   "kurs": 0.9924999999999999,
+   "wert": 168.64
   },
   {
    "id": "p6a147c4d",
@@ -1153,8 +1121,8 @@
    "gebuehren": 0.95322,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.6799999999999999,
-   "wert": 129.98
+   "kurs": 0.665,
+   "wert": 122.22
   },
   {
    "id": "pe85e8fb3",
@@ -1185,8 +1153,8 @@
    "gebuehren": 5.82112,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.8734999999999999,
-   "wert": 1423.21
+   "kurs": 0.884,
+   "wert": 1434.65
   },
   {
    "id": "pca00edbf",
@@ -1217,8 +1185,8 @@
    "gebuehren": 4.05345,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.55,
-   "wert": 232.74
+   "kurs": 0.545,
+   "wert": 228.43
   },
   {
    "id": "pbdd6cd9d",
@@ -1249,8 +1217,8 @@
    "gebuehren": 4.89529,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.123,
-   "wert": 79.74
+   "kurs": 0.1095,
+   "wert": 71.17
   },
   {
    "id": "pa6a2b275",
@@ -1345,8 +1313,8 @@
    "gebuehren": 6.432,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.175,
-   "wert": 136.68
+   "kurs": 0.185,
+   "wert": 144.72
   },
   {
    "id": "p8bf269d8",
@@ -1377,8 +1345,8 @@
    "gebuehren": 0.54885,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.8999999999999999,
-   "wert": 153.08
+   "kurs": 0.9,
+   "wert": 156.64
   },
   {
    "id": "p260d7aa9",
@@ -1409,8 +1377,8 @@
    "gebuehren": 0.0,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.725,
-   "wert": 151.92
+   "kurs": 0.715,
+   "wert": 149.81
   },
   {
    "id": "p8a248a52",
@@ -1439,11 +1407,11 @@
    "wert": 166.84
   }
  ],
- "realisiert": -2409.87285,
+ "realisiert": -2359.9628500000003,
  "gebuehren": 218.21459999999996,
  "funding": 0.0,
  "erstellt": 1793379225.5430336,
  "start_fx": 1.1157431109273288,
- "letzter_tick": 1793813596.5913234,
+ "letzter_tick": 1793814496.9864485,
  "kontrolle_bis": 1793811911.2891874
 }
