@@ -89,8 +89,8 @@
    "entscheidung_id": "dfb065841",
    "index_eroeffnung": 77924.8,
    "invalidierung": "BTC-Index außerhalb 74.500–81.500 oder DVOL >48 (Regimewechsel)",
-   "kurs": 1383.716048,
-   "wert": 2903.73
+   "kurs": 1473.9153000000001,
+   "wert": 2885.69
   },
   {
    "id": "p50344976",
@@ -118,8 +118,8 @@
    "entscheidung_id": "d0a6a4df7",
    "index_eroeffnung": 77924.8,
    "invalidierung": "BTC-Index über 81.500 oder unter 74.500, DVOL >48",
-   "kurs": 2114.884187,
-   "wert": 2765.82
+   "kurs": 1991.35365,
+   "wert": 2790.53
   },
   {
    "id": "pfda4822f",
@@ -152,8 +152,8 @@
    "ausstiegsplan": "Halten bis Abrechnung 4.11. 17:00 UTC; bei Bruch von 76,2k oder Ausbruch über 77,9k mit Index-Bestätigung verkaufen, wenn Bid >0,25.",
    "entscheidung_id": "d3ab018b5",
    "invalidierung": "Binance BTC/USDT fällt vor 17:00 UTC unter 76.200 oder steigt über 77.900 – dann Position verkaufen, falls Bid noch >0,25.",
-   "kurs": 0.165,
-   "wert": 158.59
+   "kurs": 0.225,
+   "wert": 218.06
   },
   {
    "id": "pec22a85b",
@@ -186,8 +186,8 @@
    "ausstiegsplan": "Halten bis 17:00 UTC; verkaufen, falls Binance <77,6k vor 14:30 UTC und Bid >0,3.",
    "entscheidung_id": "dcfe36db9",
    "invalidierung": "Binance BTC/USDT unter 77.600",
-   "kurs": 0.755,
-   "wert": 590.25
+   "kurs": 0.745,
+   "wert": 582.38
   }
  ],
  "realisiert": -401.8588399999997,
@@ -195,6 +195,6 @@
  "funding": 0.0,
  "erstellt": 1793319819.7411644,
  "start_fx": 1.1184885798616961,
- "letzter_tick": 1793792768.9262738,
+ "letzter_tick": 1793793668.6017432,
  "auftraege": []
 }
