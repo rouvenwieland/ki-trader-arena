@@ -685,7 +685,9 @@ def test_rebalancing_regel_handelt_abweichung(monkeypatch):
     from arena import funds, rebalancing
     d, pf, mz, ctx = _order_ctx(monkeypatch)
     t = ctx.t_rebalancing_regel([{"instrument_id": "spot:BTC-USD", "anteil": 0.5}], 5, "Shannons Dämon testen")
-    assert "gesetzt" in t and pf["rebalancing"]["ziele"]["spot:BTC-USD"]["anteil"] == 0.5
+    assert "gekappt" in t and pf["rebalancing"]["ziele"]["spot:BTC-USD"]["anteil"] == 0.35  # Einzellimit des Fonds (aggressiv 35 %)
+    rebalancing.setze(pf, [{"instrument_id": "spot:BTC-USD", "anteil": 0.5}], 5, "d", JETZT, ctx.aufloesen)  # ohne Profil: ungekappt
+    assert pf["rebalancing"]["ziele"]["spot:BTC-USD"]["anteil"] == 0.5
     log = rebalancing.pruefe(pf, funds.risikoprofil({"typ": "benchmark"}), mz, JETZT)
     assert log[0]["ok"] and 4800 < log[0]["nominal"] < 5100  # kauft auf ≈ 50 %
     assert rebalancing.pruefe(pf, funds.risikoprofil({"typ": "benchmark"}), mz, JETZT + 900) == []  # im Band
@@ -767,3 +769,21 @@ def test_drossel_haelt_mindestabstand_je_anbieter():
     ohne.SCHLAF = lambda x: geschlafen.append(x)
     ohne._drosseln(); ohne._drosseln()
     assert geschlafen == [16.0]
+
+
+def test_breite_etfs_doppeltes_limit_und_rebalancing_kappt():
+    from arena import rebalancing
+    from arena.exchange import risk
+    prof = {"max_hebel": 3, "max_position_pct": 0.2, "max_perp_pct": 0.3, "max_optionen_pct": 0.08, "min_cash_pct": 0.05,
+            "max_gesamt_exposure_pct": 0.9, "max_krypto_cluster_pct": 1.0, "max_thema_pct": 0.25}
+    pf = {"cash": 10000.0, "positionen": []}
+    spy = {"id": "stock:SPY", "art": "stock", "symbol": "SPY"}
+    nvda = {"id": "stock:NVDA", "art": "stock", "symbol": "NVDA"}
+    assert risk.pruefe_eroeffnung(pf, prof, spy, 3200, 1, 10000) is None
+    assert "Einzelposition" in risk.pruefe_eroeffnung(pf, prof, nvda, 3200, 1, 10000)
+    insts = {"stock:SPY": spy, "spot:BTC-USD": {"id": "spot:BTC-USD", "art": "spot"}}
+    t = rebalancing.setze(pf, [{"instrument_id": "stock:SPY", "anteil": 0.5}, {"instrument_id": "spot:BTC-USD", "anteil": 0.25}],
+                          5, "d1", 0, insts.get, prof)
+    assert "gekappt" in t
+    assert pf["rebalancing"]["ziele"]["stock:SPY"]["anteil"] == 0.4
+    assert pf["rebalancing"]["ziele"]["spot:BTC-USD"]["anteil"] == 0.2

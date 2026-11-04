@@ -312,3 +312,11 @@ keine Order möglich; (3) Rundenauftrag und Marktlage drehten sich fast nur um W
   Mittel, Aggressiv und Mittel-RM hatten ihren Tagesanteil schon in den alten Mini-Runden verbraucht (Übergang, ab morgen frisch).
 * Kimi: Moonshot erlaubt dem Konto nur 3 Anfragen/Minute (HTTP 429 „org max RPM“). Statt 429 zu kassieren, hält die Sitzung je Anbieter einen
   Mindestabstand (`anbieter.moonshot.min_abstand_s` = 21 s). Das ist Einhalten des Limits, kein Umgehen.
+* **Messung 19 UTC:** Mittel, Mittel-RM, DeepSeek und Kimi setzten Rebalancing-Regeln für den Kern; der Wächter kaufte 19:20 →
+  Mittel 7 → 72 %, Mittel-RM 31 → 69 %, Aggressiv 94 %. Liga-Runden liefen ohne Fehler zu Ende (DeepSeek 15, Kimi 17, Gemini 19 Schritte).
+* **Fehler gefunden:** DeepSeek (SPY 32 %) und Kimi (SPY 30 %, BTC 25 %) überschritten das Einzelpositions-Limit (Mittel 20 %); die Börse
+  lehnte den ganzen Kauf ab – alle 15 min erneut, ohne Rückmeldung. **Änderung:** Breite Index-, Anleihen- und Gold-ETFs (SPY, QQQ, AGG, TLT,
+  GLD, EFA … Liste `risk.BREITE_ETFS`) bekommen das doppelte Einzellimit, weil sie selbst über Hunderte Titel streuen; Einzelaktien und
+  Themen-ETFs bleiben beim einfachen Limit. Rebalancing-Ziele über dem Limit werden beim Setzen gekappt (mit Hinweis an den Agenten) und beim
+  Ausführen nur bis zum Limit gekauft, statt komplett abgelehnt zu werden.
+* Gemini setzte keinen Kern (begründet mit „kein Einstiegsdruck“). Das bleibt seine Entscheidung – es ist Teil der Messung, nicht erzwungen.

@@ -433,7 +433,7 @@ class Kontext:
         store.anhaengen(f"funds/{self.fid}/decisions.jsonl", {"typ": "rebalancing", "id": did, "ts": time.time(), "fonds_id": self.fid,
                                                              "ziele": ziele, "schwelle_pp": schwelle_pp, "begruendung": begruendung[:600]})
         try:
-            t = rebalancing.setze(self.pf, list(ziele or []), schwelle_pp, did, self.jetzt, self.aufloesen)
+            t = rebalancing.setze(self.pf, list(ziele or []), schwelle_pp, did, self.jetzt, self.aufloesen, self.prof)
         except (TypeError, ValueError, AttributeError) as e:
             return f"Ungültige Regel: {e}"
         funds.speichere_portfolio(self.pf)
@@ -524,7 +524,7 @@ class Kontext:
              "schema": s({"instrument_id": str_, "p_ja": {"type": "number", "description": "Wettmärkte: deine P(JA); sonst deine letzte festgehaltene Schätzung"}}, ["instrument_id"]), "fn": self.t_positionsgroesse},
             {"name": "technische_analyse", "beschreibung": "Technische Analyse und Regime für jedes Instrument: SMA/EMA, RSI, MACD, Bollinger, ATR, realisierte Vola und Vola-Regime, Drawdown, Z-Score, Hurst-Exponent (Trend vs. Rückkehr zum Mittel), Autokorrelation, Beta/Korrelation zu BTC bzw. SPY.",
              "schema": s({"instrument_id": str_, "intervall": {"type": "string", "enum": ["tag", "stunde"]}}, ["instrument_id"]), "fn": self.t_technische_analyse},
-            {"name": "rebalancing_regel", "beschreibung": "Stehende Rebalancing-Regel (z. B. Volatility Harvesting): Zielanteile am Vermögen für Krypto-Spot und Aktien/ETFs, Rest Cash. Der Wächter handelt alle 15 min die Abweichung, sobald sie die Schwelle übersteigt (echte Kosten). Leere Liste entfernt die Regel.",
+            {"name": "rebalancing_regel", "beschreibung": "Stehende Rebalancing-Regel (z. B. Volatility Harvesting): Zielanteile am Vermögen für Krypto-Spot und Aktien/ETFs, Rest Cash. Der Wächter handelt alle 15 min die Abweichung, sobald sie die Schwelle übersteigt (echte Kosten). Leere Liste entfernt die Regel. Je Ziel gilt dein Einzelpositions-Limit (breite Index-, Anleihen- und Gold-ETFs wie SPY, QQQ, AGG, TLT, GLD: doppeltes Limit; Krypto zusätzlich das Krypto-Cluster-Limit); höhere Ziele werden gekappt.",
              "schema": s({"ziele": {"type": "array", "items": {"type": "object", "properties": {"instrument_id": str_, "anteil": {"type": "number", "description": "0..1 des Vermögens"}},
                                                             "required": ["instrument_id", "anteil"]}},
                           "schwelle_pp": {"type": "number", "description": "Abweichung in Prozentpunkten, ab der gehandelt wird (min. 1, Standard 5)"},

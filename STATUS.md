@@ -81,6 +81,7 @@ betragen 4 × 2,75 € plus 0,8 € Reserve, der harte Deckel von 12 €/Tag ble
 - **Beobachten:** Investitionsquoten der Fonds in den nächsten 1–2 Tagen. Die Tageskosten sollten gleich bleiben (≈ 11–12 €).
 - **Erste Messung 17 UTC:** Vorsichtig baute den Kern auf (SPY, AGG, TLT, GLD, EFA) und ging von 7 % auf 41 % investiert, 10 Schritte. Die drei anderen Claude-Fonds hatten den heutigen Anteil schon vor der Umstellung verbraucht; sie laufen um 19 UTC mit kleinem Rest und ab morgen 3 UTC voll.
 - **Kimi:** Das Moonshot-Konto erlaubt nur 3 Anfragen pro Minute. Die Anfragen haben jetzt 21 s Abstand, statt dass HTTP 429 die Runde abbricht.
+- **Messung 19 UTC:** Über Rebalancing-Regeln für den Kern stiegen Mittel auf 72 %, Mittel-RM auf 69 % und Aggressiv auf 94 % investiert. Die Liga-Runden laufen jetzt ohne Fehler durch. Die Regeln von DeepSeek und Kimi scheiterten am Einzelpositions-Limit von 20 %: Breite Index-ETFs dürfen jetzt das doppelte Limit haben, zu hohe Ziele werden gekappt statt abgelehnt.
 
 ## Offen / zu beobachten
 

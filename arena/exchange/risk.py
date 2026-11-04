@@ -8,6 +8,20 @@ def profil(name: str) -> dict:
     return config.load()["risiko"][name]
 
 
+# Breite Index-/Anleihen-/Gold-ETFs streuen selbst über Hunderte Titel: Für sie gilt das doppelte Einzelpositions-Limit,
+# sonst könnte ein Kernportfolio (z. B. 30 % SPY) gar nicht gebaut werden. Einzelaktien und Themen-ETFs bleiben beim einfachen Limit.
+BREITE_ETFS = {"SPY", "VOO", "IVV", "VTI", "ITOT", "QQQ", "QQQM", "DIA", "IWM", "RSP", "ACWI", "VT", "URTH", "EFA", "VEA", "IEFA",
+               "VWO", "EEM", "IEMG", "VGK", "EWJ", "AGG", "BND", "BNDX", "TLT", "IEF", "SHY", "GOVT", "TIP", "SCHP", "LQD", "VCIT",
+               "HYG", "JNK", "MUB", "BIL", "SGOV", "GLD", "IAU", "SLV", "DBC", "VNQ", "EUNL.DE", "IWDA.AS", "VWCE.DE", "CSPX.L", "SXR8.DE"}
+
+
+def positions_limit(prof: dict, inst: dict) -> float:
+    """Einzelpositions-Limit (Anteil am Vermögen) für dieses Instrument."""
+    if inst.get("art") == "stock" and str(inst.get("symbol") or inst["id"].split(":", 1)[-1]).upper() in BREITE_ETFS:
+        return 2 * prof["max_position_pct"]
+    return prof["max_position_pct"]
+
+
 def _krypto_nominal(p: dict) -> float:
     """Brutto-Krypto-Risiko einer Position: Spot/Perp/Option zum Nominal (BTC/ETH/SOL korrelieren 0,89–0,91 → ein Cluster)."""
     return abs(p["einstand"] * p["menge"])
@@ -38,8 +52,9 @@ def pruefe_eroeffnung(pf: dict, prof: dict, inst: dict, nominal: float, hebel: f
         return "Hebel gibt es nur bei Perpetuals und Aktien (Wertpapierkredit)"
     eq = max(equity, 1e-9)
     gleiche = sum(p["einstand"] * p["menge"] for p in pf["positionen"] if p["inst"]["id"] == inst["id"])
-    if (gleiche + nominal) / eq > prof["max_position_pct"] + 1e-9 and inst["art"] != "perp":
-        return f"Einzelposition würde {100 * (gleiche + nominal) / eq:.1f} % des Vermögens übersteigen (Limit {100 * prof['max_position_pct']:.0f} %)"
+    lim = positions_limit(prof, inst)
+    if (gleiche + nominal) / eq > lim + 1e-9 and inst["art"] != "perp":
+        return f"Einzelposition würde {100 * (gleiche + nominal) / eq:.1f} % des Vermögens übersteigen (Limit {100 * lim:.0f} %)"
     if inst["art"] == "perp":
         perp = sum(p["einstand"] * p["menge"] for p in pf["positionen"] if p["inst"]["art"] == "perp")
         if (perp + nominal) / eq > prof["max_perp_pct"] * prof["max_hebel"] + 1e-9:
