@@ -2,7 +2,7 @@
  "fonds_id": "ko_nein",
  "waehrung": "USD",
  "start_kapital": 11157.431109273288,
- "cash": 973.3749892732856,
+ "cash": 1072.3749892732856,
  "positionen": [
   {
    "id": "pe6781775",
@@ -65,8 +65,8 @@
    "gebuehren": 0.0,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.215,
-   "wert": 125.37
+   "kurs": 0.225,
+   "wert": 131.34
   },
   {
    "id": "pf49ce1c2",
@@ -97,8 +97,8 @@
    "gebuehren": 0.0,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.795,
-   "wert": 173.8
+   "kurs": 0.785,
+   "wert": 171.6
   },
   {
    "id": "pfa54617a",
@@ -129,8 +129,8 @@
    "gebuehren": 0.0,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.69,
-   "wert": 153.68
+   "kurs": 0.6950000000000001,
+   "wert": 151.42
   },
   {
    "id": "p722ad016",
@@ -161,8 +161,8 @@
    "gebuehren": 0.0,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.712,
-   "wert": 197.38
+   "kurs": 0.713,
+   "wert": 197.94
   },
   {
    "id": "pdcfb5d53",
@@ -193,8 +193,8 @@
    "gebuehren": 0.0,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.4205,
-   "wert": 105.0
+   "kurs": 0.422,
+   "wert": 105.25
   },
   {
    "id": "pe65b0b73",
@@ -513,8 +513,8 @@
    "gebuehren": 0.0,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.44999999999999996,
-   "wert": 79.13
+   "kurs": 0.45999999999999996,
+   "wert": 81.06
   },
   {
    "id": "p9f764afd",
@@ -609,8 +609,8 @@
    "gebuehren": 5.41501,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.685,
-   "wert": 210.8
+   "kurs": 0.695,
+   "wert": 213.9
   },
   {
    "id": "p21e9c816",
@@ -673,8 +673,8 @@
    "gebuehren": 0.0,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.10500000000000001,
-   "wert": 124.96
+   "kurs": 0.11,
+   "wert": 140.58
   },
   {
    "id": "p36f1eea5",
@@ -897,7 +897,7 @@
    "gebuehren": 4.65658,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.435,
+   "kurs": 0.44,
    "wert": 118.25
   },
   {
@@ -929,8 +929,8 @@
    "gebuehren": 2.87438,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.625,
-   "wert": 135.78
+   "kurs": 0.635,
+   "wert": 137.97
   },
   {
    "id": "p54f0e36a",
@@ -993,8 +993,8 @@
    "gebuehren": 3.5803,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.59,
-   "wert": 165.87
+   "kurs": 0.61,
+   "wert": 171.69
   },
   {
    "id": "p59f0f91b",
@@ -1025,7 +1025,7 @@
    "gebuehren": 2.75755,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.125,
+   "kurs": 0.11499999999999999,
    "wert": 22.64
   },
   {
@@ -1157,38 +1157,6 @@
    "wert": 164.28
   },
   {
-   "id": "p303840ab",
-   "inst": {
-    "id": "pm:polymarket:5364739:NEIN",
-    "art": "pm",
-    "venue": "polymarket",
-    "ergebnis": "NEIN",
-    "frage": "Will ISM Services PMI be between 53.0 and 53.9 in October?",
-    "schliesst": 1793804400.0,
-    "ref": {
-     "id": "5364739",
-     "token_ja": "10108190263043129422225956153491168729388599272333506176561731342275143081699",
-     "token_nein": "88504361451511771457528420655372108848345654252466350617372943070355196883775",
-     "tick": 0.01,
-     "condition": "0xebf06c587a50c7b928026d0b9d4770c82a7789ca15d271d1d7c3566d616a1189",
-     "gebuehr_rate": 0.05,
-     "gebuehr_exp": 1.0
-    },
-    "url": "https://polymarket.com/event/will-ism-services-pmi-be-between-53pt0-and-53pt9-in-october"
-   },
-   "seite": "long",
-   "menge": 99.0,
-   "einstand": 0.9569898989898991,
-   "hebel": 1.0,
-   "marge": 0.0,
-   "eroeffnet": 1793726549.3139398,
-   "gebuehren": 0.20374,
-   "funding": 0.0,
-   "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.992,
-   "wert": 98.21
-  },
-  {
    "id": "pf242aeda",
    "inst": {
     "id": "pm:polymarket:3215009:NEIN",
@@ -1281,8 +1249,8 @@
    "gebuehren": 5.82112,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.9295,
-   "wert": 1513.08
+   "kurs": 0.9225000000000001,
+   "wert": 1504.91
   },
   {
    "id": "pca00edbf",
@@ -1313,8 +1281,8 @@
    "gebuehren": 4.05345,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.5700000000000001,
-   "wert": 237.05
+   "kurs": 0.545,
+   "wert": 228.43
   },
   {
    "id": "pbdd6cd9d",
@@ -1345,8 +1313,8 @@
    "gebuehren": 4.89529,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.0695,
-   "wert": 44.15
+   "kurs": 0.076,
+   "wert": 48.77
   },
   {
    "id": "pa6a2b275",
@@ -1377,8 +1345,8 @@
    "gebuehren": 0.47102,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.952,
-   "wert": 165.79
+   "kurs": 0.95,
+   "wert": 164.91
   },
   {
    "id": "p0abe393e",
@@ -1473,8 +1441,8 @@
    "gebuehren": 0.54885,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.88,
-   "wert": 153.08
+   "kurs": 0.865,
+   "wert": 149.52
   },
   {
    "id": "p260d7aa9",
@@ -1505,8 +1473,8 @@
    "gebuehren": 0.0,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.74,
-   "wert": 154.03
+   "kurs": 0.73,
+   "wert": 151.92
   },
   {
    "id": "p8a248a52",
@@ -1531,15 +1499,15 @@
    "gebuehren": 0.36,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.96,
+   "kurs": 0.975,
    "wert": 165.12
   }
  ],
- "realisiert": -2090.17085,
+ "realisiert": -2085.91285,
  "gebuehren": 218.21459999999996,
  "funding": 0.0,
  "erstellt": 1793379225.5430336,
  "start_fx": 1.1157431109273288,
- "letzter_tick": 1793810896.7682226,
+ "letzter_tick": 1793811797.0398214,
  "kontrolle_bis": 1793804589.4595122
 }
