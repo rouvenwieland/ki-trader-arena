@@ -2,7 +2,7 @@
  "fonds_id": "claude_aggressiv",
  "waehrung": "USD",
  "start_kapital": 11184.88579861696,
- "cash": 2322.4905458735802,
+ "cash": 721.0905458735842,
  "positionen": [
   {
    "id": "p8d020f51",
@@ -120,10 +120,53 @@
    "invalidierung": "BTC-Index über 81.500 oder unter 74.500, DVOL >48",
    "kurs": 3092.6628800000003,
    "wert": 2570.27
+  },
+  {
+   "id": "pc15663a3",
+   "inst": {
+    "id": "perp:BTC_USDC-PERPETUAL",
+    "art": "perp",
+    "venue": "deribit",
+    "symbol": "BTC_USDC-PERPETUAL"
+   },
+   "seite": "long",
+   "menge": 0.03485228529783006,
+   "einstand": 80339.0646,
+   "hebel": 4.0,
+   "marge": 699.9999999999999,
+   "eroeffnet": 1793819410.2104316,
+   "gebuehren": 1.4,
+   "funding": 0.0,
+   "stop_loss": 77900,
+   "ausstiegsplan": "Stop 77.900 (Strike; unterhalb ist der Straddle ~delta-neutral, Hedge nicht mehr nötig). Hedge auflösen, wenn Straddle zurückgekauft wird; anpassen bei Index >82k.",
+   "entscheidung_id": "dbb53c9c3",
+   "liq_preis": 60557.08386934674,
+   "invalidierung": "BTC fällt unter 77.900 oder Funding >0,03 %/8h (überfüllte Longs)."
+  },
+  {
+   "id": "pd2738082",
+   "inst": {
+    "id": "stock:SPY",
+    "art": "stock",
+    "venue": "yahoo",
+    "symbol": "SPY"
+   },
+   "seite": "long",
+   "menge": 1.1707504624053595,
+   "einstand": 768.7376848443909,
+   "hebel": 1.0,
+   "marge": 0.0,
+   "eroeffnet": 1793819410.3072414,
+   "gebuehren": 0.0,
+   "funding": 0.0,
+   "stop_loss": 730,
+   "ausstiegsplan": "Stop 730 (−5 %); Review bei Jobs 6.11. und Fed 9.12.; als Kern halten.",
+   "entscheidung_id": "d3bcf0fda",
+   "invalidierung": "SPY schließt unter 730 oder Fed-Hike-Odds >90 % mit Rendite-Schock."
   }
  ],
  "realisiert": -1374.4370399999996,
- "gebuehren": 122.107476,
+ "gebuehren": 123.50747600000001,
  "funding": 0.0,
  "erstellt": 1793319819.7411644,
  "start_fx": 1.1184885798616961,

@@ -9,5 +9,48 @@
  "funding": 0.0,
  "erstellt": 1793319819.7411644,
  "start_fx": 1.1184885798616961,
- "letzter_tick": 1793818997.1753423
+ "letzter_tick": 1793818997.1753423,
+ "rebalancing": {
+  "ziele": {
+   "stock:SPY": {
+    "inst": {
+     "id": "stock:SPY",
+     "art": "stock",
+     "venue": "yahoo",
+     "symbol": "SPY"
+    },
+    "anteil": 0.32
+   },
+   "stock:TLT": {
+    "inst": {
+     "id": "stock:TLT",
+     "art": "stock",
+     "venue": "yahoo",
+     "symbol": "TLT"
+    },
+    "anteil": 0.2
+   },
+   "stock:GLD": {
+    "inst": {
+     "id": "stock:GLD",
+     "art": "stock",
+     "venue": "yahoo",
+     "symbol": "GLD"
+    },
+    "anteil": 0.08
+   },
+   "spot:BTC-USD": {
+    "inst": {
+     "id": "spot:BTC-USD",
+     "art": "spot",
+     "venue": "coinbase",
+     "symbol": "BTC-USD"
+    },
+    "anteil": 0.07
+   }
+  },
+  "schwelle_pp": 3.0,
+  "seit": 1793819265.9019525,
+  "entscheidung_id": "d8e5f296a"
+ }
 }

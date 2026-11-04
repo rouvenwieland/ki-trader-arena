@@ -2,7 +2,7 @@
  "fonds_id": "claude_mittel",
  "waehrung": "USD",
  "start_kapital": 11184.88579861696,
- "cash": 10513.649907977933,
+ "cash": 10263.744667977933,
  "positionen": [
   {
    "id": "p51e71031",
@@ -161,13 +161,106 @@
    "invalidierung": "NVDA schließt mehrere Tage ≥3 % über Apple-Marktkapitalisierung oder NVDA-Zahlen mit starker Guidance und Kurssprung.",
    "kurs": 0.5525,
    "wert": 119.36
+  },
+  {
+   "id": "pf61ac065",
+   "inst": {
+    "id": "pm:polymarket:3580933:JA",
+    "art": "pm",
+    "venue": "polymarket",
+    "ergebnis": "JA",
+    "frage": "Will Puma Shen win the next Taipei Mayor election?",
+    "schliesst": 1795928340.0,
+    "ref": {
+     "id": "3580933",
+     "token_ja": "71621185653281721927174401118354054745399424014255544529977515442951477963801",
+     "token_nein": "72820619922053432516748905329266890906103969024802768151634670763988243600546",
+     "tick": 0.001,
+     "condition": "0x910aabbfae28b3569929c31fb5461f4db13f7ddd427bdee1e696d313125838e3",
+     "gebuehr_rate": 0.04,
+     "gebuehr_exp": 1.0
+    },
+    "url": "https://polymarket.com/event/taipei-mayor-election-winner-20260813125857100"
+   },
+   "seite": "long",
+   "menge": 740.0,
+   "einstand": 0.32888105405405405,
+   "hebel": 1.0,
+   "marge": 0.0,
+   "eroeffnet": 1793819387.6707394,
+   "gebuehren": 6.53326,
+   "funding": 0.0,
+   "ausstiegsplan": "Halten bis Wahl 28.11.; Gewinn mitnehmen bei Bid ≥0.45; Neubewertung bei neuen unabhängigen Umfragen mit Chiang +6 oder mehr.",
+   "entscheidung_id": "d97b032e4",
+   "invalidierung": "Mehrere unabhängige Umfragen (TVBS, UDN, China Times) mit Chiang ≥ +6 oder Shen-Rückzug/Skandal."
   }
  ],
  "realisiert": -136.41177367275844,
- "gebuehren": 11.4213,
+ "gebuehren": 17.95456,
  "funding": 0.0,
  "erstellt": 1793319819.7411644,
  "start_fx": 1.1184885798616961,
  "letzter_tick": 1793818997.1753423,
- "auftraege": []
+ "auftraege": [],
+ "rebalancing": {
+  "ziele": {
+   "stock:SPY": {
+    "inst": {
+     "id": "stock:SPY",
+     "art": "stock",
+     "venue": "yahoo",
+     "symbol": "SPY"
+    },
+    "anteil": 0.18
+   },
+   "stock:QQQ": {
+    "inst": {
+     "id": "stock:QQQ",
+     "art": "stock",
+     "venue": "yahoo",
+     "symbol": "QQQ"
+    },
+    "anteil": 0.1
+   },
+   "stock:GLD": {
+    "inst": {
+     "id": "stock:GLD",
+     "art": "stock",
+     "venue": "yahoo",
+     "symbol": "GLD"
+    },
+    "anteil": 0.1
+   },
+   "stock:AGG": {
+    "inst": {
+     "id": "stock:AGG",
+     "art": "stock",
+     "venue": "yahoo",
+     "symbol": "AGG"
+    },
+    "anteil": 0.1
+   },
+   "spot:BTC-USD": {
+    "inst": {
+     "id": "spot:BTC-USD",
+     "art": "spot",
+     "venue": "coinbase",
+     "symbol": "BTC-USD"
+    },
+    "anteil": 0.12
+   },
+   "spot:ETH-USD": {
+    "inst": {
+     "id": "spot:ETH-USD",
+     "art": "spot",
+     "venue": "coinbase",
+     "symbol": "ETH-USD"
+    },
+    "anteil": 0.05
+   }
+  },
+  "schwelle_pp": 5.0,
+  "seit": 1793819265.9019525,
+  "entscheidung_id": "d6e1a7002"
+ }
 }

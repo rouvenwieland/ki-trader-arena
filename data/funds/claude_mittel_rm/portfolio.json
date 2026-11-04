@@ -2,7 +2,7 @@
  "fonds_id": "claude_mittel_rm",
  "waehrung": "USD",
  "start_kapital": 11156.327353966788,
- "cash": 8044.2174099302365,
+ "cash": 7919.309399930236,
  "positionen": [
   {
    "id": "pe8186cc2",
@@ -263,13 +263,79 @@
    "invalidierung": "Verlässliche Quelle belegt einen US-Schlag vor 20:29 UTC am 2.11. oder UMA-Vorschlag auf NEIN.",
    "kurs": 0.999,
    "wert": 360.64
+  },
+  {
+   "id": "p5ac8e2e6",
+   "inst": {
+    "id": "pm:polymarket:3580933:JA",
+    "art": "pm",
+    "venue": "polymarket",
+    "ergebnis": "JA",
+    "frage": "Will Puma Shen win the next Taipei Mayor election?",
+    "schliesst": 1795928340.0,
+    "ref": {
+     "id": "3580933",
+     "token_ja": "71621185653281721927174401118354054745399424014255544529977515442951477963801",
+     "token_nein": "72820619922053432516748905329266890906103969024802768151634670763988243600546",
+     "tick": 0.001,
+     "condition": "0x910aabbfae28b3569929c31fb5461f4db13f7ddd427bdee1e696d313125838e3",
+     "gebuehr_rate": 0.04,
+     "gebuehr_exp": 1.0
+    },
+    "url": "https://polymarket.com/event/taipei-mayor-election-winner-20260813125857100"
+   },
+   "seite": "long",
+   "menge": 370.0,
+   "einstand": 0.32876210810810813,
+   "hebel": 1.0,
+   "marge": 0.0,
+   "eroeffnet": 1793819379.2963967,
+   "gebuehren": 3.26603,
+   "funding": 0.0,
+   "ausstiegsplan": "Halten bis 28.11.; Verkauf bei Preis ≥0.60 (Gewinn) oder bei Invalidierung.",
+   "entscheidung_id": "df7c39229",
+   "invalidierung": "Mehrere seriöse Umfragen (TVBS, UDN, China Times) zeigen Chiang ≥6 Punkte vorn, oder Shen-Preis fällt <0.22."
   }
  ],
  "realisiert": -4.441568327054924,
- "gebuehren": 5.981389999999999,
+ "gebuehren": 9.24742,
  "funding": 0.0,
  "erstellt": 1793380123.8861866,
  "start_fx": 1.1156327353966788,
  "letzter_tick": 1793818997.1753423,
- "auftraege": []
+ "auftraege": [],
+ "rebalancing": {
+  "ziele": {
+   "stock:SPY": {
+    "inst": {
+     "id": "stock:SPY",
+     "art": "stock",
+     "venue": "yahoo",
+     "symbol": "SPY"
+    },
+    "anteil": 0.2
+   },
+   "spot:BTC-USD": {
+    "inst": {
+     "id": "spot:BTC-USD",
+     "art": "spot",
+     "venue": "coinbase",
+     "symbol": "BTC-USD"
+    },
+    "anteil": 0.1
+   },
+   "stock:GLD": {
+    "inst": {
+     "id": "stock:GLD",
+     "art": "stock",
+     "venue": "yahoo",
+     "symbol": "GLD"
+    },
+    "anteil": 0.08
+   }
+  },
+  "schwelle_pp": 5.0,
+  "seit": 1793819265.9019525,
+  "entscheidung_id": "dd6456776"
+ }
 }
