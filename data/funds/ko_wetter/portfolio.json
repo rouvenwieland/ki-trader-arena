@@ -2,7 +2,7 @@
  "fonds_id": "ko_wetter",
  "waehrung": "USD",
  "start_kapital": 11156.327353966788,
- "cash": 4365.346884447667,
+ "cash": 4038.1499844476675,
  "positionen": [
   {
    "id": "pfce9e240",
@@ -105,8 +105,8 @@
    "gebuehren": 9.83,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Wetter-Regel)",
-   "kurs": 0.055,
-   "wert": 67.8
+   "kurs": 0.045,
+   "wert": 54.24
   },
   {
    "id": "p3379c4f4",
@@ -131,8 +131,8 @@
    "gebuehren": 8.02,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Wetter-Regel)",
-   "kurs": 0.335,
-   "wert": 174.24
+   "kurs": 0.33,
+   "wert": 168.96
   },
   {
    "id": "p8dac4067",
@@ -157,7 +157,7 @@
    "gebuehren": 6.91,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Wetter-Regel)",
-   "kurs": 0.03,
+   "kurs": 0.025,
    "wert": 27.3
   },
   {
@@ -183,15 +183,67 @@
    "gebuehren": 9.15,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Wetter-Regel)",
-   "kurs": 0.405,
-   "wert": 589.2
+   "kurs": 0.395,
+   "wert": 574.47
+  },
+  {
+   "id": "pf8aa8fed",
+   "inst": {
+    "id": "pm:kalshi:KXHIGHMIA-26NOV04-T81:JA",
+    "art": "pm",
+    "venue": "kalshi",
+    "ergebnis": "JA",
+    "frage": "Will the maximum temperature be <81° on Nov 4, 2026? [80° or below]",
+    "schliesst": 1793858400.0,
+    "ref": {
+     "ticker": "KXHIGHMIA-26NOV04-T81"
+    },
+    "url": "https://kalshi.com/markets/KXHIGHMIA-26NOV04"
+   },
+   "seite": "long",
+   "menge": 1113.0,
+   "einstand": 0.13873782569631626,
+   "hebel": 1.0,
+   "marge": 0.0,
+   "eroeffnet": 1793802668.7895887,
+   "gebuehren": 9.31,
+   "funding": 0.0,
+   "ausstiegsplan": "Halten bis zur Abrechnung (Wetter-Regel)",
+   "kurs": 0.14,
+   "wert": 89.04
+  },
+  {
+   "id": "p08545315",
+   "inst": {
+    "id": "pm:kalshi:KXHIGHMIA-26NOV04-B83.5:NEIN",
+    "art": "pm",
+    "venue": "kalshi",
+    "ergebnis": "NEIN",
+    "frage": "Will the maximum temperature be 83-84° on Nov 4, 2026? [83° to 84°]",
+    "schliesst": 1793858400.0,
+    "ref": {
+     "ticker": "KXHIGHMIA-26NOV04-B83.5"
+    },
+    "url": "https://kalshi.com/markets/KXHIGHMIA-26NOV04"
+   },
+   "seite": "long",
+   "menge": 243.0,
+   "einstand": 0.6569205761316873,
+   "hebel": 1.0,
+   "marge": 0.0,
+   "eroeffnet": 1793802668.7895887,
+   "gebuehren": 3.84,
+   "funding": 0.0,
+   "ausstiegsplan": "Halten bis zur Abrechnung (Wetter-Regel)",
+   "kurs": 0.65,
+   "wert": 153.09
   }
  ],
  "realisiert": -5545.9576317096935,
- "gebuehren": 395.0,
+ "gebuehren": 408.15,
  "funding": 0.0,
  "erstellt": 1793380123.8861866,
  "start_fx": 1.1156327353966788,
- "letzter_tick": 1793801768.4594352,
- "wetter_letzter": 1793799068.7606728
+ "letzter_tick": 1793802668.7895887,
+ "wetter_letzter": 1793802668.7895887
 }
