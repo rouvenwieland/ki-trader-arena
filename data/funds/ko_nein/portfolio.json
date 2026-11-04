@@ -193,8 +193,8 @@
    "gebuehren": 0.0,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.426,
-   "wert": 105.5
+   "kurs": 0.4265,
+   "wert": 105.75
   },
   {
    "id": "pe65b0b73",
@@ -225,7 +225,7 @@
    "gebuehren": 0.0,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.986,
+   "kurs": 0.985,
    "wert": 206.99
   },
   {
@@ -353,7 +353,7 @@
    "gebuehren": 0.0,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.75,
+   "kurs": 0.755,
    "wert": 135.78
   },
   {
@@ -769,8 +769,8 @@
    "gebuehren": 0.0,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.23500000000000001,
-   "wert": 56.24
+   "kurs": 0.22500000000000003,
+   "wert": 50.32
   },
   {
    "id": "pd54b5964",
@@ -833,8 +833,8 @@
    "gebuehren": 1.59053,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.082,
-   "wert": 17.66
+   "kurs": 0.07,
+   "wert": 13.95
   },
   {
    "id": "p091ba70e",
@@ -865,8 +865,8 @@
    "gebuehren": 4.65658,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.46499999999999997,
-   "wert": 126.5
+   "kurs": 0.435,
+   "wert": 118.25
   },
   {
    "id": "pd183209f",
@@ -897,8 +897,8 @@
    "gebuehren": 2.87438,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.655,
-   "wert": 142.35
+   "kurs": 0.635,
+   "wert": 137.97
   },
   {
    "id": "p54f0e36a",
@@ -1025,8 +1025,8 @@
    "gebuehren": 3.5937,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.7749999999999999,
-   "wert": 257.73
+   "kurs": 0.77,
+   "wert": 261.36
   },
   {
    "id": "pa1fe7c67",
@@ -1057,8 +1057,8 @@
    "gebuehren": 5.66986,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.235,
-   "wert": 124.66
+   "kurs": 0.20500000000000002,
+   "wert": 97.56
   },
   {
    "id": "pf242aeda",
@@ -1153,8 +1153,8 @@
    "gebuehren": 5.82112,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.9375,
-   "wert": 1531.06
+   "kurs": 0.9384999999999999,
+   "wert": 1532.69
   },
   {
    "id": "pca00edbf",
@@ -1217,8 +1217,8 @@
    "gebuehren": 4.89529,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.0615,
-   "wert": 40.2
+   "kurs": 0.0635,
+   "wert": 41.52
   },
   {
    "id": "pa6a2b275",
@@ -1249,8 +1249,8 @@
    "gebuehren": 0.47102,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.971,
-   "wert": 168.96
+   "kurs": 0.9715,
+   "wert": 169.14
   },
   {
    "id": "p0abe393e",
@@ -1313,7 +1313,7 @@
    "gebuehren": 0.54885,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.86,
+   "kurs": 0.855,
    "wert": 147.74
   },
   {
@@ -1405,45 +1405,13 @@
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
    "kurs": 0.6635,
    "wert": 159.3
-  },
-  {
-   "id": "p12cf3c0b",
-   "inst": {
-    "id": "pm:polymarket:6053757:NEIN",
-    "art": "pm",
-    "venue": "polymarket",
-    "ergebnis": "NEIN",
-    "frage": "Will Arsenal FC win on 2026-11-04?",
-    "schliesst": 1793822400.0,
-    "ref": {
-     "id": "6053757",
-     "token_ja": "100913283705193578858886401879221750828791501585884544215624568196336778632583",
-     "token_nein": "84907647600633092270396251949176802811975917431447052322731235120597697436965",
-     "tick": 0.01,
-     "condition": "0xa42222b5a52a82d6ccbbc9ccc5345cf906ddafac21ae0d6a2c037a3133471bf3",
-     "gebuehr_rate": 0.05,
-     "gebuehr_exp": 1.0
-    },
-    "url": "https://polymarket.com/event/ucl-slp-ars-2026-11-04"
-   },
-   "seite": "long",
-   "menge": 671.0,
-   "einstand": 0.24,
-   "hebel": 1.0,
-   "marge": 0.0,
-   "eroeffnet": 1793819896.6280587,
-   "gebuehren": 6.11952,
-   "funding": 0.0,
-   "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": null,
-   "wert": 161.04
   }
  ],
- "realisiert": -2520.7628500000005,
+ "realisiert": -2681.8028500000005,
  "gebuehren": 226.41891999999996,
  "funding": 0.0,
  "erstellt": 1793379225.5430336,
  "start_fx": 1.1157431109273288,
- "letzter_tick": 1793829921.6741686,
+ "letzter_tick": 1793830821.848316,
  "kontrolle_bis": 1793819265.9019525
 }
