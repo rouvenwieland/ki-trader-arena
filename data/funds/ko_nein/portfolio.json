@@ -2,7 +2,7 @@
  "fonds_id": "ko_nein",
  "waehrung": "USD",
  "start_kapital": 11157.431109273288,
- "cash": 1487.8987192732855,
+ "cash": 1320.9216692732855,
  "positionen": [
   {
    "id": "pe6781775",
@@ -257,8 +257,8 @@
    "gebuehren": 0.0,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.695,
-   "wert": 192.1
+   "kurs": 0.7035,
+   "wert": 194.88
   },
   {
    "id": "pdcfb5d53",
@@ -289,8 +289,8 @@
    "gebuehren": 0.0,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.514,
-   "wert": 126.5
+   "kurs": 0.5065,
+   "wert": 125.75
   },
   {
    "id": "pe65b0b73",
@@ -321,8 +321,8 @@
    "gebuehren": 0.0,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.9864999999999999,
-   "wert": 206.99
+   "kurs": 0.9804999999999999,
+   "wert": 205.72
   },
   {
    "id": "pf0e983be",
@@ -449,7 +449,7 @@
    "gebuehren": 0.0,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.003,
+   "kurs": 0.0025,
    "wert": 3.02
   },
   {
@@ -738,7 +738,7 @@
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
    "kurs": 0.71,
-   "wert": 131.24
+   "wert": 129.31
   },
   {
    "id": "p9f764afd",
@@ -897,8 +897,8 @@
    "gebuehren": 0.0,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.018500000000000003,
-   "wert": 13.53
+   "kurs": 0.018,
+   "wert": 10.35
   },
   {
    "id": "p7f18532d",
@@ -1057,8 +1057,8 @@
    "gebuehren": 0.0,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.165,
-   "wert": 29.6
+   "kurs": 0.16,
+   "wert": 26.64
   },
   {
    "id": "pd54b5964",
@@ -1121,8 +1121,8 @@
    "gebuehren": 1.59053,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.08499999999999999,
-   "wert": 17.44
+   "kurs": 0.07500000000000001,
+   "wert": 15.26
   },
   {
    "id": "p091ba70e",
@@ -1249,8 +1249,8 @@
    "gebuehren": 5.35174,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.14,
-   "wert": 102.74
+   "kurs": 0.14500000000000002,
+   "wert": 84.06
   },
   {
    "id": "pe88b93d8",
@@ -1313,8 +1313,8 @@
    "gebuehren": 2.75755,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.49,
-   "wert": 127.35
+   "kurs": 0.48,
+   "wert": 124.52
   },
   {
    "id": "p9869a857",
@@ -1345,8 +1345,8 @@
    "gebuehren": 3.5937,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.41000000000000003,
-   "wert": 108.9
+   "kurs": 0.42000000000000004,
+   "wert": 116.16
   },
   {
    "id": "pa1fe7c67",
@@ -1473,8 +1473,8 @@
    "gebuehren": 2.9899,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.685,
-   "wert": 150.96
+   "kurs": 0.675,
+   "wert": 148.74
   },
   {
    "id": "p058c18d5",
@@ -1505,8 +1505,8 @@
    "gebuehren": 4.23675,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.585,
-   "wert": 150.22
+   "kurs": 0.575,
+   "wert": 147.63
   },
   {
    "id": "p303840ab",
@@ -1601,7 +1601,7 @@
    "gebuehren": 0.95322,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.8300000000000001,
+   "kurs": 0.835,
    "wert": 155.2
   },
   {
@@ -1633,15 +1633,47 @@
    "gebuehren": 5.82112,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.063,
-   "wert": 71.9
+   "kurs": 0.131,
+   "wert": 200.98
+  },
+  {
+   "id": "pca00edbf",
+   "inst": {
+    "id": "pm:polymarket:6594166:NEIN",
+    "art": "pm",
+    "venue": "polymarket",
+    "ergebnis": "NEIN",
+    "frage": "Will NVIDIA be the largest company in the world by market cap on November 30, 2026?",
+    "schliesst": 1796101140.0,
+    "ref": {
+     "id": "6594166",
+     "token_ja": "75986524013024005812038434262180115631650757549364516729725512752527711274229",
+     "token_nein": "75398186021635837729760976154379610577335735183348237214911178817152271429073",
+     "tick": 0.01,
+     "condition": "0x5ba0ab625bef5dbcf97b86882f4d2de35b926474a3f6223e05fcea955f6ce8ba",
+     "gebuehr_rate": 0.04,
+     "gebuehr_exp": 1.0
+    },
+    "url": "https://polymarket.com/event/will-nvidia-be-the-largest-company-in-the-world-by-market-cap-on-november-30-2026"
+   },
+   "seite": "long",
+   "menge": 431.0,
+   "einstand": 0.3780129930394432,
+   "hebel": 1.0,
+   "marge": 0.0,
+   "eroeffnet": 1793769995.8430696,
+   "gebuehren": 4.05345,
+   "funding": 0.0,
+   "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
+   "kurs": 0.33999999999999997,
+   "wert": 112.06
   }
  ],
  "realisiert": -1082.71787,
- "gebuehren": 199.72033,
+ "gebuehren": 203.77378,
  "funding": 0.0,
  "erstellt": 1793379225.5430336,
  "start_fx": 1.1157431109273288,
- "letzter_tick": 1793769095.830974,
- "kontrolle_bis": 1793764690.729202
+ "letzter_tick": 1793769995.8430696,
+ "kontrolle_bis": 1793769200.5771105
 }
