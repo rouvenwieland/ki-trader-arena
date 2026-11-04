@@ -97,8 +97,8 @@
    "ausstiegsplan": "Halten bis 9.12.; Verkauf, wenn NEIN-Bid >0,55 oder bei Invalidierung.",
    "entscheidung_id": "d25f2be12",
    "invalidierung": "Fed-Signale (Warsh/Williams/Jefferson) für klaren Hike mit breitem Konsens, oder CME-Hike >90 % ohne Tauben-Widerspruch.",
-   "kurs": 0.28500000000000003,
-   "wert": 145.26
+   "kurs": 0.29000000000000004,
+   "wert": 150.64
   },
   {
    "id": "p99a5965e",
@@ -120,8 +120,8 @@
    "ausstiegsplan": "Kern halten; Rebalancing bei Abweichung >5pp; Verkauf bei Stop 690.",
    "entscheidung_id": "dc2cac127",
    "invalidierung": "SPY Schlusskurs unter 690 (SMA200 730 deutlich gebrochen, -10 % vom Einstieg)",
-   "kurs": 768.1,
-   "wert": 1000.13
+   "kurs": 767.5,
+   "wert": 999.35
   },
   {
    "id": "pbcdb744c",
@@ -143,8 +143,8 @@
    "ausstiegsplan": "Kern halten; Stop 91,5.",
    "entscheidung_id": "dad9732ba",
    "invalidierung": "AGG unter 91,5 (neues Mehrjahrestief, Zinsschock)",
-   "kurs": 96.295,
-   "wert": 1049.67
+   "kurs": 96.315,
+   "wert": 1049.89
   },
   {
    "id": "pd1046bd9",
@@ -166,8 +166,8 @@
    "ausstiegsplan": "Halten; Stop 74.",
    "entscheidung_id": "d123eb847",
    "invalidierung": "10J-Rendite schließt über 5,3 % / TLT unter 74",
-   "kurs": 81.501,
-   "wert": 529.9
+   "kurs": 81.58,
+   "wert": 530.41
   },
   {
    "id": "pf1acd2e3",
@@ -189,8 +189,8 @@
    "ausstiegsplan": "Halten; Stop 340; Gewicht nicht über 5 % erhöhen.",
    "entscheidung_id": "dd43d0bdc",
    "invalidierung": "GLD unter 340 (neues Tief, ~-9 %)",
-   "kurs": 372.55,
-   "wert": 529.76
+   "kurs": 372.085,
+   "wert": 529.1
   },
   {
    "id": "pabe784cb",
@@ -212,8 +212,8 @@
    "ausstiegsplan": "Halten als Kern; Stop 96.",
    "entscheidung_id": "d269c21b5",
    "invalidierung": "EFA unter 96 (Bruch der Aufwärtstrendstruktur, ~-9 %)",
-   "kurs": 105.6,
-   "wert": 529.5
+   "kurs": 105.505,
+   "wert": 529.03
   }
  ],
  "realisiert": -338.16950000000014,
@@ -221,6 +221,6 @@
  "funding": 0.0,
  "erstellt": 1793319819.7411644,
  "start_fx": 1.1184885798616961,
- "letzter_tick": 1793817197.387854,
+ "letzter_tick": 1793818096.983054,
  "auftraege": []
 }
