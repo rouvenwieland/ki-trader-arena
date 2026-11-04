@@ -6,6 +6,7 @@ from __future__ import annotations
 
 import json
 import os
+import threading
 import time
 from dataclasses import dataclass, field
 
@@ -150,10 +151,14 @@ class AnthropicSitzung:
 class OpenAISitzung:
     VERSUCHE = 5
     SCHLAF = staticmethod(time.sleep)  # in Tests ersetzbar
+    UHR = staticmethod(time.monotonic)
+    _letzter_aufruf: dict[str, float] = {}  # je Anbieter-URL, prozessweit (Anfragelimit pro Minute einhalten statt 429 kassieren)
+    _drossel_lock = threading.Lock()
 
     def __init__(self, url: str, key: str, modell: str, system: str, tools: list[dict], max_tokens: int = 4000,
-                 alternativen: list[str] | None = None):
+                 alternativen: list[str] | None = None, min_abstand_s: float = 0.0):
         self.url, self.key, self.modell, self.max_tokens = url, key, modell, max_tokens
+        self.min_abstand_s = min_abstand_s
         self.alternativen = [a for a in (alternativen or []) if a != modell]  # Ausweichmodelle bei Dauer-503/404
         self.versucht: set[str] = set()  # bei 404 schon probierte Namen (nicht erneut wählen)
         self.tools = _tool_schema_openai(tools)
@@ -169,6 +174,16 @@ class OpenAISitzung:
     def hinweis(self, text: str) -> None:
         self.nachrichten.append({"role": "user", "content": text})
 
+    def _drosseln(self) -> None:
+        """Mindestabstand zwischen Anfragen an denselben Anbieter (z. B. Moonshot: 3 Anfragen/Minute je Konto)."""
+        if self.min_abstand_s <= 0:
+            return
+        with self._drossel_lock:
+            warte = self._letzter_aufruf.get(self.url, -1e9) + self.min_abstand_s - self.UHR()
+            if warte > 0:
+                self.SCHLAF(warte)
+            self._letzter_aufruf[self.url] = self.UHR()
+
     def schritt(self) -> Antwort:
         body = {"model": self.modell, "messages": self.nachrichten, "max_tokens": self.max_tokens}
         if self.tools:
@@ -179,6 +194,7 @@ class OpenAISitzung:
         versuch = 0
         while versuch < self.VERSUCHE:
             body["model"] = self.modell
+            self._drosseln()
             try:
                 r = requests.post(self.url, headers={"Authorization": f"Bearer {self.key}"}, json=body, timeout=150)
             except requests.RequestException as e:
@@ -266,8 +282,8 @@ OpenAISitzung._modell_suchen = _modell_suchen_impl
 
 def openai_sitzung(anbieter: str, modell: str, system: str, tools: list[dict], key: str,
                    alternativen: list[str] | None = None) -> OpenAISitzung:
-    url = config.load()["anbieter"][anbieter]["url"]
-    return OpenAISitzung(url, key, modell, system, tools, alternativen=alternativen)
+    a = config.load()["anbieter"][anbieter]
+    return OpenAISitzung(a["url"], key, modell, system, tools, alternativen=alternativen, min_abstand_s=a.get("min_abstand_s", 0.0))
 
 
 def modell_probe(anbieter: str, modell: str, key: str) -> bool:

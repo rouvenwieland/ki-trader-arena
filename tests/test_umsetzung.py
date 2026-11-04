@@ -749,3 +749,21 @@ def test_investitionsquote_im_prompt():
     assert "INVESTITIONSQUOTE: 5 % investiert" in z and "UNTER der Zielspanne" in z
     sp = prompts.system_prompt(d, {})
     assert "ZIELSPANNE INVESTITIONSQUOTE" in sp and "60–90 %" in sp and "KAPITALEINSATZ" in sp and "oft die beste Entscheidung" not in sp
+
+
+def test_drossel_haelt_mindestabstand_je_anbieter():
+    from arena.agent.llm import OpenAISitzung
+    uhr = [100.0]
+    geschlafen = []
+    s = OpenAISitzung("https://x.test/v1", "k", "m", "sys", [], min_abstand_s=21)
+    s.UHR = lambda: uhr[0]
+    s.SCHLAF = lambda x: (geschlafen.append(x), uhr.__setitem__(0, uhr[0] + x))
+    OpenAISitzung._letzter_aufruf.pop("https://x.test/v1", None)
+    s._drosseln()
+    uhr[0] += 5
+    s._drosseln()
+    assert geschlafen == [16.0]
+    ohne = OpenAISitzung("https://y.test/v1", "k", "m", "sys", [])
+    ohne.SCHLAF = lambda x: geschlafen.append(x)
+    ohne._drosseln(); ohne._drosseln()
+    assert geschlafen == [16.0]

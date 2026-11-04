@@ -79,6 +79,8 @@ betragen 4 × 2,75 € plus 0,8 € Reserve, der harte Deckel von 12 €/Tag ble
   - Größere Kelly-Bruchteile, weniger Mindest-Cash.
   - Der 400-Fehler ist behoben, das Liga-Schrittlimit auf 24 erhöht.
 - **Beobachten:** Investitionsquoten der Fonds in den nächsten 1–2 Tagen. Die Tageskosten sollten gleich bleiben (≈ 11–12 €).
+- **Erste Messung 17 UTC:** Vorsichtig baute den Kern auf (SPY, AGG, TLT, GLD, EFA) und ging von 7 % auf 41 % investiert, 10 Schritte. Die drei anderen Claude-Fonds hatten den heutigen Anteil schon vor der Umstellung verbraucht; sie laufen um 19 UTC mit kleinem Rest und ab morgen 3 UTC voll.
+- **Kimi:** Das Moonshot-Konto erlaubt nur 3 Anfragen pro Minute. Die Anfragen haben jetzt 21 s Abstand, statt dass HTTP 429 die Runde abbricht.
 
 ## Offen / zu beobachten
 

@@ -308,3 +308,7 @@ keine Order möglich; (3) Rundenauftrag und Marktlage drehten sich fast nur um W
   Mindest-Cash Vorsichtig 15 %, Mittel 5 %.
 * Fix 400: Hinweise warten, bis eine pausierte Websuche ihr Ergebnis hat; abgeschnittene Websuche-Aufrufe werden entfernt. Liga-Schrittlimit 24.
 * Bewusst **keine** Zinsen auf Cash (wie bei vielen Brokern ohne Zinsprogramm); das würde Cash zusätzlich bevorzugen.
+* **Erste Messung (17 UTC):** Vorsichtig lief 10 Schritte, kaufte SPY/AGG/TLT/GLD/EFA als Kern und ging von 7 % auf 41 % investiert.
+  Mittel, Aggressiv und Mittel-RM hatten ihren Tagesanteil schon in den alten Mini-Runden verbraucht (Übergang, ab morgen frisch).
+* Kimi: Moonshot erlaubt dem Konto nur 3 Anfragen/Minute (HTTP 429 „org max RPM“). Statt 429 zu kassieren, hält die Sitzung je Anbieter einen
+  Mindestabstand (`anbieter.moonshot.min_abstand_s` = 21 s). Das ist Einhalten des Limits, kein Umgehen.

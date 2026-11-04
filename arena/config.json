@@ -468,7 +468,9 @@
       "url": "https://api.deepseek.com/chat/completions"
     },
     "moonshot": {
-      "url": "https://api.moonshot.ai/v1/chat/completions"
+      "url": "https://api.moonshot.ai/v1/chat/completions",
+      "min_abstand_s": 21,
+      "hinweis": "Konto-Limit 3 Anfragen/Minute (HTTP 429 org max RPM) → 21 s Abstand"
     },
     "cerebras": {
       "url": "https://api.cerebras.ai/v1/chat/completions"
