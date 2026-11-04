@@ -2,7 +2,7 @@
  "fonds_id": "claude_vorsichtig",
  "waehrung": "USD",
  "start_kapital": 11184.88579861696,
- "cash": 9981.09115861696,
+ "cash": 6341.091158616971,
  "positionen": [
   {
    "id": "pca43f487",
@@ -99,6 +99,111 @@
    "invalidierung": "Fed-Signale (Warsh/Williams/Jefferson) für klaren Hike mit breitem Konsens, oder CME-Hike >90 % ohne Tauben-Widerspruch.",
    "kurs": 0.28,
    "wert": 145.26
+  },
+  {
+   "id": "p99a5965e",
+   "inst": {
+    "id": "stock:SPY",
+    "art": "stock",
+    "venue": "yahoo",
+    "symbol": "SPY"
+   },
+   "seite": "long",
+   "menge": 1.3022232809327479,
+   "einstand": 767.9174644180242,
+   "hebel": 1.0,
+   "marge": 0.0,
+   "eroeffnet": 1793812047.9159598,
+   "gebuehren": 0.0,
+   "funding": 0.0,
+   "stop_loss": 690,
+   "ausstiegsplan": "Kern halten; Rebalancing bei Abweichung >5pp; Verkauf bei Stop 690.",
+   "entscheidung_id": "dc2cac127",
+   "invalidierung": "SPY Schlusskurs unter 690 (SMA200 730 deutlich gebrochen, -10 % vom Einstieg)"
+  },
+  {
+   "id": "pbcdb744c",
+   "inst": {
+    "id": "stock:AGG",
+    "art": "stock",
+    "venue": "yahoo",
+    "symbol": "AGG"
+   },
+   "seite": "long",
+   "menge": 10.90231337622491,
+   "einstand": 96.30983478146699,
+   "hebel": 1.0,
+   "marge": 0.0,
+   "eroeffnet": 1793812049.9588795,
+   "gebuehren": 0.0,
+   "funding": 0.0,
+   "stop_loss": 91.5,
+   "ausstiegsplan": "Kern halten; Stop 91,5.",
+   "entscheidung_id": "dad9732ba",
+   "invalidierung": "AGG unter 91,5 (neues Mehrjahrestief, Zinsschock)"
+  },
+  {
+   "id": "pd1046bd9",
+   "inst": {
+    "id": "stock:TLT",
+    "art": "stock",
+    "venue": "yahoo",
+    "symbol": "TLT"
+   },
+   "seite": "long",
+   "menge": 6.502477398134468,
+   "einstand": 81.50739595835486,
+   "hebel": 1.0,
+   "marge": 0.0,
+   "eroeffnet": 1793812051.8785818,
+   "gebuehren": 0.0,
+   "funding": 0.0,
+   "stop_loss": 74,
+   "ausstiegsplan": "Halten; Stop 74.",
+   "entscheidung_id": "d123eb847",
+   "invalidierung": "10J-Rendite schließt über 5,3 % / TLT unter 74"
+  },
+  {
+   "id": "pf1acd2e3",
+   "inst": {
+    "id": "stock:GLD",
+    "art": "stock",
+    "venue": "yahoo",
+    "symbol": "GLD"
+   },
+   "seite": "long",
+   "menge": 1.4221838864879763,
+   "einstand": 372.66629515034856,
+   "hebel": 1.0,
+   "marge": 0.0,
+   "eroeffnet": 1793812052.8624768,
+   "gebuehren": 0.0,
+   "funding": 0.0,
+   "stop_loss": 340,
+   "ausstiegsplan": "Halten; Stop 340; Gewicht nicht über 5 % erhöhen.",
+   "entscheidung_id": "dd43d0bdc",
+   "invalidierung": "GLD unter 340 (neues Tief, ~-9 %)"
+  },
+  {
+   "id": "pabe784cb",
+   "inst": {
+    "id": "stock:EFA",
+    "art": "stock",
+    "venue": "yahoo",
+    "symbol": "EFA"
+   },
+   "seite": "long",
+   "menge": 5.015018098396373,
+   "einstand": 105.68256975373089,
+   "hebel": 1.0,
+   "marge": 0.0,
+   "eroeffnet": 1793812081.6644864,
+   "gebuehren": 0.0,
+   "funding": 0.0,
+   "stop_loss": 96,
+   "ausstiegsplan": "Halten als Kern; Stop 96.",
+   "entscheidung_id": "d269c21b5",
+   "invalidierung": "EFA unter 96 (Bruch der Aufwärtstrendstruktur, ~-9 %)"
   }
  ],
  "realisiert": -338.16950000000014,
