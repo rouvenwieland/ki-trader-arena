@@ -120,8 +120,8 @@
    "ausstiegsplan": "Kern halten; Rebalancing bei Abweichung >5pp; Verkauf bei Stop 690.",
    "entscheidung_id": "dc2cac127",
    "invalidierung": "SPY Schlusskurs unter 690 (SMA200 730 deutlich gebrochen, -10 % vom Einstieg)",
-   "kurs": 768.06,
-   "wert": 1000.08
+   "kurs": 767.525,
+   "wert": 999.38
   },
   {
    "id": "pbcdb744c",
@@ -143,8 +143,8 @@
    "ausstiegsplan": "Kern halten; Stop 91,5.",
    "entscheidung_id": "dad9732ba",
    "invalidierung": "AGG unter 91,5 (neues Mehrjahrestief, Zinsschock)",
-   "kurs": 96.351,
-   "wert": 1050.28
+   "kurs": 96.375,
+   "wert": 1050.55
   },
   {
    "id": "pd1046bd9",
@@ -166,8 +166,8 @@
    "ausstiegsplan": "Halten; Stop 74.",
    "entscheidung_id": "d123eb847",
    "invalidierung": "10J-Rendite schließt über 5,3 % / TLT unter 74",
-   "kurs": 81.665,
-   "wert": 530.96
+   "kurs": 81.685,
+   "wert": 531.09
   },
   {
    "id": "pf1acd2e3",
@@ -189,8 +189,8 @@
    "ausstiegsplan": "Halten; Stop 340; Gewicht nicht über 5 % erhöhen.",
    "entscheidung_id": "dd43d0bdc",
    "invalidierung": "GLD unter 340 (neues Tief, ~-9 %)",
-   "kurs": 371.83,
-   "wert": 528.74
+   "kurs": 372.402,
+   "wert": 529.55
   },
   {
    "id": "pabe784cb",
@@ -212,8 +212,8 @@
    "ausstiegsplan": "Halten als Kern; Stop 96.",
    "entscheidung_id": "d269c21b5",
    "invalidierung": "EFA unter 96 (Bruch der Aufwärtstrendstruktur, ~-9 %)",
-   "kurs": 105.605,
-   "wert": 529.53
+   "kurs": 105.625,
+   "wert": 529.63
   }
  ],
  "realisiert": -338.16950000000014,
@@ -221,6 +221,6 @@
  "funding": 0.0,
  "erstellt": 1793319819.7411644,
  "start_fx": 1.1184885798616961,
- "letzter_tick": 1793821697.4065044,
+ "letzter_tick": 1793822596.9368477,
  "auftraege": []
 }
