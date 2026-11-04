@@ -2,7 +2,7 @@
  "fonds_id": "schwarm_liga",
  "waehrung": "USD",
  "start_kapital": 11157.431109273288,
- "cash": 11015.215209273289,
+ "cash": 10954.818979273288,
  "positionen": [
   {
    "id": "p076d30ec",
@@ -65,14 +65,46 @@
    "gebuehren": 2.5449,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Schwarm-Regel)",
-   "kurs": 0.008,
-   "wert": 3.49
+   "kurs": 0.006,
+   "wert": 2.5
+  },
+  {
+   "id": "p62296656",
+   "inst": {
+    "id": "pm:polymarket:562802:NEIN",
+    "art": "pm",
+    "venue": "polymarket",
+    "ergebnis": "NEIN",
+    "frage": "Will the Democratic Party control the House after the 2026 Midterm elections?",
+    "schliesst": 1793768340.0,
+    "ref": {
+     "id": "562802",
+     "token_ja": "83247781037352156539108067944461291821683755894607244160607042790356561625563",
+     "token_nein": "33156410999665902694791064431724433042010245771106314074312009703157423879038",
+     "tick": 0.001,
+     "condition": "0xd5d9fc47718bd553592d126b1fa5e87183d27f3936975b0c04cc0f2dec1f1bb4",
+     "gebuehr_rate": 0.04,
+     "gebuehr_exp": 1.0
+    },
+    "url": "https://polymarket.com/event/which-party-will-win-the-house-in-2026"
+   },
+   "seite": "long",
+   "menge": 19360.0,
+   "einstand": 0.003,
+   "hebel": 1.0,
+   "marge": 0.0,
+   "eroeffnet": 1793761895.9436038,
+   "gebuehren": 2.31623,
+   "funding": 0.0,
+   "ausstiegsplan": "Halten bis zur Abrechnung (Schwarm-Regel)",
+   "kurs": 0.002,
+   "wert": 19.36
   }
  ],
  "realisiert": 0.0,
- "gebuehren": 2.5449,
+ "gebuehren": 4.86113,
  "funding": 0.0,
  "erstellt": 1793379225.5430336,
  "start_fx": 1.1157431109273288,
- "letzter_tick": 1793760996.1267707
+ "letzter_tick": 1793761895.9436038
 }
