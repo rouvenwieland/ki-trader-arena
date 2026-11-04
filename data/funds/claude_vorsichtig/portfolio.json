@@ -32,8 +32,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Halten bis Abrechnung 6.11. (NFP 8:30 ET). Vorzeitiger Verkauf, falls NEIN-Bid >0,90 (z. B. nach ADP am 4.11.), oder falls neue Konsensdaten eine sehr enge Verteilung um 50–75k nahelegen.",
    "entscheidung_id": "d7a8a9cbe",
-   "kurs": 0.6950000000000001,
-   "wert": 276.33
+   "kurs": 0.7250000000000001,
+   "wert": 303.51
   },
   {
    "id": "pbb7d9e16",
@@ -97,8 +97,8 @@
    "ausstiegsplan": "Halten bis 9.12.; Verkauf, wenn NEIN-Bid >0,55 oder bei Invalidierung.",
    "entscheidung_id": "d25f2be12",
    "invalidierung": "Fed-Signale (Warsh/Williams/Jefferson) für klaren Hike mit breitem Konsens, oder CME-Hike >90 % ohne Tauben-Widerspruch.",
-   "kurs": 0.275,
-   "wert": 139.88
+   "kurs": 0.28,
+   "wert": 145.26
   }
  ],
  "realisiert": -338.16950000000014,
@@ -106,6 +106,6 @@
  "funding": 0.0,
  "erstellt": 1793319819.7411644,
  "start_fx": 1.1184885798616961,
- "letzter_tick": 1793809997.4289145,
+ "letzter_tick": 1793810896.7682226,
  "auftraege": []
 }
