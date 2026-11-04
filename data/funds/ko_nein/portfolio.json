@@ -2,7 +2,7 @@
  "fonds_id": "ko_nein",
  "waehrung": "USD",
  "start_kapital": 11157.431109273288,
- "cash": 1385.6203792732856,
+ "cash": 1617.6203792732856,
  "positionen": [
   {
    "id": "pe6781775",
@@ -225,8 +225,8 @@
    "gebuehren": 0.0,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.715,
-   "wert": 197.66
+   "kurs": 0.7095,
+   "wert": 196.27
   },
   {
    "id": "pdcfb5d53",
@@ -257,8 +257,8 @@
    "gebuehren": 0.0,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.4855,
-   "wert": 120.25
+   "kurs": 0.4775,
+   "wert": 119.25
   },
   {
    "id": "pe65b0b73",
@@ -389,38 +389,6 @@
    "wert": 1.51
   },
   {
-   "id": "p6ded72eb",
-   "inst": {
-    "id": "pm:polymarket:562794:NEIN",
-    "art": "pm",
-    "venue": "polymarket",
-    "ergebnis": "NEIN",
-    "frage": "Will the Republican Party control the Senate after the 2026 Midterm elections?",
-    "schliesst": 1793768340.0,
-    "ref": {
-     "id": "562794",
-     "token_ja": "51939490109676186832507970701169130490548061087912630009168726706475001411420",
-     "token_nein": "108587038225191871355030577171066853142535232042155117887981453750193713427381",
-     "tick": 0.01,
-     "condition": "0x86bfb53af7250a40928975c551d12c185b762fa4ce0b40c6a64a50c946d72587",
-     "gebuehr_rate": 0.0,
-     "gebuehr_exp": 1.0
-    },
-    "url": "https://polymarket.com/event/which-party-will-win-the-senate-in-2026"
-   },
-   "seite": "long",
-   "menge": 232.0,
-   "einstand": 0.72,
-   "hebel": 1.0,
-   "marge": 0.0,
-   "eroeffnet": 1793386423.7439072,
-   "gebuehren": 0.0,
-   "funding": 0.0,
-   "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.999,
-   "wert": 231.77
-  },
-  {
    "id": "p4c2af182",
    "inst": {
     "id": "pm:polymarket:5211628:NEIN",
@@ -449,8 +417,8 @@
    "gebuehren": 0.0,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.73,
-   "wert": 126.48
+   "kurs": 0.75,
+   "wert": 137.64
   },
   {
    "id": "p7e5c2e70",
@@ -641,7 +609,7 @@
    "gebuehren": 0.0,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.5700000000000001,
+   "kurs": 0.575,
    "wert": 104.22
   },
   {
@@ -993,8 +961,8 @@
    "gebuehren": 0.0,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.87,
-   "wert": 161.68
+   "kurs": 0.875,
+   "wert": 163.56
   },
   {
    "id": "p32e5b9f1",
@@ -1025,8 +993,8 @@
    "gebuehren": 1.59053,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.2005,
-   "wert": 39.46
+   "kurs": 0.1625,
+   "wert": 33.79
   },
   {
    "id": "p091ba70e",
@@ -1057,8 +1025,8 @@
    "gebuehren": 4.65658,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.615,
-   "wert": 167.75
+   "kurs": 0.625,
+   "wert": 170.5
   },
   {
    "id": "pd183209f",
@@ -1089,8 +1057,8 @@
    "gebuehren": 2.87438,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.77,
-   "wert": 166.44
+   "kurs": 0.775,
+   "wert": 168.63
   },
   {
    "id": "p54f0e36a",
@@ -1123,38 +1091,6 @@
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
    "kurs": 0.9864999999999999,
    "wert": 166.3
-  },
-  {
-   "id": "pe7c95a9c",
-   "inst": {
-    "id": "pm:polymarket:6172681:NEIN",
-    "art": "pm",
-    "venue": "polymarket",
-    "ergebnis": "NEIN",
-    "frage": "Will Gold (XAUUSD) hit (HIGH) $4,000 in November?",
-    "schliesst": 1796101199.999,
-    "ref": {
-     "id": "6172681",
-     "token_ja": "115719020933381072166530201969146950641679697201410669334100223670791774499645",
-     "token_nein": "108467368739217877589981666579973788217490163029571317452066146263920270950421",
-     "tick": 0.01,
-     "condition": "0x6b6db92c8c646670e3064741313089c19e0c247223d555622b6a9b9387ffa570",
-     "gebuehr_rate": 0.04,
-     "gebuehr_exp": 1.0
-    },
-    "url": "https://polymarket.com/event/will-xauusd-reach-4000-in-november-2026"
-   },
-   "seite": "long",
-   "menge": 934.0,
-   "einstand": 0.17327066381156317,
-   "hebel": 1.0,
-   "marge": 0.0,
-   "eroeffnet": 1793640440.6130333,
-   "gebuehren": 5.35174,
-   "funding": 0.0,
-   "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": null,
-   "wert": 161.83
   },
   {
    "id": "pe88b93d8",
@@ -1217,8 +1153,8 @@
    "gebuehren": 2.75755,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.25,
-   "wert": 59.43
+   "kurs": 0.27,
+   "wert": 65.09
   },
   {
    "id": "p9869a857",
@@ -1250,7 +1186,7 @@
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
    "kurs": 0.6799999999999999,
-   "wert": 235.95
+   "wert": 239.58
   },
   {
    "id": "pa1fe7c67",
@@ -1345,8 +1281,8 @@
    "gebuehren": 7.60077,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.0445,
-   "wert": 20.46
+   "kurs": 0.051000000000000004,
+   "wert": 22.95
   },
   {
    "id": "p6428113d",
@@ -1377,8 +1313,8 @@
    "gebuehren": 2.9899,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.415,
-   "wert": 91.02
+   "kurs": 0.455,
+   "wert": 99.9
   },
   {
    "id": "p058c18d5",
@@ -1409,8 +1345,8 @@
    "gebuehren": 4.23675,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.435,
-   "wert": 111.37
+   "kurs": 0.445,
+   "wert": 113.96
   },
   {
    "id": "p303840ab",
@@ -1505,7 +1441,7 @@
    "gebuehren": 0.95322,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.75,
+   "kurs": 0.755,
    "wert": 139.68
   },
   {
@@ -1537,7 +1473,7 @@
    "gebuehren": 5.82112,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.764,
+   "kurs": 0.763,
    "wert": 1243.47
   },
   {
@@ -1570,7 +1506,7 @@
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
    "kurs": 0.25,
-   "wert": 99.13
+   "wert": 103.44
   },
   {
    "id": "pbdd6cd9d",
@@ -1601,15 +1537,15 @@
    "gebuehren": 4.89529,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.238,
-   "wert": 154.86
+   "kurs": 0.2455,
+   "wert": 160.14
   }
  ],
- "realisiert": -1352.4460499999998,
+ "realisiert": -1449.3208499999998,
  "gebuehren": 208.66906999999998,
  "funding": 0.0,
  "erstellt": 1793379225.5430336,
  "start_fx": 1.1157431109273288,
- "letzter_tick": 1793778201.8130696,
+ "letzter_tick": 1793779102.263191,
  "kontrolle_bis": 1793772908.0891886
 }
