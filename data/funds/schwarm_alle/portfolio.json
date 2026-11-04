@@ -2,7 +2,7 @@
  "fonds_id": "schwarm_alle",
  "waehrung": "USD",
  "start_kapital": 11157.431109273288,
- "cash": 10769.971859273288,
+ "cash": 10681.338249273287,
  "positionen": [
   {
    "id": "pbfbc15e4",
@@ -129,14 +129,46 @@
    "gebuehren": 2.35978,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Schwarm-Regel)",
-   "kurs": 0.0015,
-   "wert": 19.72
+   "kurs": null,
+   "wert": 59.17
+  },
+  {
+   "id": "pefc823e8",
+   "inst": {
+    "id": "pm:polymarket:6507378:NEIN",
+    "art": "pm",
+    "venue": "polymarket",
+    "ergebnis": "NEIN",
+    "frage": "Will Bitcoin reach $80,000 in November?",
+    "schliesst": 1796101200.0,
+    "ref": {
+     "id": "6507378",
+     "token_ja": "113561016234671209942290839029259773639758977772501826895091536543084883546868",
+     "token_nein": "67514459239880074937476507066169842810265962569008392485881663605979878941449",
+     "tick": 0.01,
+     "condition": "0x0c0edd60a7a802df8b57d6ecd8b45ef605914c63d13ee27f15d33c99d10c7832",
+     "gebuehr_rate": 0.07,
+     "gebuehr_exp": 1.0
+    },
+    "url": "https://polymarket.com/event/will-bitcoin-reach-80k-in-november-2026"
+   },
+   "seite": "long",
+   "menge": 393.0,
+   "einstand": 0.21376590330788803,
+   "hebel": 1.0,
+   "marge": 0.0,
+   "eroeffnet": 1793776401.8903537,
+   "gebuehren": 4.62361,
+   "funding": 0.0,
+   "ausstiegsplan": "Halten bis zur Abrechnung (Schwarm-Regel)",
+   "kurs": 0.21000000000000002,
+   "wert": 78.6
   }
  ],
  "realisiert": 471.1243999999999,
- "gebuehren": 20.19772,
+ "gebuehren": 24.82133,
  "funding": 0.0,
  "erstellt": 1793379225.5430336,
  "start_fx": 1.1157431109273288,
- "letzter_tick": 1793775501.4551852
+ "letzter_tick": 1793776401.8903537
 }

@@ -196,3 +196,4 @@
 {"ok": false, "grund": "Gesamt-Exposure würde 100 % des Vermögens übersteigen"}
 {"ok": false, "grund": "Gesamt-Exposure würde 100 % des Vermögens übersteigen"}
 {"ok": true, "ts": 1793773701.797237, "aktion": "eroeffnet", "fonds_id": "ko_nein", "position_id": "pbdd6cd9d", "inst_id": "pm:polymarket:631017:NEIN", "seite": "long", "menge": 659.0, "preis": 0.24644309559939298, "gebuehr": 4.89529, "nominal": 162.40599999999998, "hebel": 1.0, "tiefe_stufen": 4, "teilfuellung": false, "liq_preis": null, "entscheidung_id": null}
+{"ok": true, "ts": 1793776401.8903537, "aktion": "geschlossen", "fonds_id": "ko_nein", "position_id": "p48fc5d59", "inst_id": "pm:polymarket:628941:NEIN", "seite": "long", "menge": 6163.0, "preis": 0.0, "einstand": 0.027155310725296124, "gebuehr": 0.0, "brutto_pnl": -167.35818, "netto_pnl": -167.35818, "grund": "Abrechnung des Marktes", "tiefe_stufen": 0, "kategorie": "wette:wahlen_politik:NEIN", "eroeffnet": 1793383723.5804365}
