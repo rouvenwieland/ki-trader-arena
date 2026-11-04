@@ -187,7 +187,7 @@
    "ausstiegsplan": "Bis Abrechnung halten (Hedge mit Polymarket-NEIN); bei Regelabweichung beide Beine schließen.",
    "entscheidung_id": "de2f4bea2",
    "invalidierung": "Manifold-Kommentare/Regel zeigen abweichende Auflösung (z. B. Stand an anderem Datum).",
-   "kurs": 0.00993410048120853,
+   "kurs": 0.009932259799163928,
    "wert": 1.51
   },
   {
@@ -221,8 +221,8 @@
    "ausstiegsplan": "Bis Abrechnung halten (Hedge).",
    "entscheidung_id": "d20c537d1",
    "invalidierung": "Regelabweichung Manifold; dann beide Beine schließen.",
-   "kurs": 0.9915,
-   "wert": 148.65
+   "kurs": 0.9924999999999999,
+   "wert": 148.8
   }
  ],
  "realisiert": -144.0871300000003,
@@ -230,6 +230,6 @@
  "funding": 0.0,
  "erstellt": 1793319819.7411644,
  "start_fx": 1.1184885798616961,
- "letzter_tick": 1793760095.8553138,
+ "letzter_tick": 1793760996.1267707,
  "auftraege": []
 }
