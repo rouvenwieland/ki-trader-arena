@@ -72,24 +72,52 @@ class AnthropicSitzung:
         if websuche:
             self.tools.append({"type": "web_search_20250305", "name": "web_search", "max_uses": websuche})
         self.nachrichten: list[dict] = []
+        self.wartend: list[str] = []  # Hinweise, die auf das Ende einer pausierten Websuche warten
 
     def nutzer(self, text: str) -> None:
         self.nachrichten.append({"role": "user", "content": text})
 
     def tool_ergebnisse(self, ergebnisse: list[tuple[str, str, bool]]) -> None:
-        self.nachrichten.append({"role": "user", "content": [
-            {"type": "tool_result", "tool_use_id": i, "content": t, **({"is_error": True} if err else {})}
-            for i, t, err in ergebnisse]})
+        inhalt = [{"type": "tool_result", "tool_use_id": i, "content": t, **({"is_error": True} if err else {})} for i, t, err in ergebnisse]
+        inhalt += [{"type": "text", "text": t} for t in self.wartend]  # zurückgehaltene Hinweise jetzt zustellen
+        self.wartend = []
+        self.nachrichten.append({"role": "user", "content": inhalt})
+
+    @staticmethod
+    def _offene_servertools(msg: dict) -> set[str]:
+        """IDs von Server-Werkzeugaufrufen (Websuche) einer Assistenten-Nachricht, zu denen noch kein Ergebnis gehört (pausiert/abgeschnitten)."""
+        if not msg or msg.get("role") != "assistant" or not isinstance(msg.get("content"), list):
+            return set()
+        feld = lambda b, k: b.get(k) if isinstance(b, dict) else getattr(b, k, None)  # noqa: E731
+        aufrufe = {feld(b, "id") for b in msg["content"] if feld(b, "type") == "server_tool_use"}
+        ergebnisse = {feld(b, "tool_use_id") for b in msg["content"] if str(feld(b, "type") or "").endswith("_tool_result")}
+        return aufrufe - ergebnisse
 
     def hinweis(self, text: str) -> None:
-        """Hinweis der Arena an die laufende Runde: an die letzte Nutzer-Nachricht anhängen (Verlauf bleibt append-only)."""
+        """Hinweis der Arena an die laufende Runde: an die letzte Nutzer-Nachricht anhängen (Verlauf bleibt append-only).
+        Läuft gerade eine pausierte Websuche, wird der Hinweis zurückgehalten – eine Nutzer-Nachricht dazwischen wäre ein 400-Fehler."""
         letzte = self.nachrichten[-1] if self.nachrichten else None
+        if self._offene_servertools(letzte):
+            self.wartend.append(text)
+            return
         if letzte and letzte["role"] == "user" and isinstance(letzte["content"], list):
             letzte["content"].append({"type": "text", "text": text})
         else:
             self.nachrichten.append({"role": "user", "content": text})
 
+    def bereinige(self) -> None:
+        """Nach einer abgeschnittenen Antwort (max_tokens): unvollendete Websuche-Aufrufe aus der letzten Antwort entfernen."""
+        letzte = self.nachrichten[-1] if self.nachrichten else None
+        offen = self._offene_servertools(letzte)
+        if offen:
+            feld = lambda b, k: b.get(k) if isinstance(b, dict) else getattr(b, k, None)  # noqa: E731
+            letzte["content"] = [b for b in letzte["content"] if not (feld(b, "type") == "server_tool_use" and feld(b, "id") in offen)]
+
     def schritt(self) -> Antwort:
+        letzte = self.nachrichten[-1] if self.nachrichten else None
+        if self.wartend and letzte and letzte["role"] == "assistant" and not self._offene_servertools(letzte):
+            self.nachrichten.append({"role": "user", "content": [{"type": "text", "text": t} for t in self.wartend]})
+            self.wartend = []
         kw = dict(model=self.modell, max_tokens=self.max_tokens, system=self.system, messages=self.nachrichten,
                   cache_control={"type": "ephemeral"})
         if self.tools:

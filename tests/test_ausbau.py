@@ -130,7 +130,7 @@ class Sitzung:
     def schritt(self):
         self.n += 1
         return llm.Antwort(aufrufe=[{"id": str(self.n), "name": "portfolio", "input": {}}],
-                           nutzung={"ein": 1000, "aus": 20000, "cache_lesen": 0, "cache_schreiben": 0, "websuchen": 0}, ende="tool_use")
+                           nutzung={"ein": 1000, "aus": 5000, "cache_lesen": 0, "cache_schreiben": 0, "websuchen": 0}, ende="tool_use")
 
 
 def test_rundenbudget_gibt_abschluss_hinweis_statt_hartem_abbruch():
@@ -146,9 +146,9 @@ def test_rundenbudget_gibt_abschluss_hinweis_statt_hartem_abbruch():
         def marke(self, i):
             return {}
     res = loop.laufe_runde(defn, {"art": "anthropic", "modell": "claude-sonnet-5-5"}, pf, snap, MZ(), "Test", [], bmod.Budget(1.0, T), 3,
-                           T, sitzung_fabrik=lambda sp, t: s, runden_budget_usd=0.5)
+                           T, sitzung_fabrik=lambda sp, t: s, runden_budget_usd=0.3)
     assert len(s.hinweise) == 1 and "Rundenbudget" in s.hinweise[0]
-    assert res["abbruch"].startswith("Abschluss") and res["schritte"] == 2 + loop.SCHLUSS_SCHRITTE
+    assert res["abbruch"].startswith("Abschluss") and res["schritte"] == loop.MIN_ARBEITSSCHRITTE + loop.SCHLUSS_SCHRITTE  # erst nach Mindestarbeit
 
 
 # ---------------------------------------------------------------- Unabhängigkeit & Überlappung

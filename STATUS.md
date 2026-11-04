@@ -70,6 +70,16 @@ betragen 4 × 2,75 € plus 0,8 € Reserve, der harte Deckel von 12 €/Tag ble
 - **Optionen:** komplette Kette mit Griechen, Kaufen *und* Schreiben (Deribit-Marge), also auch Spreads, Straddles und Covered Calls. **Aktienoptionen** gibt es keine, weil die freie Quelle ein Anti-Bot-Token verlangt (keine Umgehung).
 - **Strategie-Baukasten** im Prompt, **technische Analyse** (RSI, MACD, Bollinger, ATR, Vola-Regime, Hurst, Beta), **Rebalancing-Regeln** für Volatility Harvesting und der Kontrollfonds **„Shannons Dämon“**.
 
+## Nachtrag 04.11. – große Cash-Bestände
+
+- **Ursache:** Keine Order wurde blockiert; die Fonds setzten nur winzige Beträge. Zum einen war das Budget in Mini-Runden zerstückelt: Bis zu 20 Runden pro Tag endeten meist nach 3 Schritten, und die Opus-Tiefenrunde brach mangels Tagesanteil ab. Zum anderen bremste die Anweisung („nichts tun ist oft am besten“), und es gab keinen Kernportfolio-Gedanken. Dazu kamen kleine Kelly-Bruchteile und ein API-Fehler (400) in etwa jeder zehnten Runde.
+- **Behoben:**
+  - Statt bis zu 20 Mini-Runden gibt es 5 feste Runden und höchstens 4 Ereignisrunden pro Tag, jede mit Mindestbudget und mindestens 8 Arbeitsschritten.
+  - Kern + Satelliten mit einer Zielspanne der Investitionsquote je Profil; die aktuelle Quote steht in jeder Runde oben.
+  - Größere Kelly-Bruchteile, weniger Mindest-Cash.
+  - Der 400-Fehler ist behoben, das Liga-Schrittlimit auf 24 erhöht.
+- **Beobachten:** Investitionsquoten der Fonds in den nächsten 1–2 Tagen. Die Tageskosten sollten gleich bleiben (≈ 11–12 €).
+
 ## Offen / zu beobachten
 
 - **Tageskosten** mit vier Claude-Fonds am 31.10. prüfen (Ziel 8–11 €). Liegen sie zu hoch, `fonds_tagesanteil_eur` senken; der Deckel greift ohnehin.

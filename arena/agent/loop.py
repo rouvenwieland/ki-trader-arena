@@ -11,7 +11,8 @@ from arena.agent import llm, prompts
 from arena.agent.tools import Kontext
 
 # Limits je Rundenart: „tief“ = tägliche Tiefenrunde (Opus), „claude“ = feste/ereignisgesteuerte Sonnet-Runde, „liga“ = Liga-Modelle
-MAX_SCHRITTE = {"tief": 26, "claude": 20, "liga": 12}
+MAX_SCHRITTE = {"tief": 26, "claude": 20, "liga": 24}
+MIN_ARBEITSSCHRITTE = 8  # das weiche Rundenbudget mahnt erst danach zum Abschluss (harte Deckel gelten immer)
 MAX_SEKUNDEN = {"tief": 900, "claude": 600, "liga": 480}  # Wanduhr-Limit je Runde (freie Modelle antworten teils minutenlang)
 WEBSUCHEN = {"tief": 12, "claude": 8}
 SCHLUSS_SCHRITTE = 3  # so viele Schritte bleiben nach dem Abschluss-Hinweis, um Orders/Tagebuch zu schreiben
@@ -81,7 +82,8 @@ def laufe_runde(defn: dict, route: dict, pf: dict, snap: dict, mz, grund: str, e
             if abschluss_ab is None and schritte:
                 warum = ("Schrittlimit naht" if schritte >= MAX_SCHRITTE[typ] - SCHLUSS_SCHRITTE else
                          "Zeit der Runde fast um" if time.time() - start > 0.75 * MAX_SEKUNDEN[typ] else
-                         "Rundenbudget fast aufgebraucht" if runden_budget_usd is not None and kosten + kosten / schritte > runden_budget_usd else "")
+                         "Rundenbudget fast aufgebraucht" if runden_budget_usd is not None and schritte >= MIN_ARBEITSSCHRITTE
+                         and kosten + kosten / schritte > runden_budget_usd else "")
                 if warum:
                     abschluss_ab = schritte
                     if hasattr(s, "hinweis"):
@@ -108,6 +110,8 @@ def laufe_runde(defn: dict, route: dict, pf: dict, snap: dict, mz, grund: str, e
                 text = a.text
             if a.ende == "max_tokens" and abgeschnitten < 2:  # abgeschnitten: nicht stillschweigend als Rundenende werten
                 abgeschnitten += 1
+                if hasattr(s, "bereinige"):
+                    s.bereinige()  # abgeschnittene Websuche entfernen, sonst 400 („tool use … without … result“)
                 if a.aufrufe:  # angefangene Aufrufe sind evtl. unvollständig → nicht ausführen, aber beantworten (API verlangt tool_result)
                     s.tool_ergebnisse([(c["id"], "Nicht ausgeführt: Antwort wurde abgeschnitten.", True) for c in a.aufrufe])
                 if hasattr(s, "hinweis"):

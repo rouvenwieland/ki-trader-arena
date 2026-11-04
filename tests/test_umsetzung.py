@@ -717,3 +717,35 @@ def test_option_schreiben_marge_bewertung_abrechnung():
     engine.eroeffne(pf, risk.profil("aggressiv"), inst, bk, seite="short", qty=1, equity=100000, index_preis=80000)
     log = engine.pruefe_liquidation(pf, {}, {inst["id"]: 20000.0}, JETZT, {inst["id"]: 110000.0})
     assert log and log[0]["aktion"] == "liquidiert"
+
+
+# ---------------------------------------------------------------- Fix: Hinweis während pausierter Websuche (400)
+def test_hinweis_wartet_auf_pausierte_websuche(monkeypatch):
+    import types
+    s = llm.AnthropicSitzung.__new__(llm.AnthropicSitzung)
+    s.nachrichten, s.wartend = [{"role": "user", "content": "Start"}], []
+    s.nachrichten.append({"role": "assistant", "content": [types.SimpleNamespace(type="server_tool_use", id="srv1")]})
+    s.hinweis("Jetzt entscheiden")
+    assert s.wartend == ["Jetzt entscheiden"] and s.nachrichten[-1]["role"] == "assistant"  # nichts dazwischen
+    s.nachrichten[-1]["content"].append(types.SimpleNamespace(type="web_search_tool_result", tool_use_id="srv1"))
+    s.tool_ergebnisse([("t1", "ok", False)])
+    assert s.nachrichten[-1]["content"][-1] == {"type": "text", "text": "Jetzt entscheiden"} and not s.wartend
+    s.nachrichten.append({"role": "assistant", "content": [types.SimpleNamespace(type="text", text="…"), types.SimpleNamespace(type="server_tool_use", id="srv2")]})
+    s.bereinige()  # abgeschnitten: offene Websuche raus
+    assert [b.type for b in s.nachrichten[-1]["content"]] == ["text"]
+
+
+# ---------------------------------------------------------------- Kapitaleinsatz: Investitionsquote statt brachliegendem Cash
+def test_investitionsquote_im_prompt():
+    from arena import funds
+    from arena.agent import prompts
+    from arena.exchange import portfolio
+    d = funds.claude_fonds()[1]
+    pf = portfolio.neu(d["id"], 10000)
+    pf["cash"] = 9500.0
+    pf["positionen"] = [{"inst": {"id": "stock:SPY", "art": "stock"}, "einstand": 500.0, "menge": 1.0, "wert": 500.0}]
+    funds.speichere_portfolio(pf)
+    z = prompts.runde_prompt(d, "feste Runde", [], "", JETZT)
+    assert "INVESTITIONSQUOTE: 5 % investiert" in z and "UNTER der Zielspanne" in z
+    sp = prompts.system_prompt(d, {})
+    assert "ZIELSPANNE INVESTITIONSQUOTE" in sp and "60–90 %" in sp and "KAPITALEINSATZ" in sp and "oft die beste Entscheidung" not in sp

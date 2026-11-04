@@ -95,12 +95,13 @@ def test_ausloesen_regeln(monkeypatch):
     assert not entscheider.soll_ausloesen([ev(False)], T)  # nichts Weckendes
     assert entscheider.soll_ausloesen([ev()], T)
     assert not entscheider.soll_ausloesen([ev()], T + 60)  # Abstand
-    assert entscheider.soll_ausloesen([ev()], T + 3600)
+    assert not entscheider.soll_ausloesen([ev()], T + 3600)  # 150 min Abstand: lieber wenige gründliche Runden
+    assert entscheider.soll_ausloesen([ev()], T + 3 * 3600)
     z = entscheider.zustand()
     from datetime import datetime, timezone
-    z["laeufe"] = {datetime.fromtimestamp(T + 7200, timezone.utc).strftime("%Y-%m-%d"): 99}
+    z["laeufe"] = {datetime.fromtimestamp(T + 6 * 3600, timezone.utc).strftime("%Y-%m-%d"): 99}
     store.schreibe(entscheider.ZUSTAND, z)
-    assert not entscheider.soll_ausloesen([ev()], T + 7200)  # Tageslimit
+    assert not entscheider.soll_ausloesen([ev()], T + 6 * 3600)  # Tageslimit
 
 
 def test_kennzahlen_drawdown_sharpe_brier():

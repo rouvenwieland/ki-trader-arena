@@ -11,14 +11,11 @@
     },
     "reserve_tag_eur": 0.8,
     "takt_stunden_utc": [
-      1,
-      5,
+      3,
       9,
-      12,
       15,
       17,
-      19,
-      22
+      19
     ],
     "tiefenrunde_stunde_utc": 15,
     "tiefenrunde_modell": "claude-opus-5-5",
@@ -57,7 +54,7 @@
       "max_position_pct": 0.1,
       "max_perp_pct": 0.1,
       "max_optionen_pct": 0.03,
-      "min_cash_pct": 0.3,
+      "min_cash_pct": 0.15,
       "max_gesamt_exposure_pct": 0.7,
       "max_krypto_cluster_pct": 0.25,
       "max_thema_pct": 0.15
@@ -67,7 +64,7 @@
       "max_position_pct": 0.2,
       "max_perp_pct": 0.3,
       "max_optionen_pct": 0.08,
-      "min_cash_pct": 0.1,
+      "min_cash_pct": 0.05,
       "max_gesamt_exposure_pct": 0.9,
       "max_krypto_cluster_pct": 1.0,
       "max_thema_pct": 0.25
@@ -130,8 +127,8 @@
     "volatilitaet_faktor": 3.0,
     "fehlbewertung_pp": 12.0,
     "funding_extrem_8h": 0.0008,
-    "cooldown_min": 45,
-    "max_entscheider_pro_tag": 12
+    "cooldown_min": 150,
+    "max_entscheider_pro_tag": 4
   },
   "universum": {
     "pm_je_plattform": 40,
@@ -211,7 +208,7 @@
         "regeln": [
           "Status quo und Basisrate zuerst; erst danach Nachrichten. Ohne belegbare Basisrate kein Handel.",
           "Bevorzugt Wettmärkte mit klarer, überprüfbarer Abrechnungsquelle (Behördendaten, Messwerte, offizielle Termine).",
-          "Ein Vorteil zählt erst ab 8 Prozentpunkten nach allen Kosten (Rundreise, gebundenes Kapital).",
+          "Ein Wettmarkt-Vorteil zählt ab etwa 4 Prozentpunkten nach allen Kosten; der Kern des Vermögens liegt in Anleihen-, Gold- und breiten Aktien-ETFs.",
           "Bei Hype-Themen eher die NEIN-Seite prüfen: Dinge passieren seltener und später als erwartet.",
           "Offizielle Quellen (Fed, EZB, Statistikämter, Wetterdienste) schlagen Medienberichte."
         ]
@@ -515,5 +512,19 @@
     "alpha": 0.1,
     "min_stunden": 48,
     "stabil_tage": 7
+  },
+  "investitionsquote": {
+    "vorsichtig": [
+      0.4,
+      0.7
+    ],
+    "mittel": [
+      0.6,
+      0.9
+    ],
+    "aggressiv": [
+      0.8,
+      1.0
+    ]
   }
 }

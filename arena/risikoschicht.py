@@ -13,7 +13,7 @@ from arena import config, metrics, store
 from arena import statistik as st
 from arena.exchange import fees, portfolio
 
-KELLY_BRUCHTEIL = {"vorsichtig": 0.15, "mittel": 0.25, "aggressiv": 0.4}
+KELLY_BRUCHTEIL = {"vorsichtig": 0.25, "mittel": 0.35, "aggressiv": 0.5}  # ¼ bis ½ Kelly – übliche Praxis bei unsicheren Schätzungen
 VOL_ZIEL_TAG = {"vorsichtig": 0.005, "mittel": 0.01, "aggressiv": 0.02}  # erlaubter 1-σ-Tagesverlust in % des Kapitals
 MAX_SIMULTAN = 10
 
@@ -105,7 +105,7 @@ def wette(defn: dict, pf: dict, inst: dict, book, p_ja: float | None, equity: fl
             "kelly_einzeln_pct": round(100 * einzel, 2), "kelly_simultan_pct": round(100 * sim, 2), "offene_wetten_beruecksichtigt": len(offen),
             "bruchteil": b, "bruchteil_grund": warum, "empfehlung_usd": round(empf, 2),
             "hinweis": "; ".join(hinweis + ["Kein Vorteil nach Kosten → nicht kaufen." if p_seite <= k else
-                                            "Kelly ist eine Obergrenze; bei unsicherer Schätzung kleiner. Grenzen der Börse gelten zusätzlich."])}
+                                            "Empfehlung = Profil-Bruchteil × Kelly (Unsicherheit ist darin schon eingepreist); deutlich kleiner nur mit konkretem Grund. Grenzen der Börse gelten zusätzlich."])}
 
 
 def vol_ziel(defn: dict, inst: dict, equity: float, preise: list[float]) -> dict:

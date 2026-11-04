@@ -286,3 +286,25 @@ keine Order möglich; (3) Rundenauftrag und Marktlage drehten sich fast nur um W
   technische Indikatoren/Hurst, Optionsgriechen; Websuche (Anthropic) für alles Übrige. **Nicht** eingebaut (Konto/Server/ToS oder bewusst verworfen, siehe
   ANHANG-verworfen.md): Hyperliquid, Metaculus, Alpaca/Finnhub/EDGAR, Bluesky/Wikimedia-Signale, Sentiment-Modelle, fremde Agenten-Frameworks, MCP-Server,
   große Zeitreihenmodelle.
+
+## Nachtrag 04.11.: Warum die Fonds 70–100 % Cash hielten – und was geändert wurde
+**Befund aus den Daten (01.–04.11.):** Keine Order wurde abgelehnt; die Fonds kauften von sich aus nur 30–600 $ bei ≈ 11.000 $ Vermögen.
+1. **Budget in Mini-Runden zerstückelt:** bis zu 12 Ereignisrunden + 8 feste Runden je Tag → winziges Rundenbudget → Abschluss-Hinweis ab Schritt 1 →
+   fast jede Sonnet-Runde endete nach **3 Schritten** (Portfolio, eine Abfrage, Tagebuch). Die Opus-Tiefenrunde um 15 UTC brach teils nach 1–4 Schritten ab,
+   weil der Tagesanteil bis dahin verbraucht war. Für Analyse und Positionsaufbau blieb keine Zeit.
+2. **Anweisung bremste:** „Nichts tun ist oft die beste Entscheidung“, Vorteil muss Kosten „deutlich“ übersteigen, Vorsichtig erst ab 8 pp; Cash galt als neutral;
+   kein Kernportfolio-Gedanke (die Vergleichsfonds sind voll investiert, die KI-Fonds standen in Cash).
+3. **Größen:** Kelly-Bruchteile 0,15/0,25/0,4 mit „bei Unsicherheit kleiner“; 30 % Mindest-Cash bei Vorsichtig.
+4. **Fehler:** ≈ 10 % der Claude-Runden brachen mit API-400 ab – der Abschluss-Hinweis wurde mitten in eine pausierte Websuche eingefügt.
+   Liga: DeepSeek stieß in 10 von 11 Runden ans Schrittlimit 12.
+**Änderungen:**
+* Takt: 5 feste Runden (3, 9, 15 = Opus-Tiefenrunde, 17, 19 UTC), Ereignisrunden höchstens 4/Tag mit 150 min Abstand; eine Runde startet nur mit genug
+  Budget (Ereignis ≥ 0,40 $, fest ≥ 0,30 $, Tiefenrunde ≥ 0,60 $). Das weiche Rundenbudget mahnt erst nach 8 Arbeitsschritten; harte Deckel bleiben.
+  Weniger, dafür gründliche Runden – Tagesbudget unverändert.
+* Anweisung: „KAPITALEINSATZ“ – Cash verzinst sich nicht und wird gegen voll investierte Vergleichsfonds gemessen; Kern (breite ETFs/BTC, am einfachsten als
+  `rebalancing_regel`) + Satelliten (Ideen). **Zielspanne der Investitionsquote** je Profil (Vorsichtig 40–70 %, Mittel 60–90 %, Aggressiv 80–100 %) im Fondsteil,
+  die aktuelle Quote steht oben in jedem Rundenprompt; darunter: Kern aufbauen oder konkret begründen. Kein Zwang zu schlechten Satelliten-Wetten.
+* Vorsichtig: Vorteil ab ≈ 4 pp, Kern aus Anleihen-/Gold-/Aktien-ETFs. Kelly-Bruchteile 0,25/0,35/0,5 (Unsicherheit ist darin eingepreist).
+  Mindest-Cash Vorsichtig 15 %, Mittel 5 %.
+* Fix 400: Hinweise warten, bis eine pausierte Websuche ihr Ergebnis hat; abgeschnittene Websuche-Aufrufe werden entfernt. Liga-Schrittlimit 24.
+* Bewusst **keine** Zinsen auf Cash (wie bei vielen Brokern ohne Zinsprogramm); das würde Cash zusätzlich bevorzugen.

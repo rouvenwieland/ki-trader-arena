@@ -16,7 +16,7 @@ from arena.exchange import portfolio
 from arena.registry import Marktzugriff
 
 ZUSTAND = "entscheider_zustand.json"
-MIN_RUNDE_USD = 0.06  # darunter lohnt keine Runde (Rest des Tagesanteils)
+MIN_RUNDE_USD = {"tief": 0.6, "takt": 0.3, "ereignis": 0.4}  # darunter keine Runde: lieber wenige gründliche als viele 3-Schritt-Runden
 PAUSE_SEKUNDEN = 20 * 3600  # Fonds ohne Guthaben: einmal am Tag neu probieren
 
 
@@ -135,7 +135,7 @@ def lauf(grund: str = "ereignis", jetzt: float | None = None) -> dict:
             rb = None
             if r["art"] == "anthropic":
                 rb = bud.runden_budget_usd(fid, r["modell"], art, stunde)
-                if rb < MIN_RUNDE_USD:
+                if rb < MIN_RUNDE_USD.get(art, 0.3):
                     status_schreiben(fid, "Tagesanteil aufgebraucht – nächste Runde morgen", jetzt)
                     ergebnisse[fid] = f"übersprungen (Rundenbudget {rb:.3f} USD)"
                     return
