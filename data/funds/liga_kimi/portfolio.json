@@ -3,40 +3,11 @@
  "waehrung": "USD",
  "start_kapital": 11184.88579861696,
  "cash": 10969.996798616961,
- "positionen": [
-  {
-   "id": "p6b031920",
-   "inst": {
-    "id": "pm:kalshi:KXHIGHDEN-26NOV03-T55:JA",
-    "art": "pm",
-    "venue": "kalshi",
-    "ergebnis": "JA",
-    "frage": "Will the maximum temperature be <55° on Nov 3, 2026? [54° or below]",
-    "schliesst": 1793779200.0,
-    "ref": {
-     "ticker": "KXHIGHDEN-26NOV03-T55"
-    },
-    "url": "https://kalshi.com/markets/KXHIGHDEN-26NOV03"
-   },
-   "seite": "long",
-   "menge": 336.0,
-   "einstand": 0.3411904761904762,
-   "hebel": 1.0,
-   "marge": 0.0,
-   "eroeffnet": 1793718988.3605304,
-   "gebuehren": 5.29,
-   "funding": 0.0,
-   "ausstiegsplan": "Abrechnung heute nach NWS-CLI Denver; Halten bis Ende",
-   "entscheidung_id": "da117b2a1",
-   "invalidierung": "Denver-Beobachtung ≥55 °F am Nachmittag",
-   "kurs": null,
-   "wert": 114.64
-  }
- ],
- "realisiert": -89.00899999999999,
+ "positionen": [],
+ "realisiert": -203.649,
  "gebuehren": 11.24,
  "funding": 0.0,
  "erstellt": 1793319819.7411644,
  "start_fx": 1.1184885798616961,
- "letzter_tick": 1793800868.4526567
+ "letzter_tick": 1793801768.4594352
 }
