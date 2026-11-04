@@ -163,34 +163,6 @@
    "wert": 77.53
   },
   {
-   "id": "pb31aed47",
-   "inst": {
-    "id": "pm:manifold:BpoEJNtlQoDBpfjBmK0y:JA",
-    "art": "pm",
-    "venue": "manifold",
-    "ergebnis": "JA",
-    "frage": "Will Republicans win the Senate in the 2026 elections?",
-    "schliesst": 1796101140.0,
-    "ref": {
-     "id": "BpoEJNtlQoDBpfjBmK0y"
-    },
-    "url": "https://manifold.markets/AndrewG/will-republicans-win-the-senate-in-738388924521"
-   },
-   "seite": "long",
-   "menge": 152.0,
-   "einstand": 0.2356884452155141,
-   "hebel": 1.0,
-   "marge": 0.0,
-   "eroeffnet": 1793596225.86043,
-   "gebuehren": 0.0,
-   "funding": 0.0,
-   "ausstiegsplan": "Bis Abrechnung halten (Hedge mit Polymarket-NEIN); bei Regelabweichung beide Beine schließen.",
-   "entscheidung_id": "de2f4bea2",
-   "invalidierung": "Manifold-Kommentare/Regel zeigen abweichende Auflösung (z. B. Stand an anderem Datum).",
-   "kurs": 0.009450572682156256,
-   "wert": 1.44
-  },
-  {
    "id": "pf9fa8a67",
    "inst": {
     "id": "pm:polymarket:562794:NEIN",
@@ -225,11 +197,11 @@
    "wert": 149.85
   }
  ],
- "realisiert": -144.0871300000003,
+ "realisiert": -179.91177367275844,
  "gebuehren": 11.4213,
  "funding": 0.0,
  "erstellt": 1793319819.7411644,
  "start_fx": 1.1184885798616961,
- "letzter_tick": 1793768196.064586,
+ "letzter_tick": 1793769095.830974,
  "auftraege": []
 }
