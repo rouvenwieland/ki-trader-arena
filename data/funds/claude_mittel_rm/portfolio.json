@@ -137,7 +137,7 @@
    "ausstiegsplan": "Halten bis 31.12.; nach NVDA-Earnings 17.11. neu bewerten; Gewinnmitnahme ≥0,65.",
    "entscheidung_id": "d62d5f0db",
    "invalidierung": "NVDA übertrifft Apple-Marktkap nach Earnings um >5 % oder Apple-JA <0,25.",
-   "kurs": 0.599,
+   "kurs": 0.594,
    "wert": 433.75
   },
   {
@@ -316,8 +316,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "dd6456776",
-   "kurs": 767.42,
-   "wert": 2288.5
+   "kurs": 766.81,
+   "wert": 2286.92
   },
   {
    "id": "p1c64b37e",
@@ -337,8 +337,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "dd6456776",
-   "kurs": 80047.12,
-   "wert": 1135.93
+   "kurs": 80126.10500000001,
+   "wert": 1137.08
   },
   {
    "id": "p994b6370",
@@ -358,8 +358,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "dd6456776",
-   "kurs": 372.05,
-   "wert": 915.35
+   "kurs": 372.46,
+   "wert": 916.48
   }
  ],
  "realisiert": -4.441568327054924,
@@ -367,7 +367,7 @@
  "funding": 0.0,
  "erstellt": 1793380123.8861866,
  "start_fx": 1.1156327353966788,
- "letzter_tick": 1793825296.899702,
+ "letzter_tick": 1793826196.8938708,
  "auftraege": [],
  "rebalancing": {
   "ziele": {
