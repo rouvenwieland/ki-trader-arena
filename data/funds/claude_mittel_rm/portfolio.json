@@ -35,7 +35,7 @@
    "ausstiegsplan": "Halten bis Abrechnung 31.12.; vorzeitig verkaufen, wenn NEIN-Preis auf ≥0.62 steigt (Gewinn mitnehmen) oder unter 0.38 fällt.",
    "entscheidung_id": "dbf84bba3",
    "invalidierung": "NVDA schließt wieder dauerhaft über Apple-Marktkap (NVDA >~210 bei AAPL ~343) oder starke NVDA-Zahlen mit Rally >8%; dann neu bewerten/verkaufen.",
-   "kurs": 0.615,
+   "kurs": 0.61,
    "wert": 335.4
   },
   {
@@ -137,8 +137,8 @@
    "ausstiegsplan": "Halten bis 31.12.; nach NVDA-Earnings 17.11. neu bewerten; Gewinnmitnahme ≥0,65.",
    "entscheidung_id": "d62d5f0db",
    "invalidierung": "NVDA übertrifft Apple-Marktkap nach Earnings um >5 % oder Apple-JA <0,25.",
-   "kurs": 0.5694999999999999,
-   "wert": 423.34
+   "kurs": 0.599,
+   "wert": 433.75
   },
   {
    "id": "pa832233e",
@@ -165,8 +165,8 @@
    "ausstiegsplan": "Halten bis Ende November. Verkauf bei Kurs <0.55 oder Koalitionsbruch/Rücktrittsankündigung; Gewinn mitnehmen ≥0.95.",
    "entscheidung_id": "d34bf6b87",
    "invalidierung": "PSL oder Polen 2050 verlassen die Koalition bzw. unterstützen ein Misstrauensvotum; Tusk kündigt Rücktritt/Vertrauensfrage an.",
-   "kurs": 0.9241046979500323,
-   "wert": 812.22
+   "kurs": 0.9219263209157169,
+   "wert": 810.3
   },
   {
    "id": "pf61b68d4",
@@ -316,8 +316,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "dd6456776",
-   "kurs": 768.34,
-   "wert": 2291.24
+   "kurs": 767.42,
+   "wert": 2288.5
   },
   {
    "id": "p1c64b37e",
@@ -337,8 +337,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "dd6456776",
-   "kurs": 80236.925,
-   "wert": 1138.64
+   "kurs": 80047.12,
+   "wert": 1135.93
   },
   {
    "id": "p994b6370",
@@ -358,8 +358,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "dd6456776",
-   "kurs": 372.46,
-   "wert": 916.36
+   "kurs": 372.05,
+   "wert": 915.35
   }
  ],
  "realisiert": -4.441568327054924,
@@ -367,7 +367,7 @@
  "funding": 0.0,
  "erstellt": 1793380123.8861866,
  "start_fx": 1.1156327353966788,
- "letzter_tick": 1793824397.061875,
+ "letzter_tick": 1793825296.899702,
  "auftraege": [],
  "rebalancing": {
   "ziele": {

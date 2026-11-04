@@ -91,8 +91,8 @@
    "ausstiegsplan": "Halten bis Abrechnung 30.11.; Gewinn mitnehmen, wenn JA-Bid ≥0.92. Neu bewerten bei Austritt von PSL oder PL2050 aus der Koalition.",
    "entscheidung_id": "d6e2136ea",
    "invalidierung": "PSL oder Polska 2050 kündigen Koalition auf bzw. sagen Unterstützung für das konstruktive Misstrauensvotum zu; oder Tusk kündigt Rücktritt an.",
-   "kurs": 0.9241046979500323,
-   "wert": 136.76
+   "kurs": 0.9219263209157169,
+   "wert": 136.43
   },
   {
    "id": "pa2cf5bd2",
@@ -159,8 +159,8 @@
    "ausstiegsplan": "Halten bis Abrechnung; Gewinn mitnehmen bei JA-Bid ≥0,52; Neubewertung nach NVDA-Zahlen.",
    "entscheidung_id": "dd384368f",
    "invalidierung": "NVDA schließt mehrere Tage ≥3 % über Apple-Marktkapitalisierung oder NVDA-Zahlen mit starker Guidance und Kurssprung.",
-   "kurs": 0.5694999999999999,
-   "wert": 124.61
+   "kurs": 0.599,
+   "wert": 127.68
   },
   {
    "id": "pf61ac065",
@@ -214,8 +214,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "d6e1a7002",
-   "kurs": 768.34,
-   "wert": 1992.99
+   "kurs": 767.42,
+   "wert": 1990.61
   },
   {
    "id": "p5fe9ac51",
@@ -235,8 +235,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "d6e1a7002",
-   "kurs": 693.37,
-   "wert": 1105.43
+   "kurs": 692.14,
+   "wert": 1103.47
   },
   {
    "id": "p5106387a",
@@ -256,8 +256,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "d6e1a7002",
-   "kurs": 372.46,
-   "wert": 1107.71
+   "kurs": 372.05,
+   "wert": 1106.49
   },
   {
    "id": "p72af4e36",
@@ -277,8 +277,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "d6e1a7002",
-   "kurs": 96.38,
-   "wert": 1106.72
+   "kurs": 96.368,
+   "wert": 1106.59
   },
   {
    "id": "p3e7ff11c",
@@ -298,8 +298,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "d6e1a7002",
-   "kurs": 80236.925,
-   "wert": 1320.43
+   "kurs": 80047.12,
+   "wert": 1317.29
   },
   {
    "id": "pe3015b77",
@@ -319,8 +319,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "d6e1a7002",
-   "kurs": 2419.935,
-   "wert": 549.21
+   "kurs": 2414.1549999999997,
+   "wert": 547.9
   }
  ],
  "realisiert": -136.41177367275844,
@@ -328,7 +328,7 @@
  "funding": 0.0,
  "erstellt": 1793319819.7411644,
  "start_fx": 1.1184885798616961,
- "letzter_tick": 1793824397.061875,
+ "letzter_tick": 1793825296.899702,
  "auftraege": [],
  "rebalancing": {
   "ziele": {
