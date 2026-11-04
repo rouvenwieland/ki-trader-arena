@@ -2,7 +2,7 @@
  "fonds_id": "claude_aggressiv",
  "waehrung": "USD",
  "start_kapital": 11184.88579861696,
- "cash": 2775.3438858735803,
+ "cash": 2322.4905458735802,
  "positionen": [
   {
    "id": "p8d020f51",
@@ -142,22 +142,54 @@
     "url": "https://polymarket.com/event/will-the-price-of-bitcoin-be-between-76000-78000-on-november-4-2026"
    },
    "seite": "long",
-   "menge": 1182.0,
+   "menge": 991.1800000000001,
    "einstand": 0.48999999999999994,
    "hebel": 1.0,
    "marge": 0.0,
    "eroeffnet": 1793754171.8565543,
-   "gebuehren": 20.67673,
+   "gebuehren": 17.33871509424704,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis Abrechnung 4.11. 17:00 UTC; bei Bruch von 76,2k oder Ausbruch über 77,9k mit Index-Bestätigung verkaufen, wenn Bid >0,25.",
    "entscheidung_id": "d3ab018b5",
    "invalidierung": "Binance BTC/USDT fällt vor 17:00 UTC unter 76.200 oder steigt über 77.900 – dann Position verkaufen, falls Bid noch >0,25.",
    "kurs": 0.28500000000000003,
    "wert": 319.14
+  },
+  {
+   "id": "pec22a85b",
+   "inst": {
+    "id": "pm:polymarket:6346572:JA",
+    "art": "pm",
+    "venue": "polymarket",
+    "ergebnis": "JA",
+    "frage": "Will the price of Bitcoin be between $78,000 and $80,000 on November 4?",
+    "schliesst": 1793811600.0,
+    "ref": {
+     "id": "6346572",
+     "token_ja": "31506396501692171752148478098426967646056336252666592254495544307065055940331",
+     "token_nein": "109296416954041247380078965142681083027312858952688255235760952175129877084120",
+     "tick": 0.01,
+     "condition": "0x0f1e17d9800a042c8e4219d5bf7735ab9781a21a2a5409ab847ba619e422c9aa",
+     "gebuehr_rate": 0.07,
+     "gebuehr_exp": 1.0
+    },
+    "url": "https://polymarket.com/event/will-the-price-of-bitcoin-be-between-78000-80000-on-november-4-2026"
+   },
+   "seite": "long",
+   "menge": 787.0,
+   "einstand": 0.6186785260482845,
+   "hebel": 1.0,
+   "marge": 0.0,
+   "eroeffnet": 1793782907.5273917,
+   "gebuehren": 12.99658,
+   "funding": 0.0,
+   "ausstiegsplan": "Halten bis 17:00 UTC; verkaufen, falls Binance <77,6k vor 14:30 UTC und Bid >0,3.",
+   "entscheidung_id": "dcfe36db9",
+   "invalidierung": "Binance BTC/USDT unter 77.600"
   }
  ],
- "realisiert": -355.4002799999997,
- "gebuehren": 106.54093600000002,
+ "realisiert": -401.8588399999997,
+ "gebuehren": 122.107476,
  "funding": 0.0,
  "erstellt": 1793319819.7411644,
  "start_fx": 1.1184885798616961,
