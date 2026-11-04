@@ -32,8 +32,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Halten bis Abrechnung 6.11. (NFP 8:30 ET). Vorzeitiger Verkauf, falls NEIN-Bid >0,90 (z. B. nach ADP am 4.11.), oder falls neue Konsensdaten eine sehr enge Verteilung um 50–75k nahelegen.",
    "entscheidung_id": "d7a8a9cbe",
-   "kurs": 0.7250000000000001,
-   "wert": 303.51
+   "kurs": 0.735,
+   "wert": 326.16
   },
   {
    "id": "pbb7d9e16",
@@ -119,7 +119,9 @@
    "stop_loss": 690,
    "ausstiegsplan": "Kern halten; Rebalancing bei Abweichung >5pp; Verkauf bei Stop 690.",
    "entscheidung_id": "dc2cac127",
-   "invalidierung": "SPY Schlusskurs unter 690 (SMA200 730 deutlich gebrochen, -10 % vom Einstieg)"
+   "invalidierung": "SPY Schlusskurs unter 690 (SMA200 730 deutlich gebrochen, -10 % vom Einstieg)",
+   "kurs": 767.58,
+   "wert": 999.46
   },
   {
    "id": "pbcdb744c",
@@ -140,7 +142,9 @@
    "stop_loss": 91.5,
    "ausstiegsplan": "Kern halten; Stop 91,5.",
    "entscheidung_id": "dad9732ba",
-   "invalidierung": "AGG unter 91,5 (neues Mehrjahrestief, Zinsschock)"
+   "invalidierung": "AGG unter 91,5 (neues Mehrjahrestief, Zinsschock)",
+   "kurs": 96.31,
+   "wert": 1049.84
   },
   {
    "id": "pd1046bd9",
@@ -161,7 +165,9 @@
    "stop_loss": 74,
    "ausstiegsplan": "Halten; Stop 74.",
    "entscheidung_id": "d123eb847",
-   "invalidierung": "10J-Rendite schließt über 5,3 % / TLT unter 74"
+   "invalidierung": "10J-Rendite schließt über 5,3 % / TLT unter 74",
+   "kurs": 81.555,
+   "wert": 530.25
   },
   {
    "id": "pf1acd2e3",
@@ -182,7 +188,9 @@
    "stop_loss": 340,
    "ausstiegsplan": "Halten; Stop 340; Gewicht nicht über 5 % erhöhen.",
    "entscheidung_id": "dd43d0bdc",
-   "invalidierung": "GLD unter 340 (neues Tief, ~-9 %)"
+   "invalidierung": "GLD unter 340 (neues Tief, ~-9 %)",
+   "kurs": 372.62,
+   "wert": 529.86
   },
   {
    "id": "pabe784cb",
@@ -203,7 +211,9 @@
    "stop_loss": 96,
    "ausstiegsplan": "Halten als Kern; Stop 96.",
    "entscheidung_id": "d269c21b5",
-   "invalidierung": "EFA unter 96 (Bruch der Aufwärtstrendstruktur, ~-9 %)"
+   "invalidierung": "EFA unter 96 (Bruch der Aufwärtstrendstruktur, ~-9 %)",
+   "kurs": 105.65,
+   "wert": 529.75
   }
  ],
  "realisiert": -338.16950000000014,
@@ -211,6 +221,6 @@
  "funding": 0.0,
  "erstellt": 1793319819.7411644,
  "start_fx": 1.1184885798616961,
- "letzter_tick": 1793811797.0398214,
+ "letzter_tick": 1793812696.997683,
  "auftraege": []
 }
