@@ -2,7 +2,7 @@
  "fonds_id": "ko_nein",
  "waehrung": "USD",
  "start_kapital": 11157.431109273288,
- "cash": 1117.0608392732856,
+ "cash": 1293.0608392732856,
  "positionen": [
   {
    "id": "pe6781775",
@@ -225,8 +225,8 @@
    "gebuehren": 0.0,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.7395,
-   "wert": 203.77
+   "kurs": 0.7295,
+   "wert": 202.66
   },
   {
    "id": "pdcfb5d53",
@@ -257,8 +257,8 @@
    "gebuehren": 0.0,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.4655,
-   "wert": 116.0
+   "kurs": 0.46599999999999997,
+   "wert": 115.0
   },
   {
    "id": "pe65b0b73",
@@ -289,7 +289,7 @@
    "gebuehren": 0.0,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.968,
+   "kurs": 0.9655,
    "wert": 203.61
   },
   {
@@ -417,8 +417,8 @@
    "gebuehren": 0.0,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.75,
-   "wert": 137.64
+   "kurs": 0.755,
+   "wert": 139.5
   },
   {
    "id": "p7e5c2e70",
@@ -549,38 +549,6 @@
    "wert": 167.32
   },
   {
-   "id": "pa8d52a27",
-   "inst": {
-    "id": "pm:polymarket:562803:NEIN",
-    "art": "pm",
-    "venue": "polymarket",
-    "ergebnis": "NEIN",
-    "frage": "Will the Republican Party control the House after the 2026 Midterm elections?",
-    "schliesst": 1793768340.0,
-    "ref": {
-     "id": "562803",
-     "token_ja": "65139230827417363158752884968303867495725894165574887635816574090175320800482",
-     "token_nein": "17371217118862125782438074585166210555214661810823929795910191856905580975576",
-     "tick": 0.01,
-     "condition": "0x4e4f77e7dbf4cab666e9a1943674d7ae66348e862df03ea6f44b11eb95731928",
-     "gebuehr_rate": 0.0,
-     "gebuehr_exp": 1.0
-    },
-    "url": "https://polymarket.com/event/which-party-will-win-the-house-in-2026"
-   },
-   "seite": "long",
-   "menge": 176.0,
-   "einstand": 0.95,
-   "hebel": 1.0,
-   "marge": 0.0,
-   "eroeffnet": 1793431756.2196963,
-   "gebuehren": 0.0,
-   "funding": 0.0,
-   "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": null,
-   "wert": 167.2
-  },
-  {
    "id": "p1fca8eac",
    "inst": {
     "id": "pm:polymarket:6172679:NEIN",
@@ -641,8 +609,8 @@
    "gebuehren": 0.0,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.8545,
-   "wert": 175.92
+   "kurs": 0.8534999999999999,
+   "wert": 175.51
   },
   {
    "id": "pc2572f19",
@@ -897,8 +865,8 @@
    "gebuehren": 0.0,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.11,
-   "wert": 36.7
+   "kurs": 0.105,
+   "wert": 33.03
   },
   {
    "id": "p5037ef0e",
@@ -993,8 +961,8 @@
    "gebuehren": 1.59053,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.1125,
-   "wert": 23.98
+   "kurs": 0.1245,
+   "wert": 26.6
   },
   {
    "id": "p091ba70e",
@@ -1185,8 +1153,8 @@
    "gebuehren": 3.5937,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.6950000000000001,
-   "wert": 232.32
+   "kurs": 0.7,
+   "wert": 235.95
   },
   {
    "id": "pa1fe7c67",
@@ -1281,8 +1249,8 @@
    "gebuehren": 7.60077,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.0245,
-   "wert": 10.48
+   "kurs": 0.016,
+   "wert": 5.99
   },
   {
    "id": "p6428113d",
@@ -1313,8 +1281,8 @@
    "gebuehren": 2.9899,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.295,
-   "wert": 64.38
+   "kurs": 0.255,
+   "wert": 55.5
   },
   {
    "id": "p058c18d5",
@@ -1345,8 +1313,8 @@
    "gebuehren": 4.23675,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.415,
-   "wert": 106.19
+   "kurs": 0.395,
+   "wert": 101.01
   },
   {
    "id": "p303840ab",
@@ -1441,7 +1409,7 @@
    "gebuehren": 0.95322,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.745,
+   "kurs": 0.75,
    "wert": 143.56
   },
   {
@@ -1473,8 +1441,8 @@
    "gebuehren": 5.82112,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.8285,
-   "wert": 1351.32
+   "kurs": 0.8214999999999999,
+   "wert": 1341.51
   },
   {
    "id": "pca00edbf",
@@ -1537,8 +1505,8 @@
    "gebuehren": 4.89529,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.172,
-   "wert": 112.69
+   "kurs": 0.177,
+   "wert": 115.32
   },
   {
    "id": "pa6a2b275",
@@ -1569,7 +1537,7 @@
    "gebuehren": 0.47102,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.935,
+   "kurs": 0.9365,
    "wert": 163.15
   },
   {
@@ -1637,11 +1605,11 @@
    "wert": 152.76
   }
  ],
- "realisiert": -1449.3208499999998,
+ "realisiert": -1440.5208499999999,
  "gebuehren": 217.30574999999996,
  "funding": 0.0,
  "erstellt": 1793379225.5430336,
  "start_fx": 1.1157431109273288,
- "letzter_tick": 1793786302.045405,
+ "letzter_tick": 1793787201.7589111,
  "kontrolle_bis": 1793782808.574969
 }
