@@ -35,8 +35,8 @@
    "ausstiegsplan": "Halten bis Abrechnung 31.12.; vorzeitig verkaufen, wenn NEIN-Preis auf ≥0.62 steigt (Gewinn mitnehmen) oder unter 0.38 fällt.",
    "entscheidung_id": "dbf84bba3",
    "invalidierung": "NVDA schließt wieder dauerhaft über Apple-Marktkap (NVDA >~210 bei AAPL ~343) oder starke NVDA-Zahlen mit Rally >8%; dann neu bewerten/verkaufen.",
-   "kurs": 0.54,
-   "wert": 296.27
+   "kurs": 0.565,
+   "wert": 313.04
   },
   {
    "id": "p91a23e4a",
@@ -69,8 +69,8 @@
    "ausstiegsplan": "Halten bis FOMC 9.12.; Verkauf, wenn NEIN-Preis ≥0.88 (Gewinn) oder CME-Hike-Odds unter 55% fallen.",
    "entscheidung_id": "d7e76abb3",
    "invalidierung": "CME FedWatch Dezember-Hike-Wahrscheinlichkeit fällt unter 55% oder Warsh/Fed-Mehrheit signalisiert Pause nach weicher CPI/Jobs-Zahl.",
-   "kurs": 0.805,
-   "wert": 328.0
+   "kurs": 0.815,
+   "wert": 332.1
   },
   {
    "id": "p8c871cfa",
@@ -137,7 +137,7 @@
    "ausstiegsplan": "Halten bis 31.12.; nach NVDA-Earnings 17.11. neu bewerten; Gewinnmitnahme ≥0,65.",
    "entscheidung_id": "d62d5f0db",
    "invalidierung": "NVDA übertrifft Apple-Marktkap nach Earnings um >5 % oder Apple-JA <0,25.",
-   "kurs": 0.527,
+   "kurs": 0.5329999999999999,
    "wert": 371.26
   },
   {
@@ -227,8 +227,8 @@
    "ausstiegsplan": "Halten bis 30.11.; verkaufen, wenn BTC unter 64.000 fällt oder NEIN-Preis <0.88.",
    "entscheidung_id": "d7dbfc08f",
    "invalidierung": "BTC Binance unter 64.000 oder DVOL >60",
-   "kurs": 0.9684999999999999,
-   "wert": 302.98
+   "kurs": 0.9704999999999999,
+   "wert": 303.61
   },
   {
    "id": "pf805692b",
@@ -270,6 +270,6 @@
  "funding": 0.0,
  "erstellt": 1793380123.8861866,
  "start_fx": 1.1156327353966788,
- "letzter_tick": 1793804469.2045205,
+ "letzter_tick": 1793805368.7943668,
  "auftraege": []
 }
