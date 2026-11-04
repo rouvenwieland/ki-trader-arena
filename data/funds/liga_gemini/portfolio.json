@@ -2,7 +2,7 @@
  "fonds_id": "liga_gemini",
  "waehrung": "USD",
  "start_kapital": 11184.88579861696,
- "cash": 11160.15619861696,
+ "cash": 11148.15947861696,
  "positionen": [
   {
    "id": "pb186491b",
@@ -25,24 +25,25 @@
     "url": "https://polymarket.com/event/mississippi-senate-election-winner"
    },
    "seite": "long",
-   "menge": 100.0,
-   "einstand": 0.24,
+   "menge": 180.0,
+   "einstand": 0.19777777777777777,
    "hebel": 1.0,
    "marge": 0.0,
    "eroeffnet": 1793772998.9089363,
-   "gebuehren": 0.7296,
+   "gebuehren": 1.12632,
    "funding": 0.0,
-   "ausstiegsplan": "Position wird bei offizieller Bestätigung des Wahlausgangs oder bei Erreichen des fairen Wertes glattgestellt. Stop-Loss bei amtlicher Ausrufung eines demokratischen Sieges.",
-   "entscheidung_id": "d4dffd70d",
-   "invalidierung": "AP, Fox und NBC rufen den demokratischen Sieg in Mississippi offiziell aus.",
+   "ausstiegsplan": "Position wird bei offizieller Bestätigung des Wahlausgangs oder Erreichen unseres fairen Wertes glattgestellt. Stop-Loss bei amtlicher Ausrufung eines demokratischen Sieges.",
+   "entscheidung_id": "d0c0df848",
+   "invalidierung": "AP, Fox News und NBC rufen den Sieg für den demokratischen Kandidaten in Mississippi offiziell aus.",
    "kurs": 0.1445,
    "wert": 14.4
   }
  ],
  "realisiert": 0.0,
- "gebuehren": 0.7296,
+ "gebuehren": 1.12632,
  "funding": 0.0,
  "erstellt": 1793319819.7411644,
  "start_fx": 1.1184885798616961,
- "letzter_tick": 1793804469.2045205
+ "letzter_tick": 1793804469.2045205,
+ "auftraege": []
 }
