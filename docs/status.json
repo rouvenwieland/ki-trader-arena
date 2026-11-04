@@ -1,11 +1,11 @@
 {
  "version": 1,
- "stand": 1793772903.287862,
+ "stand": 1793773006.7249136,
  "hinweis": "Papierhandel-Simulation, keine Anlageberatung",
  "seite": "https://rouvenwieland.github.io/ki-trader-arena/",
  "budget": {
-  "heute_eur": 5.08,
-  "gesamt_eur": 55.26,
+  "heute_eur": 5.6,
+  "gesamt_eur": 55.78,
   "tagesdeckel_eur": 12.0,
   "gesamtdeckel_eur": 190.0,
   "claude_ende": "2026-11-14",
@@ -205,8 +205,8 @@
    "max_drawdown_pct": -1.06,
    "status": "aktiv",
    "modell": "claude-sonnet-5-5",
-   "kosten_heute_eur": 1.356,
-   "kosten_gesamt_eur": 12.619,
+   "kosten_heute_eur": 1.493,
+   "kosten_gesamt_eur": 12.756,
    "rendite_ki_pct": [
     -1.32,
     2.0
@@ -795,8 +795,8 @@
    "max_drawdown_pct": -3.75,
    "status": "aktiv",
    "modell": "claude-sonnet-5-5",
-   "kosten_heute_eur": 1.384,
-   "kosten_gesamt_eur": 14.215,
+   "kosten_heute_eur": 1.491,
+   "kosten_gesamt_eur": 14.322,
    "rendite_ki_pct": [
     -5.71,
     1.02
@@ -913,8 +913,8 @@
    "max_drawdown_pct": -24.83,
    "status": "aktiv",
    "modell": "claude-sonnet-5-5",
-   "kosten_heute_eur": 1.327,
-   "kosten_gesamt_eur": 14.106,
+   "kosten_heute_eur": 1.469,
+   "kosten_gesamt_eur": 14.247,
    "rendite_ki_pct": [
     -23.02,
     19.2
@@ -970,10 +970,10 @@
    "rendite_pct": -4.44,
    "equity_eur": 9516.05,
    "max_drawdown_pct": -6.16,
-   "status": "Fehler: Modellfehler: Anthropic: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'messages.1: `web_search`",
+   "status": "aktiv",
    "modell": "claude-sonnet-5-5",
-   "kosten_heute_eur": 1.015,
-   "kosten_gesamt_eur": 13.765,
+   "kosten_heute_eur": 1.146,
+   "kosten_gesamt_eur": 13.896,
    "rendite_ki_pct": [
     -11.18,
     0.18
@@ -1213,6 +1213,13 @@
  ],
  "letzte_entscheidungen": [
   {
+   "ts": 1793772998.9087873,
+   "fonds": "Gemini Flash",
+   "instrument": "pm:polymarket:631017:NEIN",
+   "aktion": "kaufen",
+   "zuversicht": 0.75
+  },
+  {
    "ts": 1793754171.8541658,
    "fonds": "Claude Aggressiv",
    "instrument": "pm:polymarket:6346567:JA",
@@ -1260,13 +1267,6 @@
    "instrument": "pm:polymarket:6301341:NEIN",
    "aktion": "kaufen",
    "zuversicht": 0.6
-  },
-  {
-   "ts": 1793682425.1353178,
-   "fonds": "Claude Mittel+RM (A/B)",
-   "instrument": "pm:polymarket:6369333:JA",
-   "aktion": "kaufen",
-   "zuversicht": 0.7
   }
  ],
  "ereignisse": [

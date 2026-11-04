@@ -2,10 +2,43 @@
  "fonds_id": "liga_gemini",
  "waehrung": "USD",
  "start_kapital": 11184.88579861696,
- "cash": 11184.88579861696,
- "positionen": [],
+ "cash": 11160.15619861696,
+ "positionen": [
+  {
+   "id": "pb186491b",
+   "inst": {
+    "id": "pm:polymarket:631017:NEIN",
+    "art": "pm",
+    "venue": "polymarket",
+    "ergebnis": "NEIN",
+    "frage": "Will the Democrats win the Mississippi Senate race in 2026?",
+    "schliesst": 1793768340.0,
+    "ref": {
+     "id": "631017",
+     "token_ja": "77001639760095266374534198365421436593389036687975321536722226607654949914567",
+     "token_nein": "109329484956764506378760583725617100193692863947320202695087573398990069238209",
+     "tick": 0.001,
+     "condition": "0x8c9b8ad3a64088a06d45e0b296a9a836203bc7f3ef35d134c57abead446a8b72",
+     "gebuehr_rate": 0.04,
+     "gebuehr_exp": 1.0
+    },
+    "url": "https://polymarket.com/event/mississippi-senate-election-winner"
+   },
+   "seite": "long",
+   "menge": 100.0,
+   "einstand": 0.24,
+   "hebel": 1.0,
+   "marge": 0.0,
+   "eroeffnet": 1793772998.9089363,
+   "gebuehren": 0.7296,
+   "funding": 0.0,
+   "ausstiegsplan": "Position wird bei offizieller Bestätigung des Wahlausgangs oder bei Erreichen des fairen Wertes glattgestellt. Stop-Loss bei amtlicher Ausrufung eines demokratischen Sieges.",
+   "entscheidung_id": "d4dffd70d",
+   "invalidierung": "AP, Fox und NBC rufen den demokratischen Sieg in Mississippi offiziell aus."
+  }
+ ],
  "realisiert": 0.0,
- "gebuehren": 0.0,
+ "gebuehren": 0.7296,
  "funding": 0.0,
  "erstellt": 1793319819.7411644,
  "start_fx": 1.1184885798616961,
