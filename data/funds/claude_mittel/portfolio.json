@@ -125,8 +125,8 @@
    "ausstiegsplan": "Bis zur Abrechnung (Earnings ca. 17.–25.11.) halten; vorzeitig verkaufen, wenn Bid ≥0.92 oder bei Nachricht zu Margendruck.",
    "entscheidung_id": "df5b61ded",
    "invalidierung": "Meldung/Analystenkonsens zur Q3-Marge ≥75,0 % oder <73 %; Pre-Announcement zu Speicherkosten.",
-   "kurs": 0.825,
-   "wert": 30.0
+   "kurs": 0.845,
+   "wert": 31.6
   },
   {
    "id": "p8b4a7cc3",
@@ -187,8 +187,8 @@
    "ausstiegsplan": "Bis Abrechnung halten (Hedge mit Polymarket-NEIN); bei Regelabweichung beide Beine schließen.",
    "entscheidung_id": "de2f4bea2",
    "invalidierung": "Manifold-Kommentare/Regel zeigen abweichende Auflösung (z. B. Stand an anderem Datum).",
-   "kurs": 0.08379335465755455,
-   "wert": 12.74
+   "kurs": 0.05398921795748435,
+   "wert": 8.21
   },
   {
    "id": "pf9fa8a67",
@@ -221,49 +221,15 @@
    "ausstiegsplan": "Bis Abrechnung halten (Hedge).",
    "entscheidung_id": "d20c537d1",
    "invalidierung": "Regelabweichung Manifold; dann beide Beine schließen.",
-   "kurs": 0.905,
-   "wert": 135.0
-  },
-  {
-   "id": "p9ab590bd",
-   "inst": {
-    "id": "pm:polymarket:6547065:JA",
-    "art": "pm",
-    "venue": "polymarket",
-    "ergebnis": "JA",
-    "frage": "Will AMD say \"China\" during earnings call?",
-    "schliesst": 1793768340.0,
-    "ref": {
-     "id": "6547065",
-     "token_ja": "4220529512432985481349972788312559525019417213200102554270894993692848090952",
-     "token_nein": "86935387314917663789635352045838781069035213734090878535281923952236106913421",
-     "tick": 0.01,
-     "condition": "0x193d724c3683d93277c0a6f26aa9dae9e64b3297630b5a4f72df839cc346b1a7",
-     "gebuehr_rate": 0.04,
-     "gebuehr_exp": 1.0
-    },
-    "url": "https://polymarket.com/event/will-amd-say-china-during-earnings-call-november-3"
-   },
-   "seite": "long",
-   "menge": 198.0,
-   "einstand": 0.66989898989899,
-   "hebel": 1.0,
-   "marge": 0.0,
-   "eroeffnet": 1793667921.849051,
-   "gebuehren": 1.75136,
-   "funding": 0.0,
-   "ausstiegsplan": "Bis zur Abrechnung halten. Wenn das Wort früh fällt, steigt der Preis auf ~0,99. Nach der Abrechnung auswerten.",
-   "entscheidung_id": "da7dcf413",
-   "invalidierung": "Call endet ohne das Wort „China“ (Transkript/Audio)",
-   "kurs": 0.004999999999999999,
-   "wert": 0.2
+   "kurs": 0.955,
+   "wert": 142.5
   }
  ],
- "realisiert": -11.447130000000257,
+ "realisiert": -144.0871300000003,
  "gebuehren": 11.4213,
  "funding": 0.0,
  "erstellt": 1793319819.7411644,
  "start_fx": 1.1184885798616961,
- "letzter_tick": 1793753796.629388,
+ "letzter_tick": 1793754695.8267536,
  "auftraege": []
 }
