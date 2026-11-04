@@ -2,14 +2,78 @@
  "fonds_id": "liga_deepseek",
  "waehrung": "USD",
  "start_kapital": 11184.88579861696,
- "cash": 10642.758454052928,
- "positionen": [],
+ "cash": 6917.919021427662,
+ "positionen": [
+  {
+   "id": "p00666bfa",
+   "inst": {
+    "id": "stock:TLT",
+    "art": "stock",
+    "venue": "yahoo",
+    "symbol": "TLT"
+   },
+   "seite": "long",
+   "menge": 26.04770152956039,
+   "einstand": 81.71744782912927,
+   "hebel": 1.0,
+   "marge": 0.0,
+   "eroeffnet": 1793819896.6280587,
+   "gebuehren": 0.0,
+   "funding": 0.0,
+   "ausstiegsplan": "Rebalancing-Regel",
+   "entscheidung_id": "d8e5f296a",
+   "kurs": 81.7,
+   "wert": 2127.86
+  },
+  {
+   "id": "p78a3c466",
+   "inst": {
+    "id": "stock:GLD",
+    "art": "stock",
+    "venue": "yahoo",
+    "symbol": "GLD"
+   },
+   "seite": "long",
+   "menge": 2.2869796217010303,
+   "einstand": 372.26610102742126,
+   "hebel": 1.0,
+   "marge": 0.0,
+   "eroeffnet": 1793819896.6280587,
+   "gebuehren": 0.0,
+   "funding": 0.0,
+   "ausstiegsplan": "Rebalancing-Regel",
+   "entscheidung_id": "d8e5f296a",
+   "kurs": 372.18,
+   "wert": 851.06
+  },
+  {
+   "id": "p3d319c8e",
+   "inst": {
+    "id": "spot:BTC-USD",
+    "art": "spot",
+    "venue": "coinbase",
+    "symbol": "BTC-USD"
+   },
+   "seite": "long",
+   "menge": 0.009226574893250166,
+   "einstand": 80255.12004488446,
+   "hebel": 1.0,
+   "marge": 0.0,
+   "eroeffnet": 1793819896.6280587,
+   "gebuehren": 4.4428792539654545,
+   "funding": 0.0,
+   "ausstiegsplan": "Rebalancing-Regel",
+   "entscheidung_id": "d8e5f296a",
+   "kurs": 80237.435,
+   "wert": 740.3
+  }
+ ],
  "realisiert": -459.8499745640328,
- "gebuehren": 82.27737,
+ "gebuehren": 86.72024925396546,
  "funding": 0.0,
  "erstellt": 1793319819.7411644,
  "start_fx": 1.1184885798616961,
- "letzter_tick": 1793818997.1753423,
+ "letzter_tick": 1793819896.6280587,
  "rebalancing": {
   "ziele": {
    "stock:SPY": {

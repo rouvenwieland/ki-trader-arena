@@ -2,7 +2,7 @@
  "fonds_id": "claude_mittel_rm",
  "waehrung": "USD",
  "start_kapital": 11156.327353966788,
- "cash": 7919.309399930236,
+ "cash": 3566.0252511215886,
  "positionen": [
   {
    "id": "pe8186cc2",
@@ -137,7 +137,7 @@
    "ausstiegsplan": "Halten bis 31.12.; nach NVDA-Earnings 17.11. neu bewerten; Gewinnmitnahme ≥0,65.",
    "entscheidung_id": "d62d5f0db",
    "invalidierung": "NVDA übertrifft Apple-Marktkap nach Earnings um >5 % oder Apple-JA <0,25.",
-   "kurs": 0.5525,
+   "kurs": 0.553,
    "wert": 405.48
   },
   {
@@ -227,8 +227,8 @@
    "ausstiegsplan": "Halten bis 30.11.; verkaufen, wenn BTC unter 64.000 fällt oder NEIN-Preis <0.88.",
    "entscheidung_id": "d7dbfc08f",
    "invalidierung": "BTC Binance unter 64.000 oder DVOL >60",
-   "kurs": 0.9695,
-   "wert": 303.3
+   "kurs": 0.9684999999999999,
+   "wert": 302.98
   },
   {
    "id": "pf805692b",
@@ -294,15 +294,80 @@
    "funding": 0.0,
    "ausstiegsplan": "Halten bis 28.11.; Verkauf bei Preis ≥0.60 (Gewinn) oder bei Invalidierung.",
    "entscheidung_id": "df7c39229",
-   "invalidierung": "Mehrere seriöse Umfragen (TVBS, UDN, China Times) zeigen Chiang ≥6 Punkte vorn, oder Shen-Preis fällt <0.22."
+   "invalidierung": "Mehrere seriöse Umfragen (TVBS, UDN, China Times) zeigen Chiang ≥6 Punkte vorn, oder Shen-Preis fällt <0.22.",
+   "kurs": 0.3225,
+   "wert": 117.29
+  },
+  {
+   "id": "pea9d23a3",
+   "inst": {
+    "id": "stock:SPY",
+    "art": "stock",
+    "venue": "yahoo",
+    "symbol": "SPY"
+   },
+   "seite": "long",
+   "menge": 2.982384411287648,
+   "einstand": 768.3675792002883,
+   "hebel": 1.0,
+   "marge": 0.0,
+   "eroeffnet": 1793819896.6280587,
+   "gebuehren": 0.0,
+   "funding": 0.0,
+   "ausstiegsplan": "Rebalancing-Regel",
+   "entscheidung_id": "dd6456776",
+   "kurs": 768.21,
+   "wert": 2290.86
+  },
+  {
+   "id": "p1c64b37e",
+   "inst": {
+    "id": "spot:BTC-USD",
+    "art": "spot",
+    "venue": "coinbase",
+    "symbol": "BTC-USD"
+   },
+   "seite": "long",
+   "menge": 0.014191155887810225,
+   "einstand": 80252.75734200001,
+   "hebel": 1.0,
+   "marge": 0.0,
+   "eroeffnet": 1793819896.6280587,
+   "gebuehren": 6.833276339201572,
+   "funding": 0.0,
+   "ausstiegsplan": "Rebalancing-Regel",
+   "entscheidung_id": "dd6456776",
+   "kurs": 80236.155,
+   "wert": 1138.64
+  },
+  {
+   "id": "p994b6370",
+   "inst": {
+    "id": "stock:GLD",
+    "art": "stock",
+    "venue": "yahoo",
+    "symbol": "GLD"
+   },
+   "seite": "long",
+   "menge": 2.460616182157497,
+   "einstand": 372.26610102742126,
+   "hebel": 1.0,
+   "marge": 0.0,
+   "eroeffnet": 1793819896.6280587,
+   "gebuehren": 0.0,
+   "funding": 0.0,
+   "ausstiegsplan": "Rebalancing-Regel",
+   "entscheidung_id": "dd6456776",
+   "kurs": 372.18,
+   "wert": 915.67
   }
  ],
  "realisiert": -4.441568327054924,
- "gebuehren": 9.24742,
+ "gebuehren": 16.080696339201573,
  "funding": 0.0,
  "erstellt": 1793380123.8861866,
  "start_fx": 1.1156327353966788,
- "letzter_tick": 1793818997.1753423,
+ "letzter_tick": 1793819896.6280587,
  "auftraege": [],
  "rebalancing": {
   "ziele": {

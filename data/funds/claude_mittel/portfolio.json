@@ -2,7 +2,7 @@
  "fonds_id": "claude_mittel",
  "waehrung": "USD",
  "start_kapital": 11184.88579861696,
- "cash": 10263.744667977933,
+ "cash": 3066.8261886825176,
  "positionen": [
   {
    "id": "p51e71031",
@@ -159,7 +159,7 @@
    "ausstiegsplan": "Halten bis Abrechnung; Gewinn mitnehmen bei JA-Bid ≥0,52; Neubewertung nach NVDA-Zahlen.",
    "entscheidung_id": "dd384368f",
    "invalidierung": "NVDA schließt mehrere Tage ≥3 % über Apple-Marktkapitalisierung oder NVDA-Zahlen mit starker Guidance und Kurssprung.",
-   "kurs": 0.5525,
+   "kurs": 0.553,
    "wert": 119.36
   },
   {
@@ -192,15 +192,143 @@
    "funding": 0.0,
    "ausstiegsplan": "Halten bis Wahl 28.11.; Gewinn mitnehmen bei Bid ≥0.45; Neubewertung bei neuen unabhängigen Umfragen mit Chiang +6 oder mehr.",
    "entscheidung_id": "d97b032e4",
-   "invalidierung": "Mehrere unabhängige Umfragen (TVBS, UDN, China Times) mit Chiang ≥ +6 oder Shen-Rückzug/Skandal."
+   "invalidierung": "Mehrere unabhängige Umfragen (TVBS, UDN, China Times) mit Chiang ≥ +6 oder Shen-Rückzug/Skandal.",
+   "kurs": 0.3225,
+   "wert": 234.58
+  },
+  {
+   "id": "pb60e44cc",
+   "inst": {
+    "id": "stock:SPY",
+    "art": "stock",
+    "venue": "yahoo",
+    "symbol": "SPY"
+   },
+   "seite": "long",
+   "menge": 2.5941679881357653,
+   "einstand": 768.3675792002883,
+   "hebel": 1.0,
+   "marge": 0.0,
+   "eroeffnet": 1793819896.6280587,
+   "gebuehren": 0.0,
+   "funding": 0.0,
+   "ausstiegsplan": "Rebalancing-Regel",
+   "entscheidung_id": "d6e1a7002",
+   "kurs": 768.21,
+   "wert": 1992.66
+  },
+  {
+   "id": "p5fe9ac51",
+   "inst": {
+    "id": "stock:QQQ",
+    "art": "stock",
+    "venue": "yahoo",
+    "symbol": "QQQ"
+   },
+   "seite": "long",
+   "menge": 1.59445970913203,
+   "einstand": 694.4753336025393,
+   "hebel": 1.0,
+   "marge": 0.0,
+   "eroeffnet": 1793819896.6280587,
+   "gebuehren": 0.0,
+   "funding": 0.0,
+   "ausstiegsplan": "Rebalancing-Regel",
+   "entscheidung_id": "d6e1a7002",
+   "kurs": 694.33,
+   "wert": 1106.96
+  },
+  {
+   "id": "p5106387a",
+   "inst": {
+    "id": "stock:GLD",
+    "art": "stock",
+    "venue": "yahoo",
+    "symbol": "GLD"
+   },
+   "seite": "long",
+   "menge": 2.974425180446843,
+   "einstand": 372.26610102742126,
+   "hebel": 1.0,
+   "marge": 0.0,
+   "eroeffnet": 1793819896.6280587,
+   "gebuehren": 0.0,
+   "funding": 0.0,
+   "ausstiegsplan": "Rebalancing-Regel",
+   "entscheidung_id": "d6e1a7002",
+   "kurs": 372.18,
+   "wert": 1106.88
+  },
+  {
+   "id": "p72af4e36",
+   "inst": {
+    "id": "stock:AGG",
+    "art": "stock",
+    "venue": "yahoo",
+    "symbol": "AGG"
+   },
+   "seite": "long",
+   "menge": 11.484709583722125,
+   "einstand": 96.40970963242748,
+   "hebel": 1.0,
+   "marge": 0.0,
+   "eroeffnet": 1793819896.6280587,
+   "gebuehren": 0.0,
+   "funding": 0.0,
+   "ausstiegsplan": "Rebalancing-Regel",
+   "entscheidung_id": "d6e1a7002",
+   "kurs": 96.385,
+   "wert": 1106.78
+  },
+  {
+   "id": "p3e7ff11c",
+   "inst": {
+    "id": "spot:BTC-USD",
+    "art": "spot",
+    "venue": "coinbase",
+    "symbol": "BTC-USD"
+   },
+   "seite": "long",
+   "menge": 0.016456829709068213,
+   "einstand": 80252.75734200001,
+   "hebel": 1.0,
+   "marge": 0.0,
+   "eroeffnet": 1793819896.6280587,
+   "gebuehren": 7.924235767562808,
+   "funding": 0.0,
+   "ausstiegsplan": "Rebalancing-Regel",
+   "entscheidung_id": "d6e1a7002",
+   "kurs": 80236.155,
+   "wert": 1320.42
+  },
+  {
+   "id": "pe3015b77",
+   "inst": {
+    "id": "spot:ETH-USD",
+    "art": "spot",
+    "venue": "coinbase",
+    "symbol": "ETH-USD"
+   },
+   "seite": "long",
+   "menge": 0.22695334128477612,
+   "einstand": 2422.904484,
+   "hebel": 1.0,
+   "marge": 0.0,
+   "eroeffnet": 1793819896.6280587,
+   "gebuehren": 3.2993176095459984,
+   "funding": 0.0,
+   "ausstiegsplan": "Rebalancing-Regel",
+   "entscheidung_id": "d6e1a7002",
+   "kurs": 2422.415,
+   "wert": 549.77
   }
  ],
  "realisiert": -136.41177367275844,
- "gebuehren": 17.95456,
+ "gebuehren": 29.178113377108808,
  "funding": 0.0,
  "erstellt": 1793319819.7411644,
  "start_fx": 1.1184885798616961,
- "letzter_tick": 1793818997.1753423,
+ "letzter_tick": 1793819896.6280587,
  "auftraege": [],
  "rebalancing": {
   "ziele": {

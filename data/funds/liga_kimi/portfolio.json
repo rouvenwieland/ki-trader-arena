@@ -2,14 +2,57 @@
  "fonds_id": "liga_kimi",
  "waehrung": "USD",
  "start_kapital": 11184.88579861696,
- "cash": 10969.996798616961,
- "positionen": [],
+ "cash": 9324.51716676246,
+ "positionen": [
+  {
+   "id": "p0b5ac550",
+   "inst": {
+    "id": "stock:GLD",
+    "art": "stock",
+    "venue": "yahoo",
+    "symbol": "GLD"
+   },
+   "seite": "long",
+   "menge": 2.9468159384753854,
+   "einstand": 372.26610102742126,
+   "hebel": 1.0,
+   "marge": 0.0,
+   "eroeffnet": 1793819896.6280587,
+   "gebuehren": 0.0,
+   "funding": 0.0,
+   "ausstiegsplan": "Rebalancing-Regel",
+   "entscheidung_id": "d3af64508",
+   "kurs": 372.18,
+   "wert": 1096.6
+  },
+  {
+   "id": "p5af391c8",
+   "inst": {
+    "id": "stock:TLT",
+    "art": "stock",
+    "venue": "yahoo",
+    "symbol": "TLT"
+   },
+   "seite": "long",
+   "menge": 6.711907512575253,
+   "einstand": 81.71744782912927,
+   "hebel": 1.0,
+   "marge": 0.0,
+   "eroeffnet": 1793819896.6280587,
+   "gebuehren": 0.0,
+   "funding": 0.0,
+   "ausstiegsplan": "Rebalancing-Regel",
+   "entscheidung_id": "d3af64508",
+   "kurs": 81.7,
+   "wert": 548.3
+  }
+ ],
  "realisiert": -203.649,
  "gebuehren": 11.24,
  "funding": 0.0,
  "erstellt": 1793319819.7411644,
  "start_fx": 1.1184885798616961,
- "letzter_tick": 1793818997.1753423,
+ "letzter_tick": 1793819896.6280587,
  "rebalancing": {
   "ziele": {
    "stock:SPY": {

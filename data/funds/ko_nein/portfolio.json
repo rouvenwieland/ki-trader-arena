@@ -2,7 +2,7 @@
  "fonds_id": "ko_nein",
  "waehrung": "USD",
  "start_kapital": 11157.431109273288,
- "cash": 1289.3749892732856,
+ "cash": 955.3664292732856,
  "positionen": [
   {
    "id": "pe6781775",
@@ -129,7 +129,7 @@
    "gebuehren": 0.0,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.7,
+   "kurs": 0.695,
    "wert": 155.94
   },
   {
@@ -193,8 +193,8 @@
    "gebuehren": 0.0,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.41100000000000003,
-   "wert": 101.5
+   "kurs": 0.40900000000000003,
+   "wert": 101.0
   },
   {
    "id": "pe65b0b73",
@@ -225,8 +225,8 @@
    "gebuehren": 0.0,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.978,
-   "wert": 205.94
+   "kurs": 0.9784999999999999,
+   "wert": 206.15
   },
   {
    "id": "pf0e983be",
@@ -865,7 +865,7 @@
    "gebuehren": 4.65658,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.45999999999999996,
+   "kurs": 0.455,
    "wert": 123.75
   },
   {
@@ -897,8 +897,8 @@
    "gebuehren": 2.87438,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.635,
-   "wert": 137.97
+   "kurs": 0.645,
+   "wert": 140.16
   },
   {
    "id": "p54f0e36a",
@@ -929,7 +929,7 @@
    "gebuehren": 0.09193,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.9875,
+   "kurs": 0.987,
    "wert": 166.63
   },
   {
@@ -993,8 +993,8 @@
    "gebuehren": 2.75755,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.14,
-   "wert": 31.13
+   "kurs": 0.135,
+   "wert": 28.3
   },
   {
    "id": "p9869a857",
@@ -1121,8 +1121,8 @@
    "gebuehren": 0.95322,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.69,
-   "wert": 126.1
+   "kurs": 0.6950000000000001,
+   "wert": 128.04
   },
   {
    "id": "pe85e8fb3",
@@ -1153,8 +1153,8 @@
    "gebuehren": 5.82112,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.9345000000000001,
-   "wert": 1522.89
+   "kurs": 0.9275,
+   "wert": 1509.82
   },
   {
    "id": "pca00edbf",
@@ -1185,8 +1185,8 @@
    "gebuehren": 4.05345,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.54,
-   "wert": 228.43
+   "kurs": 0.585,
+   "wert": 249.98
   },
   {
    "id": "pbdd6cd9d",
@@ -1217,8 +1217,8 @@
    "gebuehren": 4.89529,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.0665,
-   "wert": 42.84
+   "kurs": 0.0805,
+   "wert": 52.72
   },
   {
    "id": "pa6a2b275",
@@ -1313,8 +1313,8 @@
    "gebuehren": 6.432,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.335,
-   "wert": 265.32
+   "kurs": 0.495,
+   "wert": 393.96
   },
   {
    "id": "p8bf269d8",
@@ -1345,7 +1345,7 @@
    "gebuehren": 0.54885,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.885,
+   "kurs": 0.9,
    "wert": 154.86
   },
   {
@@ -1405,13 +1405,77 @@
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
    "kurs": 0.98,
    "wert": 168.56
+  },
+  {
+   "id": "p66f9a4ef",
+   "inst": {
+    "id": "pm:polymarket:3580933:NEIN",
+    "art": "pm",
+    "venue": "polymarket",
+    "ergebnis": "NEIN",
+    "frage": "Will Puma Shen win the next Taipei Mayor election?",
+    "schliesst": 1795928340.0,
+    "ref": {
+     "id": "3580933",
+     "token_ja": "71621185653281721927174401118354054745399424014255544529977515442951477963801",
+     "token_nein": "72820619922053432516748905329266890906103969024802768151634670763988243600546",
+     "tick": 0.001,
+     "condition": "0x910aabbfae28b3569929c31fb5461f4db13f7ddd427bdee1e696d313125838e3",
+     "gebuehr_rate": 0.04,
+     "gebuehr_exp": 1.0
+    },
+    "url": "https://polymarket.com/event/taipei-mayor-election-winner-20260813125857100"
+   },
+   "seite": "long",
+   "menge": 241.0,
+   "einstand": 0.6836690456431537,
+   "hebel": 1.0,
+   "marge": 0.0,
+   "eroeffnet": 1793819896.6280587,
+   "gebuehren": 2.0848,
+   "funding": 0.0,
+   "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
+   "kurs": 0.678,
+   "wert": 161.95
+  },
+  {
+   "id": "p12cf3c0b",
+   "inst": {
+    "id": "pm:polymarket:6053757:NEIN",
+    "art": "pm",
+    "venue": "polymarket",
+    "ergebnis": "NEIN",
+    "frage": "Will Arsenal FC win on 2026-11-04?",
+    "schliesst": 1793822400.0,
+    "ref": {
+     "id": "6053757",
+     "token_ja": "100913283705193578858886401879221750828791501585884544215624568196336778632583",
+     "token_nein": "84907647600633092270396251949176802811975917431447052322731235120597697436965",
+     "tick": 0.01,
+     "condition": "0xa42222b5a52a82d6ccbbc9ccc5345cf906ddafac21ae0d6a2c037a3133471bf3",
+     "gebuehr_rate": 0.05,
+     "gebuehr_exp": 1.0
+    },
+    "url": "https://polymarket.com/event/ucl-slp-ars-2026-11-04"
+   },
+   "seite": "long",
+   "menge": 671.0,
+   "einstand": 0.24,
+   "hebel": 1.0,
+   "marge": 0.0,
+   "eroeffnet": 1793819896.6280587,
+   "gebuehren": 6.11952,
+   "funding": 0.0,
+   "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
+   "kurs": 0.235,
+   "wert": 154.33
   }
  ],
  "realisiert": -2359.9628500000003,
- "gebuehren": 218.21459999999996,
+ "gebuehren": 226.41891999999996,
  "funding": 0.0,
  "erstellt": 1793379225.5430336,
  "start_fx": 1.1157431109273288,
- "letzter_tick": 1793818997.1753423,
- "kontrolle_bis": 1793811911.2891874
+ "letzter_tick": 1793819896.6280587,
+ "kontrolle_bis": 1793819265.9019525
 }
