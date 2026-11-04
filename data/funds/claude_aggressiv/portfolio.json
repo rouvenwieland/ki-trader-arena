@@ -32,8 +32,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Halten bis FOMC 9.12.; verkaufen wenn Preis <0.55 (These gebrochen, z.B. Friedensdeal + schwache Daten) oder >0.92.",
    "entscheidung_id": "dd6eba046",
-   "kurs": 0.755,
-   "wert": 1562.25
+   "kurs": 0.775,
+   "wert": 1603.91
   },
   {
    "id": "p442b828a",
@@ -89,8 +89,8 @@
    "entscheidung_id": "dfb065841",
    "index_eroeffnung": 77924.8,
    "invalidierung": "BTC-Index außerhalb 74.500–81.500 oder DVOL >48 (Regimewechsel)",
-   "kurs": 1581.0697559999999,
-   "wert": 2864.26
+   "kurs": 1527.81564,
+   "wert": 2874.91
   },
   {
    "id": "p50344976",
@@ -118,8 +118,8 @@
    "entscheidung_id": "d0a6a4df7",
    "index_eroeffnung": 77924.8,
    "invalidierung": "BTC-Index über 81.500 oder unter 74.500, DVOL >48",
-   "kurs": 1980.250734,
-   "wert": 2792.75
+   "kurs": 2005.747712,
+   "wert": 2787.65
   },
   {
    "id": "pfda4822f",
@@ -152,8 +152,8 @@
    "ausstiegsplan": "Halten bis Abrechnung 4.11. 17:00 UTC; bei Bruch von 76,2k oder Ausbruch über 77,9k mit Index-Bestätigung verkaufen, wenn Bid >0,25.",
    "entscheidung_id": "d3ab018b5",
    "invalidierung": "Binance BTC/USDT fällt vor 17:00 UTC unter 76.200 oder steigt über 77.900 – dann Position verkaufen, falls Bid noch >0,25.",
-   "kurs": 0.31,
-   "wert": 342.78
+   "kurs": 0.28500000000000003,
+   "wert": 319.14
   }
  ],
  "realisiert": -355.4002799999997,
@@ -161,6 +161,6 @@
  "funding": 0.0,
  "erstellt": 1793319819.7411644,
  "start_fx": 1.1184885798616961,
- "letzter_tick": 1793781802.2102733,
+ "letzter_tick": 1793782702.1988935,
  "auftraege": []
 }
