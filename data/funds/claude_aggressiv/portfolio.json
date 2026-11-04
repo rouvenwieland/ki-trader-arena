@@ -2,39 +2,8 @@
  "fonds_id": "claude_aggressiv",
  "waehrung": "USD",
  "start_kapital": 11184.88579861696,
- "cash": 976.2144358735802,
+ "cash": 2775.3438858735803,
  "positionen": [
-  {
-   "id": "pa523d4f2",
-   "inst": {
-    "id": "pm:polymarket:4641065:JA",
-    "art": "pm",
-    "venue": "polymarket",
-    "ergebnis": "JA",
-    "frage": "US x Iran ceasefire continues through October 31?",
-    "schliesst": 1793491140.0,
-    "ref": {
-     "id": "4641065",
-     "token_ja": "67102598924726349989742049657609063097299442010642912942032681022413402597017",
-     "token_nein": "114475889232765203212032217024645308497828327658421967586050553616813506019119",
-     "tick": 0.001,
-     "gebuehr_rate": 0
-    },
-    "url": "https://polymarket.com/event/us-iran-ceasefire-continues-throughptptpt"
-   },
-   "seite": "long",
-   "menge": 2411.0,
-   "einstand": 0.797,
-   "hebel": 1.0,
-   "marge": 0.0,
-   "eroeffnet": 1793320899.7219625,
-   "gebuehren": 0.0,
-   "funding": 0.0,
-   "ausstiegsplan": "Halten bis Abrechnung 31.10. 23:59; bei Meldung über US-Luftschläge auf Iran Position verloren geben/verkaufen falls Preis noch >0.2.",
-   "entscheidung_id": "dc8d00e1b",
-   "kurs": 0.9975,
-   "wert": 2403.77
-  },
   {
    "id": "p8d020f51",
    "inst": {
@@ -151,10 +120,42 @@
    "invalidierung": "BTC-Index über 81.500 oder unter 74.500, DVOL >48",
    "kurs": 1503.476325,
    "wert": 2888.1
+  },
+  {
+   "id": "pfda4822f",
+   "inst": {
+    "id": "pm:polymarket:6346567:JA",
+    "art": "pm",
+    "venue": "polymarket",
+    "ergebnis": "JA",
+    "frage": "Will the price of Bitcoin be between $76,000 and $78,000 on November 4?",
+    "schliesst": 1793811600.0,
+    "ref": {
+     "id": "6346567",
+     "token_ja": "113843235792589485597487735664164837935553776007052391605251452536402160697971",
+     "token_nein": "48683117930615045436126823705186750199268445481700101938847923398952803762787",
+     "tick": 0.01,
+     "condition": "0x3ba55a4a13f9a802ce9e8e35df43c82e4105b3222dd205fbb03c0bf3d199282b",
+     "gebuehr_rate": 0.07,
+     "gebuehr_exp": 1.0
+    },
+    "url": "https://polymarket.com/event/will-the-price-of-bitcoin-be-between-76000-78000-on-november-4-2026"
+   },
+   "seite": "long",
+   "menge": 1182.0,
+   "einstand": 0.48999999999999994,
+   "hebel": 1.0,
+   "marge": 0.0,
+   "eroeffnet": 1793754171.8565543,
+   "gebuehren": 20.67673,
+   "funding": 0.0,
+   "ausstiegsplan": "Halten bis Abrechnung 4.11. 17:00 UTC; bei Bruch von 76,2k oder Ausbruch über 77,9k mit Index-Bestätigung verkaufen, wenn Bid >0,25.",
+   "entscheidung_id": "d3ab018b5",
+   "invalidierung": "Binance BTC/USDT fällt vor 17:00 UTC unter 76.200 oder steigt über 77.900 – dann Position verkaufen, falls Bid noch >0,25."
   }
  ],
- "realisiert": -832.81946,
- "gebuehren": 85.86420600000001,
+ "realisiert": -355.4002799999997,
+ "gebuehren": 106.54093600000002,
  "funding": 0.0,
  "erstellt": 1793319819.7411644,
  "start_fx": 1.1184885798616961,
