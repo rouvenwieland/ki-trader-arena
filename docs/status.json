@@ -1,6 +1,6 @@
 {
  "version": 1,
- "stand": 1793856364.2853842,
+ "stand": 1793856607.6543844,
  "hinweis": "Papierhandel-Simulation, keine Anlageberatung",
  "seite": "https://rouvenwieland.github.io/ki-trader-arena/",
  "budget": {
@@ -208,7 +208,7 @@
    "rendite_pct": 2.87,
    "equity_eur": 10190.7,
    "max_drawdown_pct": -1.06,
-   "status": "aktiv",
+   "status": "Tagesanteil aufgebraucht – nächste Runde morgen",
    "modell": "claude-sonnet-5-5",
    "kosten_heute_eur": 0.44,
    "kosten_gesamt_eur": 14.195,
@@ -798,10 +798,10 @@
    "rendite_pct": -1.33,
    "equity_eur": 9799.53,
    "max_drawdown_pct": -3.84,
-   "status": "aktiv",
+   "status": "Tagesanteil aufgebraucht – nächste Runde morgen",
    "modell": "claude-sonnet-5-5",
    "kosten_heute_eur": 0.422,
-   "kosten_gesamt_eur": 15.758,
+   "kosten_gesamt_eur": 15.759,
    "rendite_ki_pct": [
     -5.9,
     0.88
@@ -857,7 +857,7 @@
    "rendite_pct": -3.41,
    "equity_eur": 9592.98,
    "max_drawdown_pct": -3.57,
-   "status": "Fehler: Modellfehler: kimi-k3: HTTP 400 {\"error\":{\"message\":\"Invalid request: the message at position 8 with role 'assistant' must not be empty\",\"ty",
+   "status": "Fehler: Modellfehler: kimi-k3: HTTP 400 {\"error\":{\"message\":\"Invalid request: the message at position 17 with role 'assistant' must not be empty\",\"t",
    "modell": "kimi-k3",
    "kosten_heute_eur": 0.0,
    "kosten_gesamt_eur": 0.0,
@@ -1034,7 +1034,7 @@
    "rendite_pct": -11.6,
    "equity_eur": 8779.06,
    "max_drawdown_pct": -24.83,
-   "status": "aktiv",
+   "status": "Tagesanteil aufgebraucht – nächste Runde morgen",
    "modell": "claude-sonnet-5-5",
    "kosten_heute_eur": 0.295,
    "kosten_gesamt_eur": 15.715,
@@ -1218,6 +1218,13 @@
  ],
  "letzte_entscheidungen": [
   {
+   "ts": 1793856521.7337136,
+   "fonds": "DeepSeek",
+   "instrument": "stock:SMH",
+   "aktion": "kaufen",
+   "zuversicht": 0.5
+  },
+  {
    "ts": 1793848303.45042,
    "fonds": "Claude Mittel+RM (A/B)",
    "instrument": "pm:polymarket:1811265:JA",
@@ -1265,13 +1272,6 @@
    "instrument": "pm:kalshi:KXHIGHAUS-26NOV05-B78.5:JA",
    "aktion": "kaufen",
    "zuversicht": 0.65
-  },
-  {
-   "ts": 1793837688.1090803,
-   "fonds": "Kimi (Moonshot)",
-   "instrument": "pm:kalshi:KXHIGHMIA-26NOV05-B82.5:JA",
-   "aktion": "kaufen",
-   "zuversicht": 0.7
   }
  ],
  "ereignisse": [

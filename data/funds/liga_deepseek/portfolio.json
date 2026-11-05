@@ -135,7 +135,34 @@
    }
   },
   "schwelle_pp": 3.0,
-  "seit": 1793819265.9019525,
-  "entscheidung_id": "d8e5f296a"
- }
+  "seit": 1793856370.6518025,
+  "entscheidung_id": "d7149d476"
+ },
+ "auftraege": [
+  {
+   "id": "ac6753c",
+   "entscheidung_id": "d8f4b45be",
+   "inst": {
+    "id": "stock:SMH",
+    "art": "stock",
+    "venue": "yahoo",
+    "symbol": "SMH"
+   },
+   "aktion": "kaufen",
+   "typ": "limit",
+   "seite": "long",
+   "betrag_usd": 1000,
+   "menge": null,
+   "hebel": 1.0,
+   "limit_preis": 506,
+   "stop_preis": null,
+   "stop_loss": 476,
+   "take_profit": 547,
+   "ausstiegsplan": "Take-Profit 547 (= SMA20-Bereich, ~+8%) oder Stop 476 (−5,6%); Zeitlimit 5 Handelstage, dann Neubewertung. Limit-Kauf bei 506 — wird nicht zu einem Gap-Open gekauft, falls der Markt höher eröffnet.",
+   "invalidierung": "Tagesschluss unter 493,5 (unteres Bollinger-Band) oder Ausbleiben einer Reaktion innerhalb von 3 Handelstagen → These einer taktischen Erholung widerlegt, Position schließen.",
+   "erstellt": 1793856521.7342052,
+   "geprueft_bis": 1793856521.7342052,
+   "gueltig_bis": 1793912400.0
+  }
+ ]
 }
