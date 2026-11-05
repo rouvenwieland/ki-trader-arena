@@ -222,5 +222,31 @@
  "erstellt": 1793319819.7411644,
  "start_fx": 1.1184885798616961,
  "letzter_tick": 1793848042.765925,
- "auftraege": []
+ "auftraege": [
+  {
+   "id": "aa41371",
+   "entscheidung_id": "d50916521",
+   "inst": {
+    "id": "stock:AGG",
+    "art": "stock",
+    "venue": "yahoo",
+    "symbol": "AGG"
+   },
+   "aktion": "kaufen",
+   "typ": "eroeffnung",
+   "seite": "long",
+   "betrag_usd": 500,
+   "menge": null,
+   "hebel": 1.0,
+   "limit_preis": null,
+   "stop_preis": null,
+   "stop_loss": 91.5,
+   "take_profit": null,
+   "ausstiegsplan": "Kern halten; Stop 91,5; Rebalancing bei Abweichung >5pp.",
+   "invalidierung": "AGG schließt unter 91,5 oder 10J-Rendite >5,3 %",
+   "erstellt": 1793848293.0180726,
+   "geprueft_bis": 1793848293.0180726,
+   "gueltig_bis": 1793912400.0
+  }
+ ]
 }

@@ -2,7 +2,7 @@
  "fonds_id": "claude_mittel",
  "waehrung": "USD",
  "start_kapital": 11184.88579861696,
- "cash": 3066.8261886825176,
+ "cash": 2928.8261886825176,
  "positionen": [
   {
    "id": "p51e71031",
@@ -321,6 +321,37 @@
    "entscheidung_id": "d6e1a7002",
    "kurs": 2426.005,
    "wert": 550.59
+  },
+  {
+   "id": "p1ad6082a",
+   "inst": {
+    "id": "pm:predictit:34409:NEIN",
+    "art": "pm",
+    "venue": "predictit",
+    "ergebnis": "NEIN",
+    "frage": "Will Pete Hegseth leave office in 2026?",
+    "schliesst": 1798761540.0,
+    "ref": {
+     "vertrag": 34409,
+     "markt": 8697,
+     "ja_kauf": 0.59,
+     "ja_verkauf": 0.55,
+     "nein_kauf": 0.45,
+     "nein_verkauf": 0.41
+    },
+    "url": "https://www.predictit.org/markets/detail/8697/Will-Pete-Hegseth-leave-office-in-2026"
+   },
+   "seite": "long",
+   "menge": 300.0,
+   "einstand": 0.46,
+   "hebel": 1.0,
+   "marge": 0.0,
+   "eroeffnet": 1793848279.644318,
+   "gebuehren": 0.0,
+   "funding": 0.0,
+   "ausstiegsplan": "Halten bis Abrechnung; Verkauf bei NEIN-Bid ≥0.72 oder wenn Trump Hegseth-Entlassung/Rücktritt ankündigt (dann sofort schließen).",
+   "entscheidung_id": "dc22e443b",
+   "invalidierung": "Offizielle Ankündigung von Rücktritt/Entlassung/Nachfolger-Nominierung für Hegseth vor 31.12.2026."
   }
  ],
  "realisiert": -136.41177367275844,
