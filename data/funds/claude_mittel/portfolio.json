@@ -2,7 +2,7 @@
  "fonds_id": "claude_mittel",
  "waehrung": "USD",
  "start_kapital": 11184.88579861696,
- "cash": 2422.0846686825175,
+ "cash": 2272.5936886825175,
  "positionen": [
   {
    "id": "p51e71031",
@@ -422,10 +422,42 @@
    "invalidierung": "NVDA-Marktkapitalisierung innerhalb 5 % von Apple (z. B. NVDA ≥200 bei AAPL ~349) nach den Earnings, oder NVDA-JA ≥0.45.",
    "kurs": 0.735,
    "wert": 312.44
+  },
+  {
+   "id": "pb2463e57",
+   "inst": {
+    "id": "pm:polymarket:5211896:NEIN",
+    "art": "pm",
+    "venue": "polymarket",
+    "ergebnis": "NEIN",
+    "frage": "Pete Hegseth out as Secretary of Defense by November 30?",
+    "schliesst": 1796101140.0,
+    "ref": {
+     "id": "5211896",
+     "token_ja": "77749961750188650483566675944111658186636079167021701797180425278104559514260",
+     "token_nein": "84166566161463506072534682144275272622459723213760542213410557001119701471587",
+     "tick": 0.01,
+     "condition": "0x2d858f0a25a61dfde6485f3d8e75aed397bed616c3e458b66e10e642fb2f9759",
+     "gebuehr_rate": 0.04,
+     "gebuehr_exp": 1.0
+    },
+    "url": "https://polymarket.com/event/pete-hegseth-out-as-secretary-of-defense-by-november-30-20261001003401433"
+   },
+   "seite": "long",
+   "menge": 214.0,
+   "einstand": 0.69,
+   "hebel": 1.0,
+   "marge": 0.0,
+   "eroeffnet": 1793905452.6708298,
+   "gebuehren": 1.83098,
+   "funding": 0.0,
+   "ausstiegsplan": "Halten bis 30.11.; Verkauf bei NEIN-Bid ≥0.85 oder bei Ersatz-Meldung sofort.",
+   "entscheidung_id": "df7939c88",
+   "invalidierung": "Trump oder mehrere Quellen (Axios/CBS/NYT) melden Entscheidung zum Austausch; NEIN-Bid fällt unter 0.55."
   }
  ],
  "realisiert": -136.41177367275844,
- "gebuehren": 36.948673377108804,
+ "gebuehren": 38.7796533771088,
  "funding": 0.0,
  "erstellt": 1793319819.7411644,
  "start_fx": 1.1184885798616961,

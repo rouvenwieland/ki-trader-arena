@@ -2,7 +2,7 @@
  "fonds_id": "liga_kimi",
  "waehrung": "USD",
  "start_kapital": 11184.88579861696,
- "cash": 3572.3892678525804,
+ "cash": 3372.4292678525803,
  "positionen": [
   {
    "id": "p0b5ac550",
@@ -199,10 +199,36 @@
    "invalidierung": "NWS CLI Central Park meldet Tagesmaximum 70-71°F am 05.11.",
    "kurs": 0.32999999999999996,
    "wert": 38.1
+  },
+  {
+   "id": "p5660ccba",
+   "inst": {
+    "id": "pm:kalshi:KXHIGHMIA-26NOV06-B82.5:JA",
+    "art": "pm",
+    "venue": "kalshi",
+    "ergebnis": "JA",
+    "frage": "Will the maximum temperature be 82-83° on Nov 6, 2026? [82° to 83°]",
+    "schliesst": 1794031200.0,
+    "ref": {
+     "ticker": "KXHIGHMIA-26NOV06-B82.5"
+    },
+    "url": "https://kalshi.com/markets/KXHIGHMIA-26NOV06"
+   },
+   "seite": "long",
+   "menge": 1717.0,
+   "einstand": 0.10962143273150844,
+   "hebel": 1.0,
+   "marge": 0.0,
+   "eroeffnet": 1793905690.9288387,
+   "gebuehren": 11.74,
+   "funding": 0.0,
+   "ausstiegsplan": "Halten bis CLI-Abrechnung am 06.11. (Binärwette). Verkauf nur, falls NWS-Meldung ein Maximum außerhalb 82-83°F vor 18 UTC bestätigt.",
+   "entscheidung_id": "dbb0b25a6",
+   "invalidierung": "NWS-Meldung eines Tagesmaximums außerhalb 82-83°F in Miami am 06.11. (CLI-Bericht)"
   }
  ],
  "realisiert": -203.649,
- "gebuehren": 38.976365655913604,
+ "gebuehren": 50.716365655913606,
  "funding": 0.0,
  "erstellt": 1793319819.7411644,
  "start_fx": 1.1184885798616961,

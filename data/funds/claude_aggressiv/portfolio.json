@@ -2,7 +2,7 @@
  "fonds_id": "claude_aggressiv",
  "waehrung": "USD",
  "start_kapital": 11184.88579861696,
- "cash": 1421.563690785643,
+ "cash": 1022.133410785643,
  "positionen": [
   {
    "id": "p8d020f51",
@@ -143,10 +143,42 @@
    "invalidierung": "SPY schließt unter 730 oder Fed-Hike-Odds >90 % mit Rendite-Schock.",
    "kurs": 736.78,
    "wert": 862.49
+  },
+  {
+   "id": "pdc30d721",
+   "inst": {
+    "id": "pm:polymarket:3865960:JA",
+    "art": "pm",
+    "venue": "polymarket",
+    "ergebnis": "JA",
+    "frage": "Will Bitcoin dip to $70,000 by December 31, 2026?",
+    "schliesst": 1798779600.0,
+    "ref": {
+     "id": "3865960",
+     "token_ja": "26181023444847865740144968881453381639052456965503182671034643115973725837732",
+     "token_nein": "43873895024879972348799332304583852450961083930689783649843650004302588743583",
+     "tick": 0.01,
+     "condition": "0x6d7203b2161a636a6ad554a986400e29411aecfdb51f91416a0ef9f7b6685e3b",
+     "gebuehr_rate": 0.07,
+     "gebuehr_exp": 1.0
+    },
+    "url": "https://polymarket.com/event/what-price-will-bitcoin-hit-before-2027"
+   },
+   "seite": "long",
+   "menge": 702.0,
+   "einstand": 0.551675925925926,
+   "hebel": 1.0,
+   "marge": 0.0,
+   "eroeffnet": 1793905487.1263802,
+   "gebuehren": 12.15378,
+   "funding": 0.0,
+   "ausstiegsplan": "Verkaufen bei Bid ≥0,80 oder BTC >86k Binance; sonst bis 31.12. halten.",
+   "entscheidung_id": "d9dd07173",
+   "invalidierung": "BTC steigt über 86.000 (Binance) mit sinkender DVOL <35 → Touch-Wahrscheinlichkeit <0,40, Position verkaufen."
   }
  ],
  "realisiert": -1366.3068097709936,
- "gebuehren": 131.89168382902903,
+ "gebuehren": 144.04546382902905,
  "funding": -0.6133053169464532,
  "erstellt": 1793319819.7411644,
  "start_fx": 1.1184885798616961,
