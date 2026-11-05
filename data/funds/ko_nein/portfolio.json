@@ -2,7 +2,7 @@
  "fonds_id": "ko_nein",
  "waehrung": "USD",
  "start_kapital": 11157.431109273288,
- "cash": 1309.0562092732857,
+ "cash": 974.4845892732858,
  "positionen": [
   {
    "id": "pe6781775",
@@ -65,7 +65,7 @@
    "gebuehren": 0.0,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.36,
+   "kurs": 0.355,
    "wert": 208.95
   },
   {
@@ -161,8 +161,8 @@
    "gebuehren": 0.0,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.7404999999999999,
-   "wert": 205.72
+   "kurs": 0.7384999999999999,
+   "wert": 204.61
   },
   {
    "id": "pdcfb5d53",
@@ -193,8 +193,8 @@
    "gebuehren": 0.0,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.382,
-   "wert": 94.75
+   "kurs": 0.3845,
+   "wert": 96.0
   },
   {
    "id": "pe65b0b73",
@@ -417,8 +417,8 @@
    "gebuehren": 0.0,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.735,
-   "wert": 254.04
+   "kurs": 0.72,
+   "wert": 247.08
   },
   {
    "id": "p1f028824",
@@ -481,8 +481,8 @@
    "gebuehren": 0.0,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.31000000000000005,
-   "wert": 54.04
+   "kurs": 0.29500000000000004,
+   "wert": 52.11
   },
   {
    "id": "p9f764afd",
@@ -833,8 +833,8 @@
    "gebuehren": 1.59053,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.031,
-   "wert": 6.54
+   "kurs": 0.0345,
+   "wert": 7.19
   },
   {
    "id": "p091ba70e",
@@ -929,7 +929,7 @@
    "gebuehren": 0.09193,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.986,
+   "kurs": 0.9855,
    "wert": 166.13
   },
   {
@@ -1089,7 +1089,7 @@
    "gebuehren": 0.95322,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.5800000000000001,
+   "kurs": 0.5700000000000001,
    "wert": 104.76
   },
   {
@@ -1121,7 +1121,7 @@
    "gebuehren": 5.82112,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.9715,
+   "kurs": 0.972,
    "wert": 1586.61
   },
   {
@@ -1217,8 +1217,8 @@
    "gebuehren": 0.47102,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.864,
-   "wert": 132.18
+   "kurs": 0.8925000000000001,
+   "wert": 142.21
   },
   {
    "id": "p0abe393e",
@@ -1313,8 +1313,8 @@
    "gebuehren": 0.0,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.775,
-   "wert": 162.47
+   "kurs": 0.77,
+   "wert": 160.36
   },
   {
    "id": "p66f9a4ef",
@@ -1345,15 +1345,79 @@
    "gebuehren": 2.0848,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.682,
-   "wert": 163.4
+   "kurs": 0.6575,
+   "wert": 157.86
+  },
+  {
+   "id": "pcbd98c7b",
+   "inst": {
+    "id": "pm:polymarket:6507380:NEIN",
+    "art": "pm",
+    "venue": "polymarket",
+    "ergebnis": "NEIN",
+    "frage": "Will Bitcoin dip to $75,000 in November?",
+    "schliesst": 1796101200.0,
+    "ref": {
+     "id": "6507380",
+     "token_ja": "96702946516119890890648295182831714858831451101594362483765027848416290349109",
+     "token_nein": "100063340678399453619037549684979791875230113493746028286298866490793476208749",
+     "tick": 0.01,
+     "condition": "0xc3e53fa90a845c013679eb5564bd6a6708c283ac151e625e66b1c591f68d6983",
+     "gebuehr_rate": 0.07,
+     "gebuehr_exp": 1.0
+    },
+    "url": "https://polymarket.com/event/what-price-will-bitcoin-hit-in-november-2026"
+   },
+   "seite": "long",
+   "menge": 905.0,
+   "einstand": 0.174715138121547,
+   "hebel": 1.0,
+   "marge": 0.0,
+   "eroeffnet": 1793906091.6783104,
+   "gebuehren": 9.13442,
+   "funding": 0.0,
+   "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
+   "kurs": 0.16999999999999998,
+   "wert": 135.75
+  },
+  {
+   "id": "p8929587b",
+   "inst": {
+    "id": "pm:polymarket:6367378:NEIN",
+    "art": "pm",
+    "venue": "polymarket",
+    "ergebnis": "NEIN",
+    "frage": "Israel x Iran ceasefire continues through November 7?",
+    "schliesst": 1794113940.0,
+    "ref": {
+     "id": "6367378",
+     "token_ja": "15707328176527456759678868855667660030738069444951598508574029683550162720104",
+     "token_nein": "95218737879821071926194781477946013279807762514353560074338565580948718279183",
+     "tick": 0.01,
+     "condition": "0xac7deb260d4926829a16fb8b55a57b483ec2379644742ef9926fe7a9b1d67993",
+     "gebuehr_rate": 0.0,
+     "gebuehr_exp": 1
+    },
+    "url": "https://polymarket.com/event/israel-x-iran-ceasefire-continues-throughptptpt-20260716224448963"
+   },
+   "seite": "long",
+   "menge": 2867.0,
+   "einstand": 0.058360655737704915,
+   "hebel": 1.0,
+   "marge": 0.0,
+   "eroeffnet": 1793906091.6783104,
+   "gebuehren": 0.0,
+   "funding": 0.0,
+   "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
+   "kurs": 0.05,
+   "wert": 114.68
   }
  ],
  "realisiert": -2653.0208500000003,
- "gebuehren": 232.49113999999994,
+ "gebuehren": 241.62555999999995,
  "funding": 0.0,
  "erstellt": 1793379225.5430336,
  "start_fx": 1.1157431109273288,
- "letzter_tick": 1793905192.0632734,
- "kontrolle_bis": 1793891636.1539598
+ "letzter_tick": 1793906091.6783104,
+ "kontrolle_bis": 1793905328.8856812
 }
