@@ -120,8 +120,8 @@
    "ausstiegsplan": "Kern halten; Rebalancing-Regel (Schwelle 2 pp); Stop 690.",
    "entscheidung_id": "d74bf75cd",
    "invalidierung": "SPY schließt unter 690 (SMA200 deutlich gebrochen)",
-   "kurs": 742.174,
-   "wert": 1164.25
+   "kurs": 742.74,
+   "wert": 1165.14
   },
   {
    "id": "pbcdb744c",
@@ -143,8 +143,8 @@
    "ausstiegsplan": "Kern halten; Stop 91,5; Rebalancing bei Abweichung >5pp.",
    "entscheidung_id": "d50916521",
    "invalidierung": "AGG schließt unter 91,5 oder 10J-Rendite >5,3 %",
-   "kurs": 96.535,
-   "wert": 1553.17
+   "kurs": 96.565,
+   "wert": 1553.65
   },
   {
    "id": "pd1046bd9",
@@ -166,8 +166,8 @@
    "ausstiegsplan": "Halten; Stop 74.",
    "entscheidung_id": "d123eb847",
    "invalidierung": "10J-Rendite schließt über 5,3 % / TLT unter 74",
-   "kurs": 81.97,
-   "wert": 532.95
+   "kurs": 82.056,
+   "wert": 533.51
   },
   {
    "id": "pf1acd2e3",
@@ -189,8 +189,8 @@
    "ausstiegsplan": "Halten; Stop 340; Gewicht nicht über 5 % erhöhen.",
    "entscheidung_id": "dd43d0bdc",
    "invalidierung": "GLD unter 340 (neues Tief, ~-9 %)",
-   "kurs": 374.69,
-   "wert": 532.81
+   "kurs": 375.075,
+   "wert": 533.36
   },
   {
    "id": "pabe784cb",
@@ -212,8 +212,8 @@
    "ausstiegsplan": "Halten als Kern; Stop 96.",
    "entscheidung_id": "d269c21b5",
    "invalidierung": "EFA unter 96 (Bruch der Aufwärtstrendstruktur, ~-9 %)",
-   "kurs": 103.685,
-   "wert": 519.9
+   "kurs": 103.575,
+   "wert": 519.35
   },
   {
    "id": "p0540b525",
@@ -246,8 +246,8 @@
    "ausstiegsplan": "Halten bis Abrechnung 17:00 UTC heute; kein vorzeitiger Verkauf (Spread zu breit).",
    "entscheidung_id": "d3702da3a",
    "invalidierung": "BTC (Binance/Coinbase) notiert vor 16:45 UTC über 77.800 – dann ist die These praktisch Münzwurf; Verlust akzeptiert, kein Nachkauf.",
-   "kurs": 0.9755,
-   "wert": 369.52
+   "kurs": 0.9875,
+   "wert": 372.18
   }
  ],
  "realisiert": -338.16950000000014,
@@ -255,7 +255,7 @@
  "funding": 0.0,
  "erstellt": 1793319819.7411644,
  "start_fx": 1.1184885798616961,
- "letzter_tick": 1793894216.3323894,
+ "letzter_tick": 1793895115.3882575,
  "auftraege": [],
  "rebalancing": {
   "ziele": {
