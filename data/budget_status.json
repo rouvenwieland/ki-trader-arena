@@ -1,15 +1,16 @@
 {
- "heute_eur": 0.002,
- "gesamt_eur": 60.364,
+ "heute_eur": 0.003,
+ "gesamt_eur": 60.265,
  "tagesdeckel_eur": 12.0,
  "gesamtdeckel_eur": 190.0,
  "tempo_faktor": 1.0,
  "fonds_heute_eur": {
-  "claude_mittel_rm": 0.0,
-  "claude_mittel": 0.0,
+  "claude_mittel_rm": 0.001,
+  "claude_mittel": 0.001,
   "claude_vorsichtig": 0.0,
-  "claude_aggressiv": 0.001
+  "claude_aggressiv": 0.001,
+  "lernhilfe_liga": 0.001
  },
- "ts": 1793837228.9304385,
+ "ts": 1793847382.063739,
  "letzte_runde": "ereignis"
 }

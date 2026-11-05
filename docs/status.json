@@ -1,6 +1,6 @@
 {
  "version": 1,
- "stand": 1793847376.0651069,
+ "stand": 1793847599.598108,
  "hinweis": "Papierhandel-Simulation, keine Anlageberatung",
  "seite": "https://rouvenwieland.github.io/ki-trader-arena/",
  "budget": {
@@ -210,7 +210,7 @@
    "max_drawdown_pct": -1.06,
    "status": "Tagesanteil aufgebraucht – nächste Runde morgen",
    "modell": "claude-sonnet-5-5",
-   "kosten_heute_eur": 0.0,
+   "kosten_heute_eur": 0.001,
    "kosten_gesamt_eur": 13.764,
    "rendite_ki_pct": [
     -0.86,
@@ -741,7 +741,7 @@
    "max_drawdown_pct": -3.75,
    "status": "Tagesanteil aufgebraucht – nächste Runde morgen",
    "modell": "claude-sonnet-5-5",
-   "kosten_heute_eur": 0.0,
+   "kosten_heute_eur": 0.001,
    "kosten_gesamt_eur": 15.346,
    "rendite_ki_pct": [
     -5.82,
@@ -857,7 +857,7 @@
    "rendite_pct": -3.5,
    "equity_eur": 9589.22,
    "max_drawdown_pct": -3.57,
-   "status": "aktiv",
+   "status": "Fehler: Modellfehler: kimi-k3: HTTP 400 {\"error\":{\"message\":\"Invalid request: the message at position 8 with role 'assistant' must not be empty\",\"ty",
    "modell": "kimi-k3",
    "kosten_heute_eur": 0.0,
    "kosten_gesamt_eur": 0.0,
