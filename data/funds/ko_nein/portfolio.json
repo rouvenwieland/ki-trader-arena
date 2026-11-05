@@ -2,7 +2,7 @@
  "fonds_id": "ko_nein",
  "waehrung": "USD",
  "start_kapital": 11157.431109273288,
- "cash": 955.3664292732856,
+ "cash": 1127.3664292732856,
  "positionen": [
   {
    "id": "pe6781775",
@@ -129,8 +129,8 @@
    "gebuehren": 0.0,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.6699999999999999,
-   "wert": 133.34
+   "kurs": 0.6950000000000001,
+   "wert": 142.38
   },
   {
    "id": "p722ad016",
@@ -161,7 +161,7 @@
    "gebuehren": 0.0,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.694,
+   "kurs": 0.6944999999999999,
    "wert": 192.38
   },
   {
@@ -193,7 +193,7 @@
    "gebuehren": 0.0,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.429,
+   "kurs": 0.428,
    "wert": 106.5
   },
   {
@@ -225,7 +225,7 @@
    "gebuehren": 0.0,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.99,
+   "kurs": 0.9895,
    "wert": 208.47
   },
   {
@@ -353,8 +353,8 @@
    "gebuehren": 0.0,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.755,
-   "wert": 137.64
+   "kurs": 0.765,
+   "wert": 139.5
   },
   {
    "id": "p7e5c2e70",
@@ -481,8 +481,8 @@
    "gebuehren": 0.0,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.42000000000000004,
-   "wert": 75.27
+   "kurs": 0.44,
+   "wert": 81.06
   },
   {
    "id": "p9f764afd",
@@ -737,8 +737,8 @@
    "gebuehren": 0.0,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.095,
-   "wert": 33.03
+   "kurs": 0.12000000000000001,
+   "wert": 36.7
   },
   {
    "id": "p5037ef0e",
@@ -833,8 +833,8 @@
    "gebuehren": 1.59053,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.0655,
-   "wert": 13.95
+   "kurs": 0.0635,
+   "wert": 13.52
   },
   {
    "id": "p091ba70e",
@@ -993,8 +993,8 @@
    "gebuehren": 2.75755,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.11000000000000001,
-   "wert": 22.64
+   "kurs": 0.12,
+   "wert": 25.47
   },
   {
    "id": "p9869a857",
@@ -1121,8 +1121,8 @@
    "gebuehren": 0.95322,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.645,
-   "wert": 120.28
+   "kurs": 0.665,
+   "wert": 126.1
   },
   {
    "id": "pe85e8fb3",
@@ -1153,8 +1153,8 @@
    "gebuehren": 5.82112,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.9704999999999999,
-   "wert": 1584.98
+   "kurs": 0.981,
+   "wert": 1599.69
   },
   {
    "id": "pca00edbf",
@@ -1217,8 +1217,8 @@
    "gebuehren": 4.89529,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.0325,
-   "wert": 21.09
+   "kurs": 0.019999999999999997,
+   "wert": 11.86
   },
   {
    "id": "pa6a2b275",
@@ -1249,8 +1249,8 @@
    "gebuehren": 0.47102,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.97,
-   "wert": 168.61
+   "kurs": 0.971,
+   "wert": 168.78
   },
   {
    "id": "p0abe393e",
@@ -1313,8 +1313,8 @@
    "gebuehren": 0.54885,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.865,
-   "wert": 149.52
+   "kurs": 0.86,
+   "wert": 147.74
   },
   {
    "id": "p260d7aa9",
@@ -1349,32 +1349,6 @@
    "wert": 160.36
   },
   {
-   "id": "p8a248a52",
-   "inst": {
-    "id": "pm:kalshi:KXINXU-26NOV04H1600-T7769.9999:NEIN",
-    "art": "pm",
-    "venue": "kalshi",
-    "ergebnis": "NEIN",
-    "frage": "Will the S&P 500 be above 7769.9999 on Nov 4, 2026 at 4pm EST? [7,770 or above]",
-    "schliesst": 1793826000.0,
-    "ref": {
-     "ticker": "KXINXU-26NOV04H1600-T7769.9999"
-    },
-    "url": "https://kalshi.com/markets/KXINXU-26NOV04H1600"
-   },
-   "seite": "long",
-   "menge": 172.0,
-   "einstand": 0.97,
-   "hebel": 1.0,
-   "marge": 0.0,
-   "eroeffnet": 1793805368.7943668,
-   "gebuehren": 0.36,
-   "funding": 0.0,
-   "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": null,
-   "wert": 166.84
-  },
-  {
    "id": "p66f9a4ef",
    "inst": {
     "id": "pm:polymarket:3580933:NEIN",
@@ -1403,15 +1377,15 @@
    "gebuehren": 2.0848,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.66,
-   "wert": 157.61
+   "kurs": 0.663,
+   "wert": 159.06
   }
  ],
- "realisiert": -2681.8028500000005,
+ "realisiert": -2676.6428500000006,
  "gebuehren": 226.41891999999996,
  "funding": 0.0,
  "erstellt": 1793379225.5430336,
  "start_fx": 1.1157431109273288,
- "letzter_tick": 1793836221.766161,
+ "letzter_tick": 1793837121.4239993,
  "kontrolle_bis": 1793819265.9019525
 }
