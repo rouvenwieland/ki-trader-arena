@@ -1,6 +1,6 @@
 {
  "version": 1,
- "stand": 1793837222.2809165,
+ "stand": 1793837740.7180715,
  "hinweis": "Papierhandel-Simulation, keine Anlageberatung",
  "seite": "https://rouvenwieland.github.io/ki-trader-arena/",
  "budget": {
@@ -208,7 +208,7 @@
    "rendite_pct": 3.54,
    "equity_eur": 10279.53,
    "max_drawdown_pct": -1.06,
-   "status": "aktiv",
+   "status": "Tagesanteil aufgebraucht – nächste Runde morgen",
    "modell": "claude-sonnet-5-5",
    "kosten_heute_eur": 0.0,
    "kosten_gesamt_eur": 13.787,
@@ -739,10 +739,10 @@
    "rendite_pct": -0.84,
    "equity_eur": 9869.87,
    "max_drawdown_pct": -3.75,
-   "status": "aktiv",
+   "status": "Tagesanteil aufgebraucht – nächste Runde morgen",
    "modell": "claude-sonnet-5-5",
    "kosten_heute_eur": 0.0,
-   "kosten_gesamt_eur": 15.371,
+   "kosten_gesamt_eur": 15.372,
    "rendite_ki_pct": [
     -5.51,
     1.65
@@ -919,7 +919,7 @@
    "status": "Tagesanteil aufgebraucht – nächste Runde morgen",
    "modell": "claude-sonnet-5-5",
    "kosten_heute_eur": 0.0,
-   "kosten_gesamt_eur": 15.19,
+   "kosten_gesamt_eur": 15.191,
    "rendite_ki_pct": [
     -10.57,
     1.14
@@ -1034,10 +1034,10 @@
    "rendite_pct": -11.87,
    "equity_eur": 8772.45,
    "max_drawdown_pct": -24.83,
-   "status": "aktiv",
+   "status": "Tagesanteil aufgebraucht – nächste Runde morgen",
    "modell": "claude-sonnet-5-5",
-   "kosten_heute_eur": 0.0,
-   "kosten_gesamt_eur": 15.455,
+   "kosten_heute_eur": 0.001,
+   "kosten_gesamt_eur": 15.456,
    "rendite_ki_pct": [
     -30.84,
     6.3
@@ -1218,6 +1218,41 @@
  ],
  "letzte_entscheidungen": [
   {
+   "ts": 1793837706.2517455,
+   "fonds": "Kimi (Moonshot)",
+   "instrument": "pm:kalshi:KXHIGHNY-26NOV05-B70.5:NEIN",
+   "aktion": "kaufen",
+   "zuversicht": 0.62
+  },
+  {
+   "ts": 1793837706.2506778,
+   "fonds": "Kimi (Moonshot)",
+   "instrument": "pm:kalshi:KXHIGHLAX-26NOV05-B81.5:JA",
+   "aktion": "kaufen",
+   "zuversicht": 0.6
+  },
+  {
+   "ts": 1793837688.1102037,
+   "fonds": "Kimi (Moonshot)",
+   "instrument": "pm:kalshi:KXHIGHAUS-26NOV05-B78.5:JA",
+   "aktion": "kaufen",
+   "zuversicht": 0.65
+  },
+  {
+   "ts": 1793837688.1090803,
+   "fonds": "Kimi (Moonshot)",
+   "instrument": "pm:kalshi:KXHIGHMIA-26NOV05-B82.5:JA",
+   "aktion": "kaufen",
+   "zuversicht": 0.7
+  },
+  {
+   "ts": 1793837310.2469864,
+   "fonds": "Gemini Flash",
+   "instrument": "pm:polymarket:631017:NEIN",
+   "aktion": "verkaufen",
+   "zuversicht": 0.9
+  },
+  {
    "ts": 1793819410.3070216,
    "fonds": "Claude Aggressiv",
    "instrument": "stock:SPY",
@@ -1235,41 +1270,6 @@
    "ts": 1793819387.6705668,
    "fonds": "Claude Mittel",
    "instrument": "pm:polymarket:3580933:JA",
-   "aktion": "kaufen",
-   "zuversicht": 0.6
-  },
-  {
-   "ts": 1793819374.52996,
-   "fonds": "Claude Mittel+RM (A/B)",
-   "instrument": "pm:polymarket:3580933:JA",
-   "aktion": "kaufen",
-   "zuversicht": 0.55
-  },
-  {
-   "ts": 1793812081.6642833,
-   "fonds": "Claude Vorsichtig",
-   "instrument": "stock:EFA",
-   "aktion": "kaufen",
-   "zuversicht": 0.5
-  },
-  {
-   "ts": 1793812052.8622282,
-   "fonds": "Claude Vorsichtig",
-   "instrument": "stock:GLD",
-   "aktion": "kaufen",
-   "zuversicht": 0.45
-  },
-  {
-   "ts": 1793812050.8634295,
-   "fonds": "Claude Vorsichtig",
-   "instrument": "stock:TLT",
-   "aktion": "kaufen",
-   "zuversicht": 0.5
-  },
-  {
-   "ts": 1793812048.864081,
-   "fonds": "Claude Vorsichtig",
-   "instrument": "stock:AGG",
    "aktion": "kaufen",
    "zuversicht": 0.6
   }

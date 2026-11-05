@@ -2,7 +2,7 @@
  "fonds_id": "liga_kimi",
  "waehrung": "USD",
  "start_kapital": 11184.88579861696,
- "cash": 3851.7342092860276,
+ "cash": 3572.3892678525804,
  "positionen": [
   {
    "id": "p0b5ac550",
@@ -87,10 +87,114 @@
    "entscheidung_id": "d3af64508",
    "kurs": 80514.485,
    "wert": 2178.94
+  },
+  {
+   "id": "paa2d9988",
+   "inst": {
+    "id": "pm:kalshi:KXHIGHMIA-26NOV05-B82.5:JA",
+    "art": "pm",
+    "venue": "kalshi",
+    "ergebnis": "JA",
+    "frage": "Will the maximum temperature be 82-83° on Nov 5, 2026? [82° to 83°]",
+    "schliesst": 1793944800.0,
+    "ref": {
+     "ticker": "KXHIGHMIA-26NOV05-B82.5"
+    },
+    "url": "https://kalshi.com/markets/KXHIGHMIA-26NOV05"
+   },
+   "seite": "long",
+   "menge": 1464.0,
+   "einstand": 0.07685856655290103,
+   "hebel": 1.0,
+   "marge": 0.0,
+   "eroeffnet": 1793837688.109261,
+   "gebuehren": 7.28,
+   "funding": 0.0,
+   "ausstiegsplan": "Halten bis CLI-Abrechnung heute Abend (Binärwette, kein vorzeitiger Ausstieg geplant); Verkauf nur falls NWS-Meldungen vor 18 UTC ein Max ≥84°F praktisch sicher machen.",
+   "entscheidung_id": "d6b846c4c",
+   "invalidierung": "NWS-Meldung eines Tagesmaximums außerhalb 82-83°F in Miami am 05.11. (Abrechnung CLI-Bericht)"
+  },
+  {
+   "id": "p78088b28",
+   "inst": {
+    "id": "pm:kalshi:KXHIGHAUS-26NOV05-B78.5:JA",
+    "art": "pm",
+    "venue": "kalshi",
+    "ergebnis": "JA",
+    "frage": "Will the maximum temperature be 78-79° on Nov 5, 2026? [78° to 79°]",
+    "schliesst": 1793948400.0,
+    "ref": {
+     "ticker": "KXHIGHAUS-26NOV05-B78.5"
+    },
+    "url": "https://kalshi.com/markets/KXHIGHAUS-26NOV05"
+   },
+   "seite": "long",
+   "menge": 789.0,
+   "einstand": 0.05938960709759188,
+   "hebel": 1.0,
+   "marge": 0.0,
+   "eroeffnet": 1793837688.1102798,
+   "gebuehren": 3.09,
+   "funding": 0.0,
+   "ausstiegsplan": "Halten bis CLI-Abrechnung heute Abend; Binärwette ohne Zwischenverkauf.",
+   "entscheidung_id": "d5f76f306",
+   "invalidierung": "NWS CLI Austin Bergstrom meldet Tagesmaximum außerhalb 78-79°F am 05.11."
+  },
+  {
+   "id": "pb0b91e41",
+   "inst": {
+    "id": "pm:kalshi:KXHIGHLAX-26NOV05-B81.5:JA",
+    "art": "pm",
+    "venue": "kalshi",
+    "ergebnis": "JA",
+    "frage": "Will the maximum temperature be 81-82° on Nov 5, 2026? [81° to 82°]",
+    "schliesst": 1793955600.0,
+    "ref": {
+     "ticker": "KXHIGHLAX-26NOV05-B81.5"
+    },
+    "url": "https://kalshi.com/markets/KXHIGHLAX-26NOV05"
+   },
+   "seite": "long",
+   "menge": 577.0,
+   "einstand": 0.056897746967071054,
+   "hebel": 1.0,
+   "marge": 0.0,
+   "eroeffnet": 1793837706.25085,
+   "gebuehren": 2.17,
+   "funding": 0.0,
+   "ausstiegsplan": "Halten bis CLI-Abrechnung heute Abend; Binärwette.",
+   "entscheidung_id": "d414b1295",
+   "invalidierung": "NWS CLI LAX meldet Tagesmaximum außerhalb 81-82°F am 05.11."
+  },
+  {
+   "id": "pff54b318",
+   "inst": {
+    "id": "pm:kalshi:KXHIGHNY-26NOV05-B70.5:NEIN",
+    "art": "pm",
+    "venue": "kalshi",
+    "ergebnis": "NEIN",
+    "frage": "Will the maximum temperature be 70-71° on Nov 5, 2026? [70° to 71°]",
+    "schliesst": 1793944800.0,
+    "ref": {
+     "ticker": "KXHIGHNY-26NOV05-B70.5"
+    },
+    "url": "https://kalshi.com/markets/KXHIGHNY-26NOV05"
+   },
+   "seite": "long",
+   "menge": 127.0,
+   "einstand": 0.5702015748031497,
+   "hebel": 1.0,
+   "marge": 0.0,
+   "eroeffnet": 1793837706.2518172,
+   "gebuehren": 2.18,
+   "funding": 0.0,
+   "ausstiegsplan": "Halten bis CLI-Abrechnung heute Abend; Binärwette.",
+   "entscheidung_id": "d717a693b",
+   "invalidierung": "NWS CLI Central Park meldet Tagesmaximum 70-71°F am 05.11."
   }
  ],
  "realisiert": -203.649,
- "gebuehren": 24.256365655913598,
+ "gebuehren": 38.976365655913604,
  "funding": 0.0,
  "erstellt": 1793319819.7411644,
  "start_fx": 1.1184885798616961,
