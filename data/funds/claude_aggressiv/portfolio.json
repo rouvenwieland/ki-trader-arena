@@ -89,8 +89,8 @@
    "entscheidung_id": "dfb065841",
    "index_eroeffnung": 77924.8,
    "invalidierung": "BTC-Index außerhalb 74.500–81.500 oder DVOL >48 (Regimewechsel)",
-   "kurs": 714.161187,
-   "wert": 3037.64
+   "kurs": 714.5104230000001,
+   "wert": 3037.57
   },
   {
    "id": "p50344976",
@@ -118,8 +118,8 @@
    "entscheidung_id": "d0a6a4df7",
    "index_eroeffnung": 77924.8,
    "invalidierung": "BTC-Index über 81.500 oder unter 74.500, DVOL >48",
-   "kurs": 3065.276106,
-   "wert": 2575.74
+   "kurs": 3098.8879020000004,
+   "wert": 2569.02
   },
   {
    "id": "pc15663a3",
@@ -133,17 +133,17 @@
    "menge": 0.03485228529783006,
    "einstand": 80339.0646,
    "hebel": 4.0,
-   "marge": 699.8784428602069,
+   "marge": 699.8577194144428,
    "eroeffnet": 1793819410.2104316,
    "gebuehren": 1.4,
-   "funding": -0.12155713979276798,
+   "funding": -0.14228058555678802,
    "stop_loss": 77900,
    "ausstiegsplan": "Stop 77.900 (Strike; unterhalb ist der Straddle ~delta-neutral, Hedge nicht mehr nötig). Hedge auflösen, wenn Straddle zurückgekauft wird; anpassen bei Index >82k.",
    "entscheidung_id": "dbb53c9c3",
    "liq_preis": 60557.08386934674,
    "invalidierung": "BTC fällt unter 77.900 oder Funding >0,03 %/8h (überfüllte Longs).",
-   "kurs": 80282.72,
-   "wert": 697.91
+   "kurs": 80317.75,
+   "wert": 699.11
   },
   {
    "id": "pd2738082",
@@ -171,9 +171,9 @@
  ],
  "realisiert": -1374.4370399999996,
  "gebuehren": 123.50747600000001,
- "funding": -0.12155713979276798,
+ "funding": -0.14228058555678802,
  "erstellt": 1793319819.7411644,
  "start_fx": 1.1184885798616961,
- "letzter_tick": 1793870677.1049926,
+ "letzter_tick": 1793871576.925423,
  "auftraege": []
 }
