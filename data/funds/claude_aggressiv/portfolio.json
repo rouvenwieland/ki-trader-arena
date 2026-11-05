@@ -2,7 +2,7 @@
  "fonds_id": "claude_aggressiv",
  "waehrung": "USD",
  "start_kapital": 11184.88579861696,
- "cash": 721.0905458735842,
+ "cash": 1299.992470785643,
  "positionen": [
   {
    "id": "p8d020f51",
@@ -32,8 +32,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Halten bis FOMC 9.12.; verkaufen wenn Preis <0.55 (These gebrochen, z.B. Friedensdeal + schwache Daten) oder >0.92.",
    "entscheidung_id": "dd6eba046",
-   "kurs": 0.755,
-   "wert": 1562.25
+   "kurs": 0.735,
+   "wert": 1520.59
   },
   {
    "id": "p442b828a",
@@ -89,8 +89,8 @@
    "entscheidung_id": "dfb065841",
    "index_eroeffnung": 77924.8,
    "invalidierung": "BTC-Index außerhalb 74.500–81.500 oder DVOL >48 (Regimewechsel)",
-   "kurs": 1517.5560759999998,
-   "wert": 2876.96
+   "kurs": 2283.5718180000003,
+   "wert": 2723.76
   },
   {
    "id": "p50344976",
@@ -118,32 +118,8 @@
    "entscheidung_id": "d0a6a4df7",
    "index_eroeffnung": 77924.8,
    "invalidierung": "BTC-Index über 81.500 oder unter 74.500, DVOL >48",
-   "kurs": 1798.6473799999999,
-   "wert": 2829.07
-  },
-  {
-   "id": "pc15663a3",
-   "inst": {
-    "id": "perp:BTC_USDC-PERPETUAL",
-    "art": "perp",
-    "venue": "deribit",
-    "symbol": "BTC_USDC-PERPETUAL"
-   },
-   "seite": "long",
-   "menge": 0.03485228529783006,
-   "einstand": 80339.0646,
-   "hebel": 4.0,
-   "marge": 699.4012662762123,
-   "eroeffnet": 1793819410.2104316,
-   "gebuehren": 1.4,
-   "funding": -0.5987337237872894,
-   "stop_loss": 77900,
-   "ausstiegsplan": "Stop 77.900 (Strike; unterhalb ist der Straddle ~delta-neutral, Hedge nicht mehr nötig). Hedge auflösen, wenn Straddle zurückgekauft wird; anpassen bei Index >82k.",
-   "entscheidung_id": "dbb53c9c3",
-   "liq_preis": 60557.08386934674,
-   "invalidierung": "BTC fällt unter 77.900 oder Funding >0,03 %/8h (überfüllte Longs).",
-   "kurs": 78234.98,
-   "wert": 626.07
+   "kurs": 1283.985011,
+   "wert": 2932.0
   },
   {
    "id": "pd2738082",
@@ -165,15 +141,15 @@
    "ausstiegsplan": "Stop 730 (−5 %); Review bei Jobs 6.11. und Fed 9.12.; als Kern halten.",
    "entscheidung_id": "d3bcf0fda",
    "invalidierung": "SPY schließt unter 730 oder Fed-Hike-Odds >90 % mit Rendite-Schock.",
-   "kurs": 754.045,
-   "wert": 882.71
+   "kurs": 750.16,
+   "wert": 878.16
   }
  ],
- "realisiert": -1374.4370399999996,
- "gebuehren": 123.50747600000001,
- "funding": -0.5987337237872894,
+ "realisiert": -1494.9218097709936,
+ "gebuehren": 124.84790382902902,
+ "funding": -0.6133053169464532,
  "erstellt": 1793319819.7411644,
  "start_fx": 1.1184885798616961,
- "letzter_tick": 1793890616.111586,
+ "letzter_tick": 1793891515.5987413,
  "auftraege": []
 }

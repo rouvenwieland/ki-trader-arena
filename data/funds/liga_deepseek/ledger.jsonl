@@ -21,3 +21,4 @@
 {"ok": true, "aktion": "vorgemerkt", "auftrag_id": "ac6753c", "inst_id": "stock:SMH", "auftragstyp": "limit", "grund": "Limit-Auftrag @ 506 aktiv, gültig bis 05.11. 21:00 UTC; Ausführung im 15-min-Takt zum dann gültigen Kurs (Limits gelten dann)", "entscheidung_id": "d8f4b45be"}
 {"ok": false, "grund": "Stop-Loss 476 liegt auf der falschen Seite des Einstiegs 475.7286", "ts": 1793889716.356784, "fonds_id": "liga_deepseek", "entscheidung_id": "d8f4b45be", "auftrag": "ac6753c", "auftragstyp": "limit"}
 {"ok": false, "grund": "Stop-Loss 476 liegt auf der falschen Seite des Einstiegs 468.3185", "ts": 1793890616.111586, "fonds_id": "liga_deepseek", "entscheidung_id": "d8f4b45be", "auftrag": "ac6753c", "auftragstyp": "limit"}
+{"ok": false, "grund": "Stop-Loss 476 liegt auf der falschen Seite des Einstiegs 464.3744", "ts": 1793891515.5987413, "fonds_id": "liga_deepseek", "entscheidung_id": "d8f4b45be", "auftrag": "ac6753c", "auftragstyp": "limit"}

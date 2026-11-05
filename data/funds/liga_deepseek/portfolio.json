@@ -22,8 +22,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "d8e5f296a",
-   "kurs": 81.945,
-   "wert": 2134.24
+   "kurs": 81.865,
+   "wert": 2132.15
   },
   {
    "id": "p78a3c466",
@@ -43,8 +43,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "d8e5f296a",
-   "kurs": 376.23,
-   "wert": 860.32
+   "kurs": 377.41,
+   "wert": 863.02
   },
   {
    "id": "p3d319c8e",
@@ -64,8 +64,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "d8e5f296a",
-   "kurs": 78179.755,
-   "wert": 721.3
+   "kurs": 76907.97,
+   "wert": 709.56
   },
   {
    "id": "p9a8fa083",
@@ -85,8 +85,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "d8e5f296a",
-   "kurs": 754.045,
-   "wert": 3342.46
+   "kurs": 750.16,
+   "wert": 3325.24
   }
  ],
  "realisiert": -459.8499745640328,
@@ -94,7 +94,7 @@
  "funding": 0.0,
  "erstellt": 1793319819.7411644,
  "start_fx": 1.1184885798616961,
- "letzter_tick": 1793890616.111586,
+ "letzter_tick": 1793891515.5987413,
  "rebalancing": {
   "ziele": {
    "stock:SPY": {
@@ -161,7 +161,7 @@
    "ausstiegsplan": "Take-Profit 547 (= SMA20-Bereich, ~+8%) oder Stop 476 (−5,6%); Zeitlimit 5 Handelstage, dann Neubewertung. Limit-Kauf bei 506 — wird nicht zu einem Gap-Open gekauft, falls der Markt höher eröffnet.",
    "invalidierung": "Tagesschluss unter 493,5 (unteres Bollinger-Band) oder Ausbleiben einer Reaktion innerhalb von 3 Handelstagen → These einer taktischen Erholung widerlegt, Position schließen.",
    "erstellt": 1793856521.7342052,
-   "geprueft_bis": 1793890616.111586,
+   "geprueft_bis": 1793891515.5987413,
    "gueltig_bis": 1793912400.0
   }
  ]

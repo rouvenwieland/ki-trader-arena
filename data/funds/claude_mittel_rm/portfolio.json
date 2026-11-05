@@ -69,8 +69,8 @@
    "ausstiegsplan": "Halten bis FOMC 9.12.; Verkauf, wenn NEIN-Preis ≥0.88 (Gewinn) oder CME-Hike-Odds unter 55% fallen.",
    "entscheidung_id": "d7e76abb3",
    "invalidierung": "CME FedWatch Dezember-Hike-Wahrscheinlichkeit fällt unter 55% oder Warsh/Fed-Mehrheit signalisiert Pause nach weicher CPI/Jobs-Zahl.",
-   "kurs": 0.765,
-   "wert": 311.6
+   "kurs": 0.755,
+   "wert": 307.5
   },
   {
    "id": "p8c871cfa",
@@ -103,8 +103,8 @@
    "ausstiegsplan": "Bis zur Abrechnung halten. Neu bewerten nach Le Pens Kassationsurteil (bis Jan. 2027) und nach dem Ablauf der 500-Unterschriften-Frist (März 2027). Verkaufen, wenn die Invalidierung eintritt. Teilgewinne mitnehmen, wenn NEIN ≥0,95.",
    "entscheidung_id": "dcfc7153a",
    "invalidierung": "Lisnard liegt in mehreren seriösen Umfragen (Ifop, Elabe, Harris) stabil bei ≥14 % und damit unter den Top 3 im ersten Wahlgang, oder Retailleau/LR ziehen zu seinen Gunsten zurück.",
-   "kurs": 0.839,
-   "wert": 512.02
+   "kurs": 0.8394999999999999,
+   "wert": 512.63
   },
   {
    "id": "pbb4d5e0c",
@@ -137,8 +137,8 @@
    "ausstiegsplan": "Halten bis 31.12.; nach NVDA-Earnings 17.11. neu bewerten; Gewinnmitnahme ≥0,65.",
    "entscheidung_id": "d62d5f0db",
    "invalidierung": "NVDA übertrifft Apple-Marktkap nach Earnings um >5 % oder Apple-JA <0,25.",
-   "kurs": 0.6245,
-   "wert": 453.1
+   "kurs": 0.6105,
+   "wert": 440.45
   },
   {
    "id": "pa832233e",
@@ -227,8 +227,8 @@
    "ausstiegsplan": "Halten bis 30.11.; verkaufen, wenn BTC unter 64.000 fällt oder NEIN-Preis <0.88.",
    "entscheidung_id": "d7dbfc08f",
    "invalidierung": "BTC Binance unter 64.000 oder DVOL >60",
-   "kurs": 0.9684999999999999,
-   "wert": 302.98
+   "kurs": 0.958,
+   "wert": 299.54
   },
   {
    "id": "pf805692b",
@@ -295,8 +295,8 @@
    "ausstiegsplan": "Halten bis 28.11.; Verkauf bei Preis ≥0.60 (Gewinn) oder bei Invalidierung.",
    "entscheidung_id": "df7c39229",
    "invalidierung": "Mehrere seriöse Umfragen (TVBS, UDN, China Times) zeigen Chiang ≥6 Punkte vorn, oder Shen-Preis fällt <0.22.",
-   "kurs": 0.2845,
-   "wert": 103.6
+   "kurs": 0.2945,
+   "wert": 103.97
   },
   {
    "id": "pea9d23a3",
@@ -316,8 +316,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "dd6456776",
-   "kurs": 754.045,
-   "wert": 2248.62
+   "kurs": 750.16,
+   "wert": 2237.03
   },
   {
    "id": "p1c64b37e",
@@ -337,8 +337,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "dd6456776",
-   "kurs": 78179.755,
-   "wert": 1109.42
+   "kurs": 76907.97,
+   "wert": 1091.35
   },
   {
    "id": "p994b6370",
@@ -358,8 +358,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "dd6456776",
-   "kurs": 376.23,
-   "wert": 925.64
+   "kurs": 377.41,
+   "wert": 928.54
   },
   {
    "id": "p3b9e74b7",
@@ -425,7 +425,7 @@
    "ausstiegsplan": "Halten bis Abrechnung 31.12.",
    "entscheidung_id": "de2fc5d7b",
    "invalidierung": "PredictIt-Bein nicht gefüllt: JA-Bein wieder verkaufen.",
-   "kurs": 0.51,
+   "kurs": 0.505,
    "wert": 100.0
   }
  ],
@@ -434,7 +434,7 @@
  "funding": 0.0,
  "erstellt": 1793380123.8861866,
  "start_fx": 1.1156327353966788,
- "letzter_tick": 1793890616.111586,
+ "letzter_tick": 1793891515.5987413,
  "auftraege": [],
  "rebalancing": {
   "ziele": {
