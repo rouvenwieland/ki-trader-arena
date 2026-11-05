@@ -159,7 +159,7 @@
    "ausstiegsplan": "Halten bis Abrechnung; Gewinn mitnehmen bei JA-Bid ≥0,52; Neubewertung nach NVDA-Zahlen.",
    "entscheidung_id": "dd384368f",
    "invalidierung": "NVDA schließt mehrere Tage ≥3 % über Apple-Marktkapitalisierung oder NVDA-Zahlen mit starker Guidance und Kurssprung.",
-   "kurs": 0.6065,
+   "kurs": 0.606,
    "wert": 130.31
   },
   {
@@ -194,7 +194,7 @@
    "entscheidung_id": "dab131640",
    "invalidierung": "Mehrere unabhängige Umfragen Chiang ≥ +6 (inkl. UDN/SPRIT-Umkehr).",
    "kurs": 0.27949999999999997,
-   "wert": 279.07
+   "wert": 280.1
   },
   {
    "id": "pb60e44cc",
@@ -298,8 +298,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "d6e1a7002",
-   "kurs": 80011.235,
-   "wert": 1316.73
+   "kurs": 79584.315,
+   "wert": 1309.71
   },
   {
    "id": "pe3015b77",
@@ -319,8 +319,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "d6e1a7002",
-   "kurs": 2406.95,
-   "wert": 546.26
+   "kurs": 2386.2200000000003,
+   "wert": 541.55
   },
   {
    "id": "p1ad6082a",
@@ -386,8 +386,8 @@
    "ausstiegsplan": "Bis Abrechnung nach dem Call halten (Audio).",
    "entscheidung_id": "d92f7b113",
    "invalidierung": "Call ohne Erwähnung; Transkript der Q3-Prepared-Remarks ohne Hawaii-Verweis.",
-   "kurs": 0.525,
-   "wert": 24.01
+   "kurs": 0.51,
+   "wert": 23.52
   }
  ],
  "realisiert": -136.41177367275844,
@@ -395,7 +395,7 @@
  "funding": 0.0,
  "erstellt": 1793319819.7411644,
  "start_fx": 1.1184885798616961,
- "letzter_tick": 1793881616.036368,
+ "letzter_tick": 1793882516.027025,
  "auftraege": [],
  "rebalancing": {
   "ziele": {
