@@ -120,8 +120,8 @@
    "ausstiegsplan": "Kern halten; Rebalancing-Regel (Schwelle 2 pp); Stop 690.",
    "entscheidung_id": "d74bf75cd",
    "invalidierung": "SPY schließt unter 690 (SMA200 deutlich gebrochen)",
-   "kurs": 733.15,
-   "wert": 1150.22
+   "kurs": 733.0,
+   "wert": 1149.98
   },
   {
    "id": "pbcdb744c",
@@ -143,8 +143,8 @@
    "ausstiegsplan": "Kern halten; Stop 91,5; Rebalancing bei Abweichung >5pp.",
    "entscheidung_id": "d50916521",
    "invalidierung": "AGG schließt unter 91,5 oder 10J-Rendite >5,3 %",
-   "kurs": 96.6,
-   "wert": 1554.46
+   "kurs": 96.62,
+   "wert": 1554.78
   },
   {
    "id": "pd1046bd9",
@@ -221,7 +221,7 @@
  "funding": 0.0,
  "erstellt": 1793319819.7411644,
  "start_fx": 1.1184885798616961,
- "letzter_tick": 1793913292.0299032,
+ "letzter_tick": 1793914192.1973853,
  "auftraege": [],
  "rebalancing": {
   "ziele": {
