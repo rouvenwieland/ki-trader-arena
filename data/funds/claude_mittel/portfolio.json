@@ -125,8 +125,8 @@
    "ausstiegsplan": "Bis zur Abrechnung (Earnings ca. 17.–25.11.) halten; vorzeitig verkaufen, wenn Bid ≥0.92 oder bei Nachricht zu Margendruck.",
    "entscheidung_id": "df5b61ded",
    "invalidierung": "Meldung/Analystenkonsens zur Q3-Marge ≥75,0 % oder <73 %; Pre-Announcement zu Speicherkosten.",
-   "kurs": 0.72,
-   "wert": 23.2
+   "kurs": 0.735,
+   "wert": 24.4
   },
   {
    "id": "p8b4a7cc3",
@@ -193,8 +193,8 @@
    "ausstiegsplan": "Halten bis 28.11.; Gewinn mitnehmen bei Bid ≥0.40.",
    "entscheidung_id": "dab131640",
    "invalidierung": "Mehrere unabhängige Umfragen Chiang ≥ +6 (inkl. UDN/SPRIT-Umkehr).",
-   "kurs": 0.2815,
-   "wert": 282.15
+   "kurs": 0.28200000000000003,
+   "wert": 283.18
   },
   {
    "id": "pb60e44cc",
@@ -298,8 +298,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "d6e1a7002",
-   "kurs": 80059.10500000001,
-   "wert": 1317.52
+   "kurs": 80117.985,
+   "wert": 1318.49
   },
   {
    "id": "pe3015b77",
@@ -319,8 +319,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "d6e1a7002",
-   "kurs": 2410.675,
-   "wert": 547.11
+   "kurs": 2412.975,
+   "wert": 547.63
   },
   {
    "id": "p1ad6082a",
@@ -395,7 +395,7 @@
  "funding": 0.0,
  "erstellt": 1793319819.7411644,
  "start_fx": 1.1184885798616961,
- "letzter_tick": 1793880576.6084008,
+ "letzter_tick": 1793880717.0931034,
  "auftraege": [],
  "rebalancing": {
   "ziele": {
