@@ -35,8 +35,8 @@
    "ausstiegsplan": "Halten; Gewinn mitnehmen, wenn NEIN ≥0.90 (JA ≤0.10) oder der Preis meine P erreicht. Neu bewerten, wenn Lisnard in Umfragen über 12 % steigt oder Philippe/Retailleau zurückziehen.",
    "entscheidung_id": "df10ef502",
    "invalidierung": "Lisnard in mehreren Umfragen ≥12 % im 1. Wahlgang oder Rückzug von Philippe/Retailleau zu seinen Gunsten.",
-   "kurs": 0.8414999999999999,
-   "wert": 258.19
+   "kurs": 0.8394999999999999,
+   "wert": 257.57
   },
   {
    "id": "p842aa632",
@@ -125,7 +125,7 @@
    "ausstiegsplan": "Bis zur Abrechnung (Earnings ca. 17.–25.11.) halten; vorzeitig verkaufen, wenn Bid ≥0.92 oder bei Nachricht zu Margendruck.",
    "entscheidung_id": "df5b61ded",
    "invalidierung": "Meldung/Analystenkonsens zur Q3-Marge ≥75,0 % oder <73 %; Pre-Announcement zu Speicherkosten.",
-   "kurs": 0.81,
+   "kurs": 0.79,
    "wert": 28.8
   },
   {
@@ -159,8 +159,8 @@
    "ausstiegsplan": "Halten bis Abrechnung; Gewinn mitnehmen bei JA-Bid ≥0,52; Neubewertung nach NVDA-Zahlen.",
    "entscheidung_id": "dd384368f",
    "invalidierung": "NVDA schließt mehrere Tage ≥3 % über Apple-Marktkapitalisierung oder NVDA-Zahlen mit starker Guidance und Kurssprung.",
-   "kurs": 0.5734999999999999,
-   "wert": 124.17
+   "kurs": 0.5745,
+   "wert": 124.39
   },
   {
    "id": "pf61ac065",
@@ -193,7 +193,7 @@
    "ausstiegsplan": "Halten bis Wahl 28.11.; Gewinn mitnehmen bei Bid ≥0.45; Neubewertung bei neuen unabhängigen Umfragen mit Chiang +6 oder mehr.",
    "entscheidung_id": "d97b032e4",
    "invalidierung": "Mehrere unabhängige Umfragen (TVBS, UDN, China Times) mit Chiang ≥ +6 oder Shen-Rückzug/Skandal.",
-   "kurs": 0.3115,
+   "kurs": 0.311,
    "wert": 229.4
   },
   {
@@ -298,8 +298,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "d6e1a7002",
-   "kurs": 80637.255,
-   "wert": 1327.01
+   "kurs": 80498.95000000001,
+   "wert": 1324.76
   },
   {
    "id": "pe3015b77",
@@ -319,8 +319,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "d6e1a7002",
-   "kurs": 2427.6949999999997,
-   "wert": 550.95
+   "kurs": 2424.495,
+   "wert": 550.25
   }
  ],
  "realisiert": -136.41177367275844,
@@ -328,7 +328,7 @@
  "funding": 0.0,
  "erstellt": 1793319819.7411644,
  "start_fx": 1.1184885798616961,
- "letzter_tick": 1793845343.0728624,
+ "letzter_tick": 1793846242.797885,
  "auftraege": [],
  "rebalancing": {
   "ziele": {
