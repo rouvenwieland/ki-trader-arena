@@ -125,8 +125,8 @@
    "ausstiegsplan": "Bis zur Abrechnung (Earnings ca. 17.–25.11.) halten; vorzeitig verkaufen, wenn Bid ≥0.92 oder bei Nachricht zu Margendruck.",
    "entscheidung_id": "df5b61ded",
    "invalidierung": "Meldung/Analystenkonsens zur Q3-Marge ≥75,0 % oder <73 %; Pre-Announcement zu Speicherkosten.",
-   "kurs": 0.6,
-   "wert": 18.8
+   "kurs": 0.64,
+   "wert": 22.0
   },
   {
    "id": "p8b4a7cc3",
@@ -298,8 +298,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "d6e1a7002",
-   "kurs": 80535.285,
-   "wert": 1325.36
+   "kurs": 80523.38500000001,
+   "wert": 1325.16
   },
   {
    "id": "pe3015b77",
@@ -319,8 +319,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "d6e1a7002",
-   "kurs": 2423.4049999999997,
-   "wert": 550.0
+   "kurs": 2422.535,
+   "wert": 549.8
   },
   {
    "id": "p1ad6082a",
@@ -361,7 +361,7 @@
  "funding": 0.0,
  "erstellt": 1793319819.7411644,
  "start_fx": 1.1184885798616961,
- "letzter_tick": 1793867076.7925305,
+ "letzter_tick": 1793867976.5128157,
  "auftraege": [],
  "rebalancing": {
   "ziele": {
