@@ -35,8 +35,8 @@
    "ausstiegsplan": "Halten bis Abrechnung 31.12.; vorzeitig verkaufen, wenn NEIN-Preis auf ≥0.62 steigt (Gewinn mitnehmen) oder unter 0.38 fällt.",
    "entscheidung_id": "dbf84bba3",
    "invalidierung": "NVDA schließt wieder dauerhaft über Apple-Marktkap (NVDA >~210 bei AAPL ~343) oder starke NVDA-Zahlen mit Rally >8%; dann neu bewerten/verkaufen.",
-   "kurs": 0.715,
-   "wert": 391.3
+   "kurs": 0.72,
+   "wert": 396.89
   },
   {
    "id": "p91a23e4a",
@@ -69,8 +69,8 @@
    "ausstiegsplan": "Halten bis FOMC 9.12.; Verkauf, wenn NEIN-Preis ≥0.88 (Gewinn) oder CME-Hike-Odds unter 55% fallen.",
    "entscheidung_id": "d7e76abb3",
    "invalidierung": "CME FedWatch Dezember-Hike-Wahrscheinlichkeit fällt unter 55% oder Warsh/Fed-Mehrheit signalisiert Pause nach weicher CPI/Jobs-Zahl.",
-   "kurs": 0.675,
-   "wert": 274.7
+   "kurs": 0.685,
+   "wert": 278.8
   },
   {
    "id": "p8c871cfa",
@@ -103,8 +103,8 @@
    "ausstiegsplan": "Bis zur Abrechnung halten. Neu bewerten nach Le Pens Kassationsurteil (bis Jan. 2027) und nach dem Ablauf der 500-Unterschriften-Frist (März 2027). Verkaufen, wenn die Invalidierung eintritt. Teilgewinne mitnehmen, wenn NEIN ≥0,95.",
    "entscheidung_id": "dcfc7153a",
    "invalidierung": "Lisnard liegt in mehreren seriösen Umfragen (Ifop, Elabe, Harris) stabil bei ≥14 % und damit unter den Top 3 im ersten Wahlgang, oder Retailleau/LR ziehen zu seinen Gunsten zurück.",
-   "kurs": 0.8514999999999999,
-   "wert": 519.96
+   "kurs": 0.8505,
+   "wert": 519.35
   },
   {
    "id": "pbb4d5e0c",
@@ -137,8 +137,8 @@
    "ausstiegsplan": "Halten bis 31.12.; nach NVDA-Earnings 17.11. neu bewerten; Gewinnmitnahme ≥0,65.",
    "entscheidung_id": "d62d5f0db",
    "invalidierung": "NVDA übertrifft Apple-Marktkap nach Earnings um >5 % oder Apple-JA <0,25.",
-   "kurs": 0.708,
-   "wert": 519.31
+   "kurs": 0.7084999999999999,
+   "wert": 520.06
   },
   {
    "id": "pa832233e",
@@ -227,8 +227,8 @@
    "ausstiegsplan": "Halten bis 30.11.; verkaufen, wenn BTC unter 64.000 fällt oder NEIN-Preis <0.88.",
    "entscheidung_id": "d7dbfc08f",
    "invalidierung": "BTC Binance unter 64.000 oder DVOL >60",
-   "kurs": 0.9424999999999999,
-   "wert": 294.85
+   "kurs": 0.9435,
+   "wert": 295.16
   },
   {
    "id": "pf805692b",
@@ -295,8 +295,8 @@
    "ausstiegsplan": "Halten bis 28.11.; Verkauf bei Preis ≥0.60 (Gewinn) oder bei Invalidierung.",
    "entscheidung_id": "df7c39229",
    "invalidierung": "Mehrere seriöse Umfragen (TVBS, UDN, China Times) zeigen Chiang ≥6 Punkte vorn, oder Shen-Preis fällt <0.22.",
-   "kurs": 0.339,
-   "wert": 125.06
+   "kurs": 0.338,
+   "wert": 124.69
   },
   {
    "id": "pea9d23a3",
@@ -316,8 +316,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "dd6456776",
-   "kurs": 735.56,
-   "wert": 2193.49
+   "kurs": 738.47,
+   "wert": 2202.17
   },
   {
    "id": "p1c64b37e",
@@ -337,8 +337,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "dd6456776",
-   "kurs": 75892.15,
-   "wert": 1076.98
+   "kurs": 76326.76000000001,
+   "wert": 1083.16
   },
   {
    "id": "p994b6370",
@@ -358,8 +358,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "dd6456776",
-   "kurs": 375.74,
-   "wert": 924.43
+   "kurs": 376.795,
+   "wert": 927.03
   },
   {
    "id": "p3b9e74b7",
@@ -448,8 +448,8 @@
    "ausstiegsplan": "Zusammen mit dem Apple/NVDA-Paar nach den NVDA-Earnings am 17.11. neu bewerten; Stop 172; Gewinnmitnahme bei 215, falls das Paar bis dahin aufgelöst ist.",
    "entscheidung_id": "d5ed9e039",
    "invalidierung": "NVDA schließt unter 172 (neues Jahrestief-Umfeld, Stop) oder das Marktkap-Paar wird verkauft (dann Hedge mit auflösen).",
-   "kurs": 182.7,
-   "wert": 486.67
+   "kurs": 184.48,
+   "wert": 491.41
   }
  ],
  "realisiert": -4.441568327054924,
@@ -457,7 +457,7 @@
  "funding": 0.0,
  "erstellt": 1793380123.8861866,
  "start_fx": 1.1156327353966788,
- "letzter_tick": 1793906991.6498191,
+ "letzter_tick": 1793907892.378385,
  "auftraege": [],
  "rebalancing": {
   "ziele": {
