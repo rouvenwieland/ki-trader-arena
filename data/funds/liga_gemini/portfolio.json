@@ -2,14 +2,78 @@
  "fonds_id": "liga_gemini",
  "waehrung": "USD",
  "start_kapital": 11184.88579861696,
- "cash": 11151.14529861696,
- "positionen": [],
+ "cash": 2253.243674921515,
+ "positionen": [
+  {
+   "id": "pc0c00616",
+   "inst": {
+    "id": "stock:SPY",
+    "art": "stock",
+    "venue": "yahoo",
+    "symbol": "SPY"
+   },
+   "seite": "long",
+   "menge": 5.846404651997185,
+   "einstand": 759.1256666323009,
+   "hebel": 1.0,
+   "marge": 0.0,
+   "eroeffnet": 1793889716.356784,
+   "gebuehren": 0.0,
+   "funding": 0.0,
+   "ausstiegsplan": "Rebalancing-Regel",
+   "entscheidung_id": "d660e0069",
+   "kurs": 758.97,
+   "wert": 4436.78
+  },
+  {
+   "id": "p18471a0e",
+   "inst": {
+    "id": "stock:GLD",
+    "art": "stock",
+    "venue": "yahoo",
+    "symbol": "GLD"
+   },
+   "seite": "long",
+   "menge": 5.918337905265532,
+   "einstand": 376.78716788564236,
+   "hebel": 1.0,
+   "marge": 0.0,
+   "eroeffnet": 1793889716.356784,
+   "gebuehren": 0.0,
+   "funding": 0.0,
+   "ausstiegsplan": "Rebalancing-Regel",
+   "entscheidung_id": "d660e0069",
+   "kurs": 376.7,
+   "wert": 2229.14
+  },
+  {
+   "id": "p47200cc9",
+   "inst": {
+    "id": "stock:AGG",
+    "art": "stock",
+    "venue": "yahoo",
+    "symbol": "AGG"
+   },
+   "seite": "long",
+   "menge": 23.14265401767457,
+   "einstand": 96.34988343289018,
+   "hebel": 1.0,
+   "marge": 0.0,
+   "eroeffnet": 1793889716.356784,
+   "gebuehren": 0.0,
+   "funding": 0.0,
+   "ausstiegsplan": "Rebalancing-Regel",
+   "entscheidung_id": "d660e0069",
+   "kurs": 96.325,
+   "wert": 2228.86
+  }
+ ],
  "realisiert": -32.61418,
  "gebuehren": 1.2484899999999999,
  "funding": 0.0,
  "erstellt": 1793319819.7411644,
  "start_fx": 1.1184885798616961,
- "letzter_tick": 1793888816.315607,
+ "letzter_tick": 1793889716.356784,
  "auftraege": [],
  "rebalancing": {
   "ziele": {

@@ -2,7 +2,7 @@
  "fonds_id": "claude_vorsichtig",
  "waehrung": "USD",
  "start_kapital": 11184.88579861696,
- "cash": 6341.091158616971,
+ "cash": 5841.091158616975,
  "positionen": [
   {
    "id": "pca43f487",
@@ -120,8 +120,8 @@
    "ausstiegsplan": "Kern halten; Rebalancing bei Abweichung >5pp; Verkauf bei Stop 690.",
    "entscheidung_id": "dc2cac127",
    "invalidierung": "SPY Schlusskurs unter 690 (SMA200 730 deutlich gebrochen, -10 % vom Einstieg)",
-   "kurs": 766.81,
-   "wert": 998.56
+   "kurs": 758.97,
+   "wert": 988.24
   },
   {
    "id": "pbcdb744c",
@@ -132,19 +132,19 @@
     "symbol": "AGG"
    },
    "seite": "long",
-   "menge": 10.90231337622491,
-   "einstand": 96.30983478146699,
+   "menge": 16.091733250803763,
+   "einstand": 96.32275006314651,
    "hebel": 1.0,
    "marge": 0.0,
    "eroeffnet": 1793812049.9588795,
    "gebuehren": 0.0,
    "funding": 0.0,
    "stop_loss": 91.5,
-   "ausstiegsplan": "Kern halten; Stop 91,5.",
-   "entscheidung_id": "dad9732ba",
-   "invalidierung": "AGG unter 91,5 (neues Mehrjahrestief, Zinsschock)",
-   "kurs": 96.38,
-   "wert": 1050.76
+   "ausstiegsplan": "Kern halten; Stop 91,5; Rebalancing bei Abweichung >5pp.",
+   "entscheidung_id": "d50916521",
+   "invalidierung": "AGG schließt unter 91,5 oder 10J-Rendite >5,3 %",
+   "kurs": 96.325,
+   "wert": 1549.79
   },
   {
    "id": "pd1046bd9",
@@ -166,8 +166,8 @@
    "ausstiegsplan": "Halten; Stop 74.",
    "entscheidung_id": "d123eb847",
    "invalidierung": "10J-Rendite schließt über 5,3 % / TLT unter 74",
-   "kurs": 81.76,
-   "wert": 531.64
+   "kurs": 81.705,
+   "wert": 531.22
   },
   {
    "id": "pf1acd2e3",
@@ -189,8 +189,8 @@
    "ausstiegsplan": "Halten; Stop 340; Gewicht nicht über 5 % erhöhen.",
    "entscheidung_id": "dd43d0bdc",
    "invalidierung": "GLD unter 340 (neues Tief, ~-9 %)",
-   "kurs": 372.49,
-   "wert": 529.75
+   "kurs": 376.7,
+   "wert": 535.67
   },
   {
    "id": "pabe784cb",
@@ -212,8 +212,8 @@
    "ausstiegsplan": "Halten als Kern; Stop 96.",
    "entscheidung_id": "d269c21b5",
    "invalidierung": "EFA unter 96 (Bruch der Aufwärtstrendstruktur, ~-9 %)",
-   "kurs": 105.72,
-   "wert": 530.19
+   "kurs": 104.625,
+   "wert": 524.61
   }
  ],
  "realisiert": -338.16950000000014,
@@ -221,32 +221,6 @@
  "funding": 0.0,
  "erstellt": 1793319819.7411644,
  "start_fx": 1.1184885798616961,
- "letzter_tick": 1793888816.315607,
- "auftraege": [
-  {
-   "id": "aa41371",
-   "entscheidung_id": "d50916521",
-   "inst": {
-    "id": "stock:AGG",
-    "art": "stock",
-    "venue": "yahoo",
-    "symbol": "AGG"
-   },
-   "aktion": "kaufen",
-   "typ": "eroeffnung",
-   "seite": "long",
-   "betrag_usd": 500,
-   "menge": null,
-   "hebel": 1.0,
-   "limit_preis": null,
-   "stop_preis": null,
-   "stop_loss": 91.5,
-   "take_profit": null,
-   "ausstiegsplan": "Kern halten; Stop 91,5; Rebalancing bei Abweichung >5pp.",
-   "invalidierung": "AGG schließt unter 91,5 oder 10J-Rendite >5,3 %",
-   "erstellt": 1793848293.0180726,
-   "geprueft_bis": 1793848293.0180726,
-   "gueltig_bis": 1793912400.0
-  }
- ]
+ "letzter_tick": 1793889716.356784,
+ "auftraege": []
 }
