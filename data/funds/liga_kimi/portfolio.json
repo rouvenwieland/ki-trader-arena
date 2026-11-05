@@ -85,8 +85,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "d3af64508",
-   "kurs": 79577.11499999999,
-   "wert": 2153.57
+   "kurs": 79670.59,
+   "wert": 2156.09
   },
   {
    "id": "paa2d9988",
@@ -141,8 +141,8 @@
    "ausstiegsplan": "Halten bis CLI-Abrechnung heute Abend; Binärwette ohne Zwischenverkauf.",
    "entscheidung_id": "d5f76f306",
    "invalidierung": "NWS CLI Austin Bergstrom meldet Tagesmaximum außerhalb 78-79°F am 05.11.",
-   "kurs": 0.015,
-   "wert": 7.89
+   "kurs": null,
+   "wert": 46.86
   },
   {
    "id": "pb0b91e41",
@@ -197,8 +197,8 @@
    "ausstiegsplan": "Halten bis CLI-Abrechnung heute Abend; Binärwette.",
    "entscheidung_id": "d717a693b",
    "invalidierung": "NWS CLI Central Park meldet Tagesmaximum 70-71°F am 05.11.",
-   "kurs": 0.69,
-   "wert": 86.36
+   "kurs": 0.64,
+   "wert": 80.01
   }
  ],
  "realisiert": -203.649,
@@ -206,7 +206,7 @@
  "funding": 0.0,
  "erstellt": 1793319819.7411644,
  "start_fx": 1.1184885798616961,
- "letzter_tick": 1793885215.7976363,
+ "letzter_tick": 1793886116.1249468,
  "rebalancing": {
   "ziele": {
    "stock:SPY": {
