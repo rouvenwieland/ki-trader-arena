@@ -2,7 +2,7 @@
  "fonds_id": "claude_aggressiv",
  "waehrung": "USD",
  "start_kapital": 11184.88579861696,
- "cash": 1299.992470785643,
+ "cash": 830.5636907856431,
  "positionen": [
   {
    "id": "p8d020f51",
@@ -143,10 +143,42 @@
    "invalidierung": "SPY schließt unter 730 oder Fed-Hike-Odds >90 % mit Rendite-Schock.",
    "kurs": 750.16,
    "wert": 878.16
+  },
+  {
+   "id": "p67246b2f",
+   "inst": {
+    "id": "pm:polymarket:6389959:NEIN",
+    "art": "pm",
+    "venue": "polymarket",
+    "ergebnis": "NEIN",
+    "frage": "Will the price of Bitcoin be above $78,000 on November 5?",
+    "schliesst": 1793898000.0,
+    "ref": {
+     "id": "6389959",
+     "token_ja": "15866995820682170670011540535653852433057325236171076172596716305022221626880",
+     "token_nein": "114433996655296970832030819324122475256673828835400234512833967281458543512921",
+     "tick": 0.001,
+     "condition": "0x26d14ca2724455adac1c0ba0374cd7eaee6404855730a49be3fe4e7563e4518c",
+     "gebuehr_rate": 0.07,
+     "gebuehr_exp": 1.0
+    },
+    "url": "https://polymarket.com/event/bitcoin-above-on-november-5-2026"
+   },
+   "seite": "long",
+   "menge": 591.0,
+   "einstand": 0.7823773265651438,
+   "hebel": 1.0,
+   "marge": 0.0,
+   "eroeffnet": 1793891812.213178,
+   "gebuehren": 7.04378,
+   "funding": 0.0,
+   "ausstiegsplan": "Halten bis Abrechnung 17:00 UTC; kein Nachkauf.",
+   "entscheidung_id": "d6162b96d",
+   "invalidierung": "BTC Binance > 77,8k vor 16:45 UTC"
   }
  ],
  "realisiert": -1494.9218097709936,
- "gebuehren": 124.84790382902902,
+ "gebuehren": 131.89168382902903,
  "funding": -0.6133053169464532,
  "erstellt": 1793319819.7411644,
  "start_fx": 1.1184885798616961,

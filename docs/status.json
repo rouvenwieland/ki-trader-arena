@@ -1,11 +1,11 @@
 {
  "version": 1,
- "stand": 1793891630.5999374,
+ "stand": 1793892177.3328562,
  "hinweis": "Papierhandel-Simulation, keine Anlageberatung",
  "seite": "https://rouvenwieland.github.io/ki-trader-arena/",
  "budget": {
-  "heute_eur": 3.24,
-  "gesamt_eur": 63.72,
+  "heute_eur": 7.12,
+  "gesamt_eur": 67.61,
   "tagesdeckel_eur": 12.0,
   "gesamtdeckel_eur": 190.0,
   "claude_ende": "2026-11-14",
@@ -208,10 +208,10 @@
    "rendite_pct": 2.35,
    "equity_eur": 10182.38,
    "max_drawdown_pct": -1.21,
-   "status": "Fehler: Modellfehler: Anthropic: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'messages.1: `web_search`",
-   "modell": "claude-sonnet-5-5",
-   "kosten_heute_eur": 0.848,
-   "kosten_gesamt_eur": 14.662,
+   "status": "aktiv",
+   "modell": "claude-opus-5-5",
+   "kosten_heute_eur": 1.9,
+   "kosten_gesamt_eur": 15.714,
    "rendite_ki_pct": [
     -1.9,
     7.84
@@ -798,10 +798,10 @@
    "rendite_pct": -3.04,
    "equity_eur": 9670.54,
    "max_drawdown_pct": -5.46,
-   "status": "aktiv",
-   "modell": "claude-sonnet-5-5",
-   "kosten_heute_eur": 0.91,
-   "kosten_gesamt_eur": 16.312,
+   "status": "Fehler: Modellfehler: Anthropic: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'messages.1: `web_search`",
+   "modell": "claude-opus-5-5",
+   "kosten_heute_eur": 1.665,
+   "kosten_gesamt_eur": 17.067,
    "rendite_ki_pct": [
     -7.5,
     -0.77
@@ -857,7 +857,7 @@
    "rendite_pct": -3.4,
    "equity_eur": 9634.6,
    "max_drawdown_pct": -3.76,
-   "status": "Fehler: Modellfehler: kimi-k3: HTTP 400 {\"error\":{\"message\":\"Invalid request: the message at position 17 with role 'assistant' must not be empty\",\"t",
+   "status": "aktiv",
    "modell": "kimi-k3",
    "kosten_heute_eur": 0.0,
    "kosten_gesamt_eur": 0.0,
@@ -917,9 +917,9 @@
    "equity_eur": 9612.27,
    "max_drawdown_pct": -6.34,
    "status": "aktiv",
-   "modell": "claude-sonnet-5-5",
-   "kosten_heute_eur": 0.761,
-   "kosten_gesamt_eur": 15.981,
+   "modell": "claude-opus-5-5",
+   "kosten_heute_eur": 1.861,
+   "kosten_gesamt_eur": 17.082,
    "rendite_ki_pct": [
     -11.34,
     1.66
@@ -1035,9 +1035,9 @@
    "equity_eur": 8687.68,
    "max_drawdown_pct": -24.83,
    "status": "aktiv",
-   "modell": "claude-sonnet-5-5",
-   "kosten_heute_eur": 0.722,
-   "kosten_gesamt_eur": 16.208,
+   "modell": "claude-opus-5-5",
+   "kosten_heute_eur": 1.697,
+   "kosten_gesamt_eur": 17.182,
    "rendite_ki_pct": [
     -30.65,
     3.62
@@ -1218,6 +1218,48 @@
  ],
  "letzte_entscheidungen": [
   {
+   "ts": 1793891905.742681,
+   "fonds": "Claude Mittel",
+   "instrument": "pm:polymarket:676741:JA",
+   "aktion": "kaufen",
+   "zuversicht": 0.6
+  },
+  {
+   "ts": 1793891905.741277,
+   "fonds": "Claude Mittel",
+   "instrument": "pm:polymarket:676739:NEIN",
+   "aktion": "kaufen",
+   "zuversicht": 0.65
+  },
+  {
+   "ts": 1793891885.6757507,
+   "fonds": "Claude Vorsichtig",
+   "instrument": "stock:SPY",
+   "aktion": "kaufen",
+   "zuversicht": 0.55
+  },
+  {
+   "ts": 1793891851.9721332,
+   "fonds": "Claude Mittel+RM (A/B)",
+   "instrument": "stock:NVDA",
+   "aktion": "kaufen",
+   "zuversicht": 0.6
+  },
+  {
+   "ts": 1793891836.6177344,
+   "fonds": "Claude Vorsichtig",
+   "instrument": "pm:polymarket:6389959:NEIN",
+   "aktion": "kaufen",
+   "zuversicht": 0.7
+  },
+  {
+   "ts": 1793891812.2127733,
+   "fonds": "Claude Aggressiv",
+   "instrument": "pm:polymarket:6389959:NEIN",
+   "aktion": "kaufen",
+   "zuversicht": 0.75
+  },
+  {
    "ts": 1793870037.2650888,
    "fonds": "Claude Mittel",
    "instrument": "pm:polymarket:3580933:JA",
@@ -1230,48 +1272,6 @@
    "instrument": "pm:polymarket:6679708:JA",
    "aktion": "kaufen",
    "zuversicht": 0.65
-  },
-  {
-   "ts": 1793856521.7337136,
-   "fonds": "DeepSeek",
-   "instrument": "stock:SMH",
-   "aktion": "kaufen",
-   "zuversicht": 0.5
-  },
-  {
-   "ts": 1793848303.45042,
-   "fonds": "Claude Mittel+RM (A/B)",
-   "instrument": "pm:polymarket:1811265:JA",
-   "aktion": "kaufen",
-   "zuversicht": 0.7
-  },
-  {
-   "ts": 1793848303.447922,
-   "fonds": "Claude Mittel+RM (A/B)",
-   "instrument": "pm:predictit:34409:NEIN",
-   "aktion": "kaufen",
-   "zuversicht": 0.7
-  },
-  {
-   "ts": 1793848293.0179198,
-   "fonds": "Claude Vorsichtig",
-   "instrument": "stock:AGG",
-   "aktion": "kaufen",
-   "zuversicht": 0.55
-  },
-  {
-   "ts": 1793848279.641618,
-   "fonds": "Claude Mittel",
-   "instrument": "pm:predictit:34409:NEIN",
-   "aktion": "kaufen",
-   "zuversicht": 0.6
-  },
-  {
-   "ts": 1793837706.2517455,
-   "fonds": "Kimi (Moonshot)",
-   "instrument": "pm:kalshi:KXHIGHNY-26NOV05-B70.5:NEIN",
-   "aktion": "kaufen",
-   "zuversicht": 0.62
   }
  ],
  "ereignisse": [

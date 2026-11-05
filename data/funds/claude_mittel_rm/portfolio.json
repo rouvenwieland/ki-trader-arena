@@ -2,7 +2,7 @@
  "fonds_id": "claude_mittel_rm",
  "waehrung": "USD",
  "start_kapital": 11156.327353966788,
- "cash": 3375.0260511215884,
+ "cash": 2875.0260511215906,
  "positionen": [
   {
    "id": "pe8186cc2",
@@ -427,6 +427,27 @@
    "invalidierung": "PredictIt-Bein nicht gefüllt: JA-Bein wieder verkaufen.",
    "kurs": 0.505,
    "wert": 100.0
+  },
+  {
+   "id": "p93771887",
+   "inst": {
+    "id": "stock:NVDA",
+    "art": "stock",
+    "venue": "yahoo",
+    "symbol": "NVDA"
+   },
+   "seite": "long",
+   "menge": 2.664083166908293,
+   "einstand": 187.68182848445184,
+   "hebel": 1.0,
+   "marge": 0.0,
+   "eroeffnet": 1793891856.5096068,
+   "gebuehren": 0.0,
+   "funding": 0.0,
+   "stop_loss": 172,
+   "ausstiegsplan": "Zusammen mit dem Apple/NVDA-Paar nach den NVDA-Earnings am 17.11. neu bewerten; Stop 172; Gewinnmitnahme bei 215, falls das Paar bis dahin aufgelöst ist.",
+   "entscheidung_id": "d5ed9e039",
+   "invalidierung": "NVDA schließt unter 172 (neues Jahrestief-Umfeld, Stop) oder das Marktkap-Paar wird verkauft (dann Hedge mit auflösen)."
   }
  ],
  "realisiert": -4.441568327054924,

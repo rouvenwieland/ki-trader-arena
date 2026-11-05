@@ -2,7 +2,7 @@
  "fonds_id": "claude_vorsichtig",
  "waehrung": "USD",
  "start_kapital": 11184.88579861696,
- "cash": 5841.091158616975,
+ "cash": 5341.494198616979,
  "positionen": [
   {
    "id": "pca43f487",
@@ -109,17 +109,17 @@
     "symbol": "SPY"
    },
    "seite": "long",
-   "menge": 1.3022232809327479,
-   "einstand": 767.9174644180242,
+   "menge": 1.5688706802652563,
+   "einstand": 764.8813985083224,
    "hebel": 1.0,
    "marge": 0.0,
    "eroeffnet": 1793812047.9159598,
    "gebuehren": 0.0,
    "funding": 0.0,
    "stop_loss": 690,
-   "ausstiegsplan": "Kern halten; Rebalancing bei Abweichung >5pp; Verkauf bei Stop 690.",
-   "entscheidung_id": "dc2cac127",
-   "invalidierung": "SPY Schlusskurs unter 690 (SMA200 730 deutlich gebrochen, -10 % vom Einstieg)",
+   "ausstiegsplan": "Kern halten; Rebalancing-Regel (Schwelle 2 pp); Stop 690.",
+   "entscheidung_id": "d74bf75cd",
+   "invalidierung": "SPY schließt unter 690 (SMA200 deutlich gebrochen)",
    "kurs": 750.16,
    "wert": 976.77
   },
@@ -214,13 +214,97 @@
    "invalidierung": "EFA unter 96 (Bruch der Aufwärtstrendstruktur, ~-9 %)",
    "kurs": 104.19,
    "wert": 522.43
+  },
+  {
+   "id": "p0540b525",
+   "inst": {
+    "id": "pm:polymarket:6389959:NEIN",
+    "art": "pm",
+    "venue": "polymarket",
+    "ergebnis": "NEIN",
+    "frage": "Will the price of Bitcoin be above $78,000 on November 5?",
+    "schliesst": 1793898000.0,
+    "ref": {
+     "id": "6389959",
+     "token_ja": "15866995820682170670011540535653852433057325236171076172596716305022221626880",
+     "token_nein": "114433996655296970832030819324122475256673828835400234512833967281458543512921",
+     "tick": 0.001,
+     "condition": "0x26d14ca2724455adac1c0ba0374cd7eaee6404855730a49be3fe4e7563e4518c",
+     "gebuehr_rate": 0.07,
+     "gebuehr_exp": 1.0
+    },
+    "url": "https://polymarket.com/event/bitcoin-above-on-november-5-2026"
+   },
+   "seite": "long",
+   "menge": 379.0,
+   "einstand": 0.7784195250659631,
+   "hebel": 1.0,
+   "marge": 0.0,
+   "eroeffnet": 1793891836.6179054,
+   "gebuehren": 4.57596,
+   "funding": 0.0,
+   "ausstiegsplan": "Halten bis Abrechnung 17:00 UTC heute; kein vorzeitiger Verkauf (Spread zu breit).",
+   "entscheidung_id": "d3702da3a",
+   "invalidierung": "BTC (Binance/Coinbase) notiert vor 16:45 UTC über 77.800 – dann ist die These praktisch Münzwurf; Verlust akzeptiert, kein Nachkauf."
   }
  ],
  "realisiert": -338.16950000000014,
- "gebuehren": 22.96444,
+ "gebuehren": 27.540399999999998,
  "funding": 0.0,
  "erstellt": 1793319819.7411644,
  "start_fx": 1.1184885798616961,
  "letzter_tick": 1793891515.5987413,
- "auftraege": []
+ "auftraege": [],
+ "rebalancing": {
+  "ziele": {
+   "stock:SPY": {
+    "inst": {
+     "id": "stock:SPY",
+     "art": "stock",
+     "venue": "yahoo",
+     "symbol": "SPY"
+    },
+    "anteil": 0.11
+   },
+   "stock:AGG": {
+    "inst": {
+     "id": "stock:AGG",
+     "art": "stock",
+     "venue": "yahoo",
+     "symbol": "AGG"
+    },
+    "anteil": 0.14
+   },
+   "stock:TLT": {
+    "inst": {
+     "id": "stock:TLT",
+     "art": "stock",
+     "venue": "yahoo",
+     "symbol": "TLT"
+    },
+    "anteil": 0.05
+   },
+   "stock:GLD": {
+    "inst": {
+     "id": "stock:GLD",
+     "art": "stock",
+     "venue": "yahoo",
+     "symbol": "GLD"
+    },
+    "anteil": 0.05
+   },
+   "stock:EFA": {
+    "inst": {
+     "id": "stock:EFA",
+     "art": "stock",
+     "venue": "yahoo",
+     "symbol": "EFA"
+    },
+    "anteil": 0.05
+   }
+  },
+  "schwelle_pp": 1.5,
+  "seit": 1793891636.1539598,
+  "entscheidung_id": "d62ef5a80"
+ }
 }

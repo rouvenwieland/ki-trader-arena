@@ -2,7 +2,7 @@
  "fonds_id": "claude_mittel",
  "waehrung": "USD",
  "start_kapital": 11184.88579861696,
- "cash": 2821.1371786825175,
+ "cash": 2422.0846686825175,
  "positionen": [
   {
    "id": "p51e71031",
@@ -149,16 +149,16 @@
     "url": "https://polymarket.com/event/will-apple-be-the-largest-company-in-the-world-by-market-cap-on-december-31-291"
    },
    "seite": "long",
-   "menge": 219.0,
-   "einstand": 0.44608675799086756,
+   "menge": 370.0,
+   "einstand": 0.5292582702702703,
    "hebel": 1.0,
    "marge": 0.0,
    "eroeffnet": 1793560019.8486197,
-   "gebuehren": 2.16454,
+   "gebuehren": 3.53885,
    "funding": 0.0,
-   "ausstiegsplan": "Halten bis Abrechnung; Gewinn mitnehmen bei JA-Bid ≥0,52; Neubewertung nach NVDA-Zahlen.",
-   "entscheidung_id": "dd384368f",
-   "invalidierung": "NVDA schließt mehrere Tage ≥3 % über Apple-Marktkapitalisierung oder NVDA-Zahlen mit starker Guidance und Kurssprung.",
+   "ausstiegsplan": "Bid ≥0.74 → Gewinn mitnehmen; nach NVDA-Earnings neu rechnen.",
+   "entscheidung_id": "d1d050db4",
+   "invalidierung": "Abstand <5 % in Marktkapitalisierung oder Apple-JA <0.50.",
    "kurs": 0.6105,
    "wert": 129.65
   },
@@ -388,10 +388,42 @@
    "invalidierung": "Call ohne Erwähnung; Transkript der Q3-Prepared-Remarks ohne Hawaii-Verweis.",
    "kurs": 0.4,
    "wert": 12.74
+  },
+  {
+   "id": "pc680e88c",
+   "inst": {
+    "id": "pm:polymarket:676739:NEIN",
+    "art": "pm",
+    "venue": "polymarket",
+    "ergebnis": "NEIN",
+    "frage": "Will NVIDIA be the largest company in the world by market cap on December 31?",
+    "schliesst": 1798779540.0,
+    "ref": {
+     "id": "676739",
+     "token_ja": "11876606915924142133615854761923277060697657209957870741155164849437788272266",
+     "token_nein": "114033095271617070714983865791504478906266507670567428753203001241312040895286",
+     "tick": 0.01,
+     "condition": "0x684e5b72d4e407695397a79ed75ef37273c2655ca2548791a4153233d3744696",
+     "gebuehr_rate": 0.04,
+     "gebuehr_exp": 1.0
+    },
+    "url": "https://polymarket.com/event/will-nvidia-be-the-largest-company-in-the-world-by-market-cap-on-december-31-244"
+   },
+   "seite": "long",
+   "menge": 428.0,
+   "einstand": 0.6913373831775701,
+   "hebel": 1.0,
+   "marge": 0.0,
+   "eroeffnet": 1793891905.741461,
+   "gebuehren": 3.65324,
+   "funding": 0.0,
+   "ausstiegsplan": "Gewinn mitnehmen bei NEIN-Bid ≥0.78 (=P). Nach NVDA-Earnings neu rechnen. Sonst halten bis 31.12.",
+   "entscheidung_id": "d1fa25bbb",
+   "invalidierung": "NVDA-Marktkapitalisierung innerhalb 5 % von Apple (z. B. NVDA ≥200 bei AAPL ~349) nach den Earnings, oder NVDA-JA ≥0.45."
   }
  ],
  "realisiert": -136.41177367275844,
- "gebuehren": 31.921123377108806,
+ "gebuehren": 36.948673377108804,
  "funding": 0.0,
  "erstellt": 1793319819.7411644,
  "start_fx": 1.1184885798616961,
