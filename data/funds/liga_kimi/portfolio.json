@@ -85,8 +85,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "d3af64508",
-   "kurs": 80321.225,
-   "wert": 2173.71
+   "kurs": 80330.015,
+   "wert": 2173.95
   },
   {
    "id": "paa2d9988",
@@ -169,8 +169,8 @@
    "ausstiegsplan": "Halten bis CLI-Abrechnung heute Abend; Binärwette.",
    "entscheidung_id": "d414b1295",
    "invalidierung": "NWS CLI LAX meldet Tagesmaximum außerhalb 81-82°F am 05.11.",
-   "kurs": 0.045,
-   "wert": 23.08
+   "kurs": 0.055,
+   "wert": 28.85
   },
   {
    "id": "pff54b318",
@@ -206,7 +206,7 @@
  "funding": 0.0,
  "erstellt": 1793319819.7411644,
  "start_fx": 1.1184885798616961,
- "letzter_tick": 1793857942.598471,
+ "letzter_tick": 1793858842.7287705,
  "rebalancing": {
   "ziele": {
    "stock:SPY": {
