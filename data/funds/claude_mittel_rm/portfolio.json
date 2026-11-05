@@ -69,8 +69,8 @@
    "ausstiegsplan": "Halten bis FOMC 9.12.; Verkauf, wenn NEIN-Preis ≥0.88 (Gewinn) oder CME-Hike-Odds unter 55% fallen.",
    "entscheidung_id": "d7e76abb3",
    "invalidierung": "CME FedWatch Dezember-Hike-Wahrscheinlichkeit fällt unter 55% oder Warsh/Fed-Mehrheit signalisiert Pause nach weicher CPI/Jobs-Zahl.",
-   "kurs": 0.785,
-   "wert": 319.8
+   "kurs": 0.775,
+   "wert": 315.7
   },
   {
    "id": "p8c871cfa",
@@ -137,7 +137,7 @@
    "ausstiegsplan": "Halten bis 31.12.; nach NVDA-Earnings 17.11. neu bewerten; Gewinnmitnahme ≥0,65.",
    "entscheidung_id": "d62d5f0db",
    "invalidierung": "NVDA übertrifft Apple-Marktkap nach Earnings um >5 % oder Apple-JA <0,25.",
-   "kurs": 0.606,
+   "kurs": 0.607,
    "wert": 442.68
   },
   {
@@ -295,8 +295,8 @@
    "ausstiegsplan": "Halten bis 28.11.; Verkauf bei Preis ≥0.60 (Gewinn) oder bei Invalidierung.",
    "entscheidung_id": "df7c39229",
    "invalidierung": "Mehrere seriöse Umfragen (TVBS, UDN, China Times) zeigen Chiang ≥6 Punkte vorn, oder Shen-Preis fällt <0.22.",
-   "kurs": 0.27949999999999997,
-   "wert": 101.38
+   "kurs": 0.27849999999999997,
+   "wert": 100.64
   },
   {
    "id": "pea9d23a3",
@@ -337,8 +337,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "dd6456776",
-   "kurs": 79563.09,
-   "wert": 1129.08
+   "kurs": 79560.63500000001,
+   "wert": 1129.06
   },
   {
    "id": "p994b6370",
@@ -434,7 +434,7 @@
  "funding": 0.0,
  "erstellt": 1793380123.8861866,
  "start_fx": 1.1156327353966788,
- "letzter_tick": 1793883415.7105231,
+ "letzter_tick": 1793884316.3312523,
  "auftraege": [],
  "rebalancing": {
   "ziele": {

@@ -5,58 +5,6 @@
  "cash": 4481.6481844476675,
  "positionen": [
   {
-   "id": "p00577333",
-   "inst": {
-    "id": "pm:kalshi:KXHIGHCHI-26NOV04-T63:JA",
-    "art": "pm",
-    "venue": "kalshi",
-    "ergebnis": "JA",
-    "frage": "Will the maximum temperature be <63° on Nov 4, 2026? [62° or below]",
-    "schliesst": 1793862000.0,
-    "ref": {
-     "ticker": "KXHIGHCHI-26NOV04-T63"
-    },
-    "url": "https://kalshi.com/markets/KXHIGHCHI-26NOV04"
-   },
-   "seite": "long",
-   "menge": 1060.0,
-   "einstand": 0.07457547169811321,
-   "hebel": 1.0,
-   "marge": 0.0,
-   "eroeffnet": 1793732847.5589027,
-   "gebuehren": 5.13,
-   "funding": 0.0,
-   "ausstiegsplan": "Halten bis zur Abrechnung (Wetter-Regel)",
-   "kurs": null,
-   "wert": 79.05
-  },
-  {
-   "id": "p738b73f0",
-   "inst": {
-    "id": "pm:kalshi:KXHIGHCHI-26NOV04-T70:JA",
-    "art": "pm",
-    "venue": "kalshi",
-    "ergebnis": "JA",
-    "frage": "Will the maximum temperature be >70° on Nov 4, 2026? [71° or above]",
-    "schliesst": 1793862000.0,
-    "ref": {
-     "ticker": "KXHIGHCHI-26NOV04-T70"
-    },
-    "url": "https://kalshi.com/markets/KXHIGHCHI-26NOV04"
-   },
-   "seite": "long",
-   "menge": 1510.0,
-   "einstand": 0.058232715231788086,
-   "hebel": 1.0,
-   "marge": 0.0,
-   "eroeffnet": 1793741072.2121658,
-   "gebuehren": 5.8,
-   "funding": 0.0,
-   "ausstiegsplan": "Halten bis zur Abrechnung (Wetter-Regel)",
-   "kurs": null,
-   "wert": 87.93
-  },
-  {
    "id": "pc6f9bbf9",
    "inst": {
     "id": "pm:kalshi:KXHIGHNY-26NOV05-T70:NEIN",
@@ -79,15 +27,15 @@
    "gebuehren": 4.1,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Wetter-Regel)",
-   "kurs": 0.83,
-   "wert": 201.72
+   "kurs": 0.835,
+   "wert": 204.18
   }
  ],
- "realisiert": -5938.992269519122,
+ "realisiert": -6105.973669519122,
  "gebuehren": 418.61,
  "funding": 0.0,
  "erstellt": 1793380123.8861866,
  "start_fx": 1.1156327353966788,
- "letzter_tick": 1793883415.7105231,
+ "letzter_tick": 1793884316.3312523,
  "wetter_letzter": 1793880717.0931034
 }

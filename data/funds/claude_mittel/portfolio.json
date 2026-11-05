@@ -125,8 +125,8 @@
    "ausstiegsplan": "Bis zur Abrechnung (Earnings ca. 17.–25.11.) halten; vorzeitig verkaufen, wenn Bid ≥0.92 oder bei Nachricht zu Margendruck.",
    "entscheidung_id": "df5b61ded",
    "invalidierung": "Meldung/Analystenkonsens zur Q3-Marge ≥75,0 % oder <73 %; Pre-Announcement zu Speicherkosten.",
-   "kurs": 0.665,
-   "wert": 18.8
+   "kurs": 0.7,
+   "wert": 19.6
   },
   {
    "id": "p8b4a7cc3",
@@ -159,7 +159,7 @@
    "ausstiegsplan": "Halten bis Abrechnung; Gewinn mitnehmen bei JA-Bid ≥0,52; Neubewertung nach NVDA-Zahlen.",
    "entscheidung_id": "dd384368f",
    "invalidierung": "NVDA schließt mehrere Tage ≥3 % über Apple-Marktkapitalisierung oder NVDA-Zahlen mit starker Guidance und Kurssprung.",
-   "kurs": 0.606,
+   "kurs": 0.607,
    "wert": 130.31
   },
   {
@@ -193,8 +193,8 @@
    "ausstiegsplan": "Halten bis 28.11.; Gewinn mitnehmen bei Bid ≥0.40.",
    "entscheidung_id": "dab131640",
    "invalidierung": "Mehrere unabhängige Umfragen Chiang ≥ +6 (inkl. UDN/SPRIT-Umkehr).",
-   "kurs": 0.27949999999999997,
-   "wert": 281.12
+   "kurs": 0.27849999999999997,
+   "wert": 279.07
   },
   {
    "id": "pb60e44cc",
@@ -298,8 +298,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "d6e1a7002",
-   "kurs": 79563.09,
-   "wert": 1309.34
+   "kurs": 79560.63500000001,
+   "wert": 1309.32
   },
   {
    "id": "pe3015b77",
@@ -319,8 +319,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "d6e1a7002",
-   "kurs": 2390.35,
-   "wert": 542.47
+   "kurs": 2387.335,
+   "wert": 541.81
   },
   {
    "id": "p1ad6082a",
@@ -395,7 +395,7 @@
  "funding": 0.0,
  "erstellt": 1793319819.7411644,
  "start_fx": 1.1184885798616961,
- "letzter_tick": 1793883415.7105231,
+ "letzter_tick": 1793884316.3312523,
  "auftraege": [],
  "rebalancing": {
   "ziele": {
