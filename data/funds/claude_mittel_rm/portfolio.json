@@ -35,8 +35,8 @@
    "ausstiegsplan": "Halten bis Abrechnung 31.12.; vorzeitig verkaufen, wenn NEIN-Preis auf ≥0.62 steigt (Gewinn mitnehmen) oder unter 0.38 fällt.",
    "entscheidung_id": "dbf84bba3",
    "invalidierung": "NVDA schließt wieder dauerhaft über Apple-Marktkap (NVDA >~210 bei AAPL ~343) oder starke NVDA-Zahlen mit Rally >8%; dann neu bewerten/verkaufen.",
-   "kurs": 0.725,
-   "wert": 402.48
+   "kurs": 0.735,
+   "wert": 408.07
   },
   {
    "id": "p91a23e4a",
@@ -137,8 +137,8 @@
    "ausstiegsplan": "Halten bis 31.12.; nach NVDA-Earnings 17.11. neu bewerten; Gewinnmitnahme ≥0,65.",
    "entscheidung_id": "d62d5f0db",
    "invalidierung": "NVDA übertrifft Apple-Marktkap nach Earnings um >5 % oder Apple-JA <0,25.",
-   "kurs": 0.7095,
-   "wert": 522.29
+   "kurs": 0.723,
+   "wert": 528.98
   },
   {
    "id": "pa832233e",
@@ -165,8 +165,8 @@
    "ausstiegsplan": "Halten bis Ende November. Verkauf bei Kurs <0.55 oder Koalitionsbruch/Rücktrittsankündigung; Gewinn mitnehmen ≥0.95.",
    "entscheidung_id": "d34bf6b87",
    "invalidierung": "PSL oder Polen 2050 verlassen die Koalition bzw. unterstützen ein Misstrauensvotum; Tusk kündigt Rücktritt/Vertrauensfrage an.",
-   "kurs": 0.9239704419471195,
-   "wert": 812.1
+   "kurs": 0.9279712074628369,
+   "wert": 815.62
   },
   {
    "id": "pf61b68d4",
@@ -316,8 +316,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "dd6456776",
-   "kurs": 734.58,
-   "wert": 2190.57
+   "kurs": 733.55,
+   "wert": 2187.73
   },
   {
    "id": "p1c64b37e",
@@ -337,8 +337,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "dd6456776",
-   "kurs": 76048.225,
-   "wert": 1079.21
+   "kurs": 76027.015,
+   "wert": 1078.91
   },
   {
    "id": "p994b6370",
@@ -358,8 +358,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "dd6456776",
-   "kurs": 375.73,
-   "wert": 924.41
+   "kurs": 375.27,
+   "wert": 923.4
   },
   {
    "id": "p3b9e74b7",
@@ -448,8 +448,8 @@
    "ausstiegsplan": "Zusammen mit dem Apple/NVDA-Paar nach den NVDA-Earnings am 17.11. neu bewerten; Stop 172; Gewinnmitnahme bei 215, falls das Paar bis dahin aufgelöst ist.",
    "entscheidung_id": "d5ed9e039",
    "invalidierung": "NVDA schließt unter 172 (neues Jahrestief-Umfeld, Stop) oder das Marktkap-Paar wird verkauft (dann Hedge mit auflösen).",
-   "kurs": 181.79,
-   "wert": 484.25
+   "kurs": 181.665,
+   "wert": 483.97
   }
  ],
  "realisiert": -4.441568327054924,
@@ -457,7 +457,7 @@
  "funding": 0.0,
  "erstellt": 1793380123.8861866,
  "start_fx": 1.1156327353966788,
- "letzter_tick": 1793911492.1952155,
+ "letzter_tick": 1793912392.242131,
  "auftraege": [],
  "rebalancing": {
   "ziele": {

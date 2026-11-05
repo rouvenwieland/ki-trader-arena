@@ -89,8 +89,8 @@
    "entscheidung_id": "dfb065841",
    "index_eroeffnung": 77924.8,
    "invalidierung": "BTC-Index außerhalb 74.500–81.500 oder DVOL >48 (Regimewechsel)",
-   "kurs": 2768.9545519999997,
-   "wert": 2626.68
+   "kurs": 2776.8207199999997,
+   "wert": 2625.11
   },
   {
    "id": "p50344976",
@@ -118,8 +118,8 @@
    "entscheidung_id": "d0a6a4df7",
    "index_eroeffnung": 77924.8,
    "invalidierung": "BTC-Index über 81.500 oder unter 74.500, DVOL >48",
-   "kurs": 950.87725,
-   "wert": 2998.62
+   "kurs": 943.3582719999999,
+   "wert": 3000.13
   },
   {
    "id": "pd2738082",
@@ -141,8 +141,8 @@
    "ausstiegsplan": "Stop 730 (−5 %); Review bei Jobs 6.11. und Fed 9.12.; als Kern halten.",
    "entscheidung_id": "d3bcf0fda",
    "invalidierung": "SPY schließt unter 730 oder Fed-Hike-Odds >90 % mit Rendite-Schock.",
-   "kurs": 734.58,
-   "wert": 859.92
+   "kurs": 733.55,
+   "wert": 858.8
   },
   {
    "id": "pdc30d721",
@@ -184,6 +184,6 @@
  "funding": -0.6133053169464532,
  "erstellt": 1793319819.7411644,
  "start_fx": 1.1184885798616961,
- "letzter_tick": 1793911492.1952155,
+ "letzter_tick": 1793912392.242131,
  "auftraege": []
 }
