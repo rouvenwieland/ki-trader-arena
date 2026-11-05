@@ -22,8 +22,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "d3af64508",
-   "kurs": 377.52,
-   "wert": 1112.34
+   "kurs": 377.54,
+   "wert": 1112.4
   },
   {
    "id": "p5af391c8",
@@ -43,8 +43,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "d3af64508",
-   "kurs": 82.035,
-   "wert": 550.55
+   "kurs": 82.0,
+   "wert": 550.31
   },
   {
    "id": "p3e4bc435",
@@ -64,8 +64,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "d3af64508",
-   "kurs": 740.34,
-   "wert": 3172.99
+   "kurs": 741.16,
+   "wert": 3176.5
   },
   {
    "id": "pb315f18b",
@@ -85,8 +85,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "d3af64508",
-   "kurs": 76044.11499999999,
-   "wert": 2057.96
+   "kurs": 76089.775,
+   "wert": 2059.2
   },
   {
    "id": "paa2d9988",
@@ -197,8 +197,8 @@
    "ausstiegsplan": "Halten bis CLI-Abrechnung heute Abend; Binärwette.",
    "entscheidung_id": "d717a693b",
    "invalidierung": "NWS CLI Central Park meldet Tagesmaximum 70-71°F am 05.11.",
-   "kurs": 0.6950000000000001,
-   "wert": 86.36
+   "kurs": 0.675,
+   "wert": 83.82
   }
  ],
  "realisiert": -203.649,
@@ -206,7 +206,7 @@
  "funding": 0.0,
  "erstellt": 1793319819.7411644,
  "start_fx": 1.1184885798616961,
- "letzter_tick": 1793898715.924902,
+ "letzter_tick": 1793898893.1389,
  "rebalancing": {
   "ziele": {
    "stock:SPY": {

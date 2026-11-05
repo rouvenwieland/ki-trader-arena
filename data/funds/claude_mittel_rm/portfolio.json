@@ -295,8 +295,8 @@
    "ausstiegsplan": "Halten bis 28.11.; Verkauf bei Preis ≥0.60 (Gewinn) oder bei Invalidierung.",
    "entscheidung_id": "df7c39229",
    "invalidierung": "Mehrere seriöse Umfragen (TVBS, UDN, China Times) zeigen Chiang ≥6 Punkte vorn, oder Shen-Preis fällt <0.22.",
-   "kurs": 0.3215,
-   "wert": 115.81
+   "kurs": 0.322,
+   "wert": 116.92
   },
   {
    "id": "pea9d23a3",
@@ -316,8 +316,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "dd6456776",
-   "kurs": 740.34,
-   "wert": 2207.74
+   "kurs": 741.16,
+   "wert": 2210.19
   },
   {
    "id": "p1c64b37e",
@@ -337,8 +337,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "dd6456776",
-   "kurs": 76044.11499999999,
-   "wert": 1079.15
+   "kurs": 76089.775,
+   "wert": 1079.8
   },
   {
    "id": "p994b6370",
@@ -358,8 +358,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "dd6456776",
-   "kurs": 377.52,
-   "wert": 928.81
+   "kurs": 377.54,
+   "wert": 928.86
   },
   {
    "id": "p3b9e74b7",
@@ -448,8 +448,8 @@
    "ausstiegsplan": "Zusammen mit dem Apple/NVDA-Paar nach den NVDA-Earnings am 17.11. neu bewerten; Stop 172; Gewinnmitnahme bei 215, falls das Paar bis dahin aufgelöst ist.",
    "entscheidung_id": "d5ed9e039",
    "invalidierung": "NVDA schließt unter 172 (neues Jahrestief-Umfeld, Stop) oder das Marktkap-Paar wird verkauft (dann Hedge mit auflösen).",
-   "kurs": 185.115,
-   "wert": 493.1
+   "kurs": 185.45,
+   "wert": 494.0
   }
  ],
  "realisiert": -4.441568327054924,
@@ -457,7 +457,7 @@
  "funding": 0.0,
  "erstellt": 1793380123.8861866,
  "start_fx": 1.1156327353966788,
- "letzter_tick": 1793898715.924902,
+ "letzter_tick": 1793898893.1389,
  "auftraege": [],
  "rebalancing": {
   "ziele": {

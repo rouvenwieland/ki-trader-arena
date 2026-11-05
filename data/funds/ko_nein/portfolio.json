@@ -2,7 +2,7 @@
  "fonds_id": "ko_nein",
  "waehrung": "USD",
  "start_kapital": 11157.431109273288,
- "cash": 960.0562092732856,
+ "cash": 1309.0562092732857,
  "positionen": [
   {
    "id": "pe6781775",
@@ -193,7 +193,7 @@
    "gebuehren": 0.0,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.4555,
+   "kurs": 0.4545,
    "wert": 112.5
   },
   {
@@ -481,8 +481,8 @@
    "gebuehren": 0.0,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.25,
-   "wert": 44.39
+   "kurs": 0.245,
+   "wert": 42.46
   },
   {
    "id": "p9f764afd",
@@ -545,8 +545,8 @@
    "gebuehren": 1.96552,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.825,
-   "wert": 163.18
+   "kurs": 0.8200000000000001,
+   "wert": 161.19
   },
   {
    "id": "p4cd35a1d",
@@ -865,8 +865,8 @@
    "gebuehren": 4.65658,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.715,
-   "wert": 195.25
+   "kurs": 0.725,
+   "wert": 198.0
   },
   {
    "id": "pd183209f",
@@ -993,7 +993,7 @@
    "gebuehren": 3.5937,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.8200000000000001,
+   "kurs": 0.825,
    "wert": 290.4
   },
   {
@@ -1153,8 +1153,8 @@
    "gebuehren": 4.05345,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.745,
-   "wert": 318.94
+   "kurs": 0.74,
+   "wert": 314.63
   },
   {
    "id": "pbdd6cd9d",
@@ -1345,47 +1345,15 @@
    "gebuehren": 2.0848,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.6775,
-   "wert": 161.47
-  },
-  {
-   "id": "p19fb3a6e",
-   "inst": {
-    "id": "pm:polymarket:6389920:NEIN",
-    "art": "pm",
-    "venue": "polymarket",
-    "ergebnis": "NEIN",
-    "frage": "Will the price of Bitcoin be between $80,000 and $82,000 on November 5?",
-    "schliesst": 1793898000.0,
-    "ref": {
-     "id": "6389920",
-     "token_ja": "112234887454690818720938277708164686580339010404325186974356178217395311077641",
-     "token_nein": "69211231971991315301152655878781666280374669895164407900929708093362123611375",
-     "tick": 0.001,
-     "condition": "0x816caada31e60802e4fe1e4db5cc438492185ca8c77ed17dffa5973d4ce3fa4d",
-     "gebuehr_rate": 0.07,
-     "gebuehr_exp": 1.0
-    },
-    "url": "https://polymarket.com/event/will-the-price-of-bitcoin-be-between-80000-82000-on-november-5-2026"
-   },
-   "seite": "long",
-   "menge": 349.0,
-   "einstand": 0.462,
-   "hebel": 1.0,
-   "marge": 0.0,
-   "eroeffnet": 1793838022.0357883,
-   "gebuehren": 6.07222,
-   "funding": 0.0,
-   "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.999,
-   "wert": 348.65
+   "kurs": 0.678,
+   "wert": 161.95
   }
  ],
- "realisiert": -2840.7828500000005,
+ "realisiert": -2653.0208500000003,
  "gebuehren": 232.49113999999994,
  "funding": 0.0,
  "erstellt": 1793379225.5430336,
  "start_fx": 1.1157431109273288,
- "letzter_tick": 1793898715.924902,
+ "letzter_tick": 1793898893.1389,
  "kontrolle_bis": 1793891636.1539598
 }

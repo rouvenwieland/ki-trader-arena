@@ -2,7 +2,7 @@
  "fonds_id": "claude_vorsichtig",
  "waehrung": "USD",
  "start_kapital": 11184.88579861696,
- "cash": 5341.494198616979,
+ "cash": 5720.494198616979,
  "positionen": [
   {
    "id": "pca43f487",
@@ -120,8 +120,8 @@
    "ausstiegsplan": "Kern halten; Rebalancing-Regel (Schwelle 2 pp); Stop 690.",
    "entscheidung_id": "d74bf75cd",
    "invalidierung": "SPY schließt unter 690 (SMA200 deutlich gebrochen)",
-   "kurs": 740.34,
-   "wert": 1161.37
+   "kurs": 741.16,
+   "wert": 1162.66
   },
   {
    "id": "pbcdb744c",
@@ -143,8 +143,8 @@
    "ausstiegsplan": "Kern halten; Stop 91,5; Rebalancing bei Abweichung >5pp.",
    "entscheidung_id": "d50916521",
    "invalidierung": "AGG schließt unter 91,5 oder 10J-Rendite >5,3 %",
-   "kurs": 96.585,
-   "wert": 1553.98
+   "kurs": 96.548,
+   "wert": 1553.38
   },
   {
    "id": "pd1046bd9",
@@ -166,8 +166,8 @@
    "ausstiegsplan": "Halten; Stop 74.",
    "entscheidung_id": "d123eb847",
    "invalidierung": "10J-Rendite schließt über 5,3 % / TLT unter 74",
-   "kurs": 82.035,
-   "wert": 533.37
+   "kurs": 82.0,
+   "wert": 533.14
   },
   {
    "id": "pf1acd2e3",
@@ -189,8 +189,8 @@
    "ausstiegsplan": "Halten; Stop 340; Gewicht nicht über 5 % erhöhen.",
    "entscheidung_id": "dd43d0bdc",
    "invalidierung": "GLD unter 340 (neues Tief, ~-9 %)",
-   "kurs": 377.52,
-   "wert": 536.83
+   "kurs": 377.54,
+   "wert": 536.86
   },
   {
    "id": "pabe784cb",
@@ -212,50 +212,16 @@
    "ausstiegsplan": "Halten als Kern; Stop 96.",
    "entscheidung_id": "d269c21b5",
    "invalidierung": "EFA unter 96 (Bruch der Aufwärtstrendstruktur, ~-9 %)",
-   "kurs": 103.635,
-   "wert": 519.65
-  },
-  {
-   "id": "p0540b525",
-   "inst": {
-    "id": "pm:polymarket:6389959:NEIN",
-    "art": "pm",
-    "venue": "polymarket",
-    "ergebnis": "NEIN",
-    "frage": "Will the price of Bitcoin be above $78,000 on November 5?",
-    "schliesst": 1793898000.0,
-    "ref": {
-     "id": "6389959",
-     "token_ja": "15866995820682170670011540535653852433057325236171076172596716305022221626880",
-     "token_nein": "114433996655296970832030819324122475256673828835400234512833967281458543512921",
-     "tick": 0.001,
-     "condition": "0x26d14ca2724455adac1c0ba0374cd7eaee6404855730a49be3fe4e7563e4518c",
-     "gebuehr_rate": 0.07,
-     "gebuehr_exp": 1.0
-    },
-    "url": "https://polymarket.com/event/bitcoin-above-on-november-5-2026"
-   },
-   "seite": "long",
-   "menge": 379.0,
-   "einstand": 0.7784195250659631,
-   "hebel": 1.0,
-   "marge": 0.0,
-   "eroeffnet": 1793891836.6179054,
-   "gebuehren": 4.57596,
-   "funding": 0.0,
-   "ausstiegsplan": "Halten bis Abrechnung 17:00 UTC heute; kein vorzeitiger Verkauf (Spread zu breit).",
-   "entscheidung_id": "d3702da3a",
-   "invalidierung": "BTC (Binance/Coinbase) notiert vor 16:45 UTC über 77.800 – dann ist die These praktisch Münzwurf; Verlust akzeptiert, kein Nachkauf.",
-   "kurs": 0.999,
-   "wert": 378.62
+   "kurs": 103.75,
+   "wert": 520.22
   }
  ],
- "realisiert": -338.16950000000014,
+ "realisiert": -254.19050000000016,
  "gebuehren": 27.540399999999998,
  "funding": 0.0,
  "erstellt": 1793319819.7411644,
  "start_fx": 1.1184885798616961,
- "letzter_tick": 1793898715.924902,
+ "letzter_tick": 1793898893.1389,
  "auftraege": [],
  "rebalancing": {
   "ziele": {

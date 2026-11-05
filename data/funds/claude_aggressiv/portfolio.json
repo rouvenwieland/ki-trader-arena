@@ -2,7 +2,7 @@
  "fonds_id": "claude_aggressiv",
  "waehrung": "USD",
  "start_kapital": 11184.88579861696,
- "cash": 830.5636907856431,
+ "cash": 1421.563690785643,
  "positionen": [
   {
    "id": "p8d020f51",
@@ -89,8 +89,8 @@
    "entscheidung_id": "dfb065841",
    "index_eroeffnung": 77924.8,
    "invalidierung": "BTC-Index außerhalb 74.500–81.500 oder DVOL >48 (Regimewechsel)",
-   "kurs": 2822.2563600000003,
-   "wert": 2616.02
+   "kurs": 2793.0872640000002,
+   "wert": 2621.85
   },
   {
    "id": "p50344976",
@@ -118,8 +118,8 @@
    "entscheidung_id": "d0a6a4df7",
    "index_eroeffnung": 77924.8,
    "invalidierung": "BTC-Index über 81.500 oder unter 74.500, DVOL >48",
-   "kurs": 1011.75228,
-   "wert": 2986.45
+   "kurs": 1027.42992,
+   "wert": 2983.31
   },
   {
    "id": "pd2738082",
@@ -141,49 +141,15 @@
    "ausstiegsplan": "Stop 730 (−5 %); Review bei Jobs 6.11. und Fed 9.12.; als Kern halten.",
    "entscheidung_id": "d3bcf0fda",
    "invalidierung": "SPY schließt unter 730 oder Fed-Hike-Odds >90 % mit Rendite-Schock.",
-   "kurs": 740.34,
-   "wert": 866.66
-  },
-  {
-   "id": "p67246b2f",
-   "inst": {
-    "id": "pm:polymarket:6389959:NEIN",
-    "art": "pm",
-    "venue": "polymarket",
-    "ergebnis": "NEIN",
-    "frage": "Will the price of Bitcoin be above $78,000 on November 5?",
-    "schliesst": 1793898000.0,
-    "ref": {
-     "id": "6389959",
-     "token_ja": "15866995820682170670011540535653852433057325236171076172596716305022221626880",
-     "token_nein": "114433996655296970832030819324122475256673828835400234512833967281458543512921",
-     "tick": 0.001,
-     "condition": "0x26d14ca2724455adac1c0ba0374cd7eaee6404855730a49be3fe4e7563e4518c",
-     "gebuehr_rate": 0.07,
-     "gebuehr_exp": 1.0
-    },
-    "url": "https://polymarket.com/event/bitcoin-above-on-november-5-2026"
-   },
-   "seite": "long",
-   "menge": 591.0,
-   "einstand": 0.7823773265651438,
-   "hebel": 1.0,
-   "marge": 0.0,
-   "eroeffnet": 1793891812.213178,
-   "gebuehren": 7.04378,
-   "funding": 0.0,
-   "ausstiegsplan": "Halten bis Abrechnung 17:00 UTC; kein Nachkauf.",
-   "entscheidung_id": "d6162b96d",
-   "invalidierung": "BTC Binance > 77,8k vor 16:45 UTC",
-   "kurs": 0.999,
-   "wert": 590.41
+   "kurs": 741.16,
+   "wert": 867.62
   }
  ],
- "realisiert": -1494.9218097709936,
+ "realisiert": -1366.3068097709936,
  "gebuehren": 131.89168382902903,
  "funding": -0.6133053169464532,
  "erstellt": 1793319819.7411644,
  "start_fx": 1.1184885798616961,
- "letzter_tick": 1793898715.924902,
+ "letzter_tick": 1793898893.1389,
  "auftraege": []
 }
