@@ -2,7 +2,7 @@
  "fonds_id": "schwarm_alle",
  "waehrung": "USD",
  "start_kapital": 11157.431109273288,
- "cash": 10579.834249273286,
+ "cash": 10487.295179273286,
  "positionen": [
   {
    "id": "pafbfcf8d",
@@ -67,12 +67,44 @@
    "ausstiegsplan": "Halten bis zur Abrechnung (Schwarm-Regel)",
    "kurs": 0.225,
    "wert": 107.36
+  },
+  {
+   "id": "p51bf13b2",
+   "inst": {
+    "id": "pm:polymarket:6389921:NEIN",
+    "art": "pm",
+    "venue": "polymarket",
+    "ergebnis": "NEIN",
+    "frage": "Will the price of Ethereum be above $2,400 on November 5?",
+    "schliesst": 1793898000.0,
+    "ref": {
+     "id": "6389921",
+     "token_ja": "113035392114018723835304240318000980199434617009743391602682586008648347541719",
+     "token_nein": "64841978809848696652140425535782633248589349788239697948229053699315832037914",
+     "tick": 0.001,
+     "condition": "0x91939b8ad89002f2767be1a52340ad96b6cad68651925567a4e099cceb320813",
+     "gebuehr_rate": 0.07,
+     "gebuehr_exp": 1.0
+    },
+    "url": "https://polymarket.com/event/ethereum-above-on-november-5-2026"
+   },
+   "seite": "long",
+   "menge": 334.0,
+   "einstand": 0.26347904191616767,
+   "hebel": 1.0,
+   "marge": 0.0,
+   "eroeffnet": 1793874277.2505908,
+   "gebuehren": 4.53707,
+   "funding": 0.0,
+   "ausstiegsplan": "Halten bis zur Abrechnung (Schwarm-Regel)",
+   "kurs": 0.26,
+   "wert": 81.83
   }
  ],
  "realisiert": 123.06239999999994,
- "gebuehren": 28.72533,
+ "gebuehren": 33.2624,
  "funding": 0.0,
  "erstellt": 1793379225.5430336,
  "start_fx": 1.1157431109273288,
- "letzter_tick": 1793873376.6631782
+ "letzter_tick": 1793874277.2505908
 }
