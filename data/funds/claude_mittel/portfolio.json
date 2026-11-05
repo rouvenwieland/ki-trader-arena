@@ -159,8 +159,8 @@
    "ausstiegsplan": "Halten bis Abrechnung; Gewinn mitnehmen bei JA-Bid ≥0,52; Neubewertung nach NVDA-Zahlen.",
    "entscheidung_id": "dd384368f",
    "invalidierung": "NVDA schließt mehrere Tage ≥3 % über Apple-Marktkapitalisierung oder NVDA-Zahlen mit starker Guidance und Kurssprung.",
-   "kurs": 0.584,
-   "wert": 124.39
+   "kurs": 0.5734999999999999,
+   "wert": 124.17
   },
   {
    "id": "pf61ac065",
@@ -193,8 +193,8 @@
    "ausstiegsplan": "Halten bis Wahl 28.11.; Gewinn mitnehmen bei Bid ≥0.45; Neubewertung bei neuen unabhängigen Umfragen mit Chiang +6 oder mehr.",
    "entscheidung_id": "d97b032e4",
    "invalidierung": "Mehrere unabhängige Umfragen (TVBS, UDN, China Times) mit Chiang ≥ +6 oder Shen-Rückzug/Skandal.",
-   "kurs": 0.3455,
-   "wert": 255.3
+   "kurs": 0.3115,
+   "wert": 229.4
   },
   {
    "id": "pb60e44cc",
@@ -298,8 +298,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "d6e1a7002",
-   "kurs": 80740.805,
-   "wert": 1328.74
+   "kurs": 80637.255,
+   "wert": 1327.01
   },
   {
    "id": "pe3015b77",
@@ -319,8 +319,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "d6e1a7002",
-   "kurs": 2431.255,
-   "wert": 551.78
+   "kurs": 2427.6949999999997,
+   "wert": 550.95
   }
  ],
  "realisiert": -136.41177367275844,
@@ -328,7 +328,7 @@
  "funding": 0.0,
  "erstellt": 1793319819.7411644,
  "start_fx": 1.1184885798616961,
- "letzter_tick": 1793844443.147862,
+ "letzter_tick": 1793845343.0728624,
  "auftraege": [],
  "rebalancing": {
   "ziele": {
