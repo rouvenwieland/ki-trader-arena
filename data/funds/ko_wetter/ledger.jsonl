@@ -2405,3 +2405,33 @@
 {"ok": true, "ts": 1793893315.8142314, "aktion": "eroeffnet", "fonds_id": "ko_wetter", "position_id": "p44cad298", "inst_id": "pm:kalshi:KXHIGHNY-26NOV06-B67.5:NEIN", "seite": "long", "menge": 199.0, "preis": 0.6790452261306534, "gebuehr": 3.04, "nominal": 135.13000000000002, "hebel": 1.0, "tiefe_stufen": 11, "teilfuellung": false, "liq_preis": null, "entscheidung_id": null, "wetter": {"p_modell": 0.248, "kosten": 0.5872, "event": "KXHIGHNY-26NOV06"}}
 {"ok": true, "ts": 1793896916.0705423, "aktion": "eroeffnet", "fonds_id": "ko_wetter", "position_id": "p328c4893", "inst_id": "pm:kalshi:KXHIGHNY-26NOV05-B70.5:JA", "seite": "long", "menge": 494.0, "preis": 0.26164473684210526, "gebuehr": 6.69, "nominal": 129.2525, "hebel": 1.0, "tiefe_stufen": 8, "teilfuellung": false, "liq_preis": null, "entscheidung_id": null, "wetter": {"p_modell": 0.356, "kosten": 0.2321, "event": "KXHIGHNY-26NOV05"}}
 {"ok": true, "ts": 1793896916.0705423, "aktion": "eroeffnet", "fonds_id": "ko_wetter", "position_id": "p476b40e1", "inst_id": "pm:kalshi:KXHIGHNY-26NOV06-B69.5:JA", "seite": "long", "menge": 548.0, "preis": 0.15122262773722628, "gebuehr": 4.93, "nominal": 82.87, "hebel": 1.0, "tiefe_stufen": 6, "teilfuellung": false, "liq_preis": null, "entscheidung_id": null, "wetter": {"p_modell": 0.195, "kosten": 0.1274, "event": "KXHIGHNY-26NOV06"}}
+{"ok": false, "grund": "Themen-Cluster „wetter“ würde 27 % des Vermögens übersteigen (Limit 25 %)", "wetter": {"p_modell": 0.322, "kosten": 0.4875, "event": "KXHIGHNY-26NOV06"}}
+{"ok": false, "grund": "Themen-Cluster „wetter“ würde 27 % des Vermögens übersteigen (Limit 25 %)", "wetter": {"p_modell": 0.121, "kosten": 0.0214, "event": "KXHIGHNY-26NOV06"}}
+{"ok": false, "grund": "Themen-Cluster „wetter“ würde 27 % des Vermögens übersteigen (Limit 25 %)", "wetter": {"p_modell": 0.341, "kosten": 0.138, "event": "KXHIGHCHI-26NOV06"}}
+{"ok": false, "grund": "Themen-Cluster „wetter“ würde 27 % des Vermögens übersteigen (Limit 25 %)", "wetter": {"p_modell": 0.324, "kosten": 0.5971, "event": "KXHIGHCHI-26NOV06"}}
+{"ok": false, "grund": "Themen-Cluster „wetter“ würde 27 % des Vermögens übersteigen (Limit 25 %)", "wetter": {"p_modell": 0.235, "kosten": 0.6168, "event": "KXHIGHCHI-26NOV06"}}
+{"ok": false, "grund": "Themen-Cluster „wetter“ würde 27 % des Vermögens übersteigen (Limit 25 %)", "wetter": {"p_modell": 0.069, "kosten": 0.3045, "event": "KXHIGHMIA-26NOV05"}}
+{"ok": false, "grund": "Themen-Cluster „wetter“ würde 27 % des Vermögens übersteigen (Limit 25 %)", "wetter": {"p_modell": 0.326, "kosten": 0.0214, "event": "KXHIGHMIA-26NOV06"}}
+{"ok": false, "grund": "Themen-Cluster „wetter“ würde 27 % des Vermögens übersteigen (Limit 25 %)", "wetter": {"p_modell": 0.241, "kosten": 0.159, "event": "KXHIGHMIA-26NOV06"}}
+{"ok": false, "grund": "Themen-Cluster „wetter“ würde 27 % des Vermögens übersteigen (Limit 25 %)", "wetter": {"p_modell": 0.092, "kosten": 0.2735, "event": "KXHIGHMIA-26NOV06"}}
+{"ok": false, "grund": "Themen-Cluster „wetter“ würde 27 % des Vermögens übersteigen (Limit 25 %)", "wetter": {"p_modell": 0.017, "kosten": 0.9063, "event": "KXHIGHMIA-26NOV06"}}
+{"ok": false, "grund": "Themen-Cluster „wetter“ würde 27 % des Vermögens übersteigen (Limit 25 %)", "wetter": {"p_modell": 0.252, "kosten": 0.0427, "event": "KXHIGHAUS-26NOV05"}}
+{"ok": false, "grund": "Themen-Cluster „wetter“ würde 27 % des Vermögens übersteigen (Limit 25 %)", "wetter": {"p_modell": 0.155, "kosten": 0.7632, "event": "KXHIGHAUS-26NOV05"}}
+{"ok": false, "grund": "Themen-Cluster „wetter“ würde 27 % des Vermögens übersteigen (Limit 25 %)", "wetter": {"p_modell": 0.11, "kosten": 0.3455, "event": "KXHIGHAUS-26NOV05"}}
+{"ok": false, "grund": "Themen-Cluster „wetter“ würde 27 % des Vermögens übersteigen (Limit 25 %)", "wetter": {"p_modell": 0.276, "kosten": 0.0746, "event": "KXHIGHAUS-26NOV06"}}
+{"ok": false, "grund": "Themen-Cluster „wetter“ würde 27 % des Vermögens übersteigen (Limit 25 %)", "wetter": {"p_modell": 0.216, "kosten": 0.5674, "event": "KXHIGHAUS-26NOV06"}}
+{"ok": false, "grund": "Themen-Cluster „wetter“ würde 27 % des Vermögens übersteigen (Limit 25 %)", "wetter": {"p_modell": 0.129, "kosten": 0.7921, "event": "KXHIGHAUS-26NOV06"}}
+{"ok": false, "grund": "Themen-Cluster „wetter“ würde 27 % des Vermögens übersteigen (Limit 25 %)", "wetter": {"p_modell": 0.154, "kosten": 0.4371, "event": "KXHIGHLAX-26NOV05"}}
+{"ok": false, "grund": "Themen-Cluster „wetter“ würde 27 % des Vermögens übersteigen (Limit 25 %)", "wetter": {"p_modell": 0.205, "kosten": 0.7438, "event": "KXHIGHLAX-26NOV05"}}
+{"ok": false, "grund": "Themen-Cluster „wetter“ würde 27 % des Vermögens übersteigen (Limit 25 %)", "wetter": {"p_modell": 0.256, "kosten": 0.0214, "event": "KXHIGHLAX-26NOV05"}}
+{"ok": false, "grund": "Themen-Cluster „wetter“ würde 26 % des Vermögens übersteigen (Limit 25 %)", "wetter": {"p_modell": 0.076, "kosten": 0.0214, "event": "KXHIGHLAX-26NOV06"}}
+{"ok": false, "grund": "Themen-Cluster „wetter“ würde 27 % des Vermögens übersteigen (Limit 25 %)", "wetter": {"p_modell": 0.184, "kosten": 0.4674, "event": "KXHIGHLAX-26NOV06"}}
+{"ok": false, "grund": "Themen-Cluster „wetter“ würde 27 % des Vermögens übersteigen (Limit 25 %)", "wetter": {"p_modell": 0.345, "kosten": 0.064, "event": "KXHIGHLAX-26NOV06"}}
+{"ok": false, "grund": "Themen-Cluster „wetter“ würde 27 % des Vermögens übersteigen (Limit 25 %)", "wetter": {"p_modell": 0.259, "kosten": 0.0214, "event": "KXHIGHDEN-26NOV05"}}
+{"ok": false, "grund": "Themen-Cluster „wetter“ würde 27 % des Vermögens übersteigen (Limit 25 %)", "wetter": {"p_modell": 0.403, "kosten": 0.3147, "event": "KXHIGHDEN-26NOV05"}}
+{"ok": false, "grund": "Themen-Cluster „wetter“ würde 27 % des Vermögens übersteigen (Limit 25 %)", "wetter": {"p_modell": 0.224, "kosten": 0.4371, "event": "KXHIGHDEN-26NOV05"}}
+{"ok": false, "grund": "Themen-Cluster „wetter“ würde 27 % des Vermögens übersteigen (Limit 25 %)", "wetter": {"p_modell": 0.042, "kosten": 0.8969, "event": "KXHIGHDEN-26NOV05"}}
+{"ok": false, "grund": "Themen-Cluster „wetter“ würde 27 % des Vermögens übersteigen (Limit 25 %)", "wetter": {"p_modell": 0.13, "kosten": 0.0214, "event": "KXHIGHDEN-26NOV06"}}
+{"ok": false, "grund": "Themen-Cluster „wetter“ würde 27 % des Vermögens übersteigen (Limit 25 %)", "wetter": {"p_modell": 0.251, "kosten": 0.0534, "event": "KXHIGHDEN-26NOV06"}}
+{"ok": false, "grund": "Themen-Cluster „wetter“ würde 27 % des Vermögens übersteigen (Limit 25 %)", "wetter": {"p_modell": 0.213, "kosten": 0.5674, "event": "KXHIGHDEN-26NOV06"}}
+{"ok": false, "grund": "Themen-Cluster „wetter“ würde 27 % des Vermögens übersteigen (Limit 25 %)", "wetter": {"p_modell": 0.07, "kosten": 0.7921, "event": "KXHIGHDEN-26NOV06"}}

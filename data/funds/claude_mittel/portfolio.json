@@ -35,8 +35,8 @@
    "ausstiegsplan": "Halten; Gewinn mitnehmen, wenn NEIN ≥0.90 (JA ≤0.10) oder der Preis meine P erreicht. Neu bewerten, wenn Lisnard in Umfragen über 12 % steigt oder Philippe/Retailleau zurückziehen.",
    "entscheidung_id": "df10ef502",
    "invalidierung": "Lisnard in mehreren Umfragen ≥12 % im 1. Wahlgang oder Rückzug von Philippe/Retailleau zu seinen Gunsten.",
-   "kurs": 0.846,
-   "wert": 258.19
+   "kurs": 0.8514999999999999,
+   "wert": 261.26
   },
   {
    "id": "p842aa632",
@@ -125,7 +125,7 @@
    "ausstiegsplan": "Bis zur Abrechnung (Earnings ca. 17.–25.11.) halten; vorzeitig verkaufen, wenn Bid ≥0.92 oder bei Nachricht zu Margendruck.",
    "entscheidung_id": "df5b61ded",
    "invalidierung": "Meldung/Analystenkonsens zur Q3-Marge ≥75,0 % oder <73 %; Pre-Announcement zu Speicherkosten.",
-   "kurs": 0.8049999999999999,
+   "kurs": 0.8,
    "wert": 31.6
   },
   {
@@ -159,8 +159,8 @@
    "ausstiegsplan": "Bid ≥0.74 → Gewinn mitnehmen; nach NVDA-Earnings neu rechnen.",
    "entscheidung_id": "d1d050db4",
    "invalidierung": "Abstand <5 % in Marktkapitalisierung oder Apple-JA <0.50.",
-   "kurs": 0.6865,
-   "wert": 250.86
+   "kurs": 0.6875,
+   "wert": 251.6
   },
   {
    "id": "pf61ac065",
@@ -193,8 +193,8 @@
    "ausstiegsplan": "Halten bis 28.11.; Gewinn mitnehmen bei Bid ≥0.40.",
    "entscheidung_id": "dab131640",
    "invalidierung": "Mehrere unabhängige Umfragen Chiang ≥ +6 (inkl. UDN/SPRIT-Umkehr).",
-   "kurs": 0.3165,
-   "wert": 322.16
+   "kurs": 0.3155,
+   "wert": 320.11
   },
   {
    "id": "pb60e44cc",
@@ -214,8 +214,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "d6e1a7002",
-   "kurs": 739.49,
-   "wert": 1918.16
+   "kurs": 738.17,
+   "wert": 1914.73
   },
   {
    "id": "p5fe9ac51",
@@ -235,8 +235,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "d6e1a7002",
-   "kurs": 654.87,
-   "wert": 1044.05
+   "kurs": 653.33,
+   "wert": 1041.59
   },
   {
    "id": "p5106387a",
@@ -256,8 +256,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "d6e1a7002",
-   "kurs": 376.76,
-   "wert": 1120.5
+   "kurs": 376.128,
+   "wert": 1118.62
   },
   {
    "id": "p72af4e36",
@@ -277,8 +277,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "d6e1a7002",
-   "kurs": 96.59,
-   "wert": 1109.13
+   "kurs": 96.605,
+   "wert": 1109.31
   },
   {
    "id": "p3e7ff11c",
@@ -298,8 +298,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "d6e1a7002",
-   "kurs": 75807.965,
-   "wert": 1247.56
+   "kurs": 75789.79000000001,
+   "wert": 1247.25
   },
   {
    "id": "pe3015b77",
@@ -319,8 +319,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "d6e1a7002",
-   "kurs": 2248.395,
-   "wert": 510.28
+   "kurs": 2247.455,
+   "wert": 510.06
   },
   {
    "id": "p1ad6082a",
@@ -429,7 +429,7 @@
  "funding": 0.0,
  "erstellt": 1793319819.7411644,
  "start_fx": 1.1184885798616961,
- "letzter_tick": 1793899792.3322344,
+ "letzter_tick": 1793900692.4796984,
  "auftraege": [],
  "rebalancing": {
   "ziele": {
