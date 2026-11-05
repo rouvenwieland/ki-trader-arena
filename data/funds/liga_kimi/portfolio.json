@@ -22,8 +22,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "d3af64508",
-   "kurs": 376.795,
-   "wert": 1110.2
+   "kurs": 376.99,
+   "wert": 1110.77
   },
   {
    "id": "p5af391c8",
@@ -43,8 +43,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "d3af64508",
-   "kurs": 82.055,
-   "wert": 550.68
+   "kurs": 82.04,
+   "wert": 550.58
   },
   {
    "id": "p3e4bc435",
@@ -64,8 +64,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "d3af64508",
-   "kurs": 738.47,
-   "wert": 3164.97
+   "kurs": 739.86,
+   "wert": 3170.93
   },
   {
    "id": "pb315f18b",
@@ -85,8 +85,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "d3af64508",
-   "kurs": 76326.76000000001,
-   "wert": 2065.59
+   "kurs": 76196.57500000001,
+   "wert": 2062.09
   },
   {
    "id": "paa2d9988",
@@ -169,8 +169,8 @@
    "ausstiegsplan": "Halten bis CLI-Abrechnung heute Abend; Binärwette.",
    "entscheidung_id": "d414b1295",
    "invalidierung": "NWS CLI LAX meldet Tagesmaximum außerhalb 81-82°F am 05.11.",
-   "kurs": 0.02,
-   "wert": 5.77
+   "kurs": 0.03,
+   "wert": 11.54
   },
   {
    "id": "pff54b318",
@@ -197,8 +197,8 @@
    "ausstiegsplan": "Halten bis CLI-Abrechnung heute Abend; Binärwette.",
    "entscheidung_id": "d717a693b",
    "invalidierung": "NWS CLI Central Park meldet Tagesmaximum 70-71°F am 05.11.",
-   "kurs": 0.185,
-   "wert": 22.86
+   "kurs": 0.15000000000000002,
+   "wert": 16.51
   },
   {
    "id": "p5660ccba",
@@ -225,8 +225,8 @@
    "ausstiegsplan": "Halten bis CLI-Abrechnung am 06.11. (Binärwette). Verkauf nur, falls NWS-Meldung ein Maximum außerhalb 82-83°F vor 18 UTC bestätigt.",
    "entscheidung_id": "dbb0b25a6",
    "invalidierung": "NWS-Meldung eines Tagesmaximums außerhalb 82-83°F in Miami am 06.11. (CLI-Bericht)",
-   "kurs": 0.035,
-   "wert": 51.51
+   "kurs": 0.045,
+   "wert": 68.68
   }
  ],
  "realisiert": -203.649,
@@ -234,7 +234,7 @@
  "funding": 0.0,
  "erstellt": 1793319819.7411644,
  "start_fx": 1.1184885798616961,
- "letzter_tick": 1793907892.378385,
+ "letzter_tick": 1793908791.839995,
  "rebalancing": {
   "ziele": {
    "stock:SPY": {

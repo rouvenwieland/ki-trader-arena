@@ -32,8 +32,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Halten bis FOMC 9.12.; verkaufen wenn Preis <0.55 (These gebrochen, z.B. Friedensdeal + schwache Daten) oder >0.92.",
    "entscheidung_id": "dd6eba046",
-   "kurs": 0.665,
-   "wert": 1374.78
+   "kurs": 0.675,
+   "wert": 1395.61
   },
   {
    "id": "p442b828a",
@@ -89,8 +89,8 @@
    "entscheidung_id": "dfb065841",
    "index_eroeffnung": 77924.8,
    "invalidierung": "BTC-Index außerhalb 74.500–81.500 oder DVOL >48 (Regimewechsel)",
-   "kurs": 2610.545508,
-   "wert": 2658.36
+   "kurs": 2659.892332,
+   "wert": 2648.49
   },
   {
    "id": "p50344976",
@@ -118,8 +118,8 @@
    "entscheidung_id": "d0a6a4df7",
    "index_eroeffnung": 77924.8,
    "invalidierung": "BTC-Index über 81.500 oder unter 74.500, DVOL >48",
-   "kurs": 1061.011186,
-   "wert": 2976.6
+   "kurs": 990.7908399999999,
+   "wert": 2990.64
   },
   {
    "id": "pd2738082",
@@ -141,8 +141,8 @@
    "ausstiegsplan": "Stop 730 (−5 %); Review bei Jobs 6.11. und Fed 9.12.; als Kern halten.",
    "entscheidung_id": "d3bcf0fda",
    "invalidierung": "SPY schließt unter 730 oder Fed-Hike-Odds >90 % mit Rendite-Schock.",
-   "kurs": 738.47,
-   "wert": 864.47
+   "kurs": 739.86,
+   "wert": 866.1
   },
   {
    "id": "pdc30d721",
@@ -184,6 +184,6 @@
  "funding": -0.6133053169464532,
  "erstellt": 1793319819.7411644,
  "start_fx": 1.1184885798616961,
- "letzter_tick": 1793907892.378385,
+ "letzter_tick": 1793908791.839995,
  "auftraege": []
 }
