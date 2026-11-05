@@ -2,7 +2,7 @@
  "fonds_id": "claude_aggressiv",
  "waehrung": "USD",
  "start_kapital": 11184.88579861696,
- "cash": 1022.133410785643,
+ "cash": 1414.133410785643,
  "positionen": [
   {
    "id": "p8d020f51",
@@ -36,34 +36,6 @@
    "wert": 1312.29
   },
   {
-   "id": "p442b828a",
-   "inst": {
-    "id": "pm:manifold:9LOZtlsAyQ:NEIN",
-    "art": "pm",
-    "venue": "manifold",
-    "ergebnis": "NEIN",
-    "frage": "Will bitcoin reach 81000 by 10/31/2026 11:59pm",
-    "schliesst": 1793491080.0,
-    "ref": {
-     "id": "9LOZtlsAyQ"
-    },
-    "url": "https://manifold.markets/JoshMiller/will-bitcoin-reach-81000-by-1031202"
-   },
-   "seite": "long",
-   "menge": 392.0,
-   "einstand": 0.8924103182229047,
-   "hebel": 1.0,
-   "marge": 0.0,
-   "eroeffnet": 1793394825.9689782,
-   "gebuehren": 0.0,
-   "funding": 0.0,
-   "ausstiegsplan": "Halten bis Abrechnung 31.10. 23:59; verkaufen, falls BTC Binance >79.500 (NEIN-Preis dann stark gefallen).",
-   "entscheidung_id": "d6c69dd0f",
-   "invalidierung": "Binance BTC/USDT über 79.500 vor 31.10. 20:00 UTC",
-   "kurs": 0.990000022436599,
-   "wert": 388.08
-  },
-  {
    "id": "p7bb3dce1",
    "inst": {
     "id": "opt:BTC-13NOV26-78000-P",
@@ -89,8 +61,8 @@
    "entscheidung_id": "dfb065841",
    "index_eroeffnung": 77924.8,
    "invalidierung": "BTC-Index außerhalb 74.500–81.500 oder DVOL >48 (Regimewechsel)",
-   "kurs": 3293.15596,
-   "wert": 2521.84
+   "kurs": 3463.31194,
+   "wert": 2487.81
   },
   {
    "id": "p50344976",
@@ -118,8 +90,8 @@
    "entscheidung_id": "d0a6a4df7",
    "index_eroeffnung": 77924.8,
    "invalidierung": "BTC-Index über 81.500 oder unter 74.500, DVOL >48",
-   "kurs": 898.8200900000002,
-   "wert": 3009.04
+   "kurs": 835.712229,
+   "wert": 3021.66
   },
   {
    "id": "pd2738082",
@@ -179,11 +151,11 @@
    "wert": 393.12
   }
  ],
- "realisiert": -1366.3068097709936,
+ "realisiert": -1324.1316545143723,
  "gebuehren": 144.04546382902905,
  "funding": -0.6133053169464532,
  "erstellt": 1793319819.7411644,
  "start_fx": 1.1184885798616961,
- "letzter_tick": 1793919866.9502292,
+ "letzter_tick": 1793920766.9588187,
  "auftraege": []
 }

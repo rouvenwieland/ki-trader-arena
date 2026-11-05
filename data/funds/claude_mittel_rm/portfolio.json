@@ -69,8 +69,8 @@
    "ausstiegsplan": "Halten bis FOMC 9.12.; Verkauf, wenn NEIN-Preis ≥0.88 (Gewinn) oder CME-Hike-Odds unter 55% fallen.",
    "entscheidung_id": "d7e76abb3",
    "invalidierung": "CME FedWatch Dezember-Hike-Wahrscheinlichkeit fällt unter 55% oder Warsh/Fed-Mehrheit signalisiert Pause nach weicher CPI/Jobs-Zahl.",
-   "kurs": 0.665,
-   "wert": 270.6
+   "kurs": 0.655,
+   "wert": 266.5
   },
   {
    "id": "p8c871cfa",
@@ -227,8 +227,8 @@
    "ausstiegsplan": "Halten bis 30.11.; verkaufen, wenn BTC unter 64.000 fällt oder NEIN-Preis <0.88.",
    "entscheidung_id": "d7dbfc08f",
    "invalidierung": "BTC Binance unter 64.000 oder DVOL >60",
-   "kurs": 0.9315,
-   "wert": 291.09
+   "kurs": 0.9275,
+   "wert": 290.15
   },
   {
    "id": "pf805692b",
@@ -337,8 +337,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "dd6456776",
-   "kurs": 75494.025,
-   "wert": 1071.33
+   "kurs": 75274.83499999999,
+   "wert": 1068.24
   },
   {
    "id": "p994b6370",
@@ -457,7 +457,7 @@
  "funding": 0.0,
  "erstellt": 1793380123.8861866,
  "start_fx": 1.1156327353966788,
- "letzter_tick": 1793919866.9502292,
+ "letzter_tick": 1793920766.9588187,
  "auftraege": [],
  "rebalancing": {
   "ziele": {
