@@ -22,8 +22,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "d3af64508",
-   "kurs": 372.69,
-   "wert": 1098.11
+   "kurs": 372.58,
+   "wert": 1097.78
   },
   {
    "id": "p3e4bc435",
@@ -43,8 +43,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "d3af64508",
-   "kurs": 737.65,
-   "wert": 3161.46
+   "kurs": 737.265,
+   "wert": 3159.81
   },
   {
    "id": "pb315f18b",
@@ -64,8 +64,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "d3af64508",
-   "kurs": 75739.285,
-   "wert": 2049.71
+   "kurs": 75791.41500000001,
+   "wert": 2051.11
   },
   {
    "id": "p5660ccba",
@@ -120,8 +120,8 @@
    "ausstiegsplan": "Halten bis CLI-Abrechnung heute Abend (Binärwette, kein vorzeitiger Ausstieg). Verkauf nur falls NWS-Meldungen vor 18 UTC ein Max ≥75°F praktisch sicher machen.",
    "entscheidung_id": "d35c24618",
    "invalidierung": "NWS-Meldung eines Tagesmaximums außerhalb 73–74 °F in Austin am 06.11. (CLI-Bericht)",
-   "kurs": 0.595,
-   "wert": 46.61
+   "kurs": 0.295,
+   "wert": 22.91
   },
   {
    "id": "p5a2259b8",
@@ -181,8 +181,8 @@
    "ausstiegsplan": "Verkauf bei Wertverdopplung (BTC ~67–68k) oder Halten bis 25.12. Halbierung der Position, wenn BTC über 80k zurückkehrt (Theta-Bremse).",
    "entscheidung_id": "d0fe400cd",
    "invalidierung": "BTC schließt 3 Tage in Folge über 80k mit fallender realisierter Vola (Abwärtstrend gebrochen).",
-   "kurs": 2431.692486,
-   "wert": 596.56
+   "kurs": 2418.218099,
+   "wert": 596.97
   },
   {
    "id": "p5a6a2ac6",
@@ -202,8 +202,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "d3af64508",
-   "kurs": 81.945,
-   "wert": 526.96
+   "kurs": 81.966,
+   "wert": 527.1
   }
  ],
  "realisiert": -325.3413054666725,
@@ -211,7 +211,7 @@
  "funding": 0.0,
  "erstellt": 1793319819.7411644,
  "start_fx": 1.1184885798616961,
- "letzter_tick": 1793997111.0242221,
+ "letzter_tick": 1793998010.6825745,
  "rebalancing": {
   "ziele": {
    "stock:SPY": {
