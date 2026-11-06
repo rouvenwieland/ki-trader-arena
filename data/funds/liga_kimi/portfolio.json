@@ -85,8 +85,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "d3af64508",
-   "kurs": 75517.375,
-   "wert": 2043.71
+   "kurs": 75516.465,
+   "wert": 2043.68
   },
   {
    "id": "paa2d9988",
@@ -225,8 +225,8 @@
    "ausstiegsplan": "Halten bis CLI-Abrechnung am 06.11. (Binärwette). Verkauf nur, falls NWS-Meldung ein Maximum außerhalb 82-83°F vor 18 UTC bestätigt.",
    "entscheidung_id": "dbb0b25a6",
    "invalidierung": "NWS-Meldung eines Tagesmaximums außerhalb 82-83°F in Miami am 06.11. (CLI-Bericht)",
-   "kurs": 0.035,
-   "wert": 51.51
+   "kurs": 0.03,
+   "wert": 34.34
   },
   {
    "id": "pfd983386",
@@ -290,7 +290,7 @@
  "funding": 0.0,
  "erstellt": 1793319819.7411644,
  "start_fx": 1.1184885798616961,
- "letzter_tick": 1793942497.176149,
+ "letzter_tick": 1793943396.9051409,
  "rebalancing": {
   "ziele": {
    "stock:SPY": {
