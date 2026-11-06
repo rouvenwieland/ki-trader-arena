@@ -35,8 +35,8 @@
    "ausstiegsplan": "Halten; Gewinn mitnehmen, wenn NEIN ≥0.90 (JA ≤0.10) oder der Preis meine P erreicht. Neu bewerten, wenn Lisnard in Umfragen über 12 % steigt oder Philippe/Retailleau zurückziehen.",
    "entscheidung_id": "df10ef502",
    "invalidierung": "Lisnard in mehreren Umfragen ≥12 % im 1. Wahlgang oder Rückzug von Philippe/Retailleau zu seinen Gunsten.",
-   "kurs": 0.8534999999999999,
-   "wert": 261.87
+   "kurs": 0.8525,
+   "wert": 261.56
   },
   {
    "id": "p842aa632",
@@ -214,8 +214,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "d6e1a7002",
-   "kurs": 737.524,
-   "wert": 1913.06
+   "kurs": 738.03,
+   "wert": 1914.37
   },
   {
    "id": "p5fe9ac51",
@@ -235,8 +235,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "d6e1a7002",
-   "kurs": 658.32,
-   "wert": 1049.55
+   "kurs": 659.18,
+   "wert": 1050.92
   },
   {
    "id": "p5106387a",
@@ -256,8 +256,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "d6e1a7002",
-   "kurs": 372.29,
-   "wert": 1107.2
+   "kurs": 372.13,
+   "wert": 1106.73
   },
   {
    "id": "p72af4e36",
@@ -298,8 +298,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "d6e1a7002",
-   "kurs": 75644.63,
-   "wert": 1244.85
+   "kurs": 75813.795,
+   "wert": 1247.65
   },
   {
    "id": "pe3015b77",
@@ -319,8 +319,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "d6e1a7002",
-   "kurs": 2228.0699999999997,
-   "wert": 505.65
+   "kurs": 2233.335,
+   "wert": 506.86
   },
   {
    "id": "p1ad6082a",
@@ -420,8 +420,8 @@
    "ausstiegsplan": "Halten bis 30.11.; Verkauf bei NEIN-Bid ≥0.85 oder bei Ersatz-Meldung sofort.",
    "entscheidung_id": "df7939c88",
    "invalidierung": "Trump oder mehrere Quellen (Axios/CBS/NYT) melden Entscheidung zum Austausch; NEIN-Bid fällt unter 0.55.",
-   "kurs": 0.785,
-   "wert": 166.92
+   "kurs": 0.805,
+   "wert": 171.2
   },
   {
    "id": "pa0a2bdf6",
@@ -454,8 +454,8 @@
    "ausstiegsplan": "Bid ≥0,92 verkaufen; sonst bis Abrechnung/Touch halten.",
    "entscheidung_id": "d0bdb1295",
    "invalidierung": "ETH steigt über 2450 und DVOL fällt unter 45 – dann Touch-Wahrscheinlichkeit <0.8.",
-   "kurs": 0.885,
-   "wert": 121.44
+   "kurs": 0.875,
+   "wert": 120.06
   }
  ],
  "realisiert": -114.85177367275844,
@@ -463,7 +463,7 @@
  "funding": 0.0,
  "erstellt": 1793319819.7411644,
  "start_fx": 1.1184885798616961,
- "letzter_tick": 1793994410.4229147,
+ "letzter_tick": 1793995311.0198996,
  "auftraege": [],
  "rebalancing": {
   "ziele": {

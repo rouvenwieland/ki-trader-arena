@@ -89,8 +89,8 @@
    "ausstiegsplan": "Kern halten; Rebalancing-Regel (Schwelle 2 pp); Stop 690.",
    "entscheidung_id": "d74bf75cd",
    "invalidierung": "SPY schließt unter 690 (SMA200 deutlich gebrochen)",
-   "kurs": 737.524,
-   "wert": 1156.96
+   "kurs": 738.03,
+   "wert": 1157.75
   },
   {
    "id": "pbcdb744c",
@@ -135,8 +135,8 @@
    "ausstiegsplan": "Halten; Stop 74.",
    "entscheidung_id": "d123eb847",
    "invalidierung": "10J-Rendite schließt über 5,3 % / TLT unter 74",
-   "kurs": 82.005,
-   "wert": 533.18
+   "kurs": 81.973,
+   "wert": 532.97
   },
   {
    "id": "pf1acd2e3",
@@ -158,8 +158,8 @@
    "ausstiegsplan": "Halten; Stop 340; Gewicht nicht über 5 % erhöhen.",
    "entscheidung_id": "dd43d0bdc",
    "invalidierung": "GLD unter 340 (neues Tief, ~-9 %)",
-   "kurs": 372.29,
-   "wert": 529.4
+   "kurs": 372.13,
+   "wert": 529.17
   },
   {
    "id": "pabe784cb",
@@ -181,8 +181,8 @@
    "ausstiegsplan": "Halten als Kern; Stop 96.",
    "entscheidung_id": "d269c21b5",
    "invalidierung": "EFA unter 96 (Bruch der Aufwärtstrendstruktur, ~-9 %)",
-   "kurs": 101.93,
-   "wert": 511.1
+   "kurs": 101.92,
+   "wert": 511.05
   },
   {
    "id": "peb517515",
@@ -215,7 +215,7 @@
    "ausstiegsplan": "Halten bis Abrechnung 7.11.; Kleinstposition (6 USD).",
    "entscheidung_id": "dbc5bfa46",
    "invalidierung": "AAA-Preis für 7.11. unter 4,0500 (Abrechnung am 7.11. 10:00 ET) – bis dahin keine Neubewertung nötig; Einsatz ist Totalverlust-Risiko.",
-   "kurs": 0.034,
+   "kurs": 0.0385,
    "wert": 2.2
   }
  ],
@@ -224,7 +224,7 @@
  "funding": 0.0,
  "erstellt": 1793319819.7411644,
  "start_fx": 1.1184885798616961,
- "letzter_tick": 1793994410.4229147,
+ "letzter_tick": 1793995311.0198996,
  "auftraege": [],
  "rebalancing": {
   "ziele": {
