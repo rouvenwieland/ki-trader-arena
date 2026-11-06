@@ -85,8 +85,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "d3af64508",
-   "kurs": 75501.195,
-   "wert": 2043.27
+   "kurs": 75578.37,
+   "wert": 2045.33
   },
   {
    "id": "pb0b91e41",
@@ -141,8 +141,8 @@
    "ausstiegsplan": "Halten bis CLI-Abrechnung heute Abend (Binärwette, kein vorzeitiger Ausstieg). Verkauf nur falls NWS-Meldungen vor 18 UTC ein Max ≥84°F praktisch sicher machen.",
    "entscheidung_id": "dc3f507f6",
    "invalidierung": "NWS-Meldung eines Tagesmaximums außerhalb 82–83 °F in Miami am 06.11. (CLI-Bericht)",
-   "kurs": 0.015,
-   "wert": 17.25
+   "kurs": null,
+   "wert": 188.38
   },
   {
    "id": "pfd983386",
@@ -197,8 +197,8 @@
    "ausstiegsplan": "Halten bis CLI-Abrechnung heute Abend (Binärwette, kein vorzeitiger Ausstieg). Verkauf nur falls NWS-Meldungen vor 18 UTC ein Max ≥75°F praktisch sicher machen.",
    "entscheidung_id": "d35c24618",
    "invalidierung": "NWS-Meldung eines Tagesmaximums außerhalb 73–74 °F in Austin am 06.11. (CLI-Bericht)",
-   "kurs": 0.08,
-   "wert": 5.53
+   "kurs": 0.065,
+   "wert": 4.74
   }
  ],
  "realisiert": -308.44394143344715,
@@ -206,7 +206,7 @@
  "funding": 0.0,
  "erstellt": 1793319819.7411644,
  "start_fx": 1.1184885798616961,
- "letzter_tick": 1793974262.7958033,
+ "letzter_tick": 1793975162.9169133,
  "rebalancing": {
   "ziele": {
    "stock:SPY": {
