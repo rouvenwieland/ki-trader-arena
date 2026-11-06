@@ -1,11 +1,11 @@
 {
  "version": 1,
- "stand": 1793991831.2821379,
+ "stand": 1793992020.7571347,
  "hinweis": "Papierhandel-Simulation, keine Anlageberatung",
  "seite": "https://rouvenwieland.github.io/ki-trader-arena/",
  "budget": {
-  "heute_eur": 8.42,
-  "gesamt_eur": 77.86,
+  "heute_eur": 9.85,
+  "gesamt_eur": 79.29,
   "tagesdeckel_eur": 12.0,
   "gesamtdeckel_eur": 190.0,
   "claude_ende": "2026-11-14",
@@ -210,8 +210,8 @@
    "max_drawdown_pct": -2.33,
    "status": "aktiv",
    "modell": "claude-sonnet-5-5",
-   "kosten_heute_eur": 1.971,
-   "kosten_gesamt_eur": 18.001,
+   "kosten_heute_eur": 2.33,
+   "kosten_gesamt_eur": 18.36,
    "rendite_ki_pct": [
     -2.89,
     7.75
@@ -623,8 +623,8 @@
    "max_drawdown_pct": -6.34,
    "status": "aktiv",
    "modell": "claude-sonnet-5-5",
-   "kosten_heute_eur": 2.12,
-   "kosten_gesamt_eur": 19.788,
+   "kosten_heute_eur": 2.517,
+   "kosten_gesamt_eur": 20.185,
    "rendite_ki_pct": [
     -10.52,
     3.98
@@ -859,8 +859,8 @@
    "max_drawdown_pct": -6.05,
    "status": "aktiv",
    "modell": "claude-sonnet-5-5",
-   "kosten_heute_eur": 2.252,
-   "kosten_gesamt_eur": 19.763,
+   "kosten_heute_eur": 2.582,
+   "kosten_gesamt_eur": 20.092,
    "rendite_ki_pct": [
     -8.1,
     0.09
@@ -916,7 +916,7 @@
    "rendite_pct": -5.66,
    "equity_eur": 9467.49,
    "max_drawdown_pct": -7.75,
-   "status": "Fehler: Modellfehler: kimi-k3: keine Antwort (HTTP 429 {\"error\":{\"message\":\"Your account org-2249288c21c547a2b05f751b19b3dd2e / proj-687f6a41e95b4d2",
+   "status": "Fehler: Modellfehler: kimi-k3: HTTP 400 {\"error\":{\"code\":400,\"message\":\"The request was rejected because it was considered high risk\",\"param\":\"promp",
    "modell": "kimi-k3",
    "kosten_heute_eur": 0.0,
    "kosten_gesamt_eur": 0.0,
@@ -1036,8 +1036,8 @@
    "max_drawdown_pct": -24.83,
    "status": "aktiv",
    "modell": "claude-sonnet-5-5",
-   "kosten_heute_eur": 2.07,
-   "kosten_gesamt_eur": 19.735,
+   "kosten_heute_eur": 2.42,
+   "kosten_gesamt_eur": 20.086,
    "rendite_ki_pct": [
     -32.46,
     8.16
@@ -1218,6 +1218,20 @@
  ],
  "letzte_entscheidungen": [
   {
+   "ts": 1793991969.28844,
+   "fonds": "Claude Vorsichtig",
+   "instrument": "pm:polymarket:6749958:NEIN",
+   "aktion": "kaufen",
+   "zuversicht": 0.55
+  },
+  {
+   "ts": 1793991952.3719275,
+   "fonds": "DeepSeek",
+   "instrument": "stock:SMH",
+   "aktion": "kaufen",
+   "zuversicht": 0.55
+  },
+  {
    "ts": 1793985611.8976033,
    "fonds": "Claude Mittel",
    "instrument": "pm:polymarket:6507419:JA",
@@ -1258,20 +1272,6 @@
    "instrument": "pm:polymarket:1811265:JA",
    "aktion": "kaufen",
    "zuversicht": 0.55
-  },
-  {
-   "ts": 1793978288.7485507,
-   "fonds": "Kimi (Moonshot)",
-   "instrument": "pm:kalshi:KXHIGHAUS-26NOV06-T73:JA",
-   "aktion": "verkaufen",
-   "zuversicht": 0.7
-  },
-  {
-   "ts": 1793978226.142076,
-   "fonds": "Claude Mittel+RM (A/B)",
-   "instrument": "pm:polymarket:3580933:JA",
-   "aktion": "verkaufen",
-   "zuversicht": 0.65
   }
  ],
  "ereignisse": [

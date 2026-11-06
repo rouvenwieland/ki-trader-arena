@@ -138,5 +138,31 @@
   "seit": 1793977989.3394215,
   "entscheidung_id": "d7c1c1911"
  },
- "auftraege": []
+ "auftraege": [
+  {
+   "id": "a53788f",
+   "entscheidung_id": "d743e1d8d",
+   "inst": {
+    "id": "stock:SMH",
+    "art": "stock",
+    "venue": "yahoo",
+    "symbol": "SMH"
+   },
+   "aktion": "kaufen",
+   "typ": "limit",
+   "seite": "long",
+   "betrag_usd": 900,
+   "menge": null,
+   "hebel": 1.0,
+   "limit_preis": 456,
+   "stop_preis": null,
+   "stop_loss": 426,
+   "take_profit": 500,
+   "ausstiegsplan": "Take-Profit 500 (Rückeroberung Richtung SMA20), Stop 426 (unter 2σ-Tagesband). Bewertung nach 2-3 Tagen: wenn SMA20 nicht zurückerobert, raus.",
+   "invalidierung": "Tagesschluss unter 447 (heutiges Tief) ODER neuer Ausverkauf unter 440 – dann ist der Rebound gescheitert.",
+   "erstellt": 1793991952.374549,
+   "geprueft_bis": 1793991952.374549,
+   "gueltig_bis": 1794015352.374549
+  }
+ ]
 }
