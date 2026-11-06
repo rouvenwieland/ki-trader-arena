@@ -2,7 +2,7 @@
  "fonds_id": "claude_aggressiv",
  "waehrung": "USD",
  "start_kapital": 11184.88579861696,
- "cash": 5407.407602496667,
+ "cash": 1307.4076024966785,
  "positionen": [
   {
    "id": "p8d020f51",
@@ -32,8 +32,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Halten bis FOMC 9.12.; verkaufen wenn Preis <0.55 (These gebrochen, z.B. Friedensdeal + schwache Daten) oder >0.92.",
    "entscheidung_id": "dd6eba046",
-   "kurs": 0.775,
-   "wert": 1603.91
+   "kurs": 0.785,
+   "wert": 1624.74
   },
   {
    "id": "pd2738082",
@@ -44,19 +44,19 @@
     "symbol": "SPY"
    },
    "seite": "long",
-   "menge": 1.1707504624053595,
-   "einstand": 768.7376848443909,
+   "menge": 3.607551975278218,
+   "einstand": 748.4299653899693,
    "hebel": 1.0,
    "marge": 0.0,
    "eroeffnet": 1793819410.3072414,
    "gebuehren": 0.0,
    "funding": 0.0,
-   "stop_loss": 730,
-   "ausstiegsplan": "Stop 730 (−5 %); Review bei Jobs 6.11. und Fed 9.12.; als Kern halten.",
-   "entscheidung_id": "d3bcf0fda",
-   "invalidierung": "SPY schließt unter 730 oder Fed-Hike-Odds >90 % mit Rendite-Schock.",
-   "kurs": 733.0,
-   "wert": 858.16
+   "stop_loss": 700,
+   "ausstiegsplan": "Stop 700; Review nach CPI 10.11.",
+   "entscheidung_id": "d05f1cdc5",
+   "invalidierung": "SPY schließt unter 700",
+   "kurs": 738.52,
+   "wert": 2663.96
   },
   {
    "id": "pdc30d721",
@@ -89,8 +89,8 @@
    "ausstiegsplan": "Verkaufen bei Bid ≥0,80 oder BTC >86k Binance; sonst bis 31.12. halten.",
    "entscheidung_id": "d9dd07173",
    "invalidierung": "BTC steigt über 86.000 (Binance) mit sinkender DVOL <35 → Touch-Wahrscheinlichkeit <0,40, Position verkaufen.",
-   "kurs": 0.575,
-   "wert": 400.14
+   "kurs": 0.555,
+   "wert": 386.1
   },
   {
    "id": "p5701ae4c",
@@ -123,8 +123,8 @@
    "ausstiegsplan": "Halten bis Touch (sofortige Auflösung JA) oder 30.11.; Verkauf bei Bid ≥0,97.",
    "entscheidung_id": "dfa72a69d",
    "invalidierung": "BTC (Binance) schließt über 80k Tagesschluss mit DVOL <35 → P <0,75, dann verkaufen",
-   "kurs": 0.905,
-   "wert": 418.5
+   "kurs": 0.885,
+   "wert": 409.2
   },
   {
    "id": "p53b6ec63",
@@ -146,8 +146,54 @@
    "ausstiegsplan": "Stop 69.500; Teilverkauf bei 86k; Dip-Wetten gleichen Abwärtsrisiko teilweise aus.",
    "entscheidung_id": "de5e47324",
    "invalidierung": "Tagesschluss unter 69.500 oder Fed-Hike-Odds >90 %",
-   "kurs": 75578.37,
-   "wert": 1187.5
+   "kurs": 75803.37,
+   "wert": 1191.0
+  },
+  {
+   "id": "p9c4e61c2",
+   "inst": {
+    "id": "stock:GLD",
+    "art": "stock",
+    "venue": "yahoo",
+    "symbol": "GLD"
+   },
+   "seite": "long",
+   "menge": 4.059151112437117,
+   "einstand": 369.53539261054897,
+   "hebel": 1.0,
+   "marge": 0.0,
+   "eroeffnet": 1793976062.7620246,
+   "gebuehren": 0.0,
+   "funding": 0.0,
+   "stop_loss": 355,
+   "ausstiegsplan": "Stop 355; als Kern halten.",
+   "entscheidung_id": "def361d62",
+   "invalidierung": "GLD schließt unter 355",
+   "kurs": 369.45,
+   "wert": 1499.46
+  },
+  {
+   "id": "pe9dce5d9",
+   "inst": {
+    "id": "stock:AGG",
+    "art": "stock",
+    "venue": "yahoo",
+    "symbol": "AGG"
+   },
+   "seite": "long",
+   "menge": 8.295317527073616,
+   "einstand": 96.43994909043782,
+   "hebel": 1.0,
+   "marge": 0.0,
+   "eroeffnet": 1793976062.7620246,
+   "gebuehren": 0.0,
+   "funding": 0.0,
+   "stop_loss": 93,
+   "ausstiegsplan": "Stop 93; sonst als defensiver Kern halten, Review nach CPI 10.11. und FOMC 9.12.",
+   "entscheidung_id": "dd7ab6d3d",
+   "invalidierung": "AGG unter 93",
+   "kurs": 96.415,
+   "wert": 799.67
   }
  ],
  "realisiert": -1252.1951248033722,
@@ -155,82 +201,6 @@
  "funding": -0.6133053169464532,
  "erstellt": 1793319819.7411644,
  "start_fx": 1.1184885798616961,
- "letzter_tick": 1793975162.9169133,
- "auftraege": [
-  {
-   "id": "a9dfa4d",
-   "entscheidung_id": "def361d62",
-   "inst": {
-    "id": "stock:GLD",
-    "art": "stock",
-    "venue": "yahoo",
-    "symbol": "GLD"
-   },
-   "aktion": "kaufen",
-   "typ": "eroeffnung",
-   "seite": "long",
-   "betrag_usd": 1500,
-   "menge": null,
-   "hebel": 1.0,
-   "limit_preis": null,
-   "stop_preis": null,
-   "stop_loss": 355,
-   "take_profit": null,
-   "ausstiegsplan": "Stop 355; als Kern halten.",
-   "invalidierung": "GLD schließt unter 355",
-   "erstellt": 1793956451.5647843,
-   "geprueft_bis": 1793956451.5647843,
-   "gueltig_bis": 1793998800.0
-  },
-  {
-   "id": "a5fde82",
-   "entscheidung_id": "d05f1cdc5",
-   "inst": {
-    "id": "stock:SPY",
-    "art": "stock",
-    "venue": "yahoo",
-    "symbol": "SPY"
-   },
-   "aktion": "kaufen",
-   "typ": "eroeffnung",
-   "seite": "long",
-   "betrag_usd": 1800,
-   "menge": null,
-   "hebel": 1.0,
-   "limit_preis": null,
-   "stop_preis": null,
-   "stop_loss": 700,
-   "take_profit": null,
-   "ausstiegsplan": "Stop 700; Review nach CPI 10.11.",
-   "invalidierung": "SPY schließt unter 700",
-   "erstellt": 1793956452.5716848,
-   "geprueft_bis": 1793956452.5716848,
-   "gueltig_bis": 1793998800.0
-  },
-  {
-   "id": "abe9d4e",
-   "entscheidung_id": "dd7ab6d3d",
-   "inst": {
-    "id": "stock:AGG",
-    "art": "stock",
-    "venue": "yahoo",
-    "symbol": "AGG"
-   },
-   "aktion": "kaufen",
-   "typ": "eroeffnung",
-   "seite": "long",
-   "betrag_usd": 800,
-   "menge": null,
-   "hebel": 1.0,
-   "limit_preis": null,
-   "stop_preis": null,
-   "stop_loss": 93,
-   "take_profit": null,
-   "ausstiegsplan": "Stop 93; sonst als defensiver Kern halten, Review nach CPI 10.11. und FOMC 9.12.",
-   "invalidierung": "AGG unter 93",
-   "erstellt": 1793956461.1351628,
-   "geprueft_bis": 1793956461.1351628,
-   "gueltig_bis": 1793998800.0
-  }
- ]
+ "letzter_tick": 1793976062.7620246,
+ "auftraege": []
 }

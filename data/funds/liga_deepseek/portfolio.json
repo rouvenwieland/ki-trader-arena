@@ -2,7 +2,7 @@
  "fonds_id": "liga_deepseek",
  "waehrung": "USD",
  "start_kapital": 11184.88579861696,
- "cash": 3514.8048820254085,
+ "cash": 3132.835323303569,
  "positionen": [
   {
    "id": "p00666bfa",
@@ -13,17 +13,17 @@
     "symbol": "TLT"
    },
    "seite": "long",
-   "menge": 26.04770152956039,
-   "einstand": 81.71744782912927,
+   "menge": 30.719971962482234,
+   "einstand": 81.72277151159113,
    "hebel": 1.0,
    "marge": 0.0,
    "eroeffnet": 1793819896.6280587,
    "gebuehren": 0.0,
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
-   "entscheidung_id": "d8e5f296a",
-   "kurs": 81.93,
-   "wert": 2134.09
+   "entscheidung_id": "d2b5d529d",
+   "kurs": 81.735,
+   "wert": 2510.61
   },
   {
    "id": "p78a3c466",
@@ -43,8 +43,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "d8e5f296a",
-   "kurs": 375.49,
-   "wert": 858.74
+   "kurs": 369.45,
+   "wert": 844.81
   },
   {
    "id": "p3d319c8e",
@@ -64,8 +64,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "d8e5f296a",
-   "kurs": 75578.37,
-   "wert": 697.32
+   "kurs": 75803.37,
+   "wert": 699.38
   },
   {
    "id": "p9a8fa083",
@@ -85,8 +85,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "d8e5f296a",
-   "kurs": 733.0,
-   "wert": 3249.52
+   "kurs": 738.52,
+   "wert": 3273.64
   }
  ],
  "realisiert": -459.8499745640328,
@@ -94,7 +94,7 @@
  "funding": 0.0,
  "erstellt": 1793319819.7411644,
  "start_fx": 1.1184885798616961,
- "letzter_tick": 1793975162.9169133,
+ "letzter_tick": 1793976062.7620246,
  "rebalancing": {
   "ziele": {
    "stock:SPY": {

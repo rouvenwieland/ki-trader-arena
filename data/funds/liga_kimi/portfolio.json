@@ -22,8 +22,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "d3af64508",
-   "kurs": 375.49,
-   "wert": 1106.5
+   "kurs": 369.45,
+   "wert": 1088.56
   },
   {
    "id": "p5af391c8",
@@ -43,8 +43,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "d3af64508",
-   "kurs": 81.93,
-   "wert": 549.91
+   "kurs": 81.735,
+   "wert": 548.54
   },
   {
    "id": "p3e4bc435",
@@ -64,8 +64,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "d3af64508",
-   "kurs": 733.0,
-   "wert": 3141.86
+   "kurs": 738.52,
+   "wert": 3165.18
   },
   {
    "id": "pb315f18b",
@@ -85,8 +85,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "d3af64508",
-   "kurs": 75578.37,
-   "wert": 2045.33
+   "kurs": 75803.37,
+   "wert": 2051.38
   },
   {
    "id": "pb0b91e41",
@@ -169,8 +169,8 @@
    "ausstiegsplan": "Halten bis CLI-Abrechnung heute Abend (binär, kein Zwischenverkauf).",
    "entscheidung_id": "daf281f2c",
    "invalidierung": "NWS-Prognose-Update hebt Austin-Maximum auf ≥75 °F an (dann ist der Markt informiert und die Position wertlos).",
-   "kurs": 0.025,
-   "wert": 25.34
+   "kurs": 0.035,
+   "wert": 38.01
   },
   {
    "id": "p218402ab",
@@ -197,8 +197,8 @@
    "ausstiegsplan": "Halten bis CLI-Abrechnung heute Abend (Binärwette, kein vorzeitiger Ausstieg). Verkauf nur falls NWS-Meldungen vor 18 UTC ein Max ≥75°F praktisch sicher machen.",
    "entscheidung_id": "d35c24618",
    "invalidierung": "NWS-Meldung eines Tagesmaximums außerhalb 73–74 °F in Austin am 06.11. (CLI-Bericht)",
-   "kurs": 0.065,
-   "wert": 4.74
+   "kurs": 0.09,
+   "wert": 6.32
   }
  ],
  "realisiert": -308.44394143344715,
@@ -206,7 +206,7 @@
  "funding": 0.0,
  "erstellt": 1793319819.7411644,
  "start_fx": 1.1184885798616961,
- "letzter_tick": 1793975162.9169133,
+ "letzter_tick": 1793976062.7620246,
  "rebalancing": {
   "ziele": {
    "stock:SPY": {
