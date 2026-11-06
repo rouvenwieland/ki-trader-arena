@@ -89,8 +89,8 @@
    "ausstiegsplan": "Verkaufen bei Bid ≥0,80 oder BTC >86k Binance; sonst bis 31.12. halten.",
    "entscheidung_id": "d9dd07173",
    "invalidierung": "BTC steigt über 86.000 (Binance) mit sinkender DVOL <35 → Touch-Wahrscheinlichkeit <0,40, Position verkaufen.",
-   "kurs": 0.53,
-   "wert": 365.04
+   "kurs": 0.535,
+   "wert": 372.06
   },
   {
    "id": "p5701ae4c",
@@ -146,8 +146,8 @@
    "ausstiegsplan": "Stop 69.500; Teilverkauf bei 86k; Dip-Wetten gleichen Abwärtsrisiko teilweise aus.",
    "entscheidung_id": "de5e47324",
    "invalidierung": "Tagesschluss unter 69.500 oder Fed-Hike-Odds >90 %",
-   "kurs": 75985.555,
-   "wert": 1193.91
+   "kurs": 76005.705,
+   "wert": 1194.22
   }
  ],
  "realisiert": -1252.1951248033722,
@@ -155,7 +155,7 @@
  "funding": -0.6133053169464532,
  "erstellt": 1793319819.7411644,
  "start_fx": 1.1184885798616961,
- "letzter_tick": 1793964238.669642,
+ "letzter_tick": 1793965139.1826382,
  "auftraege": [
   {
    "id": "a9dfa4d",

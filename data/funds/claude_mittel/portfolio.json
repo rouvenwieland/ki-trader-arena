@@ -193,8 +193,8 @@
    "ausstiegsplan": "Halten bis 28.11.; Gewinn mitnehmen bei Bid ≥0.40.",
    "entscheidung_id": "dab131640",
    "invalidierung": "Mehrere unabhängige Umfragen Chiang ≥ +6 (inkl. UDN/SPRIT-Umkehr).",
-   "kurs": 0.3005,
-   "wert": 299.59
+   "kurs": 0.3,
+   "wert": 301.64
   },
   {
    "id": "pb60e44cc",
@@ -298,8 +298,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "d6e1a7002",
-   "kurs": 75985.555,
-   "wert": 1250.48
+   "kurs": 76005.705,
+   "wert": 1250.81
   },
   {
    "id": "pe3015b77",
@@ -319,8 +319,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "d6e1a7002",
-   "kurs": 2236.3050000000003,
-   "wert": 507.54
+   "kurs": 2238.4449999999997,
+   "wert": 508.02
   },
   {
    "id": "p1ad6082a",
@@ -429,7 +429,7 @@
  "funding": 0.0,
  "erstellt": 1793319819.7411644,
  "start_fx": 1.1184885798616961,
- "letzter_tick": 1793964238.669642,
+ "letzter_tick": 1793965139.1826382,
  "auftraege": [],
  "rebalancing": {
   "ziele": {
