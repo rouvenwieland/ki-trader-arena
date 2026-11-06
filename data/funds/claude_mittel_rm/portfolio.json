@@ -69,8 +69,8 @@
    "ausstiegsplan": "Halten bis FOMC 9.12.; Verkauf, wenn NEIN-Preis ≥0.88 (Gewinn) oder CME-Hike-Odds unter 55% fallen.",
    "entscheidung_id": "d7e76abb3",
    "invalidierung": "CME FedWatch Dezember-Hike-Wahrscheinlichkeit fällt unter 55% oder Warsh/Fed-Mehrheit signalisiert Pause nach weicher CPI/Jobs-Zahl.",
-   "kurs": 0.675,
-   "wert": 274.7
+   "kurs": 0.685,
+   "wert": 278.8
   },
   {
    "id": "p8c871cfa",
@@ -138,7 +138,7 @@
    "entscheidung_id": "d62d5f0db",
    "invalidierung": "NVDA übertrifft Apple-Marktkap nach Earnings um >5 % oder Apple-JA <0,25.",
    "kurs": 0.697,
-   "wert": 517.82
+   "wert": 517.08
   },
   {
    "id": "pa832233e",
@@ -227,8 +227,8 @@
    "ausstiegsplan": "Halten bis 30.11.; verkaufen, wenn BTC unter 64.000 fällt oder NEIN-Preis <0.88.",
    "entscheidung_id": "d7dbfc08f",
    "invalidierung": "BTC Binance unter 64.000 oder DVOL >60",
-   "kurs": 0.9335,
-   "wert": 292.03
+   "kurs": 0.9345000000000001,
+   "wert": 292.34
   },
   {
    "id": "pf805692b",
@@ -337,8 +337,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "dd6456776",
-   "kurs": 76215.17499999999,
-   "wert": 1081.58
+   "kurs": 76098.91500000001,
+   "wert": 1079.93
   },
   {
    "id": "p994b6370",
@@ -425,8 +425,8 @@
    "ausstiegsplan": "Halten bis Abrechnung 31.12.",
    "entscheidung_id": "de2fc5d7b",
    "invalidierung": "PredictIt-Bein nicht gefüllt: JA-Bein wieder verkaufen.",
-   "kurs": 0.425,
-   "wert": 84.0
+   "kurs": 0.415,
+   "wert": 82.0
   },
   {
    "id": "p93771887",
@@ -457,7 +457,7 @@
  "funding": 0.0,
  "erstellt": 1793380123.8861866,
  "start_fx": 1.1156327353966788,
- "letzter_tick": 1793925266.6752098,
+ "letzter_tick": 1793926167.0737317,
  "auftraege": [],
  "rebalancing": {
   "ziele": {
