@@ -2,7 +2,7 @@
  "fonds_id": "ko_nein",
  "waehrung": "USD",
  "start_kapital": 11157.431109273288,
- "cash": 974.4845892732858,
+ "cash": 1602.4845892732858,
  "positionen": [
   {
    "id": "pe6781775",
@@ -101,38 +101,6 @@
    "wert": 173.8
   },
   {
-   "id": "pfa54617a",
-   "inst": {
-    "id": "pm:polymarket:5211630:NEIN",
-    "art": "pm",
-    "venue": "polymarket",
-    "ergebnis": "NEIN",
-    "frage": "Will the US add at least 100k jobs in October?",
-    "schliesst": 1794027540.0,
-    "ref": {
-     "id": "5211630",
-     "token_ja": "30970751221156289545917767044786871592299627925057784021252894839510493562848",
-     "token_nein": "70826510418150115111353292496614848790727759050038378224242910996119140629314",
-     "tick": 0.01,
-     "condition": "0x314cc7078ca031e596700f6cca6f24c736f95a2ac17e07496c8cf8a3eeb4c573",
-     "gebuehr_rate": 0.0,
-     "gebuehr_exp": 1.0
-    },
-    "url": "https://polymarket.com/event/will-the-us-add-at-least-100k-jobs-in-october-2026"
-   },
-   "seite": "long",
-   "menge": 226.0,
-   "einstand": 0.74,
-   "hebel": 1.0,
-   "marge": 0.0,
-   "eroeffnet": 1793381923.768329,
-   "gebuehren": 0.0,
-   "funding": 0.0,
-   "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": null,
-   "wert": 167.24
-  },
-  {
    "id": "p722ad016",
    "inst": {
     "id": "pm:polymarket:682705:NEIN",
@@ -193,8 +161,8 @@
    "gebuehren": 0.0,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.331,
-   "wert": 81.25
+   "kurs": 0.328,
+   "wert": 81.5
   },
   {
    "id": "pe65b0b73",
@@ -325,38 +293,6 @@
    "wert": 167.28
   },
   {
-   "id": "p4c2af182",
-   "inst": {
-    "id": "pm:polymarket:5211628:NEIN",
-    "art": "pm",
-    "venue": "polymarket",
-    "ergebnis": "NEIN",
-    "frage": "Will the US add between 50k and 75k jobs in October?",
-    "schliesst": 1794027540.0,
-    "ref": {
-     "id": "5211628",
-     "token_ja": "17165722166763751634327708802510517908301751801740904424515509100822516747701",
-     "token_nein": "15433459311266154600630205271405901520192476375381098735252337426225142076516",
-     "tick": 0.01,
-     "condition": "0x06617a9ffacb27063103f45e1e074584361157d66f6b9c349d7f9819fa93c46c",
-     "gebuehr_rate": 0.0,
-     "gebuehr_exp": 1.0
-    },
-    "url": "https://polymarket.com/event/will-the-us-add-between-50k-and-75k-jobs-in-october-2026"
-   },
-   "seite": "long",
-   "menge": 186.0,
-   "einstand": 0.8966903225806452,
-   "hebel": 1.0,
-   "marge": 0.0,
-   "eroeffnet": 1793386423.7439072,
-   "gebuehren": 0.0,
-   "funding": 0.0,
-   "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.999,
-   "wert": 185.81
-  },
-  {
    "id": "p7e5c2e70",
    "inst": {
     "id": "pm:polymarket:1087309:NEIN",
@@ -417,8 +353,8 @@
    "gebuehren": 0.0,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.625,
-   "wert": 215.76
+   "kurs": 0.615,
+   "wert": 212.28
   },
   {
    "id": "p1f028824",
@@ -481,8 +417,8 @@
    "gebuehren": 0.0,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.46499999999999997,
-   "wert": 86.85
+   "kurs": 0.47,
+   "wert": 88.78
   },
   {
    "id": "p9f764afd",
@@ -577,8 +513,8 @@
    "gebuehren": 5.41501,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.435,
-   "wert": 133.3
+   "kurs": 0.425,
+   "wert": 130.2
   },
   {
    "id": "p21e9c816",
@@ -609,8 +545,8 @@
    "gebuehren": 1.85338,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.89,
-   "wert": 173.36
+   "kurs": 0.895,
+   "wert": 175.33
   },
   {
    "id": "p7f18532d",
@@ -643,38 +579,6 @@
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
    "kurs": 0.125,
    "wert": 187.44
-  },
-  {
-   "id": "p36f1eea5",
-   "inst": {
-    "id": "pm:polymarket:5211635:NEIN",
-    "art": "pm",
-    "venue": "polymarket",
-    "ergebnis": "NEIN",
-    "frage": "Will the October 2026 unemployment rate be 4.2%?",
-    "schliesst": 1793971800.0,
-    "ref": {
-     "id": "5211635",
-     "token_ja": "14002939885060320660132708210125898843357183534116075352919784214783439425013",
-     "token_nein": "77772738012334498906981054960063375160388835264572827120921747864333062389856",
-     "tick": 0.01,
-     "condition": "0x5661913d58d1ab6efcdd8ad3de389ae065328b8e7fa94df300b1b00df8117cf7",
-     "gebuehr_rate": 0.0,
-     "gebuehr_exp": 1.0
-    },
-    "url": "https://polymarket.com/event/will-the-october-2026-unemployment-rate-be-4pt2"
-   },
-   "seite": "long",
-   "menge": 266.0,
-   "einstand": 0.6288721804511278,
-   "hebel": 1.0,
-   "marge": 0.0,
-   "eroeffnet": 1793459808.0862007,
-   "gebuehren": 0.0,
-   "funding": 0.0,
-   "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.999,
-   "wert": 265.73
   },
   {
    "id": "pc0b8a31d",
@@ -865,8 +769,8 @@
    "gebuehren": 4.65658,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.765,
-   "wert": 209.0
+   "kurs": 0.775,
+   "wert": 211.75
   },
   {
    "id": "pd183209f",
@@ -897,8 +801,8 @@
    "gebuehren": 2.87438,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.86,
-   "wert": 186.15
+   "kurs": 0.865,
+   "wert": 188.34
   },
   {
    "id": "p54f0e36a",
@@ -1089,8 +993,8 @@
    "gebuehren": 0.95322,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.69,
-   "wert": 129.98
+   "kurs": 0.705,
+   "wert": 133.86
   },
   {
    "id": "pe85e8fb3",
@@ -1121,8 +1025,8 @@
    "gebuehren": 5.82112,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.978,
-   "wert": 1596.42
+   "kurs": 0.9775,
+   "wert": 1594.78
   },
   {
    "id": "pca00edbf",
@@ -1153,8 +1057,8 @@
    "gebuehren": 4.05345,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.64,
-   "wert": 271.53
+   "kurs": 0.67,
+   "wert": 284.46
   },
   {
    "id": "pbdd6cd9d",
@@ -1185,40 +1089,8 @@
    "gebuehren": 4.89529,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.0215,
+   "kurs": 0.022,
    "wert": 13.84
-  },
-  {
-   "id": "pa6a2b275",
-   "inst": {
-    "id": "pm:polymarket:5211624:NEIN",
-    "art": "pm",
-    "venue": "polymarket",
-    "ergebnis": "NEIN",
-    "frage": "Will the US lose more than 25k jobs in October?",
-    "schliesst": 1794027540.0,
-    "ref": {
-     "id": "5211624",
-     "token_ja": "70027036708813367189816383885344552226694999611319827996867988334368213127066",
-     "token_nein": "48699449657284447581573280153688461863639558581270884249258560891256670156051",
-     "tick": 0.001,
-     "condition": "0x81ff1edbcbe8b2453afb4cac6dafba23cf6661f73d5f5539b2e925b2a700fca5",
-     "gebuehr_rate": 0.05,
-     "gebuehr_exp": 1.0
-    },
-    "url": "https://polymarket.com/event/will-the-us-lose-more-than-25k-jobs-in-october-2026"
-   },
-   "seite": "long",
-   "menge": 176.0,
-   "einstand": 0.9432548863636363,
-   "hebel": 1.0,
-   "marge": 0.0,
-   "eroeffnet": 1793783601.6672945,
-   "gebuehren": 0.47102,
-   "funding": 0.0,
-   "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.999,
-   "wert": 175.82
   },
   {
    "id": "p0abe393e",
@@ -1377,15 +1249,15 @@
    "gebuehren": 0.0,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.051500000000000004,
-   "wert": 140.48
+   "kurs": 0.05,
+   "wert": 137.62
   }
  ],
- "realisiert": -2811.1380500000005,
+ "realisiert": -2850.4553100000003,
  "gebuehren": 241.62555999999995,
  "funding": 0.0,
  "erstellt": 1793379225.5430336,
  "start_fx": 1.1157431109273288,
- "letzter_tick": 1793978817.3588672,
+ "letzter_tick": 1793979717.2242706,
  "kontrolle_bis": 1793977989.3394215
 }

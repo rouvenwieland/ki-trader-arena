@@ -2,39 +2,8 @@
  "fonds_id": "claude_vorsichtig",
  "waehrung": "USD",
  "start_kapital": 11184.88579861696,
- "cash": 5720.494198616979,
+ "cash": 6173.494198616979,
  "positionen": [
-  {
-   "id": "pca43f487",
-   "inst": {
-    "id": "pm:polymarket:5211628:NEIN",
-    "art": "pm",
-    "venue": "polymarket",
-    "ergebnis": "NEIN",
-    "frage": "Will the US add between 50k and 75k jobs in October?",
-    "schliesst": 1794027540.0,
-    "ref": {
-     "id": "5211628",
-     "token_ja": "17165722166763751634327708802510517908301751801740904424515509100822516747701",
-     "token_nein": "15433459311266154600630205271405901520192476375381098735252337426225142076516",
-     "tick": 0.01,
-     "gebuehr_rate": 0.0
-    },
-    "url": "https://polymarket.com/event/will-the-us-add-between-50k-and-75k-jobs-in-october-2026"
-   },
-   "seite": "long",
-   "menge": 453.0,
-   "einstand": 0.7722075055187638,
-   "hebel": 1.0,
-   "marge": 0.0,
-   "eroeffnet": 1793365841.617447,
-   "gebuehren": 0.0,
-   "funding": 0.0,
-   "ausstiegsplan": "Halten bis Abrechnung 6.11. (NFP 8:30 ET). Vorzeitiger Verkauf, falls NEIN-Bid >0,90 (z. B. nach ADP am 4.11.), oder falls neue Konsensdaten eine sehr enge Verteilung um 50–75k nahelegen.",
-   "entscheidung_id": "d7a8a9cbe",
-   "kurs": 0.999,
-   "wert": 452.55
-  },
   {
    "id": "pbb7d9e16",
    "inst": {
@@ -120,8 +89,8 @@
    "ausstiegsplan": "Kern halten; Rebalancing-Regel (Schwelle 2 pp); Stop 690.",
    "entscheidung_id": "d74bf75cd",
    "invalidierung": "SPY schließt unter 690 (SMA200 deutlich gebrochen)",
-   "kurs": 740.54,
-   "wert": 1161.69
+   "kurs": 737.8,
+   "wert": 1157.39
   },
   {
    "id": "pbcdb744c",
@@ -143,8 +112,8 @@
    "ausstiegsplan": "Kern halten; Stop 91,5; Rebalancing bei Abweichung >5pp.",
    "entscheidung_id": "d50916521",
    "invalidierung": "AGG schließt unter 91,5 oder 10J-Rendite >5,3 %",
-   "kurs": 96.48,
-   "wert": 1552.28
+   "kurs": 96.52,
+   "wert": 1552.93
   },
   {
    "id": "pd1046bd9",
@@ -166,8 +135,8 @@
    "ausstiegsplan": "Halten; Stop 74.",
    "entscheidung_id": "d123eb847",
    "invalidierung": "10J-Rendite schließt über 5,3 % / TLT unter 74",
-   "kurs": 81.92,
-   "wert": 532.62
+   "kurs": 82.025,
+   "wert": 533.31
   },
   {
    "id": "pf1acd2e3",
@@ -189,8 +158,8 @@
    "ausstiegsplan": "Halten; Stop 340; Gewicht nicht über 5 % erhöhen.",
    "entscheidung_id": "dd43d0bdc",
    "invalidierung": "GLD unter 340 (neues Tief, ~-9 %)",
-   "kurs": 371.315,
-   "wert": 528.01
+   "kurs": 371.0,
+   "wert": 527.56
   },
   {
    "id": "pabe784cb",
@@ -212,16 +181,16 @@
    "ausstiegsplan": "Halten als Kern; Stop 96.",
    "entscheidung_id": "d269c21b5",
    "invalidierung": "EFA unter 96 (Bruch der Aufwärtstrendstruktur, ~-9 %)",
-   "kurs": 102.28,
-   "wert": 512.85
+   "kurs": 102.04,
+   "wert": 511.65
   }
  ],
- "realisiert": -254.19050000000016,
+ "realisiert": -151.00050000000016,
  "gebuehren": 27.540399999999998,
  "funding": 0.0,
  "erstellt": 1793319819.7411644,
  "start_fx": 1.1184885798616961,
- "letzter_tick": 1793978817.3588672,
+ "letzter_tick": 1793979717.2242706,
  "auftraege": [],
  "rebalancing": {
   "ziele": {
