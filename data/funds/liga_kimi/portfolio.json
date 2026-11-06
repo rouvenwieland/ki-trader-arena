@@ -2,7 +2,7 @@
  "fonds_id": "liga_kimi",
  "waehrung": "USD",
  "start_kapital": 11184.88579861696,
- "cash": 3105.0806031371635,
+ "cash": 2578.108037318062,
  "positionen": [
   {
    "id": "p0b5ac550",
@@ -22,8 +22,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "d3af64508",
-   "kurs": 371.335,
-   "wert": 1094.11
+   "kurs": 371.315,
+   "wert": 1094.05
   },
   {
    "id": "p3e4bc435",
@@ -43,8 +43,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "d3af64508",
-   "kurs": 739.63,
-   "wert": 3169.94
+   "kurs": 740.54,
+   "wert": 3173.84
   },
   {
    "id": "pb315f18b",
@@ -64,8 +64,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "d3af64508",
-   "kurs": 75141.16500000001,
-   "wert": 2033.52
+   "kurs": 75584.79999999999,
+   "wert": 2045.5
   },
   {
    "id": "p5660ccba",
@@ -120,8 +120,8 @@
    "ausstiegsplan": "Halten bis CLI-Abrechnung heute Abend (Binärwette, kein vorzeitiger Ausstieg). Verkauf nur falls NWS-Meldungen vor 18 UTC ein Max ≥75°F praktisch sicher machen.",
    "entscheidung_id": "d35c24618",
    "invalidierung": "NWS-Meldung eines Tagesmaximums außerhalb 73–74 °F in Austin am 06.11. (CLI-Bericht)",
-   "kurs": 0.275,
-   "wert": 21.33
+   "kurs": 0.295,
+   "wert": 22.91
   },
   {
    "id": "p5a2259b8",
@@ -153,7 +153,9 @@
    "funding": 0.0,
    "ausstiegsplan": "Halten bis 31.12. oder verkaufen bei JA ≥65¢ (Halbzeit-Hoch). Teilverkauf bei klarer Stabilisierung des Weißen Hauses hinter Hegseth.",
    "entscheidung_id": "db3939865",
-   "invalidierung": "Konkrete, glaubwürdige Meldung, dass Hegseth explizit bestätigt bleibt (z. B. WH-Terminplan bis Q1 2027) oder Beruhigung der Berichterstattung über ≥2 Wochen."
+   "invalidierung": "Konkrete, glaubwürdige Meldung, dass Hegseth explizit bestätigt bleibt (z. B. WH-Terminplan bis Q1 2027) oder Beruhigung der Berichterstattung über ≥2 Wochen.",
+   "kurs": 0.415,
+   "wert": 286.18
   },
   {
    "id": "p2d9f604d",
@@ -178,7 +180,30 @@
    "funding": 0.0,
    "ausstiegsplan": "Verkauf bei Wertverdopplung (BTC ~67–68k) oder Halten bis 25.12. Halbierung der Position, wenn BTC über 80k zurückkehrt (Theta-Bremse).",
    "entscheidung_id": "d0fe400cd",
-   "invalidierung": "BTC schließt 3 Tage in Folge über 80k mit fallender realisierter Vola (Abwärtstrend gebrochen)."
+   "invalidierung": "BTC schließt 3 Tage in Folge über 80k mit fallender realisierter Vola (Abwärtstrend gebrochen).",
+   "kurs": 2509.133492,
+   "wert": 623.5
+  },
+  {
+   "id": "p5a6a2ac6",
+   "inst": {
+    "id": "stock:TLT",
+    "art": "stock",
+    "venue": "yahoo",
+    "symbol": "TLT"
+   },
+   "seite": "long",
+   "menge": 6.431398156221067,
+   "einstand": 81.93748124727173,
+   "hebel": 1.0,
+   "marge": 0.0,
+   "eroeffnet": 1793978817.3588672,
+   "gebuehren": 0.0,
+   "funding": 0.0,
+   "ausstiegsplan": "Rebalancing-Regel",
+   "entscheidung_id": "d3af64508",
+   "kurs": 81.92,
+   "wert": 526.8
   }
  ],
  "realisiert": -325.3413054666725,
@@ -186,7 +211,7 @@
  "funding": 0.0,
  "erstellt": 1793319819.7411644,
  "start_fx": 1.1184885798616961,
- "letzter_tick": 1793977863.0834973,
+ "letzter_tick": 1793978817.3588672,
  "rebalancing": {
   "ziele": {
    "stock:SPY": {
