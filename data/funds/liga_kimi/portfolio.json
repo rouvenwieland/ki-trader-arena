@@ -85,8 +85,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "d3af64508",
-   "kurs": 76054.095,
-   "wert": 2058.23
+   "kurs": 76000.16500000001,
+   "wert": 2056.77
   },
   {
    "id": "paa2d9988",
@@ -253,8 +253,8 @@
    "ausstiegsplan": "Halten bis CLI-Abrechnung heute Abend (binär, kein Zwischenverkauf).",
    "entscheidung_id": "daf281f2c",
    "invalidierung": "NWS-Prognose-Update hebt Austin-Maximum auf ≥75 °F an (dann ist der Markt informiert und die Position wertlos).",
-   "kurs": 0.02,
-   "wert": 12.67
+   "kurs": 0.025,
+   "wert": 25.34
   },
   {
    "id": "p218402ab",
@@ -290,7 +290,7 @@
  "funding": 0.0,
  "erstellt": 1793319819.7411644,
  "start_fx": 1.1184885798616961,
- "letzter_tick": 1793962439.0095758,
+ "letzter_tick": 1793963338.986922,
  "rebalancing": {
   "ziele": {
    "stock:SPY": {
