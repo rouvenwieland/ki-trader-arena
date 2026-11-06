@@ -2,7 +2,7 @@
  "fonds_id": "liga_kimi",
  "waehrung": "USD",
  "start_kapital": 11184.88579861696,
- "cash": 3395.47926785258,
+ "cash": 3105.0806031371635,
  "positionen": [
   {
    "id": "p0b5ac550",
@@ -24,27 +24,6 @@
    "entscheidung_id": "d3af64508",
    "kurs": 371.335,
    "wert": 1094.11
-  },
-  {
-   "id": "p5af391c8",
-   "inst": {
-    "id": "stock:TLT",
-    "art": "stock",
-    "venue": "yahoo",
-    "symbol": "TLT"
-   },
-   "seite": "long",
-   "menge": 6.711907512575253,
-   "einstand": 81.71744782912927,
-   "hebel": 1.0,
-   "marge": 0.0,
-   "eroeffnet": 1793819896.6280587,
-   "gebuehren": 0.0,
-   "funding": 0.0,
-   "ausstiegsplan": "Rebalancing-Regel",
-   "entscheidung_id": "d3af64508",
-   "kurs": 81.93,
-   "wert": 549.84
   },
   {
    "id": "p3e4bc435",
@@ -117,34 +96,6 @@
    "wert": 188.38
   },
   {
-   "id": "pfd983386",
-   "inst": {
-    "id": "pm:kalshi:KXHIGHAUS-26NOV06-T73:JA",
-    "art": "pm",
-    "venue": "kalshi",
-    "ergebnis": "JA",
-    "frage": "Will the maximum temperature be <73° on Nov 6, 2026? [72° or below]",
-    "schliesst": 1794034800.0,
-    "ref": {
-     "ticker": "KXHIGHAUS-26NOV06-T73"
-    },
-    "url": "https://kalshi.com/markets/KXHIGHAUS-26NOV06"
-   },
-   "seite": "long",
-   "menge": 1267.0,
-   "einstand": 0.07411207576953434,
-   "hebel": 1.0,
-   "marge": 0.0,
-   "eroeffnet": 1793923916.3879228,
-   "gebuehren": 6.09,
-   "funding": 0.0,
-   "ausstiegsplan": "Halten bis CLI-Abrechnung heute Abend (binär, kein Zwischenverkauf).",
-   "entscheidung_id": "daf281f2c",
-   "invalidierung": "NWS-Prognose-Update hebt Austin-Maximum auf ≥75 °F an (dann ist der Markt informiert und die Position wertlos).",
-   "kurs": 0.11499999999999999,
-   "wert": 139.37
-  },
-  {
    "id": "p218402ab",
    "inst": {
     "id": "pm:kalshi:KXHIGHAUS-26NOV06-B73.5:JA",
@@ -171,10 +122,67 @@
    "invalidierung": "NWS-Meldung eines Tagesmaximums außerhalb 73–74 °F in Austin am 06.11. (CLI-Bericht)",
    "kurs": 0.275,
    "wert": 21.33
+  },
+  {
+   "id": "p5a2259b8",
+   "inst": {
+    "id": "pm:polymarket:1811265:JA",
+    "art": "pm",
+    "venue": "polymarket",
+    "ergebnis": "JA",
+    "frage": "Pete Hegseth out as Secretary of Defense by December 31?",
+    "schliesst": 1798779540.0,
+    "ref": {
+     "id": "1811265",
+     "token_ja": "21275820052009278915970165572803516066396758597545413537036789986793691057073",
+     "token_nein": "39839649379979262874224474703228993451530996696316314037781119946088999891171",
+     "tick": 0.01,
+     "condition": "0x0fcfcfc35d71424c0693c717d2e3bc9b8992910835d124d80cd2f01498f1d3dc",
+     "gebuehr_rate": 0.04,
+     "gebuehr_exp": 1.0
+    },
+    "url": "https://polymarket.com/event/pete-hegseth-out-as-secretary-of-defense-by-december-31"
+   },
+   "seite": "long",
+   "menge": 698.0,
+   "einstand": 0.41999999999999993,
+   "hebel": 1.0,
+   "marge": 0.0,
+   "eroeffnet": 1793978486.9631338,
+   "gebuehren": 6.80131,
+   "funding": 0.0,
+   "ausstiegsplan": "Halten bis 31.12. oder verkaufen bei JA ≥65¢ (Halbzeit-Hoch). Teilverkauf bei klarer Stabilisierung des Weißen Hauses hinter Hegseth.",
+   "entscheidung_id": "db3939865",
+   "invalidierung": "Konkrete, glaubwürdige Meldung, dass Hegseth explizit bestätigt bleibt (z. B. WH-Terminplan bis Q1 2027) oder Beruhigung der Berichterstattung über ≥2 Wochen."
+  },
+  {
+   "id": "p2d9f604d",
+   "inst": {
+    "id": "opt:BTC-25DEC26-72000-P",
+    "art": "option",
+    "venue": "deribit",
+    "symbol": "BTC-25DEC26-72000-P",
+    "basis": "BTC",
+    "verfall": 1798185600.0,
+    "strike": 72000.0,
+    "typ": "P",
+    "schliesst": 1798185600.0
+   },
+   "seite": "long",
+   "menge": 0.25,
+   "einstand": 2572.3254557,
+   "hebel": 1.0,
+   "marge": 0.0,
+   "eroeffnet": 1793978487.1308074,
+   "gebuehren": 5.66857875,
+   "funding": 0.0,
+   "ausstiegsplan": "Verkauf bei Wertverdopplung (BTC ~67–68k) oder Halten bis 25.12. Halbierung der Position, wenn BTC über 80k zurückkehrt (Theta-Bremse).",
+   "entscheidung_id": "d0fe400cd",
+   "invalidierung": "BTC schließt 3 Tage in Folge über 80k mit fallender realisierter Vola (Abwärtstrend gebrochen)."
   }
  ],
- "realisiert": -341.27394143344713,
- "gebuehren": 57.07636565591361,
+ "realisiert": -325.3413054666725,
+ "gebuehren": 76.92625440591361,
  "funding": 0.0,
  "erstellt": 1793319819.7411644,
  "start_fx": 1.1184885798616961,

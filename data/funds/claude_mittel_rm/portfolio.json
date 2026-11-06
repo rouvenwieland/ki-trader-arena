@@ -2,7 +2,7 @@
  "fonds_id": "claude_mittel_rm",
  "waehrung": "USD",
  "start_kapital": 11156.327353966788,
- "cash": 2695.5805711215908,
+ "cash": 2799.145061121591,
  "positionen": [
   {
    "id": "pe8186cc2",
@@ -265,40 +265,6 @@
    "wert": 360.64
   },
   {
-   "id": "p5ac8e2e6",
-   "inst": {
-    "id": "pm:polymarket:3580933:JA",
-    "art": "pm",
-    "venue": "polymarket",
-    "ergebnis": "JA",
-    "frage": "Will Puma Shen win the next Taipei Mayor election?",
-    "schliesst": 1795928340.0,
-    "ref": {
-     "id": "3580933",
-     "token_ja": "71621185653281721927174401118354054745399424014255544529977515442951477963801",
-     "token_nein": "72820619922053432516748905329266890906103969024802768151634670763988243600546",
-     "tick": 0.001,
-     "condition": "0x910aabbfae28b3569929c31fb5461f4db13f7ddd427bdee1e696d313125838e3",
-     "gebuehr_rate": 0.04,
-     "gebuehr_exp": 1.0
-    },
-    "url": "https://polymarket.com/event/taipei-mayor-election-winner-20260813125857100"
-   },
-   "seite": "long",
-   "menge": 370.0,
-   "einstand": 0.32876210810810813,
-   "hebel": 1.0,
-   "marge": 0.0,
-   "eroeffnet": 1793819379.2963967,
-   "gebuehren": 3.26603,
-   "funding": 0.0,
-   "ausstiegsplan": "Halten bis 28.11.; Verkauf bei Preis ≥0.60 (Gewinn) oder bei Invalidierung.",
-   "entscheidung_id": "df7c39229",
-   "invalidierung": "Mehrere seriöse Umfragen (TVBS, UDN, China Times) zeigen Chiang ≥6 Punkte vorn, oder Shen-Preis fällt <0.22.",
-   "kurs": 0.2905,
-   "wert": 107.3
-  },
-  {
    "id": "pea9d23a3",
    "inst": {
     "id": "stock:SPY",
@@ -486,8 +452,8 @@
    "wert": 175.06
   }
  ],
- "realisiert": -4.441568327054924,
- "gebuehren": 21.197376339201575,
+ "realisiert": -22.519058327054932,
+ "gebuehren": 24.232886339201574,
  "funding": 0.0,
  "erstellt": 1793380123.8861866,
  "start_fx": 1.1156327353966788,
@@ -521,10 +487,19 @@
      "symbol": "GLD"
     },
     "anteil": 0.08
+   },
+   "stock:BIL": {
+    "inst": {
+     "id": "stock:BIL",
+     "art": "stock",
+     "venue": "yahoo",
+     "symbol": "BIL"
+    },
+    "anteil": 0.08
    }
   },
   "schwelle_pp": 5.0,
-  "seit": 1793819265.9019525,
-  "entscheidung_id": "dd6456776"
+  "seit": 1793977989.3394215,
+  "entscheidung_id": "d0a642430"
  }
 }

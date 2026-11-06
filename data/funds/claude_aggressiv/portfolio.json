@@ -2,7 +2,7 @@
  "fonds_id": "claude_aggressiv",
  "waehrung": "USD",
  "start_kapital": 11184.88579861696,
- "cash": 1307.4076024966785,
+ "cash": 1771.9100824966786,
  "positionen": [
   {
    "id": "p8d020f51",
@@ -93,40 +93,6 @@
    "wert": 407.16
   },
   {
-   "id": "p5701ae4c",
-   "inst": {
-    "id": "pm:polymarket:6507380:JA",
-    "art": "pm",
-    "venue": "polymarket",
-    "ergebnis": "JA",
-    "frage": "Will Bitcoin dip to $75,000 in November?",
-    "schliesst": 1796101200.0,
-    "ref": {
-     "id": "6507380",
-     "token_ja": "96702946516119890890648295182831714858831451101594362483765027848416290349109",
-     "token_nein": "100063340678399453619037549684979791875230113493746028286298866490793476208749",
-     "tick": 0.01,
-     "condition": "0xc3e53fa90a845c013679eb5564bd6a6708c283ac151e625e66b1c591f68d6983",
-     "gebuehr_rate": 0.07,
-     "gebuehr_exp": 1.0
-    },
-    "url": "https://polymarket.com/event/what-price-will-bitcoin-hit-in-november-2026"
-   },
-   "seite": "long",
-   "menge": 465.0,
-   "einstand": 0.85,
-   "hebel": 1.0,
-   "marge": 0.0,
-   "eroeffnet": 1793956403.2458627,
-   "gebuehren": 4.15013,
-   "funding": 0.0,
-   "ausstiegsplan": "Halten bis Touch (sofortige Auflösung JA) oder 30.11.; Verkauf bei Bid ≥0,97.",
-   "entscheidung_id": "dfa72a69d",
-   "invalidierung": "BTC (Binance) schließt über 80k Tagesschluss mit DVOL <35 → P <0,75, dann verkaufen",
-   "kurs": 0.999,
-   "wert": 464.54
-  },
-  {
    "id": "p53b6ec63",
    "inst": {
     "id": "spot:BTC-USD",
@@ -196,11 +162,54 @@
    "wert": 800.25
   }
  ],
- "realisiert": -1252.1951248033722,
- "gebuehren": 164.46217428310442,
+ "realisiert": -1182.942644803372,
+ "gebuehren": 164.49469428310442,
  "funding": -0.6133053169464532,
  "erstellt": 1793319819.7411644,
  "start_fx": 1.1184885798616961,
  "letzter_tick": 1793977863.0834973,
- "auftraege": []
+ "auftraege": [],
+ "rebalancing": {
+  "ziele": {
+   "stock:SPY": {
+    "inst": {
+     "id": "stock:SPY",
+     "art": "stock",
+     "venue": "yahoo",
+     "symbol": "SPY"
+    },
+    "anteil": 0.27
+   },
+   "stock:GLD": {
+    "inst": {
+     "id": "stock:GLD",
+     "art": "stock",
+     "venue": "yahoo",
+     "symbol": "GLD"
+    },
+    "anteil": 0.15
+   },
+   "stock:AGG": {
+    "inst": {
+     "id": "stock:AGG",
+     "art": "stock",
+     "venue": "yahoo",
+     "symbol": "AGG"
+    },
+    "anteil": 0.08
+   },
+   "spot:BTC-USD": {
+    "inst": {
+     "id": "spot:BTC-USD",
+     "art": "spot",
+     "venue": "coinbase",
+     "symbol": "BTC-USD"
+    },
+    "anteil": 0.12
+   }
+  },
+  "schwelle_pp": 6.0,
+  "seit": 1793977989.3394215,
+  "entscheidung_id": "d010e93d7"
+ }
 }
