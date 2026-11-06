@@ -32,8 +32,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Halten bis FOMC 9.12.; verkaufen wenn Preis <0.55 (These gebrochen, z.B. Friedensdeal + schwache Daten) oder >0.92.",
    "entscheidung_id": "dd6eba046",
-   "kurs": 0.785,
-   "wert": 1624.74
+   "kurs": 0.775,
+   "wert": 1603.91
   },
   {
    "id": "pd2738082",
@@ -55,8 +55,8 @@
    "ausstiegsplan": "Stop 700; Review nach CPI 10.11.",
    "entscheidung_id": "d05f1cdc5",
    "invalidierung": "SPY schließt unter 700",
-   "kurs": 738.52,
-   "wert": 2663.96
+   "kurs": 740.51,
+   "wert": 2671.14
   },
   {
    "id": "pdc30d721",
@@ -89,8 +89,8 @@
    "ausstiegsplan": "Verkaufen bei Bid ≥0,80 oder BTC >86k Binance; sonst bis 31.12. halten.",
    "entscheidung_id": "d9dd07173",
    "invalidierung": "BTC steigt über 86.000 (Binance) mit sinkender DVOL <35 → Touch-Wahrscheinlichkeit <0,40, Position verkaufen.",
-   "kurs": 0.555,
-   "wert": 386.1
+   "kurs": 0.5700000000000001,
+   "wert": 393.12
   },
   {
    "id": "p5701ae4c",
@@ -123,8 +123,8 @@
    "ausstiegsplan": "Halten bis Touch (sofortige Auflösung JA) oder 30.11.; Verkauf bei Bid ≥0,97.",
    "entscheidung_id": "dfa72a69d",
    "invalidierung": "BTC (Binance) schließt über 80k Tagesschluss mit DVOL <35 → P <0,75, dann verkaufen",
-   "kurs": 0.885,
-   "wert": 409.2
+   "kurs": 0.91,
+   "wert": 418.5
   },
   {
    "id": "p53b6ec63",
@@ -146,8 +146,8 @@
    "ausstiegsplan": "Stop 69.500; Teilverkauf bei 86k; Dip-Wetten gleichen Abwärtsrisiko teilweise aus.",
    "entscheidung_id": "de5e47324",
    "invalidierung": "Tagesschluss unter 69.500 oder Fed-Hike-Odds >90 %",
-   "kurs": 75803.37,
-   "wert": 1191.0
+   "kurs": 75375.255,
+   "wert": 1184.29
   },
   {
    "id": "p9c4e61c2",
@@ -169,8 +169,8 @@
    "ausstiegsplan": "Stop 355; als Kern halten.",
    "entscheidung_id": "def361d62",
    "invalidierung": "GLD schließt unter 355",
-   "kurs": 369.45,
-   "wert": 1499.46
+   "kurs": 370.64,
+   "wert": 1504.29
   },
   {
    "id": "pe9dce5d9",
@@ -192,8 +192,8 @@
    "ausstiegsplan": "Stop 93; sonst als defensiver Kern halten, Review nach CPI 10.11. und FOMC 9.12.",
    "entscheidung_id": "dd7ab6d3d",
    "invalidierung": "AGG unter 93",
-   "kurs": 96.415,
-   "wert": 799.67
+   "kurs": 96.42,
+   "wert": 799.71
   }
  ],
  "realisiert": -1252.1951248033722,
@@ -201,6 +201,6 @@
  "funding": -0.6133053169464532,
  "erstellt": 1793319819.7411644,
  "start_fx": 1.1184885798616961,
- "letzter_tick": 1793976062.7620246,
+ "letzter_tick": 1793976963.3295984,
  "auftraege": []
 }
