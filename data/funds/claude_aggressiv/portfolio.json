@@ -32,8 +32,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Halten bis FOMC 9.12.; verkaufen wenn Preis <0.55 (These gebrochen, z.B. Friedensdeal + schwache Daten) oder >0.92.",
    "entscheidung_id": "dd6eba046",
-   "kurs": 0.665,
-   "wert": 1374.78
+   "kurs": 0.645,
+   "wert": 1333.12
   },
   {
    "id": "p7bb3dce1",
@@ -61,8 +61,8 @@
    "entscheidung_id": "dfb065841",
    "index_eroeffnung": 77924.8,
    "invalidierung": "BTC-Index außerhalb 74.500–81.500 oder DVOL >48 (Regimewechsel)",
-   "kurs": 2717.9470290000004,
-   "wert": 2636.88
+   "kurs": 2760.5739809999995,
+   "wert": 2628.35
   },
   {
    "id": "p50344976",
@@ -90,8 +90,8 @@
    "entscheidung_id": "d0a6a4df7",
    "index_eroeffnung": 77924.8,
    "invalidierung": "BTC-Index über 81.500 oder unter 74.500, DVOL >48",
-   "kurs": 936.4355310000001,
-   "wert": 3001.51
+   "kurs": 897.3766659999999,
+   "wert": 3009.32
   },
   {
    "id": "pd2738082",
@@ -156,6 +156,6 @@
  "funding": -0.6133053169464532,
  "erstellt": 1793319819.7411644,
  "start_fx": 1.1184885798616961,
- "letzter_tick": 1793928867.1136057,
+ "letzter_tick": 1793929766.8624945,
  "auftraege": []
 }
