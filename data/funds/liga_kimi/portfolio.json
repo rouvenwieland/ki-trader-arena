@@ -85,8 +85,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "d3af64508",
-   "kurs": 75619.205,
-   "wert": 2046.46
+   "kurs": 75315.785,
+   "wert": 2038.25
   },
   {
    "id": "paa2d9988",
@@ -226,7 +226,7 @@
    "entscheidung_id": "dc3f507f6",
    "invalidierung": "NWS-Meldung eines Tagesmaximums außerhalb 82–83 °F in Miami am 06.11. (CLI-Bericht)",
    "kurs": 0.015,
-   "wert": 17.17
+   "wert": 17.25
   },
   {
    "id": "pfd983386",
@@ -282,7 +282,7 @@
    "entscheidung_id": "d35c24618",
    "invalidierung": "NWS-Meldung eines Tagesmaximums außerhalb 73–74 °F in Austin am 06.11. (CLI-Bericht)",
    "kurs": 0.035,
-   "wert": 1.11
+   "wert": 2.37
   }
  ],
  "realisiert": -203.649,
@@ -290,7 +290,7 @@
  "funding": 0.0,
  "erstellt": 1793319819.7411644,
  "start_fx": 1.1184885798616961,
- "letzter_tick": 1793947896.5473542,
+ "letzter_tick": 1793948796.6876338,
  "rebalancing": {
   "ziele": {
    "stock:SPY": {
