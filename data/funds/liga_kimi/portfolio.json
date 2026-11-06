@@ -2,7 +2,7 @@
  "fonds_id": "liga_kimi",
  "waehrung": "USD",
  "start_kapital": 11184.88579861696,
- "cash": 3372.4292678525803,
+ "cash": 3272.43926785258,
  "positionen": [
   {
    "id": "p0b5ac550",
@@ -227,10 +227,36 @@
    "invalidierung": "NWS-Meldung eines Tagesmaximums außerhalb 82-83°F in Miami am 06.11. (CLI-Bericht)",
    "kurs": 0.015,
    "wert": 17.17
+  },
+  {
+   "id": "pfd983386",
+   "inst": {
+    "id": "pm:kalshi:KXHIGHAUS-26NOV06-T73:JA",
+    "art": "pm",
+    "venue": "kalshi",
+    "ergebnis": "JA",
+    "frage": "Will the maximum temperature be <73° on Nov 6, 2026? [72° or below]",
+    "schliesst": 1794034800.0,
+    "ref": {
+     "ticker": "KXHIGHAUS-26NOV06-T73"
+    },
+    "url": "https://kalshi.com/markets/KXHIGHAUS-26NOV06"
+   },
+   "seite": "long",
+   "menge": 1267.0,
+   "einstand": 0.07411207576953434,
+   "hebel": 1.0,
+   "marge": 0.0,
+   "eroeffnet": 1793923916.3879228,
+   "gebuehren": 6.09,
+   "funding": 0.0,
+   "ausstiegsplan": "Halten bis CLI-Abrechnung heute Abend (binär, kein Zwischenverkauf).",
+   "entscheidung_id": "daf281f2c",
+   "invalidierung": "NWS-Prognose-Update hebt Austin-Maximum auf ≥75 °F an (dann ist der Markt informiert und die Position wertlos)."
   }
  ],
  "realisiert": -203.649,
- "gebuehren": 50.716365655913606,
+ "gebuehren": 56.80636565591361,
  "funding": 0.0,
  "erstellt": 1793319819.7411644,
  "start_fx": 1.1184885798616961,

@@ -1,6 +1,6 @@
 {
  "version": 1,
- "stand": 1793923594.0015764,
+ "stand": 1793923991.3365858,
  "hinweis": "Papierhandel-Simulation, keine Anlageberatung",
  "seite": "https://rouvenwieland.github.io/ki-trader-arena/",
  "budget": {
@@ -208,10 +208,10 @@
    "rendite_pct": 2.33,
    "equity_eur": 10166.38,
    "max_drawdown_pct": -1.51,
-   "status": "aktiv",
+   "status": "Tagesanteil aufgebraucht – nächste Runde morgen",
    "modell": "claude-sonnet-5-5",
-   "kosten_heute_eur": 0.0,
-   "kosten_gesamt_eur": 15.909,
+   "kosten_heute_eur": 0.001,
+   "kosten_gesamt_eur": 15.91,
    "rendite_ki_pct": [
     -1.94,
     7.93
@@ -739,10 +739,10 @@
    "rendite_pct": -2.71,
    "equity_eur": 9690.21,
    "max_drawdown_pct": -5.9,
-   "status": "aktiv",
+   "status": "Tagesanteil aufgebraucht – nächste Runde morgen",
    "modell": "claude-sonnet-5-5",
-   "kosten_heute_eur": 0.0,
-   "kosten_gesamt_eur": 17.378,
+   "kosten_heute_eur": 0.001,
+   "kosten_gesamt_eur": 17.379,
    "rendite_ki_pct": [
     -7.6,
     -0.17
@@ -798,10 +798,10 @@
    "rendite_pct": -3.2,
    "equity_eur": 9641.57,
    "max_drawdown_pct": -6.34,
-   "status": "aktiv",
+   "status": "Tagesanteil aufgebraucht – nächste Runde morgen",
    "modell": "claude-sonnet-5-5",
    "kosten_heute_eur": 0.0,
-   "kosten_gesamt_eur": 17.535,
+   "kosten_gesamt_eur": 17.536,
    "rendite_ki_pct": [
     -10.87,
     2.14
@@ -1034,10 +1034,10 @@
    "rendite_pct": -14.14,
    "equity_eur": 8551.72,
    "max_drawdown_pct": -24.83,
-   "status": "aktiv",
+   "status": "Tagesanteil aufgebraucht – nächste Runde morgen",
    "modell": "claude-sonnet-5-5",
-   "kosten_heute_eur": 0.0,
-   "kosten_gesamt_eur": 17.533,
+   "kosten_heute_eur": 0.001,
+   "kosten_gesamt_eur": 17.534,
    "rendite_ki_pct": [
     -33.42,
     4.36
@@ -1218,6 +1218,13 @@
  ],
  "letzte_entscheidungen": [
   {
+   "ts": 1793923916.3877232,
+   "fonds": "Kimi (Moonshot)",
+   "instrument": "pm:kalshi:KXHIGHAUS-26NOV06-T73:JA",
+   "aktion": "kaufen",
+   "zuversicht": 0.55
+  },
+  {
    "ts": 1793905690.928651,
    "fonds": "Kimi (Moonshot)",
    "instrument": "pm:kalshi:KXHIGHMIA-26NOV06-B82.5:JA",
@@ -1265,13 +1272,6 @@
    "instrument": "stock:NVDA",
    "aktion": "kaufen",
    "zuversicht": 0.6
-  },
-  {
-   "ts": 1793891836.6177344,
-   "fonds": "Claude Vorsichtig",
-   "instrument": "pm:polymarket:6389959:NEIN",
-   "aktion": "kaufen",
-   "zuversicht": 0.7
   }
  ],
  "ereignisse": [
