@@ -61,8 +61,8 @@
    "entscheidung_id": "dfb065841",
    "index_eroeffnung": 77924.8,
    "invalidierung": "BTC-Index außerhalb 74.500–81.500 oder DVOL >48 (Regimewechsel)",
-   "kurs": 2884.7646799999998,
-   "wert": 2603.52
+   "kurs": 2863.1234839999997,
+   "wert": 2607.84
   },
   {
    "id": "p50344976",
@@ -90,8 +90,8 @@
    "entscheidung_id": "d0a6a4df7",
    "index_eroeffnung": 77924.8,
    "invalidierung": "BTC-Index über 81.500 oder unter 74.500, DVOL >48",
-   "kurs": 888.2038620000001,
-   "wert": 3011.16
+   "kurs": 896.150056,
+   "wert": 3009.57
   },
   {
    "id": "pd2738082",
@@ -156,6 +156,6 @@
  "funding": -0.6133053169464532,
  "erstellt": 1793319819.7411644,
  "start_fx": 1.1184885798616961,
- "letzter_tick": 1793935167.1147192,
+ "letzter_tick": 1793935297.620765,
  "auftraege": []
 }
