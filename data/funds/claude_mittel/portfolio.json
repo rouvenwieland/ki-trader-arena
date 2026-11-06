@@ -160,7 +160,7 @@
    "entscheidung_id": "d1d050db4",
    "invalidierung": "Abstand <5 % in Marktkapitalisierung oder Apple-JA <0.50.",
    "kurs": 0.6695,
-   "wert": 244.2
+   "wert": 244.57
   },
   {
    "id": "pf61ac065",
@@ -193,8 +193,8 @@
    "ausstiegsplan": "Halten bis 28.11.; Gewinn mitnehmen bei Bid ≥0.40.",
    "entscheidung_id": "dab131640",
    "invalidierung": "Mehrere unabhängige Umfragen Chiang ≥ +6 (inkl. UDN/SPRIT-Umkehr).",
-   "kurs": 0.3235,
-   "wert": 326.27
+   "kurs": 0.29,
+   "wert": 290.36
   },
   {
    "id": "pb60e44cc",
@@ -298,8 +298,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "d6e1a7002",
-   "kurs": 76030.08499999999,
-   "wert": 1251.21
+   "kurs": 75912.315,
+   "wert": 1249.28
   },
   {
    "id": "pe3015b77",
@@ -319,8 +319,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "d6e1a7002",
-   "kurs": 2237.7799999999997,
-   "wert": 507.87
+   "kurs": 2234.3050000000003,
+   "wert": 507.08
   },
   {
    "id": "p1ad6082a",
@@ -386,8 +386,8 @@
    "ausstiegsplan": "Gewinn mitnehmen bei NEIN-Bid ≥0.78 (=P). Nach NVDA-Earnings neu rechnen. Sonst halten bis 31.12.",
    "entscheidung_id": "d1fa25bbb",
    "invalidierung": "NVDA-Marktkapitalisierung innerhalb 5 % von Apple (z. B. NVDA ≥200 bei AAPL ~349) nach den Earnings, oder NVDA-JA ≥0.45.",
-   "kurs": 0.685,
-   "wert": 291.04
+   "kurs": 0.6799999999999999,
+   "wert": 286.76
   },
   {
    "id": "pb2463e57",
@@ -420,8 +420,8 @@
    "ausstiegsplan": "Halten bis 30.11.; Verkauf bei NEIN-Bid ≥0.85 oder bei Ersatz-Meldung sofort.",
    "entscheidung_id": "df7939c88",
    "invalidierung": "Trump oder mehrere Quellen (Axios/CBS/NYT) melden Entscheidung zum Austausch; NEIN-Bid fällt unter 0.55.",
-   "kurs": 0.735,
-   "wert": 156.22
+   "kurs": 0.725,
+   "wert": 154.08
   }
  ],
  "realisiert": -114.85177367275844,
@@ -429,7 +429,7 @@
  "funding": 0.0,
  "erstellt": 1793319819.7411644,
  "start_fx": 1.1184885798616961,
- "letzter_tick": 1793931567.017404,
+ "letzter_tick": 1793932466.867461,
  "auftraege": [],
  "rebalancing": {
   "ziele": {

@@ -35,8 +35,8 @@
    "ausstiegsplan": "Halten bis Abrechnung 31.12.; vorzeitig verkaufen, wenn NEIN-Preis auf ≥0.62 steigt (Gewinn mitnehmen) oder unter 0.38 fällt.",
    "entscheidung_id": "dbf84bba3",
    "invalidierung": "NVDA schließt wieder dauerhaft über Apple-Marktkap (NVDA >~210 bei AAPL ~343) oder starke NVDA-Zahlen mit Rally >8%; dann neu bewerten/verkaufen.",
-   "kurs": 0.685,
-   "wert": 380.12
+   "kurs": 0.6799999999999999,
+   "wert": 374.53
   },
   {
    "id": "p91a23e4a",
@@ -138,7 +138,7 @@
    "entscheidung_id": "d62d5f0db",
    "invalidierung": "NVDA übertrifft Apple-Marktkap nach Earnings um >5 % oder Apple-JA <0,25.",
    "kurs": 0.6695,
-   "wert": 491.04
+   "wert": 491.78
   },
   {
    "id": "pa832233e",
@@ -295,8 +295,8 @@
    "ausstiegsplan": "Halten bis 28.11.; Verkauf bei Preis ≥0.60 (Gewinn) oder bei Invalidierung.",
    "entscheidung_id": "df7c39229",
    "invalidierung": "Mehrere seriöse Umfragen (TVBS, UDN, China Times) zeigen Chiang ≥6 Punkte vorn, oder Shen-Preis fällt <0.22.",
-   "kurs": 0.3235,
-   "wert": 117.66
+   "kurs": 0.29,
+   "wert": 104.71
   },
   {
    "id": "pea9d23a3",
@@ -337,8 +337,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "dd6456776",
-   "kurs": 76030.08499999999,
-   "wert": 1078.95
+   "kurs": 75912.315,
+   "wert": 1077.28
   },
   {
    "id": "p994b6370",
@@ -457,7 +457,7 @@
  "funding": 0.0,
  "erstellt": 1793380123.8861866,
  "start_fx": 1.1156327353966788,
- "letzter_tick": 1793931567.017404,
+ "letzter_tick": 1793932466.867461,
  "auftraege": [],
  "rebalancing": {
   "ziele": {
