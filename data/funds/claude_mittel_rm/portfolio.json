@@ -2,7 +2,7 @@
  "fonds_id": "claude_mittel_rm",
  "waehrung": "USD",
  "start_kapital": 11156.327353966788,
- "cash": 2875.0260511215906,
+ "cash": 2695.5805711215908,
  "positionen": [
   {
    "id": "pe8186cc2",
@@ -450,10 +450,42 @@
    "invalidierung": "NVDA schließt unter 172 (neues Jahrestief-Umfeld, Stop) oder das Marktkap-Paar wird verkauft (dann Hedge mit auflösen).",
    "kurs": 181.6,
    "wert": 483.8
+  },
+  {
+   "id": "p6edb4531",
+   "inst": {
+    "id": "pm:polymarket:679018:NEIN",
+    "art": "pm",
+    "venue": "polymarket",
+    "ergebnis": "NEIN",
+    "frage": "Will Marine Le Pen win the 2027 French presidential election?",
+    "schliesst": 1808107140.0,
+    "ref": {
+     "id": "679018",
+     "token_ja": "55764212211467781322980371912612507865974994976253196346176314491480419639168",
+     "token_nein": "5649717099758674861276159343380402289083378331461490840325685141994171250523",
+     "tick": 0.001,
+     "condition": "0x8126317d621047fb13d508a2651eecc8d38305904671822a62309c5aabd353aa",
+     "gebuehr_rate": 0.04,
+     "gebuehr_exp": 1.0
+    },
+    "url": "https://polymarket.com/event/next-french-presidential-election"
+   },
+   "seite": "long",
+   "menge": 316.0,
+   "einstand": 0.558,
+   "hebel": 1.0,
+   "marge": 0.0,
+   "eroeffnet": 1793956437.378023,
+   "gebuehren": 3.11748,
+   "funding": 0.0,
+   "ausstiegsplan": "Halten bis Wahl April 2027; teilweise verkaufen wenn NEIN ≥0.72 oder Le Pen-Preis ≤0.30; neu bewerten bei Umfragen Stichwahl Le Pen vs. Philippe/Mitte >55 % für RN.",
+   "entscheidung_id": "dc6f84fd5",
+   "invalidierung": "Seriöse Stichwahl-Umfragen (Ifop, Elabe) zeigen RN-Kandidat dauerhaft ≥54 % gegen jeden Gegner, oder Preis Le Pen JA ≥0.55."
   }
  ],
  "realisiert": -4.441568327054924,
- "gebuehren": 18.079896339201575,
+ "gebuehren": 21.197376339201575,
  "funding": 0.0,
  "erstellt": 1793380123.8861866,
  "start_fx": 1.1156327353966788,

@@ -2,7 +2,7 @@
  "fonds_id": "claude_aggressiv",
  "waehrung": "USD",
  "start_kapital": 11184.88579861696,
- "cash": 1414.133410785643,
+ "cash": 5407.407602496667,
  "positionen": [
   {
    "id": "p8d020f51",
@@ -34,64 +34,6 @@
    "entscheidung_id": "dd6eba046",
    "kurs": 0.675,
    "wert": 1395.61
-  },
-  {
-   "id": "p7bb3dce1",
-   "inst": {
-    "id": "opt:BTC-13NOV26-78000-P",
-    "art": "option",
-    "venue": "deribit",
-    "symbol": "BTC-13NOV26-78000-P",
-    "basis": "BTC",
-    "verfall": 1794556800.0,
-    "strike": 78000.0,
-    "typ": "P",
-    "schliesst": 1794556800.0
-   },
-   "seite": "short",
-   "menge": 0.2,
-   "einstand": 2101.8656304,
-   "hebel": 1.0,
-   "marge": 2760.0964160000003,
-   "eroeffnet": 1793545389.6026106,
-   "gebuehren": 4.675488,
-   "funding": 0.0,
-   "marginal": true,
-   "ausstiegsplan": "Bei 50 % Gewinn zurückkaufen (Straddle <2150 $). Glattstellen, wenn BTC (Deribit-Index) unter 74.500 oder über 81.500 schließt, das sind die Breakevens. Sonst bis zum Verfall 13.11. halten.",
-   "entscheidung_id": "dfb065841",
-   "index_eroeffnung": 77924.8,
-   "invalidierung": "BTC-Index außerhalb 74.500–81.500 oder DVOL >48 (Regimewechsel)",
-   "kurs": 2833.581409,
-   "wert": 2613.75
-  },
-  {
-   "id": "p50344976",
-   "inst": {
-    "id": "opt:BTC-13NOV26-78000-C",
-    "art": "option",
-    "venue": "deribit",
-    "symbol": "BTC-13NOV26-78000-C",
-    "basis": "BTC",
-    "verfall": 1794556800.0,
-    "strike": 78000.0,
-    "typ": "C",
-    "schliesst": 1794556800.0
-   },
-   "seite": "short",
-   "menge": 0.2,
-   "einstand": 2140.789068,
-   "hebel": 1.0,
-   "marge": 2760.6413760000005,
-   "eroeffnet": 1793545389.7058828,
-   "gebuehren": 4.675488,
-   "funding": 0.0,
-   "marginal": true,
-   "ausstiegsplan": "Wie beim Put: 50 % Gewinnmitnahme, Glattstellen außerhalb 74,5k–81,5k, sonst halten bis 13.11.",
-   "entscheidung_id": "d0a6a4df7",
-   "index_eroeffnung": 77924.8,
-   "invalidierung": "BTC-Index über 81.500 oder unter 74.500, DVOL >48",
-   "kurs": 858.430829,
-   "wert": 3017.11
   },
   {
    "id": "pd2738082",
@@ -149,13 +91,142 @@
    "invalidierung": "BTC steigt über 86.000 (Binance) mit sinkender DVOL <35 → Touch-Wahrscheinlichkeit <0,40, Position verkaufen.",
    "kurs": 0.555,
    "wert": 386.1
+  },
+  {
+   "id": "p5701ae4c",
+   "inst": {
+    "id": "pm:polymarket:6507380:JA",
+    "art": "pm",
+    "venue": "polymarket",
+    "ergebnis": "JA",
+    "frage": "Will Bitcoin dip to $75,000 in November?",
+    "schliesst": 1796101200.0,
+    "ref": {
+     "id": "6507380",
+     "token_ja": "96702946516119890890648295182831714858831451101594362483765027848416290349109",
+     "token_nein": "100063340678399453619037549684979791875230113493746028286298866490793476208749",
+     "tick": 0.01,
+     "condition": "0xc3e53fa90a845c013679eb5564bd6a6708c283ac151e625e66b1c591f68d6983",
+     "gebuehr_rate": 0.07,
+     "gebuehr_exp": 1.0
+    },
+    "url": "https://polymarket.com/event/what-price-will-bitcoin-hit-in-november-2026"
+   },
+   "seite": "long",
+   "menge": 465.0,
+   "einstand": 0.85,
+   "hebel": 1.0,
+   "marge": 0.0,
+   "eroeffnet": 1793956403.2458627,
+   "gebuehren": 4.15013,
+   "funding": 0.0,
+   "ausstiegsplan": "Halten bis Touch (sofortige Auflösung JA) oder 30.11.; Verkauf bei Bid ≥0,97.",
+   "entscheidung_id": "dfa72a69d",
+   "invalidierung": "BTC (Binance) schließt über 80k Tagesschluss mit DVOL <35 → P <0,75, dann verkaufen"
+  },
+  {
+   "id": "p53b6ec63",
+   "inst": {
+    "id": "spot:BTC-USD",
+    "art": "spot",
+    "venue": "coinbase",
+    "symbol": "BTC-USD"
+   },
+   "seite": "long",
+   "menge": 0.015712294738772174,
+   "einstand": 75917.8059079049,
+   "hebel": 1.0,
+   "marge": 0.0,
+   "eroeffnet": 1793956451.4832969,
+   "gebuehren": 7.157057654075406,
+   "funding": 0.0,
+   "stop_loss": 69500,
+   "ausstiegsplan": "Stop 69.500; Teilverkauf bei 86k; Dip-Wetten gleichen Abwärtsrisiko teilweise aus.",
+   "entscheidung_id": "de5e47324",
+   "invalidierung": "Tagesschluss unter 69.500 oder Fed-Hike-Odds >90 %"
   }
  ],
- "realisiert": -1324.1316545143723,
- "gebuehren": 144.04546382902905,
+ "realisiert": -1252.1951248033722,
+ "gebuehren": 164.46217428310442,
  "funding": -0.6133053169464532,
  "erstellt": 1793319819.7411644,
  "start_fx": 1.1184885798616961,
  "letzter_tick": 1793956138.8452213,
- "auftraege": []
+ "auftraege": [
+  {
+   "id": "a9dfa4d",
+   "entscheidung_id": "def361d62",
+   "inst": {
+    "id": "stock:GLD",
+    "art": "stock",
+    "venue": "yahoo",
+    "symbol": "GLD"
+   },
+   "aktion": "kaufen",
+   "typ": "eroeffnung",
+   "seite": "long",
+   "betrag_usd": 1500,
+   "menge": null,
+   "hebel": 1.0,
+   "limit_preis": null,
+   "stop_preis": null,
+   "stop_loss": 355,
+   "take_profit": null,
+   "ausstiegsplan": "Stop 355; als Kern halten.",
+   "invalidierung": "GLD schließt unter 355",
+   "erstellt": 1793956451.5647843,
+   "geprueft_bis": 1793956451.5647843,
+   "gueltig_bis": 1793998800.0
+  },
+  {
+   "id": "a5fde82",
+   "entscheidung_id": "d05f1cdc5",
+   "inst": {
+    "id": "stock:SPY",
+    "art": "stock",
+    "venue": "yahoo",
+    "symbol": "SPY"
+   },
+   "aktion": "kaufen",
+   "typ": "eroeffnung",
+   "seite": "long",
+   "betrag_usd": 1800,
+   "menge": null,
+   "hebel": 1.0,
+   "limit_preis": null,
+   "stop_preis": null,
+   "stop_loss": 700,
+   "take_profit": null,
+   "ausstiegsplan": "Stop 700; Review nach CPI 10.11.",
+   "invalidierung": "SPY schließt unter 700",
+   "erstellt": 1793956452.5716848,
+   "geprueft_bis": 1793956452.5716848,
+   "gueltig_bis": 1793998800.0
+  },
+  {
+   "id": "abe9d4e",
+   "entscheidung_id": "dd7ab6d3d",
+   "inst": {
+    "id": "stock:AGG",
+    "art": "stock",
+    "venue": "yahoo",
+    "symbol": "AGG"
+   },
+   "aktion": "kaufen",
+   "typ": "eroeffnung",
+   "seite": "long",
+   "betrag_usd": 800,
+   "menge": null,
+   "hebel": 1.0,
+   "limit_preis": null,
+   "stop_preis": null,
+   "stop_loss": 93,
+   "take_profit": null,
+   "ausstiegsplan": "Stop 93; sonst als defensiver Kern halten, Review nach CPI 10.11. und FOMC 9.12.",
+   "invalidierung": "AGG unter 93",
+   "erstellt": 1793956461.1351628,
+   "geprueft_bis": 1793956461.1351628,
+   "gueltig_bis": 1793998800.0
+  }
+ ]
 }
