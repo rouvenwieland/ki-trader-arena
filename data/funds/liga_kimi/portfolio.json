@@ -2,7 +2,7 @@
  "fonds_id": "liga_kimi",
  "waehrung": "USD",
  "start_kapital": 11184.88579861696,
- "cash": 3268.47926785258,
+ "cash": 3395.47926785258,
  "positionen": [
   {
    "id": "p0b5ac550",
@@ -85,36 +85,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "d3af64508",
-   "kurs": 76070.58499999999,
-   "wert": 2058.68
-  },
-  {
-   "id": "paa2d9988",
-   "inst": {
-    "id": "pm:kalshi:KXHIGHMIA-26NOV05-B82.5:JA",
-    "art": "pm",
-    "venue": "kalshi",
-    "ergebnis": "JA",
-    "frage": "Will the maximum temperature be 82-83° on Nov 5, 2026? [82° to 83°]",
-    "schliesst": 1793944800.0,
-    "ref": {
-     "ticker": "KXHIGHMIA-26NOV05-B82.5"
-    },
-    "url": "https://kalshi.com/markets/KXHIGHMIA-26NOV05"
-   },
-   "seite": "long",
-   "menge": 1464.0,
-   "einstand": 0.07685856655290103,
-   "hebel": 1.0,
-   "marge": 0.0,
-   "eroeffnet": 1793837688.109261,
-   "gebuehren": 7.28,
-   "funding": 0.0,
-   "ausstiegsplan": "Halten bis CLI-Abrechnung heute Abend (Binärwette, kein vorzeitiger Ausstieg geplant); Verkauf nur falls NWS-Meldungen vor 18 UTC ein Max ≥84°F praktisch sicher machen.",
-   "entscheidung_id": "d6b846c4c",
-   "invalidierung": "NWS-Meldung eines Tagesmaximums außerhalb 82-83°F in Miami am 05.11. (Abrechnung CLI-Bericht)",
-   "kurs": null,
-   "wert": 112.52
+   "kurs": 76184.215,
+   "wert": 2061.75
   },
   {
    "id": "p78088b28",
@@ -173,34 +145,6 @@
    "wert": 32.83
   },
   {
-   "id": "pff54b318",
-   "inst": {
-    "id": "pm:kalshi:KXHIGHNY-26NOV05-B70.5:NEIN",
-    "art": "pm",
-    "venue": "kalshi",
-    "ergebnis": "NEIN",
-    "frage": "Will the maximum temperature be 70-71° on Nov 5, 2026? [70° to 71°]",
-    "schliesst": 1793944800.0,
-    "ref": {
-     "ticker": "KXHIGHNY-26NOV05-B70.5"
-    },
-    "url": "https://kalshi.com/markets/KXHIGHNY-26NOV05"
-   },
-   "seite": "long",
-   "menge": 127.0,
-   "einstand": 0.5702015748031497,
-   "hebel": 1.0,
-   "marge": 0.0,
-   "eroeffnet": 1793837706.2518172,
-   "gebuehren": 2.18,
-   "funding": 0.0,
-   "ausstiegsplan": "Halten bis CLI-Abrechnung heute Abend; Binärwette.",
-   "entscheidung_id": "d717a693b",
-   "invalidierung": "NWS CLI Central Park meldet Tagesmaximum 70-71°F am 05.11.",
-   "kurs": null,
-   "wert": 72.42
-  },
-  {
    "id": "p5660ccba",
    "inst": {
     "id": "pm:kalshi:KXHIGHMIA-26NOV06-B82.5:JA",
@@ -225,8 +169,8 @@
    "ausstiegsplan": "Halten bis CLI-Abrechnung heute Abend (Binärwette, kein vorzeitiger Ausstieg). Verkauf nur falls NWS-Meldungen vor 18 UTC ein Max ≥84°F praktisch sicher machen.",
    "entscheidung_id": "dc3f507f6",
    "invalidierung": "NWS-Meldung eines Tagesmaximums außerhalb 82–83 °F in Miami am 06.11. (CLI-Bericht)",
-   "kurs": 0.02,
-   "wert": 17.25
+   "kurs": null,
+   "wert": 188.38
   },
   {
    "id": "pfd983386",
@@ -285,12 +229,12 @@
    "wert": 3.95
   }
  ],
- "realisiert": -203.649,
+ "realisiert": -261.58554143344713,
  "gebuehren": 57.07636565591361,
  "funding": 0.0,
  "erstellt": 1793319819.7411644,
  "start_fx": 1.1184885798616961,
- "letzter_tick": 1793966938.5080066,
+ "letzter_tick": 1793967839.206441,
  "rebalancing": {
   "ziele": {
    "stock:SPY": {
