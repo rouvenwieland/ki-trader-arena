@@ -32,8 +32,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Halten bis FOMC 9.12.; verkaufen wenn Preis <0.55 (These gebrochen, z.B. Friedensdeal + schwache Daten) oder >0.92.",
    "entscheidung_id": "dd6eba046",
-   "kurs": 0.775,
-   "wert": 1603.91
+   "kurs": 0.765,
+   "wert": 1583.08
   },
   {
    "id": "pd2738082",
@@ -55,8 +55,8 @@
    "ausstiegsplan": "Stop 700; Review nach CPI 10.11.",
    "entscheidung_id": "d05f1cdc5",
    "invalidierung": "SPY schließt unter 700",
-   "kurs": 737.8,
-   "wert": 2661.37
+   "kurs": 740.43,
+   "wert": 2670.85
   },
   {
    "id": "pdc30d721",
@@ -89,8 +89,8 @@
    "ausstiegsplan": "Verkaufen bei Bid ≥0,80 oder BTC >86k Binance; sonst bis 31.12. halten.",
    "entscheidung_id": "d9dd07173",
    "invalidierung": "BTC steigt über 86.000 (Binance) mit sinkender DVOL <35 → Touch-Wahrscheinlichkeit <0,40, Position verkaufen.",
-   "kurs": 0.575,
-   "wert": 400.14
+   "kurs": 0.555,
+   "wert": 386.1
   },
   {
    "id": "p53b6ec63",
@@ -112,8 +112,8 @@
    "ausstiegsplan": "Stop 69.500; Teilverkauf bei 86k; Dip-Wetten gleichen Abwärtsrisiko teilweise aus.",
    "entscheidung_id": "de5e47324",
    "invalidierung": "Tagesschluss unter 69.500 oder Fed-Hike-Odds >90 %",
-   "kurs": 75469.005,
-   "wert": 1185.79
+   "kurs": 75661.735,
+   "wert": 1188.82
   },
   {
    "id": "p9c4e61c2",
@@ -135,8 +135,8 @@
    "ausstiegsplan": "Stop 355; als Kern halten.",
    "entscheidung_id": "def361d62",
    "invalidierung": "GLD schließt unter 355",
-   "kurs": 371.0,
-   "wert": 1505.75
+   "kurs": 371.665,
+   "wert": 1508.45
   },
   {
    "id": "pe9dce5d9",
@@ -158,8 +158,8 @@
    "ausstiegsplan": "Stop 93; sonst als defensiver Kern halten, Review nach CPI 10.11. und FOMC 9.12.",
    "entscheidung_id": "dd7ab6d3d",
    "invalidierung": "AGG unter 93",
-   "kurs": 96.52,
-   "wert": 800.54
+   "kurs": 96.535,
+   "wert": 800.66
   }
  ],
  "realisiert": -1182.942644803372,
@@ -167,7 +167,7 @@
  "funding": -0.6133053169464532,
  "erstellt": 1793319819.7411644,
  "start_fx": 1.1184885798616961,
- "letzter_tick": 1793979717.2242706,
+ "letzter_tick": 1793980617.2912028,
  "auftraege": [],
  "rebalancing": {
   "ziele": {

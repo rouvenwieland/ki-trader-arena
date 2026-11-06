@@ -227,8 +227,8 @@
    "ausstiegsplan": "Halten bis 30.11.; verkaufen, wenn BTC unter 64.000 fällt oder NEIN-Preis <0.88.",
    "entscheidung_id": "d7dbfc08f",
    "invalidierung": "BTC Binance unter 64.000 oder DVOL >60",
-   "kurs": 0.9444999999999999,
-   "wert": 295.47
+   "kurs": 0.9464999999999999,
+   "wert": 296.1
   },
   {
    "id": "pf805692b",
@@ -282,8 +282,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "dd6456776",
-   "kurs": 737.8,
-   "wert": 2200.17
+   "kurs": 740.43,
+   "wert": 2208.01
   },
   {
    "id": "p1c64b37e",
@@ -303,8 +303,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "dd6456776",
-   "kurs": 75469.005,
-   "wert": 1070.99
+   "kurs": 75661.735,
+   "wert": 1073.73
   },
   {
    "id": "p994b6370",
@@ -324,8 +324,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "dd6456776",
-   "kurs": 371.0,
-   "wert": 912.77
+   "kurs": 371.665,
+   "wert": 914.41
   },
   {
    "id": "p3b9e74b7",
@@ -414,8 +414,8 @@
    "ausstiegsplan": "Zusammen mit dem Apple/NVDA-Paar nach den NVDA-Earnings am 17.11. neu bewerten; Stop 172; Gewinnmitnahme bei 215, falls das Paar bis dahin aufgelöst ist.",
    "entscheidung_id": "d5ed9e039",
    "invalidierung": "NVDA schließt unter 172 (neues Jahrestief-Umfeld, Stop) oder das Marktkap-Paar wird verkauft (dann Hedge mit auflösen).",
-   "kurs": 188.3,
-   "wert": 501.59
+   "kurs": 189.875,
+   "wert": 505.78
   },
   {
    "id": "p6edb4531",
@@ -469,8 +469,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "d0a642430",
-   "kurs": 91.465,
-   "wert": 908.43
+   "kurs": 91.47,
+   "wert": 908.48
   }
  ],
  "realisiert": -22.519058327054932,
@@ -478,7 +478,7 @@
  "funding": 0.0,
  "erstellt": 1793380123.8861866,
  "start_fx": 1.1156327353966788,
- "letzter_tick": 1793979717.2242706,
+ "letzter_tick": 1793980617.2912028,
  "auftraege": [],
  "rebalancing": {
   "ziele": {
