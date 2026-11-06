@@ -22,8 +22,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "d3af64508",
-   "kurs": 370.64,
-   "wert": 1092.06
+   "kurs": 371.335,
+   "wert": 1094.11
   },
   {
    "id": "p5af391c8",
@@ -43,8 +43,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "d3af64508",
-   "kurs": 81.765,
-   "wert": 548.74
+   "kurs": 81.93,
+   "wert": 549.84
   },
   {
    "id": "p3e4bc435",
@@ -64,8 +64,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "d3af64508",
-   "kurs": 740.51,
-   "wert": 3173.71
+   "kurs": 739.63,
+   "wert": 3169.94
   },
   {
    "id": "pb315f18b",
@@ -85,36 +85,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "d3af64508",
-   "kurs": 75375.255,
-   "wert": 2039.81
-  },
-  {
-   "id": "pb0b91e41",
-   "inst": {
-    "id": "pm:kalshi:KXHIGHLAX-26NOV05-B81.5:JA",
-    "art": "pm",
-    "venue": "kalshi",
-    "ergebnis": "JA",
-    "frage": "Will the maximum temperature be 81-82° on Nov 5, 2026? [81° to 82°]",
-    "schliesst": 1793955600.0,
-    "ref": {
-     "ticker": "KXHIGHLAX-26NOV05-B81.5"
-    },
-    "url": "https://kalshi.com/markets/KXHIGHLAX-26NOV05"
-   },
-   "seite": "long",
-   "menge": 577.0,
-   "einstand": 0.056897746967071054,
-   "hebel": 1.0,
-   "marge": 0.0,
-   "eroeffnet": 1793837706.25085,
-   "gebuehren": 2.17,
-   "funding": 0.0,
-   "ausstiegsplan": "Halten bis CLI-Abrechnung heute Abend; Binärwette.",
-   "entscheidung_id": "d414b1295",
-   "invalidierung": "NWS CLI LAX meldet Tagesmaximum außerhalb 81-82°F am 05.11.",
-   "kurs": null,
-   "wert": 32.83
+   "kurs": 75141.16500000001,
+   "wert": 2033.52
   },
   {
    "id": "p5660ccba",
@@ -141,8 +113,8 @@
    "ausstiegsplan": "Halten bis CLI-Abrechnung heute Abend (Binärwette, kein vorzeitiger Ausstieg). Verkauf nur falls NWS-Meldungen vor 18 UTC ein Max ≥84°F praktisch sicher machen.",
    "entscheidung_id": "dc3f507f6",
    "invalidierung": "NWS-Meldung eines Tagesmaximums außerhalb 82–83 °F in Miami am 06.11. (CLI-Bericht)",
-   "kurs": 0.015,
-   "wert": 17.25
+   "kurs": null,
+   "wert": 188.38
   },
   {
    "id": "pfd983386",
@@ -169,8 +141,8 @@
    "ausstiegsplan": "Halten bis CLI-Abrechnung heute Abend (binär, kein Zwischenverkauf).",
    "entscheidung_id": "daf281f2c",
    "invalidierung": "NWS-Prognose-Update hebt Austin-Maximum auf ≥75 °F an (dann ist der Markt informiert und die Position wertlos).",
-   "kurs": 0.18,
-   "wert": 215.39
+   "kurs": 0.11499999999999999,
+   "wert": 139.37
   },
   {
    "id": "p218402ab",
@@ -197,16 +169,16 @@
    "ausstiegsplan": "Halten bis CLI-Abrechnung heute Abend (Binärwette, kein vorzeitiger Ausstieg). Verkauf nur falls NWS-Meldungen vor 18 UTC ein Max ≥75°F praktisch sicher machen.",
    "entscheidung_id": "d35c24618",
    "invalidierung": "NWS-Meldung eines Tagesmaximums außerhalb 73–74 °F in Austin am 06.11. (CLI-Bericht)",
-   "kurs": 0.1,
-   "wert": 6.32
+   "kurs": 0.275,
+   "wert": 21.33
   }
  ],
- "realisiert": -308.44394143344715,
+ "realisiert": -341.27394143344713,
  "gebuehren": 57.07636565591361,
  "funding": 0.0,
  "erstellt": 1793319819.7411644,
  "start_fx": 1.1184885798616961,
- "letzter_tick": 1793976963.3295984,
+ "letzter_tick": 1793977863.0834973,
  "rebalancing": {
   "ziele": {
    "stock:SPY": {

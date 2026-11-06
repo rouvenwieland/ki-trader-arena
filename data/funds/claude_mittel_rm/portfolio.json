@@ -137,8 +137,8 @@
    "ausstiegsplan": "Halten bis 31.12.; nach NVDA-Earnings 17.11. neu bewerten; Gewinnmitnahme ≥0,65.",
    "entscheidung_id": "d62d5f0db",
    "invalidierung": "NVDA übertrifft Apple-Marktkap nach Earnings um >5 % oder Apple-JA <0,25.",
-   "kurs": 0.6065,
-   "wert": 448.63
+   "kurs": 0.623,
+   "wert": 457.56
   },
   {
    "id": "pa832233e",
@@ -295,8 +295,8 @@
    "ausstiegsplan": "Halten bis 28.11.; Verkauf bei Preis ≥0.60 (Gewinn) oder bei Invalidierung.",
    "entscheidung_id": "df7c39229",
    "invalidierung": "Mehrere seriöse Umfragen (TVBS, UDN, China Times) zeigen Chiang ≥6 Punkte vorn, oder Shen-Preis fällt <0.22.",
-   "kurs": 0.294,
-   "wert": 106.56
+   "kurs": 0.2905,
+   "wert": 107.3
   },
   {
    "id": "pea9d23a3",
@@ -316,8 +316,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "dd6456776",
-   "kurs": 740.51,
-   "wert": 2208.25
+   "kurs": 739.63,
+   "wert": 2205.62
   },
   {
    "id": "p1c64b37e",
@@ -337,8 +337,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "dd6456776",
-   "kurs": 75375.255,
-   "wert": 1069.64
+   "kurs": 75141.16500000001,
+   "wert": 1066.34
   },
   {
    "id": "p994b6370",
@@ -358,8 +358,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "dd6456776",
-   "kurs": 370.64,
-   "wert": 911.88
+   "kurs": 371.335,
+   "wert": 913.59
   },
   {
    "id": "p3b9e74b7",
@@ -448,8 +448,8 @@
    "ausstiegsplan": "Zusammen mit dem Apple/NVDA-Paar nach den NVDA-Earnings am 17.11. neu bewerten; Stop 172; Gewinnmitnahme bei 215, falls das Paar bis dahin aufgelöst ist.",
    "entscheidung_id": "d5ed9e039",
    "invalidierung": "NVDA schließt unter 172 (neues Jahrestief-Umfeld, Stop) oder das Marktkap-Paar wird verkauft (dann Hedge mit auflösen).",
-   "kurs": 192.34,
-   "wert": 512.35
+   "kurs": 191.88,
+   "wert": 511.12
   },
   {
    "id": "p6edb4531",
@@ -491,7 +491,7 @@
  "funding": 0.0,
  "erstellt": 1793380123.8861866,
  "start_fx": 1.1156327353966788,
- "letzter_tick": 1793976963.3295984,
+ "letzter_tick": 1793977863.0834973,
  "auftraege": [],
  "rebalancing": {
   "ziele": {
