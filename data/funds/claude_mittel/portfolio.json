@@ -35,8 +35,8 @@
    "ausstiegsplan": "Halten; Gewinn mitnehmen, wenn NEIN ≥0.90 (JA ≤0.10) oder der Preis meine P erreicht. Neu bewerten, wenn Lisnard in Umfragen über 12 % steigt oder Philippe/Retailleau zurückziehen.",
    "entscheidung_id": "df10ef502",
    "invalidierung": "Lisnard in mehreren Umfragen ≥12 % im 1. Wahlgang oder Rückzug von Philippe/Retailleau zu seinen Gunsten.",
-   "kurs": 0.8525,
-   "wert": 261.56
+   "kurs": 0.8514999999999999,
+   "wert": 261.26
   },
   {
    "id": "p842aa632",
@@ -298,8 +298,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "d6e1a7002",
-   "kurs": 75921.255,
-   "wert": 1249.42
+   "kurs": 75918.265,
+   "wert": 1249.37
   },
   {
    "id": "pe3015b77",
@@ -319,8 +319,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "d6e1a7002",
-   "kurs": 2242.62,
-   "wert": 508.95
+   "kurs": 2237.615,
+   "wert": 507.83
   },
   {
    "id": "p1ad6082a",
@@ -463,7 +463,7 @@
  "funding": 0.0,
  "erstellt": 1793319819.7411644,
  "start_fx": 1.1184885798616961,
- "letzter_tick": 1794002512.0597835,
+ "letzter_tick": 1794003411.8251796,
  "auftraege": [],
  "rebalancing": {
   "ziele": {
