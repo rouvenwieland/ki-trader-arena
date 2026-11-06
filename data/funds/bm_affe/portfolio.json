@@ -2,10 +2,10 @@
  "fonds_id": "bm_affe",
  "waehrung": "USD",
  "start_kapital": 11184.88579861696,
- "cash": 8531.291832782163,
+ "cash": 8105.293596499165,
  "positionen": [
   {
-   "id": "p543a6aa4",
+   "id": "pa0d62d64",
    "inst": {
     "id": "spot:BTC-USD",
     "art": "spot",
@@ -13,22 +13,41 @@
     "symbol": "BTC-USD"
    },
    "seite": "long",
-   "menge": 0.031948687887724904,
-   "einstand": 80530.592898,
+   "menge": 0.018848646107151593,
+   "einstand": 76177.142382,
    "hebel": 1.0,
    "marge": 0.0,
-   "eroeffnet": 1793837121.4239993,
-   "gebuehren": 15.437080667469827,
+   "eroeffnet": 1793923466.5686371,
+   "gebuehren": 8.615015989274502,
    "funding": 0.0,
-   "kurs": 75902.985,
-   "wert": 2425.0
+   "kurs": 76161.14,
+   "wert": 1435.52
+  },
+  {
+   "id": "pa16b0154",
+   "inst": {
+    "id": "spot:SOL-USD",
+    "art": "spot",
+    "venue": "coinbase",
+    "symbol": "SOL-USD"
+   },
+   "seite": "long",
+   "menge": 15.532312575776887,
+   "einstand": 89.577912,
+   "hebel": 1.0,
+   "marge": 0.0,
+   "eroeffnet": 1793923466.5686371,
+   "gebuehren": 8.348112774416611,
+   "funding": 0.0,
+   "kurs": 89.555,
+   "wert": 1390.92
   }
  ],
- "realisiert": 95.83261213632795,
- "gebuehren": 339.2736783943347,
+ "realisiert": -58.861146012764664,
+ "gebuehren": 370.8333042592082,
  "funding": 0.0,
  "erstellt": 1793319819.7411644,
  "start_fx": 1.1184885798616961,
- "letzter_tick": 1793922567.51601,
- "letzter_tag": "2026-11-05"
+ "letzter_tick": 1793923466.5686371,
+ "letzter_tag": "2026-11-06"
 }
