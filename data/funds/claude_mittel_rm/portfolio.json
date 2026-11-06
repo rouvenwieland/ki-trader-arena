@@ -2,7 +2,7 @@
  "fonds_id": "claude_mittel_rm",
  "waehrung": "USD",
  "start_kapital": 11156.327353966788,
- "cash": 1890.2838961802481,
+ "cash": 1865.3722420252102,
  "positionen": [
   {
    "id": "pe8186cc2",
@@ -471,6 +471,32 @@
    "entscheidung_id": "d0a642430",
    "kurs": 91.465,
    "wert": 908.43
+  },
+  {
+   "id": "p4abb843a",
+   "inst": {
+    "id": "pm:manifold:RZqSLQS8lC:JA",
+    "art": "pm",
+    "venue": "manifold",
+    "ergebnis": "JA",
+    "frage": "Will an NVIDIA executive say \"bubble\" on NVIDIA's November 17 earnings call?",
+    "schliesst": 1794978000.0,
+    "ref": {
+     "id": "RZqSLQS8lC"
+    },
+    "url": "https://manifold.markets/Terminator2/will-an-nvidia-executive-say-bubble"
+   },
+   "seite": "long",
+   "menge": 64.0,
+   "einstand": 0.3892445961724682,
+   "hebel": 1.0,
+   "marge": 0.0,
+   "eroeffnet": 1793985545.006964,
+   "gebuehren": 0.0,
+   "funding": 0.0,
+   "ausstiegsplan": "Halten bis Abrechnung nach Earnings 17.11.",
+   "entscheidung_id": "dde4a2a08",
+   "invalidierung": "Transkript vom 17.11. enthält das Wort nicht oder Regelklarstellung schließt Analystenfragen aus."
   }
  ],
  "realisiert": -22.519058327054932,

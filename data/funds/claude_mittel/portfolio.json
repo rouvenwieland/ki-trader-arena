@@ -2,7 +2,7 @@
  "fonds_id": "claude_mittel",
  "waehrung": "USD",
  "start_kapital": 11184.88579861696,
- "cash": 2321.5936886825175,
+ "cash": 2051.8690886825175,
  "positionen": [
   {
    "id": "p51e71031",
@@ -149,16 +149,16 @@
     "url": "https://polymarket.com/event/will-apple-be-the-largest-company-in-the-world-by-market-cap-on-december-31-291"
    },
    "seite": "long",
-   "menge": 370.0,
-   "einstand": 0.5292582702702703,
+   "menge": 607.0,
+   "einstand": 0.5658658319604613,
    "hebel": 1.0,
    "marge": 0.0,
    "eroeffnet": 1793560019.8486197,
-   "gebuehren": 3.53885,
+   "gebuehren": 5.76539,
    "funding": 0.0,
-   "ausstiegsplan": "Bid ≥0.74 → Gewinn mitnehmen; nach NVDA-Earnings neu rechnen.",
-   "entscheidung_id": "d1d050db4",
-   "invalidierung": "Abstand <5 % in Marktkapitalisierung oder Apple-JA <0.50.",
+   "ausstiegsplan": "Bid ≥0,70 verkaufen (P erreicht); Neubewertung nach NVDA-Zahlen 19.11.; schließen, wenn Apple-Vorsprung <3 %.",
+   "entscheidung_id": "d7e53ef04",
+   "invalidierung": "NVDA-Marktkap. kommt auf <3 % Abstand zu Apple, oder Apple fällt >8 % relativ.",
    "kurs": 0.6145,
    "wert": 226.07
   },
@@ -422,10 +422,42 @@
    "invalidierung": "Trump oder mehrere Quellen (Axios/CBS/NYT) melden Entscheidung zum Austausch; NEIN-Bid fällt unter 0.55.",
    "kurs": 0.775,
    "wert": 164.78
+  },
+  {
+   "id": "pa0a2bdf6",
+   "inst": {
+    "id": "pm:polymarket:6507419:JA",
+    "art": "pm",
+    "venue": "polymarket",
+    "ergebnis": "JA",
+    "frage": "Will Ethereum dip to $2,200 in November?",
+    "schliesst": 1796101200.0,
+    "ref": {
+     "id": "6507419",
+     "token_ja": "84341712069386621869883941410655847654141979478983269290233964486858923093414",
+     "token_nein": "51250523000119717554813621137668364065938991754255110190280296210087104127374",
+     "tick": 0.01,
+     "condition": "0x112b9723b82645f28370970ebfbb2c55cd1b15e27cfde74b109481d4cc6368b3",
+     "gebuehr_rate": 0.07,
+     "gebuehr_exp": 1.0
+    },
+    "url": "https://polymarket.com/event/what-price-will-ethereum-hit-in-november-2026"
+   },
+   "seite": "long",
+   "menge": 138.0,
+   "einstand": 0.86,
+   "hebel": 1.0,
+   "marge": 0.0,
+   "eroeffnet": 1793985611.8978171,
+   "gebuehren": 1.16306,
+   "funding": 0.0,
+   "ausstiegsplan": "Bid ≥0,92 verkaufen; sonst bis Abrechnung/Touch halten.",
+   "entscheidung_id": "d0bdb1295",
+   "invalidierung": "ETH steigt über 2450 und DVOL fällt unter 45 – dann Touch-Wahrscheinlichkeit <0.8."
   }
  ],
  "realisiert": -114.85177367275844,
- "gebuehren": 38.7796533771088,
+ "gebuehren": 42.1692533771088,
  "funding": 0.0,
  "erstellt": 1793319819.7411644,
  "start_fx": 1.1184885798616961,
