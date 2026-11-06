@@ -2,7 +2,7 @@
  "fonds_id": "claude_mittel",
  "waehrung": "USD",
  "start_kapital": 11184.88579861696,
- "cash": 2272.5936886825175,
+ "cash": 2321.5936886825175,
  "positionen": [
   {
    "id": "p51e71031",
@@ -126,7 +126,7 @@
    "entscheidung_id": "df5b61ded",
    "invalidierung": "Meldung/Analystenkonsens zur Q3-Marge ≥75,0 % oder <73 %; Pre-Announcement zu Speicherkosten.",
    "kurs": 0.875,
-   "wert": 34.4
+   "wert": 34.8
   },
   {
    "id": "p8b4a7cc3",
@@ -159,8 +159,8 @@
    "ausstiegsplan": "Bid ≥0.74 → Gewinn mitnehmen; nach NVDA-Earnings neu rechnen.",
    "entscheidung_id": "d1d050db4",
    "invalidierung": "Abstand <5 % in Marktkapitalisierung oder Apple-JA <0.50.",
-   "kurs": 0.724,
-   "wert": 263.81
+   "kurs": 0.697,
+   "wert": 257.52
   },
   {
    "id": "pf61ac065",
@@ -298,8 +298,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "d6e1a7002",
-   "kurs": 76161.905,
-   "wert": 1253.38
+   "kurs": 76085.315,
+   "wert": 1252.12
   },
   {
    "id": "pe3015b77",
@@ -319,8 +319,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "d6e1a7002",
-   "kurs": 2240.395,
-   "wert": 508.46
+   "kurs": 2238.425,
+   "wert": 508.02
   },
   {
    "id": "p1ad6082a",
@@ -356,40 +356,6 @@
    "wert": 123.0
   },
   {
-   "id": "p39bd22b8",
-   "inst": {
-    "id": "pm:polymarket:6679708:JA",
-    "art": "pm",
-    "venue": "polymarket",
-    "ergebnis": "JA",
-    "frage": "Will Airbnb say \"Project Hawaii\" during earnings call?",
-    "schliesst": 1793941140.0,
-    "ref": {
-     "id": "6679708",
-     "token_ja": "47371790912645182755729866725280759354350688498308569304184714783135415500701",
-     "token_nein": "29550837153434660706963356991012834972541243642582826731384907401078413682652",
-     "tick": 0.01,
-     "condition": "0x227a48be0fc911620d5b0686da246d330beeb8f1751c309926410cbcbaeeb685",
-     "gebuehr_rate": 0.04,
-     "gebuehr_exp": 1.0
-    },
-    "url": "https://polymarket.com/event/will-airbnb-say-project-hawaii-during-earnings-call-november-5"
-   },
-   "seite": "long",
-   "menge": 49.0,
-   "einstand": 0.56,
-   "hebel": 1.0,
-   "marge": 0.0,
-   "eroeffnet": 1793870037.2638175,
-   "gebuehren": 0.48294,
-   "funding": 0.0,
-   "ausstiegsplan": "Bis Abrechnung nach dem Call halten (Audio).",
-   "entscheidung_id": "d92f7b113",
-   "invalidierung": "Call ohne Erwähnung; Transkript der Q3-Prepared-Remarks ohne Hawaii-Verweis.",
-   "kurs": 0.99,
-   "wert": 48.51
-  },
-  {
    "id": "pc680e88c",
    "inst": {
     "id": "pm:polymarket:676739:NEIN",
@@ -420,8 +386,8 @@
    "ausstiegsplan": "Gewinn mitnehmen bei NEIN-Bid ≥0.78 (=P). Nach NVDA-Earnings neu rechnen. Sonst halten bis 31.12.",
    "entscheidung_id": "d1fa25bbb",
    "invalidierung": "NVDA-Marktkapitalisierung innerhalb 5 % von Apple (z. B. NVDA ≥200 bei AAPL ~349) nach den Earnings, oder NVDA-JA ≥0.45.",
-   "kurs": 0.725,
-   "wert": 303.88
+   "kurs": 0.705,
+   "wert": 299.6
   },
   {
    "id": "pb2463e57",
@@ -458,12 +424,12 @@
    "wert": 154.08
   }
  ],
- "realisiert": -136.41177367275844,
+ "realisiert": -114.85177367275844,
  "gebuehren": 38.7796533771088,
  "funding": 0.0,
  "erstellt": 1793319819.7411644,
  "start_fx": 1.1184885798616961,
- "letzter_tick": 1793923466.5686371,
+ "letzter_tick": 1793924367.3897235,
  "auftraege": [],
  "rebalancing": {
   "ziele": {
