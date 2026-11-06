@@ -85,8 +85,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "d3af64508",
-   "kurs": 75507.985,
-   "wert": 2043.45
+   "kurs": 75517.375,
+   "wert": 2043.71
   },
   {
    "id": "paa2d9988",
@@ -225,8 +225,8 @@
    "ausstiegsplan": "Halten bis CLI-Abrechnung am 06.11. (Binärwette). Verkauf nur, falls NWS-Meldung ein Maximum außerhalb 82-83°F vor 18 UTC bestätigt.",
    "entscheidung_id": "dbb0b25a6",
    "invalidierung": "NWS-Meldung eines Tagesmaximums außerhalb 82-83°F in Miami am 06.11. (CLI-Bericht)",
-   "kurs": 0.025,
-   "wert": 34.34
+   "kurs": 0.035,
+   "wert": 51.51
   },
   {
    "id": "pfd983386",
@@ -253,7 +253,7 @@
    "ausstiegsplan": "Halten bis CLI-Abrechnung heute Abend (binär, kein Zwischenverkauf).",
    "entscheidung_id": "daf281f2c",
    "invalidierung": "NWS-Prognose-Update hebt Austin-Maximum auf ≥75 °F an (dann ist der Markt informiert und die Position wertlos).",
-   "kurs": 0.02,
+   "kurs": 0.015,
    "wert": 12.67
   },
   {
@@ -281,8 +281,8 @@
    "ausstiegsplan": "Halten bis CLI-Abrechnung heute Abend; Binärwette, kein vorzeitiger Ausstieg.",
    "entscheidung_id": "dda3f6179",
    "invalidierung": "NWS CLI Austin Bergstrom meldet Tagesmaximum außerhalb 73-74°F am 06.11.",
-   "kurs": 0.045,
-   "wert": 1.48
+   "kurs": 0.035,
+   "wert": 1.11
   }
  ],
  "realisiert": -203.649,
@@ -290,7 +290,7 @@
  "funding": 0.0,
  "erstellt": 1793319819.7411644,
  "start_fx": 1.1184885798616961,
- "letzter_tick": 1793941596.6098952,
+ "letzter_tick": 1793942497.176149,
  "rebalancing": {
   "ziele": {
    "stock:SPY": {
