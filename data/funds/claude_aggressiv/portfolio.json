@@ -55,8 +55,8 @@
    "ausstiegsplan": "Stop 700; Review nach CPI 10.11.",
    "entscheidung_id": "d05f1cdc5",
    "invalidierung": "SPY schließt unter 700",
-   "kurs": 739.421,
-   "wert": 2667.21
+   "kurs": 739.49,
+   "wert": 2667.46
   },
   {
    "id": "pdc30d721",
@@ -89,8 +89,8 @@
    "ausstiegsplan": "Verkaufen bei Bid ≥0,80 oder BTC >86k Binance; sonst bis 31.12. halten.",
    "entscheidung_id": "d9dd07173",
    "invalidierung": "BTC steigt über 86.000 (Binance) mit sinkender DVOL <35 → Touch-Wahrscheinlichkeit <0,40, Position verkaufen.",
-   "kurs": 0.53,
-   "wert": 365.04
+   "kurs": 0.535,
+   "wert": 372.06
   },
   {
    "id": "p53b6ec63",
@@ -112,8 +112,8 @@
    "ausstiegsplan": "Stop 69.500; Teilverkauf bei 86k; Dip-Wetten gleichen Abwärtsrisiko teilweise aus.",
    "entscheidung_id": "de5e47324",
    "invalidierung": "Tagesschluss unter 69.500 oder Fed-Hike-Odds >90 %",
-   "kurs": 75926.755,
-   "wert": 1192.98
+   "kurs": 75809.055,
+   "wert": 1191.13
   },
   {
    "id": "p9c4e61c2",
@@ -135,8 +135,8 @@
    "ausstiegsplan": "Stop 355; als Kern halten.",
    "entscheidung_id": "def361d62",
    "invalidierung": "GLD schließt unter 355",
-   "kurs": 372.07,
-   "wert": 1510.09
+   "kurs": 372.065,
+   "wert": 1510.07
   },
   {
    "id": "pe9dce5d9",
@@ -158,8 +158,8 @@
    "ausstiegsplan": "Stop 93; sonst als defensiver Kern halten, Review nach CPI 10.11. und FOMC 9.12.",
    "entscheidung_id": "dd7ab6d3d",
    "invalidierung": "AGG unter 93",
-   "kurs": 96.565,
-   "wert": 800.91
+   "kurs": 96.55,
+   "wert": 800.79
   }
  ],
  "realisiert": -1182.942644803372,
@@ -167,7 +167,7 @@
  "funding": -0.6133053169464532,
  "erstellt": 1793319819.7411644,
  "start_fx": 1.1184885798616961,
- "letzter_tick": 1793985117.1790755,
+ "letzter_tick": 1793986016.7586799,
  "auftraege": [],
  "rebalancing": {
   "ziele": {
