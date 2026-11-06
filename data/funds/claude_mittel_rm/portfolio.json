@@ -137,8 +137,8 @@
    "ausstiegsplan": "Halten bis 31.12.; nach NVDA-Earnings 17.11. neu bewerten; Gewinnmitnahme ≥0,65.",
    "entscheidung_id": "d62d5f0db",
    "invalidierung": "NVDA übertrifft Apple-Marktkap nach Earnings um >5 % oder Apple-JA <0,25.",
-   "kurs": 0.6735,
-   "wert": 499.97
+   "kurs": 0.6705000000000001,
+   "wert": 492.53
   },
   {
    "id": "pa832233e",
@@ -193,8 +193,8 @@
    "ausstiegsplan": "Halten bis Auflösung nach 7.11.",
    "entscheidung_id": "dfb7d728f",
    "invalidierung": "Luxon tritt zurück oder wird als Parteichef ersetzt vor dem 7.11.",
-   "kurs": 0.9756954829182896,
-   "wert": 399.05
+   "kurs": 0.9743617539590037,
+   "wert": 398.51
   },
   {
    "id": "p77177258",
@@ -227,7 +227,7 @@
    "ausstiegsplan": "Halten bis 30.11.; verkaufen, wenn BTC unter 64.000 fällt oder NEIN-Preis <0.88.",
    "entscheidung_id": "d7dbfc08f",
    "invalidierung": "BTC Binance unter 64.000 oder DVOL >60",
-   "kurs": 0.942,
+   "kurs": 0.9424999999999999,
    "wert": 294.53
   },
   {
@@ -337,8 +337,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "dd6456776",
-   "kurs": 75644.025,
-   "wert": 1073.48
+   "kurs": 75605.16500000001,
+   "wert": 1072.92
   },
   {
    "id": "p994b6370",
@@ -457,7 +457,7 @@
  "funding": 0.0,
  "erstellt": 1793380123.8861866,
  "start_fx": 1.1156327353966788,
- "letzter_tick": 1793953296.5142536,
+ "letzter_tick": 1793953439.6721563,
  "auftraege": [],
  "rebalancing": {
   "ziele": {
