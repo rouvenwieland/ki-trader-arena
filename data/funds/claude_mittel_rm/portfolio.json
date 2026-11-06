@@ -227,8 +227,8 @@
    "ausstiegsplan": "Halten bis 30.11.; verkaufen, wenn BTC unter 64.000 fällt oder NEIN-Preis <0.88.",
    "entscheidung_id": "d7dbfc08f",
    "invalidierung": "BTC Binance unter 64.000 oder DVOL >60",
-   "kurs": 0.951,
-   "wert": 297.35
+   "kurs": 0.9515,
+   "wert": 297.66
   },
   {
    "id": "pf805692b",
@@ -282,8 +282,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "dd6456776",
-   "kurs": 735.36,
-   "wert": 2193.13
+   "kurs": 735.29,
+   "wert": 2192.92
   },
   {
    "id": "p1c64b37e",
@@ -303,8 +303,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "dd6456776",
-   "kurs": 75780.715,
-   "wert": 1075.39
+   "kurs": 75630.695,
+   "wert": 1073.29
   },
   {
    "id": "p994b6370",
@@ -324,8 +324,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "dd6456776",
-   "kurs": 372.58,
-   "wert": 916.78
+   "kurs": 372.52,
+   "wert": 916.63
   },
   {
    "id": "p3b9e74b7",
@@ -506,7 +506,7 @@
  "funding": 0.0,
  "erstellt": 1793380123.8861866,
  "start_fx": 1.1156327353966788,
- "letzter_tick": 1793999810.8678014,
+ "letzter_tick": 1794000711.2931643,
  "auftraege": [],
  "rebalancing": {
   "ziele": {

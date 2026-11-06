@@ -22,8 +22,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "d3af64508",
-   "kurs": 372.58,
-   "wert": 1097.92
+   "kurs": 372.52,
+   "wert": 1097.75
   },
   {
    "id": "p3e4bc435",
@@ -43,8 +43,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "d3af64508",
-   "kurs": 735.36,
-   "wert": 3151.98
+   "kurs": 735.29,
+   "wert": 3151.68
   },
   {
    "id": "pb315f18b",
@@ -64,8 +64,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "d3af64508",
-   "kurs": 75780.715,
-   "wert": 2050.79
+   "kurs": 75630.695,
+   "wert": 2046.77
   },
   {
    "id": "p5660ccba",
@@ -120,8 +120,8 @@
    "ausstiegsplan": "Halten bis CLI-Abrechnung heute Abend (Binärwette, kein vorzeitiger Ausstieg). Verkauf nur falls NWS-Meldungen vor 18 UTC ein Max ≥75°F praktisch sicher machen.",
    "entscheidung_id": "d35c24618",
    "invalidierung": "NWS-Meldung eines Tagesmaximums außerhalb 73–74 °F in Austin am 06.11. (CLI-Bericht)",
-   "kurs": 0.625,
-   "wert": 46.61
+   "kurs": 0.825,
+   "wert": 62.41
   },
   {
    "id": "p5a2259b8",
@@ -181,8 +181,8 @@
    "ausstiegsplan": "Verkauf bei Wertverdopplung (BTC ~67–68k) oder Halten bis 25.12. Halbierung der Position, wenn BTC über 80k zurückkehrt (Theta-Bremse).",
    "entscheidung_id": "d0fe400cd",
    "invalidierung": "BTC schließt 3 Tage in Folge über 80k mit fallender realisierter Vola (Abwärtstrend gebrochen).",
-   "kurs": 2425.45952,
-   "wert": 596.89
+   "kurs": 2465.8252059999995,
+   "wert": 605.11
   },
   {
    "id": "p5a6a2ac6",
@@ -211,7 +211,7 @@
  "funding": 0.0,
  "erstellt": 1793319819.7411644,
  "start_fx": 1.1184885798616961,
- "letzter_tick": 1793999810.8678014,
+ "letzter_tick": 1794000711.2931643,
  "rebalancing": {
   "ziele": {
    "stock:SPY": {
