@@ -32,8 +32,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Halten bis FOMC 9.12.; verkaufen wenn Preis <0.55 (These gebrochen, z.B. Friedensdeal + schwache Daten) oder >0.92.",
    "entscheidung_id": "dd6eba046",
-   "kurs": 0.685,
-   "wert": 1416.44
+   "kurs": 0.695,
+   "wert": 1437.27
   },
   {
    "id": "pd2738082",
@@ -89,8 +89,8 @@
    "ausstiegsplan": "Verkaufen bei Bid ≥0,80 oder BTC >86k Binance; sonst bis 31.12. halten.",
    "entscheidung_id": "d9dd07173",
    "invalidierung": "BTC steigt über 86.000 (Binance) mit sinkender DVOL <35 → Touch-Wahrscheinlichkeit <0,40, Position verkaufen.",
-   "kurs": 0.52,
-   "wert": 358.02
+   "kurs": 0.535,
+   "wert": 372.06
   },
   {
    "id": "p5701ae4c",
@@ -123,8 +123,8 @@
    "ausstiegsplan": "Halten bis Touch (sofortige Auflösung JA) oder 30.11.; Verkauf bei Bid ≥0,97.",
    "entscheidung_id": "dfa72a69d",
    "invalidierung": "BTC (Binance) schließt über 80k Tagesschluss mit DVOL <35 → P <0,75, dann verkaufen",
-   "kurs": 0.835,
-   "wert": 385.95
+   "kurs": 0.855,
+   "wert": 395.25
   },
   {
    "id": "p53b6ec63",
@@ -146,8 +146,8 @@
    "ausstiegsplan": "Stop 69.500; Teilverkauf bei 86k; Dip-Wetten gleichen Abwärtsrisiko teilweise aus.",
    "entscheidung_id": "de5e47324",
    "invalidierung": "Tagesschluss unter 69.500 oder Fed-Hike-Odds >90 %",
-   "kurs": 76086.38500000001,
-   "wert": 1195.49
+   "kurs": 75967.905,
+   "wert": 1193.63
   }
  ],
  "realisiert": -1252.1951248033722,
@@ -155,7 +155,7 @@
  "funding": -0.6133053169464532,
  "erstellt": 1793319819.7411644,
  "start_fx": 1.1184885798616961,
- "letzter_tick": 1793957938.5595007,
+ "letzter_tick": 1793958838.9764102,
  "auftraege": [
   {
    "id": "a9dfa4d",
