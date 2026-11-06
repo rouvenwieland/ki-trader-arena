@@ -2,7 +2,7 @@
  "fonds_id": "schwarm_alle",
  "waehrung": "USD",
  "start_kapital": 11157.431109273288,
- "cash": 10215.698329273286,
+ "cash": 10133.182819273286,
  "positionen": [
   {
    "id": "pafbfcf8d",
@@ -98,13 +98,45 @@
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Schwarm-Regel)",
    "kurs": 0.908,
-   "wert": 594.42
+   "wert": 595.74
+  },
+  {
+   "id": "pd9f9e40a",
+   "inst": {
+    "id": "pm:polymarket:3215007:JA",
+    "art": "pm",
+    "venue": "polymarket",
+    "ergebnis": "JA",
+    "frage": "Will there be no change in Fed interest rates after the December 2026 meeting?",
+    "schliesst": 1796860740.0,
+    "ref": {
+     "id": "3215007",
+     "token_ja": "42865728742506860386768556888821101266630139112044622335353850919229585308601",
+     "token_nein": "8077351031134730167836761678618167504307708651130165095377248922919635337796",
+     "tick": 0.01,
+     "condition": "0x723822eb2b143cee54c0bd7c1efba322b21f0051984c266df8879c394f1011c0",
+     "gebuehr_rate": 0.05,
+     "gebuehr_exp": 1.0
+    },
+    "url": "https://polymarket.com/event/fed-decision-in-december-20260729232808632"
+   },
+   "seite": "long",
+   "menge": 378.0,
+   "einstand": 0.21,
+   "hebel": 1.0,
+   "marge": 0.0,
+   "eroeffnet": 1793982416.739606,
+   "gebuehren": 3.13551,
+   "funding": 0.0,
+   "ausstiegsplan": "Halten bis zur Abrechnung (Schwarm-Regel)",
+   "kurs": 0.20500000000000002,
+   "wert": 75.6
   }
  ],
  "realisiert": 369.06039999999996,
- "gebuehren": 33.2624,
+ "gebuehren": 36.397909999999996,
  "funding": 0.0,
  "erstellt": 1793379225.5430336,
  "start_fx": 1.1157431109273288,
- "letzter_tick": 1793981517.3411498
+ "letzter_tick": 1793982416.739606
 }
