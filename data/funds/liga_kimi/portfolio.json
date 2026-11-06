@@ -85,36 +85,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "d3af64508",
-   "kurs": 75832.785,
-   "wert": 2052.24
-  },
-  {
-   "id": "p78088b28",
-   "inst": {
-    "id": "pm:kalshi:KXHIGHAUS-26NOV05-B78.5:JA",
-    "art": "pm",
-    "venue": "kalshi",
-    "ergebnis": "JA",
-    "frage": "Will the maximum temperature be 78-79° on Nov 5, 2026? [78° to 79°]",
-    "schliesst": 1793948400.0,
-    "ref": {
-     "ticker": "KXHIGHAUS-26NOV05-B78.5"
-    },
-    "url": "https://kalshi.com/markets/KXHIGHAUS-26NOV05"
-   },
-   "seite": "long",
-   "menge": 789.0,
-   "einstand": 0.05938960709759188,
-   "hebel": 1.0,
-   "marge": 0.0,
-   "eroeffnet": 1793837688.1102798,
-   "gebuehren": 3.09,
-   "funding": 0.0,
-   "ausstiegsplan": "Halten bis CLI-Abrechnung heute Abend; Binärwette ohne Zwischenverkauf.",
-   "entscheidung_id": "d5f76f306",
-   "invalidierung": "NWS CLI Austin Bergstrom meldet Tagesmaximum außerhalb 78-79°F am 05.11.",
-   "kurs": null,
-   "wert": 46.86
+   "kurs": 75893.255,
+   "wert": 2053.86
   },
   {
    "id": "pb0b91e41",
@@ -197,8 +169,8 @@
    "ausstiegsplan": "Halten bis CLI-Abrechnung heute Abend (binär, kein Zwischenverkauf).",
    "entscheidung_id": "daf281f2c",
    "invalidierung": "NWS-Prognose-Update hebt Austin-Maximum auf ≥75 °F an (dann ist der Markt informiert und die Position wertlos).",
-   "kurs": 0.015,
-   "wert": 12.67
+   "kurs": 0.025,
+   "wert": 25.34
   },
   {
    "id": "p218402ab",
@@ -229,12 +201,12 @@
    "wert": 3.16
   }
  ],
- "realisiert": -261.58554143344713,
+ "realisiert": -308.44394143344715,
  "gebuehren": 57.07636565591361,
  "funding": 0.0,
  "erstellt": 1793319819.7411644,
  "start_fx": 1.1184885798616961,
- "letzter_tick": 1793970538.6096,
+ "letzter_tick": 1793971439.3478134,
  "rebalancing": {
   "ziele": {
    "stock:SPY": {
