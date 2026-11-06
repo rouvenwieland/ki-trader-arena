@@ -227,7 +227,7 @@
    "ausstiegsplan": "Halten bis 30.11.; verkaufen, wenn BTC unter 64.000 fällt oder NEIN-Preis <0.88.",
    "entscheidung_id": "d7dbfc08f",
    "invalidierung": "BTC Binance unter 64.000 oder DVOL >60",
-   "kurs": 0.9455,
+   "kurs": 0.946,
    "wert": 295.47
   },
   {
@@ -295,7 +295,7 @@
    "ausstiegsplan": "Halten bis 28.11.; Verkauf bei Preis ≥0.60 (Gewinn) oder bei Invalidierung.",
    "entscheidung_id": "df7c39229",
    "invalidierung": "Mehrere seriöse Umfragen (TVBS, UDN, China Times) zeigen Chiang ≥6 Punkte vorn, oder Shen-Preis fällt <0.22.",
-   "kurs": 0.2915,
+   "kurs": 0.292,
    "wert": 106.56
   },
   {
@@ -337,8 +337,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "dd6456776",
-   "kurs": 76134.275,
-   "wert": 1080.43
+   "kurs": 76054.095,
+   "wert": 1079.3
   },
   {
    "id": "p994b6370",
@@ -491,7 +491,7 @@
  "funding": 0.0,
  "erstellt": 1793380123.8861866,
  "start_fx": 1.1156327353966788,
- "letzter_tick": 1793961539.1177967,
+ "letzter_tick": 1793962439.0095758,
  "auftraege": [],
  "rebalancing": {
   "ziele": {
