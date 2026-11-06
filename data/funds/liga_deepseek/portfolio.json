@@ -22,8 +22,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "d2b5d529d",
-   "kurs": 82.02,
-   "wert": 2519.37
+   "kurs": 82.035,
+   "wert": 2519.83
   },
   {
    "id": "p78a3c466",
@@ -43,8 +43,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "d8e5f296a",
-   "kurs": 372.93,
-   "wert": 852.77
+   "kurs": 372.45,
+   "wert": 851.67
   },
   {
    "id": "p3d319c8e",
@@ -64,8 +64,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "d8e5f296a",
-   "kurs": 75595.215,
-   "wert": 697.48
+   "kurs": 75617.83499999999,
+   "wert": 697.69
   },
   {
    "id": "p9a8fa083",
@@ -85,8 +85,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "d8e5f296a",
-   "kurs": 738.17,
-   "wert": 2924.5
+   "kurs": 737.82,
+   "wert": 2923.11
   }
  ],
  "realisiert": -472.687825754775,
@@ -94,7 +94,7 @@
  "funding": 0.0,
  "erstellt": 1793319819.7411644,
  "start_fx": 1.1184885798616961,
- "letzter_tick": 1793992610.9233603,
+ "letzter_tick": 1793993510.5201225,
  "rebalancing": {
   "ziele": {
    "stock:SPY": {
@@ -161,7 +161,7 @@
    "ausstiegsplan": "Take-Profit 500 (Rückeroberung Richtung SMA20), Stop 426 (unter 2σ-Tagesband). Bewertung nach 2-3 Tagen: wenn SMA20 nicht zurückerobert, raus.",
    "invalidierung": "Tagesschluss unter 447 (heutiges Tief) ODER neuer Ausverkauf unter 440 – dann ist der Rebound gescheitert.",
    "erstellt": 1793991952.374549,
-   "geprueft_bis": 1793992610.9233603,
+   "geprueft_bis": 1793993510.5201225,
    "gueltig_bis": 1794015352.374549
   }
  ]

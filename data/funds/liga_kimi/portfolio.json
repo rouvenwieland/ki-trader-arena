@@ -22,8 +22,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "d3af64508",
-   "kurs": 372.93,
-   "wert": 1098.81
+   "kurs": 372.45,
+   "wert": 1097.4
   },
   {
    "id": "p3e4bc435",
@@ -43,8 +43,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "d3af64508",
-   "kurs": 738.17,
-   "wert": 3163.68
+   "kurs": 737.82,
+   "wert": 3162.18
   },
   {
    "id": "pb315f18b",
@@ -64,8 +64,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "d3af64508",
-   "kurs": 75595.215,
-   "wert": 2045.81
+   "kurs": 75617.83499999999,
+   "wert": 2046.42
   },
   {
    "id": "p5660ccba",
@@ -120,8 +120,8 @@
    "ausstiegsplan": "Halten bis CLI-Abrechnung heute Abend (Binärwette, kein vorzeitiger Ausstieg). Verkauf nur falls NWS-Meldungen vor 18 UTC ein Max ≥75°F praktisch sicher machen.",
    "entscheidung_id": "d35c24618",
    "invalidierung": "NWS-Meldung eines Tagesmaximums außerhalb 73–74 °F in Austin am 06.11. (CLI-Bericht)",
-   "kurs": 0.585,
-   "wert": 45.82
+   "kurs": 0.545,
+   "wert": 42.66
   },
   {
    "id": "p5a2259b8",
@@ -181,8 +181,8 @@
    "ausstiegsplan": "Verkauf bei Wertverdopplung (BTC ~67–68k) oder Halten bis 25.12. Halbierung der Position, wenn BTC über 80k zurückkehrt (Theta-Bremse).",
    "entscheidung_id": "d0fe400cd",
    "invalidierung": "BTC schließt 3 Tage in Folge über 80k mit fallender realisierter Vola (Abwärtstrend gebrochen).",
-   "kurs": 2503.674401,
-   "wert": 614.57
+   "kurs": 2495.78472,
+   "wert": 614.49
   },
   {
    "id": "p5a6a2ac6",
@@ -202,8 +202,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "d3af64508",
-   "kurs": 82.02,
-   "wert": 527.44
+   "kurs": 82.035,
+   "wert": 527.54
   }
  ],
  "realisiert": -325.3413054666725,
@@ -211,7 +211,7 @@
  "funding": 0.0,
  "erstellt": 1793319819.7411644,
  "start_fx": 1.1184885798616961,
- "letzter_tick": 1793992610.9233603,
+ "letzter_tick": 1793993510.5201225,
  "rebalancing": {
   "ziele": {
    "stock:SPY": {
