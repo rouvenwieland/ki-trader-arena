@@ -55,8 +55,8 @@
    "ausstiegsplan": "Stop 700; Review nach CPI 10.11.",
    "entscheidung_id": "d05f1cdc5",
    "invalidierung": "SPY schließt unter 700",
-   "kurs": 736.78,
-   "wert": 2657.69
+   "kurs": 736.79,
+   "wert": 2657.72
   },
   {
    "id": "pdc30d721",
@@ -112,8 +112,8 @@
    "ausstiegsplan": "Stop 69.500; Teilverkauf bei 86k; Dip-Wetten gleichen Abwärtsrisiko teilweise aus.",
    "entscheidung_id": "de5e47324",
    "invalidierung": "Tagesschluss unter 69.500 oder Fed-Hike-Odds >90 %",
-   "kurs": 75645.60500000001,
-   "wert": 1188.57
+   "kurs": 75682.84,
+   "wert": 1189.14
   },
   {
    "id": "p9c4e61c2",
@@ -135,8 +135,8 @@
    "ausstiegsplan": "Stop 355; als Kern halten.",
    "entscheidung_id": "def361d62",
    "invalidierung": "GLD schließt unter 355",
-   "kurs": 372.025,
-   "wert": 1509.91
+   "kurs": 372.49,
+   "wert": 1511.8
   },
   {
    "id": "pe9dce5d9",
@@ -158,8 +158,8 @@
    "ausstiegsplan": "Stop 93; sonst als defensiver Kern halten, Review nach CPI 10.11. und FOMC 9.12.",
    "entscheidung_id": "dd7ab6d3d",
    "invalidierung": "AGG unter 93",
-   "kurs": 96.614,
-   "wert": 801.32
+   "kurs": 96.6,
+   "wert": 801.2
   }
  ],
  "realisiert": -1182.942644803372,
@@ -167,7 +167,7 @@
  "funding": -0.6133053169464532,
  "erstellt": 1793319819.7411644,
  "start_fx": 1.1184885798616961,
- "letzter_tick": 1793988717.0764692,
+ "letzter_tick": 1793989617.4377081,
  "auftraege": [],
  "rebalancing": {
   "ziele": {
