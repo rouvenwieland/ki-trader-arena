@@ -2,7 +2,7 @@
  "fonds_id": "schwarm_alle",
  "waehrung": "USD",
  "start_kapital": 11157.431109273288,
- "cash": 10133.182819273286,
+ "cash": 10036.023239273287,
  "positionen": [
   {
    "id": "pafbfcf8d",
@@ -97,8 +97,8 @@
    "gebuehren": 0.0,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Schwarm-Regel)",
-   "kurs": 0.946,
-   "wert": 618.14
+   "kurs": 0.9445,
+   "wert": 617.48
   },
   {
    "id": "pd9f9e40a",
@@ -131,12 +131,44 @@
    "ausstiegsplan": "Halten bis zur Abrechnung (Schwarm-Regel)",
    "kurs": 0.20500000000000002,
    "wert": 75.6
+  },
+  {
+   "id": "p7f78b6d2",
+   "inst": {
+    "id": "pm:polymarket:1811265:JA",
+    "art": "pm",
+    "venue": "polymarket",
+    "ergebnis": "JA",
+    "frage": "Pete Hegseth out as Secretary of Defense by December 31?",
+    "schliesst": 1798779540.0,
+    "ref": {
+     "id": "1811265",
+     "token_ja": "21275820052009278915970165572803516066396758597545413537036789986793691057073",
+     "token_nein": "39839649379979262874224474703228993451530996696316314037781119946088999891171",
+     "tick": 0.01,
+     "condition": "0x0fcfcfc35d71424c0693c717d2e3bc9b8992910835d124d80cd2f01498f1d3dc",
+     "gebuehr_rate": 0.04,
+     "gebuehr_exp": 1.0
+    },
+    "url": "https://polymarket.com/event/pete-hegseth-out-as-secretary-of-defense-by-december-31"
+   },
+   "seite": "long",
+   "menge": 305.0,
+   "einstand": 0.31,
+   "hebel": 1.0,
+   "marge": 0.0,
+   "eroeffnet": 1794001611.7309556,
+   "gebuehren": 2.60958,
+   "funding": 0.0,
+   "ausstiegsplan": "Halten bis zur Abrechnung (Schwarm-Regel)",
+   "kurs": 0.305,
+   "wert": 91.5
   }
  ],
  "realisiert": 369.06039999999996,
- "gebuehren": 36.397909999999996,
+ "gebuehren": 39.00749,
  "funding": 0.0,
  "erstellt": 1793379225.5430336,
  "start_fx": 1.1157431109273288,
- "letzter_tick": 1794000711.2931643
+ "letzter_tick": 1794001611.7309556
 }
