@@ -64,8 +64,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "d8e5f296a",
-   "kurs": 75857.005,
-   "wert": 699.9
+   "kurs": 75769.66500000001,
+   "wert": 699.09
   },
   {
    "id": "p9a8fa083",
@@ -128,7 +128,7 @@
  "funding": 0.0,
  "erstellt": 1793319819.7411644,
  "start_fx": 1.1184885798616961,
- "letzter_tick": 1794063382.9044707,
+ "letzter_tick": 1794064282.2898645,
  "rebalancing": {
   "ziele": {
    "stock:SPY": {
@@ -207,7 +207,7 @@
    "ausstiegsplan": "Halten bis FOMC 09.12.2026 oder bis NEIN-Preis >0,32.",
    "invalidierung": "FedWatch/CME-Futures >85% für +25bp im Dezember oder explizite Erhöhungsankündigung eines FOMC-Mitglieds oder NEIN-Preis fällt unter 0,15.",
    "erstellt": 1794010143.568127,
-   "geprueft_bis": 1794063382.9044707,
+   "geprueft_bis": 1794064282.2898645,
    "gueltig_bis": 1794096543.568127
   }
  ]
