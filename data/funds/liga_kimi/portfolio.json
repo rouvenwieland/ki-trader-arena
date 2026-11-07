@@ -64,8 +64,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "d3af64508",
-   "kurs": 75837.595,
-   "wert": 2052.37
+   "kurs": 75781.065,
+   "wert": 2050.84
   },
   {
    "id": "p218402ab",
@@ -153,8 +153,8 @@
    "ausstiegsplan": "Verkauf bei Wertverdopplung (BTC ~67–68k) oder Halten bis 25.12. Halbierung der Position, wenn BTC über 80k zurückkehrt (Theta-Bremse).",
    "entscheidung_id": "d0fe400cd",
    "invalidierung": "BTC schließt 3 Tage in Folge über 80k mit fallender realisierter Vola (Abwärtstrend gebrochen).",
-   "kurs": 2366.319384,
-   "wert": 578.31
+   "kurs": 2379.9284599999996,
+   "wert": 587.4
   },
   {
    "id": "p5a6a2ac6",
@@ -176,48 +176,14 @@
    "entscheidung_id": "d3af64508",
    "kurs": 81.92,
    "wert": 526.86
-  },
-  {
-   "id": "pedf4712b",
-   "inst": {
-    "id": "pm:polymarket:6667468:JA",
-    "art": "pm",
-    "venue": "polymarket",
-    "ergebnis": "JA",
-    "frage": "US x Iran effective ceasefire continues through November 15, 2026?",
-    "schliesst": 1794805140.0,
-    "ref": {
-     "id": "6667468",
-     "token_ja": "90419247464759355633552711225422740756104404997182678776776696213655914735400",
-     "token_nein": "91301230446649789357791318352573361562403258022669247407694602183224505954465",
-     "tick": 0.01,
-     "condition": "0x9072fd1470ae1fd0e143a4946cb4d38c49ad040cc9c54bfab499b9873af63343",
-     "gebuehr_rate": 0.0,
-     "gebuehr_exp": 1
-    },
-    "url": "https://polymarket.com/event/us-iran-effective-ceasefire-continues-throughptptpt-20261103"
-   },
-   "seite": "long",
-   "menge": 400.0,
-   "einstand": 0.3,
-   "hebel": 1.0,
-   "marge": 0.0,
-   "eroeffnet": 1794010381.7000744,
-   "gebuehren": 0.0,
-   "funding": 0.0,
-   "ausstiegsplan": "Halten bis Abrechnung 15.11. Falls der 08.11.-Markt friedlich mit JA abrechnet und dieser Preis dann >0,55 steht: Hälfte verkaufen (Gewinnmitnahme), Rest bis 15.11. Bei glaubwürdiger Deal-/Verlängerungsmeldung und Preis >0,45 komplett verkaufen.",
-   "entscheidung_id": "d63de4c3b",
-   "invalidierung": "Beobachtbar: Meldung einer konkreten, für die Woche 09.–15.11. terminierten US-Schlagplanung (nicht bloße Drohkulisse) → Position zum Marktpreis verkaufen. Totalverlust bei echtem US-Einschlag auf iranischem Territorium vor 16.11.",
-   "kurs": null,
-   "wert": 120.0
   }
  ],
- "realisiert": -513.7213054666724,
+ "realisiert": -633.7213054666724,
  "gebuehren": 76.92625440591361,
  "funding": 0.0,
  "erstellt": 1793319819.7411644,
  "start_fx": 1.1184885798616961,
- "letzter_tick": 1794055175.0341928,
+ "letzter_tick": 1794056075.2119904,
  "rebalancing": {
   "ziele": {
    "stock:SPY": {
