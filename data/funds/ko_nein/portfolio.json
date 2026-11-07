@@ -2,7 +2,7 @@
  "fonds_id": "ko_nein",
  "waehrung": "USD",
  "start_kapital": 11157.431109273288,
- "cash": 1982.344279273286,
+ "cash": 1648.219129273286,
  "positionen": [
   {
    "id": "p9e535f2b",
@@ -130,7 +130,7 @@
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
    "kurs": 0.372,
-   "wert": 92.25
+   "wert": 92.0
   },
   {
    "id": "pe65b0b73",
@@ -161,7 +161,7 @@
    "gebuehren": 0.0,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.9944999999999999,
+   "kurs": 0.9924999999999999,
    "wert": 209.31
   },
   {
@@ -449,7 +449,7 @@
    "gebuehren": 5.41501,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.475,
+   "kurs": 0.48,
    "wert": 145.7
   },
   {
@@ -513,8 +513,8 @@
    "gebuehren": 0.0,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.135,
-   "wert": 203.06
+   "kurs": 0.155,
+   "wert": 234.3
   },
   {
    "id": "pc0b8a31d",
@@ -673,8 +673,8 @@
    "gebuehren": 1.59053,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.016,
-   "wert": 3.27
+   "kurs": 0.018000000000000002,
+   "wert": 3.71
   },
   {
    "id": "p091ba70e",
@@ -865,8 +865,8 @@
    "gebuehren": 5.66986,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.21000000000000002,
-   "wert": 108.4
+   "kurs": 0.195,
+   "wert": 92.14
   },
   {
    "id": "pf242aeda",
@@ -1153,8 +1153,8 @@
    "gebuehren": 2.0848,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.6885,
-   "wert": 165.09
+   "kurs": 0.687,
+   "wert": 164.36
   },
   {
    "id": "p8929587b",
@@ -1185,8 +1185,8 @@
    "gebuehren": 0.0,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.036500000000000005,
-   "wert": 91.74
+   "kurs": 0.036000000000000004,
+   "wert": 88.88
   },
   {
    "id": "pae38309e",
@@ -1251,13 +1251,77 @@
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
    "kurs": 0.8200000000000001,
    "wert": 157.14
+  },
+  {
+   "id": "p52ad9acd",
+   "inst": {
+    "id": "pm:polymarket:2116493:NEIN",
+    "art": "pm",
+    "venue": "polymarket",
+    "ergebnis": "NEIN",
+    "frage": "Will National Party win the most seats in the New Zealand House of Representatives in the 2026 New Zealand legislative election?",
+    "schliesst": 1794113940.0,
+    "ref": {
+     "id": "2116493",
+     "token_ja": "26180671930795783086167354944853320138724504174864059426988212642169432238219",
+     "token_nein": "109528281960787366259167519549419015523883006138549082473738768120949458572608",
+     "tick": 0.001,
+     "condition": "0xba155b6be6cabf93bf31dfcc56fe2f4e3e88d16b0d490319c635930f2d9fbd04",
+     "gebuehr_rate": 0.04,
+     "gebuehr_exp": 1.0
+    },
+    "url": "https://polymarket.com/event/new-zealand-legislative-election-winner"
+   },
+   "seite": "long",
+   "menge": 3600.0,
+   "einstand": 0.044767602777777776,
+   "hebel": 1.0,
+   "marge": 0.0,
+   "eroeffnet": 1794043257.375455,
+   "gebuehren": 6.15794,
+   "funding": 0.0,
+   "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
+   "kurs": 0.037,
+   "wert": 97.2
+  },
+  {
+   "id": "p00267f3d",
+   "inst": {
+    "id": "pm:polymarket:4397025:NEIN",
+    "art": "pm",
+    "venue": "polymarket",
+    "ergebnis": "NEIN",
+    "frage": "Will T1 win Worlds 2026?",
+    "schliesst": 1795928340.0,
+    "ref": {
+     "id": "4397025",
+     "token_ja": "56360910151195441905859355697297471571491885496299657191480344412119595418796",
+     "token_nein": "101996110023306359267215939819928021406998500989415641847320025626005179879667",
+     "tick": 0.01,
+     "condition": "0xa69885e5d14dc00bb5dd20a88a99560987926883cddee2d2bdfde583348fc175",
+     "gebuehr_rate": 0.05,
+     "gebuehr_exp": 1.0
+    },
+    "url": "https://polymarket.com/event/worlds-2026-winner"
+   },
+   "seite": "long",
+   "menge": 197.0,
+   "einstand": 0.84,
+   "hebel": 1.0,
+   "marge": 0.0,
+   "eroeffnet": 1794043257.375455,
+   "gebuehren": 1.32384,
+   "funding": 0.0,
+   "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
+   "kurs": 0.835,
+   "wert": 163.51
   }
  ],
  "realisiert": -2471.3131000000003,
- "gebuehren": 252.35216999999994,
+ "gebuehren": 259.83394999999996,
  "funding": 0.0,
  "erstellt": 1793379225.5430336,
  "start_fx": 1.1157431109273288,
- "letzter_tick": 1794042357.792913,
- "kontrolle_bis": 1794020889.1863344
+ "letzter_tick": 1794043257.375455,
+ "kontrolle_bis": 1794042477.943841
 }
