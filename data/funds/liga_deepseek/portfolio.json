@@ -2,7 +2,7 @@
  "fonds_id": "liga_deepseek",
  "waehrung": "USD",
  "start_kapital": 11184.88579861696,
- "cash": 3481.5002537576456,
+ "cash": 3241.5976937576456,
  "positionen": [
   {
    "id": "p00666bfa",
@@ -87,10 +87,42 @@
    "entscheidung_id": "d8e5f296a",
    "kurs": 735.29,
    "wert": 2913.4
+  },
+  {
+   "id": "pcb4fd55d",
+   "inst": {
+    "id": "pm:polymarket:3215008:NEIN",
+    "art": "pm",
+    "venue": "polymarket",
+    "ergebnis": "NEIN",
+    "frage": "Will the Fed increase interest rates by 25 bps after the December 2026 meeting?",
+    "schliesst": 1796860740.0,
+    "ref": {
+     "id": "3215008",
+     "token_ja": "111662129652828266889360374468657435151479595863413519836161861837506140152890",
+     "token_nein": "94483965432909797688470702512207472940215538148754820061518518664128018848687",
+     "tick": 0.01,
+     "condition": "0x8a4196617dcb703e49d9bb36d3847bf6a75fd364dbd19f8d408ac944bf1a03d8",
+     "gebuehr_rate": 0.05,
+     "gebuehr_exp": 1.0
+    },
+    "url": "https://polymarket.com/event/fed-decision-in-december-20260729232808632"
+   },
+   "seite": "long",
+   "menge": 963.0,
+   "einstand": 0.24,
+   "hebel": 1.0,
+   "marge": 0.0,
+   "eroeffnet": 1794010128.3720248,
+   "gebuehren": 8.78256,
+   "funding": 0.0,
+   "ausstiegsplan": "Halten bis FOMC 09.12.2026. Vorzeitig verkaufen nur, wenn NEIN-Preis >0,32 erreicht (dann ist der Edge weg, aber 30% Gewinn gesichert) oder Invalidierung eintritt.",
+   "entscheidung_id": "df4b3f25b",
+   "invalidierung": "FedWatch/CME-Futures zeigen >85% für +25bp im Dezember, oder ein FOMC-Mitglied bestätigt öffentlich eine Erhöhungsabsicht, oder der Marktpreis NEIN fällt unter 0,15 (dann hat der Markt neue, harte Information)."
   }
  ],
  "realisiert": -472.687825754775,
- "gebuehren": 86.72024925396546,
+ "gebuehren": 95.50280925396547,
  "funding": 0.0,
  "erstellt": 1793319819.7411644,
  "start_fx": 1.1184885798616961,
@@ -163,6 +195,43 @@
    "erstellt": 1793991952.374549,
    "geprueft_bis": 1793998010.6825745,
    "gueltig_bis": 1794015352.374549
+  },
+  {
+   "id": "af1f445",
+   "entscheidung_id": "d8c089225",
+   "inst": {
+    "id": "pm:polymarket:3215008:NEIN",
+    "art": "pm",
+    "venue": "polymarket",
+    "ergebnis": "NEIN",
+    "frage": "Will the Fed increase interest rates by 25 bps after the December 2026 meeting?",
+    "schliesst": 1796860740.0,
+    "ref": {
+     "id": "3215008",
+     "token_ja": "111662129652828266889360374468657435151479595863413519836161861837506140152890",
+     "token_nein": "94483965432909797688470702512207472940215538148754820061518518664128018848687",
+     "tick": 0.01,
+     "condition": "0x8a4196617dcb703e49d9bb36d3847bf6a75fd364dbd19f8d408ac944bf1a03d8",
+     "gebuehr_rate": 0.05,
+     "gebuehr_exp": 1.0
+    },
+    "url": "https://polymarket.com/event/fed-decision-in-december-20260729232808632"
+   },
+   "aktion": "kaufen",
+   "typ": "limit",
+   "seite": "long",
+   "betrag_usd": null,
+   "menge": 500,
+   "hebel": 1.0,
+   "limit_preis": 0.23,
+   "stop_preis": null,
+   "stop_loss": null,
+   "take_profit": null,
+   "ausstiegsplan": "Halten bis FOMC 09.12.2026 oder bis NEIN-Preis >0,32.",
+   "invalidierung": "FedWatch/CME-Futures >85% für +25bp im Dezember oder explizite Erhöhungsankündigung eines FOMC-Mitglieds oder NEIN-Preis fällt unter 0,15.",
+   "erstellt": 1794010143.568127,
+   "geprueft_bis": 1794010143.568127,
+   "gueltig_bis": 1794096543.568127
   }
  ]
 }

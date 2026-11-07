@@ -1,6 +1,6 @@
 {
  "version": 1,
- "stand": 1794009948.6389332,
+ "stand": 1794010421.465174,
  "hinweis": "Papierhandel-Simulation, keine Anlageberatung",
  "seite": "https://rouvenwieland.github.io/ki-trader-arena/",
  "budget": {
@@ -208,10 +208,10 @@
    "rendite_pct": 1.54,
    "equity_eur": 10165.95,
    "max_drawdown_pct": -2.33,
-   "status": "aktiv",
+   "status": "Tagesanteil aufgebraucht – nächste Runde morgen",
    "modell": "claude-sonnet-5-5",
-   "kosten_heute_eur": 0.0,
-   "kosten_gesamt_eur": 18.362,
+   "kosten_heute_eur": 0.001,
+   "kosten_gesamt_eur": 18.363,
    "rendite_ki_pct": [
     -3.4,
     7.92
@@ -680,7 +680,7 @@
    "rendite_pct": -2.3,
    "equity_eur": 9805.86,
    "max_drawdown_pct": -6.34,
-   "status": "aktiv",
+   "status": "Tagesanteil aufgebraucht – nächste Runde morgen",
    "modell": "claude-sonnet-5-5",
    "kosten_heute_eur": 0.0,
    "kosten_gesamt_eur": 20.188,
@@ -798,10 +798,10 @@
    "rendite_pct": -3.05,
    "equity_eur": 9731.29,
    "max_drawdown_pct": -6.05,
-   "status": "aktiv",
+   "status": "Tagesanteil aufgebraucht – nächste Runde morgen",
    "modell": "claude-sonnet-5-5",
-   "kosten_heute_eur": 0.0,
-   "kosten_gesamt_eur": 20.094,
+   "kosten_heute_eur": 0.001,
+   "kosten_gesamt_eur": 20.095,
    "rendite_ki_pct": [
     -8.52,
     -0.02
@@ -916,7 +916,7 @@
    "rendite_pct": -6.25,
    "equity_eur": 9409.43,
    "max_drawdown_pct": -7.75,
-   "status": "Fehler: Modellfehler: kimi-k3: HTTP 400 {\"error\":{\"code\":400,\"message\":\"The request was rejected because it was considered high risk\",\"param\":\"promp",
+   "status": "aktiv",
    "modell": "kimi-k3",
    "kosten_heute_eur": 0.0,
    "kosten_gesamt_eur": 0.0,
@@ -1034,10 +1034,10 @@
    "rendite_pct": -11.63,
    "equity_eur": 8869.29,
    "max_drawdown_pct": -24.83,
-   "status": "aktiv",
+   "status": "Tagesanteil aufgebraucht – nächste Runde morgen",
    "modell": "claude-sonnet-5-5",
    "kosten_heute_eur": 0.0,
-   "kosten_gesamt_eur": 20.088,
+   "kosten_gesamt_eur": 20.089,
    "rendite_ki_pct": [
     -33.38,
     6.35
@@ -1218,6 +1218,27 @@
  ],
  "letzte_entscheidungen": [
   {
+   "ts": 1794010381.6998732,
+   "fonds": "Kimi (Moonshot)",
+   "instrument": "pm:polymarket:6667468:JA",
+   "aktion": "kaufen",
+   "zuversicht": 0.55
+  },
+  {
+   "ts": 1794010143.5679388,
+   "fonds": "DeepSeek",
+   "instrument": "pm:polymarket:3215008:NEIN",
+   "aktion": "kaufen",
+   "zuversicht": 0.45
+  },
+  {
+   "ts": 1794010128.371582,
+   "fonds": "DeepSeek",
+   "instrument": "pm:polymarket:3215008:NEIN",
+   "aktion": "kaufen",
+   "zuversicht": 0.5
+  },
+  {
    "ts": 1793991969.28844,
    "fonds": "Claude Vorsichtig",
    "instrument": "pm:polymarket:6749958:NEIN",
@@ -1251,27 +1272,6 @@
    "instrument": "pm:manifold:RZqSLQS8lC:JA",
    "aktion": "kaufen",
    "zuversicht": 0.5
-  },
-  {
-   "ts": 1793978500.7066517,
-   "fonds": "Kimi (Moonshot)",
-   "instrument": "stock:TLT",
-   "aktion": "verkaufen",
-   "zuversicht": 0.6
-  },
-  {
-   "ts": 1793978486.964489,
-   "fonds": "Kimi (Moonshot)",
-   "instrument": "opt:BTC-25DEC26-72000-P",
-   "aktion": "kaufen",
-   "zuversicht": 0.5
-  },
-  {
-   "ts": 1793978486.962952,
-   "fonds": "Kimi (Moonshot)",
-   "instrument": "pm:polymarket:1811265:JA",
-   "aktion": "kaufen",
-   "zuversicht": 0.55
   }
  ],
  "ereignisse": [

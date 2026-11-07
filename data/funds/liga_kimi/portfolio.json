@@ -2,7 +2,7 @@
  "fonds_id": "liga_kimi",
  "waehrung": "USD",
  "start_kapital": 11184.88579861696,
- "cash": 2578.108037318062,
+ "cash": 2458.108037318062,
  "positionen": [
   {
    "id": "p0b5ac550",
@@ -204,6 +204,38 @@
    "entscheidung_id": "d3af64508",
    "kurs": 81.92,
    "wert": 526.86
+  },
+  {
+   "id": "pedf4712b",
+   "inst": {
+    "id": "pm:polymarket:6667468:JA",
+    "art": "pm",
+    "venue": "polymarket",
+    "ergebnis": "JA",
+    "frage": "US x Iran effective ceasefire continues through November 15, 2026?",
+    "schliesst": 1794805140.0,
+    "ref": {
+     "id": "6667468",
+     "token_ja": "90419247464759355633552711225422740756104404997182678776776696213655914735400",
+     "token_nein": "91301230446649789357791318352573361562403258022669247407694602183224505954465",
+     "tick": 0.01,
+     "condition": "0x9072fd1470ae1fd0e143a4946cb4d38c49ad040cc9c54bfab499b9873af63343",
+     "gebuehr_rate": 0.0,
+     "gebuehr_exp": 1
+    },
+    "url": "https://polymarket.com/event/us-iran-effective-ceasefire-continues-throughptptpt-20261103"
+   },
+   "seite": "long",
+   "menge": 400.0,
+   "einstand": 0.3,
+   "hebel": 1.0,
+   "marge": 0.0,
+   "eroeffnet": 1794010381.7000744,
+   "gebuehren": 0.0,
+   "funding": 0.0,
+   "ausstiegsplan": "Halten bis Abrechnung 15.11. Falls der 08.11.-Markt friedlich mit JA abrechnet und dieser Preis dann >0,55 steht: Hälfte verkaufen (Gewinnmitnahme), Rest bis 15.11. Bei glaubwürdiger Deal-/Verlängerungsmeldung und Preis >0,45 komplett verkaufen.",
+   "entscheidung_id": "d63de4c3b",
+   "invalidierung": "Beobachtbar: Meldung einer konkreten, für die Woche 09.–15.11. terminierten US-Schlagplanung (nicht bloße Drohkulisse) → Position zum Marktpreis verkaufen. Totalverlust bei echtem US-Einschlag auf iranischem Territorium vor 16.11."
   }
  ],
  "realisiert": -325.3413054666725,
