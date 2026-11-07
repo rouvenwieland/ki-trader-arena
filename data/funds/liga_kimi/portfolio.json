@@ -64,36 +64,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "d3af64508",
-   "kurs": 75904.785,
-   "wert": 2054.19
-  },
-  {
-   "id": "p5660ccba",
-   "inst": {
-    "id": "pm:kalshi:KXHIGHMIA-26NOV06-B82.5:JA",
-    "art": "pm",
-    "venue": "kalshi",
-    "ergebnis": "JA",
-    "frage": "Will the maximum temperature be 82-83° on Nov 6, 2026? [82° to 83°]",
-    "schliesst": 1794031200.0,
-    "ref": {
-     "ticker": "KXHIGHMIA-26NOV06-B82.5"
-    },
-    "url": "https://kalshi.com/markets/KXHIGHMIA-26NOV06"
-   },
-   "seite": "long",
-   "menge": 1725.0,
-   "einstand": 0.10920579710144927,
-   "hebel": 1.0,
-   "marge": 0.0,
-   "eroeffnet": 1793905690.9288387,
-   "gebuehren": 11.76,
-   "funding": 0.0,
-   "ausstiegsplan": "Halten bis CLI-Abrechnung heute Abend (Binärwette, kein vorzeitiger Ausstieg). Verkauf nur falls NWS-Meldungen vor 18 UTC ein Max ≥84°F praktisch sicher machen.",
-   "entscheidung_id": "dc3f507f6",
-   "invalidierung": "NWS-Meldung eines Tagesmaximums außerhalb 82–83 °F in Miami am 06.11. (CLI-Bericht)",
-   "kurs": null,
-   "wert": 188.38
+   "kurs": 75914.065,
+   "wert": 2054.44
   },
   {
    "id": "p218402ab",
@@ -181,8 +153,8 @@
    "ausstiegsplan": "Verkauf bei Wertverdopplung (BTC ~67–68k) oder Halten bis 25.12. Halbierung der Position, wenn BTC über 80k zurückkehrt (Theta-Bremse).",
    "entscheidung_id": "d0fe400cd",
    "invalidierung": "BTC schließt 3 Tage in Folge über 80k mit fallender realisierter Vola (Abwärtstrend gebrochen).",
-   "kurs": 2353.31168,
-   "wert": 578.84
+   "kurs": 2353.39507,
+   "wert": 578.86
   },
   {
    "id": "p5a6a2ac6",
@@ -240,12 +212,12 @@
    "wert": 120.0
   }
  ],
- "realisiert": -325.3413054666725,
+ "realisiert": -513.7213054666724,
  "gebuehren": 76.92625440591361,
  "funding": 0.0,
  "erstellt": 1793319819.7411644,
  "start_fx": 1.1184885798616961,
- "letzter_tick": 1794053375.3363883,
+ "letzter_tick": 1794054274.9098217,
  "rebalancing": {
   "ziele": {
    "stock:SPY": {
