@@ -2,7 +2,7 @@
  "fonds_id": "claude_mittel_rm",
  "waehrung": "USD",
  "start_kapital": 11156.327353966788,
- "cash": 2635.37224202521,
+ "cash": 2185.6375020252103,
  "positionen": [
   {
    "id": "pe8186cc2",
@@ -437,10 +437,43 @@
    "invalidierung": "Transkript vom 17.11. enthält das Wort nicht oder Regelklarstellung schließt Analystenfragen aus.",
    "kurs": 0.3198874770585301,
    "wert": 19.8
+  },
+  {
+   "id": "p96f26326",
+   "inst": {
+    "id": "pm:polymarket:678416:NEIN",
+    "art": "pm",
+    "venue": "polymarket",
+    "ergebnis": "NEIN",
+    "frage": "Will Avengers: Doomsday be the top grossing movie of 2026?",
+    "schliesst": 1799384340.0,
+    "ref": {
+     "id": "678416",
+     "token_ja": "89576274136595202327975910079635847102293810595609428633134997662847357374694",
+     "token_nein": "95857328899006698426560952919509163544152315663112942013127648104914930931076",
+     "tick": 0.001,
+     "condition": "0xe4f4b614a6c2b4ecd8eb700d19c0e6533d3fbd1bc28193b2255394ef74006e6f",
+     "gebuehr_rate": 0.05,
+     "gebuehr_exp": 1.0
+    },
+    "url": "https://polymarket.com/event/highest-grossing-movie-in-2026"
+   },
+   "seite": "long",
+   "menge": 492.0,
+   "einstand": 0.91,
+   "hebel": 1.0,
+   "marge": 0.0,
+   "eroeffnet": 1794042630.4936116,
+   "gebuehren": 2.01474,
+   "funding": 0.0,
+   "stop_loss": 0,
+   "ausstiegsplan": "Halten bis Abrechnung Jan. 2027; Verkauf bei NEIN <0.80 oder Doomsday-Opening-Tag >$200M.",
+   "entscheidung_id": "d6b155dae",
+   "invalidierung": "Doomsday Freitagsumsatz inkl. Previews >$200M am 18.12. oder Doomsday-Domestic nach 7 Tagen >$600M."
   }
  ],
  "realisiert": 48.708254937007624,
- "gebuehren": 24.232886339201574,
+ "gebuehren": 26.247626339201574,
  "funding": 0.0,
  "erstellt": 1793380123.8861866,
  "start_fx": 1.1156327353966788,
