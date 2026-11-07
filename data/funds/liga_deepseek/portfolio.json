@@ -64,8 +64,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "d8e5f296a",
-   "kurs": 75791.89499999999,
-   "wert": 699.3
+   "kurs": 75863.63500000001,
+   "wert": 699.96
   },
   {
    "id": "p9a8fa083",
@@ -118,7 +118,9 @@
    "funding": 0.0,
    "ausstiegsplan": "Halten bis FOMC 09.12.2026. Vorzeitig verkaufen nur, wenn NEIN-Preis >0,32 erreicht (dann ist der Edge weg, aber 30% Gewinn gesichert) oder Invalidierung eintritt.",
    "entscheidung_id": "df4b3f25b",
-   "invalidierung": "FedWatch/CME-Futures zeigen >85% für +25bp im Dezember, oder ein FOMC-Mitglied bestätigt öffentlich eine Erhöhungsabsicht, oder der Marktpreis NEIN fällt unter 0,15 (dann hat der Markt neue, harte Information)."
+   "invalidierung": "FedWatch/CME-Futures zeigen >85% für +25bp im Dezember, oder ein FOMC-Mitglied bestätigt öffentlich eine Erhöhungsabsicht, oder der Marktpreis NEIN fällt unter 0,15 (dann hat der Markt neue, harte Information).",
+   "kurs": 0.235,
+   "wert": 221.49
   }
  ],
  "realisiert": -472.687825754775,
@@ -126,7 +128,7 @@
  "funding": 0.0,
  "erstellt": 1793319819.7411644,
  "start_fx": 1.1184885798616961,
- "letzter_tick": 1794009832.221894,
+ "letzter_tick": 1794010731.7135818,
  "rebalancing": {
   "ziele": {
    "stock:SPY": {
@@ -230,7 +232,7 @@
    "ausstiegsplan": "Halten bis FOMC 09.12.2026 oder bis NEIN-Preis >0,32.",
    "invalidierung": "FedWatch/CME-Futures >85% für +25bp im Dezember oder explizite Erhöhungsankündigung eines FOMC-Mitglieds oder NEIN-Preis fällt unter 0,15.",
    "erstellt": 1794010143.568127,
-   "geprueft_bis": 1794010143.568127,
+   "geprueft_bis": 1794010731.7135818,
    "gueltig_bis": 1794096543.568127
   }
  ]
