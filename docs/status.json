@@ -1,11 +1,11 @@
 {
  "version": 1,
- "stand": 1794064384.5224345,
+ "stand": 1794064866.3781047,
  "hinweis": "Papierhandel-Simulation, keine Anlageberatung",
  "seite": "https://rouvenwieland.github.io/ki-trader-arena/",
  "budget": {
-  "heute_eur": 3.32,
-  "gesamt_eur": 82.62,
+  "heute_eur": 6.99,
+  "gesamt_eur": 86.3,
   "tagesdeckel_eur": 12.0,
   "gesamtdeckel_eur": 190.0,
   "claude_ende": "2026-11-14",
@@ -209,9 +209,9 @@
    "equity_eur": 10172.39,
    "max_drawdown_pct": -2.33,
    "status": "aktiv",
-   "modell": "claude-sonnet-5-5",
-   "kosten_heute_eur": 0.866,
-   "kosten_gesamt_eur": 19.228,
+   "modell": "claude-opus-5-5",
+   "kosten_heute_eur": 1.837,
+   "kosten_gesamt_eur": 20.199,
    "rendite_ki_pct": [
     -3.46,
     8.42
@@ -267,7 +267,7 @@
    "rendite_pct": 0.0,
    "equity_eur": 10037.1,
    "max_drawdown_pct": 0.0,
-   "status": "pausiert (kein Guthaben)",
+   "status": "Fehler: Modellfehler: gpt-5-mini: HTTP 400 {\n  \"error\": {\n    \"message\": \"Unsupported parameter: 'max_tokens' is not supported with this model. Use ",
    "modell": "gpt-5-mini",
    "kosten_heute_eur": 0.0,
    "kosten_gesamt_eur": 0.0,
@@ -680,10 +680,10 @@
    "rendite_pct": -2.3,
    "equity_eur": 9806.26,
    "max_drawdown_pct": -6.34,
-   "status": "Fehler: Modellfehler: Anthropic: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'messages.1: `web_search`",
-   "modell": "claude-sonnet-5-5",
-   "kosten_heute_eur": 0.876,
-   "kosten_gesamt_eur": 21.064,
+   "status": "aktiv",
+   "modell": "claude-opus-5-5",
+   "kosten_heute_eur": 1.908,
+   "kosten_gesamt_eur": 22.096,
    "rendite_ki_pct": [
     -10.74,
     3.78
@@ -798,10 +798,10 @@
    "rendite_pct": -3.16,
    "equity_eur": 9719.76,
    "max_drawdown_pct": -6.05,
-   "status": "aktiv",
-   "modell": "claude-sonnet-5-5",
-   "kosten_heute_eur": 0.845,
-   "kosten_gesamt_eur": 20.939,
+   "status": "Fehler: Modellfehler: Anthropic: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'messages.1: `web_search`",
+   "modell": "claude-opus-5-5",
+   "kosten_heute_eur": 1.642,
+   "kosten_gesamt_eur": 21.736,
    "rendite_ki_pct": [
     -8.91,
     0.36
@@ -1034,10 +1034,10 @@
    "rendite_pct": -11.83,
    "equity_eur": 8850.08,
    "max_drawdown_pct": -24.83,
-   "status": "aktiv",
-   "modell": "claude-sonnet-5-5",
-   "kosten_heute_eur": 0.73,
-   "kosten_gesamt_eur": 20.818,
+   "status": "Fehler: Modellfehler: Anthropic: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'messages.1: `web_search`",
+   "modell": "claude-opus-5-5",
+   "kosten_heute_eur": 1.605,
+   "kosten_gesamt_eur": 21.693,
    "rendite_ki_pct": [
     -32.48,
     7.28
@@ -1218,6 +1218,27 @@
  ],
  "letzte_entscheidungen": [
   {
+   "ts": 1794064538.3475347,
+   "fonds": "Claude Mittel+RM (A/B)",
+   "instrument": "pm:polymarket:682708:JA",
+   "aktion": "kaufen",
+   "zuversicht": 0.75
+  },
+  {
+   "ts": 1794064533.2637756,
+   "fonds": "Claude Mittel+RM (A/B)",
+   "instrument": "pm:polymarket:682708:JA",
+   "aktion": "kaufen",
+   "zuversicht": 0.75
+  },
+  {
+   "ts": 1794064526.1287541,
+   "fonds": "Claude Mittel+RM (A/B)",
+   "instrument": "pm:predictit:34101:NEIN",
+   "aktion": "kaufen",
+   "zuversicht": 0.75
+  },
+  {
    "ts": 1794042630.4931636,
    "fonds": "Claude Mittel+RM (A/B)",
    "instrument": "pm:polymarket:678416:NEIN",
@@ -1249,27 +1270,6 @@
    "ts": 1794010381.6998732,
    "fonds": "Kimi (Moonshot)",
    "instrument": "pm:polymarket:6667468:JA",
-   "aktion": "kaufen",
-   "zuversicht": 0.55
-  },
-  {
-   "ts": 1794010143.5679388,
-   "fonds": "DeepSeek",
-   "instrument": "pm:polymarket:3215008:NEIN",
-   "aktion": "kaufen",
-   "zuversicht": 0.45
-  },
-  {
-   "ts": 1794010128.371582,
-   "fonds": "DeepSeek",
-   "instrument": "pm:polymarket:3215008:NEIN",
-   "aktion": "kaufen",
-   "zuversicht": 0.5
-  },
-  {
-   "ts": 1793991969.28844,
-   "fonds": "Claude Vorsichtig",
-   "instrument": "pm:polymarket:6749958:NEIN",
    "aktion": "kaufen",
    "zuversicht": 0.55
   }

@@ -2,7 +2,7 @@
  "fonds_id": "claude_mittel_rm",
  "waehrung": "USD",
  "start_kapital": 11156.327353966788,
- "cash": 2185.6375020252103,
+ "cash": 1583.6375020252103,
  "positionen": [
   {
    "id": "pe8186cc2",
@@ -472,6 +472,69 @@
    "invalidierung": "Doomsday Freitagsumsatz inkl. Previews >$200M am 18.12. oder Doomsday-Domestic nach 7 Tagen >$600M.",
    "kurs": 0.9115,
    "wert": 446.74
+  },
+  {
+   "id": "p75b03ffe",
+   "inst": {
+    "id": "pm:predictit:34101:NEIN",
+    "art": "pm",
+    "venue": "predictit",
+    "ergebnis": "NEIN",
+    "frage": "Who will be the Prime Minister of Israel after the 2026 election? — Gadi Eisenkot",
+    "schliesst": null,
+    "ref": {
+     "vertrag": 34101,
+     "markt": 8643,
+     "ja_kauf": 0.85,
+     "ja_verkauf": 0.8,
+     "nein_kauf": 0.2,
+     "nein_verkauf": 0.15
+    },
+    "url": "https://www.predictit.org/markets/detail/8643/Who-will-be-the-Prime-Minister-of-Israel-after-the-2026-election"
+   },
+   "seite": "long",
+   "menge": 700.0,
+   "einstand": 0.23,
+   "hebel": 1.0,
+   "marge": 0.0,
+   "eroeffnet": 1794064526.130473,
+   "gebuehren": 0.0,
+   "funding": 0.0,
+   "ausstiegsplan": "Beide Beine bis Abrechnung (Vereidigung des nächsten PM) halten; vorzeitig schließen, wenn Spread sich schließt (Summe ≥0.97).",
+   "entscheidung_id": "d41480bd3",
+   "invalidierung": "Polymarket-Bein lässt sich nicht zu ≤0.645 füllen (dann PredictIt-Bein zurückverkaufen) oder PredictIt-Regeltext weicht nachweislich ab."
+  },
+  {
+   "id": "pc7c7ea6a",
+   "inst": {
+    "id": "pm:polymarket:682708:JA",
+    "art": "pm",
+    "venue": "polymarket",
+    "ergebnis": "JA",
+    "frage": "Will Gadi Eizenkot be the next Prime Minister of Israel?",
+    "schliesst": 1793159940.0,
+    "ref": {
+     "id": "682708",
+     "token_ja": "52487256270918227930942830546248720603566203568229607048093730748840489555808",
+     "token_nein": "1507744758511144558263623459899956467548763419522526462308518027912401299177",
+     "tick": 0.001,
+     "condition": "0xdbe93b5a701f36076a560fa4b9ba59e365a6e8e2ea6a83764640010657277ca4",
+     "gebuehr_rate": 0.0,
+     "gebuehr_exp": 1
+    },
+    "url": "https://polymarket.com/event/will-gadi-eizenkot-be-the-next-prime-minister-of-israel"
+   },
+   "seite": "long",
+   "menge": 700.0,
+   "einstand": 0.63,
+   "hebel": 1.0,
+   "marge": 0.0,
+   "eroeffnet": 1794064545.9611118,
+   "gebuehren": 0.0,
+   "funding": 0.0,
+   "ausstiegsplan": "Bis Vereidigung halten; schließen, wenn beide Beine zusammen ≥0.97 verkaufbar.",
+   "entscheidung_id": "d5f5d56d9",
+   "invalidierung": "Nachweislich abweichende PredictIt-Regel, die Eisenkot-JA bei PredictIt und NEIN bei Polymarket zulässt."
   }
  ],
  "realisiert": 48.708254937007624,

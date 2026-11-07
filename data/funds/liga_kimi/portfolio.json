@@ -165,7 +165,7 @@
      "venue": "yahoo",
      "symbol": "SPY"
     },
-    "anteil": 0.3
+    "anteil": 0.32
    },
    "spot:BTC-USD": {
     "inst": {
@@ -174,7 +174,7 @@
      "venue": "coinbase",
      "symbol": "BTC-USD"
     },
-    "anteil": 0.25
+    "anteil": 0.2
    },
    "stock:GLD": {
     "inst": {
@@ -196,8 +196,8 @@
    }
   },
   "schwelle_pp": 5.0,
-  "seit": 1793819265.9019525,
-  "entscheidung_id": "d3af64508"
+  "seit": 1794064390.1622787,
+  "entscheidung_id": "de59ece78"
  },
  "auftraege": []
 }
