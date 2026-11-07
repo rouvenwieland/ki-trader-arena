@@ -65,8 +65,8 @@
    "gebuehren": 0.0,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Schwarm-Regel)",
-   "kurs": 0.969,
-   "wert": 635.28
+   "kurs": 0.971,
+   "wert": 638.57
   },
   {
    "id": "pd9f9e40a",
@@ -163,44 +163,12 @@
    "ausstiegsplan": "Halten bis zur Abrechnung (Schwarm-Regel)",
    "kurs": 0.775,
    "wert": 542.08
-  },
-  {
-   "id": "p5a67ea20",
-   "inst": {
-    "id": "pm:polymarket:6667467:JA",
-    "art": "pm",
-    "venue": "polymarket",
-    "ergebnis": "JA",
-    "frage": "US x Iran effective ceasefire continues through November 8, 2026?",
-    "schliesst": 1794200340.0,
-    "ref": {
-     "id": "6667467",
-     "token_ja": "87249160725268576761318544637015834078260647399120993899333685851926400469347",
-     "token_nein": "106320855195694279661941533472708568713914524545665319398192516085236524694148",
-     "tick": 0.01,
-     "condition": "0xc52d0ad0d001293473fa50126015c9d6db3baab756002f7b4ccf9eb179b1c403",
-     "gebuehr_rate": 0.0,
-     "gebuehr_exp": 1
-    },
-    "url": "https://polymarket.com/event/us-iran-effective-ceasefire-continues-throughptptpt-20261103"
-   },
-   "seite": "long",
-   "menge": 3686.0,
-   "einstand": 0.12,
-   "hebel": 1.0,
-   "marge": 0.0,
-   "eroeffnet": 1794010731.7135818,
-   "gebuehren": 0.0,
-   "funding": 0.0,
-   "ausstiegsplan": "Halten bis zur Abrechnung (Schwarm-Regel)",
-   "kurs": null,
-   "wert": 442.32
   }
  ],
- "realisiert": 980.72647,
+ "realisiert": 538.4064699999999,
  "gebuehren": 39.00749,
  "funding": 0.0,
  "erstellt": 1793379225.5430336,
  "start_fx": 1.1157431109273288,
- "letzter_tick": 1794021531.3838654
+ "letzter_tick": 1794022432.0980923
 }

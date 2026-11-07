@@ -2,7 +2,7 @@
  "fonds_id": "ko_nein",
  "waehrung": "USD",
  "start_kapital": 11157.431109273288,
- "cash": 1101.344279273286,
+ "cash": 1982.344279273286,
  "positionen": [
   {
    "id": "p9e535f2b",
@@ -97,8 +97,8 @@
    "gebuehren": 0.0,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.796,
-   "wert": 221.01
+   "kurs": 0.7945,
+   "wert": 220.45
   },
   {
    "id": "pdcfb5d53",
@@ -129,8 +129,8 @@
    "gebuehren": 0.0,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.3655,
-   "wert": 91.25
+   "kurs": 0.372,
+   "wert": 92.0
   },
   {
    "id": "pe65b0b73",
@@ -161,7 +161,7 @@
    "gebuehren": 0.0,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.9895,
+   "kurs": 0.99,
    "wert": 207.84
   },
   {
@@ -833,7 +833,7 @@
    "gebuehren": 3.5937,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.72,
+   "kurs": 0.725,
    "wert": 217.8
   },
   {
@@ -897,8 +897,8 @@
    "gebuehren": 0.17475,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.9935,
-   "wert": 168.81
+   "kurs": 0.9944999999999999,
+   "wert": 168.98
   },
   {
    "id": "p6a147c4d",
@@ -929,8 +929,8 @@
    "gebuehren": 0.95322,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.59,
-   "wert": 89.24
+   "kurs": 0.605,
+   "wert": 91.18
   },
   {
    "id": "pe85e8fb3",
@@ -1121,7 +1121,7 @@
    "gebuehren": 0.0,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.785,
+   "kurs": 0.79,
    "wert": 164.58
   },
   {
@@ -1153,8 +1153,8 @@
    "gebuehren": 2.0848,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.679,
-   "wert": 163.16
+   "kurs": 0.6875,
+   "wert": 163.88
   },
   {
    "id": "p8929587b",
@@ -1185,8 +1185,8 @@
    "gebuehren": 0.0,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.031,
-   "wert": 74.54
+   "kurs": 0.028499999999999998,
+   "wert": 77.41
   },
   {
    "id": "pae38309e",
@@ -1249,47 +1249,15 @@
    "gebuehren": 1.22092,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.8200000000000001,
+   "kurs": 0.8400000000000001,
    "wert": 157.14
-  },
-  {
-   "id": "p5317807e",
-   "inst": {
-    "id": "pm:polymarket:6667467:NEIN",
-    "art": "pm",
-    "venue": "polymarket",
-    "ergebnis": "NEIN",
-    "frage": "US x Iran effective ceasefire continues through November 8, 2026?",
-    "schliesst": 1794200340.0,
-    "ref": {
-     "id": "6667467",
-     "token_ja": "87249160725268576761318544637015834078260647399120993899333685851926400469347",
-     "token_nein": "106320855195694279661941533472708568713914524545665319398192516085236524694148",
-     "tick": 0.01,
-     "condition": "0xc52d0ad0d001293473fa50126015c9d6db3baab756002f7b4ccf9eb179b1c403",
-     "gebuehr_rate": 0.0,
-     "gebuehr_exp": 1
-    },
-    "url": "https://polymarket.com/event/us-iran-effective-ceasefire-continues-throughptptpt-20261103"
-   },
-   "seite": "long",
-   "menge": 881.0,
-   "einstand": 0.18986696935300792,
-   "hebel": 1.0,
-   "marge": 0.0,
-   "eroeffnet": 1793986016.7586799,
-   "gebuehren": 0.0,
-   "funding": 0.0,
-   "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.999,
-   "wert": 880.12
   }
  ],
- "realisiert": -3185.0403,
+ "realisiert": -2471.3131000000003,
  "gebuehren": 252.35216999999994,
  "funding": 0.0,
  "erstellt": 1793379225.5430336,
  "start_fx": 1.1157431109273288,
- "letzter_tick": 1794021531.3838654,
+ "letzter_tick": 1794022432.0980923,
  "kontrolle_bis": 1794020889.1863344
 }
