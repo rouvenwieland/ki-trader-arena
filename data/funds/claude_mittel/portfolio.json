@@ -193,8 +193,8 @@
    "ausstiegsplan": "Halten bis 28.11.; Gewinn mitnehmen bei Bid ≥0.40.",
    "entscheidung_id": "dab131640",
    "invalidierung": "Mehrere unabhängige Umfragen Chiang ≥ +6 (inkl. UDN/SPRIT-Umkehr).",
-   "kurs": 0.314,
-   "wert": 316.01
+   "kurs": 0.3145,
+   "wert": 317.03
   },
   {
    "id": "pb60e44cc",
@@ -298,8 +298,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "d6e1a7002",
-   "kurs": 75780.775,
-   "wert": 1247.11
+   "kurs": 75770.255,
+   "wert": 1246.94
   },
   {
    "id": "pe3015b77",
@@ -319,8 +319,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "d6e1a7002",
-   "kurs": 2240.475,
-   "wert": 508.48
+   "kurs": 2241.425,
+   "wert": 508.7
   },
   {
    "id": "p1ad6082a",
@@ -454,8 +454,8 @@
    "ausstiegsplan": "Bid ≥0,92 verkaufen; sonst bis Abrechnung/Touch halten.",
    "entscheidung_id": "d0bdb1295",
    "invalidierung": "ETH steigt über 2450 und DVOL fällt unter 45 – dann Touch-Wahrscheinlichkeit <0.8.",
-   "kurs": 0.835,
-   "wert": 114.54
+   "kurs": 0.845,
+   "wert": 115.92
   },
   {
    "id": "p41d9ec41",
@@ -491,7 +491,7 @@
  "funding": 0.0,
  "erstellt": 1793319819.7411644,
  "start_fx": 1.1184885798616961,
- "letzter_tick": 1794024231.9739678,
+ "letzter_tick": 1794025131.879088,
  "auftraege": [],
  "rebalancing": {
   "ziele": {
