@@ -64,8 +64,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "d3af64508",
-   "kurs": 75822.285,
-   "wert": 2051.96
+   "kurs": 75901.455,
+   "wert": 2054.1
   },
   {
    "id": "p5660ccba",
@@ -181,8 +181,8 @@
    "ausstiegsplan": "Verkauf bei Wertverdopplung (BTC ~67–68k) oder Halten bis 25.12. Halbierung der Position, wenn BTC über 80k zurückkehrt (Theta-Bremse).",
    "entscheidung_id": "d0fe400cd",
    "invalidierung": "BTC schließt 3 Tage in Folge über 80k mit fallender realisierter Vola (Abwärtstrend gebrochen).",
-   "kurs": 2381.1954499999997,
-   "wert": 587.72
+   "kurs": 2360.9266439999997,
+   "wert": 578.84
   },
   {
    "id": "p5a6a2ac6",
@@ -236,8 +236,8 @@
    "ausstiegsplan": "Halten bis Abrechnung 15.11. Falls der 08.11.-Markt friedlich mit JA abrechnet und dieser Preis dann >0,55 steht: Hälfte verkaufen (Gewinnmitnahme), Rest bis 15.11. Bei glaubwürdiger Deal-/Verlängerungsmeldung und Preis >0,45 komplett verkaufen.",
    "entscheidung_id": "d63de4c3b",
    "invalidierung": "Beobachtbar: Meldung einer konkreten, für die Woche 09.–15.11. terminierten US-Schlagplanung (nicht bloße Drohkulisse) → Position zum Marktpreis verkaufen. Totalverlust bei echtem US-Einschlag auf iranischem Territorium vor 16.11.",
-   "kurs": 0.0195,
-   "wert": 6.0
+   "kurs": 0.015,
+   "wert": 4.0
   }
  ],
  "realisiert": -325.3413054666725,
@@ -245,7 +245,7 @@
  "funding": 0.0,
  "erstellt": 1793319819.7411644,
  "start_fx": 1.1184885798616961,
- "letzter_tick": 1794015231.6149392,
+ "letzter_tick": 1794016132.1959317,
  "rebalancing": {
   "ziele": {
    "stock:SPY": {
