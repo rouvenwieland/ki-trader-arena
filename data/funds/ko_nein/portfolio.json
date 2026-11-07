@@ -161,8 +161,8 @@
    "gebuehren": 0.0,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.9935,
-   "wert": 208.89
+   "kurs": 0.9855,
+   "wert": 206.78
   },
   {
    "id": "pf0e983be",
@@ -801,8 +801,8 @@
    "gebuehren": 3.5803,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.575,
-   "wert": 162.96
+   "kurs": 0.58,
+   "wert": 165.87
   },
   {
    "id": "p9869a857",
@@ -1025,8 +1025,8 @@
    "gebuehren": 4.89529,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.009999999999999998,
-   "wert": 5.93
+   "kurs": 0.009000000000000001,
+   "wert": 5.27
   },
   {
    "id": "p0abe393e",
@@ -1089,8 +1089,8 @@
    "gebuehren": 0.54885,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.9,
-   "wert": 158.42
+   "kurs": 0.895,
+   "wert": 156.64
   },
   {
    "id": "p260d7aa9",
@@ -1185,7 +1185,7 @@
    "gebuehren": 0.0,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.040999999999999995,
+   "kurs": 0.040499999999999994,
    "wert": 108.95
   },
   {
@@ -1249,8 +1249,8 @@
    "gebuehren": 1.22092,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.81,
-   "wert": 153.26
+   "kurs": 0.8200000000000001,
+   "wert": 157.14
   },
   {
    "id": "p5317807e",
@@ -1281,8 +1281,8 @@
    "gebuehren": 0.0,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.992,
-   "wert": 873.07
+   "kurs": 0.9915,
+   "wert": 872.19
   }
  ],
  "realisiert": -3185.0403,
@@ -1290,6 +1290,6 @@
  "funding": 0.0,
  "erstellt": 1793379225.5430336,
  "start_fx": 1.1157431109273288,
- "letzter_tick": 1794018832.1223054,
+ "letzter_tick": 1794019732.0524974,
  "kontrolle_bis": 1794009953.5365853
 }
