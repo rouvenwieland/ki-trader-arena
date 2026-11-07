@@ -2,12 +2,45 @@
  "fonds_id": "schwarm_claude",
  "waehrung": "USD",
  "start_kapital": 11157.431109273288,
- "cash": 11465.681109273288,
- "positionen": [],
+ "cash": 11386.631109273289,
+ "positionen": [
+  {
+   "id": "pb07d4c34",
+   "inst": {
+    "id": "pm:polymarket:5339986:NEIN",
+    "art": "pm",
+    "venue": "polymarket",
+    "ergebnis": "NEIN",
+    "frage": "Israel x Iran ceasefire continues through November 15?",
+    "schliesst": 1794805140.0,
+    "ref": {
+     "id": "5339986",
+     "token_ja": "81002737208387436195452690077971321124621678141221296249970319056583686458028",
+     "token_nein": "81617860044825696470427602276776404152917680737920734100709251051324236143390",
+     "tick": 0.01,
+     "condition": "0xca394e0db041f91ac2d69f3ea06efdfc8643acb0d2751283bd594e7b8bd581f9",
+     "gebuehr_rate": 0.0,
+     "gebuehr_exp": 1
+    },
+    "url": "https://polymarket.com/event/israel-x-iran-ceasefire-continues-throughptptpt-20260716224448963"
+   },
+   "seite": "long",
+   "menge": 527.0,
+   "einstand": 0.15,
+   "hebel": 1.0,
+   "marge": 0.0,
+   "eroeffnet": 1794086002.3505301,
+   "gebuehren": 0.0,
+   "funding": 0.0,
+   "ausstiegsplan": "Halten bis zur Abrechnung (Schwarm-Regel)",
+   "kurs": 0.14500000000000002,
+   "wert": 73.78
+  }
+ ],
  "realisiert": 308.25,
  "gebuehren": 0.0,
  "funding": 0.0,
  "erstellt": 1793379225.5430336,
  "start_fx": 1.1157431109273288,
- "letzter_tick": 1794085101.759583
+ "letzter_tick": 1794086002.3505301
 }
