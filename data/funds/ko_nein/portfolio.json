@@ -161,8 +161,8 @@
    "gebuehren": 0.0,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.377,
-   "wert": 93.5
+   "kurs": 0.3795,
+   "wert": 94.75
   },
   {
    "id": "pe65b0b73",
@@ -737,8 +737,8 @@
    "gebuehren": 1.59053,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.016,
-   "wert": 3.05
+   "kurs": 0.0165,
+   "wert": 3.27
   },
   {
    "id": "p091ba70e",
@@ -993,7 +993,7 @@
    "gebuehren": 0.95322,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.595,
+   "kurs": 0.59,
    "wert": 91.18
   },
   {
@@ -1185,8 +1185,8 @@
    "gebuehren": 0.0,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.785,
-   "wert": 164.58
+   "kurs": 0.795,
+   "wert": 166.69
   },
   {
    "id": "p66f9a4ef",
@@ -1217,7 +1217,7 @@
    "gebuehren": 2.0848,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.677,
+   "kurs": 0.676,
    "wert": 162.68
   },
   {
@@ -1250,7 +1250,7 @@
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
    "kurs": 0.0275,
-   "wert": 68.81
+   "wert": 71.67
   },
   {
    "id": "pae38309e",
@@ -1313,8 +1313,8 @@
    "gebuehren": 1.22092,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.81,
-   "wert": 151.32
+   "kurs": 0.8049999999999999,
+   "wert": 153.26
   },
   {
    "id": "p5317807e",
@@ -1345,8 +1345,8 @@
    "gebuehren": 0.0,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.33499999999999996,
-   "wert": 281.92
+   "kurs": 0.525,
+   "wert": 449.31
   }
  ],
  "realisiert": -2850.4553100000003,
@@ -1354,6 +1354,6 @@
  "funding": 0.0,
  "erstellt": 1793379225.5430336,
  "start_fx": 1.1157431109273288,
- "letzter_tick": 1794008931.4022856,
+ "letzter_tick": 1794009832.221894,
  "kontrolle_bis": 1793991837.06899
 }
