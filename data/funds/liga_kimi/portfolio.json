@@ -64,8 +64,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "d3af64508",
-   "kurs": 75923.185,
-   "wert": 2054.69
+   "kurs": 75914.64499999999,
+   "wert": 2054.46
   },
   {
    "id": "p5660ccba",
@@ -120,8 +120,8 @@
    "ausstiegsplan": "Halten bis CLI-Abrechnung heute Abend (Binärwette, kein vorzeitiger Ausstieg). Verkauf nur falls NWS-Meldungen vor 18 UTC ein Max ≥75°F praktisch sicher machen.",
    "entscheidung_id": "d35c24618",
    "invalidierung": "NWS-Meldung eines Tagesmaximums außerhalb 73–74 °F in Austin am 06.11. (CLI-Bericht)",
-   "kurs": 0.99,
-   "wert": 78.21
+   "kurs": null,
+   "wert": 3.53
   },
   {
    "id": "p5a2259b8",
@@ -181,8 +181,8 @@
    "ausstiegsplan": "Verkauf bei Wertverdopplung (BTC ~67–68k) oder Halten bis 25.12. Halbierung der Position, wenn BTC über 80k zurückkehrt (Theta-Bremse).",
    "entscheidung_id": "d0fe400cd",
    "invalidierung": "BTC schließt 3 Tage in Folge über 80k mit fallender realisierter Vola (Abwärtstrend gebrochen).",
-   "kurs": 2316.1068649999997,
-   "wert": 569.53
+   "kurs": 2315.845785,
+   "wert": 569.47
   },
   {
    "id": "p5a6a2ac6",
@@ -245,7 +245,7 @@
  "funding": 0.0,
  "erstellt": 1793319819.7411644,
  "start_fx": 1.1184885798616961,
- "letzter_tick": 1794034258.28259,
+ "letzter_tick": 1794035157.6634092,
  "rebalancing": {
   "ziele": {
    "stock:SPY": {
