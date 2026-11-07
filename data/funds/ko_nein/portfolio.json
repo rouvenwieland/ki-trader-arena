@@ -5,38 +5,6 @@
  "cash": 1101.344279273286,
  "positionen": [
   {
-   "id": "pe6781775",
-   "inst": {
-    "id": "pm:polymarket:4641065:NEIN",
-    "art": "pm",
-    "venue": "polymarket",
-    "ergebnis": "NEIN",
-    "frage": "US x Iran ceasefire continues through October 31?",
-    "schliesst": 1793491140.0,
-    "ref": {
-     "id": "4641065",
-     "token_ja": "67102598924726349989742049657609063097299442010642912942032681022413402597017",
-     "token_nein": "114475889232765203212032217024645308497828327658421967586050553616813506019119",
-     "tick": 0.001,
-     "condition": "0x3738ad9665480991affe3ba286cd035516e17d1f8b7703e05088ec19c70c21a4",
-     "gebuehr_rate": 0.0,
-     "gebuehr_exp": 1
-    },
-    "url": "https://polymarket.com/event/us-iran-ceasefire-continues-throughptptpt"
-   },
-   "seite": "long",
-   "menge": 2140.0,
-   "einstand": 0.0781778457943925,
-   "hebel": 1.0,
-   "marge": 0.0,
-   "eroeffnet": 1793379225.5430336,
-   "gebuehren": 0.0,
-   "funding": 0.0,
-   "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": null,
-   "wert": 167.3
-  },
-  {
    "id": "p9e535f2b",
    "inst": {
     "id": "pm:polymarket:3215008:NEIN",
@@ -129,8 +97,8 @@
    "gebuehren": 0.0,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.794,
-   "wert": 219.9
+   "kurs": 0.7945,
+   "wert": 220.18
   },
   {
    "id": "pdcfb5d53",
@@ -259,38 +227,6 @@
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
    "kurs": 0.875,
    "wert": 158.34
-  },
-  {
-   "id": "p8692c3e7",
-   "inst": {
-    "id": "pm:polymarket:6369333:NEIN",
-    "art": "pm",
-    "venue": "polymarket",
-    "ergebnis": "NEIN",
-    "frage": "US x Iran ceasefire continues through November 2?",
-    "schliesst": 1793681940.0,
-    "ref": {
-     "id": "6369333",
-     "token_ja": "3149184221354072778711612185076748475145234784664533895827707643347517632045",
-     "token_nein": "12073674699853720739034158731600464996820811632276194872625682171738638687396",
-     "tick": 0.001,
-     "condition": "0x5470b8ebb3de0afd56dcf537c62575f80cc86bda01ff57a332e8f3ae44c71b65",
-     "gebuehr_rate": 0.0,
-     "gebuehr_exp": 1
-    },
-    "url": "https://polymarket.com/event/us-iran-ceasefire-continues-throughptptpt"
-   },
-   "seite": "long",
-   "menge": 1510.0,
-   "einstand": 0.11078437086092716,
-   "hebel": 1.0,
-   "marge": 0.0,
-   "eroeffnet": 1793385523.577596,
-   "gebuehren": 0.0,
-   "funding": 0.0,
-   "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": null,
-   "wert": 167.28
   },
   {
    "id": "p7e5c2e70",
@@ -737,8 +673,8 @@
    "gebuehren": 1.59053,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.017,
-   "wert": 3.49
+   "kurs": 0.015,
+   "wert": 3.05
   },
   {
    "id": "p091ba70e",
@@ -993,7 +929,7 @@
    "gebuehren": 0.95322,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.595,
+   "kurs": 0.59,
    "wert": 91.18
   },
   {
@@ -1249,8 +1185,8 @@
    "gebuehren": 0.0,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.0335,
-   "wert": 74.54
+   "kurs": 0.033,
+   "wert": 77.41
   },
   {
    "id": "pae38309e",
@@ -1314,7 +1250,7 @@
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
    "kurs": 0.8049999999999999,
-   "wert": 151.32
+   "wert": 153.26
   },
   {
    "id": "p5317807e",
@@ -1345,15 +1281,15 @@
    "gebuehren": 0.0,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.919,
-   "wert": 802.59
+   "kurs": 0.66,
+   "wert": 557.67
   }
  ],
- "realisiert": -2850.4553100000003,
+ "realisiert": -3185.0403,
  "gebuehren": 252.35216999999994,
  "funding": 0.0,
  "erstellt": 1793379225.5430336,
  "start_fx": 1.1157431109273288,
- "letzter_tick": 1794011632.146123,
+ "letzter_tick": 1794012531.620593,
  "kontrolle_bis": 1794009953.5365853
 }

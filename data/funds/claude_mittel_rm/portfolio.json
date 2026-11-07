@@ -2,7 +2,7 @@
  "fonds_id": "claude_mittel_rm",
  "waehrung": "USD",
  "start_kapital": 11156.327353966788,
- "cash": 1865.3722420252102,
+ "cash": 2226.37224202521,
  "positionen": [
   {
    "id": "pe8186cc2",
@@ -231,40 +231,6 @@
    "wert": 297.98
   },
   {
-   "id": "pf805692b",
-   "inst": {
-    "id": "pm:polymarket:6369333:JA",
-    "art": "pm",
-    "venue": "polymarket",
-    "ergebnis": "JA",
-    "frage": "US x Iran ceasefire continues through November 2?",
-    "schliesst": 1793681940.0,
-    "ref": {
-     "id": "6369333",
-     "token_ja": "3149184221354072778711612185076748475145234784664533895827707643347517632045",
-     "token_nein": "12073674699853720739034158731600464996820811632276194872625682171738638687396",
-     "tick": 0.001,
-     "condition": "0x5470b8ebb3de0afd56dcf537c62575f80cc86bda01ff57a332e8f3ae44c71b65",
-     "gebuehr_rate": 0.0,
-     "gebuehr_exp": 1
-    },
-    "url": "https://polymarket.com/event/us-iran-ceasefire-continues-throughptptpt"
-   },
-   "seite": "long",
-   "menge": 361.0,
-   "einstand": 0.8289539889196675,
-   "hebel": 1.0,
-   "marge": 0.0,
-   "eroeffnet": 1793682425.1366992,
-   "gebuehren": 0.0,
-   "funding": 0.0,
-   "ausstiegsplan": "Halten bis Abrechnung (Auszahlung ~1 Euro je Anteil). Bei UMA-Vorschlag NEIN neu bewerten.",
-   "entscheidung_id": "d742765eb",
-   "invalidierung": "Verlässliche Quelle belegt einen US-Schlag vor 20:29 UTC am 2.11. oder UMA-Vorschlag auf NEIN.",
-   "kurs": 0.999,
-   "wert": 360.64
-  },
-  {
    "id": "pea9d23a3",
    "inst": {
     "id": "stock:SPY",
@@ -303,8 +269,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "dd6456776",
-   "kurs": 75800.005,
-   "wert": 1075.69
+   "kurs": 75781.985,
+   "wert": 1075.43
   },
   {
    "id": "p994b6370",
@@ -501,12 +467,12 @@
    "wert": 19.8
   }
  ],
- "realisiert": -22.519058327054932,
+ "realisiert": 39.22855167294507,
  "gebuehren": 24.232886339201574,
  "funding": 0.0,
  "erstellt": 1793380123.8861866,
  "start_fx": 1.1156327353966788,
- "letzter_tick": 1794011632.146123,
+ "letzter_tick": 1794012531.620593,
  "auftraege": [],
  "rebalancing": {
   "ziele": {
