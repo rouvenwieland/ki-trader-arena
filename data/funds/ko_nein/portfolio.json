@@ -2,7 +2,7 @@
  "fonds_id": "ko_nein",
  "waehrung": "USD",
  "start_kapital": 11157.431109273288,
- "cash": 1147.6768992732862,
+ "cash": 980.7268992732861,
  "positionen": [
   {
    "id": "p9e535f2b",
@@ -577,8 +577,8 @@
    "gebuehren": 0.0,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.13,
-   "wert": 36.7
+   "kurs": 0.135,
+   "wert": 40.37
   },
   {
    "id": "p5037ef0e",
@@ -993,8 +993,8 @@
    "gebuehren": 4.05345,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.71,
-   "wert": 301.7
+   "kurs": 0.715,
+   "wert": 306.01
   },
   {
    "id": "pbdd6cd9d",
@@ -1153,8 +1153,8 @@
    "gebuehren": 2.0848,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.681,
-   "wert": 163.16
+   "kurs": 0.68,
+   "wert": 162.68
   },
   {
    "id": "p8929587b",
@@ -1185,8 +1185,8 @@
    "gebuehren": 0.0,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.009,
-   "wert": 20.07
+   "kurs": 0.010499999999999999,
+   "wert": 25.8
   },
   {
    "id": "pae38309e",
@@ -1249,7 +1249,7 @@
    "gebuehren": 1.22092,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.6799999999999999,
+   "kurs": 0.685,
    "wert": 112.52
   },
   {
@@ -1345,7 +1345,7 @@
    "gebuehren": 0.64893,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.915,
+   "kurs": 0.91,
    "wert": 162.0
   },
   {
@@ -1409,8 +1409,40 @@
    "gebuehren": 4.89216,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.563,
-   "wert": 158.18
+   "kurs": 0.5805,
+   "wert": 161.31
+  },
+  {
+   "id": "pf5e1aa21",
+   "inst": {
+    "id": "pm:polymarket:3399468:NEIN",
+    "art": "pm",
+    "venue": "polymarket",
+    "ergebnis": "NEIN",
+    "frage": "Israel x Iran ceasefire continues through December 31?",
+    "schliesst": 1798748940.0,
+    "ref": {
+     "id": "3399468",
+     "token_ja": "34732988886981510167874389845708832808627284379840131351229635795767825787404",
+     "token_nein": "63915287271940688064870172991436489775587541335457370355314489349033951709373",
+     "tick": 0.01,
+     "condition": "0x1c4c6a698f0591ddf0c96e1beb56f8c75112ef849331bf3b0388f14830a7421d",
+     "gebuehr_rate": 0.0,
+     "gebuehr_exp": 1
+    },
+    "url": "https://polymarket.com/event/israel-x-iran-ceasefire-continues-throughptptpt-20260716224448963"
+   },
+   "seite": "long",
+   "menge": 371.0,
+   "einstand": 0.45000000000000007,
+   "hebel": 1.0,
+   "marge": 0.0,
+   "eroeffnet": 1794066083.0722253,
+   "gebuehren": 0.0,
+   "funding": 0.0,
+   "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
+   "kurs": 0.44,
+   "wert": 159.53
   }
  ],
  "realisiert": -2471.3131000000003,
@@ -1418,6 +1450,6 @@
  "funding": 0.0,
  "erstellt": 1793379225.5430336,
  "start_fx": 1.1157431109273288,
- "letzter_tick": 1794065182.7512746,
- "kontrolle_bis": 1794064390.1612787
+ "letzter_tick": 1794066083.0722253,
+ "kontrolle_bis": 1794064390.1622787
 }
