@@ -298,8 +298,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "d6e1a7002",
-   "kurs": 75630.225,
-   "wert": 1244.63
+   "kurs": 75684.07500000001,
+   "wert": 1245.52
   },
   {
    "id": "pe3015b77",
@@ -319,8 +319,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "d6e1a7002",
-   "kurs": 2230.795,
-   "wert": 506.28
+   "kurs": 2231.4449999999997,
+   "wert": 506.43
   },
   {
    "id": "p1ad6082a",
@@ -420,8 +420,8 @@
    "ausstiegsplan": "Halten bis 30.11.; Verkauf bei NEIN-Bid ≥0.85 oder bei Ersatz-Meldung sofort.",
    "entscheidung_id": "df7939c88",
    "invalidierung": "Trump oder mehrere Quellen (Axios/CBS/NYT) melden Entscheidung zum Austausch; NEIN-Bid fällt unter 0.55.",
-   "kurs": 0.835,
-   "wert": 177.62
+   "kurs": 0.815,
+   "wert": 173.34
   },
   {
    "id": "pa0a2bdf6",
@@ -491,7 +491,7 @@
  "funding": 0.0,
  "erstellt": 1793319819.7411644,
  "start_fx": 1.1184885798616961,
- "letzter_tick": 1794093201.8278475,
+ "letzter_tick": 1794094102.380908,
  "auftraege": [],
  "rebalancing": {
   "ziele": {
