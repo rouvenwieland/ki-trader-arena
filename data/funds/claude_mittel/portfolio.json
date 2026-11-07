@@ -159,8 +159,8 @@
    "ausstiegsplan": "Bid ≥0,70 verkaufen (P erreicht); Neubewertung nach NVDA-Zahlen 19.11.; schließen, wenn Apple-Vorsprung <3 %.",
    "entscheidung_id": "d7e53ef04",
    "invalidierung": "NVDA-Marktkap. kommt auf <3 % Abstand zu Apple, oder Apple fällt >8 % relativ.",
-   "kurs": 0.637,
-   "wert": 382.41
+   "kurs": 0.638,
+   "wert": 383.62
   },
   {
    "id": "pf61ac065",
@@ -298,8 +298,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "d6e1a7002",
-   "kurs": 75996.545,
-   "wert": 1250.66
+   "kurs": 75908.805,
+   "wert": 1249.22
   },
   {
    "id": "pe3015b77",
@@ -319,8 +319,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "d6e1a7002",
-   "kurs": 2245.255,
-   "wert": 509.57
+   "kurs": 2244.715,
+   "wert": 509.44
   },
   {
    "id": "p1ad6082a",
@@ -481,7 +481,9 @@
    "funding": 0.0,
    "ausstiegsplan": "Bis Abrechnung halten; Verkauf bei Bid ≥0.50",
    "entscheidung_id": "d5a40bf82",
-   "invalidierung": "Transkript Q2 FY27 enthält kein 'bubble' und Analystenfragen drehen sich nicht um Bubble; oder Call-Datum verschoben"
+   "invalidierung": "Transkript Q2 FY27 enthält kein 'bubble' und Analystenfragen drehen sich nicht um Bubble; oder Call-Datum verschoben",
+   "kurs": 0.3198874770585301,
+   "wert": 8.66
   }
  ],
  "realisiert": -114.85177367275844,
@@ -489,7 +491,7 @@
  "funding": 0.0,
  "erstellt": 1793319819.7411644,
  "start_fx": 1.1184885798616961,
- "letzter_tick": 1794020631.6743104,
+ "letzter_tick": 1794021531.3838654,
  "auftraege": [],
  "rebalancing": {
   "ziele": {
