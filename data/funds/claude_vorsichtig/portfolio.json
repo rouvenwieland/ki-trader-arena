@@ -183,48 +183,14 @@
    "invalidierung": "EFA unter 96 (Bruch der Aufwärtstrendstruktur, ~-9 %)",
    "kurs": 101.89,
    "wert": 510.98
-  },
-  {
-   "id": "peb517515",
-   "inst": {
-    "id": "pm:polymarket:6749958:NEIN",
-    "art": "pm",
-    "venue": "polymarket",
-    "ergebnis": "NEIN",
-    "frage": "Will the US national average gas price be less than $4.0500 on November 7?",
-    "schliesst": 1794063600.0,
-    "ref": {
-     "id": "6749958",
-     "token_ja": "66423074073170834001131791736894999342691720653418582078082100144137784905780",
-     "token_nein": "89923521299167916139447254863029105149939455630447985101911076283411215149165",
-     "tick": 0.001,
-     "condition": "0xb64d003ff2295c212ff7a35d65c450e5bb070d3cdc5def30d997535321ce9995",
-     "gebuehr_rate": 0.04,
-     "gebuehr_exp": 1.0
-    },
-    "url": "https://polymarket.com/event/will-us-gas-price-be-less-than-4pt05-on-november-7-2026"
-   },
-   "seite": "long",
-   "menge": 100.0,
-   "einstand": 0.0594802,
-   "hebel": 1.0,
-   "marge": 0.0,
-   "eroeffnet": 1793991969.2886822,
-   "gebuehren": 0.22377,
-   "funding": 0.0,
-   "ausstiegsplan": "Halten bis Abrechnung 7.11.; Kleinstposition (6 USD).",
-   "entscheidung_id": "dbc5bfa46",
-   "invalidierung": "AAA-Preis für 7.11. unter 4,0500 (Abrechnung am 7.11. 10:00 ET) – bis dahin keine Neubewertung nötig; Einsatz ist Totalverlust-Risiko.",
-   "kurs": null,
-   "wert": 5.95
   }
  ],
- "realisiert": -151.00050000000016,
+ "realisiert": -156.94852000000014,
  "gebuehren": 27.764169999999996,
  "funding": 0.0,
  "erstellt": 1793319819.7411644,
  "start_fx": 1.1184885798616961,
- "letzter_tick": 1794070582.7025049,
+ "letzter_tick": 1794071482.980594,
  "auftraege": [
   {
    "id": "a0f0f45",
