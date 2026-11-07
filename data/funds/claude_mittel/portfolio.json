@@ -2,7 +2,7 @@
  "fonds_id": "claude_mittel",
  "waehrung": "USD",
  "start_kapital": 11184.88579861696,
- "cash": 2051.8690886825175,
+ "cash": 2042.1985118929374,
  "positionen": [
   {
    "id": "p51e71031",
@@ -456,6 +456,32 @@
    "invalidierung": "ETH steigt über 2450 und DVOL fällt unter 45 – dann Touch-Wahrscheinlichkeit <0.8.",
    "kurs": 0.835,
    "wert": 114.54
+  },
+  {
+   "id": "p41d9ec41",
+   "inst": {
+    "id": "pm:manifold:RZqSLQS8lC:JA",
+    "art": "pm",
+    "venue": "manifold",
+    "ergebnis": "JA",
+    "frage": "Will an NVIDIA executive say \"bubble\" on NVIDIA's November 17 earnings call?",
+    "schliesst": 1794978000.0,
+    "ref": {
+     "id": "RZqSLQS8lC"
+    },
+    "url": "https://manifold.markets/Terminator2/will-an-nvidia-executive-say-bubble"
+   },
+   "seite": "long",
+   "menge": 28.0,
+   "einstand": 0.34537774248499886,
+   "hebel": 1.0,
+   "marge": 0.0,
+   "eroeffnet": 1794021016.5292387,
+   "gebuehren": 0.0,
+   "funding": 0.0,
+   "ausstiegsplan": "Bis Abrechnung halten; Verkauf bei Bid ≥0.50",
+   "entscheidung_id": "d5a40bf82",
+   "invalidierung": "Transkript Q2 FY27 enthält kein 'bubble' und Analystenfragen drehen sich nicht um Bubble; oder Call-Datum verschoben"
   }
  ],
  "realisiert": -114.85177367275844,

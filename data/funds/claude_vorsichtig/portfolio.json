@@ -225,7 +225,33 @@
  "erstellt": 1793319819.7411644,
  "start_fx": 1.1184885798616961,
  "letzter_tick": 1794020631.6743104,
- "auftraege": [],
+ "auftraege": [
+  {
+   "id": "a0f0f45",
+   "entscheidung_id": "dd084c777",
+   "inst": {
+    "id": "stock:SPY",
+    "art": "stock",
+    "venue": "yahoo",
+    "symbol": "SPY"
+   },
+   "aktion": "kaufen",
+   "typ": "eroeffnung",
+   "seite": "long",
+   "betrag_usd": 200,
+   "menge": null,
+   "hebel": 1.0,
+   "limit_preis": null,
+   "stop_preis": null,
+   "stop_loss": 690,
+   "take_profit": null,
+   "ausstiegsplan": "Kern halten, Rebalancing-Regel (2 pp), Stop 690.",
+   "invalidierung": "SPY schließt unter 690 oder 10J-Rendite >5,3 %",
+   "erstellt": 1794021033.375398,
+   "geprueft_bis": 1794021033.375398,
+   "gueltig_bis": 1794258000.0
+  }
+ ],
  "rebalancing": {
   "ziele": {
    "stock:SPY": {
