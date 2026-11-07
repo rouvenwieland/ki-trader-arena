@@ -2,7 +2,7 @@
  "fonds_id": "liga_kimi",
  "waehrung": "USD",
  "start_kapital": 11184.88579861696,
- "cash": 2458.108037318062,
+ "cash": 2537.108037318062,
  "positionen": [
   {
    "id": "p0b5ac550",
@@ -64,36 +64,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "d3af64508",
-   "kurs": 75777.83499999999,
-   "wert": 2050.75
-  },
-  {
-   "id": "p218402ab",
-   "inst": {
-    "id": "pm:kalshi:KXHIGHAUS-26NOV06-B73.5:JA",
-    "art": "pm",
-    "venue": "kalshi",
-    "ergebnis": "JA",
-    "frage": "Will the maximum temperature be 73-74° on Nov 6, 2026? [73° to 74°]",
-    "schliesst": 1794034800.0,
-    "ref": {
-     "ticker": "KXHIGHAUS-26NOV06-B73.5"
-    },
-    "url": "https://kalshi.com/markets/KXHIGHAUS-26NOV06"
-   },
-   "seite": "long",
-   "menge": 79.0,
-   "einstand": 0.04468354430379747,
-   "hebel": 1.0,
-   "marge": 0.0,
-   "eroeffnet": 1793937742.9473877,
-   "gebuehren": 0.25,
-   "funding": 0.0,
-   "ausstiegsplan": "Halten bis CLI-Abrechnung heute Abend (Binärwette, kein vorzeitiger Ausstieg). Verkauf nur falls NWS-Meldungen vor 18 UTC ein Max ≥75°F praktisch sicher machen.",
-   "entscheidung_id": "d35c24618",
-   "invalidierung": "NWS-Meldung eines Tagesmaximums außerhalb 73–74 °F in Austin am 06.11. (CLI-Bericht)",
-   "kurs": null,
-   "wert": 3.53
+   "kurs": 75774.955,
+   "wert": 2050.68
   },
   {
    "id": "p5a2259b8",
@@ -153,8 +125,8 @@
    "ausstiegsplan": "Verkauf bei Wertverdopplung (BTC ~67–68k) oder Halten bis 25.12. Halbierung der Position, wenn BTC über 80k zurückkehrt (Theta-Bremse).",
    "entscheidung_id": "d0fe400cd",
    "invalidierung": "BTC schließt 3 Tage in Folge über 80k mit fallender realisierter Vola (Abwärtstrend gebrochen).",
-   "kurs": 2394.933348,
-   "wert": 596.84
+   "kurs": 2409.910848,
+   "wert": 596.79
   },
   {
    "id": "p5a6a2ac6",
@@ -178,12 +150,12 @@
    "wert": 526.86
   }
  ],
- "realisiert": -633.7213054666724,
+ "realisiert": -558.2513054666724,
  "gebuehren": 76.92625440591361,
  "funding": 0.0,
  "erstellt": 1793319819.7411644,
  "start_fx": 1.1184885798616961,
- "letzter_tick": 1794056974.8932228,
+ "letzter_tick": 1794057875.2768435,
  "rebalancing": {
   "ziele": {
    "stock:SPY": {
