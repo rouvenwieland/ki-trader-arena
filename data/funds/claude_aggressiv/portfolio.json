@@ -178,7 +178,16 @@
      "venue": "yahoo",
      "symbol": "SPY"
     },
-    "anteil": 0.27
+    "anteil": 0.26
+   },
+   "stock:QQQ": {
+    "inst": {
+     "id": "stock:QQQ",
+     "art": "stock",
+     "venue": "yahoo",
+     "symbol": "QQQ"
+    },
+    "anteil": 0.08
    },
    "stock:GLD": {
     "inst": {
@@ -209,7 +218,7 @@
    }
   },
   "schwelle_pp": 6.0,
-  "seit": 1793977989.3394215,
-  "entscheidung_id": "d010e93d7"
+  "seit": 1794150493.3463492,
+  "entscheidung_id": "d8409caba"
  }
 }

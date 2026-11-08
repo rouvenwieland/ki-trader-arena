@@ -9,9 +9,9 @@
  "persoenlichkeit": "Sachlich, mittleres Risiko, gleiche Regeln wie alle anderen.",
  "start": 1793319819.7411644,
  "status": "Fehler: Modellfehler: gpt-5-mini: HTTP 400 {\n  \"error\": {\n    \"message\": \"Unsupported parameter: 'max_tokens' is not supported with this model. Use ",
- "status_ts": 1794096911.4357255,
+ "status_ts": 1794150493.3463492,
  "modell_aktuell": "gpt-5-mini",
- "letzte_runde": 1794096911.4357255,
+ "letzte_runde": 1794150493.3463492,
  "letzte_runde_abbruch": "Modellfehler: gpt-5-mini: HTTP 400 {\n  \"error\": {\n    \"message\": \"Unsupported parameter: 'max_tokens' is not supported with this model. Use 'max_completion_tokens' instead.\",\n    \"type\": \"invalid_request_error\",\n    \"param\": \"max_token",
  "pausiert_bis": 0
 }

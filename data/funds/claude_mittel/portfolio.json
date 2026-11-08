@@ -2,7 +2,7 @@
  "fonds_id": "claude_mittel",
  "waehrung": "USD",
  "start_kapital": 11184.88579861696,
- "cash": 2042.1985118929374,
+ "cash": 2185.5522718929374,
  "positionen": [
   {
    "id": "p51e71031",
@@ -25,16 +25,16 @@
     "url": "https://polymarket.com/event/next-french-presidential-election"
    },
    "seite": "long",
-   "menge": 307.0,
-   "einstand": 0.812,
+   "menge": 540.0,
+   "einstand": 0.8292592592592593,
    "hebel": 1.0,
    "marge": 0.0,
    "eroeffnet": 1793437467.9324644,
-   "gebuehren": 0.0,
+   "gebuehren": 1.17521,
    "funding": 0.0,
-   "ausstiegsplan": "Halten; Gewinn mitnehmen, wenn NEIN ≥0.90 (JA ≤0.10) oder der Preis meine P erreicht. Neu bewerten, wenn Lisnard in Umfragen über 12 % steigt oder Philippe/Retailleau zurückziehen.",
-   "entscheidung_id": "df10ef502",
-   "invalidierung": "Lisnard in mehreren Umfragen ≥12 % im 1. Wahlgang oder Rückzug von Philippe/Retailleau zu seinen Gunsten.",
+   "ausstiegsplan": "NEIN-Bid ≥0,93 oder P erreicht → verkaufen; sonst halten bis zur Wahl (April/Mai 2027).",
+   "entscheidung_id": "d860a2331",
+   "invalidierung": "Lisnard in mehreren Umfragen ≥12 % im 1. Wahlgang oder Rückzug von Philippe/Retailleau zu seinen Gunsten bzw. Sieg in einer Rechts-Primaire.",
    "kurs": 0.8514999999999999,
    "wert": 261.26
   },
@@ -161,40 +161,6 @@
    "invalidierung": "NVDA-Marktkap. kommt auf <3 % Abstand zu Apple, oder Apple fällt >8 % relativ.",
    "kurs": 0.6505000000000001,
    "wert": 392.12
-  },
-  {
-   "id": "pf61ac065",
-   "inst": {
-    "id": "pm:polymarket:3580933:JA",
-    "art": "pm",
-    "venue": "polymarket",
-    "ergebnis": "JA",
-    "frage": "Will Puma Shen win the next Taipei Mayor election?",
-    "schliesst": 1795928340.0,
-    "ref": {
-     "id": "3580933",
-     "token_ja": "71621185653281721927174401118354054745399424014255544529977515442951477963801",
-     "token_nein": "72820619922053432516748905329266890906103969024802768151634670763988243600546",
-     "tick": 0.001,
-     "condition": "0x910aabbfae28b3569929c31fb5461f4db13f7ddd427bdee1e696d313125838e3",
-     "gebuehr_rate": 0.04,
-     "gebuehr_exp": 1.0
-    },
-    "url": "https://polymarket.com/event/taipei-mayor-election-winner-20260813125857100"
-   },
-   "seite": "long",
-   "menge": 1026.0,
-   "einstand": 0.3127465692007797,
-   "hebel": 1.0,
-   "marge": 0.0,
-   "eroeffnet": 1793819387.6707394,
-   "gebuehren": 8.793330000000001,
-   "funding": 0.0,
-   "ausstiegsplan": "Halten bis 28.11.; Gewinn mitnehmen bei Bid ≥0.40.",
-   "entscheidung_id": "dab131640",
-   "invalidierung": "Mehrere unabhängige Umfragen Chiang ≥ +6 (inkl. UDN/SPRIT-Umkehr).",
-   "kurs": 0.3445,
-   "wert": 352.94
   },
   {
    "id": "pb60e44cc",
@@ -486,8 +452,8 @@
    "wert": 10.45
   }
  ],
- "realisiert": -114.85177367275844,
- "gebuehren": 42.1692533771088,
+ "realisiert": -92.68478367275843,
+ "gebuehren": 52.5976333771088,
  "funding": 0.0,
  "erstellt": 1793319819.7411644,
  "start_fx": 1.1184885798616961,

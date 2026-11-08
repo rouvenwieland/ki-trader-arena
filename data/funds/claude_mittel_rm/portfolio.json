@@ -2,7 +2,7 @@
  "fonds_id": "claude_mittel_rm",
  "waehrung": "USD",
  "start_kapital": 11156.327353966788,
- "cash": 1403.6640120252102,
+ "cash": 1103.7022820252103,
  "positionen": [
   {
    "id": "pe8186cc2",
@@ -573,10 +573,42 @@
    "invalidierung": "Offizielle Preisspanne im S-1/A mit Mittelpunkt ≥1,4 Bio oder Nasdaq-100 +8 % bis Pricing",
    "kurs": 0.1375,
    "wert": 177.82
+  },
+  {
+   "id": "p1f686553",
+   "inst": {
+    "id": "pm:polymarket:679030:NEIN",
+    "art": "pm",
+    "venue": "polymarket",
+    "ergebnis": "NEIN",
+    "frage": "Will Jean-Luc Mélenchon win the 2027 French presidential election?",
+    "schliesst": 1808107140.0,
+    "ref": {
+     "id": "679030",
+     "token_ja": "88550326946437280548248031502775629664259630024343210447063397951616199975032",
+     "token_nein": "78935030613038194779147226463048913187247425461933527083007539809178403199936",
+     "tick": 0.01,
+     "condition": "0x174ea87d011bfd0b230efc45e0b4d0756d38af91f0ffbab70013a582603c2be8",
+     "gebuehr_rate": 0.04,
+     "gebuehr_exp": 1.0
+    },
+    "url": "https://polymarket.com/event/next-french-presidential-election"
+   },
+   "seite": "long",
+   "menge": 343.0,
+   "einstand": 0.8700000000000001,
+   "hebel": 1.0,
+   "marge": 0.0,
+   "eroeffnet": 1794150673.529442,
+   "gebuehren": 1.55173,
+   "funding": 0.0,
+   "ausstiegsplan": "Halten bis Abrechnung (Mai 2027). Neu bewerten nach Le-Pen-Kassationsurteil (bis Jan. 2027) und Kandidatenliste (März 2027). Teilverkauf bei NEIN ≥0.95.",
+   "entscheidung_id": "d08d37898",
+   "invalidierung": "Mélenchon ≥20 % in ≥2 seriösen Umfragen (Ifop/Elabe/Odoxa) oder Stichwahl gegen RN ≤58:42; oder NEIN-Preis <0.75"
   }
  ],
  "realisiert": 48.708254937007624,
- "gebuehren": 32.299516339201574,
+ "gebuehren": 33.85124633920157,
  "funding": 0.0,
  "erstellt": 1793380123.8861866,
  "start_fx": 1.1156327353966788,

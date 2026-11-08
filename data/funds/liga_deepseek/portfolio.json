@@ -138,7 +138,7 @@
      "venue": "yahoo",
      "symbol": "SPY"
     },
-    "anteil": 0.28
+    "anteil": 0.24
    },
    "stock:TLT": {
     "inst": {
@@ -147,7 +147,16 @@
      "venue": "yahoo",
      "symbol": "TLT"
     },
-    "anteil": 0.26
+    "anteil": 0.18
+   },
+   "stock:AGG": {
+    "inst": {
+     "id": "stock:AGG",
+     "art": "stock",
+     "venue": "yahoo",
+     "symbol": "AGG"
+    },
+    "anteil": 0.11
    },
    "stock:GLD": {
     "inst": {
@@ -168,9 +177,9 @@
     "anteil": 0.06
    }
   },
-  "schwelle_pp": 2.0,
-  "seit": 1794064390.1622787,
-  "entscheidung_id": "d32f797e4"
+  "schwelle_pp": 3.0,
+  "seit": 1794150493.3463492,
+  "entscheidung_id": "d1d71a5f2"
  },
  "auftraege": []
 }
