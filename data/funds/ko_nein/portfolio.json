@@ -2,7 +2,7 @@
  "fonds_id": "ko_nein",
  "waehrung": "USD",
  "start_kapital": 11157.431109273288,
- "cash": 980.7268992732861,
+ "cash": 1098.960509273286,
  "positionen": [
   {
    "id": "p9e535f2b",
@@ -97,8 +97,8 @@
    "gebuehren": 0.0,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.8135,
-   "wert": 225.74
+   "kurs": 0.808,
+   "wert": 224.07
   },
   {
    "id": "pdcfb5d53",
@@ -129,8 +129,8 @@
    "gebuehren": 0.0,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.328,
-   "wert": 79.75
+   "kurs": 0.3225,
+   "wert": 79.5
   },
   {
    "id": "pe65b0b73",
@@ -225,8 +225,8 @@
    "gebuehren": 1.04341,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.895,
-   "wert": 161.98
+   "kurs": 0.905,
+   "wert": 163.8
   },
   {
    "id": "p7e5c2e70",
@@ -577,8 +577,8 @@
    "gebuehren": 0.0,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.14,
-   "wert": 47.71
+   "kurs": 0.135,
+   "wert": 44.04
   },
   {
    "id": "p5037ef0e",
@@ -673,7 +673,7 @@
    "gebuehren": 1.59053,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.0155,
+   "kurs": 0.016,
    "wert": 3.27
   },
   {
@@ -961,8 +961,8 @@
    "gebuehren": 5.82112,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.9864999999999999,
-   "wert": 1611.12
+   "kurs": 0.989,
+   "wert": 1614.39
   },
   {
    "id": "pca00edbf",
@@ -1153,8 +1153,8 @@
    "gebuehren": 2.0848,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.6585000000000001,
-   "wert": 157.86
+   "kurs": 0.658,
+   "wert": 158.1
   },
   {
    "id": "p8929587b",
@@ -1217,8 +1217,8 @@
    "gebuehren": 9.50569,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.10500000000000001,
-   "wert": 113.2
+   "kurs": 0.095,
+   "wert": 101.88
   },
   {
    "id": "pff668a53",
@@ -1381,38 +1381,6 @@
    "wert": 164.61
   },
   {
-   "id": "p7bb75955",
-   "inst": {
-    "id": "pm:polymarket:6536923:NEIN",
-    "art": "pm",
-    "venue": "polymarket",
-    "ergebnis": "NEIN",
-    "frage": "Will the price of Bitcoin be above $76,000 on November 8?",
-    "schliesst": 1794157200.0,
-    "ref": {
-     "id": "6536923",
-     "token_ja": "2349856952608958547251161137485530961206023093144029884856676727355853801355",
-     "token_nein": "80660243555246169248706546160297424997884002784212459854971351823897312288682",
-     "tick": 0.001,
-     "condition": "0xcc143583762f3661bf5814fa17a6d2f0f765bc4bdcca267ddd5f7dca4ffc15f7",
-     "gebuehr_rate": 0.07,
-     "gebuehr_exp": 1.0
-    },
-    "url": "https://polymarket.com/event/bitcoin-above-76k-on-november-8-2026"
-   },
-   "seite": "long",
-   "menge": 285.0,
-   "einstand": 0.5691298245614034,
-   "hebel": 1.0,
-   "marge": 0.0,
-   "eroeffnet": 1794065182.7512746,
-   "gebuehren": 4.89216,
-   "funding": 0.0,
-   "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.999,
-   "wert": 284.71
-  },
-  {
    "id": "pf5e1aa21",
    "inst": {
     "id": "pm:polymarket:3399468:NEIN",
@@ -1443,13 +1411,45 @@
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
    "kurs": 0.425,
    "wert": 155.82
+  },
+  {
+   "id": "pd9d0cbc0",
+   "inst": {
+    "id": "pm:polymarket:6763341:NEIN",
+    "art": "pm",
+    "venue": "polymarket",
+    "ergebnis": "NEIN",
+    "frage": "Will Constellation Energy say \"Auction\" during earnings call?",
+    "schliesst": 1794286740.0,
+    "ref": {
+     "id": "6763341",
+     "token_ja": "63325376888316914264147232640014410280078581011271873449703989333906604879597",
+     "token_nein": "98737089737178744915559323374935245427665499199843565207484287854109663056436",
+     "tick": 0.01,
+     "condition": "0x6634f4e6e6b5022e4fed29aa08b8d6bd6e909a89fc800ed6002d5d8c0ac3c1c6",
+     "gebuehr_rate": 0.04,
+     "gebuehr_exp": 1.0
+    },
+    "url": "https://polymarket.com/event/will-constellation-energy-say-auction-during-earnings-call-november-9"
+   },
+   "seite": "long",
+   "menge": 283.0,
+   "einstand": 0.5795335689045936,
+   "hebel": 1.0,
+   "marge": 0.0,
+   "eroeffnet": 1794158602.0784228,
+   "gebuehren": 2.75839,
+   "funding": 0.0,
+   "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
+   "kurs": 0.44,
+   "wert": 62.26
   }
  ],
- "realisiert": -2471.3131000000003,
- "gebuehren": 265.87417999999997,
+ "realisiert": -2348.5151,
+ "gebuehren": 268.63257,
  "funding": 0.0,
  "erstellt": 1793379225.5430336,
  "start_fx": 1.1157431109273288,
- "letzter_tick": 1794157701.891638,
- "kontrolle_bis": 1794150493.3463492
+ "letzter_tick": 1794158602.0784228,
+ "kontrolle_bis": 1794157809.2344558
 }
