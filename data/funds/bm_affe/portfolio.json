@@ -2,71 +2,33 @@
  "fonds_id": "bm_affe",
  "waehrung": "USD",
  "start_kapital": 11184.88579861696,
- "cash": 6101.1668521324855,
+ "cash": 8062.377368751488,
  "positionen": [
   {
-   "id": "p17c1e0a0",
+   "id": "p3d774e33",
    "inst": {
-    "id": "spot:SOL-USD",
+    "id": "spot:AVAX-USD",
     "art": "spot",
     "venue": "coinbase",
-    "symbol": "SOL-USD"
+    "symbol": "AVAX-USD"
    },
    "seite": "long",
-   "menge": 19.546473524158806,
-   "einstand": 90.038004,
+   "menge": 333.7072023786782,
+   "einstand": 8.20661267609829,
    "hebel": 1.0,
    "marge": 0.0,
-   "eroeffnet": 1794009832.221894,
-   "gebuehren": 10.559552768124629,
+   "eroeffnet": 1794096801.6659403,
+   "gebuehren": 16.431634542876946,
    "funding": 0.0,
-   "kurs": 89.67,
-   "wert": 1752.54
-  },
-  {
-   "id": "pf2cad0a7",
-   "inst": {
-    "id": "spot:ADA-USD",
-    "art": "spot",
-    "venue": "coinbase",
-    "symbol": "ADA-USD"
-   },
-   "seite": "long",
-   "menge": 9426.54599130218,
-   "einstand": 0.1837818445997474,
-   "hebel": 1.0,
-   "marge": 0.0,
-   "eroeffnet": 1794009832.221894,
-   "gebuehren": 10.394568062915214,
-   "funding": 0.0,
-   "kurs": 0.18167499999999998,
-   "wert": 1712.43
-  },
-  {
-   "id": "p2067a16d",
-   "inst": {
-    "id": "spot:LINK-USD",
-    "art": "spot",
-    "venue": "coinbase",
-    "symbol": "LINK-USD"
-   },
-   "seite": "long",
-   "menge": 119.21466484633429,
-   "einstand": 10.83783462407026,
-   "hebel": 1.0,
-   "marge": 0.0,
-   "eroeffnet": 1794009832.221894,
-   "gebuehren": 7.752172934211201,
-   "funding": 0.0,
-   "kurs": 10.82,
-   "wert": 1289.78
+   "kurs": 8.2035,
+   "wert": 2737.07
   }
  ],
- "realisiert": -77.087429687539,
- "gebuehren": 416.4951021106187,
+ "realisiert": -145.22181558800972,
+ "gebuehren": 461.39503388674336,
  "funding": 0.0,
  "erstellt": 1793319819.7411644,
  "start_fx": 1.1184885798616961,
- "letzter_tick": 1794095901.7398067,
- "letzter_tag": "2026-11-07"
+ "letzter_tick": 1794096801.6659403,
+ "letzter_tag": "2026-11-08"
 }
