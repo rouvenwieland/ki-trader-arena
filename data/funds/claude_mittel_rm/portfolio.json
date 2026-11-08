@@ -137,7 +137,7 @@
    "ausstiegsplan": "Halten bis 31.12.; nach NVDA-Earnings 17.11. neu bewerten; Gewinnmitnahme ≥0,65.",
    "entscheidung_id": "d62d5f0db",
    "invalidierung": "NVDA übertrifft Apple-Marktkap nach Earnings um >5 % oder Apple-JA <0,25.",
-   "kurs": 0.652,
+   "kurs": 0.6525000000000001,
    "wert": 481.37
   },
   {
@@ -199,7 +199,7 @@
    "ausstiegsplan": "Halten bis 30.11.; verkaufen, wenn BTC unter 64.000 fällt oder NEIN-Preis <0.88.",
    "entscheidung_id": "d7dbfc08f",
    "invalidierung": "BTC Binance unter 64.000 oder DVOL >60",
-   "kurs": 0.954,
+   "kurs": 0.9535,
    "wert": 298.29
   },
   {
@@ -241,8 +241,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "dd6456776",
-   "kurs": 75771.565,
-   "wert": 1075.29
+   "kurs": 75765.005,
+   "wert": 1075.19
   },
   {
    "id": "p994b6370",
@@ -329,8 +329,8 @@
    "ausstiegsplan": "Halten bis Abrechnung 31.12.",
    "entscheidung_id": "de2fc5d7b",
    "invalidierung": "PredictIt-Bein nicht gefüllt: JA-Bein wieder verkaufen.",
-   "kurs": 0.475,
-   "wert": 94.0
+   "kurs": 0.46499999999999997,
+   "wert": 92.0
   },
   {
    "id": "p93771887",
@@ -435,8 +435,8 @@
    "ausstiegsplan": "Halten bis Abrechnung nach Earnings 17.11.",
    "entscheidung_id": "dde4a2a08",
    "invalidierung": "Transkript vom 17.11. enthält das Wort nicht oder Regelklarstellung schließt Analystenfragen aus.",
-   "kurs": 0.38421835167409735,
-   "wert": 23.89
+   "kurs": 0.31667447349560507,
+   "wert": 19.59
   },
   {
    "id": "p96f26326",
@@ -537,8 +537,8 @@
    "ausstiegsplan": "Bis Vereidigung halten; schließen, wenn beide Beine zusammen ≥0.97 verkaufbar.",
    "entscheidung_id": "d5f5d56d9",
    "invalidierung": "Nachweislich abweichende PredictIt-Regel, die Eisenkot-JA bei PredictIt und NEIN bei Polymarket zulässt.",
-   "kurs": 0.634,
-   "wert": 439.6
+   "kurs": 0.635,
+   "wert": 440.3
   },
   {
    "id": "p2567180c",
@@ -571,7 +571,7 @@
    "ausstiegsplan": "Halten bis IPO-Tag-1-Close; Verkauf wenn Preis ≥0.25 (Gewinn) oder Invalidierung",
    "entscheidung_id": "d8f7f777b",
    "invalidierung": "Offizielle Preisspanne im S-1/A mit Mittelpunkt ≥1,4 Bio oder Nasdaq-100 +8 % bis Pricing",
-   "kurs": 0.147,
+   "kurs": 0.1465,
    "wert": 188.52
   },
   {
@@ -614,7 +614,7 @@
  "funding": 0.0,
  "erstellt": 1793380123.8861866,
  "start_fx": 1.1156327353966788,
- "letzter_tick": 1794164901.5428991,
+ "letzter_tick": 1794165801.5981147,
  "auftraege": [],
  "rebalancing": {
   "ziele": {
