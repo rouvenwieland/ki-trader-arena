@@ -264,8 +264,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "d6e1a7002",
-   "kurs": 75852.955,
-   "wert": 1248.3
+   "kurs": 75771.565,
+   "wert": 1246.96
   },
   {
    "id": "pe3015b77",
@@ -285,8 +285,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "d6e1a7002",
-   "kurs": 2233.565,
-   "wert": 506.91
+   "kurs": 2230.175,
+   "wert": 506.14
   },
   {
    "id": "p1ad6082a",
@@ -386,8 +386,8 @@
    "ausstiegsplan": "Halten bis 30.11.; Verkauf bei NEIN-Bid ≥0.85 oder bei Ersatz-Meldung sofort.",
    "entscheidung_id": "df7939c88",
    "invalidierung": "Trump oder mehrere Quellen (Axios/CBS/NYT) melden Entscheidung zum Austausch; NEIN-Bid fällt unter 0.55.",
-   "kurs": 0.63,
-   "wert": 132.68
+   "kurs": 0.64,
+   "wert": 134.82
   },
   {
    "id": "pa0a2bdf6",
@@ -420,8 +420,8 @@
    "ausstiegsplan": "Bid ≥0,92 verkaufen; sonst bis Abrechnung/Touch halten.",
    "entscheidung_id": "d0bdb1295",
    "invalidierung": "ETH steigt über 2450 und DVOL fällt unter 45 – dann Touch-Wahrscheinlichkeit <0.8.",
-   "kurs": 0.88,
-   "wert": 120.06
+   "kurs": 0.89,
+   "wert": 121.44
   },
   {
    "id": "p41d9ec41",
@@ -491,7 +491,7 @@
  "funding": 0.0,
  "erstellt": 1793319819.7411644,
  "start_fx": 1.1184885798616961,
- "letzter_tick": 1794164001.8518517,
+ "letzter_tick": 1794164901.5428991,
  "auftraege": [],
  "rebalancing": {
   "ziele": {
