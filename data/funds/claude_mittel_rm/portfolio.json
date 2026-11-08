@@ -199,8 +199,8 @@
    "ausstiegsplan": "Halten bis 30.11.; verkaufen, wenn BTC unter 64.000 fällt oder NEIN-Preis <0.88.",
    "entscheidung_id": "d7dbfc08f",
    "invalidierung": "BTC Binance unter 64.000 oder DVOL >60",
-   "kurs": 0.955,
-   "wert": 298.29
+   "kurs": 0.9555,
+   "wert": 298.91
   },
   {
    "id": "pea9d23a3",
@@ -241,8 +241,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "dd6456776",
-   "kurs": 75835.685,
-   "wert": 1076.2
+   "kurs": 75777.225,
+   "wert": 1075.37
   },
   {
    "id": "p994b6370",
@@ -329,8 +329,8 @@
    "ausstiegsplan": "Halten bis Abrechnung 31.12.",
    "entscheidung_id": "de2fc5d7b",
    "invalidierung": "PredictIt-Bein nicht gefüllt: JA-Bein wieder verkaufen.",
-   "kurs": 0.405,
-   "wert": 80.0
+   "kurs": 0.415,
+   "wert": 82.0
   },
   {
    "id": "p93771887",
@@ -537,8 +537,8 @@
    "ausstiegsplan": "Bis Vereidigung halten; schließen, wenn beide Beine zusammen ≥0.97 verkaufbar.",
    "entscheidung_id": "d5f5d56d9",
    "invalidierung": "Nachweislich abweichende PredictIt-Regel, die Eisenkot-JA bei PredictIt und NEIN bei Polymarket zulässt.",
-   "kurs": 0.6685000000000001,
-   "wert": 464.1
+   "kurs": 0.6705000000000001,
+   "wert": 465.5
   },
   {
    "id": "p2567180c",
@@ -571,8 +571,8 @@
    "ausstiegsplan": "Halten bis IPO-Tag-1-Close; Verkauf wenn Preis ≥0.25 (Gewinn) oder Invalidierung",
    "entscheidung_id": "d8f7f777b",
    "invalidierung": "Offizielle Preisspanne im S-1/A mit Mittelpunkt ≥1,4 Bio oder Nasdaq-100 +8 % bis Pricing",
-   "kurs": 0.154,
-   "wert": 204.56
+   "kurs": 0.1535,
+   "wert": 203.22
   }
  ],
  "realisiert": 48.708254937007624,
@@ -580,7 +580,7 @@
  "funding": 0.0,
  "erstellt": 1793380123.8861866,
  "start_fx": 1.1156327353966788,
- "letzter_tick": 1794131363.3028796,
+ "letzter_tick": 1794132263.3231852,
  "auftraege": [],
  "rebalancing": {
   "ziele": {
