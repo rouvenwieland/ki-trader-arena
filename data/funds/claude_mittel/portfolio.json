@@ -298,8 +298,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "d6e1a7002",
-   "kurs": 75767.89499999999,
-   "wert": 1246.9
+   "kurs": 75777.465,
+   "wert": 1247.06
   },
   {
    "id": "pe3015b77",
@@ -319,8 +319,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "d6e1a7002",
-   "kurs": 2232.9849999999997,
-   "wert": 506.78
+   "kurs": 2234.575,
+   "wert": 507.14
   },
   {
    "id": "p1ad6082a",
@@ -454,8 +454,8 @@
    "ausstiegsplan": "Bid ≥0,92 verkaufen; sonst bis Abrechnung/Touch halten.",
    "entscheidung_id": "d0bdb1295",
    "invalidierung": "ETH steigt über 2450 und DVOL fällt unter 45 – dann Touch-Wahrscheinlichkeit <0.8.",
-   "kurs": 0.875,
-   "wert": 120.06
+   "kurs": 0.87,
+   "wert": 118.68
   },
   {
    "id": "p41d9ec41",
@@ -491,7 +491,7 @@
  "funding": 0.0,
  "erstellt": 1793319819.7411644,
  "start_fx": 1.1184885798616961,
- "letzter_tick": 1794114143.9279478,
+ "letzter_tick": 1794115043.3956494,
  "auftraege": [],
  "rebalancing": {
   "ziele": {
