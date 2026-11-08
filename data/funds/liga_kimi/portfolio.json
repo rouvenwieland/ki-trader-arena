@@ -64,8 +64,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "d3af64508",
-   "kurs": 75630.14499999999,
-   "wert": 2046.76
+   "kurs": 75600.705,
+   "wert": 2045.96
   },
   {
    "id": "p5a2259b8",
@@ -98,8 +98,8 @@
    "ausstiegsplan": "Halten bis 31.12. oder verkaufen bei JA ≥65¢ (Halbzeit-Hoch). Teilverkauf bei klarer Stabilisierung des Weißen Hauses hinter Hegseth.",
    "entscheidung_id": "db3939865",
    "invalidierung": "Konkrete, glaubwürdige Meldung, dass Hegseth explizit bestätigt bleibt (z. B. WH-Terminplan bis Q1 2027) oder Beruhigung der Berichterstattung über ≥2 Wochen.",
-   "kurs": 0.45499999999999996,
-   "wert": 307.12
+   "kurs": 0.46499999999999997,
+   "wert": 321.08
   },
   {
    "id": "p2d9f604d",
@@ -125,8 +125,8 @@
    "ausstiegsplan": "Verkauf bei Wertverdopplung (BTC ~67–68k) oder Halten bis 25.12. Halbierung der Position, wenn BTC über 80k zurückkehrt (Theta-Bremse).",
    "entscheidung_id": "d0fe400cd",
    "invalidierung": "BTC schließt 3 Tage in Folge über 80k mit fallender realisierter Vola (Abwärtstrend gebrochen).",
-   "kurs": 2473.931253,
-   "wert": 605.24
+   "kurs": 2487.752582,
+   "wert": 614.38
   },
   {
    "id": "p5a6a2ac6",
@@ -180,8 +180,8 @@
    "ausstiegsplan": "Wie Block 1: Teilverkauf bei bid ≥0,25, Rest bei ≥0,45; harte Invalidierung bei öffentlicher Absage.",
    "entscheidung_id": "dc52c4c5c",
    "invalidierung": "Öffentliche Absage Whites oder anderer Kandidat nominiert.",
-   "kurs": 0.05,
-   "wert": 56.44
+   "kurs": 0.0455,
+   "wert": 55.21
   }
  ],
  "realisiert": -558.2513054666724,
@@ -189,7 +189,7 @@
  "funding": 0.0,
  "erstellt": 1793319819.7411644,
  "start_fx": 1.1184885798616961,
- "letzter_tick": 1794158602.0784228,
+ "letzter_tick": 1794159501.607133,
  "rebalancing": {
   "ziele": {
    "stock:SPY": {
