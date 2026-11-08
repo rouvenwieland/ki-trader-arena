@@ -241,8 +241,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "dd6456776",
-   "kurs": 75663.92499999999,
-   "wert": 1073.76
+   "kurs": 75641.015,
+   "wert": 1073.43
   },
   {
    "id": "p994b6370",
@@ -537,8 +537,8 @@
    "ausstiegsplan": "Bis Vereidigung halten; schließen, wenn beide Beine zusammen ≥0.97 verkaufbar.",
    "entscheidung_id": "d5f5d56d9",
    "invalidierung": "Nachweislich abweichende PredictIt-Regel, die Eisenkot-JA bei PredictIt und NEIN bei Polymarket zulässt.",
-   "kurs": 0.6315,
-   "wert": 440.3
+   "kurs": 0.6295,
+   "wert": 437.5
   },
   {
    "id": "p2567180c",
@@ -571,7 +571,7 @@
    "ausstiegsplan": "Halten bis IPO-Tag-1-Close; Verkauf wenn Preis ≥0.25 (Gewinn) oder Invalidierung",
    "entscheidung_id": "d8f7f777b",
    "invalidierung": "Offizielle Preisspanne im S-1/A mit Mittelpunkt ≥1,4 Bio oder Nasdaq-100 +8 % bis Pricing",
-   "kurs": 0.14300000000000002,
+   "kurs": 0.14250000000000002,
    "wert": 180.5
   },
   {
@@ -614,7 +614,7 @@
  "funding": 0.0,
  "erstellt": 1793380123.8861866,
  "start_fx": 1.1156327353966788,
- "letzter_tick": 1794171320.3109837,
+ "letzter_tick": 1794172220.2048225,
  "auftraege": [],
  "rebalancing": {
   "ziele": {
