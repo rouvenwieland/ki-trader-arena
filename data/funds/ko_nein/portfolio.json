@@ -97,8 +97,8 @@
    "gebuehren": 0.0,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.812,
-   "wert": 225.18
+   "kurs": 0.8140000000000001,
+   "wert": 225.74
   },
   {
    "id": "pdcfb5d53",
@@ -129,8 +129,8 @@
    "gebuehren": 0.0,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.37,
-   "wert": 91.0
+   "kurs": 0.3425,
+   "wert": 82.75
   },
   {
    "id": "pe65b0b73",
@@ -161,8 +161,8 @@
    "gebuehren": 0.0,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.9904999999999999,
-   "wert": 208.68
+   "kurs": 0.9895,
+   "wert": 208.26
   },
   {
    "id": "pf0e983be",
@@ -417,8 +417,8 @@
    "gebuehren": 1.96552,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.8200000000000001,
-   "wert": 161.19
+   "kurs": 0.825,
+   "wert": 163.18
   },
   {
    "id": "p4cd35a1d",
@@ -673,8 +673,8 @@
    "gebuehren": 1.59053,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.0155,
-   "wert": 3.27
+   "kurs": 0.0135,
+   "wert": 2.4
   },
   {
    "id": "p091ba70e",
@@ -929,7 +929,7 @@
    "gebuehren": 0.95322,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.685,
+   "kurs": 0.6799999999999999,
    "wert": 124.16
   },
   {
@@ -961,7 +961,7 @@
    "gebuehren": 5.82112,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.99,
+   "kurs": 0.9895,
    "wert": 1616.03
   },
   {
@@ -1249,7 +1249,7 @@
    "gebuehren": 1.22092,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.84,
+   "kurs": 0.825,
    "wert": 143.56
   },
   {
@@ -1450,6 +1450,6 @@
  "funding": 0.0,
  "erstellt": 1793379225.5430336,
  "start_fx": 1.1157431109273288,
- "letzter_tick": 1794162202.1272392,
+ "letzter_tick": 1794163102.1571488,
  "kontrolle_bis": 1794157809.2344558
 }
