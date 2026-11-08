@@ -159,8 +159,8 @@
    "ausstiegsplan": "Bid ≥0,70 verkaufen (P erreicht); Neubewertung nach NVDA-Zahlen 19.11.; schließen, wenn Apple-Vorsprung <3 %.",
    "entscheidung_id": "d7e53ef04",
    "invalidierung": "NVDA-Marktkap. kommt auf <3 % Abstand zu Apple, oder Apple fällt >8 % relativ.",
-   "kurs": 0.652,
-   "wert": 393.34
+   "kurs": 0.6565000000000001,
+   "wert": 396.98
   },
   {
    "id": "pb60e44cc",
@@ -264,8 +264,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "d6e1a7002",
-   "kurs": 75641.015,
-   "wert": 1244.81
+   "kurs": 75664.565,
+   "wert": 1245.2
   },
   {
    "id": "pe3015b77",
@@ -285,8 +285,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "d6e1a7002",
-   "kurs": 2223.205,
-   "wert": 504.56
+   "kurs": 2223.465,
+   "wert": 504.61
   },
   {
    "id": "p1ad6082a",
@@ -352,8 +352,8 @@
    "ausstiegsplan": "Gewinn mitnehmen bei NEIN-Bid ≥0.78 (=P). Nach NVDA-Earnings neu rechnen. Sonst halten bis 31.12.",
    "entscheidung_id": "d1fa25bbb",
    "invalidierung": "NVDA-Marktkapitalisierung innerhalb 5 % von Apple (z. B. NVDA ≥200 bei AAPL ~349) nach den Earnings, oder NVDA-JA ≥0.45.",
-   "kurs": 0.655,
-   "wert": 278.2
+   "kurs": 0.665,
+   "wert": 282.48
   },
   {
    "id": "pb2463e57",
@@ -420,8 +420,8 @@
    "ausstiegsplan": "Bid ≥0,92 verkaufen; sonst bis Abrechnung/Touch halten.",
    "entscheidung_id": "d0bdb1295",
    "invalidierung": "ETH steigt über 2450 und DVOL fällt unter 45 – dann Touch-Wahrscheinlichkeit <0.8.",
-   "kurs": 0.915,
-   "wert": 125.58
+   "kurs": 0.91,
+   "wert": 124.2
   },
   {
    "id": "p41d9ec41",
@@ -482,8 +482,8 @@
    "ausstiegsplan": "Halten bis Abrechnung nach Call 9.11.; vorher verkaufen bei Bid ≥0.90.",
    "entscheidung_id": "d102b5315",
    "invalidierung": "Call beendet ohne das Wort 'Auction'.",
-   "kurs": 0.765,
-   "wert": 37.5
+   "kurs": 0.76,
+   "wert": 37.0
   }
  ],
  "realisiert": -92.68478367275843,
@@ -491,7 +491,7 @@
  "funding": 0.0,
  "erstellt": 1793319819.7411644,
  "start_fx": 1.1184885798616961,
- "letzter_tick": 1794172220.2048225,
+ "letzter_tick": 1794173119.8830018,
  "auftraege": [],
  "rebalancing": {
   "ziele": {
