@@ -2,7 +2,7 @@
  "fonds_id": "claude_mittel",
  "waehrung": "USD",
  "start_kapital": 11184.88579861696,
- "cash": 2146.2090718929376,
+ "cash": 2284.2090718929376,
  "positionen": [
   {
    "id": "p51e71031",
@@ -159,8 +159,8 @@
    "ausstiegsplan": "Bid ≥0,70 verkaufen (P erreicht); Neubewertung nach NVDA-Zahlen 19.11.; schließen, wenn Apple-Vorsprung <3 %.",
    "entscheidung_id": "d7e53ef04",
    "invalidierung": "NVDA-Marktkap. kommt auf <3 % Abstand zu Apple, oder Apple fällt >8 % relativ.",
-   "kurs": 0.657,
-   "wert": 397.59
+   "kurs": 0.655,
+   "wert": 395.16
   },
   {
    "id": "pb60e44cc",
@@ -264,8 +264,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "d6e1a7002",
-   "kurs": 73743.975,
-   "wert": 1212.75
+   "kurs": 74291.86499999999,
+   "wert": 1222.61
   },
   {
    "id": "pe3015b77",
@@ -285,8 +285,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "d6e1a7002",
-   "kurs": 2110.92,
-   "wert": 478.62
+   "kurs": 2120.575,
+   "wert": 481.27
   },
   {
    "id": "p1ad6082a",
@@ -390,40 +390,6 @@
    "wert": 149.8
   },
   {
-   "id": "pa0a2bdf6",
-   "inst": {
-    "id": "pm:polymarket:6507419:JA",
-    "art": "pm",
-    "venue": "polymarket",
-    "ergebnis": "JA",
-    "frage": "Will Ethereum dip to $2,200 in November?",
-    "schliesst": 1796101200.0,
-    "ref": {
-     "id": "6507419",
-     "token_ja": "84341712069386621869883941410655847654141979478983269290233964486858923093414",
-     "token_nein": "51250523000119717554813621137668364065938991754255110190280296210087104127374",
-     "tick": 0.01,
-     "condition": "0x112b9723b82645f28370970ebfbb2c55cd1b15e27cfde74b109481d4cc6368b3",
-     "gebuehr_rate": 0.07,
-     "gebuehr_exp": 1.0
-    },
-    "url": "https://polymarket.com/event/what-price-will-ethereum-hit-in-november-2026"
-   },
-   "seite": "long",
-   "menge": 138.0,
-   "einstand": 0.86,
-   "hebel": 1.0,
-   "marge": 0.0,
-   "eroeffnet": 1793985611.8978171,
-   "gebuehren": 1.16306,
-   "funding": 0.0,
-   "ausstiegsplan": "Bid ≥0,92 verkaufen; sonst bis Abrechnung/Touch halten.",
-   "entscheidung_id": "d0bdb1295",
-   "invalidierung": "ETH steigt über 2450 und DVOL fällt unter 45 – dann Touch-Wahrscheinlichkeit <0.8.",
-   "kurs": 0.999,
-   "wert": 137.86
-  },
-  {
    "id": "p41d9ec41",
    "inst": {
     "id": "pm:manifold:RZqSLQS8lC:JA",
@@ -486,12 +452,12 @@
    "wert": 37.0
   }
  ],
- "realisiert": -92.68478367275843,
+ "realisiert": -73.36478367275842,
  "gebuehren": 52.9408333771088,
  "funding": 0.0,
  "erstellt": 1793319819.7411644,
  "start_fx": 1.1184885798616961,
- "letzter_tick": 1794174920.2692661,
+ "letzter_tick": 1794175820.2540693,
  "auftraege": [],
  "rebalancing": {
   "ziele": {
