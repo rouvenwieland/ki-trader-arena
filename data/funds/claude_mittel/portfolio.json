@@ -2,7 +2,7 @@
  "fonds_id": "claude_mittel",
  "waehrung": "USD",
  "start_kapital": 11184.88579861696,
- "cash": 2185.5522718929374,
+ "cash": 2146.2090718929376,
  "positionen": [
   {
    "id": "p51e71031",
@@ -450,10 +450,42 @@
    "invalidierung": "Transkript Q2 FY27 enthält kein 'bubble' und Analystenfragen drehen sich nicht um Bubble; oder Call-Datum verschoben",
    "kurs": 0.38421835167409735,
    "wert": 10.45
+  },
+  {
+   "id": "pf9e25f0c",
+   "inst": {
+    "id": "pm:polymarket:6763341:JA",
+    "art": "pm",
+    "venue": "polymarket",
+    "ergebnis": "JA",
+    "frage": "Will Constellation Energy say \"Auction\" during earnings call?",
+    "schliesst": 1794286740.0,
+    "ref": {
+     "id": "6763341",
+     "token_ja": "63325376888316914264147232640014410280078581011271873449703989333906604879597",
+     "token_nein": "98737089737178744915559323374935245427665499199843565207484287854109663056436",
+     "tick": 0.01,
+     "condition": "0x6634f4e6e6b5022e4fed29aa08b8d6bd6e909a89fc800ed6002d5d8c0ac3c1c6",
+     "gebuehr_rate": 0.04,
+     "gebuehr_exp": 1.0
+    },
+    "url": "https://polymarket.com/event/will-constellation-energy-say-auction-during-earnings-call-november-9"
+   },
+   "seite": "long",
+   "menge": 50.0,
+   "einstand": 0.78,
+   "hebel": 1.0,
+   "marge": 0.0,
+   "eroeffnet": 1794157904.3581173,
+   "gebuehren": 0.3432,
+   "funding": 0.0,
+   "ausstiegsplan": "Halten bis Abrechnung nach Call 9.11.; vorher verkaufen bei Bid ≥0.90.",
+   "entscheidung_id": "d102b5315",
+   "invalidierung": "Call beendet ohne das Wort 'Auction'."
   }
  ],
  "realisiert": -92.68478367275843,
- "gebuehren": 52.5976333771088,
+ "gebuehren": 52.9408333771088,
  "funding": 0.0,
  "erstellt": 1793319819.7411644,
  "start_fx": 1.1184885798616961,
