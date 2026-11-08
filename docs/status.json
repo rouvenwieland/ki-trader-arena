@@ -1,11 +1,11 @@
 {
  "version": 1,
- "stand": 1794107192.5230324,
+ "stand": 1794107350.0751793,
  "hinweis": "Papierhandel-Simulation, keine Anlageberatung",
  "seite": "https://rouvenwieland.github.io/ki-trader-arena/",
  "budget": {
-  "heute_eur": 0.0,
-  "gesamt_eur": 88.98,
+  "heute_eur": 1.76,
+  "gesamt_eur": 90.75,
   "tagesdeckel_eur": 12.0,
   "gesamtdeckel_eur": 190.0,
   "claude_ende": "2026-11-14",
@@ -208,10 +208,10 @@
    "rendite_pct": 1.38,
    "equity_eur": 10149.3,
    "max_drawdown_pct": -2.57,
-   "status": "Tagesanteil aufgebraucht – nächste Runde morgen",
+   "status": "aktiv",
    "modell": "claude-sonnet-5-5",
-   "kosten_heute_eur": 0.0,
-   "kosten_gesamt_eur": 20.894,
+   "kosten_heute_eur": 0.436,
+   "kosten_gesamt_eur": 21.329,
    "rendite_ki_pct": [
     -3.75,
     7.53
@@ -680,10 +680,10 @@
    "rendite_pct": -2.35,
    "equity_eur": 9800.92,
    "max_drawdown_pct": -6.34,
-   "status": "Tagesanteil aufgebraucht – nächste Runde morgen",
+   "status": "aktiv",
    "modell": "claude-sonnet-5-5",
-   "kosten_heute_eur": 0.0,
-   "kosten_gesamt_eur": 22.55,
+   "kosten_heute_eur": 0.507,
+   "kosten_gesamt_eur": 23.058,
    "rendite_ki_pct": [
     -10.82,
     3.7
@@ -739,10 +739,10 @@
    "rendite_pct": -2.93,
    "equity_eur": 9742.51,
    "max_drawdown_pct": -6.05,
-   "status": "Tagesanteil aufgebraucht – nächste Runde morgen",
+   "status": "aktiv",
    "modell": "claude-sonnet-5-5",
-   "kosten_heute_eur": 0.0,
-   "kosten_gesamt_eur": 22.626,
+   "kosten_heute_eur": 0.506,
+   "kosten_gesamt_eur": 23.132,
    "rendite_ki_pct": [
     -8.93,
     0.67
@@ -1034,10 +1034,10 @@
    "rendite_pct": -11.46,
    "equity_eur": 8887.12,
    "max_drawdown_pct": -24.83,
-   "status": "Tagesanteil aufgebraucht – nächste Runde morgen",
+   "status": "aktiv",
    "modell": "claude-sonnet-5-5",
-   "kosten_heute_eur": 0.0,
-   "kosten_gesamt_eur": 22.344,
+   "kosten_heute_eur": 0.313,
+   "kosten_gesamt_eur": 22.657,
    "rendite_ki_pct": [
     -32.78,
     8.79
@@ -1218,6 +1218,13 @@
  ],
  "letzte_entscheidungen": [
   {
+   "ts": 1794107327.2848816,
+   "fonds": "Claude Mittel+RM (A/B)",
+   "instrument": "pm:polymarket:2412744:JA",
+   "aktion": "kaufen",
+   "zuversicht": 0.55
+  },
+  {
    "ts": 1794064538.3475347,
    "fonds": "Claude Mittel+RM (A/B)",
    "instrument": "pm:polymarket:682708:JA",
@@ -1265,13 +1272,6 @@
    "instrument": "pm:manifold:RZqSLQS8lC:JA",
    "aktion": "kaufen",
    "zuversicht": 0.45
-  },
-  {
-   "ts": 1794010381.6998732,
-   "fonds": "Kimi (Moonshot)",
-   "instrument": "pm:polymarket:6667468:JA",
-   "aktion": "kaufen",
-   "zuversicht": 0.55
   }
  ],
  "ereignisse": [

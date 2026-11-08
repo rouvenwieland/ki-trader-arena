@@ -2,7 +2,7 @@
  "fonds_id": "claude_mittel_rm",
  "waehrung": "USD",
  "start_kapital": 11156.327353966788,
- "cash": 1583.6375020252103,
+ "cash": 1403.6640120252102,
  "positionen": [
   {
    "id": "pe8186cc2",
@@ -539,10 +539,42 @@
    "invalidierung": "Nachweislich abweichende PredictIt-Regel, die Eisenkot-JA bei PredictIt und NEIN bei Polymarket zulässt.",
    "kurs": 0.6585000000000001,
    "wert": 459.2
+  },
+  {
+   "id": "p2567180c",
+   "inst": {
+    "id": "pm:polymarket:2412744:JA",
+    "art": "pm",
+    "venue": "polymarket",
+    "ergebnis": "JA",
+    "frage": "Will Anthropic's market cap be less than $1.25T at market close on IPO day?",
+    "schliesst": 1830315540.0,
+    "ref": {
+     "id": "2412744",
+     "token_ja": "112320928806010548033202438997015358299610795310513429342055221960679493917",
+     "token_nein": "97835730826504088023775585649282026423448935249156759049180415585128284134832",
+     "tick": 0.001,
+     "condition": "0x800376dc64e4e2376a495ed0df4a789192256c821bb4d1452acdd5931bca2fa5",
+     "gebuehr_rate": 0.04,
+     "gebuehr_exp": 1.0
+    },
+    "url": "https://polymarket.com/event/will-anthropics-market-cap-be-less-than-1pt25t-at-market-close-on-ipo-day"
+   },
+   "seite": "long",
+   "menge": 1337.0,
+   "einstand": 0.13008347045624533,
+   "hebel": 1.0,
+   "marge": 0.0,
+   "eroeffnet": 1794107327.2862387,
+   "gebuehren": 6.05189,
+   "funding": 0.0,
+   "ausstiegsplan": "Halten bis IPO-Tag-1-Close; Verkauf wenn Preis ≥0.25 (Gewinn) oder Invalidierung",
+   "entscheidung_id": "d8f7f777b",
+   "invalidierung": "Offizielle Preisspanne im S-1/A mit Mittelpunkt ≥1,4 Bio oder Nasdaq-100 +8 % bis Pricing"
   }
  ],
  "realisiert": 48.708254937007624,
- "gebuehren": 26.247626339201574,
+ "gebuehren": 32.299516339201574,
  "funding": 0.0,
  "erstellt": 1793380123.8861866,
  "start_fx": 1.1156327353966788,
