@@ -97,8 +97,8 @@
    "gebuehren": 0.0,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.8160000000000001,
-   "wert": 225.74
+   "kurs": 0.8155,
+   "wert": 225.46
   },
   {
    "id": "pdcfb5d53",
@@ -129,8 +129,8 @@
    "gebuehren": 0.0,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.3405,
-   "wert": 84.25
+   "kurs": 0.33999999999999997,
+   "wert": 84.0
   },
   {
    "id": "pe65b0b73",
@@ -673,7 +673,7 @@
    "gebuehren": 1.59053,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.0215,
+   "kurs": 0.0235,
    "wert": 4.58
   },
   {
@@ -993,7 +993,7 @@
    "gebuehren": 4.05345,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.75,
+   "kurs": 0.745,
    "wert": 318.94
   },
   {
@@ -1185,8 +1185,8 @@
    "gebuehren": 0.0,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.002,
-   "wert": 2.87
+   "kurs": 0.0025,
+   "wert": 5.73
   },
   {
    "id": "pae38309e",
@@ -1217,7 +1217,7 @@
    "gebuehren": 9.50569,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.12,
+   "kurs": 0.11499999999999999,
    "wert": 124.52
   },
   {
@@ -1281,7 +1281,7 @@
    "gebuehren": 6.15794,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.019000000000000003,
+   "kurs": 0.018000000000000002,
    "wert": 61.2
   },
   {
@@ -1409,8 +1409,8 @@
    "gebuehren": 4.89216,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.6775,
-   "wert": 189.24
+   "kurs": 0.6805000000000001,
+   "wert": 193.8
   },
   {
    "id": "pf5e1aa21",
@@ -1450,6 +1450,6 @@
  "funding": 0.0,
  "erstellt": 1793379225.5430336,
  "start_fx": 1.1157431109273288,
- "letzter_tick": 1794104243.606449,
+ "letzter_tick": 1794105143.8063462,
  "kontrolle_bis": 1794078787.4013267
 }
