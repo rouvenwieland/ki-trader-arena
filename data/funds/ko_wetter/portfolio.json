@@ -2,7 +2,7 @@
  "fonds_id": "ko_wetter",
  "waehrung": "USD",
  "start_kapital": 11156.327353966788,
- "cash": 3939.460644385505,
+ "cash": 3852.600644385505,
  "positionen": [
   {
    "id": "p991b812f",
@@ -263,13 +263,39 @@
    "ausstiegsplan": "Halten bis zur Abrechnung (Wetter-Regel)",
    "kurs": null,
    "wert": 113.97
+  },
+  {
+   "id": "p5041bd05",
+   "inst": {
+    "id": "pm:kalshi:KXHIGHLAX-26NOV09-B82.5:JA",
+    "art": "pm",
+    "venue": "kalshi",
+    "ergebnis": "JA",
+    "frage": "Will the maximum temperature be 82-83° on Nov 9, 2026? [82° to 83°]",
+    "schliesst": 1794301200.0,
+    "ref": {
+     "ticker": "KXHIGHLAX-26NOV09-B82.5"
+    },
+    "url": "https://kalshi.com/markets/KXHIGHLAX-26NOV09"
+   },
+   "seite": "long",
+   "menge": 1256.0,
+   "einstand": 0.06490445859872611,
+   "hebel": 1.0,
+   "marge": 0.0,
+   "eroeffnet": 1794184820.2600992,
+   "gebuehren": 5.34,
+   "funding": 0.0,
+   "ausstiegsplan": "Halten bis zur Abrechnung (Wetter-Regel)",
+   "kurs": 0.065,
+   "wert": 50.24
   }
  ],
  "realisiert": -5299.302160253178,
- "gebuehren": 656.2000000000002,
+ "gebuehren": 661.5400000000002,
  "funding": 0.0,
  "erstellt": 1793380123.8861866,
  "start_fx": 1.1156327353966788,
- "letzter_tick": 1794183919.9581468,
- "wetter_letzter": 1794180319.9946473
+ "letzter_tick": 1794184820.2600992,
+ "wetter_letzter": 1794184820.2600992
 }
