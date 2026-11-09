@@ -89,8 +89,8 @@
    "ausstiegsplan": "Kern halten, Rebalancing-Regel (2 pp), Stop 690.",
    "entscheidung_id": "dd084c777",
    "invalidierung": "SPY schließt unter 690 oder 10J-Rendite >5,3 %",
-   "kurs": 752.64,
-   "wert": 1383.23
+   "kurs": 752.69,
+   "wert": 1383.32
   },
   {
    "id": "pbcdb744c",
@@ -158,8 +158,8 @@
    "ausstiegsplan": "Halten; Stop 340; Gewicht nicht über 5 % erhöhen.",
    "entscheidung_id": "dd43d0bdc",
    "invalidierung": "GLD unter 340 (neues Tief, ~-9 %)",
-   "kurs": 379.56,
-   "wert": 539.8
+   "kurs": 379.53,
+   "wert": 539.76
   },
   {
    "id": "pabe784cb",
@@ -181,8 +181,8 @@
    "ausstiegsplan": "Halten als Kern; Stop 96.",
    "entscheidung_id": "d269c21b5",
    "invalidierung": "EFA unter 96 (Bruch der Aufwärtstrendstruktur, ~-9 %)",
-   "kurs": 104.99,
-   "wert": 526.53
+   "kurs": 104.96,
+   "wert": 526.38
   },
   {
    "id": "pbfa54762",
@@ -215,8 +215,8 @@
    "ausstiegsplan": "Halten bis zur Abrechnung. Vorzeitig verkaufen, wenn das NEIN-Bid 0,985 oder mehr erreicht oder die Invalidierung eintritt.",
    "entscheidung_id": "db3632f99",
    "invalidierung": "WTI-Frontmonat schließt über 120 USD, oder Hormuz wird vollständig gesperrt und Brent liegt über 130.",
-   "kurs": 0.955,
-   "wert": 302.1
+   "kurs": 0.95,
+   "wert": 298.92
   }
  ],
  "realisiert": -156.94852000000014,
@@ -224,7 +224,7 @@
  "funding": 0.0,
  "erstellt": 1793319819.7411644,
  "start_fx": 1.1184885798616961,
- "letzter_tick": 1794258517.4212215,
+ "letzter_tick": 1794259416.969469,
  "auftraege": [],
  "rebalancing": {
   "ziele": {

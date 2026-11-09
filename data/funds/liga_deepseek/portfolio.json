@@ -43,8 +43,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "d8e5f296a",
-   "kurs": 379.56,
-   "wert": 868.05
+   "kurs": 379.53,
+   "wert": 867.98
   },
   {
    "id": "p3d319c8e",
@@ -64,8 +64,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "d8e5f296a",
-   "kurs": 74860.51999999999,
-   "wert": 690.69
+   "kurs": 74768.435,
+   "wert": 689.86
   },
   {
    "id": "p9a8fa083",
@@ -85,8 +85,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "d8e5f296a",
-   "kurs": 752.64,
-   "wert": 2547.78
+   "kurs": 752.69,
+   "wert": 2547.95
   },
   {
    "id": "pcb4fd55d",
@@ -119,8 +119,8 @@
    "ausstiegsplan": "Halten bis FOMC 09.12.2026. Vorzeitig verkaufen nur, wenn NEIN-Preis >0,32 erreicht (dann ist der Edge weg, aber 30% Gewinn gesichert) oder Invalidierung eintritt.",
    "entscheidung_id": "df4b3f25b",
    "invalidierung": "FedWatch/CME-Futures zeigen >85% für +25bp im Dezember, oder ein FOMC-Mitglied bestätigt öffentlich eine Erhöhungsabsicht, oder der Marktpreis NEIN fällt unter 0,15 (dann hat der Markt neue, harte Information).",
-   "kurs": 0.195,
-   "wert": 182.97
+   "kurs": 0.20500000000000002,
+   "wert": 192.6
   },
   {
    "id": "p565093a5",
@@ -217,7 +217,7 @@
  "funding": 0.0,
  "erstellt": 1793319819.7411644,
  "start_fx": 1.1184885798616961,
- "letzter_tick": 1794258517.4212215,
+ "letzter_tick": 1794259416.969469,
  "rebalancing": {
   "ziele": {
    "stock:SPY": {
