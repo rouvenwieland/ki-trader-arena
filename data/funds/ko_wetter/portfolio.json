@@ -5,32 +5,6 @@
  "cash": 3630.510921635505,
  "positionen": [
   {
-   "id": "p38be1059",
-   "inst": {
-    "id": "pm:kalshi:KXHIGHLAX-26NOV08-B83.5:JA",
-    "art": "pm",
-    "venue": "kalshi",
-    "ergebnis": "JA",
-    "frage": "Will the maximum temperature be 83-84° on Nov 8, 2026? [83° to 84°]",
-    "schliesst": 1794214800.0,
-    "ref": {
-     "ticker": "KXHIGHLAX-26NOV08-B83.5"
-    },
-    "url": "https://kalshi.com/markets/KXHIGHLAX-26NOV08"
-   },
-   "seite": "long",
-   "menge": 1242.0,
-   "einstand": 0.0759500805152979,
-   "hebel": 1.0,
-   "marge": 0.0,
-   "eroeffnet": 1794079582.6723523,
-   "gebuehren": 6.11,
-   "funding": 0.0,
-   "ausstiegsplan": "Halten bis zur Abrechnung (Wetter-Regel)",
-   "kurs": null,
-   "wert": 94.33
-  },
-  {
    "id": "pd1187111",
    "inst": {
     "id": "pm:kalshi:KXHIGHNY-26NOV09-T57:JA",
@@ -53,8 +27,8 @@
    "gebuehren": 7.37,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Wetter-Regel)",
-   "kurs": 0.015,
-   "wert": 5.33
+   "kurs": null,
+   "wert": 144.3
   },
   {
    "id": "p5041bd05",
@@ -79,8 +53,8 @@
    "gebuehren": 5.34,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Wetter-Regel)",
-   "kurs": 0.015,
-   "wert": 12.56
+   "kurs": 0.025,
+   "wert": 25.12
   },
   {
    "id": "pe4d9d335",
@@ -105,7 +79,7 @@
    "gebuehren": 5.69,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Wetter-Regel)",
-   "kurs": 0.405,
+   "kurs": 0.395,
    "wert": 130.26
   },
   {
@@ -131,8 +105,8 @@
    "gebuehren": 1.9,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Wetter-Regel)",
-   "kurs": 0.625,
-   "wert": 109.12
+   "kurs": 0.6,
+   "wert": 103.84
   },
   {
    "id": "p7b3b8013",
@@ -183,8 +157,8 @@
    "gebuehren": 3.65,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Wetter-Regel)",
-   "kurs": 0.555,
-   "wert": 120.45
+   "kurs": 0.575,
+   "wert": 124.83
   },
   {
    "id": "p69c2b627",
@@ -209,7 +183,7 @@
    "gebuehren": 5.04,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Wetter-Regel)",
-   "kurs": 0.385,
+   "kurs": 0.325,
    "wert": 94.08
   },
   {
@@ -235,15 +209,15 @@
    "gebuehren": 5.0,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Wetter-Regel)",
-   "kurs": 0.19,
-   "wert": 78.03
+   "kurs": 0.185,
+   "wert": 82.62
   }
  ],
- "realisiert": -5756.036709581286,
+ "realisiert": -5850.366709581286,
  "gebuehren": 691.2900000000002,
  "funding": 0.0,
  "erstellt": 1793380123.8861866,
  "start_fx": 1.1156327353966788,
- "letzter_tick": 1794236617.2633,
+ "letzter_tick": 1794237517.4510994,
  "wetter_letzter": 1794236617.2633
 }

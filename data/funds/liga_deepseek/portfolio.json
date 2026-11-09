@@ -22,8 +22,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "d2b5d529d",
-   "kurs": 82.1,
-   "wert": 1884.94
+   "kurs": 81.992,
+   "wert": 1882.46
   },
   {
    "id": "p78a3c466",
@@ -43,8 +43,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "d8e5f296a",
-   "kurs": 377.22,
-   "wert": 862.58
+   "kurs": 377.1,
+   "wert": 862.31
   },
   {
    "id": "p3d319c8e",
@@ -64,8 +64,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "d8e5f296a",
-   "kurs": 74713.965,
-   "wert": 689.35
+   "kurs": 74947.44,
+   "wert": 691.48
   },
   {
    "id": "p9a8fa083",
@@ -85,8 +85,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "d8e5f296a",
-   "kurs": 748.365,
-   "wert": 2533.04
+   "kurs": 748.89,
+   "wert": 2534.81
   },
   {
    "id": "pcb4fd55d",
@@ -140,8 +140,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "d1d71a5f2",
-   "kurs": 96.605,
-   "wert": 1151.99
+   "kurs": 96.567,
+   "wert": 1151.53
   },
   {
    "id": "p02c1343b",
@@ -173,7 +173,9 @@
    "funding": 0.0,
    "ausstiegsplan": "Halten bis 31.12.2026 (Abrechnung) oder Verkauf, wenn NEIN-Preis >0,97 (Edge weg, Kapital wird gebraucht). Vorzeitiger Verkauf sonst unnötig, das Buch ist tief und die Gebühr je Kontrakt fix.",
    "entscheidung_id": "da7f7b17f",
-   "invalidierung": "Nvidia, das Board oder Huang kündigen öffentlich und definitiv Rücktritt/Entlassung an (auch mit Wirkung in bis zu 18 Monaten), ODER JA-Preis steigt über 0,40 ohne für mich erkennbare Nachricht (dann hat der Markt Information, die ich nicht habe)."
+   "invalidierung": "Nvidia, das Board oder Huang kündigen öffentlich und definitiv Rücktritt/Entlassung an (auch mit Wirkung in bis zu 18 Monaten), ODER JA-Preis steigt über 0,40 ohne für mich erkennbare Nachricht (dann hat der Markt Information, die ich nicht habe).",
+   "kurs": 0.845,
+   "wert": 343.56
   },
   {
    "id": "p473fbd8a",
@@ -205,7 +207,9 @@
    "funding": 0.0,
    "ausstiegsplan": "Halten bis 31.12.2026. Exit-Trigger: BTC schließt unter SMA200 (73.151) UND VIX > 32 → Position verkaufen (nie in einen bestätigten Abwärtstrend halten). Sonst Abrechnung abwarten.",
    "entscheidung_id": "dd41482cf",
-   "invalidierung": "BTC-Tagesschluss unter der SMA200 (73.151) gleichzeitig mit VIX über 32, ODER eine Binance-1-Minuten-Kerze unter 62.000 (dann ist der Weg zu 55k kurz und die These war falsch)."
+   "invalidierung": "BTC-Tagesschluss unter der SMA200 (73.151) gleichzeitig mit VIX über 32, ODER eine Binance-1-Minuten-Kerze unter 62.000 (dann ist der Weg zu 55k kurz und die These war falsch).",
+   "kurs": 0.895,
+   "wert": 294.59
   }
  ],
  "realisiert": -483.18773566482037,
@@ -213,7 +217,7 @@
  "funding": 0.0,
  "erstellt": 1793319819.7411644,
  "start_fx": 1.1184885798616961,
- "letzter_tick": 1794236617.2633,
+ "letzter_tick": 1794237517.4510994,
  "rebalancing": {
   "ziele": {
    "stock:SPY": {
