@@ -22,8 +22,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "d2b5d529d",
-   "kurs": 82.025,
-   "wert": 1883.22
+   "kurs": 82.04,
+   "wert": 1883.57
   },
   {
    "id": "p78a3c466",
@@ -43,8 +43,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "d8e5f296a",
-   "kurs": 378.335,
-   "wert": 865.13
+   "kurs": 379.19,
+   "wert": 867.09
   },
   {
    "id": "p3d319c8e",
@@ -64,8 +64,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "d8e5f296a",
-   "kurs": 74750.005,
-   "wert": 689.69
+   "kurs": 74802.965,
+   "wert": 690.18
   },
   {
    "id": "p9a8fa083",
@@ -85,8 +85,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "d8e5f296a",
-   "kurs": 753.31,
-   "wert": 2549.77
+   "kurs": 754.105,
+   "wert": 2552.46
   },
   {
    "id": "pcb4fd55d",
@@ -140,8 +140,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "d1d71a5f2",
-   "kurs": 96.605,
-   "wert": 1151.99
+   "kurs": 96.615,
+   "wert": 1152.11
   },
   {
    "id": "p02c1343b",
@@ -174,8 +174,8 @@
    "ausstiegsplan": "Halten bis 31.12.2026 (Abrechnung) oder Verkauf, wenn NEIN-Preis >0,97 (Edge weg, Kapital wird gebraucht). Vorzeitiger Verkauf sonst unnötig, das Buch ist tief und die Gebühr je Kontrakt fix.",
    "entscheidung_id": "da7f7b17f",
    "invalidierung": "Nvidia, das Board oder Huang kündigen öffentlich und definitiv Rücktritt/Entlassung an (auch mit Wirkung in bis zu 18 Monaten), ODER JA-Preis steigt über 0,40 ohne für mich erkennbare Nachricht (dann hat der Markt Information, die ich nicht habe).",
-   "kurs": 0.865,
-   "wert": 351.74
+   "kurs": 0.875,
+   "wert": 355.83
   },
   {
    "id": "p473fbd8a",
@@ -217,7 +217,7 @@
  "funding": 0.0,
  "erstellt": 1793319819.7411644,
  "start_fx": 1.1184885798616961,
- "letzter_tick": 1794254017.431723,
+ "letzter_tick": 1794254916.5179098,
  "rebalancing": {
   "ziele": {
    "stock:SPY": {

@@ -159,8 +159,8 @@
    "ausstiegsplan": "Bid ≥0,70 verkaufen (P erreicht); Neubewertung nach NVDA-Zahlen 19.11.; schließen, wenn Apple-Vorsprung <3 %.",
    "entscheidung_id": "d7e53ef04",
    "invalidierung": "NVDA-Marktkap. kommt auf <3 % Abstand zu Apple, oder Apple fällt >8 % relativ.",
-   "kurs": 0.7475,
-   "wert": 445.54
+   "kurs": 0.7415,
+   "wert": 439.47
   },
   {
    "id": "pb60e44cc",
@@ -180,8 +180,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "d6e1a7002",
-   "kurs": 753.31,
-   "wert": 1954.0
+   "kurs": 754.105,
+   "wert": 1956.06
   },
   {
    "id": "p5fe9ac51",
@@ -201,8 +201,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "d6e1a7002",
-   "kurs": 678.35,
-   "wert": 1081.48
+   "kurs": 679.24,
+   "wert": 1082.9
   },
   {
    "id": "p5106387a",
@@ -222,8 +222,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "d6e1a7002",
-   "kurs": 378.335,
-   "wert": 1125.18
+   "kurs": 379.19,
+   "wert": 1127.72
   },
   {
    "id": "p72af4e36",
@@ -243,8 +243,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "d6e1a7002",
-   "kurs": 96.605,
-   "wert": 1109.31
+   "kurs": 96.615,
+   "wert": 1109.42
   },
   {
    "id": "p3e7ff11c",
@@ -264,8 +264,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "d6e1a7002",
-   "kurs": 74750.005,
-   "wert": 1230.15
+   "kurs": 74802.965,
+   "wert": 1231.02
   },
   {
    "id": "pe3015b77",
@@ -285,8 +285,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "d6e1a7002",
-   "kurs": 2126.715,
-   "wert": 482.66
+   "kurs": 2125.46,
+   "wert": 482.37
   },
   {
    "id": "p1ad6082a",
@@ -448,8 +448,8 @@
    "ausstiegsplan": "Bis Abrechnung nach dem Call am 10.11. halten; kein Nachkauf.",
    "entscheidung_id": "d394b3bc9",
    "invalidierung": "Call beginnt ohne Nennung in den vorbereiteten Bemerkungen und Q&A ohne OpenAI-Frage; oder Transkript Q2'26 zeigt kein OpenAI.",
-   "kurs": 0.45999999999999996,
-   "wert": 22.0
+   "kurs": 0.44999999999999996,
+   "wert": 21.5
   }
  ],
  "realisiert": -50.88627954909997,
@@ -457,7 +457,7 @@
  "funding": 0.0,
  "erstellt": 1793319819.7411644,
  "start_fx": 1.1184885798616961,
- "letzter_tick": 1794254017.431723,
+ "letzter_tick": 1794254916.5179098,
  "auftraege": [
   {
    "id": "a2e6aff",
@@ -493,7 +493,7 @@
    "ausstiegsplan": "Limit 0,79 für 300 Stück; Rest 307 halten, Exit bei Bid ≥0,82 oder Neubewertung nach NVDA-Zahlen 17.11.",
    "invalidierung": "",
    "erstellt": 1794236943.127893,
-   "geprueft_bis": 1794254017.431723,
+   "geprueft_bis": 1794254916.5179098,
    "gueltig_bis": 1796828943.127893
   }
  ],
