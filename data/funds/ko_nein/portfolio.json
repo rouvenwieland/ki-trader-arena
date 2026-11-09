@@ -129,8 +129,8 @@
    "gebuehren": 0.0,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.361,
-   "wert": 89.5
+   "kurs": 0.3605,
+   "wert": 89.25
   },
   {
    "id": "pe65b0b73",
@@ -353,7 +353,7 @@
    "gebuehren": 0.0,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.255,
+   "kurs": 0.26,
    "wert": 44.39
   },
   {
@@ -705,8 +705,8 @@
    "gebuehren": 4.65658,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.815,
-   "wert": 222.75
+   "kurs": 0.825,
+   "wert": 225.5
   },
   {
    "id": "pd183209f",
@@ -833,8 +833,8 @@
    "gebuehren": 3.5937,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.8400000000000001,
-   "wert": 294.03
+   "kurs": 0.8300000000000001,
+   "wert": 290.4
   },
   {
    "id": "pa1fe7c67",
@@ -961,7 +961,7 @@
    "gebuehren": 5.82112,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.987,
+   "kurs": 0.9864999999999999,
    "wert": 1611.12
   },
   {
@@ -993,8 +993,8 @@
    "gebuehren": 4.05345,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.83,
-   "wert": 353.42
+   "kurs": 0.84,
+   "wert": 357.73
   },
   {
    "id": "pbdd6cd9d",
@@ -1121,8 +1121,8 @@
    "gebuehren": 0.0,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.805,
-   "wert": 168.8
+   "kurs": 0.815,
+   "wert": 170.91
   },
   {
    "id": "p66f9a4ef",
@@ -1281,7 +1281,7 @@
    "gebuehren": 0.64893,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.91,
+   "kurs": 0.915,
    "wert": 162.0
   },
   {
@@ -1377,8 +1377,8 @@
    "gebuehren": 2.75839,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.185,
-   "wert": 19.81
+   "kurs": 0.25,
+   "wert": 65.09
   }
  ],
  "realisiert": -2474.7851,
@@ -1386,6 +1386,6 @@
  "funding": 0.0,
  "erstellt": 1793379225.5430336,
  "start_fx": 1.1157431109273288,
- "letzter_tick": 1794200371.3515778,
+ "letzter_tick": 1794201271.6533291,
  "kontrolle_bis": 1794193417.7304823
 }

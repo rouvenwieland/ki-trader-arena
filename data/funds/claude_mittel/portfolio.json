@@ -264,8 +264,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "d6e1a7002",
-   "kurs": 74717.555,
-   "wert": 1229.61
+   "kurs": 74549.125,
+   "wert": 1226.84
   },
   {
    "id": "pe3015b77",
@@ -285,8 +285,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "d6e1a7002",
-   "kurs": 2136.1949999999997,
-   "wert": 484.82
+   "kurs": 2137.2650000000003,
+   "wert": 485.06
   },
   {
    "id": "p1ad6082a",
@@ -448,8 +448,8 @@
    "ausstiegsplan": "Halten bis Abrechnung nach Call 9.11.; vorher verkaufen bei Bid ≥0.90.",
    "entscheidung_id": "d102b5315",
    "invalidierung": "Call beendet ohne das Wort 'Auction'.",
-   "kurs": 0.815,
-   "wert": 35.0
+   "kurs": 0.75,
+   "wert": 36.5
   }
  ],
  "realisiert": -61.88627954909997,
@@ -457,7 +457,7 @@
  "funding": 0.0,
  "erstellt": 1793319819.7411644,
  "start_fx": 1.1184885798616961,
- "letzter_tick": 1794200371.3515778,
+ "letzter_tick": 1794201271.6533291,
  "auftraege": [],
  "rebalancing": {
   "ziele": {
