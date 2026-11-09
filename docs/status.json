@@ -1,6 +1,6 @@
 {
  "version": 1,
- "stand": 1794183121.9345152,
+ "stand": 1794183601.8446815,
  "hinweis": "Papierhandel-Simulation, keine Anlageberatung",
  "seite": "https://rouvenwieland.github.io/ki-trader-arena/",
  "budget": {
@@ -208,10 +208,10 @@
    "rendite_pct": 1.81,
    "equity_eur": 10188.03,
    "max_drawdown_pct": -2.57,
-   "status": "aktiv",
+   "status": "Tagesanteil aufgebraucht – nächste Runde morgen",
    "modell": "claude-sonnet-5-5",
-   "kosten_heute_eur": 0.0,
-   "kosten_gesamt_eur": 23.377,
+   "kosten_heute_eur": 0.001,
+   "kosten_gesamt_eur": 23.378,
    "rendite_ki_pct": [
     -3.15,
     8.47
@@ -623,7 +623,7 @@
    "max_drawdown_pct": -6.34,
    "status": "Tagesanteil aufgebraucht – nächste Runde morgen",
    "modell": "claude-sonnet-5-5",
-   "kosten_heute_eur": 0.0,
+   "kosten_heute_eur": 0.001,
    "kosten_gesamt_eur": 24.975,
    "rendite_ki_pct": [
     -10.63,
@@ -682,8 +682,8 @@
    "max_drawdown_pct": -6.05,
    "status": "Tagesanteil aufgebraucht – nächste Runde morgen",
    "modell": "claude-sonnet-5-5",
-   "kosten_heute_eur": 0.0,
-   "kosten_gesamt_eur": 25.01,
+   "kosten_heute_eur": 0.001,
+   "kosten_gesamt_eur": 25.011,
    "rendite_ki_pct": [
     -8.87,
     0.91
@@ -1034,7 +1034,7 @@
    "rendite_pct": -11.28,
    "equity_eur": 8901.66,
    "max_drawdown_pct": -24.83,
-   "status": "aktiv",
+   "status": "Tagesanteil aufgebraucht – nächste Runde morgen",
    "modell": "claude-sonnet-5-5",
    "kosten_heute_eur": 0.0,
    "kosten_gesamt_eur": 24.876,
