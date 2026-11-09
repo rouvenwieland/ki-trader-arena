@@ -32,8 +32,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Halten bis FOMC 9.12.; verkaufen wenn Preis <0.55 (These gebrochen, z.B. Friedensdeal + schwache Daten) oder >0.92.",
    "entscheidung_id": "dd6eba046",
-   "kurs": 0.795,
-   "wert": 1645.57
+   "kurs": 0.805,
+   "wert": 1666.4
   },
   {
    "id": "pd2738082",
@@ -112,8 +112,8 @@
    "ausstiegsplan": "Stop 69.500; Teilverkauf bei 86k; Dip-Wetten gleichen Abwärtsrisiko teilweise aus.",
    "entscheidung_id": "de5e47324",
    "invalidierung": "Tagesschluss unter 69.500 oder Fed-Hike-Odds >90 %",
-   "kurs": 74768.435,
-   "wert": 1174.78
+   "kurs": 74792.735,
+   "wert": 1175.17
   },
   {
    "id": "p9c4e61c2",
@@ -188,7 +188,7 @@
  "funding": -0.6133053169464532,
  "erstellt": 1793319819.7411644,
  "start_fx": 1.1184885798616961,
- "letzter_tick": 1794259416.969469,
+ "letzter_tick": 1794260316.4894059,
  "auftraege": [],
  "rebalancing": {
   "ziele": {
