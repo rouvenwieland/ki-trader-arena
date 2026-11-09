@@ -22,8 +22,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "d2b5d529d",
-   "kurs": 81.97,
-   "wert": 1881.96
+   "kurs": 81.901,
+   "wert": 1880.38
   },
   {
    "id": "p78a3c466",
@@ -43,8 +43,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "d8e5f296a",
-   "kurs": 377.41,
-   "wert": 863.02
+   "kurs": 377.32,
+   "wert": 862.81
   },
   {
    "id": "p3d319c8e",
@@ -64,8 +64,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "d8e5f296a",
-   "kurs": 75131.08499999999,
-   "wert": 693.2
+   "kurs": 75405.965,
+   "wert": 695.74
   },
   {
    "id": "p9a8fa083",
@@ -85,8 +85,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "d8e5f296a",
-   "kurs": 749.33,
-   "wert": 2536.3
+   "kurs": 750.01,
+   "wert": 2538.6
   },
   {
    "id": "pcb4fd55d",
@@ -119,8 +119,8 @@
    "ausstiegsplan": "Halten bis FOMC 09.12.2026. Vorzeitig verkaufen nur, wenn NEIN-Preis >0,32 erreicht (dann ist der Edge weg, aber 30% Gewinn gesichert) oder Invalidierung eintritt.",
    "entscheidung_id": "df4b3f25b",
    "invalidierung": "FedWatch/CME-Futures zeigen >85% für +25bp im Dezember, oder ein FOMC-Mitglied bestätigt öffentlich eine Erhöhungsabsicht, oder der Marktpreis NEIN fällt unter 0,15 (dann hat der Markt neue, harte Information).",
-   "kurs": 0.215,
-   "wert": 202.23
+   "kurs": 0.20500000000000002,
+   "wert": 192.6
   },
   {
    "id": "p565093a5",
@@ -140,8 +140,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "d1d71a5f2",
-   "kurs": 96.555,
-   "wert": 1151.39
+   "kurs": 96.515,
+   "wert": 1150.91
   },
   {
    "id": "p02c1343b",
@@ -174,8 +174,8 @@
    "ausstiegsplan": "Halten bis 31.12.2026 (Abrechnung) oder Verkauf, wenn NEIN-Preis >0,97 (Edge weg, Kapital wird gebraucht). Vorzeitiger Verkauf sonst unnötig, das Buch ist tief und die Gebühr je Kontrakt fix.",
    "entscheidung_id": "da7f7b17f",
    "invalidierung": "Nvidia, das Board oder Huang kündigen öffentlich und definitiv Rücktritt/Entlassung an (auch mit Wirkung in bis zu 18 Monaten), ODER JA-Preis steigt über 0,40 ohne für mich erkennbare Nachricht (dann hat der Markt Information, die ich nicht habe).",
-   "kurs": 0.845,
-   "wert": 343.56
+   "kurs": 0.855,
+   "wert": 347.65
   },
   {
    "id": "p473fbd8a",
@@ -217,7 +217,7 @@
  "funding": 0.0,
  "erstellt": 1793319819.7411644,
  "start_fx": 1.1184885798616961,
- "letzter_tick": 1794238417.7911642,
+ "letzter_tick": 1794239317.8363833,
  "rebalancing": {
   "ziele": {
    "stock:SPY": {
