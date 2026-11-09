@@ -22,8 +22,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "d2b5d529d",
-   "kurs": 81.901,
-   "wert": 1880.38
+   "kurs": 81.835,
+   "wert": 1878.86
   },
   {
    "id": "p78a3c466",
@@ -43,8 +43,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "d8e5f296a",
-   "kurs": 377.32,
-   "wert": 862.81
+   "kurs": 378.02,
+   "wert": 864.41
   },
   {
    "id": "p3d319c8e",
@@ -64,8 +64,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "d8e5f296a",
-   "kurs": 75405.965,
-   "wert": 695.74
+   "kurs": 75290.13,
+   "wert": 694.67
   },
   {
    "id": "p9a8fa083",
@@ -85,8 +85,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "d8e5f296a",
-   "kurs": 750.01,
-   "wert": 2538.6
+   "kurs": 751.365,
+   "wert": 2543.19
   },
   {
    "id": "pcb4fd55d",
@@ -119,8 +119,8 @@
    "ausstiegsplan": "Halten bis FOMC 09.12.2026. Vorzeitig verkaufen nur, wenn NEIN-Preis >0,32 erreicht (dann ist der Edge weg, aber 30% Gewinn gesichert) oder Invalidierung eintritt.",
    "entscheidung_id": "df4b3f25b",
    "invalidierung": "FedWatch/CME-Futures zeigen >85% für +25bp im Dezember, oder ein FOMC-Mitglied bestätigt öffentlich eine Erhöhungsabsicht, oder der Marktpreis NEIN fällt unter 0,15 (dann hat der Markt neue, harte Information).",
-   "kurs": 0.20500000000000002,
-   "wert": 192.6
+   "kurs": 0.195,
+   "wert": 182.97
   },
   {
    "id": "p565093a5",
@@ -140,8 +140,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "d1d71a5f2",
-   "kurs": 96.515,
-   "wert": 1150.91
+   "kurs": 96.49,
+   "wert": 1150.62
   },
   {
    "id": "p02c1343b",
@@ -217,7 +217,7 @@
  "funding": 0.0,
  "erstellt": 1793319819.7411644,
  "start_fx": 1.1184885798616961,
- "letzter_tick": 1794239317.8363833,
+ "letzter_tick": 1794240217.5204682,
  "rebalancing": {
   "ziele": {
    "stock:SPY": {

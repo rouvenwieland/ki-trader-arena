@@ -2,7 +2,7 @@
  "fonds_id": "ko_wetter",
  "waehrung": "USD",
  "start_kapital": 11156.327353966788,
- "cash": 3630.510921635505,
+ "cash": 3551.670921635505,
  "positionen": [
   {
    "id": "pd1187111",
@@ -27,8 +27,8 @@
    "gebuehren": 7.37,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Wetter-Regel)",
-   "kurs": 0.035,
-   "wert": 15.99
+   "kurs": null,
+   "wert": 144.3
   },
   {
    "id": "p5041bd05",
@@ -53,8 +53,8 @@
    "gebuehren": 5.34,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Wetter-Regel)",
-   "kurs": 0.045,
-   "wert": 50.24
+   "kurs": 0.025,
+   "wert": 25.12
   },
   {
    "id": "pe4d9d335",
@@ -79,8 +79,8 @@
    "gebuehren": 5.69,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Wetter-Regel)",
-   "kurs": 0.29000000000000004,
-   "wert": 93.52
+   "kurs": 0.3,
+   "wert": 96.86
   },
   {
    "id": "p19555321",
@@ -105,8 +105,8 @@
    "gebuehren": 1.9,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Wetter-Regel)",
-   "kurs": 0.75,
-   "wert": 130.24
+   "kurs": 0.695,
+   "wert": 121.44
   },
   {
    "id": "p7b3b8013",
@@ -157,8 +157,8 @@
    "gebuehren": 3.65,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Wetter-Regel)",
-   "kurs": 0.565,
-   "wert": 122.64
+   "kurs": 0.525,
+   "wert": 113.88
   },
   {
    "id": "p69c2b627",
@@ -183,8 +183,8 @@
    "gebuehren": 5.04,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Wetter-Regel)",
-   "kurs": 0.325,
-   "wert": 94.08
+   "kurs": 0.35,
+   "wert": 99.96
   },
   {
    "id": "p5d5855f8",
@@ -209,15 +209,41 @@
    "gebuehren": 5.0,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Wetter-Regel)",
-   "kurs": 0.07500000000000001,
-   "wert": 32.13
+   "kurs": 0.055,
+   "wert": 22.95
+  },
+  {
+   "id": "p4ed77863",
+   "inst": {
+    "id": "pm:kalshi:KXHIGHAUS-26NOV09-T64:JA",
+    "art": "pm",
+    "venue": "kalshi",
+    "ergebnis": "JA",
+    "frage": "Will the maximum temperature be <64° on Nov 9, 2026? [63° or below]",
+    "schliesst": 1794294000.0,
+    "ref": {
+     "ticker": "KXHIGHAUS-26NOV09-T64"
+    },
+    "url": "https://kalshi.com/markets/KXHIGHAUS-26NOV09"
+   },
+   "seite": "long",
+   "menge": 251.0,
+   "einstand": 0.29940239043824696,
+   "hebel": 1.0,
+   "marge": 0.0,
+   "eroeffnet": 1794240217.5204682,
+   "gebuehren": 3.69,
+   "funding": 0.0,
+   "ausstiegsplan": "Halten bis zur Abrechnung (Wetter-Regel)",
+   "kurs": 0.28500000000000003,
+   "wert": 67.77
   }
  ],
  "realisiert": -5850.366709581286,
- "gebuehren": 691.2900000000002,
+ "gebuehren": 694.9800000000002,
  "funding": 0.0,
  "erstellt": 1793380123.8861866,
  "start_fx": 1.1156327353966788,
- "letzter_tick": 1794239317.8363833,
- "wetter_letzter": 1794236617.2633
+ "letzter_tick": 1794240217.5204682,
+ "wetter_letzter": 1794240217.5204682
 }
