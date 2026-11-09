@@ -2,7 +2,7 @@
  "fonds_id": "schwarm_alle",
  "waehrung": "USD",
  "start_kapital": 11157.431109273288,
- "cash": 9136.939309273288,
+ "cash": 8540.383309273288,
  "positionen": [
   {
    "id": "p94f69125",
@@ -65,7 +65,7 @@
    "gebuehren": 0.0,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Schwarm-Regel)",
-   "kurs": 0.998,
+   "kurs": 0.9975,
    "wert": 657.02
   },
   {
@@ -289,8 +289,40 @@
    "gebuehren": 0.0,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Schwarm-Regel)",
-   "kurs": 0.775,
-   "wert": 504.35
+   "kurs": 0.765,
+   "wert": 497.8
+  },
+  {
+   "id": "p525d1886",
+   "inst": {
+    "id": "pm:polymarket:6282802:NEIN",
+    "art": "pm",
+    "venue": "polymarket",
+    "ergebnis": "NEIN",
+    "frage": "US announces end of Iranian blockade by November 15, 2026?",
+    "schliesst": 1794805140.0,
+    "ref": {
+     "id": "6282802",
+     "token_ja": "14546978402393561886763794016233348324197383968729459022246166822328488515646",
+     "token_nein": "59822649710870591002443082281655284432277286805384619774600638740092677692228",
+     "tick": 0.001,
+     "condition": "0xf036481613a53faafdc7638824e5dfab03b4dda5b9bf13fbdfa2075e2d4a8bea",
+     "gebuehr_rate": 0.0,
+     "gebuehr_exp": 1
+    },
+    "url": "https://polymarket.com/event/us-announces-end-of-iranian-blockade-byptptpt-20260713152715080"
+   },
+   "seite": "long",
+   "menge": 657.0,
+   "einstand": 0.908,
+   "hebel": 1.0,
+   "marge": 0.0,
+   "eroeffnet": 1794224783.8507378,
+   "gebuehren": 0.0,
+   "funding": 0.0,
+   "ausstiegsplan": "Halten bis zur Abrechnung (Schwarm-Regel)",
+   "kurs": 0.907,
+   "wert": 595.24
   }
  ],
  "realisiert": 538.4064699999999,
@@ -298,5 +330,5 @@
  "funding": 0.0,
  "erstellt": 1793379225.5430336,
  "start_fx": 1.1157431109273288,
- "letzter_tick": 1794223883.949011
+ "letzter_tick": 1794224783.8507378
 }
