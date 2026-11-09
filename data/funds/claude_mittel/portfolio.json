@@ -35,8 +35,8 @@
    "ausstiegsplan": "NEIN-Bid ≥0,93 oder P erreicht → verkaufen; sonst halten bis zur Wahl (April/Mai 2027).",
    "entscheidung_id": "d860a2331",
    "invalidierung": "Lisnard in mehreren Umfragen ≥12 % im 1. Wahlgang oder Rückzug von Philippe/Retailleau zu seinen Gunsten bzw. Sieg in einer Rechts-Primaire.",
-   "kurs": 0.8795,
-   "wert": 474.66
+   "kurs": 0.8645,
+   "wert": 466.56
   },
   {
    "id": "p842aa632",
@@ -159,7 +159,7 @@
    "ausstiegsplan": "Bid ≥0,70 verkaufen (P erreicht); Neubewertung nach NVDA-Zahlen 19.11.; schließen, wenn Apple-Vorsprung <3 %.",
    "entscheidung_id": "d7e53ef04",
    "invalidierung": "NVDA-Marktkap. kommt auf <3 % Abstand zu Apple, oder Apple fällt >8 % relativ.",
-   "kurs": 0.7244999999999999,
+   "kurs": 0.724,
    "wert": 438.25
   },
   {
@@ -180,8 +180,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "d6e1a7002",
-   "kurs": 752.44,
-   "wert": 1951.74
+   "kurs": 752.33,
+   "wert": 1951.46
   },
   {
    "id": "p5fe9ac51",
@@ -201,8 +201,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "d6e1a7002",
-   "kurs": 677.422,
-   "wert": 1080.0
+   "kurs": 676.72,
+   "wert": 1078.88
   },
   {
    "id": "p5106387a",
@@ -222,8 +222,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "d6e1a7002",
-   "kurs": 375.84,
-   "wert": 1117.76
+   "kurs": 376.19,
+   "wert": 1118.8
   },
   {
    "id": "p72af4e36",
@@ -243,8 +243,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "d6e1a7002",
-   "kurs": 96.54,
-   "wert": 1108.56
+   "kurs": 96.555,
+   "wert": 1108.73
   },
   {
    "id": "p3e7ff11c",
@@ -264,8 +264,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "d6e1a7002",
-   "kurs": 74760.065,
-   "wert": 1230.31
+   "kurs": 74761.42499999999,
+   "wert": 1230.34
   },
   {
    "id": "pe3015b77",
@@ -285,8 +285,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "d6e1a7002",
-   "kurs": 2124.545,
-   "wert": 482.17
+   "kurs": 2126.375,
+   "wert": 482.59
   },
   {
    "id": "p1ad6082a",
@@ -423,7 +423,7 @@
  "funding": 0.0,
  "erstellt": 1793319819.7411644,
  "start_fx": 1.1184885798616961,
- "letzter_tick": 1794246816.9244733,
+ "letzter_tick": 1794247716.846556,
  "auftraege": [
   {
    "id": "a2e6aff",
@@ -459,7 +459,7 @@
    "ausstiegsplan": "Limit 0,79 für 300 Stück; Rest 307 halten, Exit bei Bid ≥0,82 oder Neubewertung nach NVDA-Zahlen 17.11.",
    "invalidierung": "",
    "erstellt": 1794236943.127893,
-   "geprueft_bis": 1794246816.9244733,
+   "geprueft_bis": 1794247716.846556,
    "gueltig_bis": 1796828943.127893
   }
  ],
