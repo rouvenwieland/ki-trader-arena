@@ -2,7 +2,7 @@
  "fonds_id": "claude_mittel",
  "waehrung": "USD",
  "start_kapital": 11184.88579861696,
- "cash": 2426.2402516667808,
+ "cash": 2400.2404516667807,
  "positionen": [
   {
    "id": "p51e71031",
@@ -416,10 +416,42 @@
    "invalidierung": "Transkript Q2 FY27 enthält kein 'bubble' und Analystenfragen drehen sich nicht um Bubble; oder Call-Datum verschoben",
    "kurs": 0.31667447349560507,
    "wert": 8.57
+  },
+  {
+   "id": "pf4d9229f",
+   "inst": {
+    "id": "pm:polymarket:6763350:JA",
+    "art": "pm",
+    "venue": "polymarket",
+    "ergebnis": "JA",
+    "frage": "Will CoreWeave say \"OpenAI\" during earnings call?",
+    "schliesst": 1794373140.0,
+    "ref": {
+     "id": "6763350",
+     "token_ja": "61843370585329304258190488889973881916941715764304413287379555692191177500046",
+     "token_nein": "19911589294776139931172012218062522624226803950735800023478924607126633888475",
+     "tick": 0.01,
+     "condition": "0x79395f1b0a4e0e62fdf0de4bc5e7d6e9caf1c23d07d6ef4f47e6529dd32fef9e",
+     "gebuehr_rate": 0.04,
+     "gebuehr_exp": 1.0
+    },
+    "url": "https://polymarket.com/event/will-coreweave-say-openai-during-earnings-call-november-10"
+   },
+   "seite": "long",
+   "menge": 50.0,
+   "einstand": 0.51,
+   "hebel": 1.0,
+   "marge": 0.0,
+   "eroeffnet": 1794251569.2086134,
+   "gebuehren": 0.4998,
+   "funding": 0.0,
+   "ausstiegsplan": "Bis Abrechnung nach dem Call am 10.11. halten; kein Nachkauf.",
+   "entscheidung_id": "d394b3bc9",
+   "invalidierung": "Call beginnt ohne Nennung in den vorbereiteten Bemerkungen und Q&A ohne OpenAI-Frage; oder Transkript Q2'26 zeigt kein OpenAI."
   }
  ],
  "realisiert": -50.88627954909997,
- "gebuehren": 52.9408333771088,
+ "gebuehren": 53.4406333771088,
  "funding": 0.0,
  "erstellt": 1793319819.7411644,
  "start_fx": 1.1184885798616961,

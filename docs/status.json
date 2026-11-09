@@ -1,11 +1,11 @@
 {
  "version": 1,
- "stand": 1794251440.0249949,
+ "stand": 1794251640.2882016,
  "hinweis": "Papierhandel-Simulation, keine Anlageberatung",
  "seite": "https://rouvenwieland.github.io/ki-trader-arena/",
  "budget": {
-  "heute_eur": 7.94,
-  "gesamt_eur": 106.97,
+  "heute_eur": 9.7,
+  "gesamt_eur": 108.73,
   "tagesdeckel_eur": 12.0,
   "gesamtdeckel_eur": 190.0,
   "claude_ende": "2026-11-14",
@@ -150,9 +150,9 @@
    "equity_eur": 10232.62,
    "max_drawdown_pct": -2.57,
    "status": "aktiv",
-   "modell": "claude-opus-5-5",
-   "kosten_heute_eur": 1.97,
-   "kosten_gesamt_eur": 25.228,
+   "modell": "claude-sonnet-5-5",
+   "kosten_heute_eur": 2.441,
+   "kosten_gesamt_eur": 25.699,
    "rendite_ki_pct": [
     -2.44,
     9.51
@@ -563,9 +563,9 @@
    "equity_eur": 9829.66,
    "max_drawdown_pct": -6.05,
    "status": "aktiv",
-   "modell": "claude-opus-5-5",
-   "kosten_heute_eur": 2.051,
-   "kosten_gesamt_eur": 26.933,
+   "modell": "claude-sonnet-5-5",
+   "kosten_heute_eur": 2.524,
+   "kosten_gesamt_eur": 27.407,
    "rendite_ki_pct": [
     -8.83,
     4.03
@@ -681,9 +681,9 @@
    "equity_eur": 9766.08,
    "max_drawdown_pct": -6.34,
    "status": "aktiv",
-   "modell": "claude-opus-5-5",
-   "kosten_heute_eur": 2.049,
-   "kosten_gesamt_eur": 26.897,
+   "modell": "claude-sonnet-5-5",
+   "kosten_heute_eur": 2.524,
+   "kosten_gesamt_eur": 27.371,
    "rendite_ki_pct": [
     -10.5,
     4.32
@@ -1035,9 +1035,9 @@
    "equity_eur": 9014.22,
    "max_drawdown_pct": -24.83,
    "status": "aktiv",
-   "modell": "claude-opus-5-5",
-   "kosten_heute_eur": 1.866,
-   "kosten_gesamt_eur": 26.615,
+   "modell": "claude-sonnet-5-5",
+   "kosten_heute_eur": 2.211,
+   "kosten_gesamt_eur": 26.96,
    "rendite_ki_pct": [
     -32.85,
     14.02
@@ -1218,6 +1218,13 @@
  ],
  "letzte_entscheidungen": [
   {
+   "ts": 1794251569.208193,
+   "fonds": "Claude Mittel",
+   "instrument": "pm:polymarket:6763350:JA",
+   "aktion": "kaufen",
+   "zuversicht": 0.55
+  },
+  {
    "ts": 1794236961.867633,
    "fonds": "DeepSeek",
    "instrument": "pm:polymarket:701501:NEIN",
@@ -1265,13 +1272,6 @@
    "instrument": "pm:polymarket:6763341:JA",
    "aktion": "kaufen",
    "zuversicht": 0.65
-  },
-  {
-   "ts": 1794150838.9582627,
-   "fonds": "Kimi (Moonshot)",
-   "instrument": "pm:polymarket:5782539:JA",
-   "aktion": "kaufen",
-   "zuversicht": 0.6
   }
  ],
  "ereignisse": [
