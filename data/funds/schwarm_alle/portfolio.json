@@ -2,7 +2,7 @@
  "fonds_id": "schwarm_alle",
  "waehrung": "USD",
  "start_kapital": 11157.431109273288,
- "cash": 9775.341329273288,
+ "cash": 9665.489309273287,
  "positionen": [
   {
    "id": "p94f69125",
@@ -161,8 +161,8 @@
    "gebuehren": 0.0,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Schwarm-Regel)",
-   "kurs": 0.925,
-   "wert": 647.68
+   "kurs": 0.935,
+   "wert": 654.72
   },
   {
    "id": "pfd66109a",
@@ -227,12 +227,44 @@
    "ausstiegsplan": "Halten bis zur Abrechnung (Schwarm-Regel)",
    "kurs": 0.425,
    "wert": 134.4
+  },
+  {
+   "id": "pbd658e47",
+   "inst": {
+    "id": "pm:polymarket:6507381:NEIN",
+    "art": "pm",
+    "venue": "polymarket",
+    "ergebnis": "NEIN",
+    "frage": "Will Bitcoin dip to $72,500 in November?",
+    "schliesst": 1796101200.0,
+    "ref": {
+     "id": "6507381",
+     "token_ja": "69357524485878491827088979650618658940820077589928089667486807593191609337515",
+     "token_nein": "54329273621608149992306664731902892300569321538646418359338740051715832033113",
+     "tick": 0.01,
+     "condition": "0xc9b6750bca31cdba2afe6e6d7e3c300d368ae37628870e3f1863f964f294add4",
+     "gebuehr_rate": 0.07,
+     "gebuehr_exp": 1.0
+    },
+    "url": "https://polymarket.com/event/what-price-will-bitcoin-hit-in-november-2026"
+   },
+   "seite": "long",
+   "menge": 446.0,
+   "einstand": 0.23376659192825114,
+   "hebel": 1.0,
+   "marge": 0.0,
+   "eroeffnet": 1794210383.4393857,
+   "gebuehren": 5.59212,
+   "funding": 0.0,
+   "ausstiegsplan": "Halten bis zur Abrechnung (Schwarm-Regel)",
+   "kurs": 0.22,
+   "wert": 89.2
   }
  ],
  "realisiert": 538.4064699999999,
- "gebuehren": 44.2942,
+ "gebuehren": 49.88632,
  "funding": 0.0,
  "erstellt": 1793379225.5430336,
  "start_fx": 1.1157431109273288,
- "letzter_tick": 1794209483.391915
+ "letzter_tick": 1794210383.4393857
 }
