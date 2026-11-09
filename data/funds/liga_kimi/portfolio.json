@@ -2,7 +2,7 @@
  "fonds_id": "liga_kimi",
  "waehrung": "USD",
  "start_kapital": 11184.88579861696,
- "cash": 2482.055277318062,
+ "cash": 2499.5169273180622,
  "positionen": [
   {
    "id": "p0b5ac550",
@@ -148,44 +148,10 @@
    "entscheidung_id": "d3af64508",
    "kurs": 81.92,
    "wert": 526.86
-  },
-  {
-   "id": "p9f4f4bd8",
-   "inst": {
-    "id": "pm:polymarket:5782539:JA",
-    "art": "pm",
-    "venue": "polymarket",
-    "ergebnis": "JA",
-    "frage": "Will Dana White be the next White House Press Secretary?",
-    "schliesst": 1830315540.0,
-    "ref": {
-     "id": "5782539",
-     "token_ja": "105137783069451649079976087196986361956545856357963804253378334034367871685692",
-     "token_nein": "58640000860882609962976231637827927722508026305955443702397976487285890861843",
-     "tick": 0.001,
-     "condition": "0x54f2ba48b95a74d959eb02a2e5c82b3da0851f1ae347cabcdb7ebaac9b31bc2b",
-     "gebuehr_rate": 0.04,
-     "gebuehr_exp": 1.0
-    },
-    "url": "https://polymarket.com/event/next-press-secretary-2027"
-   },
-   "seite": "long",
-   "menge": 1227.0,
-   "einstand": 0.04321392013039935,
-   "hebel": 1.0,
-   "marge": 0.0,
-   "eroeffnet": 1794150838.9558978,
-   "gebuehren": 2.02928,
-   "funding": 0.0,
-   "ausstiegsplan": "Wie Block 1: Teilverkauf bei bid ≥0,25, Rest bei ≥0,45; harte Invalidierung bei öffentlicher Absage.",
-   "entscheidung_id": "dc52c4c5c",
-   "invalidierung": "Öffentliche Absage Whites oder anderer Kandidat nominiert.",
-   "kurs": 0.020499999999999997,
-   "wert": 18.4
   }
  ],
- "realisiert": -558.2513054666724,
- "gebuehren": 78.95553440591361,
+ "realisiert": -593.8131354666724,
+ "gebuehren": 79.67188440591362,
  "funding": 0.0,
  "erstellt": 1793319819.7411644,
  "start_fx": 1.1184885798616961,
