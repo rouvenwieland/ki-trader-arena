@@ -53,34 +53,8 @@
    "gebuehren": 7.37,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Wetter-Regel)",
-   "kurs": 0.2,
+   "kurs": 0.195,
    "wert": 101.27
-  },
-  {
-   "id": "pf0de613f",
-   "inst": {
-    "id": "pm:kalshi:KXHIGHAUS-26NOV08-B66.5:JA",
-    "art": "pm",
-    "venue": "kalshi",
-    "ergebnis": "JA",
-    "frage": "Will the maximum temperature be 66-67° on Nov 8, 2026? [66° to 67°]",
-    "schliesst": 1794207600.0,
-    "ref": {
-     "ticker": "KXHIGHAUS-26NOV08-B66.5"
-    },
-    "url": "https://kalshi.com/markets/KXHIGHAUS-26NOV08"
-   },
-   "seite": "long",
-   "menge": 1685.0,
-   "einstand": 0.06763525222551929,
-   "hebel": 1.0,
-   "marge": 0.0,
-   "eroeffnet": 1794151286.1797364,
-   "gebuehren": 7.44,
-   "funding": 0.0,
-   "ausstiegsplan": "Halten bis zur Abrechnung (Wetter-Regel)",
-   "kurs": null,
-   "wert": 113.97
   },
   {
    "id": "p5041bd05",
@@ -131,8 +105,8 @@
    "gebuehren": 5.69,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Wetter-Regel)",
-   "kurs": 0.37,
-   "wert": 120.24
+   "kurs": 0.355,
+   "wert": 116.9
   },
   {
    "id": "p19555321",
@@ -157,15 +131,15 @@
    "gebuehren": 1.9,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Wetter-Regel)",
-   "kurs": 0.795,
-   "wert": 139.04
+   "kurs": 0.805,
+   "wert": 140.8
   }
  ],
- "realisiert": -5642.071309581286,
+ "realisiert": -5756.036709581286,
  "gebuehren": 669.1300000000002,
  "funding": 0.0,
  "erstellt": 1793380123.8861866,
  "start_fx": 1.1156327353966788,
- "letzter_tick": 1794229416.5980139,
+ "letzter_tick": 1794230316.7315395,
  "wetter_letzter": 1794227617.2251453
 }
