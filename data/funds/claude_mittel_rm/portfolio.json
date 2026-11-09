@@ -35,8 +35,8 @@
    "ausstiegsplan": "Halten bis Abrechnung 31.12.; vorzeitig verkaufen, wenn NEIN-Preis auf ≥0.62 steigt (Gewinn mitnehmen) oder unter 0.38 fällt.",
    "entscheidung_id": "dbf84bba3",
    "invalidierung": "NVDA schließt wieder dauerhaft über Apple-Marktkap (NVDA >~210 bei AAPL ~343) oder starke NVDA-Zahlen mit Rally >8%; dann neu bewerten/verkaufen.",
-   "kurs": 0.75,
-   "wert": 413.66
+   "kurs": 0.735,
+   "wert": 408.07
   },
   {
    "id": "p91a23e4a",
@@ -103,8 +103,8 @@
    "ausstiegsplan": "Bis zur Abrechnung halten. Neu bewerten nach Le Pens Kassationsurteil (bis Jan. 2027) und nach dem Ablauf der 500-Unterschriften-Frist (März 2027). Verkaufen, wenn die Invalidierung eintritt. Teilgewinne mitnehmen, wenn NEIN ≥0,95.",
    "entscheidung_id": "dcfc7153a",
    "invalidierung": "Lisnard liegt in mehreren seriösen Umfragen (Ifop, Elabe, Harris) stabil bei ≥14 % und damit unter den Top 3 im ersten Wahlgang, oder Retailleau/LR ziehen zu seinen Gunsten zurück.",
-   "kurs": 0.8825000000000001,
-   "wert": 538.9
+   "kurs": 0.8795,
+   "wert": 537.07
   },
   {
    "id": "pbb4d5e0c",
@@ -137,8 +137,8 @@
    "ausstiegsplan": "Halten bis 31.12.; nach NVDA-Earnings 17.11. neu bewerten; Gewinnmitnahme ≥0,65.",
    "entscheidung_id": "d62d5f0db",
    "invalidierung": "NVDA übertrifft Apple-Marktkap nach Earnings um >5 % oder Apple-JA <0,25.",
-   "kurs": 0.7324999999999999,
-   "wert": 536.42
+   "kurs": 0.7244999999999999,
+   "wert": 537.17
   },
   {
    "id": "pa832233e",
@@ -199,8 +199,8 @@
    "ausstiegsplan": "Halten bis 30.11.; verkaufen, wenn BTC unter 64.000 fällt oder NEIN-Preis <0.88.",
    "entscheidung_id": "d7dbfc08f",
    "invalidierung": "BTC Binance unter 64.000 oder DVOL >60",
-   "kurs": 0.9644999999999999,
-   "wert": 301.73
+   "kurs": 0.9655,
+   "wert": 302.05
   },
   {
    "id": "pea9d23a3",
@@ -220,8 +220,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "dd6456776",
-   "kurs": 752.35,
-   "wert": 2243.55
+   "kurs": 752.44,
+   "wert": 2243.82
   },
   {
    "id": "p1c64b37e",
@@ -241,8 +241,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "dd6456776",
-   "kurs": 74645.58499999999,
-   "wert": 1059.31
+   "kurs": 74760.065,
+   "wert": 1060.93
   },
   {
    "id": "p994b6370",
@@ -262,8 +262,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "dd6456776",
-   "kurs": 376.12,
-   "wert": 925.37
+   "kurs": 375.84,
+   "wert": 924.68
   },
   {
    "id": "p3b9e74b7",
@@ -329,8 +329,8 @@
    "ausstiegsplan": "Halten bis Abrechnung 31.12.",
    "entscheidung_id": "de2fc5d7b",
    "invalidierung": "PredictIt-Bein nicht gefüllt: JA-Bein wieder verkaufen.",
-   "kurs": 0.455,
-   "wert": 90.0
+   "kurs": 0.46499999999999997,
+   "wert": 92.0
   },
   {
    "id": "p6edb4531",
@@ -591,7 +591,7 @@
  "funding": 0.0,
  "erstellt": 1793380123.8861866,
  "start_fx": 1.1156327353966788,
- "letzter_tick": 1794245916.9906511,
+ "letzter_tick": 1794246816.9244733,
  "auftraege": [],
  "rebalancing": {
   "ziele": {
