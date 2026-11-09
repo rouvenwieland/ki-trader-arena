@@ -35,8 +35,8 @@
    "ausstiegsplan": "Halten bis Abrechnung 31.12.; vorzeitig verkaufen, wenn NEIN-Preis auf ≥0.62 steigt (Gewinn mitnehmen) oder unter 0.38 fällt.",
    "entscheidung_id": "dbf84bba3",
    "invalidierung": "NVDA schließt wieder dauerhaft über Apple-Marktkap (NVDA >~210 bei AAPL ~343) oder starke NVDA-Zahlen mit Rally >8%; dann neu bewerten/verkaufen.",
-   "kurs": 0.755,
-   "wert": 419.25
+   "kurs": 0.75,
+   "wert": 413.66
   },
   {
    "id": "p91a23e4a",
@@ -137,8 +137,8 @@
    "ausstiegsplan": "Halten bis 31.12.; nach NVDA-Earnings 17.11. neu bewerten; Gewinnmitnahme ≥0,65.",
    "entscheidung_id": "d62d5f0db",
    "invalidierung": "NVDA übertrifft Apple-Marktkap nach Earnings um >5 % oder Apple-JA <0,25.",
-   "kurs": 0.734,
-   "wert": 537.91
+   "kurs": 0.7324999999999999,
+   "wert": 536.42
   },
   {
    "id": "pa832233e",
@@ -220,8 +220,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "dd6456776",
-   "kurs": 752.385,
-   "wert": 2243.66
+   "kurs": 752.35,
+   "wert": 2243.55
   },
   {
    "id": "p1c64b37e",
@@ -241,8 +241,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "dd6456776",
-   "kurs": 74676.535,
-   "wert": 1059.75
+   "kurs": 74645.58499999999,
+   "wert": 1059.31
   },
   {
    "id": "p994b6370",
@@ -262,8 +262,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "dd6456776",
-   "kurs": 376.083,
-   "wert": 925.28
+   "kurs": 376.12,
+   "wert": 925.37
   },
   {
    "id": "p3b9e74b7",
@@ -363,8 +363,8 @@
    "ausstiegsplan": "Halten bis Wahl April 2027; teilweise verkaufen wenn NEIN ≥0.72 oder Le Pen-Preis ≤0.30; neu bewerten bei Umfragen Stichwahl Le Pen vs. Philippe/Mitte >55 % für RN.",
    "entscheidung_id": "dc6f84fd5",
    "invalidierung": "Seriöse Stichwahl-Umfragen (Ifop, Elabe) zeigen RN-Kandidat dauerhaft ≥54 % gegen jeden Gegner, oder Preis Le Pen JA ≥0.55.",
-   "kurs": 0.5495000000000001,
-   "wert": 173.48
+   "kurs": 0.5445,
+   "wert": 171.9
   },
   {
    "id": "p8b2743ca",
@@ -384,8 +384,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "d0a642430",
-   "kurs": 91.48,
-   "wert": 908.58
+   "kurs": 91.475,
+   "wert": 908.53
   },
   {
    "id": "p4abb843a",
@@ -514,8 +514,8 @@
    "ausstiegsplan": "Bis Vereidigung halten; schließen, wenn beide Beine zusammen ≥0.97 verkaufbar.",
    "entscheidung_id": "d5f5d56d9",
    "invalidierung": "Nachweislich abweichende PredictIt-Regel, die Eisenkot-JA bei PredictIt und NEIN bei Polymarket zulässt.",
-   "kurs": 0.613,
-   "wert": 420.7
+   "kurs": 0.6174999999999999,
+   "wert": 427.7
   },
   {
    "id": "p2567180c",
@@ -548,7 +548,7 @@
    "ausstiegsplan": "Halten bis IPO-Tag-1-Close; Verkauf wenn Preis ≥0.25 (Gewinn) oder Invalidierung",
    "entscheidung_id": "d8f7f777b",
    "invalidierung": "Offizielle Preisspanne im S-1/A mit Mittelpunkt ≥1,4 Bio oder Nasdaq-100 +8 % bis Pricing",
-   "kurs": 0.135,
+   "kurs": 0.1345,
    "wert": 179.16
   },
   {
@@ -591,7 +591,7 @@
  "funding": 0.0,
  "erstellt": 1793380123.8861866,
  "start_fx": 1.1156327353966788,
- "letzter_tick": 1794245017.2839377,
+ "letzter_tick": 1794245916.9906511,
  "auftraege": [],
  "rebalancing": {
   "ziele": {

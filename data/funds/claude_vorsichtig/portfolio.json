@@ -89,8 +89,8 @@
    "ausstiegsplan": "Kern halten, Rebalancing-Regel (2 pp), Stop 690.",
    "entscheidung_id": "dd084c777",
    "invalidierung": "SPY schließt unter 690 oder 10J-Rendite >5,3 %",
-   "kurs": 752.385,
-   "wert": 1382.61
+   "kurs": 752.35,
+   "wert": 1382.55
   },
   {
    "id": "pbcdb744c",
@@ -112,8 +112,8 @@
    "ausstiegsplan": "Kern halten; Stop 91,5; Rebalancing bei Abweichung >5pp.",
    "entscheidung_id": "d50916521",
    "invalidierung": "AGG schließt unter 91,5 oder 10J-Rendite >5,3 %",
-   "kurs": 96.5,
-   "wert": 1552.61
+   "kurs": 96.525,
+   "wert": 1553.01
   },
   {
    "id": "pd1046bd9",
@@ -135,8 +135,8 @@
    "ausstiegsplan": "Halten; Stop 74.",
    "entscheidung_id": "d123eb847",
    "invalidierung": "10J-Rendite schließt über 5,3 % / TLT unter 74",
-   "kurs": 81.89,
-   "wert": 532.43
+   "kurs": 81.94,
+   "wert": 532.75
   },
   {
    "id": "pf1acd2e3",
@@ -158,8 +158,8 @@
    "ausstiegsplan": "Halten; Stop 340; Gewicht nicht über 5 % erhöhen.",
    "entscheidung_id": "dd43d0bdc",
    "invalidierung": "GLD unter 340 (neues Tief, ~-9 %)",
-   "kurs": 376.083,
-   "wert": 534.79
+   "kurs": 376.12,
+   "wert": 534.84
   },
   {
    "id": "pabe784cb",
@@ -181,8 +181,8 @@
    "ausstiegsplan": "Halten als Kern; Stop 96.",
    "entscheidung_id": "d269c21b5",
    "invalidierung": "EFA unter 96 (Bruch der Aufwärtstrendstruktur, ~-9 %)",
-   "kurs": 104.515,
-   "wert": 524.06
+   "kurs": 104.53,
+   "wert": 524.13
   },
   {
    "id": "pbfa54762",
@@ -215,8 +215,8 @@
    "ausstiegsplan": "Halten bis zur Abrechnung. Vorzeitig verkaufen, wenn das NEIN-Bid 0,985 oder mehr erreicht oder die Invalidierung eintritt.",
    "entscheidung_id": "db3632f99",
    "invalidierung": "WTI-Frontmonat schließt über 120 USD, oder Hormuz wird vollständig gesperrt und Brent liegt über 130.",
-   "kurs": 0.945,
-   "wert": 298.92
+   "kurs": 0.935,
+   "wert": 295.74
   }
  ],
  "realisiert": -156.94852000000014,
@@ -224,7 +224,7 @@
  "funding": 0.0,
  "erstellt": 1793319819.7411644,
  "start_fx": 1.1184885798616961,
- "letzter_tick": 1794245017.2839377,
+ "letzter_tick": 1794245916.9906511,
  "auftraege": [],
  "rebalancing": {
   "ziele": {
