@@ -2,7 +2,7 @@
  "fonds_id": "claude_vorsichtig",
  "waehrung": "USD",
  "start_kapital": 11184.88579861696,
- "cash": 6167.3224086169785,
+ "cash": 5867.684998616978,
  "positionen": [
   {
    "id": "pbb7d9e16",
@@ -183,10 +183,42 @@
    "invalidierung": "EFA unter 96 (Bruch der Aufwärtstrendstruktur, ~-9 %)",
    "kurs": 101.89,
    "wert": 510.98
+  },
+  {
+   "id": "pbfa54762",
+   "inst": {
+    "id": "pm:polymarket:2126461:NEIN",
+    "art": "pm",
+    "venue": "polymarket",
+    "ergebnis": "NEIN",
+    "frage": "Will Crude Oil reach a new all-time high by December 31?",
+    "schliesst": 1798779540.0,
+    "ref": {
+     "id": "2126461",
+     "token_ja": "89220876555191016916241799318314090743516702009053928118059298766028257434413",
+     "token_nein": "5513378025159191337704316460710043026668901636204511402381351948151562535480",
+     "tick": 0.01,
+     "condition": "0x8a5c0b5fc339f2dbaf584def66bcf8bff94d91f0250562e452782fed3d18f821",
+     "gebuehr_rate": 0.04,
+     "gebuehr_exp": 1.0
+    },
+    "url": "https://polymarket.com/event/crude-oil-all-time-high-by"
+   },
+   "seite": "long",
+   "menge": 318.0,
+   "einstand": 0.9399999999999998,
+   "hebel": 1.0,
+   "marge": 0.0,
+   "eroeffnet": 1794215117.1600764,
+   "gebuehren": 0.71741,
+   "funding": 0.0,
+   "ausstiegsplan": "Halten bis zur Abrechnung. Vorzeitig verkaufen, wenn das NEIN-Bid 0,985 oder mehr erreicht oder die Invalidierung eintritt.",
+   "entscheidung_id": "db3632f99",
+   "invalidierung": "WTI-Frontmonat schließt über 120 USD, oder Hormuz wird vollständig gesperrt und Brent liegt über 130."
   }
  ],
  "realisiert": -156.94852000000014,
- "gebuehren": 27.764169999999996,
+ "gebuehren": 28.481579999999997,
  "funding": 0.0,
  "erstellt": 1793319819.7411644,
  "start_fx": 1.1184885798616961,
