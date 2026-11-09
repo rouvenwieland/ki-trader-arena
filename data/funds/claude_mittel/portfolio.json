@@ -458,7 +458,45 @@
  "erstellt": 1793319819.7411644,
  "start_fx": 1.1184885798616961,
  "letzter_tick": 1794236617.2633,
- "auftraege": [],
+ "auftraege": [
+  {
+   "id": "a2e6aff",
+   "entscheidung_id": "d5209449e",
+   "inst": {
+    "id": "pm:polymarket:676741:JA",
+    "art": "pm",
+    "venue": "polymarket",
+    "ergebnis": "JA",
+    "frage": "Will Apple be the largest company in the world by market cap on December 31?",
+    "schliesst": 1798779540.0,
+    "ref": {
+     "id": "676741",
+     "token_ja": "9875273331604434310973374077817381730908757452538191940842519381772366848",
+     "token_nein": "102723918081644490126383882876216056971015484595406893020273651317068912986031",
+     "tick": 0.001,
+     "condition": "0x55a5a4b50b7947482e95af8f638fa0b8d9a46740c5cd04c6799443e83565176a",
+     "gebuehr_rate": 0.04,
+     "gebuehr_exp": 1.0
+    },
+    "url": "https://polymarket.com/event/will-apple-be-the-largest-company-in-the-world-by-market-cap-on-december-31-291"
+   },
+   "aktion": "verkaufen",
+   "typ": "limit",
+   "seite": "long",
+   "betrag_usd": null,
+   "menge": 300,
+   "hebel": 1.0,
+   "limit_preis": 0.79,
+   "stop_preis": null,
+   "stop_loss": null,
+   "take_profit": null,
+   "ausstiegsplan": "Limit 0,79 für 300 Stück; Rest 307 halten, Exit bei Bid ≥0,82 oder Neubewertung nach NVDA-Zahlen 17.11.",
+   "invalidierung": "",
+   "erstellt": 1794236943.127893,
+   "geprueft_bis": 1794236943.127893,
+   "gueltig_bis": 1796828943.127893
+  }
+ ],
  "rebalancing": {
   "ziele": {
    "stock:SPY": {

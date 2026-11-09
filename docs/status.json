@@ -1,11 +1,11 @@
 {
  "version": 1,
- "stand": 1794236800.160117,
+ "stand": 1794237082.9820838,
  "hinweis": "Papierhandel-Simulation, keine Anlageberatung",
  "seite": "https://rouvenwieland.github.io/ki-trader-arena/",
  "budget": {
-  "heute_eur": 3.45,
-  "gesamt_eur": 102.56,
+  "heute_eur": 7.94,
+  "gesamt_eur": 107.05,
   "tagesdeckel_eur": 12.0,
   "gesamtdeckel_eur": 190.0,
   "claude_ende": "2026-11-14",
@@ -209,9 +209,9 @@
    "equity_eur": 10174.94,
    "max_drawdown_pct": -2.57,
    "status": "aktiv",
-   "modell": "claude-sonnet-5-5",
-   "kosten_heute_eur": 0.821,
-   "kosten_gesamt_eur": 24.097,
+   "modell": "claude-opus-5-5",
+   "kosten_heute_eur": 1.971,
+   "kosten_gesamt_eur": 25.247,
    "rendite_ki_pct": [
     -2.74,
     8.24
@@ -504,9 +504,9 @@
    "equity_eur": 9833.98,
    "max_drawdown_pct": -6.05,
    "status": "aktiv",
-   "modell": "claude-sonnet-5-5",
-   "kosten_heute_eur": 0.947,
-   "kosten_gesamt_eur": 25.848,
+   "modell": "claude-opus-5-5",
+   "kosten_heute_eur": 2.052,
+   "kosten_gesamt_eur": 26.953,
    "rendite_ki_pct": [
     -8.81,
     4.11
@@ -681,9 +681,9 @@
    "equity_eur": 9771.07,
    "max_drawdown_pct": -6.34,
    "status": "aktiv",
-   "modell": "claude-sonnet-5-5",
-   "kosten_heute_eur": 1.008,
-   "kosten_gesamt_eur": 25.874,
+   "modell": "claude-opus-5-5",
+   "kosten_heute_eur": 2.051,
+   "kosten_gesamt_eur": 26.917,
    "rendite_ki_pct": [
     -10.78,
     4.15
@@ -1035,9 +1035,9 @@
    "equity_eur": 8946.94,
    "max_drawdown_pct": -24.83,
    "status": "aktiv",
-   "modell": "claude-sonnet-5-5",
-   "kosten_heute_eur": 0.676,
-   "kosten_gesamt_eur": 25.444,
+   "modell": "claude-opus-5-5",
+   "kosten_heute_eur": 1.867,
+   "kosten_gesamt_eur": 26.635,
    "rendite_ki_pct": [
     -34.74,
     11.33
@@ -1218,6 +1218,27 @@
  ],
  "letzte_entscheidungen": [
   {
+   "ts": 1794236961.867633,
+   "fonds": "DeepSeek",
+   "instrument": "pm:polymarket:701501:NEIN",
+   "aktion": "kaufen",
+   "zuversicht": 0.55
+  },
+  {
+   "ts": 1794236957.4840517,
+   "fonds": "DeepSeek",
+   "instrument": "pm:polymarket:6882826:NEIN",
+   "aktion": "kaufen",
+   "zuversicht": 0.62
+  },
+  {
+   "ts": 1794236943.1274915,
+   "fonds": "Claude Mittel",
+   "instrument": "pm:polymarket:676741:JA",
+   "aktion": "verkaufen",
+   "zuversicht": 0.6
+  },
+  {
    "ts": 1794215117.15963,
    "fonds": "Claude Vorsichtig",
    "instrument": "pm:polymarket:2126461:NEIN",
@@ -1251,27 +1272,6 @@
    "instrument": "pm:polymarket:5782539:JA",
    "aktion": "kaufen",
    "zuversicht": 0.6
-  },
-  {
-   "ts": 1794150838.9570916,
-   "fonds": "Kimi (Moonshot)",
-   "instrument": "pm:polymarket:5782539:JA",
-   "aktion": "kaufen",
-   "zuversicht": 0.6
-  },
-  {
-   "ts": 1794150838.9556828,
-   "fonds": "Kimi (Moonshot)",
-   "instrument": "pm:polymarket:5782539:JA",
-   "aktion": "kaufen",
-   "zuversicht": 0.6
-  },
-  {
-   "ts": 1794150711.105163,
-   "fonds": "Claude Mittel",
-   "instrument": "pm:polymarket:679022:NEIN",
-   "aktion": "kaufen",
-   "zuversicht": 0.72
   }
  ],
  "ereignisse": [

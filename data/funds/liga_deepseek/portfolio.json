@@ -2,7 +2,7 @@
  "fonds_id": "liga_deepseek",
  "waehrung": "USD",
  "start_kapital": 11184.88579861696,
- "cash": 3154.844239674383,
+ "cash": 2505.123039674383,
  "positionen": [
   {
    "id": "p00666bfa",
@@ -142,10 +142,74 @@
    "entscheidung_id": "d1d71a5f2",
    "kurs": 96.605,
    "wert": 1151.99
+  },
+  {
+   "id": "p02c1343b",
+   "inst": {
+    "id": "pm:polymarket:6882826:NEIN",
+    "art": "pm",
+    "venue": "polymarket",
+    "ergebnis": "NEIN",
+    "frage": "Jensen Huang announced resignation or removal by December 31?",
+    "schliesst": 1798779540.0,
+    "ref": {
+     "id": "6882826",
+     "token_ja": "92740912934979695164482497757800283783237751328808772389036157576306520939319",
+     "token_nein": "15017605300721255694387863261330475130179898743425100548854893411502225255902",
+     "tick": 0.01,
+     "condition": "0xe0881460dcd53df2f8410ff9ec4c151f22c15ad29ff581d8eb8ac9bce5124eef",
+     "gebuehr_rate": 0.04,
+     "gebuehr_exp": 1.0
+    },
+    "url": "https://polymarket.com/event/jensen-huang-announced-resignation-or-removal-by-december-31"
+   },
+   "seite": "long",
+   "menge": 409.0,
+   "einstand": 0.85,
+   "hebel": 1.0,
+   "marge": 0.0,
+   "eroeffnet": 1794236957.4842412,
+   "gebuehren": 2.0859,
+   "funding": 0.0,
+   "ausstiegsplan": "Halten bis 31.12.2026 (Abrechnung) oder Verkauf, wenn NEIN-Preis >0,97 (Edge weg, Kapital wird gebraucht). Vorzeitiger Verkauf sonst unnötig, das Buch ist tief und die Gebühr je Kontrakt fix.",
+   "entscheidung_id": "da7f7b17f",
+   "invalidierung": "Nvidia, das Board oder Huang kündigen öffentlich und definitiv Rücktritt/Entlassung an (auch mit Wirkung in bis zu 18 Monaten), ODER JA-Preis steigt über 0,40 ohne für mich erkennbare Nachricht (dann hat der Markt Information, die ich nicht habe)."
+  },
+  {
+   "id": "p473fbd8a",
+   "inst": {
+    "id": "pm:polymarket:701501:NEIN",
+    "art": "pm",
+    "venue": "polymarket",
+    "ergebnis": "NEIN",
+    "frage": "Will Bitcoin dip to $55,000 by December 31, 2026?",
+    "schliesst": 1798779600.0,
+    "ref": {
+     "id": "701501",
+     "token_ja": "115462087336983275104521488923966022755348986822352694745153736621832003960847",
+     "token_nein": "48849252416222520684793262794712201381742900852794310345084361317209768152557",
+     "tick": 0.01,
+     "condition": "0x752fa61c93f16c4b15e85b0bd438d9c684176b0ea7b319a84c8aca34616e8a8c",
+     "gebuehr_rate": 0.07,
+     "gebuehr_exp": 1.0
+    },
+    "url": "https://polymarket.com/event/what-price-will-bitcoin-hit-before-2027"
+   },
+   "seite": "long",
+   "menge": 331.0,
+   "einstand": 0.9000000000000001,
+   "hebel": 1.0,
+   "marge": 0.0,
+   "eroeffnet": 1794236961.867845,
+   "gebuehren": 2.0853,
+   "funding": 0.0,
+   "ausstiegsplan": "Halten bis 31.12.2026. Exit-Trigger: BTC schließt unter SMA200 (73.151) UND VIX > 32 → Position verkaufen (nie in einen bestätigten Abwärtstrend halten). Sonst Abrechnung abwarten.",
+   "entscheidung_id": "dd41482cf",
+   "invalidierung": "BTC-Tagesschluss unter der SMA200 (73.151) gleichzeitig mit VIX über 32, ODER eine Binance-1-Minuten-Kerze unter 62.000 (dann ist der Weg zu 55k kurz und die These war falsch)."
   }
  ],
  "realisiert": -483.18773566482037,
- "gebuehren": 95.50280925396547,
+ "gebuehren": 99.67400925396547,
  "funding": 0.0,
  "erstellt": 1793319819.7411644,
  "start_fx": 1.1184885798616961,
@@ -159,7 +223,7 @@
      "venue": "yahoo",
      "symbol": "SPY"
     },
-    "anteil": 0.24
+    "anteil": 0.25
    },
    "stock:TLT": {
     "inst": {
@@ -168,7 +232,7 @@
      "venue": "yahoo",
      "symbol": "TLT"
     },
-    "anteil": 0.18
+    "anteil": 0.17
    },
    "stock:AGG": {
     "inst": {
@@ -177,7 +241,7 @@
      "venue": "yahoo",
      "symbol": "AGG"
     },
-    "anteil": 0.11
+    "anteil": 0.13
    },
    "stock:GLD": {
     "inst": {
@@ -199,8 +263,8 @@
    }
   },
   "schwelle_pp": 3.0,
-  "seit": 1794150493.3463492,
-  "entscheidung_id": "d1d71a5f2"
+  "seit": 1794236809.0318954,
+  "entscheidung_id": "dbca51592"
  },
  "auftraege": []
 }
