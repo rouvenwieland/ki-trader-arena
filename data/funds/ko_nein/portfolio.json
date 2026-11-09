@@ -2,7 +2,7 @@
  "fonds_id": "ko_nein",
  "waehrung": "USD",
  "start_kapital": 11157.431109273288,
- "cash": 1295.960509273286,
+ "cash": 962.141199273286,
  "positionen": [
   {
    "id": "p9e535f2b",
@@ -97,8 +97,8 @@
    "gebuehren": 0.0,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.7895000000000001,
-   "wert": 218.51
+   "kurs": 0.789,
+   "wert": 218.23
   },
   {
    "id": "pdcfb5d53",
@@ -129,8 +129,8 @@
    "gebuehren": 0.0,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.3655,
-   "wert": 91.25
+   "kurs": 0.373,
+   "wert": 91.75
   },
   {
    "id": "pe65b0b73",
@@ -354,7 +354,7 @@
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
    "kurs": 0.36,
-   "wert": 61.76
+   "wert": 63.69
   },
   {
    "id": "p9f764afd",
@@ -705,8 +705,8 @@
    "gebuehren": 4.65658,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.825,
-   "wert": 225.5
+   "kurs": 0.835,
+   "wert": 228.25
   },
   {
    "id": "pd183209f",
@@ -833,7 +833,7 @@
    "gebuehren": 3.5937,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.8049999999999999,
+   "kurs": 0.8,
    "wert": 279.51
   },
   {
@@ -993,7 +993,7 @@
    "gebuehren": 4.05345,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.845,
+   "kurs": 0.85,
    "wert": 362.04
   },
   {
@@ -1217,8 +1217,8 @@
    "gebuehren": 1.22092,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.775,
-   "wert": 147.44
+   "kurs": 0.77,
+   "wert": 145.5
   },
   {
    "id": "p52ad9acd",
@@ -1379,13 +1379,77 @@
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
    "kurs": 0.25,
    "wert": 65.09
+  },
+  {
+   "id": "p52f9b70e",
+   "inst": {
+    "id": "pm:polymarket:2126461:NEIN",
+    "art": "pm",
+    "venue": "polymarket",
+    "ergebnis": "NEIN",
+    "frage": "Will Crude Oil reach a new all-time high by December 31?",
+    "schliesst": 1798779540.0,
+    "ref": {
+     "id": "2126461",
+     "token_ja": "89220876555191016916241799318314090743516702009053928118059298766028257434413",
+     "token_nein": "5513378025159191337704316460710043026668901636204511402381351948151562535480",
+     "tick": 0.01,
+     "condition": "0x8a5c0b5fc339f2dbaf584def66bcf8bff94d91f0250562e452782fed3d18f821",
+     "gebuehr_rate": 0.04,
+     "gebuehr_exp": 1.0
+    },
+    "url": "https://polymarket.com/event/crude-oil-all-time-high-by"
+   },
+   "seite": "long",
+   "menge": 177.0,
+   "einstand": 0.94,
+   "hebel": 1.0,
+   "marge": 0.0,
+   "eroeffnet": 1794215784.0313585,
+   "gebuehren": 0.39931,
+   "funding": 0.0,
+   "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
+   "kurs": 0.935,
+   "wert": 164.61
+  },
+  {
+   "id": "pf2dd9992",
+   "inst": {
+    "id": "pm:polymarket:5087226:NEIN",
+    "art": "pm",
+    "venue": "polymarket",
+    "ergebnis": "NEIN",
+    "frage": "US-Iran Hormuz Agreement by November 30?",
+    "schliesst": 1796101140.0,
+    "ref": {
+     "id": "5087226",
+     "token_ja": "115493632799264792730434819071535743213979554073329435975177567583389396615289",
+     "token_nein": "86167176808362447310018614904152866571628255546516240601963325069227339619544",
+     "tick": 0.01,
+     "condition": "0x2b9931e13d436ee68b2870d31400f5bed8f5f13ad321355d0fd1048f706bba6a",
+     "gebuehr_rate": 0.0,
+     "gebuehr_exp": 1
+    },
+    "url": "https://polymarket.com/event/us-iran-hormuz-agreement-byptptpt-20260803235957575"
+   },
+   "seite": "long",
+   "menge": 192.0,
+   "einstand": 0.87,
+   "hebel": 1.0,
+   "marge": 0.0,
+   "eroeffnet": 1794215784.0313585,
+   "gebuehren": 0.0,
+   "funding": 0.0,
+   "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
+   "kurs": 0.865,
+   "wert": 165.12
   }
  ],
  "realisiert": -2474.7851,
- "gebuehren": 268.63257,
+ "gebuehren": 269.03188,
  "funding": 0.0,
  "erstellt": 1793379225.5430336,
  "start_fx": 1.1157431109273288,
- "letzter_tick": 1794214883.6006057,
- "kontrolle_bis": 1794193417.7304823
+ "letzter_tick": 1794215784.0313585,
+ "kontrolle_bis": 1794214992.680297
 }
