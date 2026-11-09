@@ -2,7 +2,7 @@
  "fonds_id": "claude_mittel_rm",
  "waehrung": "USD",
  "start_kapital": 11156.327353966788,
- "cash": 1103.7022820252103,
+ "cash": 1561.8773471032,
  "positionen": [
   {
    "id": "pe8186cc2",
@@ -35,8 +35,8 @@
    "ausstiegsplan": "Halten bis Abrechnung 31.12.; vorzeitig verkaufen, wenn NEIN-Preis auf ≥0.62 steigt (Gewinn mitnehmen) oder unter 0.38 fällt.",
    "entscheidung_id": "dbf84bba3",
    "invalidierung": "NVDA schließt wieder dauerhaft über Apple-Marktkap (NVDA >~210 bei AAPL ~343) oder starke NVDA-Zahlen mit Rally >8%; dann neu bewerten/verkaufen.",
-   "kurs": 0.745,
-   "wert": 413.66
+   "kurs": 0.775,
+   "wert": 430.43
   },
   {
    "id": "p91a23e4a",
@@ -137,8 +137,8 @@
    "ausstiegsplan": "Halten bis 31.12.; nach NVDA-Earnings 17.11. neu bewerten; Gewinnmitnahme ≥0,65.",
    "entscheidung_id": "d62d5f0db",
    "invalidierung": "NVDA übertrifft Apple-Marktkap nach Earnings um >5 % oder Apple-JA <0,25.",
-   "kurs": 0.732,
-   "wert": 540.89
+   "kurs": 0.7535000000000001,
+   "wert": 558.0
   },
   {
    "id": "pa832233e",
@@ -199,8 +199,8 @@
    "ausstiegsplan": "Halten bis 30.11.; verkaufen, wenn BTC unter 64.000 fällt oder NEIN-Preis <0.88.",
    "entscheidung_id": "d7dbfc08f",
    "invalidierung": "BTC Binance unter 64.000 oder DVOL >60",
-   "kurs": 0.9455,
-   "wert": 295.78
+   "kurs": 0.945,
+   "wert": 295.47
   },
   {
    "id": "pea9d23a3",
@@ -220,8 +220,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "dd6456776",
-   "kurs": 735.29,
-   "wert": 2192.92
+   "kurs": 743.429,
+   "wert": 2216.95
   },
   {
    "id": "p1c64b37e",
@@ -241,8 +241,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "dd6456776",
-   "kurs": 74510.345,
-   "wert": 1057.39
+   "kurs": 74503.875,
+   "wert": 1057.3
   },
   {
    "id": "p994b6370",
@@ -262,8 +262,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "dd6456776",
-   "kurs": 372.52,
-   "wert": 916.63
+   "kurs": 377.83,
+   "wert": 929.57
   },
   {
    "id": "p3b9e74b7",
@@ -333,29 +333,6 @@
    "wert": 90.0
   },
   {
-   "id": "p93771887",
-   "inst": {
-    "id": "stock:NVDA",
-    "art": "stock",
-    "venue": "yahoo",
-    "symbol": "NVDA"
-   },
-   "seite": "long",
-   "menge": 2.664083166908293,
-   "einstand": 187.68182848445184,
-   "hebel": 1.0,
-   "marge": 0.0,
-   "eroeffnet": 1793891856.5096068,
-   "gebuehren": 0.0,
-   "funding": 0.0,
-   "stop_loss": 172,
-   "ausstiegsplan": "Zusammen mit dem Apple/NVDA-Paar nach den NVDA-Earnings am 17.11. neu bewerten; Stop 172; Gewinnmitnahme bei 215, falls das Paar bis dahin aufgelöst ist.",
-   "entscheidung_id": "d5ed9e039",
-   "invalidierung": "NVDA schließt unter 172 (neues Jahrestief-Umfeld, Stop) oder das Marktkap-Paar wird verkauft (dann Hedge mit auflösen).",
-   "kurs": 186.64,
-   "wert": 497.22
-  },
-  {
    "id": "p6edb4531",
    "inst": {
     "id": "pm:polymarket:679018:NEIN",
@@ -386,8 +363,8 @@
    "ausstiegsplan": "Halten bis Wahl April 2027; teilweise verkaufen wenn NEIN ≥0.72 oder Le Pen-Preis ≤0.30; neu bewerten bei Umfragen Stichwahl Le Pen vs. Philippe/Mitte >55 % für RN.",
    "entscheidung_id": "dc6f84fd5",
    "invalidierung": "Seriöse Stichwahl-Umfragen (Ifop, Elabe) zeigen RN-Kandidat dauerhaft ≥54 % gegen jeden Gegner, oder Preis Le Pen JA ≥0.55.",
-   "kurs": 0.542,
-   "wert": 170.96
+   "kurs": 0.5425,
+   "wert": 171.27
   },
   {
    "id": "p8b2743ca",
@@ -407,8 +384,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "d0a642430",
-   "kurs": 91.46,
-   "wert": 908.53
+   "kurs": 91.47,
+   "wert": 908.48
   },
   {
    "id": "p4abb843a",
@@ -470,8 +447,8 @@
    "ausstiegsplan": "Halten bis Abrechnung Jan. 2027; Verkauf bei NEIN <0.80 oder Doomsday-Opening-Tag >$200M.",
    "entscheidung_id": "d6b155dae",
    "invalidierung": "Doomsday Freitagsumsatz inkl. Previews >$200M am 18.12. oder Doomsday-Domestic nach 7 Tagen >$600M.",
-   "kurs": 0.835,
-   "wert": 410.33
+   "kurs": 0.8345,
+   "wert": 409.84
   },
   {
    "id": "p75b03ffe",
@@ -537,8 +514,8 @@
    "ausstiegsplan": "Bis Vereidigung halten; schließen, wenn beide Beine zusammen ≥0.97 verkaufbar.",
    "entscheidung_id": "d5f5d56d9",
    "invalidierung": "Nachweislich abweichende PredictIt-Regel, die Eisenkot-JA bei PredictIt und NEIN bei Polymarket zulässt.",
-   "kurs": 0.597,
-   "wert": 410.9
+   "kurs": 0.595,
+   "wert": 411.6
   },
   {
    "id": "p2567180c",
@@ -571,8 +548,8 @@
    "ausstiegsplan": "Halten bis IPO-Tag-1-Close; Verkauf wenn Preis ≥0.25 (Gewinn) oder Invalidierung",
    "entscheidung_id": "d8f7f777b",
    "invalidierung": "Offizielle Preisspanne im S-1/A mit Mittelpunkt ≥1,4 Bio oder Nasdaq-100 +8 % bis Pricing",
-   "kurs": 0.161,
-   "wert": 208.57
+   "kurs": 0.157,
+   "wert": 203.22
   },
   {
    "id": "p1f686553",
@@ -609,12 +586,12 @@
    "wert": 294.98
   }
  ],
- "realisiert": 48.708254937007624,
+ "realisiert": 6.883320014999882,
  "gebuehren": 33.85124633920157,
  "funding": 0.0,
  "erstellt": 1793380123.8861866,
  "start_fx": 1.1156327353966788,
- "letzter_tick": 1794233916.471069,
+ "letzter_tick": 1794234816.51331,
  "auftraege": [],
  "rebalancing": {
   "ziele": {

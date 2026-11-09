@@ -2,7 +2,7 @@
  "fonds_id": "liga_deepseek",
  "waehrung": "USD",
  "start_kapital": 11184.88579861696,
- "cash": 3241.5976937576456,
+ "cash": 3154.844239674383,
  "positionen": [
   {
    "id": "p00666bfa",
@@ -13,7 +13,7 @@
     "symbol": "TLT"
    },
    "seite": "long",
-   "menge": 30.719971962482234,
+   "menge": 22.96173172741754,
    "einstand": 81.72277151159113,
    "hebel": 1.0,
    "marge": 0.0,
@@ -22,8 +22,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "d2b5d529d",
-   "kurs": 81.92,
-   "wert": 2516.58
+   "kurs": 82.2,
+   "wert": 1887.24
   },
   {
    "id": "p78a3c466",
@@ -43,8 +43,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "d8e5f296a",
-   "kurs": 372.52,
-   "wert": 851.95
+   "kurs": 377.83,
+   "wert": 863.98
   },
   {
    "id": "p3d319c8e",
@@ -64,8 +64,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "d8e5f296a",
-   "kurs": 74510.345,
-   "wert": 687.48
+   "kurs": 74503.875,
+   "wert": 687.42
   },
   {
    "id": "p9a8fa083",
@@ -76,7 +76,7 @@
     "symbol": "SPY"
    },
    "seite": "long",
-   "menge": 3.9622507342332356,
+   "menge": 3.38512661876809,
    "einstand": 767.6473705912607,
    "hebel": 1.0,
    "marge": 0.0,
@@ -85,8 +85,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "d8e5f296a",
-   "kurs": 735.29,
-   "wert": 2913.4
+   "kurs": 743.429,
+   "wert": 2516.33
   },
   {
    "id": "pcb4fd55d",
@@ -121,14 +121,35 @@
    "invalidierung": "FedWatch/CME-Futures zeigen >85% für +25bp im Dezember, oder ein FOMC-Mitglied bestätigt öffentlich eine Erhöhungsabsicht, oder der Marktpreis NEIN fällt unter 0,15 (dann hat der Markt neue, harte Information).",
    "kurs": 0.235,
    "wert": 221.49
+  },
+  {
+   "id": "p565093a5",
+   "inst": {
+    "id": "stock:AGG",
+    "art": "stock",
+    "venue": "yahoo",
+    "symbol": "AGG"
+   },
+   "seite": "long",
+   "menge": 11.926626617847594,
+   "einstand": 96.7001219147083,
+   "hebel": 1.0,
+   "marge": 0.0,
+   "eroeffnet": 1794234816.51331,
+   "gebuehren": 0.0,
+   "funding": 0.0,
+   "ausstiegsplan": "Rebalancing-Regel",
+   "entscheidung_id": "d1d71a5f2",
+   "kurs": 96.675,
+   "wert": 1152.82
   }
  ],
- "realisiert": -472.687825754775,
+ "realisiert": -483.18773566482037,
  "gebuehren": 95.50280925396547,
  "funding": 0.0,
  "erstellt": 1793319819.7411644,
  "start_fx": 1.1184885798616961,
- "letzter_tick": 1794233916.471069,
+ "letzter_tick": 1794234816.51331,
  "rebalancing": {
   "ziele": {
    "stock:SPY": {
