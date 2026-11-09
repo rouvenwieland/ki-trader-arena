@@ -92,7 +92,7 @@
    "entscheidung_id": "d6e2136ea",
    "invalidierung": "PSL oder Polska 2050 kündigen Koalition auf bzw. sagen Unterstützung für das konstruktive Misstrauensvotum zu; oder Tusk kündigt Rücktritt an.",
    "kurs": 0.9241169175696515,
-   "wert": 136.74
+   "wert": 44.35
   },
   {
    "id": "pa2cf5bd2",
@@ -159,7 +159,7 @@
    "ausstiegsplan": "Bid ≥0,70 verkaufen (P erreicht); Neubewertung nach NVDA-Zahlen 19.11.; schließen, wenn Apple-Vorsprung <3 %.",
    "entscheidung_id": "d7e53ef04",
    "invalidierung": "NVDA-Marktkap. kommt auf <3 % Abstand zu Apple, oder Apple fällt >8 % relativ.",
-   "kurs": 0.695,
+   "kurs": 0.6904999999999999,
    "wert": 418.83
   },
   {
@@ -264,8 +264,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "d6e1a7002",
-   "kurs": 75183.07500000001,
-   "wert": 1237.27
+   "kurs": 74920.685,
+   "wert": 1232.96
   },
   {
    "id": "pe3015b77",
@@ -285,8 +285,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "d6e1a7002",
-   "kurs": 2143.755,
-   "wert": 486.53
+   "kurs": 2137.9700000000003,
+   "wert": 485.22
   },
   {
    "id": "p1ad6082a",
@@ -457,7 +457,7 @@
  "funding": 0.0,
  "erstellt": 1793319819.7411644,
  "start_fx": 1.1184885798616961,
- "letzter_tick": 1794193171.4687068,
+ "letzter_tick": 1794194071.34715,
  "auftraege": [],
  "rebalancing": {
   "ziele": {
