@@ -2,7 +2,7 @@
  "fonds_id": "ko_nein",
  "waehrung": "USD",
  "start_kapital": 11157.431109273288,
- "cash": 1098.960509273286,
+ "cash": 1295.960509273286,
  "positionen": [
   {
    "id": "p9e535f2b",
@@ -97,8 +97,8 @@
    "gebuehren": 0.0,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.792,
-   "wert": 219.06
+   "kurs": 0.7915000000000001,
+   "wert": 218.79
   },
   {
    "id": "pdcfb5d53",
@@ -129,8 +129,8 @@
    "gebuehren": 0.0,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.357,
-   "wert": 89.0
+   "kurs": 0.3585,
+   "wert": 89.25
   },
   {
    "id": "pe65b0b73",
@@ -289,8 +289,8 @@
    "gebuehren": 0.0,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.715,
-   "wert": 247.08
+   "kurs": 0.725,
+   "wert": 250.56
   },
   {
    "id": "p1f028824",
@@ -353,8 +353,8 @@
    "gebuehren": 0.0,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.27,
-   "wert": 46.32
+   "kurs": 0.26,
+   "wert": 44.39
   },
   {
    "id": "p9f764afd",
@@ -449,8 +449,8 @@
    "gebuehren": 5.41501,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.4,
-   "wert": 120.9
+   "kurs": 0.405,
+   "wert": 124.0
   },
   {
    "id": "p21e9c816",
@@ -577,8 +577,8 @@
    "gebuehren": 0.0,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.14500000000000002,
-   "wert": 47.71
+   "kurs": 0.14,
+   "wert": 44.04
   },
   {
    "id": "p5037ef0e",
@@ -833,8 +833,8 @@
    "gebuehren": 3.5937,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.815,
-   "wert": 283.14
+   "kurs": 0.825,
+   "wert": 286.77
   },
   {
    "id": "pa1fe7c67",
@@ -929,7 +929,7 @@
    "gebuehren": 0.95322,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.55,
+   "kurs": 0.5549999999999999,
    "wert": 102.82
   },
   {
@@ -961,8 +961,8 @@
    "gebuehren": 5.82112,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.9864999999999999,
-   "wert": 1609.49
+   "kurs": 0.987,
+   "wert": 1611.12
   },
   {
    "id": "pca00edbf",
@@ -993,7 +993,7 @@
    "gebuehren": 4.05345,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.815,
+   "kurs": 0.8200000000000001,
    "wert": 349.11
   },
   {
@@ -1153,8 +1153,8 @@
    "gebuehren": 2.0848,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.6685000000000001,
-   "wert": 160.75
+   "kurs": 0.665,
+   "wert": 159.3
   },
   {
    "id": "p8929587b",
@@ -1249,40 +1249,8 @@
    "gebuehren": 6.15794,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.0195,
-   "wert": 54.0
-  },
-  {
-   "id": "p00267f3d",
-   "inst": {
-    "id": "pm:polymarket:4397025:NEIN",
-    "art": "pm",
-    "venue": "polymarket",
-    "ergebnis": "NEIN",
-    "frage": "Will T1 win Worlds 2026?",
-    "schliesst": 1795928340.0,
-    "ref": {
-     "id": "4397025",
-     "token_ja": "56360910151195441905859355697297471571491885496299657191480344412119595418796",
-     "token_nein": "101996110023306359267215939819928021406998500989415641847320025626005179879667",
-     "tick": 0.01,
-     "condition": "0xa69885e5d14dc00bb5dd20a88a99560987926883cddee2d2bdfde583348fc175",
-     "gebuehr_rate": 0.05,
-     "gebuehr_exp": 1.0
-    },
-    "url": "https://polymarket.com/event/worlds-2026-winner"
-   },
-   "seite": "long",
-   "menge": 197.0,
-   "einstand": 0.84,
-   "hebel": 1.0,
-   "marge": 0.0,
-   "eroeffnet": 1794043257.375455,
-   "gebuehren": 1.32384,
-   "funding": 0.0,
-   "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.999,
-   "wert": 196.8
+   "kurs": 0.02,
+   "wert": 57.6
   },
   {
    "id": "pff2b1476",
@@ -1409,15 +1377,15 @@
    "gebuehren": 2.75839,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.24,
+   "kurs": 0.235,
    "wert": 62.26
   }
  ],
- "realisiert": -2506.3051,
+ "realisiert": -2474.7851,
  "gebuehren": 268.63257,
  "funding": 0.0,
  "erstellt": 1793379225.5430336,
  "start_fx": 1.1157431109273288,
- "letzter_tick": 1794194971.729131,
+ "letzter_tick": 1794195871.6888986,
  "kontrolle_bis": 1794193417.7304823
 }
