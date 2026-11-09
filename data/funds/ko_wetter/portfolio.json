@@ -79,8 +79,8 @@
    "gebuehren": 5.69,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Wetter-Regel)",
-   "kurs": 0.3,
-   "wert": 96.86
+   "kurs": 0.255,
+   "wert": 83.5
   },
   {
    "id": "p19555321",
@@ -105,8 +105,8 @@
    "gebuehren": 1.9,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Wetter-Regel)",
-   "kurs": 0.695,
-   "wert": 121.44
+   "kurs": 0.735,
+   "wert": 126.72
   },
   {
    "id": "p7b3b8013",
@@ -157,8 +157,8 @@
    "gebuehren": 3.65,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Wetter-Regel)",
-   "kurs": 0.525,
-   "wert": 113.88
+   "kurs": 0.515,
+   "wert": 111.69
   },
   {
    "id": "p69c2b627",
@@ -183,7 +183,7 @@
    "gebuehren": 5.04,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Wetter-Regel)",
-   "kurs": 0.35,
+   "kurs": 0.355,
    "wert": 99.96
   },
   {
@@ -209,8 +209,8 @@
    "gebuehren": 5.0,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Wetter-Regel)",
-   "kurs": 0.055,
-   "wert": 22.95
+   "kurs": 0.035,
+   "wert": 9.18
   },
   {
    "id": "p4ed77863",
@@ -235,8 +235,8 @@
    "gebuehren": 3.69,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Wetter-Regel)",
-   "kurs": 0.28500000000000003,
-   "wert": 67.77
+   "kurs": 0.245,
+   "wert": 60.24
   }
  ],
  "realisiert": -5850.366709581286,
@@ -244,6 +244,6 @@
  "funding": 0.0,
  "erstellt": 1793380123.8861866,
  "start_fx": 1.1156327353966788,
- "letzter_tick": 1794240217.5204682,
+ "letzter_tick": 1794241118.274583,
  "wetter_letzter": 1794240217.5204682
 }
