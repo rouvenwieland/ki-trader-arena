@@ -22,8 +22,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "d2b5d529d",
-   "kurs": 81.93,
-   "wert": 1881.04
+   "kurs": 81.905,
+   "wert": 1880.47
   },
   {
    "id": "p78a3c466",
@@ -43,8 +43,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "d8e5f296a",
-   "kurs": 379.8,
-   "wert": 868.48
+   "kurs": 379.67,
+   "wert": 868.18
   },
   {
    "id": "p3d319c8e",
@@ -64,8 +64,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "d8e5f296a",
-   "kurs": 74759.965,
-   "wert": 689.78
+   "kurs": 74702.515,
+   "wert": 689.25
   },
   {
    "id": "p9a8fa083",
@@ -85,8 +85,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "d8e5f296a",
-   "kurs": 754.98,
-   "wert": 2555.43
+   "kurs": 754.38,
+   "wert": 2553.4
   },
   {
    "id": "pcb4fd55d",
@@ -140,8 +140,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "d1d71a5f2",
-   "kurs": 96.55,
-   "wert": 1151.33
+   "kurs": 96.525,
+   "wert": 1151.04
   },
   {
    "id": "p02c1343b",
@@ -217,7 +217,7 @@
  "funding": 0.0,
  "erstellt": 1793319819.7411644,
  "start_fx": 1.1184885798616961,
- "letzter_tick": 1794255817.0459347,
+ "letzter_tick": 1794256716.5246482,
  "rebalancing": {
   "ziele": {
    "stock:SPY": {

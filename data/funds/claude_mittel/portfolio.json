@@ -180,8 +180,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "d6e1a7002",
-   "kurs": 754.98,
-   "wert": 1958.33
+   "kurs": 754.38,
+   "wert": 1956.78
   },
   {
    "id": "p5fe9ac51",
@@ -201,8 +201,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "d6e1a7002",
-   "kurs": 680.86,
-   "wert": 1085.48
+   "kurs": 680.65,
+   "wert": 1085.15
   },
   {
    "id": "p5106387a",
@@ -222,8 +222,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "d6e1a7002",
-   "kurs": 379.8,
-   "wert": 1129.54
+   "kurs": 379.67,
+   "wert": 1129.15
   },
   {
    "id": "p72af4e36",
@@ -243,8 +243,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "d6e1a7002",
-   "kurs": 96.55,
-   "wert": 1108.67
+   "kurs": 96.525,
+   "wert": 1108.39
   },
   {
    "id": "p3e7ff11c",
@@ -264,8 +264,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "d6e1a7002",
-   "kurs": 74759.965,
-   "wert": 1230.31
+   "kurs": 74702.515,
+   "wert": 1229.37
   },
   {
    "id": "pe3015b77",
@@ -285,8 +285,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "d6e1a7002",
-   "kurs": 2127.365,
-   "wert": 482.8
+   "kurs": 2124.375,
+   "wert": 482.13
   },
   {
    "id": "p1ad6082a",
@@ -386,7 +386,7 @@
    "ausstiegsplan": "Halten bis 30.11.; Verkauf bei NEIN-Bid ≥0.85 oder bei Ersatz-Meldung sofort.",
    "entscheidung_id": "df7939c88",
    "invalidierung": "Trump oder mehrere Quellen (Axios/CBS/NYT) melden Entscheidung zum Austausch; NEIN-Bid fällt unter 0.55.",
-   "kurs": 0.705,
+   "kurs": 0.71,
    "wert": 149.8
   },
   {
@@ -457,7 +457,7 @@
  "funding": 0.0,
  "erstellt": 1793319819.7411644,
  "start_fx": 1.1184885798616961,
- "letzter_tick": 1794255817.0459347,
+ "letzter_tick": 1794256716.5246482,
  "auftraege": [
   {
    "id": "a2e6aff",
@@ -493,7 +493,7 @@
    "ausstiegsplan": "Limit 0,79 für 300 Stück; Rest 307 halten, Exit bei Bid ≥0,82 oder Neubewertung nach NVDA-Zahlen 17.11.",
    "invalidierung": "",
    "erstellt": 1794236943.127893,
-   "geprueft_bis": 1794255817.0459347,
+   "geprueft_bis": 1794256716.5246482,
    "gueltig_bis": 1796828943.127893
   }
  ],
