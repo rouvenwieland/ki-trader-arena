@@ -2,7 +2,7 @@
  "fonds_id": "claude_mittel_rm",
  "waehrung": "USD",
  "start_kapital": 11156.327353966788,
- "cash": 1561.8773471032,
+ "cash": 1212.4081771032,
  "positionen": [
   {
    "id": "pe8186cc2",
@@ -127,16 +127,16 @@
     "url": "https://polymarket.com/event/will-apple-be-the-largest-company-in-the-world-by-market-cap-on-december-31-291"
    },
    "seite": "long",
-   "menge": 744.0,
-   "einstand": 0.4388334677419355,
+   "menge": 1246.0,
+   "einstand": 0.5390430738362761,
    "hebel": 1.0,
    "marge": 0.0,
    "eroeffnet": 1793451981.8068187,
-   "gebuehren": 3.24315,
+   "gebuehren": 7.55675,
    "funding": 0.0,
-   "ausstiegsplan": "Halten bis 31.12.; nach NVDA-Earnings 17.11. neu bewerten; Gewinnmitnahme ≥0,65.",
-   "entscheidung_id": "d62d5f0db",
-   "invalidierung": "NVDA übertrifft Apple-Marktkap nach Earnings um >5 % oder Apple-JA <0,25.",
+   "ausstiegsplan": "Halten bis 31.12.; Gewinnmitnahme ≥0.88 oder nach Earnings neu bewerten.",
+   "entscheidung_id": "d24ff66a4",
+   "invalidierung": "NVDA-Marktkap übertrifft Apple um >3 % nach Earnings (NVDA >~205 bei AAPL ~350).",
    "kurs": 0.6695,
    "wert": 491.78
   },
@@ -587,7 +587,7 @@
   }
  ],
  "realisiert": 6.883320014999882,
- "gebuehren": 33.85124633920157,
+ "gebuehren": 38.164846339201574,
  "funding": 0.0,
  "erstellt": 1793380123.8861866,
  "start_fx": 1.1156327353966788,
