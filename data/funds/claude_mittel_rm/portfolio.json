@@ -2,7 +2,7 @@
  "fonds_id": "claude_mittel_rm",
  "waehrung": "USD",
  "start_kapital": 11156.327353966788,
- "cash": 1212.4081771032,
+ "cash": 1210.2800671032,
  "positionen": [
   {
    "id": "pe8186cc2",
@@ -37,40 +37,6 @@
    "invalidierung": "NVDA schließt wieder dauerhaft über Apple-Marktkap (NVDA >~210 bei AAPL ~343) oder starke NVDA-Zahlen mit Rally >8%; dann neu bewerten/verkaufen.",
    "kurs": 0.795,
    "wert": 441.61
-  },
-  {
-   "id": "p91a23e4a",
-   "inst": {
-    "id": "pm:polymarket:3215007:NEIN",
-    "art": "pm",
-    "venue": "polymarket",
-    "ergebnis": "NEIN",
-    "frage": "Will there be no change in Fed interest rates after the December 2026 meeting?",
-    "schliesst": 1796860740.0,
-    "ref": {
-     "id": "3215007",
-     "token_ja": "42865728742506860386768556888821101266630139112044622335353850919229585308601",
-     "token_nein": "8077351031134730167836761678618167504307708651130165095377248922919635337796",
-     "tick": 0.01,
-     "condition": "0x723822eb2b143cee54c0bd7c1efba322b21f0051984c266df8879c394f1011c0",
-     "gebuehr_rate": 0.0,
-     "gebuehr_exp": 1.0
-    },
-    "url": "https://polymarket.com/event/fed-decision-in-december-20260729232808632"
-   },
-   "seite": "long",
-   "menge": 410.0,
-   "einstand": 0.73,
-   "hebel": 1.0,
-   "marge": 0.0,
-   "eroeffnet": 1793394839.7178667,
-   "gebuehren": 0.0,
-   "funding": 0.0,
-   "ausstiegsplan": "Halten bis FOMC 9.12.; Verkauf, wenn NEIN-Preis ≥0.88 (Gewinn) oder CME-Hike-Odds unter 55% fallen.",
-   "entscheidung_id": "d7e76abb3",
-   "invalidierung": "CME FedWatch Dezember-Hike-Wahrscheinlichkeit fällt unter 55% oder Warsh/Fed-Mehrheit signalisiert Pause nach weicher CPI/Jobs-Zahl.",
-   "kurs": 0.9675,
-   "wert": 395.24
   },
   {
    "id": "p8c871cfa",
@@ -538,16 +504,16 @@
     "url": "https://polymarket.com/event/will-anthropics-market-cap-be-less-than-1pt25t-at-market-close-on-ipo-day"
    },
    "seite": "long",
-   "menge": 1337.0,
-   "einstand": 0.13008347045624533,
+   "menge": 2691.0,
+   "einstand": 0.20909120401337794,
    "hebel": 1.0,
    "marge": 0.0,
    "eroeffnet": 1794107327.2862387,
-   "gebuehren": 6.05189,
+   "gebuehren": 17.137169999999998,
    "funding": 0.0,
-   "ausstiegsplan": "Halten bis IPO-Tag-1-Close; Verkauf wenn Preis ≥0.25 (Gewinn) oder Invalidierung",
-   "entscheidung_id": "d8f7f777b",
-   "invalidierung": "Offizielle Preisspanne im S-1/A mit Mittelpunkt ≥1,4 Bio oder Nasdaq-100 +8 % bis Pricing",
+   "ausstiegsplan": "Halten bis IPO-Tag (voraussichtlich Woche 16.–20.11.). Bei Preisfestsetzung neu rechnen: Schwelle = 1,25 Bio/13,09 Mrd. = $95,5. Teilverkauf, wenn JA ≥0,50 vor Handelsstart.",
+   "entscheidung_id": "d0595e7ab",
+   "invalidierung": "Endgültiger IPO-Preis ≥ $86 (dann reicht +11 % Pop) oder offizielle Polymarket-Klarstellung, dass voll verwässert gezählt wird; Graumarkt-/Indikationen Eröffnung ≥ $100.",
    "kurs": 0.26549999999999996,
    "wert": 332.91
   },
@@ -586,8 +552,8 @@
    "wert": 294.98
   }
  ],
- "realisiert": 6.883320014999882,
- "gebuehren": 38.164846339201574,
+ "realisiert": 105.28332001499986,
+ "gebuehren": 49.25012633920157,
  "funding": 0.0,
  "erstellt": 1793380123.8861866,
  "start_fx": 1.1156327353966788,

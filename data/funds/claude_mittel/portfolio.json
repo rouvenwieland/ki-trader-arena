@@ -2,7 +2,7 @@
  "fonds_id": "claude_mittel",
  "waehrung": "USD",
  "start_kapital": 11184.88579861696,
- "cash": 2400.2404516667807,
+ "cash": 2300.3418516667807,
  "positionen": [
   {
    "id": "p51e71031",
@@ -450,18 +450,50 @@
    "invalidierung": "Call beginnt ohne Nennung in den vorbereiteten Bemerkungen und Q&A ohne OpenAI-Frage; oder Transkript Q2'26 zeigt kein OpenAI.",
    "kurs": 0.48000000000000004,
    "wert": 2.5
+  },
+  {
+   "id": "pf6829e90",
+   "inst": {
+    "id": "pm:polymarket:2412744:JA",
+    "art": "pm",
+    "venue": "polymarket",
+    "ergebnis": "JA",
+    "frage": "Will Anthropic's market cap be less than $1.25T at market close on IPO day?",
+    "schliesst": 1830315540.0,
+    "ref": {
+     "id": "2412744",
+     "token_ja": "112320928806010548033202438997015358299610795310513429342055221960679493917",
+     "token_nein": "97835730826504088023775585649282026423448935249156759049180415585128284134832",
+     "tick": 0.001,
+     "condition": "0x800376dc64e4e2376a495ed0df4a789192256c821bb4d1452acdd5931bca2fa5",
+     "gebuehr_rate": 0.04,
+     "gebuehr_exp": 1.0
+    },
+    "url": "https://polymarket.com/event/anthropic-ipo-closing-market-cap-higher-strikes"
+   },
+   "seite": "long",
+   "menge": 340.0,
+   "einstand": 0.2856571176470588,
+   "hebel": 1.0,
+   "marge": 0.0,
+   "eroeffnet": 1794323323.1355715,
+   "gebuehren": 2.77518,
+   "funding": 0.0,
+   "ausstiegsplan": "Bis zum IPO-Tag halten. Verkaufen, wenn der Bid ≥0,40 erreicht. Nach der Preisfestsetzung am 18.11. neu bewerten: Bei einem IPO-Preis ≥88 $ schließen.",
+   "entscheidung_id": "d48fafa83",
+   "invalidierung": "Die Nasdaq-Listing-Seite bzw. Yahoo zeigen vor dem IPO eine Aktienzahl von ≥16 Mrd., oder die Preisfestsetzung liegt bei ≥90 $."
   }
  ],
  "realisiert": -50.88627954909997,
- "gebuehren": 53.4406333771088,
+ "gebuehren": 56.2158133771088,
  "funding": 0.0,
  "erstellt": 1793319819.7411644,
  "start_fx": 1.1184885798616961,
  "letzter_tick": 1794322947.5900967,
  "auftraege": [
   {
-   "id": "a2e6aff",
-   "entscheidung_id": "d5209449e",
+   "id": "a99ba01",
+   "entscheidung_id": "d1f464ecf",
    "inst": {
     "id": "pm:polymarket:676741:JA",
     "art": "pm",
@@ -486,15 +518,52 @@
    "betrag_usd": null,
    "menge": 300,
    "hebel": 1.0,
-   "limit_preis": 0.79,
+   "limit_preis": 0.84,
    "stop_preis": null,
    "stop_loss": null,
    "take_profit": null,
-   "ausstiegsplan": "Limit 0,79 für 300 Stück; Rest 307 halten, Exit bei Bid ≥0,82 oder Neubewertung nach NVDA-Zahlen 17.11.",
+   "ausstiegsplan": "",
    "invalidierung": "",
-   "erstellt": 1794236943.127893,
-   "geprueft_bis": 1794322947.5900967,
-   "gueltig_bis": 1796828943.127893
+   "erstellt": 1794323323.136912,
+   "geprueft_bis": 1794323323.136912,
+   "gueltig_bis": 1796915323.136912
+  },
+  {
+   "id": "ac9b893",
+   "entscheidung_id": "d68c9594f",
+   "inst": {
+    "id": "pm:polymarket:5211896:NEIN",
+    "art": "pm",
+    "venue": "polymarket",
+    "ergebnis": "NEIN",
+    "frage": "Pete Hegseth out as Secretary of Defense by November 30?",
+    "schliesst": 1796101140.0,
+    "ref": {
+     "id": "5211896",
+     "token_ja": "77749961750188650483566675944111658186636079167021701797180425278104559514260",
+     "token_nein": "84166566161463506072534682144275272622459723213760542213410557001119701471587",
+     "tick": 0.01,
+     "condition": "0x2d858f0a25a61dfde6485f3d8e75aed397bed616c3e458b66e10e642fb2f9759",
+     "gebuehr_rate": 0.04,
+     "gebuehr_exp": 1.0
+    },
+    "url": "https://polymarket.com/event/pete-hegseth-out-as-secretary-of-defense-by-october-31-20261001003401433"
+   },
+   "aktion": "verkaufen",
+   "typ": "limit",
+   "seite": "long",
+   "betrag_usd": null,
+   "menge": 214,
+   "hebel": 1.0,
+   "limit_preis": 0.86,
+   "stop_preis": null,
+   "stop_loss": null,
+   "take_profit": null,
+   "ausstiegsplan": "",
+   "invalidierung": "",
+   "erstellt": 1794323323.1378255,
+   "geprueft_bis": 1794323323.1378255,
+   "gueltig_bis": 1796915323.1378255
   }
  ],
  "rebalancing": {

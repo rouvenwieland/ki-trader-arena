@@ -2,7 +2,7 @@
  "fonds_id": "liga_deepseek",
  "waehrung": "USD",
  "start_kapital": 11184.88579861696,
- "cash": 2305.143039674383,
+ "cash": 2443.453909674383,
  "positionen": [
   {
    "id": "p00666bfa",
@@ -87,40 +87,6 @@
    "entscheidung_id": "d8e5f296a",
    "kurs": 751.418,
    "wert": 2543.37
-  },
-  {
-   "id": "pcb4fd55d",
-   "inst": {
-    "id": "pm:polymarket:3215008:NEIN",
-    "art": "pm",
-    "venue": "polymarket",
-    "ergebnis": "NEIN",
-    "frage": "Will the Fed increase interest rates by 25 bps after the December 2026 meeting?",
-    "schliesst": 1796860740.0,
-    "ref": {
-     "id": "3215008",
-     "token_ja": "111662129652828266889360374468657435151479595863413519836161861837506140152890",
-     "token_nein": "94483965432909797688470702512207472940215538148754820061518518664128018848687",
-     "tick": 0.01,
-     "condition": "0x8a4196617dcb703e49d9bb36d3847bf6a75fd364dbd19f8d408ac944bf1a03d8",
-     "gebuehr_rate": 0.05,
-     "gebuehr_exp": 1.0
-    },
-    "url": "https://polymarket.com/event/fed-decision-in-december-20260729232808632"
-   },
-   "seite": "long",
-   "menge": 963.0,
-   "einstand": 0.24,
-   "hebel": 1.0,
-   "marge": 0.0,
-   "eroeffnet": 1794010128.3720248,
-   "gebuehren": 8.78256,
-   "funding": 0.0,
-   "ausstiegsplan": "Halten bis FOMC 09.12.2026. Vorzeitig verkaufen nur, wenn NEIN-Preis >0,32 erreicht (dann ist der Edge weg, aber 30% Gewinn gesichert) oder Invalidierung eintritt.",
-   "entscheidung_id": "df4b3f25b",
-   "invalidierung": "FedWatch/CME-Futures zeigen >85% für +25bp im Dezember, oder ein FOMC-Mitglied bestätigt öffentlich eine Erhöhungsabsicht, oder der Marktpreis NEIN fällt unter 0,15 (dann hat der Markt neue, harte Information).",
-   "kurs": 0.155,
-   "wert": 144.45
   },
   {
    "id": "p565093a5",
@@ -246,8 +212,8 @@
    "wert": 166.65
   }
  ],
- "realisiert": -483.18773566482037,
- "gebuehren": 99.67400925396547,
+ "realisiert": -575.9968656648203,
+ "gebuehren": 105.81313925396546,
  "funding": 0.0,
  "erstellt": 1793319819.7411644,
  "start_fx": 1.1184885798616961,
@@ -261,7 +227,7 @@
      "venue": "yahoo",
      "symbol": "SPY"
     },
-    "anteil": 0.24
+    "anteil": 0.25
    },
    "stock:TLT": {
     "inst": {
@@ -270,7 +236,7 @@
      "venue": "yahoo",
      "symbol": "TLT"
     },
-    "anteil": 0.17
+    "anteil": 0.12
    },
    "stock:AGG": {
     "inst": {
@@ -279,7 +245,7 @@
      "venue": "yahoo",
      "symbol": "AGG"
     },
-    "anteil": 0.12
+    "anteil": 0.16
    },
    "stock:GLD": {
     "inst": {
@@ -288,7 +254,7 @@
      "venue": "yahoo",
      "symbol": "GLD"
     },
-    "anteil": 0.11
+    "anteil": 0.13
    },
    "spot:BTC-USD": {
     "inst": {
@@ -301,8 +267,8 @@
    }
   },
   "schwelle_pp": 3.0,
-  "seit": 1794290397.7413397,
-  "entscheidung_id": "d516138f6"
+  "seit": 1794323079.6893399,
+  "entscheidung_id": "d745dfc32"
  },
  "auftraege": []
 }
