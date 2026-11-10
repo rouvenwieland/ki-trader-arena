@@ -22,8 +22,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "d3af64508",
-   "kurs": 368.43,
-   "wert": 1085.55
+   "kurs": 368.79,
+   "wert": 1086.61
   },
   {
    "id": "p3e4bc435",
@@ -43,8 +43,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "d3af64508",
-   "kurs": 746.64,
-   "wert": 3199.98
+   "kurs": 746.91,
+   "wert": 3201.14
   },
   {
    "id": "pb315f18b",
@@ -64,8 +64,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "d3af64508",
-   "kurs": 72882.725,
-   "wert": 1972.4
+   "kurs": 72928.195,
+   "wert": 1973.64
   },
   {
    "id": "p5a2259b8",
@@ -98,8 +98,8 @@
    "ausstiegsplan": "Halten bis 31.12. oder verkaufen bei JA ≥65¢ (Halbzeit-Hoch). Teilverkauf bei klarer Stabilisierung des Weißen Hauses hinter Hegseth.",
    "entscheidung_id": "db3939865",
    "invalidierung": "Konkrete, glaubwürdige Meldung, dass Hegseth explizit bestätigt bleibt (z. B. WH-Terminplan bis Q1 2027) oder Beruhigung der Berichterstattung über ≥2 Wochen.",
-   "kurs": 0.28500000000000003,
-   "wert": 195.44
+   "kurs": 0.295,
+   "wert": 202.42
   },
   {
    "id": "p2d9f604d",
@@ -125,8 +125,8 @@
    "ausstiegsplan": "Verkauf bei Wertverdopplung (BTC ~67–68k) oder Halten bis 25.12. Halbierung der Position, wenn BTC über 80k zurückkehrt (Theta-Bremse).",
    "entscheidung_id": "d0fe400cd",
    "invalidierung": "BTC schließt 3 Tage in Folge über 80k mit fallender realisierter Vola (Abwärtstrend gebrochen).",
-   "kurs": 3299.333541,
-   "wert": 819.37
+   "kurs": 3265.365824,
+   "wert": 810.87
   },
   {
    "id": "p5a6a2ac6",
@@ -146,8 +146,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "d3af64508",
-   "kurs": 80.631,
-   "wert": 518.51
+   "kurs": 80.622,
+   "wert": 518.45
   }
  ],
  "realisiert": -593.8131354666724,
@@ -155,7 +155,7 @@
  "funding": 0.0,
  "erstellt": 1793319819.7411644,
  "start_fx": 1.1184885798616961,
- "letzter_tick": 1794329246.721893,
+ "letzter_tick": 1794330147.2893796,
  "rebalancing": {
   "ziele": {
    "stock:SPY": {
