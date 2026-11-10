@@ -2,7 +2,7 @@
  "fonds_id": "ko_nein",
  "waehrung": "USD",
  "start_kapital": 11157.431109273288,
- "cash": 962.141199273286,
+ "cash": 1173.141199273286,
  "positionen": [
   {
    "id": "p9e535f2b",
@@ -131,38 +131,6 @@
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
    "kurs": 0.3795,
    "wert": 94.5
-  },
-  {
-   "id": "pe65b0b73",
-   "inst": {
-    "id": "pm:polymarket:648383:NEIN",
-    "art": "pm",
-    "venue": "polymarket",
-    "ergebnis": "NEIN",
-    "frage": "Billionaire one-time wealth tax passes in California election 2026?",
-    "schliesst": 1793768340.0,
-    "ref": {
-     "id": "648383",
-     "token_ja": "38487155026041533062980821872238023790862908049855818921747904019478875496931",
-     "token_nein": "7330556727383706468662351173040823924339817877848787483691015397124505109410",
-     "tick": 0.01,
-     "condition": "0x9345d5142a67f5541264c96515496affee02580f1c572680759eac9fd2a1588a",
-     "gebuehr_rate": 0.0,
-     "gebuehr_exp": 1.0
-    },
-    "url": "https://polymarket.com/event/billionaire-one-time-wealth-tax-passes-in-california-election-2026"
-   },
-   "seite": "long",
-   "menge": 211.0,
-   "einstand": 0.79,
-   "hebel": 1.0,
-   "marge": 0.0,
-   "eroeffnet": 1793382823.7048643,
-   "gebuehren": 0.0,
-   "funding": 0.0,
-   "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": null,
-   "wert": 166.69
   },
   {
    "id": "pf0e983be",
@@ -513,7 +481,7 @@
    "gebuehren": 0.0,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.08449999999999999,
+   "kurs": 0.08349999999999999,
    "wert": 126.52
   },
   {
@@ -833,8 +801,8 @@
    "gebuehren": 3.5937,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.845,
-   "wert": 294.03
+   "kurs": 0.85,
+   "wert": 297.66
   },
   {
    "id": "pa1fe7c67",
@@ -1413,11 +1381,11 @@
    "wert": 159.36
   }
  ],
- "realisiert": -2638.7931,
+ "realisiert": -2594.4831,
  "gebuehren": 269.03188,
  "funding": 0.0,
  "erstellt": 1793379225.5430336,
  "start_fx": 1.1157431109273288,
- "letzter_tick": 1794298385.4556253,
+ "letzter_tick": 1794298523.1263275,
  "kontrolle_bis": 1794251447.2804189
 }
