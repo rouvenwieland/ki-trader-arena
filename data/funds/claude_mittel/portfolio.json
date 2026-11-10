@@ -180,8 +180,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "d6e1a7002",
-   "kurs": 745.818,
-   "wert": 1934.57
+   "kurs": 747.0,
+   "wert": 1937.63
   },
   {
    "id": "p5fe9ac51",
@@ -201,8 +201,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "d6e1a7002",
-   "kurs": 669.005,
-   "wert": 1066.58
+   "kurs": 670.28,
+   "wert": 1068.61
   },
   {
    "id": "p5106387a",
@@ -222,8 +222,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "d6e1a7002",
-   "kurs": 368.355,
-   "wert": 1095.5
+   "kurs": 369.01,
+   "wert": 1097.45
   },
   {
    "id": "p72af4e36",
@@ -243,8 +243,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "d6e1a7002",
-   "kurs": 95.756,
-   "wert": 1099.55
+   "kurs": 95.8,
+   "wert": 1100.06
   },
   {
    "id": "p3e7ff11c",
@@ -264,8 +264,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "d6e1a7002",
-   "kurs": 73184.185,
-   "wert": 1204.38
+   "kurs": 73402.11,
+   "wert": 1207.95
   },
   {
    "id": "pe3015b77",
@@ -285,8 +285,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "d6e1a7002",
-   "kurs": 2028.6550000000002,
-   "wert": 460.41
+   "kurs": 2038.915,
+   "wert": 462.74
   },
   {
    "id": "p1ad6082a",
@@ -353,7 +353,7 @@
    "entscheidung_id": "d1fa25bbb",
    "invalidierung": "NVDA-Marktkapitalisierung innerhalb 5 % von Apple (z. B. NVDA ≥200 bei AAPL ~349) nach den Earnings, oder NVDA-JA ≥0.45.",
    "kurs": 0.845,
-   "wert": 355.24
+   "wert": 359.52
   },
   {
    "id": "pb2463e57",
@@ -519,7 +519,7 @@
  "funding": 0.0,
  "erstellt": 1793319819.7411644,
  "start_fx": 1.1184885798616961,
- "letzter_tick": 1794334782.2303662,
+ "letzter_tick": 1794335679.7528234,
  "auftraege": [
   {
    "id": "ac9b893",
@@ -555,7 +555,7 @@
    "ausstiegsplan": "",
    "invalidierung": "",
    "erstellt": 1794323323.1378255,
-   "geprueft_bis": 1794334782.2303662,
+   "geprueft_bis": 1794335679.7528234,
    "gueltig_bis": 1796915323.1378255
   }
  ],
