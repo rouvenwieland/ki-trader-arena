@@ -264,8 +264,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "d6e1a7002",
-   "kurs": 74678.36499999999,
-   "wert": 1228.97
+   "kurs": 74583.545,
+   "wert": 1227.41
   },
   {
    "id": "pe3015b77",
@@ -285,8 +285,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "d6e1a7002",
-   "kurs": 2121.285,
-   "wert": 481.43
+   "kurs": 2116.525,
+   "wert": 480.33
   },
   {
    "id": "p1ad6082a",
@@ -448,7 +448,7 @@
    "ausstiegsplan": "Bis Abrechnung nach dem Call am 10.11. halten; kein Nachkauf.",
    "entscheidung_id": "d394b3bc9",
    "invalidierung": "Call beginnt ohne Nennung in den vorbereiteten Bemerkungen und Q&A ohne OpenAI-Frage; oder Transkript Q2'26 zeigt kein OpenAI.",
-   "kurs": 0.45,
+   "kurs": 0.45499999999999996,
    "wert": 22.0
   }
  ],
@@ -457,7 +457,7 @@
  "funding": 0.0,
  "erstellt": 1793319819.7411644,
  "start_fx": 1.1184885798616961,
- "letzter_tick": 1794284885.8906965,
+ "letzter_tick": 1794285786.1811297,
  "auftraege": [
   {
    "id": "a2e6aff",
@@ -493,7 +493,7 @@
    "ausstiegsplan": "Limit 0,79 für 300 Stück; Rest 307 halten, Exit bei Bid ≥0,82 oder Neubewertung nach NVDA-Zahlen 17.11.",
    "invalidierung": "",
    "erstellt": 1794236943.127893,
-   "geprueft_bis": 1794284885.8906965,
+   "geprueft_bis": 1794285786.1811297,
    "gueltig_bis": 1796828943.127893
   }
  ],
