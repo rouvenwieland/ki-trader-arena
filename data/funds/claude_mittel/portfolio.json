@@ -264,8 +264,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "d6e1a7002",
-   "kurs": 73650.975,
-   "wert": 1212.06
+   "kurs": 73640.775,
+   "wert": 1211.89
   },
   {
    "id": "pe3015b77",
@@ -285,8 +285,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "d6e1a7002",
-   "kurs": 2049.6549999999997,
-   "wert": 465.17
+   "kurs": 2049.415,
+   "wert": 465.12
   },
   {
    "id": "p1ad6082a",
@@ -448,8 +448,8 @@
    "ausstiegsplan": "Bis zum IPO-Tag halten. Verkaufen, wenn der Bid ≥0,40 erreicht. Nach der Preisfestsetzung am 18.11. neu bewerten: Bei einem IPO-Preis ≥88 $ schließen.",
    "entscheidung_id": "d48fafa83",
    "invalidierung": "Die Nasdaq-Listing-Seite bzw. Yahoo zeigen vor dem IPO eine Aktienzahl von ≥16 Mrd., oder die Preisfestsetzung liegt bei ≥90 $.",
-   "kurs": 0.241,
-   "wert": 79.9
+   "kurs": 0.239,
+   "wert": 78.88
   },
   {
    "id": "pac09f469",
@@ -505,7 +505,7 @@
    "ausstiegsplan": "NEIN-Bid ≥0,80 oder Halten bis 31.12.; sofort schließen bei Meldung, dass der Board Huang beurlaubt/ersetzt oder Rücktritt erwägt.",
    "entscheidung_id": "ddfa1fc63",
    "invalidierung": "Reuters/WSJ/Bloomberg: Board erwägt Ablösung oder Huang nimmt Auszeit; Polymarket 'Huang resignation' über 0,30.",
-   "kurs": 0.4835476060994402,
+   "kurs": 0.4835473773735155,
    "wert": 76.77
   }
  ],
@@ -514,7 +514,7 @@
  "funding": 0.0,
  "erstellt": 1793319819.7411644,
  "start_fx": 1.1184885798616961,
- "letzter_tick": 1794352779.608836,
+ "letzter_tick": 1794352911.6075103,
  "auftraege": [],
  "rebalancing": {
   "ziele": {
