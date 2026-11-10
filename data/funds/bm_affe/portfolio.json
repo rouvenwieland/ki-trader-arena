@@ -2,52 +2,33 @@
  "fonds_id": "bm_affe",
  "waehrung": "USD",
  "start_kapital": 11184.88579861696,
- "cash": 7009.091554636215,
+ "cash": 9507.047549974488,
  "positionen": [
   {
-   "id": "pc21f3dc3",
+   "id": "p5bf64a08",
    "inst": {
-    "id": "spot:ADA-USD",
+    "id": "spot:ETH-USD",
     "art": "spot",
     "venue": "coinbase",
-    "symbol": "ADA-USD"
+    "symbol": "ETH-USD"
    },
    "seite": "long",
-   "menge": 11617.826670405251,
-   "einstand": 0.1761117688281205,
+   "menge": 0.6075591343007993,
+   "einstand": 2132.32638,
    "hebel": 1.0,
    "marge": 0.0,
-   "eroeffnet": 1794183019.4346402,
-   "gebuehren": 12.276216029181494,
+   "eroeffnet": 1794269453.1539066,
+   "gebuehren": 7.773086216877344,
    "funding": 0.0,
-   "kurs": 0.176985,
-   "wert": 2055.77
-  },
-  {
-   "id": "pe9674fcf",
-   "inst": {
-    "id": "spot:AVAX-USD",
-    "art": "spot",
-    "venue": "coinbase",
-    "symbol": "AVAX-USD"
-   },
-   "seite": "long",
-   "menge": 203.76617101695075,
-   "einstand": 7.952913017237448,
-   "hebel": 1.0,
-   "marge": 0.0,
-   "eroeffnet": 1794183019.4346402,
-   "gebuehren": 9.723207803720038,
-   "funding": 0.0,
-   "kurs": 8.6385,
-   "wert": 1759.93
+   "kurs": 2131.895,
+   "wert": 1295.25
   }
  ],
- "realisiert": -248.54332419961838,
- "gebuehren": 499.30160610114115,
+ "realisiert": -113.87051198183323,
+ "gebuehren": 530.0198238131978,
  "funding": 0.0,
  "erstellt": 1793319819.7411644,
  "start_fx": 1.1184885798616961,
- "letzter_tick": 1794268553.1049495,
- "letzter_tag": "2026-11-09"
+ "letzter_tick": 1794269453.1539066,
+ "letzter_tag": "2026-11-10"
 }
