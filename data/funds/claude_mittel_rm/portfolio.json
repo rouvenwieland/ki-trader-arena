@@ -2,7 +2,7 @@
  "fonds_id": "claude_mittel_rm",
  "waehrung": "USD",
  "start_kapital": 11156.327353966788,
- "cash": 1365.3121598115338,
+ "cash": 1335.3903500504719,
  "positionen": [
   {
    "id": "pe8186cc2",
@@ -578,6 +578,32 @@
    "invalidierung": "Polymarket-JA >0.30 oder Board-Befund schwerwiegend",
    "kurs": 0.6096476812821185,
    "wert": 152.84
+  },
+  {
+   "id": "p51c17729",
+   "inst": {
+    "id": "pm:manifold:zEuhZdCOtQ:NEIN",
+    "art": "pm",
+    "venue": "manifold",
+    "ergebnis": "NEIN",
+    "frage": "Will Anthropic's market cap on the day of their IPO be above 2 trillion?",
+    "schliesst": 1830297540.0,
+    "ref": {
+     "id": "zEuhZdCOtQ"
+    },
+    "url": "https://manifold.markets/BenAybar/will-anthropics-market-cap-on-the-o"
+   },
+   "seite": "long",
+   "menge": 38.0,
+   "einstand": 0.7874160463437331,
+   "hebel": 1.0,
+   "marge": 0.0,
+   "eroeffnet": 1794337740.4413974,
+   "gebuehren": 0.0,
+   "funding": 0.0,
+   "ausstiegsplan": "Halten bis Tag-1-Schluss 19.11.; Verkauf, falls Preisfestsetzung ≥$90 oder JA-Preis >0.40.",
+   "entscheidung_id": "da86d3e2a",
+   "invalidierung": "IPO-Preis über Spanne (≥$85) oder Nachrichten, dass Marktkap FD-basiert >2 Bio bei $111 gezählt wird und Orderbuch-Hype."
   }
  ],
  "realisiert": 127.24826927850235,

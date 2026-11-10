@@ -2,7 +2,7 @@
  "fonds_id": "claude_mittel",
  "waehrung": "USD",
  "start_kapital": 11184.88579861696,
- "cash": 2642.3010224939744,
+ "cash": 2542.890223490444,
  "positionen": [
   {
    "id": "p51e71031",
@@ -478,6 +478,33 @@
    "invalidierung": "IPO-Preisspanne auf ≥$95 angehoben oder Pricing >$90 am 18.11.",
    "kurs": 0.7845653108707688,
    "wert": 95.67
+  },
+  {
+   "id": "p5f0a5658",
+   "inst": {
+    "id": "pm:manifold:OnpNLLgytQ:NEIN",
+    "art": "pm",
+    "venue": "manifold",
+    "ergebnis": "NEIN",
+    "frage": "Jensen Huang leave or announce leaving as Nvidia CEO in 2026?",
+    "schliesst": 1798761540.0,
+    "ref": {
+     "id": "OnpNLLgytQ"
+    },
+    "url": "https://manifold.markets/Simon74fe/jensen-huang-leave-or-announce-leav"
+   },
+   "seite": "long",
+   "menge": 159.0,
+   "einstand": 0.6252251509656006,
+   "hebel": 1.0,
+   "marge": 0.0,
+   "eroeffnet": 1794337749.231922,
+   "gebuehren": 0.0,
+   "funding": 0.0,
+   "take_profit": 0.8,
+   "ausstiegsplan": "NEIN-Bid ≥0,80 oder Halten bis 31.12.; sofort schließen bei Meldung, dass der Board Huang beurlaubt/ersetzt oder Rücktritt erwägt.",
+   "entscheidung_id": "ddfa1fc63",
+   "invalidierung": "Reuters/WSJ/Bloomberg: Board erwägt Ablösung oder Huang nimmt Auszeit; Polymarket 'Huang resignation' über 0,30."
   }
  ],
  "realisiert": 68.20419086276166,
