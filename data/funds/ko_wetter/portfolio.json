@@ -5,32 +5,6 @@
  "cash": 3204.3596216355045,
  "positionen": [
   {
-   "id": "p5041bd05",
-   "inst": {
-    "id": "pm:kalshi:KXHIGHLAX-26NOV09-B82.5:JA",
-    "art": "pm",
-    "venue": "kalshi",
-    "ergebnis": "JA",
-    "frage": "Will the maximum temperature be 82-83° on Nov 9, 2026? [82° to 83°]",
-    "schliesst": 1794301200.0,
-    "ref": {
-     "ticker": "KXHIGHLAX-26NOV09-B82.5"
-    },
-    "url": "https://kalshi.com/markets/KXHIGHLAX-26NOV09"
-   },
-   "seite": "long",
-   "menge": 1256.0,
-   "einstand": 0.06490445859872611,
-   "hebel": 1.0,
-   "marge": 0.0,
-   "eroeffnet": 1794184820.2600992,
-   "gebuehren": 5.34,
-   "funding": 0.0,
-   "ausstiegsplan": "Halten bis zur Abrechnung (Wetter-Regel)",
-   "kurs": null,
-   "wert": 81.52
-  },
-  {
    "id": "p69c2b627",
    "inst": {
     "id": "pm:kalshi:KXHIGHNY-26NOV10-T61:JA",
@@ -53,8 +27,8 @@
    "gebuehren": 5.04,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Wetter-Regel)",
-   "kurs": 0.28500000000000003,
-   "wert": 82.32
+   "kurs": 0.245,
+   "wert": 70.56
   },
   {
    "id": "p174c80ac",
@@ -79,8 +53,8 @@
    "gebuehren": 4.3,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Wetter-Regel)",
-   "kurs": 0.1,
-   "wert": 40.95
+   "kurs": 0.07500000000000001,
+   "wert": 31.85
   },
   {
    "id": "p7ee22434",
@@ -105,8 +79,8 @@
    "gebuehren": 5.54,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Wetter-Regel)",
-   "kurs": 0.325,
-   "wert": 112.96
+   "kurs": 0.3,
+   "wert": 102.37
   },
   {
    "id": "p683818dd",
@@ -157,8 +131,8 @@
    "gebuehren": 3.38,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Wetter-Regel)",
-   "kurs": 0.055,
-   "wert": 40.4
+   "kurs": 0.07500000000000001,
+   "wert": 56.56
   },
   {
    "id": "p045c327c",
@@ -209,8 +183,8 @@
    "gebuehren": 3.01,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Wetter-Regel)",
-   "kurs": 0.6,
-   "wert": 109.15
+   "kurs": 0.625,
+   "wert": 114.7
   },
   {
    "id": "p99173aba",
@@ -239,11 +213,11 @@
    "wert": 113.17
   }
  ],
- "realisiert": -6307.948432331286,
+ "realisiert": -6389.468432331287,
  "gebuehren": 730.2200000000001,
  "funding": 0.0,
  "erstellt": 1793380123.8861866,
  "start_fx": 1.1156327353966788,
- "letzter_tick": 1794322947.5900967,
+ "letzter_tick": 1794323847.5620537,
  "wetter_letzter": 1794321147.2354496
 }
