@@ -159,8 +159,8 @@
    "ausstiegsplan": "Bid ≥0,70 verkaufen (P erreicht); Neubewertung nach NVDA-Zahlen 19.11.; schließen, wenn Apple-Vorsprung <3 %.",
    "entscheidung_id": "d7e53ef04",
    "invalidierung": "NVDA-Marktkap. kommt auf <3 % Abstand zu Apple, oder Apple fällt >8 % relativ.",
-   "kurs": 0.834,
-   "wert": 252.35
+   "kurs": 0.812,
+   "wert": 247.14
   },
   {
    "id": "pb60e44cc",
@@ -264,8 +264,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "d6e1a7002",
-   "kurs": 73815.815,
-   "wert": 1214.77
+   "kurs": 73809.195,
+   "wert": 1214.67
   },
   {
    "id": "pe3015b77",
@@ -285,7 +285,7 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "d6e1a7002",
-   "kurs": 2056.8,
+   "kurs": 2056.825,
    "wert": 466.8
   },
   {
@@ -352,8 +352,8 @@
    "ausstiegsplan": "Gewinn mitnehmen bei NEIN-Bid ≥0.78 (=P). Nach NVDA-Earnings neu rechnen. Sonst halten bis 31.12.",
    "entscheidung_id": "d1fa25bbb",
    "invalidierung": "NVDA-Marktkapitalisierung innerhalb 5 % von Apple (z. B. NVDA ≥200 bei AAPL ~349) nach den Earnings, oder NVDA-JA ≥0.45.",
-   "kurs": 0.885,
-   "wert": 376.64
+   "kurs": 0.825,
+   "wert": 350.96
   },
   {
    "id": "p41d9ec41",
@@ -414,8 +414,8 @@
    "ausstiegsplan": "Bis Abrechnung nach dem Call am 10.11. halten; kein Nachkauf.",
    "entscheidung_id": "d394b3bc9",
    "invalidierung": "Call beginnt ohne Nennung in den vorbereiteten Bemerkungen und Q&A ohne OpenAI-Frage; oder Transkript Q2'26 zeigt kein OpenAI.",
-   "kurs": 0.495,
-   "wert": 2.5
+   "kurs": 0.49,
+   "wert": 2.0
   },
   {
    "id": "pf6829e90",
@@ -448,7 +448,7 @@
    "ausstiegsplan": "Bis zum IPO-Tag halten. Verkaufen, wenn der Bid ≥0,40 erreicht. Nach der Preisfestsetzung am 18.11. neu bewerten: Bei einem IPO-Preis ≥88 $ schließen.",
    "entscheidung_id": "d48fafa83",
    "invalidierung": "Die Nasdaq-Listing-Seite bzw. Yahoo zeigen vor dem IPO eine Aktienzahl von ≥16 Mrd., oder die Preisfestsetzung liegt bei ≥90 $.",
-   "kurs": 0.2335,
+   "kurs": 0.23399999999999999,
    "wert": 79.22
   },
   {
@@ -476,8 +476,8 @@
    "ausstiegsplan": "Halten bis Auflösung; Verkauf bei NEIN-Bid ≥0.93; neu bewerten bei IPO-Preis ≥$90 oder Spanne angehoben.",
    "entscheidung_id": "d9f975d34",
    "invalidierung": "IPO-Preisspanne auf ≥$95 angehoben oder Pricing >$90 am 18.11.",
-   "kurs": 0.9218861688540096,
-   "wert": 112.46
+   "kurs": 0.9000270823085857,
+   "wert": 109.79
   },
   {
    "id": "p5f0a5658",
@@ -505,7 +505,7 @@
    "ausstiegsplan": "NEIN-Bid ≥0,80 oder Halten bis 31.12.; sofort schließen bei Meldung, dass der Board Huang beurlaubt/ersetzt oder Rücktritt erwägt.",
    "entscheidung_id": "ddfa1fc63",
    "invalidierung": "Reuters/WSJ/Bloomberg: Board erwägt Ablösung oder Huang nimmt Auszeit; Polymarket 'Huang resignation' über 0,30.",
-   "kurs": 0.6587495867302433,
+   "kurs": 0.6587494543407959,
    "wert": 104.67
   }
  ],
@@ -514,7 +514,7 @@
  "funding": 0.0,
  "erstellt": 1793319819.7411644,
  "start_fx": 1.1184885798616961,
- "letzter_tick": 1794347379.9766204,
+ "letzter_tick": 1794348279.7826583,
  "auftraege": [],
  "rebalancing": {
   "ziele": {
