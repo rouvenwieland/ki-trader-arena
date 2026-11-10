@@ -2,7 +2,7 @@
  "fonds_id": "ko_nein",
  "waehrung": "USD",
  "start_kapital": 11157.431109273288,
- "cash": 1005.7920692732861,
+ "cash": 1473.792069273286,
  "positionen": [
   {
    "id": "p9e535f2b",
@@ -65,7 +65,7 @@
    "gebuehren": 0.0,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.969,
+   "kurs": 0.9684999999999999,
    "wert": 212.96
   },
   {
@@ -97,8 +97,8 @@
    "gebuehren": 0.0,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.761,
-   "wert": 207.67
+   "kurs": 0.763,
+   "wert": 207.94
   },
   {
    "id": "pdcfb5d53",
@@ -129,8 +129,8 @@
    "gebuehren": 0.0,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.362,
-   "wert": 89.0
+   "kurs": 0.361,
+   "wert": 88.75
   },
   {
    "id": "pf0e983be",
@@ -193,8 +193,8 @@
    "gebuehren": 1.04341,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.895,
-   "wert": 161.98
+   "kurs": 0.885,
+   "wert": 160.16
   },
   {
    "id": "p7e5c2e70",
@@ -257,8 +257,8 @@
    "gebuehren": 0.0,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.775,
-   "wert": 267.96
+   "kurs": 0.805,
+   "wert": 278.4
   },
   {
    "id": "p1f028824",
@@ -321,8 +321,8 @@
    "gebuehren": 0.0,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.5449999999999999,
-   "wert": 98.43
+   "kurs": 0.565,
+   "wert": 102.29
   },
   {
    "id": "p9f764afd",
@@ -385,8 +385,8 @@
    "gebuehren": 1.96552,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.795,
-   "wert": 157.21
+   "kurs": 0.775,
+   "wert": 153.23
   },
   {
    "id": "p4cd35a1d",
@@ -417,8 +417,8 @@
    "gebuehren": 5.41501,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.35,
-   "wert": 105.4
+   "kurs": 0.3,
+   "wert": 89.9
   },
   {
    "id": "p21e9c816",
@@ -545,8 +545,8 @@
    "gebuehren": 0.0,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.03,
-   "wert": 8.07
+   "kurs": 0.0295,
+   "wert": 7.71
   },
   {
    "id": "p5037ef0e",
@@ -673,8 +673,8 @@
    "gebuehren": 4.65658,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.885,
-   "wert": 242.0
+   "kurs": 0.895,
+   "wert": 244.75
   },
   {
    "id": "pd183209f",
@@ -741,38 +741,6 @@
    "wert": 167.14
   },
   {
-   "id": "pe88b93d8",
-   "inst": {
-    "id": "pm:polymarket:5691229:NEIN",
-    "art": "pm",
-    "venue": "polymarket",
-    "ergebnis": "NEIN",
-    "frage": "Will monthly inflation increase by 0.3% in October?",
-    "schliesst": 1794373140.0,
-    "ref": {
-     "id": "5691229",
-     "token_ja": "105740773335001335762844649510666932212071130919882213952650535306816170892027",
-     "token_nein": "1215185012665762334321626546491455470534569930713988074565531858996286858398",
-     "tick": 0.01,
-     "condition": "0x1477a29da5bdf455b9dc9a592462fc50be5d36ea303d8eb68934e54e82866c92",
-     "gebuehr_rate": 0.05,
-     "gebuehr_exp": 1.0
-    },
-    "url": "https://polymarket.com/event/will-monthly-inflation-increase-by-0pt3-in-october-2026"
-   },
-   "seite": "long",
-   "menge": 291.0,
-   "einstand": 0.5626996563573883,
-   "hebel": 1.0,
-   "marge": 0.0,
-   "eroeffnet": 1793640440.6130333,
-   "gebuehren": 3.5803,
-   "funding": 0.0,
-   "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": null,
-   "wert": 163.75
-  },
-  {
    "id": "p9869a857",
    "inst": {
     "id": "pm:polymarket:6172686:NEIN",
@@ -801,8 +769,8 @@
    "gebuehren": 3.5937,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.765,
-   "wert": 268.62
+   "kurs": 0.76,
+   "wert": 264.99
   },
   {
    "id": "pa1fe7c67",
@@ -865,7 +833,7 @@
    "gebuehren": 0.17475,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.8875,
+   "kurs": 0.888,
    "wert": 150.79
   },
   {
@@ -897,8 +865,8 @@
    "gebuehren": 0.95322,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.72,
-   "wert": 137.74
+   "kurs": 0.725,
+   "wert": 139.68
   },
   {
    "id": "pe85e8fb3",
@@ -929,8 +897,8 @@
    "gebuehren": 5.82112,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.991,
-   "wert": 1617.66
+   "kurs": 0.988,
+   "wert": 1612.76
   },
   {
    "id": "pca00edbf",
@@ -993,7 +961,7 @@
    "gebuehren": 4.89529,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.0115,
+   "kurs": 0.012,
    "wert": 7.25
   },
   {
@@ -1057,7 +1025,7 @@
    "gebuehren": 0.54885,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.9275,
+   "kurs": 0.927,
    "wert": 156.11
   },
   {
@@ -1121,8 +1089,8 @@
    "gebuehren": 2.0848,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.6715,
-   "wert": 161.71
+   "kurs": 0.6475,
+   "wert": 155.69
   },
   {
    "id": "p8929587b",
@@ -1219,70 +1187,6 @@
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
    "kurs": 0.018000000000000002,
    "wert": 61.2
-  },
-  {
-   "id": "pff2b1476",
-   "inst": {
-    "id": "pm:polymarket:5691230:NEIN",
-    "art": "pm",
-    "venue": "polymarket",
-    "ergebnis": "NEIN",
-    "frage": "Will monthly inflation increase by 0.4% in October?",
-    "schliesst": 1794373140.0,
-    "ref": {
-     "id": "5691230",
-     "token_ja": "3601670517881286998072353768095201355739678973139715259240482789336310814577",
-     "token_nein": "16548660606951693577929781356019879497220235607453129252266389700136508675777",
-     "tick": 0.01,
-     "condition": "0x84a5755b55c816fe8a86249e850687bc42e7ef66eb7166afcadb4eca36f51da0",
-     "gebuehr_rate": 0.05,
-     "gebuehr_exp": 1.0
-    },
-    "url": "https://polymarket.com/event/will-monthly-inflation-increase-by-0pt4-in-october-2026"
-   },
-   "seite": "long",
-   "menge": 180.0,
-   "einstand": 0.9217777777777777,
-   "hebel": 1.0,
-   "marge": 0.0,
-   "eroeffnet": 1794065182.7512746,
-   "gebuehren": 0.64893,
-   "funding": 0.0,
-   "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": null,
-   "wert": 165.92
-  },
-  {
-   "id": "p3f46be8c",
-   "inst": {
-    "id": "pm:polymarket:5691223:NEIN",
-    "art": "pm",
-    "venue": "polymarket",
-    "ergebnis": "NEIN",
-    "frage": "Will monthly inflation increase by 0.1% or less in October?",
-    "schliesst": 1794373140.0,
-    "ref": {
-     "id": "5691223",
-     "token_ja": "33470549542168533545333317272050631582576444938132240960813682499877746366734",
-     "token_nein": "115299334370530217467382713300499156037500499749053969160582453448203880440741",
-     "tick": 0.01,
-     "condition": "0x38af474618dfaa74bf62e795b16d606e428ffcdd012a74594b4affcb789c822a",
-     "gebuehr_rate": 0.05,
-     "gebuehr_exp": 1.0
-    },
-    "url": "https://polymarket.com/event/will-monthly-inflation-be-0pt1-or-less-in-october-2026"
-   },
-   "seite": "long",
-   "menge": 177.0,
-   "einstand": 0.94,
-   "hebel": 1.0,
-   "marge": 0.0,
-   "eroeffnet": 1794065182.7512746,
-   "gebuehren": 0.49914,
-   "funding": 0.0,
-   "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": null,
-   "wert": 166.38
   },
   {
    "id": "pf5e1aa21",
@@ -1413,11 +1317,11 @@
    "wert": 55.94
   }
  ],
- "realisiert": -2594.4831,
+ "realisiert": -2622.5287000000003,
  "gebuehren": 275.09281,
  "funding": 0.0,
  "erstellt": 1793379225.5430336,
  "start_fx": 1.1157431109273288,
- "letzter_tick": 1794324748.0668614,
+ "letzter_tick": 1794325646.631085,
  "kontrolle_bis": 1794323079.6893399
 }

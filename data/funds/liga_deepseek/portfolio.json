@@ -22,8 +22,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "d2b5d529d",
-   "kurs": 80.865,
-   "wert": 1239.62
+   "kurs": 80.875,
+   "wert": 1239.78
   },
   {
    "id": "p78a3c466",
@@ -43,8 +43,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "d745dfc32",
-   "kurs": 371.41,
-   "wert": 1344.56
+   "kurs": 370.48,
+   "wert": 1341.19
   },
   {
    "id": "p3d319c8e",
@@ -64,8 +64,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "d8e5f296a",
-   "kurs": 73830.725,
-   "wert": 681.2
+   "kurs": 73147.86499999999,
+   "wert": 674.9
   },
   {
    "id": "p9a8fa083",
@@ -85,8 +85,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "d8e5f296a",
-   "kurs": 750.34,
-   "wert": 2539.72
+   "kurs": 747.43,
+   "wert": 2529.87
   },
   {
    "id": "p565093a5",
@@ -106,8 +106,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "d745dfc32",
-   "kurs": 95.85,
-   "wert": 1652.8
+   "kurs": 95.875,
+   "wert": 1653.24
   },
   {
    "id": "p02c1343b",
@@ -174,8 +174,8 @@
    "ausstiegsplan": "Halten bis 31.12.2026. Exit-Trigger: BTC schließt unter SMA200 (73.151) UND VIX > 32 → Position verkaufen (nie in einen bestätigten Abwärtstrend halten). Sonst Abrechnung abwarten.",
    "entscheidung_id": "dd41482cf",
    "invalidierung": "BTC-Tagesschluss unter der SMA200 (73.151) gleichzeitig mit VIX über 32, ODER eine Binance-1-Minuten-Kerze unter 62.000 (dann ist der Weg zu 55k kurz und die These war falsch).",
-   "kurs": 0.895,
-   "wert": 294.59
+   "kurs": 0.885,
+   "wert": 291.28
   },
   {
    "id": "p0e4d6aec",
@@ -217,7 +217,7 @@
  "funding": 0.0,
  "erstellt": 1793319819.7411644,
  "start_fx": 1.1184885798616961,
- "letzter_tick": 1794324748.0668614,
+ "letzter_tick": 1794325646.631085,
  "rebalancing": {
   "ziele": {
    "stock:SPY": {
