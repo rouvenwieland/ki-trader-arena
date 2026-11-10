@@ -43,8 +43,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "d745dfc32",
-   "kurs": 369.4,
-   "wert": 1337.46
+   "kurs": 369.36,
+   "wert": 1337.31
   },
   {
    "id": "p3d319c8e",
@@ -64,8 +64,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "d8e5f296a",
-   "kurs": 73846.775,
-   "wert": 681.35
+   "kurs": 73897.025,
+   "wert": 681.82
   },
   {
    "id": "p9a8fa083",
@@ -85,8 +85,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "d8e5f296a",
-   "kurs": 750.01,
-   "wert": 2538.88
+   "kurs": 749.92,
+   "wert": 2538.57
   },
   {
    "id": "p565093a5",
@@ -106,8 +106,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "d745dfc32",
-   "kurs": 95.9,
-   "wert": 1653.93
+   "kurs": 95.88,
+   "wert": 1653.59
   },
   {
    "id": "p02c1343b",
@@ -208,8 +208,8 @@
    "ausstiegsplan": "Halten bis 30.11.2026 Abrechnung; vorzeitiger Verkauf nur bei JA > 0,32 (Gewinnmitnahme) oder bei Invalidierung.",
    "entscheidung_id": "d9e06e2f0",
    "invalidierung": "Offizielle US-Verlängerung/Ausweitung der Blockade oder endgültiges Scheitern der Gespräche → These tot, verkaufen. Auch: JA-Preis fällt unter 0,10 (dann hat der Markt harte neue Info, die ich nicht habe).",
-   "kurs": 0.155,
-   "wert": 166.65
+   "kurs": 0.14500000000000002,
+   "wert": 155.54
   }
  ],
  "realisiert": -582.4077401936316,
@@ -217,7 +217,7 @@
  "funding": 0.0,
  "erstellt": 1793319819.7411644,
  "start_fx": 1.1184885798616961,
- "letzter_tick": 1794344680.0782144,
+ "letzter_tick": 1794345579.5097513,
  "rebalancing": {
   "ziele": {
    "stock:SPY": {
