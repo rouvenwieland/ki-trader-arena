@@ -159,8 +159,8 @@
    "ausstiegsplan": "Bid ≥0,70 verkaufen (P erreicht); Neubewertung nach NVDA-Zahlen 19.11.; schließen, wenn Apple-Vorsprung <3 %.",
    "entscheidung_id": "d7e53ef04",
    "invalidierung": "NVDA-Marktkap. kommt auf <3 % Abstand zu Apple, oder Apple fällt >8 % relativ.",
-   "kurs": 0.787,
-   "wert": 468.0
+   "kurs": 0.7925,
+   "wert": 469.21
   },
   {
    "id": "pb60e44cc",
@@ -180,8 +180,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "d6e1a7002",
-   "kurs": 747.69,
-   "wert": 1939.42
+   "kurs": 747.43,
+   "wert": 1938.75
   },
   {
    "id": "p5fe9ac51",
@@ -201,8 +201,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "d6e1a7002",
-   "kurs": 673.71,
-   "wert": 1074.08
+   "kurs": 673.92,
+   "wert": 1074.42
   },
   {
    "id": "p5106387a",
@@ -222,8 +222,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "d6e1a7002",
-   "kurs": 370.62,
-   "wert": 1102.24
+   "kurs": 369.96,
+   "wert": 1100.27
   },
   {
    "id": "p72af4e36",
@@ -243,8 +243,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "d6e1a7002",
-   "kurs": 95.846,
-   "wert": 1100.59
+   "kurs": 95.836,
+   "wert": 1100.47
   },
   {
    "id": "p3e7ff11c",
@@ -264,8 +264,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "d6e1a7002",
-   "kurs": 73137.09,
-   "wert": 1203.57
+   "kurs": 73381.195,
+   "wert": 1207.62
   },
   {
    "id": "pe3015b77",
@@ -285,8 +285,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "d6e1a7002",
-   "kurs": 2024.085,
-   "wert": 459.37
+   "kurs": 2033.105,
+   "wert": 461.42
   },
   {
    "id": "p1ad6082a",
@@ -352,7 +352,7 @@
    "ausstiegsplan": "Gewinn mitnehmen bei NEIN-Bid ≥0.78 (=P). Nach NVDA-Earnings neu rechnen. Sonst halten bis 31.12.",
    "entscheidung_id": "d1fa25bbb",
    "invalidierung": "NVDA-Marktkapitalisierung innerhalb 5 % von Apple (z. B. NVDA ≥200 bei AAPL ~349) nach den Earnings, oder NVDA-JA ≥0.45.",
-   "kurs": 0.805,
+   "kurs": 0.81,
    "wert": 342.4
   },
   {
@@ -386,8 +386,8 @@
    "ausstiegsplan": "Halten bis 30.11.; Verkauf bei NEIN-Bid ≥0.85 oder bei Ersatz-Meldung sofort.",
    "entscheidung_id": "df7939c88",
    "invalidierung": "Trump oder mehrere Quellen (Axios/CBS/NYT) melden Entscheidung zum Austausch; NEIN-Bid fällt unter 0.55.",
-   "kurs": 0.845,
-   "wert": 179.76
+   "kurs": 0.84,
+   "wert": 177.62
   },
   {
    "id": "p41d9ec41",
@@ -448,7 +448,7 @@
    "ausstiegsplan": "Bis Abrechnung nach dem Call am 10.11. halten; kein Nachkauf.",
    "entscheidung_id": "d394b3bc9",
    "invalidierung": "Call beginnt ohne Nennung in den vorbereiteten Bemerkungen und Q&A ohne OpenAI-Frage; oder Transkript Q2'26 zeigt kein OpenAI.",
-   "kurs": 0.42000000000000004,
+   "kurs": 0.47500000000000003,
    "wert": 2.5
   },
   {
@@ -482,8 +482,8 @@
    "ausstiegsplan": "Bis zum IPO-Tag halten. Verkaufen, wenn der Bid ≥0,40 erreicht. Nach der Preisfestsetzung am 18.11. neu bewerten: Bei einem IPO-Preis ≥88 $ schließen.",
    "entscheidung_id": "d48fafa83",
    "invalidierung": "Die Nasdaq-Listing-Seite bzw. Yahoo zeigen vor dem IPO eine Aktienzahl von ≥16 Mrd., oder die Preisfestsetzung liegt bei ≥90 $.",
-   "kurs": 0.2495,
-   "wert": 84.32
+   "kurs": 0.2515,
+   "wert": 83.64
   }
  ],
  "realisiert": -50.88627954909997,
@@ -491,7 +491,7 @@
  "funding": 0.0,
  "erstellt": 1793319819.7411644,
  "start_fx": 1.1184885798616961,
- "letzter_tick": 1794326547.1941936,
+ "letzter_tick": 1794327447.2522554,
  "auftraege": [
   {
    "id": "a99ba01",
@@ -527,7 +527,7 @@
    "ausstiegsplan": "",
    "invalidierung": "",
    "erstellt": 1794323323.136912,
-   "geprueft_bis": 1794326547.1941936,
+   "geprueft_bis": 1794327447.2522554,
    "gueltig_bis": 1796915323.136912
   },
   {
@@ -564,7 +564,7 @@
    "ausstiegsplan": "",
    "invalidierung": "",
    "erstellt": 1794323323.1378255,
-   "geprueft_bis": 1794326547.1941936,
+   "geprueft_bis": 1794327447.2522554,
    "gueltig_bis": 1796915323.1378255
   }
  ],
