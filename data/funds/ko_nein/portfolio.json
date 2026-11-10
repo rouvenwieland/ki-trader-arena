@@ -97,8 +97,8 @@
    "gebuehren": 0.0,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.755,
-   "wert": 209.61
+   "kurs": 0.763,
+   "wert": 209.89
   },
   {
    "id": "pdcfb5d53",
@@ -321,7 +321,7 @@
    "gebuehren": 0.0,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.485,
+   "kurs": 0.495,
    "wert": 67.55
   },
   {
@@ -417,8 +417,8 @@
    "gebuehren": 5.41501,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.315,
-   "wert": 96.1
+   "kurs": 0.325,
+   "wert": 99.2
   },
   {
    "id": "p21e9c816",
@@ -801,8 +801,8 @@
    "gebuehren": 5.66986,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.16499999999999998,
-   "wert": 81.3
+   "kurs": 0.16999999999999998,
+   "wert": 86.72
   },
   {
    "id": "pf242aeda",
@@ -833,8 +833,8 @@
    "gebuehren": 0.17475,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.8915,
-   "wert": 151.3
+   "kurs": 0.891,
+   "wert": 151.13
   },
   {
    "id": "p6a147c4d",
@@ -865,8 +865,8 @@
    "gebuehren": 0.95322,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.74,
-   "wert": 137.74
+   "kurs": 0.7150000000000001,
+   "wert": 126.1
   },
   {
    "id": "pe85e8fb3",
@@ -897,7 +897,7 @@
    "gebuehren": 5.82112,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.988,
+   "kurs": 0.9875,
    "wert": 1612.76
   },
   {
@@ -929,8 +929,8 @@
    "gebuehren": 4.05345,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.91,
-   "wert": 387.9
+   "kurs": 0.92,
+   "wert": 392.21
   },
   {
    "id": "pbdd6cd9d",
@@ -961,7 +961,7 @@
    "gebuehren": 4.89529,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.013000000000000001,
+   "kurs": 0.0125,
    "wert": 7.91
   },
   {
@@ -1093,38 +1093,6 @@
    "wert": 156.17
   },
   {
-   "id": "p8929587b",
-   "inst": {
-    "id": "pm:polymarket:6367378:NEIN",
-    "art": "pm",
-    "venue": "polymarket",
-    "ergebnis": "NEIN",
-    "frage": "Israel x Iran ceasefire continues through November 7?",
-    "schliesst": 1794113940.0,
-    "ref": {
-     "id": "6367378",
-     "token_ja": "15707328176527456759678868855667660030738069444951598508574029683550162720104",
-     "token_nein": "95218737879821071926194781477946013279807762514353560074338565580948718279183",
-     "tick": 0.01,
-     "condition": "0xac7deb260d4926829a16fb8b55a57b483ec2379644742ef9926fe7a9b1d67993",
-     "gebuehr_rate": 0.0,
-     "gebuehr_exp": 1
-    },
-    "url": "https://polymarket.com/event/israel-x-iran-ceasefire-continues-throughptptpt-20260716224448963"
-   },
-   "seite": "long",
-   "menge": 2867.0,
-   "einstand": 0.058360655737704915,
-   "hebel": 1.0,
-   "marge": 0.0,
-   "eroeffnet": 1793906091.6783104,
-   "gebuehren": 0.0,
-   "funding": 0.0,
-   "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": null,
-   "wert": 167.32
-  },
-  {
    "id": "pff668a53",
    "inst": {
     "id": "pm:polymarket:6070855:NEIN",
@@ -1249,7 +1217,7 @@
    "gebuehren": 0.39931,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.945,
+   "kurs": 0.95,
    "wert": 166.38
   },
   {
@@ -1281,7 +1249,7 @@
    "gebuehren": 0.0,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.875,
+   "kurs": 0.88,
    "wert": 167.04
   },
   {
@@ -1409,15 +1377,15 @@
    "gebuehren": 3.9984,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.515,
-   "wert": 163.2
+   "kurs": 0.525,
+   "wert": 166.4
   }
  ],
- "realisiert": -2622.5287000000003,
+ "realisiert": -2789.8487000000005,
  "gebuehren": 286.70248,
  "funding": 0.0,
  "erstellt": 1793379225.5430336,
  "start_fx": 1.1157431109273288,
- "letzter_tick": 1794350079.524857,
+ "letzter_tick": 1794350979.6736596,
  "kontrolle_bis": 1794337609.2624242
 }
