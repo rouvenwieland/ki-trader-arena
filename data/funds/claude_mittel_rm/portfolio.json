@@ -35,8 +35,8 @@
    "ausstiegsplan": "Halten bis Abrechnung 31.12.; vorzeitig verkaufen, wenn NEIN-Preis auf ≥0.62 steigt (Gewinn mitnehmen) oder unter 0.38 fällt.",
    "entscheidung_id": "dbf84bba3",
    "invalidierung": "NVDA schließt wieder dauerhaft über Apple-Marktkap (NVDA >~210 bei AAPL ~343) oder starke NVDA-Zahlen mit Rally >8%; dann neu bewerten/verkaufen.",
-   "kurs": 0.74,
-   "wert": 408.07
+   "kurs": 0.765,
+   "wert": 424.84
   },
   {
    "id": "p91a23e4a",
@@ -69,8 +69,8 @@
    "ausstiegsplan": "Halten bis FOMC 9.12.; Verkauf, wenn NEIN-Preis ≥0.88 (Gewinn) oder CME-Hike-Odds unter 55% fallen.",
    "entscheidung_id": "d7e76abb3",
    "invalidierung": "CME FedWatch Dezember-Hike-Wahrscheinlichkeit fällt unter 55% oder Warsh/Fed-Mehrheit signalisiert Pause nach weicher CPI/Jobs-Zahl.",
-   "kurs": 0.965,
-   "wert": 393.6
+   "kurs": 0.9755,
+   "wert": 399.75
   },
   {
    "id": "p8c871cfa",
@@ -103,7 +103,7 @@
    "ausstiegsplan": "Bis zur Abrechnung halten. Neu bewerten nach Le Pens Kassationsurteil (bis Jan. 2027) und nach dem Ablauf der 500-Unterschriften-Frist (März 2027). Verkaufen, wenn die Invalidierung eintritt. Teilgewinne mitnehmen, wenn NEIN ≥0,95.",
    "entscheidung_id": "dcfc7153a",
    "invalidierung": "Lisnard liegt in mehreren seriösen Umfragen (Ifop, Elabe, Harris) stabil bei ≥14 % und damit unter den Top 3 im ersten Wahlgang, oder Retailleau/LR ziehen zu seinen Gunsten zurück.",
-   "kurs": 0.866,
+   "kurs": 0.8654999999999999,
    "wert": 528.51
   },
   {
@@ -137,8 +137,8 @@
    "ausstiegsplan": "Halten bis 31.12.; Gewinnmitnahme ≥0.88 oder nach Earnings neu bewerten.",
    "entscheidung_id": "d24ff66a4",
    "invalidierung": "NVDA-Marktkap übertrifft Apple um >3 % nach Earnings (NVDA >~205 bei AAPL ~350).",
-   "kurs": 0.718,
-   "wert": 874.69
+   "kurs": 0.756,
+   "wert": 934.5
   },
   {
    "id": "pa832233e",
@@ -199,7 +199,7 @@
    "ausstiegsplan": "Halten bis 30.11.; verkaufen, wenn BTC unter 64.000 fällt oder NEIN-Preis <0.88.",
    "entscheidung_id": "d7dbfc08f",
    "invalidierung": "BTC Binance unter 64.000 oder DVOL >60",
-   "kurs": 0.961,
+   "kurs": 0.962,
    "wert": 300.48
   },
   {
@@ -241,8 +241,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "dd6456776",
-   "kurs": 73549.08,
-   "wert": 1043.66
+   "kurs": 73936.875,
+   "wert": 1049.25
   },
   {
    "id": "p994b6370",
@@ -329,8 +329,8 @@
    "ausstiegsplan": "Halten bis Abrechnung 31.12.",
    "entscheidung_id": "de2fc5d7b",
    "invalidierung": "PredictIt-Bein nicht gefüllt: JA-Bein wieder verkaufen.",
-   "kurs": 0.335,
-   "wert": 66.0
+   "kurs": 0.305,
+   "wert": 60.0
   },
   {
    "id": "p6edb4531",
@@ -514,7 +514,7 @@
    "ausstiegsplan": "Bis Vereidigung halten; schließen, wenn beide Beine zusammen ≥0.97 verkaufbar.",
    "entscheidung_id": "d5f5d56d9",
    "invalidierung": "Nachweislich abweichende PredictIt-Regel, die Eisenkot-JA bei PredictIt und NEIN bei Polymarket zulässt.",
-   "kurs": 0.6194999999999999,
+   "kurs": 0.618,
    "wert": 430.5
   },
   {
@@ -548,8 +548,8 @@
    "ausstiegsplan": "Halten bis IPO-Tag-1-Close; Verkauf wenn Preis ≥0.25 (Gewinn) oder Invalidierung",
    "entscheidung_id": "d8f7f777b",
    "invalidierung": "Offizielle Preisspanne im S-1/A mit Mittelpunkt ≥1,4 Bio oder Nasdaq-100 +8 % bis Pricing",
-   "kurs": 0.303,
-   "wert": 385.06
+   "kurs": 0.2855,
+   "wert": 381.04
   },
   {
    "id": "p1f686553",
@@ -591,7 +591,7 @@
  "funding": 0.0,
  "erstellt": 1793380123.8861866,
  "start_fx": 1.1156327353966788,
- "letzter_tick": 1794317546.7117867,
+ "letzter_tick": 1794318446.954592,
  "auftraege": [],
  "rebalancing": {
   "ziele": {
