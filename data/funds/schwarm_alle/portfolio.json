@@ -97,8 +97,8 @@
    "gebuehren": 3.13551,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Schwarm-Regel)",
-   "kurs": 0.042499999999999996,
-   "wert": 15.5
+   "kurs": 0.0375,
+   "wert": 13.99
   },
   {
    "id": "p7f78b6d2",
@@ -129,8 +129,8 @@
    "gebuehren": 2.60958,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Schwarm-Regel)",
-   "kurs": 0.295,
-   "wert": 88.45
+   "kurs": 0.265,
+   "wert": 79.3
   },
   {
    "id": "pb093249a",
@@ -161,7 +161,7 @@
    "gebuehren": 0.0,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Schwarm-Regel)",
-   "kurs": 0.954,
+   "kurs": 0.9544999999999999,
    "wert": 670.91
   },
   {
@@ -193,8 +193,8 @@
    "gebuehren": 5.28671,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Schwarm-Regel)",
-   "kurs": 0.835,
-   "wert": 470.61
+   "kurs": 0.83,
+   "wert": 464.94
   },
   {
    "id": "pf18ddb58",
@@ -257,8 +257,8 @@
    "gebuehren": 5.59212,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Schwarm-Regel)",
-   "kurs": 0.08499999999999999,
-   "wert": 35.68
+   "kurs": 0.10500000000000001,
+   "wert": 44.6
   },
   {
    "id": "p646c0862",
@@ -330,5 +330,5 @@
  "funding": 0.0,
  "erstellt": 1793379225.5430336,
  "start_fx": 1.1157431109273288,
- "letzter_tick": 1794330147.2893796
+ "letzter_tick": 1794331046.5828876
 }
