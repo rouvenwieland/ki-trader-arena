@@ -264,8 +264,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "d6e1a7002",
-   "kurs": 74585.735,
-   "wert": 1227.44
+   "kurs": 74521.315,
+   "wert": 1226.38
   },
   {
    "id": "pe3015b77",
@@ -285,8 +285,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "d6e1a7002",
-   "kurs": 2114.125,
-   "wert": 479.81
+   "kurs": 2114.085,
+   "wert": 479.8
   },
   {
    "id": "p1ad6082a",
@@ -457,7 +457,7 @@
  "funding": 0.0,
  "erstellt": 1793319819.7411644,
  "start_fx": 1.1184885798616961,
- "letzter_tick": 1794292985.7693553,
+ "letzter_tick": 1794293885.513922,
  "auftraege": [
   {
    "id": "a2e6aff",
@@ -493,7 +493,7 @@
    "ausstiegsplan": "Limit 0,79 für 300 Stück; Rest 307 halten, Exit bei Bid ≥0,82 oder Neubewertung nach NVDA-Zahlen 17.11.",
    "invalidierung": "",
    "erstellt": 1794236943.127893,
-   "geprueft_bis": 1794292985.7693553,
+   "geprueft_bis": 1794293885.513922,
    "gueltig_bis": 1796828943.127893
   }
  ],
