@@ -35,8 +35,8 @@
    "ausstiegsplan": "NEIN-Bid ≥0,93 oder P erreicht → verkaufen; sonst halten bis zur Wahl (April/Mai 2027).",
    "entscheidung_id": "d860a2331",
    "invalidierung": "Lisnard in mehreren Umfragen ≥12 % im 1. Wahlgang oder Rückzug von Philippe/Retailleau zu seinen Gunsten bzw. Sieg in einer Rechts-Primaire.",
-   "kurs": 0.8714999999999999,
-   "wert": 470.34
+   "kurs": 0.8694999999999999,
+   "wert": 469.26
   },
   {
    "id": "p842aa632",
@@ -160,7 +160,7 @@
    "entscheidung_id": "d7e53ef04",
    "invalidierung": "NVDA-Marktkap. kommt auf <3 % Abstand zu Apple, oder Apple fällt >8 % relativ.",
    "kurs": 0.825,
-   "wert": 249.59
+   "wert": 249.28
   },
   {
    "id": "pb60e44cc",
@@ -180,8 +180,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "d6e1a7002",
-   "kurs": 748.995,
-   "wert": 1942.81
+   "kurs": 749.26,
+   "wert": 1943.5
   },
   {
    "id": "p5fe9ac51",
@@ -201,8 +201,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "d6e1a7002",
-   "kurs": 672.997,
-   "wert": 1072.95
+   "kurs": 673.74,
+   "wert": 1074.13
   },
   {
    "id": "p5106387a",
@@ -222,8 +222,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "d6e1a7002",
-   "kurs": 369.505,
-   "wert": 1098.92
+   "kurs": 369.66,
+   "wert": 1099.38
   },
   {
    "id": "p72af4e36",
@@ -243,8 +243,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "d6e1a7002",
-   "kurs": 95.895,
-   "wert": 1101.15
+   "kurs": 95.875,
+   "wert": 1100.92
   },
   {
    "id": "p3e7ff11c",
@@ -264,8 +264,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "d6e1a7002",
-   "kurs": 73598.695,
-   "wert": 1211.2
+   "kurs": 73482.875,
+   "wert": 1209.3
   },
   {
    "id": "pe3015b77",
@@ -285,8 +285,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "d6e1a7002",
-   "kurs": 2051.405,
-   "wert": 465.54
+   "kurs": 2046.125,
+   "wert": 464.37
   },
   {
    "id": "p1ad6082a",
@@ -448,8 +448,8 @@
    "ausstiegsplan": "Bis zum IPO-Tag halten. Verkaufen, wenn der Bid ≥0,40 erreicht. Nach der Preisfestsetzung am 18.11. neu bewerten: Bei einem IPO-Preis ≥88 $ schließen.",
    "entscheidung_id": "d48fafa83",
    "invalidierung": "Die Nasdaq-Listing-Seite bzw. Yahoo zeigen vor dem IPO eine Aktienzahl von ≥16 Mrd., oder die Preisfestsetzung liegt bei ≥90 $.",
-   "kurs": 0.23149999999999998,
-   "wert": 76.84
+   "kurs": 0.2355,
+   "wert": 79.9
   },
   {
    "id": "pac09f469",
@@ -505,8 +505,8 @@
    "ausstiegsplan": "NEIN-Bid ≥0,80 oder Halten bis 31.12.; sofort schließen bei Meldung, dass der Board Huang beurlaubt/ersetzt oder Rücktritt erwägt.",
    "entscheidung_id": "ddfa1fc63",
    "invalidierung": "Reuters/WSJ/Bloomberg: Board erwägt Ablösung oder Huang nimmt Auszeit; Polymarket 'Huang resignation' über 0,30.",
-   "kurs": 0.6334376650088239,
-   "wert": 100.64
+   "kurs": 0.6617884772119993,
+   "wert": 105.16
   }
  ],
  "realisiert": 68.20419086276166,
@@ -514,7 +514,7 @@
  "funding": 0.0,
  "erstellt": 1793319819.7411644,
  "start_fx": 1.1184885798616961,
- "letzter_tick": 1794341980.1620214,
+ "letzter_tick": 1794342879.5115664,
  "auftraege": [],
  "rebalancing": {
   "ziele": {
