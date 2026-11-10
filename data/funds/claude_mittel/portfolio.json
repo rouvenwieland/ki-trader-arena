@@ -159,8 +159,8 @@
    "ausstiegsplan": "Bid ≥0,70 verkaufen (P erreicht); Neubewertung nach NVDA-Zahlen 19.11.; schließen, wenn Apple-Vorsprung <3 %.",
    "entscheidung_id": "d7e53ef04",
    "invalidierung": "NVDA-Marktkap. kommt auf <3 % Abstand zu Apple, oder Apple fällt >8 % relativ.",
-   "kurs": 0.7765,
-   "wert": 238.23
+   "kurs": 0.7615000000000001,
+   "wert": 233.63
   },
   {
    "id": "pb60e44cc",
@@ -264,8 +264,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "d6e1a7002",
-   "kurs": 73523.60500000001,
-   "wert": 1209.97
+   "kurs": 73650.975,
+   "wert": 1212.06
   },
   {
    "id": "pe3015b77",
@@ -285,8 +285,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "d6e1a7002",
-   "kurs": 2042.3649999999998,
-   "wert": 463.52
+   "kurs": 2049.6549999999997,
+   "wert": 465.17
   },
   {
    "id": "p1ad6082a",
@@ -448,8 +448,8 @@
    "ausstiegsplan": "Bis zum IPO-Tag halten. Verkaufen, wenn der Bid ≥0,40 erreicht. Nach der Preisfestsetzung am 18.11. neu bewerten: Bei einem IPO-Preis ≥88 $ schließen.",
    "entscheidung_id": "d48fafa83",
    "invalidierung": "Die Nasdaq-Listing-Seite bzw. Yahoo zeigen vor dem IPO eine Aktienzahl von ≥16 Mrd., oder die Preisfestsetzung liegt bei ≥90 $.",
-   "kurs": 0.23399999999999999,
-   "wert": 77.52
+   "kurs": 0.241,
+   "wert": 79.9
   },
   {
    "id": "pac09f469",
@@ -505,8 +505,8 @@
    "ausstiegsplan": "NEIN-Bid ≥0,80 oder Halten bis 31.12.; sofort schließen bei Meldung, dass der Board Huang beurlaubt/ersetzt oder Rücktritt erwägt.",
    "entscheidung_id": "ddfa1fc63",
    "invalidierung": "Reuters/WSJ/Bloomberg: Board erwägt Ablösung oder Huang nimmt Auszeit; Polymarket 'Huang resignation' über 0,30.",
-   "kurs": 0.6587493052290851,
-   "wert": 104.67
+   "kurs": 0.4835476060994402,
+   "wert": 76.77
   }
  ],
  "realisiert": 68.20419086276166,
@@ -514,7 +514,7 @@
  "funding": 0.0,
  "erstellt": 1793319819.7411644,
  "start_fx": 1.1184885798616961,
- "letzter_tick": 1794351879.589267,
+ "letzter_tick": 1794352779.608836,
  "auftraege": [],
  "rebalancing": {
   "ziele": {
