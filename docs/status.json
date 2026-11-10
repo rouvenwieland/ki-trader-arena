@@ -1,6 +1,6 @@
 {
  "version": 1,
- "stand": 1794290390.399083,
+ "stand": 1794290536.5603843,
  "hinweis": "Papierhandel-Simulation, keine Anlageberatung",
  "seite": "https://rouvenwieland.github.io/ki-trader-arena/",
  "budget": {
@@ -211,7 +211,7 @@
    "status": "Tagesanteil aufgebraucht – nächste Runde morgen",
    "modell": "claude-sonnet-5-5",
    "kosten_heute_eur": 0.001,
-   "kosten_gesamt_eur": 25.657,
+   "kosten_gesamt_eur": 25.658,
    "rendite_ki_pct": [
     -2.73,
     9.26
@@ -565,7 +565,7 @@
    "status": "Tagesanteil aufgebraucht – nächste Runde morgen",
    "modell": "claude-sonnet-5-5",
    "kosten_heute_eur": 0.001,
-   "kosten_gesamt_eur": 27.361,
+   "kosten_gesamt_eur": 27.362,
    "rendite_ki_pct": [
     -9.24,
     3.69
@@ -1218,6 +1218,13 @@
  ],
  "letzte_entscheidungen": [
   {
+   "ts": 1794290517.8298154,
+   "fonds": "DeepSeek",
+   "instrument": "pm:polymarket:4906128:JA",
+   "aktion": "kaufen",
+   "zuversicht": 0.55
+  },
+  {
    "ts": 1794251569.208193,
    "fonds": "Claude Mittel",
    "instrument": "pm:polymarket:6763350:JA",
@@ -1265,13 +1272,6 @@
    "instrument": "pm:manifold:N5O2RlE0N0:JA",
    "aktion": "verkaufen",
    "zuversicht": 0.7
-  },
-  {
-   "ts": 1794157904.3577461,
-   "fonds": "Claude Mittel",
-   "instrument": "pm:polymarket:6763341:JA",
-   "aktion": "kaufen",
-   "zuversicht": 0.65
   }
  ],
  "ereignisse": [

@@ -2,7 +2,7 @@
  "fonds_id": "liga_deepseek",
  "waehrung": "USD",
  "start_kapital": 11184.88579861696,
- "cash": 2505.123039674383,
+ "cash": 2305.143039674383,
  "positionen": [
   {
    "id": "p00666bfa",
@@ -210,6 +210,38 @@
    "invalidierung": "BTC-Tagesschluss unter der SMA200 (73.151) gleichzeitig mit VIX über 32, ODER eine Binance-1-Minuten-Kerze unter 62.000 (dann ist der Weg zu 55k kurz und die These war falsch).",
    "kurs": 0.905,
    "wert": 297.9
+  },
+  {
+   "id": "p0e4d6aec",
+   "inst": {
+    "id": "pm:polymarket:4906128:JA",
+    "art": "pm",
+    "venue": "polymarket",
+    "ergebnis": "JA",
+    "frage": "US announces end of Iranian blockade by November 30, 2026?",
+    "schliesst": 1796101140.0,
+    "ref": {
+     "id": "4906128",
+     "token_ja": "6644532381217254800986375202522846648159135474005033660497726168023227540949",
+     "token_nein": "103159225638359731790247383162357783913500681643575178525536406773575671450318",
+     "tick": 0.01,
+     "condition": "0x7a70fc60ee280fa7b4312f5dd128d148d74ae5b3e4a2e8215ccf0030a08ebb04",
+     "gebuehr_rate": 0.0,
+     "gebuehr_exp": 1
+    },
+    "url": "https://polymarket.com/event/us-announces-end-of-iranian-blockade-byptptpt-20260713152715080"
+   },
+   "seite": "long",
+   "menge": 1111.0,
+   "einstand": 0.18,
+   "hebel": 1.0,
+   "marge": 0.0,
+   "eroeffnet": 1794290517.8303592,
+   "gebuehren": 0.0,
+   "funding": 0.0,
+   "ausstiegsplan": "Halten bis 30.11.2026 Abrechnung; vorzeitiger Verkauf nur bei JA > 0,32 (Gewinnmitnahme) oder bei Invalidierung.",
+   "entscheidung_id": "d9e06e2f0",
+   "invalidierung": "Offizielle US-Verlängerung/Ausweitung der Blockade oder endgültiges Scheitern der Gespräche → These tot, verkaufen. Auch: JA-Preis fällt unter 0,10 (dann hat der Markt harte neue Info, die ich nicht habe)."
   }
  ],
  "realisiert": -483.18773566482037,
@@ -267,8 +299,8 @@
    }
   },
   "schwelle_pp": 3.0,
-  "seit": 1794272399.2251408,
-  "entscheidung_id": "d7a9a6d90"
+  "seit": 1794290397.7413397,
+  "entscheidung_id": "d516138f6"
  },
  "auftraege": []
 }
