@@ -103,8 +103,8 @@
    "ausstiegsplan": "Halten bis 31.12.; Gewinnmitnahme ≥0.88 oder nach Earnings neu bewerten.",
    "entscheidung_id": "d24ff66a4",
    "invalidierung": "NVDA-Marktkap übertrifft Apple um >3 % nach Earnings (NVDA >~205 bei AAPL ~350).",
-   "kurs": 0.844,
-   "wert": 1044.15
+   "kurs": 0.834,
+   "wert": 1024.21
   },
   {
    "id": "pa832233e",
@@ -207,8 +207,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "dd6456776",
-   "kurs": 73858.88500000001,
-   "wert": 1048.14
+   "kurs": 73815.815,
+   "wert": 1047.53
   },
   {
    "id": "p994b6370",
@@ -481,7 +481,7 @@
    "entscheidung_id": "d5f5d56d9",
    "invalidierung": "Nachweislich abweichende PredictIt-Regel, die Eisenkot-JA bei PredictIt und NEIN bei Polymarket zulässt.",
    "kurs": 0.6085,
-   "wert": 422.8
+   "wert": 422.1
   },
   {
    "id": "p2567180c",
@@ -514,8 +514,8 @@
    "ausstiegsplan": "Halten bis IPO-Tag (voraussichtlich Woche 16.–20.11.). Bei Preisfestsetzung neu rechnen: Schwelle = 1,25 Bio/13,09 Mrd. = $95,5. Teilverkauf, wenn JA ≥0,50 vor Handelsstart.",
    "entscheidung_id": "d0595e7ab",
    "invalidierung": "Endgültiger IPO-Preis ≥ $86 (dann reicht +11 % Pop) oder offizielle Polymarket-Klarstellung, dass voll verwässert gezählt wird; Graumarkt-/Indikationen Eröffnung ≥ $100.",
-   "kurs": 0.23,
-   "wert": 608.17
+   "kurs": 0.2335,
+   "wert": 627.0
   },
   {
    "id": "p1f686553",
@@ -576,8 +576,8 @@
    "ausstiegsplan": "Halten bis 31.12.",
    "entscheidung_id": "db61267da",
    "invalidierung": "Polymarket-JA >0.30 oder Board-Befund schwerwiegend",
-   "kurs": 0.641806835427774,
-   "wert": 160.98
+   "kurs": 0.6587495867302433,
+   "wert": 165.24
   },
   {
    "id": "p51c17729",
@@ -604,8 +604,8 @@
    "ausstiegsplan": "Halten bis Tag-1-Schluss 19.11.; Verkauf, falls Preisfestsetzung ≥$90 oder JA-Preis >0.40.",
    "entscheidung_id": "da86d3e2a",
    "invalidierung": "IPO-Preis über Spanne (≥$85) oder Nachrichten, dass Marktkap FD-basiert >2 Bio bei $111 gezählt wird und Orderbuch-Hype.",
-   "kurs": 0.9544753573517575,
-   "wert": 36.27
+   "kurs": 0.9218861688540096,
+   "wert": 35.03
   }
  ],
  "realisiert": 127.24826927850235,
@@ -613,7 +613,7 @@
  "funding": 0.0,
  "erstellt": 1793380123.8861866,
  "start_fx": 1.1156327353966788,
- "letzter_tick": 1794346480.192226,
+ "letzter_tick": 1794347379.9766204,
  "auftraege": [],
  "rebalancing": {
   "ziele": {
