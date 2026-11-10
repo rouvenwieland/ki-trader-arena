@@ -64,8 +64,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "d8e5f296a",
-   "kurs": 74616.60500000001,
-   "wert": 688.46
+   "kurs": 74585.735,
+   "wert": 688.17
   },
   {
    "id": "p9a8fa083",
@@ -251,7 +251,7 @@
  "funding": 0.0,
  "erstellt": 1793319819.7411644,
  "start_fx": 1.1184885798616961,
- "letzter_tick": 1794292085.5894985,
+ "letzter_tick": 1794292985.7693553,
  "rebalancing": {
   "ziele": {
    "stock:SPY": {
