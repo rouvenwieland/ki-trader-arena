@@ -2,7 +2,7 @@
  "fonds_id": "ko_wetter",
  "waehrung": "USD",
  "start_kapital": 11156.327353966788,
- "cash": 3400.0514216355045,
+ "cash": 3619.0514216355045,
  "positionen": [
   {
    "id": "p5041bd05",
@@ -31,58 +31,6 @@
    "wert": 81.52
   },
   {
-   "id": "p7b3b8013",
-   "inst": {
-    "id": "pm:kalshi:KXHIGHCHI-26NOV09-B57.5:JA",
-    "art": "pm",
-    "venue": "kalshi",
-    "ergebnis": "JA",
-    "frage": "Will the maximum temperature be 57-58° on Nov 9, 2026? [57° to 58°]",
-    "schliesst": 1794294000.0,
-    "ref": {
-     "ticker": "KXHIGHCHI-26NOV09-B57.5"
-    },
-    "url": "https://kalshi.com/markets/KXHIGHCHI-26NOV09"
-   },
-   "seite": "long",
-   "menge": 1999.0,
-   "einstand": 0.06467725,
-   "hebel": 1.0,
-   "marge": 0.0,
-   "eroeffnet": 1794232117.0013826,
-   "gebuehren": 8.47,
-   "funding": 0.0,
-   "ausstiegsplan": "Halten bis zur Abrechnung (Wetter-Regel)",
-   "kurs": null,
-   "wert": 129.29
-  },
-  {
-   "id": "p5ada178c",
-   "inst": {
-    "id": "pm:kalshi:KXHIGHCHI-26NOV09-B59.5:NEIN",
-    "art": "pm",
-    "venue": "kalshi",
-    "ergebnis": "NEIN",
-    "frage": "Will the maximum temperature be 59-60° on Nov 9, 2026? [59° to 60°]",
-    "schliesst": 1794294000.0,
-    "ref": {
-     "ticker": "KXHIGHCHI-26NOV09-B59.5"
-    },
-    "url": "https://kalshi.com/markets/KXHIGHCHI-26NOV09"
-   },
-   "seite": "long",
-   "menge": 219.0,
-   "einstand": 0.6113698630136986,
-   "hebel": 1.0,
-   "marge": 0.0,
-   "eroeffnet": 1794232117.0013826,
-   "gebuehren": 3.65,
-   "funding": 0.0,
-   "ausstiegsplan": "Halten bis zur Abrechnung (Wetter-Regel)",
-   "kurs": null,
-   "wert": 133.89
-  },
-  {
    "id": "p69c2b627",
    "inst": {
     "id": "pm:kalshi:KXHIGHNY-26NOV10-T61:JA",
@@ -105,34 +53,8 @@
    "gebuehren": 5.04,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Wetter-Regel)",
-   "kurs": 0.265,
-   "wert": 76.44
-  },
-  {
-   "id": "p4ed77863",
-   "inst": {
-    "id": "pm:kalshi:KXHIGHAUS-26NOV09-T64:JA",
-    "art": "pm",
-    "venue": "kalshi",
-    "ergebnis": "JA",
-    "frage": "Will the maximum temperature be <64° on Nov 9, 2026? [63° or below]",
-    "schliesst": 1794294000.0,
-    "ref": {
-     "ticker": "KXHIGHAUS-26NOV09-T64"
-    },
-    "url": "https://kalshi.com/markets/KXHIGHAUS-26NOV09"
-   },
-   "seite": "long",
-   "menge": 251.0,
-   "einstand": 0.29940239043824696,
-   "hebel": 1.0,
-   "marge": 0.0,
-   "eroeffnet": 1794240217.5204682,
-   "gebuehren": 3.69,
-   "funding": 0.0,
-   "ausstiegsplan": "Halten bis zur Abrechnung (Wetter-Regel)",
-   "kurs": null,
-   "wert": 75.15
+   "kurs": 0.31,
+   "wert": 88.2
   },
   {
    "id": "p174c80ac",
@@ -183,8 +105,8 @@
    "gebuehren": 5.54,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Wetter-Regel)",
-   "kurs": 0.28500000000000003,
-   "wert": 98.84
+   "kurs": 0.33999999999999997,
+   "wert": 116.49
   },
   {
    "id": "p683818dd",
@@ -213,11 +135,11 @@
    "wert": 15.37
   }
  ],
- "realisiert": -6188.618609581286,
+ "realisiert": -6307.948432331286,
  "gebuehren": 712.4300000000002,
  "funding": 0.0,
  "erstellt": 1793380123.8861866,
  "start_fx": 1.1156327353966788,
- "letzter_tick": 1794315623.0074065,
+ "letzter_tick": 1794316522.452532,
  "wetter_letzter": 1794312923.0280411
 }
