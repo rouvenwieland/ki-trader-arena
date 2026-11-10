@@ -65,8 +65,8 @@
    "gebuehren": 0.0,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Schwarm-Regel)",
-   "kurs": 0.9984999999999999,
-   "wert": 657.68
+   "kurs": 0.999,
+   "wert": 658.34
   },
   {
    "id": "pd9f9e40a",
@@ -97,8 +97,8 @@
    "gebuehren": 3.13551,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Schwarm-Regel)",
-   "kurs": 0.0245,
-   "wert": 9.07
+   "kurs": 0.025500000000000002,
+   "wert": 9.45
   },
   {
    "id": "p7f78b6d2",
@@ -129,8 +129,8 @@
    "gebuehren": 2.60958,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Schwarm-Regel)",
-   "kurs": 0.295,
-   "wert": 88.45
+   "kurs": 0.28500000000000003,
+   "wert": 85.4
   },
   {
    "id": "pb093249a",
@@ -161,7 +161,7 @@
    "gebuehren": 0.0,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Schwarm-Regel)",
-   "kurs": 0.9535,
+   "kurs": 0.9524999999999999,
    "wert": 670.21
   },
   {
@@ -225,8 +225,8 @@
    "gebuehren": 0.0,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Schwarm-Regel)",
-   "kurs": 0.305,
-   "wert": 96.0
+   "kurs": 0.315,
+   "wert": 99.2
   },
   {
    "id": "pbd658e47",
@@ -257,8 +257,8 @@
    "gebuehren": 5.59212,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Schwarm-Regel)",
-   "kurs": 0.195,
-   "wert": 84.74
+   "kurs": 0.255,
+   "wert": 111.5
   },
   {
    "id": "p646c0862",
@@ -289,8 +289,8 @@
    "gebuehren": 0.0,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Schwarm-Regel)",
-   "kurs": 0.84,
-   "wert": 543.65
+   "kurs": 0.845,
+   "wert": 550.2
   },
   {
    "id": "p525d1886",
@@ -321,7 +321,7 @@
    "gebuehren": 0.0,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Schwarm-Regel)",
-   "kurs": 0.9515,
+   "kurs": 0.951,
    "wert": 624.15
   }
  ],
@@ -330,5 +330,5 @@
  "funding": 0.0,
  "erstellt": 1793379225.5430336,
  "start_fx": 1.1157431109273288,
- "letzter_tick": 1794321147.2354496
+ "letzter_tick": 1794322047.392203
 }

@@ -22,8 +22,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "d2b5d529d",
-   "kurs": 81.15,
-   "wert": 1863.13
+   "kurs": 80.96,
+   "wert": 1858.77
   },
   {
    "id": "p78a3c466",
@@ -43,8 +43,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "d8e5f296a",
-   "kurs": 371.34,
-   "wert": 849.13
+   "kurs": 370.1,
+   "wert": 846.3
   },
   {
    "id": "p3d319c8e",
@@ -64,8 +64,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "d8e5f296a",
-   "kurs": 73645.16500000001,
-   "wert": 679.49
+   "kurs": 74002.95,
+   "wert": 682.78
   },
   {
    "id": "p9a8fa083",
@@ -85,8 +85,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "d8e5f296a",
-   "kurs": 747.1,
-   "wert": 2528.75
+   "kurs": 748.23,
+   "wert": 2532.58
   },
   {
    "id": "pcb4fd55d",
@@ -140,8 +140,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "d1d71a5f2",
-   "kurs": 96.0,
-   "wert": 1144.77
+   "kurs": 95.854,
+   "wert": 1143.03
   },
   {
    "id": "p02c1343b",
@@ -208,8 +208,8 @@
    "ausstiegsplan": "Halten bis 31.12.2026. Exit-Trigger: BTC schließt unter SMA200 (73.151) UND VIX > 32 → Position verkaufen (nie in einen bestätigten Abwärtstrend halten). Sonst Abrechnung abwarten.",
    "entscheidung_id": "dd41482cf",
    "invalidierung": "BTC-Tagesschluss unter der SMA200 (73.151) gleichzeitig mit VIX über 32, ODER eine Binance-1-Minuten-Kerze unter 62.000 (dann ist der Weg zu 55k kurz und die These war falsch).",
-   "kurs": 0.895,
-   "wert": 294.59
+   "kurs": 0.905,
+   "wert": 297.9
   },
   {
    "id": "p0e4d6aec",
@@ -242,7 +242,7 @@
    "ausstiegsplan": "Halten bis 30.11.2026 Abrechnung; vorzeitiger Verkauf nur bei JA > 0,32 (Gewinnmitnahme) oder bei Invalidierung.",
    "entscheidung_id": "d9e06e2f0",
    "invalidierung": "Offizielle US-Verlängerung/Ausweitung der Blockade oder endgültiges Scheitern der Gespräche → These tot, verkaufen. Auch: JA-Preis fällt unter 0,10 (dann hat der Markt harte neue Info, die ich nicht habe).",
-   "kurs": 0.16,
+   "kurs": 0.155,
    "wert": 166.65
   }
  ],
@@ -251,7 +251,7 @@
  "funding": 0.0,
  "erstellt": 1793319819.7411644,
  "start_fx": 1.1184885798616961,
- "letzter_tick": 1794321147.2354496,
+ "letzter_tick": 1794322047.392203,
  "rebalancing": {
   "ziele": {
    "stock:SPY": {
