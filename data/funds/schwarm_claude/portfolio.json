@@ -2,7 +2,7 @@
  "fonds_id": "schwarm_claude",
  "waehrung": "USD",
  "start_kapital": 11157.431109273288,
- "cash": 10351.86286927329,
+ "cash": 10177.638249273288,
  "positionen": [
   {
    "id": "pb07d4c34",
@@ -33,8 +33,8 @@
    "gebuehren": 0.0,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Schwarm-Regel)",
-   "kurs": 0.028999999999999998,
-   "wert": 14.76
+   "kurs": 0.037,
+   "wert": 18.97
   },
   {
    "id": "pfd90c808",
@@ -65,8 +65,8 @@
    "gebuehren": 6.04291,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Schwarm-Regel)",
-   "kurs": 0.915,
-   "wert": 595.14
+   "kurs": 0.96,
+   "wert": 621.3
   },
   {
    "id": "p1d3af367",
@@ -131,12 +131,44 @@
    "ausstiegsplan": "Halten bis zur Abrechnung (Schwarm-Regel)",
    "kurs": 0.195,
    "wert": 201.97
+  },
+  {
+   "id": "pa3df2538",
+   "inst": {
+    "id": "pm:polymarket:1811265:JA",
+    "art": "pm",
+    "venue": "polymarket",
+    "ergebnis": "JA",
+    "frage": "Pete Hegseth out as Secretary of Defense by December 31?",
+    "schliesst": 1798779540.0,
+    "ref": {
+     "id": "1811265",
+     "token_ja": "21275820052009278915970165572803516066396758597545413537036789986793691057073",
+     "token_nein": "39839649379979262874224474703228993451530996696316314037781119946088999891171",
+     "tick": 0.01,
+     "condition": "0x0fcfcfc35d71424c0693c717d2e3bc9b8992910835d124d80cd2f01498f1d3dc",
+     "gebuehr_rate": 0.04,
+     "gebuehr_exp": 1.0
+    },
+    "url": "https://polymarket.com/event/pete-hegseth-out-as-secretary-of-defense-by-december-31"
+   },
+   "seite": "long",
+   "menge": 971.0,
+   "einstand": 0.1736872296601442,
+   "hebel": 1.0,
+   "marge": 0.0,
+   "eroeffnet": 1794351879.589267,
+   "gebuehren": 5.57432,
+   "funding": 0.0,
+   "ausstiegsplan": "Halten bis zur Abrechnung (Schwarm-Regel)",
+   "kurs": 0.16499999999999998,
+   "wert": 145.65
   }
  ],
  "realisiert": 308.25,
- "gebuehren": 18.09474,
+ "gebuehren": 23.66906,
  "funding": 0.0,
  "erstellt": 1793379225.5430336,
  "start_fx": 1.1157431109273288,
- "letzter_tick": 1794350979.6736596
+ "letzter_tick": 1794351879.589267
 }
