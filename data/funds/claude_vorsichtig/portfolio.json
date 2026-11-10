@@ -66,7 +66,7 @@
    "ausstiegsplan": "Halten bis 9.12.; Verkauf, wenn NEIN-Bid >0,55 oder bei Invalidierung.",
    "entscheidung_id": "d25f2be12",
    "invalidierung": "Fed-Signale (Warsh/Williams/Jefferson) für klaren Hike mit breitem Konsens, oder CME-Hike >90 % ohne Tauben-Widerspruch.",
-   "kurs": 0.345,
+   "kurs": 0.35,
    "wert": 182.92
   },
   {
@@ -89,8 +89,8 @@
    "ausstiegsplan": "Kern halten, Rebalancing-Regel (2 pp), Stop 690.",
    "entscheidung_id": "dd084c777",
    "invalidierung": "SPY schließt unter 690 oder 10J-Rendite >5,3 %",
-   "kurs": 747.43,
-   "wert": 1373.51
+   "kurs": 748.22,
+   "wert": 1374.96
   },
   {
    "id": "pbcdb744c",
@@ -112,8 +112,8 @@
    "ausstiegsplan": "Kern halten; Stop 91,5; Rebalancing bei Abweichung >5pp.",
    "entscheidung_id": "d50916521",
    "invalidierung": "AGG schließt unter 91,5 oder 10J-Rendite >5,3 %",
-   "kurs": 95.836,
-   "wert": 1541.92
+   "kurs": 95.805,
+   "wert": 1541.42
   },
   {
    "id": "pd1046bd9",
@@ -135,8 +135,8 @@
    "ausstiegsplan": "Halten; Stop 74.",
    "entscheidung_id": "d123eb847",
    "invalidierung": "10J-Rendite schließt über 5,3 % / TLT unter 74",
-   "kurs": 80.81,
-   "wert": 525.4
+   "kurs": 80.755,
+   "wert": 525.05
   },
   {
    "id": "pf1acd2e3",
@@ -158,8 +158,8 @@
    "ausstiegsplan": "Halten; Stop 340; Gewicht nicht über 5 % erhöhen.",
    "entscheidung_id": "dd43d0bdc",
    "invalidierung": "GLD unter 340 (neues Tief, ~-9 %)",
-   "kurs": 369.96,
-   "wert": 526.08
+   "kurs": 368.955,
+   "wert": 524.65
   },
   {
    "id": "pabe784cb",
@@ -181,8 +181,8 @@
    "ausstiegsplan": "Halten als Kern; Stop 96.",
    "entscheidung_id": "d269c21b5",
    "invalidierung": "EFA unter 96 (Bruch der Aufwärtstrendstruktur, ~-9 %)",
-   "kurs": 104.055,
-   "wert": 521.75
+   "kurs": 103.965,
+   "wert": 521.3
   },
   {
    "id": "pbfa54762",
@@ -224,7 +224,7 @@
  "funding": 0.0,
  "erstellt": 1793319819.7411644,
  "start_fx": 1.1184885798616961,
- "letzter_tick": 1794327447.2522554,
+ "letzter_tick": 1794328347.090815,
  "auftraege": [],
  "rebalancing": {
   "ziele": {
