@@ -186,8 +186,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "dd6456776",
-   "kurs": 746.45,
-   "wert": 2225.96
+   "kurs": 745.818,
+   "wert": 2224.08
   },
   {
    "id": "p1c64b37e",
@@ -207,8 +207,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "dd6456776",
-   "kurs": 73177.36499999999,
-   "wert": 1038.47
+   "kurs": 73184.185,
+   "wert": 1038.57
   },
   {
    "id": "p994b6370",
@@ -228,8 +228,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "dd6456776",
-   "kurs": 368.31,
-   "wert": 906.15
+   "kurs": 368.355,
+   "wert": 906.26
   },
   {
    "id": "p3b9e74b7",
@@ -295,8 +295,8 @@
    "ausstiegsplan": "Halten bis Abrechnung 31.12.",
    "entscheidung_id": "de2fc5d7b",
    "invalidierung": "PredictIt-Bein nicht gefüllt: JA-Bein wieder verkaufen.",
-   "kurs": 0.275,
-   "wert": 54.0
+   "kurs": 0.265,
+   "wert": 52.0
   },
   {
    "id": "p6edb4531",
@@ -514,7 +514,7 @@
    "ausstiegsplan": "Halten bis IPO-Tag (voraussichtlich Woche 16.–20.11.). Bei Preisfestsetzung neu rechnen: Schwelle = 1,25 Bio/13,09 Mrd. = $95,5. Teilverkauf, wenn JA ≥0,50 vor Handelsstart.",
    "entscheidung_id": "d0595e7ab",
    "invalidierung": "Endgültiger IPO-Preis ≥ $86 (dann reicht +11 % Pop) oder offizielle Polymarket-Klarstellung, dass voll verwässert gezählt wird; Graumarkt-/Indikationen Eröffnung ≥ $100.",
-   "kurs": 0.2385,
+   "kurs": 0.239,
    "wert": 640.46
   },
   {
@@ -585,7 +585,7 @@
  "funding": 0.0,
  "erstellt": 1793380123.8861866,
  "start_fx": 1.1156327353966788,
- "letzter_tick": 1794334646.8707922,
+ "letzter_tick": 1794334782.2303662,
  "auftraege": [],
  "rebalancing": {
   "ziele": {

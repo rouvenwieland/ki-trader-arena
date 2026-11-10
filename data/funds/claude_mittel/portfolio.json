@@ -180,8 +180,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "d6e1a7002",
-   "kurs": 746.45,
-   "wert": 1936.21
+   "kurs": 745.818,
+   "wert": 1934.57
   },
   {
    "id": "p5fe9ac51",
@@ -201,8 +201,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "d6e1a7002",
-   "kurs": 669.76,
-   "wert": 1067.78
+   "kurs": 669.005,
+   "wert": 1066.58
   },
   {
    "id": "p5106387a",
@@ -222,8 +222,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "d6e1a7002",
-   "kurs": 368.31,
-   "wert": 1095.36
+   "kurs": 368.355,
+   "wert": 1095.5
   },
   {
    "id": "p72af4e36",
@@ -243,8 +243,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "d6e1a7002",
-   "kurs": 95.745,
-   "wert": 1099.43
+   "kurs": 95.756,
+   "wert": 1099.55
   },
   {
    "id": "p3e7ff11c",
@@ -264,8 +264,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "d6e1a7002",
-   "kurs": 73177.36499999999,
-   "wert": 1204.27
+   "kurs": 73184.185,
+   "wert": 1204.38
   },
   {
    "id": "pe3015b77",
@@ -285,8 +285,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "d6e1a7002",
-   "kurs": 2028.55,
-   "wert": 460.38
+   "kurs": 2028.6550000000002,
+   "wert": 460.41
   },
   {
    "id": "p1ad6082a",
@@ -482,7 +482,7 @@
    "ausstiegsplan": "Bis zum IPO-Tag halten. Verkaufen, wenn der Bid ≥0,40 erreicht. Nach der Preisfestsetzung am 18.11. neu bewerten: Bei einem IPO-Preis ≥88 $ schließen.",
    "entscheidung_id": "d48fafa83",
    "invalidierung": "Die Nasdaq-Listing-Seite bzw. Yahoo zeigen vor dem IPO eine Aktienzahl von ≥16 Mrd., oder die Preisfestsetzung liegt bei ≥90 $.",
-   "kurs": 0.2385,
+   "kurs": 0.239,
    "wert": 80.92
   },
   {
@@ -519,7 +519,7 @@
  "funding": 0.0,
  "erstellt": 1793319819.7411644,
  "start_fx": 1.1184885798616961,
- "letzter_tick": 1794334646.8707922,
+ "letzter_tick": 1794334782.2303662,
  "auftraege": [
   {
    "id": "ac9b893",
@@ -555,7 +555,7 @@
    "ausstiegsplan": "",
    "invalidierung": "",
    "erstellt": 1794323323.1378255,
-   "geprueft_bis": 1794334646.8707922,
+   "geprueft_bis": 1794334782.2303662,
    "gueltig_bis": 1796915323.1378255
   }
  ],
