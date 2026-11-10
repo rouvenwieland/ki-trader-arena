@@ -2,7 +2,7 @@
  "fonds_id": "claude_mittel_rm",
  "waehrung": "USD",
  "start_kapital": 11156.327353966788,
- "cash": 1210.2800671032,
+ "cash": 1365.3121598115338,
  "positionen": [
   {
    "id": "pe8186cc2",
@@ -59,7 +59,7 @@
     "url": "https://polymarket.com/event/next-french-presidential-election"
    },
    "seite": "long",
-   "menge": 611.0,
+   "menge": 211.0,
    "einstand": 0.8180876268412438,
    "hebel": 1.0,
    "marge": 0.0,
@@ -550,9 +550,35 @@
    "invalidierung": "Mélenchon ≥20 % in ≥2 seriösen Umfragen (Ifop/Elabe/Odoxa) oder Stichwahl gegen RN ≤58:42; oder NEIN-Preis <0.75",
    "kurs": 0.865,
    "wert": 294.98
+  },
+  {
+   "id": "p2f91194c",
+   "inst": {
+    "id": "pm:manifold:OnpNLLgytQ:NEIN",
+    "art": "pm",
+    "venue": "manifold",
+    "ergebnis": "NEIN",
+    "frage": "Jensen Huang leave or announce leaving as Nvidia CEO in 2026?",
+    "schliesst": 1798761540.0,
+    "ref": {
+     "id": "OnpNLLgytQ"
+    },
+    "url": "https://manifold.markets/Simon74fe/jensen-huang-leave-or-announce-leav"
+   },
+   "seite": "long",
+   "menge": 251.0,
+   "einstand": 0.7735773198871165,
+   "hebel": 1.0,
+   "marge": 0.0,
+   "eroeffnet": 1794330442.4826348,
+   "gebuehren": 0.0,
+   "funding": 0.0,
+   "ausstiegsplan": "Halten bis 31.12.",
+   "entscheidung_id": "db61267da",
+   "invalidierung": "Polymarket-JA >0.30 oder Board-Befund schwerwiegend"
   }
  ],
- "realisiert": 105.28332001499986,
+ "realisiert": 127.24826927850235,
  "gebuehren": 49.25012633920157,
  "funding": 0.0,
  "erstellt": 1793380123.8861866,

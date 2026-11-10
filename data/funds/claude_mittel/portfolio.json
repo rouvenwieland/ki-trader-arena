@@ -2,7 +2,7 @@
  "fonds_id": "claude_mittel",
  "waehrung": "USD",
  "start_kapital": 11184.88579861696,
- "cash": 2300.3418516667807,
+ "cash": 2205.7908024939743,
  "positionen": [
   {
    "id": "p51e71031",
@@ -484,6 +484,32 @@
    "invalidierung": "Die Nasdaq-Listing-Seite bzw. Yahoo zeigen vor dem IPO eine Aktienzahl von ≥16 Mrd., oder die Preisfestsetzung liegt bei ≥90 $.",
    "kurs": 0.2375,
    "wert": 78.88
+  },
+  {
+   "id": "pac09f469",
+   "inst": {
+    "id": "pm:manifold:zEuhZdCOtQ:NEIN",
+    "art": "pm",
+    "venue": "manifold",
+    "ergebnis": "NEIN",
+    "frage": "Will Anthropic's market cap on the day of their IPO be above 2 trillion?",
+    "schliesst": 1830297540.0,
+    "ref": {
+     "id": "zEuhZdCOtQ"
+    },
+    "url": "https://manifold.markets/BenAybar/will-anthropics-market-cap-on-the-o"
+   },
+   "seite": "long",
+   "menge": 122.0,
+   "einstand": 0.775008599777101,
+   "hebel": 1.0,
+   "marge": 0.0,
+   "eroeffnet": 1794330401.0058858,
+   "gebuehren": 0.0,
+   "funding": 0.0,
+   "ausstiegsplan": "Halten bis Auflösung; Verkauf bei NEIN-Bid ≥0.93; neu bewerten bei IPO-Preis ≥$90 oder Spanne angehoben.",
+   "entscheidung_id": "d9f975d34",
+   "invalidierung": "IPO-Preisspanne auf ≥$95 angehoben oder Pricing >$90 am 18.11."
   }
  ],
  "realisiert": -50.88627954909997,
