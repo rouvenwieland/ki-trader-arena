@@ -103,7 +103,7 @@
    "ausstiegsplan": "Halten bis 31.12.; Gewinnmitnahme ≥0.88 oder nach Earnings neu bewerten.",
    "entscheidung_id": "d24ff66a4",
    "invalidierung": "NVDA-Marktkap übertrifft Apple um >3 % nach Earnings (NVDA >~205 bei AAPL ~350).",
-   "kurs": 0.829,
+   "kurs": 0.8285,
    "wert": 1027.95
   },
   {
@@ -207,8 +207,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "dd6456776",
-   "kurs": 73645.845,
-   "wert": 1045.12
+   "kurs": 73730.655,
+   "wert": 1046.32
   },
   {
    "id": "p994b6370",
@@ -480,8 +480,8 @@
    "ausstiegsplan": "Bis Vereidigung halten; schließen, wenn beide Beine zusammen ≥0.97 verkaufbar.",
    "entscheidung_id": "d5f5d56d9",
    "invalidierung": "Nachweislich abweichende PredictIt-Regel, die Eisenkot-JA bei PredictIt und NEIN bei Polymarket zulässt.",
-   "kurs": 0.582,
-   "wert": 403.9
+   "kurs": 0.5825,
+   "wert": 404.6
   },
   {
    "id": "p2567180c",
@@ -514,7 +514,7 @@
    "ausstiegsplan": "Halten bis IPO-Tag (voraussichtlich Woche 16.–20.11.). Bei Preisfestsetzung neu rechnen: Schwelle = 1,25 Bio/13,09 Mrd. = $95,5. Teilverkauf, wenn JA ≥0,50 vor Handelsstart.",
    "entscheidung_id": "d0595e7ab",
    "invalidierung": "Endgültiger IPO-Preis ≥ $86 (dann reicht +11 % Pop) oder offizielle Polymarket-Klarstellung, dass voll verwässert gezählt wird; Graumarkt-/Indikationen Eröffnung ≥ $100.",
-   "kurs": 0.1845,
+   "kurs": 0.1805,
    "wert": 484.38
   },
   {
@@ -641,7 +641,7 @@
  "funding": 0.0,
  "erstellt": 1793380123.8861866,
  "start_fx": 1.1156327353966788,
- "letzter_tick": 1794387246.829994,
+ "letzter_tick": 1794388147.1936605,
  "auftraege": [],
  "rebalancing": {
   "ziele": {
