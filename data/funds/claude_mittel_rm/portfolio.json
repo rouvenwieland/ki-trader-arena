@@ -35,8 +35,8 @@
    "ausstiegsplan": "Halten bis Abrechnung 31.12.; vorzeitig verkaufen, wenn NEIN-Preis auf ≥0.62 steigt (Gewinn mitnehmen) oder unter 0.38 fällt.",
    "entscheidung_id": "dbf84bba3",
    "invalidierung": "NVDA schließt wieder dauerhaft über Apple-Marktkap (NVDA >~210 bei AAPL ~343) oder starke NVDA-Zahlen mit Rally >8%; dann neu bewerten/verkaufen.",
-   "kurs": 0.77,
-   "wert": 424.84
+   "kurs": 0.775,
+   "wert": 430.43
   },
   {
    "id": "pbb4d5e0c",
@@ -70,7 +70,7 @@
    "entscheidung_id": "d24ff66a4",
    "invalidierung": "NVDA-Marktkap übertrifft Apple um >3 % nach Earnings (NVDA >~205 bei AAPL ~350).",
    "kurs": 0.757,
-   "wert": 930.76
+   "wert": 929.52
   },
   {
    "id": "pa832233e",
@@ -131,7 +131,7 @@
    "ausstiegsplan": "Halten bis 30.11.; verkaufen, wenn BTC unter 64.000 fällt oder NEIN-Preis <0.88.",
    "entscheidung_id": "d7dbfc08f",
    "invalidierung": "BTC Binance unter 64.000 oder DVOL >60",
-   "kurs": 0.9615,
+   "kurs": 0.962,
    "wert": 300.48
   },
   {
@@ -152,8 +152,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "dd6456776",
-   "kurs": 759.45,
-   "wert": 2264.73
+   "kurs": 760.03,
+   "wert": 2266.46
   },
   {
    "id": "p1c64b37e",
@@ -173,8 +173,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "dd6456776",
-   "kurs": 74158.985,
-   "wert": 1052.4
+   "kurs": 74219.995,
+   "wert": 1053.27
   },
   {
    "id": "p994b6370",
@@ -194,8 +194,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "dd6456776",
-   "kurs": 366.459,
-   "wert": 901.6
+   "kurs": 366.51,
+   "wert": 901.72
   },
   {
    "id": "p3b9e74b7",
@@ -316,8 +316,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "d0a642430",
-   "kurs": 91.495,
-   "wert": 908.73
+   "kurs": 91.5,
+   "wert": 908.78
   },
   {
    "id": "p4abb843a",
@@ -446,8 +446,8 @@
    "ausstiegsplan": "Bis Vereidigung halten; schließen, wenn beide Beine zusammen ≥0.97 verkaufbar.",
    "entscheidung_id": "d5f5d56d9",
    "invalidierung": "Nachweislich abweichende PredictIt-Regel, die Eisenkot-JA bei PredictIt und NEIN bei Polymarket zulässt.",
-   "kurs": 0.6185,
-   "wert": 431.2
+   "kurs": 0.611,
+   "wert": 422.8
   },
   {
    "id": "p2567180c",
@@ -542,8 +542,8 @@
    "ausstiegsplan": "Halten bis 31.12.",
    "entscheidung_id": "db61267da",
    "invalidierung": "Polymarket-JA >0.30 oder Board-Befund schwerwiegend",
-   "kurs": 0.8276615068497931,
-   "wert": 207.73
+   "kurs": 0.8278230334556125,
+   "wert": 207.77
   },
   {
    "id": "p51c17729",
@@ -632,8 +632,8 @@
    "ausstiegsplan": "Halten bis zur Abrechnung um 17:00 UTC heute.",
    "entscheidung_id": "d4a5f31d7",
    "invalidierung": "BTC/USDT über 73.900 vor 16:45 UTC – dann ist der Vorteil weg (Position läuft aber bis zur Abrechnung, kein Verkauf wegen Spread).",
-   "kurs": 0.0805,
-   "wert": 31.54
+   "kurs": null,
+   "wert": 324.45
   }
  ],
  "realisiert": 132.0827800149999,
@@ -641,7 +641,7 @@
  "funding": 0.0,
  "erstellt": 1793380123.8861866,
  "start_fx": 1.1156327353966788,
- "letzter_tick": 1794415406.10646,
+ "letzter_tick": 1794416305.8146324,
  "auftraege": [],
  "rebalancing": {
   "ziele": {
