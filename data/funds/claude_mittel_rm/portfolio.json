@@ -35,8 +35,8 @@
    "ausstiegsplan": "Halten bis Abrechnung 31.12.; vorzeitig verkaufen, wenn NEIN-Preis auf ≥0.62 steigt (Gewinn mitnehmen) oder unter 0.38 fällt.",
    "entscheidung_id": "dbf84bba3",
    "invalidierung": "NVDA schließt wieder dauerhaft über Apple-Marktkap (NVDA >~210 bei AAPL ~343) oder starke NVDA-Zahlen mit Rally >8%; dann neu bewerten/verkaufen.",
-   "kurs": 0.85,
-   "wert": 469.56
+   "kurs": 0.845,
+   "wert": 463.97
   },
   {
    "id": "p8c871cfa",
@@ -103,8 +103,8 @@
    "ausstiegsplan": "Halten bis 31.12.; Gewinnmitnahme ≥0.88 oder nach Earnings neu bewerten.",
    "entscheidung_id": "d24ff66a4",
    "invalidierung": "NVDA-Marktkap übertrifft Apple um >3 % nach Earnings (NVDA >~205 bei AAPL ~350).",
-   "kurs": 0.828,
-   "wert": 1024.21
+   "kurs": 0.827,
+   "wert": 1022.97
   },
   {
    "id": "pa832233e",
@@ -207,8 +207,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "dd6456776",
-   "kurs": 73852.685,
-   "wert": 1048.05
+   "kurs": 73988.185,
+   "wert": 1049.98
   },
   {
    "id": "p994b6370",
@@ -480,8 +480,8 @@
    "ausstiegsplan": "Bis Vereidigung halten; schließen, wenn beide Beine zusammen ≥0.97 verkaufbar.",
    "entscheidung_id": "d5f5d56d9",
    "invalidierung": "Nachweislich abweichende PredictIt-Regel, die Eisenkot-JA bei PredictIt und NEIN bei Polymarket zulässt.",
-   "kurs": 0.574,
-   "wert": 399.7
+   "kurs": 0.5734999999999999,
+   "wert": 399.0
   },
   {
    "id": "p2567180c",
@@ -514,8 +514,8 @@
    "ausstiegsplan": "Halten bis IPO-Tag (voraussichtlich Woche 16.–20.11.). Bei Preisfestsetzung neu rechnen: Schwelle = 1,25 Bio/13,09 Mrd. = $95,5. Teilverkauf, wenn JA ≥0,50 vor Handelsstart.",
    "entscheidung_id": "d0595e7ab",
    "invalidierung": "Endgültiger IPO-Preis ≥ $86 (dann reicht +11 % Pop) oder offizielle Polymarket-Klarstellung, dass voll verwässert gezählt wird; Graumarkt-/Indikationen Eröffnung ≥ $100.",
-   "kurs": 0.184,
-   "wert": 465.54
+   "kurs": 0.1955,
+   "wert": 505.91
   },
   {
    "id": "p1f686553",
@@ -576,8 +576,8 @@
    "ausstiegsplan": "Halten bis 31.12.",
    "entscheidung_id": "db61267da",
    "invalidierung": "Polymarket-JA >0.30 oder Board-Befund schwerwiegend",
-   "kurs": 0.8375926099428148,
-   "wert": 210.2
+   "kurs": 0.8346254324856046,
+   "wert": 209.46
   },
   {
    "id": "p51c17729",
@@ -641,7 +641,7 @@
  "funding": 0.0,
  "erstellt": 1793380123.8861866,
  "start_fx": 1.1156327353966788,
- "letzter_tick": 1794383647.3110611,
+ "letzter_tick": 1794384547.1823416,
  "auftraege": [],
  "rebalancing": {
   "ziele": {
