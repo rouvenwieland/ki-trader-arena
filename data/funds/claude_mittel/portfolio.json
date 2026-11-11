@@ -159,8 +159,8 @@
    "ausstiegsplan": "Bid ≥0,70 verkaufen (P erreicht); Neubewertung nach NVDA-Zahlen 19.11.; schließen, wenn Apple-Vorsprung <3 %.",
    "entscheidung_id": "d7e53ef04",
    "invalidierung": "NVDA-Marktkap. kommt auf <3 % Abstand zu Apple, oder Apple fällt >8 % relativ.",
-   "kurs": 0.755,
-   "wert": 228.72
+   "kurs": 0.7565,
+   "wert": 229.02
   },
   {
    "id": "pb60e44cc",
@@ -180,8 +180,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "d6e1a7002",
-   "kurs": 761.312,
-   "wert": 1974.76
+   "kurs": 761.32,
+   "wert": 1974.78
   },
   {
    "id": "p5fe9ac51",
@@ -201,8 +201,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "d6e1a7002",
-   "kurs": 694.38,
-   "wert": 1107.04
+   "kurs": 694.26,
+   "wert": 1106.84
   },
   {
    "id": "p5106387a",
@@ -222,8 +222,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "d6e1a7002",
-   "kurs": 366.605,
-   "wert": 1090.29
+   "kurs": 365.92,
+   "wert": 1088.26
   },
   {
    "id": "p72af4e36",
@@ -243,8 +243,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "d6e1a7002",
-   "kurs": 95.835,
-   "wert": 1100.46
+   "kurs": 95.82,
+   "wert": 1100.29
   },
   {
    "id": "p3e7ff11c",
@@ -264,8 +264,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "d6e1a7002",
-   "kurs": 74522.735,
-   "wert": 1226.41
+   "kurs": 74441.89499999999,
+   "wert": 1225.08
   },
   {
    "id": "pe3015b77",
@@ -285,8 +285,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "d6e1a7002",
-   "kurs": 2093.245,
-   "wert": 475.06
+   "kurs": 2089.625,
+   "wert": 474.25
   },
   {
    "id": "p1ad6082a",
@@ -479,7 +479,7 @@
  "funding": 0.0,
  "erstellt": 1793319819.7411644,
  "start_fx": 1.1184885798616961,
- "letzter_tick": 1794419005.6058307,
+ "letzter_tick": 1794419906.2254407,
  "auftraege": [
   {
    "id": "a4e7a61",
@@ -514,7 +514,7 @@
    "ausstiegsplan": "",
    "invalidierung": "",
    "erstellt": 1794409480.899957,
-   "geprueft_bis": 1794419005.6058307,
+   "geprueft_bis": 1794419906.2254407,
    "gueltig_bis": 1797001480.899957
   }
  ],

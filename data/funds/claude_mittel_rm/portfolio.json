@@ -69,8 +69,8 @@
    "ausstiegsplan": "Halten bis 31.12.; Gewinnmitnahme ≥0.88 oder nach Earnings neu bewerten.",
    "entscheidung_id": "d24ff66a4",
    "invalidierung": "NVDA-Marktkap übertrifft Apple um >3 % nach Earnings (NVDA >~205 bei AAPL ~350).",
-   "kurs": 0.755,
-   "wert": 928.27
+   "kurs": 0.7565,
+   "wert": 929.52
   },
   {
    "id": "pa832233e",
@@ -152,8 +152,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "dd6456776",
-   "kurs": 761.312,
-   "wert": 2270.28
+   "kurs": 761.32,
+   "wert": 2270.3
   },
   {
    "id": "p1c64b37e",
@@ -173,8 +173,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "dd6456776",
-   "kurs": 74522.735,
-   "wert": 1057.56
+   "kurs": 74441.89499999999,
+   "wert": 1056.42
   },
   {
    "id": "p994b6370",
@@ -194,8 +194,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "dd6456776",
-   "kurs": 366.605,
-   "wert": 901.95
+   "kurs": 365.92,
+   "wert": 900.27
   },
   {
    "id": "p3b9e74b7",
@@ -379,8 +379,8 @@
    "ausstiegsplan": "Halten bis Abrechnung Jan. 2027; Verkauf bei NEIN <0.80 oder Doomsday-Opening-Tag >$200M.",
    "entscheidung_id": "d6b155dae",
    "invalidierung": "Doomsday Freitagsumsatz inkl. Previews >$200M am 18.12. oder Doomsday-Domestic nach 7 Tagen >$600M.",
-   "kurs": 0.883,
-   "wert": 431.48
+   "kurs": 0.8825000000000001,
+   "wert": 431.98
   },
   {
    "id": "p75b03ffe",
@@ -446,8 +446,8 @@
    "ausstiegsplan": "Bis Vereidigung halten; schließen, wenn beide Beine zusammen ≥0.97 verkaufbar.",
    "entscheidung_id": "d5f5d56d9",
    "invalidierung": "Nachweislich abweichende PredictIt-Regel, die Eisenkot-JA bei PredictIt und NEIN bei Polymarket zulässt.",
-   "kurs": 0.607,
-   "wert": 421.4
+   "kurs": 0.6105,
+   "wert": 423.5
   },
   {
    "id": "p2567180c",
@@ -542,8 +542,8 @@
    "ausstiegsplan": "Halten bis 31.12.",
    "entscheidung_id": "db61267da",
    "invalidierung": "Polymarket-JA >0.30 oder Board-Befund schwerwiegend",
-   "kurs": 0.8231319638385252,
-   "wert": 206.6
+   "kurs": 0.8585607576804303,
+   "wert": 215.49
   },
   {
    "id": "p51c17729",
@@ -607,7 +607,7 @@
  "funding": 0.0,
  "erstellt": 1793380123.8861866,
  "start_fx": 1.1156327353966788,
- "letzter_tick": 1794419005.6058307,
+ "letzter_tick": 1794419906.2254407,
  "auftraege": [],
  "rebalancing": {
   "ziele": {
