@@ -264,8 +264,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "d6e1a7002",
-   "kurs": 73641.08499999999,
-   "wert": 1211.9
+   "kurs": 73645.845,
+   "wert": 1211.98
   },
   {
    "id": "pe3015b77",
@@ -285,8 +285,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "d6e1a7002",
-   "kurs": 2055.125,
-   "wert": 466.42
+   "kurs": 2057.35,
+   "wert": 466.91
   },
   {
    "id": "p1ad6082a",
@@ -414,8 +414,8 @@
    "ausstiegsplan": "Bis zum IPO-Tag halten. Verkaufen, wenn der Bid ≥0,40 erreicht. Nach der Preisfestsetzung am 18.11. neu bewerten: Bei einem IPO-Preis ≥88 $ schließen.",
    "entscheidung_id": "d48fafa83",
    "invalidierung": "Die Nasdaq-Listing-Seite bzw. Yahoo zeigen vor dem IPO eine Aktienzahl von ≥16 Mrd., oder die Preisfestsetzung liegt bei ≥90 $.",
-   "kurs": 0.1785,
-   "wert": 57.46
+   "kurs": 0.1845,
+   "wert": 61.2
   },
   {
    "id": "pac09f469",
@@ -442,8 +442,8 @@
    "ausstiegsplan": "Halten bis Auflösung; Verkauf bei NEIN-Bid ≥0.93; neu bewerten bei IPO-Preis ≥$90 oder Spanne angehoben.",
    "entscheidung_id": "d9f975d34",
    "invalidierung": "IPO-Preisspanne auf ≥$95 angehoben oder Pricing >$90 am 18.11.",
-   "kurs": 0.8700139069018482,
-   "wert": 106.12
+   "kurs": 0.86175466110552,
+   "wert": 105.11
   }
  ],
  "realisiert": 70.49339185923117,
@@ -451,7 +451,7 @@
  "funding": 0.0,
  "erstellt": 1793319819.7411644,
  "start_fx": 1.1184885798616961,
- "letzter_tick": 1794386346.6583335,
+ "letzter_tick": 1794387246.829994,
  "auftraege": [],
  "rebalancing": {
   "ziele": {
