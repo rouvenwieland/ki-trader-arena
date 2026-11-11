@@ -261,7 +261,7 @@
      "venue": "yahoo",
      "symbol": "SPY"
     },
-    "anteil": 0.22
+    "anteil": 0.24
    },
    "stock:AGG": {
     "inst": {
@@ -288,7 +288,7 @@
      "venue": "yahoo",
      "symbol": "GLD"
     },
-    "anteil": 0.12
+    "anteil": 0.13
    },
    "spot:BTC-USD": {
     "inst": {
@@ -297,12 +297,12 @@
      "venue": "coinbase",
      "symbol": "BTC-USD"
     },
-    "anteil": 0.06
+    "anteil": 0.07
    }
   },
   "schwelle_pp": 3.0,
-  "seit": 1794380163.70413,
-  "entscheidung_id": "d5cbb6ef9"
+  "seit": 1794423623.7308476,
+  "entscheidung_id": "dc92357e7"
  },
  "auftraege": []
 }
