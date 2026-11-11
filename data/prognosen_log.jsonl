@@ -655,3 +655,12 @@
 {"ts": 1794401052, "iid": "spot:BTC-USD", "modell": "kronos", "h": 24, "letzter": 73889.67, "median": 75278.875, "p10": null, "p90": null}
 {"ts": 1794401052, "iid": "spot:ETH-USD", "modell": "kronos", "h": 24, "letzter": 2054.74, "median": 2217.0361328125, "p10": null, "p90": null}
 {"ts": 1794401052, "iid": "spot:SOL-USD", "modell": "kronos", "h": 24, "letzter": 83.77, "median": 90.46609497070312, "p10": null, "p90": null}
+{"ts": 1794422782, "iid": "spot:BTC-USD", "modell": "garch", "h": 24, "letzter": 74498.22, "median": 74498.22, "p10": 72700.67549205694, "p90": 76340.20929798341}
+{"ts": 1794422782, "iid": "spot:ETH-USD", "modell": "garch", "h": 24, "letzter": 2086.54, "median": 2086.54, "p10": 2013.8636851910092, "p90": 2161.839057734967}
+{"ts": 1794422782, "iid": "spot:SOL-USD", "modell": "garch", "h": 24, "letzter": 85.18, "median": 85.18, "p10": 82.16146665813483, "p90": 88.30943135654965}
+{"ts": 1794422782, "iid": "spot:BTC-USD", "modell": "timesfm", "h": 24, "letzter": 74498.21875, "median": 74488.0859375, "p10": 73329.921875, "p90": 75764.7890625}
+{"ts": 1794422782, "iid": "spot:ETH-USD", "modell": "timesfm", "h": 24, "letzter": 2086.5400390625, "median": 2086.02001953125, "p10": 2043.177734375, "p90": 2129.68359375}
+{"ts": 1794422782, "iid": "spot:SOL-USD", "modell": "timesfm", "h": 24, "letzter": 85.18000030517578, "median": 85.18724060058594, "p10": 82.59129333496094, "p90": 89.4786605834961}
+{"ts": 1794422782, "iid": "spot:BTC-USD", "modell": "kronos", "h": 24, "letzter": 74498.22, "median": 75740.5546875, "p10": null, "p90": null}
+{"ts": 1794422782, "iid": "spot:ETH-USD", "modell": "kronos", "h": 24, "letzter": 2086.54, "median": 2183.45263671875, "p10": null, "p90": null}
+{"ts": 1794422782, "iid": "spot:SOL-USD", "modell": "kronos", "h": 24, "letzter": 85.18, "median": 89.73910522460938, "p10": null, "p90": null}
