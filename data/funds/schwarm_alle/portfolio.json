@@ -2,7 +2,7 @@
  "fonds_id": "schwarm_alle",
  "waehrung": "USD",
  "start_kapital": 11157.431109273288,
- "cash": 9199.383309273288,
+ "cash": 8602.594859273288,
  "positionen": [
   {
    "id": "p94f69125",
@@ -65,7 +65,7 @@
    "gebuehren": 3.13551,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Schwarm-Regel)",
-   "kurs": 0.028999999999999998,
+   "kurs": 0.0285,
    "wert": 10.58
   },
   {
@@ -129,7 +129,7 @@
    "gebuehren": 0.0,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Schwarm-Regel)",
-   "kurs": 0.971,
+   "kurs": 0.9704999999999999,
    "wert": 682.18
   },
   {
@@ -225,8 +225,8 @@
    "gebuehren": 5.59212,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Schwarm-Regel)",
-   "kurs": 0.165,
-   "wert": 71.36
+   "kurs": 0.215,
+   "wert": 93.66
   },
   {
    "id": "p646c0862",
@@ -291,12 +291,44 @@
    "ausstiegsplan": "Halten bis zur Abrechnung (Schwarm-Regel)",
    "kurs": 0.9744999999999999,
    "wert": 639.92
+  },
+  {
+   "id": "p7cf42700",
+   "inst": {
+    "id": "pm:polymarket:6683302:NEIN",
+    "art": "pm",
+    "venue": "polymarket",
+    "ergebnis": "NEIN",
+    "frage": "Will the price of Bitcoin be above $74,000 on November 11?",
+    "schliesst": 1794416400.0,
+    "ref": {
+     "id": "6683302",
+     "token_ja": "112233253178221771651974034480699123609894142946455405088355534051142583374014",
+     "token_nein": "8568414337792428465051408358957603028666153058070747466960024614429711816510",
+     "tick": 0.001,
+     "condition": "0x3ca978bec59e6ce820e14c6befb236c378c8b976a9fe0c1117253be5e738833c",
+     "gebuehr_rate": 0.07,
+     "gebuehr_exp": 1.0
+    },
+    "url": "https://polymarket.com/event/bitcoin-above-on-november-11-2026"
+   },
+   "seite": "long",
+   "menge": 1155.0,
+   "einstand": 0.49920000000000003,
+   "hebel": 1.0,
+   "marge": 0.0,
+   "eroeffnet": 1794411806.3288305,
+   "gebuehren": 20.21245,
+   "funding": 0.0,
+   "ausstiegsplan": "Halten bis zur Abrechnung (Schwarm-Regel)",
+   "kurs": 0.488,
+   "wert": 510.51
   }
  ],
  "realisiert": 591.8096199999999,
- "gebuehren": 49.88632,
+ "gebuehren": 70.09877,
  "funding": 0.0,
  "erstellt": 1793379225.5430336,
  "start_fx": 1.1157431109273288,
- "letzter_tick": 1794410905.7535346
+ "letzter_tick": 1794411806.3288305
 }
