@@ -69,8 +69,8 @@
    "ausstiegsplan": "Halten bis 31.12.; Gewinnmitnahme ≥0.88 oder nach Earnings neu bewerten.",
    "entscheidung_id": "d24ff66a4",
    "invalidierung": "NVDA-Marktkap übertrifft Apple um >3 % nach Earnings (NVDA >~205 bei AAPL ~350).",
-   "kurs": 0.7605,
-   "wert": 939.48
+   "kurs": 0.758,
+   "wert": 934.5
   },
   {
    "id": "pa832233e",
@@ -152,8 +152,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "dd6456776",
-   "kurs": 760.22,
-   "wert": 2267.02
+   "kurs": 760.5,
+   "wert": 2267.86
   },
   {
    "id": "p1c64b37e",
@@ -173,8 +173,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "dd6456776",
-   "kurs": 74329.57500000001,
-   "wert": 1054.82
+   "kurs": 74274.215,
+   "wert": 1054.04
   },
   {
    "id": "p994b6370",
@@ -194,8 +194,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "dd6456776",
-   "kurs": 365.142,
-   "wert": 898.36
+   "kurs": 365.54,
+   "wert": 899.33
   },
   {
    "id": "p3b9e74b7",
@@ -316,8 +316,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "d0a642430",
-   "kurs": 91.49,
-   "wert": 908.69
+   "kurs": 91.495,
+   "wert": 908.74
   },
   {
    "id": "p4abb843a",
@@ -480,8 +480,8 @@
    "ausstiegsplan": "Halten bis IPO-Tag (voraussichtlich Woche 16.–20.11.). Bei Preisfestsetzung neu rechnen: Schwelle = 1,25 Bio/13,09 Mrd. = $95,5. Teilverkauf, wenn JA ≥0,50 vor Handelsstart.",
    "entscheidung_id": "d0595e7ab",
    "invalidierung": "Endgültiger IPO-Preis ≥ $86 (dann reicht +11 % Pop) oder offizielle Polymarket-Klarstellung, dass voll verwässert gezählt wird; Graumarkt-/Indikationen Eröffnung ≥ $100.",
-   "kurs": 0.2145,
-   "wert": 575.87
+   "kurs": 0.213,
+   "wert": 570.49
   },
   {
    "id": "p1f686553",
@@ -607,7 +607,7 @@
  "funding": 0.0,
  "erstellt": 1793380123.8861866,
  "start_fx": 1.1156327353966788,
- "letzter_tick": 1794425305.5485415,
+ "letzter_tick": 1794425593.05114,
  "auftraege": [],
  "rebalancing": {
   "ziele": {
