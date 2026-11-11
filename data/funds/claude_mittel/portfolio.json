@@ -2,7 +2,7 @@
  "fonds_id": "claude_mittel",
  "waehrung": "USD",
  "start_kapital": 11184.88579861696,
- "cash": 2542.890223490444,
+ "cash": 2670.090223490444,
  "positionen": [
   {
    "id": "p51e71031",
@@ -264,8 +264,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "d6e1a7002",
-   "kurs": 73423.11499999999,
-   "wert": 1208.31
+   "kurs": 73361.57500000001,
+   "wert": 1207.3
   },
   {
    "id": "pe3015b77",
@@ -285,8 +285,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "d6e1a7002",
-   "kurs": 2047.645,
-   "wert": 464.72
+   "kurs": 2043.065,
+   "wert": 463.68
   },
   {
    "id": "p1ad6082a",
@@ -384,40 +384,6 @@
    "wert": 8.57
   },
   {
-   "id": "pf4d9229f",
-   "inst": {
-    "id": "pm:polymarket:6763350:JA",
-    "art": "pm",
-    "venue": "polymarket",
-    "ergebnis": "JA",
-    "frage": "Will CoreWeave say \"OpenAI\" during earnings call?",
-    "schliesst": 1794373140.0,
-    "ref": {
-     "id": "6763350",
-     "token_ja": "61843370585329304258190488889973881916941715764304413287379555692191177500046",
-     "token_nein": "19911589294776139931172012218062522624226803950735800023478924607126633888475",
-     "tick": 0.01,
-     "condition": "0x79395f1b0a4e0e62fdf0de4bc5e7d6e9caf1c23d07d6ef4f47e6529dd32fef9e",
-     "gebuehr_rate": 0.04,
-     "gebuehr_exp": 1.0
-    },
-    "url": "https://polymarket.com/event/will-coreweave-say-openai-during-earnings-call-november-10"
-   },
-   "seite": "long",
-   "menge": 50.0,
-   "einstand": 0.51,
-   "hebel": 1.0,
-   "marge": 0.0,
-   "eroeffnet": 1794251569.2086134,
-   "gebuehren": 0.4998,
-   "funding": 0.0,
-   "ausstiegsplan": "Bis Abrechnung nach dem Call am 10.11. halten; kein Nachkauf.",
-   "entscheidung_id": "d394b3bc9",
-   "invalidierung": "Call beginnt ohne Nennung in den vorbereiteten Bemerkungen und Q&A ohne OpenAI-Frage; oder Transkript Q2'26 zeigt kein OpenAI.",
-   "kurs": 0.004999999999999999,
-   "wert": 0.05
-  },
-  {
    "id": "pf6829e90",
    "inst": {
     "id": "pm:polymarket:2412744:JA",
@@ -448,8 +414,8 @@
    "ausstiegsplan": "Bis zum IPO-Tag halten. Verkaufen, wenn der Bid ≥0,40 erreicht. Nach der Preisfestsetzung am 18.11. neu bewerten: Bei einem IPO-Preis ≥88 $ schließen.",
    "entscheidung_id": "d48fafa83",
    "invalidierung": "Die Nasdaq-Listing-Seite bzw. Yahoo zeigen vor dem IPO eine Aktienzahl von ≥16 Mrd., oder die Preisfestsetzung liegt bei ≥90 $.",
-   "kurs": 0.2145,
-   "wert": 72.76
+   "kurs": 0.1955,
+   "wert": 64.6
   },
   {
    "id": "pac09f469",
@@ -478,43 +444,14 @@
    "invalidierung": "IPO-Preisspanne auf ≥$95 angehoben oder Pricing >$90 am 18.11.",
    "kurs": 0.928024725118668,
    "wert": 113.21
-  },
-  {
-   "id": "p5f0a5658",
-   "inst": {
-    "id": "pm:manifold:OnpNLLgytQ:NEIN",
-    "art": "pm",
-    "venue": "manifold",
-    "ergebnis": "NEIN",
-    "frage": "Jensen Huang leave or announce leaving as Nvidia CEO in 2026?",
-    "schliesst": 1798761540.0,
-    "ref": {
-     "id": "OnpNLLgytQ"
-    },
-    "url": "https://manifold.markets/Simon74fe/jensen-huang-leave-or-announce-leav"
-   },
-   "seite": "long",
-   "menge": 159.0,
-   "einstand": 0.6252251509656006,
-   "hebel": 1.0,
-   "marge": 0.0,
-   "eroeffnet": 1794337749.231922,
-   "gebuehren": 0.0,
-   "funding": 0.0,
-   "take_profit": 0.8,
-   "ausstiegsplan": "NEIN-Bid ≥0,80 oder Halten bis 31.12.; sofort schließen bei Meldung, dass der Board Huang beurlaubt/ersetzt oder Rücktritt erwägt.",
-   "entscheidung_id": "ddfa1fc63",
-   "invalidierung": "Reuters/WSJ/Bloomberg: Board erwägt Ablösung oder Huang nimmt Auszeit; Polymarket 'Huang resignation' über 0,30.",
-   "kurs": 0.794279290768402,
-   "wert": 126.26
   }
  ],
- "realisiert": 68.20419086276166,
+ "realisiert": 70.49339185923117,
  "gebuehren": 58.7755933771088,
  "funding": 0.0,
  "erstellt": 1793319819.7411644,
  "start_fx": 1.1184885798616961,
- "letzter_tick": 1794358310.6784668,
+ "letzter_tick": 1794359210.6858497,
  "auftraege": [],
  "rebalancing": {
   "ziele": {
