@@ -69,7 +69,7 @@
    "ausstiegsplan": "Halten bis 31.12.; Gewinnmitnahme ≥0.88 oder nach Earnings neu bewerten.",
    "entscheidung_id": "d24ff66a4",
    "invalidierung": "NVDA-Marktkap übertrifft Apple um >3 % nach Earnings (NVDA >~205 bei AAPL ~350).",
-   "kurs": 0.7565,
+   "kurs": 0.7545,
    "wert": 929.52
   },
   {
@@ -152,8 +152,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "dd6456776",
-   "kurs": 761.305,
-   "wert": 2270.26
+   "kurs": 762.18,
+   "wert": 2272.87
   },
   {
    "id": "p1c64b37e",
@@ -173,8 +173,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "dd6456776",
-   "kurs": 74361.285,
-   "wert": 1055.27
+   "kurs": 74408.21,
+   "wert": 1055.92
   },
   {
    "id": "p994b6370",
@@ -194,8 +194,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "dd6456776",
-   "kurs": 365.905,
-   "wert": 900.23
+   "kurs": 365.77,
+   "wert": 899.9
   },
   {
    "id": "p3b9e74b7",
@@ -317,7 +317,7 @@
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "d0a642430",
    "kurs": 91.495,
-   "wert": 908.73
+   "wert": 908.74
   },
   {
    "id": "p4abb843a",
@@ -379,8 +379,8 @@
    "ausstiegsplan": "Halten bis Abrechnung Jan. 2027; Verkauf bei NEIN <0.80 oder Doomsday-Opening-Tag >$200M.",
    "entscheidung_id": "d6b155dae",
    "invalidierung": "Doomsday Freitagsumsatz inkl. Previews >$200M am 18.12. oder Doomsday-Domestic nach 7 Tagen >$600M.",
-   "kurs": 0.88,
-   "wert": 430.01
+   "kurs": 0.878,
+   "wert": 429.02
   },
   {
    "id": "p75b03ffe",
@@ -446,7 +446,7 @@
    "ausstiegsplan": "Bis Vereidigung halten; schließen, wenn beide Beine zusammen ≥0.97 verkaufbar.",
    "entscheidung_id": "d5f5d56d9",
    "invalidierung": "Nachweislich abweichende PredictIt-Regel, die Eisenkot-JA bei PredictIt und NEIN bei Polymarket zulässt.",
-   "kurs": 0.6065,
+   "kurs": 0.6074999999999999,
    "wert": 421.4
   },
   {
@@ -480,8 +480,8 @@
    "ausstiegsplan": "Halten bis IPO-Tag (voraussichtlich Woche 16.–20.11.). Bei Preisfestsetzung neu rechnen: Schwelle = 1,25 Bio/13,09 Mrd. = $95,5. Teilverkauf, wenn JA ≥0,50 vor Handelsstart.",
    "entscheidung_id": "d0595e7ab",
    "invalidierung": "Endgültiger IPO-Preis ≥ $86 (dann reicht +11 % Pop) oder offizielle Polymarket-Klarstellung, dass voll verwässert gezählt wird; Graumarkt-/Indikationen Eröffnung ≥ $100.",
-   "kurs": 0.2225,
-   "wert": 597.4
+   "kurs": 0.2195,
+   "wert": 581.26
   },
   {
    "id": "p1f686553",
@@ -542,8 +542,8 @@
    "ausstiegsplan": "Halten bis 31.12.",
    "entscheidung_id": "db61267da",
    "invalidierung": "Polymarket-JA >0.30 oder Board-Befund schwerwiegend",
-   "kurs": 0.8585607576804303,
-   "wert": 215.49
+   "kurs": 0.8591278011540672,
+   "wert": 215.63
   },
   {
    "id": "p51c17729",
@@ -570,8 +570,8 @@
    "ausstiegsplan": "Halten bis Tag-1-Schluss 19.11.; Verkauf, falls Preisfestsetzung ≥$90 oder JA-Preis >0.40.",
    "entscheidung_id": "da86d3e2a",
    "invalidierung": "IPO-Preis über Spanne (≥$85) oder Nachrichten, dass Marktkap FD-basiert >2 Bio bei $111 gezählt wird und Orderbuch-Hype.",
-   "kurs": 0.879671323151247,
-   "wert": 33.42
+   "kurs": 0.8834963950056041,
+   "wert": 33.57
   },
   {
    "id": "p5d2c9646",
@@ -607,7 +607,7 @@
  "funding": 0.0,
  "erstellt": 1793380123.8861866,
  "start_fx": 1.1156327353966788,
- "letzter_tick": 1794420806.3824172,
+ "letzter_tick": 1794421705.9345338,
  "auftraege": [],
  "rebalancing": {
   "ziele": {
