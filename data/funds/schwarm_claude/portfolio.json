@@ -33,8 +33,8 @@
    "gebuehren": 0.0,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Schwarm-Regel)",
-   "kurs": 0.03,
-   "wert": 15.28
+   "kurs": 0.0295,
+   "wert": 14.76
   },
   {
    "id": "pfd90c808",
@@ -97,8 +97,8 @@
    "gebuehren": 0.0,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Schwarm-Regel)",
-   "kurs": 0.865,
-   "wert": 402.48
+   "kurs": 0.875,
+   "wert": 407.16
   },
   {
    "id": "p4dea2336",
@@ -170,5 +170,5 @@
  "funding": 0.0,
  "erstellt": 1793379225.5430336,
  "start_fx": 1.1157431109273288,
- "letzter_tick": 1794406278.3569298
+ "letzter_tick": 1794407178.2112408
 }
