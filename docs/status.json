@@ -1,11 +1,11 @@
 {
  "version": 1,
- "stand": 1794355729.3838599,
+ "stand": 1794355903.9200065,
  "hinweis": "Papierhandel-Simulation, keine Anlageberatung",
  "seite": "https://rouvenwieland.github.io/ki-trader-arena/",
  "budget": {
   "heute_eur": 0.0,
-  "gesamt_eur": 118.77,
+  "gesamt_eur": 118.78,
   "tagesdeckel_eur": 12.0,
   "gesamtdeckel_eur": 190.0,
   "claude_ende": "2026-11-14",
@@ -149,10 +149,10 @@
    "rendite_pct": 3.92,
    "equity_eur": 10381.97,
    "max_drawdown_pct": -2.57,
-   "status": "aktiv",
+   "status": "Tagesanteil aufgebraucht – nächste Runde morgen",
    "modell": "claude-sonnet-5-5",
-   "kosten_heute_eur": 0.0,
-   "kosten_gesamt_eur": 28.185,
+   "kosten_heute_eur": 0.001,
+   "kosten_gesamt_eur": 28.186,
    "rendite_ki_pct": [
     -1.66,
     10.89
@@ -444,9 +444,9 @@
    "rendite_pct": -1.1,
    "equity_eur": 9905.41,
    "max_drawdown_pct": -6.05,
-   "status": "aktiv",
+   "status": "Tagesanteil aufgebraucht – nächste Runde morgen",
    "modell": "claude-sonnet-5-5",
-   "kosten_heute_eur": 0.0,
+   "kosten_heute_eur": 0.001,
    "kosten_gesamt_eur": 30.064,
    "rendite_ki_pct": [
     -8.38,
@@ -621,10 +621,10 @@
    "rendite_pct": -1.92,
    "equity_eur": 9823.19,
    "max_drawdown_pct": -6.34,
-   "status": "aktiv",
+   "status": "Tagesanteil aufgebraucht – nächste Runde morgen",
    "modell": "claude-sonnet-5-5",
    "kosten_heute_eur": 0.0,
-   "kosten_gesamt_eur": 30.054,
+   "kosten_gesamt_eur": 30.055,
    "rendite_ki_pct": [
     -11.07,
     4.11
@@ -975,7 +975,7 @@
    "rendite_pct": -9.0,
    "equity_eur": 9113.84,
    "max_drawdown_pct": -24.83,
-   "status": "aktiv",
+   "status": "Tagesanteil aufgebraucht – nächste Runde morgen",
    "modell": "claude-sonnet-5-5",
    "kosten_heute_eur": 0.0,
    "kosten_gesamt_eur": 29.173,
@@ -1218,6 +1218,13 @@
  ],
  "letzte_entscheidungen": [
   {
+   "ts": 1794355893.4287765,
+   "fonds": "DeepSeek",
+   "instrument": "pm:polymarket:1811265:NEIN",
+   "aktion": "kaufen",
+   "zuversicht": 0.7
+  },
+  {
    "ts": 1794337749.2314568,
    "fonds": "Claude Mittel",
    "instrument": "pm:manifold:OnpNLLgytQ:NEIN",
@@ -1263,13 +1270,6 @@
    "ts": 1794323323.137733,
    "fonds": "Claude Mittel",
    "instrument": "pm:polymarket:5211896:NEIN",
-   "aktion": "verkaufen",
-   "zuversicht": 0.6
-  },
-  {
-   "ts": 1794323323.1368113,
-   "fonds": "Claude Mittel",
-   "instrument": "pm:polymarket:676741:JA",
    "aktion": "verkaufen",
    "zuversicht": 0.6
   }

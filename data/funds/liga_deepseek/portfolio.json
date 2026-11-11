@@ -2,7 +2,7 @@
  "fonds_id": "liga_deepseek",
  "waehrung": "USD",
  "start_kapital": 11184.88579861696,
- "cash": 2055.4478441154797,
+ "cash": 1725.6322941154797,
  "positionen": [
   {
    "id": "p00666bfa",
@@ -210,10 +210,42 @@
    "invalidierung": "Offizielle US-Verlängerung/Ausweitung der Blockade oder endgültiges Scheitern der Gespräche → These tot, verkaufen. Auch: JA-Preis fällt unter 0,10 (dann hat der Markt harte neue Info, die ich nicht habe).",
    "kurs": 0.14500000000000002,
    "wert": 155.54
+  },
+  {
+   "id": "p950802e0",
+   "inst": {
+    "id": "pm:polymarket:1811265:NEIN",
+    "art": "pm",
+    "venue": "polymarket",
+    "ergebnis": "NEIN",
+    "frage": "Pete Hegseth out as Secretary of Defense by December 31?",
+    "schliesst": 1798779540.0,
+    "ref": {
+     "id": "1811265",
+     "token_ja": "21275820052009278915970165572803516066396758597545413537036789986793691057073",
+     "token_nein": "39839649379979262874224474703228993451530996696316314037781119946088999891171",
+     "tick": 0.01,
+     "condition": "0x0fcfcfc35d71424c0693c717d2e3bc9b8992910835d124d80cd2f01498f1d3dc",
+     "gebuehr_rate": 0.04,
+     "gebuehr_exp": 1.0
+    },
+    "url": "https://polymarket.com/event/pete-hegseth-out-as-secretary-of-defense-by-december-31"
+   },
+   "seite": "long",
+   "menge": 373.0,
+   "einstand": 0.88,
+   "hebel": 1.0,
+   "marge": 0.0,
+   "eroeffnet": 1794355893.42895,
+   "gebuehren": 1.57555,
+   "funding": 0.0,
+   "ausstiegsplan": "Halten bis Abrechnung 31.12.2026 oder Verkauf, wenn NEIN < 0,80 (Invalidierung) bzw. JA > 0,25 ohne erklärende Nachricht.",
+   "entscheidung_id": "d2f748f89",
+   "invalidierung": "Hegseth kündigt Rücktritt an, wird entlassen, oder eine credible Quelle meldet, dass Trump eine Ablösung vorbereitet (dann JA sofort über 0,30)."
   }
  ],
  "realisiert": -582.4077401936316,
- "gebuehren": 105.81313925396546,
+ "gebuehren": 107.38868925396547,
  "funding": 0.0,
  "erstellt": 1793319819.7411644,
  "start_fx": 1.1184885798616961,
@@ -227,7 +259,7 @@
      "venue": "yahoo",
      "symbol": "SPY"
     },
-    "anteil": 0.25
+    "anteil": 0.22
    },
    "stock:TLT": {
     "inst": {
@@ -236,7 +268,7 @@
      "venue": "yahoo",
      "symbol": "TLT"
     },
-    "anteil": 0.12
+    "anteil": 0.13
    },
    "stock:AGG": {
     "inst": {
@@ -245,7 +277,7 @@
      "venue": "yahoo",
      "symbol": "AGG"
     },
-    "anteil": 0.16
+    "anteil": 0.17
    },
    "stock:GLD": {
     "inst": {
@@ -254,7 +286,7 @@
      "venue": "yahoo",
      "symbol": "GLD"
     },
-    "anteil": 0.13
+    "anteil": 0.12
    },
    "spot:BTC-USD": {
     "inst": {
@@ -267,8 +299,8 @@
    }
   },
   "schwelle_pp": 3.0,
-  "seit": 1794323079.6893399,
-  "entscheidung_id": "d745dfc32"
+  "seit": 1794355736.594281,
+  "entscheidung_id": "ddfd78325"
  },
  "auftraege": []
 }
