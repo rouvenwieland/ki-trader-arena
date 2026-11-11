@@ -89,8 +89,8 @@
    "ausstiegsplan": "Kern halten, Rebalancing-Regel (2 pp), Stop 690.",
    "entscheidung_id": "dd084c777",
    "invalidierung": "SPY schließt unter 690 oder 10J-Rendite >5,3 %",
-   "kurs": 760.5,
-   "wert": 1397.52
+   "kurs": 760.58,
+   "wert": 1397.67
   },
   {
    "id": "pbcdb744c",
@@ -135,8 +135,8 @@
    "ausstiegsplan": "Halten; Stop 74.",
    "entscheidung_id": "d123eb847",
    "invalidierung": "10J-Rendite schließt über 5,3 % / TLT unter 74",
-   "kurs": 80.93,
-   "wert": 526.19
+   "kurs": 80.915,
+   "wert": 526.09
   },
   {
    "id": "pf1acd2e3",
@@ -158,8 +158,8 @@
    "ausstiegsplan": "Halten; Stop 340; Gewicht nicht über 5 % erhöhen.",
    "entscheidung_id": "dd43d0bdc",
    "invalidierung": "GLD unter 340 (neues Tief, ~-9 %)",
-   "kurs": 365.54,
-   "wert": 519.8
+   "kurs": 365.34,
+   "wert": 519.51
   },
   {
    "id": "pabe784cb",
@@ -224,7 +224,7 @@
  "funding": 0.0,
  "erstellt": 1793319819.7411644,
  "start_fx": 1.1184885798616961,
- "letzter_tick": 1794425593.05114,
+ "letzter_tick": 1794426491.904865,
  "auftraege": [],
  "rebalancing": {
   "ziele": {
