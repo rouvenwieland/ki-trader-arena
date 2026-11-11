@@ -2,7 +2,7 @@
  "fonds_id": "claude_mittel_rm",
  "waehrung": "USD",
  "start_kapital": 11156.327353966788,
- "cash": 1153.650196251634,
+ "cash": 1143.7153015148476,
  "positionen": [
   {
    "id": "pe8186cc2",
@@ -334,16 +334,16 @@
     "url": "https://manifold.markets/Terminator2/will-an-nvidia-executive-say-bubble"
    },
    "seite": "long",
-   "menge": 64.0,
-   "einstand": 0.3892445961724682,
+   "menge": 93.0,
+   "einstand": 0.3746940741056374,
    "hebel": 1.0,
    "marge": 0.0,
    "eroeffnet": 1793985545.006964,
    "gebuehren": 0.0,
    "funding": 0.0,
-   "ausstiegsplan": "Halten bis Abrechnung nach Earnings 17.11.",
-   "entscheidung_id": "dde4a2a08",
-   "invalidierung": "Transkript vom 17.11. enthält das Wort nicht oder Regelklarstellung schließt Analystenfragen aus.",
+   "ausstiegsplan": "Halten bis Abrechnung nach Call 17.11.",
+   "entscheidung_id": "d1a2949e8",
+   "invalidierung": "Call verschoben oder Transkript ohne Wort 'bubble' von Executives",
    "kurs": 0.31667447349560507,
    "wert": 19.59
   },

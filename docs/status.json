@@ -1,11 +1,11 @@
 {
  "version": 1,
- "stand": 1794416418.0247316,
+ "stand": 1794416628.7044399,
  "hinweis": "Papierhandel-Simulation, keine Anlageberatung",
  "seite": "https://rouvenwieland.github.io/ki-trader-arena/",
  "budget": {
-  "heute_eur": 6.53,
-  "gesamt_eur": 126.09,
+  "heute_eur": 8.21,
+  "gesamt_eur": 127.77,
   "tagesdeckel_eur": 12.0,
   "gesamtdeckel_eur": 190.0,
   "claude_ende": "2026-11-14",
@@ -209,9 +209,9 @@
    "equity_eur": 10374.71,
    "max_drawdown_pct": -4.55,
    "status": "aktiv",
-   "modell": "claude-opus-5-5",
-   "kosten_heute_eur": 1.796,
-   "kosten_gesamt_eur": 30.167,
+   "modell": "claude-sonnet-5-5",
+   "kosten_heute_eur": 2.267,
+   "kosten_gesamt_eur": 30.639,
    "rendite_ki_pct": [
     -3.62,
     10.85
@@ -563,9 +563,9 @@
    "equity_eur": 9977.72,
    "max_drawdown_pct": -6.05,
    "status": "aktiv",
-   "modell": "claude-opus-5-5",
-   "kosten_heute_eur": 1.7,
-   "kosten_gesamt_eur": 31.962,
+   "modell": "claude-sonnet-5-5",
+   "kosten_heute_eur": 2.143,
+   "kosten_gesamt_eur": 32.405,
    "rendite_ki_pct": [
     -8.35,
     4.27
@@ -622,9 +622,9 @@
    "equity_eur": 9915.88,
    "max_drawdown_pct": -6.34,
    "status": "aktiv",
-   "modell": "claude-opus-5-5",
-   "kosten_heute_eur": 1.466,
-   "kosten_gesamt_eur": 31.718,
+   "modell": "claude-sonnet-5-5",
+   "kosten_heute_eur": 1.863,
+   "kosten_gesamt_eur": 32.116,
    "rendite_ki_pct": [
     -10.55,
     4.62
@@ -976,9 +976,9 @@
    "equity_eur": 9185.0,
    "max_drawdown_pct": -24.83,
    "status": "aktiv",
-   "modell": "claude-opus-5-5",
-   "kosten_heute_eur": 1.564,
-   "kosten_gesamt_eur": 30.93,
+   "modell": "claude-sonnet-5-5",
+   "kosten_heute_eur": 1.941,
+   "kosten_gesamt_eur": 31.306,
    "rendite_ki_pct": [
     -33.95,
     12.69
@@ -1218,6 +1218,20 @@
  ],
  "letzte_entscheidungen": [
   {
+   "ts": 1794416580.8068273,
+   "fonds": "Claude Mittel",
+   "instrument": "pm:manifold:6gZRoSBRfQ4xyS9MQvu0:JA",
+   "aktion": "kaufen",
+   "zuversicht": 0.7
+  },
+  {
+   "ts": 1794416576.2349267,
+   "fonds": "Claude Mittel+RM (A/B)",
+   "instrument": "pm:manifold:RZqSLQS8lC:JA",
+   "aktion": "kaufen",
+   "zuversicht": 0.55
+  },
+  {
    "ts": 1794409486.016343,
    "fonds": "Claude Mittel+RM (A/B)",
    "instrument": "pm:polymarket:6683302:NEIN",
@@ -1258,20 +1272,6 @@
    "instrument": "pm:polymarket:3128886:NEIN",
    "aktion": "kaufen",
    "zuversicht": 0.6
-  },
-  {
-   "ts": 1794390405.2887893,
-   "fonds": "DeepSeek",
-   "instrument": "pm:polymarket:4906128:JA",
-   "aktion": "verkaufen",
-   "zuversicht": 0.7
-  },
-  {
-   "ts": 1794366804.6863081,
-   "fonds": "Claude Mittel+RM (A/B)",
-   "instrument": "pm:manifold:z0y9P2hESL:JA",
-   "aktion": "kaufen",
-   "zuversicht": 0.65
   }
  ],
  "ereignisse": [

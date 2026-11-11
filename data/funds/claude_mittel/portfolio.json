@@ -2,7 +2,7 @@
  "fonds_id": "claude_mittel",
  "waehrung": "USD",
  "start_kapital": 11184.88579861696,
- "cash": 2420.093783490444,
+ "cash": 2372.5579408874573,
  "positionen": [
   {
    "id": "p51e71031",
@@ -478,6 +478,32 @@
    "invalidierung": "BTC (Binance) über 73.850 vor 16:30 UTC – dann P(JA) > 0,3.",
    "kurs": null,
    "wert": 246.23
+  },
+  {
+   "id": "p16c2ebae",
+   "inst": {
+    "id": "pm:manifold:6gZRoSBRfQ4xyS9MQvu0:JA",
+    "art": "pm",
+    "venue": "manifold",
+    "ergebnis": "JA",
+    "frage": "Will Apple have a higher market cap than Microsoft at the end of 2026?",
+    "schliesst": 1798779540.0,
+    "ref": {
+     "id": "6gZRoSBRfQ4xyS9MQvu0"
+    },
+    "url": "https://manifold.markets/strutheo/will-apple-have-a-higher-market-cap"
+   },
+   "seite": "long",
+   "menge": 59.0,
+   "einstand": 0.8056922475082463,
+   "hebel": 1.0,
+   "marge": 0.0,
+   "eroeffnet": 1794416580.807339,
+   "gebuehren": 0.0,
+   "funding": 0.0,
+   "ausstiegsplan": "Halten bis Jahresende; verkaufen bei Bid ≥0,93 oder wenn Lead <12 %.",
+   "entscheidung_id": "dca6a2ef3",
+   "invalidierung": "AAPL-Marktkap. fällt unter 1,15× MSFT-Marktkap. laut companiesmarketcap."
   }
  ],
  "realisiert": 70.49339185923117,
