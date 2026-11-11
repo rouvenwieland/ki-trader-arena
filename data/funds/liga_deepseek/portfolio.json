@@ -263,15 +263,6 @@
     },
     "anteil": 0.22
    },
-   "stock:TLT": {
-    "inst": {
-     "id": "stock:TLT",
-     "art": "stock",
-     "venue": "yahoo",
-     "symbol": "TLT"
-    },
-    "anteil": 0.13
-   },
    "stock:AGG": {
     "inst": {
      "id": "stock:AGG",
@@ -280,6 +271,15 @@
      "symbol": "AGG"
     },
     "anteil": 0.17
+   },
+   "stock:TLT": {
+    "inst": {
+     "id": "stock:TLT",
+     "art": "stock",
+     "venue": "yahoo",
+     "symbol": "TLT"
+    },
+    "anteil": 0.13
    },
    "stock:GLD": {
     "inst": {
@@ -301,8 +301,8 @@
    }
   },
   "schwelle_pp": 3.0,
-  "seit": 1794355736.594281,
-  "entscheidung_id": "ddfd78325"
+  "seit": 1794380163.70413,
+  "entscheidung_id": "d5cbb6ef9"
  },
  "auftraege": []
 }
