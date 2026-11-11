@@ -131,7 +131,7 @@
    "ausstiegsplan": "Halten bis 30.11.; verkaufen, wenn BTC unter 64.000 fällt oder NEIN-Preis <0.88.",
    "entscheidung_id": "d7dbfc08f",
    "invalidierung": "BTC Binance unter 64.000 oder DVOL >60",
-   "kurs": 0.962,
+   "kurs": 0.9615,
    "wert": 300.48
   },
   {
@@ -152,8 +152,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "dd6456776",
-   "kurs": 760.03,
-   "wert": 2266.46
+   "kurs": 760.195,
+   "wert": 2266.95
   },
   {
    "id": "p1c64b37e",
@@ -173,8 +173,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "dd6456776",
-   "kurs": 74219.995,
-   "wert": 1053.27
+   "kurs": 74255.705,
+   "wert": 1053.77
   },
   {
    "id": "p994b6370",
@@ -194,8 +194,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "dd6456776",
-   "kurs": 366.51,
-   "wert": 901.72
+   "kurs": 366.46,
+   "wert": 901.6
   },
   {
    "id": "p3b9e74b7",
@@ -316,8 +316,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "d0a642430",
-   "kurs": 91.5,
-   "wert": 908.78
+   "kurs": 91.495,
+   "wert": 908.73
   },
   {
    "id": "p4abb843a",
@@ -345,7 +345,7 @@
    "entscheidung_id": "d1a2949e8",
    "invalidierung": "Call verschoben oder Transkript ohne Wort 'bubble' von Executives",
    "kurs": 0.31667447349560507,
-   "wert": 19.59
+   "wert": 28.47
   },
   {
    "id": "p96f26326",
@@ -446,8 +446,8 @@
    "ausstiegsplan": "Bis Vereidigung halten; schließen, wenn beide Beine zusammen ≥0.97 verkaufbar.",
    "entscheidung_id": "d5f5d56d9",
    "invalidierung": "Nachweislich abweichende PredictIt-Regel, die Eisenkot-JA bei PredictIt und NEIN bei Polymarket zulässt.",
-   "kurs": 0.611,
-   "wert": 422.8
+   "kurs": 0.6114999999999999,
+   "wert": 423.5
   },
   {
    "id": "p2567180c",
@@ -542,8 +542,8 @@
    "ausstiegsplan": "Halten bis 31.12.",
    "entscheidung_id": "db61267da",
    "invalidierung": "Polymarket-JA >0.30 oder Board-Befund schwerwiegend",
-   "kurs": 0.8278230334556125,
-   "wert": 207.77
+   "kurs": 0.8270460957435664,
+   "wert": 207.58
   },
   {
    "id": "p51c17729",
@@ -641,7 +641,7 @@
  "funding": 0.0,
  "erstellt": 1793380123.8861866,
  "start_fx": 1.1156327353966788,
- "letzter_tick": 1794416305.8146324,
+ "letzter_tick": 1794417205.5584548,
  "auftraege": [],
  "rebalancing": {
   "ziele": {

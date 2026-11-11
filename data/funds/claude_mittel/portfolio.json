@@ -35,8 +35,8 @@
    "ausstiegsplan": "NEIN-Bid ≥0,93 oder P erreicht → verkaufen; sonst halten bis zur Wahl (April/Mai 2027).",
    "entscheidung_id": "d860a2331",
    "invalidierung": "Lisnard in mehreren Umfragen ≥12 % im 1. Wahlgang oder Rückzug von Philippe/Retailleau zu seinen Gunsten bzw. Sieg in einer Rechts-Primaire.",
-   "kurs": 0.8474999999999999,
-   "wert": 456.84
+   "kurs": 0.846,
+   "wert": 455.76
   },
   {
    "id": "p842aa632",
@@ -180,8 +180,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "d6e1a7002",
-   "kurs": 760.03,
-   "wert": 1971.43
+   "kurs": 760.195,
+   "wert": 1971.86
   },
   {
    "id": "p5fe9ac51",
@@ -201,8 +201,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "d6e1a7002",
-   "kurs": 693.48,
-   "wert": 1105.6
+   "kurs": 693.081,
+   "wert": 1104.96
   },
   {
    "id": "p5106387a",
@@ -222,8 +222,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "d6e1a7002",
-   "kurs": 366.51,
-   "wert": 1090.01
+   "kurs": 366.46,
+   "wert": 1089.86
   },
   {
    "id": "p72af4e36",
@@ -243,8 +243,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "d6e1a7002",
-   "kurs": 95.772,
-   "wert": 1099.74
+   "kurs": 95.775,
+   "wert": 1099.77
   },
   {
    "id": "p3e7ff11c",
@@ -264,8 +264,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "d6e1a7002",
-   "kurs": 74219.995,
-   "wert": 1221.43
+   "kurs": 74255.705,
+   "wert": 1222.01
   },
   {
    "id": "pe3015b77",
@@ -285,8 +285,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "d6e1a7002",
-   "kurs": 2075.975,
-   "wert": 471.15
+   "kurs": 2084.495,
+   "wert": 473.06
   },
   {
    "id": "p1ad6082a",
@@ -503,7 +503,9 @@
    "funding": 0.0,
    "ausstiegsplan": "Halten bis Jahresende; verkaufen bei Bid ≥0,93 oder wenn Lead <12 %.",
    "entscheidung_id": "dca6a2ef3",
-   "invalidierung": "AAPL-Marktkap. fällt unter 1,15× MSFT-Marktkap. laut companiesmarketcap."
+   "invalidierung": "AAPL-Marktkap. fällt unter 1,15× MSFT-Marktkap. laut companiesmarketcap.",
+   "kurs": 0.7826620735031216,
+   "wert": 46.04
   }
  ],
  "realisiert": 70.49339185923117,
@@ -511,7 +513,7 @@
  "funding": 0.0,
  "erstellt": 1793319819.7411644,
  "start_fx": 1.1184885798616961,
- "letzter_tick": 1794416305.8146324,
+ "letzter_tick": 1794417205.5584548,
  "auftraege": [
   {
    "id": "a4e7a61",
@@ -546,7 +548,7 @@
    "ausstiegsplan": "",
    "invalidierung": "",
    "erstellt": 1794409480.899957,
-   "geprueft_bis": 1794416305.8146324,
+   "geprueft_bis": 1794417205.5584548,
    "gueltig_bis": 1797001480.899957
   }
  ],
