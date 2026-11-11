@@ -159,8 +159,8 @@
    "ausstiegsplan": "Bid ≥0,70 verkaufen (P erreicht); Neubewertung nach NVDA-Zahlen 19.11.; schließen, wenn Apple-Vorsprung <3 %.",
    "entscheidung_id": "d7e53ef04",
    "invalidierung": "NVDA-Marktkap. kommt auf <3 % Abstand zu Apple, oder Apple fällt >8 % relativ.",
-   "kurs": 0.7084999999999999,
-   "wert": 213.36
+   "kurs": 0.7235,
+   "wert": 213.98
   },
   {
    "id": "pb60e44cc",
@@ -264,8 +264,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "d6e1a7002",
-   "kurs": 73891.025,
-   "wert": 1216.01
+   "kurs": 73864.875,
+   "wert": 1215.58
   },
   {
    "id": "pe3015b77",
@@ -285,8 +285,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "d6e1a7002",
-   "kurs": 2054.0950000000003,
-   "wert": 466.18
+   "kurs": 2051.545,
+   "wert": 465.6
   },
   {
    "id": "p1ad6082a",
@@ -352,8 +352,8 @@
    "ausstiegsplan": "Gewinn mitnehmen bei NEIN-Bid ≥0.78 (=P). Nach NVDA-Earnings neu rechnen. Sonst halten bis 31.12.",
    "entscheidung_id": "d1fa25bbb",
    "invalidierung": "NVDA-Marktkapitalisierung innerhalb 5 % von Apple (z. B. NVDA ≥200 bei AAPL ~349) nach den Earnings, oder NVDA-JA ≥0.45.",
-   "kurs": 0.72,
-   "wert": 303.88
+   "kurs": 0.76,
+   "wert": 321.0
   },
   {
    "id": "p41d9ec41",
@@ -414,8 +414,8 @@
    "ausstiegsplan": "Bis zum IPO-Tag halten. Verkaufen, wenn der Bid ≥0,40 erreicht. Nach der Preisfestsetzung am 18.11. neu bewerten: Bei einem IPO-Preis ≥88 $ schließen.",
    "entscheidung_id": "d48fafa83",
    "invalidierung": "Die Nasdaq-Listing-Seite bzw. Yahoo zeigen vor dem IPO eine Aktienzahl von ≥16 Mrd., oder die Preisfestsetzung liegt bei ≥90 $.",
-   "kurs": 0.172,
-   "wert": 56.78
+   "kurs": 0.1665,
+   "wert": 56.44
   },
   {
    "id": "pac09f469",
@@ -451,7 +451,7 @@
  "funding": 0.0,
  "erstellt": 1793319819.7411644,
  "start_fx": 1.1184885798616961,
- "letzter_tick": 1794399077.7475681,
+ "letzter_tick": 1794399977.994641,
  "auftraege": [],
  "rebalancing": {
   "ziele": {
