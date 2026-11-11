@@ -180,8 +180,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "d6e1a7002",
-   "kurs": 759.095,
-   "wert": 1969.01
+   "kurs": 759.45,
+   "wert": 1969.93
   },
   {
    "id": "p5fe9ac51",
@@ -201,8 +201,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "d6e1a7002",
-   "kurs": 692.075,
-   "wert": 1103.36
+   "kurs": 692.46,
+   "wert": 1103.97
   },
   {
    "id": "p5106387a",
@@ -222,8 +222,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "d6e1a7002",
-   "kurs": 366.765,
-   "wert": 1090.77
+   "kurs": 366.459,
+   "wert": 1089.86
   },
   {
    "id": "p72af4e36",
@@ -243,8 +243,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "d6e1a7002",
-   "kurs": 95.74,
-   "wert": 1099.37
+   "kurs": 95.779,
+   "wert": 1099.82
   },
   {
    "id": "p3e7ff11c",
@@ -264,8 +264,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "d6e1a7002",
-   "kurs": 74261.41500000001,
-   "wert": 1222.11
+   "kurs": 74158.985,
+   "wert": 1220.42
   },
   {
    "id": "pe3015b77",
@@ -285,8 +285,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "d6e1a7002",
-   "kurs": 2078.2200000000003,
-   "wert": 471.65
+   "kurs": 2073.335,
+   "wert": 470.55
   },
   {
    "id": "p1ad6082a",
@@ -414,8 +414,8 @@
    "ausstiegsplan": "Bis zum IPO-Tag halten. Verkaufen, wenn der Bid ≥0,40 erreicht. Nach der Preisfestsetzung am 18.11. neu bewerten: Bei einem IPO-Preis ≥88 $ schließen.",
    "entscheidung_id": "d48fafa83",
    "invalidierung": "Die Nasdaq-Listing-Seite bzw. Yahoo zeigen vor dem IPO eine Aktienzahl von ≥16 Mrd., oder die Preisfestsetzung liegt bei ≥90 $.",
-   "kurs": 0.2295,
-   "wert": 77.86
+   "kurs": 0.2255,
+   "wert": 76.5
   },
   {
    "id": "pac09f469",
@@ -476,8 +476,8 @@
    "ausstiegsplan": "Halten bis Abrechnung 17:00 UTC (Bindung <2 h). Keine Absicherung.",
    "entscheidung_id": "d3407c392",
    "invalidierung": "BTC (Binance) über 73.850 vor 16:30 UTC – dann P(JA) > 0,3.",
-   "kurs": 0.10500000000000001,
-   "wert": 30.55
+   "kurs": 0.0805,
+   "wert": 23.94
   }
  ],
  "realisiert": 70.49339185923117,
@@ -485,7 +485,7 @@
  "funding": 0.0,
  "erstellt": 1793319819.7411644,
  "start_fx": 1.1184885798616961,
- "letzter_tick": 1794414505.8123844,
+ "letzter_tick": 1794415406.10646,
  "auftraege": [
   {
    "id": "a4e7a61",
@@ -520,7 +520,7 @@
    "ausstiegsplan": "",
    "invalidierung": "",
    "erstellt": 1794409480.899957,
-   "geprueft_bis": 1794414505.8123844,
+   "geprueft_bis": 1794415406.10646,
    "gueltig_bis": 1797001480.899957
   }
  ],

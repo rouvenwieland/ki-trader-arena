@@ -131,7 +131,7 @@
    "ausstiegsplan": "Halten bis 30.11.; verkaufen, wenn BTC unter 64.000 fällt oder NEIN-Preis <0.88.",
    "entscheidung_id": "d7dbfc08f",
    "invalidierung": "BTC Binance unter 64.000 oder DVOL >60",
-   "kurs": 0.9604999999999999,
+   "kurs": 0.9615,
    "wert": 300.48
   },
   {
@@ -152,8 +152,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "dd6456776",
-   "kurs": 759.095,
-   "wert": 2263.67
+   "kurs": 759.45,
+   "wert": 2264.73
   },
   {
    "id": "p1c64b37e",
@@ -173,8 +173,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "dd6456776",
-   "kurs": 74261.41500000001,
-   "wert": 1053.86
+   "kurs": 74158.985,
+   "wert": 1052.4
   },
   {
    "id": "p994b6370",
@@ -194,8 +194,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "dd6456776",
-   "kurs": 366.765,
-   "wert": 902.35
+   "kurs": 366.459,
+   "wert": 901.6
   },
   {
    "id": "p3b9e74b7",
@@ -316,8 +316,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "d0a642430",
-   "kurs": 91.492,
-   "wert": 908.7
+   "kurs": 91.495,
+   "wert": 908.73
   },
   {
    "id": "p4abb843a",
@@ -446,7 +446,7 @@
    "ausstiegsplan": "Bis Vereidigung halten; schließen, wenn beide Beine zusammen ≥0.97 verkaufbar.",
    "entscheidung_id": "d5f5d56d9",
    "invalidierung": "Nachweislich abweichende PredictIt-Regel, die Eisenkot-JA bei PredictIt und NEIN bei Polymarket zulässt.",
-   "kurs": 0.618,
+   "kurs": 0.6185,
    "wert": 431.2
   },
   {
@@ -480,8 +480,8 @@
    "ausstiegsplan": "Halten bis IPO-Tag (voraussichtlich Woche 16.–20.11.). Bei Preisfestsetzung neu rechnen: Schwelle = 1,25 Bio/13,09 Mrd. = $95,5. Teilverkauf, wenn JA ≥0,50 vor Handelsstart.",
    "entscheidung_id": "d0595e7ab",
    "invalidierung": "Endgültiger IPO-Preis ≥ $86 (dann reicht +11 % Pop) oder offizielle Polymarket-Klarstellung, dass voll verwässert gezählt wird; Graumarkt-/Indikationen Eröffnung ≥ $100.",
-   "kurs": 0.2295,
-   "wert": 616.24
+   "kurs": 0.2255,
+   "wert": 605.48
   },
   {
    "id": "p1f686553",
@@ -542,8 +542,8 @@
    "ausstiegsplan": "Halten bis 31.12.",
    "entscheidung_id": "db61267da",
    "invalidierung": "Polymarket-JA >0.30 oder Board-Befund schwerwiegend",
-   "kurs": 0.8247074614217803,
-   "wert": 206.99
+   "kurs": 0.8276615068497931,
+   "wert": 207.73
   },
   {
    "id": "p51c17729",
@@ -632,8 +632,8 @@
    "ausstiegsplan": "Halten bis zur Abrechnung um 17:00 UTC heute.",
    "entscheidung_id": "d4a5f31d7",
    "invalidierung": "BTC/USDT über 73.900 vor 16:45 UTC – dann ist der Vorteil weg (Position läuft aber bis zur Abrechnung, kein Verkauf wegen Spread).",
-   "kurs": 0.10500000000000001,
-   "wert": 40.26
+   "kurs": 0.0805,
+   "wert": 31.54
   }
  ],
  "realisiert": 132.0827800149999,
@@ -641,7 +641,7 @@
  "funding": 0.0,
  "erstellt": 1793380123.8861866,
  "start_fx": 1.1156327353966788,
- "letzter_tick": 1794414505.8123844,
+ "letzter_tick": 1794415406.10646,
  "auftraege": [],
  "rebalancing": {
   "ziele": {
