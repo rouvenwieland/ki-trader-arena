@@ -1,6 +1,6 @@
 {
  "version": 1,
- "stand": 1794390272.5450087,
+ "stand": 1794390426.6170247,
  "hinweis": "Papierhandel-Simulation, keine Anlageberatung",
  "seite": "https://rouvenwieland.github.io/ki-trader-arena/",
  "budget": {
@@ -210,7 +210,7 @@
    "max_drawdown_pct": -3.68,
    "status": "Tagesanteil aufgebraucht – nächste Runde morgen",
    "modell": "claude-sonnet-5-5",
-   "kosten_heute_eur": 0.483,
+   "kosten_heute_eur": 0.484,
    "kosten_gesamt_eur": 28.749,
    "rendite_ki_pct": [
     -3.79,
@@ -444,7 +444,7 @@
    "rendite_pct": -1.19,
    "equity_eur": 9924.87,
    "max_drawdown_pct": -6.05,
-   "status": "aktiv",
+   "status": "Tagesanteil aufgebraucht – nächste Runde morgen",
    "modell": "claude-sonnet-5-5",
    "kosten_heute_eur": 0.519,
    "kosten_gesamt_eur": 30.668,
@@ -975,10 +975,10 @@
    "rendite_pct": -9.21,
    "equity_eur": 9118.86,
    "max_drawdown_pct": -24.83,
-   "status": "aktiv",
+   "status": "Tagesanteil aufgebraucht – nächste Runde morgen",
    "modell": "claude-sonnet-5-5",
    "kosten_heute_eur": 0.37,
-   "kosten_gesamt_eur": 29.625,
+   "kosten_gesamt_eur": 29.626,
    "rendite_ki_pct": [
     -33.87,
     14.66
@@ -1218,6 +1218,20 @@
  ],
  "letzte_entscheidungen": [
   {
+   "ts": 1794390411.9826229,
+   "fonds": "DeepSeek",
+   "instrument": "pm:polymarket:3128886:NEIN",
+   "aktion": "kaufen",
+   "zuversicht": 0.6
+  },
+  {
+   "ts": 1794390405.2887893,
+   "fonds": "DeepSeek",
+   "instrument": "pm:polymarket:4906128:JA",
+   "aktion": "verkaufen",
+   "zuversicht": 0.7
+  },
+  {
    "ts": 1794366804.6863081,
    "fonds": "Claude Mittel+RM (A/B)",
    "instrument": "pm:manifold:z0y9P2hESL:JA",
@@ -1258,20 +1272,6 @@
    "instrument": "pm:manifold:OnpNLLgytQ:NEIN",
    "aktion": "kaufen",
    "zuversicht": 0.6
-  },
-  {
-   "ts": 1794330430.0672154,
-   "fonds": "Claude Mittel+RM (A/B)",
-   "instrument": "pm:polymarket:679022:NEIN",
-   "aktion": "verkaufen",
-   "zuversicht": 0.7
-  },
-  {
-   "ts": 1794330401.0054545,
-   "fonds": "Claude Mittel",
-   "instrument": "pm:manifold:zEuhZdCOtQ:NEIN",
-   "aktion": "kaufen",
-   "zuversicht": 0.65
   }
  ],
  "ereignisse": [

@@ -2,7 +2,7 @@
  "fonds_id": "liga_deepseek",
  "waehrung": "USD",
  "start_kapital": 11184.88579861696,
- "cash": 1725.6322941154797,
+ "cash": 1671.2212941154796,
  "positionen": [
   {
    "id": "p00666bfa",
@@ -178,40 +178,6 @@
    "wert": 291.28
   },
   {
-   "id": "p0e4d6aec",
-   "inst": {
-    "id": "pm:polymarket:4906128:JA",
-    "art": "pm",
-    "venue": "polymarket",
-    "ergebnis": "JA",
-    "frage": "US announces end of Iranian blockade by November 30, 2026?",
-    "schliesst": 1796101140.0,
-    "ref": {
-     "id": "4906128",
-     "token_ja": "6644532381217254800986375202522846648159135474005033660497726168023227540949",
-     "token_nein": "103159225638359731790247383162357783913500681643575178525536406773575671450318",
-     "tick": 0.01,
-     "condition": "0x7a70fc60ee280fa7b4312f5dd128d148d74ae5b3e4a2e8215ccf0030a08ebb04",
-     "gebuehr_rate": 0.0,
-     "gebuehr_exp": 1
-    },
-    "url": "https://polymarket.com/event/us-announces-end-of-iranian-blockade-byptptpt-20260713152715080"
-   },
-   "seite": "long",
-   "menge": 1111.0,
-   "einstand": 0.18,
-   "hebel": 1.0,
-   "marge": 0.0,
-   "eroeffnet": 1794290517.8303592,
-   "gebuehren": 0.0,
-   "funding": 0.0,
-   "ausstiegsplan": "Halten bis 30.11.2026 Abrechnung; vorzeitiger Verkauf nur bei JA > 0,32 (Gewinnmitnahme) oder bei Invalidierung.",
-   "entscheidung_id": "d9e06e2f0",
-   "invalidierung": "Offizielle US-Verlängerung/Ausweitung der Blockade oder endgültiges Scheitern der Gespräche → These tot, verkaufen. Auch: JA-Preis fällt unter 0,10 (dann hat der Markt harte neue Info, die ich nicht habe).",
-   "kurs": 0.135,
-   "wert": 144.43
-  },
-  {
    "id": "p950802e0",
    "inst": {
     "id": "pm:polymarket:1811265:NEIN",
@@ -244,9 +210,41 @@
    "invalidierung": "Hegseth kündigt Rücktritt an, wird entlassen, oder eine credible Quelle meldet, dass Trump eine Ablösung vorbereitet (dann JA sofort über 0,30).",
    "kurs": 0.875,
    "wert": 324.51
+  },
+  {
+   "id": "p3aa56fe5",
+   "inst": {
+    "id": "pm:polymarket:3128886:NEIN",
+    "art": "pm",
+    "venue": "polymarket",
+    "ergebnis": "NEIN",
+    "frage": "US announces end of Iranian blockade by December 31, 2026?",
+    "schliesst": 1798779540.0,
+    "ref": {
+     "id": "3128886",
+     "token_ja": "86011229287950365043519117852041614651767455889324682112682327985496937935368",
+     "token_nein": "39147524522707536456910747992621671433032838141439193264830818731544404472030",
+     "tick": 0.001,
+     "condition": "0x46ca741da4abd7ffa993f59ac65bfe83de43ae027accac71d263a493e44064e7",
+     "gebuehr_rate": 0.0,
+     "gebuehr_exp": 1
+    },
+    "url": "https://polymarket.com/event/us-announces-end-of-iranian-blockade-byptptpt-20260713152715080"
+   },
+   "seite": "long",
+   "menge": 300.0,
+   "einstand": 0.6628033333333334,
+   "hebel": 1.0,
+   "marge": 0.0,
+   "eroeffnet": 1794390411.9848747,
+   "gebuehren": 0.0,
+   "funding": 0.0,
+   "ausstiegsplan": "Halten bis 31.12.2026 (Abrechnung). Vorzeitiger Verkauf bei JA-Preis (Gegenposition) unter 0,12 (dann ist mein p zu pessimistisch und der Edge weg) oder bei JA über 0,50 ohne klare Nachricht (Markt weiß mehr → sofort raus).",
+   "entscheidung_id": "dd655a214",
+   "invalidierung": "US-Regierung (Trump, Außen- oder Verteidigungsministerium) kündigt öffentlich und förmlich die Aufhebung/Aussetzung der Seeblockade an ODER ein umfassender Iran-Deal wird mit Blockade-Aufhebung als Teil verkündet."
   }
  ],
- "realisiert": -582.4077401936316,
+ "realisiert": -637.9577401936316,
  "gebuehren": 107.38868925396547,
  "funding": 0.0,
  "erstellt": 1793319819.7411644,
