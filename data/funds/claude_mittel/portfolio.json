@@ -2,7 +2,7 @@
  "fonds_id": "claude_mittel",
  "waehrung": "USD",
  "start_kapital": 11184.88579861696,
- "cash": 2670.090223490444,
+ "cash": 2420.093783490444,
  "positionen": [
   {
    "id": "p51e71031",
@@ -444,15 +444,84 @@
    "invalidierung": "IPO-Preisspanne auf ≥$95 angehoben oder Pricing >$90 am 18.11.",
    "kurs": 0.885188220891624,
    "wert": 107.97
+  },
+  {
+   "id": "p80f5f0b2",
+   "inst": {
+    "id": "pm:polymarket:6683302:NEIN",
+    "art": "pm",
+    "venue": "polymarket",
+    "ergebnis": "NEIN",
+    "frage": "Will the price of Bitcoin be above $74,000 on November 11?",
+    "schliesst": 1794416400.0,
+    "ref": {
+     "id": "6683302",
+     "token_ja": "112233253178221771651974034480699123609894142946455405088355534051142583374014",
+     "token_nein": "8568414337792428465051408358957603028666153058070747466960024614429711816510",
+     "tick": 0.001,
+     "condition": "0x3ca978bec59e6ce820e14c6befb236c378c8b976a9fe0c1117253be5e738833c",
+     "gebuehr_rate": 0.07,
+     "gebuehr_exp": 1.0
+    },
+    "url": "https://polymarket.com/event/bitcoin-above-on-november-11-2026"
+   },
+   "seite": "long",
+   "menge": 315.0,
+   "einstand": 0.7816940952380953,
+   "hebel": 1.0,
+   "marge": 0.0,
+   "eroeffnet": 1794409436.4887092,
+   "gebuehren": 3.7628,
+   "funding": 0.0,
+   "ausstiegsplan": "Halten bis Abrechnung 17:00 UTC (Bindung <2 h). Keine Absicherung.",
+   "entscheidung_id": "d3407c392",
+   "invalidierung": "BTC (Binance) über 73.850 vor 16:30 UTC – dann P(JA) > 0,3."
   }
  ],
  "realisiert": 70.49339185923117,
- "gebuehren": 58.7755933771088,
+ "gebuehren": 62.5383933771088,
  "funding": 0.0,
  "erstellt": 1793319819.7411644,
  "start_fx": 1.1184885798616961,
  "letzter_tick": 1794409105.7285376,
- "auftraege": [],
+ "auftraege": [
+  {
+   "id": "a4e7a61",
+   "entscheidung_id": "dd5b1687e",
+   "inst": {
+    "id": "pm:predictit:34409:NEIN",
+    "art": "pm",
+    "venue": "predictit",
+    "ergebnis": "NEIN",
+    "frage": "Will Pete Hegseth leave office in 2026?",
+    "schliesst": 1798761540.0,
+    "ref": {
+     "vertrag": 34409,
+     "markt": 8697,
+     "ja_kauf": 0.14,
+     "ja_verkauf": 0.11,
+     "nein_kauf": 0.89,
+     "nein_verkauf": 0.86
+    },
+    "url": "https://www.predictit.org/markets/detail/8697/Will-Pete-Hegseth-leave-office-in-2026"
+   },
+   "aktion": "verkaufen",
+   "typ": "limit",
+   "seite": "long",
+   "betrag_usd": null,
+   "menge": 300,
+   "hebel": 1.0,
+   "limit_preis": 0.86,
+   "stop_preis": null,
+   "stop_loss": null,
+   "take_profit": null,
+   "ausstiegsplan": "",
+   "invalidierung": "",
+   "erstellt": 1794409480.899957,
+   "geprueft_bis": 1794409480.899957,
+   "gueltig_bis": 1797001480.899957
+  }
+ ],
  "rebalancing": {
   "ziele": {
    "stock:SPY": {

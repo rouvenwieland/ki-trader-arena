@@ -2,7 +2,7 @@
  "fonds_id": "claude_mittel_rm",
  "waehrung": "USD",
  "start_kapital": 11156.327353966788,
- "cash": 1305.603316251634,
+ "cash": 1153.650196251634,
  "positionen": [
   {
    "id": "pe8186cc2",
@@ -37,40 +37,6 @@
    "invalidierung": "NVDA schließt wieder dauerhaft über Apple-Marktkap (NVDA >~210 bei AAPL ~343) oder starke NVDA-Zahlen mit Rally >8%; dann neu bewerten/verkaufen.",
    "kurs": 0.785,
    "wert": 436.02
-  },
-  {
-   "id": "p8c871cfa",
-   "inst": {
-    "id": "pm:polymarket:679022:NEIN",
-    "art": "pm",
-    "venue": "polymarket",
-    "ergebnis": "NEIN",
-    "frage": "Will David Lisnard win the 2027 French presidential election?",
-    "schliesst": 1808107140.0,
-    "ref": {
-     "id": "679022",
-     "token_ja": "55404192439775628931124671719520886657525387168536821457706619003199189099864",
-     "token_nein": "79358475953126059185096320578578995575874288599466094920037110232928386404141",
-     "tick": 0.001,
-     "condition": "0xce610556ec78cfd7894f4169d91fe70e31c2fb49f927fffd7fe7d06530f88d56",
-     "gebuehr_rate": 0.0,
-     "gebuehr_exp": 1.0
-    },
-    "url": "https://polymarket.com/event/next-french-presidential-election"
-   },
-   "seite": "long",
-   "menge": 211.0,
-   "einstand": 0.8180876268412438,
-   "hebel": 1.0,
-   "marge": 0.0,
-   "eroeffnet": 1793451981.8056335,
-   "gebuehren": 0.0,
-   "funding": 0.0,
-   "ausstiegsplan": "Bis zur Abrechnung halten. Neu bewerten nach Le Pens Kassationsurteil (bis Jan. 2027) und nach dem Ablauf der 500-Unterschriften-Frist (März 2027). Verkaufen, wenn die Invalidierung eintritt. Teilgewinne mitnehmen, wenn NEIN ≥0,95.",
-   "entscheidung_id": "dcfc7153a",
-   "invalidierung": "Lisnard liegt in mehreren seriösen Umfragen (Ifop, Elabe, Harris) stabil bei ≥14 % und damit unter den Top 3 im ersten Wahlgang, oder Retailleau/LR ziehen zu seinen Gunsten zurück.",
-   "kurs": 0.842,
-   "wert": 177.45
   },
   {
    "id": "pbb4d5e0c",
@@ -634,10 +600,42 @@
    "invalidierung": "Call verschoben/abgesagt oder Regel enger gefasst (nur 'Megaspeed' genannt) – Kauf ohnehin klein.",
    "kurs": 0.5185287909426548,
    "wert": 24.83
+  },
+  {
+   "id": "pa8d39b6a",
+   "inst": {
+    "id": "pm:polymarket:6683302:NEIN",
+    "art": "pm",
+    "venue": "polymarket",
+    "ergebnis": "NEIN",
+    "frage": "Will the price of Bitcoin be above $74,000 on November 11?",
+    "schliesst": 1794416400.0,
+    "ref": {
+     "id": "6683302",
+     "token_ja": "112233253178221771651974034480699123609894142946455405088355534051142583374014",
+     "token_nein": "8568414337792428465051408358957603028666153058070747466960024614429711816510",
+     "tick": 0.001,
+     "condition": "0x3ca978bec59e6ce820e14c6befb236c378c8b976a9fe0c1117253be5e738833c",
+     "gebuehr_rate": 0.07,
+     "gebuehr_exp": 1.0
+    },
+    "url": "https://polymarket.com/event/bitcoin-above-on-november-11-2026"
+   },
+   "seite": "long",
+   "menge": 415.0,
+   "einstand": 0.7818038072289156,
+   "hebel": 1.0,
+   "marge": 0.0,
+   "eroeffnet": 1794409486.0178354,
+   "gebuehren": 4.95554,
+   "funding": 0.0,
+   "ausstiegsplan": "Halten bis zur Abrechnung um 17:00 UTC heute.",
+   "entscheidung_id": "d4a5f31d7",
+   "invalidierung": "BTC/USDT über 73.900 vor 16:45 UTC – dann ist der Vorteil weg (Position läuft aber bis zur Abrechnung, kein Verkauf wegen Spread)."
   }
  ],
- "realisiert": 127.24826927850235,
- "gebuehren": 49.25012633920157,
+ "realisiert": 132.0827800149999,
+ "gebuehren": 54.20566633920157,
  "funding": 0.0,
  "erstellt": 1793380123.8861866,
  "start_fx": 1.1156327353966788,

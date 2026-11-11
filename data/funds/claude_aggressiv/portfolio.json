@@ -236,10 +236,19 @@
      "symbol": "BTC-USD"
     },
     "anteil": 0.12
+   },
+   "stock:SGOV": {
+    "inst": {
+     "id": "stock:SGOV",
+     "art": "stock",
+     "venue": "yahoo",
+     "symbol": "SGOV"
+    },
+    "anteil": 0.08
    }
   },
   "schwelle_pp": 6.0,
-  "seit": 1794214992.680297,
-  "entscheidung_id": "db90ee1de"
+  "seit": 1794409211.766242,
+  "entscheidung_id": "d23f83a34"
  }
 }
