@@ -159,8 +159,8 @@
    "ausstiegsplan": "Bid ≥0,70 verkaufen (P erreicht); Neubewertung nach NVDA-Zahlen 19.11.; schließen, wenn Apple-Vorsprung <3 %.",
    "entscheidung_id": "d7e53ef04",
    "invalidierung": "NVDA-Marktkap. kommt auf <3 % Abstand zu Apple, oder Apple fällt >8 % relativ.",
-   "kurs": 0.7645,
-   "wert": 232.71
+   "kurs": 0.763,
+   "wert": 232.4
   },
   {
    "id": "pb60e44cc",
@@ -180,8 +180,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "d6e1a7002",
-   "kurs": 757.42,
-   "wert": 1964.66
+   "kurs": 758.465,
+   "wert": 1967.37
   },
   {
    "id": "p5fe9ac51",
@@ -201,8 +201,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "d6e1a7002",
-   "kurs": 688.93,
-   "wert": 1098.35
+   "kurs": 691.66,
+   "wert": 1102.7
   },
   {
    "id": "p5106387a",
@@ -222,8 +222,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "d6e1a7002",
-   "kurs": 366.995,
-   "wert": 1091.45
+   "kurs": 367.05,
+   "wert": 1091.62
   },
   {
    "id": "p72af4e36",
@@ -243,8 +243,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "d6e1a7002",
-   "kurs": 95.705,
-   "wert": 1098.97
+   "kurs": 95.715,
+   "wert": 1099.08
   },
   {
    "id": "p3e7ff11c",
@@ -264,8 +264,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "d6e1a7002",
-   "kurs": 73980.91500000001,
-   "wert": 1217.47
+   "kurs": 73924.185,
+   "wert": 1216.56
   },
   {
    "id": "pe3015b77",
@@ -285,8 +285,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "d6e1a7002",
-   "kurs": 2075.425,
-   "wert": 471.02
+   "kurs": 2073.125,
+   "wert": 470.5
   },
   {
    "id": "p1ad6082a",
@@ -353,7 +353,7 @@
    "entscheidung_id": "d1fa25bbb",
    "invalidierung": "NVDA-Marktkapitalisierung innerhalb 5 % von Apple (z. B. NVDA ≥200 bei AAPL ~349) nach den Earnings, oder NVDA-JA ≥0.45.",
    "kurs": 0.775,
-   "wert": 325.28
+   "wert": 329.56
   },
   {
    "id": "p41d9ec41",
@@ -414,8 +414,8 @@
    "ausstiegsplan": "Bis zum IPO-Tag halten. Verkaufen, wenn der Bid ≥0,40 erreicht. Nach der Preisfestsetzung am 18.11. neu bewerten: Bei einem IPO-Preis ≥88 $ schließen.",
    "entscheidung_id": "d48fafa83",
    "invalidierung": "Die Nasdaq-Listing-Seite bzw. Yahoo zeigen vor dem IPO eine Aktienzahl von ≥16 Mrd., oder die Preisfestsetzung liegt bei ≥90 $.",
-   "kurs": 0.203,
-   "wert": 68.68
+   "kurs": 0.2355,
+   "wert": 79.9
   },
   {
    "id": "pac09f469",
@@ -476,8 +476,8 @@
    "ausstiegsplan": "Halten bis Abrechnung 17:00 UTC (Bindung <2 h). Keine Absicherung.",
    "entscheidung_id": "d3407c392",
    "invalidierung": "BTC (Binance) über 73.850 vor 16:30 UTC – dann P(JA) > 0,3.",
-   "kurs": 0.4455,
-   "wert": 139.23
+   "kurs": 0.4855,
+   "wert": 152.46
   }
  ],
  "realisiert": 70.49339185923117,
@@ -485,7 +485,7 @@
  "funding": 0.0,
  "erstellt": 1793319819.7411644,
  "start_fx": 1.1184885798616961,
- "letzter_tick": 1794411806.3288305,
+ "letzter_tick": 1794412705.6512132,
  "auftraege": [
   {
    "id": "a4e7a61",
@@ -520,7 +520,7 @@
    "ausstiegsplan": "",
    "invalidierung": "",
    "erstellt": 1794409480.899957,
-   "geprueft_bis": 1794411806.3288305,
+   "geprueft_bis": 1794412705.6512132,
    "gueltig_bis": 1797001480.899957
   }
  ],
