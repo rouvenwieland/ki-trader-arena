@@ -35,8 +35,8 @@
    "ausstiegsplan": "Halten bis Abrechnung 31.12.; vorzeitig verkaufen, wenn NEIN-Preis auf ≥0.62 steigt (Gewinn mitnehmen) oder unter 0.38 fällt.",
    "entscheidung_id": "dbf84bba3",
    "invalidierung": "NVDA schließt wieder dauerhaft über Apple-Marktkap (NVDA >~210 bei AAPL ~343) oder starke NVDA-Zahlen mit Rally >8%; dann neu bewerten/verkaufen.",
-   "kurs": 0.775,
-   "wert": 430.43
+   "kurs": 0.785,
+   "wert": 436.02
   },
   {
    "id": "p8c871cfa",
@@ -103,8 +103,8 @@
    "ausstiegsplan": "Halten bis 31.12.; Gewinnmitnahme ≥0.88 oder nach Earnings neu bewerten.",
    "entscheidung_id": "d24ff66a4",
    "invalidierung": "NVDA-Marktkap übertrifft Apple um >3 % nach Earnings (NVDA >~205 bei AAPL ~350).",
-   "kurs": 0.761,
-   "wert": 938.24
+   "kurs": 0.7655000000000001,
+   "wert": 936.99
   },
   {
    "id": "pa832233e",
@@ -165,7 +165,7 @@
    "ausstiegsplan": "Halten bis 30.11.; verkaufen, wenn BTC unter 64.000 fällt oder NEIN-Preis <0.88.",
    "entscheidung_id": "d7dbfc08f",
    "invalidierung": "BTC Binance unter 64.000 oder DVOL >60",
-   "kurs": 0.957,
+   "kurs": 0.9564999999999999,
    "wert": 299.23
   },
   {
@@ -186,8 +186,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "dd6456776",
-   "kurs": 756.11,
-   "wert": 2254.77
+   "kurs": 756.45,
+   "wert": 2255.78
   },
   {
    "id": "p1c64b37e",
@@ -207,8 +207,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "dd6456776",
-   "kurs": 73496.525,
-   "wert": 1043.0
+   "kurs": 73524.36499999999,
+   "wert": 1043.4
   },
   {
    "id": "p994b6370",
@@ -228,8 +228,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "dd6456776",
-   "kurs": 368.245,
-   "wert": 905.99
+   "kurs": 368.056,
+   "wert": 905.52
   },
   {
    "id": "p3b9e74b7",
@@ -350,8 +350,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "d0a642430",
-   "kurs": 91.5,
-   "wert": 908.78
+   "kurs": 91.4901,
+   "wert": 908.68
   },
   {
    "id": "p4abb843a",
@@ -480,8 +480,8 @@
    "ausstiegsplan": "Bis Vereidigung halten; schließen, wenn beide Beine zusammen ≥0.97 verkaufbar.",
    "entscheidung_id": "d5f5d56d9",
    "invalidierung": "Nachweislich abweichende PredictIt-Regel, die Eisenkot-JA bei PredictIt und NEIN bei Polymarket zulässt.",
-   "kurs": 0.606,
-   "wert": 420.7
+   "kurs": 0.6034999999999999,
+   "wert": 417.9
   },
   {
    "id": "p2567180c",
@@ -514,8 +514,8 @@
    "ausstiegsplan": "Halten bis IPO-Tag (voraussichtlich Woche 16.–20.11.). Bei Preisfestsetzung neu rechnen: Schwelle = 1,25 Bio/13,09 Mrd. = $95,5. Teilverkauf, wenn JA ≥0,50 vor Handelsstart.",
    "entscheidung_id": "d0595e7ab",
    "invalidierung": "Endgültiger IPO-Preis ≥ $86 (dann reicht +11 % Pop) oder offizielle Polymarket-Klarstellung, dass voll verwässert gezählt wird; Graumarkt-/Indikationen Eröffnung ≥ $100.",
-   "kurs": 0.151,
-   "wert": 403.65
+   "kurs": 0.16999999999999998,
+   "wert": 446.71
   },
   {
    "id": "p1f686553",
@@ -576,8 +576,8 @@
    "ausstiegsplan": "Halten bis 31.12.",
    "entscheidung_id": "db61267da",
    "invalidierung": "Polymarket-JA >0.30 oder Board-Befund schwerwiegend",
-   "kurs": 0.8292901647117337,
-   "wert": 208.14
+   "kurs": 0.8300817163737071,
+   "wert": 208.34
   },
   {
    "id": "p51c17729",
@@ -641,7 +641,7 @@
  "funding": 0.0,
  "erstellt": 1793380123.8861866,
  "start_fx": 1.1156327353966788,
- "letzter_tick": 1794408205.9128234,
+ "letzter_tick": 1794409105.7285376,
  "auftraege": [],
  "rebalancing": {
   "ziele": {
