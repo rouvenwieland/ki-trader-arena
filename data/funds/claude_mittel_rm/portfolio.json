@@ -69,8 +69,8 @@
    "ausstiegsplan": "Halten bis 31.12.; Gewinnmitnahme ≥0.88 oder nach Earnings neu bewerten.",
    "entscheidung_id": "d24ff66a4",
    "invalidierung": "NVDA-Marktkap übertrifft Apple um >3 % nach Earnings (NVDA >~205 bei AAPL ~350).",
-   "kurs": 0.757,
-   "wert": 929.52
+   "kurs": 0.756,
+   "wert": 928.27
   },
   {
    "id": "pa832233e",
@@ -131,8 +131,8 @@
    "ausstiegsplan": "Halten bis 30.11.; verkaufen, wenn BTC unter 64.000 fällt oder NEIN-Preis <0.88.",
    "entscheidung_id": "d7dbfc08f",
    "invalidierung": "BTC Binance unter 64.000 oder DVOL >60",
-   "kurs": 0.9615,
-   "wert": 300.48
+   "kurs": 0.963,
+   "wert": 301.11
   },
   {
    "id": "pea9d23a3",
@@ -152,8 +152,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "dd6456776",
-   "kurs": 760.195,
-   "wert": 2266.95
+   "kurs": 760.57,
+   "wert": 2268.07
   },
   {
    "id": "p1c64b37e",
@@ -173,8 +173,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "dd6456776",
-   "kurs": 74255.705,
-   "wert": 1053.77
+   "kurs": 74378.725,
+   "wert": 1055.52
   },
   {
    "id": "p994b6370",
@@ -194,8 +194,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "dd6456776",
-   "kurs": 366.46,
-   "wert": 901.6
+   "kurs": 366.84,
+   "wert": 902.53
   },
   {
    "id": "p3b9e74b7",
@@ -379,8 +379,8 @@
    "ausstiegsplan": "Halten bis Abrechnung Jan. 2027; Verkauf bei NEIN <0.80 oder Doomsday-Opening-Tag >$200M.",
    "entscheidung_id": "d6b155dae",
    "invalidierung": "Doomsday Freitagsumsatz inkl. Previews >$200M am 18.12. oder Doomsday-Domestic nach 7 Tagen >$600M.",
-   "kurs": 0.895,
-   "wert": 439.36
+   "kurs": 0.8955,
+   "wert": 439.85
   },
   {
    "id": "p75b03ffe",
@@ -446,8 +446,8 @@
    "ausstiegsplan": "Bis Vereidigung halten; schließen, wenn beide Beine zusammen ≥0.97 verkaufbar.",
    "entscheidung_id": "d5f5d56d9",
    "invalidierung": "Nachweislich abweichende PredictIt-Regel, die Eisenkot-JA bei PredictIt und NEIN bei Polymarket zulässt.",
-   "kurs": 0.6114999999999999,
-   "wert": 423.5
+   "kurs": 0.607,
+   "wert": 422.1
   },
   {
    "id": "p2567180c",
@@ -542,8 +542,8 @@
    "ausstiegsplan": "Halten bis 31.12.",
    "entscheidung_id": "db61267da",
    "invalidierung": "Polymarket-JA >0.30 oder Board-Befund schwerwiegend",
-   "kurs": 0.8270460957435664,
-   "wert": 207.58
+   "kurs": 0.8231319638385252,
+   "wert": 206.6
   },
   {
    "id": "p51c17729",
@@ -598,50 +598,16 @@
    "ausstiegsplan": "Halten bis Abrechnung nach Call 17.11.; Ausstieg ≥0.9.",
    "entscheidung_id": "d3b289b42",
    "invalidierung": "Call verschoben/abgesagt oder Regel enger gefasst (nur 'Megaspeed' genannt) – Kauf ohnehin klein.",
-   "kurs": 0.5185287909426548,
-   "wert": 24.83
-  },
-  {
-   "id": "pa8d39b6a",
-   "inst": {
-    "id": "pm:polymarket:6683302:NEIN",
-    "art": "pm",
-    "venue": "polymarket",
-    "ergebnis": "NEIN",
-    "frage": "Will the price of Bitcoin be above $74,000 on November 11?",
-    "schliesst": 1794416400.0,
-    "ref": {
-     "id": "6683302",
-     "token_ja": "112233253178221771651974034480699123609894142946455405088355534051142583374014",
-     "token_nein": "8568414337792428465051408358957603028666153058070747466960024614429711816510",
-     "tick": 0.001,
-     "condition": "0x3ca978bec59e6ce820e14c6befb236c378c8b976a9fe0c1117253be5e738833c",
-     "gebuehr_rate": 0.07,
-     "gebuehr_exp": 1.0
-    },
-    "url": "https://polymarket.com/event/bitcoin-above-on-november-11-2026"
-   },
-   "seite": "long",
-   "menge": 415.0,
-   "einstand": 0.7818038072289156,
-   "hebel": 1.0,
-   "marge": 0.0,
-   "eroeffnet": 1794409486.0178354,
-   "gebuehren": 4.95554,
-   "funding": 0.0,
-   "ausstiegsplan": "Halten bis zur Abrechnung um 17:00 UTC heute.",
-   "entscheidung_id": "d4a5f31d7",
-   "invalidierung": "BTC/USDT über 73.900 vor 16:45 UTC – dann ist der Vorteil weg (Position läuft aber bis zur Abrechnung, kein Verkauf wegen Spread).",
-   "kurs": null,
-   "wert": 324.45
+   "kurs": 0.5609989825723569,
+   "wert": 26.93
   }
  ],
- "realisiert": 132.0827800149999,
+ "realisiert": -192.36579998500008,
  "gebuehren": 54.20566633920157,
  "funding": 0.0,
  "erstellt": 1793380123.8861866,
  "start_fx": 1.1156327353966788,
- "letzter_tick": 1794417205.5584548,
+ "letzter_tick": 1794418106.003443,
  "auftraege": [],
  "rebalancing": {
   "ziele": {

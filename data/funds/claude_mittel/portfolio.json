@@ -35,7 +35,7 @@
    "ausstiegsplan": "NEIN-Bid ≥0,93 oder P erreicht → verkaufen; sonst halten bis zur Wahl (April/Mai 2027).",
    "entscheidung_id": "d860a2331",
    "invalidierung": "Lisnard in mehreren Umfragen ≥12 % im 1. Wahlgang oder Rückzug von Philippe/Retailleau zu seinen Gunsten bzw. Sieg in einer Rechts-Primaire.",
-   "kurs": 0.846,
+   "kurs": 0.845,
    "wert": 455.76
   },
   {
@@ -159,8 +159,8 @@
    "ausstiegsplan": "Bid ≥0,70 verkaufen (P erreicht); Neubewertung nach NVDA-Zahlen 19.11.; schließen, wenn Apple-Vorsprung <3 %.",
    "entscheidung_id": "d7e53ef04",
    "invalidierung": "NVDA-Marktkap. kommt auf <3 % Abstand zu Apple, oder Apple fällt >8 % relativ.",
-   "kurs": 0.757,
-   "wert": 229.02
+   "kurs": 0.756,
+   "wert": 228.72
   },
   {
    "id": "pb60e44cc",
@@ -180,8 +180,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "d6e1a7002",
-   "kurs": 760.195,
-   "wert": 1971.86
+   "kurs": 760.57,
+   "wert": 1972.83
   },
   {
    "id": "p5fe9ac51",
@@ -201,8 +201,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "d6e1a7002",
-   "kurs": 693.081,
-   "wert": 1104.96
+   "kurs": 693.91,
+   "wert": 1106.29
   },
   {
    "id": "p5106387a",
@@ -222,8 +222,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "d6e1a7002",
-   "kurs": 366.46,
-   "wert": 1089.86
+   "kurs": 366.84,
+   "wert": 1090.99
   },
   {
    "id": "p72af4e36",
@@ -243,8 +243,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "d6e1a7002",
-   "kurs": 95.775,
-   "wert": 1099.77
+   "kurs": 95.835,
+   "wert": 1100.46
   },
   {
    "id": "p3e7ff11c",
@@ -264,8 +264,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "d6e1a7002",
-   "kurs": 74255.705,
-   "wert": 1222.01
+   "kurs": 74378.725,
+   "wert": 1224.04
   },
   {
    "id": "pe3015b77",
@@ -285,8 +285,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "d6e1a7002",
-   "kurs": 2084.495,
-   "wert": 473.06
+   "kurs": 2089.105,
+   "wert": 474.13
   },
   {
    "id": "p1ad6082a",
@@ -446,40 +446,6 @@
    "wert": 107.97
   },
   {
-   "id": "p80f5f0b2",
-   "inst": {
-    "id": "pm:polymarket:6683302:NEIN",
-    "art": "pm",
-    "venue": "polymarket",
-    "ergebnis": "NEIN",
-    "frage": "Will the price of Bitcoin be above $74,000 on November 11?",
-    "schliesst": 1794416400.0,
-    "ref": {
-     "id": "6683302",
-     "token_ja": "112233253178221771651974034480699123609894142946455405088355534051142583374014",
-     "token_nein": "8568414337792428465051408358957603028666153058070747466960024614429711816510",
-     "tick": 0.001,
-     "condition": "0x3ca978bec59e6ce820e14c6befb236c378c8b976a9fe0c1117253be5e738833c",
-     "gebuehr_rate": 0.07,
-     "gebuehr_exp": 1.0
-    },
-    "url": "https://polymarket.com/event/bitcoin-above-on-november-11-2026"
-   },
-   "seite": "long",
-   "menge": 315.0,
-   "einstand": 0.7816940952380953,
-   "hebel": 1.0,
-   "marge": 0.0,
-   "eroeffnet": 1794409436.4887092,
-   "gebuehren": 3.7628,
-   "funding": 0.0,
-   "ausstiegsplan": "Halten bis Abrechnung 17:00 UTC (Bindung <2 h). Keine Absicherung.",
-   "entscheidung_id": "d3407c392",
-   "invalidierung": "BTC (Binance) über 73.850 vor 16:30 UTC – dann P(JA) > 0,3.",
-   "kurs": null,
-   "wert": 246.23
-  },
-  {
    "id": "p16c2ebae",
    "inst": {
     "id": "pm:manifold:6gZRoSBRfQ4xyS9MQvu0:JA",
@@ -508,12 +474,12 @@
    "wert": 46.04
   }
  ],
- "realisiert": 70.49339185923117,
+ "realisiert": -175.74024814076884,
  "gebuehren": 62.5383933771088,
  "funding": 0.0,
  "erstellt": 1793319819.7411644,
  "start_fx": 1.1184885798616961,
- "letzter_tick": 1794417205.5584548,
+ "letzter_tick": 1794418106.003443,
  "auftraege": [
   {
    "id": "a4e7a61",
@@ -548,7 +514,7 @@
    "ausstiegsplan": "",
    "invalidierung": "",
    "erstellt": 1794409480.899957,
-   "geprueft_bis": 1794417205.5584548,
+   "geprueft_bis": 1794418106.003443,
    "gueltig_bis": 1797001480.899957
   }
  ],
