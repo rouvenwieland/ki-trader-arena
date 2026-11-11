@@ -2,7 +2,7 @@
  "fonds_id": "schwarm_alle",
  "waehrung": "USD",
  "start_kapital": 11157.431109273288,
- "cash": 8602.594859273288,
+ "cash": 8033.902369273287,
  "positionen": [
   {
    "id": "p94f69125",
@@ -291,12 +291,44 @@
    "ausstiegsplan": "Halten bis zur Abrechnung (Schwarm-Regel)",
    "kurs": 0.97,
    "wert": 635.98
+  },
+  {
+   "id": "pcb3a9def",
+   "inst": {
+    "id": "pm:polymarket:6882826:NEIN",
+    "art": "pm",
+    "venue": "polymarket",
+    "ergebnis": "NEIN",
+    "frage": "Jensen Huang announced resignation or removal by December 31, 2026?",
+    "schliesst": 1798779540.0,
+    "ref": {
+     "id": "6882826",
+     "token_ja": "92740912934979695164482497757800283783237751328808772389036157576306520939319",
+     "token_nein": "15017605300721255694387863261330475130179898743425100548854893411502225255902",
+     "tick": 0.01,
+     "condition": "0xe0881460dcd53df2f8410ff9ec4c151f22c15ad29ff581d8eb8ac9bce5124eef",
+     "gebuehr_rate": 0.04,
+     "gebuehr_exp": 1.0
+    },
+    "url": "https://polymarket.com/event/jensen-huang-announced-resignation-or-removal-by-december-31"
+   },
+   "seite": "long",
+   "menge": 848.0,
+   "einstand": 0.661673466981132,
+   "hebel": 1.0,
+   "marge": 0.0,
+   "eroeffnet": 1794434591.603013,
+   "gebuehren": 7.59339,
+   "funding": 0.0,
+   "ausstiegsplan": "Halten bis zur Abrechnung (Schwarm-Regel)",
+   "kurs": 0.66,
+   "wert": 551.2
   }
  ],
  "realisiert": 15.23361999999986,
- "gebuehren": 70.09877,
+ "gebuehren": 77.69216,
  "funding": 0.0,
  "erstellt": 1793379225.5430336,
  "start_fx": 1.1157431109273288,
- "letzter_tick": 1794433692.0697403
+ "letzter_tick": 1794434591.603013
 }
