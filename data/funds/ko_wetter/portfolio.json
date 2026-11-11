@@ -2,7 +2,7 @@
  "fonds_id": "ko_wetter",
  "waehrung": "USD",
  "start_kapital": 11156.327353966788,
- "cash": 3038.1668216355047,
+ "cash": 2823.9265540465717,
  "positionen": [
   {
    "id": "p174c80ac",
@@ -159,13 +159,65 @@
    "ausstiegsplan": "Halten bis zur Abrechnung (Wetter-Regel)",
    "kurs": 0.015,
    "wert": 10.9
+  },
+  {
+   "id": "p99642baa",
+   "inst": {
+    "id": "pm:kalshi:KXHIGHNY-26NOV11-B59.5:JA",
+    "art": "pm",
+    "venue": "kalshi",
+    "ergebnis": "JA",
+    "frage": "Will the maximum temperature be 59-60° on Nov 11, 2026? [59° to 60°]",
+    "schliesst": 1794463200.0,
+    "ref": {
+     "ticker": "KXHIGHNY-26NOV11-B59.5"
+    },
+    "url": "https://kalshi.com/markets/KXHIGHNY-26NOV11"
+   },
+   "seite": "long",
+   "menge": 1098.0,
+   "einstand": 0.09190573770491803,
+   "hebel": 1.0,
+   "marge": 0.0,
+   "eroeffnet": 1794401778.4709642,
+   "gebuehren": 6.42,
+   "funding": 0.0,
+   "ausstiegsplan": "Halten bis zur Abrechnung (Wetter-Regel)",
+   "kurs": 0.08499999999999999,
+   "wert": 54.9
+  },
+  {
+   "id": "p1af85bf7",
+   "inst": {
+    "id": "pm:kalshi:KXHIGHNY-26NOV11-B61.5:NEIN",
+    "art": "pm",
+    "venue": "kalshi",
+    "ergebnis": "NEIN",
+    "frage": "Will the maximum temperature be 61-62° on Nov 11, 2026? [61° to 62°]",
+    "schliesst": 1794463200.0,
+    "ref": {
+     "ticker": "KXHIGHNY-26NOV11-B61.5"
+    },
+    "url": "https://kalshi.com/markets/KXHIGHNY-26NOV11"
+   },
+   "seite": "long",
+   "menge": 252.0,
+   "einstand": 0.4073324110671937,
+   "hebel": 1.0,
+   "marge": 0.0,
+   "eroeffnet": 1794401778.4709642,
+   "gebuehren": 4.26,
+   "funding": 0.0,
+   "ausstiegsplan": "Halten bis zur Abrechnung (Wetter-Regel)",
+   "kurs": 0.395,
+   "wert": 93.24
   }
  ],
  "realisiert": -6798.903532331286,
- "gebuehren": 740.4000000000001,
+ "gebuehren": 751.08,
  "funding": 0.0,
  "erstellt": 1793380123.8861866,
  "start_fx": 1.1156327353966788,
- "letzter_tick": 1794400878.1132357,
- "wetter_letzter": 1794398177.7496018
+ "letzter_tick": 1794401778.4709642,
+ "wetter_letzter": 1794401778.4709642
 }
