@@ -2,7 +2,7 @@
  "fonds_id": "claude_mittel_rm",
  "waehrung": "USD",
  "start_kapital": 11156.327353966788,
- "cash": 1335.3903500504719,
+ "cash": 1305.603316251634,
  "positionen": [
   {
    "id": "pe8186cc2",
@@ -606,6 +606,32 @@
    "invalidierung": "IPO-Preis über Spanne (≥$85) oder Nachrichten, dass Marktkap FD-basiert >2 Bio bei $111 gezählt wird und Orderbuch-Hype.",
    "kurs": 0.8769127226315468,
    "wert": 33.32
+  },
+  {
+   "id": "p5d2c9646",
+   "inst": {
+    "id": "pm:manifold:z0y9P2hESL:JA",
+    "art": "pm",
+    "venue": "manifold",
+    "ergebnis": "JA",
+    "frage": "Will \"Megaspeed\" or the Alice Huang spy probe come up on Nvidia's November 17 earnings call?",
+    "schliesst": 1794952800.0,
+    "ref": {
+     "id": "z0y9P2hESL"
+    },
+    "url": "https://manifold.markets/Terminator2/will-megaspeed-or-the-alice-huang-s"
+   },
+   "seite": "long",
+   "menge": 49.0,
+   "einstand": 0.6078986489558736,
+   "hebel": 1.0,
+   "marge": 0.0,
+   "eroeffnet": 1794366808.207016,
+   "gebuehren": 0.0,
+   "funding": 0.0,
+   "ausstiegsplan": "Halten bis Abrechnung nach Call 17.11.; Ausstieg ≥0.9.",
+   "entscheidung_id": "d3b289b42",
+   "invalidierung": "Call verschoben/abgesagt oder Regel enger gefasst (nur 'Megaspeed' genannt) – Kauf ohnehin klein."
   }
  ],
  "realisiert": 127.24826927850235,
