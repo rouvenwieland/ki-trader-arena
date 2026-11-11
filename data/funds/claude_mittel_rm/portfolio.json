@@ -69,8 +69,8 @@
    "ausstiegsplan": "Halten bis 31.12.; Gewinnmitnahme ≥0.88 oder nach Earnings neu bewerten.",
    "entscheidung_id": "d24ff66a4",
    "invalidierung": "NVDA-Marktkap übertrifft Apple um >3 % nach Earnings (NVDA >~205 bei AAPL ~350).",
-   "kurs": 0.756,
-   "wert": 928.27
+   "kurs": 0.757,
+   "wert": 930.76
   },
   {
    "id": "pa832233e",
@@ -152,8 +152,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "dd6456776",
-   "kurs": 758.11,
-   "wert": 2260.73
+   "kurs": 759.095,
+   "wert": 2263.67
   },
   {
    "id": "p1c64b37e",
@@ -173,8 +173,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "dd6456776",
-   "kurs": 74180.485,
-   "wert": 1052.71
+   "kurs": 74261.41500000001,
+   "wert": 1053.86
   },
   {
    "id": "p994b6370",
@@ -194,8 +194,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "dd6456776",
-   "kurs": 366.9,
-   "wert": 902.68
+   "kurs": 366.765,
+   "wert": 902.35
   },
   {
    "id": "p3b9e74b7",
@@ -316,8 +316,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "d0a642430",
-   "kurs": 91.49,
-   "wert": 908.68
+   "kurs": 91.492,
+   "wert": 908.7
   },
   {
    "id": "p4abb843a",
@@ -379,8 +379,8 @@
    "ausstiegsplan": "Halten bis Abrechnung Jan. 2027; Verkauf bei NEIN <0.80 oder Doomsday-Opening-Tag >$200M.",
    "entscheidung_id": "d6b155dae",
    "invalidierung": "Doomsday Freitagsumsatz inkl. Previews >$200M am 18.12. oder Doomsday-Domestic nach 7 Tagen >$600M.",
-   "kurs": 0.896,
-   "wert": 440.34
+   "kurs": 0.895,
+   "wert": 439.36
   },
   {
    "id": "p75b03ffe",
@@ -446,8 +446,8 @@
    "ausstiegsplan": "Bis Vereidigung halten; schließen, wenn beide Beine zusammen ≥0.97 verkaufbar.",
    "entscheidung_id": "d5f5d56d9",
    "invalidierung": "Nachweislich abweichende PredictIt-Regel, die Eisenkot-JA bei PredictIt und NEIN bei Polymarket zulässt.",
-   "kurs": 0.6114999999999999,
-   "wert": 422.8
+   "kurs": 0.618,
+   "wert": 431.2
   },
   {
    "id": "p2567180c",
@@ -632,8 +632,8 @@
    "ausstiegsplan": "Halten bis zur Abrechnung um 17:00 UTC heute.",
    "entscheidung_id": "d4a5f31d7",
    "invalidierung": "BTC/USDT über 73.900 vor 16:45 UTC – dann ist der Vorteil weg (Position läuft aber bis zur Abrechnung, kein Verkauf wegen Spread).",
-   "kurs": 0.202,
-   "wert": 83.0
+   "kurs": 0.10500000000000001,
+   "wert": 40.26
   }
  ],
  "realisiert": 132.0827800149999,
@@ -641,7 +641,7 @@
  "funding": 0.0,
  "erstellt": 1793380123.8861866,
  "start_fx": 1.1156327353966788,
- "letzter_tick": 1794413605.5504909,
+ "letzter_tick": 1794414505.8123844,
  "auftraege": [],
  "rebalancing": {
   "ziele": {
