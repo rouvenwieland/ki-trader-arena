@@ -55,8 +55,8 @@
    "ausstiegsplan": "Stop 700; Review nach CPI 10.11.",
    "entscheidung_id": "d05f1cdc5",
    "invalidierung": "SPY schließt unter 700",
-   "kurs": 749.92,
-   "wert": 2705.38
+   "kurs": 756.11,
+   "wert": 2727.41
   },
   {
    "id": "pdc30d721",
@@ -89,8 +89,8 @@
    "ausstiegsplan": "Verkaufen bei Bid ≥0,80 oder BTC >86k Binance; sonst bis 31.12. halten.",
    "entscheidung_id": "d9dd07173",
    "invalidierung": "BTC steigt über 86.000 (Binance) mit sinkender DVOL <35 → Touch-Wahrscheinlichkeit <0,40, Position verkaufen.",
-   "kurs": 0.655,
-   "wert": 456.3
+   "kurs": 0.665,
+   "wert": 463.32
   },
   {
    "id": "p53b6ec63",
@@ -112,8 +112,8 @@
    "ausstiegsplan": "Stop 69.500; Teilverkauf bei 86k; Dip-Wetten gleichen Abwärtsrisiko teilweise aus.",
    "entscheidung_id": "de5e47324",
    "invalidierung": "Tagesschluss unter 69.500 oder Fed-Hike-Odds >90 %",
-   "kurs": 73512.995,
-   "wert": 1155.06
+   "kurs": 73496.525,
+   "wert": 1154.8
   },
   {
    "id": "p9c4e61c2",
@@ -135,8 +135,8 @@
    "ausstiegsplan": "Stop 355; als Kern halten.",
    "entscheidung_id": "def361d62",
    "invalidierung": "GLD schließt unter 355",
-   "kurs": 369.36,
-   "wert": 1499.29
+   "kurs": 368.245,
+   "wert": 1494.56
   },
   {
    "id": "pe9dce5d9",
@@ -158,8 +158,8 @@
    "ausstiegsplan": "Stop 93; sonst als defensiver Kern halten, Review nach CPI 10.11. und FOMC 9.12.",
    "entscheidung_id": "dd7ab6d3d",
    "invalidierung": "AGG unter 93",
-   "kurs": 95.88,
-   "wert": 795.36
+   "kurs": 95.789,
+   "wert": 794.47
   },
   {
    "id": "p02eb0d85",
@@ -179,8 +179,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "db90ee1de",
-   "kurs": 674.76,
-   "wert": 808.15
+   "kurs": 685.69,
+   "wert": 821.15
   }
  ],
  "realisiert": -1062.942644803372,
@@ -188,7 +188,7 @@
  "funding": -0.6133053169464532,
  "erstellt": 1793319819.7411644,
  "start_fx": 1.1184885798616961,
- "letzter_tick": 1794407308.0824354,
+ "letzter_tick": 1794408205.9128234,
  "auftraege": [],
  "rebalancing": {
   "ziele": {
