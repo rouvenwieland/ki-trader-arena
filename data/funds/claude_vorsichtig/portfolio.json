@@ -66,8 +66,8 @@
    "ausstiegsplan": "Halten bis 9.12.; Verkauf, wenn NEIN-Bid >0,55 oder bei Invalidierung.",
    "entscheidung_id": "d25f2be12",
    "invalidierung": "Fed-Signale (Warsh/Williams/Jefferson) für klaren Hike mit breitem Konsens, oder CME-Hike >90 % ohne Tauben-Widerspruch.",
-   "kurs": 0.395,
-   "wert": 209.82
+   "kurs": 0.39,
+   "wert": 204.44
   },
   {
    "id": "p99a5965e",
@@ -89,8 +89,8 @@
    "ausstiegsplan": "Kern halten, Rebalancing-Regel (2 pp), Stop 690.",
    "entscheidung_id": "dd084c777",
    "invalidierung": "SPY schließt unter 690 oder 10J-Rendite >5,3 %",
-   "kurs": 760.57,
-   "wert": 1397.65
+   "kurs": 761.312,
+   "wert": 1399.02
   },
   {
    "id": "pbcdb744c",
@@ -135,8 +135,8 @@
    "ausstiegsplan": "Halten; Stop 74.",
    "entscheidung_id": "d123eb847",
    "invalidierung": "10J-Rendite schließt über 5,3 % / TLT unter 74",
-   "kurs": 80.88,
-   "wert": 525.86
+   "kurs": 80.885,
+   "wert": 525.89
   },
   {
    "id": "pf1acd2e3",
@@ -158,8 +158,8 @@
    "ausstiegsplan": "Halten; Stop 340; Gewicht nicht über 5 % erhöhen.",
    "entscheidung_id": "dd43d0bdc",
    "invalidierung": "GLD unter 340 (neues Tief, ~-9 %)",
-   "kurs": 366.84,
-   "wert": 521.64
+   "kurs": 366.605,
+   "wert": 521.31
   },
   {
    "id": "pabe784cb",
@@ -181,8 +181,8 @@
    "ausstiegsplan": "Halten als Kern; Stop 96.",
    "entscheidung_id": "d269c21b5",
    "invalidierung": "EFA unter 96 (Bruch der Aufwärtstrendstruktur, ~-9 %)",
-   "kurs": 104.61,
-   "wert": 524.53
+   "kurs": 104.63,
+   "wert": 524.63
   },
   {
    "id": "pbfa54762",
@@ -224,7 +224,7 @@
  "funding": 0.0,
  "erstellt": 1793319819.7411644,
  "start_fx": 1.1184885798616961,
- "letzter_tick": 1794418106.003443,
+ "letzter_tick": 1794419005.6058307,
  "auftraege": [],
  "rebalancing": {
   "ziele": {
