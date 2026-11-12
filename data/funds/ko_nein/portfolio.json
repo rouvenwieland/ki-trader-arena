@@ -2,7 +2,7 @@
  "fonds_id": "ko_nein",
  "waehrung": "USD",
  "start_kapital": 11157.431109273288,
- "cash": 2606.365849273286,
+ "cash": 2105.166809273286,
  "positionen": [
   {
    "id": "p9e535f2b",
@@ -98,7 +98,7 @@
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
    "kurs": 0.7735000000000001,
-   "wert": 214.34
+   "wert": 214.89
   },
   {
    "id": "pdcfb5d53",
@@ -129,7 +129,7 @@
    "gebuehren": 0.0,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.376,
+   "kurs": 0.374,
    "wert": 93.0
   },
   {
@@ -257,7 +257,7 @@
    "gebuehren": 0.0,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.855,
+   "kurs": 0.86,
    "wert": 295.8
   },
   {
@@ -321,7 +321,7 @@
    "gebuehren": 0.0,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.735,
+   "kurs": 0.74,
    "wert": 137.03
   },
   {
@@ -417,7 +417,7 @@
    "gebuehren": 5.41501,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.35,
+   "kurs": 0.345,
    "wert": 105.4
   },
   {
@@ -481,8 +481,8 @@
    "gebuehren": 0.0,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.054,
-   "wert": 74.98
+   "kurs": 0.056499999999999995,
+   "wert": 82.79
   },
   {
    "id": "pc0b8a31d",
@@ -545,8 +545,8 @@
    "gebuehren": 0.0,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.031,
-   "wert": 6.24
+   "kurs": 0.041,
+   "wert": 9.54
   },
   {
    "id": "p5037ef0e",
@@ -769,8 +769,8 @@
    "gebuehren": 3.5937,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.64,
-   "wert": 225.06
+   "kurs": 0.645,
+   "wert": 228.69
   },
   {
    "id": "pa1fe7c67",
@@ -865,7 +865,7 @@
    "gebuehren": 0.95322,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.87,
+   "kurs": 0.865,
    "wert": 164.9
   },
   {
@@ -897,8 +897,8 @@
    "gebuehren": 4.05345,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.953,
-   "wert": 406.43
+   "kurs": 0.9564999999999999,
+   "wert": 409.88
   },
   {
    "id": "p0abe393e",
@@ -1025,8 +1025,8 @@
    "gebuehren": 2.0848,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.646,
-   "wert": 155.44
+   "kurs": 0.6495,
+   "wert": 156.17
   },
   {
    "id": "pff668a53",
@@ -1057,7 +1057,7 @@
    "gebuehren": 1.22092,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.8049999999999999,
+   "kurs": 0.8,
    "wert": 153.26
   },
   {
@@ -1249,7 +1249,7 @@
    "gebuehren": 1.35793,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.86,
+   "kurs": 0.845,
    "wert": 164.34
   },
   {
@@ -1281,7 +1281,7 @@
    "gebuehren": 6.25334,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.0195,
+   "kurs": 0.0175,
    "wert": 92.45
   },
   {
@@ -1315,13 +1315,109 @@
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
    "kurs": 0.46499999999999997,
    "wert": 147.2
+  },
+  {
+   "id": "p735a5e83",
+   "inst": {
+    "id": "pm:polymarket:6390068:NEIN",
+    "art": "pm",
+    "venue": "polymarket",
+    "ergebnis": "NEIN",
+    "frage": "Will Core PCE YoY be 3.3% in October?",
+    "schliesst": 1795613400.0,
+    "ref": {
+     "id": "6390068",
+     "token_ja": "30189696059285814057376558660211415192165790566042470565357803900408731878850",
+     "token_nein": "14047133095191620062717138996199482580423352509962646474731448623124425136176",
+     "tick": 0.01,
+     "condition": "0x1c7a2f611833d138cccb5686fc7ca694f76fb6fc959f9fef935c0a243316a4e2",
+     "gebuehr_rate": 0.05,
+     "gebuehr_exp": 1.0
+    },
+    "url": "https://polymarket.com/event/will-core-pce-yoy-be-3pt3pct-in-october-2026"
+   },
+   "seite": "long",
+   "menge": 316.0,
+   "einstand": 0.5167664556962025,
+   "hebel": 1.0,
+   "marge": 0.0,
+   "eroeffnet": 1794453620.8142118,
+   "gebuehren": 3.94556,
+   "funding": 0.0,
+   "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
+   "kurs": 0.525,
+   "wert": 135.88
+  },
+  {
+   "id": "p5a6542fb",
+   "inst": {
+    "id": "pm:polymarket:6172687:NEIN",
+    "art": "pm",
+    "venue": "polymarket",
+    "ergebnis": "NEIN",
+    "frage": "Will Gold (XAUUSD) hit (LOW) $3,700 in November?",
+    "schliesst": 1796101199.999,
+    "ref": {
+     "id": "6172687",
+     "token_ja": "85781792008348169580270247980582819500157850570271904562627483978708286536825",
+     "token_nein": "108084198645227559497642444071124188883418045970770641963628630603002541171243",
+     "tick": 0.01,
+     "condition": "0xe11122d308bfd2e7951acff143c95e71c5eede2d7698ffc0473d3baca79ab4c6",
+     "gebuehr_rate": 0.04,
+     "gebuehr_exp": 1.0
+    },
+    "url": "https://polymarket.com/event/will-xauusd-dip-to-3700-in-november-2026"
+   },
+   "seite": "long",
+   "menge": 193.0,
+   "einstand": 0.8613471502590674,
+   "hebel": 1.0,
+   "marge": 0.0,
+   "eroeffnet": 1794453620.8142118,
+   "gebuehren": 0.92199,
+   "funding": 0.0,
+   "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
+   "kurs": 0.86,
+   "wert": 162.12
+  },
+  {
+   "id": "p30c72d37",
+   "inst": {
+    "id": "pm:polymarket:5765623:NEIN",
+    "art": "pm",
+    "venue": "polymarket",
+    "ergebnis": "NEIN",
+    "frage": "Will PPI YoY be 6.6% in October?",
+    "schliesst": 1794632340.0,
+    "ref": {
+     "id": "5765623",
+     "token_ja": "109192587295740856683043890629803394858969916405637282096501150622059986987312",
+     "token_nein": "72216516679859804776703999521951122399042299482989597632387473874639511168721",
+     "tick": 0.001,
+     "condition": "0xb42f311b98078adf1b2367ffcc718b1a5f8e28e01939dff0d8882bdf4ee65730",
+     "gebuehr_rate": 0.05,
+     "gebuehr_exp": 1.0
+    },
+    "url": "https://polymarket.com/event/will-ppi-yoy-be-6pt6-in-october"
+   },
+   "seite": "long",
+   "menge": 177.0,
+   "einstand": 0.9394926553672315,
+   "hebel": 1.0,
+   "marge": 0.0,
+   "eroeffnet": 1794453620.8142118,
+   "gebuehren": 0.50309,
+   "funding": 0.0,
+   "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
+   "kurs": 0.8145,
+   "wert": 113.63
   }
  ],
  "realisiert": -1479.7425300000004,
- "gebuehren": 286.70248,
+ "gebuehren": 292.07311999999996,
  "funding": 0.0,
  "erstellt": 1793379225.5430336,
  "start_fx": 1.1157431109273288,
- "letzter_tick": 1794452720.4270256,
- "kontrolle_bis": 1794442029.295995
+ "letzter_tick": 1794453620.8142118,
+ "kontrolle_bis": 1794452831.9148796
 }
