@@ -2,7 +2,7 @@
  "fonds_id": "claude_mittel_rm",
  "waehrung": "USD",
  "start_kapital": 11156.327353966788,
- "cash": 1143.7153015148476,
+ "cash": 1097.2572595282002,
  "positionen": [
   {
    "id": "pe8186cc2",
@@ -59,16 +59,16 @@
     "url": "https://polymarket.com/event/will-apple-be-the-largest-company-in-the-world-by-market-cap-on-december-31-291"
    },
    "seite": "long",
-   "menge": 1246.0,
-   "einstand": 0.5390430738362761,
+   "menge": 1336.0,
+   "einstand": 0.5592198128742516,
    "hebel": 1.0,
    "marge": 0.0,
    "eroeffnet": 1793451981.8068187,
-   "gebuehren": 7.55675,
+   "gebuehren": 8.04412,
    "funding": 0.0,
-   "ausstiegsplan": "Halten bis 31.12.; Gewinnmitnahme ≥0.88 oder nach Earnings neu bewerten.",
-   "entscheidung_id": "d24ff66a4",
-   "invalidierung": "NVDA-Marktkap übertrifft Apple um >3 % nach Earnings (NVDA >~205 bei AAPL ~350).",
+   "ausstiegsplan": "Halten bis 31.12.; Gewinnmitnahme ≥0,93 oder Neubewertung nach NVDA-Earnings 17./19.11.",
+   "entscheidung_id": "dce9924e1",
+   "invalidierung": "NVDA-Marktkap > Apple −10 % (NVDA >~210 bei Apple ~355) oder Apple −20 % binnen Tagen",
    "kurs": 0.832,
    "wert": 1029.2
   },
@@ -518,34 +518,6 @@
    "wert": 294.98
   },
   {
-   "id": "p2f91194c",
-   "inst": {
-    "id": "pm:manifold:OnpNLLgytQ:NEIN",
-    "art": "pm",
-    "venue": "manifold",
-    "ergebnis": "NEIN",
-    "frage": "Jensen Huang leave or announce leaving as Nvidia CEO in 2026?",
-    "schliesst": 1798761540.0,
-    "ref": {
-     "id": "OnpNLLgytQ"
-    },
-    "url": "https://manifold.markets/Simon74fe/jensen-huang-leave-or-announce-leav"
-   },
-   "seite": "long",
-   "menge": 251.0,
-   "einstand": 0.7735773198871165,
-   "hebel": 1.0,
-   "marge": 0.0,
-   "eroeffnet": 1794330442.4826348,
-   "gebuehren": 0.0,
-   "funding": 0.0,
-   "ausstiegsplan": "Halten bis 31.12.",
-   "entscheidung_id": "db61267da",
-   "invalidierung": "Polymarket-JA >0.30 oder Board-Befund schwerwiegend",
-   "kurs": 0.12076512680964199,
-   "wert": 30.24
-  },
-  {
    "id": "p51c17729",
    "inst": {
     "id": "pm:manifold:zEuhZdCOtQ:NEIN",
@@ -602,8 +574,8 @@
    "wert": 32.17
   }
  ],
- "realisiert": -192.36579998500008,
- "gebuehren": 54.20566633920157,
+ "realisiert": -357.0343792633137,
+ "gebuehren": 54.69303633920157,
  "funding": 0.0,
  "erstellt": 1793380123.8861866,
  "start_fx": 1.1156327353966788,
