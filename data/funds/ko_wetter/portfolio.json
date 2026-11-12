@@ -2,7 +2,7 @@
  "fonds_id": "ko_wetter",
  "waehrung": "USD",
  "start_kapital": 11156.327353966788,
- "cash": 2636.918359952885,
+ "cash": 2447.8015599528853,
  "positionen": [
   {
    "id": "pf367c8cf",
@@ -27,8 +27,8 @@
    "gebuehren": 4.12,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Wetter-Regel)",
-   "kurs": 0.825,
-   "wert": 209.92
+   "kurs": 0.8,
+   "wert": 202.24
   },
   {
    "id": "p44d2610b",
@@ -53,8 +53,8 @@
    "gebuehren": 4.93,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Wetter-Regel)",
-   "kurs": 0.15000000000000002,
-   "wert": 118.3
+   "kurs": 0.155,
+   "wert": 126.75
   },
   {
    "id": "p7d4a3a25",
@@ -79,8 +79,8 @@
    "gebuehren": 3.44,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Wetter-Regel)",
-   "kurs": 0.015,
-   "wert": 5.61
+   "kurs": null,
+   "wert": 54.32
   },
   {
    "id": "ped3b6ebf",
@@ -131,8 +131,8 @@
    "gebuehren": 3.33,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Wetter-Regel)",
-   "kurs": 0.345,
-   "wert": 64.6
+   "kurs": 0.33,
+   "wert": 60.8
   },
   {
    "id": "p2a0c90e3",
@@ -159,13 +159,65 @@
    "ausstiegsplan": "Halten bis zur Abrechnung (Wetter-Regel)",
    "kurs": 0.015,
    "wert": 14.72
+  },
+  {
+   "id": "p66e29741",
+   "inst": {
+    "id": "pm:kalshi:KXHIGHMIA-26NOV12-B83.5:JA",
+    "art": "pm",
+    "venue": "kalshi",
+    "ergebnis": "JA",
+    "frage": "Will the maximum temperature be 83-84° on Nov 12, 2026? [83° to 84°]",
+    "schliesst": 1794549600.0,
+    "ref": {
+     "ticker": "KXHIGHMIA-26NOV12-B83.5"
+    },
+    "url": "https://kalshi.com/markets/KXHIGHMIA-26NOV12"
+   },
+   "seite": "long",
+   "menge": 325.0,
+   "einstand": 0.2766492307692308,
+   "hebel": 1.0,
+   "marge": 0.0,
+   "eroeffnet": 1794489866.9629307,
+   "gebuehren": 4.56,
+   "funding": 0.0,
+   "ausstiegsplan": "Halten bis zur Abrechnung (Wetter-Regel)",
+   "kurs": 0.255,
+   "wert": 74.75
+  },
+  {
+   "id": "p18cfe307",
+   "inst": {
+    "id": "pm:kalshi:KXHIGHMIA-26NOV12-B85.5:NEIN",
+    "art": "pm",
+    "venue": "kalshi",
+    "ergebnis": "NEIN",
+    "frage": "Will the maximum temperature be 85-86° on Nov 12, 2026? [85° to 86°]",
+    "schliesst": 1794549600.0,
+    "ref": {
+     "ticker": "KXHIGHMIA-26NOV12-B85.5"
+    },
+    "url": "https://kalshi.com/markets/KXHIGHMIA-26NOV12"
+   },
+   "seite": "long",
+   "menge": 230.0,
+   "einstand": 0.394764347826087,
+   "hebel": 1.0,
+   "marge": 0.0,
+   "eroeffnet": 1794489866.9629307,
+   "gebuehren": 3.85,
+   "funding": 0.0,
+   "ausstiegsplan": "Halten bis zur Abrechnung (Wetter-Regel)",
+   "kurs": 0.395,
+   "wert": 85.1
   }
  ],
  "realisiert": -7290.331699920221,
- "gebuehren": 782.6600000000002,
+ "gebuehren": 791.0700000000002,
  "funding": 0.0,
  "erstellt": 1793380123.8861866,
  "start_fx": 1.1156327353966788,
- "letzter_tick": 1794488966.7932355,
- "wetter_letzter": 1794486266.7574923
+ "letzter_tick": 1794489866.9629307,
+ "wetter_letzter": 1794489866.9629307
 }
