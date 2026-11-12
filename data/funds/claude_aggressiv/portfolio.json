@@ -24,8 +24,8 @@
    "ausstiegsplan": "Stop 700; Review nach CPI 10.11.",
    "entscheidung_id": "d05f1cdc5",
    "invalidierung": "SPY schließt unter 700",
-   "kurs": 758.28,
-   "wert": 2735.24
+   "kurs": 759.39,
+   "wert": 2739.24
   },
   {
    "id": "pdc30d721",
@@ -81,8 +81,8 @@
    "ausstiegsplan": "Stop 69.500; Teilverkauf bei 86k; Dip-Wetten gleichen Abwärtsrisiko teilweise aus.",
    "entscheidung_id": "de5e47324",
    "invalidierung": "Tagesschluss unter 69.500 oder Fed-Hike-Odds >90 %",
-   "kurs": 71302.375,
-   "wert": 1120.32
+   "kurs": 71406.265,
+   "wert": 1121.96
   },
   {
    "id": "pe9dce5d9",
@@ -104,8 +104,8 @@
    "ausstiegsplan": "Stop 93; sonst als defensiver Kern halten, Review nach CPI 10.11. und FOMC 9.12.",
    "entscheidung_id": "dd7ab6d3d",
    "invalidierung": "AGG unter 93",
-   "kurs": 95.505,
-   "wert": 792.11
+   "kurs": 95.486,
+   "wert": 791.96
   },
   {
    "id": "p02eb0d85",
@@ -125,8 +125,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "db90ee1de",
-   "kurs": 687.11,
-   "wert": 822.85
+   "kurs": 689.65,
+   "wert": 825.89
   },
   {
    "id": "p42b8ecdf",
@@ -167,8 +167,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "d23f83a34",
-   "kurs": 354.35,
-   "wert": 1542.09
+   "kurs": 354.5,
+   "wert": 1542.74
   }
  ],
  "realisiert": -932.5730476566596,
@@ -176,7 +176,7 @@
  "funding": -0.6133053169464532,
  "erstellt": 1793319819.7411644,
  "start_fx": 1.1184885798616961,
- "letzter_tick": 1794498099.4445424,
+ "letzter_tick": 1794498997.880096,
  "auftraege": [],
  "rebalancing": {
   "ziele": {
