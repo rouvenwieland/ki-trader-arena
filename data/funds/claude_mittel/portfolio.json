@@ -2,7 +2,7 @@
  "fonds_id": "claude_mittel",
  "waehrung": "USD",
  "start_kapital": 11184.88579861696,
- "cash": 2435.7758808874573,
+ "cash": 2406.8723108874574,
  "positionen": [
   {
    "id": "p51e71031",
@@ -438,10 +438,42 @@
    "invalidierung": "AAPL-Marktkap. fällt unter 1,15× MSFT-Marktkap. laut companiesmarketcap.",
    "kurs": 0.7826620735031216,
    "wert": 46.04
+  },
+  {
+   "id": "paef0bb10",
+   "inst": {
+    "id": "pm:polymarket:6977205:NEIN",
+    "art": "pm",
+    "venue": "polymarket",
+    "ergebnis": "NEIN",
+    "frage": "New NVIDIA CEO named by December 31, 2026?",
+    "schliesst": 1798779540.0,
+    "ref": {
+     "id": "6977205",
+     "token_ja": "44558631181975413784524040138198113866542690797483755072260383831719409876660",
+     "token_nein": "2850080638485078487119156792065577759676622346318773387984061906346610063157",
+     "tick": 0.01,
+     "condition": "0x3d8416b9447091615f60c7778c87b4370a6a59a674aec0711535e638f442389c",
+     "gebuehr_rate": 0.04,
+     "gebuehr_exp": 1.0
+    },
+    "url": "https://polymarket.com/event/new-nvidia-ceo-named-by-december-31-2026"
+   },
+   "seite": "long",
+   "menge": 48.0,
+   "einstand": 0.5924999999999999,
+   "hebel": 1.0,
+   "marge": 0.0,
+   "eroeffnet": 1794496556.7173893,
+   "gebuehren": 0.46357,
+   "funding": 0.0,
+   "ausstiegsplan": "Halten bis zur Abrechnung am 31.12. Gewinn mitnehmen, wenn der NEIN-Bid ≥0,80 ist. Bei der Invalidierungsmeldung sofort schließen.",
+   "entscheidung_id": "d4c6b2267",
+   "invalidierung": "Glaubwürdige Berichte (WSJ/Bloomberg), dass das Board kurz vor der Ernennung eines permanenten CEO steht oder Kress dauerhaft macht. Ebenso eine Aussage im Call vom 17.11., die Suche solle 'within weeks' abgeschlossen sein."
   }
  ],
  "realisiert": -209.64572814076882,
- "gebuehren": 64.6494533771088,
+ "gebuehren": 65.1130233771088,
  "funding": 0.0,
  "erstellt": 1793319819.7411644,
  "start_fx": 1.1184885798616961,

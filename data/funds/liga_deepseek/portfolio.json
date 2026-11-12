@@ -2,29 +2,8 @@
  "fonds_id": "liga_deepseek",
  "waehrung": "USD",
  "start_kapital": 11184.88579861696,
- "cash": 1673.1246300465236,
+ "cash": 2363.9643715503726,
  "positionen": [
-  {
-   "id": "p00666bfa",
-   "inst": {
-    "id": "stock:TLT",
-    "art": "stock",
-    "venue": "yahoo",
-    "symbol": "TLT"
-   },
-   "seite": "long",
-   "menge": 15.331314951985362,
-   "einstand": 81.72277151159113,
-   "hebel": 1.0,
-   "marge": 0.0,
-   "eroeffnet": 1793819896.6280587,
-   "gebuehren": 0.0,
-   "funding": 0.0,
-   "ausstiegsplan": "Rebalancing-Regel",
-   "entscheidung_id": "d2b5d529d",
-   "kurs": 80.29,
-   "wert": 1230.81
-  },
   {
    "id": "p78a3c466",
    "inst": {
@@ -34,17 +13,19 @@
     "symbol": "GLD"
    },
    "seite": "long",
-   "menge": 3.620624075925977,
-   "einstand": 371.85364828049416,
+   "menge": 4.299447488305805,
+   "einstand": 368.9642159835667,
    "hebel": 1.0,
    "marge": 0.0,
    "eroeffnet": 1793819896.6280587,
    "gebuehren": 0.0,
    "funding": 0.0,
-   "ausstiegsplan": "Rebalancing-Regel",
-   "entscheidung_id": "d745dfc32",
+   "ausstiegsplan": "Ziel 375 (SMA20) in 2-4 Wochen; Teilverkauf bei 368. Stop 340. Positionsgröße klein halten (max 2 Tranchen à 240 USD), da Trend abwärts.",
+   "entscheidung_id": "da94f0d01",
    "kurs": 353.711,
-   "wert": 1280.48
+   "wert": 1280.48,
+   "stop_loss": 340,
+   "invalidierung": "Tagesschluss GLD unter 340,00 USD (Bruch des 1-Jahres-Tiefs ohne Rebound) oder Anstieg der 10J-Rendite über 5,10 % (dann ist der Realzins-Druck strukturell)."
   },
   {
    "id": "p3d319c8e",
@@ -97,17 +78,18 @@
     "symbol": "AGG"
    },
    "seite": "long",
-   "menge": 17.24643876834728,
-   "einstand": 96.45486718983493,
+   "menge": 20.388616310031683,
+   "einstand": 96.3038850229609,
    "hebel": 1.0,
    "marge": 0.0,
    "eroeffnet": 1794234816.51331,
    "gebuehren": 0.0,
    "funding": 0.0,
-   "ausstiegsplan": "Rebalancing-Regel",
-   "entscheidung_id": "d745dfc32",
+   "ausstiegsplan": "Halten als Kern (Ziel 14 %); Exit nur über Rebalancing-Regel. Rückkauf TLT falls 10J unter 4,50 %.",
+   "entscheidung_id": "df978a001",
    "kurs": 95.45,
-   "wert": 1645.9
+   "wert": 1645.9,
+   "invalidierung": "10J über 5,20 % oder Fed +50bp im Dezember und 2J über 4,90 %."
   },
   {
    "id": "p473fbd8a",
@@ -246,7 +228,7 @@
    "wert": 571.0
   }
  ],
- "realisiert": -704.3841049173761,
+ "realisiert": -726.4619122068691,
  "gebuehren": 129.67878925396545,
  "funding": 0.0,
  "erstellt": 1793319819.7411644,
@@ -270,7 +252,7 @@
      "venue": "yahoo",
      "symbol": "TLT"
     },
-    "anteil": 0.15
+    "anteil": 0.1
    },
    "stock:AGG": {
     "inst": {
@@ -279,7 +261,7 @@
      "venue": "yahoo",
      "symbol": "AGG"
     },
-    "anteil": 0.13
+    "anteil": 0.14
    },
    "stock:GLD": {
     "inst": {
@@ -288,7 +270,7 @@
      "venue": "yahoo",
      "symbol": "GLD"
     },
-    "anteil": 0.11
+    "anteil": 0.15
    },
    "spot:BTC-USD": {
     "inst": {
@@ -297,12 +279,12 @@
      "venue": "coinbase",
      "symbol": "BTC-USD"
     },
-    "anteil": 0.06
+    "anteil": 0.07
    }
   },
-  "schwelle_pp": 8.0,
-  "seit": 1794470156.8751059,
-  "entscheidung_id": "dd072cb2f"
+  "schwelle_pp": 4.0,
+  "seit": 1794496301.0497553,
+  "entscheidung_id": "d0f380f2d"
  },
  "auftraege": []
 }

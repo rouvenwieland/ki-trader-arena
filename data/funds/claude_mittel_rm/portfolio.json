@@ -2,7 +2,7 @@
  "fonds_id": "claude_mittel_rm",
  "waehrung": "USD",
  "start_kapital": 11156.327353966788,
- "cash": 1097.2572595282002,
+ "cash": 1097.6696943345155,
  "positionen": [
   {
    "id": "pe8186cc2",
@@ -546,35 +546,33 @@
    "wert": 34.58
   },
   {
-   "id": "p5d2c9646",
+   "id": "pf5130da4",
    "inst": {
-    "id": "pm:manifold:z0y9P2hESL:JA",
+    "id": "pm:manifold:nyQhnCP069:NEIN",
     "art": "pm",
     "venue": "manifold",
-    "ergebnis": "JA",
-    "frage": "Will \"Megaspeed\" or the Alice Huang spy probe come up on Nvidia's November 17 earnings call?",
-    "schliesst": 1794952800.0,
+    "ergebnis": "NEIN",
+    "frage": "Will Nvidia have the highest market cap at the end of 2026?",
+    "schliesst": 1799482920.0,
     "ref": {
-     "id": "z0y9P2hESL"
+     "id": "nyQhnCP069"
     },
-    "url": "https://manifold.markets/Terminator2/will-megaspeed-or-the-alice-huang-s"
+    "url": "https://manifold.markets/ManiPart/will-nvidia-have-the-highest-market-U0csqsuzPh"
    },
    "seite": "long",
-   "menge": 49.0,
-   "einstand": 0.6078986489558736,
+   "menge": 40.0,
+   "einstand": 0.8214756606544107,
    "hebel": 1.0,
    "marge": 0.0,
-   "eroeffnet": 1794366808.207016,
+   "eroeffnet": 1794496561.3648312,
    "gebuehren": 0.0,
    "funding": 0.0,
-   "ausstiegsplan": "Halten bis Abrechnung nach Call 17.11.; Ausstieg ≥0.9.",
-   "entscheidung_id": "d3b289b42",
-   "invalidierung": "Call verschoben/abgesagt oder Regel enger gefasst (nur 'Megaspeed' genannt) – Kauf ohnehin klein.",
-   "kurs": 0.7516956290575103,
-   "wert": 36.46
+   "ausstiegsplan": "Bis zur Abrechnung (~8.1.2027) halten. Verkauf, wenn NEIN ≥0,95 oder die Invalidierung eintritt.",
+   "entscheidung_id": "dd841b112",
+   "invalidierung": "NVDA-Marktkap innerhalb von 10 % zu Apple (NVDA >~195 bei Apple ~358) oder Polymarket NVDA-JA >0,25"
   }
  ],
- "realisiert": -357.0343792633137,
+ "realisiert": -353.5499518296599,
  "gebuehren": 54.69303633920157,
  "funding": 0.0,
  "erstellt": 1793380123.8861866,
