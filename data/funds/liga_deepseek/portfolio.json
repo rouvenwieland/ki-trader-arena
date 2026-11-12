@@ -22,8 +22,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Ziel 375 (SMA20) in 2-4 Wochen; Teilverkauf bei 368. Stop 340. Positionsgröße klein halten (max 2 Tranchen à 240 USD), da Trend abwärts.",
    "entscheidung_id": "da94f0d01",
-   "kurs": 352.9996,
-   "wert": 1517.5,
+   "kurs": 354.13,
+   "wert": 1522.36,
    "stop_loss": 340,
    "invalidierung": "Tagesschluss GLD unter 340,00 USD (Bruch des 1-Jahres-Tiefs ohne Rebound) oder Anstieg der 10J-Rendite über 5,10 % (dann ist der Realzins-Druck strukturell)."
   },
@@ -45,8 +45,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "d8e5f296a",
-   "kurs": 71300.89499999999,
-   "wert": 657.86
+   "kurs": 71303.195,
+   "wert": 657.88
   },
   {
    "id": "p9a8fa083",
@@ -66,8 +66,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "d8e5f296a",
-   "kurs": 756.65,
-   "wert": 2252.83
+   "kurs": 758.08,
+   "wert": 2257.09
   },
   {
    "id": "p565093a5",
@@ -87,8 +87,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Halten als Kern (Ziel 14 %); Exit nur über Rebalancing-Regel. Rückkauf TLT falls 10J unter 4,50 %.",
    "entscheidung_id": "df978a001",
-   "kurs": 95.44,
-   "wert": 1415.71,
+   "kurs": 95.505,
+   "wert": 1416.68,
    "invalidierung": "10J über 5,20 % oder Fed +50bp im Dezember und 2J über 4,90 %."
   },
   {
@@ -190,8 +190,8 @@
    "ausstiegsplan": "Halten bis 31.12.2026 (Abrechnung). Vorzeitiger Verkauf bei JA-Preis (Gegenposition) unter 0,12 (dann ist mein p zu pessimistisch und der Edge weg) oder bei JA über 0,50 ohne klare Nachricht (Markt weiß mehr → sofort raus).",
    "entscheidung_id": "dd655a214",
    "invalidierung": "US-Regierung (Trump, Außen- oder Verteidigungsministerium) kündigt öffentlich und förmlich die Aufhebung/Aussetzung der Seeblockade an ODER ein umfassender Iran-Deal wird mit Blockade-Aufhebung als Teil verkündet.",
-   "kurs": 0.691,
-   "wert": 206.7
+   "kurs": 0.6944999999999999,
+   "wert": 208.2
   },
   {
    "id": "p951ffba5",
@@ -245,8 +245,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "d0f380f2d",
-   "kurs": 80.25,
-   "wert": 1010.92
+   "kurs": 80.379,
+   "wert": 1012.55
   }
  ],
  "realisiert": -731.3985764993054,
@@ -254,7 +254,7 @@
  "funding": 0.0,
  "erstellt": 1793319819.7411644,
  "start_fx": 1.1184885798616961,
- "letzter_tick": 1794497067.2939417,
+ "letzter_tick": 1794497967.2519794,
  "rebalancing": {
   "ziele": {
    "stock:SPY": {
