@@ -22,8 +22,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "d2b5d529d",
-   "kurs": 80.92,
-   "wert": 1240.61
+   "kurs": 80.64,
+   "wert": 1236.18
   },
   {
    "id": "p78a3c466",
@@ -43,8 +43,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "d745dfc32",
-   "kurs": 365.17,
-   "wert": 1322.14
+   "kurs": 357.06,
+   "wert": 1292.61
   },
   {
    "id": "p3d319c8e",
@@ -64,8 +64,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "d8e5f296a",
-   "kurs": 71835.61499999999,
-   "wert": 662.8
+   "kurs": 72115.485,
+   "wert": 665.38
   },
   {
    "id": "p9a8fa083",
@@ -85,8 +85,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "d8e5f296a",
-   "kurs": 759.81,
-   "wert": 2262.48
+   "kurs": 757.13,
+   "wert": 2254.26
   },
   {
    "id": "p565093a5",
@@ -106,8 +106,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "d745dfc32",
-   "kurs": 95.84,
-   "wert": 1652.9
+   "kurs": 95.635,
+   "wert": 1649.09
   },
   {
    "id": "p473fbd8a",
@@ -140,8 +140,8 @@
    "ausstiegsplan": "Halten bis 31.12.2026. Exit-Trigger: BTC schließt unter SMA200 (73.151) UND VIX > 32 → Position verkaufen (nie in einen bestätigten Abwärtstrend halten). Sonst Abrechnung abwarten.",
    "entscheidung_id": "dd41482cf",
    "invalidierung": "BTC-Tagesschluss unter der SMA200 (73.151) gleichzeitig mit VIX über 32, ODER eine Binance-1-Minuten-Kerze unter 62.000 (dann ist der Weg zu 55k kurz und die These war falsch).",
-   "kurs": 0.895,
-   "wert": 294.59
+   "kurs": 0.885,
+   "wert": 291.28
   },
   {
    "id": "p950802e0",
@@ -208,8 +208,8 @@
    "ausstiegsplan": "Halten bis 31.12.2026 (Abrechnung). Vorzeitiger Verkauf bei JA-Preis (Gegenposition) unter 0,12 (dann ist mein p zu pessimistisch und der Edge weg) oder bei JA über 0,50 ohne klare Nachricht (Markt weiß mehr → sofort raus).",
    "entscheidung_id": "dd655a214",
    "invalidierung": "US-Regierung (Trump, Außen- oder Verteidigungsministerium) kündigt öffentlich und förmlich die Aufhebung/Aussetzung der Seeblockade an ODER ein umfassender Iran-Deal wird mit Blockade-Aufhebung als Teil verkündet.",
-   "kurs": 0.684,
-   "wert": 204.9
+   "kurs": 0.6845000000000001,
+   "wert": 205.2
   },
   {
    "id": "p951ffba5",
@@ -251,7 +251,7 @@
  "funding": 0.0,
  "erstellt": 1793319819.7411644,
  "start_fx": 1.1184885798616961,
- "letzter_tick": 1794493467.0791526,
+ "letzter_tick": 1794494366.8272233,
  "rebalancing": {
   "ziele": {
    "stock:SPY": {
