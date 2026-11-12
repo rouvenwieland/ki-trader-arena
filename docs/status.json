@@ -1,11 +1,11 @@
 {
  "version": 1,
- "stand": 1794510826.2025561,
+ "stand": 1794511018.4264455,
  "hinweis": "Papierhandel-Simulation, keine Anlageberatung",
  "seite": "https://rouvenwieland.github.io/ki-trader-arena/",
  "budget": {
-  "heute_eur": 9.08,
-  "gesamt_eur": 138.66,
+  "heute_eur": 9.91,
+  "gesamt_eur": 139.49,
   "tagesdeckel_eur": 12.0,
   "gesamtdeckel_eur": 190.0,
   "claude_ende": "2026-11-14",
@@ -385,10 +385,10 @@
    "rendite_pct": -1.11,
    "equity_eur": 9983.93,
    "max_drawdown_pct": -6.31,
-   "status": "Tagesanteil aufgebraucht – nächste Runde morgen",
-   "modell": "claude-opus-5-5",
-   "kosten_heute_eur": 2.074,
-   "kosten_gesamt_eur": 33.109,
+   "status": "aktiv",
+   "modell": "claude-sonnet-5-5",
+   "kosten_heute_eur": 2.367,
+   "kosten_gesamt_eur": 33.401,
    "rendite_ki_pct": [
     -9.65,
     8.66
@@ -564,8 +564,8 @@
    "max_drawdown_pct": -6.34,
    "status": "aktiv",
    "modell": "claude-sonnet-5-5",
-   "kosten_heute_eur": 2.321,
-   "kosten_gesamt_eur": 34.993,
+   "kosten_heute_eur": 2.583,
+   "kosten_gesamt_eur": 35.256,
    "rendite_ki_pct": [
     -11.9,
     3.88
@@ -680,7 +680,7 @@
    "rendite_pct": -3.7,
    "equity_eur": 9746.95,
    "max_drawdown_pct": -6.23,
-   "status": "aktiv",
+   "status": "Tagesanteil aufgebraucht – nächste Runde morgen",
    "modell": "claude-sonnet-5-5",
    "kosten_heute_eur": 2.345,
    "kosten_gesamt_eur": 35.253,
@@ -918,8 +918,8 @@
    "max_drawdown_pct": -24.83,
    "status": "aktiv",
    "modell": "claude-sonnet-5-5",
-   "kosten_heute_eur": 2.34,
-   "kosten_gesamt_eur": 33.989,
+   "kosten_heute_eur": 2.612,
+   "kosten_gesamt_eur": 34.261,
    "rendite_ki_pct": [
     -32.55,
     14.09
@@ -1218,6 +1218,20 @@
  ],
  "letzte_entscheidungen": [
   {
+   "ts": 1794510983.9460392,
+   "fonds": "DeepSeek",
+   "instrument": "stock:GLD",
+   "aktion": "kaufen",
+   "zuversicht": 0.6
+  },
+  {
+   "ts": 1794510965.3540661,
+   "fonds": "DeepSeek",
+   "instrument": "pm:polymarket:3215008:NEIN",
+   "aktion": "verkaufen",
+   "zuversicht": 0.85
+  },
+  {
    "ts": 1794496585.7434585,
    "fonds": "Claude Aggressiv",
    "instrument": "pm:polymarket:3215008:JA",
@@ -1258,20 +1272,6 @@
    "instrument": "stock:TLT",
    "aktion": "verkaufen",
    "zuversicht": 0.65
-  },
-  {
-   "ts": 1794496444.1979203,
-   "fonds": "DeepSeek",
-   "instrument": "stock:AGG",
-   "aktion": "kaufen",
-   "zuversicht": 0.6
-  },
-  {
-   "ts": 1794496443.2023704,
-   "fonds": "DeepSeek",
-   "instrument": "stock:GLD",
-   "aktion": "kaufen",
-   "zuversicht": 0.62
   }
  ],
  "ereignisse": [

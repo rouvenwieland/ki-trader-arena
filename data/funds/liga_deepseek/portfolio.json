@@ -2,7 +2,7 @@
  "fonds_id": "liga_deepseek",
  "waehrung": "USD",
  "start_kapital": 11184.88579861696,
- "cash": 1882.5134061276456,
+ "cash": 1482.5134061276476,
  "positionen": [
   {
    "id": "p78a3c466",
@@ -13,19 +13,19 @@
     "symbol": "GLD"
    },
    "seite": "long",
-   "menge": 4.299447488305805,
-   "einstand": 368.9642159835667,
+   "menge": 5.424345054632143,
+   "einstand": 366.19025000797444,
    "hebel": 1.0,
    "marge": 0.0,
    "eroeffnet": 1793819896.6280587,
    "gebuehren": 0.0,
    "funding": 0.0,
-   "ausstiegsplan": "Ziel 375 (SMA20) in 2-4 Wochen; Teilverkauf bei 368. Stop 340. Positionsgröße klein halten (max 2 Tranchen à 240 USD), da Trend abwärts.",
-   "entscheidung_id": "da94f0d01",
+   "ausstiegsplan": "Ziel 375 (SMA20) in 2-4 Wochen; Stop 340; Teilverkauf bei 368.",
+   "entscheidung_id": "defdc682d",
    "kurs": 355.45,
    "wert": 1528.03,
    "stop_loss": 340,
-   "invalidierung": "Tagesschluss GLD unter 340,00 USD (Bruch des 1-Jahres-Tiefs ohne Rebound) oder Anstieg der 10J-Rendite über 5,10 % (dann ist der Realzins-Druck strukturell)."
+   "invalidierung": "Tagesschluss GLD unter 340,00 USD oder 10J-Rendite über 5,10%."
   },
   {
    "id": "p3d319c8e",
