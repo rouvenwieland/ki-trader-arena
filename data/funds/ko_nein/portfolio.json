@@ -2,7 +2,7 @@
  "fonds_id": "ko_nein",
  "waehrung": "USD",
  "start_kapital": 11157.431109273288,
- "cash": 1436.4309792732863,
+ "cash": 1101.9453792732863,
  "positionen": [
   {
    "id": "p9e535f2b",
@@ -97,8 +97,8 @@
    "gebuehren": 0.0,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.7695000000000001,
-   "wert": 213.78
+   "kurs": 0.769,
+   "wert": 213.5
   },
   {
    "id": "pdcfb5d53",
@@ -193,8 +193,8 @@
    "gebuehren": 1.04341,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.915,
-   "wert": 165.62
+   "kurs": 0.905,
+   "wert": 163.8
   },
   {
    "id": "p7e5c2e70",
@@ -257,8 +257,8 @@
    "gebuehren": 0.0,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.855,
-   "wert": 295.8
+   "kurs": 0.835,
+   "wert": 288.84
   },
   {
    "id": "p1f028824",
@@ -321,8 +321,8 @@
    "gebuehren": 0.0,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.8200000000000001,
-   "wert": 154.4
+   "kurs": 0.815,
+   "wert": 152.47
   },
   {
    "id": "p9f764afd",
@@ -385,7 +385,7 @@
    "gebuehren": 1.96552,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.8,
+   "kurs": 0.795,
    "wert": 157.21
   },
   {
@@ -449,8 +449,8 @@
    "gebuehren": 1.85338,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.925,
-   "wert": 181.24
+   "kurs": 0.935,
+   "wert": 183.21
   },
   {
    "id": "p7f18532d",
@@ -865,8 +865,8 @@
    "gebuehren": 0.95322,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.885,
-   "wert": 166.84
+   "kurs": 0.895,
+   "wert": 170.72
   },
   {
    "id": "pca00edbf",
@@ -897,8 +897,8 @@
    "gebuehren": 4.05345,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.9575,
-   "wert": 410.31
+   "kurs": 0.958,
+   "wert": 410.74
   },
   {
    "id": "p0abe393e",
@@ -1025,8 +1025,8 @@
    "gebuehren": 2.0848,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.6485000000000001,
-   "wert": 155.69
+   "kurs": 0.649,
+   "wert": 155.93
   },
   {
    "id": "pff668a53",
@@ -1217,8 +1217,8 @@
    "gebuehren": 6.06093,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.020499999999999997,
-   "wert": 39.96
+   "kurs": 0.0195,
+   "wert": 37.3
   },
   {
    "id": "p858bb23c",
@@ -1249,7 +1249,7 @@
    "gebuehren": 1.35793,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.81,
+   "kurs": 0.7949999999999999,
    "wert": 150.48
   },
   {
@@ -1377,8 +1377,8 @@
    "gebuehren": 0.92199,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.745,
-   "wert": 137.03
+   "kurs": 0.765,
+   "wert": 142.82
   },
   {
    "id": "p30c72d37",
@@ -1409,8 +1409,8 @@
    "gebuehren": 0.50309,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.802,
-   "wert": 126.55
+   "kurs": 0.813,
+   "wert": 130.45
   },
   {
    "id": "p396ede21",
@@ -1441,8 +1441,8 @@
    "gebuehren": 0.24913,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.8145,
-   "wert": 114.9
+   "kurs": 0.923,
+   "wert": 154.11
   },
   {
    "id": "p766850e1",
@@ -1537,15 +1537,79 @@
    "gebuehren": 4.2406,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.415,
-   "wert": 191.06
+   "kurs": 0.44,
+   "wert": 200.38
+  },
+  {
+   "id": "pe3de2c63",
+   "inst": {
+    "id": "pm:polymarket:3247712:NEIN",
+    "art": "pm",
+    "venue": "polymarket",
+    "ergebnis": "NEIN",
+    "frage": "Will no one dissent the January Fed decision?",
+    "schliesst": 1801112340.0,
+    "ref": {
+     "id": "3247712",
+     "token_ja": "53215177080175966528647797753905949793426043800422713623795325614047424671125",
+     "token_nein": "27731579201616440987479467634381241474833459943949701220391342533906418945349",
+     "tick": 0.01,
+     "condition": "0x56e2c0c52c544fbd222c4d7f8ac06167d7c53d60c5a8041990e91a7c920e8338",
+     "gebuehr_rate": 0.05,
+     "gebuehr_exp": 1.0
+    },
+    "url": "https://polymarket.com/event/will-no-one-dissent-the-january-fed-decision-20260730001232360"
+   },
+   "seite": "long",
+   "menge": 396.0,
+   "einstand": 0.41,
+   "hebel": 1.0,
+   "marge": 0.0,
+   "eroeffnet": 1794475346.4769313,
+   "gebuehren": 4.78962,
+   "funding": 0.0,
+   "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
+   "kurs": 0.4,
+   "wert": 154.44
+  },
+  {
+   "id": "p60bb773b",
+   "inst": {
+    "id": "pm:polymarket:6716580:NEIN",
+    "art": "pm",
+    "venue": "polymarket",
+    "ergebnis": "NEIN",
+    "frage": "Will the price of Bitcoin be above $76,000 on November 12?",
+    "schliesst": 1794502800.0,
+    "ref": {
+     "id": "6716580",
+     "token_ja": "39647521498125473922831712248809291174540075692179037723207505288626042973533",
+     "token_nein": "29113929269330229300104002389236948998758653846656479648411600731149352030216",
+     "tick": 0.001,
+     "condition": "0x815003516d740312e22a4b05fbd573f4a58ff63ef3a472d4540baa7c8e3bd3dd",
+     "gebuehr_rate": 0.07,
+     "gebuehr_exp": 1.0
+    },
+    "url": "https://polymarket.com/event/bitcoin-above-on-november-12-2026"
+   },
+   "seite": "long",
+   "menge": 171.0,
+   "einstand": 0.9770000000000001,
+   "hebel": 1.0,
+   "marge": 0.0,
+   "eroeffnet": 1794475346.4769313,
+   "gebuehren": 0.26898,
+   "funding": 0.0,
+   "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
+   "kurs": 0.9764999999999999,
+   "wert": 166.9
   }
  ],
  "realisiert": -1479.7425300000004,
- "gebuehren": 296.6129499999999,
+ "gebuehren": 301.6715499999999,
  "funding": 0.0,
  "erstellt": 1793379225.5430336,
  "start_fx": 1.1157431109273288,
- "letzter_tick": 1794474447.0469837,
- "kontrolle_bis": 1794470156.8751059
+ "letzter_tick": 1794475346.4769313,
+ "kontrolle_bis": 1794474648.3685849
 }
