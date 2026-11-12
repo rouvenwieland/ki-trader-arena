@@ -70,7 +70,7 @@
    "entscheidung_id": "dce9924e1",
    "invalidierung": "NVDA-Marktkap > Apple −10 % (NVDA >~210 bei Apple ~355) oder Apple −20 % binnen Tagen",
    "kurs": 0.8405,
-   "wert": 1110.22
+   "wert": 1112.89
   },
   {
    "id": "pa832233e",
@@ -173,8 +173,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "dd6456776",
-   "kurs": 73443.315,
-   "wert": 1042.25
+   "kurs": 73466.88500000001,
+   "wert": 1042.58
   },
   {
    "id": "p994b6370",
@@ -480,8 +480,8 @@
    "ausstiegsplan": "Halten bis IPO-Tag (voraussichtlich Woche 16.–20.11.). Bei Preisfestsetzung neu rechnen: Schwelle = 1,25 Bio/13,09 Mrd. = $95,5. Teilverkauf, wenn JA ≥0,50 vor Handelsstart.",
    "entscheidung_id": "d0595e7ab",
    "invalidierung": "Endgültiger IPO-Preis ≥ $86 (dann reicht +11 % Pop) oder offizielle Polymarket-Klarstellung, dass voll verwässert gezählt wird; Graumarkt-/Indikationen Eröffnung ≥ $100.",
-   "kurs": 0.1965,
-   "wert": 527.44
+   "kurs": 0.195,
+   "wert": 519.36
   },
   {
    "id": "p1f686553",
@@ -579,7 +579,7 @@
  "funding": 0.0,
  "erstellt": 1793380123.8861866,
  "start_fx": 1.1156327353966788,
- "letzter_tick": 1794467246.7247717,
+ "letzter_tick": 1794468147.302416,
  "auftraege": [],
  "rebalancing": {
   "ziele": {
