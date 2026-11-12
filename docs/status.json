@@ -1,6 +1,6 @@
 {
  "version": 1,
- "stand": 1794451022.7842302,
+ "stand": 1794451251.0178585,
  "hinweis": "Papierhandel-Simulation, keine Anlageberatung",
  "seite": "https://rouvenwieland.github.io/ki-trader-arena/",
  "budget": {
@@ -387,8 +387,8 @@
    "max_drawdown_pct": -5.59,
    "status": "Tagesanteil aufgebraucht – nächste Runde morgen",
    "modell": "claude-sonnet-5-5",
-   "kosten_heute_eur": 0.0,
-   "kosten_gesamt_eur": 30.935,
+   "kosten_heute_eur": 0.001,
+   "kosten_gesamt_eur": 30.936,
    "rendite_ki_pct": [
     -9.56,
     9.54
@@ -1218,6 +1218,41 @@
  ],
  "letzte_entscheidungen": [
   {
+   "ts": 1794451237.426123,
+   "fonds": "DeepSeek",
+   "instrument": "pm:polymarket:6975664:NEIN",
+   "aktion": "kaufen",
+   "zuversicht": 0.62
+  },
+  {
+   "ts": 1794451233.5221174,
+   "fonds": "DeepSeek",
+   "instrument": "pm:polymarket:6882826:NEIN",
+   "aktion": "verkaufen",
+   "zuversicht": 0.6
+  },
+  {
+   "ts": 1794451228.63276,
+   "fonds": "DeepSeek",
+   "instrument": "pm:polymarket:6975664:NEIN",
+   "aktion": "kaufen",
+   "zuversicht": 0.62
+  },
+  {
+   "ts": 1794451146.3019786,
+   "fonds": "DeepSeek",
+   "instrument": "pm:polymarket:6975664:NEIN",
+   "aktion": "kaufen",
+   "zuversicht": 0.62
+  },
+  {
+   "ts": 1794451142.2278595,
+   "fonds": "DeepSeek",
+   "instrument": "pm:polymarket:6975664:NEIN",
+   "aktion": "kaufen",
+   "zuversicht": 0.62
+  },
+  {
    "ts": 1794442168.960112,
    "fonds": "DeepSeek",
    "instrument": "pm:polymarket:6976273:NEIN",
@@ -1235,41 +1270,6 @@
    "ts": 1794416580.8068273,
    "fonds": "Claude Mittel",
    "instrument": "pm:manifold:6gZRoSBRfQ4xyS9MQvu0:JA",
-   "aktion": "kaufen",
-   "zuversicht": 0.7
-  },
-  {
-   "ts": 1794416576.2349267,
-   "fonds": "Claude Mittel+RM (A/B)",
-   "instrument": "pm:manifold:RZqSLQS8lC:JA",
-   "aktion": "kaufen",
-   "zuversicht": 0.55
-  },
-  {
-   "ts": 1794409486.016343,
-   "fonds": "Claude Mittel+RM (A/B)",
-   "instrument": "pm:polymarket:6683302:NEIN",
-   "aktion": "kaufen",
-   "zuversicht": 0.75
-  },
-  {
-   "ts": 1794409486.0150075,
-   "fonds": "Claude Mittel+RM (A/B)",
-   "instrument": "pm:polymarket:679022:NEIN",
-   "aktion": "verkaufen",
-   "zuversicht": 0.7
-  },
-  {
-   "ts": 1794409480.8996313,
-   "fonds": "Claude Mittel",
-   "instrument": "pm:predictit:34409:NEIN",
-   "aktion": "verkaufen",
-   "zuversicht": 0.6
-  },
-  {
-   "ts": 1794409436.4860713,
-   "fonds": "Claude Mittel",
-   "instrument": "pm:polymarket:6683302:NEIN",
    "aktion": "kaufen",
    "zuversicht": 0.7
   }

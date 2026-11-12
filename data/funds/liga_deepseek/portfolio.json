@@ -2,7 +2,7 @@
  "fonds_id": "liga_deepseek",
  "waehrung": "USD",
  "start_kapital": 11184.88579861696,
- "cash": 1527.2435300465236,
+ "cash": 1392.8006300465236,
  "positionen": [
   {
    "id": "p00666bfa",
@@ -108,40 +108,6 @@
    "entscheidung_id": "d745dfc32",
    "kurs": 95.84,
    "wert": 1652.9
-  },
-  {
-   "id": "p02c1343b",
-   "inst": {
-    "id": "pm:polymarket:6882826:NEIN",
-    "art": "pm",
-    "venue": "polymarket",
-    "ergebnis": "NEIN",
-    "frage": "Jensen Huang announced resignation or removal by December 31?",
-    "schliesst": 1798779540.0,
-    "ref": {
-     "id": "6882826",
-     "token_ja": "92740912934979695164482497757800283783237751328808772389036157576306520939319",
-     "token_nein": "15017605300721255694387863261330475130179898743425100548854893411502225255902",
-     "tick": 0.01,
-     "condition": "0xe0881460dcd53df2f8410ff9ec4c151f22c15ad29ff581d8eb8ac9bce5124eef",
-     "gebuehr_rate": 0.04,
-     "gebuehr_exp": 1.0
-    },
-    "url": "https://polymarket.com/event/jensen-huang-announced-resignation-or-removal-by-december-31"
-   },
-   "seite": "long",
-   "menge": 409.0,
-   "einstand": 0.85,
-   "hebel": 1.0,
-   "marge": 0.0,
-   "eroeffnet": 1794236957.4842412,
-   "gebuehren": 2.0859,
-   "funding": 0.0,
-   "ausstiegsplan": "Halten bis 31.12.2026 (Abrechnung) oder Verkauf, wenn NEIN-Preis >0,97 (Edge weg, Kapital wird gebraucht). Vorzeitiger Verkauf sonst unnötig, das Buch ist tief und die Gebühr je Kontrakt fix.",
-   "entscheidung_id": "da7f7b17f",
-   "invalidierung": "Nvidia, das Board oder Huang kündigen öffentlich und definitiv Rücktritt/Entlassung an (auch mit Wirkung in bis zu 18 Monaten), ODER JA-Preis steigt über 0,40 ohne für mich erkennbare Nachricht (dann hat der Markt Information, die ich nicht habe).",
-   "kurs": 0.095,
-   "wert": 36.81
   },
   {
    "id": "p473fbd8a",
@@ -278,10 +244,42 @@
    "invalidierung": "Öffentliche, definitive Ankündigung von Huangs Abgang als CEO vor 05:00 UTC am 12.11.",
    "kurs": 0.445,
    "wert": 308.0
+  },
+  {
+   "id": "p951ffba5",
+   "inst": {
+    "id": "pm:polymarket:6975664:NEIN",
+    "art": "pm",
+    "venue": "polymarket",
+    "ergebnis": "NEIN",
+    "frage": "Jensen Huang announced resignation or removal by November 12, 2026?",
+    "schliesst": 1794545940.0,
+    "ref": {
+     "id": "6975664",
+     "token_ja": "94592567375755535402382514854858851873438883868449100686326493803085500123190",
+     "token_nein": "49059554369443439132021076202548798831994166731162662055378257349004241428611",
+     "tick": 0.01,
+     "condition": "0x835acf3bffe67dcfb5e5f97aba52414739b6f5ff1970195b52d97bb374796155",
+     "gebuehr_rate": 0.04,
+     "gebuehr_exp": 1.0
+    },
+    "url": "https://polymarket.com/event/jensen-huang-announced-resignation-or-removal-by-december-31"
+   },
+   "seite": "long",
+   "menge": 700.0,
+   "einstand": 0.23,
+   "hebel": 1.0,
+   "marge": 0.0,
+   "eroeffnet": 1794451237.426322,
+   "gebuehren": 4.9588,
+   "funding": 0.0,
+   "ausstiegsplan": "Halten bis Abrechnung 13.11. 05:00 UTC. Kein Vorverkauf (Spread + fixe Gebühr).",
+   "entscheidung_id": "d1a6d9043",
+   "invalidierung": "Reputierliche Quelle meldet definitive Ankündigung von Huangs Rücktritt/Entlassung (nicht 'erwägt'/'bereitet vor')."
   }
  ],
- "realisiert": -640.2500049173761,
- "gebuehren": 113.83988925396547,
+ "realisiert": -956.3841049173761,
+ "gebuehren": 120.00278925396546,
  "funding": 0.0,
  "erstellt": 1793319819.7411644,
  "start_fx": 1.1184885798616961,
@@ -335,8 +333,8 @@
    }
   },
   "schwelle_pp": 3.0,
-  "seit": 1794423623.7308476,
-  "entscheidung_id": "dc92357e7"
+  "seit": 1794451029.1808817,
+  "entscheidung_id": "d5e686cf9"
  },
  "auftraege": []
 }
