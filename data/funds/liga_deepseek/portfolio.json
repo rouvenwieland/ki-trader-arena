@@ -64,8 +64,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "d8e5f296a",
-   "kurs": 73375.025,
-   "wert": 677.0
+   "kurs": 73344.775,
+   "wert": 676.72
   },
   {
    "id": "p9a8fa083",
@@ -140,8 +140,8 @@
    "ausstiegsplan": "Halten bis 31.12.2026. Exit-Trigger: BTC schließt unter SMA200 (73.151) UND VIX > 32 → Position verkaufen (nie in einen bestätigten Abwärtstrend halten). Sonst Abrechnung abwarten.",
    "entscheidung_id": "dd41482cf",
    "invalidierung": "BTC-Tagesschluss unter der SMA200 (73.151) gleichzeitig mit VIX über 32, ODER eine Binance-1-Minuten-Kerze unter 62.000 (dann ist der Weg zu 55k kurz und die These war falsch).",
-   "kurs": 0.905,
-   "wert": 297.9
+   "kurs": 0.895,
+   "wert": 294.59
   },
   {
    "id": "p950802e0",
@@ -242,8 +242,8 @@
    "ausstiegsplan": "Halten bis Abrechnung (~21h). Bei Auflösung 1,00 Auszahlung; kein Vorverkauf, weil Spread 2c und Restzeit kurz.",
    "entscheidung_id": "da137f22c",
    "invalidierung": "Öffentliche, definitive Ankündigung von Huangs Rücktritt/Entlassung vor 13.11. 04:59 UTC.",
-   "kurs": 0.545,
-   "wert": 918.0
+   "kurs": 0.605,
+   "wert": 1020.0
   }
  ],
  "realisiert": -704.3841049173761,
@@ -251,7 +251,7 @@
  "funding": 0.0,
  "erstellt": 1793319819.7411644,
  "start_fx": 1.1184885798616961,
- "letzter_tick": 1794476247.0448623,
+ "letzter_tick": 1794477147.078538,
  "rebalancing": {
   "ziele": {
    "stock:SPY": {
