@@ -2,7 +2,7 @@
  "fonds_id": "schwarm_alle",
  "waehrung": "USD",
  "start_kapital": 11157.431109273288,
- "cash": 7875.5270692732865,
+ "cash": 7751.481079273287,
  "positionen": [
   {
    "id": "p94f69125",
@@ -65,8 +65,8 @@
    "gebuehren": 3.13551,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Schwarm-Regel)",
-   "kurs": 0.028,
-   "wert": 10.21
+   "kurs": 0.0325,
+   "wert": 12.1
   },
   {
    "id": "p7f78b6d2",
@@ -129,7 +129,7 @@
    "gebuehren": 0.0,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Schwarm-Regel)",
-   "kurs": 0.962,
+   "kurs": 0.961,
    "wert": 675.84
   },
   {
@@ -261,70 +261,6 @@
    "wert": 643.2
   },
   {
-   "id": "pcb3a9def",
-   "inst": {
-    "id": "pm:polymarket:6882826:NEIN",
-    "art": "pm",
-    "venue": "polymarket",
-    "ergebnis": "NEIN",
-    "frage": "Jensen Huang announced resignation or removal by December 31, 2026?",
-    "schliesst": 1798779540.0,
-    "ref": {
-     "id": "6882826",
-     "token_ja": "92740912934979695164482497757800283783237751328808772389036157576306520939319",
-     "token_nein": "15017605300721255694387863261330475130179898743425100548854893411502225255902",
-     "tick": 0.01,
-     "condition": "0xe0881460dcd53df2f8410ff9ec4c151f22c15ad29ff581d8eb8ac9bce5124eef",
-     "gebuehr_rate": 0.04,
-     "gebuehr_exp": 1.0
-    },
-    "url": "https://polymarket.com/event/jensen-huang-announced-resignation-or-removal-by-december-31"
-   },
-   "seite": "long",
-   "menge": 848.0,
-   "einstand": 0.661673466981132,
-   "hebel": 1.0,
-   "marge": 0.0,
-   "eroeffnet": 1794434591.603013,
-   "gebuehren": 7.59339,
-   "funding": 0.0,
-   "ausstiegsplan": "Halten bis zur Abrechnung (Schwarm-Regel)",
-   "kurs": null,
-   "wert": 561.1
-  },
-  {
-   "id": "p1fc0f30f",
-   "inst": {
-    "id": "pm:polymarket:6975664:JA",
-    "art": "pm",
-    "venue": "polymarket",
-    "ergebnis": "JA",
-    "frage": "Jensen Huang announced resignation or removal by November 12, 2026?",
-    "schliesst": 1794545940.0,
-    "ref": {
-     "id": "6975664",
-     "token_ja": "94592567375755535402382514854858851873438883868449100686326493803085500123190",
-     "token_nein": "49059554369443439132021076202548798831994166731162662055378257349004241428611",
-     "tick": 0.01,
-     "condition": "0x835acf3bffe67dcfb5e5f97aba52414739b6f5ff1970195b52d97bb374796155",
-     "gebuehr_rate": 0.04,
-     "gebuehr_exp": 1.0
-    },
-    "url": "https://polymarket.com/event/jensen-huang-announced-resignation-or-removal-by-december-31"
-   },
-   "seite": "long",
-   "menge": 235.0,
-   "einstand": 0.4,
-   "hebel": 1.0,
-   "marge": 0.0,
-   "eroeffnet": 1794481766.380762,
-   "gebuehren": 2.256,
-   "funding": 0.0,
-   "ausstiegsplan": "Halten bis zur Abrechnung (Schwarm-Regel)",
-   "kurs": 0.999,
-   "wert": 234.76
-  },
-  {
    "id": "pb73e4ff6",
    "inst": {
     "id": "pm:polymarket:3215009:JA",
@@ -355,12 +291,44 @@
    "ausstiegsplan": "Halten bis zur Abrechnung (Schwarm-Regel)",
    "kurs": 0.0645,
    "wert": 51.46
+  },
+  {
+   "id": "pe50dc472",
+   "inst": {
+    "id": "pm:polymarket:6507382:JA",
+    "art": "pm",
+    "venue": "polymarket",
+    "ergebnis": "JA",
+    "frage": "Will Bitcoin dip to $70,000 in November?",
+    "schliesst": 1796101200.0,
+    "ref": {
+     "id": "6507382",
+     "token_ja": "88754750144878308251249356874996495438551441586518525391048671911582966845780",
+     "token_nein": "1814146843621489116742307677076816488084632535118701840011810649154298274797",
+     "tick": 0.01,
+     "condition": "0x11d342b594136be5580f6074fa57e8ff7d039f6a337b8535eb917a91de2c4055",
+     "gebuehr_rate": 0.07,
+     "gebuehr_exp": 1.0
+    },
+    "url": "https://polymarket.com/event/what-price-will-bitcoin-hit-in-november-2026"
+   },
+   "seite": "long",
+   "menge": 510.0,
+   "einstand": 0.6890125490196077,
+   "hebel": 1.0,
+   "marge": 0.0,
+   "eroeffnet": 1794499897.9900568,
+   "gebuehren": 7.64959,
+   "funding": 0.0,
+   "ausstiegsplan": "Halten bis zur Abrechnung (Schwarm-Regel)",
+   "kurs": 0.6799999999999999,
+   "wert": 341.7
   }
  ],
- "realisiert": -89.02628000000014,
- "gebuehren": 82.69746,
+ "realisiert": -509.1253800000002,
+ "gebuehren": 90.34705000000001,
  "funding": 0.0,
  "erstellt": 1793379225.5430336,
  "start_fx": 1.1157431109273288,
- "letzter_tick": 1794498997.880096
+ "letzter_tick": 1794499897.9900568
 }

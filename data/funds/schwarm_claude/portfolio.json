@@ -2,7 +2,7 @@
  "fonds_id": "schwarm_claude",
  "waehrung": "USD",
  "start_kapital": 11157.431109273288,
- "cash": 9947.300899273288,
+ "cash": 9651.917209273288,
  "positionen": [
   {
    "id": "pb07d4c34",
@@ -33,8 +33,8 @@
    "gebuehren": 0.0,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Schwarm-Regel)",
-   "kurs": 0.038,
-   "wert": 18.97
+   "kurs": 0.039,
+   "wert": 20.03
   },
   {
    "id": "pfd90c808",
@@ -131,12 +131,44 @@
    "ausstiegsplan": "Halten bis zur Abrechnung (Schwarm-Regel)",
    "kurs": 0.175,
    "wert": 165.07
+  },
+  {
+   "id": "pe7c87fb7",
+   "inst": {
+    "id": "pm:polymarket:6507382:JA",
+    "art": "pm",
+    "venue": "polymarket",
+    "ergebnis": "JA",
+    "frage": "Will Bitcoin dip to $70,000 in November?",
+    "schliesst": 1796101200.0,
+    "ref": {
+     "id": "6507382",
+     "token_ja": "88754750144878308251249356874996495438551441586518525391048671911582966845780",
+     "token_nein": "1814146843621489116742307677076816488084632535118701840011810649154298274797",
+     "tick": 0.01,
+     "condition": "0x11d342b594136be5580f6074fa57e8ff7d039f6a337b8535eb917a91de2c4055",
+     "gebuehr_rate": 0.07,
+     "gebuehr_exp": 1.0
+    },
+    "url": "https://polymarket.com/event/what-price-will-bitcoin-hit-in-november-2026"
+   },
+   "seite": "long",
+   "menge": 419.0,
+   "einstand": 0.69,
+   "hebel": 1.0,
+   "marge": 0.0,
+   "eroeffnet": 1794499897.9900568,
+   "gebuehren": 6.27369,
+   "funding": 0.0,
+   "ausstiegsplan": "Halten bis zur Abrechnung (Schwarm-Regel)",
+   "kurs": 0.6799999999999999,
+   "wert": 280.73
   }
  ],
  "realisiert": -131.11190000000002,
- "gebuehren": 30.74541,
+ "gebuehren": 37.0191,
  "funding": 0.0,
  "erstellt": 1793379225.5430336,
  "start_fx": 1.1157431109273288,
- "letzter_tick": 1794498997.880096
+ "letzter_tick": 1794499897.9900568
 }
