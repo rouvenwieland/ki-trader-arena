@@ -2,7 +2,7 @@
  "fonds_id": "claude_mittel",
  "waehrung": "USD",
  "start_kapital": 11184.88579861696,
- "cash": 2372.5579408874573,
+ "cash": 2435.7758808874573,
  "positionen": [
   {
    "id": "p51e71031",
@@ -384,40 +384,6 @@
    "wert": 8.57
   },
   {
-   "id": "pf6829e90",
-   "inst": {
-    "id": "pm:polymarket:2412744:JA",
-    "art": "pm",
-    "venue": "polymarket",
-    "ergebnis": "JA",
-    "frage": "Will Anthropic's market cap be less than $1.25T at market close on IPO day?",
-    "schliesst": 1830315540.0,
-    "ref": {
-     "id": "2412744",
-     "token_ja": "112320928806010548033202438997015358299610795310513429342055221960679493917",
-     "token_nein": "97835730826504088023775585649282026423448935249156759049180415585128284134832",
-     "tick": 0.001,
-     "condition": "0x800376dc64e4e2376a495ed0df4a789192256c821bb4d1452acdd5931bca2fa5",
-     "gebuehr_rate": 0.04,
-     "gebuehr_exp": 1.0
-    },
-    "url": "https://polymarket.com/event/anthropic-ipo-closing-market-cap-higher-strikes"
-   },
-   "seite": "long",
-   "menge": 340.0,
-   "einstand": 0.2856571176470588,
-   "hebel": 1.0,
-   "marge": 0.0,
-   "eroeffnet": 1794323323.1355715,
-   "gebuehren": 2.77518,
-   "funding": 0.0,
-   "ausstiegsplan": "Bis zum IPO-Tag halten. Verkaufen, wenn der Bid ≥0,40 erreicht. Nach der Preisfestsetzung am 18.11. neu bewerten: Bei einem IPO-Preis ≥88 $ schließen.",
-   "entscheidung_id": "d48fafa83",
-   "invalidierung": "Die Nasdaq-Listing-Seite bzw. Yahoo zeigen vor dem IPO eine Aktienzahl von ≥16 Mrd., oder die Preisfestsetzung liegt bei ≥90 $.",
-   "kurs": 0.194,
-   "wert": 65.62
-  },
-  {
    "id": "pac09f469",
    "inst": {
     "id": "pm:manifold:zEuhZdCOtQ:NEIN",
@@ -474,8 +440,8 @@
    "wert": 46.04
   }
  ],
- "realisiert": -175.74024814076884,
- "gebuehren": 62.5383933771088,
+ "realisiert": -209.64572814076882,
+ "gebuehren": 64.6494533771088,
  "funding": 0.0,
  "erstellt": 1793319819.7411644,
  "start_fx": 1.1184885798616961,
