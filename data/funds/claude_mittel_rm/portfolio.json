@@ -69,7 +69,7 @@
    "ausstiegsplan": "Halten bis 31.12.; Gewinnmitnahme ≥0.88 oder nach Earnings neu bewerten.",
    "entscheidung_id": "d24ff66a4",
    "invalidierung": "NVDA-Marktkap übertrifft Apple um >3 % nach Earnings (NVDA >~205 bei AAPL ~350).",
-   "kurs": 0.859,
+   "kurs": 0.858,
    "wert": 1060.35
   },
   {
@@ -131,7 +131,7 @@
    "ausstiegsplan": "Halten bis 30.11.; verkaufen, wenn BTC unter 64.000 fällt oder NEIN-Preis <0.88.",
    "entscheidung_id": "d7dbfc08f",
    "invalidierung": "BTC Binance unter 64.000 oder DVOL >60",
-   "kurs": 0.954,
+   "kurs": 0.9535,
    "wert": 298.29
   },
   {
@@ -173,8 +173,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "dd6456776",
-   "kurs": 73889.025,
-   "wert": 1048.57
+   "kurs": 73959.725,
+   "wert": 1049.57
   },
   {
    "id": "p994b6370",
@@ -446,7 +446,7 @@
    "ausstiegsplan": "Bis Vereidigung halten; schließen, wenn beide Beine zusammen ≥0.97 verkaufbar.",
    "entscheidung_id": "d5f5d56d9",
    "invalidierung": "Nachweislich abweichende PredictIt-Regel, die Eisenkot-JA bei PredictIt und NEIN bei Polymarket zulässt.",
-   "kurs": 0.6165,
+   "kurs": 0.6214999999999999,
    "wert": 429.1
   },
   {
@@ -542,8 +542,8 @@
    "ausstiegsplan": "Halten bis 31.12.",
    "entscheidung_id": "db61267da",
    "invalidierung": "Polymarket-JA >0.30 oder Board-Befund schwerwiegend",
-   "kurs": 0.09409126758005495,
-   "wert": 23.54
+   "kurs": 0.11783142710294091,
+   "wert": 29.5
   },
   {
    "id": "p51c17729",
@@ -570,8 +570,8 @@
    "ausstiegsplan": "Halten bis Tag-1-Schluss 19.11.; Verkauf, falls Preisfestsetzung ≥$90 oder JA-Preis >0.40.",
    "entscheidung_id": "da86d3e2a",
    "invalidierung": "IPO-Preis über Spanne (≥$85) oder Nachrichten, dass Marktkap FD-basiert >2 Bio bei $111 gezählt wird und Orderbuch-Hype.",
-   "kurs": 0.8994669190129325,
-   "wert": 34.17
+   "kurs": 0.8989255650388155,
+   "wert": 34.15
   },
   {
    "id": "p5d2c9646",
@@ -607,7 +607,7 @@
  "funding": 0.0,
  "erstellt": 1793380123.8861866,
  "start_fx": 1.1156327353966788,
- "letzter_tick": 1794442691.6282194,
+ "letzter_tick": 1794443591.6736715,
  "auftraege": [],
  "rebalancing": {
   "ziele": {
