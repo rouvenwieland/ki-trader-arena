@@ -64,8 +64,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "d8e5f296a",
-   "kurs": 73668.89499999999,
-   "wert": 679.71
+   "kurs": 73682.755,
+   "wert": 679.84
   },
   {
    "id": "p9a8fa083",
@@ -242,8 +242,8 @@
    "ausstiegsplan": "Bis Abrechnung halten (~5h); kein Vorverkauf.",
    "entscheidung_id": "d60cea0f5",
    "invalidierung": "Öffentliche, definitive Ankündigung von Huangs Abgang als CEO vor 05:00 UTC am 12.11.",
-   "kurs": 0.785,
-   "wert": 546.0
+   "kurs": 0.825,
+   "wert": 574.0
   },
   {
    "id": "p951ffba5",
@@ -276,8 +276,8 @@
    "ausstiegsplan": "Halten bis Abrechnung 13.11. 05:00 UTC. Kein Vorverkauf (Spread + fixe Gebühr).",
    "entscheidung_id": "d1a6d9043",
    "invalidierung": "Reputierliche Quelle meldet definitive Ankündigung von Huangs Rücktritt/Entlassung (nicht 'erwägt'/'bereitet vor').",
-   "kurs": 0.385,
-   "wert": 266.0
+   "kurs": 0.345,
+   "wert": 238.0
   }
  ],
  "realisiert": -956.3841049173761,
@@ -285,7 +285,7 @@
  "funding": 0.0,
  "erstellt": 1793319819.7411644,
  "start_fx": 1.1184885798616961,
- "letzter_tick": 1794454520.8247,
+ "letzter_tick": 1794455420.397124,
  "rebalancing": {
   "ziele": {
    "stock:SPY": {
