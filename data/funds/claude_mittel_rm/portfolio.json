@@ -69,7 +69,7 @@
    "ausstiegsplan": "Halten bis 31.12.; Gewinnmitnahme ≥0,93 oder Neubewertung nach NVDA-Earnings 17./19.11.",
    "entscheidung_id": "dce9924e1",
    "invalidierung": "NVDA-Marktkap > Apple −10 % (NVDA >~210 bei Apple ~355) oder Apple −20 % binnen Tagen",
-   "kurs": 0.8574999999999999,
+   "kurs": 0.857,
    "wert": 1139.61
   },
   {
@@ -152,8 +152,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "dd6456776",
-   "kurs": 757.25,
-   "wert": 2258.41
+   "kurs": 757.12,
+   "wert": 2258.02
   },
   {
    "id": "p1c64b37e",
@@ -173,8 +173,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "dd6456776",
-   "kurs": 71397.07500000001,
-   "wert": 1013.21
+   "kurs": 71525.86499999999,
+   "wert": 1015.03
   },
   {
    "id": "p994b6370",
@@ -194,8 +194,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "dd6456776",
-   "kurs": 354.88,
-   "wert": 873.22
+   "kurs": 354.89,
+   "wert": 873.25
   },
   {
    "id": "p3b9e74b7",
@@ -316,8 +316,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "d0a642430",
-   "kurs": 91.501,
-   "wert": 908.93
+   "kurs": 91.5,
+   "wert": 908.92
   },
   {
    "id": "p4abb843a",
@@ -446,7 +446,7 @@
    "ausstiegsplan": "Bis Vereidigung halten; schließen, wenn beide Beine zusammen ≥0.97 verkaufbar.",
    "entscheidung_id": "d5f5d56d9",
    "invalidierung": "Nachweislich abweichende PredictIt-Regel, die Eisenkot-JA bei PredictIt und NEIN bei Polymarket zulässt.",
-   "kurs": 0.6425000000000001,
+   "kurs": 0.642,
    "wert": 448.0
   },
   {
@@ -480,8 +480,8 @@
    "ausstiegsplan": "Halten bis IPO-Tag (voraussichtlich Woche 16.–20.11.). Bei Preisfestsetzung neu rechnen: Schwelle = 1,25 Bio/13,09 Mrd. = $95,5. Teilverkauf, wenn JA ≥0,50 vor Handelsstart.",
    "entscheidung_id": "d0595e7ab",
    "invalidierung": "Endgültiger IPO-Preis ≥ $86 (dann reicht +11 % Pop) oder offizielle Polymarket-Klarstellung, dass voll verwässert gezählt wird; Graumarkt-/Indikationen Eröffnung ≥ $100.",
-   "kurs": 0.1825,
-   "wert": 489.76
+   "kurs": 0.1815,
+   "wert": 487.07
   },
   {
    "id": "p1f686553",
@@ -570,8 +570,8 @@
    "ausstiegsplan": "Bis zur Abrechnung (~8.1.2027) halten. Verkauf, wenn NEIN ≥0,95 oder die Invalidierung eintritt.",
    "entscheidung_id": "dd841b112",
    "invalidierung": "NVDA-Marktkap innerhalb von 10 % zu Apple (NVDA >~195 bei Apple ~358) oder Polymarket NVDA-JA >0,25",
-   "kurs": 0.821513193201285,
-   "wert": 32.85
+   "kurs": 0.8235469665227648,
+   "wert": 32.93
   }
  ],
  "realisiert": -353.5499518296599,
@@ -579,7 +579,7 @@
  "funding": 0.0,
  "erstellt": 1793380123.8861866,
  "start_fx": 1.1156327353966788,
- "letzter_tick": 1794518039.4572778,
+ "letzter_tick": 1794518940.0021966,
  "auftraege": [],
  "rebalancing": {
   "ziele": {

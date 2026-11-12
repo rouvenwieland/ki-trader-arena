@@ -22,8 +22,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Ziel 375 (SMA20) in 2-4 Wochen; Stop 340; Teilverkauf bei 368.",
    "entscheidung_id": "defdc682d",
-   "kurs": 354.88,
-   "wert": 1433.05,
+   "kurs": 354.89,
+   "wert": 1433.09,
    "stop_loss": 340,
    "invalidierung": "Tagesschluss GLD unter 340,00 USD oder 10J-Rendite über 5,10%."
   },
@@ -45,8 +45,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "d8e5f296a",
-   "kurs": 71397.07500000001,
-   "wert": 658.75
+   "kurs": 71525.86499999999,
+   "wert": 659.94
   },
   {
    "id": "p9a8fa083",
@@ -66,8 +66,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "d8e5f296a",
-   "kurs": 757.25,
-   "wert": 2254.86
+   "kurs": 757.12,
+   "wert": 2254.47
   },
   {
    "id": "p565093a5",
@@ -87,8 +87,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Halten als Kern (Ziel 14 %); Exit nur über Rebalancing-Regel. Rückkauf TLT falls 10J unter 4,50 %.",
    "entscheidung_id": "df978a001",
-   "kurs": 95.23,
-   "wert": 1412.83,
+   "kurs": 95.22,
+   "wert": 1412.68,
    "invalidierung": "10J über 5,20 % oder Fed +50bp im Dezember und 2J über 4,90 %."
   },
   {
@@ -220,7 +220,7 @@
  "funding": 0.0,
  "erstellt": 1793319819.7411644,
  "start_fx": 1.1184885798616961,
- "letzter_tick": 1794518039.4572778,
+ "letzter_tick": 1794518940.0021966,
  "rebalancing": {
   "ziele": {
    "stock:SPY": {
