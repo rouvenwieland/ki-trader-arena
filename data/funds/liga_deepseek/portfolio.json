@@ -22,8 +22,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Ziel 375 (SMA20) in 2-4 Wochen; Stop 340; Teilverkauf bei 368.",
    "entscheidung_id": "defdc682d",
-   "kurs": 355.635,
-   "wert": 1435.9,
+   "kurs": 355.52,
+   "wert": 1435.44,
    "stop_loss": 340,
    "invalidierung": "Tagesschluss GLD unter 340,00 USD oder 10J-Rendite über 5,10%."
   },
@@ -45,8 +45,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "d8e5f296a",
-   "kurs": 71326.095,
-   "wert": 658.1
+   "kurs": 71394.095,
+   "wert": 658.72
   },
   {
    "id": "p9a8fa083",
@@ -66,8 +66,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "d8e5f296a",
-   "kurs": 756.98,
-   "wert": 2253.81
+   "kurs": 756.96,
+   "wert": 2253.75
   },
   {
    "id": "p565093a5",
@@ -211,8 +211,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "d0f380f2d",
-   "kurs": 79.815,
-   "wert": 1005.44
+   "kurs": 79.835,
+   "wert": 1005.69
   }
  ],
  "realisiert": -1317.4517373000576,
@@ -220,7 +220,7 @@
  "funding": 0.0,
  "erstellt": 1793319819.7411644,
  "start_fx": 1.1184885798616961,
- "letzter_tick": 1794516097.8710222,
+ "letzter_tick": 1794516241.4256022,
  "rebalancing": {
   "ziele": {
    "stock:SPY": {
