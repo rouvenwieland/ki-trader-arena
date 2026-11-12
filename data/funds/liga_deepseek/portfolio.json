@@ -2,7 +2,7 @@
  "fonds_id": "liga_deepseek",
  "waehrung": "USD",
  "start_kapital": 11184.88579861696,
- "cash": 1981.6947300465235,
+ "cash": 1527.2435300465236,
  "positionen": [
   {
    "id": "p00666bfa",
@@ -244,10 +244,42 @@
    "invalidierung": "US-Regierung (Trump, Außen- oder Verteidigungsministerium) kündigt öffentlich und förmlich die Aufhebung/Aussetzung der Seeblockade an ODER ein umfassender Iran-Deal wird mit Blockade-Aufhebung als Teil verkündet.",
    "kurs": 0.665,
    "wert": 199.2
+  },
+  {
+   "id": "peaad43aa",
+   "inst": {
+    "id": "pm:polymarket:6976273:NEIN",
+    "art": "pm",
+    "venue": "polymarket",
+    "ergebnis": "NEIN",
+    "frage": "Jensen Huang announced resignation or removal by November 11, 2026?",
+    "schliesst": 1794459540.0,
+    "ref": {
+     "id": "6976273",
+     "token_ja": "100915930571822728951330464198390516262149238276574436974903217054355009769854",
+     "token_nein": "38121592119972198489520429217721710869195013287648052909122512139542317776371",
+     "tick": 0.01,
+     "condition": "0x6215a6b38b51de4e1d0254da3cbb1d25bd75497276fedbbcd6bbcc7e126bff19",
+     "gebuehr_rate": 0.04,
+     "gebuehr_exp": 1.0
+    },
+    "url": "https://polymarket.com/event/jensen-huang-announced-resignation-or-removal-by-november-11-2026"
+   },
+   "seite": "long",
+   "menge": 700.0,
+   "einstand": 0.64,
+   "hebel": 1.0,
+   "marge": 0.0,
+   "eroeffnet": 1794442168.9603555,
+   "gebuehren": 6.4512,
+   "funding": 0.0,
+   "ausstiegsplan": "Bis Abrechnung halten (~5h); kein Vorverkauf.",
+   "entscheidung_id": "d60cea0f5",
+   "invalidierung": "Öffentliche, definitive Ankündigung von Huangs Abgang als CEO vor 05:00 UTC am 12.11."
   }
  ],
  "realisiert": -640.2500049173761,
- "gebuehren": 107.38868925396547,
+ "gebuehren": 113.83988925396547,
  "funding": 0.0,
  "erstellt": 1793319819.7411644,
  "start_fx": 1.1184885798616961,
