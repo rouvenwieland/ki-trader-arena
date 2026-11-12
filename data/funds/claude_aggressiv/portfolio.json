@@ -2,7 +2,7 @@
  "fonds_id": "claude_aggressiv",
  "waehrung": "USD",
  "start_kapital": 11184.88579861696,
- "cash": 999.1848986867419,
+ "cash": 894.7421739841634,
  "positionen": [
   {
    "id": "p8d020f51",
@@ -32,8 +32,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Halten bis FOMC 9.12.; verkaufen wenn Preis <0.55 (These gebrochen, z.B. Friedensdeal + schwache Daten) oder >0.92.",
    "entscheidung_id": "dd6eba046",
-   "kurs": 0.895,
-   "wert": 963.87
+   "kurs": 0.905,
+   "wert": 974.7
   },
   {
    "id": "pd2738082",
@@ -55,8 +55,8 @@
    "ausstiegsplan": "Stop 700; Review nach CPI 10.11.",
    "entscheidung_id": "d05f1cdc5",
    "invalidierung": "SPY schließt unter 700",
-   "kurs": 757.95,
-   "wert": 2734.05
+   "kurs": 756.18,
+   "wert": 2727.66
   },
   {
    "id": "pdc30d721",
@@ -112,31 +112,8 @@
    "ausstiegsplan": "Stop 69.500; Teilverkauf bei 86k; Dip-Wetten gleichen Abwärtsrisiko teilweise aus.",
    "entscheidung_id": "de5e47324",
    "invalidierung": "Tagesschluss unter 69.500 oder Fed-Hike-Odds >90 %",
-   "kurs": 71314.07500000001,
-   "wert": 1120.51
-  },
-  {
-   "id": "p9c4e61c2",
-   "inst": {
-    "id": "stock:GLD",
-    "art": "stock",
-    "venue": "yahoo",
-    "symbol": "GLD"
-   },
-   "seite": "long",
-   "menge": 4.059151112437117,
-   "einstand": 369.53539261054897,
-   "hebel": 1.0,
-   "marge": 0.0,
-   "eroeffnet": 1793976062.7620246,
-   "gebuehren": 0.0,
-   "funding": 0.0,
-   "stop_loss": 355,
-   "ausstiegsplan": "Stop 355; als Kern halten.",
-   "entscheidung_id": "def361d62",
-   "invalidierung": "GLD schließt unter 355",
-   "kurs": 355.53,
-   "wert": 1442.96
+   "kurs": 71287.63500000001,
+   "wert": 1120.09
   },
   {
    "id": "pe9dce5d9",
@@ -158,8 +135,8 @@
    "ausstiegsplan": "Stop 93; sonst als defensiver Kern halten, Review nach CPI 10.11. und FOMC 9.12.",
    "entscheidung_id": "dd7ab6d3d",
    "invalidierung": "AGG unter 93",
-   "kurs": 95.525,
-   "wert": 792.28
+   "kurs": 95.45,
+   "wert": 791.66
   },
   {
    "id": "p02eb0d85",
@@ -179,8 +156,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "db90ee1de",
-   "kurs": 686.83,
-   "wert": 822.52
+   "kurs": 684.385,
+   "wert": 819.59
   },
   {
    "id": "p42b8ecdf",
@@ -200,16 +177,37 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "d23f83a34",
-   "kurs": 100.531,
-   "wert": 814.85
+   "kurs": 100.5297,
+   "wert": 814.84
+  },
+  {
+   "id": "pb8af7395",
+   "inst": {
+    "id": "stock:GLD",
+    "art": "stock",
+    "venue": "yahoo",
+    "symbol": "GLD"
+   },
+   "seite": "long",
+   "menge": 4.352454806292151,
+   "einstand": 353.7939830238243,
+   "hebel": 1.0,
+   "marge": 0.0,
+   "eroeffnet": 1794496166.7573981,
+   "gebuehren": 0.0,
+   "funding": 0.0,
+   "ausstiegsplan": "Rebalancing-Regel",
+   "entscheidung_id": "d23f83a34",
+   "kurs": 353.711,
+   "wert": 1539.3
   }
  ],
- "realisiert": -1062.942644803372,
+ "realisiert": -1127.5130476566596,
  "gebuehren": 164.49469428310442,
  "funding": -0.6133053169464532,
  "erstellt": 1793319819.7411644,
  "start_fx": 1.1184885798616961,
- "letzter_tick": 1794495266.4819973,
+ "letzter_tick": 1794496166.7573981,
  "auftraege": [],
  "rebalancing": {
   "ziele": {
