@@ -64,8 +64,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "d8e5f296a",
-   "kurs": 72827.265,
-   "wert": 671.95
+   "kurs": 72853.235,
+   "wert": 672.19
   },
   {
    "id": "p9a8fa083",
@@ -174,8 +174,8 @@
    "ausstiegsplan": "Halten bis Abrechnung 31.12.2026 oder Verkauf, wenn NEIN < 0,80 (Invalidierung) bzw. JA > 0,25 ohne erklärende Nachricht.",
    "entscheidung_id": "d2f748f89",
    "invalidierung": "Hegseth kündigt Rücktritt an, wird entlassen, oder eine credible Quelle meldet, dass Trump eine Ablösung vorbereitet (dann JA sofort über 0,30).",
-   "kurs": 0.835,
-   "wert": 309.59
+   "kurs": 0.815,
+   "wert": 302.13
   },
   {
    "id": "p3aa56fe5",
@@ -242,8 +242,8 @@
    "ausstiegsplan": "Halten bis Abrechnung (~21h). Bei Auflösung 1,00 Auszahlung; kein Vorverkauf, weil Spread 2c und Restzeit kurz.",
    "entscheidung_id": "da137f22c",
    "invalidierung": "Öffentliche, definitive Ankündigung von Huangs Rücktritt/Entlassung vor 13.11. 04:59 UTC.",
-   "kurs": 0.565,
-   "wert": 952.0
+   "kurs": 0.605,
+   "wert": 1020.0
   }
  ],
  "realisiert": -704.3841049173761,
@@ -251,7 +251,7 @@
  "funding": 0.0,
  "erstellt": 1793319819.7411644,
  "start_fx": 1.1184885798616961,
- "letzter_tick": 1794486266.7574923,
+ "letzter_tick": 1794487166.4199493,
  "rebalancing": {
   "ziele": {
    "stock:SPY": {
