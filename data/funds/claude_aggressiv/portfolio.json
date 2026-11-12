@@ -32,8 +32,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Halten bis FOMC 9.12.; verkaufen wenn Preis <0.55 (These gebrochen, z.B. Friedensdeal + schwache Daten) oder >0.92.",
    "entscheidung_id": "dd6eba046",
-   "kurs": 0.885,
-   "wert": 953.04
+   "kurs": 0.895,
+   "wert": 963.87
   },
   {
    "id": "pd2738082",
@@ -55,8 +55,8 @@
    "ausstiegsplan": "Stop 700; Review nach CPI 10.11.",
    "entscheidung_id": "d05f1cdc5",
    "invalidierung": "SPY schließt unter 700",
-   "kurs": 757.13,
-   "wert": 2731.09
+   "kurs": 757.95,
+   "wert": 2734.05
   },
   {
    "id": "pdc30d721",
@@ -89,8 +89,8 @@
    "ausstiegsplan": "Verkaufen bei Bid ≥0,80 oder BTC >86k Binance; sonst bis 31.12. halten.",
    "entscheidung_id": "d9dd07173",
    "invalidierung": "BTC steigt über 86.000 (Binance) mit sinkender DVOL <35 → Touch-Wahrscheinlichkeit <0,40, Position verkaufen.",
-   "kurs": 0.825,
-   "wert": 575.64
+   "kurs": 0.835,
+   "wert": 582.66
   },
   {
    "id": "p53b6ec63",
@@ -112,8 +112,8 @@
    "ausstiegsplan": "Stop 69.500; Teilverkauf bei 86k; Dip-Wetten gleichen Abwärtsrisiko teilweise aus.",
    "entscheidung_id": "de5e47324",
    "invalidierung": "Tagesschluss unter 69.500 oder Fed-Hike-Odds >90 %",
-   "kurs": 72115.485,
-   "wert": 1133.1
+   "kurs": 71314.07500000001,
+   "wert": 1120.51
   },
   {
    "id": "p9c4e61c2",
@@ -135,8 +135,8 @@
    "ausstiegsplan": "Stop 355; als Kern halten.",
    "entscheidung_id": "def361d62",
    "invalidierung": "GLD schließt unter 355",
-   "kurs": 357.06,
-   "wert": 1449.17
+   "kurs": 355.53,
+   "wert": 1442.96
   },
   {
    "id": "pe9dce5d9",
@@ -158,8 +158,8 @@
    "ausstiegsplan": "Stop 93; sonst als defensiver Kern halten, Review nach CPI 10.11. und FOMC 9.12.",
    "entscheidung_id": "dd7ab6d3d",
    "invalidierung": "AGG unter 93",
-   "kurs": 95.635,
-   "wert": 793.19
+   "kurs": 95.525,
+   "wert": 792.28
   },
   {
    "id": "p02eb0d85",
@@ -179,8 +179,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "db90ee1de",
-   "kurs": 687.015,
-   "wert": 822.74
+   "kurs": 686.83,
+   "wert": 822.52
   },
   {
    "id": "p42b8ecdf",
@@ -200,8 +200,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "d23f83a34",
-   "kurs": 100.5351,
-   "wert": 814.88
+   "kurs": 100.531,
+   "wert": 814.85
   }
  ],
  "realisiert": -1062.942644803372,
@@ -209,7 +209,7 @@
  "funding": -0.6133053169464532,
  "erstellt": 1793319819.7411644,
  "start_fx": 1.1184885798616961,
- "letzter_tick": 1794494366.8272233,
+ "letzter_tick": 1794495266.4819973,
  "auftraege": [],
  "rebalancing": {
   "ziele": {
