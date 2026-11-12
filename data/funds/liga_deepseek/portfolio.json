@@ -64,7 +64,7 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "d8e5f296a",
-   "kurs": 73357.88500000001,
+   "kurs": 73357.32500000001,
    "wert": 676.84
   },
   {
@@ -174,8 +174,8 @@
    "ausstiegsplan": "Halten bis Abrechnung 31.12.2026 oder Verkauf, wenn NEIN < 0,80 (Invalidierung) bzw. JA > 0,25 ohne erklärende Nachricht.",
    "entscheidung_id": "d2f748f89",
    "invalidierung": "Hegseth kündigt Rücktritt an, wird entlassen, oder eine credible Quelle meldet, dass Trump eine Ablösung vorbereitet (dann JA sofort über 0,30).",
-   "kurs": 0.855,
-   "wert": 317.05
+   "kurs": 0.845,
+   "wert": 313.32
   },
   {
    "id": "p3aa56fe5",
@@ -208,8 +208,8 @@
    "ausstiegsplan": "Halten bis 31.12.2026 (Abrechnung). Vorzeitiger Verkauf bei JA-Preis (Gegenposition) unter 0,12 (dann ist mein p zu pessimistisch und der Edge weg) oder bei JA über 0,50 ohne klare Nachricht (Markt weiß mehr → sofort raus).",
    "entscheidung_id": "dd655a214",
    "invalidierung": "US-Regierung (Trump, Außen- oder Verteidigungsministerium) kündigt öffentlich und förmlich die Aufhebung/Aussetzung der Seeblockade an ODER ein umfassender Iran-Deal wird mit Blockade-Aufhebung als Teil verkündet.",
-   "kurs": 0.6665000000000001,
-   "wert": 199.8
+   "kurs": 0.666,
+   "wert": 199.5
   },
   {
    "id": "p951ffba5",
@@ -242,8 +242,8 @@
    "ausstiegsplan": "Halten bis Abrechnung (~21h). Bei Auflösung 1,00 Auszahlung; kein Vorverkauf, weil Spread 2c und Restzeit kurz.",
    "entscheidung_id": "da137f22c",
    "invalidierung": "Öffentliche, definitive Ankündigung von Huangs Rücktritt/Entlassung vor 13.11. 04:59 UTC.",
-   "kurs": 0.595,
-   "wert": 1003.0
+   "kurs": 0.605,
+   "wert": 1020.0
   }
  ],
  "realisiert": -704.3841049173761,
@@ -251,7 +251,7 @@
  "funding": 0.0,
  "erstellt": 1793319819.7411644,
  "start_fx": 1.1184885798616961,
- "letzter_tick": 1794480867.2931237,
+ "letzter_tick": 1794481766.380762,
  "rebalancing": {
   "ziele": {
    "stock:SPY": {
