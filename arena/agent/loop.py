@@ -5,6 +5,7 @@ from __future__ import annotations
 import json
 import time
 
+from arena import schluessel
 from arena import funds, store
 from arena.agent import budget as bmod
 from arena.agent import llm, prompts
@@ -149,7 +150,7 @@ def laufe_runde(defn: dict, route: dict, pf: dict, snap: dict, mz, grund: str, e
 def triage_groq(defn: dict, ereignisse: list[dict], pf_info: str) -> tuple[bool, str]:
     """Groq (schnell, kleines Tokenlimit) sichtet nur vor – für Liga-Fonds, damit freie Modelle nicht bei jedem Ereignis laufen."""
     import os
-    key = os.environ.get("GROQ_API_KEY", "").strip()
+    key = schluessel("GROQ_API_KEY")
     if not key:
         return True, "kein Groq-Schlüssel – Runde ohne Vorsichter"
     try:

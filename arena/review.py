@@ -8,6 +8,7 @@ import sys
 import time
 from datetime import datetime, timezone
 
+from arena import schluessel
 from arena import config, funds, metrics, policy, store
 from arena.agent import budget as bmod
 from arena.agent import llm
@@ -44,7 +45,7 @@ def sammle(jetzt: float) -> str:
 
 def lauf(jetzt: float | None = None) -> str | None:
     jetzt = jetzt or time.time()
-    if not os.environ.get("ARENA_ANTHROPIC_KEY", "").strip():
+    if not schluessel("ARENA_ANTHROPIC_KEY"):
         print("Review übersprungen: wartet auf Schlüssel")
         return None
     fx = (store.lies("fx.json") or {}).get("usd_je_eur") or config.load()["fallback_usd_je_eur"]

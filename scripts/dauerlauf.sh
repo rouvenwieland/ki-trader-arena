@@ -31,6 +31,7 @@ while [ "$(rest)" -gt 300 ]; do
         seite
         echo "::endgroup::";;
       review)
+        uv run python -m arena.auswertung || echo "Brier-Auswertung fehlgeschlagen (nicht kritisch)"
         timeout 1200 uv run python -m arena.review || echo "WARNUNG: Review abgebrochen"
         bash scripts/speichern.sh "Wochen-Review $(date -u +%Y-%m-%d)"
         seite;;

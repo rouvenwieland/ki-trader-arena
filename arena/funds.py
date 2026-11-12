@@ -4,6 +4,7 @@ from __future__ import annotations
 import os
 import time
 
+from arena import schluessel
 from arena import config, store
 from arena.exchange import portfolio
 
@@ -31,7 +32,7 @@ SCHWARM = [
 
 
 def hat_schluessel(env: str) -> bool:
-    return bool(os.environ.get(env, "").strip())
+    return bool(schluessel(env))
 
 
 def claude_fonds() -> list[dict]:
@@ -69,7 +70,7 @@ def openrouter_modelle(jetzt: float | None = None) -> list[dict]:
         m["entfallen"] = m["id"] not in aktuell
     aktiv = [m for m in z["modelle"] if not m["entfallen"]]
     bekannt = {m["id"] for m in z["modelle"]}
-    key = os.environ.get("OPENROUTER_API_KEY", "").strip()
+    key = schluessel("OPENROUTER_API_KEY")
     for mid in aktuell:
         if len(aktiv) >= n:
             break

@@ -6,6 +6,7 @@ from __future__ import annotations
 import os
 import time
 
+from arena import schluessel
 from arena import funds, notizbuch, policy, store
 from arena.agent import budget as bmod
 
@@ -57,7 +58,7 @@ def reflektiere(fid: str, e: dict, bud: bmod.Budget | None) -> str:
     text = beschreibe(fid, e)
     # Liga-Fonds handeln mit ihrem eigenen Modell; die Haiku-Lektion ist eine Arena-Hilfsleistung und wird separat gebucht
     konto = fid if fid.startswith("claude_") else "lernhilfe_liga"
-    if bud and os.environ.get("ARENA_ANTHROPIC_KEY", "").strip() and not (bud.claude_zeit_vorbei() or bud.gesamt_erschoepft()):
+    if bud and schluessel("ARENA_ANTHROPIC_KEY") and not (bud.claude_zeit_vorbei() or bud.gesamt_erschoepft()):
         ok, _ = bud.darf(konto, 3, bmod.schaetze_naechsten_aufruf(MODELL, len(text) + len(SYSTEM), 1200), global_nur=not fid.startswith("claude_"))
         if ok:
             try:

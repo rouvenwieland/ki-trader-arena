@@ -4,6 +4,7 @@ from __future__ import annotations
 import os
 import time
 
+from arena import schluessel
 from arena import funds, store
 from arena.agent.budget import Budget
 
@@ -86,7 +87,7 @@ def route(defn: dict, bud: Budget, jetzt: float, tief: bool = False) -> dict:
     """Gibt {"art","modell",...} zurück oder {"status": "..."} wenn der Fonds nicht laufen kann.
     tief=True: tägliche Tiefenrunde (Claude-Fonds mit dem Tiefenrunden-Modell, z. B. Opus)."""
     if defn["typ"] == "liga":
-        key = os.environ.get(defn["schluessel"], "").strip()
+        key = schluessel(defn["schluessel"])
         if not key:
             return {"status": "wartet auf Schlüssel"}
         if defn.get("entfallen"):
@@ -101,7 +102,7 @@ def route(defn: dict, bud: Budget, jetzt: float, tief: bool = False) -> dict:
     # Claude-Fonds
     umschalten = bud.claude_zeit_vorbei() or bud.gesamt_erschoepft()
     if not umschalten:
-        if not os.environ.get("ARENA_ANTHROPIC_KEY", "").strip():
+        if not schluessel("ARENA_ANTHROPIC_KEY"):
             return {"status": "wartet auf Schlüssel"}
         ok, grund = bud.darf(defn["id"], 1, global_nur=True)
         if not ok:
@@ -112,7 +113,7 @@ def route(defn: dict, bud: Budget, jetzt: float, tief: bool = False) -> dict:
     best = bestes_liga_modell()
     if not best:
         return {"status": "pausiert: Claude-Phase beendet, kein Liga-Modell verfügbar"}
-    key = os.environ.get(best["schluessel"], "").strip()
+    key = schluessel(best["schluessel"])
     r = {"art": "openai", "anbieter": best["anbieter"], "modell": best["modell"], "key": key, "umgeschaltet_auf": best["name"],
          "alternativen": best.get("alternativen", [])}
     m = funds.meta(defn["id"])

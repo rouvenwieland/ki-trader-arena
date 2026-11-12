@@ -10,6 +10,7 @@ import json
 import os
 import time
 
+from arena import schluessel
 from arena import store, themen
 from arena.agent import budget as bmod
 
@@ -31,7 +32,7 @@ def pruefe(defn: dict, order: dict, kontext: str, bud: bmod.Budget | None, jetzt
     jetzt = jetzt or time.time()
     eingabe = f"ORDER: {json.dumps(order, ensure_ascii=False, default=str)}\nPORTFOLIO/LAGE: {kontext}"
     erg = {"urteil": "freigeben", "faktor": 1.0, "grund": "Risikomanager nicht verfügbar – Order unverändert"}
-    if bud and os.environ.get("ARENA_ANTHROPIC_KEY", "").strip():
+    if bud and schluessel("ARENA_ANTHROPIC_KEY"):
         ok, warum = bud.darf(defn["id"], 4, bmod.schaetze_naechsten_aufruf(MODELL, len(eingabe) + len(SYSTEM), 1500))
         if ok:
             try:

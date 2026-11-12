@@ -5,6 +5,7 @@ from __future__ import annotations
 import os
 import time
 
+from arena import schluessel
 from arena.data.http import HttpFehler, get
 
 
@@ -40,7 +41,7 @@ def noaa() -> list[dict]:
 
 
 def firms() -> list[dict]:
-    key = os.environ.get("NASA_FIRMS_KEY", "").strip()
+    key = schluessel("NASA_FIRMS_KEY")
     if not key:
         return []
     try:

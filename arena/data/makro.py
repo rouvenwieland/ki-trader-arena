@@ -6,6 +6,7 @@ import re
 import time
 from datetime import datetime, timezone
 
+from arena import schluessel
 from arena.data.http import HttpFehler, get
 
 SERIEN = {"DFF": "Leitzins (Fed Funds, täglich)", "DGS10": "US-Rendite 10 Jahre", "DGS2": "US-Rendite 2 Jahre",
@@ -70,7 +71,7 @@ def fomc_termine() -> list[dict]:
 
 def release_termine(tage: int = 14) -> list[dict]:
     """Veröffentlichungstermine wichtiger US-Daten über FRED `releases/dates` – nur mit Gratis-Schlüssel FRED_API_KEY (sonst leer)."""
-    key = os.environ.get("FRED_API_KEY", "").strip()
+    key = schluessel("FRED_API_KEY")
     if not key:
         return []
     heute = datetime.now(timezone.utc).strftime("%Y-%m-%d")
