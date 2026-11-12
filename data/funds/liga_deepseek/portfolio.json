@@ -22,8 +22,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Ziel 375 (SMA20) in 2-4 Wochen; Stop 340; Teilverkauf bei 368.",
    "entscheidung_id": "defdc682d",
-   "kurs": 355.96,
-   "wert": 1437.22,
+   "kurs": 355.635,
+   "wert": 1435.9,
    "stop_loss": 340,
    "invalidierung": "Tagesschluss GLD unter 340,00 USD oder 10J-Rendite über 5,10%."
   },
@@ -45,8 +45,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "d8e5f296a",
-   "kurs": 71427.785,
-   "wert": 659.03
+   "kurs": 71326.095,
+   "wert": 658.1
   },
   {
    "id": "p9a8fa083",
@@ -66,8 +66,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "d8e5f296a",
-   "kurs": 757.47,
-   "wert": 2255.27
+   "kurs": 756.98,
+   "wert": 2253.81
   },
   {
    "id": "p565093a5",
@@ -87,8 +87,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Halten als Kern (Ziel 14 %); Exit nur über Rebalancing-Regel. Rückkauf TLT falls 10J unter 4,50 %.",
    "entscheidung_id": "df978a001",
-   "kurs": 95.27,
-   "wert": 1413.19,
+   "kurs": 95.255,
+   "wert": 1412.97,
    "invalidierung": "10J über 5,20 % oder Fed +50bp im Dezember und 2J über 4,90 %."
   },
   {
@@ -190,8 +190,8 @@
    "ausstiegsplan": "Halten bis 31.12.2026 (Abrechnung). Vorzeitiger Verkauf bei JA-Preis (Gegenposition) unter 0,12 (dann ist mein p zu pessimistisch und der Edge weg) oder bei JA über 0,50 ohne klare Nachricht (Markt weiß mehr → sofort raus).",
    "entscheidung_id": "dd655a214",
    "invalidierung": "US-Regierung (Trump, Außen- oder Verteidigungsministerium) kündigt öffentlich und förmlich die Aufhebung/Aussetzung der Seeblockade an ODER ein umfassender Iran-Deal wird mit Blockade-Aufhebung als Teil verkündet.",
-   "kurs": 0.724,
-   "wert": 216.9
+   "kurs": 0.721,
+   "wert": 215.7
   },
   {
    "id": "pbf54ccd6",
@@ -211,8 +211,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "d0f380f2d",
-   "kurs": 79.864,
-   "wert": 1006.06
+   "kurs": 79.815,
+   "wert": 1005.44
   }
  ],
  "realisiert": -1317.4517373000576,
@@ -220,7 +220,7 @@
  "funding": 0.0,
  "erstellt": 1793319819.7411644,
  "start_fx": 1.1184885798616961,
- "letzter_tick": 1794515198.0001009,
+ "letzter_tick": 1794516097.8710222,
  "rebalancing": {
   "ziele": {
    "stock:SPY": {
