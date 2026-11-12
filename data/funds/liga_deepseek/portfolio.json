@@ -64,8 +64,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "d8e5f296a",
-   "kurs": 74021.225,
-   "wert": 682.96
+   "kurs": 73889.025,
+   "wert": 681.74
   },
   {
    "id": "p9a8fa083",
@@ -140,8 +140,8 @@
    "ausstiegsplan": "Halten bis 31.12.2026 (Abrechnung) oder Verkauf, wenn NEIN-Preis >0,97 (Edge weg, Kapital wird gebraucht). Vorzeitiger Verkauf sonst unnötig, das Buch ist tief und die Gebühr je Kontrakt fix.",
    "entscheidung_id": "da7f7b17f",
    "invalidierung": "Nvidia, das Board oder Huang kündigen öffentlich und definitiv Rücktritt/Entlassung an (auch mit Wirkung in bis zu 18 Monaten), ODER JA-Preis steigt über 0,40 ohne für mich erkennbare Nachricht (dann hat der Markt Information, die ich nicht habe).",
-   "kurs": 0.095,
-   "wert": 36.81
+   "kurs": 0.10500000000000001,
+   "wert": 40.9
   },
   {
    "id": "p473fbd8a",
@@ -242,8 +242,8 @@
    "ausstiegsplan": "Halten bis 31.12.2026 (Abrechnung). Vorzeitiger Verkauf bei JA-Preis (Gegenposition) unter 0,12 (dann ist mein p zu pessimistisch und der Edge weg) oder bei JA über 0,50 ohne klare Nachricht (Markt weiß mehr → sofort raus).",
    "entscheidung_id": "dd655a214",
    "invalidierung": "US-Regierung (Trump, Außen- oder Verteidigungsministerium) kündigt öffentlich und förmlich die Aufhebung/Aussetzung der Seeblockade an ODER ein umfassender Iran-Deal wird mit Blockade-Aufhebung als Teil verkündet.",
-   "kurs": 0.665,
-   "wert": 199.2
+   "kurs": 0.6655,
+   "wert": 199.5
   },
   {
    "id": "peaad43aa",
@@ -275,7 +275,9 @@
    "funding": 0.0,
    "ausstiegsplan": "Bis Abrechnung halten (~5h); kein Vorverkauf.",
    "entscheidung_id": "d60cea0f5",
-   "invalidierung": "Öffentliche, definitive Ankündigung von Huangs Abgang als CEO vor 05:00 UTC am 12.11."
+   "invalidierung": "Öffentliche, definitive Ankündigung von Huangs Abgang als CEO vor 05:00 UTC am 12.11.",
+   "kurs": 0.635,
+   "wert": 441.0
   }
  ],
  "realisiert": -640.2500049173761,
@@ -283,7 +285,7 @@
  "funding": 0.0,
  "erstellt": 1793319819.7411644,
  "start_fx": 1.1184885798616961,
- "letzter_tick": 1794441791.5583432,
+ "letzter_tick": 1794442691.6282194,
  "rebalancing": {
   "ziele": {
    "stock:SPY": {
