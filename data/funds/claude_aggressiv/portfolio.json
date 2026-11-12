@@ -24,8 +24,8 @@
    "ausstiegsplan": "Stop 700; Review nach CPI 10.11.",
    "entscheidung_id": "d05f1cdc5",
    "invalidierung": "SPY schließt unter 700",
-   "kurs": 758.875,
-   "wert": 2737.39
+   "kurs": 757.68,
+   "wert": 2733.07
   },
   {
    "id": "pdc30d721",
@@ -58,8 +58,8 @@
    "ausstiegsplan": "Verkaufen bei Bid ≥0,80 oder BTC >86k Binance; sonst bis 31.12. halten.",
    "entscheidung_id": "d9dd07173",
    "invalidierung": "BTC steigt über 86.000 (Binance) mit sinkender DVOL <35 → Touch-Wahrscheinlichkeit <0,40, Position verkaufen.",
-   "kurs": 0.8200000000000001,
-   "wert": 568.62
+   "kurs": 0.825,
+   "wert": 575.64
   },
   {
    "id": "p53b6ec63",
@@ -81,8 +81,8 @@
    "ausstiegsplan": "Stop 69.500; Teilverkauf bei 86k; Dip-Wetten gleichen Abwärtsrisiko teilweise aus.",
    "entscheidung_id": "de5e47324",
    "invalidierung": "Tagesschluss unter 69.500 oder Fed-Hike-Odds >90 %",
-   "kurs": 71495.935,
-   "wert": 1123.37
+   "kurs": 71418.88500000001,
+   "wert": 1122.15
   },
   {
    "id": "pe9dce5d9",
@@ -104,7 +104,7 @@
    "ausstiegsplan": "Stop 93; sonst als defensiver Kern halten, Review nach CPI 10.11. und FOMC 9.12.",
    "entscheidung_id": "dd7ab6d3d",
    "invalidierung": "AGG unter 93",
-   "kurs": 95.295,
+   "kurs": 95.294,
    "wert": 790.37
   },
   {
@@ -125,8 +125,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "db90ee1de",
-   "kurs": 688.97,
-   "wert": 825.08
+   "kurs": 687.401,
+   "wert": 823.2
   },
   {
    "id": "p42b8ecdf",
@@ -146,8 +146,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "d174edec4",
-   "kurs": 100.525,
-   "wert": 2052.78
+   "kurs": 100.53,
+   "wert": 2052.88
   },
   {
    "id": "pb8af7395",
@@ -167,8 +167,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "d23f83a34",
-   "kurs": 355.4141,
-   "wert": 1546.72
+   "kurs": 355.66,
+   "wert": 1547.79
   }
  ],
  "realisiert": -932.5730476566596,
@@ -176,7 +176,7 @@
  "funding": -0.6133053169464532,
  "erstellt": 1793319819.7411644,
  "start_fx": 1.1184885798616961,
- "letzter_tick": 1794511597.8799622,
+ "letzter_tick": 1794512498.0714679,
  "auftraege": [],
  "rebalancing": {
   "ziele": {
