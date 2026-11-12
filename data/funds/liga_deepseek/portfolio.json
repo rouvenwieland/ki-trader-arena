@@ -64,8 +64,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "d8e5f296a",
-   "kurs": 73532.985,
-   "wert": 678.46
+   "kurs": 73576.555,
+   "wert": 678.86
   },
   {
    "id": "p9a8fa083",
@@ -243,7 +243,7 @@
    "entscheidung_id": "da137f22c",
    "invalidierung": "Öffentliche, definitive Ankündigung von Huangs Rücktritt/Entlassung vor 13.11. 04:59 UTC.",
    "kurs": 0.405,
-   "wert": 280.0
+   "wert": 680.0
   }
  ],
  "realisiert": -704.3841049173761,
@@ -251,7 +251,7 @@
  "funding": 0.0,
  "erstellt": 1793319819.7411644,
  "start_fx": 1.1184885798616961,
- "letzter_tick": 1794469946.9066505,
+ "letzter_tick": 1794470847.1069813,
  "rebalancing": {
   "ziele": {
    "stock:SPY": {

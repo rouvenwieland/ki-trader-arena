@@ -2,7 +2,7 @@
  "fonds_id": "ko_nein",
  "waehrung": "USD",
  "start_kapital": 11157.431109273288,
- "cash": 1603.7715792732863,
+ "cash": 1436.4309792732863,
  "positionen": [
   {
    "id": "p9e535f2b",
@@ -97,7 +97,7 @@
    "gebuehren": 0.0,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.771,
+   "kurs": 0.7705,
    "wert": 214.06
   },
   {
@@ -257,8 +257,8 @@
    "gebuehren": 0.0,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.865,
-   "wert": 299.28
+   "kurs": 0.86,
+   "wert": 295.8
   },
   {
    "id": "p1f028824",
@@ -897,8 +897,8 @@
    "gebuehren": 4.05345,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.962,
-   "wert": 413.76
+   "kurs": 0.9635,
+   "wert": 415.05
   },
   {
    "id": "p0abe393e",
@@ -1025,8 +1025,8 @@
    "gebuehren": 2.0848,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.6515,
-   "wert": 156.89
+   "kurs": 0.6445000000000001,
+   "wert": 155.2
   },
   {
    "id": "pff668a53",
@@ -1217,8 +1217,8 @@
    "gebuehren": 6.06093,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.019,
-   "wert": 31.97
+   "kurs": 0.0195,
+   "wert": 34.63
   },
   {
    "id": "p858bb23c",
@@ -1249,7 +1249,7 @@
    "gebuehren": 1.35793,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.85,
+   "kurs": 0.845,
    "wert": 164.34
   },
   {
@@ -1281,8 +1281,8 @@
    "gebuehren": 6.25334,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.0155,
-   "wert": 81.57
+   "kurs": 0.0175,
+   "wert": 87.01
   },
   {
    "id": "p88372306",
@@ -1441,8 +1441,8 @@
    "gebuehren": 0.24913,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.9039999999999999,
-   "wert": 145.0
+   "kurs": 0.881,
+   "wert": 136.91
   },
   {
    "id": "p766850e1",
@@ -1507,13 +1507,45 @@
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
    "kurs": 0.9935,
    "wert": 166.82
+  },
+  {
+   "id": "pcc80c986",
+   "inst": {
+    "id": "pm:polymarket:6975353:NEIN",
+    "art": "pm",
+    "venue": "polymarket",
+    "ergebnis": "NEIN",
+    "frage": "Jensen Huang announced resignation or removal by November 13, 2026?",
+    "schliesst": 1794632340.0,
+    "ref": {
+     "id": "6975353",
+     "token_ja": "60524199552830937560823820614073807447576580099407491131126483622728255798404",
+     "token_nein": "114863226290452516493513161924305740744377478492714840278523851268166445389686",
+     "tick": 0.01,
+     "condition": "0x72d0d224c0e02942c86b32ac385f14ca419120abc485c2601991d85cceac8b8f",
+     "gebuehr_rate": 0.04,
+     "gebuehr_exp": 1.0
+    },
+    "url": "https://polymarket.com/event/jensen-huang-announced-resignation-or-removal-by-december-31"
+   },
+   "seite": "long",
+   "menge": 466.0,
+   "einstand": 0.35,
+   "hebel": 1.0,
+   "marge": 0.0,
+   "eroeffnet": 1794470847.1069813,
+   "gebuehren": 4.2406,
+   "funding": 0.0,
+   "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
+   "kurs": 0.345,
+   "wert": 158.44
   }
  ],
  "realisiert": -1479.7425300000004,
- "gebuehren": 292.3723499999999,
+ "gebuehren": 296.6129499999999,
  "funding": 0.0,
  "erstellt": 1793379225.5430336,
  "start_fx": 1.1157431109273288,
- "letzter_tick": 1794469946.9066505,
- "kontrolle_bis": 1794452831.9158795
+ "letzter_tick": 1794470847.1069813,
+ "kontrolle_bis": 1794470156.8751059
 }
