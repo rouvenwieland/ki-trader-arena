@@ -64,8 +64,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "d8e5f296a",
-   "kurs": 73820.35500000001,
-   "wert": 681.11
+   "kurs": 73715.875,
+   "wert": 680.14
   },
   {
    "id": "p9a8fa083",
@@ -208,8 +208,8 @@
    "ausstiegsplan": "Halten bis 31.12.2026 (Abrechnung). Vorzeitiger Verkauf bei JA-Preis (Gegenposition) unter 0,12 (dann ist mein p zu pessimistisch und der Edge weg) oder bei JA über 0,50 ohne klare Nachricht (Markt weiß mehr → sofort raus).",
    "entscheidung_id": "dd655a214",
    "invalidierung": "US-Regierung (Trump, Außen- oder Verteidigungsministerium) kündigt öffentlich und förmlich die Aufhebung/Aussetzung der Seeblockade an ODER ein umfassender Iran-Deal wird mit Blockade-Aufhebung als Teil verkündet.",
-   "kurs": 0.6665000000000001,
-   "wert": 199.8
+   "kurs": 0.6695,
+   "wert": 200.7
   },
   {
    "id": "peaad43aa",
@@ -242,8 +242,8 @@
    "ausstiegsplan": "Bis Abrechnung halten (~5h); kein Vorverkauf.",
    "entscheidung_id": "d60cea0f5",
    "invalidierung": "Öffentliche, definitive Ankündigung von Huangs Abgang als CEO vor 05:00 UTC am 12.11.",
-   "kurs": 0.6,
-   "wert": 413.0
+   "kurs": 0.685,
+   "wert": 476.0
   },
   {
    "id": "p951ffba5",
@@ -276,8 +276,8 @@
    "ausstiegsplan": "Halten bis Abrechnung 13.11. 05:00 UTC. Kein Vorverkauf (Spread + fixe Gebühr).",
    "entscheidung_id": "d1a6d9043",
    "invalidierung": "Reputierliche Quelle meldet definitive Ankündigung von Huangs Rücktritt/Entlassung (nicht 'erwägt'/'bereitet vor').",
-   "kurs": 0.26,
-   "wert": 175.0
+   "kurs": 0.315,
+   "wert": 217.0
   }
  ],
  "realisiert": -956.3841049173761,
@@ -285,7 +285,7 @@
  "funding": 0.0,
  "erstellt": 1793319819.7411644,
  "start_fx": 1.1184885798616961,
- "letzter_tick": 1794451821.3198671,
+ "letzter_tick": 1794452720.4270256,
  "rebalancing": {
   "ziele": {
    "stock:SPY": {
