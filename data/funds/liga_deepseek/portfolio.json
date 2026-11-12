@@ -2,7 +2,7 @@
  "fonds_id": "liga_deepseek",
  "waehrung": "USD",
  "start_kapital": 11184.88579861696,
- "cash": 2092.8006300465236,
+ "cash": 1673.1246300465236,
  "positionen": [
   {
    "id": "p00666bfa",
@@ -232,22 +232,22 @@
     "url": "https://polymarket.com/event/jensen-huang-announced-resignation-or-removal-by-december-31"
    },
    "seite": "long",
-   "menge": 700.0,
-   "einstand": 0.23,
+   "menge": 1700.0,
+   "einstand": 0.33588235294117647,
    "hebel": 1.0,
    "marge": 0.0,
    "eroeffnet": 1794451237.426322,
-   "gebuehren": 4.9588,
+   "gebuehren": 14.6348,
    "funding": 0.0,
-   "ausstiegsplan": "Halten bis Abrechnung 13.11. 05:00 UTC. Kein Vorverkauf (Spread + fixe Gebühr).",
-   "entscheidung_id": "d1a6d9043",
-   "invalidierung": "Reputierliche Quelle meldet definitive Ankündigung von Huangs Rücktritt/Entlassung (nicht 'erwägt'/'bereitet vor').",
+   "ausstiegsplan": "Halten bis Abrechnung (~21h). Bei Auflösung 1,00 Auszahlung; kein Vorverkauf, weil Spread 2c und Restzeit kurz.",
+   "entscheidung_id": "da137f22c",
+   "invalidierung": "Öffentliche, definitive Ankündigung von Huangs Rücktritt/Entlassung vor 13.11. 04:59 UTC.",
    "kurs": 0.405,
    "wert": 280.0
   }
  ],
  "realisiert": -704.3841049173761,
- "gebuehren": 120.00278925396546,
+ "gebuehren": 129.67878925396545,
  "funding": 0.0,
  "erstellt": 1793319819.7411644,
  "start_fx": 1.1184885798616961,
@@ -261,16 +261,7 @@
      "venue": "yahoo",
      "symbol": "SPY"
     },
-    "anteil": 0.24
-   },
-   "stock:AGG": {
-    "inst": {
-     "id": "stock:AGG",
-     "art": "stock",
-     "venue": "yahoo",
-     "symbol": "AGG"
-    },
-    "anteil": 0.17
+    "anteil": 0.25
    },
    "stock:TLT": {
     "inst": {
@@ -278,6 +269,15 @@
      "art": "stock",
      "venue": "yahoo",
      "symbol": "TLT"
+    },
+    "anteil": 0.15
+   },
+   "stock:AGG": {
+    "inst": {
+     "id": "stock:AGG",
+     "art": "stock",
+     "venue": "yahoo",
+     "symbol": "AGG"
     },
     "anteil": 0.13
    },
@@ -288,7 +288,7 @@
      "venue": "yahoo",
      "symbol": "GLD"
     },
-    "anteil": 0.13
+    "anteil": 0.11
    },
    "spot:BTC-USD": {
     "inst": {
@@ -297,12 +297,12 @@
      "venue": "coinbase",
      "symbol": "BTC-USD"
     },
-    "anteil": 0.07
+    "anteil": 0.06
    }
   },
-  "schwelle_pp": 3.0,
-  "seit": 1794451029.1808817,
-  "entscheidung_id": "d5e686cf9"
+  "schwelle_pp": 8.0,
+  "seit": 1794470156.8751059,
+  "entscheidung_id": "dd072cb2f"
  },
  "auftraege": []
 }
