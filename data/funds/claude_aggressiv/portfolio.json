@@ -24,8 +24,8 @@
    "ausstiegsplan": "Stop 700; Review nach CPI 10.11.",
    "entscheidung_id": "d05f1cdc5",
    "invalidierung": "SPY schließt unter 700",
-   "kurs": 760.956,
-   "wert": 2744.89
+   "kurs": 760.933,
+   "wert": 2744.81
   },
   {
    "id": "pdc30d721",
@@ -58,8 +58,8 @@
    "ausstiegsplan": "Verkaufen bei Bid ≥0,80 oder BTC >86k Binance; sonst bis 31.12. halten.",
    "entscheidung_id": "d9dd07173",
    "invalidierung": "BTC steigt über 86.000 (Binance) mit sinkender DVOL <35 → Touch-Wahrscheinlichkeit <0,40, Position verkaufen.",
-   "kurs": 0.81,
-   "wert": 561.6
+   "kurs": 0.795,
+   "wert": 554.58
   },
   {
    "id": "p53b6ec63",
@@ -81,8 +81,8 @@
    "ausstiegsplan": "Stop 69.500; Teilverkauf bei 86k; Dip-Wetten gleichen Abwärtsrisiko teilweise aus.",
    "entscheidung_id": "de5e47324",
    "invalidierung": "Tagesschluss unter 69.500 oder Fed-Hike-Odds >90 %",
-   "kurs": 71628.245,
-   "wert": 1125.44
+   "kurs": 71928.265,
+   "wert": 1130.16
   },
   {
    "id": "pe9dce5d9",
@@ -104,8 +104,8 @@
    "ausstiegsplan": "Stop 93; sonst als defensiver Kern halten, Review nach CPI 10.11. und FOMC 9.12.",
    "entscheidung_id": "dd7ab6d3d",
    "invalidierung": "AGG unter 93",
-   "kurs": 95.335,
-   "wert": 790.7
+   "kurs": 95.285,
+   "wert": 790.29
   },
   {
    "id": "p02eb0d85",
@@ -125,8 +125,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "db90ee1de",
-   "kurs": 690.511,
-   "wert": 826.92
+   "kurs": 690.465,
+   "wert": 826.87
   },
   {
    "id": "p42b8ecdf",
@@ -146,8 +146,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "d174edec4",
-   "kurs": 100.5288,
-   "wert": 2052.86
+   "kurs": 100.525,
+   "wert": 2052.78
   },
   {
    "id": "pb8af7395",
@@ -167,8 +167,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "d23f83a34",
-   "kurs": 354.85,
-   "wert": 1544.26
+   "kurs": 354.82,
+   "wert": 1544.13
   }
  ],
  "realisiert": -932.5730476566596,
@@ -176,7 +176,7 @@
  "funding": -0.6133053169464532,
  "erstellt": 1793319819.7411644,
  "start_fx": 1.1184885798616961,
- "letzter_tick": 1794503497.8059974,
+ "letzter_tick": 1794504397.7528894,
  "auftraege": [],
  "rebalancing": {
   "ziele": {

@@ -22,8 +22,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Ziel 375 (SMA20) in 2-4 Wochen; Teilverkauf bei 368. Stop 340. Positionsgröße klein halten (max 2 Tranchen à 240 USD), da Trend abwärts.",
    "entscheidung_id": "da94f0d01",
-   "kurs": 354.85,
-   "wert": 1525.46,
+   "kurs": 354.82,
+   "wert": 1525.33,
    "stop_loss": 340,
    "invalidierung": "Tagesschluss GLD unter 340,00 USD (Bruch des 1-Jahres-Tiefs ohne Rebound) oder Anstieg der 10J-Rendite über 5,10 % (dann ist der Realzins-Druck strukturell)."
   },
@@ -45,8 +45,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "d8e5f296a",
-   "kurs": 71628.245,
-   "wert": 660.88
+   "kurs": 71928.265,
+   "wert": 663.65
   },
   {
    "id": "p9a8fa083",
@@ -66,8 +66,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "d8e5f296a",
-   "kurs": 760.956,
-   "wert": 2265.65
+   "kurs": 760.933,
+   "wert": 2265.58
   },
   {
    "id": "p565093a5",
@@ -87,8 +87,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Halten als Kern (Ziel 14 %); Exit nur über Rebalancing-Regel. Rückkauf TLT falls 10J unter 4,50 %.",
    "entscheidung_id": "df978a001",
-   "kurs": 95.335,
-   "wert": 1414.16,
+   "kurs": 95.285,
+   "wert": 1413.41,
    "invalidierung": "10J über 5,20 % oder Fed +50bp im Dezember und 2J über 4,90 %."
   },
   {
@@ -211,8 +211,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "d0f380f2d",
-   "kurs": 79.965,
-   "wert": 1007.33
+   "kurs": 79.885,
+   "wert": 1006.32
   }
  ],
  "realisiert": -1302.3985764993054,
@@ -220,7 +220,7 @@
  "funding": 0.0,
  "erstellt": 1793319819.7411644,
  "start_fx": 1.1184885798616961,
- "letzter_tick": 1794503497.8059974,
+ "letzter_tick": 1794504397.7528894,
  "rebalancing": {
   "ziele": {
    "stock:SPY": {
