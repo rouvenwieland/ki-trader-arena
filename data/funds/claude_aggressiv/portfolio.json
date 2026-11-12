@@ -2,7 +2,7 @@
  "fonds_id": "claude_aggressiv",
  "waehrung": "USD",
  "start_kapital": 11184.88579861696,
- "cash": 1869.4421739841634,
+ "cash": 631.0897610508111,
  "positionen": [
   {
    "id": "pd2738082",
@@ -24,8 +24,8 @@
    "ausstiegsplan": "Stop 700; Review nach CPI 10.11.",
    "entscheidung_id": "d05f1cdc5",
    "invalidierung": "SPY schließt unter 700",
-   "kurs": 756.18,
-   "wert": 2727.66
+   "kurs": 756.65,
+   "wert": 2729.36
   },
   {
    "id": "pdc30d721",
@@ -81,8 +81,8 @@
    "ausstiegsplan": "Stop 69.500; Teilverkauf bei 86k; Dip-Wetten gleichen Abwärtsrisiko teilweise aus.",
    "entscheidung_id": "de5e47324",
    "invalidierung": "Tagesschluss unter 69.500 oder Fed-Hike-Odds >90 %",
-   "kurs": 71287.63500000001,
-   "wert": 1120.09
+   "kurs": 71300.89499999999,
+   "wert": 1120.3
   },
   {
    "id": "pe9dce5d9",
@@ -104,8 +104,8 @@
    "ausstiegsplan": "Stop 93; sonst als defensiver Kern halten, Review nach CPI 10.11. und FOMC 9.12.",
    "entscheidung_id": "dd7ab6d3d",
    "invalidierung": "AGG unter 93",
-   "kurs": 95.45,
-   "wert": 791.66
+   "kurs": 95.44,
+   "wert": 791.58
   },
   {
    "id": "p02eb0d85",
@@ -125,8 +125,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "db90ee1de",
-   "kurs": 684.385,
-   "wert": 819.59
+   "kurs": 685.885,
+   "wert": 821.38
   },
   {
    "id": "p42b8ecdf",
@@ -137,17 +137,17 @@
     "symbol": "SGOV"
    },
    "seite": "long",
-   "menge": 8.106301432930294,
-   "einstand": 100.54665402179631,
+   "menge": 20.42274485789252,
+   "einstand": 100.54544150626401,
    "hebel": 1.0,
    "marge": 0.0,
    "eroeffnet": 1794410005.5417643,
    "gebuehren": 0.0,
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
-   "entscheidung_id": "d23f83a34",
-   "kurs": 100.5297,
-   "wert": 814.84
+   "entscheidung_id": "d174edec4",
+   "kurs": 100.524,
+   "wert": 2052.76
   },
   {
    "id": "pb8af7395",
@@ -167,8 +167,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "d23f83a34",
-   "kurs": 353.711,
-   "wert": 1539.3
+   "kurs": 352.9996,
+   "wert": 1536.21
   }
  ],
  "realisiert": -932.5730476566596,
@@ -176,7 +176,7 @@
  "funding": -0.6133053169464532,
  "erstellt": 1793319819.7411644,
  "start_fx": 1.1184885798616961,
- "letzter_tick": 1794496166.7573981,
+ "letzter_tick": 1794497067.2939417,
  "auftraege": [],
  "rebalancing": {
   "ziele": {
