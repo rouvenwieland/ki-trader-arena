@@ -298,6 +298,31 @@
    "erstellt": 1794529248.4473577,
    "geprueft_bis": 1794529248.4473577,
    "gueltig_bis": 1794603600.0
+  },
+  {
+   "id": "a08c848",
+   "entscheidung_id": "d46076e63",
+   "inst": {
+    "id": "stock:GLD",
+    "art": "stock",
+    "venue": "yahoo",
+    "symbol": "GLD"
+   },
+   "aktion": "verkaufen",
+   "typ": "limit",
+   "seite": "long",
+   "betrag_usd": null,
+   "menge": 1.2,
+   "hebel": 1.0,
+   "limit_preis": 353.5,
+   "stop_preis": null,
+   "stop_loss": null,
+   "take_profit": null,
+   "ausstiegsplan": "Trim-Order bis Ausführung; Rest-Position mit Stop 340 und Ziel 368-375 (SMA20).",
+   "invalidierung": "Tagesschluss GLD über 370 (SMA20) → Trim-These hinfällig, Position unverändert halten.",
+   "erstellt": 1794549154.003298,
+   "geprueft_bis": 1794549154.003298,
+   "gueltig_bis": 1797141154.003298
   }
  ]
 }
