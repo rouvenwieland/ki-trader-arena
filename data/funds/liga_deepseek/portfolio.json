@@ -2,7 +2,7 @@
  "fonds_id": "liga_deepseek",
  "waehrung": "USD",
  "start_kapital": 11184.88579861696,
- "cash": 1975.0838331190112,
+ "cash": 1746.0364546624019,
  "positionen": [
   {
    "id": "p78a3c466",
@@ -13,17 +13,17 @@
     "symbol": "GLD"
    },
    "seite": "long",
-   "menge": 4.038115935257553,
-   "einstand": 366.19025000797444,
+   "menge": 4.006990567137018,
+   "einstand": 363.49286716139005,
    "hebel": 1.0,
    "marge": 0.0,
    "eroeffnet": 1793819896.6280587,
    "gebuehren": 0.0,
    "funding": 0.0,
-   "ausstiegsplan": "Ziel 375 (SMA20) in 2-4 Wochen; Stop 340; Teilverkauf bei 368.",
-   "entscheidung_id": "defdc682d",
-   "kurs": 354.89,
-   "wert": 1433.09,
+   "ausstiegsplan": "Rebalancing-Regel",
+   "entscheidung_id": "d0f380f2d",
+   "kurs": 356.86,
+   "wert": 1429.74,
    "stop_loss": 340,
    "invalidierung": "Tagesschluss GLD unter 340,00 USD oder 10J-Rendite über 5,10%."
   },
@@ -45,8 +45,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "d8e5f296a",
-   "kurs": 69162.125,
-   "wert": 638.13
+   "kurs": 68913.845,
+   "wert": 635.84
   },
   {
    "id": "p9a8fa083",
@@ -57,17 +57,18 @@
     "symbol": "SPY"
    },
    "seite": "long",
-   "menge": 2.977692538177299,
-   "einstand": 767.6473705912607,
+   "menge": 3.294696870222079,
+   "einstand": 766.6313311521023,
    "hebel": 1.0,
    "marge": 0.0,
    "eroeffnet": 1793820796.9785986,
    "gebuehren": 0.0,
    "funding": 0.0,
-   "ausstiegsplan": "Rebalancing-Regel",
-   "entscheidung_id": "d8e5f296a",
-   "kurs": 757.12,
-   "wert": 2254.47
+   "ausstiegsplan": "Halten als Kern; Exit über Rebalancing-Regel bzw. SMA200-Bruch.",
+   "entscheidung_id": "d0eee1434",
+   "kurs": 756.93,
+   "wert": 2493.59,
+   "invalidierung": "SPY-Tagesschluss unter SMA200 (731,6) → Kern auf 20% zurücknehmen."
   },
   {
    "id": "p565093a5",
@@ -87,8 +88,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Halten als Kern (Ziel 14 %); Exit nur über Rebalancing-Regel. Rückkauf TLT falls 10J unter 4,50 %.",
    "entscheidung_id": "df978a001",
-   "kurs": 95.22,
-   "wert": 1412.68,
+   "kurs": 95.07,
+   "wert": 1410.22,
    "invalidierung": "10J über 5,20 % oder Fed +50bp im Dezember und 2J über 4,90 %."
   },
   {
@@ -190,8 +191,8 @@
    "ausstiegsplan": "Halten bis 31.12.2026 (Abrechnung). Vorzeitiger Verkauf bei JA-Preis (Gegenposition) unter 0,12 (dann ist mein p zu pessimistisch und der Edge weg) oder bei JA über 0,50 ohne klare Nachricht (Markt weiß mehr → sofort raus).",
    "entscheidung_id": "dd655a214",
    "invalidierung": "US-Regierung (Trump, Außen- oder Verteidigungsministerium) kündigt öffentlich und förmlich die Aufhebung/Aussetzung der Seeblockade an ODER ein umfassender Iran-Deal wird mit Blockade-Aufhebung als Teil verkündet.",
-   "kurs": 0.749,
-   "wert": 224.4
+   "kurs": 0.751,
+   "wert": 224.7
   },
   {
    "id": "pbf54ccd6",
@@ -211,16 +212,16 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "d0f380f2d",
-   "kurs": 79.72,
-   "wert": 1004.36
+   "kurs": 79.2,
+   "wert": 997.69
   }
  ],
- "realisiert": -1317.4517373000576,
+ "realisiert": -1328.705309712539,
  "gebuehren": 129.67878925396545,
  "funding": 0.0,
  "erstellt": 1793319819.7411644,
  "start_fx": 1.1184885798616961,
- "letzter_tick": 1794579730.4051247,
+ "letzter_tick": 1794580629.7040098,
  "rebalancing": {
   "ziele": {
    "stock:SPY": {
@@ -273,56 +274,5 @@
   "seit": 1794496301.0497553,
   "entscheidung_id": "d0f380f2d"
  },
- "auftraege": [
-  {
-   "id": "a58f9ea",
-   "entscheidung_id": "d0eee1434",
-   "inst": {
-    "id": "stock:SPY",
-    "art": "stock",
-    "venue": "yahoo",
-    "symbol": "SPY"
-   },
-   "aktion": "kaufen",
-   "typ": "eroeffnung",
-   "seite": "long",
-   "betrag_usd": 240,
-   "menge": null,
-   "hebel": 1.0,
-   "limit_preis": null,
-   "stop_preis": null,
-   "stop_loss": null,
-   "take_profit": null,
-   "ausstiegsplan": "Halten als Kern; Exit über Rebalancing-Regel bzw. SMA200-Bruch.",
-   "invalidierung": "SPY-Tagesschluss unter SMA200 (731,6) → Kern auf 20% zurücknehmen.",
-   "erstellt": 1794529248.4473577,
-   "geprueft_bis": 1794529248.4473577,
-   "gueltig_bis": 1794603600.0
-  },
-  {
-   "id": "a08c848",
-   "entscheidung_id": "d46076e63",
-   "inst": {
-    "id": "stock:GLD",
-    "art": "stock",
-    "venue": "yahoo",
-    "symbol": "GLD"
-   },
-   "aktion": "verkaufen",
-   "typ": "limit",
-   "seite": "long",
-   "betrag_usd": null,
-   "menge": 1.2,
-   "hebel": 1.0,
-   "limit_preis": 353.5,
-   "stop_preis": null,
-   "stop_loss": null,
-   "take_profit": null,
-   "ausstiegsplan": "Trim-Order bis Ausführung; Rest-Position mit Stop 340 und Ziel 368-375 (SMA20).",
-   "invalidierung": "Tagesschluss GLD über 370 (SMA20) → Trim-These hinfällig, Position unverändert halten.",
-   "erstellt": 1794549154.003298,
-   "geprueft_bis": 1794549154.003298,
-   "gueltig_bis": 1797141154.003298
-  }
- ]
+ "auftraege": []
 }
