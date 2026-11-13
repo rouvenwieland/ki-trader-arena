@@ -159,7 +159,7 @@
    "ausstiegsplan": "Bid ≥0,70 verkaufen (P erreicht); Neubewertung nach NVDA-Zahlen 19.11.; schließen, wenn Apple-Vorsprung <3 %.",
    "entscheidung_id": "d7e53ef04",
    "invalidierung": "NVDA-Marktkap. kommt auf <3 % Abstand zu Apple, oder Apple fällt >8 % relativ.",
-   "kurs": 0.8525,
+   "kurs": 0.853,
    "wert": 259.72
   },
   {
@@ -264,8 +264,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "d6e1a7002",
-   "kurs": 68990.795,
-   "wert": 1135.37
+   "kurs": 69160.10500000001,
+   "wert": 1138.16
   },
   {
    "id": "pe3015b77",
@@ -285,8 +285,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "d6e1a7002",
-   "kurs": 1937.12,
-   "wert": 439.63
+   "kurs": 1944.745,
+   "wert": 441.37
   },
   {
    "id": "p1ad6082a",
@@ -470,8 +470,8 @@
    "ausstiegsplan": "Halten bis zur Abrechnung am 31.12. Gewinn mitnehmen, wenn der NEIN-Bid ≥0,80 ist. Bei der Invalidierungsmeldung sofort schließen.",
    "entscheidung_id": "d4c6b2267",
    "invalidierung": "Glaubwürdige Berichte (WSJ/Bloomberg), dass das Board kurz vor der Ernennung eines permanenten CEO steht oder Kress dauerhaft macht. Ebenso eine Aussage im Call vom 17.11., die Suche solle 'within weeks' abgeschlossen sein.",
-   "kurs": 0.815,
-   "wert": 38.88
+   "kurs": 0.81,
+   "wert": 38.4
   }
  ],
  "realisiert": -209.64572814076882,
@@ -479,7 +479,7 @@
  "funding": 0.0,
  "erstellt": 1793319819.7411644,
  "start_fx": 1.1184885798616961,
- "letzter_tick": 1794563310.1760197,
+ "letzter_tick": 1794564209.5050535,
  "auftraege": [
   {
    "id": "a4e7a61",
@@ -514,7 +514,7 @@
    "ausstiegsplan": "",
    "invalidierung": "",
    "erstellt": 1794409480.899957,
-   "geprueft_bis": 1794563310.1760197,
+   "geprueft_bis": 1794564209.5050535,
    "gueltig_bis": 1797001480.899957
   },
   {
@@ -551,7 +551,7 @@
    "ausstiegsplan": "",
    "invalidierung": "",
    "erstellt": 1794452946.4758763,
-   "geprueft_bis": 1794563310.1760197,
+   "geprueft_bis": 1794564209.5050535,
    "gueltig_bis": 1797044946.4758763
   }
  ],
