@@ -2,52 +2,33 @@
  "fonds_id": "bm_affe",
  "waehrung": "USD",
  "start_kapital": 11184.88579861696,
- "cash": 6616.175351815214,
+ "cash": 8103.065975025878,
  "positionen": [
   {
-   "id": "p0cbb2c30",
+   "id": "pb171f427",
    "inst": {
-    "id": "spot:ETH-USD",
+    "id": "spot:LINK-USD",
     "art": "spot",
     "venue": "coinbase",
-    "symbol": "ETH-USD"
+    "symbol": "LINK-USD"
    },
    "seite": "long",
-   "menge": 1.0280871233676945,
-   "einstand": 2057.3813939999995,
+   "menge": 240.28970531410295,
+   "einstand": 10.134963160194227,
    "hebel": 1.0,
    "marge": 0.0,
-   "eroeffnet": 1794441791.5583432,
-   "gebuehren": 12.691003914166062,
+   "eroeffnet": 1794528841.3410358,
+   "gebuehren": 14.611963866794161,
    "funding": 0.0,
-   "kurs": 2016.975,
-   "wert": 2073.6
-  },
-  {
-   "id": "pb7e83c2a",
-   "inst": {
-    "id": "spot:XRP-USD",
-    "art": "spot",
-    "venue": "coinbase",
-    "symbol": "XRP-USD"
-   },
-   "seite": "long",
-   "menge": 1818.3842617020189,
-   "einstand": 1.05211038,
-   "hebel": 1.0,
-   "marge": 0.0,
-   "eroeffnet": 1794441791.5583432,
-   "gebuehren": 11.478845739391984,
-   "funding": 0.0,
-   "kurs": 1.04005,
-   "wert": 1891.12
+   "kurs": 10.133,
+   "wert": 2434.13
   }
  ],
- "realisiert": -227.388523972542,
- "gebuehren": 602.228402204819,
+ "realisiert": -318.86690135572934,
+ "gebuehren": 640.6039268253948,
  "funding": 0.0,
  "erstellt": 1793319819.7411644,
  "start_fx": 1.1184885798616961,
- "letzter_tick": 1794527940.6850686,
- "letzter_tag": "2026-11-12"
+ "letzter_tick": 1794528841.3410358,
+ "letzter_tag": "2026-11-13"
 }
