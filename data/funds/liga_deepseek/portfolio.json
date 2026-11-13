@@ -2,7 +2,7 @@
  "fonds_id": "liga_deepseek",
  "waehrung": "USD",
  "start_kapital": 11184.88579861696,
- "cash": 1746.0364546624019,
+ "cash": 1419.574054662402,
  "positionen": [
   {
    "id": "p78a3c466",
@@ -214,10 +214,42 @@
    "entscheidung_id": "d0f380f2d",
    "kurs": 79.33,
    "wert": 999.33
+  },
+  {
+   "id": "pee1aa873",
+   "inst": {
+    "id": "pm:polymarket:6884119:NEIN",
+    "art": "pm",
+    "venue": "polymarket",
+    "ergebnis": "NEIN",
+    "frage": "Jensen Huang divorce by December 31, 2026?",
+    "schliesst": 1798779540.0,
+    "ref": {
+     "id": "6884119",
+     "token_ja": "112979941438829737800400495517316534522150056152145374913362684879882796860277",
+     "token_nein": "111879023992805727427888007395202674359981965399934800914169457259690591042100",
+     "tick": 0.01,
+     "condition": "0x9b786700f51dc9540f016267a69245616f53e93563de3fc5a1ac3a16f66310c4",
+     "gebuehr_rate": 0.04,
+     "gebuehr_exp": 1.0
+    },
+    "url": "https://polymarket.com/event/jensen-huang-divorce-in-2026"
+   },
+   "seite": "long",
+   "menge": 400.0,
+   "einstand": 0.81,
+   "hebel": 1.0,
+   "marge": 0.0,
+   "eroeffnet": 1794582898.6449046,
+   "gebuehren": 2.4624,
+   "funding": 0.0,
+   "ausstiegsplan": "Halten bis Abrechnung 31.12.2026. Vorzeitiger Verkauf nur bei Invalidierung oder wenn NEIN-Ask über 0,90 (Restchance zu teuer).",
+   "entscheidung_id": "d2448f0fc",
+   "invalidierung": "Meldung über Scheidung/Einreichung/Trennungsabsicht der Huangs oder JA-Anstieg über 0,30 ohne für mich erkennbare Nachricht."
   }
  ],
  "realisiert": -1328.705309712539,
- "gebuehren": 129.67878925396545,
+ "gebuehren": 132.14118925396545,
  "funding": 0.0,
  "erstellt": 1793319819.7411644,
  "start_fx": 1.1184885798616961,
@@ -231,16 +263,7 @@
      "venue": "yahoo",
      "symbol": "SPY"
     },
-    "anteil": 0.25
-   },
-   "stock:TLT": {
-    "inst": {
-     "id": "stock:TLT",
-     "art": "stock",
-     "venue": "yahoo",
-     "symbol": "TLT"
-    },
-    "anteil": 0.1
+    "anteil": 0.27
    },
    "stock:AGG": {
     "inst": {
@@ -249,7 +272,7 @@
      "venue": "yahoo",
      "symbol": "AGG"
     },
-    "anteil": 0.14
+    "anteil": 0.16
    },
    "stock:GLD": {
     "inst": {
@@ -258,7 +281,7 @@
      "venue": "yahoo",
      "symbol": "GLD"
     },
-    "anteil": 0.15
+    "anteil": 0.11
    },
    "spot:BTC-USD": {
     "inst": {
@@ -267,12 +290,12 @@
      "venue": "coinbase",
      "symbol": "BTC-USD"
     },
-    "anteil": 0.07
+    "anteil": 0.06
    }
   },
-  "schwelle_pp": 4.0,
-  "seit": 1794496301.0497553,
-  "entscheidung_id": "d0f380f2d"
+  "schwelle_pp": 8.0,
+  "seit": 1794582731.1099565,
+  "entscheidung_id": "dc5d59185"
  },
  "auftraege": []
 }
