@@ -35,8 +35,8 @@
    "ausstiegsplan": "NEIN-Bid ≥0,93 oder P erreicht → verkaufen; sonst halten bis zur Wahl (April/Mai 2027).",
    "entscheidung_id": "d860a2331",
    "invalidierung": "Lisnard in mehreren Umfragen ≥12 % im 1. Wahlgang oder Rückzug von Philippe/Retailleau zu seinen Gunsten bzw. Sieg in einer Rechts-Primaire.",
-   "kurs": 0.8305,
-   "wert": 448.2
+   "kurs": 0.833,
+   "wert": 449.28
   },
   {
    "id": "p842aa632",
@@ -159,8 +159,8 @@
    "ausstiegsplan": "Bid ≥0,70 verkaufen (P erreicht); Neubewertung nach NVDA-Zahlen 19.11.; schließen, wenn Apple-Vorsprung <3 %.",
    "entscheidung_id": "d7e53ef04",
    "invalidierung": "NVDA-Marktkap. kommt auf <3 % Abstand zu Apple, oder Apple fällt >8 % relativ.",
-   "kurs": 0.8765000000000001,
-   "wert": 267.4
+   "kurs": 0.8755,
+   "wert": 266.78
   },
   {
    "id": "pb60e44cc",
@@ -264,8 +264,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "d6e1a7002",
-   "kurs": 68760.405,
-   "wert": 1131.58
+   "kurs": 68682.685,
+   "wert": 1130.3
   },
   {
    "id": "pe3015b77",
@@ -285,8 +285,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "d6e1a7002",
-   "kurs": 1937.025,
-   "wert": 439.6
+   "kurs": 1939.395,
+   "wert": 440.15
   },
   {
    "id": "p1ad6082a",
@@ -408,8 +408,8 @@
    "ausstiegsplan": "Halten bis Auflösung; Verkauf bei NEIN-Bid ≥0.93; neu bewerten bei IPO-Preis ≥$90 oder Spanne angehoben.",
    "entscheidung_id": "d9f975d34",
    "invalidierung": "IPO-Preisspanne auf ≥$95 angehoben oder Pricing >$90 am 18.11.",
-   "kurs": 0.9049669846578408,
-   "wert": 110.39
+   "kurs": 0.9100056343508951,
+   "wert": 111.01
   },
   {
    "id": "p16c2ebae",
@@ -470,8 +470,8 @@
    "ausstiegsplan": "Halten bis zur Abrechnung am 31.12. Gewinn mitnehmen, wenn der NEIN-Bid ≥0,80 ist. Bei der Invalidierungsmeldung sofort schließen.",
    "entscheidung_id": "d4c6b2267",
    "invalidierung": "Glaubwürdige Berichte (WSJ/Bloomberg), dass das Board kurz vor der Ernennung eines permanenten CEO steht oder Kress dauerhaft macht. Ebenso eine Aussage im Call vom 17.11., die Suche solle 'within weeks' abgeschlossen sein.",
-   "kurs": 0.8200000000000001,
-   "wert": 38.88
+   "kurs": 0.81,
+   "wert": 38.4
   }
  ],
  "realisiert": -209.64572814076882,
@@ -479,7 +479,7 @@
  "funding": 0.0,
  "erstellt": 1793319819.7411644,
  "start_fx": 1.1184885798616961,
- "letzter_tick": 1794555209.9988556,
+ "letzter_tick": 1794556109.462735,
  "auftraege": [
   {
    "id": "a4e7a61",
@@ -514,7 +514,7 @@
    "ausstiegsplan": "",
    "invalidierung": "",
    "erstellt": 1794409480.899957,
-   "geprueft_bis": 1794555209.9988556,
+   "geprueft_bis": 1794556109.462735,
    "gueltig_bis": 1797001480.899957
   },
   {
@@ -551,7 +551,7 @@
    "ausstiegsplan": "",
    "invalidierung": "",
    "erstellt": 1794452946.4758763,
-   "geprueft_bis": 1794555209.9988556,
+   "geprueft_bis": 1794556109.462735,
    "gueltig_bis": 1797044946.4758763
   }
  ],
