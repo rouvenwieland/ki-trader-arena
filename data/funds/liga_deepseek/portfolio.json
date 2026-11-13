@@ -45,8 +45,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "d8e5f296a",
-   "kurs": 68332.38500000001,
-   "wert": 630.47
+   "kurs": 68215.83499999999,
+   "wert": 629.4
   },
   {
    "id": "p9a8fa083",
@@ -66,8 +66,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Halten als Kern; Exit über Rebalancing-Regel bzw. SMA200-Bruch.",
    "entscheidung_id": "d0eee1434",
-   "kurs": 754.21,
-   "wert": 2484.89,
+   "kurs": 754.37,
+   "wert": 2485.42,
    "invalidierung": "SPY-Tagesschluss unter SMA200 (731,6) → Kern auf 20% zurücknehmen."
   },
   {
@@ -221,7 +221,7 @@
  "funding": 0.0,
  "erstellt": 1793319819.7411644,
  "start_fx": 1.1184885798616961,
- "letzter_tick": 1794605068.0633152,
+ "letzter_tick": 1794605967.819159,
  "rebalancing": {
   "ziele": {
    "stock:SPY": {

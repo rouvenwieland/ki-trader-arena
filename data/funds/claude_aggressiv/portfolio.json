@@ -24,8 +24,8 @@
    "ausstiegsplan": "Stop 700; Review nach CPI 10.11.",
    "entscheidung_id": "d05f1cdc5",
    "invalidierung": "SPY schließt unter 700",
-   "kurs": 754.21,
-   "wert": 2720.85
+   "kurs": 754.37,
+   "wert": 2721.43
   },
   {
    "id": "pe9dce5d9",
@@ -131,8 +131,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "d174edec4",
-   "kurs": 68332.38500000001,
-   "wert": 608.53
+   "kurs": 68215.83499999999,
+   "wert": 607.49
   }
  ],
  "realisiert": -728.487831921934,
@@ -140,7 +140,7 @@
  "funding": -0.6133053169464532,
  "erstellt": 1793319819.7411644,
  "start_fx": 1.1184885798616961,
- "letzter_tick": 1794605068.0633152,
+ "letzter_tick": 1794605967.819159,
  "auftraege": [],
  "rebalancing": {
   "ziele": {
