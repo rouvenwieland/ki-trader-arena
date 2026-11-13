@@ -27,8 +27,8 @@
    "gebuehren": 5.13,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Wetter-Regel)",
-   "kurs": 0.84,
-   "wert": 274.7
+   "kurs": 0.8200000000000001,
+   "wert": 271.35
   },
   {
    "id": "p886169c9",
@@ -53,8 +53,8 @@
    "gebuehren": 3.13,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Wetter-Regel)",
-   "kurs": 0.785,
-   "wert": 398.86
+   "kurs": 0.745,
+   "wert": 378.14
   },
   {
    "id": "p129dbb0b",
@@ -79,8 +79,8 @@
    "gebuehren": 4.24,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Wetter-Regel)",
-   "kurs": 0.03,
-   "wert": 7.4
+   "kurs": null,
+   "wert": 76.12
   },
   {
    "id": "p7770342d",
@@ -105,8 +105,8 @@
    "gebuehren": 3.7,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Wetter-Regel)",
-   "kurs": 0.29000000000000004,
-   "wert": 66.5
+   "kurs": 0.235,
+   "wert": 58.52
   },
   {
    "id": "pa844b7ec",
@@ -131,8 +131,8 @@
    "gebuehren": 5.13,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Wetter-Regel)",
-   "kurs": 0.39,
-   "wert": 138.7
+   "kurs": 0.20500000000000002,
+   "wert": 73.0
   },
   {
    "id": "p5b58d8f6",
@@ -157,8 +157,8 @@
    "gebuehren": 3.51,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Wetter-Regel)",
-   "kurs": 0.47,
-   "wert": 96.14
+   "kurs": 0.41000000000000003,
+   "wert": 83.6
   },
   {
    "id": "p1cf331eb",
@@ -209,8 +209,8 @@
    "gebuehren": 7.26,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Wetter-Regel)",
-   "kurs": 0.03,
-   "wert": 21.6
+   "kurs": null,
+   "wert": 116.04
   },
   {
    "id": "p9727b773",
@@ -236,7 +236,7 @@
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Wetter-Regel)",
    "kurs": 0.71,
-   "wert": 134.55
+   "wert": 130.65
   },
   {
    "id": "pc7ead4e3",
@@ -261,8 +261,8 @@
    "gebuehren": 7.35,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Wetter-Regel)",
-   "kurs": 0.065,
-   "wert": 67.74
+   "kurs": 0.095,
+   "wert": 101.61
   }
  ],
  "realisiert": -6596.438794013907,
@@ -270,6 +270,6 @@
  "funding": 0.0,
  "erstellt": 1793380123.8861866,
  "start_fx": 1.1156327353966788,
- "letzter_tick": 1794585129.4455812,
- "wetter_letzter": 1794582429.797202
+ "letzter_tick": 1794586030.010824,
+ "wetter_letzter": 1794586030.010824
 }
