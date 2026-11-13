@@ -1,11 +1,11 @@
 {
  "version": 1,
- "stand": 1794597092.9391875,
+ "stand": 1794597286.3049142,
  "hinweis": "Papierhandel-Simulation, keine Anlageberatung",
  "seite": "https://rouvenwieland.github.io/ki-trader-arena/",
  "budget": {
-  "heute_eur": 9.03,
-  "gesamt_eur": 148.81,
+  "heute_eur": 9.58,
+  "gesamt_eur": 149.36,
   "tagesdeckel_eur": 12.0,
   "gesamtdeckel_eur": 190.0,
   "claude_ende": "2026-11-14",
@@ -269,8 +269,8 @@
    "max_drawdown_pct": -6.31,
    "status": "aktiv",
    "modell": "claude-sonnet-5-5",
-   "kosten_heute_eur": 1.849,
-   "kosten_gesamt_eur": 35.321,
+   "kosten_heute_eur": 2.144,
+   "kosten_gesamt_eur": 35.616,
    "rendite_ki_pct": [
     -9.69,
     8.72
@@ -621,7 +621,7 @@
    "rendite_pct": -3.2,
    "equity_eur": 9819.0,
    "max_drawdown_pct": -6.34,
-   "status": "aktiv",
+   "status": "Tagesanteil aufgebraucht – nächste Runde morgen",
    "modell": "claude-sonnet-5-5",
    "kosten_heute_eur": 2.49,
    "kosten_gesamt_eur": 37.82,
@@ -680,7 +680,7 @@
    "rendite_pct": -4.3,
    "equity_eur": 9707.42,
    "max_drawdown_pct": -7.0,
-   "status": "aktiv",
+   "status": "Tagesanteil aufgebraucht – nächste Runde morgen",
    "modell": "claude-sonnet-5-5",
    "kosten_heute_eur": 2.415,
    "kosten_gesamt_eur": 37.742,
@@ -918,8 +918,8 @@
    "max_drawdown_pct": -24.83,
    "status": "aktiv",
    "modell": "claude-sonnet-5-5",
-   "kosten_heute_eur": 2.273,
-   "kosten_gesamt_eur": 36.607,
+   "kosten_heute_eur": 2.532,
+   "kosten_gesamt_eur": 36.866,
    "rendite_ki_pct": [
     -34.67,
     16.67
@@ -1218,6 +1218,20 @@
  ],
  "letzte_entscheidungen": [
   {
+   "ts": 1794597247.6567297,
+   "fonds": "DeepSeek",
+   "instrument": "stock:AGG",
+   "aktion": "kaufen",
+   "zuversicht": 0.62
+  },
+  {
+   "ts": 1794597243.4825265,
+   "fonds": "DeepSeek",
+   "instrument": "pm:polymarket:701501:NEIN",
+   "aktion": "verkaufen",
+   "zuversicht": 0.6
+  },
+  {
    "ts": 1794582898.6443708,
    "fonds": "DeepSeek",
    "instrument": "pm:polymarket:6884119:NEIN",
@@ -1258,20 +1272,6 @@
    "instrument": "stock:SPY",
    "aktion": "kaufen",
    "zuversicht": 0.6
-  },
-  {
-   "ts": 1794510983.9460392,
-   "fonds": "DeepSeek",
-   "instrument": "stock:GLD",
-   "aktion": "kaufen",
-   "zuversicht": 0.6
-  },
-  {
-   "ts": 1794510965.3540661,
-   "fonds": "DeepSeek",
-   "instrument": "pm:polymarket:3215008:NEIN",
-   "aktion": "verkaufen",
-   "zuversicht": 0.85
   }
  ],
  "ereignisse": [

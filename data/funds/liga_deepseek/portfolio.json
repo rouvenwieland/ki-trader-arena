@@ -2,7 +2,7 @@
  "fonds_id": "liga_deepseek",
  "waehrung": "USD",
  "start_kapital": 11184.88579861696,
- "cash": 1419.574054662402,
+ "cash": 1541.3632411637907,
  "positionen": [
   {
    "id": "p78a3c466",
@@ -79,52 +79,18 @@
     "symbol": "AGG"
    },
    "seite": "long",
-   "menge": 14.835962314192034,
-   "einstand": 96.3038850229609,
+   "menge": 16.335962314192034,
+   "einstand": 96.19976663659853,
    "hebel": 1.0,
    "marge": 0.0,
    "eroeffnet": 1794234816.51331,
    "gebuehren": 0.0,
    "funding": 0.0,
-   "ausstiegsplan": "Halten als Kern (Ziel 14 %); Exit nur über Rebalancing-Regel. Rückkauf TLT falls 10J unter 4,50 %.",
-   "entscheidung_id": "df978a001",
+   "ausstiegsplan": "Halten als Kern; Exit nur über Rebalancing-Regel. Rückkauf TLT erst bei 10J < 4,50%.",
+   "entscheidung_id": "d7658fcde",
    "kurs": 95.145,
    "wert": 1411.34,
-   "invalidierung": "10J über 5,20 % oder Fed +50bp im Dezember und 2J über 4,90 %."
-  },
-  {
-   "id": "p473fbd8a",
-   "inst": {
-    "id": "pm:polymarket:701501:NEIN",
-    "art": "pm",
-    "venue": "polymarket",
-    "ergebnis": "NEIN",
-    "frage": "Will Bitcoin dip to $55,000 by December 31, 2026?",
-    "schliesst": 1798779600.0,
-    "ref": {
-     "id": "701501",
-     "token_ja": "115462087336983275104521488923966022755348986822352694745153736621832003960847",
-     "token_nein": "48849252416222520684793262794712201381742900852794310345084361317209768152557",
-     "tick": 0.01,
-     "condition": "0x752fa61c93f16c4b15e85b0bd438d9c684176b0ea7b319a84c8aca34616e8a8c",
-     "gebuehr_rate": 0.07,
-     "gebuehr_exp": 1.0
-    },
-    "url": "https://polymarket.com/event/what-price-will-bitcoin-hit-before-2027"
-   },
-   "seite": "long",
-   "menge": 331.0,
-   "einstand": 0.9000000000000001,
-   "hebel": 1.0,
-   "marge": 0.0,
-   "eroeffnet": 1794236961.867845,
-   "gebuehren": 2.0853,
-   "funding": 0.0,
-   "ausstiegsplan": "Halten bis 31.12.2026. Exit-Trigger: BTC schließt unter SMA200 (73.151) UND VIX > 32 → Position verkaufen (nie in einen bestätigten Abwärtstrend halten). Sonst Abrechnung abwarten.",
-   "entscheidung_id": "dd41482cf",
-   "invalidierung": "BTC-Tagesschluss unter der SMA200 (73.151) gleichzeitig mit VIX über 32, ODER eine Binance-1-Minuten-Kerze unter 62.000 (dann ist der Weg zu 55k kurz und die These war falsch).",
-   "kurs": 0.815,
-   "wert": 268.11
+   "invalidierung": "10J über 5,20% oder Fed +50bp im Dezember mit 2J über 4,90% → AGG-Anteil auf 10% zurücknehmen."
   },
   {
    "id": "p950802e0",
@@ -250,8 +216,8 @@
    "wert": 320.0
   }
  ],
- "realisiert": -1328.705309712539,
- "gebuehren": 132.14118925396545,
+ "realisiert": -1362.0611697125391,
+ "gebuehren": 135.70704925396544,
  "funding": 0.0,
  "erstellt": 1793319819.7411644,
  "start_fx": 1.1184885798616961,
