@@ -2,7 +2,7 @@
  "fonds_id": "ko_nein",
  "waehrung": "USD",
  "start_kapital": 11157.431109273288,
- "cash": 1282.9008892732863,
+ "cash": 949.0512492732864,
  "positionen": [
   {
    "id": "p9e535f2b",
@@ -65,8 +65,8 @@
    "gebuehren": 0.0,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.971,
-   "wert": 213.4
+   "kurs": 0.9695,
+   "wert": 213.18
   },
   {
    "id": "p722ad016",
@@ -129,8 +129,8 @@
    "gebuehren": 0.0,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.367,
-   "wert": 90.5
+   "kurs": 0.3695,
+   "wert": 92.0
   },
   {
    "id": "pf0e983be",
@@ -257,7 +257,7 @@
    "gebuehren": 0.0,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.91,
+   "kurs": 0.905,
    "wert": 313.2
   },
   {
@@ -385,8 +385,8 @@
    "gebuehren": 1.96552,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.635,
-   "wert": 125.37
+   "kurs": 0.625,
+   "wert": 123.38
   },
   {
    "id": "p21e9c816",
@@ -641,8 +641,8 @@
    "gebuehren": 4.65658,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.9744999999999999,
-   "wert": 267.85
+   "kurs": 0.9755,
+   "wert": 268.12
   },
   {
    "id": "pd183209f",
@@ -673,8 +673,8 @@
    "gebuehren": 2.87438,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.9824999999999999,
-   "wert": 215.06
+   "kurs": 0.982,
+   "wert": 214.84
   },
   {
    "id": "p54f0e36a",
@@ -737,8 +737,8 @@
    "gebuehren": 3.5937,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.345,
-   "wert": 112.53
+   "kurs": 0.33999999999999997,
+   "wert": 108.9
   },
   {
    "id": "pa1fe7c67",
@@ -801,8 +801,8 @@
    "gebuehren": 0.17475,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.953,
-   "wert": 161.84
+   "kurs": 0.952,
+   "wert": 161.67
   },
   {
    "id": "p6a147c4d",
@@ -833,8 +833,8 @@
    "gebuehren": 0.95322,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.955,
-   "wert": 182.36
+   "kurs": 0.96,
+   "wert": 184.3
   },
   {
    "id": "pca00edbf",
@@ -897,8 +897,8 @@
    "gebuehren": 1.73366,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.77,
-   "wert": 158.84
+   "kurs": 0.775,
+   "wert": 160.93
   },
   {
    "id": "p8bf269d8",
@@ -929,7 +929,7 @@
    "gebuehren": 0.54885,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.8295,
+   "kurs": 0.8285,
    "wert": 144.18
   },
   {
@@ -1345,8 +1345,8 @@
    "gebuehren": 0.92199,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.705,
-   "wert": 133.17
+   "kurs": 0.715,
+   "wert": 135.1
   },
   {
    "id": "p396ede21",
@@ -1377,8 +1377,8 @@
    "gebuehren": 0.24913,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.9655,
-   "wert": 164.6
+   "kurs": 0.9624999999999999,
+   "wert": 163.57
   },
   {
    "id": "p766850e1",
@@ -1505,15 +1505,79 @@
    "gebuehren": 0.49949,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.938,
+   "kurs": 0.937,
    "wert": 162.69
+  },
+  {
+   "id": "p9176f163",
+   "inst": {
+    "id": "pm:polymarket:6919847:NEIN",
+    "art": "pm",
+    "venue": "polymarket",
+    "ergebnis": "NEIN",
+    "frage": "Will there be no new be CEO of NVIDIA by December 31, 2028?",
+    "schliesst": 1861937940.0,
+    "ref": {
+     "id": "6919847",
+     "token_ja": "30917853047681848974124763406524368436482316036542704956055886396093348090575",
+     "token_nein": "1235542575596688477313848611478957797754574132778744552334368030605653599770",
+     "tick": 0.001,
+     "condition": "0xfe28d93c0729d1e099a0359caaf1277e4e6560034c2e3900d65921515f467282",
+     "gebuehr_rate": 0.05,
+     "gebuehr_exp": 1.0
+    },
+    "url": "https://polymarket.com/event/next-ceo-of-nvidia"
+   },
+   "seite": "long",
+   "menge": 179.0,
+   "einstand": 0.9297275977653632,
+   "hebel": 1.0,
+   "marge": 0.0,
+   "eroeffnet": 1794590667.4640574,
+   "gebuehren": 0.58474,
+   "funding": 0.0,
+   "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
+   "kurs": 0.923,
+   "wert": 163.96
+  },
+  {
+   "id": "pbf73aed6",
+   "inst": {
+    "id": "pm:polymarket:6919849:NEIN",
+    "art": "pm",
+    "venue": "polymarket",
+    "ergebnis": "NEIN",
+    "frage": "Will Ian Buck be the next CEO of NVIDIA?",
+    "schliesst": 1861937940.0,
+    "ref": {
+     "id": "6919849",
+     "token_ja": "99229860408944522254879554396438469667542967403476665734798833722418006527513",
+     "token_nein": "67969491587793877942184109858743632751787028653373109736430612838948613606491",
+     "tick": 0.01,
+     "condition": "0xd940515f5526f103b1aa4d3b297792d22ee82c24953c5e2ad3ae9687403f7f00",
+     "gebuehr_rate": 0.05,
+     "gebuehr_exp": 1.0
+    },
+    "url": "https://polymarket.com/event/next-ceo-of-nvidia"
+   },
+   "seite": "long",
+   "menge": 209.0,
+   "einstand": 0.79,
+   "hebel": 1.0,
+   "marge": 0.0,
+   "eroeffnet": 1794590667.4640574,
+   "gebuehren": 1.73366,
+   "funding": 0.0,
+   "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
+   "kurs": 0.785,
+   "wert": 163.02
   }
  ],
  "realisiert": -1789.8509300000003,
- "gebuehren": 302.1710399999999,
+ "gebuehren": 304.4894399999999,
  "funding": 0.0,
  "erstellt": 1793379225.5430336,
  "start_fx": 1.1157431109273288,
- "letzter_tick": 1794589767.934462,
- "kontrolle_bis": 1794582731.1099565
+ "letzter_tick": 1794590667.4640574,
+ "kontrolle_bis": 1794590048.7732806
 }
