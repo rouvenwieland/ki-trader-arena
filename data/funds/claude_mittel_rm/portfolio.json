@@ -69,7 +69,7 @@
    "ausstiegsplan": "Halten bis 31.12.; Gewinnmitnahme ≥0,93 oder Neubewertung nach NVDA-Earnings 17./19.11.",
    "entscheidung_id": "dce9924e1",
    "invalidierung": "NVDA-Marktkap > Apple −10 % (NVDA >~210 bei Apple ~355) oder Apple −20 % binnen Tagen",
-   "kurs": 0.854,
+   "kurs": 0.853,
    "wert": 1131.59
   },
   {
@@ -131,8 +131,8 @@
    "ausstiegsplan": "Halten bis 30.11.; verkaufen, wenn BTC unter 64.000 fällt oder NEIN-Preis <0.88.",
    "entscheidung_id": "d7dbfc08f",
    "invalidierung": "BTC Binance unter 64.000 oder DVOL >60",
-   "kurs": 0.9085000000000001,
-   "wert": 284.2
+   "kurs": 0.9205000000000001,
+   "wert": 286.71
   },
   {
    "id": "pea9d23a3",
@@ -173,8 +173,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "dd6456776",
-   "kurs": 69141.795,
-   "wert": 981.2
+   "kurs": 69782.805,
+   "wert": 990.3
   },
   {
    "id": "p994b6370",
@@ -379,7 +379,7 @@
    "ausstiegsplan": "Halten bis Abrechnung Jan. 2027; Verkauf bei NEIN <0.80 oder Doomsday-Opening-Tag >$200M.",
    "entscheidung_id": "d6b155dae",
    "invalidierung": "Doomsday Freitagsumsatz inkl. Previews >$200M am 18.12. oder Doomsday-Domestic nach 7 Tagen >$600M.",
-   "kurs": 0.8925000000000001,
+   "kurs": 0.892,
    "wert": 436.4
   },
   {
@@ -446,7 +446,7 @@
    "ausstiegsplan": "Bis Vereidigung halten; schließen, wenn beide Beine zusammen ≥0.97 verkaufbar.",
    "entscheidung_id": "d5f5d56d9",
    "invalidierung": "Nachweislich abweichende PredictIt-Regel, die Eisenkot-JA bei PredictIt und NEIN bei Polymarket zulässt.",
-   "kurs": 0.6305000000000001,
+   "kurs": 0.6315,
    "wert": 438.2
   },
   {
@@ -604,8 +604,8 @@
    "ausstiegsplan": "Halten bis Touch (sofortige Abrechnung 1.0); Verkauf bei Preis <0.55 oder BTC >74k",
    "entscheidung_id": "d4efb505c",
    "invalidierung": "BTC über 74.000 (Binance) vor Ablauf: Position neu bewerten, Verkauf bei Preis <0.55",
-   "kurs": 0.705,
-   "wert": 285.6
+   "kurs": 0.605,
+   "wert": 244.8
   }
  ],
  "realisiert": -314.5663317911762,
@@ -613,7 +613,7 @@
  "funding": 0.0,
  "erstellt": 1793380123.8861866,
  "start_fx": 1.1156327353966788,
- "letzter_tick": 1794576130.2934966,
+ "letzter_tick": 1794577029.6365633,
  "auftraege": [],
  "rebalancing": {
   "ziele": {
