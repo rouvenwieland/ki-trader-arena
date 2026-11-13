@@ -22,8 +22,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "d0f380f2d",
-   "kurs": 355.415,
-   "wert": 1423.96,
+   "kurs": 355.233,
+   "wert": 1423.23,
    "stop_loss": 340,
    "invalidierung": "Tagesschluss GLD unter 340,00 USD oder 10J-Rendite über 5,10%."
   },
@@ -45,8 +45,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "d8e5f296a",
-   "kurs": 68964.91500000001,
-   "wert": 636.31
+   "kurs": 68994.155,
+   "wert": 636.58
   },
   {
    "id": "p9a8fa083",
@@ -66,8 +66,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Halten als Kern; Exit über Rebalancing-Regel bzw. SMA200-Bruch.",
    "entscheidung_id": "d0eee1434",
-   "kurs": 753.45,
-   "wert": 2482.12,
+   "kurs": 753.3,
+   "wert": 2481.63,
    "invalidierung": "SPY-Tagesschluss unter SMA200 (731,6) → Kern auf 20% zurücknehmen."
   },
   {
@@ -88,8 +88,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Halten als Kern; Exit nur über Rebalancing-Regel. Rückkauf TLT erst bei 10J < 4,50%.",
    "entscheidung_id": "d7658fcde",
-   "kurs": 95.15,
-   "wert": 1554.11,
+   "kurs": 95.145,
+   "wert": 1554.03,
    "invalidierung": "10J über 5,20% oder Fed +50bp im Dezember mit 2J über 4,90% → AGG-Anteil auf 10% zurücknehmen."
   },
   {
@@ -123,8 +123,8 @@
    "ausstiegsplan": "Halten bis Abrechnung 31.12.2026 oder Verkauf, wenn NEIN < 0,80 (Invalidierung) bzw. JA > 0,25 ohne erklärende Nachricht.",
    "entscheidung_id": "d2f748f89",
    "invalidierung": "Hegseth kündigt Rücktritt an, wird entlassen, oder eine credible Quelle meldet, dass Trump eine Ablösung vorbereitet (dann JA sofort über 0,30).",
-   "kurs": 0.815,
-   "wert": 302.13
+   "kurs": 0.825,
+   "wert": 305.86
   },
   {
    "id": "p3aa56fe5",
@@ -157,8 +157,8 @@
    "ausstiegsplan": "Halten bis 31.12.2026 (Abrechnung). Vorzeitiger Verkauf bei JA-Preis (Gegenposition) unter 0,12 (dann ist mein p zu pessimistisch und der Edge weg) oder bei JA über 0,50 ohne klare Nachricht (Markt weiß mehr → sofort raus).",
    "entscheidung_id": "dd655a214",
    "invalidierung": "US-Regierung (Trump, Außen- oder Verteidigungsministerium) kündigt öffentlich und förmlich die Aufhebung/Aussetzung der Seeblockade an ODER ein umfassender Iran-Deal wird mit Blockade-Aufhebung als Teil verkündet.",
-   "kurs": 0.7635000000000001,
-   "wert": 228.6
+   "kurs": 0.7655000000000001,
+   "wert": 229.2
   },
   {
    "id": "pbf54ccd6",
@@ -178,8 +178,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "d0f380f2d",
-   "kurs": 79.38,
-   "wert": 999.96
+   "kurs": 79.389,
+   "wert": 1000.08
   },
   {
    "id": "pee1aa873",
@@ -221,7 +221,7 @@
  "funding": 0.0,
  "erstellt": 1793319819.7411644,
  "start_fx": 1.1184885798616961,
- "letzter_tick": 1794597868.3758335,
+ "letzter_tick": 1794598768.0110104,
  "rebalancing": {
   "ziele": {
    "stock:SPY": {
