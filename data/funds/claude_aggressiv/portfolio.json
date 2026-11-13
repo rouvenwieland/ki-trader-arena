@@ -2,7 +2,7 @@
  "fonds_id": "claude_aggressiv",
  "waehrung": "USD",
  "start_kapital": 11184.88579861696,
- "cash": 1332.3386710508112,
+ "cash": 1793.785614682945,
  "positionen": [
   {
    "id": "pd2738082",
@@ -26,29 +26,6 @@
    "invalidierung": "SPY schließt unter 700",
    "kurs": 757.12,
    "wert": 2731.35
-  },
-  {
-   "id": "p53b6ec63",
-   "inst": {
-    "id": "spot:BTC-USD",
-    "art": "spot",
-    "venue": "coinbase",
-    "symbol": "BTC-USD"
-   },
-   "seite": "long",
-   "menge": 0.015712294738772174,
-   "einstand": 75917.8059079049,
-   "hebel": 1.0,
-   "marge": 0.0,
-   "eroeffnet": 1793956451.4832969,
-   "gebuehren": 7.157057654075406,
-   "funding": 0.0,
-   "stop_loss": 69500,
-   "ausstiegsplan": "Stop 69.500; Teilverkauf bei 86k; Dip-Wetten gleichen Abwärtsrisiko teilweise aus.",
-   "entscheidung_id": "de5e47324",
-   "invalidierung": "Tagesschluss unter 69.500 oder Fed-Hike-Odds >90 %",
-   "kurs": 69627.875,
-   "wert": 1094.01
   },
   {
    "id": "pe9dce5d9",
@@ -135,14 +112,35 @@
    "entscheidung_id": "d23f83a34",
    "kurs": 354.89,
    "wert": 1544.64
+  },
+  {
+   "id": "pfd1927c9",
+   "inst": {
+    "id": "spot:BTC-USD",
+    "art": "spot",
+    "venue": "coinbase",
+    "symbol": "BTC-USD"
+   },
+   "seite": "long",
+   "menge": 0.008905482500479326,
+   "einstand": 69373.21952631755,
+   "hebel": 1.0,
+   "marge": 0.0,
+   "eroeffnet": 1794540679.2744808,
+   "gebuehren": 3.70681195496119,
+   "funding": 0.0,
+   "ausstiegsplan": "Rebalancing-Regel",
+   "entscheidung_id": "d174edec4",
+   "kurs": 69357.32999999999,
+   "wert": 617.63
   }
  ],
- "realisiert": -618.6006376566595,
- "gebuehren": 164.54378428310443,
+ "realisiert": -728.487831921934,
+ "gebuehren": 174.7875524639044,
  "funding": -0.6133053169464532,
  "erstellt": 1793319819.7411644,
  "start_fx": 1.1184885798616961,
- "letzter_tick": 1794539779.194433,
+ "letzter_tick": 1794540679.2744808,
  "auftraege": [],
  "rebalancing": {
   "ziele": {
