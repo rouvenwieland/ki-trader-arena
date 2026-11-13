@@ -69,7 +69,7 @@
    "ausstiegsplan": "Halten bis 31.12.; Gewinnmitnahme ≥0,93 oder Neubewertung nach NVDA-Earnings 17./19.11.",
    "entscheidung_id": "dce9924e1",
    "invalidierung": "NVDA-Marktkap > Apple −10 % (NVDA >~210 bei Apple ~355) oder Apple −20 % binnen Tagen",
-   "kurs": 0.853,
+   "kurs": 0.85,
    "wert": 1130.26
   },
   {
@@ -131,8 +131,8 @@
    "ausstiegsplan": "Halten bis 30.11.; verkaufen, wenn BTC unter 64.000 fällt oder NEIN-Preis <0.88.",
    "entscheidung_id": "d7dbfc08f",
    "invalidierung": "BTC Binance unter 64.000 oder DVOL >60",
-   "kurs": 0.9085000000000001,
-   "wert": 283.89
+   "kurs": 0.9095,
+   "wert": 284.52
   },
   {
    "id": "pea9d23a3",
@@ -173,8 +173,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "dd6456776",
-   "kurs": 69160.10500000001,
-   "wert": 981.46
+   "kurs": 69349.625,
+   "wert": 984.15
   },
   {
    "id": "p994b6370",
@@ -446,8 +446,8 @@
    "ausstiegsplan": "Bis Vereidigung halten; schließen, wenn beide Beine zusammen ≥0.97 verkaufbar.",
    "entscheidung_id": "d5f5d56d9",
    "invalidierung": "Nachweislich abweichende PredictIt-Regel, die Eisenkot-JA bei PredictIt und NEIN bei Polymarket zulässt.",
-   "kurs": 0.6405000000000001,
-   "wert": 446.6
+   "kurs": 0.6415,
+   "wert": 448.0
   },
   {
    "id": "p2567180c",
@@ -480,8 +480,8 @@
    "ausstiegsplan": "Halten bis IPO-Tag (voraussichtlich Woche 16.–20.11.). Bei Preisfestsetzung neu rechnen: Schwelle = 1,25 Bio/13,09 Mrd. = $95,5. Teilverkauf, wenn JA ≥0,50 vor Handelsstart.",
    "entscheidung_id": "d0595e7ab",
    "invalidierung": "Endgültiger IPO-Preis ≥ $86 (dann reicht +11 % Pop) oder offizielle Polymarket-Klarstellung, dass voll verwässert gezählt wird; Graumarkt-/Indikationen Eröffnung ≥ $100.",
-   "kurs": 0.216,
-   "wert": 570.49
+   "kurs": 0.214,
+   "wert": 565.11
   },
   {
    "id": "p1f686553",
@@ -604,8 +604,8 @@
    "ausstiegsplan": "Halten bis Touch (sofortige Abrechnung 1.0); Verkauf bei Preis <0.55 oder BTC >74k",
    "entscheidung_id": "d4efb505c",
    "invalidierung": "BTC über 74.000 (Binance) vor Ablauf: Position neu bewerten, Verkauf bei Preis <0.55",
-   "kurs": 0.715,
-   "wert": 289.68
+   "kurs": 0.705,
+   "wert": 285.6
   }
  ],
  "realisiert": -314.5663317911762,
@@ -613,7 +613,7 @@
  "funding": 0.0,
  "erstellt": 1793380123.8861866,
  "start_fx": 1.1156327353966788,
- "letzter_tick": 1794564209.5050535,
+ "letzter_tick": 1794565109.418096,
  "auftraege": [],
  "rebalancing": {
   "ziele": {
