@@ -273,5 +273,31 @@
   "seit": 1794496301.0497553,
   "entscheidung_id": "d0f380f2d"
  },
- "auftraege": []
+ "auftraege": [
+  {
+   "id": "a58f9ea",
+   "entscheidung_id": "d0eee1434",
+   "inst": {
+    "id": "stock:SPY",
+    "art": "stock",
+    "venue": "yahoo",
+    "symbol": "SPY"
+   },
+   "aktion": "kaufen",
+   "typ": "eroeffnung",
+   "seite": "long",
+   "betrag_usd": 240,
+   "menge": null,
+   "hebel": 1.0,
+   "limit_preis": null,
+   "stop_preis": null,
+   "stop_loss": null,
+   "take_profit": null,
+   "ausstiegsplan": "Halten als Kern; Exit über Rebalancing-Regel bzw. SMA200-Bruch.",
+   "invalidierung": "SPY-Tagesschluss unter SMA200 (731,6) → Kern auf 20% zurücknehmen.",
+   "erstellt": 1794529248.4473577,
+   "geprueft_bis": 1794529248.4473577,
+   "gueltig_bis": 1794603600.0
+  }
+ ]
 }

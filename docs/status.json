@@ -1,11 +1,11 @@
 {
  "version": 1,
- "stand": 1794529081.7152276,
+ "stand": 1794529254.2928326,
  "hinweis": "Papierhandel-Simulation, keine Anlageberatung",
  "seite": "https://rouvenwieland.github.io/ki-trader-arena/",
  "budget": {
   "heute_eur": 0.0,
-  "gesamt_eur": 139.48,
+  "gesamt_eur": 139.49,
   "tagesdeckel_eur": 12.0,
   "gesamtdeckel_eur": 190.0,
   "claude_ende": "2026-11-14",
@@ -385,7 +385,7 @@
    "rendite_pct": -1.16,
    "equity_eur": 9978.46,
    "max_drawdown_pct": -6.31,
-   "status": "aktiv",
+   "status": "Tagesanteil aufgebraucht – nächste Runde morgen",
    "modell": "claude-sonnet-5-5",
    "kosten_heute_eur": 0.0,
    "kosten_gesamt_eur": 33.401,
@@ -621,10 +621,10 @@
    "rendite_pct": -2.44,
    "equity_eur": 9875.02,
    "max_drawdown_pct": -6.34,
-   "status": "aktiv",
+   "status": "Tagesanteil aufgebraucht – nächste Runde morgen",
    "modell": "claude-sonnet-5-5",
    "kosten_heute_eur": 0.0,
-   "kosten_gesamt_eur": 35.255,
+   "kosten_gesamt_eur": 35.256,
    "rendite_ki_pct": [
     -10.55,
     4.17
@@ -683,7 +683,7 @@
    "status": "Tagesanteil aufgebraucht – nächste Runde morgen",
    "modell": "claude-sonnet-5-5",
    "kosten_heute_eur": 0.0,
-   "kosten_gesamt_eur": 35.252,
+   "kosten_gesamt_eur": 35.253,
    "rendite_ki_pct": [
     -11.42,
     1.75
@@ -916,7 +916,7 @@
    "rendite_pct": -8.0,
    "equity_eur": 9312.16,
    "max_drawdown_pct": -24.83,
-   "status": "aktiv",
+   "status": "Tagesanteil aufgebraucht – nächste Runde morgen",
    "modell": "claude-sonnet-5-5",
    "kosten_heute_eur": 0.0,
    "kosten_gesamt_eur": 34.261,
@@ -1218,6 +1218,13 @@
  ],
  "letzte_entscheidungen": [
   {
+   "ts": 1794529248.4469342,
+   "fonds": "DeepSeek",
+   "instrument": "stock:SPY",
+   "aktion": "kaufen",
+   "zuversicht": 0.6
+  },
+  {
    "ts": 1794510983.9460392,
    "fonds": "DeepSeek",
    "instrument": "stock:GLD",
@@ -1265,13 +1272,6 @@
    "instrument": "stock:AGG",
    "aktion": "kaufen",
    "zuversicht": 0.6
-  },
-  {
-   "ts": 1794496448.3287587,
-   "fonds": "DeepSeek",
-   "instrument": "stock:TLT",
-   "aktion": "verkaufen",
-   "zuversicht": 0.65
   }
  ],
  "ereignisse": [
