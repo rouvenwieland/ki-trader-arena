@@ -45,8 +45,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "d8e5f296a",
-   "kurs": 67729.225,
-   "wert": 624.91
+   "kurs": 67464.245,
+   "wert": 622.46
   },
   {
    "id": "p9a8fa083",
@@ -157,8 +157,8 @@
    "ausstiegsplan": "Halten bis 31.12.2026 (Abrechnung). Vorzeitiger Verkauf bei JA-Preis (Gegenposition) unter 0,12 (dann ist mein p zu pessimistisch und der Edge weg) oder bei JA über 0,50 ohne klare Nachricht (Markt weiß mehr → sofort raus).",
    "entscheidung_id": "dd655a214",
    "invalidierung": "US-Regierung (Trump, Außen- oder Verteidigungsministerium) kündigt öffentlich und förmlich die Aufhebung/Aussetzung der Seeblockade an ODER ein umfassender Iran-Deal wird mit Blockade-Aufhebung als Teil verkündet.",
-   "kurs": 0.77,
-   "wert": 230.1
+   "kurs": 0.7705,
+   "wert": 230.7
   },
   {
    "id": "pbf54ccd6",
@@ -246,8 +246,8 @@
    "ausstiegsplan": "Halten bis Touch (sofortige Aufloesung zu 1,00) oder Abrechnung 30.11.; Vorverkauf nur bei JA > 0,95 (Edge weg) oder bei Invalidierung.",
    "entscheidung_id": "d06a8b46c",
    "invalidierung": "Zwei BTC-Tagestiefs ueber 71.500 UND realisierte Vola unter 32% p.a.",
-   "kurs": 0.935,
-   "wert": 232.5
+   "kurs": null,
+   "wert": 210.0
   }
  ],
  "realisiert": -1362.0611697125391,
@@ -255,7 +255,7 @@
  "funding": 0.0,
  "erstellt": 1793319819.7411644,
  "start_fx": 1.1184885798616961,
- "letzter_tick": 1794623188.6310947,
+ "letzter_tick": 1794624089.4100099,
  "rebalancing": {
   "ziele": {
    "stock:SPY": {

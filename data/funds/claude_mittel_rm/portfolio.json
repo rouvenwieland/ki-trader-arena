@@ -69,8 +69,8 @@
    "ausstiegsplan": "Halten bis 31.12.; Gewinnmitnahme ≥0,93 oder Neubewertung nach NVDA-Earnings 17./19.11.",
    "entscheidung_id": "dce9924e1",
    "invalidierung": "NVDA-Marktkap > Apple −10 % (NVDA >~210 bei Apple ~355) oder Apple −20 % binnen Tagen",
-   "kurs": 0.885,
-   "wert": 1177.02
+   "kurs": 0.8845000000000001,
+   "wert": 1175.68
   },
   {
    "id": "pa832233e",
@@ -131,8 +131,8 @@
    "ausstiegsplan": "Halten bis 30.11.; verkaufen, wenn BTC unter 64.000 fällt oder NEIN-Preis <0.88.",
    "entscheidung_id": "d7dbfc08f",
    "invalidierung": "BTC Binance unter 64.000 oder DVOL >60",
-   "kurs": 0.9005000000000001,
-   "wert": 281.7
+   "kurs": 0.8785000000000001,
+   "wert": 274.81
   },
   {
    "id": "pea9d23a3",
@@ -173,8 +173,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "dd6456776",
-   "kurs": 67729.225,
-   "wert": 961.16
+   "kurs": 67464.245,
+   "wert": 957.4
   },
   {
    "id": "p994b6370",
@@ -604,8 +604,8 @@
    "ausstiegsplan": "Halten bis Touch (sofortige Abrechnung 1.0); Verkauf bei Preis <0.55 oder BTC >74k",
    "entscheidung_id": "d4efb505c",
    "invalidierung": "BTC über 74.000 (Binance) vor Ablauf: Position neu bewerten, Verkauf bei Preis <0.55",
-   "kurs": 0.935,
-   "wert": 379.44
+   "kurs": null,
+   "wert": 314.49
   }
  ],
  "realisiert": -314.5663317911762,
@@ -613,7 +613,7 @@
  "funding": 0.0,
  "erstellt": 1793380123.8861866,
  "start_fx": 1.1156327353966788,
- "letzter_tick": 1794623188.6310947,
+ "letzter_tick": 1794624089.4100099,
  "auftraege": [],
  "rebalancing": {
   "ziele": {
