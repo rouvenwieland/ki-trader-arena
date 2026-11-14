@@ -129,8 +129,8 @@
    "gebuehren": 0.0,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Schwarm-Regel)",
-   "kurs": 0.96,
-   "wert": 675.14
+   "kurs": 0.9675,
+   "wert": 680.06
   },
   {
    "id": "pfd66109a",
@@ -257,8 +257,8 @@
    "gebuehren": 0.0,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Schwarm-Regel)",
-   "kurs": 0.9875,
-   "wert": 648.46
+   "kurs": 0.9884999999999999,
+   "wert": 649.12
   },
   {
    "id": "pb73e4ff6",
@@ -353,8 +353,8 @@
    "gebuehren": 15.33804,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Schwarm-Regel)",
-   "kurs": 0.3385,
-   "wert": 286.82
+   "kurs": 0.27549999999999997,
+   "wert": 233.54
   }
  ],
  "realisiert": -228.02178000000015,
@@ -362,5 +362,5 @@
  "funding": 0.0,
  "erstellt": 1793379225.5430336,
  "start_fx": 1.1157431109273288,
- "letzter_tick": 1794627967.592965
+ "letzter_tick": 1794628868.0439298
 }
