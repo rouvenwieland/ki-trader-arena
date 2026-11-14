@@ -58,9 +58,9 @@
  "typ": "claude",
  "start": 1793380123.8861866,
  "status": "Fehler: Modellfehler: models/nano-banana-pro-preview: keine Antwort (HTTP 429 [{\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your cur",
- "status_ts": 1794646211.5116596,
+ "status_ts": 1794647304.9424145,
  "modell_aktuell": "models/nano-banana-pro-preview",
- "letzte_runde": 1794646211.5116596,
+ "letzte_runde": 1794647304.9424145,
  "letzte_runde_abbruch": "Modellfehler: models/nano-banana-pro-preview: keine Antwort (HTTP 429 [{\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error)",
  "pausiert_bis": 0
 }
