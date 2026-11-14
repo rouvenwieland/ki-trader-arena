@@ -35,7 +35,7 @@
    "ausstiegsplan": "Halten bis Abrechnung 31.12.; vorzeitig verkaufen, wenn NEIN-Preis auf ≥0.62 steigt (Gewinn mitnehmen) oder unter 0.38 fällt.",
    "entscheidung_id": "dbf84bba3",
    "invalidierung": "NVDA schließt wieder dauerhaft über Apple-Marktkap (NVDA >~210 bei AAPL ~343) oder starke NVDA-Zahlen mit Rally >8%; dann neu bewerten/verkaufen.",
-   "kurs": 0.915,
+   "kurs": 0.92,
    "wert": 508.69
   },
   {
@@ -131,8 +131,8 @@
    "ausstiegsplan": "Halten bis 30.11.; verkaufen, wenn BTC unter 64.000 fällt oder NEIN-Preis <0.88.",
    "entscheidung_id": "d7dbfc08f",
    "invalidierung": "BTC Binance unter 64.000 oder DVOL >60",
-   "kurs": 0.7865,
-   "wert": 246.02
+   "kurs": 0.7835000000000001,
+   "wert": 245.08
   },
   {
    "id": "pea9d23a3",
@@ -173,8 +173,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "dd6456776",
-   "kurs": 65806.58499999999,
-   "wert": 933.87
+   "kurs": 65707.07500000001,
+   "wert": 932.46
   },
   {
    "id": "p994b6370",
@@ -379,7 +379,7 @@
    "ausstiegsplan": "Halten bis Abrechnung Jan. 2027; Verkauf bei NEIN <0.80 oder Doomsday-Opening-Tag >$200M.",
    "entscheidung_id": "d6b155dae",
    "invalidierung": "Doomsday Freitagsumsatz inkl. Previews >$200M am 18.12. oder Doomsday-Domestic nach 7 Tagen >$600M.",
-   "kurs": 0.887,
+   "kurs": 0.8865000000000001,
    "wert": 433.45
   },
   {
@@ -542,8 +542,8 @@
    "ausstiegsplan": "Halten bis Tag-1-Schluss 19.11.; Verkauf, falls Preisfestsetzung ≥$90 oder JA-Preis >0.40.",
    "entscheidung_id": "da86d3e2a",
    "invalidierung": "IPO-Preis über Spanne (≥$85) oder Nachrichten, dass Marktkap FD-basiert >2 Bio bei $111 gezählt wird und Orderbuch-Hype.",
-   "kurs": 0.9050484308672477,
-   "wert": 34.39
+   "kurs": 0.9200042102547172,
+   "wert": 34.96
   },
   {
    "id": "pf5130da4",
@@ -579,7 +579,7 @@
  "funding": 0.0,
  "erstellt": 1793380123.8861866,
  "start_fx": 1.1156327353966788,
- "letzter_tick": 1794668049.000939,
+ "letzter_tick": 1794668949.4074106,
  "auftraege": [],
  "rebalancing": {
   "ziele": {
