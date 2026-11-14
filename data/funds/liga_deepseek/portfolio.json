@@ -265,7 +265,16 @@
      "venue": "yahoo",
      "symbol": "SPY"
     },
-    "anteil": 0.26
+    "anteil": 0.25
+   },
+   "stock:TLT": {
+    "inst": {
+     "id": "stock:TLT",
+     "art": "stock",
+     "venue": "yahoo",
+     "symbol": "TLT"
+    },
+    "anteil": 0.15
    },
    "stock:AGG": {
     "inst": {
@@ -274,7 +283,7 @@
      "venue": "yahoo",
      "symbol": "AGG"
     },
-    "anteil": 0.16
+    "anteil": 0.13
    },
    "stock:GLD": {
     "inst": {
@@ -296,8 +305,34 @@
    }
   },
   "schwelle_pp": 8.0,
-  "seit": 1794669099.0528846,
-  "entscheidung_id": "dbd55325e"
+  "seit": 1794683614.7094893,
+  "entscheidung_id": "d187abc65"
  },
- "auftraege": []
+ "auftraege": [
+  {
+   "id": "abe9b51",
+   "entscheidung_id": "d324bfb46",
+   "inst": {
+    "id": "stock:XLE",
+    "art": "stock",
+    "venue": "yahoo",
+    "symbol": "XLE"
+   },
+   "aktion": "kaufen",
+   "typ": "limit",
+   "seite": "long",
+   "betrag_usd": null,
+   "menge": 10,
+   "hebel": 1.0,
+   "limit_preis": 65.6,
+   "stop_preis": null,
+   "stop_loss": 62,
+   "take_profit": 70,
+   "ausstiegsplan": "Halten als Kern-Diversifikationsbaustein (Ziel 6-8% des Vermögens). Exit: (a) Tagesschluss unter SMA200 (59,47) oder WTI unter 82 USD → These gebrochen, sofort raus; (b) Take-Profit bei 70,00 (1-Jahres-Hoch) → Trimmen; (c) Rebalancing-Regel bei >2pp Übergewicht. Kein Nachkauf über 66,50 ohne neuen Rohstoff-Impuls.",
+   "invalidierung": "XLE-Tagesschluss unter SMA200 (59,47 USD) oder WTI unter 82 USD → Relative-Stärke-These gebrochen.",
+   "erstellt": 1794683775.0383604,
+   "geprueft_bis": 1794683775.0383604,
+   "gueltig_bis": 1794862800.0
+  }
+ ]
 }
