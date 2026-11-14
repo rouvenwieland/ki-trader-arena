@@ -1,6 +1,6 @@
 {
  "version": 1,
- "stand": 1794616096.1043992,
+ "stand": 1794616764.4624283,
  "hinweis": "Papierhandel-Simulation, keine Anlageberatung",
  "seite": "https://rouvenwieland.github.io/ki-trader-arena/",
  "budget": {
@@ -267,8 +267,8 @@
    "rendite_pct": -0.46,
    "equity_eur": 10074.76,
    "max_drawdown_pct": -6.31,
-   "status": "aktiv",
-   "modell": "claude-sonnet-5-5",
+   "status": "aktiv (Modell: Gemini Flash)",
+   "modell": "gemini-flash-latest",
    "kosten_heute_eur": 0.0,
    "kosten_gesamt_eur": 35.631,
    "rendite_ki_pct": [
@@ -621,8 +621,8 @@
    "rendite_pct": -3.18,
    "equity_eur": 9824.59,
    "max_drawdown_pct": -6.34,
-   "status": "Tagesanteil aufgebraucht – nächste Runde morgen",
-   "modell": "claude-sonnet-5-5",
+   "status": "Fehler: Modellfehler: models/nano-banana-pro-preview: keine Antwort (HTTP 429 [{\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your cur",
+   "modell": "models/nano-banana-pro-preview",
    "kosten_heute_eur": 0.0,
    "kosten_gesamt_eur": 37.836,
    "rendite_ki_pct": [
@@ -680,8 +680,8 @@
    "rendite_pct": -4.39,
    "equity_eur": 9701.56,
    "max_drawdown_pct": -7.0,
-   "status": "Tagesanteil aufgebraucht – nächste Runde morgen",
-   "modell": "claude-sonnet-5-5",
+   "status": "Fehler: Modellfehler: models/nano-banana-pro-preview: keine Antwort (HTTP 429 [{\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your cur",
+   "modell": "models/nano-banana-pro-preview",
    "kosten_heute_eur": 0.0,
    "kosten_gesamt_eur": 37.757,
    "rendite_ki_pct": [
@@ -916,7 +916,7 @@
    "rendite_pct": -7.67,
    "equity_eur": 9369.01,
    "max_drawdown_pct": -24.83,
-   "status": "aktiv",
+   "status": "Fehler: FileNotFoundError",
    "modell": "claude-sonnet-5-5",
    "kosten_heute_eur": 0.0,
    "kosten_gesamt_eur": 36.881,
@@ -1218,6 +1218,27 @@
  ],
  "letzte_entscheidungen": [
   {
+   "ts": 1794616212.1411476,
+   "fonds": "DeepSeek",
+   "instrument": "pm:polymarket:6507383:JA",
+   "aktion": "kaufen",
+   "zuversicht": 0.62
+  },
+  {
+   "ts": 1794616208.6479304,
+   "fonds": "DeepSeek",
+   "instrument": "pm:polymarket:6507383:JA",
+   "aktion": "kaufen",
+   "zuversicht": 0.62
+  },
+  {
+   "ts": 1794616204.7542102,
+   "fonds": "DeepSeek",
+   "instrument": "pm:polymarket:6507383:JA",
+   "aktion": "kaufen",
+   "zuversicht": 0.62
+  },
+  {
    "ts": 1794597247.6567297,
    "fonds": "DeepSeek",
    "instrument": "stock:AGG",
@@ -1251,27 +1272,6 @@
    "instrument": "pm:manifold:N5O2RlE0N0:JA",
    "aktion": "verkaufen",
    "zuversicht": 0.7
-  },
-  {
-   "ts": 1794549154.0028245,
-   "fonds": "DeepSeek",
-   "instrument": "stock:GLD",
-   "aktion": "verkaufen",
-   "zuversicht": 0.55
-  },
-  {
-   "ts": 1794539100.4494572,
-   "fonds": "Claude Aggressiv",
-   "instrument": "pm:polymarket:3865960:JA",
-   "aktion": "verkaufen",
-   "zuversicht": 0.95
-  },
-  {
-   "ts": 1794529248.4469342,
-   "fonds": "DeepSeek",
-   "instrument": "stock:SPY",
-   "aktion": "kaufen",
-   "zuversicht": 0.6
   }
  ],
  "ereignisse": [

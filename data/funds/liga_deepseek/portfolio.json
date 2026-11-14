@@ -2,7 +2,7 @@
  "fonds_id": "liga_deepseek",
  "waehrung": "USD",
  "start_kapital": 11184.88579861696,
- "cash": 1541.3632411637907,
+ "cash": 1329.0112411637906,
  "positionen": [
   {
    "id": "p78a3c466",
@@ -214,10 +214,42 @@
    "invalidierung": "Meldung über Scheidung/Einreichung/Trennungsabsicht der Huangs oder JA-Anstieg über 0,30 ohne für mich erkennbare Nachricht.",
    "kurs": 0.815,
    "wert": 324.0
+  },
+  {
+   "id": "p171a020d",
+   "inst": {
+    "id": "pm:polymarket:6507383:JA",
+    "art": "pm",
+    "venue": "polymarket",
+    "ergebnis": "JA",
+    "frage": "Will Bitcoin dip to $67,500 in November?",
+    "schliesst": 1796101200.0,
+    "ref": {
+     "id": "6507383",
+     "token_ja": "15542710001866766202110323156169725417182779903002226439100570924289697216169",
+     "token_nein": "55697300647812113498373190444051839385143230311383069419303450826304698131181",
+     "tick": 0.01,
+     "condition": "0x144fe8b30008b8d7c4452623473fb9df7645ac00b05e5ee5d5e404a56411fad9",
+     "gebuehr_rate": 0.07,
+     "gebuehr_exp": 1.0
+    },
+    "url": "https://polymarket.com/event/what-price-will-bitcoin-hit-in-november-2026"
+   },
+   "seite": "long",
+   "menge": 250.0,
+   "einstand": 0.84,
+   "hebel": 1.0,
+   "marge": 0.0,
+   "eroeffnet": 1794616212.1413581,
+   "gebuehren": 2.352,
+   "funding": 0.0,
+   "ausstiegsplan": "Halten bis Touch (sofortige Aufloesung zu 1,00) oder Abrechnung 30.11.; Vorverkauf nur bei JA > 0,95 (Edge weg) oder bei Invalidierung.",
+   "entscheidung_id": "d06a8b46c",
+   "invalidierung": "Zwei BTC-Tagestiefs ueber 71.500 UND realisierte Vola unter 32% p.a."
   }
  ],
  "realisiert": -1362.0611697125391,
- "gebuehren": 135.70704925396544,
+ "gebuehren": 138.05904925396544,
  "funding": 0.0,
  "erstellt": 1793319819.7411644,
  "start_fx": 1.1184885798616961,

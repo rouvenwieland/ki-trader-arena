@@ -1,0 +1,27 @@
+{
+ "ts": 1794616157.2784905,
+ "gewaehlt": "liga_gemini",
+ "name": "Gemini Flash",
+ "verfahren": "Model Confidence Set (α=0.1, 350 gemeinsame Stunden)",
+ "menge": [
+  "liga_gemini",
+  "liga_deepseek",
+  "liga_openai"
+ ],
+ "p_werte": {
+  "liga_deepseek": 0.136,
+  "liga_gemini": 0.334,
+  "liga_openai": 1.0
+ },
+ "kosten_je_runde_usd": {
+  "liga_gemini": 0.0,
+  "liga_deepseek": 0.01,
+  "liga_openai": 0.03
+ },
+ "rendite_pct": {
+  "liga_gemini": -1.94,
+  "liga_deepseek": -15.11,
+  "liga_openai": 0.0
+ },
+ "grund": "günstigstes Modell unter den statistisch nicht unterscheidbaren Besten"
+}
