@@ -65,8 +65,8 @@
    "gebuehren": 3.13551,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Schwarm-Regel)",
-   "kurs": 0.0375,
-   "wert": 13.99
+   "kurs": 0.037,
+   "wert": 13.61
   },
   {
    "id": "p7f78b6d2",
@@ -129,8 +129,8 @@
    "gebuehren": 0.0,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Schwarm-Regel)",
-   "kurs": 0.9844999999999999,
-   "wert": 692.74
+   "kurs": 0.9855,
+   "wert": 693.44
   },
   {
    "id": "pfd66109a",
@@ -257,8 +257,8 @@
    "gebuehren": 0.0,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Schwarm-Regel)",
-   "kurs": 0.9895,
-   "wert": 649.77
+   "kurs": 0.9884999999999999,
+   "wert": 649.12
   },
   {
    "id": "pb73e4ff6",
@@ -289,8 +289,8 @@
    "gebuehren": 2.7493,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Schwarm-Regel)",
-   "kurs": 0.0875,
-   "wert": 69.95
+   "kurs": 0.0935,
+   "wert": 74.77
   },
   {
    "id": "p2d8e5efc",
@@ -323,44 +323,12 @@
    "ausstiegsplan": "Halten bis zur Abrechnung (Schwarm-Regel)",
    "kurs": 0.2165,
    "wert": 65.23
-  },
-  {
-   "id": "pb761cf55",
-   "inst": {
-    "id": "pm:polymarket:6891211:NEIN",
-    "art": "pm",
-    "venue": "polymarket",
-    "ergebnis": "NEIN",
-    "frage": "Will Bitcoin dip to $66,000 November 9-15?",
-    "schliesst": 1794805200.0,
-    "ref": {
-     "id": "6891211",
-     "token_ja": "37349201581692759106195274161509534738425192515739596936102415306011032294982",
-     "token_nein": "41761816281713028606986743877335340351158921366952071977347386130942912053776",
-     "tick": 0.001,
-     "condition": "0x59b88760a518104714e8dc50ac51f9fbb9311a8f8edfcf3f913e51df2272e509",
-     "gebuehr_rate": 0.07,
-     "gebuehr_exp": 1.0
-    },
-    "url": "https://polymarket.com/event/what-price-will-bitcoin-hit-november-9-15-2026"
-   },
-   "seite": "long",
-   "menge": 888.0,
-   "einstand": 0.557,
-   "hebel": 1.0,
-   "marge": 0.0,
-   "eroeffnet": 1794626167.6647415,
-   "gebuehren": 15.33804,
-   "funding": 0.0,
-   "ausstiegsplan": "Halten bis zur Abrechnung (Schwarm-Regel)",
-   "kurs": 0.087,
-   "wert": 52.39
   }
  ],
- "realisiert": -228.02178000000015,
+ "realisiert": -722.6377800000002,
  "gebuehren": 112.11634000000001,
  "funding": 0.0,
  "erstellt": 1793379225.5430336,
  "start_fx": 1.1157431109273288,
- "letzter_tick": 1794666248.6164932
+ "letzter_tick": 1794667149.060842
 }
