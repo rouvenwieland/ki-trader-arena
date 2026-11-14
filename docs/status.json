@@ -1,6 +1,6 @@
 {
  "version": 1,
- "stand": 1794625380.6896167,
+ "stand": 1794625589.1580598,
  "hinweis": "Papierhandel-Simulation, keine Anlageberatung",
  "seite": "https://rouvenwieland.github.io/ki-trader-arena/",
  "budget": {
@@ -149,8 +149,8 @@
    "rendite_pct": 1.02,
    "equity_eur": 10224.59,
    "max_drawdown_pct": -6.31,
-   "status": "aktiv (Modell: Gemini Flash)",
-   "modell": "gemini-flash-latest",
+   "status": "Fehler: Modellfehler: models/nano-banana-pro-preview: keine Antwort (HTTP 429 [{\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your cur",
+   "modell": "models/nano-banana-pro-preview",
    "kosten_heute_eur": 0.0,
    "kosten_gesamt_eur": 35.631,
    "rendite_ki_pct": [
@@ -916,8 +916,8 @@
    "rendite_pct": -7.72,
    "equity_eur": 9364.23,
    "max_drawdown_pct": -24.83,
-   "status": "Fehler: FileNotFoundError",
-   "modell": "claude-sonnet-5-5",
+   "status": "Fehler: Modellfehler: models/nano-banana-pro-preview: keine Antwort (HTTP 429 [{\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your cur",
+   "modell": "models/nano-banana-pro-preview",
    "kosten_heute_eur": 0.0,
    "kosten_gesamt_eur": 36.881,
    "rendite_ki_pct": [
