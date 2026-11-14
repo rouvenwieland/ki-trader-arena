@@ -65,8 +65,8 @@
    "gebuehren": 0.0,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.962,
-   "wert": 211.2
+   "kurs": 0.963,
+   "wert": 211.64
   },
   {
    "id": "p722ad016",
@@ -321,7 +321,7 @@
    "gebuehren": 0.0,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.865,
+   "kurs": 0.8600000000000001,
    "wert": 156.33
   },
   {
@@ -385,7 +385,7 @@
    "gebuehren": 1.96552,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.535,
+   "kurs": 0.54,
    "wert": 105.47
   },
   {
@@ -673,8 +673,8 @@
    "gebuehren": 2.87438,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.9855,
-   "wert": 215.72
+   "kurs": 0.9864999999999999,
+   "wert": 215.93
   },
   {
    "id": "p54f0e36a",
@@ -993,8 +993,8 @@
    "gebuehren": 2.0848,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.6585000000000001,
-   "wert": 158.58
+   "kurs": 0.6575,
+   "wert": 158.34
   },
   {
    "id": "pff668a53",
@@ -1217,8 +1217,8 @@
    "gebuehren": 1.35793,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.9784999999999999,
-   "wert": 191.47
+   "kurs": 0.9664999999999999,
+   "wert": 186.71
   },
   {
    "id": "pa0ba9cff",
@@ -1537,8 +1537,8 @@
    "gebuehren": 0.58474,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.9165000000000001,
-   "wert": 163.78
+   "kurs": 0.9145000000000001,
+   "wert": 163.61
   },
   {
    "id": "pbf73aed6",
@@ -1569,8 +1569,8 @@
    "gebuehren": 1.73366,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.85,
-   "wert": 175.56
+   "kurs": 0.855,
+   "wert": 177.65
   }
  ],
  "realisiert": -1789.8509300000003,
@@ -1578,6 +1578,6 @@
  "funding": 0.0,
  "erstellt": 1793379225.5430336,
  "start_fx": 1.1157431109273288,
- "letzter_tick": 1794657085.9178414,
+ "letzter_tick": 1794657986.0338268,
  "kontrolle_bis": 1794646211.5116596
 }
