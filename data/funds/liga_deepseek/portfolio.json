@@ -45,8 +45,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "d8e5f296a",
-   "kurs": 67074.32500000001,
-   "wert": 618.87
+   "kurs": 66960.965,
+   "wert": 617.82
   },
   {
    "id": "p9a8fa083",
@@ -212,8 +212,8 @@
    "ausstiegsplan": "Halten bis Abrechnung 31.12.2026. Vorzeitiger Verkauf nur bei Invalidierung oder wenn NEIN-Ask über 0,90 (Restchance zu teuer).",
    "entscheidung_id": "d2448f0fc",
    "invalidierung": "Meldung über Scheidung/Einreichung/Trennungsabsicht der Huangs oder JA-Anstieg über 0,30 ohne für mich erkennbare Nachricht.",
-   "kurs": 0.855,
-   "wert": 340.0
+   "kurs": 0.85,
+   "wert": 336.0
   }
  ],
  "realisiert": -1322.0611697125391,
@@ -221,7 +221,7 @@
  "funding": 0.0,
  "erstellt": 1793319819.7411644,
  "start_fx": 1.1184885798616961,
- "letzter_tick": 1794631567.7778409,
+ "letzter_tick": 1794632467.816033,
  "rebalancing": {
   "ziele": {
    "stock:SPY": {
