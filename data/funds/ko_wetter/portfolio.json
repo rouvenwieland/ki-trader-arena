@@ -2,7 +2,7 @@
  "fonds_id": "ko_wetter",
  "waehrung": "USD",
  "start_kapital": 11156.327353966788,
- "cash": 2721.276859952885,
+ "cash": 2658.630559952885,
  "positionen": [
   {
    "id": "p3cf85e37",
@@ -105,8 +105,8 @@
    "gebuehren": 6.25,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Wetter-Regel)",
-   "kurs": 0.77,
-   "wert": 310.84
+   "kurs": 0.805,
+   "wert": 327.2
   },
   {
    "id": "pc859fc91",
@@ -131,8 +131,8 @@
    "gebuehren": 3.81,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Wetter-Regel)",
-   "kurs": 0.77,
-   "wert": 172.52
+   "kurs": 0.85,
+   "wert": 190.68
   },
   {
    "id": "p9859c936",
@@ -183,8 +183,8 @@
    "gebuehren": 3.58,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Wetter-Regel)",
-   "kurs": 0.41000000000000003,
-   "wert": 77.9
+   "kurs": 0.475,
+   "wert": 96.35
   },
   {
    "id": "pa77d737b",
@@ -237,13 +237,39 @@
    "ausstiegsplan": "Halten bis zur Abrechnung (Wetter-Regel)",
    "kurs": 0.195,
    "wert": 68.02
+  },
+  {
+   "id": "pd5305701",
+   "inst": {
+    "id": "pm:kalshi:KXHIGHAUS-26NOV15-B63.5:JA",
+    "art": "pm",
+    "venue": "kalshi",
+    "ergebnis": "JA",
+    "frage": "Will the maximum temperature be 63-64° on Nov 15, 2026? [63° to 64°]",
+    "schliesst": 1794812400.0,
+    "ref": {
+     "ticker": "KXHIGHAUS-26NOV15-B63.5"
+    },
+    "url": "https://kalshi.com/markets/KXHIGHAUS-26NOV15"
+   },
+   "seite": "long",
+   "menge": 490.0,
+   "einstand": 0.12042102040816327,
+   "hebel": 1.0,
+   "marge": 0.0,
+   "eroeffnet": 1794681686.9264119,
+   "gebuehren": 3.64,
+   "funding": 0.0,
+   "ausstiegsplan": "Halten bis zur Abrechnung (Wetter-Regel)",
+   "kurs": 0.11,
+   "wert": 34.3
   }
  ],
  "realisiert": -6698.699394013907,
- "gebuehren": 878.4400000000002,
+ "gebuehren": 882.0800000000002,
  "funding": 0.0,
  "erstellt": 1793380123.8861866,
  "start_fx": 1.1156327353966788,
- "letzter_tick": 1794680786.7152414,
- "wetter_letzter": 1794677948.722367
+ "letzter_tick": 1794681686.9264119,
+ "wetter_letzter": 1794681686.9264119
 }
