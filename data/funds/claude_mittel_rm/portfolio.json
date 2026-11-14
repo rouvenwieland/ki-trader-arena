@@ -131,8 +131,8 @@
    "ausstiegsplan": "Halten bis 30.11.; verkaufen, wenn BTC unter 64.000 fällt oder NEIN-Preis <0.88.",
    "entscheidung_id": "d7dbfc08f",
    "invalidierung": "BTC Binance unter 64.000 oder DVOL >60",
-   "kurs": 0.7835000000000001,
-   "wert": 245.08
+   "kurs": 0.746,
+   "wert": 231.93
   },
   {
    "id": "pea9d23a3",
@@ -173,8 +173,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "dd6456776",
-   "kurs": 65707.07500000001,
-   "wert": 932.46
+   "kurs": 65304.005000000005,
+   "wert": 926.74
   },
   {
    "id": "p994b6370",
@@ -542,8 +542,8 @@
    "ausstiegsplan": "Halten bis Tag-1-Schluss 19.11.; Verkauf, falls Preisfestsetzung ≥$90 oder JA-Preis >0.40.",
    "entscheidung_id": "da86d3e2a",
    "invalidierung": "IPO-Preis über Spanne (≥$85) oder Nachrichten, dass Marktkap FD-basiert >2 Bio bei $111 gezählt wird und Orderbuch-Hype.",
-   "kurs": 0.9200042102547172,
-   "wert": 34.96
+   "kurs": 0.9164350366170725,
+   "wert": 34.82
   },
   {
    "id": "pf5130da4",
@@ -570,8 +570,8 @@
    "ausstiegsplan": "Bis zur Abrechnung (~8.1.2027) halten. Verkauf, wenn NEIN ≥0,95 oder die Invalidierung eintritt.",
    "entscheidung_id": "dd841b112",
    "invalidierung": "NVDA-Marktkap innerhalb von 10 % zu Apple (NVDA >~195 bei Apple ~358) oder Polymarket NVDA-JA >0,25",
-   "kurs": 0.8212126022535504,
-   "wert": 32.84
+   "kurs": 0.8428153605037616,
+   "wert": 33.7
   }
  ],
  "realisiert": -221.05643179117618,
@@ -579,7 +579,7 @@
  "funding": 0.0,
  "erstellt": 1793380123.8861866,
  "start_fx": 1.1156327353966788,
- "letzter_tick": 1794668949.4074106,
+ "letzter_tick": 1794669848.7483158,
  "auftraege": [],
  "rebalancing": {
   "ziele": {
