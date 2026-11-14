@@ -2,7 +2,7 @@
  "fonds_id": "liga_deepseek",
  "waehrung": "USD",
  "start_kapital": 11184.88579861696,
- "cash": 1232.5898211637905,
+ "cash": 1144.5162711637904,
  "positionen": [
   {
    "id": "p78a3c466",
@@ -248,10 +248,42 @@
    "invalidierung": "BTC-Tagesschluss über 72.000 USD und 65.000 seit mehr als 14 Tagen nicht berührt.",
    "kurs": 0.925,
    "wert": 368.0
+  },
+  {
+   "id": "p8e7557a6",
+   "inst": {
+    "id": "pm:polymarket:3013350:JA",
+    "art": "pm",
+    "venue": "polymarket",
+    "ergebnis": "JA",
+    "frage": "Will Bitcoin dip to $60,000 by December 31, 2026?",
+    "schliesst": 1798779600.0,
+    "ref": {
+     "id": "3013350",
+     "token_ja": "104279604547231872129402198190232956636095665469278761891693384128061158683041",
+     "token_nein": "71378443524585182161509165206687359935571329472000076556085474136388673584216",
+     "tick": 0.01,
+     "condition": "0x6c8bc8cd9b2d64358ad995ccee8e998cf0f81a89c4be0b8e51eadf09c6be60ba",
+     "gebuehr_rate": 0.07,
+     "gebuehr_exp": 1.0
+    },
+    "url": "https://polymarket.com/event/what-price-will-bitcoin-hit-before-2027"
+   },
+   "seite": "long",
+   "menge": 150.0,
+   "einstand": 0.57,
+   "hebel": 1.0,
+   "marge": 0.0,
+   "eroeffnet": 1794669288.9193795,
+   "gebuehren": 2.57355,
+   "funding": 0.0,
+   "ausstiegsplan": "Halten bis Abrechnung 31.12.2026; Verkauf bei JA > 0,88 oder BTC-Tagesschluss > 70.000.",
+   "entscheidung_id": "d1c8f65ac",
+   "invalidierung": "BTC schließt zwei Tage in Folge über SMA50 (68.913) UND DVOL fällt unter 38 → Abwärtstrend gebrochen, Touch-P unter 50%, These falsch."
   }
  ],
  "realisiert": -1322.0611697125391,
- "gebuehren": 141.48046925396545,
+ "gebuehren": 144.05401925396546,
  "funding": 0.0,
  "erstellt": 1793319819.7411644,
  "start_fx": 1.1184885798616961,
@@ -265,7 +297,7 @@
      "venue": "yahoo",
      "symbol": "SPY"
     },
-    "anteil": 0.27
+    "anteil": 0.26
    },
    "stock:AGG": {
     "inst": {
@@ -296,8 +328,8 @@
    }
   },
   "schwelle_pp": 8.0,
-  "seit": 1794582731.1099565,
-  "entscheidung_id": "dc5d59185"
+  "seit": 1794669099.0528846,
+  "entscheidung_id": "dbd55325e"
  },
  "auftraege": []
 }

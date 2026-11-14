@@ -1,6 +1,6 @@
 {
  "version": 1,
- "stand": 1794669089.727965,
+ "stand": 1794669432.274833,
  "hinweis": "Papierhandel-Simulation, keine Anlageberatung",
  "seite": "https://rouvenwieland.github.io/ki-trader-arena/",
  "budget": {
@@ -149,8 +149,8 @@
    "rendite_pct": 0.7,
    "equity_eur": 10192.18,
    "max_drawdown_pct": -6.31,
-   "status": "Fehler: Modellfehler: models/nano-banana-pro-preview: keine Antwort (HTTP 429 [{\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your cur",
-   "modell": "models/nano-banana-pro-preview",
+   "status": "Fehler: Modellfehler: gemini-flash-latest: keine Antwort (HTTP 429 [{\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota,",
+   "modell": "gemini-flash-latest",
    "kosten_heute_eur": 0.0,
    "kosten_gesamt_eur": 35.631,
    "rendite_ki_pct": [
@@ -621,8 +621,8 @@
    "rendite_pct": -3.13,
    "equity_eur": 9829.48,
    "max_drawdown_pct": -6.34,
-   "status": "Fehler: Modellfehler: models/nano-banana-pro-preview: keine Antwort (HTTP 429 [{\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your cur",
-   "modell": "models/nano-banana-pro-preview",
+   "status": "Fehler: Modellfehler: gemini-flash-latest: keine Antwort (HTTP 429 [{\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota,",
+   "modell": "gemini-flash-latest",
    "kosten_heute_eur": 0.0,
    "kosten_gesamt_eur": 37.836,
    "rendite_ki_pct": [
@@ -798,8 +798,8 @@
    "rendite_pct": -7.87,
    "equity_eur": 9348.4,
    "max_drawdown_pct": -24.83,
-   "status": "Fehler: Modellfehler: models/nano-banana-pro-preview: keine Antwort (HTTP 429 [{\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your cur",
-   "modell": "models/nano-banana-pro-preview",
+   "status": "Fehler: Modellfehler: gemini-flash-latest: keine Antwort (HTTP 429 [{\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota,",
+   "modell": "gemini-flash-latest",
    "kosten_heute_eur": 0.0,
    "kosten_gesamt_eur": 36.881,
    "rendite_ki_pct": [
@@ -1218,6 +1218,34 @@
  ],
  "letzte_entscheidungen": [
   {
+   "ts": 1794669288.9191759,
+   "fonds": "DeepSeek",
+   "instrument": "pm:polymarket:3013350:JA",
+   "aktion": "kaufen",
+   "zuversicht": 0.7
+  },
+  {
+   "ts": 1794669285.3577435,
+   "fonds": "DeepSeek",
+   "instrument": "pm:polymarket:3013350:JA",
+   "aktion": "kaufen",
+   "zuversicht": 0.7
+  },
+  {
+   "ts": 1794669281.4460132,
+   "fonds": "DeepSeek",
+   "instrument": "pm:polymarket:3013350:JA",
+   "aktion": "kaufen",
+   "zuversicht": 0.7
+  },
+  {
+   "ts": 1794669275.1159668,
+   "fonds": "DeepSeek",
+   "instrument": "pm:polymarket:3013350:JA",
+   "aktion": "kaufen",
+   "zuversicht": 0.7
+  },
+  {
    "ts": 1794646326.5155485,
    "fonds": "DeepSeek",
    "instrument": "pm:polymarket:3865962:JA",
@@ -1244,34 +1272,6 @@
    "instrument": "pm:polymarket:6507383:JA",
    "aktion": "kaufen",
    "zuversicht": 0.62
-  },
-  {
-   "ts": 1794597247.6567297,
-   "fonds": "DeepSeek",
-   "instrument": "stock:AGG",
-   "aktion": "kaufen",
-   "zuversicht": 0.62
-  },
-  {
-   "ts": 1794597243.4825265,
-   "fonds": "DeepSeek",
-   "instrument": "pm:polymarket:701501:NEIN",
-   "aktion": "verkaufen",
-   "zuversicht": 0.6
-  },
-  {
-   "ts": 1794582898.6443708,
-   "fonds": "DeepSeek",
-   "instrument": "pm:polymarket:6884119:NEIN",
-   "aktion": "kaufen",
-   "zuversicht": 0.62
-  },
-  {
-   "ts": 1794560881.837103,
-   "fonds": "Claude Mittel+RM (A/B)",
-   "instrument": "pm:polymarket:6507383:JA",
-   "aktion": "kaufen",
-   "zuversicht": 0.65
   }
  ],
  "ereignisse": [
