@@ -264,8 +264,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "d6e1a7002",
-   "kurs": 67377.83499999999,
-   "wert": 1108.83
+   "kurs": 67022.85500000001,
+   "wert": 1102.98
   },
   {
    "id": "pe3015b77",
@@ -285,8 +285,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "d6e1a7002",
-   "kurs": 1902.585,
-   "wert": 431.79
+   "kurs": 1894.3249999999998,
+   "wert": 429.92
   },
   {
    "id": "p1ad6082a",
@@ -352,7 +352,7 @@
    "ausstiegsplan": "Gewinn mitnehmen bei NEIN-Bid ≥0.78 (=P). Nach NVDA-Earnings neu rechnen. Sonst halten bis 31.12.",
    "entscheidung_id": "d1fa25bbb",
    "invalidierung": "NVDA-Marktkapitalisierung innerhalb 5 % von Apple (z. B. NVDA ≥200 bei AAPL ~349) nach den Earnings, oder NVDA-JA ≥0.45.",
-   "kurs": 0.91,
+   "kurs": 0.905,
    "wert": 385.2
   },
   {
@@ -479,7 +479,7 @@
  "funding": 0.0,
  "erstellt": 1793319819.7411644,
  "start_fx": 1.1184885798616961,
- "letzter_tick": 1794626167.6647415,
+ "letzter_tick": 1794627068.0799809,
  "auftraege": [
   {
    "id": "a4e7a61",
@@ -514,7 +514,7 @@
    "ausstiegsplan": "",
    "invalidierung": "",
    "erstellt": 1794409480.899957,
-   "geprueft_bis": 1794626167.6647415,
+   "geprueft_bis": 1794627068.0799809,
    "gueltig_bis": 1797001480.899957
   },
   {
@@ -551,7 +551,7 @@
    "ausstiegsplan": "",
    "invalidierung": "",
    "erstellt": 1794452946.4758763,
-   "geprueft_bis": 1794626167.6647415,
+   "geprueft_bis": 1794627068.0799809,
    "gueltig_bis": 1797044946.4758763
   }
  ],

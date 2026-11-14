@@ -64,8 +64,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "d3af64508",
-   "kurs": 67377.83499999999,
-   "wert": 1823.43
+   "kurs": 67022.85500000001,
+   "wert": 1813.82
   },
   {
    "id": "p5a2259b8",
@@ -125,8 +125,8 @@
    "ausstiegsplan": "Verkauf bei Wertverdopplung (BTC ~67–68k) oder Halten bis 25.12. Halbierung der Position, wenn BTC über 80k zurückkehrt (Theta-Bremse).",
    "entscheidung_id": "d0fe400cd",
    "invalidierung": "BTC schließt 3 Tage in Folge über 80k mit fallender realisierter Vola (Abwärtstrend gebrochen).",
-   "kurs": 6091.57672,
-   "wert": 1497.65
+   "kurs": 6313.723536999999,
+   "wert": 1523.19
   },
   {
    "id": "p5a6a2ac6",
@@ -155,7 +155,7 @@
  "funding": 0.0,
  "erstellt": 1793319819.7411644,
  "start_fx": 1.1184885798616961,
- "letzter_tick": 1794626167.6647415,
+ "letzter_tick": 1794627068.0799809,
  "rebalancing": {
   "ziele": {
    "stock:SPY": {
