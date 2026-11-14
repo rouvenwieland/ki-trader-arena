@@ -193,8 +193,8 @@
    "gebuehren": 1.04341,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.695,
-   "wert": 125.58
+   "kurs": 0.685,
+   "wert": 123.76
   },
   {
    "id": "p7e5c2e70",
@@ -641,8 +641,8 @@
    "gebuehren": 4.65658,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.9824999999999999,
-   "wert": 270.05
+   "kurs": 0.9835,
+   "wert": 270.32
   },
   {
    "id": "pd183209f",
@@ -673,8 +673,8 @@
    "gebuehren": 2.87438,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.9875,
-   "wert": 216.15
+   "kurs": 0.9884999999999999,
+   "wert": 216.37
   },
   {
    "id": "p54f0e36a",
@@ -737,7 +737,7 @@
    "gebuehren": 3.5937,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.255,
+   "kurs": 0.26,
    "wert": 83.49
   },
   {
@@ -1218,7 +1218,7 @@
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
    "kurs": 0.9550000000000001,
-   "wert": 182.36
+   "wert": 184.93
   },
   {
    "id": "pa0ba9cff",
@@ -1441,8 +1441,8 @@
    "gebuehren": 0.0501,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.9884999999999999,
-   "wert": 165.98
+   "kurs": 0.9864999999999999,
+   "wert": 165.65
   },
   {
    "id": "pe3de2c63",
@@ -1505,8 +1505,8 @@
    "gebuehren": 0.49949,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.921,
-   "wert": 159.56
+   "kurs": 0.919,
+   "wert": 159.04
   },
   {
    "id": "p9176f163",
@@ -1569,7 +1569,7 @@
    "gebuehren": 1.73366,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.83,
+   "kurs": 0.825,
    "wert": 171.38
   }
  ],
@@ -1578,6 +1578,6 @@
  "funding": 0.0,
  "erstellt": 1793379225.5430336,
  "start_fx": 1.1157431109273288,
- "letzter_tick": 1794671648.7534082,
+ "letzter_tick": 1794672549.208596,
  "kontrolle_bis": 1794646211.5116596
 }
