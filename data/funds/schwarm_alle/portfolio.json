@@ -2,7 +2,7 @@
  "fonds_id": "schwarm_alle",
  "waehrung": "USD",
  "start_kapital": 11157.431109273288,
- "cash": 7810.539829273286,
+ "cash": 8300.539829273286,
  "positionen": [
   {
    "id": "p94f69125",
@@ -65,8 +65,8 @@
    "gebuehren": 3.13551,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Schwarm-Regel)",
-   "kurs": 0.028499999999999998,
-   "wert": 10.21
+   "kurs": 0.0295,
+   "wert": 10.58
   },
   {
    "id": "p7f78b6d2",
@@ -129,8 +129,8 @@
    "gebuehren": 0.0,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Schwarm-Regel)",
-   "kurs": 0.974,
-   "wert": 684.29
+   "kurs": 0.9584999999999999,
+   "wert": 674.43
   },
   {
    "id": "pfd66109a",
@@ -321,46 +321,14 @@
    "gebuehren": 0.0,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Schwarm-Regel)",
-   "kurs": 0.2295,
+   "kurs": 0.2285,
    "wert": 68.86
-  },
-  {
-   "id": "p63d68c71",
-   "inst": {
-    "id": "pm:polymarket:6507383:JA",
-    "art": "pm",
-    "venue": "polymarket",
-    "ergebnis": "JA",
-    "frage": "Will Bitcoin dip to $67,500 in November?",
-    "schliesst": 1796101200.0,
-    "ref": {
-     "id": "6507383",
-     "token_ja": "15542710001866766202110323156169725417182779903002226439100570924289697216169",
-     "token_nein": "55697300647812113498373190444051839385143230311383069419303450826304698131181",
-     "tick": 0.01,
-     "condition": "0x144fe8b30008b8d7c4452623473fb9df7645ac00b05e5ee5d5e404a56411fad9",
-     "gebuehr_rate": 0.07,
-     "gebuehr_exp": 1.0
-    },
-    "url": "https://polymarket.com/event/what-price-will-bitcoin-hit-in-november-2026"
-   },
-   "seite": "long",
-   "menge": 490.0,
-   "einstand": 0.75,
-   "hebel": 1.0,
-   "marge": 0.0,
-   "eroeffnet": 1794591568.2164657,
-   "gebuehren": 6.43125,
-   "funding": 0.0,
-   "ausstiegsplan": "Halten bis zur Abrechnung (Schwarm-Regel)",
-   "kurs": null,
-   "wert": 367.5
   }
  ],
- "realisiert": -350.52178000000015,
+ "realisiert": -228.02178000000015,
  "gebuehren": 96.77830000000002,
  "funding": 0.0,
  "erstellt": 1793379225.5430336,
  "start_fx": 1.1157431109273288,
- "letzter_tick": 1794624089.4100099
+ "letzter_tick": 1794624989.3393211
 }
