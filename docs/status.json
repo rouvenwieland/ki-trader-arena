@@ -1,6 +1,6 @@
 {
  "version": 1,
- "stand": 1794646202.5759099,
+ "stand": 1794647176.9547994,
  "hinweis": "Papierhandel-Simulation, keine Anlageberatung",
  "seite": "https://rouvenwieland.github.io/ki-trader-arena/",
  "budget": {
@@ -150,7 +150,7 @@
    "equity_eur": 10232.82,
    "max_drawdown_pct": -6.31,
    "status": "Fehler: Modellfehler: models/nano-banana-pro-preview: keine Antwort (HTTP 429 [{\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your cur",
-   "modell": "gemini-flash-latest",
+   "modell": "models/nano-banana-pro-preview",
    "kosten_heute_eur": 0.0,
    "kosten_gesamt_eur": 35.631,
    "rendite_ki_pct": [
@@ -739,7 +739,7 @@
    "rendite_pct": -4.55,
    "equity_eur": 9685.93,
    "max_drawdown_pct": -7.09,
-   "status": "Fehler: Modellfehler: models/nano-banana-pro-preview: keine Antwort (HTTP 429 [{\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your cur",
+   "status": "Fehler: Modellfehler: gemini-flash-latest: keine Antwort (Netzwerk: ReadTimeout)",
    "modell": "gemini-flash-latest",
    "kosten_heute_eur": 0.0,
    "kosten_gesamt_eur": 37.757,
@@ -858,7 +858,7 @@
    "equity_eur": 9359.23,
    "max_drawdown_pct": -24.83,
    "status": "Fehler: Modellfehler: models/nano-banana-pro-preview: keine Antwort (HTTP 429 [{\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your cur",
-   "modell": "gemini-flash-latest",
+   "modell": "models/nano-banana-pro-preview",
    "kosten_heute_eur": 0.0,
    "kosten_gesamt_eur": 36.881,
    "rendite_ki_pct": [
@@ -1218,6 +1218,13 @@
  ],
  "letzte_entscheidungen": [
   {
+   "ts": 1794646326.5155485,
+   "fonds": "DeepSeek",
+   "instrument": "pm:polymarket:3865962:JA",
+   "aktion": "kaufen",
+   "zuversicht": 0.7
+  },
+  {
    "ts": 1794616212.1411476,
    "fonds": "DeepSeek",
    "instrument": "pm:polymarket:6507383:JA",
@@ -1265,13 +1272,6 @@
    "instrument": "pm:polymarket:6507383:JA",
    "aktion": "kaufen",
    "zuversicht": 0.65
-  },
-  {
-   "ts": 1794560873.1836815,
-   "fonds": "Claude Mittel+RM (A/B)",
-   "instrument": "pm:manifold:N5O2RlE0N0:JA",
-   "aktion": "verkaufen",
-   "zuversicht": 0.7
   }
  ],
  "ereignisse": [

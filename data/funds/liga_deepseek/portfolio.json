@@ -2,7 +2,7 @@
  "fonds_id": "liga_deepseek",
  "waehrung": "USD",
  "start_kapital": 11184.88579861696,
- "cash": 1579.0112411637906,
+ "cash": 1232.5898211637905,
  "positionen": [
   {
    "id": "p78a3c466",
@@ -214,10 +214,42 @@
    "invalidierung": "Meldung über Scheidung/Einreichung/Trennungsabsicht der Huangs oder JA-Anstieg über 0,30 ohne für mich erkennbare Nachricht.",
    "kurs": 0.855,
    "wert": 340.0
+  },
+  {
+   "id": "p943992e7",
+   "inst": {
+    "id": "pm:polymarket:3865962:JA",
+    "art": "pm",
+    "venue": "polymarket",
+    "ergebnis": "JA",
+    "frage": "Will Bitcoin dip to $65,000 by December 31, 2026?",
+    "schliesst": 1798779600.0,
+    "ref": {
+     "id": "3865962",
+     "token_ja": "53780045235418715931128205720209124033878539466833083429441668150974549326823",
+     "token_nein": "104072675121616169708481552608019889218004323979484070212305769583143217407441",
+     "tick": 0.01,
+     "condition": "0xfd7fcadffdf6a454c940569d4e1e6a9cc8e8682b70b5eb5e7fbbe76bb1844c1c",
+     "gebuehr_rate": 0.07,
+     "gebuehr_exp": 1.0
+    },
+    "url": "https://polymarket.com/event/what-price-will-bitcoin-hit-before-2027"
+   },
+   "seite": "long",
+   "menge": 400.0,
+   "einstand": 0.8575,
+   "hebel": 1.0,
+   "marge": 0.0,
+   "eroeffnet": 1794646326.5157397,
+   "gebuehren": 3.42142,
+   "funding": 0.0,
+   "ausstiegsplan": "Halten bis Abrechnung 31.12.2026; kein Vorverkauf (Spread + Gebühr > Auflösungswert).",
+   "entscheidung_id": "dcde29dd7",
+   "invalidierung": "BTC-Tagesschluss über 72.000 USD und 65.000 seit mehr als 14 Tagen nicht berührt."
   }
  ],
  "realisiert": -1322.0611697125391,
- "gebuehren": 138.05904925396544,
+ "gebuehren": 141.48046925396545,
  "funding": 0.0,
  "erstellt": 1793319819.7411644,
  "start_fx": 1.1184885798616961,
