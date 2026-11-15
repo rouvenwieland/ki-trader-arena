@@ -2,7 +2,7 @@
  "fonds_id": "liga_deepseek",
  "waehrung": "USD",
  "start_kapital": 11184.88579861696,
- "cash": 1544.5162711637904,
+ "cash": 1540.1374211637906,
  "positionen": [
   {
    "id": "p78a3c466",
@@ -248,10 +248,42 @@
    "invalidierung": "BTC schließt zwei Tage in Folge über SMA50 (68.913) UND DVOL fällt unter 38 → Abwärtstrend gebrochen, Touch-P unter 50%, These falsch.",
    "kurs": 0.665,
    "wert": 99.0
+  },
+  {
+   "id": "pf88eff35",
+   "inst": {
+    "id": "pm:polymarket:6891215:JA",
+    "art": "pm",
+    "venue": "polymarket",
+    "ergebnis": "JA",
+    "frage": "Will Bitcoin dip to $62,000 November 9-15?",
+    "schliesst": 1794805200.0,
+    "ref": {
+     "id": "6891215",
+     "token_ja": "32203881254117901813493090499083335613170428667715037961612617658762482868950",
+     "token_nein": "34390734464051072739982582429240365446783011824219890733124876477094820569456",
+     "tick": 0.001,
+     "condition": "0x7dd27ebb8406a344823b3dd0d7d4eca239849bdf20f90614b26791b5f89df17c",
+     "gebuehr_rate": 0.07,
+     "gebuehr_exp": 1.0
+    },
+    "url": "https://polymarket.com/event/what-price-will-bitcoin-hit-november-9-15-2026"
+   },
+   "seite": "long",
+   "menge": 12.0,
+   "einstand": 0.349,
+   "hebel": 1.0,
+   "marge": 0.0,
+   "eroeffnet": 1794710224.6494524,
+   "gebuehren": 0.19085,
+   "funding": 0.0,
+   "ausstiegsplan": "Bis Abrechnung halten (23:59 ET).",
+   "entscheidung_id": "dfa630c65",
+   "invalidierung": "BTC nachhaltig >66.500 ohne erneuten Test von 63.000."
   }
  ],
  "realisiert": -1265.0611697125391,
- "gebuehren": 144.05401925396546,
+ "gebuehren": 144.24486925396548,
  "funding": 0.0,
  "erstellt": 1793319819.7411644,
  "start_fx": 1.1184885798616961,
@@ -265,7 +297,7 @@
      "venue": "yahoo",
      "symbol": "SPY"
     },
-    "anteil": 0.25
+    "anteil": 0.22
    },
    "stock:AGG": {
     "inst": {
@@ -274,16 +306,16 @@
      "venue": "yahoo",
      "symbol": "AGG"
     },
-    "anteil": 0.16
+    "anteil": 0.17
    },
-   "stock:GLD": {
+   "stock:TLT": {
     "inst": {
-     "id": "stock:GLD",
+     "id": "stock:TLT",
      "art": "stock",
      "venue": "yahoo",
-     "symbol": "GLD"
+     "symbol": "TLT"
     },
-    "anteil": 0.13
+    "anteil": 0.1
    },
    "spot:BTC-USD": {
     "inst": {
@@ -301,12 +333,12 @@
      "venue": "yahoo",
      "symbol": "XLE"
     },
-    "anteil": 0.05
+    "anteil": 0.08
    }
   },
-  "schwelle_pp": 5.0,
-  "seit": 1794700991.859872,
-  "entscheidung_id": "d15ce9a8d"
+  "schwelle_pp": 8.0,
+  "seit": 1794710108.5242047,
+  "entscheidung_id": "d4e01903d"
  },
  "auftraege": [
   {
@@ -333,6 +365,31 @@
    "erstellt": 1794683775.0383604,
    "geprueft_bis": 1794683775.0383604,
    "gueltig_bis": 1794862800.0
+  },
+  {
+   "id": "afdd1c4",
+   "entscheidung_id": "dbb68c6c4",
+   "inst": {
+    "id": "stock:GLD",
+    "art": "stock",
+    "venue": "yahoo",
+    "symbol": "GLD"
+   },
+   "aktion": "verkaufen",
+   "typ": "limit",
+   "seite": "long",
+   "betrag_usd": null,
+   "menge": 4.006991,
+   "hebel": 1.0,
+   "limit_preis": 348,
+   "stop_preis": null,
+   "stop_loss": null,
+   "take_profit": null,
+   "ausstiegsplan": "Vollständiger Verkauf zur Börseneröffnung Montag 14:30 UTC; Limit 348 (≈1,8% unter Freitagsschluss 355,45), GTC. Falls nicht gefüllt, nächste Runde Limit nachziehen.",
+   "invalidierung": "",
+   "erstellt": 1794710244.2009962,
+   "geprueft_bis": 1794710244.2009962,
+   "gueltig_bis": 1797302244.2009962
   }
  ]
 }

@@ -1,6 +1,6 @@
 {
  "version": 1,
- "stand": 1794710102.2062342,
+ "stand": 1794710592.124037,
  "hinweis": "Papierhandel-Simulation, keine Anlageberatung",
  "seite": "https://rouvenwieland.github.io/ki-trader-arena/",
  "budget": {
@@ -621,8 +621,8 @@
    "rendite_pct": -3.05,
    "equity_eur": 9837.53,
    "max_drawdown_pct": -6.34,
-   "status": "Fehler: Modellfehler: gemini-flash-latest: keine Antwort (HTTP 429 [{\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota,",
-   "modell": "gemini-flash-latest",
+   "status": "vorübergehend gestört (Anbieter überlastet) – nächster Versuch beim nächsten Lauf",
+   "modell": "gemini-2.5-flash",
    "kosten_heute_eur": 0.0,
    "kosten_gesamt_eur": 37.836,
    "rendite_ki_pct": [
@@ -798,8 +798,8 @@
    "rendite_pct": -7.95,
    "equity_eur": 9340.41,
    "max_drawdown_pct": -24.83,
-   "status": "Fehler: Modellfehler: gemini-flash-latest: keine Antwort (HTTP 429 [{\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota,",
-   "modell": "gemini-flash-latest",
+   "status": "Fehler: Modellfehler: models/nano-banana-pro-preview: keine Antwort (HTTP 429 [{\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your cur",
+   "modell": "models/nano-banana-pro-preview",
    "kosten_heute_eur": 0.0,
    "kosten_gesamt_eur": 36.881,
    "rendite_ki_pct": [
@@ -1218,6 +1218,27 @@
  ],
  "letzte_entscheidungen": [
   {
+   "ts": 1794710244.2007797,
+   "fonds": "DeepSeek",
+   "instrument": "stock:GLD",
+   "aktion": "verkaufen",
+   "zuversicht": 0.65
+  },
+  {
+   "ts": 1794710228.2176094,
+   "fonds": "DeepSeek",
+   "instrument": "pm:polymarket:6891215:JA",
+   "aktion": "kaufen",
+   "zuversicht": 0.7
+  },
+  {
+   "ts": 1794710224.6490126,
+   "fonds": "DeepSeek",
+   "instrument": "pm:polymarket:6891215:JA",
+   "aktion": "kaufen",
+   "zuversicht": 0.7
+  },
+  {
    "ts": 1794683775.0378983,
    "fonds": "DeepSeek",
    "instrument": "stock:XLE",
@@ -1251,27 +1272,6 @@
    "instrument": "pm:polymarket:3013350:JA",
    "aktion": "kaufen",
    "zuversicht": 0.7
-  },
-  {
-   "ts": 1794669275.1159668,
-   "fonds": "DeepSeek",
-   "instrument": "pm:polymarket:3013350:JA",
-   "aktion": "kaufen",
-   "zuversicht": 0.7
-  },
-  {
-   "ts": 1794646326.5155485,
-   "fonds": "DeepSeek",
-   "instrument": "pm:polymarket:3865962:JA",
-   "aktion": "kaufen",
-   "zuversicht": 0.7
-  },
-  {
-   "ts": 1794616212.1411476,
-   "fonds": "DeepSeek",
-   "instrument": "pm:polymarket:6507383:JA",
-   "aktion": "kaufen",
-   "zuversicht": 0.62
   }
  ],
  "ereignisse": [
