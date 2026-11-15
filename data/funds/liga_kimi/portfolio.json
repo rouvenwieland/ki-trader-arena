@@ -2,7 +2,7 @@
  "fonds_id": "liga_kimi",
  "waehrung": "USD",
  "start_kapital": 11184.88579861696,
- "cash": 2499.5169273180622,
+ "cash": 2389.034647284382,
  "positionen": [
   {
    "id": "p0b5ac550",
@@ -55,17 +55,17 @@
     "symbol": "BTC-USD"
    },
    "seite": "long",
-   "menge": 0.02706272482670085,
-   "einstand": 80161.70913599999,
+   "menge": 0.028810322105095397,
+   "einstand": 79111.14661145059,
    "hebel": 1.0,
    "marge": 0.0,
    "eroeffnet": 1793820796.9785986,
-   "gebuehren": 13.016365655913598,
+   "gebuehren": 13.675305695875906,
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
-   "entscheidung_id": "d3af64508",
-   "kurs": 63339.884999999995,
-   "wert": 1714.15
+   "entscheidung_id": "de59ece78",
+   "kurs": 62829.905,
+   "wert": 1810.15
   },
   {
    "id": "p5a2259b8",
@@ -125,8 +125,8 @@
    "ausstiegsplan": "Verkauf bei Wertverdopplung (BTC ~67–68k) oder Halten bis 25.12. Halbierung der Position, wenn BTC über 80k zurückkehrt (Theta-Bremse).",
    "entscheidung_id": "d0fe400cd",
    "invalidierung": "BTC schließt 3 Tage in Folge über 80k mit fallender realisierter Vola (Abwärtstrend gebrochen).",
-   "kurs": 9105.684141,
-   "wert": 2209.89
+   "kurs": 9612.874951000002,
+   "wert": 2346.71
   },
   {
    "id": "p5a6a2ac6",
@@ -151,11 +151,11 @@
   }
  ],
  "realisiert": -593.8131354666724,
- "gebuehren": 79.67188440591362,
+ "gebuehren": 80.33082444587592,
  "funding": 0.0,
  "erstellt": 1793319819.7411644,
  "start_fx": 1.1184885798616961,
- "letzter_tick": 1794704473.5037935,
+ "letzter_tick": 1794705373.9351268,
  "rebalancing": {
   "ziele": {
    "stock:SPY": {
