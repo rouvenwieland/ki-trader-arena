@@ -97,8 +97,8 @@
    "gebuehren": 0.0,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.8140000000000001,
-   "wert": 225.46
+   "kurs": 0.8135,
+   "wert": 225.18
   },
   {
    "id": "pdcfb5d53",
@@ -193,7 +193,7 @@
    "gebuehren": 1.04341,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.6799999999999999,
+   "kurs": 0.675,
    "wert": 121.94
   },
   {
@@ -417,8 +417,8 @@
    "gebuehren": 1.85338,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.959,
-   "wert": 188.53
+   "kurs": 0.96,
+   "wert": 188.73
   },
   {
    "id": "p7f18532d",
@@ -673,8 +673,8 @@
    "gebuehren": 2.87438,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.973,
-   "wert": 212.65
+   "kurs": 0.974,
+   "wert": 213.09
   },
   {
    "id": "p54f0e36a",
@@ -737,7 +737,7 @@
    "gebuehren": 3.5937,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.1675,
+   "kurs": 0.18,
    "wert": 39.93
   },
   {
@@ -1217,8 +1217,8 @@
    "gebuehren": 1.35793,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.95,
-   "wert": 186.12
+   "kurs": 0.9504999999999999,
+   "wert": 186.32
   },
   {
    "id": "pa0ba9cff",
@@ -1377,8 +1377,8 @@
    "gebuehren": 0.24913,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.9515,
-   "wert": 158.24
+   "kurs": 0.9525,
+   "wert": 158.58
   },
   {
    "id": "p766850e1",
@@ -1569,7 +1569,7 @@
    "gebuehren": 1.73366,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.77,
+   "kurs": 0.765,
    "wert": 158.84
   }
  ],
@@ -1578,6 +1578,6 @@
  "funding": 0.0,
  "erstellt": 1793379225.5430336,
  "start_fx": 1.1157431109273288,
- "letzter_tick": 1794716173.4327586,
+ "letzter_tick": 1794716302.116766,
  "kontrolle_bis": 1794710108.5242047
 }
