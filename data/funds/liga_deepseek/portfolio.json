@@ -299,7 +299,7 @@
      "venue": "yahoo",
      "symbol": "SPY"
     },
-    "anteil": 0.22
+    "anteil": 0.24
    },
    "stock:AGG": {
     "inst": {
@@ -309,15 +309,6 @@
      "symbol": "AGG"
     },
     "anteil": 0.17
-   },
-   "stock:TLT": {
-    "inst": {
-     "id": "stock:TLT",
-     "art": "stock",
-     "venue": "yahoo",
-     "symbol": "TLT"
-    },
-    "anteil": 0.1
    },
    "spot:BTC-USD": {
     "inst": {
@@ -338,9 +329,9 @@
     "anteil": 0.08
    }
   },
-  "schwelle_pp": 8.0,
-  "seit": 1794710108.5242047,
-  "entscheidung_id": "d4e01903d"
+  "schwelle_pp": 4.0,
+  "seit": 1794719121.5880618,
+  "entscheidung_id": "dce79dd16"
  },
  "auftraege": [
   {
