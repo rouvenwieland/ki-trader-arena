@@ -45,8 +45,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "d8e5f296a",
-   "kurs": 65422.985,
-   "wert": 603.63
+   "kurs": 65240.145000000004,
+   "wert": 601.94
   },
   {
    "id": "p9a8fa083",
@@ -157,7 +157,7 @@
    "ausstiegsplan": "Halten bis 31.12.2026 (Abrechnung). Vorzeitiger Verkauf bei JA-Preis (Gegenposition) unter 0,12 (dann ist mein p zu pessimistisch und der Edge weg) oder bei JA über 0,50 ohne klare Nachricht (Markt weiß mehr → sofort raus).",
    "entscheidung_id": "dd655a214",
    "invalidierung": "US-Regierung (Trump, Außen- oder Verteidigungsministerium) kündigt öffentlich und förmlich die Aufhebung/Aussetzung der Seeblockade an ODER ein umfassender Iran-Deal wird mit Blockade-Aufhebung als Teil verkündet.",
-   "kurs": 0.8115,
+   "kurs": 0.8105,
    "wert": 243.0
   },
   {
@@ -246,8 +246,8 @@
    "ausstiegsplan": "Halten bis Abrechnung 31.12.2026; Verkauf bei JA > 0,88 oder BTC-Tagesschluss > 70.000.",
    "entscheidung_id": "d1c8f65ac",
    "invalidierung": "BTC schließt zwei Tage in Folge über SMA50 (68.913) UND DVOL fällt unter 38 → Abwärtstrend gebrochen, Touch-P unter 50%, These falsch.",
-   "kurs": 0.555,
-   "wert": 82.5
+   "kurs": 0.565,
+   "wert": 84.0
   },
   {
    "id": "pf88eff35",
@@ -280,8 +280,8 @@
    "ausstiegsplan": "Bis Abrechnung halten (23:59 ET).",
    "entscheidung_id": "dfa630c65",
    "invalidierung": "BTC nachhaltig >66.500 ohne erneuten Test von 63.000.",
-   "kurs": 0.10250000000000001,
-   "wert": 1.18
+   "kurs": 0.1355,
+   "wert": 1.42
   }
  ],
  "realisiert": -1265.0611697125391,
@@ -289,7 +289,7 @@
  "funding": 0.0,
  "erstellt": 1793319819.7411644,
  "start_fx": 1.1184885798616961,
- "letzter_tick": 1794743422.5509908,
+ "letzter_tick": 1794744323.1351652,
  "rebalancing": {
   "ziele": {
    "stock:SPY": {
