@@ -1,6 +1,6 @@
 {
  "version": 1,
- "stand": 1794762780.684046,
+ "stand": 1794763096.9090242,
  "hinweis": "Papierhandel-Simulation, keine Anlageberatung",
  "seite": "https://rouvenwieland.github.io/ki-trader-arena/",
  "budget": {
@@ -267,7 +267,7 @@
    "rendite_pct": -0.37,
    "equity_eur": 10084.51,
    "max_drawdown_pct": -6.31,
-   "status": "aktiv (Modell: Gemini Flash)",
+   "status": "Fehler: Modellfehler: gemini-flash-latest: keine Antwort (HTTP 429 [{\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota,",
    "modell": "gemini-flash-latest",
    "kosten_heute_eur": 0.0,
    "kosten_gesamt_eur": 35.632,
@@ -621,8 +621,8 @@
    "rendite_pct": -2.47,
    "equity_eur": 9896.63,
    "max_drawdown_pct": -6.34,
-   "status": "Fehler: Modellfehler: models/nano-banana-pro-preview: keine Antwort (HTTP 429 [{\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your cur",
-   "modell": "models/nano-banana-pro-preview",
+   "status": "Fehler: Modellfehler: gemini-flash-latest: keine Antwort (HTTP 429 [{\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota,",
+   "modell": "gemini-flash-latest",
    "kosten_heute_eur": 0.0,
    "kosten_gesamt_eur": 37.837,
    "rendite_ki_pct": [
@@ -739,8 +739,8 @@
    "rendite_pct": -4.89,
    "equity_eur": 9651.85,
    "max_drawdown_pct": -7.82,
-   "status": "vorübergehend gestört (Anbieter überlastet) – nächster Versuch beim nächsten Lauf",
-   "modell": "gemini-2.5-flash",
+   "status": "Fehler: Modellfehler: gemini-flash-latest: keine Antwort (HTTP 429 [{\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota,",
+   "modell": "gemini-flash-latest",
    "kosten_heute_eur": 0.0,
    "kosten_gesamt_eur": 37.758,
    "rendite_ki_pct": [
@@ -798,7 +798,7 @@
    "rendite_pct": -7.95,
    "equity_eur": 9340.86,
    "max_drawdown_pct": -24.83,
-   "status": "aktiv (Modell: Gemini Flash)",
+   "status": "Fehler: Modellfehler: gemini-flash-latest: keine Antwort (HTTP 429 [{\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota,",
    "modell": "gemini-flash-latest",
    "kosten_heute_eur": 0.0,
    "kosten_gesamt_eur": 36.882,
