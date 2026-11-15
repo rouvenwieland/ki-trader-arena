@@ -267,15 +267,6 @@
     },
     "anteil": 0.25
    },
-   "stock:TLT": {
-    "inst": {
-     "id": "stock:TLT",
-     "art": "stock",
-     "venue": "yahoo",
-     "symbol": "TLT"
-    },
-    "anteil": 0.15
-   },
    "stock:AGG": {
     "inst": {
      "id": "stock:AGG",
@@ -283,7 +274,7 @@
      "venue": "yahoo",
      "symbol": "AGG"
     },
-    "anteil": 0.13
+    "anteil": 0.16
    },
    "stock:GLD": {
     "inst": {
@@ -292,7 +283,7 @@
      "venue": "yahoo",
      "symbol": "GLD"
     },
-    "anteil": 0.11
+    "anteil": 0.13
    },
    "spot:BTC-USD": {
     "inst": {
@@ -302,11 +293,20 @@
      "symbol": "BTC-USD"
     },
     "anteil": 0.06
+   },
+   "stock:XLE": {
+    "inst": {
+     "id": "stock:XLE",
+     "art": "stock",
+     "venue": "yahoo",
+     "symbol": "XLE"
+    },
+    "anteil": 0.05
    }
   },
-  "schwelle_pp": 8.0,
-  "seit": 1794683614.7094893,
-  "entscheidung_id": "d187abc65"
+  "schwelle_pp": 5.0,
+  "seit": 1794700991.859872,
+  "entscheidung_id": "d15ce9a8d"
  },
  "auftraege": [
   {
