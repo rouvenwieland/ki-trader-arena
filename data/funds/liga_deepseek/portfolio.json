@@ -45,8 +45,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "d8e5f296a",
-   "kurs": 64631.625,
-   "wert": 596.33
+   "kurs": 64711.125,
+   "wert": 597.06
   },
   {
    "id": "p9a8fa083",
@@ -212,8 +212,8 @@
    "ausstiegsplan": "Halten bis Abrechnung 31.12.2026. Vorzeitiger Verkauf nur bei Invalidierung oder wenn NEIN-Ask über 0,90 (Restchance zu teuer).",
    "entscheidung_id": "d2448f0fc",
    "invalidierung": "Meldung über Scheidung/Einreichung/Trennungsabsicht der Huangs oder JA-Anstieg über 0,30 ohne für mich erkennbare Nachricht.",
-   "kurs": 0.875,
-   "wert": 348.0
+   "kurs": 0.885,
+   "wert": 352.0
   },
   {
    "id": "p8e7557a6",
@@ -280,8 +280,8 @@
    "ausstiegsplan": "Bis Abrechnung halten (23:59 ET).",
    "entscheidung_id": "dfa630c65",
    "invalidierung": "BTC nachhaltig >66.500 ohne erneuten Test von 63.000.",
-   "kurs": 0.179,
-   "wert": 1.7
+   "kurs": 0.14650000000000002,
+   "wert": 1.6
   },
   {
    "id": "pb81feef7",
@@ -313,7 +313,9 @@
    "funding": 0.0,
    "ausstiegsplan": "Halten bis Abrechnung 30.11.2026; vorzeitiger Verkauf nur bei JA > 0,85 oder wenn BTC über 68.000 schließt.",
    "entscheidung_id": "d4aa7b234",
-   "invalidierung": "BTC-Tagesschluss über 68.000 USD oder realisierte 5-Tage-Vola unter 30% p.a."
+   "invalidierung": "BTC-Tagesschluss über 68.000 USD oder realisierte 5-Tage-Vola unter 30% p.a.",
+   "kurs": 0.435,
+   "wert": 258.0
   }
  ],
  "realisiert": -1265.0611697125391,
@@ -321,7 +323,7 @@
  "funding": 0.0,
  "erstellt": 1793319819.7411644,
  "start_fx": 1.1184885798616961,
- "letzter_tick": 1794755316.447629,
+ "letzter_tick": 1794756362.6615207,
  "rebalancing": {
   "ziele": {
    "stock:SPY": {
