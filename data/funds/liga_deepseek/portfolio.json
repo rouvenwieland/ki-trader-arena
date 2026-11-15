@@ -45,8 +45,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "d8e5f296a",
-   "kurs": 62829.905,
-   "wert": 579.7
+   "kurs": 62499.505000000005,
+   "wert": 576.66
   },
   {
    "id": "p9a8fa083",
@@ -123,8 +123,8 @@
    "ausstiegsplan": "Halten bis Abrechnung 31.12.2026 oder Verkauf, wenn NEIN < 0,80 (Invalidierung) bzw. JA > 0,25 ohne erklärende Nachricht.",
    "entscheidung_id": "d2f748f89",
    "invalidierung": "Hegseth kündigt Rücktritt an, wird entlassen, oder eine credible Quelle meldet, dass Trump eine Ablösung vorbereitet (dann JA sofort über 0,30).",
-   "kurs": 0.825,
-   "wert": 305.86
+   "kurs": 0.845,
+   "wert": 313.32
   },
   {
    "id": "p3aa56fe5",
@@ -246,8 +246,8 @@
    "ausstiegsplan": "Halten bis Abrechnung 31.12.2026; Verkauf bei JA > 0,88 oder BTC-Tagesschluss > 70.000.",
    "entscheidung_id": "d1c8f65ac",
    "invalidierung": "BTC schließt zwei Tage in Folge über SMA50 (68.913) UND DVOL fällt unter 38 → Abwärtstrend gebrochen, Touch-P unter 50%, These falsch.",
-   "kurs": 0.77,
-   "wert": 114.0
+   "kurs": 0.775,
+   "wert": 115.5
   }
  ],
  "realisiert": -1265.0611697125391,
@@ -255,7 +255,7 @@
  "funding": 0.0,
  "erstellt": 1793319819.7411644,
  "start_fx": 1.1184885798616961,
- "letzter_tick": 1794705373.9351268,
+ "letzter_tick": 1794706273.5957432,
  "rebalancing": {
   "ziele": {
    "stock:SPY": {
