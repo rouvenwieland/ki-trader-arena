@@ -2,7 +2,7 @@
  "fonds_id": "liga_deepseek",
  "waehrung": "USD",
  "start_kapital": 11184.88579861696,
- "cash": 1540.1374211637906,
+ "cash": 1265.7886211637906,
  "positionen": [
   {
    "id": "p78a3c466",
@@ -282,10 +282,42 @@
    "invalidierung": "BTC nachhaltig >66.500 ohne erneuten Test von 63.000.",
    "kurs": 0.179,
    "wert": 1.7
+  },
+  {
+   "id": "pb81feef7",
+   "inst": {
+    "id": "pm:polymarket:6507388:JA",
+    "art": "pm",
+    "venue": "polymarket",
+    "ergebnis": "JA",
+    "frage": "Will Bitcoin dip to $60,000 in November?",
+    "schliesst": 1796101200.0,
+    "ref": {
+     "id": "6507388",
+     "token_ja": "107152254251312602523208821737521660130399301281272451493574987278375169542952",
+     "token_nein": "26686738046803966725777829269301372733435599988156643948052444279454448530448",
+     "tick": 0.01,
+     "condition": "0xd2295a289e6ae13eb1727274cfad9c8202e761d8a325bc423a0548b853fea926",
+     "gebuehr_rate": 0.07,
+     "gebuehr_exp": 1.0
+    },
+    "url": "https://polymarket.com/event/what-price-will-bitcoin-hit-in-november-2026"
+   },
+   "seite": "long",
+   "menge": 600.0,
+   "einstand": 0.44,
+   "hebel": 1.0,
+   "marge": 0.0,
+   "eroeffnet": 1794755589.1298704,
+   "gebuehren": 10.3488,
+   "funding": 0.0,
+   "ausstiegsplan": "Halten bis Abrechnung 30.11.2026; vorzeitiger Verkauf nur bei JA > 0,85 oder wenn BTC über 68.000 schließt.",
+   "entscheidung_id": "d4aa7b234",
+   "invalidierung": "BTC-Tagesschluss über 68.000 USD oder realisierte 5-Tage-Vola unter 30% p.a."
   }
  ],
  "realisiert": -1265.0611697125391,
- "gebuehren": 144.24486925396548,
+ "gebuehren": 154.5936692539655,
  "funding": 0.0,
  "erstellt": 1793319819.7411644,
  "start_fx": 1.1184885798616961,
@@ -299,25 +331,7 @@
      "venue": "yahoo",
      "symbol": "SPY"
     },
-    "anteil": 0.24
-   },
-   "stock:AGG": {
-    "inst": {
-     "id": "stock:AGG",
-     "art": "stock",
-     "venue": "yahoo",
-     "symbol": "AGG"
-    },
-    "anteil": 0.17
-   },
-   "spot:BTC-USD": {
-    "inst": {
-     "id": "spot:BTC-USD",
-     "art": "spot",
-     "venue": "coinbase",
-     "symbol": "BTC-USD"
-    },
-    "anteil": 0.06
+    "anteil": 0.26
    },
    "stock:XLE": {
     "inst": {
@@ -326,12 +340,48 @@
      "venue": "yahoo",
      "symbol": "XLE"
     },
+    "anteil": 0.1
+   },
+   "stock:AGG": {
+    "inst": {
+     "id": "stock:AGG",
+     "art": "stock",
+     "venue": "yahoo",
+     "symbol": "AGG"
+    },
+    "anteil": 0.16
+   },
+   "stock:TLT": {
+    "inst": {
+     "id": "stock:TLT",
+     "art": "stock",
+     "venue": "yahoo",
+     "symbol": "TLT"
+    },
     "anteil": 0.08
+   },
+   "spot:BTC-USD": {
+    "inst": {
+     "id": "spot:BTC-USD",
+     "art": "spot",
+     "venue": "coinbase",
+     "symbol": "BTC-USD"
+    },
+    "anteil": 0.07
+   },
+   "stock:GLD": {
+    "inst": {
+     "id": "stock:GLD",
+     "art": "stock",
+     "venue": "yahoo",
+     "symbol": "GLD"
+    },
+    "anteil": 0.04
    }
   },
-  "schwelle_pp": 4.0,
-  "seit": 1794719121.5880618,
-  "entscheidung_id": "dce79dd16"
+  "schwelle_pp": 3.0,
+  "seit": 1794755442.3482537,
+  "entscheidung_id": "d9d089db4"
  },
  "auftraege": [
   {

@@ -1,6 +1,6 @@
 {
  "version": 1,
- "stand": 1794755434.06379,
+ "stand": 1794756354.2775073,
  "hinweis": "Papierhandel-Simulation, keine Anlageberatung",
  "seite": "https://rouvenwieland.github.io/ki-trader-arena/",
  "budget": {
@@ -267,7 +267,7 @@
    "rendite_pct": -0.38,
    "equity_eur": 10083.65,
    "max_drawdown_pct": -6.31,
-   "status": "Fehler: Modellfehler: gemini-flash-latest: keine Antwort (Netzwerk: ReadTimeout)",
+   "status": "aktiv (Modell: Gemini Flash)",
    "modell": "gemini-flash-latest",
    "kosten_heute_eur": 0.0,
    "kosten_gesamt_eur": 35.632,
@@ -621,8 +621,8 @@
    "rendite_pct": -2.47,
    "equity_eur": 9896.63,
    "max_drawdown_pct": -6.34,
-   "status": "Fehler: Modellfehler: gemini-flash-latest: keine Antwort (HTTP 429 [{\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota,",
-   "modell": "gemini-flash-latest",
+   "status": "Fehler: Modellfehler: models/nano-banana-pro-preview: keine Antwort (HTTP 429 [{\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your cur",
+   "modell": "models/nano-banana-pro-preview",
    "kosten_heute_eur": 0.0,
    "kosten_gesamt_eur": 37.837,
    "rendite_ki_pct": [
@@ -739,8 +739,8 @@
    "rendite_pct": -4.93,
    "equity_eur": 9647.27,
    "max_drawdown_pct": -7.82,
-   "status": "Fehler: Modellfehler: gemini-flash-latest: keine Antwort (HTTP 429 [{\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota,",
-   "modell": "gemini-flash-latest",
+   "status": "vorübergehend gestört (Anbieter überlastet) – nächster Versuch beim nächsten Lauf",
+   "modell": "gemini-2.5-flash",
    "kosten_heute_eur": 0.0,
    "kosten_gesamt_eur": 37.758,
    "rendite_ki_pct": [
@@ -798,7 +798,7 @@
    "rendite_pct": -7.96,
    "equity_eur": 9339.93,
    "max_drawdown_pct": -24.83,
-   "status": "Fehler: Modellfehler: gemini-flash-latest: keine Antwort (HTTP 429 [{\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota,",
+   "status": "aktiv (Modell: Gemini Flash)",
    "modell": "gemini-flash-latest",
    "kosten_heute_eur": 0.0,
    "kosten_gesamt_eur": 36.882,
@@ -1218,6 +1218,20 @@
  ],
  "letzte_entscheidungen": [
   {
+   "ts": 1794755589.1292996,
+   "fonds": "DeepSeek",
+   "instrument": "pm:polymarket:6507388:JA",
+   "aktion": "kaufen",
+   "zuversicht": 0.68
+  },
+  {
+   "ts": 1794755585.806969,
+   "fonds": "DeepSeek",
+   "instrument": "pm:polymarket:6507388:JA",
+   "aktion": "kaufen",
+   "zuversicht": 0.68
+  },
+  {
    "ts": 1794710244.2007797,
    "fonds": "DeepSeek",
    "instrument": "stock:GLD",
@@ -1254,20 +1268,6 @@
   },
   {
    "ts": 1794669288.9191759,
-   "fonds": "DeepSeek",
-   "instrument": "pm:polymarket:3013350:JA",
-   "aktion": "kaufen",
-   "zuversicht": 0.7
-  },
-  {
-   "ts": 1794669285.3577435,
-   "fonds": "DeepSeek",
-   "instrument": "pm:polymarket:3013350:JA",
-   "aktion": "kaufen",
-   "zuversicht": 0.7
-  },
-  {
-   "ts": 1794669281.4460132,
    "fonds": "DeepSeek",
    "instrument": "pm:polymarket:3013350:JA",
    "aktion": "kaufen",
