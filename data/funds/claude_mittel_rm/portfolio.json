@@ -131,8 +131,8 @@
    "ausstiegsplan": "Halten bis 30.11.; verkaufen, wenn BTC unter 64.000 fällt oder NEIN-Preis <0.88.",
    "entscheidung_id": "d7dbfc08f",
    "invalidierung": "BTC Binance unter 64.000 oder DVOL >60",
-   "kurs": 0.7585,
-   "wert": 236.94
+   "kurs": 0.7444999999999999,
+   "wert": 232.87
   },
   {
    "id": "pea9d23a3",
@@ -173,8 +173,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "dd6456776",
-   "kurs": 64558.354999999996,
-   "wert": 916.16
+   "kurs": 64287.325,
+   "wert": 912.31
   },
   {
    "id": "p994b6370",
@@ -379,8 +379,8 @@
    "ausstiegsplan": "Halten bis Abrechnung Jan. 2027; Verkauf bei NEIN <0.80 oder Doomsday-Opening-Tag >$200M.",
    "entscheidung_id": "d6b155dae",
    "invalidierung": "Doomsday Freitagsumsatz inkl. Previews >$200M am 18.12. oder Doomsday-Domestic nach 7 Tagen >$600M.",
-   "kurs": 0.884,
-   "wert": 431.98
+   "kurs": 0.8845000000000001,
+   "wert": 432.47
   },
   {
    "id": "p75b03ffe",
@@ -542,8 +542,8 @@
    "ausstiegsplan": "Halten bis Tag-1-Schluss 19.11.; Verkauf, falls Preisfestsetzung ≥$90 oder JA-Preis >0.40.",
    "entscheidung_id": "da86d3e2a",
    "invalidierung": "IPO-Preis über Spanne (≥$85) oder Nachrichten, dass Marktkap FD-basiert >2 Bio bei $111 gezählt wird und Orderbuch-Hype.",
-   "kurs": 0.9149662206695335,
-   "wert": 34.76
+   "kurs": 0.9363919418751794,
+   "wert": 35.58
   },
   {
    "id": "pf5130da4",
@@ -579,7 +579,7 @@
  "funding": 0.0,
  "erstellt": 1793380123.8861866,
  "start_fx": 1.1156327353966788,
- "letzter_tick": 1794818842.5848417,
+ "letzter_tick": 1794819742.5634727,
  "auftraege": [],
  "rebalancing": {
   "ziele": {
