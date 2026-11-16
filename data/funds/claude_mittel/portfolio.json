@@ -264,8 +264,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "d6e1a7002",
-   "kurs": 64755.375,
-   "wert": 1065.67
+   "kurs": 64817.985,
+   "wert": 1066.7
   },
   {
    "id": "pe3015b77",
@@ -285,8 +285,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "d6e1a7002",
-   "kurs": 1810.57,
-   "wert": 410.9
+   "kurs": 1810.26,
+   "wert": 410.84
   },
   {
    "id": "p1ad6082a",
@@ -380,8 +380,8 @@
    "ausstiegsplan": "Bis Abrechnung halten; Verkauf bei Bid ≥0.50",
    "entscheidung_id": "d5a40bf82",
    "invalidierung": "Transkript Q2 FY27 enthält kein 'bubble' und Analystenfragen drehen sich nicht um Bubble; oder Call-Datum verschoben",
-   "kurs": 0.45405637000707877,
-   "wert": 12.41
+   "kurs": 0.4046414870109136,
+   "wert": 11.02
   },
   {
    "id": "pac09f469",
@@ -479,7 +479,7 @@
  "funding": 0.0,
  "erstellt": 1793319819.7411644,
  "start_fx": 1.1184885798616961,
- "letzter_tick": 1794789919.1709726,
+ "letzter_tick": 1794790818.5112503,
  "auftraege": [
   {
    "id": "a4e7a61",
@@ -514,7 +514,7 @@
    "ausstiegsplan": "",
    "invalidierung": "",
    "erstellt": 1794409480.899957,
-   "geprueft_bis": 1794789919.1709726,
+   "geprueft_bis": 1794790818.5112503,
    "gueltig_bis": 1797001480.899957
   },
   {
@@ -551,7 +551,7 @@
    "ausstiegsplan": "",
    "invalidierung": "",
    "erstellt": 1794452946.4758763,
-   "geprueft_bis": 1794789919.1709726,
+   "geprueft_bis": 1794790818.5112503,
    "gueltig_bis": 1797044946.4758763
   }
  ],
