@@ -22,8 +22,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "d8e5f296a",
-   "kurs": 64914.854999999996,
-   "wert": 598.94
+   "kurs": 65000.655,
+   "wert": 599.73
   },
   {
    "id": "p9a8fa083",
@@ -43,8 +43,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Halten als Kern; Exit über Rebalancing-Regel bzw. SMA200-Bruch.",
    "entscheidung_id": "d0eee1434",
-   "kurs": 738.97,
-   "wert": 2434.42,
+   "kurs": 739.91,
+   "wert": 2437.51,
    "invalidierung": "SPY-Tagesschluss unter SMA200 (731,6) → Kern auf 20% zurücknehmen."
   },
   {
@@ -65,8 +65,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Halten als Kern; Exit nur über Rebalancing-Regel. Rückkauf TLT erst bei 10J < 4,50%.",
    "entscheidung_id": "d7658fcde",
-   "kurs": 95.235,
-   "wert": 1555.5,
+   "kurs": 95.245,
+   "wert": 1555.66,
    "invalidierung": "10J über 5,20% oder Fed +50bp im Dezember mit 2J über 4,90% → AGG-Anteil auf 10% zurücknehmen."
   },
   {
@@ -100,8 +100,8 @@
    "ausstiegsplan": "Halten bis 31.12.2026 (Abrechnung). Vorzeitiger Verkauf bei JA-Preis (Gegenposition) unter 0,12 (dann ist mein p zu pessimistisch und der Edge weg) oder bei JA über 0,50 ohne klare Nachricht (Markt weiß mehr → sofort raus).",
    "entscheidung_id": "dd655a214",
    "invalidierung": "US-Regierung (Trump, Außen- oder Verteidigungsministerium) kündigt öffentlich und förmlich die Aufhebung/Aussetzung der Seeblockade an ODER ein umfassender Iran-Deal wird mit Blockade-Aufhebung als Teil verkündet.",
-   "kurs": 0.8095000000000001,
-   "wert": 242.7
+   "kurs": 0.8085,
+   "wert": 242.4
   },
   {
    "id": "pbf54ccd6",
@@ -121,8 +121,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "d0f380f2d",
-   "kurs": 79.5,
-   "wert": 1001.47
+   "kurs": 79.535,
+   "wert": 1001.91
   },
   {
    "id": "pb81feef7",
@@ -155,8 +155,8 @@
    "ausstiegsplan": "Halten bis Abrechnung/Touch; Exit bei Invalidierung oder JA-Ask > 0,80.",
    "entscheidung_id": "d40906f4b",
    "invalidierung": "Binance-Tagesschluss über 67.500 oder JA-Ask < 0,25.",
-   "kurs": 0.395,
-   "wert": 1003.08
+   "kurs": 0.385,
+   "wert": 977.36
   },
   {
    "id": "pf9cf7c11",
@@ -179,8 +179,8 @@
    "ausstiegsplan": "Kern-Baustein: Exit über Rebalancing-Regel (Schwelle 8pp) oder bei Invalidierung (WTI unter 82 UND 10J unter 4,80%). Take-Profit 70,0.",
    "entscheidung_id": "ddc1d7b84",
    "invalidierung": "WTI unter 82 USD bei gleichzeitig 10J unter 4,80% — dann ist der Hedge-Charakter weg und XLE fällt unter SMA200.",
-   "kurs": 63.775,
-   "wert": 1211.55
+   "kurs": 63.785,
+   "wert": 1211.74
   }
  ],
  "realisiert": -1292.2210836203997,
@@ -188,7 +188,7 @@
  "funding": 0.0,
  "erstellt": 1793319819.7411644,
  "start_fx": 1.1184885798616961,
- "letzter_tick": 1794858687.865863,
+ "letzter_tick": 1794859587.9034073,
  "rebalancing": {
   "ziele": {
    "stock:SPY": {
