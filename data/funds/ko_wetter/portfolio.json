@@ -2,7 +2,7 @@
  "fonds_id": "ko_wetter",
  "waehrung": "USD",
  "start_kapital": 11156.327353966788,
- "cash": 2124.0682156506305,
+ "cash": 2082.6234156506302,
  "positionen": [
   {
    "id": "p3cf85e37",
@@ -157,8 +157,8 @@
    "gebuehren": 3.13,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Wetter-Regel)",
-   "kurs": 0.675,
-   "wert": 118.14
+   "kurs": 0.9299999999999999,
+   "wert": 164.68
   },
   {
    "id": "p29c1193e",
@@ -183,8 +183,8 @@
    "gebuehren": 1.73,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Wetter-Regel)",
-   "kurs": 0.33999999999999997,
-   "wert": 37.95
+   "kurs": 0.125,
+   "wert": 13.8
   },
   {
    "id": "p42a2124c",
@@ -211,13 +211,39 @@
    "ausstiegsplan": "Halten bis zur Abrechnung (Wetter-Regel)",
    "kurs": null,
    "wert": 75.7
+  },
+  {
+   "id": "p53034542",
+   "inst": {
+    "id": "pm:kalshi:KXHIGHAUS-26NOV16-T57:NEIN",
+    "art": "pm",
+    "venue": "kalshi",
+    "ergebnis": "NEIN",
+    "frage": "Will the maximum temperature be >57° on Nov 16, 2026? [58° or above]",
+    "schliesst": 1794898800.0,
+    "ref": {
+     "ticker": "KXHIGHAUS-26NOV16-T57"
+    },
+    "url": "https://kalshi.com/markets/KXHIGHAUS-26NOV16"
+   },
+   "seite": "long",
+   "menge": 447.0,
+   "einstand": 0.08714720357941834,
+   "hebel": 1.0,
+   "marge": 0.0,
+   "eroeffnet": 1794848788.3084989,
+   "gebuehren": 2.49,
+   "funding": 0.0,
+   "ausstiegsplan": "Halten bis zur Abrechnung (Wetter-Regel)",
+   "kurs": 0.07,
+   "wert": 17.88
   }
  ],
  "realisiert": -7484.560394013907,
- "gebuehren": 910.3800000000001,
+ "gebuehren": 912.8700000000001,
  "funding": 0.0,
  "erstellt": 1793380123.8861866,
  "start_fx": 1.1156327353966788,
- "letzter_tick": 1794847887.4098916,
- "wetter_letzter": 1794844287.8376608
+ "letzter_tick": 1794848788.3084989,
+ "wetter_letzter": 1794848788.3084989
 }
