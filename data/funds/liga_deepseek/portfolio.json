@@ -45,8 +45,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "d8e5f296a",
-   "kurs": 65298.675,
-   "wert": 602.48
+   "kurs": 65305.524999999994,
+   "wert": 602.55
   },
   {
    "id": "p9a8fa083",
@@ -280,8 +280,8 @@
    "ausstiegsplan": "Bis Abrechnung halten (23:59 ET).",
    "entscheidung_id": "dfa630c65",
    "invalidierung": "BTC nachhaltig >66.500 ohne erneuten Test von 63.000.",
-   "kurs": 0.0295,
-   "wert": 0.32
+   "kurs": 0.0265,
+   "wert": 0.31
   },
   {
    "id": "pb81feef7",
@@ -323,7 +323,7 @@
  "funding": 0.0,
  "erstellt": 1793319819.7411644,
  "start_fx": 1.1184885798616961,
- "letzter_tick": 1794786194.4543157,
+ "letzter_tick": 1794787094.3770301,
  "rebalancing": {
   "ziele": {
    "stock:SPY": {
