@@ -152,8 +152,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "dd6456776",
-   "kurs": 744.9,
-   "wert": 2221.34
+   "kurs": 743.715,
+   "wert": 2217.8
   },
   {
    "id": "p1c64b37e",
@@ -173,8 +173,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "dd6456776",
-   "kurs": 64836.185,
-   "wert": 920.1
+   "kurs": 64977.145000000004,
+   "wert": 922.1
   },
   {
    "id": "p994b6370",
@@ -194,8 +194,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "dd6456776",
-   "kurs": 354.44,
-   "wert": 872.02
+   "kurs": 354.3,
+   "wert": 871.68
   },
   {
    "id": "p3b9e74b7",
@@ -344,8 +344,8 @@
    "ausstiegsplan": "Halten bis Abrechnung nach Call 17.11.",
    "entscheidung_id": "d1a2949e8",
    "invalidierung": "Call verschoben oder Transkript ohne Wort 'bubble' von Executives",
-   "kurs": 0.34771732807574135,
-   "wert": 31.34
+   "kurs": 0.3655777763154117,
+   "wert": 32.99
   },
   {
    "id": "p96f26326",
@@ -379,7 +379,7 @@
    "ausstiegsplan": "Halten bis Abrechnung Jan. 2027; Verkauf bei NEIN <0.80 oder Doomsday-Opening-Tag >$200M.",
    "entscheidung_id": "d6b155dae",
    "invalidierung": "Doomsday Freitagsumsatz inkl. Previews >$200M am 18.12. oder Doomsday-Domestic nach 7 Tagen >$600M.",
-   "kurs": 0.9065000000000001,
+   "kurs": 0.9055,
    "wert": 443.29
   },
   {
@@ -480,8 +480,8 @@
    "ausstiegsplan": "Halten bis IPO-Tag (voraussichtlich Woche 16.–20.11.). Bei Preisfestsetzung neu rechnen: Schwelle = 1,25 Bio/13,09 Mrd. = $95,5. Teilverkauf, wenn JA ≥0,50 vor Handelsstart.",
    "entscheidung_id": "d0595e7ab",
    "invalidierung": "Endgültiger IPO-Preis ≥ $86 (dann reicht +11 % Pop) oder offizielle Polymarket-Klarstellung, dass voll verwässert gezählt wird; Graumarkt-/Indikationen Eröffnung ≥ $100.",
-   "kurs": 0.2515,
-   "wert": 672.75
+   "kurs": 0.2495,
+   "wert": 670.06
   },
   {
    "id": "p1f686553",
@@ -579,7 +579,7 @@
  "funding": 0.0,
  "erstellt": 1793380123.8861866,
  "start_fx": 1.1156327353966788,
- "letzter_tick": 1794848788.3084989,
+ "letzter_tick": 1794849687.7424142,
  "auftraege": [],
  "rebalancing": {
   "ziele": {
