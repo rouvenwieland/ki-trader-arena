@@ -2,7 +2,7 @@
  "fonds_id": "liga_deepseek",
  "waehrung": "USD",
  "start_kapital": 11184.88579861696,
- "cash": 2737.8017271932094,
+ "cash": 2096.056848803282,
  "positionen": [
   {
    "id": "p3d319c8e",
@@ -22,8 +22,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "d8e5f296a",
-   "kurs": 65138.884999999995,
-   "wert": 601.01
+   "kurs": 65212.295,
+   "wert": 601.69
   },
   {
    "id": "p9a8fa083",
@@ -43,8 +43,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Halten als Kern; Exit über Rebalancing-Regel bzw. SMA200-Bruch.",
    "entscheidung_id": "d0eee1434",
-   "kurs": 747.96,
-   "wert": 2464.03,
+   "kurs": 748.33,
+   "wert": 2465.25,
    "invalidierung": "SPY-Tagesschluss unter SMA200 (731,6) → Kern auf 20% zurücknehmen."
   },
   {
@@ -65,8 +65,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Halten als Kern; Exit nur über Rebalancing-Regel. Rückkauf TLT erst bei 10J < 4,50%.",
    "entscheidung_id": "d7658fcde",
-   "kurs": 95.236,
-   "wert": 1555.51,
+   "kurs": 95.2,
+   "wert": 1554.93,
    "invalidierung": "10J über 5,20% oder Fed +50bp im Dezember mit 2J über 4,90% → AGG-Anteil auf 10% zurücknehmen."
   },
   {
@@ -121,8 +121,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "d0f380f2d",
-   "kurs": 79.59,
-   "wert": 1002.61
+   "kurs": 79.525,
+   "wert": 1001.79
   },
   {
    "id": "p8e7557a6",
@@ -155,8 +155,8 @@
    "ausstiegsplan": "Halten bis Abrechnung 31.12.2026; Verkauf bei JA > 0,88 oder BTC-Tagesschluss > 70.000.",
    "entscheidung_id": "d1c8f65ac",
    "invalidierung": "BTC schließt zwei Tage in Folge über SMA50 (68.913) UND DVOL fällt unter 38 → Abwärtstrend gebrochen, Touch-P unter 50%, These falsch.",
-   "kurs": 0.605,
-   "wert": 90.0
+   "kurs": 0.585,
+   "wert": 87.0
   },
   {
    "id": "pb81feef7",
@@ -189,8 +189,32 @@
    "ausstiegsplan": "Halten bis Abrechnung 30.11.2026; vorzeitiger Verkauf nur bei JA-Ask >0,85 (Edge weg) oder wenn die Invalidierung greift und der Bid noch >0,30 liegt.",
    "entscheidung_id": "dc54cb569",
    "invalidierung": "BTC-Tagesschluss über 67.500 vor dem 20.11.2026 oder JA-Ask fällt unter 0,20 (dann ist die Vola-These vom Markt widerlegt).",
-   "kurs": 0.385,
-   "wert": 796.1
+   "kurs": 0.365,
+   "wert": 754.2
+  },
+  {
+   "id": "pf9cf7c11",
+   "inst": {
+    "id": "stock:XLE",
+    "art": "stock",
+    "venue": "yahoo",
+    "symbol": "XLE"
+   },
+   "seite": "long",
+   "menge": 10.0,
+   "einstand": 64.17448783899277,
+   "hebel": 1.0,
+   "marge": 0.0,
+   "eroeffnet": 1794840562.573222,
+   "gebuehren": 0.0,
+   "funding": 0.0,
+   "stop_loss": 62,
+   "take_profit": 70,
+   "ausstiegsplan": "Halten als Kern-Diversifikationsbaustein (Ziel 6-8% des Vermögens). Exit: (a) Tagesschluss unter SMA200 (59,47) oder WTI unter 82 USD → These gebrochen, sofort raus; (b) Take-Profit bei 70,00 (1-Jahres-Hoch) → Trimmen; (c) Rebalancing-Regel bei >2pp Übergewicht. Kein Nachkauf über 66,50 ohne neuen Rohstoff-Impuls.",
+   "entscheidung_id": "d324bfb46",
+   "invalidierung": "XLE-Tagesschluss unter SMA200 (59,47 USD) oder WTI unter 82 USD → Relative-Stärke-These gebrochen.",
+   "kurs": 64.165,
+   "wert": 641.56
   }
  ],
  "realisiert": -1291.1632836203996,
@@ -198,7 +222,7 @@
  "funding": 0.0,
  "erstellt": 1793319819.7411644,
  "start_fx": 1.1184885798616961,
- "letzter_tick": 1794839662.6041937,
+ "letzter_tick": 1794840562.573222,
  "rebalancing": {
   "ziele": {
    "stock:SPY": {
@@ -233,31 +257,5 @@
   "seit": 1794816360.3262024,
   "entscheidung_id": "da6521abe"
  },
- "auftraege": [
-  {
-   "id": "abe9b51",
-   "entscheidung_id": "d324bfb46",
-   "inst": {
-    "id": "stock:XLE",
-    "art": "stock",
-    "venue": "yahoo",
-    "symbol": "XLE"
-   },
-   "aktion": "kaufen",
-   "typ": "limit",
-   "seite": "long",
-   "betrag_usd": null,
-   "menge": 10,
-   "hebel": 1.0,
-   "limit_preis": 65.6,
-   "stop_preis": null,
-   "stop_loss": 62,
-   "take_profit": 70,
-   "ausstiegsplan": "Halten als Kern-Diversifikationsbaustein (Ziel 6-8% des Vermögens). Exit: (a) Tagesschluss unter SMA200 (59,47) oder WTI unter 82 USD → These gebrochen, sofort raus; (b) Take-Profit bei 70,00 (1-Jahres-Hoch) → Trimmen; (c) Rebalancing-Regel bei >2pp Übergewicht. Kein Nachkauf über 66,50 ohne neuen Rohstoff-Impuls.",
-   "invalidierung": "XLE-Tagesschluss unter SMA200 (59,47 USD) oder WTI unter 82 USD → Relative-Stärke-These gebrochen.",
-   "erstellt": 1794683775.0383604,
-   "geprueft_bis": 1794839662.6041937,
-   "gueltig_bis": 1794862800.0
-  }
- ]
+ "auftraege": []
 }
