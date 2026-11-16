@@ -2,31 +2,8 @@
  "fonds_id": "liga_deepseek",
  "waehrung": "USD",
  "start_kapital": 11184.88579861696,
- "cash": 1316.7117011637906,
+ "cash": 2737.8017271932094,
  "positionen": [
-  {
-   "id": "p78a3c466",
-   "inst": {
-    "id": "stock:GLD",
-    "art": "stock",
-    "venue": "yahoo",
-    "symbol": "GLD"
-   },
-   "seite": "long",
-   "menge": 4.006990567137018,
-   "einstand": 363.49286716139005,
-   "hebel": 1.0,
-   "marge": 0.0,
-   "eroeffnet": 1793819896.6280587,
-   "gebuehren": 0.0,
-   "funding": 0.0,
-   "ausstiegsplan": "Rebalancing-Regel",
-   "entscheidung_id": "d0f380f2d",
-   "kurs": 355.45,
-   "wert": 1424.28,
-   "stop_loss": 340,
-   "invalidierung": "Tagesschluss GLD unter 340,00 USD oder 10J-Rendite über 5,10%."
-  },
   {
    "id": "p3d319c8e",
    "inst": {
@@ -45,8 +22,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "d8e5f296a",
-   "kurs": 64378.634999999995,
-   "wert": 593.99
+   "kurs": 65138.884999999995,
+   "wert": 601.01
   },
   {
    "id": "p9a8fa083",
@@ -66,8 +43,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Halten als Kern; Exit über Rebalancing-Regel bzw. SMA200-Bruch.",
    "entscheidung_id": "d0eee1434",
-   "kurs": 754.37,
-   "wert": 2485.42,
+   "kurs": 747.96,
+   "wert": 2464.03,
    "invalidierung": "SPY-Tagesschluss unter SMA200 (731,6) → Kern auf 20% zurücknehmen."
   },
   {
@@ -88,8 +65,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Halten als Kern; Exit nur über Rebalancing-Regel. Rückkauf TLT erst bei 10J < 4,50%.",
    "entscheidung_id": "d7658fcde",
-   "kurs": 95.09,
-   "wert": 1553.39,
+   "kurs": 95.236,
+   "wert": 1555.51,
    "invalidierung": "10J über 5,20% oder Fed +50bp im Dezember mit 2J über 4,90% → AGG-Anteil auf 10% zurücknehmen."
   },
   {
@@ -144,8 +121,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "d0f380f2d",
-   "kurs": 79.38,
-   "wert": 1000.08
+   "kurs": 79.59,
+   "wert": 1002.61
   },
   {
    "id": "p8e7557a6",
@@ -178,8 +155,8 @@
    "ausstiegsplan": "Halten bis Abrechnung 31.12.2026; Verkauf bei JA > 0,88 oder BTC-Tagesschluss > 70.000.",
    "entscheidung_id": "d1c8f65ac",
    "invalidierung": "BTC schließt zwei Tage in Folge über SMA50 (68.913) UND DVOL fällt unter 38 → Abwärtstrend gebrochen, Touch-P unter 50%, These falsch.",
-   "kurs": 0.635,
-   "wert": 94.5
+   "kurs": 0.605,
+   "wert": 90.0
   },
   {
    "id": "pb81feef7",
@@ -212,16 +189,16 @@
    "ausstiegsplan": "Halten bis Abrechnung 30.11.2026; vorzeitiger Verkauf nur bei JA-Ask >0,85 (Edge weg) oder wenn die Invalidierung greift und der Bid noch >0,30 liegt.",
    "entscheidung_id": "dc54cb569",
    "invalidierung": "BTC-Tagesschluss über 67.500 vor dem 20.11.2026 oder JA-Ask fällt unter 0,20 (dann ist die Vola-These vom Markt widerlegt).",
-   "kurs": 0.445,
-   "wert": 921.8
+   "kurs": 0.385,
+   "wert": 796.1
   }
  ],
- "realisiert": -1255.7408197125392,
+ "realisiert": -1291.1632836203996,
  "gebuehren": 183.14058925396546,
  "funding": 0.0,
  "erstellt": 1793319819.7411644,
  "start_fx": 1.1184885798616961,
- "letzter_tick": 1794838763.0947921,
+ "letzter_tick": 1794839662.6041937,
  "rebalancing": {
   "ziele": {
    "stock:SPY": {
@@ -279,33 +256,8 @@
    "ausstiegsplan": "Halten als Kern-Diversifikationsbaustein (Ziel 6-8% des Vermögens). Exit: (a) Tagesschluss unter SMA200 (59,47) oder WTI unter 82 USD → These gebrochen, sofort raus; (b) Take-Profit bei 70,00 (1-Jahres-Hoch) → Trimmen; (c) Rebalancing-Regel bei >2pp Übergewicht. Kein Nachkauf über 66,50 ohne neuen Rohstoff-Impuls.",
    "invalidierung": "XLE-Tagesschluss unter SMA200 (59,47 USD) oder WTI unter 82 USD → Relative-Stärke-These gebrochen.",
    "erstellt": 1794683775.0383604,
-   "geprueft_bis": 1794683775.0383604,
+   "geprueft_bis": 1794839662.6041937,
    "gueltig_bis": 1794862800.0
-  },
-  {
-   "id": "afdd1c4",
-   "entscheidung_id": "dbb68c6c4",
-   "inst": {
-    "id": "stock:GLD",
-    "art": "stock",
-    "venue": "yahoo",
-    "symbol": "GLD"
-   },
-   "aktion": "verkaufen",
-   "typ": "limit",
-   "seite": "long",
-   "betrag_usd": null,
-   "menge": 4.006991,
-   "hebel": 1.0,
-   "limit_preis": 348,
-   "stop_preis": null,
-   "stop_loss": null,
-   "take_profit": null,
-   "ausstiegsplan": "Vollständiger Verkauf zur Börseneröffnung Montag 14:30 UTC; Limit 348 (≈1,8% unter Freitagsschluss 355,45), GTC. Falls nicht gefüllt, nächste Runde Limit nachziehen.",
-   "invalidierung": "",
-   "erstellt": 1794710244.2009962,
-   "geprueft_bis": 1794710244.2009962,
-   "gueltig_bis": 1797302244.2009962
   }
  ]
 }
