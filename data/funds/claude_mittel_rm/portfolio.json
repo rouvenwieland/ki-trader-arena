@@ -97,8 +97,8 @@
    "ausstiegsplan": "Halten bis Ende November. Verkauf bei Kurs <0.55 oder Koalitionsbruch/Rücktrittsankündigung; Gewinn mitnehmen ≥0.95.",
    "entscheidung_id": "d34bf6b87",
    "invalidierung": "PSL oder Polen 2050 verlassen die Koalition bzw. unterstützen ein Misstrauensvotum; Tusk kündigt Rücktritt/Vertrauensfrage an.",
-   "kurs": 0.943930086990851,
-   "wert": 499.27
+   "kurs": 0.9439846827848837,
+   "wert": 499.3
   },
   {
    "id": "p77177258",
@@ -173,8 +173,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "dd6456776",
-   "kurs": 65201.615000000005,
-   "wert": 925.29
+   "kurs": 65316.225000000006,
+   "wert": 926.91
   },
   {
    "id": "p994b6370",
@@ -379,8 +379,8 @@
    "ausstiegsplan": "Halten bis Abrechnung Jan. 2027; Verkauf bei NEIN <0.80 oder Doomsday-Opening-Tag >$200M.",
    "entscheidung_id": "d6b155dae",
    "invalidierung": "Doomsday Freitagsumsatz inkl. Previews >$200M am 18.12. oder Doomsday-Domestic nach 7 Tagen >$600M.",
-   "kurs": 0.9175,
-   "wert": 451.16
+   "kurs": 0.915,
+   "wert": 449.2
   },
   {
    "id": "p75b03ffe",
@@ -480,8 +480,8 @@
    "ausstiegsplan": "Halten bis IPO-Tag (voraussichtlich Woche 16.–20.11.). Bei Preisfestsetzung neu rechnen: Schwelle = 1,25 Bio/13,09 Mrd. = $95,5. Teilverkauf, wenn JA ≥0,50 vor Handelsstart.",
    "entscheidung_id": "d0595e7ab",
    "invalidierung": "Endgültiger IPO-Preis ≥ $86 (dann reicht +11 % Pop) oder offizielle Polymarket-Klarstellung, dass voll verwässert gezählt wird; Graumarkt-/Indikationen Eröffnung ≥ $100.",
-   "kurs": 0.3015,
-   "wert": 807.3
+   "kurs": 0.311,
+   "wert": 823.45
   },
   {
    "id": "p1f686553",
@@ -579,7 +579,7 @@
  "funding": 0.0,
  "erstellt": 1793380123.8861866,
  "start_fx": 1.1156327353966788,
- "letzter_tick": 1794865126.870917,
+ "letzter_tick": 1794866027.297022,
  "auftraege": [],
  "rebalancing": {
   "ziele": {
