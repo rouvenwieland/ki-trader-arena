@@ -45,8 +45,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "d8e5f296a",
-   "kurs": 64604.884999999995,
-   "wert": 596.08
+   "kurs": 64521.285,
+   "wert": 595.31
   },
   {
    "id": "p9a8fa083",
@@ -212,8 +212,8 @@
    "ausstiegsplan": "Halten bis Abrechnung 30.11.2026; vorzeitiger Verkauf nur bei JA-Ask >0,85 (Edge weg) oder wenn die Invalidierung greift und der Bid noch >0,30 liegt.",
    "entscheidung_id": "dc54cb569",
    "invalidierung": "BTC-Tagesschluss über 67.500 vor dem 20.11.2026 oder JA-Ask fällt unter 0,20 (dann ist die Vola-These vom Markt widerlegt).",
-   "kurs": 0.415,
-   "wert": 858.95
+   "kurs": 0.425,
+   "wert": 879.9
   }
  ],
  "realisiert": -1255.7408197125392,
@@ -221,7 +221,7 @@
  "funding": 0.0,
  "erstellt": 1793319819.7411644,
  "start_fx": 1.1184885798616961,
- "letzter_tick": 1794817042.973769,
+ "letzter_tick": 1794817942.5744572,
  "rebalancing": {
   "ziele": {
    "stock:SPY": {
