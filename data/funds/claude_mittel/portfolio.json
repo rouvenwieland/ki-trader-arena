@@ -180,8 +180,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "d6e1a7002",
-   "kurs": 744.73,
-   "wert": 1931.75
+   "kurs": 744.39,
+   "wert": 1930.86
   },
   {
    "id": "p5fe9ac51",
@@ -201,8 +201,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "d6e1a7002",
-   "kurs": 665.055,
-   "wert": 1060.28
+   "kurs": 664.24,
+   "wert": 1058.98
   },
   {
    "id": "p5106387a",
@@ -222,8 +222,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "d6e1a7002",
-   "kurs": 354.145,
-   "wert": 1053.24
+   "kurs": 353.99,
+   "wert": 1052.78
   },
   {
    "id": "p72af4e36",
@@ -243,8 +243,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "d6e1a7002",
-   "kurs": 95.265,
-   "wert": 1093.91
+   "kurs": 95.28,
+   "wert": 1094.08
   },
   {
    "id": "p3e7ff11c",
@@ -264,8 +264,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "d6e1a7002",
-   "kurs": 64100.585,
-   "wert": 1054.89
+   "kurs": 64042.565,
+   "wert": 1053.94
   },
   {
    "id": "pe3015b77",
@@ -285,8 +285,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "d6e1a7002",
-   "kurs": 1804.48,
-   "wert": 409.52
+   "kurs": 1801.625,
+   "wert": 408.88
   },
   {
    "id": "p1ad6082a",
@@ -479,7 +479,7 @@
  "funding": 0.0,
  "erstellt": 1793319819.7411644,
  "start_fx": 1.1184885798616961,
- "letzter_tick": 1794843263.7620473,
+ "letzter_tick": 1794843389.4480867,
  "auftraege": [
   {
    "id": "a4e7a61",
@@ -514,7 +514,7 @@
    "ausstiegsplan": "",
    "invalidierung": "",
    "erstellt": 1794409480.899957,
-   "geprueft_bis": 1794843263.7620473,
+   "geprueft_bis": 1794843389.4480867,
    "gueltig_bis": 1797001480.899957
   },
   {
@@ -551,7 +551,7 @@
    "ausstiegsplan": "",
    "invalidierung": "",
    "erstellt": 1794452946.4758763,
-   "geprueft_bis": 1794843263.7620473,
+   "geprueft_bis": 1794843389.4480867,
    "gueltig_bis": 1797044946.4758763
   }
  ],
