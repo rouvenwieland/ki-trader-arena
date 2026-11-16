@@ -1,6 +1,6 @@
 {
  "version": 1,
- "stand": 1794841574.965943,
+ "stand": 1794841786.852281,
  "hinweis": "Papierhandel-Simulation, keine Anlageberatung",
  "seite": "https://rouvenwieland.github.io/ki-trader-arena/",
  "budget": {
@@ -1218,6 +1218,27 @@
  ],
  "letzte_entscheidungen": [
   {
+   "ts": 1794841764.6880684,
+   "fonds": "DeepSeek",
+   "instrument": "stock:XLE",
+   "aktion": "kaufen",
+   "zuversicht": 0.55
+  },
+  {
+   "ts": 1794841761.2085779,
+   "fonds": "DeepSeek",
+   "instrument": "stock:XLE",
+   "aktion": "kaufen",
+   "zuversicht": 0.55
+  },
+  {
+   "ts": 1794841728.073066,
+   "fonds": "DeepSeek",
+   "instrument": "pm:polymarket:6507388:JA",
+   "aktion": "kaufen",
+   "zuversicht": 0.62
+  },
+  {
    "ts": 1794816507.5750089,
    "fonds": "DeepSeek",
    "instrument": "pm:polymarket:6507388:JA",
@@ -1251,27 +1272,6 @@
    "instrument": "pm:polymarket:6507388:JA",
    "aktion": "kaufen",
    "zuversicht": 0.65
-  },
-  {
-   "ts": 1794797502.8602858,
-   "fonds": "DeepSeek",
-   "instrument": "pm:polymarket:6507388:JA",
-   "aktion": "kaufen",
-   "zuversicht": 0.68
-  },
-  {
-   "ts": 1794797498.5492456,
-   "fonds": "DeepSeek",
-   "instrument": "pm:polymarket:6507388:JA",
-   "aktion": "kaufen",
-   "zuversicht": 0.68
-  },
-  {
-   "ts": 1794797493.5113425,
-   "fonds": "DeepSeek",
-   "instrument": "pm:polymarket:6884119:NEIN",
-   "aktion": "verkaufen",
-   "zuversicht": 0.7
   }
  ],
  "ereignisse": [
