@@ -2,7 +2,7 @@
  "fonds_id": "liga_deepseek",
  "waehrung": "USD",
  "start_kapital": 11184.88579861696,
- "cash": 1371.6202791292233,
+ "cash": 1403.1975891292232,
  "positionen": [
   {
    "id": "p3d319c8e",
@@ -125,40 +125,6 @@
    "wert": 1001.47
   },
   {
-   "id": "p8e7557a6",
-   "inst": {
-    "id": "pm:polymarket:3013350:JA",
-    "art": "pm",
-    "venue": "polymarket",
-    "ergebnis": "JA",
-    "frage": "Will Bitcoin dip to $60,000 by December 31, 2026?",
-    "schliesst": 1798779600.0,
-    "ref": {
-     "id": "3013350",
-     "token_ja": "104279604547231872129402198190232956636095665469278761891693384128061158683041",
-     "token_nein": "71378443524585182161509165206687359935571329472000076556085474136388673584216",
-     "tick": 0.01,
-     "condition": "0x6c8bc8cd9b2d64358ad995ccee8e998cf0f81a89c4be0b8e51eadf09c6be60ba",
-     "gebuehr_rate": 0.07,
-     "gebuehr_exp": 1.0
-    },
-    "url": "https://polymarket.com/event/what-price-will-bitcoin-hit-before-2027"
-   },
-   "seite": "long",
-   "menge": 150.0,
-   "einstand": 0.57,
-   "hebel": 1.0,
-   "marge": 0.0,
-   "eroeffnet": 1794669288.9193795,
-   "gebuehren": 2.57355,
-   "funding": 0.0,
-   "ausstiegsplan": "Halten bis Abrechnung 31.12.2026; Verkauf bei JA > 0,88 oder BTC-Tagesschluss > 70.000.",
-   "entscheidung_id": "d1c8f65ac",
-   "invalidierung": "BTC schließt zwei Tage in Folge über SMA50 (68.913) UND DVOL fällt unter 38 → Abwärtstrend gebrochen, Touch-P unter 50%, These falsch.",
-   "kurs": 0.585,
-   "wert": 87.0
-  },
-  {
    "id": "pb81feef7",
    "inst": {
     "id": "pm:polymarket:6507388:JA",
@@ -179,16 +145,16 @@
     "url": "https://polymarket.com/event/what-price-will-bitcoin-hit-in-november-2026"
    },
    "seite": "long",
-   "menge": 2442.0,
-   "einstand": 0.40855909090909087,
+   "menge": 2572.0,
+   "einstand": 0.407621034214619,
    "hebel": 1.0,
    "marge": 0.0,
    "eroeffnet": 1794755589.1298704,
-   "gebuehren": 41.21924,
+   "gebuehren": 43.38413,
    "funding": 0.0,
-   "ausstiegsplan": "Halten bis Abrechnung 30.11./1.12. (Binance-1m-Low). Verkauf nur bei Invalidierung oder wenn JA-Bid über 0,85 steht (dann ist praktisch alles eingepreist).",
-   "entscheidung_id": "da8372987",
-   "invalidierung": "Binance-Tagesschluss über 68.000 oder JA-Ask fällt unter 0,22 (dann ist der Markt meiner Vola-Rechnung voraus) oder realisierte 7-Tage-Vola unter 1,5%/Tag bei BTC über 66.000.",
+   "ausstiegsplan": "Halten bis Abrechnung/Touch; Exit bei Invalidierung oder JA-Ask > 0,80.",
+   "entscheidung_id": "d40906f4b",
+   "invalidierung": "Binance-Tagesschluss über 67.500 oder JA-Ask < 0,25.",
    "kurs": 0.385,
    "wert": 927.96
   },
@@ -217,8 +183,8 @@
    "wert": 1212.31
   }
  ],
- "realisiert": -1291.1632836203996,
- "gebuehren": 189.03575925396547,
+ "realisiert": -1292.2210836203997,
+ "gebuehren": 193.75844925396547,
  "funding": 0.0,
  "erstellt": 1793319819.7411644,
  "start_fx": 1.1184885798616961,
@@ -272,8 +238,8 @@
    }
   },
   "schwelle_pp": 8.0,
-  "seit": 1794841583.6560786,
-  "entscheidung_id": "d492bb3f2"
+  "seit": 1794856121.0669513,
+  "entscheidung_id": "dd11830db"
  },
  "auftraege": []
 }
