@@ -2,7 +2,7 @@
  "fonds_id": "liga_deepseek",
  "waehrung": "USD",
  "start_kapital": 11184.88579861696,
- "cash": 1314.9233811637905,
+ "cash": 1316.7117011637906,
  "positionen": [
   {
    "id": "p78a3c466",
@@ -91,40 +91,6 @@
    "kurs": 95.09,
    "wert": 1553.39,
    "invalidierung": "10J über 5,20% oder Fed +50bp im Dezember mit 2J über 4,90% → AGG-Anteil auf 10% zurücknehmen."
-  },
-  {
-   "id": "p950802e0",
-   "inst": {
-    "id": "pm:polymarket:1811265:NEIN",
-    "art": "pm",
-    "venue": "polymarket",
-    "ergebnis": "NEIN",
-    "frage": "Pete Hegseth out as Secretary of Defense by December 31?",
-    "schliesst": 1798779540.0,
-    "ref": {
-     "id": "1811265",
-     "token_ja": "21275820052009278915970165572803516066396758597545413537036789986793691057073",
-     "token_nein": "39839649379979262874224474703228993451530996696316314037781119946088999891171",
-     "tick": 0.01,
-     "condition": "0x0fcfcfc35d71424c0693c717d2e3bc9b8992910835d124d80cd2f01498f1d3dc",
-     "gebuehr_rate": 0.04,
-     "gebuehr_exp": 1.0
-    },
-    "url": "https://polymarket.com/event/pete-hegseth-out-as-secretary-of-defense-by-december-31"
-   },
-   "seite": "long",
-   "menge": 373.0,
-   "einstand": 0.88,
-   "hebel": 1.0,
-   "marge": 0.0,
-   "eroeffnet": 1794355893.42895,
-   "gebuehren": 1.57555,
-   "funding": 0.0,
-   "ausstiegsplan": "Halten bis Abrechnung 31.12.2026 oder Verkauf, wenn NEIN < 0,80 (Invalidierung) bzw. JA > 0,25 ohne erklärende Nachricht.",
-   "entscheidung_id": "d2f748f89",
-   "invalidierung": "Hegseth kündigt Rücktritt an, wird entlassen, oder eine credible Quelle meldet, dass Trump eine Ablösung vorbereitet (dann JA sofort über 0,30).",
-   "kurs": 0.845,
-   "wert": 313.32
   },
   {
    "id": "p3aa56fe5",
@@ -236,22 +202,22 @@
     "url": "https://polymarket.com/event/what-price-will-bitcoin-hit-in-november-2026"
    },
    "seite": "long",
-   "menge": 1370.0,
-   "einstand": 0.4062773722627737,
+   "menge": 2095.0,
+   "einstand": 0.4075656324582339,
    "hebel": 1.0,
    "marge": 0.0,
    "eroeffnet": 1794755589.1298704,
-   "gebuehren": 23.04764,
+   "gebuehren": 35.32407,
    "funding": 0.0,
-   "ausstiegsplan": "Halten bis Abrechnung 30.11.2026; vorzeitige Gewinnmitnahme bei JA-Bid >= 0,65; Exit bei Invalidierung.",
-   "entscheidung_id": "da7657ae3",
-   "invalidierung": "BTC-Tagesschluss über 68.000 USD oder JA-Ask unter 0,22.",
+   "ausstiegsplan": "Halten bis Abrechnung 30.11.2026; vorzeitiger Verkauf nur bei JA-Ask >0,85 (Edge weg) oder wenn die Invalidierung greift und der Bid noch >0,30 liegt.",
+   "entscheidung_id": "dc54cb569",
+   "invalidierung": "BTC-Tagesschluss über 67.500 vor dem 20.11.2026 oder JA-Ask fällt unter 0,20 (dann ist die Vola-These vom Markt widerlegt).",
    "kurs": 0.395,
    "wert": 534.3
   }
  ],
- "realisiert": -1238.8155697125392,
- "gebuehren": 168.85890925396546,
+ "realisiert": -1255.7408197125392,
+ "gebuehren": 183.14058925396546,
  "funding": 0.0,
  "erstellt": 1793319819.7411644,
  "start_fx": 1.1184885798616961,
@@ -265,16 +231,7 @@
      "venue": "yahoo",
      "symbol": "SPY"
     },
-    "anteil": 0.26
-   },
-   "stock:XLE": {
-    "inst": {
-     "id": "stock:XLE",
-     "art": "stock",
-     "venue": "yahoo",
-     "symbol": "XLE"
-    },
-    "anteil": 0.1
+    "anteil": 0.3
    },
    "stock:AGG": {
     "inst": {
@@ -283,16 +240,7 @@
      "venue": "yahoo",
      "symbol": "AGG"
     },
-    "anteil": 0.16
-   },
-   "stock:TLT": {
-    "inst": {
-     "id": "stock:TLT",
-     "art": "stock",
-     "venue": "yahoo",
-     "symbol": "TLT"
-    },
-    "anteil": 0.08
+    "anteil": 0.2
    },
    "spot:BTC-USD": {
     "inst": {
@@ -302,20 +250,11 @@
      "symbol": "BTC-USD"
     },
     "anteil": 0.07
-   },
-   "stock:GLD": {
-    "inst": {
-     "id": "stock:GLD",
-     "art": "stock",
-     "venue": "yahoo",
-     "symbol": "GLD"
-    },
-    "anteil": 0.04
    }
   },
-  "schwelle_pp": 3.0,
-  "seit": 1794755442.3482537,
-  "entscheidung_id": "d9d089db4"
+  "schwelle_pp": 5.0,
+  "seit": 1794816360.3262024,
+  "entscheidung_id": "da6521abe"
  },
  "auftraege": [
   {
