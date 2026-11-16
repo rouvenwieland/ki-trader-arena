@@ -2,29 +2,10 @@
  "fonds_id": "bm_affe",
  "waehrung": "USD",
  "start_kapital": 11184.88579861696,
- "cash": 5261.689340829291,
+ "cash": 7073.695382485856,
  "positionen": [
   {
-   "id": "p2e162f0b",
-   "inst": {
-    "id": "spot:SOL-USD",
-    "art": "spot",
-    "venue": "coinbase",
-    "symbol": "SOL-USD"
-   },
-   "seite": "long",
-   "menge": 36.55383982843219,
-   "einstand": 70.17978082862932,
-   "hebel": 1.0,
-   "marge": 0.0,
-   "eroeffnet": 1794700873.6160161,
-   "gebuehren": 15.392042805625154,
-   "funding": 0.0,
-   "kurs": 72.745,
-   "wert": 2658.93
-  },
-  {
-   "id": "p369ba7ac",
+   "id": "p6027e7ac",
    "inst": {
     "id": "spot:LINK-USD",
     "art": "spot",
@@ -32,22 +13,22 @@
     "symbol": "LINK-USD"
    },
    "seite": "long",
-   "menge": 211.399988737152,
-   "einstand": 8.880470724736513,
+   "menge": 296.2695834566608,
+   "einstand": 9.2560454575639,
    "hebel": 1.0,
    "marge": 0.0,
-   "eroeffnet": 1794700873.6160161,
-   "gebuehren": 11.263988467139441,
+   "eroeffnet": 1794787994.4951372,
+   "gebuehren": 16.453708393010245,
    "funding": 0.0,
-   "kurs": 9.293,
-   "wert": 1964.33
+   "kurs": 9.252500000000001,
+   "wert": 2740.49
   }
  ],
- "realisiert": -1094.8098295133077,
- "gebuehren": 740.3323140983939,
+ "realisiert": -966.7372260894567,
+ "gebuehren": 784.3760294263213,
  "funding": 0.0,
  "erstellt": 1793319819.7411644,
  "start_fx": 1.1184885798616961,
- "letzter_tick": 1794787094.3770301,
- "letzter_tag": "2026-11-15"
+ "letzter_tick": 1794787994.4951372,
+ "letzter_tag": "2026-11-16"
 }
