@@ -83,58 +83,6 @@
    "wert": 117.06
   },
   {
-   "id": "pd5305701",
-   "inst": {
-    "id": "pm:kalshi:KXHIGHAUS-26NOV15-B63.5:JA",
-    "art": "pm",
-    "venue": "kalshi",
-    "ergebnis": "JA",
-    "frage": "Will the maximum temperature be 63-64° on Nov 15, 2026? [63° to 64°]",
-    "schliesst": 1794812400.0,
-    "ref": {
-     "ticker": "KXHIGHAUS-26NOV15-B63.5"
-    },
-    "url": "https://kalshi.com/markets/KXHIGHAUS-26NOV15"
-   },
-   "seite": "long",
-   "menge": 490.0,
-   "einstand": 0.12042102040816327,
-   "hebel": 1.0,
-   "marge": 0.0,
-   "eroeffnet": 1794681686.9264119,
-   "gebuehren": 3.64,
-   "funding": 0.0,
-   "ausstiegsplan": "Halten bis zur Abrechnung (Wetter-Regel)",
-   "kurs": null,
-   "wert": 59.01
-  },
-  {
-   "id": "p4f2c1eb6",
-   "inst": {
-    "id": "pm:kalshi:KXHIGHCHI-26NOV15-B48.5:JA",
-    "art": "pm",
-    "venue": "kalshi",
-    "ergebnis": "JA",
-    "frage": "Will the maximum temperature be 48-49° on Nov 15, 2026? [48° to 49°]",
-    "schliesst": 1794812400.0,
-    "ref": {
-     "ticker": "KXHIGHCHI-26NOV15-B48.5"
-    },
-    "url": "https://kalshi.com/markets/KXHIGHCHI-26NOV15"
-   },
-   "seite": "long",
-   "menge": 873.0,
-   "einstand": 0.09673253150057275,
-   "hebel": 1.0,
-   "marge": 0.0,
-   "eroeffnet": 1794752423.016153,
-   "gebuehren": 5.34,
-   "funding": 0.0,
-   "ausstiegsplan": "Halten bis zur Abrechnung (Wetter-Regel)",
-   "kurs": null,
-   "wert": 84.45
-  },
-  {
    "id": "p5d7de2a2",
    "inst": {
     "id": "pm:kalshi:KXHIGHAUS-26NOV16-B52.5:JA",
@@ -183,7 +131,7 @@
    "gebuehren": 5.28,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Wetter-Regel)",
-   "kurs": 0.04,
+   "kurs": 0.035,
    "wert": 29.79
   },
   {
@@ -210,14 +158,14 @@
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Wetter-Regel)",
    "kurs": 0.325,
-   "wert": 55.49
+   "wert": 57.28
   }
  ],
- "realisiert": -7341.106594013907,
+ "realisiert": -7484.560394013907,
  "gebuehren": 903.5900000000001,
  "funding": 0.0,
  "erstellt": 1793380123.8861866,
  "start_fx": 1.1156327353966788,
- "letzter_tick": 1794833363.0654643,
+ "letzter_tick": 1794834262.8033354,
  "wetter_letzter": 1794831562.7805634
 }
