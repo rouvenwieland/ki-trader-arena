@@ -45,8 +45,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "d8e5f296a",
-   "kurs": 64779.645000000004,
-   "wert": 597.69
+   "kurs": 64604.884999999995,
+   "wert": 596.08
   },
   {
    "id": "p9a8fa083",
@@ -178,8 +178,8 @@
    "ausstiegsplan": "Halten bis Abrechnung 31.12.2026; Verkauf bei JA > 0,88 oder BTC-Tagesschluss > 70.000.",
    "entscheidung_id": "d1c8f65ac",
    "invalidierung": "BTC schließt zwei Tage in Folge über SMA50 (68.913) UND DVOL fällt unter 38 → Abwärtstrend gebrochen, Touch-P unter 50%, These falsch.",
-   "kurs": 0.595,
-   "wert": 88.5
+   "kurs": 0.605,
+   "wert": 90.0
   },
   {
    "id": "pb81feef7",
@@ -212,8 +212,8 @@
    "ausstiegsplan": "Halten bis Abrechnung 30.11.2026; vorzeitiger Verkauf nur bei JA-Ask >0,85 (Edge weg) oder wenn die Invalidierung greift und der Bid noch >0,30 liegt.",
    "entscheidung_id": "dc54cb569",
    "invalidierung": "BTC-Tagesschluss über 67.500 vor dem 20.11.2026 oder JA-Ask fällt unter 0,20 (dann ist die Vola-These vom Markt widerlegt).",
-   "kurs": 0.395,
-   "wert": 534.3
+   "kurs": 0.415,
+   "wert": 858.95
   }
  ],
  "realisiert": -1255.7408197125392,
@@ -221,7 +221,7 @@
  "funding": 0.0,
  "erstellt": 1793319819.7411644,
  "start_fx": 1.1184885798616961,
- "letzter_tick": 1794816142.3070915,
+ "letzter_tick": 1794817042.973769,
  "rebalancing": {
   "ziele": {
    "stock:SPY": {
