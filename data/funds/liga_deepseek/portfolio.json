@@ -22,8 +22,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "d8e5f296a",
-   "kurs": 64042.565,
-   "wert": 590.89
+   "kurs": 64514.095,
+   "wert": 595.24
   },
   {
    "id": "p9a8fa083",
@@ -43,8 +43,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Halten als Kern; Exit über Rebalancing-Regel bzw. SMA200-Bruch.",
    "entscheidung_id": "d0eee1434",
-   "kurs": 744.39,
-   "wert": 2452.27,
+   "kurs": 746.49,
+   "wert": 2459.19,
    "invalidierung": "SPY-Tagesschluss unter SMA200 (731,6) → Kern auf 20% zurücknehmen."
   },
   {
@@ -65,8 +65,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Halten als Kern; Exit nur über Rebalancing-Regel. Rückkauf TLT erst bei 10J < 4,50%.",
    "entscheidung_id": "d7658fcde",
-   "kurs": 95.28,
-   "wert": 1556.23,
+   "kurs": 95.205,
+   "wert": 1555.01,
    "invalidierung": "10J über 5,20% oder Fed +50bp im Dezember mit 2J über 4,90% → AGG-Anteil auf 10% zurücknehmen."
   },
   {
@@ -100,8 +100,8 @@
    "ausstiegsplan": "Halten bis 31.12.2026 (Abrechnung). Vorzeitiger Verkauf bei JA-Preis (Gegenposition) unter 0,12 (dann ist mein p zu pessimistisch und der Edge weg) oder bei JA über 0,50 ohne klare Nachricht (Markt weiß mehr → sofort raus).",
    "entscheidung_id": "dd655a214",
    "invalidierung": "US-Regierung (Trump, Außen- oder Verteidigungsministerium) kündigt öffentlich und förmlich die Aufhebung/Aussetzung der Seeblockade an ODER ein umfassender Iran-Deal wird mit Blockade-Aufhebung als Teil verkündet.",
-   "kurs": 0.8154999999999999,
-   "wert": 244.5
+   "kurs": 0.8145,
+   "wert": 244.2
   },
   {
    "id": "pbf54ccd6",
@@ -121,8 +121,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "d0f380f2d",
-   "kurs": 79.66,
-   "wert": 1003.49
+   "kurs": 79.515,
+   "wert": 1001.66
   },
   {
    "id": "p8e7557a6",
@@ -155,8 +155,8 @@
    "ausstiegsplan": "Halten bis Abrechnung 31.12.2026; Verkauf bei JA > 0,88 oder BTC-Tagesschluss > 70.000.",
    "entscheidung_id": "d1c8f65ac",
    "invalidierung": "BTC schließt zwei Tage in Folge über SMA50 (68.913) UND DVOL fällt unter 38 → Abwärtstrend gebrochen, Touch-P unter 50%, These falsch.",
-   "kurs": 0.645,
-   "wert": 96.0
+   "kurs": 0.635,
+   "wert": 94.5
   },
   {
    "id": "pb81feef7",
@@ -189,8 +189,8 @@
    "ausstiegsplan": "Halten bis Abrechnung 30.11./1.12. (Binance-1m-Low). Verkauf nur bei Invalidierung oder wenn JA-Bid über 0,85 steht (dann ist praktisch alles eingepreist).",
    "entscheidung_id": "da8372987",
    "invalidierung": "Binance-Tagesschluss über 68.000 oder JA-Ask fällt unter 0,22 (dann ist der Markt meiner Vola-Rechnung voraus) oder realisierte 7-Tage-Vola unter 1,5%/Tag bei BTC über 66.000.",
-   "kurs": 0.445,
-   "wert": 1074.48
+   "kurs": 0.415,
+   "wert": 1001.22
   },
   {
    "id": "pf9cf7c11",
@@ -222,7 +222,7 @@
  "funding": 0.0,
  "erstellt": 1793319819.7411644,
  "start_fx": 1.1184885798616961,
- "letzter_tick": 1794843389.4480867,
+ "letzter_tick": 1794844287.8376608,
  "rebalancing": {
   "ziele": {
    "stock:SPY": {
