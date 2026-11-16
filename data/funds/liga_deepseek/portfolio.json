@@ -45,8 +45,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "d8e5f296a",
-   "kurs": 64623.235,
-   "wert": 596.25
+   "kurs": 64735.585,
+   "wert": 597.29
   },
   {
    "id": "p9a8fa083",
@@ -216,40 +216,6 @@
    "wert": 87.0
   },
   {
-   "id": "pf88eff35",
-   "inst": {
-    "id": "pm:polymarket:6891215:JA",
-    "art": "pm",
-    "venue": "polymarket",
-    "ergebnis": "JA",
-    "frage": "Will Bitcoin dip to $62,000 November 9-15?",
-    "schliesst": 1794805200.0,
-    "ref": {
-     "id": "6891215",
-     "token_ja": "32203881254117901813493090499083335613170428667715037961612617658762482868950",
-     "token_nein": "34390734464051072739982582429240365446783011824219890733124876477094820569456",
-     "tick": 0.001,
-     "condition": "0x7dd27ebb8406a344823b3dd0d7d4eca239849bdf20f90614b26791b5f89df17c",
-     "gebuehr_rate": 0.07,
-     "gebuehr_exp": 1.0
-    },
-    "url": "https://polymarket.com/event/what-price-will-bitcoin-hit-november-9-15-2026"
-   },
-   "seite": "long",
-   "menge": 12.0,
-   "einstand": 0.349,
-   "hebel": 1.0,
-   "marge": 0.0,
-   "eroeffnet": 1794710224.6494524,
-   "gebuehren": 0.19085,
-   "funding": 0.0,
-   "ausstiegsplan": "Bis Abrechnung halten (23:59 ET).",
-   "entscheidung_id": "dfa630c65",
-   "invalidierung": "BTC nachhaltig >66.500 ohne erneuten Test von 63.000.",
-   "kurs": null,
-   "wert": 4.19
-  },
-  {
    "id": "pb81feef7",
    "inst": {
     "id": "pm:polymarket:6507388:JA",
@@ -280,16 +246,16 @@
    "ausstiegsplan": "Halten bis Abrechnung 30.11.2026; vorzeitige Gewinnmitnahme bei JA-Bid >= 0,65; Exit bei Invalidierung.",
    "entscheidung_id": "da7657ae3",
    "invalidierung": "BTC-Tagesschluss über 68.000 USD oder JA-Ask unter 0,22.",
-   "kurs": 0.375,
-   "wert": 506.9
+   "kurs": 0.395,
+   "wert": 534.3
   }
  ],
- "realisiert": -1234.627569712539,
+ "realisiert": -1238.8155697125392,
  "gebuehren": 168.85890925396546,
  "funding": 0.0,
  "erstellt": 1793319819.7411644,
  "start_fx": 1.1184885798616961,
- "letzter_tick": 1794806118.3408113,
+ "letzter_tick": 1794807019.146003,
  "rebalancing": {
   "ziele": {
    "stock:SPY": {
