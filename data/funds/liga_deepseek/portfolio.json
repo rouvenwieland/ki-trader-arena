@@ -22,8 +22,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "d8e5f296a",
-   "kurs": 65031.104999999996,
-   "wert": 600.01
+   "kurs": 64904.015,
+   "wert": 598.84
   },
   {
    "id": "p9a8fa083",
@@ -43,8 +43,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Halten als Kern; Exit über Rebalancing-Regel bzw. SMA200-Bruch.",
    "entscheidung_id": "d0eee1434",
-   "kurs": 741.95,
-   "wert": 2444.24,
+   "kurs": 740.94,
+   "wert": 2440.91,
    "invalidierung": "SPY-Tagesschluss unter SMA200 (731,6) → Kern auf 20% zurücknehmen."
   },
   {
@@ -65,8 +65,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Halten als Kern; Exit nur über Rebalancing-Regel. Rückkauf TLT erst bei 10J < 4,50%.",
    "entscheidung_id": "d7658fcde",
-   "kurs": 95.235,
-   "wert": 1555.5,
+   "kurs": 95.265,
+   "wert": 1555.99,
    "invalidierung": "10J über 5,20% oder Fed +50bp im Dezember mit 2J über 4,90% → AGG-Anteil auf 10% zurücknehmen."
   },
   {
@@ -121,8 +121,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "d0f380f2d",
-   "kurs": 79.46,
-   "wert": 1000.97
+   "kurs": 79.5,
+   "wert": 1001.47
   },
   {
    "id": "p8e7557a6",
@@ -189,8 +189,8 @@
    "ausstiegsplan": "Halten bis Abrechnung 30.11./1.12. (Binance-1m-Low). Verkauf nur bei Invalidierung oder wenn JA-Bid über 0,85 steht (dann ist praktisch alles eingepreist).",
    "entscheidung_id": "da8372987",
    "invalidierung": "Binance-Tagesschluss über 68.000 oder JA-Ask fällt unter 0,22 (dann ist der Markt meiner Vola-Rechnung voraus) oder realisierte 7-Tage-Vola unter 1,5%/Tag bei BTC über 66.000.",
-   "kurs": 0.395,
-   "wert": 952.38
+   "kurs": 0.385,
+   "wert": 927.96
   },
   {
    "id": "pf9cf7c11",
@@ -213,8 +213,8 @@
    "ausstiegsplan": "Kern-Baustein: Exit über Rebalancing-Regel (Schwelle 8pp) oder bei Invalidierung (WTI unter 82 UND 10J unter 4,80%). Take-Profit 70,0.",
    "entscheidung_id": "ddc1d7b84",
    "invalidierung": "WTI unter 82 USD bei gleichzeitig 10J unter 4,80% — dann ist der Hedge-Charakter weg und XLE fällt unter SMA200.",
-   "kurs": 63.825,
-   "wert": 1212.5
+   "kurs": 63.815,
+   "wert": 1212.31
   }
  ],
  "realisiert": -1291.1632836203996,
@@ -222,7 +222,7 @@
  "funding": 0.0,
  "erstellt": 1793319819.7411644,
  "start_fx": 1.1184885798616961,
- "letzter_tick": 1794855087.6365068,
+ "letzter_tick": 1794855987.4437926,
  "rebalancing": {
   "ziele": {
    "stock:SPY": {

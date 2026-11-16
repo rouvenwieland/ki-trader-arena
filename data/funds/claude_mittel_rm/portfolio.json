@@ -131,8 +131,8 @@
    "ausstiegsplan": "Halten bis 30.11.; verkaufen, wenn BTC unter 64.000 fällt oder NEIN-Preis <0.88.",
    "entscheidung_id": "d7dbfc08f",
    "invalidierung": "BTC Binance unter 64.000 oder DVOL >60",
-   "kurs": 0.7855000000000001,
-   "wert": 245.71
+   "kurs": 0.7805,
+   "wert": 243.51
   },
   {
    "id": "pea9d23a3",
@@ -152,8 +152,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "dd6456776",
-   "kurs": 741.95,
-   "wert": 2212.54
+   "kurs": 740.94,
+   "wert": 2209.53
   },
   {
    "id": "p1c64b37e",
@@ -173,8 +173,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "dd6456776",
-   "kurs": 65031.104999999996,
-   "wert": 922.87
+   "kurs": 64904.015,
+   "wert": 921.06
   },
   {
    "id": "p994b6370",
@@ -194,8 +194,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "dd6456776",
-   "kurs": 353.12,
-   "wert": 868.78
+   "kurs": 353.195,
+   "wert": 868.96
   },
   {
    "id": "p3b9e74b7",
@@ -344,8 +344,8 @@
    "ausstiegsplan": "Halten bis Abrechnung nach Call 17.11.",
    "entscheidung_id": "d1a2949e8",
    "invalidierung": "Call verschoben oder Transkript ohne Wort 'bubble' von Executives",
-   "kurs": 0.512013143683701,
-   "wert": 46.64
+   "kurs": 0.4441766266712375,
+   "wert": 40.29
   },
   {
    "id": "p96f26326",
@@ -380,7 +380,7 @@
    "entscheidung_id": "d6b155dae",
    "invalidierung": "Doomsday Freitagsumsatz inkl. Previews >$200M am 18.12. oder Doomsday-Domestic nach 7 Tagen >$600M.",
    "kurs": 0.9185000000000001,
-   "wert": 450.67
+   "wert": 451.16
   },
   {
    "id": "p75b03ffe",
@@ -579,7 +579,7 @@
  "funding": 0.0,
  "erstellt": 1793380123.8861866,
  "start_fx": 1.1156327353966788,
- "letzter_tick": 1794855087.6365068,
+ "letzter_tick": 1794855987.4437926,
  "auftraege": [],
  "rebalancing": {
   "ziele": {
