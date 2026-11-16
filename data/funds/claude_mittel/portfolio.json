@@ -35,8 +35,8 @@
    "ausstiegsplan": "NEIN-Bid ≥0,93 oder P erreicht → verkaufen; sonst halten bis zur Wahl (April/Mai 2027).",
    "entscheidung_id": "d860a2331",
    "invalidierung": "Lisnard in mehreren Umfragen ≥12 % im 1. Wahlgang oder Rückzug von Philippe/Retailleau zu seinen Gunsten bzw. Sieg in einer Rechts-Primaire.",
-   "kurs": 0.8394999999999999,
-   "wert": 453.06
+   "kurs": 0.8405,
+   "wert": 453.6
   },
   {
    "id": "p842aa632",
@@ -180,8 +180,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "d6e1a7002",
-   "kurs": 738.9,
-   "wert": 1916.62
+   "kurs": 741.95,
+   "wert": 1924.53
   },
   {
    "id": "p5fe9ac51",
@@ -201,8 +201,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "d6e1a7002",
-   "kurs": 660.84,
-   "wert": 1053.56
+   "kurs": 664.57,
+   "wert": 1059.51
   },
   {
    "id": "p5106387a",
@@ -222,8 +222,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "d6e1a7002",
-   "kurs": 352.53,
-   "wert": 1048.43
+   "kurs": 353.12,
+   "wert": 1050.19
   },
   {
    "id": "p72af4e36",
@@ -243,8 +243,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "d6e1a7002",
-   "kurs": 95.25,
-   "wert": 1093.74
+   "kurs": 95.235,
+   "wert": 1093.57
   },
   {
    "id": "p3e7ff11c",
@@ -264,8 +264,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "d6e1a7002",
-   "kurs": 64672.485,
-   "wert": 1064.3
+   "kurs": 65031.104999999996,
+   "wert": 1070.21
   },
   {
    "id": "pe3015b77",
@@ -285,8 +285,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "d6e1a7002",
-   "kurs": 1809.3049999999998,
-   "wert": 410.63
+   "kurs": 1823.23,
+   "wert": 413.78
   },
   {
    "id": "p1ad6082a",
@@ -380,8 +380,8 @@
    "ausstiegsplan": "Bis Abrechnung halten; Verkauf bei Bid ≥0.50",
    "entscheidung_id": "d5a40bf82",
    "invalidierung": "Transkript Q2 FY27 enthält kein 'bubble' und Analystenfragen drehen sich nicht um Bubble; oder Call-Datum verschoben",
-   "kurs": 0.3655777763154117,
-   "wert": 9.93
+   "kurs": 0.512013143683701,
+   "wert": 14.04
   },
   {
    "id": "pac09f469",
@@ -479,7 +479,7 @@
  "funding": 0.0,
  "erstellt": 1793319819.7411644,
  "start_fx": 1.1184885798616961,
- "letzter_tick": 1794854187.440421,
+ "letzter_tick": 1794855087.6365068,
  "auftraege": [
   {
    "id": "a4e7a61",
@@ -514,7 +514,7 @@
    "ausstiegsplan": "",
    "invalidierung": "",
    "erstellt": 1794409480.899957,
-   "geprueft_bis": 1794854187.440421,
+   "geprueft_bis": 1794855087.6365068,
    "gueltig_bis": 1797001480.899957
   },
   {
@@ -551,7 +551,7 @@
    "ausstiegsplan": "",
    "invalidierung": "",
    "erstellt": 1794452946.4758763,
-   "geprueft_bis": 1794854187.440421,
+   "geprueft_bis": 1794855087.6365068,
    "gueltig_bis": 1797044946.4758763
   }
  ],
