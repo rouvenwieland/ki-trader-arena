@@ -22,8 +22,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "d8e5f296a",
-   "kurs": 64904.015,
-   "wert": 598.84
+   "kurs": 64765.225000000006,
+   "wert": 597.56
   },
   {
    "id": "p9a8fa083",
@@ -43,8 +43,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Halten als Kern; Exit über Rebalancing-Regel bzw. SMA200-Bruch.",
    "entscheidung_id": "d0eee1434",
-   "kurs": 740.94,
-   "wert": 2440.91,
+   "kurs": 740.31,
+   "wert": 2438.83,
    "invalidierung": "SPY-Tagesschluss unter SMA200 (731,6) → Kern auf 20% zurücknehmen."
   },
   {
@@ -121,8 +121,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "d0f380f2d",
-   "kurs": 79.5,
-   "wert": 1001.47
+   "kurs": 79.53,
+   "wert": 1001.85
   },
   {
    "id": "pb81feef7",
@@ -155,8 +155,8 @@
    "ausstiegsplan": "Halten bis Abrechnung/Touch; Exit bei Invalidierung oder JA-Ask > 0,80.",
    "entscheidung_id": "d40906f4b",
    "invalidierung": "Binance-Tagesschluss über 67.500 oder JA-Ask < 0,25.",
-   "kurs": 0.385,
-   "wert": 927.96
+   "kurs": 0.395,
+   "wert": 1003.08
   },
   {
    "id": "pf9cf7c11",
@@ -179,8 +179,8 @@
    "ausstiegsplan": "Kern-Baustein: Exit über Rebalancing-Regel (Schwelle 8pp) oder bei Invalidierung (WTI unter 82 UND 10J unter 4,80%). Take-Profit 70,0.",
    "entscheidung_id": "ddc1d7b84",
    "invalidierung": "WTI unter 82 USD bei gleichzeitig 10J unter 4,80% — dann ist der Hedge-Charakter weg und XLE fällt unter SMA200.",
-   "kurs": 63.815,
-   "wert": 1212.31
+   "kurs": 63.775,
+   "wert": 1211.55
   }
  ],
  "realisiert": -1292.2210836203997,
@@ -188,7 +188,7 @@
  "funding": 0.0,
  "erstellt": 1793319819.7411644,
  "start_fx": 1.1184885798616961,
- "letzter_tick": 1794855987.4437926,
+ "letzter_tick": 1794856887.5282524,
  "rebalancing": {
   "ziele": {
    "stock:SPY": {
