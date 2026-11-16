@@ -32,7 +32,7 @@
    "funding": 0.0,
    "ausstiegsplan": "Halten bis Abrechnung (Dez-Bericht Jan. 2027). Neu bewerten, falls die Okt-Quote am 6.11. bei ≥4,5 % liegt. Verkaufen, falls die Nov-Quote ≥4,7 % ist.",
    "entscheidung_id": "d9893ed5d",
-   "kurs": 0.982,
+   "kurs": 0.9804999999999999,
    "wert": 312.62
   },
   {
@@ -66,8 +66,8 @@
    "ausstiegsplan": "Halten bis 9.12.; Verkauf, wenn NEIN-Bid >0,55 oder bei Invalidierung.",
    "entscheidung_id": "d25f2be12",
    "invalidierung": "Fed-Signale (Warsh/Williams/Jefferson) für klaren Hike mit breitem Konsens, oder CME-Hike >90 % ohne Tauben-Widerspruch.",
-   "kurs": 0.26,
-   "wert": 123.74
+   "kurs": 0.255,
+   "wert": 129.12
   },
   {
    "id": "p99a5965e",
@@ -89,8 +89,8 @@
    "ausstiegsplan": "Kern halten, Rebalancing-Regel (2 pp), Stop 690.",
    "entscheidung_id": "dd084c777",
    "invalidierung": "SPY schließt unter 690 oder 10J-Rendite >5,3 %",
-   "kurs": 739.96,
-   "wert": 1359.93
+   "kurs": 739.95,
+   "wert": 1359.91
   },
   {
    "id": "pbcdb744c",
@@ -158,8 +158,8 @@
    "ausstiegsplan": "Halten; Stop 340; Gewicht nicht über 5 % erhöhen.",
    "entscheidung_id": "dd43d0bdc",
    "invalidierung": "GLD unter 340 (neues Tief, ~-9 %)",
-   "kurs": 352.9,
-   "wert": 501.89
+   "kurs": 352.93,
+   "wert": 501.93
   },
   {
    "id": "pabe784cb",
@@ -224,7 +224,7 @@
  "funding": 0.0,
  "erstellt": 1793319819.7411644,
  "start_fx": 1.1184885798616961,
- "letzter_tick": 1794864226.9304976,
+ "letzter_tick": 1794865126.870917,
  "auftraege": [],
  "rebalancing": {
   "ziele": {
