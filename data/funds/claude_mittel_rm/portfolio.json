@@ -131,8 +131,8 @@
    "ausstiegsplan": "Halten bis 30.11.; verkaufen, wenn BTC unter 64.000 fällt oder NEIN-Preis <0.88.",
    "entscheidung_id": "d7dbfc08f",
    "invalidierung": "BTC Binance unter 64.000 oder DVOL >60",
-   "kurs": 0.766,
-   "wert": 239.44
+   "kurs": 0.757,
+   "wert": 236.31
   },
   {
    "id": "pea9d23a3",
@@ -173,8 +173,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "dd6456776",
-   "kurs": 65090.975000000006,
-   "wert": 923.72
+   "kurs": 64924.415,
+   "wert": 921.35
   },
   {
    "id": "p994b6370",
@@ -344,8 +344,8 @@
    "ausstiegsplan": "Halten bis Abrechnung nach Call 17.11.",
    "entscheidung_id": "d1a2949e8",
    "invalidierung": "Call verschoben oder Transkript ohne Wort 'bubble' von Executives",
-   "kurs": 0.4031087554370836,
-   "wert": 36.47
+   "kurs": 0.45405637000707877,
+   "wert": 41.21
   },
   {
    "id": "p96f26326",
@@ -480,8 +480,8 @@
    "ausstiegsplan": "Halten bis IPO-Tag (voraussichtlich Woche 16.–20.11.). Bei Preisfestsetzung neu rechnen: Schwelle = 1,25 Bio/13,09 Mrd. = $95,5. Teilverkauf, wenn JA ≥0,50 vor Handelsstart.",
    "entscheidung_id": "d0595e7ab",
    "invalidierung": "Endgültiger IPO-Preis ≥ $86 (dann reicht +11 % Pop) oder offizielle Polymarket-Klarstellung, dass voll verwässert gezählt wird; Graumarkt-/Indikationen Eröffnung ≥ $100.",
-   "kurs": 0.2285,
-   "wert": 613.55
+   "kurs": 0.219,
+   "wert": 586.64
   },
   {
    "id": "p1f686553",
@@ -579,7 +579,7 @@
  "funding": 0.0,
  "erstellt": 1793380123.8861866,
  "start_fx": 1.1156327353966788,
- "letzter_tick": 1794787994.4951372,
+ "letzter_tick": 1794788894.6063666,
  "auftraege": [],
  "rebalancing": {
   "ziele": {
