@@ -2,7 +2,7 @@
  "fonds_id": "ko_wetter",
  "waehrung": "USD",
  "start_kapital": 11156.327353966788,
- "cash": 1949.89691565063,
+ "cash": 1900.18861565063,
  "positionen": [
   {
    "id": "p3cf85e37",
@@ -105,8 +105,8 @@
    "gebuehren": 4.37,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Wetter-Regel)",
-   "kurs": 0.275,
-   "wert": 112.32
+   "kurs": 0.28500000000000003,
+   "wert": 116.48
   },
   {
    "id": "p24d2c64a",
@@ -131,8 +131,8 @@
    "gebuehren": 3.2,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Wetter-Regel)",
-   "kurs": 0.43,
-   "wert": 79.38
+   "kurs": 0.345,
+   "wert": 64.26
   },
   {
    "id": "pa5532215",
@@ -157,8 +157,8 @@
    "gebuehren": 0.76,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Wetter-Regel)",
-   "kurs": 0.88,
-   "wert": 74.82
+   "kurs": 0.9,
+   "wert": 77.43
   },
   {
    "id": "pcc2a2df2",
@@ -183,15 +183,41 @@
    "gebuehren": 3.74,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Wetter-Regel)",
-   "kurs": 0.21500000000000002,
-   "wert": 56.6
+   "kurs": 0.165,
+   "wert": 45.28
+  },
+  {
+   "id": "pc66c0b8f",
+   "inst": {
+    "id": "pm:kalshi:KXHIGHAUS-26NOV18-T66:JA",
+    "art": "pm",
+    "venue": "kalshi",
+    "ergebnis": "JA",
+    "frage": "Will the maximum temperature be <66° on Nov 18, 2026? [65° or below]",
+    "schliesst": 1795071600.0,
+    "ref": {
+     "ticker": "KXHIGHAUS-26NOV18-T66"
+    },
+    "url": "https://kalshi.com/markets/KXHIGHAUS-26NOV18"
+   },
+   "seite": "long",
+   "menge": 406.0,
+   "einstand": 0.11529137931034482,
+   "hebel": 1.0,
+   "marge": 0.0,
+   "eroeffnet": 1794927688.4456105,
+   "gebuehren": 2.9,
+   "funding": 0.0,
+   "ausstiegsplan": "Halten bis zur Abrechnung (Wetter-Regel)",
+   "kurs": 0.115,
+   "wert": 4.06
   }
  ],
  "realisiert": -7707.5887383161635,
- "gebuehren": 924.9400000000002,
+ "gebuehren": 927.8400000000001,
  "funding": 0.0,
  "erstellt": 1793380123.8861866,
  "start_fx": 1.1156327353966788,
- "letzter_tick": 1794926788.6664653,
- "wetter_letzter": 1794924088.0991218
+ "letzter_tick": 1794927688.4456105,
+ "wetter_letzter": 1794927688.4456105
 }
