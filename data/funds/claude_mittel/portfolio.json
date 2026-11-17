@@ -35,8 +35,8 @@
    "ausstiegsplan": "NEIN-Bid ≥0,93 oder P erreicht → verkaufen; sonst halten bis zur Wahl (April/Mai 2027).",
    "entscheidung_id": "d860a2331",
    "invalidierung": "Lisnard in mehreren Umfragen ≥12 % im 1. Wahlgang oder Rückzug von Philippe/Retailleau zu seinen Gunsten bzw. Sieg in einer Rechts-Primaire.",
-   "kurs": 0.8385,
-   "wert": 452.52
+   "kurs": 0.84,
+   "wert": 453.06
   },
   {
    "id": "p842aa632",
@@ -159,8 +159,8 @@
    "ausstiegsplan": "Bid ≥0,70 verkaufen (P erreicht); Neubewertung nach NVDA-Zahlen 19.11.; schließen, wenn Apple-Vorsprung <3 %.",
    "entscheidung_id": "d7e53ef04",
    "invalidierung": "NVDA-Marktkap. kommt auf <3 % Abstand zu Apple, oder Apple fällt >8 % relativ.",
-   "kurs": 0.8714999999999999,
-   "wert": 266.78
+   "kurs": 0.8725,
+   "wert": 267.4
   },
   {
    "id": "pb60e44cc",
@@ -264,8 +264,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "d6e1a7002",
-   "kurs": 64246.985,
-   "wert": 1057.3
+   "kurs": 64142.265,
+   "wert": 1055.58
   },
   {
    "id": "pe3015b77",
@@ -285,8 +285,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "d6e1a7002",
-   "kurs": 1795.205,
-   "wert": 407.41
+   "kurs": 1791.725,
+   "wert": 406.63
   },
   {
    "id": "p1ad6082a",
@@ -352,8 +352,8 @@
    "ausstiegsplan": "Gewinn mitnehmen bei NEIN-Bid ≥0.78 (=P). Nach NVDA-Earnings neu rechnen. Sonst halten bis 31.12.",
    "entscheidung_id": "d1fa25bbb",
    "invalidierung": "NVDA-Marktkapitalisierung innerhalb 5 % von Apple (z. B. NVDA ≥200 bei AAPL ~349) nach den Earnings, oder NVDA-JA ≥0.45.",
-   "kurs": 0.905,
-   "wert": 385.2
+   "kurs": 0.9,
+   "wert": 380.92
   },
   {
    "id": "p41d9ec41",
@@ -479,7 +479,7 @@
  "funding": 0.0,
  "erstellt": 1793319819.7411644,
  "start_fx": 1.1184885798616961,
- "letzter_tick": 1794910379.0313172,
+ "letzter_tick": 1794911279.1424937,
  "auftraege": [
   {
    "id": "a4e7a61",
@@ -514,7 +514,7 @@
    "ausstiegsplan": "",
    "invalidierung": "",
    "erstellt": 1794409480.899957,
-   "geprueft_bis": 1794910379.0313172,
+   "geprueft_bis": 1794911279.1424937,
    "gueltig_bis": 1797001480.899957
   },
   {
@@ -551,7 +551,7 @@
    "ausstiegsplan": "",
    "invalidierung": "",
    "erstellt": 1794452946.4758763,
-   "geprueft_bis": 1794910379.0313172,
+   "geprueft_bis": 1794911279.1424937,
    "gueltig_bis": 1797044946.4758763
   }
  ],
