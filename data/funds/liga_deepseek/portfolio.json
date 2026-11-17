@@ -22,8 +22,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "d8e5f296a",
-   "kurs": 64859.915,
-   "wert": 598.43
+   "kurs": 64719.405,
+   "wert": 597.14
   },
   {
    "id": "p9a8fa083",
@@ -155,8 +155,8 @@
    "ausstiegsplan": "Halten bis Abrechnung/Touch; Exit bei Invalidierung oder JA-Ask > 0,80.",
    "entscheidung_id": "d40906f4b",
    "invalidierung": "Binance-Tagesschluss über 67.500 oder JA-Ask < 0,25.",
-   "kurs": 0.385,
-   "wert": 977.36
+   "kurs": 0.395,
+   "wert": 1003.08
   },
   {
    "id": "pf9cf7c11",
@@ -188,7 +188,7 @@
  "funding": 0.0,
  "erstellt": 1793319819.7411644,
  "start_fx": 1.1184885798616961,
- "letzter_tick": 1794873227.1914008,
+ "letzter_tick": 1794874126.9351559,
  "rebalancing": {
   "ziele": {
    "stock:SPY": {

@@ -2,10 +2,10 @@
  "fonds_id": "bm_affe",
  "waehrung": "USD",
  "start_kapital": 11184.88579861696,
- "cash": 7073.695382485856,
+ "cash": 7306.398012451697,
  "positionen": [
   {
-   "id": "p6027e7ac",
+   "id": "p0d2e7e54",
    "inst": {
     "id": "spot:LINK-USD",
     "art": "spot",
@@ -13,22 +13,22 @@
     "symbol": "LINK-USD"
    },
    "seite": "long",
-   "menge": 296.2695834566608,
-   "einstand": 9.2560454575639,
+   "menge": 267.1282266536889,
+   "einstand": 9.12313848731943,
    "hebel": 1.0,
    "marge": 0.0,
-   "eroeffnet": 1794787994.4951372,
-   "gebuehren": 16.453708393010245,
+   "eroeffnet": 1794874126.9351559,
+   "gebuehren": 14.622286833801944,
    "funding": 0.0,
-   "kurs": 9.120000000000001,
-   "wert": 2701.68
+   "kurs": 9.119,
+   "wert": 2435.14
   }
  ],
- "realisiert": -966.7372260894567,
- "gebuehren": 784.3760294263213,
+ "realisiert": -1024.649235824532,
+ "gebuehren": 815.2017733371854,
  "funding": 0.0,
  "erstellt": 1793319819.7411644,
  "start_fx": 1.1184885798616961,
- "letzter_tick": 1794873227.1914008,
- "letzter_tag": "2026-11-16"
+ "letzter_tick": 1794874126.9351559,
+ "letzter_tag": "2026-11-17"
 }
