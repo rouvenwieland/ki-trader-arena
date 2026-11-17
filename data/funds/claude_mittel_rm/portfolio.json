@@ -69,8 +69,8 @@
    "ausstiegsplan": "Halten bis 31.12.; Gewinnmitnahme ≥0,93 oder Neubewertung nach NVDA-Earnings 17./19.11.",
    "entscheidung_id": "dce9924e1",
    "invalidierung": "NVDA-Marktkap > Apple −10 % (NVDA >~210 bei Apple ~355) oder Apple −20 % binnen Tagen",
-   "kurs": 0.878,
-   "wert": 1163.66
+   "kurs": 0.8775,
+   "wert": 1166.33
   },
   {
    "id": "pa832233e",
@@ -173,8 +173,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "dd6456776",
-   "kurs": 64697.455,
-   "wert": 918.13
+   "kurs": 64845.475000000006,
+   "wert": 920.23
   },
   {
    "id": "p994b6370",
@@ -295,8 +295,8 @@
    "ausstiegsplan": "Halten bis Wahl April 2027; teilweise verkaufen wenn NEIN ≥0.72 oder Le Pen-Preis ≤0.30; neu bewerten bei Umfragen Stichwahl Le Pen vs. Philippe/Mitte >55 % für RN.",
    "entscheidung_id": "dc6f84fd5",
    "invalidierung": "Seriöse Stichwahl-Umfragen (Ifop, Elabe) zeigen RN-Kandidat dauerhaft ≥54 % gegen jeden Gegner, oder Preis Le Pen JA ≥0.55.",
-   "kurs": 0.5025,
-   "wert": 158.63
+   "kurs": 0.5035000000000001,
+   "wert": 158.95
   },
   {
    "id": "p8b2743ca",
@@ -344,8 +344,8 @@
    "ausstiegsplan": "Halten bis Abrechnung nach Call 17.11.",
    "entscheidung_id": "d1a2949e8",
    "invalidierung": "Call verschoben oder Transkript ohne Wort 'bubble' von Executives",
-   "kurs": 0.4302778626529796,
-   "wert": 39.0
+   "kurs": 0.2555194136257786,
+   "wert": 22.85
   },
   {
    "id": "p96f26326",
@@ -446,7 +446,7 @@
    "ausstiegsplan": "Bis Vereidigung halten; schließen, wenn beide Beine zusammen ≥0.97 verkaufbar.",
    "entscheidung_id": "d5f5d56d9",
    "invalidierung": "Nachweislich abweichende PredictIt-Regel, die Eisenkot-JA bei PredictIt und NEIN bei Polymarket zulässt.",
-   "kurs": 0.5785,
+   "kurs": 0.5774999999999999,
    "wert": 403.9
   },
   {
@@ -480,8 +480,8 @@
    "ausstiegsplan": "Halten bis IPO-Tag (voraussichtlich Woche 16.–20.11.). Bei Preisfestsetzung neu rechnen: Schwelle = 1,25 Bio/13,09 Mrd. = $95,5. Teilverkauf, wenn JA ≥0,50 vor Handelsstart.",
    "entscheidung_id": "d0595e7ab",
    "invalidierung": "Endgültiger IPO-Preis ≥ $86 (dann reicht +11 % Pop) oder offizielle Polymarket-Klarstellung, dass voll verwässert gezählt wird; Graumarkt-/Indikationen Eröffnung ≥ $100.",
-   "kurs": 0.3525,
-   "wert": 947.23
+   "kurs": 0.348,
+   "wert": 933.78
   },
   {
    "id": "p1f686553",
@@ -579,7 +579,7 @@
  "funding": 0.0,
  "erstellt": 1793380123.8861866,
  "start_fx": 1.1156327353966788,
- "letzter_tick": 1794955837.7177863,
+ "letzter_tick": 1794956738.0311365,
  "auftraege": [],
  "rebalancing": {
   "ziele": {
