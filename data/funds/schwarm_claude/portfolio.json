@@ -33,7 +33,7 @@
    "gebuehren": 0.0,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Schwarm-Regel)",
-   "kurs": 0.0025,
+   "kurs": 0.003,
    "wert": 1.05
   },
   {
@@ -97,8 +97,8 @@
    "gebuehren": 0.0,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Schwarm-Regel)",
-   "kurs": 0.95,
-   "wert": 444.13
+   "kurs": 0.9484999999999999,
+   "wert": 443.66
   },
   {
    "id": "pa3df2538",
@@ -138,5 +138,5 @@
  "funding": 0.0,
  "erstellt": 1793379225.5430336,
  "start_fx": 1.1157431109273288,
- "letzter_tick": 1794916887.8733625
+ "letzter_tick": 1794917787.5600243
 }
