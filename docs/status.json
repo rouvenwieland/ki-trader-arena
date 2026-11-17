@@ -1,6 +1,6 @@
 {
  "version": 1,
- "stand": 1794927963.7614453,
+ "stand": 1794928198.1154497,
  "hinweis": "Papierhandel-Simulation, keine Anlageberatung",
  "seite": "https://rouvenwieland.github.io/ki-trader-arena/",
  "budget": {
@@ -1218,6 +1218,34 @@
  ],
  "letzte_entscheidungen": [
   {
+   "ts": 1794928169.7022681,
+   "fonds": "DeepSeek",
+   "instrument": "stock:XLE",
+   "aktion": "kaufen",
+   "zuversicht": 0.6
+  },
+  {
+   "ts": 1794928166.2303333,
+   "fonds": "DeepSeek",
+   "instrument": "pm:polymarket:3128886:NEIN",
+   "aktion": "verkaufen",
+   "zuversicht": 0.65
+  },
+  {
+   "ts": 1794928153.8999844,
+   "fonds": "DeepSeek",
+   "instrument": "stock:XLE",
+   "aktion": "kaufen",
+   "zuversicht": 0.58
+  },
+  {
+   "ts": 1794928150.3802626,
+   "fonds": "DeepSeek",
+   "instrument": "stock:XLE",
+   "aktion": "kaufen",
+   "zuversicht": 0.6
+  },
+  {
    "ts": 1794877029.9311438,
    "fonds": "DeepSeek",
    "instrument": "pm:polymarket:6507388:JA",
@@ -1244,34 +1272,6 @@
    "instrument": "stock:XLE",
    "aktion": "kaufen",
    "zuversicht": 0.55
-  },
-  {
-   "ts": 1794856287.7655828,
-   "fonds": "DeepSeek",
-   "instrument": "pm:polymarket:3013350:JA",
-   "aktion": "verkaufen",
-   "zuversicht": 0.6
-  },
-  {
-   "ts": 1794856284.7283952,
-   "fonds": "DeepSeek",
-   "instrument": "stock:XLE",
-   "aktion": "kaufen",
-   "zuversicht": 0.55
-  },
-  {
-   "ts": 1794856275.632833,
-   "fonds": "DeepSeek",
-   "instrument": "stock:GLD",
-   "aktion": "verkaufen",
-   "zuversicht": 0.7
-  },
-  {
-   "ts": 1794856239.738033,
-   "fonds": "DeepSeek",
-   "instrument": "pm:polymarket:6507388:JA",
-   "aktion": "kaufen",
-   "zuversicht": 0.62
   }
  ],
  "ereignisse": [

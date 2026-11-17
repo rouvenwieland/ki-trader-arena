@@ -2,7 +2,7 @@
  "fonds_id": "liga_deepseek",
  "waehrung": "USD",
  "start_kapital": 11184.88579861696,
- "cash": 1228.3767891292232,
+ "cash": 1473.476789129223,
  "positionen": [
   {
    "id": "p3d319c8e",
@@ -68,40 +68,6 @@
    "kurs": 95.105,
    "wert": 1553.37,
    "invalidierung": "10J über 5,20% oder Fed +50bp im Dezember mit 2J über 4,90% → AGG-Anteil auf 10% zurücknehmen."
-  },
-  {
-   "id": "p3aa56fe5",
-   "inst": {
-    "id": "pm:polymarket:3128886:NEIN",
-    "art": "pm",
-    "venue": "polymarket",
-    "ergebnis": "NEIN",
-    "frage": "US announces end of Iranian blockade by December 31, 2026?",
-    "schliesst": 1798779540.0,
-    "ref": {
-     "id": "3128886",
-     "token_ja": "86011229287950365043519117852041614651767455889324682112682327985496937935368",
-     "token_nein": "39147524522707536456910747992621671433032838141439193264830818731544404472030",
-     "tick": 0.001,
-     "condition": "0x46ca741da4abd7ffa993f59ac65bfe83de43ae027accac71d263a493e44064e7",
-     "gebuehr_rate": 0.0,
-     "gebuehr_exp": 1
-    },
-    "url": "https://polymarket.com/event/us-announces-end-of-iranian-blockade-byptptpt-20260713152715080"
-   },
-   "seite": "long",
-   "menge": 300.0,
-   "einstand": 0.6628033333333334,
-   "hebel": 1.0,
-   "marge": 0.0,
-   "eroeffnet": 1794390411.9848747,
-   "gebuehren": 0.0,
-   "funding": 0.0,
-   "ausstiegsplan": "Halten bis 31.12.2026 (Abrechnung). Vorzeitiger Verkauf bei JA-Preis (Gegenposition) unter 0,12 (dann ist mein p zu pessimistisch und der Edge weg) oder bei JA über 0,50 ohne klare Nachricht (Markt weiß mehr → sofort raus).",
-   "entscheidung_id": "dd655a214",
-   "invalidierung": "US-Regierung (Trump, Außen- oder Verteidigungsministerium) kündigt öffentlich und förmlich die Aufhebung/Aussetzung der Seeblockade an ODER ein umfassender Iran-Deal wird mit Blockade-Aufhebung als Teil verkündet.",
-   "kurs": 0.8174999999999999,
-   "wert": 245.1
   },
   {
    "id": "pbf54ccd6",
@@ -183,7 +149,7 @@
    "wert": 1222.75
   }
  ],
- "realisiert": -1292.2210836203997,
+ "realisiert": -1245.9620836203997,
  "gebuehren": 200.57924925396546,
  "funding": 0.0,
  "erstellt": 1793319819.7411644,
