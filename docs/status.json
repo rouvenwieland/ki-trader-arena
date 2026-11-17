@@ -1,6 +1,6 @@
 {
  "version": 1,
- "stand": 1794942336.5054877,
+ "stand": 1794942545.866391,
  "hinweis": "Papierhandel-Simulation, keine Anlageberatung",
  "seite": "https://rouvenwieland.github.io/ki-trader-arena/",
  "budget": {
@@ -798,8 +798,8 @@
    "rendite_pct": -9.16,
    "equity_eur": 9225.98,
    "max_drawdown_pct": -24.83,
-   "status": "vorübergehend gestört (Anbieter überlastet) – nächster Versuch beim nächsten Lauf",
-   "modell": "gemini-2.5-flash",
+   "status": "Fehler: Modellfehler: gemini-flash-latest: keine Antwort (HTTP 429 [{\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota,",
+   "modell": "gemini-flash-latest",
    "kosten_heute_eur": 0.0,
    "kosten_gesamt_eur": 36.915,
    "rendite_ki_pct": [
@@ -1218,6 +1218,13 @@
  ],
  "letzte_entscheidungen": [
   {
+   "ts": 1794942545.778104,
+   "fonds": "DeepSeek",
+   "instrument": "stock:NVDA",
+   "aktion": "kaufen",
+   "zuversicht": 0.55
+  },
+  {
    "ts": 1794928169.7022681,
    "fonds": "DeepSeek",
    "instrument": "stock:XLE",
@@ -1261,13 +1268,6 @@
   },
   {
    "ts": 1794856294.3902006,
-   "fonds": "DeepSeek",
-   "instrument": "stock:XLE",
-   "aktion": "kaufen",
-   "zuversicht": 0.55
-  },
-  {
-   "ts": 1794856291.2709088,
    "fonds": "DeepSeek",
    "instrument": "stock:XLE",
    "aktion": "kaufen",
