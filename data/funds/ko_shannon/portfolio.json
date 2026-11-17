@@ -21,8 +21,8 @@
    "gebuehren": 36.52791447758928,
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
-   "kurs": 64298.975000000006,
-   "wert": 5117.42
+   "kurs": 64246.985,
+   "wert": 5113.28
   }
  ],
  "realisiert": 0.0,
@@ -30,7 +30,7 @@
  "funding": 0.0,
  "erstellt": 1793527902.881928,
  "start_fx": 1.1178924086231086,
- "letzter_tick": 1794909479.0226135,
+ "letzter_tick": 1794910379.0313172,
  "rebalancing": {
   "ziele": {
    "spot:BTC-USD": {
