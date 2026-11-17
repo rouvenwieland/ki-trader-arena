@@ -264,8 +264,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "d6e1a7002",
-   "kurs": 64767.325,
-   "wert": 1065.86
+   "kurs": 64515.975000000006,
+   "wert": 1061.73
   },
   {
    "id": "pe3015b77",
@@ -285,8 +285,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "d6e1a7002",
-   "kurs": 1821.565,
-   "wert": 413.41
+   "kurs": 1816.835,
+   "wert": 412.34
   },
   {
    "id": "p1ad6082a",
@@ -408,8 +408,8 @@
    "ausstiegsplan": "Halten bis Auflösung; Verkauf bei NEIN-Bid ≥0.93; neu bewerten bei IPO-Preis ≥$90 oder Spanne angehoben.",
    "entscheidung_id": "d9f975d34",
    "invalidierung": "IPO-Preisspanne auf ≥$95 angehoben oder Pricing >$90 am 18.11.",
-   "kurs": 0.9287745797692757,
-   "wert": 113.3
+   "kurs": 0.9550800049681392,
+   "wert": 116.51
   },
   {
    "id": "p16c2ebae",
@@ -479,7 +479,7 @@
  "funding": 0.0,
  "erstellt": 1793319819.7411644,
  "start_fx": 1.1184885798616961,
- "letzter_tick": 1794881449.6121228,
+ "letzter_tick": 1794882349.5327528,
  "auftraege": [
   {
    "id": "a4e7a61",
@@ -514,7 +514,7 @@
    "ausstiegsplan": "",
    "invalidierung": "",
    "erstellt": 1794409480.899957,
-   "geprueft_bis": 1794881449.6121228,
+   "geprueft_bis": 1794882349.5327528,
    "gueltig_bis": 1797001480.899957
   },
   {
@@ -551,7 +551,7 @@
    "ausstiegsplan": "",
    "invalidierung": "",
    "erstellt": 1794452946.4758763,
-   "geprueft_bis": 1794881449.6121228,
+   "geprueft_bis": 1794882349.5327528,
    "gueltig_bis": 1797044946.4758763
   }
  ],
