@@ -2,7 +2,7 @@
  "fonds_id": "claude_mittel",
  "waehrung": "USD",
  "start_kapital": 11184.88579861696,
- "cash": 2406.8723108874574,
+ "cash": 2446.8723108874574,
  "positionen": [
   {
    "id": "p51e71031",
@@ -35,8 +35,8 @@
    "ausstiegsplan": "NEIN-Bid ≥0,93 oder P erreicht → verkaufen; sonst halten bis zur Wahl (April/Mai 2027).",
    "entscheidung_id": "d860a2331",
    "invalidierung": "Lisnard in mehreren Umfragen ≥12 % im 1. Wahlgang oder Rückzug von Philippe/Retailleau zu seinen Gunsten bzw. Sieg in einer Rechts-Primaire.",
-   "kurs": 0.8234999999999999,
-   "wert": 444.42
+   "kurs": 0.8205,
+   "wert": 442.8
   },
   {
    "id": "p842aa632",
@@ -95,40 +95,6 @@
    "wert": 45.3
   },
   {
-   "id": "pa2cf5bd2",
-   "inst": {
-    "id": "pm:polymarket:5730331:JA",
-    "art": "pm",
-    "venue": "polymarket",
-    "ergebnis": "JA",
-    "frage": "NVIDIA (NVDA) Q3 adjusted gross margin 73% to 75%?",
-    "schliesst": 1795042800.0,
-    "ref": {
-     "id": "5730331",
-     "token_ja": "12184345390140772513332883679626608175715846723917987793045546957490562215909",
-     "token_nein": "59532283402481232517464624308522375103071481394285137704213470523262501022197",
-     "tick": 0.01,
-     "condition": "0x467ef775ebe832ade5a37b54bfa571a2d2a4eae879cf8e91afebc3b3417d63b2",
-     "gebuehr_rate": 0.0,
-     "gebuehr_exp": 1.0
-    },
-    "url": "https://polymarket.com/event/nvidia-nvda-q3-adjusted-gross-margin-non-gaap-20261008120136000-73-to-75"
-   },
-   "seite": "long",
-   "menge": 40.0,
-   "einstand": 0.82,
-   "hebel": 1.0,
-   "marge": 0.0,
-   "eroeffnet": 1793502952.6551862,
-   "gebuehren": 0.0,
-   "funding": 0.0,
-   "ausstiegsplan": "Bis zur Abrechnung (Earnings ca. 17.–25.11.) halten; vorzeitig verkaufen, wenn Bid ≥0.92 oder bei Nachricht zu Margendruck.",
-   "entscheidung_id": "df5b61ded",
-   "invalidierung": "Meldung/Analystenkonsens zur Q3-Marge ≥75,0 % oder <73 %; Pre-Announcement zu Speicherkosten.",
-   "kurs": 0.999,
-   "wert": 39.96
-  },
-  {
    "id": "p8b4a7cc3",
    "inst": {
     "id": "pm:polymarket:676741:JA",
@@ -159,7 +125,7 @@
    "ausstiegsplan": "Bid ≥0,70 verkaufen (P erreicht); Neubewertung nach NVDA-Zahlen 19.11.; schließen, wenn Apple-Vorsprung <3 %.",
    "entscheidung_id": "d7e53ef04",
    "invalidierung": "NVDA-Marktkap. kommt auf <3 % Abstand zu Apple, oder Apple fällt >8 % relativ.",
-   "kurs": 0.878,
+   "kurs": 0.8775,
    "wert": 268.01
   },
   {
@@ -264,8 +230,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "d6e1a7002",
-   "kurs": 64918.705,
-   "wert": 1068.36
+   "kurs": 64874.935,
+   "wert": 1067.64
   },
   {
    "id": "pe3015b77",
@@ -285,8 +251,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "d6e1a7002",
-   "kurs": 1822.8600000000001,
-   "wert": 413.69
+   "kurs": 1822.46,
+   "wert": 413.6
   },
   {
    "id": "p1ad6082a",
@@ -470,16 +436,16 @@
    "ausstiegsplan": "Halten bis zur Abrechnung am 31.12. Gewinn mitnehmen, wenn der NEIN-Bid ≥0,80 ist. Bei der Invalidierungsmeldung sofort schließen.",
    "entscheidung_id": "d4c6b2267",
    "invalidierung": "Glaubwürdige Berichte (WSJ/Bloomberg), dass das Board kurz vor der Ernennung eines permanenten CEO steht oder Kress dauerhaft macht. Ebenso eine Aussage im Call vom 17.11., die Suche solle 'within weeks' abgeschlossen sein.",
-   "kurs": 0.825,
-   "wert": 39.36
+   "kurs": 0.815,
+   "wert": 38.88
   }
  ],
- "realisiert": -209.64572814076882,
+ "realisiert": -202.44572814076884,
  "gebuehren": 65.1130233771088,
  "funding": 0.0,
  "erstellt": 1793319819.7411644,
  "start_fx": 1.1184885798616961,
- "letzter_tick": 1794957638.3764966,
+ "letzter_tick": 1794958537.87466,
  "auftraege": [
   {
    "id": "a4e7a61",
@@ -514,7 +480,7 @@
    "ausstiegsplan": "",
    "invalidierung": "",
    "erstellt": 1794409480.899957,
-   "geprueft_bis": 1794957638.3764966,
+   "geprueft_bis": 1794958537.87466,
    "gueltig_bis": 1797001480.899957
   },
   {
@@ -551,7 +517,7 @@
    "ausstiegsplan": "",
    "invalidierung": "",
    "erstellt": 1794452946.4758763,
-   "geprueft_bis": 1794957638.3764966,
+   "geprueft_bis": 1794958537.87466,
    "gueltig_bis": 1797044946.4758763
   }
  ],

@@ -65,8 +65,8 @@
    "gebuehren": 0.0,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.9695,
-   "wert": 213.18
+   "kurs": 0.968,
+   "wert": 212.74
   },
   {
    "id": "p722ad016",
@@ -97,8 +97,8 @@
    "gebuehren": 0.0,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.754,
-   "wert": 207.94
+   "kurs": 0.7545,
+   "wert": 208.22
   },
   {
    "id": "pdcfb5d53",
@@ -129,8 +129,8 @@
    "gebuehren": 0.0,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.4355,
-   "wert": 108.75
+   "kurs": 0.43,
+   "wert": 106.25
   },
   {
    "id": "pf0e983be",
@@ -353,8 +353,8 @@
    "gebuehren": 0.0,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.8234999999999999,
-   "wert": 169.54
+   "kurs": 0.8205,
+   "wert": 168.92
   },
   {
    "id": "pc2572f19",
@@ -385,8 +385,8 @@
    "gebuehren": 1.96552,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.405,
-   "wert": 79.6
+   "kurs": 0.415,
+   "wert": 81.59
   },
   {
    "id": "p21e9c816",
@@ -417,8 +417,8 @@
    "gebuehren": 1.85338,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.968,
-   "wert": 190.5
+   "kurs": 0.967,
+   "wert": 190.1
   },
   {
    "id": "p7f18532d",
@@ -481,8 +481,8 @@
    "gebuehren": 0.0,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.775,
-   "wert": 154.77
+   "kurs": 0.75,
+   "wert": 148.74
   },
   {
    "id": "pbb214a3d",
@@ -515,38 +515,6 @@
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
    "kurs": 0.040999999999999995,
    "wert": 8.44
-  },
-  {
-   "id": "p5037ef0e",
-   "inst": {
-    "id": "pm:polymarket:5730331:NEIN",
-    "art": "pm",
-    "venue": "polymarket",
-    "ergebnis": "NEIN",
-    "frage": "NVIDIA (NVDA) Q3 adjusted gross margin 73% to 75%?",
-    "schliesst": 1795042800.0,
-    "ref": {
-     "id": "5730331",
-     "token_ja": "12184345390140772513332883679626608175715846723917987793045546957490562215909",
-     "token_nein": "59532283402481232517464624308522375103071481394285137704213470523262501022197",
-     "tick": 0.01,
-     "condition": "0x467ef775ebe832ade5a37b54bfa571a2d2a4eae879cf8e91afebc3b3417d63b2",
-     "gebuehr_rate": 0.0,
-     "gebuehr_exp": 1.0
-    },
-    "url": "https://polymarket.com/event/nvidia-nvda-q3-adjusted-gross-margin-non-gaap-20261008120136000-73-to-75"
-   },
-   "seite": "long",
-   "menge": 296.0,
-   "einstand": 0.5628418918918919,
-   "hebel": 1.0,
-   "marge": 0.0,
-   "eroeffnet": 1793503484.642243,
-   "gebuehren": 0.0,
-   "funding": 0.0,
-   "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": null,
-   "wert": 166.6
   },
   {
    "id": "pd54b5964",
@@ -641,8 +609,8 @@
    "gebuehren": 4.65658,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.9835,
-   "wert": 270.32
+   "kurs": 0.983,
+   "wert": 269.77
   },
   {
    "id": "pd183209f",
@@ -673,7 +641,7 @@
    "gebuehren": 2.87438,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.987,
+   "kurs": 0.9875,
    "wert": 215.93
   },
   {
@@ -737,8 +705,8 @@
    "gebuehren": 3.5937,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.2695,
-   "wert": 84.58
+   "kurs": 0.254,
+   "wert": 76.96
   },
   {
    "id": "pa1fe7c67",
@@ -801,8 +769,8 @@
    "gebuehren": 0.17475,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.9595,
-   "wert": 163.03
+   "kurs": 0.9615,
+   "wert": 163.37
   },
   {
    "id": "p6a147c4d",
@@ -865,8 +833,8 @@
    "gebuehren": 4.05345,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.978,
-   "wert": 418.93
+   "kurs": 0.9835,
+   "wert": 423.24
   },
   {
    "id": "p0abe393e",
@@ -929,7 +897,7 @@
    "gebuehren": 0.54885,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.9175,
+   "kurs": 0.921,
    "wert": 159.31
   },
   {
@@ -961,8 +929,8 @@
    "gebuehren": 0.0,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.95,
-   "wert": 200.03
+   "kurs": 0.9524999999999999,
+   "wert": 200.87
   },
   {
    "id": "p66f9a4ef",
@@ -1217,7 +1185,7 @@
    "gebuehren": 1.35793,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.9684999999999999,
+   "kurs": 0.967,
    "wert": 188.1
   },
   {
@@ -1505,8 +1473,8 @@
    "gebuehren": 0.49949,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.926,
-   "wert": 159.91
+   "kurs": 0.927,
+   "wert": 160.08
   },
   {
    "id": "p9176f163",
@@ -1537,8 +1505,8 @@
    "gebuehren": 0.58474,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.904,
-   "wert": 161.64
+   "kurs": 0.9045000000000001,
+   "wert": 161.82
   },
   {
    "id": "pbf73aed6",
@@ -1573,11 +1541,11 @@
    "wert": 173.47
   }
  ],
- "realisiert": -1789.8509300000003,
+ "realisiert": -1956.4521300000004,
  "gebuehren": 304.4894399999999,
  "funding": 0.0,
  "erstellt": 1793379225.5430336,
  "start_fx": 1.1157431109273288,
- "letzter_tick": 1794957638.3764966,
+ "letzter_tick": 1794958537.87466,
  "kontrolle_bis": 1794876937.3725452
 }
