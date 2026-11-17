@@ -22,8 +22,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "d8e5f296a",
-   "kurs": 64897.615000000005,
-   "wert": 598.78
+   "kurs": 64979.955,
+   "wert": 599.54
   },
   {
    "id": "p9a8fa083",
@@ -101,7 +101,7 @@
    "entscheidung_id": "dd655a214",
    "invalidierung": "US-Regierung (Trump, Außen- oder Verteidigungsministerium) kündigt öffentlich und förmlich die Aufhebung/Aussetzung der Seeblockade an ODER ein umfassender Iran-Deal wird mit Blockade-Aufhebung als Teil verkündet.",
    "kurs": 0.8165,
-   "wert": 244.2
+   "wert": 244.8
   },
   {
    "id": "pbf54ccd6",
@@ -188,7 +188,7 @@
  "funding": 0.0,
  "erstellt": 1793319819.7411644,
  "start_fx": 1.1184885798616961,
- "letzter_tick": 1794923187.4486887,
+ "letzter_tick": 1794924088.0991218,
  "rebalancing": {
   "ziele": {
    "stock:SPY": {
