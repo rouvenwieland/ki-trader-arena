@@ -131,8 +131,8 @@
    "ausstiegsplan": "Halten bis 30.11.; verkaufen, wenn BTC unter 64.000 fällt oder NEIN-Preis <0.88.",
    "entscheidung_id": "d7dbfc08f",
    "invalidierung": "BTC Binance unter 64.000 oder DVOL >60",
-   "kurs": 0.7355,
-   "wert": 229.74
+   "kurs": 0.742,
+   "wert": 231.93
   },
   {
    "id": "pea9d23a3",
@@ -152,8 +152,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "dd6456776",
-   "kurs": 730.57,
-   "wert": 2178.6
+   "kurs": 731.86,
+   "wert": 2182.45
   },
   {
    "id": "p1c64b37e",
@@ -173,8 +173,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "dd6456776",
-   "kurs": 63697.615000000005,
-   "wert": 903.94
+   "kurs": 63739.994999999995,
+   "wert": 904.54
   },
   {
    "id": "p994b6370",
@@ -194,8 +194,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "dd6456776",
-   "kurs": 353.08,
-   "wert": 868.68
+   "kurs": 353.33,
+   "wert": 869.29
   },
   {
    "id": "p3b9e74b7",
@@ -295,8 +295,8 @@
    "ausstiegsplan": "Halten bis Wahl April 2027; teilweise verkaufen wenn NEIN ≥0.72 oder Le Pen-Preis ≤0.30; neu bewerten bei Umfragen Stichwahl Le Pen vs. Philippe/Mitte >55 % für RN.",
    "entscheidung_id": "dc6f84fd5",
    "invalidierung": "Seriöse Stichwahl-Umfragen (Ifop, Elabe) zeigen RN-Kandidat dauerhaft ≥54 % gegen jeden Gegner, oder Preis Le Pen JA ≥0.55.",
-   "kurs": 0.5245,
-   "wert": 165.58
+   "kurs": 0.5135000000000001,
+   "wert": 162.11
   },
   {
    "id": "p8b2743ca",
@@ -446,8 +446,8 @@
    "ausstiegsplan": "Bis Vereidigung halten; schließen, wenn beide Beine zusammen ≥0.97 verkaufbar.",
    "entscheidung_id": "d5f5d56d9",
    "invalidierung": "Nachweislich abweichende PredictIt-Regel, die Eisenkot-JA bei PredictIt und NEIN bei Polymarket zulässt.",
-   "kurs": 0.6134999999999999,
-   "wert": 427.0
+   "kurs": 0.6074999999999999,
+   "wert": 422.8
   },
   {
    "id": "p2567180c",
@@ -480,8 +480,8 @@
    "ausstiegsplan": "Halten bis IPO-Tag (voraussichtlich Woche 16.–20.11.). Bei Preisfestsetzung neu rechnen: Schwelle = 1,25 Bio/13,09 Mrd. = $95,5. Teilverkauf, wenn JA ≥0,50 vor Handelsstart.",
    "entscheidung_id": "d0595e7ab",
    "invalidierung": "Endgültiger IPO-Preis ≥ $86 (dann reicht +11 % Pop) oder offizielle Polymarket-Klarstellung, dass voll verwässert gezählt wird; Graumarkt-/Indikationen Eröffnung ≥ $100.",
-   "kurs": 0.344,
-   "wert": 923.01
+   "kurs": 0.341,
+   "wert": 914.94
   },
   {
    "id": "p1f686553",
@@ -542,8 +542,8 @@
    "ausstiegsplan": "Halten bis Tag-1-Schluss 19.11.; Verkauf, falls Preisfestsetzung ≥$90 oder JA-Preis >0.40.",
    "entscheidung_id": "da86d3e2a",
    "invalidierung": "IPO-Preis über Spanne (≥$85) oder Nachrichten, dass Marktkap FD-basiert >2 Bio bei $111 gezählt wird und Orderbuch-Hype.",
-   "kurs": 0.9550800049681392,
-   "wert": 36.29
+   "kurs": 0.9536889876867691,
+   "wert": 36.24
   },
   {
    "id": "pf5130da4",
@@ -579,7 +579,7 @@
  "funding": 0.0,
  "erstellt": 1793380123.8861866,
  "start_fx": 1.1156327353966788,
- "letzter_tick": 1794942217.694988,
+ "letzter_tick": 1794943118.1064005,
  "auftraege": [],
  "rebalancing": {
   "ziele": {
