@@ -2,7 +2,7 @@
  "fonds_id": "liga_deepseek",
  "waehrung": "USD",
  "start_kapital": 11184.88579861696,
- "cash": 1403.1975891292232,
+ "cash": 1228.3767891292232,
  "positionen": [
   {
    "id": "p3d319c8e",
@@ -145,16 +145,16 @@
     "url": "https://polymarket.com/event/what-price-will-bitcoin-hit-in-november-2026"
    },
    "seite": "long",
-   "menge": 2572.0,
-   "einstand": 0.407621034214619,
+   "menge": 2972.0,
+   "einstand": 0.4092871130551817,
    "hebel": 1.0,
    "marge": 0.0,
    "eroeffnet": 1794755589.1298704,
-   "gebuehren": 43.38413,
+   "gebuehren": 50.20493,
    "funding": 0.0,
-   "ausstiegsplan": "Halten bis Abrechnung/Touch; Exit bei Invalidierung oder JA-Ask > 0,80.",
-   "entscheidung_id": "d40906f4b",
-   "invalidierung": "Binance-Tagesschluss über 67.500 oder JA-Ask < 0,25.",
+   "ausstiegsplan": "Halten bis Abrechnung 01.12.2026. Vorzeitiger Exit: BTC-Tagesschluss > 68.000 (These tot) oder JA-Ask > 0,65 vor dem 25.11. (dann ist die Prämie realisiert).",
+   "entscheidung_id": "da966545b",
+   "invalidierung": "BTC-Tagesschluss über 68.000 USD (dann ist die Barriere wieder >1,5σ weg und die Restzeit zu kurz) oder Binance-Low-Bestätigung des Monats ohne neuen Rücksetzer bis 25.11.",
    "kurs": 0.415,
    "wert": 1054.52
   },
@@ -184,7 +184,7 @@
   }
  ],
  "realisiert": -1292.2210836203997,
- "gebuehren": 193.75844925396547,
+ "gebuehren": 200.57924925396546,
  "funding": 0.0,
  "erstellt": 1793319819.7411644,
  "start_fx": 1.1184885798616961,
@@ -238,8 +238,8 @@
    }
   },
   "schwelle_pp": 8.0,
-  "seit": 1794856121.0669513,
-  "entscheidung_id": "dd11830db"
+  "seit": 1794876937.3725452,
+  "entscheidung_id": "d950d54c0"
  },
  "auftraege": []
 }
