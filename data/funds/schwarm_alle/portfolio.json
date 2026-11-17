@@ -65,7 +65,7 @@
    "gebuehren": 3.13551,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Schwarm-Regel)",
-   "kurs": 0.03,
+   "kurs": 0.0295,
    "wert": 10.96
   },
   {
@@ -129,7 +129,7 @@
    "gebuehren": 0.0,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Schwarm-Regel)",
-   "kurs": 0.9955,
+   "kurs": 0.996,
    "wert": 700.48
   },
   {
@@ -257,8 +257,8 @@
    "gebuehren": 2.7493,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Schwarm-Regel)",
-   "kurs": 0.0385,
-   "wert": 30.55
+   "kurs": 0.0405,
+   "wert": 32.16
   },
   {
    "id": "p2d8e5efc",
@@ -298,5 +298,5 @@
  "funding": 0.0,
  "erstellt": 1793379225.5430336,
  "start_fx": 1.1157431109273288,
- "letzter_tick": 1794950318.2840958
+ "letzter_tick": 1794951218.9862695
 }
