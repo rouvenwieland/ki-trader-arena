@@ -22,8 +22,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "d8e5f296a",
-   "kurs": 63527.884999999995,
-   "wert": 586.14
+   "kurs": 63205.625,
+   "wert": 583.17
   },
   {
    "id": "p9a8fa083",
@@ -43,8 +43,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Halten als Kern; Exit über Rebalancing-Regel bzw. SMA200-Bruch.",
    "entscheidung_id": "d0eee1434",
-   "kurs": 731.59,
-   "wert": 2410.11,
+   "kurs": 729.33,
+   "wert": 2402.66,
    "invalidierung": "SPY-Tagesschluss unter SMA200 (731,6) → Kern auf 20% zurücknehmen."
   },
   {
@@ -65,8 +65,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Halten als Kern; Exit nur über Rebalancing-Regel. Rückkauf TLT erst bei 10J < 4,50%.",
    "entscheidung_id": "d7658fcde",
-   "kurs": 95.445,
-   "wert": 1558.93,
+   "kurs": 95.495,
+   "wert": 1559.74,
    "invalidierung": "10J über 5,20% oder Fed +50bp im Dezember mit 2J über 4,90% → AGG-Anteil auf 10% zurücknehmen."
   },
   {
@@ -87,8 +87,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "d0f380f2d",
-   "kurs": 79.95,
-   "wert": 1007.14
+   "kurs": 80.07,
+   "wert": 1008.65
   },
   {
    "id": "pb81feef7",
@@ -121,8 +121,8 @@
    "ausstiegsplan": "Halten bis Abrechnung 01.12.2026. Vorzeitiger Exit: BTC-Tagesschluss > 68.000 (These tot) oder JA-Ask > 0,65 vor dem 25.11. (dann ist die Prämie realisiert).",
    "entscheidung_id": "da966545b",
    "invalidierung": "BTC-Tagesschluss über 68.000 USD (dann ist die Barriere wieder >1,5σ weg und die Restzeit zu kurz) oder Binance-Low-Bestätigung des Monats ohne neuen Rücksetzer bis 25.11.",
-   "kurs": 0.495,
-   "wert": 1456.28
+   "kurs": 0.505,
+   "wert": 1486.0
   },
   {
    "id": "p85d69d85",
@@ -155,8 +155,8 @@
    "ausstiegsplan": "Halten bis Abrechnung 30.11.2026. Vorzeitiger Verkauf nur, wenn JA-Ask > 0,95 (Prämie realisiert) oder BTC-Tagesschluss > 66.500 (Invalidierung, dann Verkauf zum Bid).",
    "entscheidung_id": "d8e22ffdc",
    "invalidierung": "BTC-Tagesschluss über 66.500 (Barriere wieder >4% weg).",
-   "kurs": 0.785,
-   "wert": 1170.0
+   "kurs": 0.85,
+   "wert": 1260.0
   }
  ],
  "realisiert": -1289.7259535895712,
@@ -164,7 +164,7 @@
  "funding": 0.0,
  "erstellt": 1793319819.7411644,
  "start_fx": 1.1184885798616961,
- "letzter_tick": 1795015771.1564438,
+ "letzter_tick": 1795016670.442227,
  "rebalancing": {
   "ziele": {
    "stock:SPY": {
