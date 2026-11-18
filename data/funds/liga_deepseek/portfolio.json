@@ -22,8 +22,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "d8e5f296a",
-   "kurs": 62553.715,
-   "wert": 577.16
+   "kurs": 62413.155,
+   "wert": 575.86
   },
   {
    "id": "p9a8fa083",
@@ -43,8 +43,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Kern halten über Rebalancing-Regel; Exit bei SMA200-Bruch per Tagesschluss oder bei Erreichen von 30%-Ziel (dann kein Nachkauf).",
    "entscheidung_id": "d39acceff",
-   "kurs": 730.25,
-   "wert": 2954.94,
+   "kurs": 730.2,
+   "wert": 2954.74,
    "invalidierung": "SPY-Tagesschluss unter 725 (0,8% unter SMA200) bei gleichzeitigem VIX über 28 → Kern auf 20% zurücknehmen."
   },
   {
@@ -65,8 +65,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Halten als Kern; Exit nur über Rebalancing-Regel. Rückkauf TLT erst bei 10J < 4,50%.",
    "entscheidung_id": "d7658fcde",
-   "kurs": 95.525,
-   "wert": 1560.49,
+   "kurs": 95.53,
+   "wert": 1560.57,
    "invalidierung": "10J über 5,20% oder Fed +50bp im Dezember mit 2J über 4,90% → AGG-Anteil auf 10% zurücknehmen."
   },
   {
@@ -121,8 +121,8 @@
    "ausstiegsplan": "Halten bis Abrechnung 01.12.2026. Vorzeitiger Exit: BTC-Tagesschluss > 68.000 (These tot) oder JA-Ask > 0,65 vor dem 25.11. (dann ist die Prämie realisiert).",
    "entscheidung_id": "da966545b",
    "invalidierung": "BTC-Tagesschluss über 68.000 USD (dann ist die Barriere wieder >1,5σ weg und die Restzeit zu kurz) oder Binance-Low-Bestätigung des Monats ohne neuen Rücksetzer bis 25.11.",
-   "kurs": 0.595,
-   "wert": 1753.48
+   "kurs": 0.615,
+   "wert": 1812.92
   },
   {
    "id": "p4d7b7307",
@@ -142,8 +142,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "d960e1788",
-   "kurs": 61.31,
-   "wert": 585.85
+   "kurs": 61.29,
+   "wert": 585.66
   }
  ],
  "realisiert": -964.9659535895712,
@@ -151,7 +151,7 @@
  "funding": 0.0,
  "erstellt": 1793319819.7411644,
  "start_fx": 1.1184885798616961,
- "letzter_tick": 1795035700.4036508,
+ "letzter_tick": 1795036600.4465897,
  "rebalancing": {
   "ziele": {
    "stock:SPY": {
