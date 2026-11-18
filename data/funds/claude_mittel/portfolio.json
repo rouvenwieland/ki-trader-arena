@@ -125,8 +125,8 @@
    "ausstiegsplan": "Bid ≥0,70 verkaufen (P erreicht); Neubewertung nach NVDA-Zahlen 19.11.; schließen, wenn Apple-Vorsprung <3 %.",
    "entscheidung_id": "d7e53ef04",
    "invalidierung": "NVDA-Marktkap. kommt auf <3 % Abstand zu Apple, oder Apple fällt >8 % relativ.",
-   "kurs": 0.901,
-   "wert": 274.46
+   "kurs": 0.9005000000000001,
+   "wert": 274.15
   },
   {
    "id": "pb60e44cc",
@@ -146,8 +146,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "d6e1a7002",
-   "kurs": null,
-   "wert": 1993.27
+   "kurs": 728.78,
+   "wert": 1890.37
   },
   {
    "id": "p5fe9ac51",
@@ -167,8 +167,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "d6e1a7002",
-   "kurs": null,
-   "wert": 1107.31
+   "kurs": 655.291,
+   "wert": 1044.72
   },
   {
    "id": "p5106387a",
@@ -188,8 +188,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "d6e1a7002",
-   "kurs": null,
-   "wert": 1107.28
+   "kurs": 342.96,
+   "wert": 1019.97
   },
   {
    "id": "p72af4e36",
@@ -209,8 +209,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "d6e1a7002",
-   "kurs": null,
-   "wert": 1107.24
+   "kurs": 95.535,
+   "wert": 1097.01
   },
   {
    "id": "p3e7ff11c",
@@ -230,8 +230,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "d6e1a7002",
-   "kurs": 62337.145000000004,
-   "wert": 1025.87
+   "kurs": 62666.634999999995,
+   "wert": 1031.29
   },
   {
    "id": "pe3015b77",
@@ -251,8 +251,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "d6e1a7002",
-   "kurs": 1734.005,
-   "wert": 393.54
+   "kurs": 1745.905,
+   "wert": 396.22
   },
   {
    "id": "p1ad6082a",
@@ -320,34 +320,6 @@
    "invalidierung": "NVDA-Marktkapitalisierung innerhalb 5 % von Apple (z. B. NVDA ≥200 bei AAPL ~349) nach den Earnings, oder NVDA-JA ≥0.45.",
    "kurs": 0.95,
    "wert": 402.32
-  },
-  {
-   "id": "p41d9ec41",
-   "inst": {
-    "id": "pm:manifold:RZqSLQS8lC:JA",
-    "art": "pm",
-    "venue": "manifold",
-    "ergebnis": "JA",
-    "frage": "Will an NVIDIA executive say \"bubble\" on NVIDIA's November 17 earnings call?",
-    "schliesst": 1794978000.0,
-    "ref": {
-     "id": "RZqSLQS8lC"
-    },
-    "url": "https://manifold.markets/Terminator2/will-an-nvidia-executive-say-bubble"
-   },
-   "seite": "long",
-   "menge": 28.0,
-   "einstand": 0.34537774248499886,
-   "hebel": 1.0,
-   "marge": 0.0,
-   "eroeffnet": 1794021016.5292387,
-   "gebuehren": 0.0,
-   "funding": 0.0,
-   "ausstiegsplan": "Bis Abrechnung halten; Verkauf bei Bid ≥0.50",
-   "entscheidung_id": "d5a40bf82",
-   "invalidierung": "Transkript Q2 FY27 enthält kein 'bubble' und Analystenfragen drehen sich nicht um Bubble; oder Call-Datum verschoben",
-   "kurs": 0.10769442481362439,
-   "wert": 2.84
   },
   {
    "id": "pac09f469",
@@ -436,16 +408,16 @@
    "ausstiegsplan": "Halten bis zur Abrechnung am 31.12. Gewinn mitnehmen, wenn der NEIN-Bid ≥0,80 ist. Bei der Invalidierungsmeldung sofort schließen.",
    "entscheidung_id": "d4c6b2267",
    "invalidierung": "Glaubwürdige Berichte (WSJ/Bloomberg), dass das Board kurz vor der Ernennung eines permanenten CEO steht oder Kress dauerhaft macht. Ebenso eine Aussage im Call vom 17.11., die Suche solle 'within weeks' abgeschlossen sein.",
-   "kurs": 0.835,
-   "wert": 39.84
+   "kurs": 0.825,
+   "wert": 39.36
   }
  ],
- "realisiert": -202.44572814076884,
+ "realisiert": -212.1163049303488,
  "gebuehren": 65.1130233771088,
  "funding": 0.0,
  "erstellt": 1793319819.7411644,
  "start_fx": 1.1184885798616961,
- "letzter_tick": 1795020271.1082654,
+ "letzter_tick": 1795021170.6075084,
  "auftraege": [
   {
    "id": "a4e7a61",
@@ -480,7 +452,7 @@
    "ausstiegsplan": "",
    "invalidierung": "",
    "erstellt": 1794409480.899957,
-   "geprueft_bis": 1795020271.1082654,
+   "geprueft_bis": 1795021170.6075084,
    "gueltig_bis": 1797001480.899957
   },
   {
@@ -517,7 +489,7 @@
    "ausstiegsplan": "",
    "invalidierung": "",
    "erstellt": 1794452946.4758763,
-   "geprueft_bis": 1795020271.1082654,
+   "geprueft_bis": 1795021170.6075084,
    "gueltig_bis": 1797044946.4758763
   }
  ],

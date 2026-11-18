@@ -69,8 +69,8 @@
    "ausstiegsplan": "Halten bis 31.12.; Gewinnmitnahme ≥0,93 oder Neubewertung nach NVDA-Earnings 17./19.11.",
    "entscheidung_id": "dce9924e1",
    "invalidierung": "NVDA-Marktkap > Apple −10 % (NVDA >~210 bei Apple ~355) oder Apple −20 % binnen Tagen",
-   "kurs": 0.901,
-   "wert": 1194.38
+   "kurs": 0.9005000000000001,
+   "wert": 1193.05
   },
   {
    "id": "pa832233e",
@@ -131,8 +131,8 @@
    "ausstiegsplan": "Halten bis 30.11.; verkaufen, wenn BTC unter 64.000 fällt oder NEIN-Preis <0.88.",
    "entscheidung_id": "d7dbfc08f",
    "invalidierung": "BTC Binance unter 64.000 oder DVOL >60",
-   "kurs": 0.6325000000000001,
-   "wert": 197.82
+   "kurs": 0.6385000000000001,
+   "wert": 199.69
   },
   {
    "id": "pea9d23a3",
@@ -152,8 +152,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "dd6456776",
-   "kurs": null,
-   "wert": 2291.57
+   "kurs": 728.78,
+   "wert": 2173.27
   },
   {
    "id": "p1c64b37e",
@@ -173,8 +173,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "dd6456776",
-   "kurs": 62337.145000000004,
-   "wert": 884.64
+   "kurs": 62666.634999999995,
+   "wert": 889.31
   },
   {
    "id": "p994b6370",
@@ -194,8 +194,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "dd6456776",
-   "kurs": null,
-   "wert": 916.0
+   "kurs": 342.96,
+   "wert": 843.78
   },
   {
    "id": "p3b9e74b7",
@@ -316,36 +316,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "d0a642430",
-   "kurs": null,
-   "wert": 908.86
-  },
-  {
-   "id": "p4abb843a",
-   "inst": {
-    "id": "pm:manifold:RZqSLQS8lC:JA",
-    "art": "pm",
-    "venue": "manifold",
-    "ergebnis": "JA",
-    "frage": "Will an NVIDIA executive say \"bubble\" on NVIDIA's November 17 earnings call?",
-    "schliesst": 1794978000.0,
-    "ref": {
-     "id": "RZqSLQS8lC"
-    },
-    "url": "https://manifold.markets/Terminator2/will-an-nvidia-executive-say-bubble"
-   },
-   "seite": "long",
-   "menge": 93.0,
-   "einstand": 0.3746940741056374,
-   "hebel": 1.0,
-   "marge": 0.0,
-   "eroeffnet": 1793985545.006964,
-   "gebuehren": 0.0,
-   "funding": 0.0,
-   "ausstiegsplan": "Halten bis Abrechnung nach Call 17.11.",
-   "entscheidung_id": "d1a2949e8",
-   "invalidierung": "Call verschoben oder Transkript ohne Wort 'bubble' von Executives",
-   "kurs": 0.10769442481362439,
-   "wert": 9.44
+   "kurs": 91.555,
+   "wert": 909.33
   },
   {
    "id": "p96f26326",
@@ -446,8 +418,8 @@
    "ausstiegsplan": "Bis Vereidigung halten; schließen, wenn beide Beine zusammen ≥0.97 verkaufbar.",
    "entscheidung_id": "d5f5d56d9",
    "invalidierung": "Nachweislich abweichende PredictIt-Regel, die Eisenkot-JA bei PredictIt und NEIN bei Polymarket zulässt.",
-   "kurs": 0.6005,
-   "wert": 417.9
+   "kurs": 0.6,
+   "wert": 418.6
   },
   {
    "id": "p2567180c",
@@ -480,8 +452,8 @@
    "ausstiegsplan": "Halten bis IPO-Tag (voraussichtlich Woche 16.–20.11.). Bei Preisfestsetzung neu rechnen: Schwelle = 1,25 Bio/13,09 Mrd. = $95,5. Teilverkauf, wenn JA ≥0,50 vor Handelsstart.",
    "entscheidung_id": "d0595e7ab",
    "invalidierung": "Endgültiger IPO-Preis ≥ $86 (dann reicht +11 % Pop) oder offizielle Polymarket-Klarstellung, dass voll verwässert gezählt wird; Graumarkt-/Indikationen Eröffnung ≥ $100.",
-   "kurs": 0.3725,
-   "wert": 1001.05
+   "kurs": 0.3755,
+   "wert": 1006.43
   },
   {
    "id": "p1f686553",
@@ -574,12 +546,12 @@
    "wert": 32.79
   }
  ],
- "realisiert": -221.05643179117618,
+ "realisiert": -255.90298068300046,
  "gebuehren": 59.73851633920157,
  "funding": 0.0,
  "erstellt": 1793380123.8861866,
  "start_fx": 1.1156327353966788,
- "letzter_tick": 1795020271.1082654,
+ "letzter_tick": 1795021170.6075084,
  "auftraege": [],
  "rebalancing": {
   "ziele": {

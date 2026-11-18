@@ -22,8 +22,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "d8e5f296a",
-   "kurs": 62337.145000000004,
-   "wert": 575.16
+   "kurs": 62666.634999999995,
+   "wert": 578.2
   },
   {
    "id": "p9a8fa083",
@@ -43,8 +43,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Halten als Kern; Exit über Rebalancing-Regel bzw. SMA200-Bruch.",
    "entscheidung_id": "d0eee1434",
-   "kurs": null,
-   "wert": 2525.82,
+   "kurs": 728.78,
+   "wert": 2400.85,
    "invalidierung": "SPY-Tagesschluss unter SMA200 (731,6) → Kern auf 20% zurücknehmen."
   },
   {
@@ -65,8 +65,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Halten als Kern; Exit nur über Rebalancing-Regel. Rückkauf TLT erst bei 10J < 4,50%.",
    "entscheidung_id": "d7658fcde",
-   "kurs": null,
-   "wert": 1571.52,
+   "kurs": 95.535,
+   "wert": 1560.4,
    "invalidierung": "10J über 5,20% oder Fed +50bp im Dezember mit 2J über 4,90% → AGG-Anteil auf 10% zurücknehmen."
   },
   {
@@ -87,8 +87,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "d0f380f2d",
-   "kurs": null,
-   "wert": 1011.26
+   "kurs": 80.18,
+   "wert": 1010.04
   },
   {
    "id": "pb81feef7",
@@ -121,8 +121,8 @@
    "ausstiegsplan": "Halten bis Abrechnung 01.12.2026. Vorzeitiger Exit: BTC-Tagesschluss > 68.000 (These tot) oder JA-Ask > 0,65 vor dem 25.11. (dann ist die Prämie realisiert).",
    "entscheidung_id": "da966545b",
    "invalidierung": "BTC-Tagesschluss über 68.000 USD (dann ist die Barriere wieder >1,5σ weg und die Restzeit zu kurz) oder Binance-Low-Bestätigung des Monats ohne neuen Rücksetzer bis 25.11.",
-   "kurs": 0.645,
-   "wert": 1902.08
+   "kurs": 0.605,
+   "wert": 1783.2
   },
   {
    "id": "p4d7b7307",
@@ -142,8 +142,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "d960e1788",
-   "kurs": null,
-   "wert": 592.35
+   "kurs": 61.59,
+   "wert": 588.43
   }
  ],
  "realisiert": -964.9659535895712,
@@ -151,7 +151,7 @@
  "funding": 0.0,
  "erstellt": 1793319819.7411644,
  "start_fx": 1.1184885798616961,
- "letzter_tick": 1795020271.1082654,
+ "letzter_tick": 1795021170.6075084,
  "rebalancing": {
   "ziele": {
    "stock:SPY": {
