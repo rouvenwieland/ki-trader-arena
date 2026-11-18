@@ -2,7 +2,7 @@
  "fonds_id": "liga_deepseek",
  "waehrung": "USD",
  "start_kapital": 11184.88579861696,
- "cash": 2646.147897224038,
+ "cash": 1453.0965872240379,
  "positionen": [
   {
    "id": "p3d319c8e",
@@ -123,10 +123,42 @@
    "invalidierung": "BTC-Tagesschluss über 68.000 USD (dann ist die Barriere wieder >1,5σ weg und die Restzeit zu kurz) oder Binance-Low-Bestätigung des Monats ohne neuen Rücksetzer bis 25.11.",
    "kurs": 0.475,
    "wert": 1396.84
+  },
+  {
+   "id": "p85d69d85",
+   "inst": {
+    "id": "pm:polymarket:7074444:JA",
+    "art": "pm",
+    "venue": "polymarket",
+    "ergebnis": "JA",
+    "frage": "Will Bitcoin dip to $62,500 in November?",
+    "schliesst": 1796101200.0,
+    "ref": {
+     "id": "7074444",
+     "token_ja": "106816109933757673992992515790300015161563720364514888123619538663259131969823",
+     "token_nein": "25700238965519496471741442754344430421267932313947782198464214318394366351188",
+     "tick": 0.01,
+     "condition": "0xc25798de609e97ce9f5ebb8cda61cb436a7c1203e7aa838f2dcac6ad361c88b0",
+     "gebuehr_rate": 0.07,
+     "gebuehr_exp": 1.0
+    },
+    "url": "https://polymarket.com/event/what-price-will-bitcoin-hit-in-november-2026"
+   },
+   "seite": "long",
+   "menge": 1500.0,
+   "einstand": 0.7834933333333334,
+   "hebel": 1.0,
+   "marge": 0.0,
+   "eroeffnet": 1795014243.6861596,
+   "gebuehren": 17.81131,
+   "funding": 0.0,
+   "ausstiegsplan": "Halten bis Abrechnung 30.11.2026. Vorzeitiger Verkauf nur, wenn JA-Ask > 0,95 (Prämie realisiert) oder BTC-Tagesschluss > 66.500 (Invalidierung, dann Verkauf zum Bid).",
+   "entscheidung_id": "d8e22ffdc",
+   "invalidierung": "BTC-Tagesschluss über 66.500 (Barriere wieder >4% weg)."
   }
  ],
  "realisiert": -1289.7259535895712,
- "gebuehren": 200.57924925396546,
+ "gebuehren": 218.39055925396545,
  "funding": 0.0,
  "erstellt": 1793319819.7411644,
  "start_fx": 1.1184885798616961,
@@ -179,35 +211,9 @@
     "anteil": 0.06
    }
   },
-  "schwelle_pp": 8.0,
-  "seit": 1794986036.7763124,
-  "entscheidung_id": "d5080d3f7"
+  "schwelle_pp": 5.0,
+  "seit": 1795014094.5898244,
+  "entscheidung_id": "d960e1788"
  },
- "auftraege": [
-  {
-   "id": "a7e3803",
-   "entscheidung_id": "d1af1e6c2",
-   "inst": {
-    "id": "stock:XLE",
-    "art": "stock",
-    "venue": "yahoo",
-    "symbol": "XLE"
-   },
-   "aktion": "verkaufen",
-   "typ": "limit",
-   "seite": "long",
-   "betrag_usd": null,
-   "menge": 9,
-   "hebel": 1.0,
-   "limit_preis": 63.9,
-   "stop_preis": null,
-   "stop_loss": null,
-   "take_profit": null,
-   "ausstiegsplan": "Rest 10 St. halten als Kern (6,8%); Exit über Rebalancing-Regel bzw. Tagesschluss unter SMA200 (59,60).",
-   "invalidierung": "Wenn XLE bis 25.11. über SMA50 (64,95) tagesschließt, ist der Abwärtstrend gebrochen — dann war der Trim zu früh und ich halte den Rest.",
-   "erstellt": 1794986144.2373514,
-   "geprueft_bis": 1795013971.2356856,
-   "gueltig_bis": 1797578144.2373514
-  }
- ]
+ "auftraege": []
 }
