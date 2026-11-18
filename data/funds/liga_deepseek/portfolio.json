@@ -2,7 +2,7 @@
  "fonds_id": "liga_deepseek",
  "waehrung": "USD",
  "start_kapital": 11184.88579861696,
- "cash": 1473.476789129223,
+ "cash": 2646.147897224038,
  "positionen": [
   {
    "id": "p3d319c8e",
@@ -22,8 +22,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "d8e5f296a",
-   "kurs": 63921.685,
-   "wert": 589.78
+   "kurs": 63226.295,
+   "wert": 583.36
   },
   {
    "id": "p9a8fa083",
@@ -43,8 +43,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Halten als Kern; Exit über Rebalancing-Regel bzw. SMA200-Bruch.",
    "entscheidung_id": "d0eee1434",
-   "kurs": 732.44,
-   "wert": 2413.17,
+   "kurs": 730.71,
+   "wert": 2407.21,
    "invalidierung": "SPY-Tagesschluss unter SMA200 (731,6) → Kern auf 20% zurücknehmen."
   },
   {
@@ -65,8 +65,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Halten als Kern; Exit nur über Rebalancing-Regel. Rückkauf TLT erst bei 10J < 4,50%.",
    "entscheidung_id": "d7658fcde",
-   "kurs": 95.26,
-   "wert": 1556.16,
+   "kurs": 95.49,
+   "wert": 1559.66,
    "invalidierung": "10J über 5,20% oder Fed +50bp im Dezember mit 2J über 4,90% → AGG-Anteil auf 10% zurücknehmen."
   },
   {
@@ -87,8 +87,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "d0f380f2d",
-   "kurs": 79.55,
-   "wert": 1002.22
+   "kurs": 80.095,
+   "wert": 1008.97
   },
   {
    "id": "pb81feef7",
@@ -121,40 +121,16 @@
    "ausstiegsplan": "Halten bis Abrechnung 01.12.2026. Vorzeitiger Exit: BTC-Tagesschluss > 68.000 (These tot) oder JA-Ask > 0,65 vor dem 25.11. (dann ist die Prämie realisiert).",
    "entscheidung_id": "da966545b",
    "invalidierung": "BTC-Tagesschluss über 68.000 USD (dann ist die Barriere wieder >1,5σ weg und die Restzeit zu kurz) oder Binance-Low-Bestätigung des Monats ohne neuen Rücksetzer bis 25.11.",
-   "kurs": 0.425,
-   "wert": 1248.24
-  },
-  {
-   "id": "pf9cf7c11",
-   "inst": {
-    "id": "stock:XLE",
-    "art": "stock",
-    "venue": "yahoo",
-    "symbol": "XLE"
-   },
-   "seite": "long",
-   "menge": 19.0,
-   "einstand": 64.02289358231508,
-   "hebel": 1.0,
-   "marge": 0.0,
-   "eroeffnet": 1794840562.573222,
-   "gebuehren": 0.0,
-   "funding": 0.0,
-   "stop_loss": 62.0,
-   "take_profit": 70.0,
-   "ausstiegsplan": "Kern-Baustein: Exit über Rebalancing-Regel (Schwelle 8pp) oder bei Invalidierung (WTI unter 82 UND 10J unter 4,80%). Take-Profit 70,0.",
-   "entscheidung_id": "ddc1d7b84",
-   "invalidierung": "WTI unter 82 USD bei gleichzeitig 10J unter 4,80% — dann ist der Hedge-Charakter weg und XLE fällt unter SMA200.",
-   "kurs": 63.36,
-   "wert": 1203.84
+   "kurs": 0.515,
+   "wert": 1515.72
   }
  ],
- "realisiert": -1245.9620836203997,
+ "realisiert": -1289.7259535895712,
  "gebuehren": 200.57924925396546,
  "funding": 0.0,
  "erstellt": 1793319819.7411644,
  "start_fx": 1.1184885798616961,
- "letzter_tick": 1795012171.212258,
+ "letzter_tick": 1795013070.8772545,
  "rebalancing": {
   "ziele": {
    "stock:SPY": {
@@ -230,7 +206,7 @@
    "ausstiegsplan": "Rest 10 St. halten als Kern (6,8%); Exit über Rebalancing-Regel bzw. Tagesschluss unter SMA200 (59,60).",
    "invalidierung": "Wenn XLE bis 25.11. über SMA50 (64,95) tagesschließt, ist der Abwärtstrend gebrochen — dann war der Trim zu früh und ich halte den Rest.",
    "erstellt": 1794986144.2373514,
-   "geprueft_bis": 1794986144.2373514,
+   "geprueft_bis": 1795013070.8772545,
    "gueltig_bis": 1797578144.2373514
   }
  ]
