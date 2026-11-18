@@ -97,8 +97,8 @@
    "gebuehren": 0.0,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.7545,
-   "wert": 208.78
+   "kurs": 0.762,
+   "wert": 210.17
   },
   {
    "id": "pdcfb5d53",
@@ -129,8 +129,8 @@
    "gebuehren": 0.0,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.4295,
-   "wert": 106.5
+   "kurs": 0.427,
+   "wert": 105.5
   },
   {
    "id": "pf0e983be",
@@ -225,7 +225,7 @@
    "gebuehren": 0.0,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.993,
+   "kurs": 0.9924999999999999,
    "wert": 171.27
   },
   {
@@ -353,8 +353,8 @@
    "gebuehren": 0.0,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.8225,
-   "wert": 169.33
+   "kurs": 0.826,
+   "wert": 169.95
   },
   {
    "id": "pc2572f19",
@@ -609,7 +609,7 @@
    "gebuehren": 4.65658,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.9844999999999999,
+   "kurs": 0.985,
    "wert": 270.6
   },
   {
@@ -675,38 +675,6 @@
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
    "kurs": 0.9955,
    "wert": 168.16
-  },
-  {
-   "id": "p9869a857",
-   "inst": {
-    "id": "pm:polymarket:6172686:NEIN",
-    "art": "pm",
-    "venue": "polymarket",
-    "ergebnis": "NEIN",
-    "frage": "Will Gold (XAUUSD) hit (LOW) $3,800 in November?",
-    "schliesst": 1796101199.999,
-    "ref": {
-     "id": "6172686",
-     "token_ja": "12061185619363955006223004058869877064737042032084119031105400723936146682489",
-     "token_nein": "49372101761680527651234860901714333457246929814465004669376954062127877501239",
-     "tick": 0.01,
-     "condition": "0xa4a0ab794c16951c06dd6222d5f3b441f6a1c3a7387480cf3ad68593a7a9d673",
-     "gebuehr_rate": 0.04,
-     "gebuehr_exp": 1.0
-    },
-    "url": "https://polymarket.com/event/will-xauusd-dip-to-3800-in-november-2026"
-   },
-   "seite": "long",
-   "menge": 363.0,
-   "einstand": 0.45,
-   "hebel": 1.0,
-   "marge": 0.0,
-   "eroeffnet": 1793683098.0528867,
-   "gebuehren": 3.5937,
-   "funding": 0.0,
-   "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": null,
-   "wert": 163.35
   },
   {
    "id": "pa1fe7c67",
@@ -961,8 +929,8 @@
    "gebuehren": 2.0848,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.602,
-   "wert": 144.36
+   "kurs": 0.59,
+   "wert": 141.95
   },
   {
    "id": "pff668a53",
@@ -1089,8 +1057,8 @@
    "gebuehren": 0.39931,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.9635,
-   "wert": 170.45
+   "kurs": 0.9644999999999999,
+   "wert": 170.63
   },
   {
    "id": "pf2dd9992",
@@ -1185,7 +1153,7 @@
    "gebuehren": 1.35793,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.968,
+   "kurs": 0.97,
    "wert": 188.1
   },
   {
@@ -1313,8 +1281,8 @@
    "gebuehren": 0.92199,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.435,
-   "wert": 79.13
+   "kurs": 0.385,
+   "wert": 65.62
   },
   {
    "id": "p396ede21",
@@ -1345,8 +1313,8 @@
    "gebuehren": 0.24913,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.9039999999999999,
-   "wert": 141.73
+   "kurs": 0.8999999999999999,
+   "wert": 140.35
   },
   {
    "id": "p766850e1",
@@ -1377,7 +1345,7 @@
    "gebuehren": 0.0,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.46499999999999997,
+   "kurs": 0.47,
    "wert": 207.92
   },
   {
@@ -1473,8 +1441,8 @@
    "gebuehren": 0.49949,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.923,
-   "wert": 160.25
+   "kurs": 0.9235,
+   "wert": 160.43
   },
   {
    "id": "p9176f163",
@@ -1506,7 +1474,7 @@
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
    "kurs": 0.8805000000000001,
-   "wert": 157.34
+   "wert": 157.52
   },
   {
    "id": "pbf73aed6",
@@ -1541,11 +1509,11 @@
    "wert": 173.47
   }
  ],
- "realisiert": -1956.4521300000004,
+ "realisiert": -2119.8021300000005,
  "gebuehren": 304.4894399999999,
  "funding": 0.0,
  "erstellt": 1793379225.5430336,
  "start_fx": 1.1157431109273288,
- "letzter_tick": 1794974111.567882,
+ "letzter_tick": 1794975011.7933433,
  "kontrolle_bis": 1794876937.3725452
 }
