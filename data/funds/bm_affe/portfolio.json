@@ -2,33 +2,33 @@
  "fonds_id": "bm_affe",
  "waehrung": "USD",
  "start_kapital": 11184.88579861696,
- "cash": 7306.398012451697,
+ "cash": 7134.841131291445,
  "positionen": [
   {
-   "id": "p0d2e7e54",
+   "id": "p37d95e7f",
    "inst": {
-    "id": "spot:LINK-USD",
+    "id": "spot:ETH-USD",
     "art": "spot",
     "venue": "coinbase",
-    "symbol": "LINK-USD"
+    "symbol": "ETH-USD"
    },
    "seite": "long",
-   "menge": 267.1282266536889,
-   "einstand": 9.12313848731943,
+   "menge": 1.4386665864677073,
+   "einstand": 1822.3437822616902,
    "hebel": 1.0,
    "marge": 0.0,
-   "eroeffnet": 1794874126.9351559,
-   "gebuehren": 14.622286833801944,
+   "eroeffnet": 1794960338.404208,
+   "gebuehren": 15.73047065158246,
    "funding": 0.0,
-   "kurs": 9.2965,
-   "wert": 2483.22
+   "kurs": 1821.96,
+   "wert": 2621.11
   }
  ],
- "realisiert": -1024.649235824532,
- "gebuehren": 815.2017733371854,
+ "realisiert": -995.7783433697808,
+ "gebuehren": 845.8170651039896,
  "funding": 0.0,
  "erstellt": 1793319819.7411644,
  "start_fx": 1.1184885798616961,
- "letzter_tick": 1794959437.638522,
- "letzter_tag": "2026-11-17"
+ "letzter_tick": 1794960338.404208,
+ "letzter_tag": "2026-11-18"
 }
