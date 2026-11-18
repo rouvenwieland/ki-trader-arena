@@ -2,7 +2,7 @@
  "fonds_id": "liga_deepseek",
  "waehrung": "USD",
  "start_kapital": 11184.88579861696,
- "cash": 2360.748100584289,
+ "cash": 1810.7481005842933,
  "positionen": [
   {
    "id": "p3d319c8e",
@@ -34,18 +34,18 @@
     "symbol": "SPY"
    },
    "seite": "long",
-   "menge": 3.294696870222079,
-   "einstand": 766.6313311521023,
+   "menge": 4.0464817618318065,
+   "einstand": 760.121515033993,
    "hebel": 1.0,
    "marge": 0.0,
    "eroeffnet": 1793820796.9785986,
    "gebuehren": 0.0,
    "funding": 0.0,
-   "ausstiegsplan": "Halten als Kern; Exit über Rebalancing-Regel bzw. SMA200-Bruch.",
-   "entscheidung_id": "d0eee1434",
+   "ausstiegsplan": "Kern halten über Rebalancing-Regel; Exit bei SMA200-Bruch per Tagesschluss oder bei Erreichen von 30%-Ziel (dann kein Nachkauf).",
+   "entscheidung_id": "d39acceff",
    "kurs": 732.15,
    "wert": 2411.95,
-   "invalidierung": "SPY-Tagesschluss unter SMA200 (731,6) → Kern auf 20% zurücknehmen."
+   "invalidierung": "SPY-Tagesschluss unter 725 (0,8% unter SMA200) bei gleichzeitigem VIX über 28 → Kern auf 20% zurücknehmen."
   },
   {
    "id": "p565093a5",
