@@ -24,8 +24,8 @@
    "ausstiegsplan": "Stop 700; Review nach CPI 10.11.",
    "entscheidung_id": "d05f1cdc5",
    "invalidierung": "SPY schließt unter 700",
-   "kurs": 730.79,
-   "wert": 2636.08
+   "kurs": 730.0,
+   "wert": 2633.23
   },
   {
    "id": "pe9dce5d9",
@@ -68,8 +68,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "db90ee1de",
-   "kurs": 659.01,
-   "wert": 789.2
+   "kurs": 657.96,
+   "wert": 787.94
   },
   {
    "id": "p42b8ecdf",
@@ -89,8 +89,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "d174edec4",
-   "kurs": 100.592,
-   "wert": 2054.15
+   "kurs": 100.6,
+   "wert": 2054.32
   },
   {
    "id": "pb8af7395",
@@ -110,8 +110,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "d23f83a34",
-   "kurs": 341.19,
-   "wert": 1484.82
+   "kurs": 341.33,
+   "wert": 1485.42
   },
   {
    "id": "pfd1927c9",
@@ -131,8 +131,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "d174edec4",
-   "kurs": 62697.485,
-   "wert": 558.35
+   "kurs": 62528.634999999995,
+   "wert": 556.85
   }
  ],
  "realisiert": -728.487831921934,
@@ -140,7 +140,7 @@
  "funding": -0.6133053169464532,
  "erstellt": 1793319819.7411644,
  "start_fx": 1.1184885798616961,
- "letzter_tick": 1795032999.8913996,
+ "letzter_tick": 1795033900.190092,
  "auftraege": [],
  "rebalancing": {
   "ziele": {
