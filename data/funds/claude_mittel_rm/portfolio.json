@@ -131,8 +131,8 @@
    "ausstiegsplan": "Halten bis 30.11.; verkaufen, wenn BTC unter 64.000 fällt oder NEIN-Preis <0.88.",
    "entscheidung_id": "d7dbfc08f",
    "invalidierung": "BTC Binance unter 64.000 oder DVOL >60",
-   "kurs": 0.714,
-   "wert": 223.17
+   "kurs": 0.7104999999999999,
+   "wert": 222.23
   },
   {
    "id": "pea9d23a3",
@@ -152,8 +152,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "dd6456776",
-   "kurs": 731.45,
-   "wert": 2181.23
+   "kurs": 731.51,
+   "wert": 2181.41
   },
   {
    "id": "p1c64b37e",
@@ -173,8 +173,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "dd6456776",
-   "kurs": 63131.945,
-   "wert": 895.92
+   "kurs": 63026.975000000006,
+   "wert": 894.43
   },
   {
    "id": "p994b6370",
@@ -194,8 +194,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "dd6456776",
-   "kurs": 342.73,
-   "wert": 843.21
+   "kurs": 342.215,
+   "wert": 841.95
   },
   {
    "id": "p3b9e74b7",
@@ -316,8 +316,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "d0a642430",
-   "kurs": 91.555,
-   "wert": 909.33
+   "kurs": 91.559,
+   "wert": 909.37
   },
   {
    "id": "p96f26326",
@@ -351,8 +351,8 @@
    "ausstiegsplan": "Halten bis Abrechnung Jan. 2027; Verkauf bei NEIN <0.80 oder Doomsday-Opening-Tag >$200M.",
    "entscheidung_id": "d6b155dae",
    "invalidierung": "Doomsday Freitagsumsatz inkl. Previews >$200M am 18.12. oder Doomsday-Domestic nach 7 Tagen >$600M.",
-   "kurs": 0.914,
-   "wert": 449.2
+   "kurs": 0.9105000000000001,
+   "wert": 446.24
   },
   {
    "id": "p75b03ffe",
@@ -418,8 +418,8 @@
    "ausstiegsplan": "Bis Vereidigung halten; schließen, wenn beide Beine zusammen ≥0.97 verkaufbar.",
    "entscheidung_id": "d5f5d56d9",
    "invalidierung": "Nachweislich abweichende PredictIt-Regel, die Eisenkot-JA bei PredictIt und NEIN bei Polymarket zulässt.",
-   "kurs": 0.599,
-   "wert": 417.2
+   "kurs": 0.598,
+   "wert": 416.5
   },
   {
    "id": "p2567180c",
@@ -551,7 +551,7 @@
  "funding": 0.0,
  "erstellt": 1793380123.8861866,
  "start_fx": 1.1156327353966788,
- "letzter_tick": 1795023871.135535,
+ "letzter_tick": 1795024770.4923394,
  "auftraege": [],
  "rebalancing": {
   "ziele": {
