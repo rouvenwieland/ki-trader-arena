@@ -321,7 +321,7 @@
    "gebuehren": 0.0,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.981,
+   "kurs": 0.9784999999999999,
    "wert": 187.98
   },
   {
@@ -385,8 +385,8 @@
    "gebuehren": 1.96552,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.405,
-   "wert": 79.6
+   "kurs": 0.415,
+   "wert": 81.59
   },
   {
    "id": "p21e9c816",
@@ -417,8 +417,8 @@
    "gebuehren": 1.85338,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.973,
-   "wert": 191.29
+   "kurs": 0.9735,
+   "wert": 191.48
   },
   {
    "id": "p7f18532d",
@@ -549,38 +549,6 @@
    "wert": 161.68
   },
   {
-   "id": "p32e5b9f1",
-   "inst": {
-    "id": "pm:polymarket:6274257:NEIN",
-    "art": "pm",
-    "venue": "polymarket",
-    "ergebnis": "NEIN",
-    "frage": "Will Republicans lose the Alaska, Iowa, Kansas, Maine, Michigan, Ohio, and Texas Senate seats?",
-    "schliesst": 1793750340.0,
-    "ref": {
-     "id": "6274257",
-     "token_ja": "13535941900723044344907002451427688051727855016747811259193368015899108383450",
-     "token_nein": "80727480162707694817992062873857913056698208056368499870278974630056151503113",
-     "tick": 0.01,
-     "condition": "0xa32317ba83c3c83dc43ef260c3744c22ed8000db53d30bc09372c45cff5fb07a",
-     "gebuehr_rate": 0.04,
-     "gebuehr_exp": 1.0
-    },
-    "url": "https://polymarket.com/event/which-tossup-senate-states-will-republicans-win-ak-ia-ks-me-mi-oh-tx"
-   },
-   "seite": "long",
-   "menge": 218.0,
-   "einstand": 0.76,
-   "hebel": 1.0,
-   "marge": 0.0,
-   "eroeffnet": 1793523402.8114862,
-   "gebuehren": 1.59053,
-   "funding": 0.0,
-   "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": null,
-   "wert": 165.68
-  },
-  {
    "id": "p091ba70e",
    "inst": {
     "id": "pm:polymarket:6507376:NEIN",
@@ -609,8 +577,8 @@
    "gebuehren": 4.65658,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.9824999999999999,
-   "wert": 269.77
+   "kurs": 0.982,
+   "wert": 269.5
   },
   {
    "id": "pd183209f",
@@ -641,8 +609,8 @@
    "gebuehren": 2.87438,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.9875,
-   "wert": 216.15
+   "kurs": 0.9884999999999999,
+   "wert": 216.37
   },
   {
    "id": "p54f0e36a",
@@ -865,8 +833,8 @@
    "gebuehren": 0.54885,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.9305,
-   "wert": 161.09
+   "kurs": 0.9265,
+   "wert": 159.67
   },
   {
    "id": "p260d7aa9",
@@ -929,8 +897,8 @@
    "gebuehren": 2.0848,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.5794999999999999,
-   "wert": 139.54
+   "kurs": 0.578,
+   "wert": 139.06
   },
   {
    "id": "pff668a53",
@@ -1281,8 +1249,8 @@
    "gebuehren": 0.92199,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.31999999999999995,
-   "wert": 55.97
+   "kurs": 0.345,
+   "wert": 61.76
   },
   {
    "id": "p396ede21",
@@ -1313,8 +1281,8 @@
    "gebuehren": 0.24913,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.9159999999999999,
-   "wert": 152.39
+   "kurs": 0.9455,
+   "wert": 158.93
   },
   {
    "id": "p766850e1",
@@ -1441,8 +1409,8 @@
    "gebuehren": 0.49949,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.9175,
-   "wert": 159.04
+   "kurs": 0.9185000000000001,
+   "wert": 159.56
   },
   {
    "id": "p9176f163",
@@ -1473,8 +1441,8 @@
    "gebuehren": 0.58474,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.8825000000000001,
-   "wert": 157.7
+   "kurs": 0.884,
+   "wert": 158.06
   },
   {
    "id": "pbf73aed6",
@@ -1509,11 +1477,11 @@
    "wert": 173.47
   }
  ],
- "realisiert": -2119.8021300000005,
+ "realisiert": -2285.4821300000003,
  "gebuehren": 304.4894399999999,
  "funding": 0.0,
  "erstellt": 1793379225.5430336,
  "start_fx": 1.1157431109273288,
- "letzter_tick": 1794987611.8594515,
+ "letzter_tick": 1794988511.6747997,
  "kontrolle_bis": 1794876937.3725452
 }
