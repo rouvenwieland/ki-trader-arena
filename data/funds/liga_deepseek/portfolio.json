@@ -164,7 +164,7 @@
      "venue": "yahoo",
      "symbol": "SPY"
     },
-    "anteil": 0.24
+    "anteil": 0.26
    },
    "stock:AGG": {
     "inst": {
@@ -173,7 +173,7 @@
      "venue": "yahoo",
      "symbol": "AGG"
     },
-    "anteil": 0.18
+    "anteil": 0.16
    },
    "stock:TLT": {
     "inst": {
@@ -182,7 +182,7 @@
      "venue": "yahoo",
      "symbol": "TLT"
     },
-    "anteil": 0.08
+    "anteil": 0.1
    },
    "spot:BTC-USD": {
     "inst": {
@@ -191,7 +191,7 @@
      "venue": "coinbase",
      "symbol": "BTC-USD"
     },
-    "anteil": 0.06
+    "anteil": 0.07
    },
    "stock:XLE": {
     "inst": {
@@ -204,8 +204,34 @@
    }
   },
   "schwelle_pp": 8.0,
-  "seit": 1794876937.3725452,
-  "entscheidung_id": "d950d54c0"
+  "seit": 1794986036.7763124,
+  "entscheidung_id": "d5080d3f7"
  },
- "auftraege": []
+ "auftraege": [
+  {
+   "id": "a7e3803",
+   "entscheidung_id": "d1af1e6c2",
+   "inst": {
+    "id": "stock:XLE",
+    "art": "stock",
+    "venue": "yahoo",
+    "symbol": "XLE"
+   },
+   "aktion": "verkaufen",
+   "typ": "limit",
+   "seite": "long",
+   "betrag_usd": null,
+   "menge": 9,
+   "hebel": 1.0,
+   "limit_preis": 63.9,
+   "stop_preis": null,
+   "stop_loss": null,
+   "take_profit": null,
+   "ausstiegsplan": "Rest 10 St. halten als Kern (6,8%); Exit über Rebalancing-Regel bzw. Tagesschluss unter SMA200 (59,60).",
+   "invalidierung": "Wenn XLE bis 25.11. über SMA50 (64,95) tagesschließt, ist der Abwärtstrend gebrochen — dann war der Trim zu früh und ich halte den Rest.",
+   "erstellt": 1794986144.2373514,
+   "geprueft_bis": 1794986144.2373514,
+   "gueltig_bis": 1797578144.2373514
+  }
+ ]
 }

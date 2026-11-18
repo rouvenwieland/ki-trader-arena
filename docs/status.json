@@ -1,6 +1,6 @@
 {
  "version": 1,
- "stand": 1794986028.7996109,
+ "stand": 1794986384.983959,
  "hinweis": "Papierhandel-Simulation, keine Anlageberatung",
  "seite": "https://rouvenwieland.github.io/ki-trader-arena/",
  "budget": {
@@ -1218,6 +1218,13 @@
  ],
  "letzte_entscheidungen": [
   {
+   "ts": 1794986144.2368577,
+   "fonds": "DeepSeek",
+   "instrument": "stock:XLE",
+   "aktion": "verkaufen",
+   "zuversicht": 0.6
+  },
+  {
    "ts": 1794942545.778104,
    "fonds": "DeepSeek",
    "instrument": "stock:NVDA",
@@ -1265,13 +1272,6 @@
    "instrument": "pm:polymarket:1811265:NEIN",
    "aktion": "verkaufen",
    "zuversicht": 0.7
-  },
-  {
-   "ts": 1794856294.3902006,
-   "fonds": "DeepSeek",
-   "instrument": "stock:XLE",
-   "aktion": "kaufen",
-   "zuversicht": 0.55
   }
  ],
  "ereignisse": [
