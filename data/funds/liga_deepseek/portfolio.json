@@ -179,7 +179,7 @@
      "venue": "yahoo",
      "symbol": "TLT"
     },
-    "anteil": 0.08
+    "anteil": 0.1
    },
    "spot:BTC-USD": {
     "inst": {
@@ -201,8 +201,34 @@
    }
   },
   "schwelle_pp": 5.0,
-  "seit": 1795046756.320447,
-  "entscheidung_id": "db88bd170"
+  "seit": 1795067582.9030294,
+  "entscheidung_id": "d19a3101b"
  },
- "auftraege": []
+ "auftraege": [
+  {
+   "id": "a8a618b",
+   "entscheidung_id": "db5f58bd6",
+   "inst": {
+    "id": "stock:SPY",
+    "art": "stock",
+    "venue": "yahoo",
+    "symbol": "SPY"
+   },
+   "aktion": "kaufen",
+   "typ": "eroeffnung",
+   "seite": "long",
+   "betrag_usd": 180,
+   "menge": null,
+   "hebel": 1.0,
+   "limit_preis": null,
+   "stop_preis": null,
+   "stop_loss": null,
+   "take_profit": null,
+   "ausstiegsplan": "Kern halten über Rebalancing-Regel; Exit bei SMA200-Bruch per Tagesschluss oder VIX>28.",
+   "invalidierung": "SPY-Tagesschluss unter 725 (0,8% unter SMA200) bei VIX über 28",
+   "erstellt": 1795067727.9621563,
+   "geprueft_bis": 1795067727.9621563,
+   "gueltig_bis": 1795122000.0
+  }
+ ]
 }

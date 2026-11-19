@@ -1,6 +1,6 @@
 {
  "version": 1,
- "stand": 1795067575.8943424,
+ "stand": 1795068040.1096106,
  "hinweis": "Papierhandel-Simulation, keine Anlageberatung",
  "seite": "https://rouvenwieland.github.io/ki-trader-arena/",
  "budget": {
@@ -1218,6 +1218,13 @@
  ],
  "letzte_entscheidungen": [
   {
+   "ts": 1795067727.9617531,
+   "fonds": "DeepSeek",
+   "instrument": "stock:SPY",
+   "aktion": "kaufen",
+   "zuversicht": 0.55
+  },
+  {
    "ts": 1795028797.9996536,
    "fonds": "DeepSeek",
    "instrument": "stock:SPY",
@@ -1265,13 +1272,6 @@
    "instrument": "stock:XLE",
    "aktion": "kaufen",
    "zuversicht": 0.6
-  },
-  {
-   "ts": 1794928166.2303333,
-   "fonds": "DeepSeek",
-   "instrument": "pm:polymarket:3128886:NEIN",
-   "aktion": "verkaufen",
-   "zuversicht": 0.65
   }
  ],
  "ereignisse": [
