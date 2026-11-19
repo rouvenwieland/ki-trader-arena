@@ -2,7 +2,7 @@
  "fonds_id": "claude_vorsichtig",
  "waehrung": "USD",
  "start_kapital": 11184.88579861696,
- "cash": 5667.684998616978,
+ "cash": 5606.855917890846,
  "positionen": [
   {
    "id": "pbb7d9e16",
@@ -89,8 +89,8 @@
    "ausstiegsplan": "Kern halten, Rebalancing-Regel (2 pp), Stop 690.",
    "entscheidung_id": "dd084c777",
    "invalidierung": "SPY schließt unter 690 oder 10J-Rendite >5,3 %",
-   "kurs": 730.2,
-   "wert": 1341.99
+   "kurs": 736.57,
+   "wert": 1353.55
   },
   {
    "id": "pbcdb744c",
@@ -112,8 +112,8 @@
    "ausstiegsplan": "Kern halten; Stop 91,5; Rebalancing bei Abweichung >5pp.",
    "entscheidung_id": "d50916521",
    "invalidierung": "AGG schließt unter 91,5 oder 10J-Rendite >5,3 %",
-   "kurs": 95.53,
-   "wert": 1537.24
+   "kurs": 95.46,
+   "wert": 1535.86
   },
   {
    "id": "pd1046bd9",
@@ -135,31 +135,8 @@
    "ausstiegsplan": "Halten; Stop 74.",
    "entscheidung_id": "d123eb847",
    "invalidierung": "10J-Rendite schließt über 5,3 % / TLT unter 74",
-   "kurs": 80.22,
-   "wert": 521.63
-  },
-  {
-   "id": "pf1acd2e3",
-   "inst": {
-    "id": "stock:GLD",
-    "art": "stock",
-    "venue": "yahoo",
-    "symbol": "GLD"
-   },
-   "seite": "long",
-   "menge": 1.4221838864879763,
-   "einstand": 372.66629515034856,
-   "hebel": 1.0,
-   "marge": 0.0,
-   "eroeffnet": 1793812052.8624768,
-   "gebuehren": 0.0,
-   "funding": 0.0,
-   "stop_loss": 340,
-   "ausstiegsplan": "Halten; Stop 340; Gewicht nicht über 5 % erhöhen.",
-   "entscheidung_id": "dd43d0bdc",
-   "invalidierung": "GLD unter 340 (neues Tief, ~-9 %)",
-   "kurs": 341.19,
-   "wert": 485.23
+   "kurs": 80.04,
+   "wert": 520.4
   },
   {
    "id": "pabe784cb",
@@ -181,8 +158,8 @@
    "ausstiegsplan": "Halten als Kern; Stop 96.",
    "entscheidung_id": "d269c21b5",
    "invalidierung": "EFA unter 96 (Bruch der Aufwärtstrendstruktur, ~-9 %)",
-   "kurs": 100.26,
-   "wert": 502.81
+   "kurs": 100.355,
+   "wert": 503.2
   },
   {
    "id": "pbfa54762",
@@ -217,14 +194,35 @@
    "invalidierung": "WTI-Frontmonat schließt über 120 USD, oder Hormuz wird vollständig gesperrt und Brent liegt über 130.",
    "kurs": 0.9684999999999999,
    "wert": 307.51
+  },
+  {
+   "id": "p15600b5d",
+   "inst": {
+    "id": "stock:GLD",
+    "art": "stock",
+    "venue": "yahoo",
+    "symbol": "GLD"
+   },
+   "seite": "long",
+   "menge": 1.6004653552317132,
+   "einstand": 339.9294457059927,
+   "hebel": 1.0,
+   "marge": 0.0,
+   "eroeffnet": 1795099241.81342,
+   "gebuehren": 0.0,
+   "funding": 0.0,
+   "ausstiegsplan": "Rebalancing-Regel",
+   "entscheidung_id": "dea75aef6",
+   "kurs": 339.85,
+   "wert": 543.85
   }
  ],
- "realisiert": -156.94852000000014,
+ "realisiert": -203.73229965056896,
  "gebuehren": 28.481579999999997,
  "funding": 0.0,
  "erstellt": 1793319819.7411644,
  "start_fx": 1.1184885798616961,
- "letzter_tick": 1795098342.2802055,
+ "letzter_tick": 1795099241.81342,
  "auftraege": [],
  "rebalancing": {
   "ziele": {

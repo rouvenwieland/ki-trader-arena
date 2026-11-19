@@ -2,7 +2,7 @@
  "fonds_id": "liga_deepseek",
  "waehrung": "USD",
  "start_kapital": 11184.88579861696,
- "cash": 1810.7481005842933,
+ "cash": 2254.852834754251,
  "positionen": [
   {
    "id": "p3d319c8e",
@@ -22,8 +22,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "d8e5f296a",
-   "kurs": 63816.485,
-   "wert": 588.81
+   "kurs": 63813.345,
+   "wert": 588.78
   },
   {
    "id": "p9a8fa083",
@@ -34,18 +34,18 @@
     "symbol": "SPY"
    },
    "seite": "long",
-   "menge": 4.0464817618318065,
-   "einstand": 760.121515033993,
+   "menge": 3.443318290061558,
+   "einstand": 758.7891860892987,
    "hebel": 1.0,
    "marge": 0.0,
    "eroeffnet": 1793820796.9785986,
    "gebuehren": 0.0,
    "funding": 0.0,
-   "ausstiegsplan": "Kern halten über Rebalancing-Regel; Exit bei SMA200-Bruch per Tagesschluss oder bei Erreichen von 30%-Ziel (dann kein Nachkauf).",
-   "entscheidung_id": "d39acceff",
-   "kurs": 730.2,
-   "wert": 2954.74,
-   "invalidierung": "SPY-Tagesschluss unter 725 (0,8% unter SMA200) bei gleichzeitigem VIX über 28 → Kern auf 20% zurücknehmen."
+   "ausstiegsplan": "Kern halten über Rebalancing-Regel; Exit bei SMA200-Bruch per Tagesschluss oder VIX>28.",
+   "entscheidung_id": "db5f58bd6",
+   "kurs": 736.57,
+   "wert": 2535.97,
+   "invalidierung": "SPY-Tagesschluss unter 725 (0,8% unter SMA200) bei VIX über 28"
   },
   {
    "id": "p565093a5",
@@ -65,8 +65,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Halten als Kern; Exit nur über Rebalancing-Regel. Rückkauf TLT erst bei 10J < 4,50%.",
    "entscheidung_id": "d7658fcde",
-   "kurs": 95.53,
-   "wert": 1560.57,
+   "kurs": 95.46,
+   "wert": 1559.17,
    "invalidierung": "10J über 5,20% oder Fed +50bp im Dezember mit 2J über 4,90% → AGG-Anteil auf 10% zurücknehmen."
   },
   {
@@ -87,8 +87,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "d0f380f2d",
-   "kurs": 80.22,
-   "wert": 1010.66
+   "kurs": 80.04,
+   "wert": 1008.28
   },
   {
    "id": "pb81feef7",
@@ -121,8 +121,8 @@
    "ausstiegsplan": "Halten bis Abrechnung 01.12.2026. Vorzeitiger Exit: BTC-Tagesschluss > 68.000 (These tot) oder JA-Ask > 0,65 vor dem 25.11. (dann ist die Prämie realisiert).",
    "entscheidung_id": "da966545b",
    "invalidierung": "BTC-Tagesschluss über 68.000 USD (dann ist die Barriere wieder >1,5σ weg und die Restzeit zu kurz) oder Binance-Low-Bestätigung des Monats ohne neuen Rücksetzer bis 25.11.",
-   "kurs": 0.405,
-   "wert": 1188.8
+   "kurs": 0.415,
+   "wert": 1218.52
   },
   {
    "id": "p4d7b7307",
@@ -142,16 +142,16 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "d960e1788",
-   "kurs": 61.29,
-   "wert": 585.66
+   "kurs": 61.555,
+   "wert": 588.1
   }
  ],
- "realisiert": -964.9659535895712,
+ "realisiert": -983.9263840184217,
  "gebuehren": 218.39055925396545,
  "funding": 0.0,
  "erstellt": 1793319819.7411644,
  "start_fx": 1.1184885798616961,
- "letzter_tick": 1795098342.2802055,
+ "letzter_tick": 1795099241.81342,
  "rebalancing": {
   "ziele": {
    "stock:SPY": {
@@ -204,31 +204,5 @@
   "seit": 1795067582.9030294,
   "entscheidung_id": "d19a3101b"
  },
- "auftraege": [
-  {
-   "id": "a8a618b",
-   "entscheidung_id": "db5f58bd6",
-   "inst": {
-    "id": "stock:SPY",
-    "art": "stock",
-    "venue": "yahoo",
-    "symbol": "SPY"
-   },
-   "aktion": "kaufen",
-   "typ": "eroeffnung",
-   "seite": "long",
-   "betrag_usd": 180,
-   "menge": null,
-   "hebel": 1.0,
-   "limit_preis": null,
-   "stop_preis": null,
-   "stop_loss": null,
-   "take_profit": null,
-   "ausstiegsplan": "Kern halten über Rebalancing-Regel; Exit bei SMA200-Bruch per Tagesschluss oder VIX>28.",
-   "invalidierung": "SPY-Tagesschluss unter 725 (0,8% unter SMA200) bei VIX über 28",
-   "erstellt": 1795067727.9621563,
-   "geprueft_bis": 1795067727.9621563,
-   "gueltig_bis": 1795122000.0
-  }
- ]
+ "auftraege": []
 }

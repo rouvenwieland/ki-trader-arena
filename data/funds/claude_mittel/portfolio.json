@@ -35,8 +35,8 @@
    "ausstiegsplan": "NEIN-Bid ≥0,93 oder P erreicht → verkaufen; sonst halten bis zur Wahl (April/Mai 2027).",
    "entscheidung_id": "d860a2331",
    "invalidierung": "Lisnard in mehreren Umfragen ≥12 % im 1. Wahlgang oder Rückzug von Philippe/Retailleau zu seinen Gunsten bzw. Sieg in einer Rechts-Primaire.",
-   "kurs": 0.8095000000000001,
-   "wert": 436.86
+   "kurs": 0.8145,
+   "wert": 439.56
   },
   {
    "id": "p842aa632",
@@ -146,8 +146,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "d6e1a7002",
-   "kurs": 730.2,
-   "wert": 1894.26
+   "kurs": 736.57,
+   "wert": 1910.58
   },
   {
    "id": "p5fe9ac51",
@@ -167,8 +167,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "d6e1a7002",
-   "kurs": 659.51,
-   "wert": 1051.56
+   "kurs": 671.83,
+   "wert": 1071.08
   },
   {
    "id": "p5106387a",
@@ -188,8 +188,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "d6e1a7002",
-   "kurs": 341.19,
-   "wert": 1014.84
+   "kurs": 339.85,
+   "wert": 1010.72
   },
   {
    "id": "p72af4e36",
@@ -209,8 +209,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "d6e1a7002",
-   "kurs": 95.53,
-   "wert": 1097.13
+   "kurs": 95.46,
+   "wert": 1096.15
   },
   {
    "id": "p3e7ff11c",
@@ -230,8 +230,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "d6e1a7002",
-   "kurs": 63816.485,
-   "wert": 1050.22
+   "kurs": 63813.345,
+   "wert": 1050.17
   },
   {
    "id": "pe3015b77",
@@ -251,8 +251,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "d6e1a7002",
-   "kurs": 1805.8049999999998,
-   "wert": 409.83
+   "kurs": 1804.895,
+   "wert": 409.63
   },
   {
    "id": "p1ad6082a",
@@ -318,8 +318,8 @@
    "ausstiegsplan": "Gewinn mitnehmen bei NEIN-Bid ≥0.78 (=P). Nach NVDA-Earnings neu rechnen. Sonst halten bis 31.12.",
    "entscheidung_id": "d1fa25bbb",
    "invalidierung": "NVDA-Marktkapitalisierung innerhalb 5 % von Apple (z. B. NVDA ≥200 bei AAPL ~349) nach den Earnings, oder NVDA-JA ≥0.45.",
-   "kurs": 0.935,
-   "wert": 398.04
+   "kurs": 0.945,
+   "wert": 402.32
   },
   {
    "id": "pac09f469",
@@ -417,7 +417,7 @@
  "funding": 0.0,
  "erstellt": 1793319819.7411644,
  "start_fx": 1.1184885798616961,
- "letzter_tick": 1795098342.2802055,
+ "letzter_tick": 1795099241.81342,
  "auftraege": [
   {
    "id": "a4e7a61",
@@ -452,7 +452,7 @@
    "ausstiegsplan": "",
    "invalidierung": "",
    "erstellt": 1794409480.899957,
-   "geprueft_bis": 1795098342.2802055,
+   "geprueft_bis": 1795099241.81342,
    "gueltig_bis": 1797001480.899957
   },
   {
@@ -489,7 +489,7 @@
    "ausstiegsplan": "",
    "invalidierung": "",
    "erstellt": 1794452946.4758763,
-   "geprueft_bis": 1795098342.2802055,
+   "geprueft_bis": 1795099241.81342,
    "gueltig_bis": 1797044946.4758763
   }
  ],
