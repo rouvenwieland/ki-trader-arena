@@ -2,7 +2,7 @@
  "fonds_id": "liga_deepseek",
  "waehrung": "USD",
  "start_kapital": 11184.88579861696,
- "cash": 2414.6743681758007,
+ "cash": 1969.0438713226029,
  "positionen": [
   {
    "id": "p3d319c8e",
@@ -22,8 +22,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "d8e5f296a",
-   "kurs": 63473.805,
-   "wert": 585.65
+   "kurs": 63333.375,
+   "wert": 584.35
   },
   {
    "id": "p9a8fa083",
@@ -34,17 +34,17 @@
     "symbol": "SPY"
    },
    "seite": "long",
-   "menge": 3.443318290061558,
-   "einstand": 758.7891860892987,
+   "menge": 4.0527007727694135,
+   "einstand": 754.6530945894278,
    "hebel": 1.0,
    "marge": 0.0,
    "eroeffnet": 1793820796.9785986,
    "gebuehren": 0.0,
    "funding": 0.0,
-   "ausstiegsplan": "Kern halten über Rebalancing-Regel; Exit bei SMA200-Bruch per Tagesschluss oder VIX>28.",
-   "entscheidung_id": "db5f58bd6",
-   "kurs": 735.54,
-   "wert": 2532.42,
+   "ausstiegsplan": "Rebalancing-Regel",
+   "entscheidung_id": "d14c1f726",
+   "kurs": 731.13,
+   "wert": 2962.73,
    "invalidierung": "SPY-Tagesschluss unter 725 (0,8% unter SMA200) bei VIX über 28"
   },
   {
@@ -65,8 +65,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Halten als Kern; Exit nur über Rebalancing-Regel. Rückkauf TLT erst bei 10J < 4,50%.",
    "entscheidung_id": "d7658fcde",
-   "kurs": 95.375,
-   "wert": 1557.78,
+   "kurs": 95.47,
+   "wert": 1559.34,
    "invalidierung": "10J über 5,20% oder Fed +50bp im Dezember mit 2J über 4,90% → AGG-Anteil auf 10% zurücknehmen."
   },
   {
@@ -87,8 +87,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "d0f380f2d",
-   "kurs": 79.87,
-   "wert": 1006.14
+   "kurs": 80.06,
+   "wert": 848.43
   },
   {
    "id": "pb81feef7",
@@ -121,8 +121,8 @@
    "ausstiegsplan": "Halten bis Abrechnung 01.12.2026. Vorzeitiger Exit: BTC-Tagesschluss > 68.000 (These tot) oder JA-Ask > 0,65 vor dem 25.11. (dann ist die Prämie realisiert).",
    "entscheidung_id": "da966545b",
    "invalidierung": "BTC-Tagesschluss über 68.000 USD (dann ist die Barriere wieder >1,5σ weg und die Restzeit zu kurz) oder Binance-Low-Bestätigung des Monats ohne neuen Rücksetzer bis 25.11.",
-   "kurs": 0.435,
-   "wert": 1277.96
+   "kurs": 0.46499999999999997,
+   "wert": 1367.12
   },
   {
    "id": "p4d7b7307",
@@ -142,8 +142,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "d960e1788",
-   "kurs": 61.475,
-   "wert": 587.34
+   "kurs": 61.24,
+   "wert": 585.09
   }
  ],
  "realisiert": -984.6393947115415,
@@ -151,7 +151,7 @@
  "funding": 0.0,
  "erstellt": 1793319819.7411644,
  "start_fx": 1.1184885798616961,
- "letzter_tick": 1795101041.860405,
+ "letzter_tick": 1795101941.446104,
  "rebalancing": {
   "ziele": {
    "stock:SPY": {
