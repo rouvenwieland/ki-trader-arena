@@ -109,32 +109,6 @@
    "wert": 42.3
   },
   {
-   "id": "p7733065f",
-   "inst": {
-    "id": "pm:kalshi:KXHIGHDEN-26NOV18-B58.5:NEIN",
-    "art": "pm",
-    "venue": "kalshi",
-    "ergebnis": "NEIN",
-    "frage": "Will the maximum temperature be 58-59° on Nov 18, 2026? [58° to 59°]",
-    "schliesst": 1795075200.0,
-    "ref": {
-     "ticker": "KXHIGHDEN-26NOV18-B58.5"
-    },
-    "url": "https://kalshi.com/markets/KXHIGHDEN-26NOV18"
-   },
-   "seite": "long",
-   "menge": 3410.0,
-   "einstand": 0.01,
-   "hebel": 1.0,
-   "marge": 0.0,
-   "eroeffnet": 1795045734.0382078,
-   "gebuehren": 2.37,
-   "funding": 0.0,
-   "ausstiegsplan": "Halten bis zur Abrechnung (Wetter-Regel)",
-   "kurs": null,
-   "wert": 34.1
-  },
-  {
    "id": "p2ec96df2",
    "inst": {
     "id": "pm:kalshi:KXHIGHNY-26NOV19-B61.5:JA",
@@ -157,8 +131,8 @@
    "gebuehren": 3.82,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Wetter-Regel)",
-   "kurs": 0.055,
-   "wert": 24.55
+   "kurs": 0.095,
+   "wert": 44.19
   },
   {
    "id": "pbdac867d",
@@ -183,15 +157,15 @@
    "gebuehren": 1.75,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Wetter-Regel)",
-   "kurs": 0.595,
-   "wert": 61.95
+   "kurs": 0.535,
+   "wert": 55.65
   }
  ],
- "realisiert": -8003.709038316163,
+ "realisiert": -8037.809038316163,
  "gebuehren": 945.6700000000002,
  "funding": 0.0,
  "erstellt": 1793380123.8861866,
  "start_fx": 1.1156327353966788,
- "letzter_tick": 1795096409.4054127,
+ "letzter_tick": 1795097308.4695513,
  "wetter_letzter": 1795093708.82453
 }
