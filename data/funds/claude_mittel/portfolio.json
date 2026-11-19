@@ -35,8 +35,8 @@
    "ausstiegsplan": "NEIN-Bid ≥0,93 oder P erreicht → verkaufen; sonst halten bis zur Wahl (April/Mai 2027).",
    "entscheidung_id": "d860a2331",
    "invalidierung": "Lisnard in mehreren Umfragen ≥12 % im 1. Wahlgang oder Rückzug von Philippe/Retailleau zu seinen Gunsten bzw. Sieg in einer Rechts-Primaire.",
-   "kurs": 0.8065,
-   "wert": 435.24
+   "kurs": 0.8095000000000001,
+   "wert": 436.86
   },
   {
    "id": "p842aa632",
@@ -230,8 +230,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "d6e1a7002",
-   "kurs": 63929.655,
-   "wert": 1052.08
+   "kurs": 63816.485,
+   "wert": 1050.22
   },
   {
    "id": "pe3015b77",
@@ -251,8 +251,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "d6e1a7002",
-   "kurs": 1811.9099999999999,
-   "wert": 411.2
+   "kurs": 1805.8049999999998,
+   "wert": 409.83
   },
   {
    "id": "p1ad6082a",
@@ -417,7 +417,7 @@
  "funding": 0.0,
  "erstellt": 1793319819.7411644,
  "start_fx": 1.1184885798616961,
- "letzter_tick": 1795097443.6575527,
+ "letzter_tick": 1795098342.2802055,
  "auftraege": [
   {
    "id": "a4e7a61",
@@ -452,7 +452,7 @@
    "ausstiegsplan": "",
    "invalidierung": "",
    "erstellt": 1794409480.899957,
-   "geprueft_bis": 1795097443.6575527,
+   "geprueft_bis": 1795098342.2802055,
    "gueltig_bis": 1797001480.899957
   },
   {
@@ -489,7 +489,7 @@
    "ausstiegsplan": "",
    "invalidierung": "",
    "erstellt": 1794452946.4758763,
-   "geprueft_bis": 1795097443.6575527,
+   "geprueft_bis": 1795098342.2802055,
    "gueltig_bis": 1797044946.4758763
   }
  ],
