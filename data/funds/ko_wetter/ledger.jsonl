@@ -8372,3 +8372,4 @@
 {"ok": false, "grund": "Themen-Cluster „wetter“ würde 26 % des Vermögens übersteigen (Limit 25 %)", "wetter": {"p_modell": 0.329, "kosten": 0.5075, "event": "KXHIGHLAX-26NOV19"}}
 {"ok": false, "grund": "Themen-Cluster „wetter“ würde 26 % des Vermögens übersteigen (Limit 25 %)", "wetter": {"p_modell": 0.226, "kosten": 0.705, "event": "KXHIGHDEN-26NOV19"}}
 {"ok": false, "grund": "Themen-Cluster „wetter“ würde 26 % des Vermögens übersteigen (Limit 25 %)", "wetter": {"p_modell": 0.236, "kosten": 0.138, "event": "KXHIGHDEN-26NOV19"}}
+{"ok": true, "ts": 1795101041.860405, "aktion": "geschlossen", "fonds_id": "ko_wetter", "position_id": "p56842872", "inst_id": "pm:kalshi:KXHIGHLAX-26NOV18-B70.5:JA", "seite": "long", "menge": 258.0, "preis": 0.0, "einstand": 0.163953488372093, "gebuehr": 0.0, "brutto_pnl": -42.3, "netto_pnl": -44.779999999999994, "grund": "Abrechnung des Marktes", "tiefe_stufen": 0, "kategorie": "wette:wetter:JA", "eroeffnet": 1795009470.7199278}
