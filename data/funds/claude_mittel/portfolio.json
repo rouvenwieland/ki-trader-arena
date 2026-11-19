@@ -146,8 +146,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "d6e1a7002",
-   "kurs": 726.395,
-   "wert": 1884.19
+   "kurs": 719.5,
+   "wert": 1866.3
   },
   {
    "id": "p5fe9ac51",
@@ -167,8 +167,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "d6e1a7002",
-   "kurs": 657.99,
-   "wert": 1049.02
+   "kurs": 649.995,
+   "wert": 1036.27
   },
   {
    "id": "p5106387a",
@@ -188,8 +188,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "d6e1a7002",
-   "kurs": 337.92,
-   "wert": 1004.98
+   "kurs": 336.46,
+   "wert": 1000.64
   },
   {
    "id": "p72af4e36",
@@ -209,8 +209,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "d6e1a7002",
-   "kurs": 95.475,
-   "wert": 1096.32
+   "kurs": 95.545,
+   "wert": 1097.13
   },
   {
    "id": "p3e7ff11c",
@@ -230,8 +230,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "d6e1a7002",
-   "kurs": 62895.515,
-   "wert": 1035.06
+   "kurs": 62387.354999999996,
+   "wert": 1026.7
   },
   {
    "id": "pe3015b77",
@@ -251,8 +251,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "d6e1a7002",
-   "kurs": 1771.605,
-   "wert": 402.04
+   "kurs": 1754.715,
+   "wert": 398.22
   },
   {
    "id": "p1ad6082a",
@@ -346,8 +346,8 @@
    "ausstiegsplan": "Halten bis Auflösung; Verkauf bei NEIN-Bid ≥0.93; neu bewerten bei IPO-Preis ≥$90 oder Spanne angehoben.",
    "entscheidung_id": "d9f975d34",
    "invalidierung": "IPO-Preisspanne auf ≥$95 angehoben oder Pricing >$90 am 18.11.",
-   "kurs": 0.9322222144757826,
-   "wert": 113.72
+   "kurs": 0.9765491591516228,
+   "wert": 119.14
   },
   {
    "id": "p16c2ebae",
@@ -417,7 +417,7 @@
  "funding": 0.0,
  "erstellt": 1793319819.7411644,
  "start_fx": 1.1184885798616961,
- "letzter_tick": 1795107341.8384516,
+ "letzter_tick": 1795108242.0058258,
  "auftraege": [
   {
    "id": "a4e7a61",
@@ -452,7 +452,7 @@
    "ausstiegsplan": "",
    "invalidierung": "",
    "erstellt": 1794409480.899957,
-   "geprueft_bis": 1795107341.8384516,
+   "geprueft_bis": 1795108242.0058258,
    "gueltig_bis": 1797001480.899957
   },
   {
@@ -489,7 +489,7 @@
    "ausstiegsplan": "",
    "invalidierung": "",
    "erstellt": 1794452946.4758763,
-   "geprueft_bis": 1795107341.8384516,
+   "geprueft_bis": 1795108242.0058258,
    "gueltig_bis": 1797044946.4758763
   }
  ],
