@@ -131,8 +131,8 @@
    "ausstiegsplan": "Halten bis 30.11.; verkaufen, wenn BTC unter 64.000 fällt oder NEIN-Preis <0.88.",
    "entscheidung_id": "d7dbfc08f",
    "invalidierung": "BTC Binance unter 64.000 oder DVOL >60",
-   "kurs": 0.6685000000000001,
-   "wert": 209.08
+   "kurs": 0.6695,
+   "wert": 209.4
   },
   {
    "id": "pea9d23a3",
@@ -173,8 +173,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "dd6456776",
-   "kurs": 62206.744999999995,
-   "wert": 882.79
+   "kurs": 62170.095,
+   "wert": 882.27
   },
   {
    "id": "p994b6370",
@@ -418,8 +418,8 @@
    "ausstiegsplan": "Bis Vereidigung halten; schließen, wenn beide Beine zusammen ≥0.97 verkaufbar.",
    "entscheidung_id": "d5f5d56d9",
    "invalidierung": "Nachweislich abweichende PredictIt-Regel, die Eisenkot-JA bei PredictIt und NEIN bei Polymarket zulässt.",
-   "kurs": 0.641,
-   "wert": 447.3
+   "kurs": 0.6415,
+   "wert": 448.0
   },
   {
    "id": "p2567180c",
@@ -551,7 +551,7 @@
  "funding": 0.0,
  "erstellt": 1793380123.8861866,
  "start_fx": 1.1156327353966788,
- "letzter_tick": 1795128183.3477683,
+ "letzter_tick": 1795129083.7148535,
  "auftraege": [],
  "rebalancing": {
   "ziele": {
