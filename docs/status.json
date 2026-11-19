@@ -1,6 +1,6 @@
 {
  "version": 1,
- "stand": 1795076576.1156552,
+ "stand": 1795077059.1539824,
  "hinweis": "Papierhandel-Simulation, keine Anlageberatung",
  "seite": "https://rouvenwieland.github.io/ki-trader-arena/",
  "budget": {
@@ -267,8 +267,8 @@
    "rendite_pct": -0.21,
    "equity_eur": 10134.53,
    "max_drawdown_pct": -6.31,
-   "status": "Fehler: Modellfehler: gemini-flash-latest: keine Antwort (HTTP 429 [{\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota,",
-   "modell": "gemini-flash-latest",
+   "status": "Fehler: Modellfehler: models/nano-banana-pro-preview: keine Antwort (HTTP 429 [{\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your cur",
+   "modell": "models/nano-banana-pro-preview",
    "kosten_heute_eur": 0.0,
    "kosten_gesamt_eur": 35.753,
    "rendite_ki_pct": [
@@ -739,8 +739,8 @@
    "rendite_pct": -6.18,
    "equity_eur": 9552.52,
    "max_drawdown_pct": -8.87,
-   "status": "Fehler: Modellfehler: gemini-flash-latest: keine Antwort (HTTP 429 [{\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota,",
-   "modell": "gemini-flash-latest",
+   "status": "Fehler: Modellfehler: models/nano-banana-pro-preview: keine Antwort (HTTP 429 [{\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your cur",
+   "modell": "models/nano-banana-pro-preview",
    "kosten_heute_eur": 0.0,
    "kosten_gesamt_eur": 37.887,
    "rendite_ki_pct": [
@@ -857,8 +857,8 @@
    "rendite_pct": -9.55,
    "equity_eur": 9210.19,
    "max_drawdown_pct": -24.83,
-   "status": "Fehler: Modellfehler: gemini-flash-latest: keine Antwort (HTTP 429 [{\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota,",
-   "modell": "gemini-flash-latest",
+   "status": "Fehler: Modellfehler: models/nano-banana-pro-preview: keine Antwort (HTTP 429 [{\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your cur",
+   "modell": "models/nano-banana-pro-preview",
    "kosten_heute_eur": 0.0,
    "kosten_gesamt_eur": 37.008,
    "rendite_ki_pct": [
