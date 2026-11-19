@@ -66,7 +66,7 @@
    "ausstiegsplan": "Halten bis 9.12.; Verkauf, wenn NEIN-Bid >0,55 oder bei Invalidierung.",
    "entscheidung_id": "d25f2be12",
    "invalidierung": "Fed-Signale (Warsh/Williams/Jefferson) für klaren Hike mit breitem Konsens, oder CME-Hike >90 % ohne Tauben-Widerspruch.",
-   "kurs": 0.33999999999999997,
+   "kurs": 0.345,
    "wert": 166.78
   },
   {
@@ -89,8 +89,8 @@
    "ausstiegsplan": "Kern halten, Rebalancing-Regel (2 pp), Stop 690.",
    "entscheidung_id": "dd084c777",
    "invalidierung": "SPY schließt unter 690 oder 10J-Rendite >5,3 %",
-   "kurs": 727.09,
-   "wert": 1336.13
+   "kurs": 727.15,
+   "wert": 1336.24
   },
   {
    "id": "pbcdb744c",
@@ -112,8 +112,8 @@
    "ausstiegsplan": "Kern halten; Stop 91,5; Rebalancing bei Abweichung >5pp.",
    "entscheidung_id": "d50916521",
    "invalidierung": "AGG schließt unter 91,5 oder 10J-Rendite >5,3 %",
-   "kurs": 95.543,
-   "wert": 1537.2
+   "kurs": 95.54,
+   "wert": 1537.15
   },
   {
    "id": "pd1046bd9",
@@ -135,8 +135,8 @@
    "ausstiegsplan": "Halten; Stop 74.",
    "entscheidung_id": "d123eb847",
    "invalidierung": "10J-Rendite schließt über 5,3 % / TLT unter 74",
-   "kurs": 80.255,
-   "wert": 521.8
+   "kurs": 80.25,
+   "wert": 521.76
   },
   {
    "id": "pabe784cb",
@@ -158,8 +158,8 @@
    "ausstiegsplan": "Halten als Kern; Stop 96.",
    "entscheidung_id": "d269c21b5",
    "invalidierung": "EFA unter 96 (Bruch der Aufwärtstrendstruktur, ~-9 %)",
-   "kurs": 99.495,
-   "wert": 498.89
+   "kurs": 99.52,
+   "wert": 499.01
   },
   {
    "id": "pbfa54762",
@@ -192,7 +192,7 @@
    "ausstiegsplan": "Halten bis zur Abrechnung. Vorzeitig verkaufen, wenn das NEIN-Bid 0,985 oder mehr erreicht oder die Invalidierung eintritt.",
    "entscheidung_id": "db3632f99",
    "invalidierung": "WTI-Frontmonat schließt über 120 USD, oder Hormuz wird vollständig gesperrt und Brent liegt über 130.",
-   "kurs": 0.969,
+   "kurs": 0.9695,
    "wert": 307.51
   },
   {
@@ -213,8 +213,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "dea75aef6",
-   "kurs": 337.885,
-   "wert": 540.7
+   "kurs": 337.06,
+   "wert": 539.38
   }
  ],
  "realisiert": -203.73229965056896,
@@ -222,7 +222,7 @@
  "funding": 0.0,
  "erstellt": 1793319819.7411644,
  "start_fx": 1.1184885798616961,
- "letzter_tick": 1795102842.2243059,
+ "letzter_tick": 1795103742.1653237,
  "auftraege": [],
  "rebalancing": {
   "ziele": {
