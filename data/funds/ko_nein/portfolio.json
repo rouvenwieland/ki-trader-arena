@@ -65,8 +65,8 @@
    "gebuehren": 0.0,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.9695,
-   "wert": 213.18
+   "kurs": 0.9704999999999999,
+   "wert": 213.4
   },
   {
    "id": "p722ad016",
@@ -353,8 +353,8 @@
    "gebuehren": 0.0,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.813,
-   "wert": 167.27
+   "kurs": 0.8105,
+   "wert": 166.86
   },
   {
    "id": "pc2572f19",
@@ -417,7 +417,7 @@
    "gebuehren": 1.85338,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.971,
+   "kurs": 0.972,
    "wert": 191.09
   },
   {
@@ -929,7 +929,7 @@
    "gebuehren": 1.22092,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.625,
+   "kurs": 0.63,
    "wert": 120.28
   },
   {
@@ -993,8 +993,8 @@
    "gebuehren": 0.0,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.395,
-   "wert": 144.69
+   "kurs": 0.385,
+   "wert": 140.98
   },
   {
    "id": "p52f9b70e",
@@ -1061,38 +1061,6 @@
    "wert": 184.13
   },
   {
-   "id": "pc1962076",
-   "inst": {
-    "id": "pm:polymarket:4319441:NEIN",
-    "art": "pm",
-    "venue": "polymarket",
-    "ergebnis": "NEIN",
-    "frage": "Will Anthropic IPO by December 15, 2026?",
-    "schliesst": 1797397140.0,
-    "ref": {
-     "id": "4319441",
-     "token_ja": "54354873998826259054526425416928957657351494173277941862882815520348432840549",
-     "token_nein": "56353581137534309695022633288332842355422126324228700450795434729968413474746",
-     "tick": 0.01,
-     "condition": "0xd840a4faf46b63d0be3f7918e8014fd848e396fdd76f2554f1497fb3553f8010",
-     "gebuehr_rate": 0.04,
-     "gebuehr_exp": 1.0
-    },
-    "url": "https://polymarket.com/event/anthropic-ipo-by"
-   },
-   "seite": "long",
-   "menge": 2664.0,
-   "einstand": 0.0605436186186186,
-   "hebel": 1.0,
-   "marge": 0.0,
-   "eroeffnet": 1794302122.1175032,
-   "gebuehren": 6.06093,
-   "funding": 0.0,
-   "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": null,
-   "wert": 161.29
-  },
-  {
    "id": "p858bb23c",
    "inst": {
     "id": "pm:polymarket:6656052:NEIN",
@@ -1121,40 +1089,8 @@
    "gebuehren": 1.35793,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.97,
+   "kurs": 0.9664999999999999,
    "wert": 188.1
-  },
-  {
-   "id": "pa0ba9cff",
-   "inst": {
-    "id": "pm:polymarket:2413330:NEIN",
-    "art": "pm",
-    "venue": "polymarket",
-    "ergebnis": "NEIN",
-    "frage": "Will Anthropic IPO by December 31, 2026?",
-    "schliesst": 1798779540.0,
-    "ref": {
-     "id": "2413330",
-     "token_ja": "48566046548914168443252668519852295704538578584318207505303160546351275413281",
-     "token_nein": "93059136868154519251041831451057854973981985548329066772466504724611138205828",
-     "tick": 0.001,
-     "condition": "0xb40b0cd531184a1e436d23ca898e1590418187b116f387158753d1adb9853e47",
-     "gebuehr_rate": 0.04,
-     "gebuehr_exp": 1.0
-    },
-    "url": "https://polymarket.com/event/anthropic-ipo-by"
-   },
-   "seite": "long",
-   "menge": 5438.0,
-   "einstand": 0.02962606656859139,
-   "hebel": 1.0,
-   "marge": 0.0,
-   "eroeffnet": 1794331046.5828876,
-   "gebuehren": 6.25334,
-   "funding": 0.0,
-   "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": null,
-   "wert": 161.11
   },
   {
    "id": "p88372306",
@@ -1217,8 +1153,8 @@
    "gebuehren": 3.94556,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.69,
-   "wert": 208.56
+   "kurs": 0.6799999999999999,
+   "wert": 205.4
   },
   {
    "id": "p396ede21",
@@ -1249,8 +1185,8 @@
    "gebuehren": 0.24913,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.9490000000000001,
-   "wert": 157.21
+   "kurs": 0.9475,
+   "wert": 156.69
   },
   {
    "id": "p766850e1",
@@ -1377,8 +1313,8 @@
    "gebuehren": 0.49949,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.9075,
-   "wert": 157.82
+   "kurs": 0.909,
+   "wert": 157.47
   },
   {
    "id": "p9176f163",
@@ -1409,8 +1345,8 @@
    "gebuehren": 0.58474,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.8985000000000001,
-   "wert": 160.74
+   "kurs": 0.8995,
+   "wert": 160.92
   },
   {
    "id": "pbf73aed6",
@@ -1445,11 +1381,11 @@
    "wert": 175.56
   }
  ],
- "realisiert": -2451.72213,
+ "realisiert": -2774.11688,
  "gebuehren": 304.4894399999999,
  "funding": 0.0,
  "erstellt": 1793379225.5430336,
  "start_fx": 1.1157431109273288,
- "letzter_tick": 1795113642.1139019,
+ "letzter_tick": 1795114542.159596,
  "kontrolle_bis": 1795067582.9030294
 }
