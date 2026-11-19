@@ -1,6 +1,6 @@
 {
  "version": 1,
- "stand": 1795101159.8127372,
+ "stand": 1795101927.680311,
  "hinweis": "Papierhandel-Simulation, keine Anlageberatung",
  "seite": "https://rouvenwieland.github.io/ki-trader-arena/",
  "budget": {
@@ -503,8 +503,8 @@
    "rendite_pct": -2.77,
    "equity_eur": 9895.13,
    "max_drawdown_pct": -6.34,
-   "status": "Fehler: Modellfehler: gemini-flash-latest: keine Antwort (HTTP 429 [{\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota,",
-   "modell": "gemini-flash-latest",
+   "status": "vorübergehend gestört (Anbieter überlastet) – nächster Versuch beim nächsten Lauf",
+   "modell": "gemini-2.5-flash",
    "kosten_heute_eur": 0.0,
    "kosten_gesamt_eur": 37.947,
    "rendite_ki_pct": [
@@ -739,8 +739,8 @@
    "rendite_pct": -6.11,
    "equity_eur": 9555.82,
    "max_drawdown_pct": -8.87,
-   "status": "Fehler: Modellfehler: models/nano-banana-pro-preview: keine Antwort (HTTP 429 [{\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your cur",
-   "modell": "models/nano-banana-pro-preview",
+   "status": "Fehler: Modellfehler: gemini-flash-latest: keine Antwort (Netzwerk: ReadTimeout)",
+   "modell": "gemini-flash-latest",
    "kosten_heute_eur": 0.0,
    "kosten_gesamt_eur": 37.868,
    "rendite_ki_pct": [
@@ -1218,6 +1218,13 @@
  ],
  "letzte_entscheidungen": [
   {
+   "ts": 1795101302.2475364,
+   "fonds": "DeepSeek",
+   "instrument": "stock:TLT",
+   "aktion": "verkaufen",
+   "zuversicht": 0.6
+  },
+  {
    "ts": 1795067727.9617531,
    "fonds": "DeepSeek",
    "instrument": "stock:SPY",
@@ -1265,13 +1272,6 @@
    "instrument": "stock:NVDA",
    "aktion": "kaufen",
    "zuversicht": 0.55
-  },
-  {
-   "ts": 1794928169.7022681,
-   "fonds": "DeepSeek",
-   "instrument": "stock:XLE",
-   "aktion": "kaufen",
-   "zuversicht": 0.6
   }
  ],
  "ereignisse": [
