@@ -2,33 +2,71 @@
  "fonds_id": "bm_affe",
  "waehrung": "USD",
  "start_kapital": 11184.88579861696,
- "cash": 7134.841131291445,
+ "cash": 2889.467654512815,
  "positionen": [
   {
-   "id": "p37d95e7f",
+   "id": "p44876a6b",
    "inst": {
-    "id": "spot:ETH-USD",
+    "id": "spot:XRP-USD",
     "art": "spot",
     "venue": "coinbase",
-    "symbol": "ETH-USD"
+    "symbol": "XRP-USD"
    },
    "seite": "long",
-   "menge": 1.4386665864677073,
-   "einstand": 1822.3437822616902,
+   "menge": 2552.7765851417944,
+   "einstand": 0.9658440060187383,
    "hebel": 1.0,
    "marge": 0.0,
-   "eroeffnet": 1794960338.404208,
-   "gebuehren": 15.73047065158246,
+   "eroeffnet": 1795046634.3174515,
+   "gebuehren": 14.793503780785114,
    "funding": 0.0,
-   "kurs": 1780.6799999999998,
-   "wert": 2561.63
+   "kurs": 0.9656,
+   "wert": 2464.71
+  },
+  {
+   "id": "p5ecc0d5d",
+   "inst": {
+    "id": "spot:LINK-USD",
+    "art": "spot",
+    "venue": "coinbase",
+    "symbol": "LINK-USD"
+   },
+   "seite": "long",
+   "menge": 263.1699085023281,
+   "einstand": 9.073171378771004,
+   "hebel": 1.0,
+   "marge": 0.0,
+   "eroeffnet": 1795046634.3174515,
+   "gebuehren": 14.326714089462644,
+   "funding": 0.0,
+   "kurs": 9.068999999999999,
+   "wert": 2385.9
+  },
+  {
+   "id": "p8d92da37",
+   "inst": {
+    "id": "spot:AVAX-USD",
+    "art": "spot",
+    "venue": "coinbase",
+    "symbol": "AVAX-USD"
+   },
+   "seite": "long",
+   "menge": 268.73766879860796,
+   "einstand": 7.019744050834232,
+   "hebel": 1.0,
+   "marge": 0.0,
+   "eroeffnet": 1795046634.3174515,
+   "gebuehren": 11.318817910704531,
+   "funding": 0.0,
+   "kurs": 7.016500000000001,
+   "wert": 1884.93
   }
  ],
- "realisiert": -995.7783433697808,
- "gebuehren": 845.8170651039896,
+ "realisiert": -1082.6185961391534,
+ "gebuehren": 901.557337439234,
  "funding": 0.0,
  "erstellt": 1793319819.7411644,
  "start_fx": 1.1184885798616961,
- "letzter_tick": 1795045734.0382078,
- "letzter_tag": "2026-11-18"
+ "letzter_tick": 1795046634.3174515,
+ "letzter_tag": "2026-11-19"
 }
