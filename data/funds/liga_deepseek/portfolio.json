@@ -22,8 +22,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "d8e5f296a",
-   "kurs": 59444.675,
-   "wert": 548.47
+   "kurs": 59359.595,
+   "wert": 547.69
   },
   {
    "id": "p9a8fa083",
@@ -43,8 +43,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "d14c1f726",
-   "kurs": 702.11,
-   "wert": 2845.13,
+   "kurs": 702.66,
+   "wert": 2847.36,
    "invalidierung": "SPY-Tagesschluss unter 725 (0,8% unter SMA200) bei VIX über 28"
   },
   {
@@ -65,8 +65,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Halten als Kern; Exit nur über Rebalancing-Regel. Rückkauf TLT erst bei 10J < 4,50%.",
    "entscheidung_id": "d7658fcde",
-   "kurs": 96.065,
-   "wert": 1569.06,
+   "kurs": 96.055,
+   "wert": 1568.89,
    "invalidierung": "10J über 5,20% oder Fed +50bp im Dezember mit 2J über 4,90% → AGG-Anteil auf 10% zurücknehmen."
   },
   {
@@ -87,8 +87,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "d0f380f2d",
-   "kurs": 81.215,
-   "wert": 860.67
+   "kurs": 81.225,
+   "wert": 860.77
   },
   {
    "id": "p4d7b7307",
@@ -108,8 +108,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "d960e1788",
-   "kurs": 61.16,
-   "wert": 584.33
+   "kurs": 61.175,
+   "wert": 584.47
   }
  ],
  "realisiert": 476.8473052884584,
@@ -117,7 +117,7 @@
  "funding": 0.0,
  "erstellt": 1793319819.7411644,
  "start_fx": 1.1184885798616961,
- "letzter_tick": 1795193600.8282676,
+ "letzter_tick": 1795194501.073354,
  "rebalancing": {
   "ziele": {
    "stock:SPY": {
