@@ -89,8 +89,8 @@
    "ausstiegsplan": "Kern halten, Rebalancing-Regel (2 pp), Stop 690.",
    "entscheidung_id": "dd084c777",
    "invalidierung": "SPY schließt unter 690 oder 10J-Rendite >5,3 %",
-   "kurs": 701.1,
-   "wert": 1288.37
+   "kurs": 701.74,
+   "wert": 1289.55
   },
   {
    "id": "pbcdb744c",
@@ -112,8 +112,8 @@
    "ausstiegsplan": "Kern halten; Stop 91,5; Rebalancing bei Abweichung >5pp.",
    "entscheidung_id": "d50916521",
    "invalidierung": "AGG schließt unter 91,5 oder 10J-Rendite >5,3 %",
-   "kurs": 96.095,
-   "wert": 1546.08
+   "kurs": 96.065,
+   "wert": 1545.6
   },
   {
    "id": "pd1046bd9",
@@ -135,8 +135,8 @@
    "ausstiegsplan": "Halten; Stop 74.",
    "entscheidung_id": "d123eb847",
    "invalidierung": "10J-Rendite schließt über 5,3 % / TLT unter 74",
-   "kurs": 81.29,
-   "wert": 528.53
+   "kurs": 81.295,
+   "wert": 528.56
   },
   {
    "id": "pabe784cb",
@@ -158,8 +158,8 @@
    "ausstiegsplan": "Halten als Kern; Stop 96.",
    "entscheidung_id": "d269c21b5",
    "invalidierung": "EFA unter 96 (Bruch der Aufwärtstrendstruktur, ~-9 %)",
-   "kurs": 96.945,
-   "wert": 486.1
+   "kurs": 97.005,
+   "wert": 486.4
   },
   {
    "id": "pbfa54762",
@@ -213,8 +213,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "dea75aef6",
-   "kurs": 322.97,
-   "wert": 516.83
+   "kurs": 322.31,
+   "wert": 515.78
   }
  ],
  "realisiert": -203.73229965056896,
@@ -222,7 +222,7 @@
  "funding": 0.0,
  "erstellt": 1793319819.7411644,
  "start_fx": 1.1184885798616961,
- "letzter_tick": 1795199000.8586462,
+ "letzter_tick": 1795199901.2129495,
  "auftraege": [],
  "rebalancing": {
   "ziele": {

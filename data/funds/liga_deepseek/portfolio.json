@@ -22,8 +22,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "d8e5f296a",
-   "kurs": 59068.915,
-   "wert": 545.0
+   "kurs": 58959.585,
+   "wert": 543.99
   },
   {
    "id": "p9a8fa083",
@@ -43,8 +43,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "d14c1f726",
-   "kurs": 701.1,
-   "wert": 2208.97,
+   "kurs": 701.74,
+   "wert": 2210.99,
    "invalidierung": "SPY-Tagesschluss unter 725 (0,8% unter SMA200) bei VIX über 28"
   },
   {
@@ -65,8 +65,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "d3ba3cad6",
-   "kurs": 96.095,
-   "wert": 2207.24,
+   "kurs": 96.065,
+   "wert": 2206.55,
    "invalidierung": "10J über 5,20% oder Fed +50bp im Dezember mit 2J über 4,90% → AGG-Anteil auf 10% zurücknehmen."
   },
   {
@@ -87,8 +87,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "d0f380f2d",
-   "kurs": 81.29,
-   "wert": 861.46
+   "kurs": 81.295,
+   "wert": 861.51
   },
   {
    "id": "p4d7b7307",
@@ -108,8 +108,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "d960e1788",
-   "kurs": 61.235,
-   "wert": 585.04
+   "kurs": 61.185,
+   "wert": 584.57
   },
   {
    "id": "p60eb9419",
@@ -142,8 +142,8 @@
    "ausstiegsplan": "Halten bis Abrechnung 31.12. Exit vor Abrechnung nur bei Invalidierung (BTC >65.000 Tagesschluss oder JA-Bid <0,40).",
    "entscheidung_id": "d7fa33e5c",
    "invalidierung": "BTC-Tagesschluss über 65.000 oder JA-Bid fällt unter 0,40",
-   "kurs": 0.625,
-   "wert": 248.0
+   "kurs": 0.61,
+   "wert": 240.0
   }
  ],
  "realisiert": 428.11470747357396,
@@ -151,7 +151,7 @@
  "funding": 0.0,
  "erstellt": 1793319819.7411644,
  "start_fx": 1.1184885798616961,
- "letzter_tick": 1795199000.8586462,
+ "letzter_tick": 1795199901.2129495,
  "rebalancing": {
   "ziele": {
    "stock:SPY": {
