@@ -2,7 +2,7 @@
  "fonds_id": "claude_mittel",
  "waehrung": "USD",
  "start_kapital": 11184.88579861696,
- "cash": 2446.8723108874574,
+ "cash": 2587.3786408874575,
  "positionen": [
   {
    "id": "p51e71031",
@@ -91,8 +91,8 @@
    "ausstiegsplan": "Halten bis Abrechnung 30.11.; Gewinn mitnehmen, wenn JA-Bid ≥0.92. Neu bewerten bei Austritt von PSL oder PL2050 aus der Koalition.",
    "entscheidung_id": "d6e2136ea",
    "invalidierung": "PSL oder Polska 2050 kündigen Koalition auf bzw. sagen Unterstützung für das konstruktive Misstrauensvotum zu; oder Tusk kündigt Rücktritt an.",
-   "kurs": 0.9439846827848837,
-   "wert": 45.3
+   "kurs": 0.9241944113844553,
+   "wert": 44.35
   },
   {
    "id": "p8b4a7cc3",
@@ -115,18 +115,18 @@
     "url": "https://polymarket.com/event/will-apple-be-the-largest-company-in-the-world-by-market-cap-on-december-31-291"
    },
    "seite": "long",
-   "menge": 307.0,
+   "menge": 157.0,
    "einstand": 0.5658658319604613,
    "hebel": 1.0,
    "marge": 0.0,
    "eroeffnet": 1793560019.8486197,
-   "gebuehren": 2.9159385996705107,
+   "gebuehren": 1.491212899505766,
    "funding": 0.0,
    "ausstiegsplan": "Bid ≥0,70 verkaufen (P erreicht); Neubewertung nach NVDA-Zahlen 19.11.; schließen, wenn Apple-Vorsprung <3 %.",
    "entscheidung_id": "d7e53ef04",
    "invalidierung": "NVDA-Marktkap. kommt auf <3 % Abstand zu Apple, oder Apple fällt >8 % relativ.",
-   "kurs": 0.929,
-   "wert": 284.28
+   "kurs": 0.94,
+   "wert": 147.42
   },
   {
    "id": "pb60e44cc",
@@ -146,8 +146,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "d6e1a7002",
-   "kurs": 712.625,
-   "wert": 1848.47
+   "kurs": 712.84,
+   "wert": 1849.03
   },
   {
    "id": "p5fe9ac51",
@@ -167,8 +167,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "d6e1a7002",
-   "kurs": 635.395,
-   "wert": 1013.0
+   "kurs": 636.373,
+   "wert": 1014.56
   },
   {
    "id": "p5106387a",
@@ -188,8 +188,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "d6e1a7002",
-   "kurs": 327.075,
-   "wert": 972.73
+   "kurs": 327.295,
+   "wert": 973.38
   },
   {
    "id": "p72af4e36",
@@ -209,8 +209,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "d6e1a7002",
-   "kurs": 95.905,
-   "wert": 1101.26
+   "kurs": 95.882,
+   "wert": 1101.0
   },
   {
    "id": "p3e7ff11c",
@@ -230,8 +230,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "d6e1a7002",
-   "kurs": 61751.715,
-   "wert": 1016.24
+   "kurs": 61419.735,
+   "wert": 1010.77
   },
   {
    "id": "pe3015b77",
@@ -251,8 +251,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "d6e1a7002",
-   "kurs": 1745.255,
-   "wert": 396.08
+   "kurs": 1727.325,
+   "wert": 392.01
   },
   {
    "id": "p1ad6082a",
@@ -318,8 +318,8 @@
    "ausstiegsplan": "Gewinn mitnehmen bei NEIN-Bid ≥0.78 (=P). Nach NVDA-Earnings neu rechnen. Sonst halten bis 31.12.",
    "entscheidung_id": "d1fa25bbb",
    "invalidierung": "NVDA-Marktkapitalisierung innerhalb 5 % von Apple (z. B. NVDA ≥200 bei AAPL ~349) nach den Earnings, oder NVDA-JA ≥0.45.",
-   "kurs": 0.945,
-   "wert": 402.32
+   "kurs": 0.955,
+   "wert": 406.6
   },
   {
    "id": "pac09f469",
@@ -412,12 +412,12 @@
    "wert": 40.8
   }
  ],
- "realisiert": -212.1163049303488,
- "gebuehren": 65.1130233771088,
+ "realisiert": -156.48984972441798,
+ "gebuehren": 65.4566933771088,
  "funding": 0.0,
  "erstellt": 1793319819.7411644,
  "start_fx": 1.1184885798616961,
- "letzter_tick": 1795185348.773118,
+ "letzter_tick": 1795186248.5459597,
  "auftraege": [
   {
    "id": "a4e7a61",
@@ -452,45 +452,8 @@
    "ausstiegsplan": "",
    "invalidierung": "",
    "erstellt": 1794409480.899957,
-   "geprueft_bis": 1795185348.773118,
+   "geprueft_bis": 1795186248.5459597,
    "gueltig_bis": 1797001480.899957
-  },
-  {
-   "id": "a22d4db",
-   "entscheidung_id": "d2cdba8ae",
-   "inst": {
-    "id": "pm:polymarket:676741:JA",
-    "art": "pm",
-    "venue": "polymarket",
-    "ergebnis": "JA",
-    "frage": "Will Apple be the largest company in the world by market cap on December 31?",
-    "schliesst": 1798779540.0,
-    "ref": {
-     "id": "676741",
-     "token_ja": "9875273331604434310973374077817381730908757452538191940842519381772366848",
-     "token_nein": "102723918081644490126383882876216056971015484595406893020273651317068912986031",
-     "tick": 0.001,
-     "condition": "0x55a5a4b50b7947482e95af8f638fa0b8d9a46740c5cd04c6799443e83565176a",
-     "gebuehr_rate": 0.04,
-     "gebuehr_exp": 1.0
-    },
-    "url": "https://polymarket.com/event/will-apple-be-the-largest-company-in-the-world-by-market-cap-on-december-31-291"
-   },
-   "aktion": "verkaufen",
-   "typ": "limit",
-   "seite": "long",
-   "betrag_usd": null,
-   "menge": 150,
-   "hebel": 1.0,
-   "limit_preis": 0.93,
-   "stop_preis": null,
-   "stop_loss": null,
-   "take_profit": null,
-   "ausstiegsplan": "",
-   "invalidierung": "",
-   "erstellt": 1794452946.4758763,
-   "geprueft_bis": 1795185348.773118,
-   "gueltig_bis": 1797044946.4758763
   }
  ],
  "rebalancing": {

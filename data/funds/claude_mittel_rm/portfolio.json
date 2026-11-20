@@ -35,8 +35,8 @@
    "ausstiegsplan": "Halten bis Abrechnung 31.12.; vorzeitig verkaufen, wenn NEIN-Preis auf ≥0.62 steigt (Gewinn mitnehmen) oder unter 0.38 fällt.",
    "entscheidung_id": "dbf84bba3",
    "invalidierung": "NVDA schließt wieder dauerhaft über Apple-Marktkap (NVDA >~210 bei AAPL ~343) oder starke NVDA-Zahlen mit Rally >8%; dann neu bewerten/verkaufen.",
-   "kurs": 0.945,
-   "wert": 525.46
+   "kurs": 0.955,
+   "wert": 531.05
   },
   {
    "id": "pbb4d5e0c",
@@ -69,8 +69,8 @@
    "ausstiegsplan": "Halten bis 31.12.; Gewinnmitnahme ≥0,93 oder Neubewertung nach NVDA-Earnings 17./19.11.",
    "entscheidung_id": "dce9924e1",
    "invalidierung": "NVDA-Marktkap > Apple −10 % (NVDA >~210 bei Apple ~355) oder Apple −20 % binnen Tagen",
-   "kurs": 0.929,
-   "wert": 1237.14
+   "kurs": 0.94,
+   "wert": 1254.5
   },
   {
    "id": "pa832233e",
@@ -97,8 +97,8 @@
    "ausstiegsplan": "Halten bis Ende November. Verkauf bei Kurs <0.55 oder Koalitionsbruch/Rücktrittsankündigung; Gewinn mitnehmen ≥0.95.",
    "entscheidung_id": "d34bf6b87",
    "invalidierung": "PSL oder Polen 2050 verlassen die Koalition bzw. unterstützen ein Misstrauensvotum; Tusk kündigt Rücktritt/Vertrauensfrage an.",
-   "kurs": 0.9439846827848837,
-   "wert": 499.3
+   "kurs": 0.9241944113844553,
+   "wert": 488.8
   },
   {
    "id": "p77177258",
@@ -131,8 +131,8 @@
    "ausstiegsplan": "Halten bis 30.11.; verkaufen, wenn BTC unter 64.000 fällt oder NEIN-Preis <0.88.",
    "entscheidung_id": "d7dbfc08f",
    "invalidierung": "BTC Binance unter 64.000 oder DVOL >60",
-   "kurs": 0.615,
-   "wert": 190.93
+   "kurs": 0.5814999999999999,
+   "wert": 179.97
   },
   {
    "id": "pea9d23a3",
@@ -152,8 +152,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "dd6456776",
-   "kurs": 712.625,
-   "wert": 2125.09
+   "kurs": 712.84,
+   "wert": 2125.73
   },
   {
    "id": "p1c64b37e",
@@ -173,8 +173,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "dd6456776",
-   "kurs": 61751.715,
-   "wert": 876.33
+   "kurs": 61419.735,
+   "wert": 871.62
   },
   {
    "id": "p994b6370",
@@ -194,8 +194,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "dd6456776",
-   "kurs": 327.075,
-   "wert": 804.7
+   "kurs": 327.295,
+   "wert": 805.24
   },
   {
    "id": "p3b9e74b7",
@@ -418,7 +418,7 @@
    "ausstiegsplan": "Bis Vereidigung halten; schließen, wenn beide Beine zusammen ≥0.97 verkaufbar.",
    "entscheidung_id": "d5f5d56d9",
    "invalidierung": "Nachweislich abweichende PredictIt-Regel, die Eisenkot-JA bei PredictIt und NEIN bei Polymarket zulässt.",
-   "kurs": 0.6605000000000001,
+   "kurs": 0.6615,
    "wert": 459.9
   },
   {
@@ -542,8 +542,8 @@
    "ausstiegsplan": "Bis zur Abrechnung (~8.1.2027) halten. Verkauf, wenn NEIN ≥0,95 oder die Invalidierung eintritt.",
    "entscheidung_id": "dd841b112",
    "invalidierung": "NVDA-Marktkap innerhalb von 10 % zu Apple (NVDA >~195 bei Apple ~358) oder Polymarket NVDA-JA >0,25",
-   "kurs": 0.9300030230567934,
-   "wert": 37.2
+   "kurs": 0.9400020601072558,
+   "wert": 37.6
   }
  ],
  "realisiert": -255.90298068300046,
@@ -551,7 +551,7 @@
  "funding": 0.0,
  "erstellt": 1793380123.8861866,
  "start_fx": 1.1156327353966788,
- "letzter_tick": 1795185348.773118,
+ "letzter_tick": 1795186248.5459597,
  "auftraege": [],
  "rebalancing": {
   "ziele": {
