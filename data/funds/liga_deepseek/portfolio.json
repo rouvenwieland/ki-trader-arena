@@ -2,7 +2,7 @@
  "fonds_id": "liga_deepseek",
  "waehrung": "USD",
  "start_kapital": 11184.88579861696,
- "cash": 4404.158671322603,
+ "cash": 4397.783473280113,
  "positionen": [
   {
    "id": "p3d319c8e",
@@ -22,8 +22,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "d8e5f296a",
-   "kurs": 59359.595,
-   "wert": 547.69
+   "kurs": 59436.925,
+   "wert": 548.4
   },
   {
    "id": "p9a8fa083",
@@ -34,7 +34,7 @@
     "symbol": "SPY"
    },
    "seite": "long",
-   "menge": 4.0527007727694135,
+   "menge": 3.1510642165074993,
    "einstand": 754.6530945894278,
    "hebel": 1.0,
    "marge": 0.0,
@@ -43,8 +43,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "d14c1f726",
-   "kurs": 702.66,
-   "wert": 2847.36,
+   "kurs": 700.75,
+   "wert": 2207.87,
    "invalidierung": "SPY-Tagesschluss unter 725 (0,8% unter SMA200) bei VIX über 28"
   },
   {
@@ -56,17 +56,17 @@
     "symbol": "AGG"
    },
    "seite": "long",
-   "menge": 16.335962314192034,
-   "einstand": 96.19976663659853,
+   "menge": 22.973114403086072,
+   "einstand": 96.18117688554815,
    "hebel": 1.0,
    "marge": 0.0,
    "eroeffnet": 1794234816.51331,
    "gebuehren": 0.0,
    "funding": 0.0,
-   "ausstiegsplan": "Halten als Kern; Exit nur über Rebalancing-Regel. Rückkauf TLT erst bei 10J < 4,50%.",
-   "entscheidung_id": "d7658fcde",
-   "kurs": 96.055,
-   "wert": 1568.89,
+   "ausstiegsplan": "Rebalancing-Regel",
+   "entscheidung_id": "d3ba3cad6",
+   "kurs": 96.11,
+   "wert": 2207.58,
    "invalidierung": "10J über 5,20% oder Fed +50bp im Dezember mit 2J über 4,90% → AGG-Anteil auf 10% zurücknehmen."
   },
   {
@@ -87,8 +87,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "d0f380f2d",
-   "kurs": 81.225,
-   "wert": 860.77
+   "kurs": 81.305,
+   "wert": 861.62
   },
   {
    "id": "p4d7b7307",
@@ -108,8 +108,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "d960e1788",
-   "kurs": 61.175,
-   "wert": 584.47
+   "kurs": 61.1,
+   "wert": 583.75
   },
   {
    "id": "p60eb9419",
@@ -141,15 +141,17 @@
    "funding": 0.0,
    "ausstiegsplan": "Halten bis Abrechnung 31.12. Exit vor Abrechnung nur bei Invalidierung (BTC >65.000 Tagesschluss oder JA-Bid <0,40).",
    "entscheidung_id": "d7fa33e5c",
-   "invalidierung": "BTC-Tagesschluss über 65.000 oder JA-Bid fällt unter 0,40"
+   "invalidierung": "BTC-Tagesschluss über 65.000 oder JA-Bid fällt unter 0,40",
+   "kurs": 0.585,
+   "wert": 232.0
   }
  ],
- "realisiert": 476.8473052884584,
+ "realisiert": 428.11470747357396,
  "gebuehren": 239.27575925396545,
  "funding": 0.0,
  "erstellt": 1793319819.7411644,
  "start_fx": 1.1184885798616961,
- "letzter_tick": 1795194501.073354,
+ "letzter_tick": 1795195400.9180577,
  "rebalancing": {
   "ziele": {
    "stock:SPY": {
