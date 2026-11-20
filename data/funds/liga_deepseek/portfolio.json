@@ -2,7 +2,7 @@
  "fonds_id": "liga_deepseek",
  "waehrung": "USD",
  "start_kapital": 11184.88579861696,
- "cash": 4397.783473280113,
+ "cash": 4157.783473280316,
  "positionen": [
   {
    "id": "p3d319c8e",
@@ -13,17 +13,18 @@
     "symbol": "BTC-USD"
    },
    "seite": "long",
-   "menge": 0.009226574893250166,
-   "einstand": 80255.12004488446,
+   "menge": 0.013327782256562105,
+   "einstand": 73459.21814170136,
    "hebel": 1.0,
    "marge": 0.0,
    "eroeffnet": 1793819896.6280587,
-   "gebuehren": 4.4428792539654545,
+   "gebuehren": 5.874290784779355,
    "funding": 0.0,
-   "ausstiegsplan": "Rebalancing-Regel",
-   "entscheidung_id": "d8e5f296a",
+   "ausstiegsplan": "Halten als Kern-Baustein gemäß Rebalancing-Regel (Ziel 7%). Trim bei BTC über 68.000 (Zielüberschreitung) oder Verkauf bei Tagesschluss unter 52.000 (Invalidierung der Kern-These, dann Cash).",
+   "entscheidung_id": "d6d5e7a8d",
    "kurs": 58222.575,
-   "wert": 537.19
+   "wert": 537.19,
+   "invalidierung": "BTC-Tagesschluss unter 52.000 (neue Bärenmarkttiefe, dann ist die 7%-Kernquote zu hoch)."
   },
   {
    "id": "p9a8fa083",
@@ -147,7 +148,7 @@
   }
  ],
  "realisiert": 428.11470747357396,
- "gebuehren": 239.27575925396545,
+ "gebuehren": 240.70717078477935,
  "funding": 0.0,
  "erstellt": 1793319819.7411644,
  "start_fx": 1.1184885798616961,
