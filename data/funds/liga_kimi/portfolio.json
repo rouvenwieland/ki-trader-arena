@@ -2,7 +2,7 @@
  "fonds_id": "liga_kimi",
  "waehrung": "USD",
  "start_kapital": 11184.88579861696,
- "cash": 1807.7299317109969,
+ "cash": 1744.0635074836637,
  "positionen": [
   {
    "id": "p0b5ac550",
@@ -22,8 +22,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "d3af64508",
-   "kurs": 326.02,
-   "wert": 960.59
+   "kurs": 325.23,
+   "wert": 958.26
   },
   {
    "id": "p3e4bc435",
@@ -43,8 +43,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "de59ece78",
-   "kurs": 708.84,
-   "wert": 3616.01
+   "kurs": 707.88,
+   "wert": 3611.11
   },
   {
    "id": "pb315f18b",
@@ -55,17 +55,17 @@
     "symbol": "BTC-USD"
    },
    "seite": "long",
-   "menge": 0.028810322105095397,
-   "einstand": 79111.14661145059,
+   "menge": 0.029872277073851376,
+   "einstand": 78417.3337101622,
    "hebel": 1.0,
    "marge": 0.0,
    "eroeffnet": 1793820796.9785986,
-   "gebuehren": 13.675305695875906,
+   "gebuehren": 14.055025919895787,
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "de59ece78",
-   "kurs": 60029.755000000005,
-   "wert": 1729.48
+   "kurs": 59582.965,
+   "wert": 1779.82
   },
   {
    "id": "p5a2259b8",
@@ -125,8 +125,8 @@
    "ausstiegsplan": "Verkauf bei Wertverdopplung (BTC ~67–68k) oder Halten bis 25.12. Halbierung der Position, wenn BTC über 80k zurückkehrt (Theta-Bremse).",
    "entscheidung_id": "d0fe400cd",
    "invalidierung": "BTC schließt 3 Tage in Folge über 80k mit fallender realisierter Vola (Abwärtstrend gebrochen).",
-   "kurs": 11968.772165,
-   "wert": 2950.16
+   "kurs": 12521.455476,
+   "wert": 3073.8
   },
   {
    "id": "p5a6a2ac6",
@@ -146,16 +146,16 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "d3af64508",
-   "kurs": 81.145,
-   "wert": 521.82
+   "kurs": 81.185,
+   "wert": 522.07
   }
  ],
  "realisiert": -593.8131354666724,
- "gebuehren": 80.33082444587592,
+ "gebuehren": 80.7105446698958,
  "funding": 0.0,
  "erstellt": 1793319819.7411644,
  "start_fx": 1.1184885798616961,
- "letzter_tick": 1795189100.8544958,
+ "letzter_tick": 1795190001.283161,
  "rebalancing": {
   "ziele": {
    "stock:SPY": {
