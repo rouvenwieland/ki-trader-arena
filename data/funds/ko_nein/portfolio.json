@@ -193,8 +193,8 @@
    "gebuehren": 1.04341,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.375,
-   "wert": 67.34
+   "kurs": 0.385,
+   "wert": 69.16
   },
   {
    "id": "p7e5c2e70",
@@ -289,8 +289,8 @@
    "gebuehren": 0.0,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.9684999999999999,
-   "wert": 181.8
+   "kurs": 0.969,
+   "wert": 181.98
   },
   {
    "id": "p1fca8eac",
@@ -387,38 +387,6 @@
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
    "kurs": 0.9755,
    "wert": 192.07
-  },
-  {
-   "id": "p7f18532d",
-   "inst": {
-    "id": "pm:polymarket:5691088:NEIN",
-    "art": "pm",
-    "venue": "polymarket",
-    "ergebnis": "NEIN",
-    "frage": "Will annual inflation be 3.7% in October?",
-    "schliesst": 1794373140.0,
-    "ref": {
-     "id": "5691088",
-     "token_ja": "55506053912473396186043599595125249306315376696843087653846512374676287586477",
-     "token_nein": "36062459702436991384700060131075573115023958951882478132439979047925037127590",
-     "tick": 0.01,
-     "condition": "0xf464b826a86e0db857ae3db6362b91b4d2c289d5b14f7065b2d76fa89e44f3bd",
-     "gebuehr_rate": 0.0,
-     "gebuehr_exp": 1.0
-    },
-    "url": "https://polymarket.com/event/will-annual-inflation-be-3pt7-in-october-2026"
-   },
-   "seite": "long",
-   "menge": 1562.0,
-   "einstand": 0.10711542893725992,
-   "hebel": 1.0,
-   "marge": 0.0,
-   "eroeffnet": 1793459808.0862007,
-   "gebuehren": 0.0,
-   "funding": 0.0,
-   "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": null,
-   "wert": 167.31
   },
   {
    "id": "pc0b8a31d",
@@ -673,8 +641,8 @@
    "gebuehren": 0.17475,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.9815,
-   "wert": 166.77
+   "kurs": 0.9824999999999999,
+   "wert": 166.94
   },
   {
    "id": "p6a147c4d",
@@ -705,8 +673,8 @@
    "gebuehren": 0.95322,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.984,
-   "wert": 189.34
+   "kurs": 0.9835,
+   "wert": 189.15
   },
   {
    "id": "pca00edbf",
@@ -833,8 +801,8 @@
    "gebuehren": 0.0,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.9615,
-   "wert": 202.14
+   "kurs": 0.965,
+   "wert": 203.19
   },
   {
    "id": "p66f9a4ef",
@@ -897,7 +865,7 @@
    "gebuehren": 1.22092,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.74,
+   "kurs": 0.73,
    "wert": 139.68
   },
   {
@@ -1025,7 +993,7 @@
    "gebuehren": 0.0,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.9715,
+   "kurs": 0.971,
    "wert": 186.24
   },
   {
@@ -1057,8 +1025,8 @@
    "gebuehren": 1.35793,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.838,
-   "wert": 161.17
+   "kurs": 0.8325,
+   "wert": 159.39
   },
   {
    "id": "p88372306",
@@ -1121,8 +1089,8 @@
    "gebuehren": 3.94556,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.685,
-   "wert": 211.72
+   "kurs": 0.675,
+   "wert": 208.56
   },
   {
    "id": "p396ede21",
@@ -1153,7 +1121,7 @@
    "gebuehren": 0.24913,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.961,
+   "kurs": 0.9615,
    "wert": 161.51
   },
   {
@@ -1281,8 +1249,8 @@
    "gebuehren": 0.49949,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.8385,
-   "wert": 144.94
+   "kurs": 0.8394999999999999,
+   "wert": 145.46
   },
   {
    "id": "p9176f163",
@@ -1313,8 +1281,8 @@
    "gebuehren": 0.58474,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.8835,
-   "wert": 158.06
+   "kurs": 0.8845000000000001,
+   "wert": 158.24
   },
   {
    "id": "pbf73aed6",
@@ -1349,11 +1317,11 @@
    "wert": 179.74
   }
  ],
- "realisiert": -2939.28688,
+ "realisiert": -3106.60118,
  "gebuehren": 304.4894399999999,
  "funding": 0.0,
  "erstellt": 1793379225.5430336,
  "start_fx": 1.1157431109273288,
- "letzter_tick": 1795214471.4008648,
+ "letzter_tick": 1795215371.3360868,
  "kontrolle_bis": 1795201813.8054194
 }
