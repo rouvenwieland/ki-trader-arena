@@ -22,8 +22,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "d8e5f296a",
-   "kurs": 61461.485,
-   "wert": 567.08
+   "kurs": 61408.425,
+   "wert": 566.59
   },
   {
    "id": "p9a8fa083",
@@ -121,8 +121,8 @@
    "ausstiegsplan": "Halten bis Abrechnung 01.12.2026. Vorzeitiger Exit: BTC-Tagesschluss > 68.000 (These tot) oder JA-Ask > 0,65 vor dem 25.11. (dann ist die Prämie realisiert).",
    "entscheidung_id": "da966545b",
    "invalidierung": "BTC-Tagesschluss über 68.000 USD (dann ist die Barriere wieder >1,5σ weg und die Restzeit zu kurz) oder Binance-Low-Bestätigung des Monats ohne neuen Rücksetzer bis 25.11.",
-   "kurs": 0.745,
-   "wert": 2199.28
+   "kurs": 0.765,
+   "wert": 2258.72
   },
   {
    "id": "p4d7b7307",
@@ -151,7 +151,7 @@
  "funding": 0.0,
  "erstellt": 1793319819.7411644,
  "start_fx": 1.1184885798616961,
- "letzter_tick": 1795140913.835512,
+ "letzter_tick": 1795141813.5729406,
  "rebalancing": {
   "ziele": {
    "stock:SPY": {
