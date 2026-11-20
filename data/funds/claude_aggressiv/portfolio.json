@@ -2,31 +2,8 @@
  "fonds_id": "claude_aggressiv",
  "waehrung": "USD",
  "start_kapital": 11184.88579861696,
- "cash": 1793.785614682945,
+ "cash": 1759.3302488617846,
  "positionen": [
-  {
-   "id": "pd2738082",
-   "inst": {
-    "id": "stock:SPY",
-    "art": "stock",
-    "venue": "yahoo",
-    "symbol": "SPY"
-   },
-   "seite": "long",
-   "menge": 3.607551975278218,
-   "einstand": 748.4299653899693,
-   "hebel": 1.0,
-   "marge": 0.0,
-   "eroeffnet": 1793819410.3072414,
-   "gebuehren": 0.0,
-   "funding": 0.0,
-   "stop_loss": 700,
-   "ausstiegsplan": "Stop 700; Review nach CPI 10.11.",
-   "entscheidung_id": "d05f1cdc5",
-   "invalidierung": "SPY schließt unter 700",
-   "kurs": 700.75,
-   "wert": 2527.72
-  },
   {
    "id": "pe9dce5d9",
    "inst": {
@@ -47,8 +24,8 @@
    "ausstiegsplan": "Stop 93; sonst als defensiver Kern halten, Review nach CPI 10.11. und FOMC 9.12.",
    "entscheidung_id": "dd7ab6d3d",
    "invalidierung": "AGG unter 93",
-   "kurs": 96.11,
-   "wert": 797.13
+   "kurs": 96.09,
+   "wert": 796.97
   },
   {
    "id": "p02eb0d85",
@@ -68,8 +45,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "db90ee1de",
-   "kurs": 620.78,
-   "wert": 743.42
+   "kurs": 620.0,
+   "wert": 742.48
   },
   {
    "id": "p42b8ecdf",
@@ -89,8 +66,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "d174edec4",
-   "kurs": 100.63,
-   "wert": 2054.93
+   "kurs": 100.635,
+   "wert": 2055.03
   },
   {
    "id": "pb8af7395",
@@ -110,8 +87,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "d23f83a34",
-   "kurs": 323.215,
-   "wert": 1406.59
+   "kurs": 323.15,
+   "wert": 1406.31
   },
   {
    "id": "pfd1927c9",
@@ -131,16 +108,37 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "d174edec4",
-   "kurs": 59436.925,
-   "wert": 529.31
+   "kurs": 58899.395000000004,
+   "wert": 524.52
+  },
+  {
+   "id": "pb4ad69f6",
+   "inst": {
+    "id": "stock:SPY",
+    "art": "stock",
+    "venue": "yahoo",
+    "symbol": "SPY"
+   },
+   "seite": "long",
+   "menge": 3.6552560819060886,
+   "einstand": 700.2158398176772,
+   "hebel": 1.0,
+   "marge": 0.0,
+   "eroeffnet": 1795196301.0723605,
+   "gebuehren": 0.0,
+   "funding": 0.0,
+   "ausstiegsplan": "Rebalancing-Regel",
+   "entscheidung_id": "d174edec4",
+   "kurs": 700.07,
+   "wert": 2558.66
   }
  ],
- "realisiert": -728.487831921934,
+ "realisiert": -903.4749906025429,
  "gebuehren": 174.7875524639044,
  "funding": -0.6133053169464532,
  "erstellt": 1793319819.7411644,
  "start_fx": 1.1184885798616961,
- "letzter_tick": 1795195400.9180577,
+ "letzter_tick": 1795196301.0723605,
  "auftraege": [],
  "rebalancing": {
   "ziele": {
