@@ -2,7 +2,7 @@
  "fonds_id": "liga_kimi",
  "waehrung": "USD",
  "start_kapital": 11184.88579861696,
- "cash": 1744.0635074836637,
+ "cash": 2531.6920724917154,
  "positionen": [
   {
    "id": "p0b5ac550",
@@ -22,8 +22,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "d3af64508",
-   "kurs": 325.15,
-   "wert": 958.03
+   "kurs": 324.85,
+   "wert": 957.14
   },
   {
    "id": "p3e4bc435",
@@ -34,7 +34,7 @@
     "symbol": "SPY"
    },
    "seite": "long",
-   "menge": 5.101860416829628,
+   "menge": 3.987025491899417,
    "einstand": 758.8755307057621,
    "hebel": 1.0,
    "marge": 0.0,
@@ -43,8 +43,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "de59ece78",
-   "kurs": 706.3,
-   "wert": 3603.05
+   "kurs": 706.645,
+   "wert": 2817.11
   },
   {
    "id": "pb315f18b",
@@ -64,8 +64,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "de59ece78",
-   "kurs": 59333.395000000004,
-   "wert": 1772.42
+   "kurs": 59344.935,
+   "wert": 1772.77
   },
   {
    "id": "p5a2259b8",
@@ -125,8 +125,8 @@
    "ausstiegsplan": "Verkauf bei Wertverdopplung (BTC ~67–68k) oder Halten bis 25.12. Halbierung der Position, wenn BTC über 80k zurückkehrt (Theta-Bremse).",
    "entscheidung_id": "d0fe400cd",
    "invalidierung": "BTC schließt 3 Tage in Folge über 80k mit fallender realisierter Vola (Abwärtstrend gebrochen).",
-   "kurs": 12756.23595,
-   "wert": 3107.48
+   "kurs": 12152.353255,
+   "wert": 118.73
   },
   {
    "id": "p5a6a2ac6",
@@ -146,16 +146,16 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "d3af64508",
-   "kurs": 81.18,
-   "wert": 522.04
+   "kurs": 81.201,
+   "wert": 522.18
   }
  ],
- "realisiert": -593.8131354666724,
+ "realisiert": -652.205515764353,
  "gebuehren": 80.7105446698958,
  "funding": 0.0,
  "erstellt": 1793319819.7411644,
  "start_fx": 1.1184885798616961,
- "letzter_tick": 1795190900.8425887,
+ "letzter_tick": 1795191801.354555,
  "rebalancing": {
   "ziele": {
    "stock:SPY": {
