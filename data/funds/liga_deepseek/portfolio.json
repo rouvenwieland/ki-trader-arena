@@ -2,7 +2,7 @@
  "fonds_id": "liga_deepseek",
  "waehrung": "USD",
  "start_kapital": 11184.88579861696,
- "cash": 1969.0438713226029,
+ "cash": 2674.931871322603,
  "positionen": [
   {
    "id": "p3d319c8e",
@@ -111,12 +111,12 @@
     "url": "https://polymarket.com/event/what-price-will-bitcoin-hit-in-november-2026"
    },
    "seite": "long",
-   "menge": 2972.0,
+   "menge": 1972.0,
    "einstand": 0.4092871130551817,
    "hebel": 1.0,
    "marge": 0.0,
    "eroeffnet": 1794755589.1298704,
-   "gebuehren": 50.20493,
+   "gebuehren": 33.31228868102288,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis Abrechnung 01.12.2026. Vorzeitiger Exit: BTC-Tagesschluss > 68.000 (These tot) oder JA-Ask > 0,65 vor dem 25.11. (dann ist die Prämie realisiert).",
    "entscheidung_id": "da966545b",
@@ -146,8 +146,8 @@
    "wert": 581.83
   }
  ],
- "realisiert": -984.6393947115415,
- "gebuehren": 218.39055925396545,
+ "realisiert": -688.0385077667232,
+ "gebuehren": 232.50255925396544,
  "funding": 0.0,
  "erstellt": 1793319819.7411644,
  "start_fx": 1.1184885798616961,
@@ -161,7 +161,7 @@
      "venue": "yahoo",
      "symbol": "SPY"
     },
-    "anteil": 0.3
+    "anteil": 0.28
    },
    "stock:AGG": {
     "inst": {
@@ -201,8 +201,8 @@
    }
   },
   "schwelle_pp": 4.0,
-  "seit": 1795133821.7660065,
-  "entscheidung_id": "dfc080ac6"
+  "seit": 1795152974.1733098,
+  "entscheidung_id": "db23e95fb"
  },
  "auftraege": []
 }
