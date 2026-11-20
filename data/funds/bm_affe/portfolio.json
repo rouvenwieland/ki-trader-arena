@@ -2,29 +2,29 @@
  "fonds_id": "bm_affe",
  "waehrung": "USD",
  "start_kapital": 11184.88579861696,
- "cash": 2889.467654512815,
+ "cash": 4383.394198134727,
  "positionen": [
   {
-   "id": "p44876a6b",
+   "id": "pd137743e",
    "inst": {
-    "id": "spot:XRP-USD",
+    "id": "spot:ETH-USD",
     "art": "spot",
     "venue": "coinbase",
-    "symbol": "XRP-USD"
+    "symbol": "ETH-USD"
    },
    "seite": "long",
-   "menge": 2552.7765851417944,
-   "einstand": 0.9658440060187383,
+   "menge": 0.8525268563655449,
+   "einstand": 1757.3514,
    "hebel": 1.0,
    "marge": 0.0,
-   "eroeffnet": 1795046634.3174515,
-   "gebuehren": 14.793503780785114,
+   "eroeffnet": 1795133584.0548775,
+   "gebuehren": 8.989135587429535,
    "funding": 0.0,
-   "kurs": 0.95935,
-   "wert": 2448.88
+   "kurs": 1756.995,
+   "wert": 1497.88
   },
   {
-   "id": "p5ecc0d5d",
+   "id": "pf2b4e079",
    "inst": {
     "id": "spot:LINK-USD",
     "art": "spot",
@@ -32,41 +32,41 @@
     "symbol": "LINK-USD"
    },
    "seite": "long",
-   "menge": 263.1699085023281,
-   "einstand": 9.073171378771004,
+   "menge": 295.5774773872711,
+   "einstand": 9.0108018,
    "hebel": 1.0,
    "marge": 0.0,
-   "eroeffnet": 1795046634.3174515,
-   "gebuehren": 14.326714089462644,
+   "eroeffnet": 1795133584.0548775,
+   "gebuehren": 15.98034039168409,
    "funding": 0.0,
-   "kurs": 8.993500000000001,
-   "wert": 2366.69
+   "kurs": 9.006499999999999,
+   "wert": 2661.38
   },
   {
-   "id": "p8d92da37",
+   "id": "pf5f9d130",
    "inst": {
-    "id": "spot:AVAX-USD",
+    "id": "spot:SOL-USD",
     "art": "spot",
     "venue": "coinbase",
-    "symbol": "AVAX-USD"
+    "symbol": "SOL-USD"
    },
    "seite": "long",
-   "menge": 268.73766879860796,
-   "einstand": 7.019744050834232,
+   "menge": 13.363886719938444,
+   "einstand": 73.14462599999999,
    "hebel": 1.0,
    "marge": 0.0,
-   "eroeffnet": 1795046634.3174515,
-   "gebuehren": 11.318817910704531,
+   "eroeffnet": 1795133584.0548775,
+   "gebuehren": 5.864978976217584,
    "funding": 0.0,
-   "kurs": 6.9855,
-   "wert": 1877.13
+   "kurs": 73.12,
+   "wert": 977.03
   }
  ],
- "realisiert": -1082.6185961391534,
- "gebuehren": 901.557337439234,
+ "realisiert": -1158.6210684987582,
+ "gebuehren": 972.6161595442579,
  "funding": 0.0,
  "erstellt": 1793319819.7411644,
  "start_fx": 1.1184885798616961,
- "letzter_tick": 1795132683.8736277,
- "letzter_tag": "2026-11-19"
+ "letzter_tick": 1795133584.0548775,
+ "letzter_tag": "2026-11-20"
 }
