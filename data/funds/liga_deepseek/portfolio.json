@@ -2,7 +2,7 @@
  "fonds_id": "liga_deepseek",
  "waehrung": "USD",
  "start_kapital": 11184.88579861696,
- "cash": 4646.931871322603,
+ "cash": 4404.158671322603,
  "positionen": [
   {
    "id": "p3d319c8e",
@@ -110,10 +110,42 @@
    "entscheidung_id": "d960e1788",
    "kurs": 61.175,
    "wert": 584.47
+  },
+  {
+   "id": "p60eb9419",
+   "inst": {
+    "id": "pm:polymarket:701501:JA",
+    "art": "pm",
+    "venue": "polymarket",
+    "ergebnis": "JA",
+    "frage": "Will Bitcoin dip to $55,000 by December 31, 2026?",
+    "schliesst": 1798779600.0,
+    "ref": {
+     "id": "701501",
+     "token_ja": "115462087336983275104521488923966022755348986822352694745153736621832003960847",
+     "token_nein": "48849252416222520684793262794712201381742900852794310345084361317209768152557",
+     "tick": 0.01,
+     "condition": "0x752fa61c93f16c4b15e85b0bd438d9c684176b0ea7b319a84c8aca34616e8a8c",
+     "gebuehr_rate": 0.07,
+     "gebuehr_exp": 1.0
+    },
+    "url": "https://polymarket.com/event/what-price-will-bitcoin-hit-before-2027"
+   },
+   "seite": "long",
+   "menge": 400.0,
+   "einstand": 0.59,
+   "hebel": 1.0,
+   "marge": 0.0,
+   "eroeffnet": 1795194776.898575,
+   "gebuehren": 6.7732,
+   "funding": 0.0,
+   "ausstiegsplan": "Halten bis Abrechnung 31.12. Exit vor Abrechnung nur bei Invalidierung (BTC >65.000 Tagesschluss oder JA-Bid <0,40).",
+   "entscheidung_id": "d7fa33e5c",
+   "invalidierung": "BTC-Tagesschluss über 65.000 oder JA-Bid fällt unter 0,40"
   }
  ],
  "realisiert": 476.8473052884584,
- "gebuehren": 232.50255925396544,
+ "gebuehren": 239.27575925396545,
  "funding": 0.0,
  "erstellt": 1793319819.7411644,
  "start_fx": 1.1184885798616961,
@@ -127,7 +159,7 @@
      "venue": "yahoo",
      "symbol": "SPY"
     },
-    "anteil": 0.28
+    "anteil": 0.2
    },
    "stock:AGG": {
     "inst": {
@@ -136,7 +168,7 @@
      "venue": "yahoo",
      "symbol": "AGG"
     },
-    "anteil": 0.16
+    "anteil": 0.2
    },
    "stock:TLT": {
     "inst": {
@@ -145,7 +177,7 @@
      "venue": "yahoo",
      "symbol": "TLT"
     },
-    "anteil": 0.08
+    "anteil": 0.1
    },
    "spot:BTC-USD": {
     "inst": {
@@ -166,9 +198,9 @@
     "anteil": 0.06
    }
   },
-  "schwelle_pp": 4.0,
-  "seit": 1795152974.1733098,
-  "entscheidung_id": "db23e95fb"
+  "schwelle_pp": 3.0,
+  "seit": 1795194615.0116434,
+  "entscheidung_id": "d3ba3cad6"
  },
  "auftraege": []
 }
