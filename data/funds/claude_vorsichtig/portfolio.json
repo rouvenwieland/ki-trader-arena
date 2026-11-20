@@ -89,8 +89,8 @@
    "ausstiegsplan": "Kern halten; Stop 91,5; Rebalancing bei Abweichung >5pp.",
    "entscheidung_id": "d50916521",
    "invalidierung": "AGG schließt unter 91,5 oder 10J-Rendite >5,3 %",
-   "kurs": 96.185,
-   "wert": 1547.53
+   "kurs": 96.18,
+   "wert": 1547.45
   },
   {
    "id": "pd1046bd9",
@@ -112,8 +112,8 @@
    "ausstiegsplan": "Halten; Stop 74.",
    "entscheidung_id": "d123eb847",
    "invalidierung": "10J-Rendite schließt über 5,3 % / TLT unter 74",
-   "kurs": 81.455,
-   "wert": 529.6
+   "kurs": 81.475,
+   "wert": 529.73
   },
   {
    "id": "pabe784cb",
@@ -135,8 +135,8 @@
    "ausstiegsplan": "Halten als Kern; Stop 96.",
    "entscheidung_id": "d269c21b5",
    "invalidierung": "EFA unter 96 (Bruch der Aufwärtstrendstruktur, ~-9 %)",
-   "kurs": 96.195,
-   "wert": 482.34
+   "kurs": 96.045,
+   "wert": 481.59
   },
   {
    "id": "pbfa54762",
@@ -169,8 +169,8 @@
    "ausstiegsplan": "Halten bis zur Abrechnung. Vorzeitig verkaufen, wenn das NEIN-Bid 0,985 oder mehr erreicht oder die Invalidierung eintritt.",
    "entscheidung_id": "db3632f99",
    "invalidierung": "WTI-Frontmonat schließt über 120 USD, oder Hormuz wird vollständig gesperrt und Brent liegt über 130.",
-   "kurs": 0.9684999999999999,
-   "wert": 307.51
+   "kurs": 0.964,
+   "wert": 305.6
   },
   {
    "id": "p15600b5d",
@@ -190,8 +190,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "dea75aef6",
-   "kurs": 321.86,
-   "wert": 515.06
+   "kurs": 322.111,
+   "wert": 515.46
   },
   {
    "id": "p6ba61024",
@@ -211,8 +211,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "dea75aef6",
-   "kurs": 691.05,
-   "wert": 1290.91
+   "kurs": 686.83,
+   "wert": 1283.02
   }
  ],
  "realisiert": -335.75305445343827,
@@ -220,7 +220,7 @@
  "funding": 0.0,
  "erstellt": 1793319819.7411644,
  "start_fx": 1.1184885798616961,
- "letzter_tick": 1795207271.3313863,
+ "letzter_tick": 1795208171.3116617,
  "auftraege": [],
  "rebalancing": {
   "ziele": {
