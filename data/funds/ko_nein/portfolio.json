@@ -193,7 +193,7 @@
    "gebuehren": 1.04341,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.39,
+   "kurs": 0.385,
    "wert": 69.16
   },
   {
@@ -419,38 +419,6 @@
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
    "kurs": 0.835,
    "wert": 166.83
-  },
-  {
-   "id": "pbb214a3d",
-   "inst": {
-    "id": "pm:polymarket:5699280:NEIN",
-    "art": "pm",
-    "venue": "polymarket",
-    "ergebnis": "NEIN",
-    "frage": "Will Core CPI YoY be 2.6% in October?",
-    "schliesst": 1794373140.0,
-    "ref": {
-     "id": "5699280",
-     "token_ja": "9873910259704424307458162939844325223161200217249020796015555258386412710572",
-     "token_nein": "89727095687649385667046388471288254734444655377197465615517683133911414929186",
-     "tick": 0.01,
-     "condition": "0xcea0374b1560a26e2e37833e234793f456845c1368891047bf9db07e44b13852",
-     "gebuehr_rate": 0.0,
-     "gebuehr_exp": 1.0
-    },
-    "url": "https://polymarket.com/event/will-core-cpi-yoy-be-2pt6-in-october-2026"
-   },
-   "seite": "long",
-   "menge": 367.0,
-   "einstand": 0.4558692098092642,
-   "hebel": 1.0,
-   "marge": 0.0,
-   "eroeffnet": 1793503484.642243,
-   "gebuehren": 0.0,
-   "funding": 0.0,
-   "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": null,
-   "wert": 167.3
   },
   {
    "id": "pd54b5964",
@@ -737,8 +705,8 @@
    "gebuehren": 1.73366,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.895,
-   "wert": 183.92
+   "kurs": 0.9,
+   "wert": 186.01
   },
   {
    "id": "p8bf269d8",
@@ -801,7 +769,7 @@
    "gebuehren": 0.0,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.967,
+   "kurs": 0.9664999999999999,
    "wert": 203.83
   },
   {
@@ -961,8 +929,8 @@
    "gebuehren": 0.39931,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.9655,
-   "wert": 170.27
+   "kurs": 0.9624999999999999,
+   "wert": 169.39
   },
   {
    "id": "pf2dd9992",
@@ -1025,8 +993,8 @@
    "gebuehren": 1.35793,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.8275,
-   "wert": 153.65
+   "kurs": 0.835,
+   "wert": 158.6
   },
   {
    "id": "p88372306",
@@ -1121,8 +1089,8 @@
    "gebuehren": 0.24913,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.9715,
-   "wert": 164.95
+   "kurs": 0.9704999999999999,
+   "wert": 164.6
   },
   {
    "id": "p766850e1",
@@ -1249,8 +1217,8 @@
    "gebuehren": 0.49949,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.8414999999999999,
-   "wert": 146.16
+   "kurs": 0.8445,
+   "wert": 146.68
   },
   {
    "id": "p9176f163",
@@ -1281,8 +1249,8 @@
    "gebuehren": 0.58474,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.8835,
-   "wert": 158.06
+   "kurs": 0.888,
+   "wert": 158.77
   },
   {
    "id": "pbf73aed6",
@@ -1317,11 +1285,11 @@
    "wert": 179.74
   }
  ],
- "realisiert": -3106.60118,
+ "realisiert": -3273.90518,
  "gebuehren": 304.4894399999999,
  "funding": 0.0,
  "erstellt": 1793379225.5430336,
  "start_fx": 1.1157431109273288,
- "letzter_tick": 1795223471.4513853,
+ "letzter_tick": 1795224371.8708105,
  "kontrolle_bis": 1795201813.8054194
 }
