@@ -66,8 +66,8 @@
    "ausstiegsplan": "Halten bis 9.12.; Verkauf, wenn NEIN-Bid >0,55 oder bei Invalidierung.",
    "entscheidung_id": "d25f2be12",
    "invalidierung": "Fed-Signale (Warsh/Williams/Jefferson) für klaren Hike mit breitem Konsens, oder CME-Hike >90 % ohne Tauben-Widerspruch.",
-   "kurs": 0.37,
-   "wert": 193.68
+   "kurs": 0.345,
+   "wert": 172.16
   },
   {
    "id": "pbcdb744c",
@@ -146,8 +146,8 @@
    "ausstiegsplan": "Halten bis zur Abrechnung. Vorzeitig verkaufen, wenn das NEIN-Bid 0,985 oder mehr erreicht oder die Invalidierung eintritt.",
    "entscheidung_id": "db3632f99",
    "invalidierung": "WTI-Frontmonat schließt über 120 USD, oder Hormuz wird vollständig gesperrt und Brent liegt über 130.",
-   "kurs": 0.9655,
-   "wert": 305.92
+   "kurs": 0.9575,
+   "wert": 302.1
   },
   {
    "id": "p15600b5d",
@@ -197,7 +197,7 @@
  "funding": 0.0,
  "erstellt": 1793319819.7411644,
  "start_fx": 1.1184885798616961,
- "letzter_tick": 1795240833.7565448,
+ "letzter_tick": 1795241734.1884668,
  "auftraege": [],
  "rebalancing": {
   "ziele": {
