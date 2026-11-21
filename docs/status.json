@@ -1,6 +1,6 @@
 {
  "version": 1,
- "stand": 1795230138.1307795,
+ "stand": 1795230338.2402909,
  "hinweis": "Papierhandel-Simulation, keine Anlageberatung",
  "seite": "https://rouvenwieland.github.io/ki-trader-arena/",
  "budget": {
@@ -444,8 +444,8 @@
    "rendite_pct": -3.75,
    "equity_eur": 9813.57,
    "max_drawdown_pct": -6.34,
-   "status": "vorübergehend gestört (Anbieter überlastet) – nächster Versuch beim nächsten Lauf",
-   "modell": "gemini-2.5-flash",
+   "status": "Fehler: Modellfehler: models/nano-banana-pro-preview: keine Antwort (HTTP 429 [{\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your cur",
+   "modell": "models/nano-banana-pro-preview",
    "kosten_heute_eur": 0.0,
    "kosten_gesamt_eur": 38.016,
    "rendite_ki_pct": [
@@ -503,8 +503,8 @@
    "rendite_pct": -4.48,
    "equity_eur": 9714.23,
    "max_drawdown_pct": -11.64,
-   "status": "Fehler: Modellfehler: models/nano-banana-pro-preview: keine Antwort (HTTP 429 [{\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your cur",
-   "modell": "models/nano-banana-pro-preview",
+   "status": "Fehler: Modellfehler: gemini-flash-latest: keine Antwort (HTTP 429 [{\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota,",
+   "modell": "gemini-flash-latest",
    "kosten_heute_eur": 0.0,
    "kosten_gesamt_eur": 35.8,
    "rendite_ki_pct": [
@@ -798,7 +798,7 @@
    "rendite_pct": -9.24,
    "equity_eur": 9253.13,
    "max_drawdown_pct": -11.71,
-   "status": "Fehler: Modellfehler: gemini-flash-latest: keine Antwort (HTTP 429 [{\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota,",
+   "status": "Fehler: FileNotFoundError",
    "modell": "gemini-flash-latest",
    "kosten_heute_eur": 0.0,
    "kosten_gesamt_eur": 37.936,
@@ -857,7 +857,7 @@
    "rendite_pct": -12.49,
    "equity_eur": 8922.09,
    "max_drawdown_pct": -24.83,
-   "status": "Fehler: Modellfehler: models/nano-banana-pro-preview: keine Antwort (HTTP 429 [{\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your cur",
+   "status": "Fehler: FileNotFoundError",
    "modell": "models/nano-banana-pro-preview",
    "kosten_heute_eur": 0.0,
    "kosten_gesamt_eur": 37.056,
