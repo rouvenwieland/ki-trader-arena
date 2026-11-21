@@ -2,7 +2,7 @@
  "fonds_id": "liga_deepseek",
  "waehrung": "USD",
  "start_kapital": 11184.88579861696,
- "cash": 4157.783473280316,
+ "cash": 3804.51709132217,
  "positionen": [
   {
    "id": "p3d319c8e",
@@ -13,12 +13,12 @@
     "symbol": "BTC-USD"
    },
    "seite": "long",
-   "menge": 0.013327782256562105,
+   "menge": 0.013127782256562104,
    "einstand": 73459.21814170136,
    "hebel": 1.0,
    "marge": 0.0,
    "eroeffnet": 1793819896.6280587,
-   "gebuehren": 5.874290784779355,
+   "gebuehren": 5.786139723009313,
    "funding": 0.0,
    "ausstiegsplan": "Halten als Kern-Baustein gemäß Rebalancing-Regel (Ziel 7%). Trim bei BTC über 68.000 (Zielüberschreitung) oder Verkauf bei Tagesschluss unter 52.000 (Invalidierung der Kern-These, dann Cash).",
    "entscheidung_id": "d6d5e7a8d",
@@ -133,22 +133,22 @@
     "url": "https://polymarket.com/event/what-price-will-bitcoin-hit-before-2027"
    },
    "seite": "long",
-   "menge": 400.0,
-   "einstand": 0.59,
+   "menge": 800.0,
+   "einstand": 0.75,
    "hebel": 1.0,
    "marge": 0.0,
    "eroeffnet": 1795194776.898575,
-   "gebuehren": 6.7732,
+   "gebuehren": 7.1008000000000004,
    "funding": 0.0,
-   "ausstiegsplan": "Halten bis Abrechnung 31.12. Exit vor Abrechnung nur bei Invalidierung (BTC >65.000 Tagesschluss oder JA-Bid <0,40).",
-   "entscheidung_id": "d7fa33e5c",
-   "invalidierung": "BTC-Tagesschluss über 65.000 oder JA-Bid fällt unter 0,40",
+   "ausstiegsplan": "Halten bis Abrechnung 31.12.2026 (oder Auflösung beim ersten Binance-1m-Low ≤55.000). Kein Verkauf vorher: 1,68c Gebühr + 1c Spread auf 9c Upside wären zu teuer.",
+   "entscheidung_id": "d6fe1a43e",
+   "invalidierung": "Binance-1m-Low erreicht 55.000 nicht bis 31.12. — konkret: BTC steigt über 62.000 und bleibt 5 Tage darüber bei fallender realisierter Vola unter 40% p.a.",
    "kurs": 0.905,
    "wert": 360.0
   }
  ],
- "realisiert": 428.11470747357396,
- "gebuehren": 240.70717078477935,
+ "realisiert": 424.4840818870881,
+ "gebuehren": 241.10153870052494,
  "funding": 0.0,
  "erstellt": 1793319819.7411644,
  "start_fx": 1.1184885798616961,
@@ -162,7 +162,7 @@
      "venue": "yahoo",
      "symbol": "SPY"
     },
-    "anteil": 0.2
+    "anteil": 0.18
    },
    "stock:AGG": {
     "inst": {
@@ -182,15 +182,6 @@
     },
     "anteil": 0.1
    },
-   "spot:BTC-USD": {
-    "inst": {
-     "id": "spot:BTC-USD",
-     "art": "spot",
-     "venue": "coinbase",
-     "symbol": "BTC-USD"
-    },
-    "anteil": 0.06
-   },
    "stock:XLE": {
     "inst": {
      "id": "stock:XLE",
@@ -199,11 +190,20 @@
      "symbol": "XLE"
     },
     "anteil": 0.06
+   },
+   "spot:BTC-USD": {
+    "inst": {
+     "id": "spot:BTC-USD",
+     "art": "spot",
+     "venue": "coinbase",
+     "symbol": "BTC-USD"
+    },
+    "anteil": 0.07
    }
   },
   "schwelle_pp": 3.0,
-  "seit": 1795194615.0116434,
-  "entscheidung_id": "d3ba3cad6"
+  "seit": 1795240944.1522238,
+  "entscheidung_id": "dcbd11b6e"
  },
  "auftraege": []
 }

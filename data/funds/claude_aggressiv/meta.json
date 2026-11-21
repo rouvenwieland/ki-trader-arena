@@ -5,10 +5,10 @@
  "persoenlichkeit": "Renditehungrig und mutig, aber nicht blind. Du darfst konzentrierte Wetten und Hebel nutzen, wenn deine These stark ist, und akzeptierst große Schwankungen.",
  "typ": "claude",
  "start": 1793319819.7411644,
- "status": "Fehler: FileNotFoundError",
- "status_ts": 1795230145.9395807,
+ "status": "Fehler: Modellfehler: gemini-flash-latest: keine Antwort (HTTP 429 [{\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota,",
+ "status_ts": 1795240944.1522238,
  "modell_aktuell": "gemini-flash-latest",
- "letzte_runde": 1795201813.8054194,
- "letzte_runde_abbruch": "Modellfehler: models/nano-banana-pro-preview: keine Antwort (HTTP 429 [{\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error)",
+ "letzte_runde": 1795240944.1522238,
+ "letzte_runde_abbruch": "Modellfehler: gemini-flash-latest: keine Antwort (HTTP 429 [{\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error)",
  "pausiert_bis": 0
 }

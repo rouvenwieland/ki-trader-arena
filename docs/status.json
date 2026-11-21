@@ -1,6 +1,6 @@
 {
  "version": 1,
- "stand": 1795240936.6069689,
+ "stand": 1795241277.1854758,
  "hinweis": "Papierhandel-Simulation, keine Anlageberatung",
  "seite": "https://rouvenwieland.github.io/ki-trader-arena/",
  "budget": {
@@ -444,7 +444,7 @@
    "rendite_pct": -3.78,
    "equity_eur": 9811.69,
    "max_drawdown_pct": -6.34,
-   "status": "Fehler: Modellfehler: models/nano-banana-pro-preview: keine Antwort (HTTP 429 [{\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your cur",
+   "status": "Fehler: Modellfehler: gemini-flash-latest: keine Antwort (HTTP 429 [{\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota,",
    "modell": "gemini-flash-latest",
    "kosten_heute_eur": 0.0,
    "kosten_gesamt_eur": 38.019,
@@ -798,7 +798,7 @@
    "rendite_pct": -9.76,
    "equity_eur": 9201.78,
    "max_drawdown_pct": -12.06,
-   "status": "Fehler: FileNotFoundError",
+   "status": "Fehler: Modellfehler: gemini-flash-latest: keine Antwort (HTTP 429 [{\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota,",
    "modell": "gemini-flash-latest",
    "kosten_heute_eur": 0.0,
    "kosten_gesamt_eur": 37.94,
@@ -857,7 +857,7 @@
    "rendite_pct": -12.71,
    "equity_eur": 8900.81,
    "max_drawdown_pct": -24.83,
-   "status": "Fehler: FileNotFoundError",
+   "status": "Fehler: Modellfehler: gemini-flash-latest: keine Antwort (HTTP 429 [{\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota,",
    "modell": "gemini-flash-latest",
    "kosten_heute_eur": 0.0,
    "kosten_gesamt_eur": 37.06,
@@ -1218,6 +1218,27 @@
  ],
  "letzte_entscheidungen": [
   {
+   "ts": 1795241103.2822905,
+   "fonds": "DeepSeek",
+   "instrument": "spot:BTC-USD",
+   "aktion": "verkaufen",
+   "zuversicht": 0.5
+  },
+  {
+   "ts": 1795241100.4573843,
+   "fonds": "DeepSeek",
+   "instrument": "pm:polymarket:701501:JA",
+   "aktion": "kaufen",
+   "zuversicht": 0.8
+  },
+  {
+   "ts": 1795241096.7997222,
+   "fonds": "DeepSeek",
+   "instrument": "pm:polymarket:701501:JA",
+   "aktion": "kaufen",
+   "zuversicht": 0.8
+  },
+  {
    "ts": 1795201959.8144479,
    "fonds": "DeepSeek",
    "instrument": "spot:BTC-USD",
@@ -1251,27 +1272,6 @@
    "instrument": "stock:TLT",
    "aktion": "verkaufen",
    "zuversicht": 0.6
-  },
-  {
-   "ts": 1795067727.9617531,
-   "fonds": "DeepSeek",
-   "instrument": "stock:SPY",
-   "aktion": "kaufen",
-   "zuversicht": 0.55
-  },
-  {
-   "ts": 1795028797.9996536,
-   "fonds": "DeepSeek",
-   "instrument": "stock:SPY",
-   "aktion": "kaufen",
-   "zuversicht": 0.55
-  },
-  {
-   "ts": 1795014243.6859934,
-   "fonds": "DeepSeek",
-   "instrument": "pm:polymarket:7074444:JA",
-   "aktion": "kaufen",
-   "zuversicht": 0.75
   }
  ],
  "ereignisse": [
