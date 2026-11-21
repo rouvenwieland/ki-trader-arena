@@ -6,9 +6,9 @@
  "typ": "claude",
  "start": 1793319819.7411644,
  "status": "vorübergehend gestört (Anbieter überlastet) – nächster Versuch beim nächsten Lauf",
- "status_ts": 1795251946.2312706,
+ "status_ts": 1795273571.5562906,
  "modell_aktuell": "gemini-2.5-flash",
- "letzte_runde": 1795251946.2312706,
+ "letzte_runde": 1795273571.5562906,
  "letzte_runde_abbruch": "Modellfehler: gemini-2.5-flash: keine Antwort (HTTP 503 [{\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again late)",
  "pausiert_bis": 0
 }
