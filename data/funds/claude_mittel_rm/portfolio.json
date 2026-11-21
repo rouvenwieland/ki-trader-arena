@@ -69,8 +69,8 @@
    "ausstiegsplan": "Halten bis 31.12.; Gewinnmitnahme ≥0,93 oder Neubewertung nach NVDA-Earnings 17./19.11.",
    "entscheidung_id": "dce9924e1",
    "invalidierung": "NVDA-Marktkap > Apple −10 % (NVDA >~210 bei Apple ~355) oder Apple −20 % binnen Tagen",
-   "kurs": 0.94,
-   "wert": 1254.5
+   "kurs": 0.9404999999999999,
+   "wert": 1255.84
   },
   {
    "id": "pa832233e",
@@ -99,40 +99,6 @@
    "invalidierung": "PSL oder Polen 2050 verlassen die Koalition bzw. unterstützen ein Misstrauensvotum; Tusk kündigt Rücktritt/Vertrauensfrage an.",
    "kurs": 0.9480360429028362,
    "wert": 501.45
-  },
-  {
-   "id": "p77177258",
-   "inst": {
-    "id": "pm:polymarket:6507390:NEIN",
-    "art": "pm",
-    "venue": "polymarket",
-    "ergebnis": "NEIN",
-    "frage": "Will Bitcoin dip to $57,500 in November?",
-    "schliesst": 1796101200.0,
-    "ref": {
-     "id": "6507390",
-     "token_ja": "62104054092941340976580469137816666615613969504677668715742709707923994448385",
-     "token_nein": "12268523315545143833722445765332176278110447356369636927370449912563920315387",
-     "tick": 0.001,
-     "condition": "0xea8456818e462ddd25a436cf4e47ddff428e28b64ae3624957ae968012bf9787",
-     "gebuehr_rate": 0.07,
-     "gebuehr_exp": 1.0
-    },
-    "url": "https://polymarket.com/event/what-price-will-bitcoin-hit-in-november-2026"
-   },
-   "seite": "long",
-   "menge": 313.0,
-   "einstand": 0.953,
-   "hebel": 1.0,
-   "marge": 0.0,
-   "eroeffnet": 1793646182.4236948,
-   "gebuehren": 0.98137,
-   "funding": 0.0,
-   "ausstiegsplan": "Halten bis 30.11.; verkaufen, wenn BTC unter 64.000 fällt oder NEIN-Preis <0.88.",
-   "entscheidung_id": "d7dbfc08f",
-   "invalidierung": "BTC Binance unter 64.000 oder DVOL >60",
-   "kurs": null,
-   "wert": 298.29
   },
   {
    "id": "pea9d23a3",
@@ -173,8 +139,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "dd6456776",
-   "kurs": 56687.205,
-   "wert": 804.46
+   "kurs": 56682.045,
+   "wert": 804.38
   },
   {
    "id": "p994b6370",
@@ -352,7 +318,7 @@
    "entscheidung_id": "d6b155dae",
    "invalidierung": "Doomsday Freitagsumsatz inkl. Previews >$200M am 18.12. oder Doomsday-Domestic nach 7 Tagen >$600M.",
    "kurs": 0.9055,
-   "wert": 444.77
+   "wert": 445.26
   },
   {
    "id": "p75b03ffe",
@@ -418,8 +384,8 @@
    "ausstiegsplan": "Bis Vereidigung halten; schließen, wenn beide Beine zusammen ≥0.97 verkaufbar.",
    "entscheidung_id": "d5f5d56d9",
    "invalidierung": "Nachweislich abweichende PredictIt-Regel, die Eisenkot-JA bei PredictIt und NEIN bei Polymarket zulässt.",
-   "kurs": 0.669,
-   "wert": 466.9
+   "kurs": 0.663,
+   "wert": 463.4
   },
   {
    "id": "p2567180c",
@@ -546,12 +512,12 @@
    "wert": 37.91
   }
  ],
- "realisiert": -255.90298068300046,
+ "realisiert": -554.1919806830005,
  "gebuehren": 59.73851633920157,
  "funding": 0.0,
  "erstellt": 1793380123.8861866,
  "start_fx": 1.1156327353966788,
- "letzter_tick": 1795232734.1814427,
+ "letzter_tick": 1795233634.0326781,
  "auftraege": [],
  "rebalancing": {
   "ziele": {
