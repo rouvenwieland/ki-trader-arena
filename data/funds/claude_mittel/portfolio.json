@@ -230,8 +230,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "d6e1a7002",
-   "kurs": 60697.785,
-   "wert": 998.89
+   "kurs": 60695.024999999994,
+   "wert": 998.85
   },
   {
    "id": "pe3015b77",
@@ -251,8 +251,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "d6e1a7002",
-   "kurs": 1702.96,
-   "wert": 386.48
+   "kurs": 1702.865,
+   "wert": 386.46
   },
   {
    "id": "p1ad6082a",
@@ -408,8 +408,8 @@
    "ausstiegsplan": "Halten bis zur Abrechnung am 31.12. Gewinn mitnehmen, wenn der NEIN-Bid ≥0,80 ist. Bei der Invalidierungsmeldung sofort schließen.",
    "entscheidung_id": "d4c6b2267",
    "invalidierung": "Glaubwürdige Berichte (WSJ/Bloomberg), dass das Board kurz vor der Ernennung eines permanenten CEO steht oder Kress dauerhaft macht. Ebenso eine Aussage im Call vom 17.11., die Suche solle 'within weeks' abgeschlossen sein.",
-   "kurs": 0.855,
-   "wert": 40.8
+   "kurs": 0.845,
+   "wert": 40.32
   }
  ],
  "realisiert": -156.48984972441798,
@@ -417,7 +417,7 @@
  "funding": 0.0,
  "erstellt": 1793319819.7411644,
  "start_fx": 1.1184885798616961,
- "letzter_tick": 1795352604.2350774,
+ "letzter_tick": 1795353503.6555984,
  "auftraege": [
   {
    "id": "a4e7a61",
@@ -452,7 +452,7 @@
    "ausstiegsplan": "",
    "invalidierung": "",
    "erstellt": 1794409480.899957,
-   "geprueft_bis": 1795352604.2350774,
+   "geprueft_bis": 1795353503.6555984,
    "gueltig_bis": 1797001480.899957
   }
  ],
