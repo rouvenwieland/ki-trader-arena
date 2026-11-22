@@ -22,8 +22,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Halten als Kern-Baustein gemäß Rebalancing-Regel (Ziel 7%). Trim bei BTC über 68.000 (Zielüberschreitung) oder Verkauf bei Tagesschluss unter 52.000 (Invalidierung der Kern-These, dann Cash).",
    "entscheidung_id": "d6d5e7a8d",
-   "kurs": 60879.865000000005,
-   "wert": 799.22,
+   "kurs": 60835.524999999994,
+   "wert": 798.64,
    "invalidierung": "BTC-Tagesschluss unter 52.000 (neue Bärenmarkttiefe, dann ist die 7%-Kernquote zu hoch)."
   },
   {
@@ -143,7 +143,7 @@
    "ausstiegsplan": "Halten bis Abrechnung 31.12.2026 (oder Auflösung beim ersten Binance-1m-Low ≤55.000). Kein Verkauf vorher: 1,68c Gebühr + 1c Spread auf 9c Upside wären zu teuer.",
    "entscheidung_id": "d6fe1a43e",
    "invalidierung": "Binance-1m-Low erreicht 55.000 nicht bis 31.12. — konkret: BTC steigt über 62.000 und bleibt 5 Tage darüber bei fallender realisierter Vola unter 40% p.a.",
-   "kurs": 0.545,
+   "kurs": 0.55,
    "wert": 432.0
   }
  ],
@@ -152,7 +152,7 @@
  "funding": 0.0,
  "erstellt": 1793319819.7411644,
  "start_fx": 1.1184885798616961,
- "letzter_tick": 1795347097.532009,
+ "letzter_tick": 1795347998.082433,
  "rebalancing": {
   "ziele": {
    "stock:SPY": {
