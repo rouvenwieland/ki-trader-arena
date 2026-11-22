@@ -2,52 +2,33 @@
  "fonds_id": "bm_affe",
  "waehrung": "USD",
  "start_kapital": 11184.88579861696,
- "cash": 6213.641313213334,
+ "cash": 6905.042109075193,
  "positionen": [
   {
-   "id": "p4113ee4c",
+   "id": "p35e7882b",
    "inst": {
-    "id": "spot:XRP-USD",
+    "id": "spot:SOL-USD",
     "art": "spot",
     "venue": "coinbase",
-    "symbol": "XRP-USD"
+    "symbol": "SOL-USD"
    },
    "seite": "long",
-   "menge": 1781.5569629506065,
-   "einstand": 0.90958188,
+   "menge": 32.420953917511554,
+   "einstand": 70.25675781422193,
    "hebel": 1.0,
    "marge": 0.0,
-   "eroeffnet": 1795219870.4680417,
-   "gebuehren": 9.722831590126217,
+   "eroeffnet": 1795306258.043249,
+   "gebuehren": 13.666746644931953,
    "funding": 0.0,
-   "kurs": 0.93105,
-   "wert": 1658.63
-  },
-  {
-   "id": "pe178a55e",
-   "inst": {
-    "id": "spot:DOGE-USD",
-    "art": "spot",
-    "venue": "coinbase",
-    "symbol": "DOGE-USD"
-   },
-   "seite": "long",
-   "menge": 24371.67471698922,
-   "einstand": 0.054222056428875454,
-   "hebel": 1.0,
-   "marge": 0.0,
-   "eroeffnet": 1795219870.4680417,
-   "gebuehren": 7.928893930624721,
-   "funding": 0.0,
-   "kurs": 0.055185,
-   "wert": 1344.83
+   "kurs": 70.24000000000001,
+   "wert": 2276.92
   }
  ],
- "realisiert": -1507.8438003294448,
- "gebuehren": 1019.1804791941306,
+ "realisiert": -1466.9394037924833,
+ "gebuehren": 1050.852408837023,
  "funding": 0.0,
  "erstellt": 1793319819.7411644,
  "start_fx": 1.1184885798616961,
- "letzter_tick": 1795305358.3281064,
- "letzter_tag": "2026-11-21"
+ "letzter_tick": 1795306258.043249,
+ "letzter_tag": "2026-11-22"
 }
