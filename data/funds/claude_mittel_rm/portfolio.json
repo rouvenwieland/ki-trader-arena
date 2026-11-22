@@ -35,8 +35,8 @@
    "ausstiegsplan": "Halten bis Abrechnung 31.12.; vorzeitig verkaufen, wenn NEIN-Preis auf ≥0.62 steigt (Gewinn mitnehmen) oder unter 0.38 fällt.",
    "entscheidung_id": "dbf84bba3",
    "invalidierung": "NVDA schließt wieder dauerhaft über Apple-Marktkap (NVDA >~210 bei AAPL ~343) oder starke NVDA-Zahlen mit Rally >8%; dann neu bewerten/verkaufen.",
-   "kurs": 0.9675,
-   "wert": 536.08
+   "kurs": 0.968,
+   "wert": 536.64
   },
   {
    "id": "pbb4d5e0c",
@@ -139,8 +139,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "dd6456776",
-   "kurs": 60207.955,
-   "wert": 854.42
+   "kurs": 60041.435,
+   "wert": 852.06
   },
   {
    "id": "p994b6370",
@@ -517,7 +517,7 @@
  "funding": 0.0,
  "erstellt": 1793380123.8861866,
  "start_fx": 1.1156327353966788,
- "letzter_tick": 1795308057.9436946,
+ "letzter_tick": 1795308958.0095549,
  "auftraege": [],
  "rebalancing": {
   "ziele": {
