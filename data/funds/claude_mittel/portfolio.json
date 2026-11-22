@@ -230,8 +230,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "d6e1a7002",
-   "kurs": 61239.925,
-   "wert": 1007.81
+   "kurs": 61013.195,
+   "wert": 1004.08
   },
   {
    "id": "pe3015b77",
@@ -251,8 +251,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "d6e1a7002",
-   "kurs": 1721.25,
-   "wert": 390.63
+   "kurs": 1716.2849999999999,
+   "wert": 389.52
   },
   {
    "id": "p1ad6082a",
@@ -417,7 +417,7 @@
  "funding": 0.0,
  "erstellt": 1793319819.7411644,
  "start_fx": 1.1184885798616961,
- "letzter_tick": 1795366103.4915993,
+ "letzter_tick": 1795367004.2150753,
  "auftraege": [
   {
    "id": "a4e7a61",
@@ -452,7 +452,7 @@
    "ausstiegsplan": "",
    "invalidierung": "",
    "erstellt": 1794409480.899957,
-   "geprueft_bis": 1795366103.4915993,
+   "geprueft_bis": 1795367004.2150753,
    "gueltig_bis": 1797001480.899957
   }
  ],
