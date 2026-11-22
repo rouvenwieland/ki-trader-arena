@@ -69,7 +69,7 @@
    "ausstiegsplan": "Halten bis 31.12.; Gewinnmitnahme ≥0,93 oder Neubewertung nach NVDA-Earnings 17./19.11.",
    "entscheidung_id": "dce9924e1",
    "invalidierung": "NVDA-Marktkap > Apple −10 % (NVDA >~210 bei Apple ~355) oder Apple −20 % binnen Tagen",
-   "kurs": 0.9375,
+   "kurs": 0.9365,
    "wert": 1249.16
   },
   {
@@ -139,8 +139,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "dd6456776",
-   "kurs": 59732.345,
-   "wert": 847.67
+   "kurs": 59573.835,
+   "wert": 845.42
   },
   {
    "id": "p994b6370",
@@ -261,8 +261,8 @@
    "ausstiegsplan": "Halten bis Wahl April 2027; teilweise verkaufen wenn NEIN ≥0.72 oder Le Pen-Preis ≤0.30; neu bewerten bei Umfragen Stichwahl Le Pen vs. Philippe/Mitte >55 % für RN.",
    "entscheidung_id": "dc6f84fd5",
    "invalidierung": "Seriöse Stichwahl-Umfragen (Ifop, Elabe) zeigen RN-Kandidat dauerhaft ≥54 % gegen jeden Gegner, oder Preis Le Pen JA ≥0.55.",
-   "kurs": 0.5325,
-   "wert": 168.11
+   "kurs": 0.532,
+   "wert": 167.8
   },
   {
    "id": "p8b2743ca",
@@ -517,7 +517,7 @@
  "funding": 0.0,
  "erstellt": 1793380123.8861866,
  "start_fx": 1.1156327353966788,
- "letzter_tick": 1795314357.571739,
+ "letzter_tick": 1795315258.3844144,
  "auftraege": [],
  "rebalancing": {
   "ziele": {
