@@ -230,8 +230,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "d6e1a7002",
-   "kurs": 59150.015,
-   "wert": 973.42
+   "kurs": 59170.375,
+   "wert": 973.76
   },
   {
    "id": "pe3015b77",
@@ -251,8 +251,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "d6e1a7002",
-   "kurs": 1658.775,
-   "wert": 376.46
+   "kurs": 1659.745,
+   "wert": 376.67
   },
   {
    "id": "p1ad6082a",
@@ -318,7 +318,7 @@
    "ausstiegsplan": "Gewinn mitnehmen bei NEIN-Bid ≥0.78 (=P). Nach NVDA-Earnings neu rechnen. Sonst halten bis 31.12.",
    "entscheidung_id": "d1fa25bbb",
    "invalidierung": "NVDA-Marktkapitalisierung innerhalb 5 % von Apple (z. B. NVDA ≥200 bei AAPL ~349) nach den Earnings, oder NVDA-JA ≥0.45.",
-   "kurs": 0.9675,
+   "kurs": 0.967,
    "wert": 410.88
   },
   {
@@ -408,7 +408,7 @@
    "ausstiegsplan": "Halten bis zur Abrechnung am 31.12. Gewinn mitnehmen, wenn der NEIN-Bid ≥0,80 ist. Bei der Invalidierungsmeldung sofort schließen.",
    "entscheidung_id": "d4c6b2267",
    "invalidierung": "Glaubwürdige Berichte (WSJ/Bloomberg), dass das Board kurz vor der Ernennung eines permanenten CEO steht oder Kress dauerhaft macht. Ebenso eine Aussage im Call vom 17.11., die Suche solle 'within weeks' abgeschlossen sein.",
-   "kurs": 0.85,
+   "kurs": 0.845,
    "wert": 40.32
   }
  ],
@@ -417,7 +417,7 @@
  "funding": 0.0,
  "erstellt": 1793319819.7411644,
  "start_fx": 1.1184885798616961,
- "letzter_tick": 1795321680.309578,
+ "letzter_tick": 1795322581.278139,
  "auftraege": [
   {
    "id": "a4e7a61",
@@ -452,7 +452,7 @@
    "ausstiegsplan": "",
    "invalidierung": "",
    "erstellt": 1794409480.899957,
-   "geprueft_bis": 1795321680.309578,
+   "geprueft_bis": 1795322581.278139,
    "gueltig_bis": 1797001480.899957
   }
  ],
