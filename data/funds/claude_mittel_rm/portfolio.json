@@ -139,8 +139,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "dd6456776",
-   "kurs": 60751.505000000005,
-   "wert": 862.13
+   "kurs": 60771.535,
+   "wert": 862.42
   },
   {
    "id": "p994b6370",
@@ -227,8 +227,8 @@
    "ausstiegsplan": "Halten bis Abrechnung 31.12.",
    "entscheidung_id": "de2fc5d7b",
    "invalidierung": "PredictIt-Bein nicht gefüllt: JA-Bein wieder verkaufen.",
-   "kurs": 0.095,
-   "wert": 18.0
+   "kurs": 0.10500000000000001,
+   "wert": 20.0
   },
   {
    "id": "p6edb4531",
@@ -517,7 +517,7 @@
  "funding": 0.0,
  "erstellt": 1793380123.8861866,
  "start_fx": 1.1156327353966788,
- "letzter_tick": 1795369703.5335944,
+ "letzter_tick": 1795369977.4303071,
  "auftraege": [],
  "rebalancing": {
   "ziele": {
