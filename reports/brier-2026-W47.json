@@ -1,0 +1,119 @@
+[
+ {
+  "fonds": "schwarm_liga",
+  "name": "Schwarm (nur Liga)",
+  "n": 2,
+  "offen": 2,
+  "brier": 0.00464081,
+  "brier_markt": 0.0029170000000000055,
+  "skill_gegen_markt": -0.5909530339389755
+ },
+ {
+  "fonds": "liga_gemini",
+  "name": "Gemini Flash",
+  "n": 5,
+  "offen": 19,
+  "brier": 0.021560000000000003,
+  "brier_markt": 0.016115900000000002,
+  "skill_gegen_markt": -0.33780924428669823
+ },
+ {
+  "fonds": "claude_mittel_rm",
+  "name": "Claude Mittel+RM (A/B)",
+  "n": 6,
+  "offen": 109,
+  "brier": 0.05938333333333334,
+  "brier_markt": 0.07099741666666666,
+  "skill_gegen_markt": 0.16358459051913843
+ },
+ {
+  "fonds": "claude_aggressiv",
+  "name": "Claude Aggressiv",
+  "n": 12,
+  "offen": 120,
+  "brier": 0.07823541666666667,
+  "brier_markt": 0.10361914583333333,
+  "skill_gegen_markt": 0.24497141877134587
+ },
+ {
+  "fonds": "schwarm_alle",
+  "name": "Schwarm (alle KI)",
+  "n": 11,
+  "offen": 27,
+  "brier": 0.11423324636363635,
+  "brier_markt": 0.11861699999999999,
+  "skill_gegen_markt": 0.036957212173327925
+ },
+ {
+  "fonds": "liga_deepseek",
+  "name": "DeepSeek",
+  "n": 10,
+  "offen": 113,
+  "brier": 0.1214125,
+  "brier_markt": 0.11261777499999999,
+  "skill_gegen_markt": -0.07809357803419581
+ },
+ {
+  "fonds": "schwarm_claude",
+  "name": "Schwarm (nur Claude)",
+  "n": 6,
+  "offen": 10,
+  "brier": 0.12216986666666668,
+  "brier_markt": 0.13241350000000002,
+  "skill_gegen_markt": 0.07736094381111691
+ },
+ {
+  "fonds": "ko_markt",
+  "name": "Kontrolle: Markt-Kopierer",
+  "n": 63,
+  "offen": 347,
+  "brier": 0.14276476712636404,
+  "brier_markt": 0.14276476712636404,
+  "skill_gegen_markt": 0.0
+ },
+ {
+  "fonds": "liga_kimi",
+  "name": "Kimi (Moonshot)",
+  "n": 7,
+  "offen": 41,
+  "brier": 0.16137142857142855,
+  "brier_markt": 0.1531335,
+  "skill_gegen_markt": -0.05379573098916013
+ },
+ {
+  "fonds": "claude_vorsichtig",
+  "name": "Claude Vorsichtig",
+  "n": 72,
+  "offen": 75,
+  "brier": 0.16457395833333333,
+  "brier_markt": 0.13879645288646672,
+  "skill_gegen_markt": -0.18366939130362114
+ },
+ {
+  "fonds": "claude_mittel",
+  "name": "Claude Mittel",
+  "n": 11,
+  "offen": 126,
+  "brier": 0.19470909090909091,
+  "brier_markt": 0.1341165,
+  "skill_gegen_markt": -0.45179072604109805
+ },
+ {
+  "fonds": "ko_wetter",
+  "name": "Regelfonds: Wetter-Ensemble",
+  "n": 16,
+  "offen": 884,
+  "brier": 0.273792375,
+  "brier_markt": 0.222609375,
+  "skill_gegen_markt": -0.22992293114339857
+ },
+ {
+  "fonds": "ko_nein",
+  "name": "Kontrolle: Immer NEIN",
+  "n": 63,
+  "offen": 347,
+  "brier": 0.4444444444444444,
+  "brier_markt": 0.14276476712636404,
+  "skill_gegen_markt": -2.1131241509402487
+ }
+]
