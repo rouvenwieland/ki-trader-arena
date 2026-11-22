@@ -1,6 +1,6 @@
 {
  "version": 1,
- "stand": 1795359900.9244764,
+ "stand": 1795360400.8356318,
  "hinweis": "Papierhandel-Simulation, keine Anlageberatung",
  "seite": "https://rouvenwieland.github.io/ki-trader-arena/",
  "budget": {
@@ -562,8 +562,8 @@
    "rendite_pct": -4.98,
    "equity_eur": 9665.45,
    "max_drawdown_pct": -11.64,
-   "status": "Fehler: Modellfehler: models/nano-banana-pro-preview: keine Antwort (HTTP 429 [{\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your cur",
-   "modell": "models/nano-banana-pro-preview",
+   "status": "vorübergehend gestört (Anbieter überlastet) – nächster Versuch beim nächsten Lauf",
+   "modell": "gemini-flash-latest",
    "kosten_heute_eur": 0.0,
    "kosten_gesamt_eur": 35.808,
    "rendite_ki_pct": [
