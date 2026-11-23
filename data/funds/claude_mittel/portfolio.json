@@ -126,7 +126,7 @@
    "entscheidung_id": "d7e53ef04",
    "invalidierung": "NVDA-Marktkap. kommt auf <3 % Abstand zu Apple, oder Apple fällt >8 % relativ.",
    "kurs": 0.946,
-   "wert": 148.05
+   "wert": 148.21
   },
   {
    "id": "pb60e44cc",
@@ -230,8 +230,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "d6e1a7002",
-   "kurs": 61398.655,
-   "wert": 1010.43
+   "kurs": 61226.045,
+   "wert": 1007.59
   },
   {
    "id": "pe3015b77",
@@ -251,8 +251,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "d6e1a7002",
-   "kurs": 1720.4450000000002,
-   "wert": 390.46
+   "kurs": 1716.8449999999998,
+   "wert": 389.64
   },
   {
    "id": "p1ad6082a",
@@ -417,7 +417,7 @@
  "funding": 0.0,
  "erstellt": 1793319819.7411644,
  "start_fx": 1.1184885798616961,
- "letzter_tick": 1795420622.9069166,
+ "letzter_tick": 1795421523.5024984,
  "auftraege": [
   {
    "id": "a4e7a61",
@@ -452,7 +452,7 @@
    "ausstiegsplan": "",
    "invalidierung": "",
    "erstellt": 1794409480.899957,
-   "geprueft_bis": 1795420622.9069166,
+   "geprueft_bis": 1795421523.5024984,
    "gueltig_bis": 1797001480.899957
   }
  ],
