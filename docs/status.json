@@ -1,6 +1,6 @@
 {
  "version": 1,
- "stand": 1795422525.21708,
+ "stand": 1795422741.5448825,
  "hinweis": "Papierhandel-Simulation, keine Anlageberatung",
  "seite": "https://rouvenwieland.github.io/ki-trader-arena/",
  "budget": {
@@ -503,8 +503,8 @@
    "rendite_pct": -5.07,
    "equity_eur": 9637.99,
    "max_drawdown_pct": -11.64,
-   "status": "Fehler: Modellfehler: gemini-flash-latest: keine Antwort (HTTP 429 [{\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota,",
-   "modell": "gemini-flash-latest",
+   "status": "Fehler: Modellfehler: models/nano-banana-pro-preview: keine Antwort (HTTP 429 [{\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your cur",
+   "modell": "models/nano-banana-pro-preview",
    "kosten_heute_eur": 0.0,
    "kosten_gesamt_eur": 35.74,
    "rendite_ki_pct": [
@@ -739,8 +739,8 @@
    "rendite_pct": -8.64,
    "equity_eur": 9299.04,
    "max_drawdown_pct": -12.06,
-   "status": "Fehler: Modellfehler: gemini-flash-latest: keine Antwort (HTTP 429 [{\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota,",
-   "modell": "gemini-flash-latest",
+   "status": "Fehler: Modellfehler: models/nano-banana-pro-preview: keine Antwort (HTTP 429 [{\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your cur",
+   "modell": "models/nano-banana-pro-preview",
    "kosten_heute_eur": 0.0,
    "kosten_gesamt_eur": 37.872,
    "rendite_ki_pct": [
@@ -916,8 +916,8 @@
    "rendite_pct": -12.27,
    "equity_eur": 8929.56,
    "max_drawdown_pct": -24.83,
-   "status": "Fehler: Modellfehler: gemini-flash-latest: keine Antwort (HTTP 429 [{\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota,",
-   "modell": "gemini-flash-latest",
+   "status": "Fehler: Modellfehler: models/nano-banana-pro-preview: keine Antwort (HTTP 429 [{\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your cur",
+   "modell": "models/nano-banana-pro-preview",
    "kosten_heute_eur": 0.0,
    "kosten_gesamt_eur": 36.994,
    "rendite_ki_pct": [
@@ -1218,6 +1218,13 @@
  ],
  "letzte_entscheidungen": [
   {
+   "ts": 1795422701.452343,
+   "fonds": "DeepSeek",
+   "instrument": "pm:polymarket:701501:JA",
+   "aktion": "verkaufen",
+   "zuversicht": 0.65
+  },
+  {
    "ts": 1795241103.2822905,
    "fonds": "DeepSeek",
    "instrument": "spot:BTC-USD",
@@ -1265,13 +1272,6 @@
    "instrument": "pm:polymarket:6507388:JA",
    "aktion": "verkaufen",
    "zuversicht": 0.72
-  },
-  {
-   "ts": 1795101302.2475364,
-   "fonds": "DeepSeek",
-   "instrument": "stock:TLT",
-   "aktion": "verkaufen",
-   "zuversicht": 0.6
   }
  ],
  "ereignisse": [

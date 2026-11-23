@@ -2,7 +2,7 @@
  "fonds_id": "liga_deepseek",
  "waehrung": "USD",
  "start_kapital": 11184.88579861696,
- "cash": 3804.51709132217,
+ "cash": 4166.56749132217,
  "positionen": [
   {
    "id": "p3d319c8e",
@@ -111,44 +111,10 @@
    "entscheidung_id": "d960e1788",
    "kurs": 60.51,
    "wert": 578.2
-  },
-  {
-   "id": "p60eb9419",
-   "inst": {
-    "id": "pm:polymarket:701501:JA",
-    "art": "pm",
-    "venue": "polymarket",
-    "ergebnis": "JA",
-    "frage": "Will Bitcoin dip to $55,000 by December 31, 2026?",
-    "schliesst": 1798779600.0,
-    "ref": {
-     "id": "701501",
-     "token_ja": "115462087336983275104521488923966022755348986822352694745153736621832003960847",
-     "token_nein": "48849252416222520684793262794712201381742900852794310345084361317209768152557",
-     "tick": 0.01,
-     "condition": "0x752fa61c93f16c4b15e85b0bd438d9c684176b0ea7b319a84c8aca34616e8a8c",
-     "gebuehr_rate": 0.07,
-     "gebuehr_exp": 1.0
-    },
-    "url": "https://polymarket.com/event/what-price-will-bitcoin-hit-before-2027"
-   },
-   "seite": "long",
-   "menge": 800.0,
-   "einstand": 0.75,
-   "hebel": 1.0,
-   "marge": 0.0,
-   "eroeffnet": 1795194776.898575,
-   "gebuehren": 7.1008000000000004,
-   "funding": 0.0,
-   "ausstiegsplan": "Halten bis Abrechnung 31.12.2026 (oder Auflösung beim ersten Binance-1m-Low ≤55.000). Kein Verkauf vorher: 1,68c Gebühr + 1c Spread auf 9c Upside wären zu teuer.",
-   "entscheidung_id": "d6fe1a43e",
-   "invalidierung": "Binance-1m-Low erreicht 55.000 nicht bis 31.12. — konkret: BTC steigt über 62.000 und bleibt 5 Tage darüber bei fallender realisierter Vola unter 40% p.a.",
-   "kurs": 0.475,
-   "wert": 376.0
   }
  ],
- "realisiert": 424.4840818870881,
- "gebuehren": 241.10153870052494,
+ "realisiert": 186.5344818870881,
+ "gebuehren": 255.05113870052494,
  "funding": 0.0,
  "erstellt": 1793319819.7411644,
  "start_fx": 1.1184885798616961,
@@ -202,8 +168,8 @@
    }
   },
   "schwelle_pp": 3.0,
-  "seit": 1795392850.5760715,
-  "entscheidung_id": "d1d215c92"
+  "seit": 1795422535.64963,
+  "entscheidung_id": "d5c2ae96f"
  },
  "auftraege": []
 }
