@@ -32,8 +32,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Halten bis Abrechnung (Dez-Bericht Jan. 2027). Neu bewerten, falls die Okt-Quote am 6.11. bei ≥4,5 % liegt. Verkaufen, falls die Nov-Quote ≥4,7 % ist.",
    "entscheidung_id": "d9893ed5d",
-   "kurs": 0.987,
-   "wert": 314.21
+   "kurs": 0.9844999999999999,
+   "wert": 312.62
   },
   {
    "id": "pc5fe767d",
@@ -89,8 +89,8 @@
    "ausstiegsplan": "Kern halten; Stop 91,5; Rebalancing bei Abweichung >5pp.",
    "entscheidung_id": "d50916521",
    "invalidierung": "AGG schließt unter 91,5 oder 10J-Rendite >5,3 %",
-   "kurs": 96.135,
-   "wert": 1546.73
+   "kurs": 96.115,
+   "wert": 1546.41
   },
   {
    "id": "pd1046bd9",
@@ -112,8 +112,8 @@
    "ausstiegsplan": "Halten; Stop 74.",
    "entscheidung_id": "d123eb847",
    "invalidierung": "10J-Rendite schließt über 5,3 % / TLT unter 74",
-   "kurs": 81.435,
-   "wert": 529.47
+   "kurs": 81.4,
+   "wert": 529.24
   },
   {
    "id": "pbfa54762",
@@ -167,8 +167,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "dea75aef6",
-   "kurs": 335.95,
-   "wert": 537.6
+   "kurs": 335.91,
+   "wert": 537.54
   },
   {
    "id": "p6ba61024",
@@ -188,8 +188,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "dea75aef6",
-   "kurs": 722.32,
-   "wert": 1349.32
+   "kurs": 723.66,
+   "wert": 1351.82
   },
   {
    "id": "p61078fad",
@@ -209,8 +209,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "dea75aef6",
-   "kurs": 98.655,
-   "wert": 541.7
+   "kurs": 98.715,
+   "wert": 542.03
   }
  ],
  "realisiert": -384.36203269307157,
@@ -218,7 +218,7 @@
  "funding": 0.0,
  "erstellt": 1793319819.7411644,
  "start_fx": 1.1184885798616961,
- "letzter_tick": 1795453373.6509125,
+ "letzter_tick": 1795454273.9871938,
  "auftraege": [],
  "rebalancing": {
   "ziele": {
