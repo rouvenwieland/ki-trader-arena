@@ -22,8 +22,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Halten als Kern-Baustein gemäß Rebalancing-Regel (Ziel 7%). Trim bei BTC über 68.000 (Zielüberschreitung) oder Verkauf bei Tagesschluss unter 52.000 (Invalidierung der Kern-These, dann Cash).",
    "entscheidung_id": "d6d5e7a8d",
-   "kurs": 61226.905,
-   "wert": 803.77,
+   "kurs": 61186.915,
+   "wert": 803.25,
    "invalidierung": "BTC-Tagesschluss unter 52.000 (neue Bärenmarkttiefe, dann ist die 7%-Kernquote zu hoch)."
   },
   {
@@ -66,8 +66,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "d3ba3cad6",
-   "kurs": 96.215,
-   "wert": 2210.36,
+   "kurs": 96.24,
+   "wert": 2210.93,
    "invalidierung": "10J über 5,20% oder Fed +50bp im Dezember mit 2J über 4,90% → AGG-Anteil auf 10% zurücknehmen."
   },
   {
@@ -109,8 +109,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "d960e1788",
-   "kurs": 59.85,
-   "wert": 571.9
+   "kurs": 59.87,
+   "wert": 572.09
   }
  ],
  "realisiert": 186.5344818870881,
@@ -118,7 +118,7 @@
  "funding": 0.0,
  "erstellt": 1793319819.7411644,
  "start_fx": 1.1184885798616961,
- "letzter_tick": 1795467927.681772,
+ "letzter_tick": 1795468827.7673905,
  "rebalancing": {
   "ziele": {
    "stock:SPY": {

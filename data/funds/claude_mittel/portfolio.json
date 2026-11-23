@@ -35,8 +35,8 @@
    "ausstiegsplan": "NEIN-Bid ≥0,93 oder P erreicht → verkaufen; sonst halten bis zur Wahl (April/Mai 2027).",
    "entscheidung_id": "d860a2331",
    "invalidierung": "Lisnard in mehreren Umfragen ≥12 % im 1. Wahlgang oder Rückzug von Philippe/Retailleau zu seinen Gunsten bzw. Sieg in einer Rechts-Primaire.",
-   "kurs": 0.7835000000000001,
-   "wert": 422.82
+   "kurs": 0.782,
+   "wert": 421.74
   },
   {
    "id": "p842aa632",
@@ -209,8 +209,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "d6e1a7002",
-   "kurs": 96.215,
-   "wert": 1105.0
+   "kurs": 96.24,
+   "wert": 1105.29
   },
   {
    "id": "p3e7ff11c",
@@ -230,8 +230,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "d6e1a7002",
-   "kurs": 61226.905,
-   "wert": 1007.6
+   "kurs": 61186.915,
+   "wert": 1006.94
   },
   {
    "id": "pe3015b77",
@@ -251,8 +251,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "d6e1a7002",
-   "kurs": 1723.3649999999998,
-   "wert": 391.12
+   "kurs": 1717.375,
+   "wert": 389.76
   },
   {
    "id": "p1ad6082a",
@@ -318,8 +318,8 @@
    "ausstiegsplan": "Gewinn mitnehmen bei NEIN-Bid ≥0.78 (=P). Nach NVDA-Earnings neu rechnen. Sonst halten bis 31.12.",
    "entscheidung_id": "d1fa25bbb",
    "invalidierung": "NVDA-Marktkapitalisierung innerhalb 5 % von Apple (z. B. NVDA ≥200 bei AAPL ~349) nach den Earnings, oder NVDA-JA ≥0.45.",
-   "kurs": 0.8755,
-   "wert": 374.5
+   "kurs": 0.8745,
+   "wert": 374.07
   },
   {
    "id": "pac09f469",
@@ -408,8 +408,8 @@
    "ausstiegsplan": "Halten bis zur Abrechnung am 31.12. Gewinn mitnehmen, wenn der NEIN-Bid ≥0,80 ist. Bei der Invalidierungsmeldung sofort schließen.",
    "entscheidung_id": "d4c6b2267",
    "invalidierung": "Glaubwürdige Berichte (WSJ/Bloomberg), dass das Board kurz vor der Ernennung eines permanenten CEO steht oder Kress dauerhaft macht. Ebenso eine Aussage im Call vom 17.11., die Suche solle 'within weeks' abgeschlossen sein.",
-   "kurs": 0.0015,
-   "wert": 0.05
+   "kurs": null,
+   "wert": 28.44
   }
  ],
  "realisiert": -156.48984972441798,
@@ -417,7 +417,7 @@
  "funding": 0.0,
  "erstellt": 1793319819.7411644,
  "start_fx": 1.1184885798616961,
- "letzter_tick": 1795467927.681772,
+ "letzter_tick": 1795468827.7673905,
  "auftraege": [
   {
    "id": "a4e7a61",
@@ -452,7 +452,7 @@
    "ausstiegsplan": "",
    "invalidierung": "",
    "erstellt": 1794409480.899957,
-   "geprueft_bis": 1795467927.681772,
+   "geprueft_bis": 1795468827.7673905,
    "gueltig_bis": 1797001480.899957
   }
  ],

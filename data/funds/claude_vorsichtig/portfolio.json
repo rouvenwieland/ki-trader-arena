@@ -89,8 +89,8 @@
    "ausstiegsplan": "Kern halten; Stop 91,5; Rebalancing bei Abweichung >5pp.",
    "entscheidung_id": "d50916521",
    "invalidierung": "AGG schließt unter 91,5 oder 10J-Rendite >5,3 %",
-   "kurs": 96.215,
-   "wert": 1548.27
+   "kurs": 96.24,
+   "wert": 1548.67
   },
   {
    "id": "pd1046bd9",
@@ -209,8 +209,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "dea75aef6",
-   "kurs": 98.77,
-   "wert": 542.42
+   "kurs": 98.76,
+   "wert": 542.37
   }
  ],
  "realisiert": -384.36203269307157,
@@ -218,7 +218,7 @@
  "funding": 0.0,
  "erstellt": 1793319819.7411644,
  "start_fx": 1.1184885798616961,
- "letzter_tick": 1795467927.681772,
+ "letzter_tick": 1795468827.7673905,
  "auftraege": [],
  "rebalancing": {
   "ziele": {
