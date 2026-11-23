@@ -125,7 +125,7 @@
    "ausstiegsplan": "Bid ≥0,70 verkaufen (P erreicht); Neubewertung nach NVDA-Zahlen 19.11.; schließen, wenn Apple-Vorsprung <3 %.",
    "entscheidung_id": "d7e53ef04",
    "invalidierung": "NVDA-Marktkap. kommt auf <3 % Abstand zu Apple, oder Apple fällt >8 % relativ.",
-   "kurs": 0.8445,
+   "kurs": 0.8465,
    "wert": 132.51
   },
   {
@@ -146,8 +146,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "d6e1a7002",
-   "kurs": 723.39,
-   "wert": 1876.39
+   "kurs": 720.82,
+   "wert": 1869.72
   },
   {
    "id": "p5fe9ac51",
@@ -167,8 +167,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "d6e1a7002",
-   "kurs": 650.92,
-   "wert": 1037.74
+   "kurs": 648.16,
+   "wert": 1033.34
   },
   {
    "id": "p5106387a",
@@ -188,8 +188,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "d6e1a7002",
-   "kurs": 334.18,
-   "wert": 993.86
+   "kurs": 333.5,
+   "wert": 991.83
   },
   {
    "id": "p72af4e36",
@@ -209,8 +209,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "d6e1a7002",
-   "kurs": 96.205,
-   "wert": 1104.71
+   "kurs": 96.235,
+   "wert": 1105.05
   },
   {
    "id": "p3e7ff11c",
@@ -230,8 +230,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "d6e1a7002",
-   "kurs": 61370.265,
-   "wert": 1009.96
+   "kurs": 61061.365000000005,
+   "wert": 1004.88
   },
   {
    "id": "pe3015b77",
@@ -251,8 +251,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "d6e1a7002",
-   "kurs": 1735.5900000000001,
-   "wert": 393.88
+   "kurs": 1724.1999999999998,
+   "wert": 391.29
   },
   {
    "id": "p1ad6082a",
@@ -318,8 +318,8 @@
    "ausstiegsplan": "Gewinn mitnehmen bei NEIN-Bid ≥0.78 (=P). Nach NVDA-Earnings neu rechnen. Sonst halten bis 31.12.",
    "entscheidung_id": "d1fa25bbb",
    "invalidierung": "NVDA-Marktkapitalisierung innerhalb 5 % von Apple (z. B. NVDA ≥200 bei AAPL ~349) nach den Earnings, oder NVDA-JA ≥0.45.",
-   "kurs": 0.8494999999999999,
-   "wert": 363.37
+   "kurs": 0.905,
+   "wert": 380.92
   },
   {
    "id": "pac09f469",
@@ -408,8 +408,8 @@
    "ausstiegsplan": "Halten bis zur Abrechnung am 31.12. Gewinn mitnehmen, wenn der NEIN-Bid ≥0,80 ist. Bei der Invalidierungsmeldung sofort schließen.",
    "entscheidung_id": "d4c6b2267",
    "invalidierung": "Glaubwürdige Berichte (WSJ/Bloomberg), dass das Board kurz vor der Ernennung eines permanenten CEO steht oder Kress dauerhaft macht. Ebenso eine Aussage im Call vom 17.11., die Suche solle 'within weeks' abgeschlossen sein.",
-   "kurs": null,
-   "wert": 28.44
+   "kurs": 0.0015,
+   "wert": 0.05
   }
  ],
  "realisiert": -156.48984972441798,
@@ -417,7 +417,7 @@
  "funding": 0.0,
  "erstellt": 1793319819.7411644,
  "start_fx": 1.1184885798616961,
- "letzter_tick": 1795462527.6107287,
+ "letzter_tick": 1795463428.1659892,
  "auftraege": [
   {
    "id": "a4e7a61",
@@ -452,7 +452,7 @@
    "ausstiegsplan": "",
    "invalidierung": "",
    "erstellt": 1794409480.899957,
-   "geprueft_bis": 1795462527.6107287,
+   "geprueft_bis": 1795463428.1659892,
    "gueltig_bis": 1797001480.899957
   }
  ],
