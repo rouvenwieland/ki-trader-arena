@@ -89,8 +89,8 @@
    "ausstiegsplan": "Kern halten; Stop 91,5; Rebalancing bei Abweichung >5pp.",
    "entscheidung_id": "d50916521",
    "invalidierung": "AGG schließt unter 91,5 oder 10J-Rendite >5,3 %",
-   "kurs": 96.05,
-   "wert": 1545.36
+   "kurs": 96.115,
+   "wert": 1546.41
   },
   {
    "id": "pd1046bd9",
@@ -112,8 +112,8 @@
    "ausstiegsplan": "Halten; Stop 74.",
    "entscheidung_id": "d123eb847",
    "invalidierung": "10J-Rendite schließt über 5,3 % / TLT unter 74",
-   "kurs": 81.33,
-   "wert": 528.79
+   "kurs": 81.42,
+   "wert": 529.37
   },
   {
    "id": "pbfa54762",
@@ -146,8 +146,8 @@
    "ausstiegsplan": "Halten bis zur Abrechnung. Vorzeitig verkaufen, wenn das NEIN-Bid 0,985 oder mehr erreicht oder die Invalidierung eintritt.",
    "entscheidung_id": "db3632f99",
    "invalidierung": "WTI-Frontmonat schließt über 120 USD, oder Hormuz wird vollständig gesperrt und Brent liegt über 130.",
-   "kurs": 0.9675,
-   "wert": 307.19
+   "kurs": 0.968,
+   "wert": 307.51
   },
   {
    "id": "p15600b5d",
@@ -167,8 +167,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "dea75aef6",
-   "kurs": 337.02,
-   "wert": 539.31
+   "kurs": 336.185,
+   "wert": 537.98
   },
   {
    "id": "p6ba61024",
@@ -188,8 +188,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "dea75aef6",
-   "kurs": 727.58,
-   "wert": 1359.14
+   "kurs": 723.9,
+   "wert": 1352.27
   },
   {
    "id": "p61078fad",
@@ -209,8 +209,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "dea75aef6",
-   "kurs": 99.08,
-   "wert": 544.03
+   "kurs": 98.79,
+   "wert": 542.44
   }
  ],
  "realisiert": -384.36203269307157,
@@ -218,7 +218,7 @@
  "funding": 0.0,
  "erstellt": 1793319819.7411644,
  "start_fx": 1.1184885798616961,
- "letzter_tick": 1795447973.601208,
+ "letzter_tick": 1795448873.9864693,
  "auftraege": [],
  "rebalancing": {
   "ziele": {
