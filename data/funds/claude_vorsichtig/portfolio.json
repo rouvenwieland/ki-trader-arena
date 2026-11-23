@@ -112,8 +112,8 @@
    "ausstiegsplan": "Halten; Stop 74.",
    "entscheidung_id": "d123eb847",
    "invalidierung": "10J-Rendite schließt über 5,3 % / TLT unter 74",
-   "kurs": 81.635,
-   "wert": 530.77
+   "kurs": 81.67,
+   "wert": 531.0
   },
   {
    "id": "pbfa54762",
@@ -167,8 +167,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "dea75aef6",
-   "kurs": 333.5,
-   "wert": 533.68
+   "kurs": 333.58,
+   "wert": 533.81
   },
   {
    "id": "p6ba61024",
@@ -188,8 +188,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "dea75aef6",
-   "kurs": 720.82,
-   "wert": 1346.52
+   "kurs": 722.495,
+   "wert": 1349.65
   },
   {
    "id": "p61078fad",
@@ -209,8 +209,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "dea75aef6",
-   "kurs": 98.505,
-   "wert": 540.88
+   "kurs": 98.715,
+   "wert": 542.03
   }
  ],
  "realisiert": -384.36203269307157,
@@ -218,7 +218,7 @@
  "funding": 0.0,
  "erstellt": 1793319819.7411644,
  "start_fx": 1.1184885798616961,
- "letzter_tick": 1795463428.1659892,
+ "letzter_tick": 1795464327.8881116,
  "auftraege": [],
  "rebalancing": {
   "ziele": {

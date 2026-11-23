@@ -125,8 +125,8 @@
    "ausstiegsplan": "Bid ≥0,70 verkaufen (P erreicht); Neubewertung nach NVDA-Zahlen 19.11.; schließen, wenn Apple-Vorsprung <3 %.",
    "entscheidung_id": "d7e53ef04",
    "invalidierung": "NVDA-Marktkap. kommt auf <3 % Abstand zu Apple, oder Apple fällt >8 % relativ.",
-   "kurs": 0.8465,
-   "wert": 132.51
+   "kurs": 0.8525,
+   "wert": 132.98
   },
   {
    "id": "pb60e44cc",
@@ -146,8 +146,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "d6e1a7002",
-   "kurs": 720.82,
-   "wert": 1869.72
+   "kurs": 722.495,
+   "wert": 1874.07
   },
   {
    "id": "p5fe9ac51",
@@ -167,8 +167,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "d6e1a7002",
-   "kurs": 648.16,
-   "wert": 1033.34
+   "kurs": 649.93,
+   "wert": 1036.17
   },
   {
    "id": "p5106387a",
@@ -188,8 +188,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "d6e1a7002",
-   "kurs": 333.5,
-   "wert": 991.83
+   "kurs": 333.58,
+   "wert": 992.07
   },
   {
    "id": "p72af4e36",
@@ -230,8 +230,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "d6e1a7002",
-   "kurs": 61061.365000000005,
-   "wert": 1004.88
+   "kurs": 61154.535,
+   "wert": 1006.41
   },
   {
    "id": "pe3015b77",
@@ -251,8 +251,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "d6e1a7002",
-   "kurs": 1724.1999999999998,
-   "wert": 391.29
+   "kurs": 1727.185,
+   "wert": 391.99
   },
   {
    "id": "p1ad6082a",
@@ -318,8 +318,8 @@
    "ausstiegsplan": "Gewinn mitnehmen bei NEIN-Bid ≥0.78 (=P). Nach NVDA-Earnings neu rechnen. Sonst halten bis 31.12.",
    "entscheidung_id": "d1fa25bbb",
    "invalidierung": "NVDA-Marktkapitalisierung innerhalb 5 % von Apple (z. B. NVDA ≥200 bei AAPL ~349) nach den Earnings, oder NVDA-JA ≥0.45.",
-   "kurs": 0.905,
-   "wert": 380.92
+   "kurs": 0.8955,
+   "wert": 381.78
   },
   {
    "id": "pac09f469",
@@ -417,7 +417,7 @@
  "funding": 0.0,
  "erstellt": 1793319819.7411644,
  "start_fx": 1.1184885798616961,
- "letzter_tick": 1795463428.1659892,
+ "letzter_tick": 1795464327.8881116,
  "auftraege": [
   {
    "id": "a4e7a61",
@@ -452,7 +452,7 @@
    "ausstiegsplan": "",
    "invalidierung": "",
    "erstellt": 1794409480.899957,
-   "geprueft_bis": 1795463428.1659892,
+   "geprueft_bis": 1795464327.8881116,
    "gueltig_bis": 1797001480.899957
   }
  ],
