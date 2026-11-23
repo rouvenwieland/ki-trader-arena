@@ -2,7 +2,7 @@
  "fonds_id": "ko_wetter",
  "waehrung": "USD",
  "start_kapital": 11156.327353966788,
- "cash": 975.3493156506302,
+ "cash": 913.5393156506301,
  "positionen": [
   {
    "id": "p48b5cf46",
@@ -107,13 +107,65 @@
    "ausstiegsplan": "Halten bis zur Abrechnung (Wetter-Regel)",
    "kurs": 0.015,
    "wert": 4.7
+  },
+  {
+   "id": "pc983b5f9",
+   "inst": {
+    "id": "pm:kalshi:KXHIGHNY-26NOV23-B68.5:NEIN",
+    "art": "pm",
+    "venue": "kalshi",
+    "ergebnis": "NEIN",
+    "frage": "Will the maximum temperature be 68-69° on Nov 23, 2026? [68° to 69°]",
+    "schliesst": 1795500000.0,
+    "ref": {
+     "ticker": "KXHIGHNY-26NOV23-B68.5"
+    },
+    "url": "https://kalshi.com/markets/KXHIGHNY-26NOV23"
+   },
+   "seite": "long",
+   "menge": 58.0,
+   "einstand": 0.5167241379310344,
+   "hebel": 1.0,
+   "marge": 0.0,
+   "eroeffnet": 1795438831.0761282,
+   "gebuehren": 1.02,
+   "funding": 0.0,
+   "ausstiegsplan": "Halten bis zur Abrechnung (Wetter-Regel)",
+   "kurs": 0.51,
+   "wert": 28.42
+  },
+  {
+   "id": "p536471b8",
+   "inst": {
+    "id": "pm:kalshi:KXHIGHCHI-26NOV23-B40.5:NEIN",
+    "art": "pm",
+    "venue": "kalshi",
+    "ergebnis": "NEIN",
+    "frage": "Will the maximum temperature be 40-41° on Nov 23, 2026? [40° to 41°]",
+    "schliesst": 1795503600.0,
+    "ref": {
+     "ticker": "KXHIGHCHI-26NOV23-B40.5"
+    },
+    "url": "https://kalshi.com/markets/KXHIGHCHI-26NOV23"
+   },
+   "seite": "long",
+   "menge": 57.0,
+   "einstand": 0.5231578947368422,
+   "hebel": 1.0,
+   "marge": 0.0,
+   "eroeffnet": 1795438831.0761282,
+   "gebuehren": 1.0,
+   "funding": 0.0,
+   "ausstiegsplan": "Halten bis zur Abrechnung (Wetter-Regel)",
+   "kurs": 0.52,
+   "wert": 29.07
   }
  ],
  "realisiert": -9054.439338316162,
- "gebuehren": 995.0200000000002,
+ "gebuehren": 997.0400000000002,
  "funding": 0.0,
  "erstellt": 1793380123.8861866,
  "start_fx": 1.1156327353966788,
- "letzter_tick": 1795437930.7502651,
- "wetter_letzter": 1795435230.861922
+ "letzter_tick": 1795438831.0761282,
+ "wetter_letzter": 1795438831.0761282
 }
