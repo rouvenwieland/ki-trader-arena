@@ -2,7 +2,7 @@
  "fonds_id": "claude_vorsichtig",
  "waehrung": "USD",
  "start_kapital": 11184.88579861696,
- "cash": 6064.908884914265,
+ "cash": 5523.079235422491,
  "positionen": [
   {
    "id": "pbb7d9e16",
@@ -66,7 +66,7 @@
    "ausstiegsplan": "Halten bis 9.12.; Verkauf, wenn NEIN-Bid >0,55 oder bei Invalidierung.",
    "entscheidung_id": "d25f2be12",
    "invalidierung": "Fed-Signale (Warsh/Williams/Jefferson) für klaren Hike mit breitem Konsens, oder CME-Hike >90 % ohne Tauben-Widerspruch.",
-   "kurs": 0.36,
+   "kurs": 0.355,
    "wert": 188.3
   },
   {
@@ -89,8 +89,8 @@
    "ausstiegsplan": "Kern halten; Stop 91,5; Rebalancing bei Abweichung >5pp.",
    "entscheidung_id": "d50916521",
    "invalidierung": "AGG schließt unter 91,5 oder 10J-Rendite >5,3 %",
-   "kurs": 96.15,
-   "wert": 1547.22
+   "kurs": 95.98,
+   "wert": 1544.23
   },
   {
    "id": "pd1046bd9",
@@ -112,8 +112,8 @@
    "ausstiegsplan": "Halten; Stop 74.",
    "entscheidung_id": "d123eb847",
    "invalidierung": "10J-Rendite schließt über 5,3 % / TLT unter 74",
-   "kurs": 81.45,
-   "wert": 529.63
+   "kurs": 81.11,
+   "wert": 527.36
   },
   {
    "id": "pbfa54762",
@@ -167,8 +167,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "dea75aef6",
-   "kurs": 322.87,
-   "wert": 516.74
+   "kurs": 337.41,
+   "wert": 539.94
   },
   {
    "id": "p6ba61024",
@@ -188,8 +188,29 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "dea75aef6",
-   "kurs": 689.81,
-   "wert": 1288.73
+   "kurs": 721.905,
+   "wert": 1348.54
+  },
+  {
+   "id": "p61078fad",
+   "inst": {
+    "id": "stock:EFA",
+    "art": "stock",
+    "venue": "yahoo",
+    "symbol": "EFA"
+   },
+   "seite": "long",
+   "menge": 5.491794410326577,
+   "einstand": 98.66167758810059,
+   "hebel": 1.0,
+   "marge": 0.0,
+   "eroeffnet": 1795444373.3785617,
+   "gebuehren": 0.0,
+   "funding": 0.0,
+   "ausstiegsplan": "Rebalancing-Regel",
+   "entscheidung_id": "dea75aef6",
+   "kurs": 98.635,
+   "wert": 541.59
   }
  ],
  "realisiert": -384.36203269307157,
@@ -197,7 +218,7 @@
  "funding": 0.0,
  "erstellt": 1793319819.7411644,
  "start_fx": 1.1184885798616961,
- "letzter_tick": 1795443472.5762427,
+ "letzter_tick": 1795444373.3785617,
  "auftraege": [],
  "rebalancing": {
   "ziele": {
