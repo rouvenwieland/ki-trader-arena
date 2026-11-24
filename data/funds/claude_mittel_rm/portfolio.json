@@ -35,8 +35,8 @@
    "ausstiegsplan": "Halten bis Abrechnung 31.12.; vorzeitig verkaufen, wenn NEIN-Preis auf ≥0.62 steigt (Gewinn mitnehmen) oder unter 0.38 fällt.",
    "entscheidung_id": "dbf84bba3",
    "invalidierung": "NVDA schließt wieder dauerhaft über Apple-Marktkap (NVDA >~210 bei AAPL ~343) oder starke NVDA-Zahlen mit Rally >8%; dann neu bewerten/verkaufen.",
-   "kurs": 0.8775,
-   "wert": 489.68
+   "kurs": 0.8785000000000001,
+   "wert": 490.8
   },
   {
    "id": "pbb4d5e0c",
@@ -69,8 +69,8 @@
    "ausstiegsplan": "Halten bis 31.12.; Gewinnmitnahme ≥0,93 oder Neubewertung nach NVDA-Earnings 17./19.11.",
    "entscheidung_id": "dce9924e1",
    "invalidierung": "NVDA-Marktkap > Apple −10 % (NVDA >~210 bei Apple ~355) oder Apple −20 % binnen Tagen",
-   "kurs": 0.875,
-   "wert": 1164.99
+   "kurs": 0.874,
+   "wert": 1166.33
   },
   {
    "id": "pa832233e",
@@ -118,8 +118,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "dd6456776",
-   "kurs": 717.93,
-   "wert": 2140.91
+   "kurs": 718.57,
+   "wert": 2143.05
   },
   {
    "id": "p1c64b37e",
@@ -139,8 +139,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "dd6456776",
-   "kurs": 59663.024999999994,
-   "wert": 846.68
+   "kurs": 59655.305,
+   "wert": 846.58
   },
   {
    "id": "p994b6370",
@@ -160,8 +160,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "dd6456776",
-   "kurs": 325.266,
-   "wert": 800.24
+   "kurs": 325.48,
+   "wert": 800.88
   },
   {
    "id": "p3b9e74b7",
@@ -283,7 +283,7 @@
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "d0a642430",
    "kurs": 91.62,
-   "wert": 909.98
+   "wert": 910.12
   },
   {
    "id": "p96f26326",
@@ -317,8 +317,8 @@
    "ausstiegsplan": "Halten bis Abrechnung Jan. 2027; Verkauf bei NEIN <0.80 oder Doomsday-Opening-Tag >$200M.",
    "entscheidung_id": "d6b155dae",
    "invalidierung": "Doomsday Freitagsumsatz inkl. Previews >$200M am 18.12. oder Doomsday-Domestic nach 7 Tagen >$600M.",
-   "kurs": 0.893,
-   "wert": 436.9
+   "kurs": 0.8935,
+   "wert": 437.39
   },
   {
    "id": "p75b03ffe",
@@ -384,8 +384,8 @@
    "ausstiegsplan": "Bis Vereidigung halten; schließen, wenn beide Beine zusammen ≥0.97 verkaufbar.",
    "entscheidung_id": "d5f5d56d9",
    "invalidierung": "Nachweislich abweichende PredictIt-Regel, die Eisenkot-JA bei PredictIt und NEIN bei Polymarket zulässt.",
-   "kurs": 0.6515,
-   "wert": 452.9
+   "kurs": 0.6595,
+   "wert": 457.8
   },
   {
    "id": "p2567180c",
@@ -517,7 +517,7 @@
  "funding": 0.0,
  "erstellt": 1793380123.8861866,
  "start_fx": 1.1156327353966788,
- "letzter_tick": 1795553419.8116558,
+ "letzter_tick": 1795554319.9925945,
  "auftraege": [],
  "rebalancing": {
   "ziele": {
