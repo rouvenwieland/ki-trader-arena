@@ -2,60 +2,8 @@
  "fonds_id": "ko_wetter",
  "waehrung": "USD",
  "start_kapital": 11156.327353966788,
- "cash": 846.9842156506301,
+ "cash": 903.9842156506301,
  "positionen": [
-  {
-   "id": "p9b69bd40",
-   "inst": {
-    "id": "pm:kalshi:KXHIGHCHI-26NOV23-T40:JA",
-    "art": "pm",
-    "venue": "kalshi",
-    "ergebnis": "JA",
-    "frage": "Will the maximum temperature be <40° on Nov 23, 2026? [39° or below]",
-    "schliesst": 1795503600.0,
-    "ref": {
-     "ticker": "KXHIGHCHI-26NOV23-T40"
-    },
-    "url": "https://kalshi.com/markets/KXHIGHCHI-26NOV23"
-   },
-   "seite": "long",
-   "menge": 470.0,
-   "einstand": 0.08797851063829787,
-   "hebel": 1.0,
-   "marge": 0.0,
-   "eroeffnet": 1795373575.589823,
-   "gebuehren": 2.64,
-   "funding": 0.0,
-   "ausstiegsplan": "Halten bis zur Abrechnung (Wetter-Regel)",
-   "kurs": null,
-   "wert": 41.35
-  },
-  {
-   "id": "p536471b8",
-   "inst": {
-    "id": "pm:kalshi:KXHIGHCHI-26NOV23-B40.5:NEIN",
-    "art": "pm",
-    "venue": "kalshi",
-    "ergebnis": "NEIN",
-    "frage": "Will the maximum temperature be 40-41° on Nov 23, 2026? [40° to 41°]",
-    "schliesst": 1795503600.0,
-    "ref": {
-     "ticker": "KXHIGHCHI-26NOV23-B40.5"
-    },
-    "url": "https://kalshi.com/markets/KXHIGHCHI-26NOV23"
-   },
-   "seite": "long",
-   "menge": 57.0,
-   "einstand": 0.5231578947368422,
-   "hebel": 1.0,
-   "marge": 0.0,
-   "eroeffnet": 1795438831.0761282,
-   "gebuehren": 1.0,
-   "funding": 0.0,
-   "ausstiegsplan": "Halten bis zur Abrechnung (Wetter-Regel)",
-   "kurs": null,
-   "wert": 29.82
-  },
   {
    "id": "pe2076a88",
    "inst": {
@@ -105,7 +53,7 @@
    "gebuehren": 1.2,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Wetter-Regel)",
-   "kurs": 0.45499999999999996,
+   "kurs": 0.45,
    "wert": 31.24
   },
   {
@@ -135,11 +83,11 @@
    "wert": 9.91
   }
  ],
- "realisiert": -9149.188138316162,
+ "realisiert": -9163.35803831616,
  "gebuehren": 1002.9900000000001,
  "funding": 0.0,
  "erstellt": 1793380123.8861866,
  "start_fx": 1.1156327353966788,
- "letzter_tick": 1795525256.2567375,
+ "letzter_tick": 1795526156.0308933,
  "wetter_letzter": 1795522556.1922667
 }
