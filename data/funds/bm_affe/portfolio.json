@@ -2,71 +2,33 @@
  "fonds_id": "bm_affe",
  "waehrung": "USD",
  "start_kapital": 11184.88579861696,
- "cash": 3253.100507441428,
+ "cash": 6991.010742067679,
  "positionen": [
   {
-   "id": "pa2b6a539",
+   "id": "p364b6a97",
    "inst": {
-    "id": "spot:XRP-USD",
+    "id": "spot:LINK-USD",
     "art": "spot",
     "venue": "coinbase",
-    "symbol": "XRP-USD"
+    "symbol": "LINK-USD"
    },
    "seite": "long",
-   "menge": 1078.1096688942673,
-   "einstand": 0.92498496,
+   "menge": 237.72868759441093,
+   "einstand": 8.991768969511211,
    "hebel": 1.0,
    "marge": 0.0,
-   "eroeffnet": 1795392599.692238,
-   "gebuehren": 5.983411373746662,
+   "eroeffnet": 1795478728.299977,
+   "gebuehren": 12.825608617644294,
    "funding": 0.0,
-   "kurs": 0.93695,
-   "wert": 1010.08
-  },
-  {
-   "id": "p2d41bd48",
-   "inst": {
-    "id": "spot:SOL-USD",
-    "art": "spot",
-    "venue": "coinbase",
-    "symbol": "SOL-USD"
-   },
-   "seite": "long",
-   "menge": 36.276389665861466,
-   "einstand": 70.534104,
-   "hebel": 1.0,
-   "marge": 0.0,
-   "eroeffnet": 1795392599.692238,
-   "gebuehren": 15.352335848618386,
-   "funding": 0.0,
-   "kurs": 71.845,
-   "wert": 2606.1
-  },
-  {
-   "id": "pb49bbe9e",
-   "inst": {
-    "id": "spot:ETH-USD",
-    "art": "spot",
-    "venue": "coinbase",
-    "symbol": "ETH-USD"
-   },
-   "seite": "long",
-   "menge": 1.3554403415092469,
-   "einstand": 1720.5949423658644,
-   "hebel": 1.0,
-   "marge": 0.0,
-   "eroeffnet": 1795392599.692238,
-   "gebuehren": 13.992982777676822,
-   "funding": 0.0,
-   "kurs": 1707.48,
-   "wert": 2314.37
+   "kurs": 8.9885,
+   "wert": 2136.47
   }
  ],
- "realisiert": -1473.2217162412205,
- "gebuehren": 1099.8924595314709,
+ "realisiert": -1473.006103396922,
+ "gebuehren": 1148.2613515264873,
  "funding": 0.0,
  "erstellt": 1793319819.7411644,
  "start_fx": 1.1184885798616961,
- "letzter_tick": 1795477827.8787458,
- "letzter_tag": "2026-11-23"
+ "letzter_tick": 1795478728.299977,
+ "letzter_tag": "2026-11-24"
 }
