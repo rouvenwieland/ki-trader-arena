@@ -35,8 +35,8 @@
    "ausstiegsplan": "Halten bis Abrechnung 31.12.; vorzeitig verkaufen, wenn NEIN-Preis auf ≥0.62 steigt (Gewinn mitnehmen) oder unter 0.38 fällt.",
    "entscheidung_id": "dbf84bba3",
    "invalidierung": "NVDA schließt wieder dauerhaft über Apple-Marktkap (NVDA >~210 bei AAPL ~343) oder starke NVDA-Zahlen mit Rally >8%; dann neu bewerten/verkaufen.",
-   "kurs": 0.877,
-   "wert": 489.12
+   "kurs": 0.8775,
+   "wert": 489.68
   },
   {
    "id": "pbb4d5e0c",
@@ -69,8 +69,8 @@
    "ausstiegsplan": "Halten bis 31.12.; Gewinnmitnahme ≥0,93 oder Neubewertung nach NVDA-Earnings 17./19.11.",
    "entscheidung_id": "dce9924e1",
    "invalidierung": "NVDA-Marktkap > Apple −10 % (NVDA >~210 bei Apple ~355) oder Apple −20 % binnen Tagen",
-   "kurs": 0.869,
-   "wert": 1152.97
+   "kurs": 0.875,
+   "wert": 1164.99
   },
   {
    "id": "pa832233e",
@@ -97,8 +97,8 @@
    "ausstiegsplan": "Halten bis Ende November. Verkauf bei Kurs <0.55 oder Koalitionsbruch/Rücktrittsankündigung; Gewinn mitnehmen ≥0.95.",
    "entscheidung_id": "d34bf6b87",
    "invalidierung": "PSL oder Polen 2050 verlassen die Koalition bzw. unterstützen ein Misstrauensvotum; Tusk kündigt Rücktritt/Vertrauensfrage an.",
-   "kurs": 0.9639616541582601,
-   "wert": 509.89
+   "kurs": 0.9761942314794624,
+   "wert": 516.38
   },
   {
    "id": "pea9d23a3",
@@ -118,8 +118,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "dd6456776",
-   "kurs": 716.03,
-   "wert": 2135.24
+   "kurs": 717.93,
+   "wert": 2140.91
   },
   {
    "id": "p1c64b37e",
@@ -139,8 +139,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "dd6456776",
-   "kurs": 59436.765,
-   "wert": 843.48
+   "kurs": 59663.024999999994,
+   "wert": 846.68
   },
   {
    "id": "p994b6370",
@@ -160,8 +160,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "dd6456776",
-   "kurs": 325.16,
-   "wert": 799.98
+   "kurs": 325.266,
+   "wert": 800.24
   },
   {
    "id": "p3b9e74b7",
@@ -282,8 +282,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "d0a642430",
-   "kurs": 91.61,
-   "wert": 909.88
+   "kurs": 91.62,
+   "wert": 909.98
   },
   {
    "id": "p96f26326",
@@ -317,7 +317,7 @@
    "ausstiegsplan": "Halten bis Abrechnung Jan. 2027; Verkauf bei NEIN <0.80 oder Doomsday-Opening-Tag >$200M.",
    "entscheidung_id": "d6b155dae",
    "invalidierung": "Doomsday Freitagsumsatz inkl. Previews >$200M am 18.12. oder Doomsday-Domestic nach 7 Tagen >$600M.",
-   "kurs": 0.8925000000000001,
+   "kurs": 0.893,
    "wert": 436.9
   },
   {
@@ -384,8 +384,8 @@
    "ausstiegsplan": "Bis Vereidigung halten; schließen, wenn beide Beine zusammen ≥0.97 verkaufbar.",
    "entscheidung_id": "d5f5d56d9",
    "invalidierung": "Nachweislich abweichende PredictIt-Regel, die Eisenkot-JA bei PredictIt und NEIN bei Polymarket zulässt.",
-   "kurs": 0.654,
-   "wert": 455.0
+   "kurs": 0.6515,
+   "wert": 452.9
   },
   {
    "id": "p2567180c",
@@ -517,7 +517,7 @@
  "funding": 0.0,
  "erstellt": 1793380123.8861866,
  "start_fx": 1.1156327353966788,
- "letzter_tick": 1795552520.1791563,
+ "letzter_tick": 1795553419.8116558,
  "auftraege": [],
  "rebalancing": {
   "ziele": {
