@@ -128,7 +128,7 @@
      "venue": "yahoo",
      "symbol": "SPY"
     },
-    "anteil": 0.2
+    "anteil": 0.17
    },
    "stock:AGG": {
     "inst": {
@@ -137,7 +137,7 @@
      "venue": "yahoo",
      "symbol": "AGG"
     },
-    "anteil": 0.2
+    "anteil": 0.24
    },
    "stock:TLT": {
     "inst": {
@@ -146,7 +146,7 @@
      "venue": "yahoo",
      "symbol": "TLT"
     },
-    "anteil": 0.08
+    "anteil": 0.12
    },
    "spot:BTC-USD": {
     "inst": {
@@ -155,7 +155,7 @@
      "venue": "coinbase",
      "symbol": "BTC-USD"
     },
-    "anteil": 0.07
+    "anteil": 0.06
    },
    "stock:XLE": {
     "inst": {
@@ -167,9 +167,9 @@
     "anteil": 0.06
    }
   },
-  "schwelle_pp": 3.0,
-  "seit": 1795446469.1068137,
-  "entscheidung_id": "d091aaf2e"
+  "schwelle_pp": 2.0,
+  "seit": 1795539912.4220796,
+  "entscheidung_id": "ddc9288a4"
  },
  "auftraege": []
 }
