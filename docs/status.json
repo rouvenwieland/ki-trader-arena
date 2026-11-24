@@ -1,6 +1,6 @@
 {
  "version": 1,
- "stand": 1795488102.2027187,
+ "stand": 1795488327.1922765,
  "hinweis": "Papierhandel-Simulation, keine Anlageberatung",
  "seite": "https://rouvenwieland.github.io/ki-trader-arena/",
  "budget": {
@@ -503,8 +503,8 @@
    "rendite_pct": -3.15,
    "equity_eur": 9925.66,
    "max_drawdown_pct": -6.34,
-   "status": "Fehler: Modellfehler: models/nano-banana-pro-preview: keine Antwort (HTTP 429 [{\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your cur",
-   "modell": "models/nano-banana-pro-preview",
+   "status": "Fehler: Modellfehler: gemini-flash-latest: keine Antwort (HTTP 429 [{\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota,",
+   "modell": "gemini-flash-latest",
    "kosten_heute_eur": 0.0,
    "kosten_gesamt_eur": 38.214,
    "rendite_ki_pct": [
@@ -739,8 +739,8 @@
    "rendite_pct": -5.79,
    "equity_eur": 9630.64,
    "max_drawdown_pct": -12.8,
-   "status": "Fehler: Modellfehler: models/nano-banana-pro-preview: keine Antwort (HTTP 429 [{\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your cur",
-   "modell": "models/nano-banana-pro-preview",
+   "status": "vorübergehend gestört (Anbieter überlastet) – nächster Versuch beim nächsten Lauf",
+   "modell": "gemini-2.5-flash",
    "kosten_heute_eur": 0.0,
    "kosten_gesamt_eur": 35.987,
    "rendite_ki_pct": [
@@ -857,8 +857,8 @@
    "rendite_pct": -10.41,
    "equity_eur": 9182.05,
    "max_drawdown_pct": -24.83,
-   "status": "Fehler: Modellfehler: models/nano-banana-pro-preview: keine Antwort (HTTP 429 [{\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your cur",
-   "modell": "models/nano-banana-pro-preview",
+   "status": "Fehler: Modellfehler: gemini-flash-latest: keine Antwort (HTTP 429 [{\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota,",
+   "modell": "gemini-flash-latest",
    "kosten_heute_eur": 0.0,
    "kosten_gesamt_eur": 37.249,
    "rendite_ki_pct": [
