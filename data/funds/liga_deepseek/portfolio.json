@@ -22,8 +22,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Halten als Kern-Baustein gemäß Rebalancing-Regel (Ziel 7%). Trim bei BTC über 68.000 (Zielüberschreitung) oder Verkauf bei Tagesschluss unter 52.000 (Invalidierung der Kern-These, dann Cash).",
    "entscheidung_id": "d6d5e7a8d",
-   "kurs": 60175.585,
-   "wert": 789.97,
+   "kurs": 59713.295,
+   "wert": 783.9,
    "invalidierung": "BTC-Tagesschluss unter 52.000 (neue Bärenmarkttiefe, dann ist die 7%-Kernquote zu hoch)."
   },
   {
@@ -44,8 +44,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "d14c1f726",
-   "kurs": 716.89,
-   "wert": 2258.72,
+   "kurs": 713.4,
+   "wert": 2247.72,
    "invalidierung": "SPY-Tagesschluss unter 725 (0,8% unter SMA200) bei VIX über 28"
   },
   {
@@ -66,8 +66,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "d3ba3cad6",
-   "kurs": 96.255,
-   "wert": 2210.92,
+   "kurs": 96.335,
+   "wert": 2212.76,
    "invalidierung": "10J über 5,20% oder Fed +50bp im Dezember mit 2J über 4,90% → AGG-Anteil auf 10% zurücknehmen."
   },
   {
@@ -88,8 +88,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "d0f380f2d",
-   "kurs": 81.66,
-   "wert": 865.38
+   "kurs": 81.845,
+   "wert": 867.34
   },
   {
    "id": "p4d7b7307",
@@ -109,8 +109,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "d960e1788",
-   "kurs": 60.32,
-   "wert": 576.3
+   "kurs": 60.0,
+   "wert": 573.24
   }
  ],
  "realisiert": 186.5344818870881,
@@ -118,7 +118,7 @@
  "funding": 0.0,
  "erstellt": 1793319819.7411644,
  "start_fx": 1.1184885798616961,
- "letzter_tick": 1795534384.8418736,
+ "letzter_tick": 1795535285.3031096,
  "rebalancing": {
   "ziele": {
    "stock:SPY": {
