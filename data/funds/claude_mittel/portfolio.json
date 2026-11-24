@@ -35,8 +35,8 @@
    "ausstiegsplan": "NEIN-Bid ≥0,93 oder P erreicht → verkaufen; sonst halten bis zur Wahl (April/Mai 2027).",
    "entscheidung_id": "d860a2331",
    "invalidierung": "Lisnard in mehreren Umfragen ≥12 % im 1. Wahlgang oder Rückzug von Philippe/Retailleau zu seinen Gunsten bzw. Sieg in einer Rechts-Primaire.",
-   "kurs": 0.7625,
-   "wert": 411.48
+   "kurs": 0.7635000000000001,
+   "wert": 412.02
   },
   {
    "id": "p842aa632",
@@ -125,8 +125,8 @@
    "ausstiegsplan": "Bid ≥0,70 verkaufen (P erreicht); Neubewertung nach NVDA-Zahlen 19.11.; schließen, wenn Apple-Vorsprung <3 %.",
    "entscheidung_id": "d7e53ef04",
    "invalidierung": "NVDA-Marktkap. kommt auf <3 % Abstand zu Apple, oder Apple fällt >8 % relativ.",
-   "kurs": 0.8394999999999999,
-   "wert": 131.72
+   "kurs": 0.8405,
+   "wert": 131.88
   },
   {
    "id": "pb60e44cc",
@@ -230,8 +230,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "d6e1a7002",
-   "kurs": 60355.884999999995,
-   "wert": 993.27
+   "kurs": 60490.715,
+   "wert": 995.49
   },
   {
    "id": "pe3015b77",
@@ -251,8 +251,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "d6e1a7002",
-   "kurs": 1699.63,
-   "wert": 385.72
+   "kurs": 1701.7649999999999,
+   "wert": 386.22
   },
   {
    "id": "p1ad6082a",
@@ -318,8 +318,8 @@
    "ausstiegsplan": "Gewinn mitnehmen bei NEIN-Bid ≥0.78 (=P). Nach NVDA-Earnings neu rechnen. Sonst halten bis 31.12.",
    "entscheidung_id": "d1fa25bbb",
    "invalidierung": "NVDA-Marktkapitalisierung innerhalb 5 % von Apple (z. B. NVDA ≥200 bei AAPL ~349) nach den Earnings, oder NVDA-JA ≥0.45.",
-   "kurs": 0.846,
-   "wert": 360.8
+   "kurs": 0.8465,
+   "wert": 361.23
   },
   {
    "id": "pac09f469",
@@ -417,7 +417,7 @@
  "funding": 0.0,
  "erstellt": 1793319819.7411644,
  "start_fx": 1.1184885798616961,
- "letzter_tick": 1795496103.1152732,
+ "letzter_tick": 1795497003.0355935,
  "auftraege": [
   {
    "id": "a4e7a61",
@@ -452,7 +452,7 @@
    "ausstiegsplan": "",
    "invalidierung": "",
    "erstellt": 1794409480.899957,
-   "geprueft_bis": 1795496103.1152732,
+   "geprueft_bis": 1795497003.0355935,
    "gueltig_bis": 1797001480.899957
   }
  ],
