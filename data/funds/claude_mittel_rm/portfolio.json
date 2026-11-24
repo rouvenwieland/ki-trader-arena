@@ -69,8 +69,8 @@
    "ausstiegsplan": "Halten bis 31.12.; Gewinnmitnahme ≥0,93 oder Neubewertung nach NVDA-Earnings 17./19.11.",
    "entscheidung_id": "dce9924e1",
    "invalidierung": "NVDA-Marktkap > Apple −10 % (NVDA >~210 bei Apple ~355) oder Apple −20 % binnen Tagen",
-   "kurs": 0.8634999999999999,
-   "wert": 1148.96
+   "kurs": 0.866,
+   "wert": 1151.63
   },
   {
    "id": "pa832233e",
@@ -118,8 +118,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "dd6456776",
-   "kurs": 717.385,
-   "wert": 2139.28
+   "kurs": 718.7,
+   "wert": 2143.2
   },
   {
    "id": "p1c64b37e",
@@ -139,8 +139,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "dd6456776",
-   "kurs": 59772.185,
-   "wert": 848.24
+   "kurs": 59901.655,
+   "wert": 850.07
   },
   {
    "id": "p994b6370",
@@ -160,8 +160,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "dd6456776",
-   "kurs": 325.7,
-   "wert": 801.31
+   "kurs": 326.257,
+   "wert": 802.68
   },
   {
    "id": "p3b9e74b7",
@@ -227,7 +227,7 @@
    "ausstiegsplan": "Halten bis Abrechnung 31.12.",
    "entscheidung_id": "de2fc5d7b",
    "invalidierung": "PredictIt-Bein nicht gefüllt: JA-Bein wieder verkaufen.",
-   "kurs": 0.10500000000000001,
+   "kurs": 0.11,
    "wert": 20.0
   },
   {
@@ -282,8 +282,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "d0a642430",
-   "kurs": 91.62,
-   "wert": 909.98
+   "kurs": 91.615,
+   "wert": 909.93
   },
   {
    "id": "p96f26326",
@@ -384,7 +384,7 @@
    "ausstiegsplan": "Bis Vereidigung halten; schließen, wenn beide Beine zusammen ≥0.97 verkaufbar.",
    "entscheidung_id": "d5f5d56d9",
    "invalidierung": "Nachweislich abweichende PredictIt-Regel, die Eisenkot-JA bei PredictIt und NEIN bei Polymarket zulässt.",
-   "kurs": 0.6465000000000001,
+   "kurs": 0.65,
    "wert": 452.2
   },
   {
@@ -517,7 +517,7 @@
  "funding": 0.0,
  "erstellt": 1793380123.8861866,
  "start_fx": 1.1156327353966788,
- "letzter_tick": 1795546985.5027676,
+ "letzter_tick": 1795547884.9366393,
  "auftraege": [],
  "rebalancing": {
   "ziele": {
