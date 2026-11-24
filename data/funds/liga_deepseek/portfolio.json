@@ -2,7 +2,7 @@
  "fonds_id": "liga_deepseek",
  "waehrung": "USD",
  "start_kapital": 11184.88579861696,
- "cash": 4166.56749132217,
+ "cash": 3746.7794496605593,
  "positionen": [
   {
    "id": "p3d319c8e",
@@ -22,8 +22,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Halten als Kern-Baustein gemäß Rebalancing-Regel (Ziel 7%). Trim bei BTC über 68.000 (Zielüberschreitung) oder Verkauf bei Tagesschluss unter 52.000 (Invalidierung der Kern-These, dann Cash).",
    "entscheidung_id": "d6d5e7a8d",
-   "kurs": 59227.035,
-   "wert": 777.52,
+   "kurs": 59670.255000000005,
+   "wert": 783.34,
    "invalidierung": "BTC-Tagesschluss unter 52.000 (neue Bärenmarkttiefe, dann ist die 7%-Kernquote zu hoch)."
   },
   {
@@ -35,7 +35,7 @@
     "symbol": "SPY"
    },
    "seite": "long",
-   "menge": 3.1510642165074993,
+   "menge": 2.5753223055642525,
    "einstand": 754.6530945894278,
    "hebel": 1.0,
    "marge": 0.0,
@@ -44,8 +44,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "d14c1f726",
-   "kurs": 714.768,
-   "wert": 2252.03,
+   "kurs": 717.34,
+   "wert": 1847.18,
    "invalidierung": "SPY-Tagesschluss unter 725 (0,8% unter SMA200) bei VIX über 28"
   },
   {
@@ -57,17 +57,17 @@
     "symbol": "AGG"
    },
    "seite": "long",
-   "menge": 22.973114403086072,
-   "einstand": 96.18117688554815,
+   "menge": 27.08224961722391,
+   "einstand": 96.20299894043082,
    "hebel": 1.0,
    "marge": 0.0,
    "eroeffnet": 1794234816.51331,
    "gebuehren": 0.0,
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
-   "entscheidung_id": "d3ba3cad6",
-   "kurs": 96.315,
-   "wert": 2212.3,
+   "entscheidung_id": "ddc9288a4",
+   "kurs": 96.3,
+   "wert": 2607.6,
    "invalidierung": "10J über 5,20% oder Fed +50bp im Dezember mit 2J über 4,90% → AGG-Anteil auf 10% zurücknehmen."
   },
   {
@@ -79,17 +79,17 @@
     "symbol": "TLT"
    },
    "seite": "long",
-   "menge": 10.598614942284053,
-   "einstand": 80.26727205733474,
+   "menge": 15.93778997915582,
+   "einstand": 80.78995199516244,
    "hebel": 1.0,
    "marge": 0.0,
    "eroeffnet": 1794497067.2939417,
    "gebuehren": 0.0,
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
-   "entscheidung_id": "d0f380f2d",
-   "kurs": 81.865,
-   "wert": 867.56
+   "entscheidung_id": "ddc9288a4",
+   "kurs": 81.81,
+   "wert": 1303.72
   },
   {
    "id": "p4d7b7307",
@@ -109,16 +109,16 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "d960e1788",
-   "kurs": 60.315,
-   "wert": 576.25
+   "kurs": 60.37,
+   "wert": 576.78
   }
  ],
- "realisiert": 186.5344818870881,
+ "realisiert": 164.9648549841767,
  "gebuehren": 255.05113870052494,
  "funding": 0.0,
  "erstellt": 1793319819.7411644,
  "start_fx": 1.1184885798616961,
- "letzter_tick": 1795539784.9710624,
+ "letzter_tick": 1795540684.618036,
  "rebalancing": {
   "ziele": {
    "stock:SPY": {
