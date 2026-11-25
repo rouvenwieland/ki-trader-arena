@@ -1,6 +1,6 @@
 {
  "version": 1,
- "stand": 1795619610.365383,
+ "stand": 1795619811.7661107,
  "hinweis": "Papierhandel-Simulation, keine Anlageberatung",
  "seite": "https://rouvenwieland.github.io/ki-trader-arena/",
  "budget": {
@@ -444,8 +444,8 @@
    "rendite_pct": -3.9,
    "equity_eur": 9824.51,
    "max_drawdown_pct": -6.34,
-   "status": "Fehler: Modellfehler: models/nano-banana-pro-preview: keine Antwort (HTTP 429 [{\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your cur",
-   "modell": "models/nano-banana-pro-preview",
+   "status": "Fehler: Modellfehler: gemini-flash-latest: keine Antwort (HTTP 429 [{\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota,",
+   "modell": "gemini-flash-latest",
    "kosten_heute_eur": 0.0,
    "kosten_gesamt_eur": 38.12,
    "rendite_ki_pct": [
@@ -562,8 +562,8 @@
    "rendite_pct": -5.19,
    "equity_eur": 9668.1,
    "max_drawdown_pct": -12.8,
-   "status": "Fehler: Modellfehler: models/nano-banana-pro-preview: keine Antwort (HTTP 429 [{\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your cur",
-   "modell": "models/nano-banana-pro-preview",
+   "status": "Fehler: Modellfehler: gemini-flash-latest: keine Antwort (HTTP 429 [{\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota,",
+   "modell": "gemini-flash-latest",
    "kosten_heute_eur": 0.0,
    "kosten_gesamt_eur": 35.899,
    "rendite_ki_pct": [
@@ -798,8 +798,8 @@
    "rendite_pct": -9.53,
    "equity_eur": 9248.85,
    "max_drawdown_pct": -12.32,
-   "status": "Fehler: Modellfehler: models/nano-banana-pro-preview: keine Antwort (HTTP 429 [{\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your cur",
-   "modell": "models/nano-banana-pro-preview",
+   "status": "Fehler: Modellfehler: gemini-flash-latest: keine Antwort (HTTP 429 [{\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota,",
+   "modell": "gemini-flash-latest",
    "kosten_heute_eur": 0.0,
    "kosten_gesamt_eur": 38.041,
    "rendite_ki_pct": [
@@ -857,8 +857,8 @@
    "rendite_pct": -12.22,
    "equity_eur": 8974.82,
    "max_drawdown_pct": -24.83,
-   "status": "Fehler: Modellfehler: models/nano-banana-pro-preview: keine Antwort (HTTP 429 [{\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your cur",
-   "modell": "models/nano-banana-pro-preview",
+   "status": "Fehler: Modellfehler: gemini-flash-latest: keine Antwort (HTTP 429 [{\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota,",
+   "modell": "gemini-flash-latest",
    "kosten_heute_eur": 0.0,
    "kosten_gesamt_eur": 37.158,
    "rendite_ki_pct": [
@@ -1218,6 +1218,20 @@
  ],
  "letzte_entscheidungen": [
   {
+   "ts": 1795619795.7640867,
+   "fonds": "DeepSeek",
+   "instrument": "spot:BTC-USD",
+   "aktion": "verkaufen",
+   "zuversicht": 0.6
+  },
+  {
+   "ts": 1795619781.619274,
+   "fonds": "DeepSeek",
+   "instrument": "pm:polymarket:6507392:NEIN",
+   "aktion": "kaufen",
+   "zuversicht": 0.62
+  },
+  {
    "ts": 1795422701.452343,
    "fonds": "DeepSeek",
    "instrument": "pm:polymarket:701501:JA",
@@ -1258,20 +1272,6 @@
    "instrument": "pm:polymarket:701501:JA",
    "aktion": "kaufen",
    "zuversicht": 0.55
-  },
-  {
-   "ts": 1795194773.9375036,
-   "fonds": "DeepSeek",
-   "instrument": "pm:polymarket:701501:JA",
-   "aktion": "kaufen",
-   "zuversicht": 0.55
-  },
-  {
-   "ts": 1795153070.1484914,
-   "fonds": "DeepSeek",
-   "instrument": "pm:polymarket:6507388:JA",
-   "aktion": "verkaufen",
-   "zuversicht": 0.72
   }
  ],
  "ereignisse": [
