@@ -118,8 +118,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "dd6456776",
-   "kurs": 716.08,
-   "wert": 2135.39
+   "kurs": 716.44,
+   "wert": 2136.46
   },
   {
    "id": "p1c64b37e",
@@ -139,8 +139,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "dd6456776",
-   "kurs": 59695.475000000006,
-   "wert": 847.15
+   "kurs": 59815.295,
+   "wert": 848.85
   },
   {
    "id": "p994b6370",
@@ -160,8 +160,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "dd6456776",
-   "kurs": 324.29,
-   "wert": 797.84
+   "kurs": 325.53,
+   "wert": 800.89
   },
   {
    "id": "p3b9e74b7",
@@ -261,8 +261,8 @@
    "ausstiegsplan": "Halten bis Wahl April 2027; teilweise verkaufen wenn NEIN ≥0.72 oder Le Pen-Preis ≤0.30; neu bewerten bei Umfragen Stichwahl Le Pen vs. Philippe/Mitte >55 % für RN.",
    "entscheidung_id": "dc6f84fd5",
    "invalidierung": "Seriöse Stichwahl-Umfragen (Ifop, Elabe) zeigen RN-Kandidat dauerhaft ≥54 % gegen jeden Gegner, oder Preis Le Pen JA ≥0.55.",
-   "kurs": 0.5585,
-   "wert": 176.33
+   "kurs": 0.5595000000000001,
+   "wert": 176.64
   },
   {
    "id": "p8b2743ca",
@@ -282,8 +282,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "d0a642430",
-   "kurs": 91.63,
-   "wert": 910.08
+   "kurs": 91.632,
+   "wert": 910.1
   },
   {
    "id": "p96f26326",
@@ -384,8 +384,8 @@
    "ausstiegsplan": "Bis Vereidigung halten; schließen, wenn beide Beine zusammen ≥0.97 verkaufbar.",
    "entscheidung_id": "d5f5d56d9",
    "invalidierung": "Nachweislich abweichende PredictIt-Regel, die Eisenkot-JA bei PredictIt und NEIN bei Polymarket zulässt.",
-   "kurs": 0.722,
-   "wert": 504.7
+   "kurs": 0.7195,
+   "wert": 502.6
   },
   {
    "id": "p2567180c",
@@ -517,7 +517,7 @@
  "funding": 0.0,
  "erstellt": 1793380123.8861866,
  "start_fx": 1.1156327353966788,
- "letzter_tick": 1795633136.6585884,
+ "letzter_tick": 1795634036.8041432,
  "auftraege": [],
  "rebalancing": {
   "ziele": {
