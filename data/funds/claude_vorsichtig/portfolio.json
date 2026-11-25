@@ -66,7 +66,7 @@
    "ausstiegsplan": "Halten bis 9.12.; Verkauf, wenn NEIN-Bid >0,55 oder bei Invalidierung.",
    "entscheidung_id": "d25f2be12",
    "invalidierung": "Fed-Signale (Warsh/Williams/Jefferson) für klaren Hike mit breitem Konsens, oder CME-Hike >90 % ohne Tauben-Widerspruch.",
-   "kurs": 0.3,
+   "kurs": 0.305,
    "wert": 156.02
   },
   {
@@ -89,8 +89,8 @@
    "ausstiegsplan": "Kern halten; Stop 91,5; Rebalancing bei Abweichung >5pp.",
    "entscheidung_id": "d50916521",
    "invalidierung": "AGG schließt unter 91,5 oder 10J-Rendite >5,3 %",
-   "kurs": 96.665,
-   "wert": 1555.26
+   "kurs": 96.675,
+   "wert": 1555.42
   },
   {
    "id": "pd1046bd9",
@@ -112,8 +112,8 @@
    "ausstiegsplan": "Halten; Stop 74.",
    "entscheidung_id": "d123eb847",
    "invalidierung": "10J-Rendite schließt über 5,3 % / TLT unter 74",
-   "kurs": 82.495,
-   "wert": 536.36
+   "kurs": 82.51,
+   "wert": 536.46
   },
   {
    "id": "pbfa54762",
@@ -167,8 +167,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "dea75aef6",
-   "kurs": 315.59,
-   "wert": 505.02
+   "kurs": 315.86,
+   "wert": 505.45
   },
   {
    "id": "p6ba61024",
@@ -188,8 +188,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "dea75aef6",
-   "kurs": 698.325,
-   "wert": 1304.49
+   "kurs": 699.82,
+   "wert": 1307.29
   },
   {
    "id": "p61078fad",
@@ -209,8 +209,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "dea75aef6",
-   "kurs": 97.31,
-   "wert": 534.32
+   "kurs": 97.485,
+   "wert": 535.28
   }
  ],
  "realisiert": -384.36203269307157,
@@ -218,7 +218,7 @@
  "funding": 0.0,
  "erstellt": 1793319819.7411644,
  "start_fx": 1.1184885798616961,
- "letzter_tick": 1795620394.1992853,
+ "letzter_tick": 1795621294.3611288,
  "auftraege": [],
  "rebalancing": {
   "ziele": {
