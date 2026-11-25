@@ -65,7 +65,7 @@
    "gebuehren": 0.0,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.957,
+   "kurs": 0.9575,
    "wert": 210.32
   },
   {
@@ -129,8 +129,8 @@
    "gebuehren": 0.0,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.34750000000000003,
-   "wert": 85.5
+   "kurs": 0.34650000000000003,
+   "wert": 85.0
   },
   {
    "id": "pf0e983be",
@@ -193,8 +193,8 @@
    "gebuehren": 1.04341,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.375,
-   "wert": 67.34
+   "kurs": 0.385,
+   "wert": 69.16
   },
   {
    "id": "p7e5c2e70",
@@ -257,8 +257,8 @@
    "gebuehren": 0.0,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.915,
-   "wert": 317.72
+   "kurs": 0.9155,
+   "wert": 318.07
   },
   {
    "id": "p1f028824",
@@ -609,8 +609,8 @@
    "gebuehren": 0.17475,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.9775,
-   "wert": 165.92
+   "kurs": 0.9795,
+   "wert": 166.43
   },
   {
    "id": "p6a147c4d",
@@ -705,8 +705,8 @@
    "gebuehren": 1.73366,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.915,
-   "wert": 190.19
+   "kurs": 0.91,
+   "wert": 188.1
   },
   {
    "id": "p8bf269d8",
@@ -993,8 +993,8 @@
    "gebuehren": 1.35793,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.823,
-   "wert": 155.03
+   "kurs": 0.821,
+   "wert": 154.04
   },
   {
    "id": "p88372306",
@@ -1089,8 +1089,8 @@
    "gebuehren": 0.24913,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.9455,
-   "wert": 159.44
+   "kurs": 0.9405,
+   "wert": 157.55
   },
   {
    "id": "p766850e1",
@@ -1290,6 +1290,6 @@
  "funding": 0.0,
  "erstellt": 1793379225.5430336,
  "start_fx": 1.1157431109273288,
- "letzter_tick": 1795579652.1870868,
+ "letzter_tick": 1795580552.149308,
  "kontrolle_bis": 1795547113.0516276
 }
