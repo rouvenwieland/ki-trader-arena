@@ -131,8 +131,8 @@
    "gebuehren": 0.32,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Wetter-Regel)",
-   "kurs": 0.815,
-   "wert": 24.3
+   "kurs": 0.85,
+   "wert": 24.9
   },
   {
    "id": "pb173848b",
@@ -157,8 +157,8 @@
    "gebuehren": 0.96,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Wetter-Regel)",
-   "kurs": 0.395,
-   "wert": 21.84
+   "kurs": 0.41000000000000003,
+   "wert": 22.4
   }
  ],
  "realisiert": -9291.50523831616,
@@ -166,6 +166,6 @@
  "funding": 0.0,
  "erstellt": 1793380123.8861866,
  "start_fx": 1.1156327353966788,
- "letzter_tick": 1795614994.0380697,
+ "letzter_tick": 1795615894.1965485,
  "wetter_letzter": 1795614094.018519
 }
