@@ -125,7 +125,7 @@
    "ausstiegsplan": "Bid ≥0,70 verkaufen (P erreicht); Neubewertung nach NVDA-Zahlen 19.11.; schließen, wenn Apple-Vorsprung <3 %.",
    "entscheidung_id": "d7e53ef04",
    "invalidierung": "NVDA-Marktkap. kommt auf <3 % Abstand zu Apple, oder Apple fällt >8 % relativ.",
-   "kurs": 0.8935,
+   "kurs": 0.8955,
    "wert": 138.79
   },
   {
@@ -230,8 +230,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "d6e1a7002",
-   "kurs": 59164.095,
-   "wert": 973.65
+   "kurs": 59137.695,
+   "wert": 973.22
   },
   {
    "id": "pe3015b77",
@@ -251,8 +251,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "d6e1a7002",
-   "kurs": 1656.455,
-   "wert": 375.94
+   "kurs": 1653.135,
+   "wert": 375.18
   },
   {
    "id": "p1ad6082a",
@@ -417,7 +417,7 @@
  "funding": 0.0,
  "erstellt": 1793319819.7411644,
  "start_fx": 1.1184885798616961,
- "letzter_tick": 1795574251.6024358,
+ "letzter_tick": 1795575152.2661357,
  "auftraege": [
   {
    "id": "a4e7a61",
@@ -452,7 +452,7 @@
    "ausstiegsplan": "",
    "invalidierung": "",
    "erstellt": 1794409480.899957,
-   "geprueft_bis": 1795574251.6024358,
+   "geprueft_bis": 1795575152.2661357,
    "gueltig_bis": 1797001480.899957
   }
  ],

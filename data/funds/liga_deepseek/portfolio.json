@@ -22,8 +22,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Halten als Kern-Baustein gemäß Rebalancing-Regel (Ziel 7%). Trim bei BTC über 68.000 (Zielüberschreitung) oder Verkauf bei Tagesschluss unter 52.000 (Invalidierung der Kern-These, dann Cash).",
    "entscheidung_id": "d6d5e7a8d",
-   "kurs": 59164.095,
-   "wert": 776.69,
+   "kurs": 59137.695,
+   "wert": 776.35,
    "invalidierung": "BTC-Tagesschluss unter 52.000 (neue Bärenmarkttiefe, dann ist die 7%-Kernquote zu hoch)."
   },
   {
@@ -118,7 +118,7 @@
  "funding": 0.0,
  "erstellt": 1793319819.7411644,
  "start_fx": 1.1184885798616961,
- "letzter_tick": 1795574251.6024358,
+ "letzter_tick": 1795575152.2661357,
  "rebalancing": {
   "ziele": {
    "stock:SPY": {
