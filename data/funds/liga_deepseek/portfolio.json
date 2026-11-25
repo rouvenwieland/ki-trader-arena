@@ -22,8 +22,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Halten als Kern-Baustein gemäß Rebalancing-Regel (Ziel 7%). Trim bei BTC über 68.000 (Zielüberschreitung) oder Verkauf bei Tagesschluss unter 52.000 (Invalidierung der Kern-These, dann Cash).",
    "entscheidung_id": "d6d5e7a8d",
-   "kurs": 59834.744999999995,
-   "wert": 713.7,
+   "kurs": 59954.575,
+   "wert": 715.13,
    "invalidierung": "BTC-Tagesschluss unter 52.000 (neue Bärenmarkttiefe, dann ist die 7%-Kernquote zu hoch)."
   },
   {
@@ -44,8 +44,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "d14c1f726",
-   "kurs": 716.09,
-   "wert": 1843.96,
+   "kurs": 716.39,
+   "wert": 1844.73,
    "invalidierung": "SPY-Tagesschluss unter 725 (0,8% unter SMA200) bei VIX über 28"
   },
   {
@@ -66,8 +66,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "ddc9288a4",
-   "kurs": 96.608,
-   "wert": 2615.94,
+   "kurs": 96.6,
+   "wert": 2615.73,
    "invalidierung": "10J über 5,20% oder Fed +50bp im Dezember mit 2J über 4,90% → AGG-Anteil auf 10% zurücknehmen."
   },
   {
@@ -88,8 +88,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "ddc9288a4",
-   "kurs": 82.42,
-   "wert": 1313.44
+   "kurs": 82.385,
+   "wert": 1312.88
   },
   {
    "id": "p4d7b7307",
@@ -109,8 +109,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "d960e1788",
-   "kurs": 61.06,
-   "wert": 583.37
+   "kurs": 61.055,
+   "wert": 583.32
   },
   {
    "id": "p8a9946bd",
@@ -143,8 +143,8 @@
    "ausstiegsplan": "Halten bis Abrechnung 30.11. 23:59 ET (5 Tage, hoher Zeitwert-Verfall ist mein Freund). Notausstieg: Falls BTC einen Tagesschluss unter 55.500 zeigt (dann ist NEIN praktisch verloren), verkaufe ich sofort in den Bid, um Restwert zu retten. Kein Nachkauf.",
    "entscheidung_id": "dc3d83007",
    "invalidierung": "BTC-Tagesschluss (Coinbase) unter 56.500 oder Binance-1m-Low unter 56.000 → These (Boden hält bis Monatsende) wäre gebrochen, dann raus.",
-   "kurs": 0.7795000000000001,
-   "wert": 202.28
+   "kurs": 0.792,
+   "wert": 205.66
   }
  ],
  "realisiert": 145.91049298176068,
@@ -152,7 +152,7 @@
  "funding": 0.0,
  "erstellt": 1793319819.7411644,
  "start_fx": 1.1184885798616961,
- "letzter_tick": 1795636737.2085094,
+ "letzter_tick": 1795637637.1609328,
  "rebalancing": {
   "ziele": {
    "stock:SPY": {
