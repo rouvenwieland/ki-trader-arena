@@ -87,8 +87,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "d23f83a34",
-   "kurs": 327.51,
-   "wert": 1425.47
+   "kurs": 327.45,
+   "wert": 1425.21
   },
   {
    "id": "pfd1927c9",
@@ -108,8 +108,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "d174edec4",
-   "kurs": 60277.305,
-   "wert": 536.8
+   "kurs": 60248.615000000005,
+   "wert": 536.54
   },
   {
    "id": "pb4ad69f6",
@@ -138,7 +138,7 @@
  "funding": -0.6133053169464532,
  "erstellt": 1793319819.7411644,
  "start_fx": 1.1184885798616961,
- "letzter_tick": 1795642136.8013754,
+ "letzter_tick": 1795642260.7366862,
  "auftraege": [],
  "rebalancing": {
   "ziele": {
