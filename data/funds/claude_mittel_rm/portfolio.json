@@ -35,8 +35,8 @@
    "ausstiegsplan": "Halten bis Abrechnung 31.12.; vorzeitig verkaufen, wenn NEIN-Preis auf ≥0.62 steigt (Gewinn mitnehmen) oder unter 0.38 fällt.",
    "entscheidung_id": "dbf84bba3",
    "invalidierung": "NVDA schließt wieder dauerhaft über Apple-Marktkap (NVDA >~210 bei AAPL ~343) oder starke NVDA-Zahlen mit Rally >8%; dann neu bewerten/verkaufen.",
-   "kurs": 0.9305,
-   "wert": 515.4
+   "kurs": 0.9365,
+   "wert": 522.11
   },
   {
    "id": "pbb4d5e0c",
@@ -69,7 +69,7 @@
    "ausstiegsplan": "Halten bis 31.12.; Gewinnmitnahme ≥0,93 oder Neubewertung nach NVDA-Earnings 17./19.11.",
    "entscheidung_id": "dce9924e1",
    "invalidierung": "NVDA-Marktkap > Apple −10 % (NVDA >~210 bei Apple ~355) oder Apple −20 % binnen Tagen",
-   "kurs": 0.9165000000000001,
+   "kurs": 0.916,
    "wert": 1222.44
   },
   {
@@ -118,8 +118,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "dd6456776",
-   "kurs": 699.96,
-   "wert": 2087.32
+   "kurs": 698.47,
+   "wert": 2082.88
   },
   {
    "id": "p1c64b37e",
@@ -139,8 +139,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "dd6456776",
-   "kurs": 58602.875,
-   "wert": 831.64
+   "kurs": 58082.075,
+   "wert": 824.25
   },
   {
    "id": "p994b6370",
@@ -160,8 +160,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "dd6456776",
-   "kurs": 317.115,
-   "wert": 780.19
+   "kurs": 316.211,
+   "wert": 777.97
   },
   {
    "id": "p3b9e74b7",
@@ -282,8 +282,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "d0a642430",
-   "kurs": 91.638,
-   "wert": 910.16
+   "kurs": 91.635,
+   "wert": 910.13
   },
   {
    "id": "p96f26326",
@@ -384,8 +384,8 @@
    "ausstiegsplan": "Bis Vereidigung halten; schließen, wenn beide Beine zusammen ≥0.97 verkaufbar.",
    "entscheidung_id": "d5f5d56d9",
    "invalidierung": "Nachweislich abweichende PredictIt-Regel, die Eisenkot-JA bei PredictIt und NEIN bei Polymarket zulässt.",
-   "kurs": 0.6890000000000001,
-   "wert": 478.8
+   "kurs": 0.693,
+   "wert": 481.6
   },
   {
    "id": "p2567180c",
@@ -508,8 +508,8 @@
    "ausstiegsplan": "Bis zur Abrechnung (~8.1.2027) halten. Verkauf, wenn NEIN ≥0,95 oder die Invalidierung eintritt.",
    "entscheidung_id": "dd841b112",
    "invalidierung": "NVDA-Marktkap innerhalb von 10 % zu Apple (NVDA >~195 bei Apple ~358) oder Polymarket NVDA-JA >0,25",
-   "kurs": 0.9100056343508998,
-   "wert": 36.4
+   "kurs": 0.9193349211990298,
+   "wert": 36.77
   }
  ],
  "realisiert": -554.1919806830005,
@@ -517,7 +517,7 @@
  "funding": 0.0,
  "erstellt": 1793380123.8861866,
  "start_fx": 1.1156327353966788,
- "letzter_tick": 1795624139.1102703,
+ "letzter_tick": 1795625037.2089264,
  "auftraege": [],
  "rebalancing": {
   "ziele": {
