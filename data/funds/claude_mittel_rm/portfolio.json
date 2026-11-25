@@ -35,8 +35,8 @@
    "ausstiegsplan": "Halten bis Abrechnung 31.12.; vorzeitig verkaufen, wenn NEIN-Preis auf ≥0.62 steigt (Gewinn mitnehmen) oder unter 0.38 fällt.",
    "entscheidung_id": "dbf84bba3",
    "invalidierung": "NVDA schließt wieder dauerhaft über Apple-Marktkap (NVDA >~210 bei AAPL ~343) oder starke NVDA-Zahlen mit Rally >8%; dann neu bewerten/verkaufen.",
-   "kurs": 0.887,
-   "wert": 494.16
+   "kurs": 0.886,
+   "wert": 491.36
   },
   {
    "id": "pbb4d5e0c",
@@ -69,8 +69,8 @@
    "ausstiegsplan": "Halten bis 31.12.; Gewinnmitnahme ≥0,93 oder Neubewertung nach NVDA-Earnings 17./19.11.",
    "entscheidung_id": "dce9924e1",
    "invalidierung": "NVDA-Marktkap > Apple −10 % (NVDA >~210 bei Apple ~355) oder Apple −20 % binnen Tagen",
-   "kurs": 0.876,
-   "wert": 1169.0
+   "kurs": 0.8765000000000001,
+   "wert": 1170.34
   },
   {
    "id": "pa832233e",
@@ -139,8 +139,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "dd6456776",
-   "kurs": 59419.505000000005,
-   "wert": 843.23
+   "kurs": 59054.065,
+   "wert": 838.05
   },
   {
    "id": "p994b6370",
@@ -317,7 +317,7 @@
    "ausstiegsplan": "Halten bis Abrechnung Jan. 2027; Verkauf bei NEIN <0.80 oder Doomsday-Opening-Tag >$200M.",
    "entscheidung_id": "d6b155dae",
    "invalidierung": "Doomsday Freitagsumsatz inkl. Previews >$200M am 18.12. oder Doomsday-Domestic nach 7 Tagen >$600M.",
-   "kurs": 0.8905000000000001,
+   "kurs": 0.889,
    "wert": 435.91
   },
   {
@@ -384,7 +384,7 @@
    "ausstiegsplan": "Bis Vereidigung halten; schließen, wenn beide Beine zusammen ≥0.97 verkaufbar.",
    "entscheidung_id": "d5f5d56d9",
    "invalidierung": "Nachweislich abweichende PredictIt-Regel, die Eisenkot-JA bei PredictIt und NEIN bei Polymarket zulässt.",
-   "kurs": 0.648,
+   "kurs": 0.6495,
    "wert": 452.2
   },
   {
@@ -508,8 +508,8 @@
    "ausstiegsplan": "Bis zur Abrechnung (~8.1.2027) halten. Verkauf, wenn NEIN ≥0,95 oder die Invalidierung eintritt.",
    "entscheidung_id": "dd841b112",
    "invalidierung": "NVDA-Marktkap innerhalb von 10 % zu Apple (NVDA >~195 bei Apple ~358) oder Polymarket NVDA-JA >0,25",
-   "kurs": 0.8708838951285638,
-   "wert": 34.83
+   "kurs": 0.8800114344273621,
+   "wert": 35.19
   }
  ],
  "realisiert": -554.1919806830005,
@@ -517,7 +517,7 @@
  "funding": 0.0,
  "erstellt": 1793380123.8861866,
  "start_fx": 1.1156327353966788,
- "letzter_tick": 1795570652.1408374,
+ "letzter_tick": 1795571552.247147,
  "auftraege": [],
  "rebalancing": {
   "ziele": {
