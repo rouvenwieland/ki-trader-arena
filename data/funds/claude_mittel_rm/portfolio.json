@@ -139,8 +139,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "dd6456776",
-   "kurs": 58775.345,
-   "wert": 834.09
+   "kurs": 58343.975000000006,
+   "wert": 827.97
   },
   {
    "id": "p994b6370",
@@ -227,8 +227,8 @@
    "ausstiegsplan": "Halten bis Abrechnung 31.12.",
    "entscheidung_id": "de2fc5d7b",
    "invalidierung": "PredictIt-Bein nicht gefüllt: JA-Bein wieder verkaufen.",
-   "kurs": 0.095,
-   "wert": 18.0
+   "kurs": 0.11499999999999999,
+   "wert": 22.0
   },
   {
    "id": "p6edb4531",
@@ -317,8 +317,8 @@
    "ausstiegsplan": "Halten bis Abrechnung Jan. 2027; Verkauf bei NEIN <0.80 oder Doomsday-Opening-Tag >$200M.",
    "entscheidung_id": "d6b155dae",
    "invalidierung": "Doomsday Freitagsumsatz inkl. Previews >$200M am 18.12. oder Doomsday-Domestic nach 7 Tagen >$600M.",
-   "kurs": 0.8835,
-   "wert": 434.44
+   "kurs": 0.875,
+   "wert": 428.53
   },
   {
    "id": "p75b03ffe",
@@ -517,7 +517,7 @@
  "funding": 0.0,
  "erstellt": 1793380123.8861866,
  "start_fx": 1.1156327353966788,
- "letzter_tick": 1795613194.0642262,
+ "letzter_tick": 1795614094.018519,
  "auftraege": [],
  "rebalancing": {
   "ziele": {

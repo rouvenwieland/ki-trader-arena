@@ -2,7 +2,7 @@
  "fonds_id": "ko_wetter",
  "waehrung": "USD",
  "start_kapital": 11156.327353966788,
- "cash": 756.6518156506302,
+ "cash": 707.2284156506302,
  "positionen": [
   {
    "id": "p211efe46",
@@ -79,8 +79,8 @@
    "gebuehren": 1.39,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Wetter-Regel)",
-   "kurs": 0.175,
-   "wert": 22.61
+   "kurs": 0.185,
+   "wert": 23.94
   },
   {
    "id": "p0ce2e47c",
@@ -105,15 +105,67 @@
    "gebuehren": 1.08,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Wetter-Regel)",
-   "kurs": 0.365,
+   "kurs": 0.36,
    "wert": 23.1
+  },
+  {
+   "id": "p52ea1583",
+   "inst": {
+    "id": "pm:kalshi:KXHIGHCHI-26NOV25-B45.5:NEIN",
+    "art": "pm",
+    "venue": "kalshi",
+    "ergebnis": "NEIN",
+    "frage": "Will the maximum temperature be 45-46° on Nov 25, 2026? [45° to 46°]",
+    "schliesst": 1795676400.0,
+    "ref": {
+     "ticker": "KXHIGHCHI-26NOV25-B45.5"
+    },
+    "url": "https://kalshi.com/markets/KXHIGHCHI-26NOV25"
+   },
+   "seite": "long",
+   "menge": 30.0,
+   "einstand": 0.8166666666666667,
+   "hebel": 1.0,
+   "marge": 0.0,
+   "eroeffnet": 1795614094.018519,
+   "gebuehren": 0.32,
+   "funding": 0.0,
+   "ausstiegsplan": "Halten bis zur Abrechnung (Wetter-Regel)",
+   "kurs": 0.81,
+   "wert": 24.0
+  },
+  {
+   "id": "pb173848b",
+   "inst": {
+    "id": "pm:kalshi:KXHIGHMIA-26NOV25-B75.5:NEIN",
+    "art": "pm",
+    "venue": "kalshi",
+    "ergebnis": "NEIN",
+    "frage": "Will the maximum temperature be 75-76° on Nov 25, 2026? [75° to 76°]",
+    "schliesst": 1795672800.0,
+    "ref": {
+     "ticker": "KXHIGHMIA-26NOV25-B75.5"
+    },
+    "url": "https://kalshi.com/markets/KXHIGHMIA-26NOV25"
+   },
+   "seite": "long",
+   "menge": 56.0,
+   "einstand": 0.4222035714285714,
+   "hebel": 1.0,
+   "marge": 0.0,
+   "eroeffnet": 1795614094.018519,
+   "gebuehren": 0.96,
+   "funding": 0.0,
+   "ausstiegsplan": "Halten bis zur Abrechnung (Wetter-Regel)",
+   "kurs": 0.41500000000000004,
+   "wert": 22.4
   }
  ],
  "realisiert": -9291.50523831616,
- "gebuehren": 1012.82,
+ "gebuehren": 1014.1000000000001,
  "funding": 0.0,
  "erstellt": 1793380123.8861866,
  "start_fx": 1.1156327353966788,
- "letzter_tick": 1795613194.0642262,
- "wetter_letzter": 1795610493.8702168
+ "letzter_tick": 1795614094.018519,
+ "wetter_letzter": 1795614094.018519
 }
