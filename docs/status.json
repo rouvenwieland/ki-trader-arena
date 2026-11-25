@@ -1,6 +1,6 @@
 {
  "version": 1,
- "stand": 1795626185.2887506,
+ "stand": 1795626382.8233967,
  "hinweis": "Papierhandel-Simulation, keine Anlageberatung",
  "seite": "https://rouvenwieland.github.io/ki-trader-arena/",
  "budget": {
@@ -444,8 +444,8 @@
    "rendite_pct": -3.91,
    "equity_eur": 9795.97,
    "max_drawdown_pct": -6.34,
-   "status": "Fehler: Modellfehler: gemini-flash-latest: keine Antwort (HTTP 429 [{\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota,",
-   "modell": "gemini-flash-latest",
+   "status": "vorübergehend gestört (Anbieter überlastet) – nächster Versuch beim nächsten Lauf",
+   "modell": "gemini-2.5-flash",
    "kosten_heute_eur": 0.0,
    "kosten_gesamt_eur": 38.011,
    "rendite_ki_pct": [
@@ -562,8 +562,8 @@
    "rendite_pct": -5.0,
    "equity_eur": 9659.81,
    "max_drawdown_pct": -12.8,
-   "status": "Fehler: Modellfehler: gemini-flash-latest: keine Antwort (HTTP 429 [{\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota,",
-   "modell": "gemini-flash-latest",
+   "status": "Fehler: Modellfehler: models/nano-banana-pro-preview: keine Antwort (HTTP 429 [{\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your cur",
+   "modell": "models/nano-banana-pro-preview",
    "kosten_heute_eur": 0.0,
    "kosten_gesamt_eur": 35.796,
    "rendite_ki_pct": [
@@ -798,8 +798,8 @@
    "rendite_pct": -9.43,
    "equity_eur": 9232.68,
    "max_drawdown_pct": -12.32,
-   "status": "Fehler: Modellfehler: gemini-flash-latest: keine Antwort (HTTP 429 [{\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota,",
-   "modell": "gemini-flash-latest",
+   "status": "Fehler: Modellfehler: models/nano-banana-pro-preview: keine Antwort (HTTP 429 [{\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your cur",
+   "modell": "models/nano-banana-pro-preview",
    "kosten_heute_eur": 0.0,
    "kosten_gesamt_eur": 37.932,
    "rendite_ki_pct": [
@@ -857,8 +857,8 @@
    "rendite_pct": -12.22,
    "equity_eur": 8948.25,
    "max_drawdown_pct": -24.83,
-   "status": "Fehler: Modellfehler: gemini-flash-latest: keine Antwort (HTTP 429 [{\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota,",
-   "modell": "gemini-flash-latest",
+   "status": "Fehler: Modellfehler: models/nano-banana-pro-preview: keine Antwort (HTTP 429 [{\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your cur",
+   "modell": "models/nano-banana-pro-preview",
    "kosten_heute_eur": 0.0,
    "kosten_gesamt_eur": 37.052,
    "rendite_ki_pct": [
