@@ -182,15 +182,6 @@
     },
     "anteil": 0.12
    },
-   "stock:XLE": {
-    "inst": {
-     "id": "stock:XLE",
-     "art": "stock",
-     "venue": "yahoo",
-     "symbol": "XLE"
-    },
-    "anteil": 0.06
-   },
    "spot:BTC-USD": {
     "inst": {
      "id": "spot:BTC-USD",
@@ -198,12 +189,21 @@
      "venue": "coinbase",
      "symbol": "BTC-USD"
     },
-    "anteil": 0.06
+    "anteil": 0.065
+   },
+   "stock:XLE": {
+    "inst": {
+     "id": "stock:XLE",
+     "art": "stock",
+     "venue": "yahoo",
+     "symbol": "XLE"
+    },
+    "anteil": 0.05
    }
   },
   "schwelle_pp": 3.0,
-  "seit": 1795619620.5064385,
-  "entscheidung_id": "d8038f6de"
+  "seit": 1795673102.0130184,
+  "entscheidung_id": "d2dd1c32e"
  },
  "auftraege": []
 }
