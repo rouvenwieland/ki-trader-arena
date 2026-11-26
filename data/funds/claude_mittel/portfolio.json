@@ -35,8 +35,8 @@
    "ausstiegsplan": "NEIN-Bid ≥0,93 oder P erreicht → verkaufen; sonst halten bis zur Wahl (April/Mai 2027).",
    "entscheidung_id": "d860a2331",
    "invalidierung": "Lisnard in mehreren Umfragen ≥12 % im 1. Wahlgang oder Rückzug von Philippe/Retailleau zu seinen Gunsten bzw. Sieg in einer Rechts-Primaire.",
-   "kurs": 0.7735000000000001,
-   "wert": 417.42
+   "kurs": 0.792,
+   "wert": 426.06
   },
   {
    "id": "p98f17fcc",
@@ -202,8 +202,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "d6e1a7002",
-   "kurs": 60828.215,
-   "wert": 1001.04
+   "kurs": 60790.05,
+   "wert": 1000.41
   },
   {
    "id": "pe3015b77",
@@ -223,8 +223,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "d6e1a7002",
-   "kurs": 1699.23,
-   "wert": 385.63
+   "kurs": 1698.9650000000001,
+   "wert": 385.57
   },
   {
    "id": "p1ad6082a",
@@ -290,7 +290,7 @@
    "ausstiegsplan": "Gewinn mitnehmen bei NEIN-Bid ≥0.78 (=P). Nach NVDA-Earnings neu rechnen. Sonst halten bis 31.12.",
    "entscheidung_id": "d1fa25bbb",
    "invalidierung": "NVDA-Marktkapitalisierung innerhalb 5 % von Apple (z. B. NVDA ≥200 bei AAPL ~349) nach den Earnings, oder NVDA-JA ≥0.45.",
-   "kurs": 0.92,
+   "kurs": 0.9195,
    "wert": 392.9
   },
   {
@@ -389,7 +389,7 @@
  "funding": 0.0,
  "erstellt": 1793319819.7411644,
  "start_fx": 1.1184885798616961,
- "letzter_tick": 1795683907.0608578,
+ "letzter_tick": 1795684806.7607594,
  "auftraege": [
   {
    "id": "a4e7a61",
@@ -424,7 +424,7 @@
    "ausstiegsplan": "",
    "invalidierung": "",
    "erstellt": 1794409480.899957,
-   "geprueft_bis": 1795683907.0608578,
+   "geprueft_bis": 1795684806.7607594,
    "gueltig_bis": 1797001480.899957
   }
  ],
