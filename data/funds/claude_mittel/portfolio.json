@@ -118,8 +118,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "d6e1a7002",
-   "kurs": 716.7,
-   "wert": 1859.24
+   "kurs": 723.355,
+   "wert": 1876.3
   },
   {
    "id": "p5fe9ac51",
@@ -139,8 +139,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "d6e1a7002",
-   "kurs": 633.93,
-   "wert": 1010.78
+   "kurs": 640.92,
+   "wert": 1021.8
   },
   {
    "id": "p5106387a",
@@ -160,8 +160,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "d6e1a7002",
-   "kurs": 327.45,
-   "wert": 973.98
+   "kurs": 333.04,
+   "wert": 990.47
   },
   {
    "id": "p72af4e36",
@@ -181,8 +181,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "d6e1a7002",
-   "kurs": 96.55,
-   "wert": 1108.85
+   "kurs": 96.47,
+   "wert": 1107.75
   },
   {
    "id": "p3e7ff11c",
@@ -202,8 +202,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "d6e1a7002",
-   "kurs": 61341.175,
-   "wert": 1009.48
+   "kurs": 60683.884999999995,
+   "wert": 998.66
   },
   {
    "id": "pe3015b77",
@@ -223,8 +223,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "d6e1a7002",
-   "kurs": 1721.335,
-   "wert": 390.66
+   "kurs": 1696.215,
+   "wert": 384.93
   },
   {
    "id": "p1ad6082a",
@@ -290,8 +290,8 @@
    "ausstiegsplan": "Gewinn mitnehmen bei NEIN-Bid ≥0.78 (=P). Nach NVDA-Earnings neu rechnen. Sonst halten bis 31.12.",
    "entscheidung_id": "d1fa25bbb",
    "invalidierung": "NVDA-Marktkapitalisierung innerhalb 5 % von Apple (z. B. NVDA ≥200 bei AAPL ~349) nach den Earnings, oder NVDA-JA ≥0.45.",
-   "kurs": 0.9295,
-   "wert": 395.47
+   "kurs": 0.9305000000000001,
+   "wert": 396.33
   },
   {
    "id": "pac09f469",
@@ -355,7 +355,7 @@
  "funding": 0.0,
  "erstellt": 1793319819.7411644,
  "start_fx": 1.1184885798616961,
- "letzter_tick": 1795789194.8328116,
+ "letzter_tick": 1795790094.6792133,
  "auftraege": [
   {
    "id": "a4e7a61",
@@ -390,7 +390,7 @@
    "ausstiegsplan": "",
    "invalidierung": "",
    "erstellt": 1794409480.899957,
-   "geprueft_bis": 1795789194.8328116,
+   "geprueft_bis": 1795790094.6792133,
    "gueltig_bis": 1797001480.899957
   }
  ],
