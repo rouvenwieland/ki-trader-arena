@@ -35,8 +35,8 @@
    "ausstiegsplan": "Halten bis Abrechnung 31.12.; vorzeitig verkaufen, wenn NEIN-Preis auf ≥0.62 steigt (Gewinn mitnehmen) oder unter 0.38 fällt.",
    "entscheidung_id": "dbf84bba3",
    "invalidierung": "NVDA schließt wieder dauerhaft über Apple-Marktkap (NVDA >~210 bei AAPL ~343) oder starke NVDA-Zahlen mit Rally >8%; dann neu bewerten/verkaufen.",
-   "kurs": 0.9295,
-   "wert": 517.08
+   "kurs": 0.929,
+   "wert": 516.52
   },
   {
    "id": "pbb4d5e0c",
@@ -118,8 +118,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "dd6456776",
-   "kurs": 727.01,
-   "wert": 2167.98
+   "kurs": 725.5,
+   "wert": 2163.48
   },
   {
    "id": "p1c64b37e",
@@ -139,8 +139,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "dd6456776",
-   "kurs": 59663.955,
-   "wert": 846.7
+   "kurs": 59567.335,
+   "wert": 845.33
   },
   {
    "id": "p994b6370",
@@ -160,8 +160,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "dd6456776",
-   "kurs": 333.419,
-   "wert": 820.3
+   "kurs": 332.77,
+   "wert": 818.71
   },
   {
    "id": "p3b9e74b7",
@@ -282,8 +282,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "d0a642430",
-   "kurs": 91.665,
-   "wert": 910.43
+   "kurs": 91.67,
+   "wert": 910.48
   },
   {
    "id": "p96f26326",
@@ -384,8 +384,8 @@
    "ausstiegsplan": "Bis Vereidigung halten; schließen, wenn beide Beine zusammen ≥0.97 verkaufbar.",
    "entscheidung_id": "d5f5d56d9",
    "invalidierung": "Nachweislich abweichende PredictIt-Regel, die Eisenkot-JA bei PredictIt und NEIN bei Polymarket zulässt.",
-   "kurs": 0.8135,
-   "wert": 567.0
+   "kurs": 0.813,
+   "wert": 566.3
   },
   {
    "id": "p2567180c",
@@ -517,7 +517,7 @@
  "funding": 0.0,
  "erstellt": 1793380123.8861866,
  "start_fx": 1.1156327353966788,
- "letzter_tick": 1795800895.1145012,
+ "letzter_tick": 1795801794.9688008,
  "auftraege": [],
  "rebalancing": {
   "ziele": {
