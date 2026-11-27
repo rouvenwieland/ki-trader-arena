@@ -5,32 +5,6 @@
  "cash": 556.3252800230997,
  "positionen": [
   {
-   "id": "p6f946674",
-   "inst": {
-    "id": "pm:kalshi:KXHIGHMIA-26NOV26-T76:JA",
-    "art": "pm",
-    "venue": "kalshi",
-    "ergebnis": "JA",
-    "frage": "Will the maximum temperature be <76° on Nov 26, 2026? [75° or below]",
-    "schliesst": 1795759200.0,
-    "ref": {
-     "ticker": "KXHIGHMIA-26NOV26-T76"
-    },
-    "url": "https://kalshi.com/markets/KXHIGHMIA-26NOV26"
-   },
-   "seite": "long",
-   "menge": 496.0,
-   "einstand": 0.04017620967741936,
-   "hebel": 1.0,
-   "marge": 0.0,
-   "eroeffnet": 1795639436.5638506,
-   "gebuehren": 1.34,
-   "funding": 0.0,
-   "ausstiegsplan": "Halten bis zur Abrechnung (Wetter-Regel)",
-   "kurs": null,
-   "wert": 19.93
-  },
-  {
    "id": "pe255ac18",
    "inst": {
     "id": "pm:kalshi:KXHIGHCHI-26NOV26-B42.5:JA",
@@ -157,15 +131,15 @@
    "gebuehren": 0.97,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Wetter-Regel)",
-   "kurs": 0.20500000000000002,
+   "kurs": 0.195,
    "wert": 12.92
   }
  ],
- "realisiert": -9451.514173943691,
+ "realisiert": -9471.441573943692,
  "gebuehren": 1026.1000000000001,
  "funding": 0.0,
  "erstellt": 1793380123.8861866,
  "start_fx": 1.1156327353966788,
- "letzter_tick": 1795780946.3349116,
+ "letzter_tick": 1795781846.025315,
  "wetter_letzter": 1795778246.3761587
 }
