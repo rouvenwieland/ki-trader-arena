@@ -2,7 +2,7 @@
  "fonds_id": "ko_wetter",
  "waehrung": "USD",
  "start_kapital": 11156.327353966788,
- "cash": 505.2111800230997,
+ "cash": 465.05118002309973,
  "positionen": [
   {
    "id": "pfd453c97",
@@ -53,8 +53,8 @@
    "gebuehren": 0.97,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Wetter-Regel)",
-   "kurs": 0.07500000000000001,
-   "wert": 4.76
+   "kurs": 0.08499999999999999,
+   "wert": 5.44
   },
   {
    "id": "p4bfbd76d",
@@ -105,8 +105,8 @@
    "gebuehren": 0.62,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Wetter-Regel)",
-   "kurs": 0.435,
-   "wert": 15.48
+   "kurs": 0.43,
+   "wert": 14.76
   },
   {
    "id": "pafcb763a",
@@ -131,8 +131,8 @@
    "gebuehren": 0.59,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Wetter-Regel)",
-   "kurs": 0.695,
-   "wert": 23.46
+   "kurs": 0.685,
+   "wert": 23.12
   },
   {
    "id": "p6052f819",
@@ -159,13 +159,65 @@
    "ausstiegsplan": "Halten bis zur Abrechnung (Wetter-Regel)",
    "kurs": null,
    "wert": 18.76
+  },
+  {
+   "id": "p6496b9a5",
+   "inst": {
+    "id": "pm:kalshi:KXHIGHNY-26NOV27-B57.5:NEIN",
+    "art": "pm",
+    "venue": "kalshi",
+    "ergebnis": "NEIN",
+    "frage": "Will the maximum temperature be 57-58° on Nov 27, 2026? [57° to 58°]",
+    "schliesst": 1795845600.0,
+    "ref": {
+     "ticker": "KXHIGHNY-26NOV27-B57.5"
+    },
+    "url": "https://kalshi.com/markets/KXHIGHNY-26NOV27"
+   },
+   "seite": "long",
+   "menge": 1877.0,
+   "einstand": 0.01,
+   "hebel": 1.0,
+   "marge": 0.0,
+   "eroeffnet": 1795803594.9743671,
+   "gebuehren": 1.31,
+   "funding": 0.0,
+   "ausstiegsplan": "Halten bis zur Abrechnung (Wetter-Regel)",
+   "kurs": null,
+   "wert": 18.77
+  },
+  {
+   "id": "p33a46c9a",
+   "inst": {
+    "id": "pm:kalshi:KXHIGHNY-26NOV28-B52.5:NEIN",
+    "art": "pm",
+    "venue": "kalshi",
+    "ergebnis": "NEIN",
+    "frage": "Will the maximum temperature be 52-53° on Nov 28, 2026? [52° to 53°]",
+    "schliesst": 1795932000.0,
+    "ref": {
+     "ticker": "KXHIGHNY-26NOV28-B52.5"
+    },
+    "url": "https://kalshi.com/markets/KXHIGHNY-26NOV28"
+   },
+   "seite": "long",
+   "menge": 33.0,
+   "einstand": 0.5915151515151515,
+   "hebel": 1.0,
+   "marge": 0.0,
+   "eroeffnet": 1795803594.9743671,
+   "gebuehren": 0.56,
+   "funding": 0.0,
+   "ausstiegsplan": "Halten bis zur Abrechnung (Wetter-Regel)",
+   "kurs": 0.585,
+   "wert": 18.81
   }
  ],
  "realisiert": -9503.948873943691,
- "gebuehren": 1029.72,
+ "gebuehren": 1031.59,
  "funding": 0.0,
  "erstellt": 1793380123.8861866,
  "start_fx": 1.1156327353966788,
- "letzter_tick": 1795802694.9638693,
- "wetter_letzter": 1795799994.9105515
+ "letzter_tick": 1795803594.9743671,
+ "wetter_letzter": 1795803594.9743671
 }

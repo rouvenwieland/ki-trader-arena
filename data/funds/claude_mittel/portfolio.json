@@ -35,8 +35,8 @@
    "ausstiegsplan": "NEIN-Bid ≥0,93 oder P erreicht → verkaufen; sonst halten bis zur Wahl (April/Mai 2027).",
    "entscheidung_id": "d860a2331",
    "invalidierung": "Lisnard in mehreren Umfragen ≥12 % im 1. Wahlgang oder Rückzug von Philippe/Retailleau zu seinen Gunsten bzw. Sieg in einer Rechts-Primaire.",
-   "kurs": 0.747,
-   "wert": 401.76
+   "kurs": 0.749,
+   "wert": 402.84
   },
   {
    "id": "p98f17fcc",
@@ -97,8 +97,8 @@
    "ausstiegsplan": "Bid ≥0,70 verkaufen (P erreicht); Neubewertung nach NVDA-Zahlen 19.11.; schließen, wenn Apple-Vorsprung <3 %.",
    "entscheidung_id": "d7e53ef04",
    "invalidierung": "NVDA-Marktkap. kommt auf <3 % Abstand zu Apple, oder Apple fällt >8 % relativ.",
-   "kurs": 0.922,
-   "wert": 144.6
+   "kurs": 0.9215,
+   "wert": 144.44
   },
   {
    "id": "pb60e44cc",
@@ -118,8 +118,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "d6e1a7002",
-   "kurs": 728.68,
-   "wert": 1890.32
+   "kurs": 728.32,
+   "wert": 1889.38
   },
   {
    "id": "p5fe9ac51",
@@ -160,8 +160,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "d6e1a7002",
-   "kurs": 334.26,
-   "wert": 994.23
+   "kurs": 334.4,
+   "wert": 994.65
   },
   {
    "id": "p72af4e36",
@@ -181,8 +181,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "d6e1a7002",
-   "kurs": 96.24,
-   "wert": 1105.29
+   "kurs": 96.275,
+   "wert": 1105.69
   },
   {
    "id": "p3e7ff11c",
@@ -202,8 +202,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "d6e1a7002",
-   "kurs": 59787.465,
-   "wert": 983.91
+   "kurs": 59819.175,
+   "wert": 984.43
   },
   {
    "id": "pe3015b77",
@@ -223,8 +223,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "d6e1a7002",
-   "kurs": 1668.405,
-   "wert": 378.63
+   "kurs": 1668.4450000000002,
+   "wert": 378.66
   },
   {
    "id": "p1ad6082a",
@@ -355,7 +355,7 @@
  "funding": 0.0,
  "erstellt": 1793319819.7411644,
  "start_fx": 1.1184885798616961,
- "letzter_tick": 1795802694.9638693,
+ "letzter_tick": 1795803594.9743671,
  "auftraege": [
   {
    "id": "a4e7a61",
@@ -390,7 +390,7 @@
    "ausstiegsplan": "",
    "invalidierung": "",
    "erstellt": 1794409480.899957,
-   "geprueft_bis": 1795802694.9638693,
+   "geprueft_bis": 1795803594.9743671,
    "gueltig_bis": 1797001480.899957
   }
  ],

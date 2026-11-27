@@ -69,8 +69,8 @@
    "ausstiegsplan": "Halten bis 31.12.; Gewinnmitnahme ≥0,93 oder Neubewertung nach NVDA-Earnings 17./19.11.",
    "entscheidung_id": "dce9924e1",
    "invalidierung": "NVDA-Marktkap > Apple −10 % (NVDA >~210 bei Apple ~355) oder Apple −20 % binnen Tagen",
-   "kurs": 0.922,
-   "wert": 1230.46
+   "kurs": 0.9215,
+   "wert": 1229.12
   },
   {
    "id": "pa832233e",
@@ -118,8 +118,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "dd6456776",
-   "kurs": 728.68,
-   "wert": 2173.2
+   "kurs": 728.32,
+   "wert": 2172.13
   },
   {
    "id": "p1c64b37e",
@@ -139,8 +139,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "dd6456776",
-   "kurs": 59787.465,
-   "wert": 848.45
+   "kurs": 59819.175,
+   "wert": 848.9
   },
   {
    "id": "p994b6370",
@@ -160,8 +160,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "dd6456776",
-   "kurs": 334.26,
-   "wert": 822.49
+   "kurs": 334.4,
+   "wert": 822.83
   },
   {
    "id": "p3b9e74b7",
@@ -384,8 +384,8 @@
    "ausstiegsplan": "Bis Vereidigung halten; schließen, wenn beide Beine zusammen ≥0.97 verkaufbar.",
    "entscheidung_id": "d5f5d56d9",
    "invalidierung": "Nachweislich abweichende PredictIt-Regel, die Eisenkot-JA bei PredictIt und NEIN bei Polymarket zulässt.",
-   "kurs": 0.778,
-   "wert": 536.2
+   "kurs": 0.8055000000000001,
+   "wert": 560.0
   },
   {
    "id": "p2567180c",
@@ -517,7 +517,7 @@
  "funding": 0.0,
  "erstellt": 1793380123.8861866,
  "start_fx": 1.1156327353966788,
- "letzter_tick": 1795802694.9638693,
+ "letzter_tick": 1795803594.9743671,
  "auftraege": [],
  "rebalancing": {
   "ziele": {

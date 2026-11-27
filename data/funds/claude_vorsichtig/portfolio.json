@@ -66,7 +66,7 @@
    "ausstiegsplan": "Halten bis 9.12.; Verkauf, wenn NEIN-Bid >0,55 oder bei Invalidierung.",
    "entscheidung_id": "d25f2be12",
    "invalidierung": "Fed-Signale (Warsh/Williams/Jefferson) für klaren Hike mit breitem Konsens, oder CME-Hike >90 % ohne Tauben-Widerspruch.",
-   "kurs": 0.3,
+   "kurs": 0.295,
    "wert": 156.02
   },
   {
@@ -89,8 +89,8 @@
    "ausstiegsplan": "Kern halten; Stop 91,5; Rebalancing bei Abweichung >5pp.",
    "entscheidung_id": "d50916521",
    "invalidierung": "AGG schließt unter 91,5 oder 10J-Rendite >5,3 %",
-   "kurs": 96.24,
-   "wert": 1548.67
+   "kurs": 96.275,
+   "wert": 1549.23
   },
   {
    "id": "pd1046bd9",
@@ -146,8 +146,8 @@
    "ausstiegsplan": "Halten bis zur Abrechnung. Vorzeitig verkaufen, wenn das NEIN-Bid 0,985 oder mehr erreicht oder die Invalidierung eintritt.",
    "entscheidung_id": "db3632f99",
    "invalidierung": "WTI-Frontmonat schließt über 120 USD, oder Hormuz wird vollständig gesperrt und Brent liegt über 130.",
-   "kurs": 0.977,
-   "wert": 310.37
+   "kurs": 0.978,
+   "wert": 310.69
   },
   {
    "id": "p15600b5d",
@@ -167,8 +167,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "dea75aef6",
-   "kurs": 334.26,
-   "wert": 534.97
+   "kurs": 334.4,
+   "wert": 535.2
   },
   {
    "id": "p6ba61024",
@@ -188,8 +188,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "dea75aef6",
-   "kurs": 728.68,
-   "wert": 1361.35
+   "kurs": 728.32,
+   "wert": 1360.68
   },
   {
    "id": "p61078fad",
@@ -209,8 +209,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "dea75aef6",
-   "kurs": 100.54,
-   "wert": 552.15
+   "kurs": 100.3,
+   "wert": 550.83
   }
  ],
  "realisiert": -384.36203269307157,
@@ -218,7 +218,7 @@
  "funding": 0.0,
  "erstellt": 1793319819.7411644,
  "start_fx": 1.1184885798616961,
- "letzter_tick": 1795802694.9638693,
+ "letzter_tick": 1795803594.9743671,
  "auftraege": [],
  "rebalancing": {
   "ziele": {
