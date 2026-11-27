@@ -2,7 +2,7 @@
  "fonds_id": "liga_deepseek",
  "waehrung": "USD",
  "start_kapital": 11184.88579861696,
- "cash": 3677.5024494281847,
+ "cash": 3915.724559428185,
  "positionen": [
   {
    "id": "p3d319c8e",
@@ -111,44 +111,10 @@
    "entscheidung_id": "d960e1788",
    "kurs": 60.9,
    "wert": 581.93
-  },
-  {
-   "id": "p8a9946bd",
-   "inst": {
-    "id": "pm:polymarket:6507392:NEIN",
-    "art": "pm",
-    "venue": "polymarket",
-    "ergebnis": "NEIN",
-    "frage": "Will Bitcoin dip to $55,000 in November?",
-    "schliesst": 1796101200.0,
-    "ref": {
-     "id": "6507392",
-     "token_ja": "86818214716339720623824297871888907455819034267198335174718592093543870031596",
-     "token_nein": "34486274497219401190105867456670397932477225968828604202014096609283683225717",
-     "tick": 0.001,
-     "condition": "0x7cfd775dc4f2bedbc43fe70493e88a340fcdb0986727c15f4963237231bb806d",
-     "gebuehr_rate": 0.01,
-     "gebuehr_exp": 1.0
-    },
-    "url": "https://polymarket.com/event/what-price-will-bitcoin-hit-in-november-2026"
-   },
-   "seite": "long",
-   "menge": 260.0,
-   "einstand": 0.5297153846153846,
-   "hebel": 1.0,
-   "marge": 0.0,
-   "eroeffnet": 1795619781.619461,
-   "gebuehren": 0.6477,
-   "funding": 0.0,
-   "ausstiegsplan": "Halten bis Abrechnung 30.11. 23:59 ET (5 Tage, hoher Zeitwert-Verfall ist mein Freund). Notausstieg: Falls BTC einen Tagesschluss unter 55.500 zeigt (dann ist NEIN praktisch verloren), verkaufe ich sofort in den Bid, um Restwert zu retten. Kein Nachkauf.",
-   "entscheidung_id": "dc3d83007",
-   "invalidierung": "BTC-Tagesschluss (Coinbase) unter 56.500 oder Binance-1m-Low unter 56.000 → These (Boden hält bis Monatsende) wäre gebrochen, dann raus.",
-   "kurs": 0.9175,
-   "wert": 238.42
   }
  ],
- "realisiert": 145.91049298176068,
- "gebuehren": 256.1159213952993,
+ "realisiert": 246.4066029817607,
+ "gebuehren": 256.3138113952993,
  "funding": 0.0,
  "erstellt": 1793319819.7411644,
  "start_fx": 1.1184885798616961,
@@ -202,8 +168,8 @@
    }
   },
   "schwelle_pp": 2.5,
-  "seit": 1795705741.670182,
-  "entscheidung_id": "d4ff3313a"
+  "seit": 1795741988.2503877,
+  "entscheidung_id": "df9d416ba"
  },
  "auftraege": []
 }
