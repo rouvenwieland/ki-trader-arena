@@ -202,8 +202,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "d6e1a7002",
-   "kurs": 60596.335,
-   "wert": 997.22
+   "kurs": 60629.565,
+   "wert": 997.77
   },
   {
    "id": "pe3015b77",
@@ -223,8 +223,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "d6e1a7002",
-   "kurs": 1692.755,
-   "wert": 384.16
+   "kurs": 1697.895,
+   "wert": 385.34
   },
   {
    "id": "p1ad6082a",
@@ -348,48 +348,14 @@
    "invalidierung": "AAPL-Marktkap. fällt unter 1,15× MSFT-Marktkap. laut companiesmarketcap.",
    "kurs": 0.7826620735031216,
    "wert": 46.04
-  },
-  {
-   "id": "paef0bb10",
-   "inst": {
-    "id": "pm:polymarket:6977205:NEIN",
-    "art": "pm",
-    "venue": "polymarket",
-    "ergebnis": "NEIN",
-    "frage": "New NVIDIA CEO named by December 31, 2026?",
-    "schliesst": 1798779540.0,
-    "ref": {
-     "id": "6977205",
-     "token_ja": "44558631181975413784524040138198113866542690797483755072260383831719409876660",
-     "token_nein": "2850080638485078487119156792065577759676622346318773387984061906346610063157",
-     "tick": 0.01,
-     "condition": "0x3d8416b9447091615f60c7778c87b4370a6a59a674aec0711535e638f442389c",
-     "gebuehr_rate": 0.04,
-     "gebuehr_exp": 1.0
-    },
-    "url": "https://polymarket.com/event/new-nvidia-ceo-named-by-december-31-2026"
-   },
-   "seite": "long",
-   "menge": 48.0,
-   "einstand": 0.5924999999999999,
-   "hebel": 1.0,
-   "marge": 0.0,
-   "eroeffnet": 1794496556.7173893,
-   "gebuehren": 0.46357,
-   "funding": 0.0,
-   "ausstiegsplan": "Halten bis zur Abrechnung am 31.12. Gewinn mitnehmen, wenn der NEIN-Bid ≥0,80 ist. Bei der Invalidierungsmeldung sofort schließen.",
-   "entscheidung_id": "d4c6b2267",
-   "invalidierung": "Glaubwürdige Berichte (WSJ/Bloomberg), dass das Board kurz vor der Ernennung eines permanenten CEO steht oder Kress dauerhaft macht. Ebenso eine Aussage im Call vom 17.11., die Suche solle 'within weeks' abgeschlossen sein.",
-   "kurs": null,
-   "wert": 28.44
   }
  ],
- "realisiert": -142.897706728414,
+ "realisiert": -171.337706728414,
  "gebuehren": 65.4566933771088,
  "funding": 0.0,
  "erstellt": 1793319819.7411644,
  "start_fx": 1.1184885798616961,
- "letzter_tick": 1795740070.8221853,
+ "letzter_tick": 1795740971.1902704,
  "auftraege": [
   {
    "id": "a4e7a61",
@@ -424,7 +390,7 @@
    "ausstiegsplan": "",
    "invalidierung": "",
    "erstellt": 1794409480.899957,
-   "geprueft_bis": 1795740070.8221853,
+   "geprueft_bis": 1795740971.1902704,
    "gueltig_bis": 1797001480.899957
   }
  ],
