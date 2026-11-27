@@ -129,8 +129,8 @@
    "gebuehren": 0.0,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.185,
-   "wert": 45.5
+   "kurs": 0.19,
+   "wert": 46.5
   },
   {
    "id": "pf0e983be",
@@ -193,8 +193,8 @@
    "gebuehren": 1.04341,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.525,
-   "wert": 94.64
+   "kurs": 0.555,
+   "wert": 100.1
   },
   {
    "id": "p7e5c2e70",
@@ -801,8 +801,8 @@
    "gebuehren": 2.0848,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.61,
-   "wert": 146.77
+   "kurs": 0.6145,
+   "wert": 147.97
   },
   {
    "id": "pff668a53",
@@ -835,38 +835,6 @@
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
    "kurs": 0.9485,
    "wert": 180.61
-  },
-  {
-   "id": "p52ad9acd",
-   "inst": {
-    "id": "pm:polymarket:2116493:NEIN",
-    "art": "pm",
-    "venue": "polymarket",
-    "ergebnis": "NEIN",
-    "frage": "Will National Party win the most seats in the New Zealand House of Representatives in the 2026 New Zealand legislative election?",
-    "schliesst": 1794113940.0,
-    "ref": {
-     "id": "2116493",
-     "token_ja": "26180671930795783086167354944853320138724504174864059426988212642169432238219",
-     "token_nein": "109528281960787366259167519549419015523883006138549082473738768120949458572608",
-     "tick": 0.001,
-     "condition": "0xba155b6be6cabf93bf31dfcc56fe2f4e3e88d16b0d490319c635930f2d9fbd04",
-     "gebuehr_rate": 0.04,
-     "gebuehr_exp": 1.0
-    },
-    "url": "https://polymarket.com/event/new-zealand-legislative-election-winner"
-   },
-   "seite": "long",
-   "menge": 3600.0,
-   "einstand": 0.044767602777777776,
-   "hebel": 1.0,
-   "marge": 0.0,
-   "eroeffnet": 1794043257.375455,
-   "gebuehren": 6.15794,
-   "funding": 0.0,
-   "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": null,
-   "wert": 161.16
   },
   {
    "id": "pf5e1aa21",
@@ -993,8 +961,8 @@
    "gebuehren": 1.35793,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.865,
-   "wert": 162.56
+   "kurs": 0.8605,
+   "wert": 158.2
   },
   {
    "id": "p88372306",
@@ -1025,8 +993,8 @@
    "gebuehren": 3.9984,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.46499999999999997,
-   "wert": 147.2
+   "kurs": 0.455,
+   "wert": 144.0
   },
   {
    "id": "p396ede21",
@@ -1121,8 +1089,8 @@
    "gebuehren": 0.0501,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.9884999999999999,
-   "wert": 165.82
+   "kurs": 0.9904999999999999,
+   "wert": 166.32
   },
   {
    "id": "pe3de2c63",
@@ -1185,8 +1153,8 @@
    "gebuehren": 0.49949,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.885,
-   "wert": 153.29
+   "kurs": 0.887,
+   "wert": 153.99
   },
   {
    "id": "p9176f163",
@@ -1253,11 +1221,11 @@
    "wert": 165.11
   }
  ],
- "realisiert": -3437.2033800000004,
+ "realisiert": -3598.36675,
  "gebuehren": 304.4894399999999,
  "funding": 0.0,
  "erstellt": 1793379225.5430336,
  "start_fx": 1.1157431109273288,
- "letzter_tick": 1795748171.3599997,
+ "letzter_tick": 1795749072.3114629,
  "kontrolle_bis": 1795720263.5721488
 }
