@@ -22,8 +22,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Halten als Kern-Baustein gemäß Rebalancing-Regel (Ziel 7%). Trim bei BTC über 68.000 (Zielüberschreitung) oder Verkauf bei Tagesschluss unter 52.000 (Invalidierung der Kern-These, dann Cash).",
    "entscheidung_id": "d6d5e7a8d",
-   "kurs": 60069.524999999994,
-   "wert": 716.5,
+   "kurs": 59893.455,
+   "wert": 714.4,
    "invalidierung": "BTC-Tagesschluss unter 52.000 (neue Bärenmarkttiefe, dann ist die 7%-Kernquote zu hoch)."
   },
   {
@@ -44,8 +44,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "d14c1f726",
-   "kurs": 727.07,
-   "wert": 1872.23,
+   "kurs": 726.11,
+   "wert": 1869.76,
    "invalidierung": "SPY-Tagesschluss unter 725 (0,8% unter SMA200) bei VIX über 28"
   },
   {
@@ -66,8 +66,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "ddc9288a4",
-   "kurs": 96.245,
-   "wert": 2606.11,
+   "kurs": 96.255,
+   "wert": 2606.38,
    "invalidierung": "10J über 5,20% oder Fed +50bp im Dezember mit 2J über 4,90% → AGG-Anteil auf 10% zurücknehmen."
   },
   {
@@ -88,8 +88,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "ddc9288a4",
-   "kurs": 81.29,
-   "wert": 1295.43
+   "kurs": 81.32,
+   "wert": 1295.91
   },
   {
    "id": "p4d7b7307",
@@ -109,8 +109,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "d960e1788",
-   "kurs": 61.86,
-   "wert": 591.01
+   "kurs": 61.895,
+   "wert": 591.35
   },
   {
    "id": "p9f3b0a47",
@@ -143,8 +143,8 @@
    "ausstiegsplan": "Halten bis Abrechnung 17:00 UTC (2h, kein Exit-Risiko außer Auflösung). Bei vorzeitigem BTC-Anstieg über 59.800 NEIN per Limit 0,80 schließen.",
    "entscheidung_id": "d11cce6f8",
    "invalidierung": "BTC handelt wieder über 59.800 (dann ist der Markt mit 0,15 fair und der Edge weg).",
-   "kurs": 0.22999999999999998,
-   "wert": 33.0
+   "kurs": 0.999,
+   "wert": 149.85
   }
  ],
  "realisiert": 246.4066029817607,
@@ -152,7 +152,7 @@
  "funding": 0.0,
  "erstellt": 1793319819.7411644,
  "start_fx": 1.1184885798616961,
- "letzter_tick": 1795798194.6664095,
+ "letzter_tick": 1795799094.7139163,
  "rebalancing": {
   "ziele": {
    "stock:SPY": {
