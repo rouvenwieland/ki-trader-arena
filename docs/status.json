@@ -1,6 +1,6 @@
 {
  "version": 1,
- "stand": 1795749178.615792,
+ "stand": 1795749521.0521636,
  "hinweis": "Papierhandel-Simulation, keine Anlageberatung",
  "seite": "https://rouvenwieland.github.io/ki-trader-arena/",
  "budget": {
@@ -444,7 +444,7 @@
    "rendite_pct": -3.11,
    "equity_eur": 9841.71,
    "max_drawdown_pct": -12.8,
-   "status": "Fehler: Modellfehler: gemini-flash-latest: keine Antwort (HTTP 429 [{\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota,",
+   "status": "vorübergehend gestört (Anbieter überlastet) – nächster Versuch beim nächsten Lauf",
    "modell": "gemini-flash-latest",
    "kosten_heute_eur": 0.0,
    "kosten_gesamt_eur": 35.759,
