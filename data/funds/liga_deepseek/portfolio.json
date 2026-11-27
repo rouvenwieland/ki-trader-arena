@@ -2,7 +2,7 @@
  "fonds_id": "liga_deepseek",
  "waehrung": "USD",
  "start_kapital": 11184.88579861696,
- "cash": 3789.522959428185,
+ "cash": 3939.522959428185,
  "positionen": [
   {
    "id": "p3d319c8e",
@@ -22,8 +22,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Halten als Kern-Baustein gemäß Rebalancing-Regel (Ziel 7%). Trim bei BTC über 68.000 (Zielüberschreitung) oder Verkauf bei Tagesschluss unter 52.000 (Invalidierung der Kern-These, dann Cash).",
    "entscheidung_id": "d6d5e7a8d",
-   "kurs": 59893.455,
-   "wert": 714.4,
+   "kurs": 59794.524999999994,
+   "wert": 713.22,
    "invalidierung": "BTC-Tagesschluss unter 52.000 (neue Bärenmarkttiefe, dann ist die 7%-Kernquote zu hoch)."
   },
   {
@@ -44,8 +44,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "d14c1f726",
-   "kurs": 726.11,
-   "wert": 1869.76,
+   "kurs": 726.49,
+   "wert": 1870.74,
    "invalidierung": "SPY-Tagesschluss unter 725 (0,8% unter SMA200) bei VIX über 28"
   },
   {
@@ -66,8 +66,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "ddc9288a4",
-   "kurs": 96.255,
-   "wert": 2606.38,
+   "kurs": 96.24,
+   "wert": 2605.98,
    "invalidierung": "10J über 5,20% oder Fed +50bp im Dezember mit 2J über 4,90% → AGG-Anteil auf 10% zurücknehmen."
   },
   {
@@ -88,8 +88,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "ddc9288a4",
-   "kurs": 81.32,
-   "wert": 1295.91
+   "kurs": 81.295,
+   "wert": 1295.51
   },
   {
    "id": "p4d7b7307",
@@ -109,50 +109,16 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "d960e1788",
-   "kurs": 61.895,
-   "wert": 591.35
-  },
-  {
-   "id": "p9f3b0a47",
-   "inst": {
-    "id": "pm:polymarket:7203526:NEIN",
-    "art": "pm",
-    "venue": "polymarket",
-    "ergebnis": "NEIN",
-    "frage": "Will the price of Bitcoin be above $60,000 on November 27?",
-    "schliesst": 1795798800.0,
-    "ref": {
-     "id": "7203526",
-     "token_ja": "2597856592692060810406822724531759713812934649424439347557524244023375997983",
-     "token_nein": "34114155695617452689607165240427359063522914971141596717163897325773455794859",
-     "tick": 0.01,
-     "condition": "0x3c7951f8534f2623d1ba2e0df14e96dc11699b7ddf369a15f239167e3ff476ae",
-     "gebuehr_rate": 0.01,
-     "gebuehr_exp": 1.0
-    },
-    "url": "https://polymarket.com/event/bitcoin-above-on-november-27-2026"
-   },
-   "seite": "long",
-   "menge": 150.0,
-   "einstand": 0.84,
-   "hebel": 1.0,
-   "marge": 0.0,
-   "eroeffnet": 1795792125.0204241,
-   "gebuehren": 0.2016,
-   "funding": 0.0,
-   "ausstiegsplan": "Halten bis Abrechnung 17:00 UTC (2h, kein Exit-Risiko außer Auflösung). Bei vorzeitigem BTC-Anstieg über 59.800 NEIN per Limit 0,80 schließen.",
-   "entscheidung_id": "d11cce6f8",
-   "invalidierung": "BTC handelt wieder über 59.800 (dann ist der Markt mit 0,15 fair und der Edge weg).",
-   "kurs": 0.999,
-   "wert": 149.85
+   "kurs": 61.805,
+   "wert": 590.49
   }
  ],
- "realisiert": 246.4066029817607,
+ "realisiert": 270.40660298176067,
  "gebuehren": 256.5154113952993,
  "funding": 0.0,
  "erstellt": 1793319819.7411644,
  "start_fx": 1.1184885798616961,
- "letzter_tick": 1795799094.7139163,
+ "letzter_tick": 1795799994.9105515,
  "rebalancing": {
   "ziele": {
    "stock:SPY": {
