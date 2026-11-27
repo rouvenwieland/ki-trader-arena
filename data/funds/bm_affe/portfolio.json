@@ -2,71 +2,52 @@
  "fonds_id": "bm_affe",
  "waehrung": "USD",
  "start_kapital": 11184.88579861696,
- "cash": 2926.115633072443,
+ "cash": 5378.811169727923,
  "positionen": [
   {
-   "id": "pc720858a",
+   "id": "p978363a4",
    "inst": {
-    "id": "spot:LINK-USD",
+    "id": "spot:ADA-USD",
     "art": "spot",
     "venue": "coinbase",
-    "symbol": "LINK-USD"
+    "symbol": "ADA-USD"
    },
    "seite": "long",
-   "menge": 198.04891374969813,
-   "einstand": 9.061844518237088,
+   "menge": 7236.285606175437,
+   "einstand": 0.14838219499883015,
    "hebel": 1.0,
    "marge": 0.0,
-   "eroeffnet": 1795651259.4504313,
-   "gebuehren": 10.76813078043307,
+   "eroeffnet": 1795738271.099125,
+   "gebuehren": 6.44241565129651,
    "funding": 0.0,
-   "kurs": 9.2705,
-   "wert": 1835.91
+   "kurs": 0.148335,
+   "wert": 1073.07
   },
   {
-   "id": "p4f6c9931",
+   "id": "pfae84b4f",
    "inst": {
-    "id": "spot:XRP-USD",
+    "id": "spot:DOGE-USD",
     "art": "spot",
     "venue": "coinbase",
-    "symbol": "XRP-USD"
+    "symbol": "DOGE-USD"
    },
    "seite": "long",
-   "menge": 1987.3496977406903,
-   "einstand": 0.9372627182568226,
+   "menge": 45856.19711714639,
+   "einstand": 0.05639187121789162,
    "hebel": 1.0,
    "marge": 0.0,
-   "eroeffnet": 1795651259.4504313,
-   "gebuehren": 11.176012678987885,
+   "eroeffnet": 1795738271.099125,
+   "gebuehren": 15.515500574234233,
    "funding": 0.0,
-   "kurs": 0.94285,
-   "wert": 1873.67
-  },
-  {
-   "id": "pead6aa43",
-   "inst": {
-    "id": "spot:SOL-USD",
-    "art": "spot",
-    "venue": "coinbase",
-    "symbol": "SOL-USD"
-   },
-   "seite": "long",
-   "menge": 34.80462587187873,
-   "einstand": 70.46409,
-   "hebel": 1.0,
-   "marge": 0.0,
-   "eroeffnet": 1795651259.4504313,
-   "gebuehren": 14.714857739114345,
-   "funding": 0.0,
-   "kurs": 70.89500000000001,
-   "wert": 2467.3
+   "kurs": 0.056375,
+   "wert": 2584.46
   }
  ],
- "realisiert": -1506.4590150943245,
- "gebuehren": 1242.8597723628627,
+ "realisiert": -1481.986391047408,
+ "gebuehren": 1301.8456935610461,
  "funding": 0.0,
  "erstellt": 1793319819.7411644,
  "start_fx": 1.1184885798616961,
- "letzter_tick": 1795737370.492749,
- "letzter_tag": "2026-11-26"
+ "letzter_tick": 1795738271.099125,
+ "letzter_tag": "2026-11-27"
 }
