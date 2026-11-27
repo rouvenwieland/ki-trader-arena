@@ -53,8 +53,8 @@
    "gebuehren": 1.32,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Wetter-Regel)",
-   "kurs": 0.08,
-   "wert": 9.03
+   "kurs": 0.10500000000000001,
+   "wert": 12.9
   },
   {
    "id": "pe255ac18",
@@ -105,8 +105,8 @@
    "gebuehren": 0.81,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Wetter-Regel)",
-   "kurs": 0.03,
-   "wert": 0.94
+   "kurs": 0.035,
+   "wert": 1.41
   },
   {
    "id": "p2ad1dd0d",
@@ -209,8 +209,8 @@
    "gebuehren": 1.07,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Wetter-Regel)",
-   "kurs": 0.29500000000000004,
-   "wert": 24.08
+   "kurs": 0.27,
+   "wert": 22.36
   }
  ],
  "realisiert": -9388.424173943691,
@@ -218,6 +218,6 @@
  "funding": 0.0,
  "erstellt": 1793380123.8861866,
  "start_fx": 1.1156327353966788,
- "letzter_tick": 1795741870.8816507,
+ "letzter_tick": 1795742771.1119998,
  "wetter_letzter": 1795740070.8221853
 }
