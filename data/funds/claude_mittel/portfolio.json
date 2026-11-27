@@ -36,7 +36,7 @@
    "entscheidung_id": "d860a2331",
    "invalidierung": "Lisnard in mehreren Umfragen ≥12 % im 1. Wahlgang oder Rückzug von Philippe/Retailleau zu seinen Gunsten bzw. Sieg in einer Rechts-Primaire.",
    "kurs": 0.747,
-   "wert": 401.22
+   "wert": 401.76
   },
   {
    "id": "p98f17fcc",
@@ -118,8 +118,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "d6e1a7002",
-   "kurs": 725.5,
-   "wert": 1881.86
+   "kurs": 728.68,
+   "wert": 1890.32
   },
   {
    "id": "p5fe9ac51",
@@ -139,8 +139,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "d6e1a7002",
-   "kurs": 646.025,
-   "wert": 1029.94
+   "kurs": 650.99,
+   "wert": 1037.98
   },
   {
    "id": "p5106387a",
@@ -160,8 +160,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "d6e1a7002",
-   "kurs": 332.77,
-   "wert": 989.66
+   "kurs": 334.26,
+   "wert": 994.23
   },
   {
    "id": "p72af4e36",
@@ -181,8 +181,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "d6e1a7002",
-   "kurs": 96.275,
-   "wert": 1105.51
+   "kurs": 96.24,
+   "wert": 1105.29
   },
   {
    "id": "p3e7ff11c",
@@ -202,8 +202,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "d6e1a7002",
-   "kurs": 59567.335,
-   "wert": 980.29
+   "kurs": 59787.465,
+   "wert": 983.91
   },
   {
    "id": "pe3015b77",
@@ -223,8 +223,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "d6e1a7002",
-   "kurs": 1660.415,
-   "wert": 376.84
+   "kurs": 1668.405,
+   "wert": 378.63
   },
   {
    "id": "p1ad6082a",
@@ -290,8 +290,8 @@
    "ausstiegsplan": "Gewinn mitnehmen bei NEIN-Bid ≥0.78 (=P). Nach NVDA-Earnings neu rechnen. Sonst halten bis 31.12.",
    "entscheidung_id": "d1fa25bbb",
    "invalidierung": "NVDA-Marktkapitalisierung innerhalb 5 % von Apple (z. B. NVDA ≥200 bei AAPL ~349) nach den Earnings, oder NVDA-JA ≥0.45.",
-   "kurs": 0.929,
-   "wert": 395.47
+   "kurs": 0.9365000000000001,
+   "wert": 400.61
   },
   {
    "id": "pac09f469",
@@ -355,7 +355,7 @@
  "funding": 0.0,
  "erstellt": 1793319819.7411644,
  "start_fx": 1.1184885798616961,
- "letzter_tick": 1795801794.9688008,
+ "letzter_tick": 1795802694.9638693,
  "auftraege": [
   {
    "id": "a4e7a61",
@@ -390,7 +390,7 @@
    "ausstiegsplan": "",
    "invalidierung": "",
    "erstellt": 1794409480.899957,
-   "geprueft_bis": 1795801794.9688008,
+   "geprueft_bis": 1795802694.9638693,
    "gueltig_bis": 1797001480.899957
   }
  ],
