@@ -97,8 +97,8 @@
    "ausstiegsplan": "Bid ≥0,70 verkaufen (P erreicht); Neubewertung nach NVDA-Zahlen 19.11.; schließen, wenn Apple-Vorsprung <3 %.",
    "entscheidung_id": "d7e53ef04",
    "invalidierung": "NVDA-Marktkap. kommt auf <3 % Abstand zu Apple, oder Apple fällt >8 % relativ.",
-   "kurs": 0.9215,
-   "wert": 144.44
+   "kurs": 0.922,
+   "wert": 144.6
   },
   {
    "id": "pb60e44cc",
@@ -118,8 +118,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "d6e1a7002",
-   "kurs": 725.25,
-   "wert": 1881.21
+   "kurs": 725.46,
+   "wert": 1881.76
   },
   {
    "id": "p5fe9ac51",
@@ -139,8 +139,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "d6e1a7002",
-   "kurs": 644.8,
-   "wert": 1027.99
+   "kurs": 645.07,
+   "wert": 1028.42
   },
   {
    "id": "p5106387a",
@@ -160,8 +160,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "d6e1a7002",
-   "kurs": 332.51,
-   "wert": 988.89
+   "kurs": 332.01,
+   "wert": 987.4
   },
   {
    "id": "p72af4e36",
@@ -181,8 +181,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "d6e1a7002",
-   "kurs": 96.345,
-   "wert": 1106.32
+   "kurs": 96.325,
+   "wert": 1106.09
   },
   {
    "id": "p3e7ff11c",
@@ -202,8 +202,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "d6e1a7002",
-   "kurs": 59961.43,
-   "wert": 986.77
+   "kurs": 59871.725000000006,
+   "wert": 985.3
   },
   {
    "id": "pe3015b77",
@@ -223,8 +223,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "d6e1a7002",
-   "kurs": 1670.1550000000002,
-   "wert": 379.05
+   "kurs": 1668.325,
+   "wert": 378.62
   },
   {
    "id": "p1ad6082a",
@@ -355,7 +355,7 @@
  "funding": 0.0,
  "erstellt": 1793319819.7411644,
  "start_fx": 1.1184885798616961,
- "letzter_tick": 1795794594.856073,
+ "letzter_tick": 1795795495.2432914,
  "auftraege": [
   {
    "id": "a4e7a61",
@@ -390,7 +390,7 @@
    "ausstiegsplan": "",
    "invalidierung": "",
    "erstellt": 1794409480.899957,
-   "geprueft_bis": 1795794594.856073,
+   "geprueft_bis": 1795795495.2432914,
    "gueltig_bis": 1797001480.899957
   }
  ],
