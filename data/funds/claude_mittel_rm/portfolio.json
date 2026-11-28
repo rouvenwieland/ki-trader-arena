@@ -69,8 +69,8 @@
    "ausstiegsplan": "Halten bis 31.12.; Gewinnmitnahme ≥0,93 oder Neubewertung nach NVDA-Earnings 17./19.11.",
    "entscheidung_id": "dce9924e1",
    "invalidierung": "NVDA-Marktkap > Apple −10 % (NVDA >~210 bei Apple ~355) oder Apple −20 % binnen Tagen",
-   "kurs": 0.922,
-   "wert": 1230.46
+   "kurs": 0.9225000000000001,
+   "wert": 1231.79
   },
   {
    "id": "pa832233e",
@@ -139,8 +139,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "dd6456776",
-   "kurs": 59696.555,
-   "wert": 847.16
+   "kurs": 59545.545,
+   "wert": 845.02
   },
   {
    "id": "p994b6370",
@@ -318,7 +318,7 @@
    "entscheidung_id": "d6b155dae",
    "invalidierung": "Doomsday Freitagsumsatz inkl. Previews >$200M am 18.12. oder Doomsday-Domestic nach 7 Tagen >$600M.",
    "kurs": 0.881,
-   "wert": 431.98
+   "wert": 431.48
   },
   {
    "id": "p75b03ffe",
@@ -384,7 +384,7 @@
    "ausstiegsplan": "Bis Vereidigung halten; schließen, wenn beide Beine zusammen ≥0.97 verkaufbar.",
    "entscheidung_id": "d5f5d56d9",
    "invalidierung": "Nachweislich abweichende PredictIt-Regel, die Eisenkot-JA bei PredictIt und NEIN bei Polymarket zulässt.",
-   "kurs": 0.8095000000000001,
+   "kurs": 0.8125,
    "wert": 564.9
   },
   {
@@ -517,7 +517,7 @@
  "funding": 0.0,
  "erstellt": 1793380123.8861866,
  "start_fx": 1.1156327353966788,
- "letzter_tick": 1795849097.894196,
+ "letzter_tick": 1795849998.1397514,
  "auftraege": [],
  "rebalancing": {
   "ziele": {
