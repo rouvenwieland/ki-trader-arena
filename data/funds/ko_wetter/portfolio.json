@@ -2,7 +2,7 @@
  "fonds_id": "ko_wetter",
  "waehrung": "USD",
  "start_kapital": 11156.327353966788,
- "cash": 465.05118002309973,
+ "cash": 444.40118002309976,
  "positionen": [
   {
    "id": "pfd453c97",
@@ -209,15 +209,41 @@
    "gebuehren": 0.56,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Wetter-Regel)",
-   "kurs": 0.705,
-   "wert": 23.1
+   "kurs": 0.695,
+   "wert": 22.77
+  },
+  {
+   "id": "p8a15cf53",
+   "inst": {
+    "id": "pm:kalshi:KXHIGHNY-26NOV28-T52:JA",
+    "art": "pm",
+    "venue": "kalshi",
+    "ergebnis": "JA",
+    "frage": "Will the maximum temperature be <52° on Nov 28, 2026? [51° or below]",
+    "schliesst": 1795932000.0,
+    "ref": {
+     "ticker": "KXHIGHNY-26NOV28-T52"
+    },
+    "url": "https://kalshi.com/markets/KXHIGHNY-26NOV28"
+   },
+   "seite": "long",
+   "menge": 31.0,
+   "einstand": 0.65,
+   "hebel": 1.0,
+   "marge": 0.0,
+   "eroeffnet": 1795827374.3868978,
+   "gebuehren": 0.5,
+   "funding": 0.0,
+   "ausstiegsplan": "Halten bis zur Abrechnung (Wetter-Regel)",
+   "kurs": 0.64,
+   "wert": 19.53
   }
  ],
  "realisiert": -9503.948873943691,
- "gebuehren": 1031.59,
+ "gebuehren": 1032.09,
  "funding": 0.0,
  "erstellt": 1793380123.8861866,
  "start_fx": 1.1156327353966788,
- "letzter_tick": 1795826473.6735258,
- "wetter_letzter": 1795823515.0559225
+ "letzter_tick": 1795827374.3868978,
+ "wetter_letzter": 1795827374.3868978
 }
