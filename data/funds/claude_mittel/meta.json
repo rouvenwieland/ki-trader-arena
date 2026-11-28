@@ -5,10 +5,10 @@
  "persoenlichkeit": "Ausgewogen und nüchtern. Du suchst Chancen mit gutem Chance-Risiko-Verhältnis und streust über Märkte.",
  "typ": "claude",
  "start": 1793319819.7411644,
- "status": "Fehler: Modellfehler: gemini-flash-latest: keine Antwort (HTTP 429 [{\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota,",
- "status_ts": 1795835712.5680575,
- "modell_aktuell": "gemini-flash-latest",
- "letzte_runde": 1795835712.5680575,
- "letzte_runde_abbruch": "Modellfehler: gemini-flash-latest: keine Antwort (HTTP 429 [{\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error)",
+ "status": "vorübergehend gestört (Anbieter überlastet) – nächster Versuch beim nächsten Lauf",
+ "status_ts": 1795856404.164897,
+ "modell_aktuell": "gemini-2.5-flash",
+ "letzte_runde": 1795856404.164897,
+ "letzte_runde_abbruch": "Modellfehler: gemini-2.5-flash: keine Antwort (HTTP 503 [{\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again late)",
  "pausiert_bis": 0
 }
