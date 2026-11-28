@@ -139,8 +139,8 @@
    "funding": 0.0,
    "ausstiegsplan": "Rebalancing-Regel",
    "entscheidung_id": "dd6456776",
-   "kurs": 59487.815,
-   "wert": 844.2
+   "kurs": 59536.285,
+   "wert": 844.89
   },
   {
    "id": "p994b6370",
@@ -227,8 +227,8 @@
    "ausstiegsplan": "Halten bis Abrechnung 31.12.",
    "entscheidung_id": "de2fc5d7b",
    "invalidierung": "PredictIt-Bein nicht gefüllt: JA-Bein wieder verkaufen.",
-   "kurs": 0.125,
-   "wert": 24.0
+   "kurs": 0.12,
+   "wert": 22.0
   },
   {
    "id": "p6edb4531",
@@ -384,8 +384,8 @@
    "ausstiegsplan": "Bis Vereidigung halten; schließen, wenn beide Beine zusammen ≥0.97 verkaufbar.",
    "entscheidung_id": "d5f5d56d9",
    "invalidierung": "Nachweislich abweichende PredictIt-Regel, die Eisenkot-JA bei PredictIt und NEIN bei Polymarket zulässt.",
-   "kurs": 0.853,
-   "wert": 588.0
+   "kurs": 0.8594999999999999,
+   "wert": 594.3
   },
   {
    "id": "p2567180c",
@@ -517,7 +517,7 @@
  "funding": 0.0,
  "erstellt": 1793380123.8861866,
  "start_fx": 1.1156327353966788,
- "letzter_tick": 1795884856.9936156,
+ "letzter_tick": 1795885756.8575985,
  "auftraege": [],
  "rebalancing": {
   "ziele": {

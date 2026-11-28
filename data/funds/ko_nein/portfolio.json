@@ -2,7 +2,7 @@
  "fonds_id": "ko_nein",
  "waehrung": "USD",
  "start_kapital": 11157.431109273288,
- "cash": 949.0512492732864,
+ "cash": 1190.0512492732864,
  "positionen": [
   {
    "id": "p9e535f2b",
@@ -65,8 +65,8 @@
    "gebuehren": 0.0,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.962,
-   "wert": 211.42
+   "kurs": 0.9635,
+   "wert": 211.86
   },
   {
    "id": "p722ad016",
@@ -97,8 +97,8 @@
    "gebuehren": 0.0,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.9025000000000001,
-   "wert": 248.81
+   "kurs": 0.888,
+   "wert": 244.08
   },
   {
    "id": "pdcfb5d53",
@@ -129,8 +129,8 @@
    "gebuehren": 0.0,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.14500000000000002,
-   "wert": 33.5
+   "kurs": 0.1405,
+   "wert": 32.5
   },
   {
    "id": "pf0e983be",
@@ -193,7 +193,7 @@
    "gebuehren": 1.04341,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.435,
+   "kurs": 0.44,
    "wert": 78.26
   },
   {
@@ -321,8 +321,8 @@
    "gebuehren": 0.0,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.993,
-   "wert": 191.26
+   "kurs": 0.9924999999999999,
+   "wert": 191.07
   },
   {
    "id": "p9f764afd",
@@ -769,40 +769,8 @@
    "gebuehren": 0.0,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.99,
-   "wert": 208.68
-  },
-  {
-   "id": "p66f9a4ef",
-   "inst": {
-    "id": "pm:polymarket:3580933:NEIN",
-    "art": "pm",
-    "venue": "polymarket",
-    "ergebnis": "NEIN",
-    "frage": "Will Puma Shen win the next Taipei Mayor election?",
-    "schliesst": 1795928340.0,
-    "ref": {
-     "id": "3580933",
-     "token_ja": "71621185653281721927174401118354054745399424014255544529977515442951477963801",
-     "token_nein": "72820619922053432516748905329266890906103969024802768151634670763988243600546",
-     "tick": 0.001,
-     "condition": "0x910aabbfae28b3569929c31fb5461f4db13f7ddd427bdee1e696d313125838e3",
-     "gebuehr_rate": 0.04,
-     "gebuehr_exp": 1.0
-    },
-    "url": "https://polymarket.com/event/taipei-mayor-election-winner-20260813125857100"
-   },
-   "seite": "long",
-   "menge": 241.0,
-   "einstand": 0.6836690456431537,
-   "hebel": 1.0,
-   "marge": 0.0,
-   "eroeffnet": 1793819896.6280587,
-   "gebuehren": 2.0848,
-   "funding": 0.0,
-   "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.999,
-   "wert": 240.76
+   "kurs": 0.991,
+   "wert": 208.89
   },
   {
    "id": "pff668a53",
@@ -865,8 +833,8 @@
    "gebuehren": 0.0,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.225,
-   "wert": 81.62
+   "kurs": 0.215,
+   "wert": 77.91
   },
   {
    "id": "p52f9b70e",
@@ -1153,8 +1121,8 @@
    "gebuehren": 0.49949,
    "funding": 0.0,
    "ausstiegsplan": "Halten bis zur Abrechnung (Kontrollregel)",
-   "kurs": 0.8685,
-   "wert": 150.86
+   "kurs": 0.871,
+   "wert": 151.21
   },
   {
    "id": "p9176f163",
@@ -1221,11 +1189,11 @@
    "wert": 165.11
   }
  ],
- "realisiert": -3598.36675,
+ "realisiert": -3522.13099,
  "gebuehren": 304.4894399999999,
  "funding": 0.0,
  "erstellt": 1793379225.5430336,
  "start_fx": 1.1157431109273288,
- "letzter_tick": 1795884856.9936156,
+ "letzter_tick": 1795885756.8575985,
  "kontrolle_bis": 1795856404.164897
 }
