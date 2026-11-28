@@ -146,8 +146,8 @@
    "ausstiegsplan": "Halten bis zur Abrechnung. Vorzeitig verkaufen, wenn das NEIN-Bid 0,985 oder mehr erreicht oder die Invalidierung eintritt.",
    "entscheidung_id": "db3632f99",
    "invalidierung": "WTI-Frontmonat schließt über 120 USD, oder Hormuz wird vollständig gesperrt und Brent liegt über 130.",
-   "kurs": 0.9784999999999999,
-   "wert": 311.0
+   "kurs": 0.978,
+   "wert": 310.69
   },
   {
    "id": "p15600b5d",
@@ -218,7 +218,7 @@
  "funding": 0.0,
  "erstellt": 1793319819.7411644,
  "start_fx": 1.1184885798616961,
- "letzter_tick": 1795877364.553265,
+ "letzter_tick": 1795878265.2025557,
  "auftraege": [],
  "rebalancing": {
   "ziele": {
