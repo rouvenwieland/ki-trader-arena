@@ -2,52 +2,33 @@
  "fonds_id": "bm_affe",
  "waehrung": "USD",
  "start_kapital": 11184.88579861696,
- "cash": 5378.811169727923,
+ "cash": 7648.124272061352,
  "positionen": [
   {
-   "id": "p978363a4",
+   "id": "pa283ac3d",
    "inst": {
-    "id": "spot:ADA-USD",
+    "id": "spot:BTC-USD",
     "art": "spot",
     "venue": "coinbase",
-    "symbol": "ADA-USD"
+    "symbol": "BTC-USD"
    },
    "seite": "long",
-   "menge": 7236.285606175437,
-   "einstand": 0.14838219499883015,
+   "menge": 0.023715660907617196,
+   "einstand": 59920.261656,
    "hebel": 1.0,
    "marge": 0.0,
-   "eroeffnet": 1795738271.099125,
-   "gebuehren": 6.44241565129651,
+   "eroeffnet": 1795824674.3505464,
+   "gebuehren": 8.526291641576357,
    "funding": 0.0,
-   "kurs": 0.14830500000000002,
-   "wert": 1073.07
-  },
-  {
-   "id": "pfae84b4f",
-   "inst": {
-    "id": "spot:DOGE-USD",
-    "art": "spot",
-    "venue": "coinbase",
-    "symbol": "DOGE-USD"
-   },
-   "seite": "long",
-   "menge": 45856.19711714639,
-   "einstand": 0.05639187121789162,
-   "hebel": 1.0,
-   "marge": 0.0,
-   "eroeffnet": 1795738271.099125,
-   "gebuehren": 15.515500574234233,
-   "funding": 0.0,
-   "kurs": 0.057679999999999995,
-   "wert": 2644.53
+   "kurs": 59908.274999999994,
+   "wert": 1420.76
   }
  ],
- "realisiert": -1481.986391047408,
- "gebuehren": 1301.8456935610461,
+ "realisiert": -1442.7510943981333,
+ "gebuehren": 1332.6992769585847,
  "funding": 0.0,
  "erstellt": 1793319819.7411644,
  "start_fx": 1.1184885798616961,
- "letzter_tick": 1795823774.7453642,
- "letzter_tag": "2026-11-27"
+ "letzter_tick": 1795824674.3505464,
+ "letzter_tag": "2026-11-28"
 }
